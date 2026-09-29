@@ -1,0 +1,561 @@
+<title>Balkan Borders Review</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Instrument+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: a review desk. Queue list on the left of the flow, one conflict at a time in a two-column detail (map + timeline | answer + decision), evidence below. */
+:root {
+  --bg: #f2f4f1; --surface: #ffffff; --sunk: #e9ece7; --ink: #18201c; --muted: #56605a; --faint: #7d867f; --line: #d6dbd4;
+  --accent: #1f5f6b; --accent-ink: #ffffff; --focus: #1f5f6b;
+  --water: #d9e5ea; --land: #f8f8f4; --coast: #b9c7cc; --river: #a7c1cc; --dot-ring: #ffffff; --dim: 0.28;
+  --ready-bg: #e2efe7; --ready: #1c6440; --expert-bg: #ebe5f4; --expert: #563b84; --rule-bg: #e2ebf4; --rule: #204d77; --done-bg: #e9e7e1; --done: #3f3c36;
+  --h-OTT: #2a78d6; --h-RUS: #1baf7a; --h-AUT: #e87ba4; --h-GRE: #e34948; --h-SRB: #eda100; --h-MNE: #008300; --h-ROM: #4a3aa7; --h-BUL: #eb6834;
+  --h-OTHER: #a09a8f; --h-UK: #4b5563; --h-MULTI: #6b716d; --hatch: rgba(255,255,255,0.85);
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --r: 12px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #111513; --surface: #1a201d; --sunk: #151a18; --ink: #e6ece8; --muted: #a3aea7; --faint: #7f8a83; --line: #2e3632;
+  --accent: #7fc4cf; --accent-ink: #0e1412; --focus: #7fc4cf;
+  --water: #16232a; --land: #222925; --coast: #3a4a50; --river: #2f4c58; --dot-ring: #111513; --dim: 0.3;
+  --ready-bg: #173226; --ready: #93d4b1; --expert-bg: #282040; --expert: #c9b4f1; --rule-bg: #1a2b3c; --rule: #9ec5ea; --done-bg: #2a2925; --done: #d8d4ca;
+  --h-OTT: #3987e5; --h-RUS: #199e70; --h-AUT: #d55181; --h-GRE: #e66767; --h-SRB: #c98500; --h-MNE: #008300; --h-ROM: #9085e9; --h-BUL: #d95926;
+  --h-OTHER: #8e8a80; --h-UK: #9aa5b1; --h-MULTI: #7d847f; --hatch: rgba(17,21,19,0.75);
+  color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #111513; --surface: #1a201d; --sunk: #151a18; --ink: #e6ece8; --muted: #a3aea7; --faint: #7f8a83; --line: #2e3632;
+  --accent: #7fc4cf; --accent-ink: #0e1412; --focus: #7fc4cf;
+  --water: #16232a; --land: #222925; --coast: #3a4a50; --river: #2f4c58; --dot-ring: #111513; --dim: 0.3;
+  --ready-bg: #173226; --ready: #93d4b1; --expert-bg: #282040; --expert: #c9b4f1; --rule-bg: #1a2b3c; --rule: #9ec5ea; --done-bg: #2a2925; --done: #d8d4ca;
+  --h-OTT: #3987e5; --h-RUS: #199e70; --h-AUT: #d55181; --h-GRE: #e66767; --h-SRB: #c98500; --h-MNE: #008300; --h-ROM: #9085e9; --h-BUL: #d95926;
+  --h-OTHER: #8e8a80; --h-UK: #9aa5b1; --h-MULTI: #7d847f; --hatch: rgba(17,21,19,0.75);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.5; margin: 0; }
+.wrap { max-width: 1320px; margin: 0 auto; padding-inline: 20px; padding-block: 0 48px; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.2; text-wrap: balance; margin: 0; }
+h1 { font-size: 1.9rem; } h2 { font-size: 1.35rem; } h3 { font-size: 1.05rem; font-family: var(--sans); }
+a { color: var(--accent); }
+button, select, input, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.muted { color: var(--muted); }
+.num { font-variant-numeric: tabular-nums; }
+
+/* top bar */
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line); }
+.top .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding-block: 12px; }
+.brand { display: flex; flex-direction: column; gap: 0; min-width: 0; }
+.brand b { font-family: var(--serif); font-size: 1.25rem; font-weight: 700; }
+.brand span { font-size: 0.8rem; color: var(--muted); }
+nav.tabs { display: flex; flex-wrap: wrap; gap: 4px; }
+nav.tabs a { padding: 8px 12px; border-radius: 8px; text-decoration: none; color: var(--muted); font-weight: 500; }
+nav.tabs a[aria-current="page"] { background: var(--surface); color: var(--ink); box-shadow: inset 0 0 0 1px var(--line); }
+.me { margin-left: auto; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.me label { font-size: 0.8rem; color: var(--muted); }
+.me input { width: 140px; padding: 7px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+.btn { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 0 14px; border-radius: 9px; border: 1px solid var(--line); background: var(--surface); cursor: pointer; font-weight: 600; text-decoration: none; color: var(--ink); }
+.btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.btn:disabled { opacity: 0.5; cursor: default; }
+
+/* page header */
+.head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; align-items: flex-end; padding-block: 28px 18px; }
+.head p { margin: 6px 0 0; max-width: 70ch; color: var(--muted); }
+.counts { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: 999px; font-size: 0.8rem; font-weight: 600; white-space: nowrap; }
+.s-ready { background: var(--ready-bg); color: var(--ready); } .s-expert { background: var(--expert-bg); color: var(--expert); }
+.s-rule { background: var(--rule-bg); color: var(--rule); } .s-done { background: var(--done-bg); color: var(--done); }
+.chip svg { width: 12px; height: 12px; }
+
+/* queue */
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.filters button { min-height: 38px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); cursor: pointer; font-weight: 500; }
+.filters button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.qlist { display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; }
+.qrow { display: grid; grid-template-columns: 150px minmax(0, 1fr) 130px 110px; gap: 16px; align-items: center; padding: 14px 18px; border-top: 1px solid var(--line); text-decoration: none; color: inherit; }
+.qrow:first-child { border-top: 0; }
+.qrow:hover { background: var(--sunk); }
+.qrow .t { font-weight: 600; }
+.qrow .p { color: var(--muted); font-size: 0.88rem; margin-top: 2px; }
+.qrow .when { font-size: 0.88rem; color: var(--muted); }
+.qrow .dec { justify-self: end; }
+@media (max-width: 760px) { .qrow { grid-template-columns: minmax(0, 1fr); gap: 6px; } .qrow .dec { justify-self: start; } }
+
+/* detail */
+.back { display: inline-flex; margin-top: 18px; color: var(--muted); text-decoration: none; font-weight: 500; }
+.dgrid { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: 20px; align-items: start; }
+@media (max-width: 980px) { .dgrid { grid-template-columns: minmax(0, 1fr); } }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 18px 20px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.col { display: flex; flex-direction: column; gap: 20px; min-width: 0; }
+.qhead { display: flex; flex-direction: column; gap: 8px; padding-block: 10px 20px; }
+.qhead .qq { font-size: 1.05rem; max-width: 70ch; }
+.qhead .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.problem { background: var(--sunk); border-radius: 10px; padding: 10px 14px; max-width: 80ch; }
+
+.maptools { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; }
+.seg { display: inline-flex; background: var(--sunk); border-radius: 9px; padding: 3px; gap: 2px; }
+.seg button { border: 0; background: transparent; padding: 6px 12px; border-radius: 7px; cursor: pointer; color: var(--muted); font-weight: 500; min-height: 34px; }
+.seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: 0 0 0 1px var(--line); font-weight: 600; }
+.yearctl { display: flex; align-items: center; gap: 10px; flex: 1 1 260px; }
+.yearctl input[type=range] { flex: 1; accent-color: var(--accent); }
+.yearctl output { font-family: var(--serif); font-size: 1.5rem; font-weight: 700; min-width: 3.2ch; }
+.mapbox { position: relative; border-radius: 10px; overflow: hidden; background: var(--water); }
+.mapbox svg { display: block; width: 100%; height: auto; }
+.tip { position: absolute; pointer-events: none; background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; font-size: 0.82rem; box-shadow: 0 6px 18px rgba(0,0,0,0.15); max-width: 260px; z-index: 3; }
+.tip b { display: block; margin-bottom: 2px; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 0.82rem; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.sw { width: 14px; height: 14px; border-radius: 3px; display: inline-block; border: 1px solid var(--line); }
+
+.tl { overflow-x: auto; }
+.tlgrid { display: grid; grid-template-columns: 150px minmax(420px, 1fr); gap: 8px 12px; align-items: center; min-width: 580px; }
+.tllab { font-size: 0.85rem; font-weight: 600; line-height: 1.25; }
+.tllab small { display: block; font-weight: 400; color: var(--muted); font-size: 0.75rem; }
+.bars { position: relative; height: 28px; background: var(--sunk); border-radius: 6px; }
+.bars.tall { height: auto; min-height: 28px; }
+.bar { position: absolute; top: 0; height: 28px; border-radius: 4px; overflow: hidden; display: flex; align-items: center; padding-left: 4px; cursor: pointer; }
+.bar .lab { background: var(--surface); color: var(--ink); font-size: 0.72rem; font-weight: 600; padding: 1px 5px; border-radius: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: calc(100% - 6px); }
+.marker { position: absolute; top: -3px; bottom: -3px; width: 2px; background: var(--ink); pointer-events: none; }
+.axis { position: relative; height: 18px; font-size: 0.72rem; color: var(--faint); }
+.axis span { position: absolute; transform: translateX(-50%); }
+.sep { grid-column: 1 / -1; height: 1px; background: var(--line); }
+.townpick { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.townpick select { padding: 6px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); }
+
+.ans { display: flex; flex-direction: column; gap: 10px; }
+.ans h3 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.ans ol { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.ans li { display: grid; grid-template-columns: 16px minmax(0, 1fr); gap: 10px; }
+.ans li .sw { margin-top: 4px; }
+.ans li .w { font-weight: 600; }
+.ans li .d { color: var(--muted); font-size: 0.88rem; }
+.conf { border-radius: 10px; padding: 10px 12px; font-size: 0.9rem; }
+.conf.high { background: var(--ready-bg); color: var(--ready); } .conf.medium { background: var(--expert-bg); color: var(--expert); }
+.why { margin: 0; padding-left: 18px; color: var(--muted); display: flex; flex-direction: column; gap: 4px; font-size: 0.9rem; }
+
+.opts { display: flex; flex-direction: column; gap: 8px; border: 0; margin: 0; padding: 0; }
+.opt { display: grid; grid-template-columns: 20px minmax(0, 1fr); gap: 8px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; cursor: pointer; }
+.opt:has(input:checked) { border-color: var(--ink); background: var(--sunk); }
+.opt small { display: block; color: var(--muted); }
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field select, .field textarea { padding: 9px 11px; border: 1px solid var(--line); border-radius: 9px; background: var(--surface); }
+.hint { background: var(--sunk); border-radius: 10px; padding: 10px 12px; font-size: 0.85rem; color: var(--muted); }
+.saved { font-size: 0.85rem; color: var(--ready); min-height: 1.2em; }
+
+.evgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
+.ev { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.ev .k { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.ev .t { font-weight: 600; }
+.ev .s { font-size: 0.88rem; color: var(--muted); }
+.ev.data { background: var(--sunk); }
+details.recs { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px; }
+details.recs summary { cursor: pointer; font-weight: 600; }
+.rectable { overflow-x: auto; margin-top: 10px; }
+.rectable table { border-collapse: collapse; font-size: 0.85rem; min-width: 480px; }
+.rectable td, .rectable th { text-align: left; padding: 5px 12px 5px 0; border-bottom: 1px solid var(--line); }
+.rectable th { color: var(--muted); font-weight: 500; }
+
+.rules { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 16px; }
+@media (max-width: 480px) { .rules { grid-template-columns: minmax(0, 1fr); } }
+.list { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); }
+.list > div { padding: 12px 16px; border-top: 1px solid var(--line); display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 12px; }
+.list > div:first-child { border-top: 0; }
+@media (max-width: 600px) { .list > div { grid-template-columns: minmax(0, 1fr); gap: 2px; } }
+.prose { max-width: 72ch; display: flex; flex-direction: column; gap: 12px; }
+.prose p { margin: 0; }
+.exportbox { display: flex; flex-direction: column; gap: 8px; }
+.exportbox textarea { width: 100%; min-height: 140px; font-size: 0.8rem; padding: 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--sunk); }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand"><b>Balkan Borders</b><span>1815–1900 · where the datasets disagree</span></div>
+    <nav class="tabs" aria-label="Sections">
+      <a href="#queue" data-tab="queue">Questions</a>
+      <a href="#rules" data-tab="rules">Rules</a>
+      <a href="#auto" data-tab="auto">Settled automatically</a>
+      <a href="#about" data-tab="about">About the data</a>
+    </nav>
+    <div class="me">
+      <label for="reviewer">Your name</label>
+      <input id="reviewer" placeholder="e.g. Ion" autocomplete="name">
+      <button class="btn primary" id="exportBtn" type="button">Download my decisions</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="app"></main>
+<div class="wrap" id="exportArea" hidden></div>
+
+<script type="application/json" id="bundle">/*BUNDLE*/</script>
+<script>
+(() => {
+const B = JSON.parse(document.getElementById('bundle').textContent);
+const Q = B.questions;
+const QBY = Object.fromEntries(Q.map(q => [q.id, q]));
+const Y0 = B.years[0], Y1 = B.years[1];
+const STORE = 'balkan-borders-review-v1';
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+// ---------- saved decisions (this browser only) ----------
+let saved = { reviewer: '', decisions: {}, rules: {} };
+try { const raw = localStorage.getItem(STORE); if (raw) saved = Object.assign(saved, JSON.parse(raw)); } catch (e) {}
+const persist = () => { try { localStorage.setItem(STORE, JSON.stringify(saved)); return true; } catch (e) { return false; } };
+const reviewerInput = document.getElementById('reviewer');
+reviewerInput.value = saved.reviewer || '';
+reviewerInput.addEventListener('input', () => { saved.reviewer = reviewerInput.value.trim(); persist(); });
+
+// ---------- holders ----------
+const FAMILY = { WAL: 'ROM', MOL: 'ROM', ROM: 'ROM', ERU: 'BUL', BUL: 'BUL', AUTOCC: 'AUT', AUT: 'AUT', OTT: 'OTT', RUS: 'RUS', GRE: 'GRE', SRB: 'SRB', MNE: 'MNE', UK: 'UK' };
+const fam = c => c && c.includes('+') ? 'MULTI' : (FAMILY[c] || 'OTHER');
+function underOverlord(c, y) {
+  if (['WAL', 'MOL', 'ERU', 'EGY', 'CRT', 'ION', 'AUTOCC', 'BUL'].includes(c)) return true;
+  if ((c === 'ROM' || c === 'SRB') && y < 1878.5) return true;
+  return false;
+}
+const label = c => {
+  if (c == null) return 'No record';
+  if (c.includes('+')) return c.split('+').map(x => B.labels[x] || x).join(' and ');
+  return B.labels[c] || c.replace('OTHER:', '');
+};
+const fillFor = (c, y) => c === 'NONE' || c == null ? 'var(--surface)' : (underOverlord(c, y) ? `url(#hatch-${fam(c)})` : `var(--h-${fam(c)})`);
+const cssFill = (c, y) => {
+  if (c === 'NONE' || c == null) return 'background: var(--surface); outline: 1px dashed var(--faint); outline-offset: -1px;';
+  const col = `var(--h-${fam(c)})`;
+  return underOverlord(c, y) ? `background: repeating-linear-gradient(135deg, ${col} 0 6px, var(--hatch) 6px 8px);` : `background: ${col};`;
+};
+const FAMS = ['OTT', 'RUS', 'AUT', 'GRE', 'SRB', 'MNE', 'ROM', 'BUL', 'OTHER', 'UK', 'MULTI'];
+const patterns = FAMS.map(f => `<pattern id="hatch-${f}" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" style="fill: var(--h-${f})"></rect><rect width="1.4" height="5" style="fill: var(--hatch)"></rect></pattern>`).join('');
+
+function holderAt(town, src, y) {
+  const runs = B.towns[town].src[src];
+  for (const [a, b, c] of runs) if (a <= y && y <= b) return c;
+  return null;
+}
+
+// ---------- status ----------
+const STATUS = {
+  ready: { label: 'Ready for review', cls: 's-ready', icon: '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 6.5l2.5 2.5L10 3.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>' },
+  expert: { label: 'Needs an expert', cls: 's-expert', icon: '<svg viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="4" r="2.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M2 11c.5-2.2 2-3.3 4-3.3S9.5 8.8 10 11" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>' },
+  rule: { label: 'Settled by a rule', cls: 's-rule', icon: '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 3h8M2 6h8M2 9h5" stroke="currentColor" stroke-width="1.6"/></svg>' },
+};
+const chip = s => `<span class="chip ${STATUS[s].cls}">${STATUS[s].icon}${STATUS[s].label}</span>`;
+const decidedChip = qid => saved.decisions[qid] ? `<span class="chip s-done">Decided${saved.decisions[qid].choice === 'expert' ? ': sent to expert' : ''}</span>` : '';
+
+// ---------- routing ----------
+let state = { filter: 'all', year: null, src: 'OHM', focus: null, view: 'legal' };
+function route() {
+  const h = (location.hash || '#queue').slice(1);
+  document.querySelectorAll('nav.tabs a').forEach(a => a.setAttribute('aria-current', (h === a.dataset.tab || (h.startsWith('q-') && a.dataset.tab === 'queue')) ? 'page' : 'false'));
+  if (h.startsWith('q-') && QBY[h.slice(2)]) return renderQuestion(QBY[h.slice(2)]);
+  if (h === 'rules') return renderRules();
+  if (h === 'auto') return renderAuto();
+  if (h === 'about') return renderAbout();
+  return renderQueue();
+}
+window.addEventListener('hashchange', () => { route(); window.scrollTo(0, 0); });
+const app = document.getElementById('app');
+
+// ---------- queue ----------
+function renderQueue() {
+  const n = s => Q.filter(q => q.status === s).length;
+  const nd = Object.keys(saved.decisions).filter(k => QBY[k]).length;
+  const filters = [['all', `All · ${Q.length}`], ['ready', `Ready for review · ${n('ready')}`], ['expert', `Needs an expert · ${n('expert')}`], ['rule', `Settled by a rule · ${n('rule')}`], ['open', `Not decided yet · ${Q.length - nd}`]];
+  const order = { ready: 0, expert: 1, rule: 2 };
+  const list = Q.filter(q => state.filter === 'all' || q.status === state.filter || (state.filter === 'open' && !saved.decisions[q.id]))
+    .sort((a, b) => order[a.status] - order[b.status] || b.town_years - a.town_years);
+  app.innerHTML = `
+  <section class="head">
+    <div>
+      <h1>Who held what, and when?</h1>
+      <p>Three border datasets were compared for ${Object.keys(B.towns).length} towns, year by year from 1815 to 1900. Where they disagree, each question below shows what every source says, a suggested answer with its sources, and a place to record your decision.</p>
+    </div>
+    <div class="counts"><span class="chip s-done">${nd} of ${Q.length} decided in this browser</span></div>
+  </section>
+  <div class="filters" role="group" aria-label="Filter questions">
+    ${filters.map(([k, l]) => `<button type="button" data-filter="${k}" aria-pressed="${state.filter === k}">${l}</button>`).join('')}
+  </div>
+  <div class="qlist">
+    ${list.map(q => `<a class="qrow" href="#q-${q.id}">
+      <div>${chip(q.status)}</div>
+      <div style="min-width:0"><div class="t">${esc(q.title)}</div><div class="p">${esc(q.problem)}</div></div>
+      <div class="when num">${q.start === q.end ? q.start : q.start + '–' + q.end}<br>${q.towns.length} town${q.towns.length === 1 ? '' : 's'}</div>
+      <div class="dec">${decidedChip(q.id)}</div>
+    </a>`).join('') || '<p style="padding:16px">Nothing in this group.</p>'}
+  </div>`;
+  app.querySelectorAll('[data-filter]').forEach(b => b.addEventListener('click', () => { state.filter = b.dataset.filter; renderQueue(); }));
+}
+
+// ---------- question ----------
+function yearOf(s) { return typeof s === 'number' ? s : parseFloat(s); }
+function renderQuestion(q) {
+  if (state.qid !== q.id) { state.qid = q.id; state.year = q.start; state.src = 'OHM'; state.focus = q.focus; state.view = 'legal'; }
+  const dec = saved.decisions[q.id] || {};
+  const hasActual = !!(q.actual && q.actual.length);
+  app.innerHTML = `
+  <a class="back" href="#queue">← All questions</a>
+  <section class="qhead">
+    <div class="row">${chip(q.status)} ${decidedChip(q.id)} <span class="muted num">${q.start === q.end ? q.start : q.start + '–' + q.end} · ${q.towns.length} town${q.towns.length === 1 ? '' : 's'}</span></div>
+    <h1>${esc(q.title)}</h1>
+    <div class="qq">${esc(q.question)}</div>
+    <div class="problem">${esc(q.problem)}</div>
+  </section>
+  <div class="dgrid">
+    <div class="col">
+      <section class="card" aria-label="Map">
+        <div class="maptools">
+          <div class="seg" role="group" aria-label="Source shown on the map">
+            ${['OHM', 'CShapes', 'Cliopatria'].map(s => `<button type="button" data-src="${s}" aria-pressed="${state.src === s}">${s === 'OHM' ? 'OpenHistoricalMap' : s}</button>`).join('')}
+          </div>
+          <div class="yearctl"><label for="year" class="muted">Year</label><input id="year" type="range" min="${Y0}" max="${Y1}" step="1" value="${state.year}"><output id="yearOut" for="year" class="num">${state.year}</output></div>
+        </div>
+        <div class="mapbox" id="mapbox"></div>
+        <div class="legend" id="legend"></div>
+      </section>
+      <section class="card" aria-label="What each source says">
+        <div class="townpick"><h2 style="margin-right:auto">What each source says</h2>
+          <label for="town" class="muted">Town</label>
+          <select id="town">${q.towns.map(t => `<option ${t === state.focus ? 'selected' : ''}>${esc(t)}</option>`).join('')}</select>
+        </div>
+        <div class="tl" id="timeline"></div>
+        <div class="muted" style="font-size:0.82rem">Hatched: governed itself under an overlord, or occupied. Dashed: no country recorded. Click a bar to move the map to that year.</div>
+      </section>
+    </div>
+    <div class="col">
+      <section class="card ans" aria-label="Suggested answer">
+        <div style="display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap"><h2>Suggested answer</h2><span class="chip s-done">Drafted automatically</span></div>
+        ${hasActual ? `<div class="seg" role="group" aria-label="Kind of control"><button type="button" data-view="legal" aria-pressed="${state.view === 'legal'}">Legal title</button><button type="button" data-view="actual" aria-pressed="${state.view === 'actual'}">Actual control</button></div>` : ''}
+        <div id="answer"></div>
+        <div class="conf ${q.confidence}"><b>Confidence: ${q.confidence}.</b> ${esc(q.conf_note)}</div>
+        <div><h3 style="margin-bottom:6px">Why the sources differ</h3><ul class="why">${q.why.map(w => `<li>${esc(w)}</li>`).join('')}</ul></div>
+      </section>
+      <section class="card" aria-label="Your decision">
+        <h2>Your decision</h2>
+        <fieldset class="opts">
+          <legend class="muted" style="margin-bottom:6px">Choose one</legend>
+          ${[
+            ['approve', 'Approve the suggested answer', q.status === 'rule' ? 'Also records your view on the rule for this case.' : 'The dates above match their linked sources.'],
+            ['source', "Use one source's version instead", 'Pick the source you trust most here.'],
+            ['different', 'The answer is something else', 'Describe it in the note below.'],
+            ['expert', "I'm not sure — send to an expert", 'Say what is unclear in the note.'],
+          ].map(([v, l, h]) => `<label class="opt"><input type="radio" name="choice" value="${v}" ${dec.choice === v ? 'checked' : ''}><span><b>${l}</b><small>${h}</small></span></label>`).join('')}
+        </fieldset>
+        <div class="field" id="srcField" ${dec.choice === 'source' ? '' : 'hidden'}><label for="srcPick"><b>Source to use</b></label>
+          <select id="srcPick">${['OpenHistoricalMap', 'CShapes-Europe', 'Cliopatria'].map(s => `<option ${dec.source === s ? 'selected' : ''}>${s}</option>`).join('')}</select></div>
+        <div class="field"><label for="note"><b>Note</b> <span class="muted">(saved with your decision)</span></label>
+          <textarea id="note" rows="3" placeholder="For example: checked the treaty date against the linked page">${esc(dec.note || '')}</textarea></div>
+        <div class="hint"><b>When to approve:</b> when each change date in the suggestion links to a treaty or event you can open. If any date rests only on the datasets, send it to an expert.</div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+          <button class="btn primary" type="button" id="saveBtn">Save decision</button>
+          <a class="btn" href="#q-${nextId(q.id)}">Next question</a>
+          <span class="saved" id="savedMsg" role="status"></span>
+        </div>
+      </section>
+    </div>
+  </div>
+  <section style="margin-top:28px;display:flex;flex-direction:column;gap:14px" aria-label="Evidence">
+    <h2>Evidence</h2>
+    <div class="evgrid" id="evidence"></div>
+    <details class="recs"><summary>OpenHistoricalMap records involved (${q.ohm_records.length})</summary>
+      <div class="rectable"><table><thead><tr><th>Record</th><th>Level</th><th>From</th><th>To</th></tr></thead><tbody>
+      ${q.ohm_records.map(r => `<tr><td><a href="https://www.openhistoricalmap.org/relation/${r.id}" target="_blank" rel="noopener">${esc(r.name)}</a></td><td>${r.level === 2 ? 'Country' : 'Self-governing'}</td><td class="num">${esc(r.start)}</td><td class="num">${esc(r.end || '—')}</td></tr>`).join('') || '<tr><td colspan="4">No records: this is the gap.</td></tr>'}
+      </tbody></table></div>
+    </details>
+  </section>`;
+
+  app.querySelectorAll('[data-src]').forEach(b => b.addEventListener('click', () => { state.src = b.dataset.src; app.querySelectorAll('[data-src]').forEach(x => x.setAttribute('aria-pressed', x === b)); drawMap(q); }));
+  app.querySelectorAll('[data-view]').forEach(b => b.addEventListener('click', () => { state.view = b.dataset.view; app.querySelectorAll('[data-view]').forEach(x => x.setAttribute('aria-pressed', x === b)); drawAnswer(q); drawTimeline(q); }));
+  const yr = document.getElementById('year');
+  yr.addEventListener('input', () => setYear(q, +yr.value));
+  document.getElementById('town').addEventListener('change', e => { state.focus = e.target.value; drawTimeline(q); drawEvidence(q); drawMap(q); });
+  app.querySelectorAll('input[name=choice]').forEach(r => r.addEventListener('change', () => { document.getElementById('srcField').hidden = r.value !== 'source' || !r.checked; }));
+  document.getElementById('saveBtn').addEventListener('click', () => saveDecision(q));
+  drawMap(q); drawTimeline(q); drawAnswer(q); drawEvidence(q);
+}
+function nextId(id) { const i = Q.findIndex(q => q.id === id); return Q[(i + 1) % Q.length].id; }
+function setYear(q, y) {
+  state.year = y;
+  const yr = document.getElementById('year'); if (yr) yr.value = y;
+  const out = document.getElementById('yearOut'); if (out) out.textContent = y;
+  drawMap(q); moveMarkers(q);
+}
+
+// ---------- map ----------
+function drawMap(q) {
+  const bm = B.basemap, y = state.year, inQ = new Set(q.towns);
+  const dots = Object.entries(B.towns).map(([n, t]) => {
+    const c = holderAt(n, state.src, y);
+    const on = inQ.has(n), focus = n === state.focus;
+    return `<circle cx="${t.x}" cy="${t.y}" r="${focus ? 9 : on ? 7 : 4.5}" style="fill:${fillFor(c, y)};stroke:${c === 'NONE' || c == null ? 'var(--faint)' : 'var(--dot-ring)'};stroke-width:${focus ? 3 : 1.5};${c === 'NONE' || c == null ? 'stroke-dasharray:2 2;' : ''}opacity:${on ? 1 : 'var(--dim)'}" data-town="${esc(n)}"></circle>`;
+  }).join('');
+  const f = B.towns[state.focus];
+  const focusLabel = f ? `<text x="${f.x + 13}" y="${f.y + 4}" style="font: 600 15px var(--sans); fill: var(--ink); paint-order: stroke; stroke: var(--land); stroke-width: 4px">${esc(state.focus)}</text>` : '';
+  document.getElementById('mapbox').innerHTML = `<svg viewBox="0 0 ${bm.w} ${bm.h}" role="img" aria-label="Map of ${q.towns.length} towns in this question, colored by ${state.src} for ${y}">
+    <defs>${patterns}</defs>
+    <rect width="${bm.w}" height="${bm.h}" style="fill: var(--water)"></rect>
+    <path d="${bm.land}" style="fill: var(--land); stroke: var(--coast); stroke-width: 1"></path>
+    <path d="${bm.lakes}" style="fill: var(--water)"></path>
+    <path d="${bm.rivers}" style="fill: none; stroke: var(--river); stroke-width: 1.2"></path>
+    ${dots}${focusLabel}</svg><div class="tip" id="tip" hidden></div>`;
+  const svg = document.querySelector('#mapbox svg'), tip = document.getElementById('tip');
+  svg.addEventListener('mousemove', e => {
+    const n = e.target.dataset && e.target.dataset.town;
+    if (!n) { tip.hidden = true; return; }
+    const rows = ['OHM', 'CShapes', 'Cliopatria'].map(s => `<div>${s === 'OHM' ? 'OpenHistoricalMap' : s}: ${esc(label(holderAt(n, s, state.year)))}</div>`).join('');
+    tip.innerHTML = `<b>${esc(n)}, ${state.year}</b>${rows}`;
+    const box = document.getElementById('mapbox').getBoundingClientRect();
+    tip.hidden = false;
+    tip.style.left = Math.min(e.clientX - box.left + 14, box.width - 270) + 'px';
+    tip.style.top = (e.clientY - box.top + 14) + 'px';
+  });
+  svg.addEventListener('mouseleave', () => { tip.hidden = true; });
+  svg.addEventListener('click', e => {
+    const n = e.target.dataset && e.target.dataset.town;
+    if (n && inQ.has(n)) { state.focus = n; document.getElementById('town').value = n; drawTimeline(q); drawEvidence(q); drawMap(q); }
+  });
+  // legend: holders shown for question towns
+  const seen = new Map();
+  q.towns.forEach(n => { const c = holderAt(n, state.src, y); const k = c + '|' + underOverlord(c || '', y); if (!seen.has(k)) seen.set(k, c); });
+  document.getElementById('legend').innerHTML = `<span class="muted">${state.src === 'OHM' ? 'OpenHistoricalMap' : state.src} in ${y}:</span>` +
+    [...seen.values()].map(c => `<span><i class="sw" style="${cssFill(c, y)}"></i>${esc(label(c))}</span>`).join('') +
+    `<span class="muted">· other towns faded</span>`;
+}
+
+// ---------- timeline ----------
+function drawTimeline(q) {
+  const [w0, w1] = q.window, span = w1 + 1 - w0;
+  const pct = y => ((Math.max(w0, Math.min(w1 + 1, y)) - w0) / span * 100);
+  const t = state.focus;
+  const runsBar = (runs) => runs.filter(([a, b]) => b >= w0 && a <= w1).map(([a, b, c]) => {
+    const x0 = pct(a), x1 = pct(b + 1);
+    return `<div class="bar" style="left:${x0}%;width:calc(${x1 - x0}% - 2px);${cssFill(c, a)}" title="${esc(label(c))}, ${a}–${b}" data-y="${Math.max(a, w0)}"><span class="lab">${esc(label(c))}</span></div>`;
+  }).join('');
+  const segs = (q[state.view === 'actual' && q.actual ? 'actual' : 'legal'] || []);
+  // lanes for overlapping suggestion segments
+  const lanes = [];
+  segs.forEach(s => { let i = lanes.findIndex(l => l.every(o => s.x0 >= o.x1 || s.x1 <= o.x0)); if (i < 0) { lanes.push([]); i = lanes.length - 1; } lanes[i].push(s); });
+  const sugg = `<div class="bars tall" style="height:${lanes.length * 32 - 4}px">${lanes.map((l, i) => l.map(s => {
+    const x0 = pct(s.x0), x1 = pct(s.x1);
+    return `<div class="bar" style="top:${i * 32}px;left:${x0}%;width:calc(${Math.max(x1 - x0, 0.8)}% - 2px);${cssFill(s.holder, s.x0)}" title="${esc(label(s.holder))}: ${esc(s.from)} to ${esc(s.to)}${s.note ? ' — ' + esc(s.note) : ''}" data-y="${Math.floor(Math.max(s.x0, w0))}"><span class="lab">${esc(label(s.holder))}</span></div>`;
+  }).join('')).join('')}<div class="marker" data-marker></div></div>`;
+  const ticks = [];
+  const step = span > 60 ? 10 : span > 25 ? 5 : span > 10 ? 2 : 1;
+  for (let y = Math.ceil(w0 / step) * step; y <= w1; y += step) ticks.push(`<span style="left:${pct(y)}%">${y}</span>`);
+  const src = [['OHM', 'OpenHistoricalMap', 'day-level dates'], ['CShapes', 'CShapes-Europe', 'one owner per year'], ['Cliopatria', 'Cliopatria', 'one owner per year']];
+  document.getElementById('timeline').innerHTML = `<div class="tlgrid">
+    <div></div><div class="axis num">${ticks.join('')}</div>
+    ${src.map(([k, name, sub]) => `<div class="tllab">${name}<small>${sub}</small></div><div class="bars">${runsBar(B.towns[t].src[k])}<div class="marker" data-marker></div></div>`).join('')}
+    <div class="sep"></div>
+    <div class="tllab">Suggested<small>${state.view === 'actual' && q.actual ? 'actual control' : 'legal title'}</small></div>${sugg}
+  </div>`;
+  document.querySelectorAll('#timeline .bar').forEach(b => b.addEventListener('click', () => setYear(q, +b.dataset.y)));
+  moveMarkers(q);
+}
+function moveMarkers(q) {
+  const [w0, w1] = q.window, span = w1 + 1 - w0;
+  const inWin = state.year >= w0 && state.year <= w1;
+  document.querySelectorAll('[data-marker]').forEach(m => { m.hidden = !inWin; m.style.left = `calc(${((state.year + 0.5 - w0) / span) * 100}% - 1px)`; });
+}
+
+// ---------- answer ----------
+function drawAnswer(q) {
+  const segs = state.view === 'actual' && q.actual ? q.actual : q.legal;
+  const evLink = id => { const e = B.evidence[id]; return e ? `<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.title)}</a>` : ''; };
+  document.getElementById('answer').innerHTML = `<ol>${segs.map(s => `<li><i class="sw" style="${cssFill(s.holder, s.x0)}"></i><div>
+    <div class="w">${esc(label(s.holder))}</div>
+    <div class="d num">${esc(fmt(s.from))} to ${String(s.to) === '1900' ? '1900 and after' : esc(fmt(s.to))}${s.note ? ' · ' + esc(s.note) : ''}</div>
+    ${s.ev.length ? `<div class="d">${s.ev.map(evLink).join(' · ')}</div>` : ''}
+  </div></li>`).join('')}</ol>`;
+}
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+function fmt(s) {
+  const m = String(s).match(/^(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?$/);
+  if (!m) return String(s);
+  if (m[3]) return `${MONTHS[+m[2] - 1]} ${+m[3]}, ${m[1]}`;
+  if (m[2]) return `${MONTHS[+m[2] - 1]} ${m[1]}`;
+  return m[1];
+}
+
+// ---------- evidence ----------
+function drawEvidence(q) {
+  const t = state.focus, [w0, w1] = q.window;
+  const says = k => B.towns[t].src[k].filter(([a, b]) => b >= w0 && a <= w1).map(([a, b, c]) => `${label(c)} ${Math.max(a, w0)}–${Math.min(b, w1)}`).join('; ');
+  const cards = q.evidence.map(id => { const e = B.evidence[id]; return `<article class="ev"><div class="k">${esc(e.kind)} · ${esc(fmt(e.date))}</div><div class="t">${esc(e.title)}</div><a href="${esc(e.url)}" target="_blank" rel="noopener">Read about it</a></article>`; });
+  const data = [['OHM', 'OpenHistoricalMap'], ['CShapes', 'CShapes-Europe'], ['Cliopatria', 'Cliopatria']].map(([k, n]) => `<article class="ev data"><div class="k">Dataset · ${esc(t)}</div><div class="t">${n}</div><div class="s">${esc(says(k))}</div><div class="s">Track record: ${esc(B.track[k])}</div></article>`);
+  document.getElementById('evidence').innerHTML = cards.concat(data).join('');
+}
+
+// ---------- decisions ----------
+function saveDecision(q) {
+  const choice = (app.querySelector('input[name=choice]:checked') || {}).value;
+  const msg = document.getElementById('savedMsg');
+  if (!choice) { msg.style.color = 'var(--expert)'; msg.textContent = 'Choose an option first.'; return; }
+  const d = { choice, note: document.getElementById('note').value.trim(), at: new Date().toISOString() };
+  if (choice === 'source') d.source = document.getElementById('srcPick').value;
+  if (choice === 'approve') d.answer = { legal: q.legal.map(s => ({ holder: s.holder, from: s.from, to: s.to })), actual: q.actual ? q.actual.map(s => ({ holder: s.holder, from: s.from, to: s.to })) : null };
+  saved.decisions[q.id] = d;
+  const ok = persist();
+  msg.style.color = ok ? 'var(--ready)' : 'var(--expert)';
+  msg.textContent = ok ? 'Saved in this browser. Download your decisions to send them.' : 'This browser would not save it. Download your decisions before leaving.';
+  const row = app.querySelector('.qhead .row');
+  if (row && !row.querySelector('.s-done')) row.insertAdjacentHTML('beforeend', decidedChip(q.id));
+}
+
+// ---------- rules ----------
+function renderRules() {
+  const counts = {}; Q.forEach(q => { if (q.rule) counts[q.rule] = (counts[q.rule] || 0) + 1; });
+  app.innerHTML = `<section class="head"><div><h1>Rules</h1><p>Some disagreements are not about facts but about definitions. Decide these once; each rule settles every question of its kind. Your choices are saved with your decisions.</p></div></section>
+  <div class="rules">${B.rules.map(r => {
+    const sel = r.id in saved.rules ? saved.rules[r.id] : r.default;
+    return `<section class="card"><h2>${esc(r.q)}</h2><div class="muted">${esc(r.why)}</div>
+      <fieldset class="opts"><legend class="muted">Choose one</legend>${r.options.map((o, i) => `<label class="opt"><input type="radio" name="r-${r.id}" value="${i}" ${sel === i ? 'checked' : ''}><span>${esc(o)}${i === r.default ? ' <small>Suggested default</small>' : ''}</span></label>`).join('')}</fieldset>
+      ${counts[r.id] ? `<div class="muted" style="font-size:0.88rem">Settles ${counts[r.id]} question${counts[r.id] === 1 ? '' : 's'}: ${Q.filter(q => q.rule === r.id).map(q => `<a href="#q-${q.id}">${esc(q.title)}</a>`).join(', ')}</div>` : ''}
+    </section>`; }).join('')}</div>`;
+  app.querySelectorAll('.rules input[type=radio]').forEach(inp => inp.addEventListener('change', () => { saved.rules[inp.name.slice(2)] = +inp.value; persist(); }));
+}
+
+// ---------- settled automatically ----------
+function renderAuto() {
+  const row = c => `<div><div class="num muted">${c.start === c.end ? c.start : c.start + '–' + c.end}</div><div><b>${esc(c.towns.slice(0, 6).join(', '))}${c.towns.length > 6 ? ` and ${c.towns.length - 6} more` : ''}</b><div class="muted" style="font-size:0.88rem">${c.claims.map(x => `${x.source === 'OHM' ? 'OpenHistoricalMap' : x.source}: ${esc(label(x.holder))}`).join(' · ')}</div></div></div>`;
+  app.innerHTML = `<section class="head"><div><h1>Settled automatically</h1><p>In these ${B.timing.length} cases the sources agree on who held the town and differ only by a year on when. Following the timing rule, the most precise date is used, which is usually OpenHistoricalMap's exact day.</p></div></section>
+  <div class="list">${B.timing.map(row).join('')}</div>
+  ${B.other.length ? `<section class="head"><div><h2>Not grouped yet</h2><p>Small disagreements that don't belong to any question.</p></div></section><div class="list">${B.other.map(row).join('')}</div>` : ''}`;
+}
+
+// ---------- about ----------
+function renderAbout() {
+  app.innerHTML = `<section class="head"><div><h1>About the data</h1></div></section>
+  <div class="prose">
+    <p><b>What was compared.</b> For ${Object.keys(B.towns).length} towns across the Balkans, Romania and Bessarabia, three datasets were asked who held the town on July 1 of every year from 1815 to 1900: <a href="https://www.openhistoricalmap.org" target="_blank" rel="noopener">OpenHistoricalMap</a> (a community map with exact dates), <a href="https://icr.ethz.ch/data/cshapes/" target="_blank" rel="noopener">CShapes-Europe</a> (ETH Zurich; fully independent states only, one owner per year) and <a href="https://github.com/Seshat-Global-History-Databank/cliopatria" target="_blank" rel="noopener">Cliopatria</a> (Seshat; coarse shapes, one owner per year).</p>
+    <p><b>How questions were formed.</b> Where the sources disagreed, the towns and years with the same disagreement were grouped, then grouped again by cause into ${Q.length} questions. Each suggested answer was drafted from treaties and well-documented events, linked on each question. Confidence is marked medium where a date needs checking by someone who knows the period.</p>
+    <p><b>Towns, not borders.</b> Checking towns catches who held which area and when. It does not check exactly where a border line ran between towns.</p>
+    <p><b>Your decisions stay in this browser</b> until you download them. Use "Download my decisions" at the top and send the file back. Nothing you choose here is shared with other viewers.</p>
+    <p class="muted">Built ${esc(B.built)}.</p>
+  </div>`;
+}
+
+// ---------- export ----------
+document.getElementById('exportBtn').addEventListener('click', async () => {
+  const payload = JSON.stringify({ reviewer: saved.reviewer || '', exported: new Date().toISOString(), decisions: saved.decisions, rules: saved.rules }, null, 2);
+  const name = `balkan-borders-decisions${saved.reviewer ? '-' + saved.reviewer.toLowerCase().replace(/[^a-z0-9]+/g, '-') : ''}.json`;
+  const area = document.getElementById('exportArea');
+  const showCopy = (why) => {
+    area.hidden = false;
+    area.innerHTML = `<section class="card exportbox" style="margin-bottom:24px"><h2>Your decisions</h2><p class="muted" style="margin:0">${esc(why)} Copy this text and send it back.</p><textarea id="exportText" readonly>${esc(payload)}</textarea><div><button class="btn" id="copyBtn" type="button">Copy</button> <span class="saved" id="copyMsg" role="status"></span></div></section>`;
+    document.getElementById('copyBtn').addEventListener('click', async () => {
+      const ta = document.getElementById('exportText');
+      try { await navigator.clipboard.writeText(payload); document.getElementById('copyMsg').textContent = 'Copied.'; }
+      catch (e) { ta.focus(); ta.select(); document.getElementById('copyMsg').textContent = 'Selected. Press Ctrl+C or Cmd+C to copy.'; }
+    });
+    area.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+  let dl = null;
+  try { dl = window.claude && window.claude.use ? await window.claude.use('downloads') : null; } catch (e) { dl = null; }
+  if (!dl) return showCopy('Downloading isn\'t available here.');
+  try { await dl.save({ filename: name, data: payload }); area.hidden = true; }
+  catch (e) { if (e && e.code === 'declined') return; showCopy('The download didn\'t go through.'); }
+});
+
+route();
+})();
+</script>

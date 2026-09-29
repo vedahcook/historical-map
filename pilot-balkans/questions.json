@@ -1,0 +1,1607 @@
+{
+ "questions": [
+  {
+   "id": "danube",
+   "status": "rule",
+   "rule": "vassal",
+   "title": "Wallachia and Moldavia before 1878",
+   "question": "Should Wallachia, Moldavia and the United Principalities show as their own states before 1878?",
+   "raw": [
+    "c001",
+    "c005",
+    "c007",
+    "c010",
+    "c013",
+    "c038",
+    "c039",
+    "c036",
+    "c047"
+   ],
+   "problem": "OHM and Cliopatria show self-governing principalities. CShapes counts only fully independent states, so it shows the Ottoman Empire until 1878.",
+   "legal": [
+    {
+     "holder": "OTT",
+     "from": "1815",
+     "to": "1878-07-13",
+     "note": "Overlord of self-governing principalities",
+     "ev": [
+      "adrianople1829",
+      "paris1856"
+     ]
+    },
+    {
+     "holder": "ROM",
+     "from": "1878-07-13",
+     "to": "1900",
+     "note": "Independent",
+     "ev": [
+      "berlin1878"
+     ]
+    }
+   ],
+   "actual": [
+    {
+     "holder": "WAL",
+     "from": "1815",
+     "to": "1859-02-05",
+     "note": "Wallachia and Moldavia, each self-governing",
+     "ev": [
+      "adrianople1829"
+     ]
+    },
+    {
+     "holder": "ROM",
+     "from": "1859-02-05",
+     "to": "1900",
+     "note": "United Principalities, Romania from 1881",
+     "ev": [
+      "union1859",
+      "berlin1878"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "conf_note": "The facts are not in doubt; which map to show is a rule decision.",
+   "why": [
+    "CShapes records only fully independent states.",
+    "Brăila was an Ottoman fortress until the Treaty of Adrianople (1829) returned it to Wallachia; CShapes and Cliopatria draw it coarsely."
+   ],
+   "evidence": [
+    "adrianople1829",
+    "paris1856",
+    "union1859",
+    "berlin1878"
+   ]
+  },
+  {
+   "id": "occupations",
+   "status": "rule",
+   "rule": "control",
+   "title": "Russian and Austrian occupations of the principalities",
+   "question": "Should the \"actual control\" map show the foreign occupations of Wallachia and Moldavia?",
+   "raw": [
+    "c011",
+    "c014",
+    "c025",
+    "c027",
+    "c054",
+    "c073",
+    "c063",
+    "c101"
+   ],
+   "problem": "CShapes and Cliopatria show Russia (1828–34, 1848–55) and Austria (1856) as holders; OHM keeps the principalities throughout.",
+   "legal": [
+    {
+     "holder": "WAL",
+     "from": "1828",
+     "to": "1859-02-05",
+     "note": "Self-governing, under Ottoman overlordship throughout",
+     "ev": [
+      "adrianople1829",
+      "baltaliman1849",
+      "paris1856"
+     ]
+    }
+   ],
+   "actual": [
+    {
+     "holder": "RUS",
+     "from": "1828",
+     "to": "1834",
+     "note": "Russian occupation after the 1828–29 war",
+     "ev": [
+      "adrianople1829"
+     ]
+    },
+    {
+     "holder": "WAL",
+     "from": "1834",
+     "to": "1848",
+     "note": "",
+     "ev": []
+    },
+    {
+     "holder": "RUS",
+     "from": "1848",
+     "to": "1851",
+     "note": "Russian and Ottoman troops after the 1848 revolutions",
+     "ev": [
+      "baltaliman1849"
+     ]
+    },
+    {
+     "holder": "WAL",
+     "from": "1851",
+     "to": "1853-07",
+     "note": "",
+     "ev": []
+    },
+    {
+     "holder": "RUS",
+     "from": "1853-07",
+     "to": "1854-08",
+     "note": "Russian occupation at the start of the Crimean War",
+     "ev": [
+      "principalities"
+     ]
+    },
+    {
+     "holder": "AUT",
+     "from": "1854-08",
+     "to": "1857-03",
+     "note": "Austrian occupation",
+     "ev": [
+      "principalities"
+     ]
+    },
+    {
+     "holder": "WAL",
+     "from": "1857-03",
+     "to": "1859-02-05",
+     "note": "",
+     "ev": []
+    }
+   ],
+   "confidence": "medium",
+   "conf_note": "The occupations are well documented, but the month each began and ended needs checking by someone who knows the period.",
+   "why": [
+    "OHM records legal title only.",
+    "Cliopatria and CShapes mix legal title and military occupation, and use whole years."
+   ],
+   "evidence": [
+    "adrianople1829",
+    "baltaliman1849",
+    "principalities",
+    "paris1856"
+   ]
+  },
+  {
+   "id": "serbia",
+   "status": "rule",
+   "rule": "vassal",
+   "title": "Serbia 1833–1878",
+   "question": "Should self-governing Serbia show as its own state before its independence in 1878?",
+   "raw": [
+    "c002"
+   ],
+   "problem": "OHM and Cliopatria show Serbia as its own state; CShapes shows the Ottoman Empire until 1878.",
+   "legal": [
+    {
+     "holder": "OTT",
+     "from": "1833",
+     "to": "1878-07-13",
+     "note": "Overlord of self-governing Serbia",
+     "ev": [
+      "serbia1830"
+     ]
+    },
+    {
+     "holder": "SRB",
+     "from": "1878-07-13",
+     "to": "1900",
+     "note": "Independent",
+     "ev": [
+      "berlin1878"
+     ]
+    }
+   ],
+   "actual": [
+    {
+     "holder": "SRB",
+     "from": "1833",
+     "to": "1900",
+     "note": "Self-governing, independent from 1878",
+     "ev": [
+      "serbia1830",
+      "berlin1878"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "conf_note": "Only the rule decides this one.",
+   "why": [
+    "CShapes records only fully independent states."
+   ],
+   "evidence": [
+    "serbia1830",
+    "berlin1878"
+   ]
+  },
+  {
+   "id": "serbia-early",
+   "status": "expert",
+   "title": "When does self-governing Serbia begin?",
+   "question": "Did Serbia govern itself from 1815, from 1830, or only from 1833 as OHM has it?",
+   "raw": [
+    "c003"
+   ],
+   "towns": [
+    "Belgrade",
+    "Kragujevac",
+    "Kruševac",
+    "Negotin",
+    "Smederevo",
+    "Užice",
+    "Zaječar",
+    "Čačak",
+    "Šabac"
+   ],
+   "problem": "OHM starts self-governing Serbia in 1833, Cliopatria before 1816, and CShapes only at independence in 1878.",
+   "legal": [
+    {
+     "holder": "OTT",
+     "from": "1815",
+     "to": "1878-07-13",
+     "note": "Ottoman sovereignty throughout; Serbian self-rule recognized in 1830",
+     "ev": [
+      "serbia1830"
+     ]
+    }
+   ],
+   "actual": [
+    {
+     "holder": "SRB",
+     "from": "1815",
+     "to": "1900",
+     "note": "Core districts around Belgrade: self-governing after the Second Serbian Uprising (1815)",
+     "ev": [
+      "serbia1830"
+     ]
+    },
+    {
+     "holder": "OTT",
+     "from": "1815",
+     "to": "1833",
+     "note": "Negotin, Zaječar and Kruševac: added to Serbia only in 1833",
+     "ev": [
+      "serbia1830"
+     ]
+    }
+   ],
+   "confidence": "medium",
+   "conf_note": "Historians date Serbian self-rule differently (1815, 1817, 1830). An expert should pick the date and check which districts it covered.",
+   "why": [
+    "OHM uses the 1833 borders for the whole period.",
+    "Cliopatria extends early Serbia too far south (see the Niš question)."
+   ],
+   "evidence": [
+    "serbia1830",
+    "berlin1878"
+   ]
+  },
+  {
+   "id": "nis",
+   "status": "ready",
+   "title": "Niš, Prokuplje and Kuršumlija before 1878",
+   "question": "Were Niš, Prokuplje and Kuršumlija Serbian before 1878?",
+   "raw": [
+    "c003"
+   ],
+   "towns": [
+    "Niš",
+    "Prokuplje",
+    "Kuršumlija"
+   ],
+   "problem": "Cliopatria places these towns in Serbia from 1816. OHM and CShapes keep them Ottoman until 1878.",
+   "legal": [
+    {
+     "holder": "OTT",
+     "from": "1815",
+     "to": "1878-07-13",
+     "note": "",
+     "ev": []
+    },
+    {
+     "holder": "SRB",
+     "from": "1878-07-13",
+     "to": "1900",
+     "note": "Taken by Serbia in January 1878, confirmed at Berlin",
+     "ev": [
+      "serbwar1878",
+      "berlin1878"
+     ]
+    }
+   ],
+   "actual": null,
+   "confidence": "high",
+   "conf_note": "Both change dates come from the war record and the Treaty of Berlin.",
+   "why": [
+    "Cliopatria draws early Serbia too large."
+   ],
+   "evidence": [
+    "serbwar1878",
+    "berlin1878"
+   ]
+  },
+  {
+   "id": "bulgaria-1885",
+   "status": "ready",
+   "rule": "vassal",
+   "title": "Bulgaria after 1885 is missing from OHM",
+   "question": "Who held Bulgaria from the 1885 unification to 1900?",
+   "raw": [
+    "c004",
+    "c021",
+    "c046"
+   ],
+   "problem": "OHM ends its Bulgaria record in September 1885 and shows plain Ottoman territory afterward. CShapes and Cliopatria show Bulgaria.",
+   "legal": [
+    {
+     "holder": "OTT",
+     "from": "1885-09-18",
+     "to": "1900",
+     "note": "Overlord until Bulgarian independence in 1908",
+     "ev": [
+      "berlin1878",
+      "tophane1886"
+     ]
+    }
+   ],
+   "actual": [
+    {
+     "holder": "BUL",
+     "from": "1885-09-18",
+     "to": "1900",
+     "note": "United Principality of Bulgaria (with Eastern Rumelia)",
+     "ev": [
+      "unification1885",
+      "tophane1886"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "conf_note": "Well documented. OHM is simply missing the record.",
+   "why": [
+    "OHM has no Bulgaria record between September 1885 and 1908."
+   ],
+   "evidence": [
+    "berlin1878",
+    "unification1885",
+    "tophane1886"
+   ]
+  },
+  {
+   "id": "rumelia",
+   "status": "rule",
+   "rule": "vassal",
+   "title": "Eastern Rumelia 1878–1885",
+   "question": "Should self-governing Eastern Rumelia show as its own unit?",
+   "raw": [
+    "c040"
+   ],
+   "problem": "OHM shows Eastern Rumelia as a self-governing province. CShapes and Cliopatria show the Ottoman Empire.",
+   "legal": [
+    {
+     "holder": "OTT",
+     "from": "1878-07-13",
+     "to": "1885-09-18",
+     "note": "Overlord",
+     "ev": [
+      "berlin1878"
+     ]
+    }
+   ],
+   "actual": [
+    {
+     "holder": "ERU",
+     "from": "1878-07-13",
+     "to": "1885-09-18",
+     "note": "Self-governing Ottoman province",
+     "ev": [
+      "berlin1878",
+      "rumelia"
+     ]
+    },
+    {
+     "holder": "BUL",
+     "from": "1885-09-18",
+     "to": "1900",
+     "note": "United with Bulgaria",
+     "ev": [
+      "unification1885"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "conf_note": "Only the rule decides this one.",
+   "why": [
+    "CShapes and Cliopatria do not record self-governing provinces."
+   ],
+   "evidence": [
+    "berlin1878",
+    "rumelia",
+    "unification1885"
+   ]
+  },
+  {
+   "id": "kardzhali",
+   "status": "expert",
+   "title": "Kyustendil, Kardzhali and Smolyan",
+   "question": "Which side of the Bulgarian–Ottoman line were these three towns on after 1878?",
+   "raw": [
+    "c032",
+    "c071",
+    "c096",
+    "c080"
+   ],
+   "problem": "CShapes puts Kyustendil in the Ottoman Empire. Cliopatria puts Kardzhali and Smolyan in Bulgaria.",
+   "legal": [
+    {
+     "holder": "BUL",
+     "from": "1878-07-13",
+     "to": "1900",
+     "note": "Kyustendil: Bulgaria from the Treaty of Berlin",
+     "ev": [
+      "berlin1878"
+     ]
+    },
+    {
+     "holder": "OTT",
+     "from": "1886-04-05",
+     "to": "1900",
+     "note": "Kardzhali: Ottoman under the Tophane Agreement",
+     "ev": [
+      "tophane1886"
+     ]
+    },
+    {
+     "holder": "OTT",
+     "from": "1815",
+     "to": "1900",
+     "note": "Smolyan: Ottoman until 1912",
+     "ev": []
+    }
+   ],
+   "actual": null,
+   "confidence": "medium",
+   "conf_note": "Kyustendil and Smolyan are clear. Who held Kardzhali between 1878 and 1886 needs an expert.",
+   "why": [
+    "CShapes and Cliopatria draw this border coarsely."
+   ],
+   "evidence": [
+    "berlin1878",
+    "tophane1886"
+   ]
+  },
+  {
+   "id": "ionian",
+   "status": "rule",
+   "rule": "vassal",
+   "title": "Ionian Islands 1815–1864",
+   "question": "Show the Ionian Islands as their own state, or as British?",
+   "raw": [
+    "c006",
+    "c050",
+    "c088",
+    "c067",
+    "c087"
+   ],
+   "problem": "OHM shows the United States of the Ionian Islands. CShapes and Cliopatria show the United Kingdom. Cliopatria also keeps the UK after the 1864 union with Greece.",
+   "legal": [
+    {
+     "holder": "ION",
+     "from": "1815-11",
+     "to": "1864-05-28",
+     "note": "British protectorate",
+     "ev": [
+      "paris1815"
+     ]
+    },
+    {
+     "holder": "GRE",
+     "from": "1864-05-28",
+     "to": "1900",
+     "note": "United with Greece",
+     "ev": [
+      "london1864"
+     ]
+    }
+   ],
+   "actual": [
+    {
+     "holder": "UK",
+     "from": "1815",
+     "to": "1864-05-28",
+     "note": "British administration",
+     "ev": [
+      "paris1815"
+     ]
+    },
+    {
+     "holder": "GRE",
+     "from": "1864-05-28",
+     "to": "1900",
+     "note": "",
+     "ev": [
+      "london1864"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "conf_note": "Facts are clear. The rule decides how to show a protectorate.",
+   "why": [
+    "OHM has no record for the islands before November 1815.",
+    "Cliopatria keeps a British claim on some islands until 1869."
+   ],
+   "evidence": [
+    "paris1815",
+    "london1864"
+   ]
+  },
+  {
+   "id": "bosnia",
+   "status": "rule",
+   "rule": "control",
+   "title": "Bosnia and Herzegovina 1878–1900",
+   "question": "Ottoman (legal title) or Austro-Hungarian (actual control)?",
+   "raw": [
+    "c009",
+    "c019",
+    "c034",
+    "c066"
+   ],
+   "problem": "OHM keeps Bosnia Ottoman. CShapes and Cliopatria show Austria-Hungary from 1878.",
+   "legal": [
+    {
+     "holder": "OTT",
+     "from": "1878",
+     "to": "1900",
+     "note": "Ottoman sovereignty until the 1908 annexation",
+     "ev": [
+      "berlin1878"
+     ]
+    }
+   ],
+   "actual": [
+    {
+     "holder": "AUT",
+     "from": "1878-07",
+     "to": "1900",
+     "note": "Occupied and run by Austria-Hungary",
+     "ev": [
+      "berlin1878",
+      "bosnia1878"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "conf_note": "Both views are correct; the rule decides which map shows which.",
+   "why": [
+    "Sources pick different kinds of control."
+   ],
+   "evidence": [
+    "berlin1878",
+    "bosnia1878"
+   ]
+  },
+  {
+   "id": "kotor",
+   "status": "ready",
+   "title": "Bay of Kotor 1815–1900",
+   "question": "Who held Kotor and Herceg Novi?",
+   "raw": [
+    "c008",
+    "c026",
+    "c092"
+   ],
+   "problem": "CShapes shows the Ottoman Empire until 1878 and Montenegro after. Cliopatria shows France until 1819. OHM shows Austria.",
+   "legal": [
+    {
+     "holder": "AUT",
+     "from": "1815-06-09",
+     "to": "1900",
+     "note": "Part of Austrian Dalmatia",
+     "ev": [
+      "vienna1815",
+      "dalmatia"
+     ]
+    }
+   ],
+   "actual": null,
+   "confidence": "high",
+   "conf_note": "Austrian from the Congress of Vienna to 1918.",
+   "why": [
+    "CShapes and Cliopatria draw the coast coarsely."
+   ],
+   "evidence": [
+    "vienna1815",
+    "dalmatia"
+   ]
+  },
+  {
+   "id": "spizza",
+   "status": "ready",
+   "title": "Spič (Sutomore) after 1878",
+   "question": "Who held the Spič coast after 1878?",
+   "raw": [
+    "c051",
+    "c082",
+    "c124"
+   ],
+   "problem": "OHM shows Austria-Hungary. CShapes shows Montenegro. Cliopatria shows the Ottoman Empire, then Montenegro.",
+   "legal": [
+    {
+     "holder": "OTT",
+     "from": "1815",
+     "to": "1878-07-13",
+     "note": "",
+     "ev": []
+    },
+    {
+     "holder": "AUT",
+     "from": "1878-07-13",
+     "to": "1900",
+     "note": "Given to Austria-Hungary (Dalmatia) by the Treaty of Berlin",
+     "ev": [
+      "berlin1878"
+     ]
+    }
+   ],
+   "actual": null,
+   "confidence": "high",
+   "conf_note": "The Treaty of Berlin names Spizza explicitly.",
+   "why": [
+    "A small strip that coarse sources miss."
+   ],
+   "evidence": [
+    "berlin1878",
+    "dalmatia"
+   ]
+  },
+  {
+   "id": "zemun",
+   "status": "ready",
+   "title": "Zemun 1815–1900",
+   "question": "Was Zemun Serbian or Habsburg?",
+   "raw": [
+    "c018",
+    "c043"
+   ],
+   "problem": "CShapes shows the Ottoman Empire, then Serbia. Cliopatria shows Serbia. OHM shows Austria.",
+   "legal": [
+    {
+     "holder": "AUT",
+     "from": "1815",
+     "to": "1900",
+     "note": "Habsburg border town across the river from Belgrade",
+     "ev": [
+      "frontier"
+     ]
+    }
+   ],
+   "actual": null,
+   "confidence": "high",
+   "conf_note": "Habsburg until 1918.",
+   "why": [
+    "Zemun sits across the river from Belgrade; coarse borders put it on the wrong side."
+   ],
+   "evidence": [
+    "frontier"
+   ]
+  },
+  {
+   "id": "severin",
+   "status": "ready",
+   "title": "Turnu Severin 1815–1900",
+   "question": "Was Turnu Severin in Wallachia or Serbia?",
+   "raw": [
+    "c042",
+    "c044",
+    "c045",
+    "c058",
+    "c074",
+    "c102"
+   ],
+   "problem": "Cliopatria places it in Serbia. OHM and CShapes place it on the Wallachian (Romanian) side.",
+   "legal": [
+    {
+     "holder": "WAL",
+     "from": "1815",
+     "to": "1859-02-05",
+     "note": "",
+     "ev": [
+      "adrianople1829"
+     ]
+    },
+    {
+     "holder": "ROM",
+     "from": "1859-02-05",
+     "to": "1900",
+     "note": "",
+     "ev": [
+      "union1859"
+     ]
+    }
+   ],
+   "actual": null,
+   "confidence": "high",
+   "conf_note": "The town is on the north bank of the Danube, in Wallachia.",
+   "why": [
+    "Cliopatria draws the Danube border coarsely."
+   ],
+   "evidence": [
+    "adrianople1829",
+    "union1859"
+   ]
+  },
+  {
+   "id": "suceava",
+   "status": "ready",
+   "title": "Suceava (Bukovina) 1815–1900",
+   "question": "Was Suceava Austrian or Moldavian?",
+   "raw": [
+    "c028",
+    "c052",
+    "c059",
+    "c075",
+    "c076",
+    "c103"
+   ],
+   "problem": "Cliopatria places it in Moldavia, Russia or Romania at different times. OHM and CShapes show Austria.",
+   "legal": [
+    {
+     "holder": "AUT",
+     "from": "1815",
+     "to": "1900",
+     "note": "Part of Austrian Bukovina",
+     "ev": [
+      "bukovina"
+     ]
+    }
+   ],
+   "actual": null,
+   "confidence": "high",
+   "conf_note": "Austrian from 1775 to 1918.",
+   "why": [
+    "Cliopatria draws the Bukovina border coarsely."
+   ],
+   "evidence": [
+    "bukovina"
+   ]
+  },
+  {
+   "id": "montenegro",
+   "status": "rule",
+   "rule": "control",
+   "title": "Montenegro before 1878",
+   "question": "Show Montenegro as independent before the powers recognized it in 1878?",
+   "raw": [
+    "c015",
+    "c024",
+    "c109"
+   ],
+   "problem": "OHM shows Montenegro throughout. CShapes shows the Ottoman Empire until 1878. Cliopatria shows the Ottoman Empire until 1852.",
+   "legal": [
+    {
+     "holder": "OTT",
+     "from": "1815",
+     "to": "1878-07-13",
+     "note": "Claimed by the Ottoman Empire",
+     "ev": []
+    },
+    {
+     "holder": "MNE",
+     "from": "1878-07-13",
+     "to": "1900",
+     "note": "Independence recognized",
+     "ev": [
+      "berlin1878"
+     ]
+    }
+   ],
+   "actual": [
+    {
+     "holder": "MNE",
+     "from": "1815",
+     "to": "1900",
+     "note": "Self-ruling under its prince-bishops, a principality from 1852",
+     "ev": [
+      "montenegro"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "conf_note": "Facts are clear; the rule decides which map shows which.",
+   "why": [
+    "Sources pick different kinds of control."
+   ],
+   "evidence": [
+    "montenegro",
+    "berlin1878"
+   ]
+  },
+  {
+   "id": "montenegro-towns",
+   "status": "expert",
+   "title": "When did Nikšić, Podgorica, Bar, Kolašin and Ulcinj become Montenegrin?",
+   "question": "When did each of these towns become Montenegrin?",
+   "raw": [
+    "c022",
+    "c031",
+    "c091"
+   ],
+   "problem": "OHM puts Ulcinj in Montenegro in 1878, two years early. Cliopatria shows Nikšić and Kolašin as Montenegrin from 1853 and keeps Podgorica, Bar, Ulcinj and Andrijevica Ottoman until 1885.",
+   "legal": [
+    {
+     "holder": "OTT",
+     "from": "1815",
+     "to": "1878-07-13",
+     "note": "",
+     "ev": []
+    },
+    {
+     "holder": "MNE",
+     "from": "1878-07-13",
+     "to": "1900",
+     "note": "Nikšić, Podgorica, Bar, Andrijevica (Treaty of Berlin)",
+     "ev": [
+      "berlin1878"
+     ]
+    },
+    {
+     "holder": "MNE",
+     "from": "1878-10-04",
+     "to": "1900",
+     "note": "Kolašin",
+     "ev": [
+      "kolasin1878"
+     ]
+    },
+    {
+     "holder": "MNE",
+     "from": "1880-11-23",
+     "to": "1900",
+     "note": "Ulcinj",
+     "ev": [
+      "ulcinj1880"
+     ]
+    }
+   ],
+   "actual": null,
+   "confidence": "medium",
+   "conf_note": "Ulcinj, Podgorica and Kolašin are documented. Andrijevica needs checking.",
+   "why": [
+    "OHM gives Ulcinj the 1878 date of the other towns.",
+    "Cliopatria uses the wrong decades."
+   ],
+   "evidence": [
+    "berlin1878",
+    "kolasin1878",
+    "ulcinj1880"
+   ]
+  },
+  {
+   "id": "greece-start",
+   "status": "expert",
+   "title": "When does Greece begin?",
+   "question": "From which date should the Greek state show: 1822, 1830 or 1832?",
+   "raw": [
+    "c017",
+    "c037",
+    "c061",
+    "c112"
+   ],
+   "problem": "OHM starts Greece in May 1832 (with an Ottoman overlap until August). CShapes starts in 1829–31. Cliopatria starts some towns in 1822 and wrongly includes Crete in 1828–29.",
+   "legal": [
+    {
+     "holder": "OTT",
+     "from": "1815",
+     "to": "1830-02-03",
+     "note": "",
+     "ev": []
+    },
+    {
+     "holder": "GRE",
+     "from": "1830-02-03",
+     "to": "1900",
+     "note": "Independence recognized by the London Protocol; borders fixed in 1832",
+     "ev": [
+      "london1830",
+      "london1832",
+      "constantinople1832"
+     ]
+    }
+   ],
+   "actual": [
+    {
+     "holder": "GRE",
+     "from": "1822",
+     "to": "1900",
+     "note": "Greek provisional government in much of the Peloponnese from 1822, with reconquests in 1825–27",
+     "ev": [
+      "greekwar"
+     ]
+    }
+   ],
+   "confidence": "medium",
+   "conf_note": "The legal dates are clear. Actual control in the 1820s changed town by town and needs an expert.",
+   "why": [
+    "OHM uses the final 1832 borders only.",
+    "Cliopatria extends Greece to Crete for 1828–29, which is wrong."
+   ],
+   "evidence": [
+    "greekwar",
+    "london1830",
+    "london1832",
+    "constantinople1832"
+   ]
+  },
+  {
+   "id": "crete-egypt",
+   "status": "rule",
+   "rule": "vassal",
+   "title": "Crete under Egypt 1830–1840",
+   "question": "Show Egyptian rule over Crete (1830–1840) as its own holder?",
+   "raw": [
+    "c048",
+    "c069"
+   ],
+   "problem": "OHM and CShapes show Egypt. Cliopatria shows the Ottoman Empire, and Greece for 1831–33.",
+   "legal": [
+    {
+     "holder": "OTT",
+     "from": "1830",
+     "to": "1840",
+     "note": "Overlord",
+     "ev": []
+    }
+   ],
+   "actual": [
+    {
+     "holder": "EGY",
+     "from": "1830",
+     "to": "1840-07-15",
+     "note": "Governed by Muhammad Ali of Egypt",
+     "ev": [
+      "london1840"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "conf_note": "Cliopatria's Greek period is an error; the rest is the rule.",
+   "why": [
+    "Cliopatria gives Crete to Greece for 1831–33 by mistake."
+   ],
+   "evidence": [
+    "london1840"
+   ]
+  },
+  {
+   "id": "cretan-state",
+   "status": "rule",
+   "rule": "vassal",
+   "title": "Cretan State from 1898",
+   "question": "Show the self-governing Cretan State as its own unit?",
+   "raw": [
+    "c070"
+   ],
+   "problem": "OHM and Cliopatria show the Cretan State. CShapes shows the Ottoman Empire.",
+   "legal": [
+    {
+     "holder": "OTT",
+     "from": "1898",
+     "to": "1900",
+     "note": "Overlord",
+     "ev": []
+    }
+   ],
+   "actual": [
+    {
+     "holder": "CRT",
+     "from": "1898-12",
+     "to": "1900",
+     "note": "Self-governing under a high commissioner",
+     "ev": [
+      "cretanstate"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "conf_note": "OHM gives only the year (1898); the new state began in December.",
+   "why": [
+    "CShapes records only fully independent states."
+   ],
+   "evidence": [
+    "cretanstate"
+   ]
+  },
+  {
+   "id": "thessaly",
+   "status": "ready",
+   "title": "Thessaly, Arta and Tyrnavos after 1881",
+   "question": "When did Thessaly, Arta and Tyrnavos become Greek?",
+   "raw": [
+    "c053",
+    "c060",
+    "c093",
+    "c098",
+    "c125"
+   ],
+   "towns": [
+    "Kalabaka",
+    "Karditsa",
+    "Larissa",
+    "Trikala",
+    "Volos",
+    "Arta",
+    "Tyrnavos"
+   ],
+   "problem": "OHM leaves Arta and Tyrnavos Ottoman. CShapes keeps Tyrnavos Ottoman. Cliopatria keeps Larissa, Volos and Trikala Ottoman until 1885.",
+   "legal": [
+    {
+     "holder": "OTT",
+     "from": "1815",
+     "to": "1881-07",
+     "note": "",
+     "ev": []
+    },
+    {
+     "holder": "GRE",
+     "from": "1881-07",
+     "to": "1900",
+     "note": "Handed over after the Convention of Constantinople",
+     "ev": [
+      "constantinople1881",
+      "tyrnavos"
+     ]
+    }
+   ],
+   "actual": null,
+   "confidence": "high",
+   "conf_note": "The 1881 convention names these districts.",
+   "why": [
+    "OHM's 1881 border is drawn wrong at Arta and Tyrnavos.",
+    "Cliopatria moves the change to 1885."
+   ],
+   "evidence": [
+    "constantinople1881",
+    "tyrnavos"
+   ]
+  },
+  {
+   "id": "elassona",
+   "status": "ready",
+   "title": "Elassona and Preveza",
+   "question": "Were Elassona and Preveza Greek before 1900?",
+   "raw": [
+    "c012",
+    "c068",
+    "c099"
+   ],
+   "towns": [
+    "Elassona",
+    "Preveza"
+   ],
+   "problem": "Cliopatria puts both towns in Greece from 1834. OHM and CShapes keep them Ottoman.",
+   "legal": [
+    {
+     "holder": "OTT",
+     "from": "1815",
+     "to": "1900",
+     "note": "Both stayed Ottoman until 1912",
+     "ev": []
+    }
+   ],
+   "actual": null,
+   "confidence": "high",
+   "conf_note": "The 1881 border left both towns outside Greece.",
+   "why": [
+    "Cliopatria draws the Greek border too far north."
+   ],
+   "evidence": [
+    "constantinople1881"
+   ]
+  },
+  {
+   "id": "gap1897",
+   "status": "ready",
+   "title": "No country anywhere in the Ottoman lands in 1897",
+   "question": "Who held the Ottoman lands in 1897?",
+   "raw": [
+    "c020",
+    "c046",
+    "c066",
+    "c096",
+    "c110",
+    "c121",
+    "c127"
+   ],
+   "problem": "OHM ends one Ottoman record in \"1897\" and starts the next in \"1898\", leaving the whole year empty.",
+   "legal": [
+    {
+     "holder": "OTT",
+     "from": "1897",
+     "to": "1898",
+     "note": "Ottoman Empire continuously; the Dec 1897 treaty moved only small border strips",
+     "ev": [
+      "constantinople1897"
+     ]
+    }
+   ],
+   "actual": null,
+   "confidence": "high",
+   "conf_note": "A data gap in OHM, not a historical question.",
+   "why": [
+    "Year-only dates in OHM leave a gap."
+   ],
+   "evidence": [
+    "constantinople1897"
+   ]
+  },
+  {
+   "id": "bessarabia",
+   "status": "ready",
+   "title": "Southern Bessarabia 1849–1856",
+   "question": "Russian or Ottoman before the 1856 transfer?",
+   "raw": [
+    "c030"
+   ],
+   "problem": "CShapes shows Russia and the Ottoman Empire at the same time. OHM and Cliopatria show Russia.",
+   "legal": [
+    {
+     "holder": "RUS",
+     "from": "1815",
+     "to": "1856-03-30",
+     "note": "",
+     "ev": []
+    },
+    {
+     "holder": "MOL",
+     "from": "1856-03-30",
+     "to": "1859-02-05",
+     "note": "Transferred to Moldavia by the Treaty of Paris",
+     "ev": [
+      "paris1856"
+     ]
+    }
+   ],
+   "actual": null,
+   "confidence": "high",
+   "conf_note": "The Treaty of Paris dates the change.",
+   "why": [
+    "CShapes has overlapping records here."
+   ],
+   "evidence": [
+    "paris1856"
+   ]
+  },
+  {
+   "id": "ruse-silistra",
+   "status": "ready",
+   "title": "Ruse and Silistra",
+   "question": "Were Ruse and Silistra on the Ottoman or the Wallachian side?",
+   "raw": [
+    "c029",
+    "c035",
+    "c041",
+    "c089",
+    "c055",
+    "c064",
+    "c106"
+   ],
+   "problem": "Cliopatria places both towns in Wallachia or Romania, and in some years Russia or Austria. OHM and CShapes keep them Ottoman until 1878.",
+   "legal": [
+    {
+     "holder": "OTT",
+     "from": "1815",
+     "to": "1878-07-13",
+     "note": "",
+     "ev": []
+    },
+    {
+     "holder": "BUL",
+     "from": "1878-07-13",
+     "to": "1900",
+     "note": "",
+     "ev": [
+      "berlin1878"
+     ]
+    }
+   ],
+   "actual": null,
+   "confidence": "high",
+   "conf_note": "Both towns are on the south bank of the Danube. Russian troops held Silistra for a time after 1829; that belongs to the actual-control map.",
+   "why": [
+    "Cliopatria draws the Danube border on the wrong side."
+   ],
+   "evidence": [
+    "adrianople1829",
+    "berlin1878"
+   ]
+  },
+  {
+   "id": "novipazar",
+   "status": "ready",
+   "title": "Novi Pazar, Pljevlja and Bijelo Polje after 1878",
+   "question": "Who held the Sanjak of Novi Pazar after 1878?",
+   "raw": [
+    "c049",
+    "c097",
+    "c121",
+    "c033",
+    "c081",
+    "c110"
+   ],
+   "problem": "CShapes puts Novi Pazar in Serbia. Cliopatria puts Pljevlja and Bijelo Polje in Austria-Hungary.",
+   "legal": [
+    {
+     "holder": "OTT",
+     "from": "1815",
+     "to": "1900",
+     "note": "Ottoman, with Austro-Hungarian garrisons allowed from 1879",
+     "ev": [
+      "berlin1878",
+      "novipazar"
+     ]
+    }
+   ],
+   "actual": null,
+   "confidence": "high",
+   "conf_note": "The garrisons did not change who ruled the area.",
+   "why": [
+    "CShapes and Cliopatria confuse garrisons with rule."
+   ],
+   "evidence": [
+    "berlin1878",
+    "novipazar"
+   ]
+  },
+  {
+   "id": "hungary",
+   "status": "ready",
+   "title": "Transylvania and Banat 1849–1852",
+   "question": "Did the Hungarian revolutionaries hold the area until 1852?",
+   "raw": [
+    "c016"
+   ],
+   "problem": "Cliopatria shows Hungarian revolutionaries until 1852. OHM and CShapes show Austria.",
+   "legal": [
+    {
+     "holder": "AUT",
+     "from": "1849",
+     "to": "1900",
+     "note": "",
+     "ev": []
+    }
+   ],
+   "actual": [
+    {
+     "holder": "AUT",
+     "from": "1849-08-13",
+     "to": "1900",
+     "note": "Revolution defeated in August 1849",
+     "ev": [
+      "hungary1849"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "conf_note": "The revolution ended in August 1849.",
+   "why": [
+    "Cliopatria carries the revolution on for three years too long."
+   ],
+   "evidence": [
+    "hungary1849"
+   ]
+  },
+  {
+   "id": "bulgaria-1877",
+   "status": "rule",
+   "rule": "control",
+   "title": "Russian administration of Bulgaria 1877–1879",
+   "question": "Show the Russian provisional administration on the actual-control map?",
+   "raw": [
+    "c023"
+   ],
+   "problem": "Cliopatria shows Russia for 1877–79. OHM and CShapes show the Ottoman Empire, then Bulgaria.",
+   "legal": [
+    {
+     "holder": "OTT",
+     "from": "1877",
+     "to": "1878-07-13",
+     "note": "",
+     "ev": []
+    },
+    {
+     "holder": "BUL",
+     "from": "1878-07-13",
+     "to": "1900",
+     "note": "",
+     "ev": [
+      "berlin1878"
+     ]
+    }
+   ],
+   "actual": [
+    {
+     "holder": "RUS",
+     "from": "1877",
+     "to": "1879-06",
+     "note": "Russian provisional administration",
+     "ev": [
+      "russianadmin"
+     ]
+    },
+    {
+     "holder": "BUL",
+     "from": "1879-06",
+     "to": "1900",
+     "note": "",
+     "ev": []
+    }
+   ],
+   "confidence": "medium",
+   "conf_note": "The end date differs between Bulgaria proper and Eastern Rumelia.",
+   "why": [
+    "Sources pick different kinds of control."
+   ],
+   "evidence": [
+    "russianadmin",
+    "berlin1878"
+   ]
+  }
+ ],
+ "evidence": {
+  "vienna1815": {
+   "title": "Congress of Vienna, Final Act",
+   "date": "1815-06-09",
+   "kind": "Treaty",
+   "url": "https://en.wikipedia.org/wiki/Congress_of_Vienna"
+  },
+  "paris1815": {
+   "title": "Treaty of Paris (Nov 1815): Ionian protectorate",
+   "date": "1815-11",
+   "kind": "Treaty",
+   "url": "https://en.wikipedia.org/wiki/United_States_of_the_Ionian_Islands"
+  },
+  "adrianople1829": {
+   "title": "Treaty of Adrianople",
+   "date": "1829-09-14",
+   "kind": "Treaty",
+   "url": "https://en.wikipedia.org/wiki/Treaty_of_Adrianople_(1829)"
+  },
+  "london1830": {
+   "title": "London Protocol: Greek independence",
+   "date": "1830-02-03",
+   "kind": "Treaty",
+   "url": "https://en.wikipedia.org/wiki/London_Protocol_(1830)"
+  },
+  "serbia1830": {
+   "title": "Ottoman decrees of 1830 and 1833 on Serbian self-rule",
+   "date": "1830 / 1833",
+   "kind": "Decree",
+   "url": "https://en.wikipedia.org/wiki/Principality_of_Serbia"
+  },
+  "london1832": {
+   "title": "London Conference of 1832",
+   "date": "1832-05-07",
+   "kind": "Treaty",
+   "url": "https://en.wikipedia.org/wiki/London_Conference_of_1832"
+  },
+  "constantinople1832": {
+   "title": "Treaty of Constantinople (1832)",
+   "date": "1832-07-21",
+   "kind": "Treaty",
+   "url": "https://en.wikipedia.org/wiki/Treaty_of_Constantinople_(1832)"
+  },
+  "london1840": {
+   "title": "Convention of London (1840)",
+   "date": "1840-07-15",
+   "kind": "Treaty",
+   "url": "https://en.wikipedia.org/wiki/Convention_of_London_(1840)"
+  },
+  "hungary1849": {
+   "title": "End of the Hungarian revolution (surrender at Világos)",
+   "date": "1849-08-13",
+   "kind": "Event",
+   "url": "https://en.wikipedia.org/wiki/Hungarian_Revolution_of_1848"
+  },
+  "baltaliman1849": {
+   "title": "Convention of Balta Liman",
+   "date": "1849-05-01",
+   "kind": "Treaty",
+   "url": "https://en.wikipedia.org/wiki/Convention_of_Balta_Liman"
+  },
+  "principalities": {
+   "title": "Danubian Principalities: occupations and self-rule",
+   "date": "1828–1857",
+   "kind": "Reference",
+   "url": "https://en.wikipedia.org/wiki/Danubian_Principalities"
+  },
+  "paris1856": {
+   "title": "Treaty of Paris (1856)",
+   "date": "1856-03-30",
+   "kind": "Treaty",
+   "url": "https://en.wikipedia.org/wiki/Treaty_of_Paris_(1856)"
+  },
+  "union1859": {
+   "title": "Union of Wallachia and Moldavia",
+   "date": "1859-01/02",
+   "kind": "Event",
+   "url": "https://en.wikipedia.org/wiki/United_Principalities"
+  },
+  "london1864": {
+   "title": "Treaty of London (1864): Ionian Islands to Greece",
+   "date": "1864-03-29",
+   "kind": "Treaty",
+   "url": "https://en.wikipedia.org/wiki/Treaty_of_London_(1864)"
+  },
+  "montenegro": {
+   "title": "Principality of Montenegro",
+   "date": "1852–1910",
+   "kind": "Reference",
+   "url": "https://en.wikipedia.org/wiki/Principality_of_Montenegro"
+  },
+  "russianadmin": {
+   "title": "Russian provisional administration in Bulgaria",
+   "date": "1877–1879",
+   "kind": "Reference",
+   "url": "https://en.wikipedia.org/wiki/Provisional_Russian_Administration_in_Bulgaria"
+  },
+  "berlin1878": {
+   "title": "Treaty of Berlin",
+   "date": "1878-07-13",
+   "kind": "Treaty",
+   "url": "https://en.wikipedia.org/wiki/Treaty_of_Berlin_(1878)"
+  },
+  "bosnia1878": {
+   "title": "Austro-Hungarian occupation of Bosnia and Herzegovina",
+   "date": "1878-07/10",
+   "kind": "Event",
+   "url": "https://en.wikipedia.org/wiki/Austro-Hungarian_campaign_in_Bosnia_and_Herzegovina_in_1878"
+  },
+  "kolasin1878": {
+   "title": "Kolašin joins Montenegro",
+   "date": "1878-10-04",
+   "kind": "Event",
+   "url": "https://en.wikipedia.org/wiki/Upper_Kola%C5%A1in"
+  },
+  "ulcinj1880": {
+   "title": "Ulcinj handed over to Montenegro",
+   "date": "1880-11-23",
+   "kind": "Event",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Ulcinj_(1880)"
+  },
+  "constantinople1881": {
+   "title": "Convention of Constantinople (1881): Thessaly and Arta to Greece",
+   "date": "1881-05-24",
+   "kind": "Treaty",
+   "url": "https://en.wikipedia.org/wiki/Convention_of_Constantinople_(1881)"
+  },
+  "tyrnavos": {
+   "title": "Tyrnavos annexed with the rest of Thessaly",
+   "date": "1881",
+   "kind": "Reference",
+   "url": "https://en.wikipedia.org/wiki/Tyrnavos"
+  },
+  "unification1885": {
+   "title": "Bulgarian unification with Eastern Rumelia",
+   "date": "1885-09-18",
+   "kind": "Event",
+   "url": "https://en.wikipedia.org/wiki/Bulgarian_unification"
+  },
+  "rumelia": {
+   "title": "Eastern Rumelia (self-governing Ottoman province)",
+   "date": "1878–1885",
+   "kind": "Reference",
+   "url": "https://en.wikipedia.org/wiki/Eastern_Rumelia"
+  },
+  "tophane1886": {
+   "title": "Tophane Agreement",
+   "date": "1886-04-05",
+   "kind": "Treaty",
+   "url": "https://en.wikipedia.org/wiki/Tophane_Agreement"
+  },
+  "constantinople1897": {
+   "title": "Treaty of Constantinople (1897)",
+   "date": "1897-12-04",
+   "kind": "Treaty",
+   "url": "https://en.wikipedia.org/wiki/Treaty_of_Constantinople_(1897)"
+  },
+  "cretanstate": {
+   "title": "Cretan State",
+   "date": "1898-12",
+   "kind": "Reference",
+   "url": "https://en.wikipedia.org/wiki/Cretan_State"
+  },
+  "novipazar": {
+   "title": "Sanjak of Novi Pazar",
+   "date": "1878–1908",
+   "kind": "Reference",
+   "url": "https://en.wikipedia.org/wiki/Sanjak_of_Novi_Pazar"
+  },
+  "bukovina": {
+   "title": "Duchy of Bukovina (Austrian since 1775)",
+   "date": "1775–1918",
+   "kind": "Reference",
+   "url": "https://en.wikipedia.org/wiki/Duchy_of_Bukovina"
+  },
+  "dalmatia": {
+   "title": "Kingdom of Dalmatia (Austrian, incl. Bay of Kotor)",
+   "date": "1815–1918",
+   "kind": "Reference",
+   "url": "https://en.wikipedia.org/wiki/Kingdom_of_Dalmatia"
+  },
+  "frontier": {
+   "title": "Military Frontier (Habsburg border zone incl. Zemun)",
+   "date": "to 1881",
+   "kind": "Reference",
+   "url": "https://en.wikipedia.org/wiki/Military_Frontier"
+  },
+  "serbwar1878": {
+   "title": "Serbian–Ottoman War: Niš taken",
+   "date": "1878-01",
+   "kind": "Event",
+   "url": "https://en.wikipedia.org/wiki/Serbian%E2%80%93Ottoman_War_(1876%E2%80%931878)"
+  },
+  "greekwar": {
+   "title": "Greek War of Independence",
+   "date": "1821–1830",
+   "kind": "Reference",
+   "url": "https://en.wikipedia.org/wiki/Greek_War_of_Independence"
+  }
+ },
+ "rules": [
+  {
+   "id": "vassal",
+   "q": "How should self-governing states under an overlord be shown?",
+   "why": "Serbia, Wallachia, Moldavia, Bulgaria, Eastern Rumelia, the Ionian Islands and Crete governed themselves but were not fully independent.",
+   "options": [
+    "As their own states, marked self-governing",
+    "As part of the overlord"
+   ],
+   "default": 0
+  },
+  {
+   "id": "control",
+   "q": "Which kind of control does the main map show?",
+   "why": "Bosnia, Montenegro, the occupied principalities and 1877–79 Bulgaria were held legally by one state and actually by another.",
+   "options": [
+    "Legal title",
+    "Actual control",
+    "Both, as two maps"
+   ],
+   "default": 2
+  },
+  {
+   "id": "timing",
+   "q": "When sources agree who, but differ by a year on when, what counts?",
+   "why": "Sources use whole years differently; OHM usually has the exact day.",
+   "options": [
+    "Use the most precise date (usually OHM) automatically",
+    "Review each one"
+   ],
+   "default": 0
+  },
+  {
+   "id": "approve",
+   "q": "Who can approve an answer?",
+   "why": "Reviewers do not need to be historians if the evidence is strong enough.",
+   "options": [
+    "Anyone, when every change date links to a treaty or event",
+    "Experts only"
+   ],
+   "default": 0
+  }
+ ]
+}

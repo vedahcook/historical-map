@@ -1,0 +1,7508 @@
+[
+ {
+  "category": "rule",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "ROM",
+    "label": "Romania (United Principalities)"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "ROM",
+    "label": "Romania (United Principalities)"
+   }
+  ],
+  "start": 1859,
+  "end": 1878,
+  "towns": [
+   "Alexandria",
+   "Bacău",
+   "Bolhrad",
+   "Botoșani",
+   "Bucharest",
+   "Buzău",
+   "Cahul",
+   "Craiova",
+   "Călărași",
+   "Focșani",
+   "Galați",
+   "Giurgiu",
+   "Iași",
+   "Izmayil",
+   "Kiliya",
+   "Piatra-Neamt",
+   "Pitești",
+   "Ploiești",
+   "Reni",
+   "Rimnicu Vilcea",
+   "Slatina",
+   "Slobozia",
+   "Târgoviște",
+   "Târgu Jiu",
+   "Vaslui",
+   "Vylkove"
+  ],
+  "town_ranges": [
+   [
+    "Alexandria",
+    1859,
+    1878
+   ],
+   [
+    "Bacău",
+    1859,
+    1878
+   ],
+   [
+    "Bolhrad",
+    1859,
+    1878
+   ],
+   [
+    "Botoșani",
+    1859,
+    1878
+   ],
+   [
+    "Bucharest",
+    1859,
+    1878
+   ],
+   [
+    "Buzău",
+    1859,
+    1878
+   ],
+   [
+    "Cahul",
+    1859,
+    1878
+   ],
+   [
+    "Craiova",
+    1859,
+    1878
+   ],
+   [
+    "Călărași",
+    1859,
+    1878
+   ],
+   [
+    "Focșani",
+    1859,
+    1878
+   ],
+   [
+    "Galați",
+    1859,
+    1878
+   ],
+   [
+    "Giurgiu",
+    1859,
+    1878
+   ],
+   [
+    "Iași",
+    1859,
+    1878
+   ],
+   [
+    "Izmayil",
+    1859,
+    1878
+   ],
+   [
+    "Kiliya",
+    1859,
+    1878
+   ],
+   [
+    "Piatra-Neamt",
+    1859,
+    1878
+   ],
+   [
+    "Pitești",
+    1859,
+    1878
+   ],
+   [
+    "Ploiești",
+    1859,
+    1878
+   ],
+   [
+    "Reni",
+    1859,
+    1878
+   ],
+   [
+    "Rimnicu Vilcea",
+    1859,
+    1878
+   ],
+   [
+    "Slatina",
+    1859,
+    1878
+   ],
+   [
+    "Slobozia",
+    1859,
+    1878
+   ],
+   [
+    "Târgoviște",
+    1859,
+    1878
+   ],
+   [
+    "Târgu Jiu",
+    1859,
+    1878
+   ],
+   [
+    "Vaslui",
+    1859,
+    1878
+   ],
+   [
+    "Vylkove",
+    1859,
+    1878
+   ]
+  ],
+  "town_years": 520,
+  "id": "c001"
+ },
+ {
+  "category": "rule",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "SRB",
+    "label": "Serbia"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "SRB",
+    "label": "Serbia"
+   }
+  ],
+  "start": 1833,
+  "end": 1878,
+  "towns": [
+   "Belgrade",
+   "Kragujevac",
+   "Kruševac",
+   "Negotin",
+   "Smederevo",
+   "Užice",
+   "Zaječar",
+   "Čačak",
+   "Šabac"
+  ],
+  "town_ranges": [
+   [
+    "Belgrade",
+    1833,
+    1878
+   ],
+   [
+    "Kragujevac",
+    1833,
+    1878
+   ],
+   [
+    "Kruševac",
+    1833,
+    1878
+   ],
+   [
+    "Negotin",
+    1833,
+    1878
+   ],
+   [
+    "Smederevo",
+    1833,
+    1878
+   ],
+   [
+    "Užice",
+    1833,
+    1878
+   ],
+   [
+    "Zaječar",
+    1833,
+    1878
+   ],
+   [
+    "Čačak",
+    1833,
+    1878
+   ],
+   [
+    "Šabac",
+    1833,
+    1878
+   ]
+  ],
+  "town_years": 414,
+  "id": "c002"
+ },
+ {
+  "category": "rule",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "SRB",
+    "label": "Serbia"
+   }
+  ],
+  "start": 1816,
+  "end": 1878,
+  "towns": [
+   "Belgrade",
+   "Kragujevac",
+   "Kruševac",
+   "Kuršumlija",
+   "Negotin",
+   "Niš",
+   "Prokuplje",
+   "Smederevo",
+   "Užice",
+   "Zaječar",
+   "Čačak",
+   "Šabac"
+  ],
+  "town_ranges": [
+   [
+    "Belgrade",
+    1816,
+    1832
+   ],
+   [
+    "Kragujevac",
+    1816,
+    1832
+   ],
+   [
+    "Kruševac",
+    1816,
+    1832
+   ],
+   [
+    "Kuršumlija",
+    1816,
+    1847
+   ],
+   [
+    "Kuršumlija",
+    1853,
+    1876
+   ],
+   [
+    "Negotin",
+    1816,
+    1832
+   ],
+   [
+    "Niš",
+    1816,
+    1878
+   ],
+   [
+    "Prokuplje",
+    1816,
+    1878
+   ],
+   [
+    "Smederevo",
+    1816,
+    1832
+   ],
+   [
+    "Užice",
+    1816,
+    1832
+   ],
+   [
+    "Zaječar",
+    1816,
+    1832
+   ],
+   [
+    "Čačak",
+    1816,
+    1832
+   ],
+   [
+    "Šabac",
+    1816,
+    1832
+   ]
+  ],
+  "town_years": 335,
+  "id": "c003"
+ },
+ {
+  "category": "rule",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "BUL",
+    "label": "Bulgaria"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "BUL",
+    "label": "Bulgaria"
+   }
+  ],
+  "start": 1886,
+  "end": 1896,
+  "towns": [
+   "Burgas",
+   "Dobrich",
+   "Khaskovo",
+   "Lovec",
+   "Montana",
+   "Pernik",
+   "Pleven",
+   "Plovdiv",
+   "Razgrad",
+   "Ruse",
+   "Shumen",
+   "Silistra",
+   "Sliven",
+   "Sofia",
+   "Stara Zagora",
+   "Turnovo",
+   "Varna",
+   "Vidin",
+   "Vratsa"
+  ],
+  "town_ranges": [
+   [
+    "Burgas",
+    1886,
+    1896
+   ],
+   [
+    "Dobrich",
+    1886,
+    1896
+   ],
+   [
+    "Khaskovo",
+    1886,
+    1896
+   ],
+   [
+    "Lovec",
+    1886,
+    1896
+   ],
+   [
+    "Montana",
+    1886,
+    1896
+   ],
+   [
+    "Pernik",
+    1886,
+    1896
+   ],
+   [
+    "Pleven",
+    1886,
+    1896
+   ],
+   [
+    "Plovdiv",
+    1886,
+    1896
+   ],
+   [
+    "Razgrad",
+    1886,
+    1896
+   ],
+   [
+    "Ruse",
+    1886,
+    1896
+   ],
+   [
+    "Shumen",
+    1886,
+    1896
+   ],
+   [
+    "Silistra",
+    1886,
+    1896
+   ],
+   [
+    "Sliven",
+    1886,
+    1896
+   ],
+   [
+    "Sofia",
+    1886,
+    1896
+   ],
+   [
+    "Stara Zagora",
+    1886,
+    1896
+   ],
+   [
+    "Turnovo",
+    1886,
+    1896
+   ],
+   [
+    "Varna",
+    1886,
+    1896
+   ],
+   [
+    "Vidin",
+    1886,
+    1896
+   ],
+   [
+    "Vratsa",
+    1886,
+    1896
+   ]
+  ],
+  "town_years": 209,
+  "id": "c004"
+ },
+ {
+  "category": "rule",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "WAL",
+    "label": "Wallachia"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "WAL",
+    "label": "Wallachia"
+   }
+  ],
+  "start": 1835,
+  "end": 1848,
+  "towns": [
+   "Alexandria",
+   "Bucharest",
+   "Buzău",
+   "Craiova",
+   "Călărași",
+   "Giurgiu",
+   "Pitești",
+   "Ploiești",
+   "Rimnicu Vilcea",
+   "Slatina",
+   "Slobozia",
+   "Târgoviște",
+   "Târgu Jiu"
+  ],
+  "town_ranges": [
+   [
+    "Alexandria",
+    1835,
+    1848
+   ],
+   [
+    "Bucharest",
+    1835,
+    1848
+   ],
+   [
+    "Buzău",
+    1835,
+    1848
+   ],
+   [
+    "Craiova",
+    1835,
+    1848
+   ],
+   [
+    "Călărași",
+    1835,
+    1848
+   ],
+   [
+    "Giurgiu",
+    1835,
+    1848
+   ],
+   [
+    "Pitești",
+    1835,
+    1848
+   ],
+   [
+    "Ploiești",
+    1835,
+    1848
+   ],
+   [
+    "Rimnicu Vilcea",
+    1835,
+    1848
+   ],
+   [
+    "Slatina",
+    1835,
+    1848
+   ],
+   [
+    "Slobozia",
+    1835,
+    1848
+   ],
+   [
+    "Târgoviște",
+    1835,
+    1848
+   ],
+   [
+    "Târgu Jiu",
+    1835,
+    1848
+   ]
+  ],
+  "town_years": 182,
+  "id": "c005"
+ },
+ {
+  "category": "rule",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "ION",
+    "label": "Ionian Islands"
+   },
+   {
+    "source": "CShapes",
+    "holder": "UK",
+    "label": "United Kingdom"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "UK",
+    "label": "United Kingdom"
+   }
+  ],
+  "start": 1820,
+  "end": 1863,
+  "towns": [
+   "Argostoli",
+   "Kerkira",
+   "Lefkada",
+   "Zakynthos"
+  ],
+  "town_ranges": [
+   [
+    "Argostoli",
+    1820,
+    1863
+   ],
+   [
+    "Kerkira",
+    1820,
+    1863
+   ],
+   [
+    "Lefkada",
+    1820,
+    1863
+   ],
+   [
+    "Zakynthos",
+    1820,
+    1863
+   ]
+  ],
+  "town_years": 176,
+  "id": "c006"
+ },
+ {
+  "category": "rule",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "WAL",
+    "label": "Wallachia"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "WAL",
+    "label": "Wallachia"
+   }
+  ],
+  "start": 1816,
+  "end": 1827,
+  "towns": [
+   "Alexandria",
+   "Bucharest",
+   "Buzău",
+   "Craiova",
+   "Călărași",
+   "Giurgiu",
+   "Pitești",
+   "Ploiești",
+   "Rimnicu Vilcea",
+   "Slatina",
+   "Slobozia",
+   "Târgoviște",
+   "Târgu Jiu"
+  ],
+  "town_ranges": [
+   [
+    "Alexandria",
+    1816,
+    1827
+   ],
+   [
+    "Bucharest",
+    1816,
+    1827
+   ],
+   [
+    "Buzău",
+    1816,
+    1827
+   ],
+   [
+    "Craiova",
+    1816,
+    1827
+   ],
+   [
+    "Călărași",
+    1816,
+    1827
+   ],
+   [
+    "Giurgiu",
+    1816,
+    1827
+   ],
+   [
+    "Pitești",
+    1816,
+    1827
+   ],
+   [
+    "Ploiești",
+    1816,
+    1827
+   ],
+   [
+    "Rimnicu Vilcea",
+    1816,
+    1827
+   ],
+   [
+    "Slatina",
+    1816,
+    1827
+   ],
+   [
+    "Slobozia",
+    1816,
+    1827
+   ],
+   [
+    "Târgoviște",
+    1816,
+    1827
+   ],
+   [
+    "Târgu Jiu",
+    1816,
+    1827
+   ]
+  ],
+  "town_years": 156,
+  "id": "c007"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "AUT",
+    "label": "Austria"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "AUT",
+    "label": "Austria"
+   }
+  ],
+  "start": 1816,
+  "end": 1878,
+  "towns": [
+   "Herceg Novi",
+   "Kotor"
+  ],
+  "town_ranges": [
+   [
+    "Herceg Novi",
+    1816,
+    1878
+   ],
+   [
+    "Kotor",
+    1820,
+    1878
+   ]
+  ],
+  "town_years": 122,
+  "id": "c008"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "AUTOCC",
+    "label": "Austria-Hungary (occupation)"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "AUT",
+    "label": "Austria"
+   }
+  ],
+  "start": 1886,
+  "end": 1896,
+  "towns": [
+   "Banja Luka",
+   "Bihać",
+   "Foča",
+   "Mostar",
+   "Prijedor",
+   "Sarajevo",
+   "Travnik",
+   "Trebinje",
+   "Tuzla",
+   "Zenica"
+  ],
+  "town_ranges": [
+   [
+    "Banja Luka",
+    1886,
+    1896
+   ],
+   [
+    "Bihać",
+    1886,
+    1896
+   ],
+   [
+    "Foča",
+    1886,
+    1896
+   ],
+   [
+    "Mostar",
+    1886,
+    1896
+   ],
+   [
+    "Prijedor",
+    1886,
+    1896
+   ],
+   [
+    "Sarajevo",
+    1886,
+    1896
+   ],
+   [
+    "Travnik",
+    1886,
+    1896
+   ],
+   [
+    "Trebinje",
+    1886,
+    1896
+   ],
+   [
+    "Tuzla",
+    1886,
+    1896
+   ],
+   [
+    "Zenica",
+    1886,
+    1896
+   ]
+  ],
+  "town_years": 110,
+  "id": "c009"
+ },
+ {
+  "category": "rule",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "MOL",
+    "label": "Moldavia"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "MOL",
+    "label": "Moldavia"
+   }
+  ],
+  "start": 1835,
+  "end": 1848,
+  "towns": [
+   "Bacău",
+   "Botoșani",
+   "Focșani",
+   "Galați",
+   "Iași",
+   "Piatra-Neamt",
+   "Vaslui"
+  ],
+  "town_ranges": [
+   [
+    "Bacău",
+    1835,
+    1848
+   ],
+   [
+    "Botoșani",
+    1835,
+    1848
+   ],
+   [
+    "Focșani",
+    1835,
+    1848
+   ],
+   [
+    "Galați",
+    1835,
+    1848
+   ],
+   [
+    "Iași",
+    1835,
+    1848
+   ],
+   [
+    "Piatra-Neamt",
+    1835,
+    1848
+   ],
+   [
+    "Vaslui",
+    1835,
+    1848
+   ]
+  ],
+  "town_years": 98,
+  "id": "c010"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "WAL",
+    "label": "Wallachia"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   }
+  ],
+  "start": 1849,
+  "end": 1855,
+  "towns": [
+   "Alexandria",
+   "Bucharest",
+   "Buzău",
+   "Craiova",
+   "Călărași",
+   "Giurgiu",
+   "Pitești",
+   "Ploiești",
+   "Rimnicu Vilcea",
+   "Slatina",
+   "Slobozia",
+   "Târgoviște",
+   "Târgu Jiu"
+  ],
+  "town_ranges": [
+   [
+    "Alexandria",
+    1849,
+    1855
+   ],
+   [
+    "Bucharest",
+    1849,
+    1855
+   ],
+   [
+    "Buzău",
+    1849,
+    1855
+   ],
+   [
+    "Craiova",
+    1849,
+    1855
+   ],
+   [
+    "Călărași",
+    1849,
+    1855
+   ],
+   [
+    "Giurgiu",
+    1849,
+    1855
+   ],
+   [
+    "Pitești",
+    1849,
+    1855
+   ],
+   [
+    "Ploiești",
+    1849,
+    1855
+   ],
+   [
+    "Rimnicu Vilcea",
+    1849,
+    1855
+   ],
+   [
+    "Slatina",
+    1849,
+    1855
+   ],
+   [
+    "Slobozia",
+    1849,
+    1855
+   ],
+   [
+    "Târgoviște",
+    1849,
+    1855
+   ],
+   [
+    "Târgu Jiu",
+    1849,
+    1855
+   ]
+  ],
+  "town_years": 91,
+  "id": "c011"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "GRE",
+    "label": "Greece"
+   }
+  ],
+  "start": 1834,
+  "end": 1896,
+  "towns": [
+   "Elassona",
+   "Preveza",
+   "Tyrnavos"
+  ],
+  "town_ranges": [
+   [
+    "Elassona",
+    1885,
+    1896
+   ],
+   [
+    "Preveza",
+    1834,
+    1896
+   ],
+   [
+    "Tyrnavos",
+    1885,
+    1896
+   ]
+  ],
+  "town_years": 87,
+  "id": "c012"
+ },
+ {
+  "category": "rule",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "MOL",
+    "label": "Moldavia"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "MOL",
+    "label": "Moldavia"
+   }
+  ],
+  "start": 1816,
+  "end": 1827,
+  "towns": [
+   "Bacău",
+   "Botoșani",
+   "Focșani",
+   "Galați",
+   "Iași",
+   "Piatra-Neamt",
+   "Vaslui"
+  ],
+  "town_ranges": [
+   [
+    "Bacău",
+    1816,
+    1827
+   ],
+   [
+    "Botoșani",
+    1816,
+    1827
+   ],
+   [
+    "Focșani",
+    1816,
+    1827
+   ],
+   [
+    "Galați",
+    1816,
+    1827
+   ],
+   [
+    "Iași",
+    1816,
+    1827
+   ],
+   [
+    "Piatra-Neamt",
+    1816,
+    1827
+   ],
+   [
+    "Vaslui",
+    1816,
+    1827
+   ]
+  ],
+  "town_years": 84,
+  "id": "c013"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "WAL",
+    "label": "Wallachia"
+   },
+   {
+    "source": "CShapes",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   }
+  ],
+  "start": 1828,
+  "end": 1833,
+  "towns": [
+   "Alexandria",
+   "Bucharest",
+   "Buzău",
+   "Craiova",
+   "Călărași",
+   "Giurgiu",
+   "Pitești",
+   "Ploiești",
+   "Rimnicu Vilcea",
+   "Slatina",
+   "Slobozia",
+   "Târgoviște",
+   "Târgu Jiu"
+  ],
+  "town_ranges": [
+   [
+    "Alexandria",
+    1828,
+    1833
+   ],
+   [
+    "Bucharest",
+    1828,
+    1833
+   ],
+   [
+    "Buzău",
+    1828,
+    1833
+   ],
+   [
+    "Craiova",
+    1828,
+    1833
+   ],
+   [
+    "Călărași",
+    1828,
+    1833
+   ],
+   [
+    "Giurgiu",
+    1828,
+    1833
+   ],
+   [
+    "Pitești",
+    1828,
+    1833
+   ],
+   [
+    "Ploiești",
+    1828,
+    1833
+   ],
+   [
+    "Rimnicu Vilcea",
+    1828,
+    1833
+   ],
+   [
+    "Slatina",
+    1828,
+    1833
+   ],
+   [
+    "Slobozia",
+    1828,
+    1833
+   ],
+   [
+    "Târgoviște",
+    1828,
+    1833
+   ],
+   [
+    "Târgu Jiu",
+    1828,
+    1833
+   ]
+  ],
+  "town_years": 78,
+  "id": "c014"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "MNE",
+    "label": "Montenegro"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   }
+  ],
+  "start": 1816,
+  "end": 1852,
+  "towns": [
+   "Cetinje",
+   "Danilovgrad"
+  ],
+  "town_ranges": [
+   [
+    "Cetinje",
+    1816,
+    1852
+   ],
+   [
+    "Danilovgrad",
+    1816,
+    1852
+   ]
+  ],
+  "town_years": 74,
+  "id": "c015"
+ },
+ {
+  "category": "rule",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "AUT",
+    "label": "Austria"
+   },
+   {
+    "source": "CShapes",
+    "holder": "AUT",
+    "label": "Austria"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "HUNREV",
+    "label": "Hungarian revolutionaries"
+   }
+  ],
+  "start": 1849,
+  "end": 1852,
+  "towns": [
+   "Alba Lulia",
+   "Arad",
+   "Baia Mare",
+   "Bistrița",
+   "Brașov",
+   "Cluj-Napoca",
+   "Deva",
+   "Miercurea Cuic",
+   "Oradea",
+   "Reșița",
+   "Satu Mare",
+   "Sfintu-Gheorghe",
+   "Sibiu",
+   "Subotica",
+   "Timișoara",
+   "Tirgu Mures",
+   "Zalău",
+   "Zrenjanin"
+  ],
+  "town_ranges": [
+   [
+    "Alba Lulia",
+    1849,
+    1852
+   ],
+   [
+    "Arad",
+    1849,
+    1852
+   ],
+   [
+    "Baia Mare",
+    1849,
+    1852
+   ],
+   [
+    "Bistrița",
+    1849,
+    1852
+   ],
+   [
+    "Brașov",
+    1849,
+    1852
+   ],
+   [
+    "Cluj-Napoca",
+    1849,
+    1852
+   ],
+   [
+    "Deva",
+    1849,
+    1852
+   ],
+   [
+    "Miercurea Cuic",
+    1849,
+    1852
+   ],
+   [
+    "Oradea",
+    1849,
+    1852
+   ],
+   [
+    "Reșița",
+    1849,
+    1852
+   ],
+   [
+    "Satu Mare",
+    1849,
+    1852
+   ],
+   [
+    "Sfintu-Gheorghe",
+    1849,
+    1852
+   ],
+   [
+    "Sibiu",
+    1849,
+    1852
+   ],
+   [
+    "Subotica",
+    1849,
+    1852
+   ],
+   [
+    "Timișoara",
+    1849,
+    1852
+   ],
+   [
+    "Tirgu Mures",
+    1849,
+    1852
+   ],
+   [
+    "Zalău",
+    1849,
+    1852
+   ],
+   [
+    "Zrenjanin",
+    1849,
+    1852
+   ]
+  ],
+  "town_years": 72,
+  "id": "c016"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "GRE",
+    "label": "Greece"
+   }
+  ],
+  "start": 1822,
+  "end": 1831,
+  "towns": [
+   "Agrinio",
+   "Athens",
+   "Chalkida",
+   "Hania",
+   "Iraklio",
+   "Kalamata",
+   "Lamia",
+   "Nafplio",
+   "Patra",
+   "Piraeus",
+   "Pirgos",
+   "Preveza",
+   "Sitia",
+   "Sparti",
+   "Tripoli"
+  ],
+  "town_ranges": [
+   [
+    "Agrinio",
+    1822,
+    1823
+   ],
+   [
+    "Athens",
+    1822,
+    1827
+   ],
+   [
+    "Chalkida",
+    1822,
+    1823
+   ],
+   [
+    "Chalkida",
+    1825,
+    1830
+   ],
+   [
+    "Hania",
+    1828,
+    1829
+   ],
+   [
+    "Iraklio",
+    1828,
+    1829
+   ],
+   [
+    "Kalamata",
+    1822,
+    1824
+   ],
+   [
+    "Lamia",
+    1828,
+    1831
+   ],
+   [
+    "Nafplio",
+    1822,
+    1828
+   ],
+   [
+    "Patra",
+    1822,
+    1828
+   ],
+   [
+    "Piraeus",
+    1822,
+    1827
+   ],
+   [
+    "Pirgos",
+    1822,
+    1824
+   ],
+   [
+    "Preveza",
+    1828,
+    1829
+   ],
+   [
+    "Sitia",
+    1828,
+    1829
+   ],
+   [
+    "Sparti",
+    1822,
+    1828
+   ],
+   [
+    "Tripoli",
+    1822,
+    1824
+   ]
+  ],
+  "town_years": 64,
+  "id": "c017"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "AUT",
+    "label": "Austria"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "SRB",
+    "label": "Serbia"
+   }
+  ],
+  "start": 1816,
+  "end": 1878,
+  "towns": [
+   "Zemun"
+  ],
+  "town_ranges": [
+   [
+    "Zemun",
+    1816,
+    1878
+   ]
+  ],
+  "town_years": 63,
+  "id": "c018"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "AUT",
+    "label": "Austria"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "AUT",
+    "label": "Austria"
+   }
+  ],
+  "start": 1880,
+  "end": 1885,
+  "towns": [
+   "Banja Luka",
+   "Bihać",
+   "Foča",
+   "Mostar",
+   "Prijedor",
+   "Sarajevo",
+   "Travnik",
+   "Trebinje",
+   "Tuzla",
+   "Zenica"
+  ],
+  "town_ranges": [
+   [
+    "Banja Luka",
+    1880,
+    1885
+   ],
+   [
+    "Bihać",
+    1880,
+    1885
+   ],
+   [
+    "Foča",
+    1880,
+    1885
+   ],
+   [
+    "Mostar",
+    1880,
+    1885
+   ],
+   [
+    "Prijedor",
+    1880,
+    1885
+   ],
+   [
+    "Sarajevo",
+    1880,
+    1885
+   ],
+   [
+    "Travnik",
+    1880,
+    1885
+   ],
+   [
+    "Trebinje",
+    1880,
+    1885
+   ],
+   [
+    "Tuzla",
+    1880,
+    1885
+   ],
+   [
+    "Zenica",
+    1880,
+    1885
+   ]
+  ],
+  "town_years": 60,
+  "id": "c019"
+ },
+ {
+  "category": "gap",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "NONE",
+    "label": "No country"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   }
+  ],
+  "start": 1897,
+  "end": 1897,
+  "towns": [
+   "Alexandroupoli",
+   "Bajram Curri",
+   "Berat",
+   "Bitola",
+   "Blagoevgrad",
+   "Burrel",
+   "Durrës",
+   "Edirne",
+   "Elbasan",
+   "Ersekë",
+   "Fier",
+   "Gelibolu",
+   "Gjirokastër",
+   "Gramsh",
+   "Hania",
+   "Hios",
+   "Ioanina",
+   "Iraklio",
+   "Istanbul",
+   "Katerini",
+   "Kavala",
+   "Komatini",
+   "Korçë",
+   "Kos",
+   "Kozani",
+   "Krujë",
+   "Kukës",
+   "Kırklareli",
+   "Lezhë",
+   "Librazhd",
+   "Lushnjë",
+   "Lüleburgaz",
+   "Mitilini",
+   "Ohrid",
+   "Pec",
+   "Peshkopi",
+   "Plav",
+   "Pogradec",
+   "Polygyros",
+   "Pristina",
+   "Prizren",
+   "Pukë",
+   "Përmet",
+   "Rodos",
+   "Rrëshen",
+   "Sarandë",
+   "Seres",
+   "Shkodër",
+   "Sitia",
+   "Skopje",
+   "Tekirdağ",
+   "Tepelenë",
+   "Tetovo",
+   "Thessaloniki",
+   "Tirana",
+   "Vlorë",
+   "Xanthi",
+   "Çorovodë",
+   "Štip"
+  ],
+  "town_ranges": [
+   [
+    "Alexandroupoli",
+    1897,
+    1897
+   ],
+   [
+    "Bajram Curri",
+    1897,
+    1897
+   ],
+   [
+    "Berat",
+    1897,
+    1897
+   ],
+   [
+    "Bitola",
+    1897,
+    1897
+   ],
+   [
+    "Blagoevgrad",
+    1897,
+    1897
+   ],
+   [
+    "Burrel",
+    1897,
+    1897
+   ],
+   [
+    "Durrës",
+    1897,
+    1897
+   ],
+   [
+    "Edirne",
+    1897,
+    1897
+   ],
+   [
+    "Elbasan",
+    1897,
+    1897
+   ],
+   [
+    "Ersekë",
+    1897,
+    1897
+   ],
+   [
+    "Fier",
+    1897,
+    1897
+   ],
+   [
+    "Gelibolu",
+    1897,
+    1897
+   ],
+   [
+    "Gjirokastër",
+    1897,
+    1897
+   ],
+   [
+    "Gramsh",
+    1897,
+    1897
+   ],
+   [
+    "Hania",
+    1897,
+    1897
+   ],
+   [
+    "Hios",
+    1897,
+    1897
+   ],
+   [
+    "Ioanina",
+    1897,
+    1897
+   ],
+   [
+    "Iraklio",
+    1897,
+    1897
+   ],
+   [
+    "Istanbul",
+    1897,
+    1897
+   ],
+   [
+    "Katerini",
+    1897,
+    1897
+   ],
+   [
+    "Kavala",
+    1897,
+    1897
+   ],
+   [
+    "Komatini",
+    1897,
+    1897
+   ],
+   [
+    "Korçë",
+    1897,
+    1897
+   ],
+   [
+    "Kos",
+    1897,
+    1897
+   ],
+   [
+    "Kozani",
+    1897,
+    1897
+   ],
+   [
+    "Krujë",
+    1897,
+    1897
+   ],
+   [
+    "Kukës",
+    1897,
+    1897
+   ],
+   [
+    "Kırklareli",
+    1897,
+    1897
+   ],
+   [
+    "Lezhë",
+    1897,
+    1897
+   ],
+   [
+    "Librazhd",
+    1897,
+    1897
+   ],
+   [
+    "Lushnjë",
+    1897,
+    1897
+   ],
+   [
+    "Lüleburgaz",
+    1897,
+    1897
+   ],
+   [
+    "Mitilini",
+    1897,
+    1897
+   ],
+   [
+    "Ohrid",
+    1897,
+    1897
+   ],
+   [
+    "Pec",
+    1897,
+    1897
+   ],
+   [
+    "Peshkopi",
+    1897,
+    1897
+   ],
+   [
+    "Plav",
+    1897,
+    1897
+   ],
+   [
+    "Pogradec",
+    1897,
+    1897
+   ],
+   [
+    "Polygyros",
+    1897,
+    1897
+   ],
+   [
+    "Pristina",
+    1897,
+    1897
+   ],
+   [
+    "Prizren",
+    1897,
+    1897
+   ],
+   [
+    "Pukë",
+    1897,
+    1897
+   ],
+   [
+    "Përmet",
+    1897,
+    1897
+   ],
+   [
+    "Rodos",
+    1897,
+    1897
+   ],
+   [
+    "Rrëshen",
+    1897,
+    1897
+   ],
+   [
+    "Sarandë",
+    1897,
+    1897
+   ],
+   [
+    "Seres",
+    1897,
+    1897
+   ],
+   [
+    "Shkodër",
+    1897,
+    1897
+   ],
+   [
+    "Sitia",
+    1897,
+    1897
+   ],
+   [
+    "Skopje",
+    1897,
+    1897
+   ],
+   [
+    "Tekirdağ",
+    1897,
+    1897
+   ],
+   [
+    "Tepelenë",
+    1897,
+    1897
+   ],
+   [
+    "Tetovo",
+    1897,
+    1897
+   ],
+   [
+    "Thessaloniki",
+    1897,
+    1897
+   ],
+   [
+    "Tirana",
+    1897,
+    1897
+   ],
+   [
+    "Vlorë",
+    1897,
+    1897
+   ],
+   [
+    "Xanthi",
+    1897,
+    1897
+   ],
+   [
+    "Çorovodë",
+    1897,
+    1897
+   ],
+   [
+    "Štip",
+    1897,
+    1897
+   ]
+  ],
+  "town_years": 59,
+  "id": "c020"
+ },
+ {
+  "category": "rule",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "BUL",
+    "label": "Bulgaria"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "BUL",
+    "label": "Bulgaria"
+   }
+  ],
+  "start": 1898,
+  "end": 1900,
+  "towns": [
+   "Burgas",
+   "Dobrich",
+   "Khaskovo",
+   "Lovec",
+   "Montana",
+   "Pernik",
+   "Pleven",
+   "Plovdiv",
+   "Razgrad",
+   "Ruse",
+   "Shumen",
+   "Silistra",
+   "Sliven",
+   "Sofia",
+   "Stara Zagora",
+   "Turnovo",
+   "Varna",
+   "Vidin",
+   "Vratsa"
+  ],
+  "town_ranges": [
+   [
+    "Burgas",
+    1898,
+    1900
+   ],
+   [
+    "Dobrich",
+    1898,
+    1900
+   ],
+   [
+    "Khaskovo",
+    1898,
+    1900
+   ],
+   [
+    "Lovec",
+    1898,
+    1900
+   ],
+   [
+    "Montana",
+    1898,
+    1900
+   ],
+   [
+    "Pernik",
+    1898,
+    1900
+   ],
+   [
+    "Pleven",
+    1898,
+    1900
+   ],
+   [
+    "Plovdiv",
+    1898,
+    1900
+   ],
+   [
+    "Razgrad",
+    1898,
+    1900
+   ],
+   [
+    "Ruse",
+    1898,
+    1900
+   ],
+   [
+    "Shumen",
+    1898,
+    1900
+   ],
+   [
+    "Silistra",
+    1898,
+    1900
+   ],
+   [
+    "Sliven",
+    1898,
+    1900
+   ],
+   [
+    "Sofia",
+    1898,
+    1900
+   ],
+   [
+    "Stara Zagora",
+    1898,
+    1900
+   ],
+   [
+    "Turnovo",
+    1898,
+    1900
+   ],
+   [
+    "Varna",
+    1898,
+    1900
+   ],
+   [
+    "Vidin",
+    1898,
+    1900
+   ],
+   [
+    "Vratsa",
+    1898,
+    1900
+   ]
+  ],
+  "town_years": 57,
+  "id": "c021"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "MNE",
+    "label": "Montenegro"
+   }
+  ],
+  "start": 1853,
+  "end": 1878,
+  "towns": [
+   "Kolašin",
+   "Nikšić"
+  ],
+  "town_ranges": [
+   [
+    "Kolašin",
+    1853,
+    1878
+   ],
+   [
+    "Nikšić",
+    1853,
+    1878
+   ]
+  ],
+  "town_years": 52,
+  "id": "c022"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   }
+  ],
+  "start": 1877,
+  "end": 1879,
+  "towns": [
+   "Burgas",
+   "Constanța",
+   "Dobrich",
+   "Kardzhali",
+   "Khaskovo",
+   "Kyustendil",
+   "Lovec",
+   "Mangalia",
+   "Medgidia",
+   "Montana",
+   "Pernik",
+   "Pleven",
+   "Plovdiv",
+   "Razgrad",
+   "Shumen",
+   "Sliven",
+   "Smolyan",
+   "Sofia",
+   "Stara Zagora",
+   "Tulcea",
+   "Turnovo",
+   "Varna",
+   "Vidin",
+   "Vratsa"
+  ],
+  "town_ranges": [
+   [
+    "Burgas",
+    1877,
+    1878
+   ],
+   [
+    "Constanța",
+    1877,
+    1878
+   ],
+   [
+    "Dobrich",
+    1877,
+    1878
+   ],
+   [
+    "Kardzhali",
+    1877,
+    1879
+   ],
+   [
+    "Khaskovo",
+    1877,
+    1878
+   ],
+   [
+    "Kyustendil",
+    1877,
+    1878
+   ],
+   [
+    "Lovec",
+    1877,
+    1878
+   ],
+   [
+    "Mangalia",
+    1877,
+    1878
+   ],
+   [
+    "Medgidia",
+    1877,
+    1878
+   ],
+   [
+    "Montana",
+    1877,
+    1878
+   ],
+   [
+    "Pernik",
+    1877,
+    1878
+   ],
+   [
+    "Pleven",
+    1877,
+    1878
+   ],
+   [
+    "Plovdiv",
+    1877,
+    1878
+   ],
+   [
+    "Razgrad",
+    1877,
+    1878
+   ],
+   [
+    "Shumen",
+    1877,
+    1878
+   ],
+   [
+    "Sliven",
+    1877,
+    1878
+   ],
+   [
+    "Smolyan",
+    1877,
+    1879
+   ],
+   [
+    "Sofia",
+    1877,
+    1878
+   ],
+   [
+    "Stara Zagora",
+    1877,
+    1878
+   ],
+   [
+    "Tulcea",
+    1877,
+    1878
+   ],
+   [
+    "Turnovo",
+    1877,
+    1878
+   ],
+   [
+    "Varna",
+    1877,
+    1878
+   ],
+   [
+    "Vidin",
+    1877,
+    1878
+   ],
+   [
+    "Vratsa",
+    1877,
+    1878
+   ]
+  ],
+  "town_years": 50,
+  "id": "c023"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "MNE",
+    "label": "Montenegro"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "MNE",
+    "label": "Montenegro"
+   }
+  ],
+  "start": 1853,
+  "end": 1877,
+  "towns": [
+   "Cetinje",
+   "Danilovgrad"
+  ],
+  "town_ranges": [
+   [
+    "Cetinje",
+    1853,
+    1877
+   ],
+   [
+    "Danilovgrad",
+    1853,
+    1877
+   ]
+  ],
+  "town_years": 50,
+  "id": "c024"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "MOL",
+    "label": "Moldavia"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   }
+  ],
+  "start": 1849,
+  "end": 1855,
+  "towns": [
+   "Bacău",
+   "Botoșani",
+   "Focșani",
+   "Galați",
+   "Iași",
+   "Piatra-Neamt",
+   "Vaslui"
+  ],
+  "town_ranges": [
+   [
+    "Bacău",
+    1849,
+    1855
+   ],
+   [
+    "Botoșani",
+    1849,
+    1855
+   ],
+   [
+    "Focșani",
+    1849,
+    1855
+   ],
+   [
+    "Galați",
+    1849,
+    1855
+   ],
+   [
+    "Iași",
+    1849,
+    1855
+   ],
+   [
+    "Piatra-Neamt",
+    1849,
+    1855
+   ],
+   [
+    "Vaslui",
+    1849,
+    1855
+   ]
+  ],
+  "town_years": 49,
+  "id": "c025"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "AUT",
+    "label": "Austria"
+   },
+   {
+    "source": "CShapes",
+    "holder": "MNE",
+    "label": "Montenegro"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "AUT",
+    "label": "Austria"
+   }
+  ],
+  "start": 1879,
+  "end": 1900,
+  "towns": [
+   "Herceg Novi",
+   "Kotor"
+  ],
+  "town_ranges": [
+   [
+    "Herceg Novi",
+    1879,
+    1900
+   ],
+   [
+    "Kotor",
+    1879,
+    1900
+   ]
+  ],
+  "town_years": 44,
+  "id": "c026"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "MOL",
+    "label": "Moldavia"
+   },
+   {
+    "source": "CShapes",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   }
+  ],
+  "start": 1828,
+  "end": 1833,
+  "towns": [
+   "Bacău",
+   "Botoșani",
+   "Focșani",
+   "Galați",
+   "Iași",
+   "Piatra-Neamt",
+   "Vaslui"
+  ],
+  "town_ranges": [
+   [
+    "Bacău",
+    1828,
+    1833
+   ],
+   [
+    "Botoșani",
+    1828,
+    1833
+   ],
+   [
+    "Focșani",
+    1828,
+    1833
+   ],
+   [
+    "Galați",
+    1828,
+    1833
+   ],
+   [
+    "Iași",
+    1828,
+    1833
+   ],
+   [
+    "Piatra-Neamt",
+    1828,
+    1833
+   ],
+   [
+    "Vaslui",
+    1828,
+    1833
+   ]
+  ],
+  "town_years": 42,
+  "id": "c027"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "AUT",
+    "label": "Austria"
+   },
+   {
+    "source": "CShapes",
+    "holder": "AUT",
+    "label": "Austria"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "ROM",
+    "label": "Romania (United Principalities)"
+   }
+  ],
+  "start": 1859,
+  "end": 1900,
+  "towns": [
+   "Suceava"
+  ],
+  "town_ranges": [
+   [
+    "Suceava",
+    1859,
+    1900
+   ]
+  ],
+  "town_years": 42,
+  "id": "c028"
+ },
+ {
+  "category": "rule",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "ROM",
+    "label": "Romania (United Principalities)"
+   }
+  ],
+  "start": 1859,
+  "end": 1878,
+  "towns": [
+   "Ruse",
+   "Silistra"
+  ],
+  "town_ranges": [
+   [
+    "Ruse",
+    1859,
+    1878
+   ],
+   [
+    "Silistra",
+    1859,
+    1878
+   ]
+  ],
+  "town_years": 40,
+  "id": "c029"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT+RUS",
+    "label": "OTT+RUS"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   }
+  ],
+  "start": 1849,
+  "end": 1854,
+  "towns": [
+   "Bolhrad",
+   "Cahul",
+   "Izmayil",
+   "Kiliya",
+   "Reni",
+   "Vylkove"
+  ],
+  "town_ranges": [
+   [
+    "Bolhrad",
+    1849,
+    1854
+   ],
+   [
+    "Cahul",
+    1849,
+    1854
+   ],
+   [
+    "Izmayil",
+    1849,
+    1854
+   ],
+   [
+    "Kiliya",
+    1849,
+    1854
+   ],
+   [
+    "Reni",
+    1849,
+    1854
+   ],
+   [
+    "Vylkove",
+    1849,
+    1854
+   ]
+  ],
+  "town_years": 36,
+  "id": "c030"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "MNE",
+    "label": "Montenegro"
+   },
+   {
+    "source": "CShapes",
+    "holder": "MNE",
+    "label": "Montenegro"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   }
+  ],
+  "start": 1879,
+  "end": 1900,
+  "towns": [
+   "Andrijevica",
+   "Bar",
+   "Podgorica",
+   "Ulcinj"
+  ],
+  "town_ranges": [
+   [
+    "Andrijevica",
+    1879,
+    1900
+   ],
+   [
+    "Bar",
+    1881,
+    1884
+   ],
+   [
+    "Podgorica",
+    1879,
+    1884
+   ],
+   [
+    "Ulcinj",
+    1881,
+    1884
+   ]
+  ],
+  "town_years": 36,
+  "id": "c031"
+ },
+ {
+  "category": "rule",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "BUL",
+    "label": "Bulgaria"
+   }
+  ],
+  "start": 1885,
+  "end": 1896,
+  "towns": [
+   "Kardzhali",
+   "Kyustendil",
+   "Smolyan"
+  ],
+  "town_ranges": [
+   [
+    "Kardzhali",
+    1885,
+    1896
+   ],
+   [
+    "Kyustendil",
+    1886,
+    1896
+   ],
+   [
+    "Smolyan",
+    1885,
+    1896
+   ]
+  ],
+  "town_years": 35,
+  "id": "c032"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "AUT",
+    "label": "Austria"
+   }
+  ],
+  "start": 1880,
+  "end": 1896,
+  "towns": [
+   "Bijelo Polje",
+   "Pljevlja"
+  ],
+  "town_ranges": [
+   [
+    "Bijelo Polje",
+    1880,
+    1896
+   ],
+   [
+    "Pljevlja",
+    1880,
+    1896
+   ]
+  ],
+  "town_years": 34,
+  "id": "c033"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "AUTOCC",
+    "label": "Austria-Hungary (occupation)"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "AUT",
+    "label": "Austria"
+   }
+  ],
+  "start": 1898,
+  "end": 1900,
+  "towns": [
+   "Banja Luka",
+   "Bihać",
+   "Foča",
+   "Mostar",
+   "Prijedor",
+   "Sarajevo",
+   "Travnik",
+   "Trebinje",
+   "Tuzla",
+   "Zenica"
+  ],
+  "town_ranges": [
+   [
+    "Banja Luka",
+    1898,
+    1900
+   ],
+   [
+    "Bihać",
+    1898,
+    1900
+   ],
+   [
+    "Foča",
+    1898,
+    1900
+   ],
+   [
+    "Mostar",
+    1898,
+    1900
+   ],
+   [
+    "Prijedor",
+    1898,
+    1900
+   ],
+   [
+    "Sarajevo",
+    1898,
+    1900
+   ],
+   [
+    "Travnik",
+    1898,
+    1900
+   ],
+   [
+    "Trebinje",
+    1898,
+    1900
+   ],
+   [
+    "Tuzla",
+    1898,
+    1900
+   ],
+   [
+    "Zenica",
+    1898,
+    1900
+   ]
+  ],
+  "town_years": 30,
+  "id": "c034"
+ },
+ {
+  "category": "rule",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "WAL",
+    "label": "Wallachia"
+   }
+  ],
+  "start": 1834,
+  "end": 1848,
+  "towns": [
+   "Ruse",
+   "Silistra"
+  ],
+  "town_ranges": [
+   [
+    "Ruse",
+    1834,
+    1848
+   ],
+   [
+    "Silistra",
+    1834,
+    1848
+   ]
+  ],
+  "town_years": 30,
+  "id": "c035"
+ },
+ {
+  "category": "rule",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "WAL",
+    "label": "Wallachia"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   }
+  ],
+  "start": 1830,
+  "end": 1858,
+  "towns": [
+   "Brăila"
+  ],
+  "town_ranges": [
+   [
+    "Brăila",
+    1830,
+    1858
+   ]
+  ],
+  "town_years": 29,
+  "id": "c036"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "GRE",
+    "label": "Greece"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "GRE",
+    "label": "Greece"
+   }
+  ],
+  "start": 1829,
+  "end": 1831,
+  "towns": [
+   "Agrinio",
+   "Athens",
+   "Kalamata",
+   "Missolonghi",
+   "Nafplio",
+   "Patra",
+   "Piraeus",
+   "Pirgos",
+   "Sparti",
+   "Tripoli"
+  ],
+  "town_ranges": [
+   [
+    "Agrinio",
+    1829,
+    1831
+   ],
+   [
+    "Athens",
+    1830,
+    1831
+   ],
+   [
+    "Kalamata",
+    1829,
+    1831
+   ],
+   [
+    "Missolonghi",
+    1829,
+    1831
+   ],
+   [
+    "Nafplio",
+    1829,
+    1831
+   ],
+   [
+    "Patra",
+    1829,
+    1831
+   ],
+   [
+    "Piraeus",
+    1830,
+    1831
+   ],
+   [
+    "Pirgos",
+    1829,
+    1831
+   ],
+   [
+    "Sparti",
+    1829,
+    1831
+   ],
+   [
+    "Tripoli",
+    1829,
+    1831
+   ]
+  ],
+  "town_years": 28,
+  "id": "c037"
+ },
+ {
+  "category": "rule",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "WAL",
+    "label": "Wallachia"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "WAL",
+    "label": "Wallachia"
+   }
+  ],
+  "start": 1857,
+  "end": 1858,
+  "towns": [
+   "Alexandria",
+   "Bucharest",
+   "Buzău",
+   "Craiova",
+   "Călărași",
+   "Giurgiu",
+   "Pitești",
+   "Ploiești",
+   "Rimnicu Vilcea",
+   "Slatina",
+   "Slobozia",
+   "Târgoviște",
+   "Târgu Jiu"
+  ],
+  "town_ranges": [
+   [
+    "Alexandria",
+    1857,
+    1858
+   ],
+   [
+    "Bucharest",
+    1857,
+    1858
+   ],
+   [
+    "Buzău",
+    1857,
+    1858
+   ],
+   [
+    "Craiova",
+    1857,
+    1858
+   ],
+   [
+    "Călărași",
+    1857,
+    1858
+   ],
+   [
+    "Giurgiu",
+    1857,
+    1858
+   ],
+   [
+    "Pitești",
+    1857,
+    1858
+   ],
+   [
+    "Ploiești",
+    1857,
+    1858
+   ],
+   [
+    "Rimnicu Vilcea",
+    1857,
+    1858
+   ],
+   [
+    "Slatina",
+    1857,
+    1858
+   ],
+   [
+    "Slobozia",
+    1857,
+    1858
+   ],
+   [
+    "Târgoviște",
+    1857,
+    1858
+   ],
+   [
+    "Târgu Jiu",
+    1857,
+    1858
+   ]
+  ],
+  "town_years": 26,
+  "id": "c038"
+ },
+ {
+  "category": "rule",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "MOL",
+    "label": "Moldavia"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "MOL",
+    "label": "Moldavia"
+   }
+  ],
+  "start": 1857,
+  "end": 1858,
+  "towns": [
+   "Bacău",
+   "Bolhrad",
+   "Botoșani",
+   "Cahul",
+   "Focșani",
+   "Galați",
+   "Iași",
+   "Izmayil",
+   "Kiliya",
+   "Piatra-Neamt",
+   "Reni",
+   "Vaslui",
+   "Vylkove"
+  ],
+  "town_ranges": [
+   [
+    "Bacău",
+    1857,
+    1858
+   ],
+   [
+    "Bolhrad",
+    1857,
+    1858
+   ],
+   [
+    "Botoșani",
+    1857,
+    1858
+   ],
+   [
+    "Cahul",
+    1857,
+    1858
+   ],
+   [
+    "Focșani",
+    1857,
+    1858
+   ],
+   [
+    "Galați",
+    1857,
+    1858
+   ],
+   [
+    "Iași",
+    1857,
+    1858
+   ],
+   [
+    "Izmayil",
+    1857,
+    1858
+   ],
+   [
+    "Kiliya",
+    1857,
+    1858
+   ],
+   [
+    "Piatra-Neamt",
+    1857,
+    1858
+   ],
+   [
+    "Reni",
+    1857,
+    1858
+   ],
+   [
+    "Vaslui",
+    1857,
+    1858
+   ],
+   [
+    "Vylkove",
+    1857,
+    1858
+   ]
+  ],
+  "town_years": 26,
+  "id": "c039"
+ },
+ {
+  "category": "rule",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "ERU",
+    "label": "Eastern Rumelia"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   }
+  ],
+  "start": 1880,
+  "end": 1884,
+  "towns": [
+   "Burgas",
+   "Khaskovo",
+   "Plovdiv",
+   "Sliven",
+   "Stara Zagora"
+  ],
+  "town_ranges": [
+   [
+    "Burgas",
+    1880,
+    1884
+   ],
+   [
+    "Khaskovo",
+    1880,
+    1884
+   ],
+   [
+    "Plovdiv",
+    1880,
+    1884
+   ],
+   [
+    "Sliven",
+    1880,
+    1884
+   ],
+   [
+    "Stara Zagora",
+    1880,
+    1884
+   ]
+  ],
+  "town_years": 25,
+  "id": "c040"
+ },
+ {
+  "category": "rule",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "WAL",
+    "label": "Wallachia"
+   }
+  ],
+  "start": 1816,
+  "end": 1827,
+  "towns": [
+   "Ruse",
+   "Silistra"
+  ],
+  "town_ranges": [
+   [
+    "Ruse",
+    1816,
+    1827
+   ],
+   [
+    "Silistra",
+    1816,
+    1827
+   ]
+  ],
+  "town_years": 24,
+  "id": "c041"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "ROM",
+    "label": "Romania (United Principalities)"
+   },
+   {
+    "source": "CShapes",
+    "holder": "ROM",
+    "label": "Romania (United Principalities)"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "SRB",
+    "label": "Serbia"
+   }
+  ],
+  "start": 1879,
+  "end": 1900,
+  "towns": [
+   "Drobeta-Turnu Severin"
+  ],
+  "town_ranges": [
+   [
+    "Drobeta-Turnu Severin",
+    1879,
+    1900
+   ]
+  ],
+  "town_years": 22,
+  "id": "c042"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "AUT",
+    "label": "Austria"
+   },
+   {
+    "source": "CShapes",
+    "holder": "SRB",
+    "label": "Serbia"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "SRB",
+    "label": "Serbia"
+   }
+  ],
+  "start": 1879,
+  "end": 1900,
+  "towns": [
+   "Zemun"
+  ],
+  "town_ranges": [
+   [
+    "Zemun",
+    1879,
+    1900
+   ]
+  ],
+  "town_years": 22,
+  "id": "c043"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "WAL",
+    "label": "Wallachia"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "SRB",
+    "label": "Serbia"
+   }
+  ],
+  "start": 1835,
+  "end": 1855,
+  "towns": [
+   "Drobeta-Turnu Severin"
+  ],
+  "town_ranges": [
+   [
+    "Drobeta-Turnu Severin",
+    1835,
+    1855
+   ]
+  ],
+  "town_years": 21,
+  "id": "c044"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "ROM",
+    "label": "Romania (United Principalities)"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "SRB",
+    "label": "Serbia"
+   }
+  ],
+  "start": 1859,
+  "end": 1878,
+  "towns": [
+   "Drobeta-Turnu Severin"
+  ],
+  "town_ranges": [
+   [
+    "Drobeta-Turnu Severin",
+    1859,
+    1878
+   ]
+  ],
+  "town_years": 20,
+  "id": "c045"
+ },
+ {
+  "category": "gap",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "NONE",
+    "label": "No country"
+   },
+   {
+    "source": "CShapes",
+    "holder": "BUL",
+    "label": "Bulgaria"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "BUL",
+    "label": "Bulgaria"
+   }
+  ],
+  "start": 1897,
+  "end": 1897,
+  "towns": [
+   "Burgas",
+   "Dobrich",
+   "Khaskovo",
+   "Lovec",
+   "Montana",
+   "Pernik",
+   "Pleven",
+   "Plovdiv",
+   "Razgrad",
+   "Ruse",
+   "Shumen",
+   "Silistra",
+   "Sliven",
+   "Sofia",
+   "Stara Zagora",
+   "Turnovo",
+   "Varna",
+   "Vidin",
+   "Vratsa"
+  ],
+  "town_ranges": [
+   [
+    "Burgas",
+    1897,
+    1897
+   ],
+   [
+    "Dobrich",
+    1897,
+    1897
+   ],
+   [
+    "Khaskovo",
+    1897,
+    1897
+   ],
+   [
+    "Lovec",
+    1897,
+    1897
+   ],
+   [
+    "Montana",
+    1897,
+    1897
+   ],
+   [
+    "Pernik",
+    1897,
+    1897
+   ],
+   [
+    "Pleven",
+    1897,
+    1897
+   ],
+   [
+    "Plovdiv",
+    1897,
+    1897
+   ],
+   [
+    "Razgrad",
+    1897,
+    1897
+   ],
+   [
+    "Ruse",
+    1897,
+    1897
+   ],
+   [
+    "Shumen",
+    1897,
+    1897
+   ],
+   [
+    "Silistra",
+    1897,
+    1897
+   ],
+   [
+    "Sliven",
+    1897,
+    1897
+   ],
+   [
+    "Sofia",
+    1897,
+    1897
+   ],
+   [
+    "Stara Zagora",
+    1897,
+    1897
+   ],
+   [
+    "Turnovo",
+    1897,
+    1897
+   ],
+   [
+    "Varna",
+    1897,
+    1897
+   ],
+   [
+    "Vidin",
+    1897,
+    1897
+   ],
+   [
+    "Vratsa",
+    1897,
+    1897
+   ]
+  ],
+  "town_years": 19,
+  "id": "c046"
+ },
+ {
+  "category": "rule",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "ROM",
+    "label": "Romania (United Principalities)"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   }
+  ],
+  "start": 1859,
+  "end": 1876,
+  "towns": [
+   "Brăila"
+  ],
+  "town_ranges": [
+   [
+    "Brăila",
+    1859,
+    1876
+   ]
+  ],
+  "town_years": 18,
+  "id": "c047"
+ },
+ {
+  "category": "rule",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "EGY",
+    "label": "Egypt"
+   },
+   {
+    "source": "CShapes",
+    "holder": "EGY",
+    "label": "Egypt"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   }
+  ],
+  "start": 1834,
+  "end": 1839,
+  "towns": [
+   "Hania",
+   "Iraklio",
+   "Sitia"
+  ],
+  "town_ranges": [
+   [
+    "Hania",
+    1834,
+    1839
+   ],
+   [
+    "Iraklio",
+    1834,
+    1839
+   ],
+   [
+    "Sitia",
+    1834,
+    1839
+   ]
+  ],
+  "town_years": 18,
+  "id": "c048"
+ },
+ {
+  "category": "rule",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "SRB",
+    "label": "Serbia"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   }
+  ],
+  "start": 1879,
+  "end": 1896,
+  "towns": [
+   "Novi Pazar"
+  ],
+  "town_ranges": [
+   [
+    "Novi Pazar",
+    1879,
+    1896
+   ]
+  ],
+  "town_years": 18,
+  "id": "c049"
+ },
+ {
+  "category": "rule",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "ION",
+    "label": "Ionian Islands"
+   },
+   {
+    "source": "CShapes",
+    "holder": "UK",
+    "label": "United Kingdom"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "ION",
+    "label": "Ionian Islands"
+   }
+  ],
+  "start": 1816,
+  "end": 1819,
+  "towns": [
+   "Argostoli",
+   "Kerkira",
+   "Lefkada",
+   "Zakynthos"
+  ],
+  "town_ranges": [
+   [
+    "Argostoli",
+    1816,
+    1819
+   ],
+   [
+    "Kerkira",
+    1816,
+    1819
+   ],
+   [
+    "Lefkada",
+    1816,
+    1819
+   ],
+   [
+    "Zakynthos",
+    1816,
+    1819
+   ]
+  ],
+  "town_years": 16,
+  "id": "c050"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "AUT",
+    "label": "Austria"
+   },
+   {
+    "source": "CShapes",
+    "holder": "MNE",
+    "label": "Montenegro"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "MNE",
+    "label": "Montenegro"
+   }
+  ],
+  "start": 1885,
+  "end": 1900,
+  "towns": [
+   "Sutomore"
+  ],
+  "town_ranges": [
+   [
+    "Sutomore",
+    1885,
+    1900
+   ]
+  ],
+  "town_years": 16,
+  "id": "c051"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "AUT",
+    "label": "Austria"
+   },
+   {
+    "source": "CShapes",
+    "holder": "AUT",
+    "label": "Austria"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "MOL",
+    "label": "Moldavia"
+   }
+  ],
+  "start": 1834,
+  "end": 1848,
+  "towns": [
+   "Suceava"
+  ],
+  "town_ranges": [
+   [
+    "Suceava",
+    1834,
+    1848
+   ]
+  ],
+  "town_years": 15,
+  "id": "c052"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "GRE",
+    "label": "Greece"
+   },
+   {
+    "source": "CShapes",
+    "holder": "GRE",
+    "label": "Greece"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   }
+  ],
+  "start": 1882,
+  "end": 1884,
+  "towns": [
+   "Kalabaka",
+   "Karditsa",
+   "Larissa",
+   "Trikala",
+   "Volos"
+  ],
+  "town_ranges": [
+   [
+    "Kalabaka",
+    1882,
+    1884
+   ],
+   [
+    "Karditsa",
+    1882,
+    1884
+   ],
+   [
+    "Larissa",
+    1882,
+    1884
+   ],
+   [
+    "Trikala",
+    1882,
+    1884
+   ],
+   [
+    "Volos",
+    1882,
+    1884
+   ]
+  ],
+  "town_years": 15,
+  "id": "c053"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "WAL",
+    "label": "Wallachia"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "AUT",
+    "label": "Austria"
+   }
+  ],
+  "start": 1856,
+  "end": 1856,
+  "towns": [
+   "Alexandria",
+   "Bucharest",
+   "Buzău",
+   "Craiova",
+   "Călărași",
+   "Drobeta-Turnu Severin",
+   "Giurgiu",
+   "Pitești",
+   "Ploiești",
+   "Rimnicu Vilcea",
+   "Slatina",
+   "Slobozia",
+   "Târgoviște",
+   "Târgu Jiu"
+  ],
+  "town_ranges": [
+   [
+    "Alexandria",
+    1856,
+    1856
+   ],
+   [
+    "Bucharest",
+    1856,
+    1856
+   ],
+   [
+    "Buzău",
+    1856,
+    1856
+   ],
+   [
+    "Craiova",
+    1856,
+    1856
+   ],
+   [
+    "Călărași",
+    1856,
+    1856
+   ],
+   [
+    "Drobeta-Turnu Severin",
+    1856,
+    1856
+   ],
+   [
+    "Giurgiu",
+    1856,
+    1856
+   ],
+   [
+    "Pitești",
+    1856,
+    1856
+   ],
+   [
+    "Ploiești",
+    1856,
+    1856
+   ],
+   [
+    "Rimnicu Vilcea",
+    1856,
+    1856
+   ],
+   [
+    "Slatina",
+    1856,
+    1856
+   ],
+   [
+    "Slobozia",
+    1856,
+    1856
+   ],
+   [
+    "Târgoviște",
+    1856,
+    1856
+   ],
+   [
+    "Târgu Jiu",
+    1856,
+    1856
+   ]
+  ],
+  "town_years": 14,
+  "id": "c054"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   }
+  ],
+  "start": 1849,
+  "end": 1855,
+  "towns": [
+   "Ruse",
+   "Silistra"
+  ],
+  "town_ranges": [
+   [
+    "Ruse",
+    1849,
+    1855
+   ],
+   [
+    "Silistra",
+    1849,
+    1855
+   ]
+  ],
+  "town_years": 14,
+  "id": "c055"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "WAL",
+    "label": "Wallachia"
+   },
+   {
+    "source": "CShapes",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "WAL",
+    "label": "Wallachia"
+   }
+  ],
+  "start": 1834,
+  "end": 1834,
+  "towns": [
+   "Alexandria",
+   "Bucharest",
+   "Buzău",
+   "Craiova",
+   "Călărași",
+   "Giurgiu",
+   "Pitești",
+   "Ploiești",
+   "Rimnicu Vilcea",
+   "Slatina",
+   "Slobozia",
+   "Târgoviște",
+   "Târgu Jiu"
+  ],
+  "town_ranges": [
+   [
+    "Alexandria",
+    1834,
+    1834
+   ],
+   [
+    "Bucharest",
+    1834,
+    1834
+   ],
+   [
+    "Buzău",
+    1834,
+    1834
+   ],
+   [
+    "Craiova",
+    1834,
+    1834
+   ],
+   [
+    "Călărași",
+    1834,
+    1834
+   ],
+   [
+    "Giurgiu",
+    1834,
+    1834
+   ],
+   [
+    "Pitești",
+    1834,
+    1834
+   ],
+   [
+    "Ploiești",
+    1834,
+    1834
+   ],
+   [
+    "Rimnicu Vilcea",
+    1834,
+    1834
+   ],
+   [
+    "Slatina",
+    1834,
+    1834
+   ],
+   [
+    "Slobozia",
+    1834,
+    1834
+   ],
+   [
+    "Târgoviște",
+    1834,
+    1834
+   ],
+   [
+    "Târgu Jiu",
+    1834,
+    1834
+   ]
+  ],
+  "town_years": 13,
+  "id": "c056"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "BUL",
+    "label": "Bulgaria"
+   },
+   {
+    "source": "CShapes",
+    "holder": "BUL",
+    "label": "Bulgaria"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   }
+  ],
+  "start": 1879,
+  "end": 1879,
+  "towns": [
+   "Dobrich",
+   "Lovec",
+   "Montana",
+   "Pernik",
+   "Pleven",
+   "Razgrad",
+   "Shumen",
+   "Sofia",
+   "Turnovo",
+   "Varna",
+   "Vidin",
+   "Vratsa"
+  ],
+  "town_ranges": [
+   [
+    "Dobrich",
+    1879,
+    1879
+   ],
+   [
+    "Lovec",
+    1879,
+    1879
+   ],
+   [
+    "Montana",
+    1879,
+    1879
+   ],
+   [
+    "Pernik",
+    1879,
+    1879
+   ],
+   [
+    "Pleven",
+    1879,
+    1879
+   ],
+   [
+    "Razgrad",
+    1879,
+    1879
+   ],
+   [
+    "Shumen",
+    1879,
+    1879
+   ],
+   [
+    "Sofia",
+    1879,
+    1879
+   ],
+   [
+    "Turnovo",
+    1879,
+    1879
+   ],
+   [
+    "Varna",
+    1879,
+    1879
+   ],
+   [
+    "Vidin",
+    1879,
+    1879
+   ],
+   [
+    "Vratsa",
+    1879,
+    1879
+   ]
+  ],
+  "town_years": 12,
+  "id": "c057"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "WAL",
+    "label": "Wallachia"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "SRB",
+    "label": "Serbia"
+   }
+  ],
+  "start": 1816,
+  "end": 1827,
+  "towns": [
+   "Drobeta-Turnu Severin"
+  ],
+  "town_ranges": [
+   [
+    "Drobeta-Turnu Severin",
+    1816,
+    1827
+   ]
+  ],
+  "town_years": 12,
+  "id": "c058"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "AUT",
+    "label": "Austria"
+   },
+   {
+    "source": "CShapes",
+    "holder": "AUT",
+    "label": "Austria"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "MOL",
+    "label": "Moldavia"
+   }
+  ],
+  "start": 1816,
+  "end": 1827,
+  "towns": [
+   "Suceava"
+  ],
+  "town_ranges": [
+   [
+    "Suceava",
+    1816,
+    1827
+   ]
+  ],
+  "town_years": 12,
+  "id": "c059"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "GRE",
+    "label": "Greece"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "GRE",
+    "label": "Greece"
+   }
+  ],
+  "start": 1885,
+  "end": 1896,
+  "towns": [
+   "Arta"
+  ],
+  "town_ranges": [
+   [
+    "Arta",
+    1885,
+    1896
+   ]
+  ],
+  "town_years": 12,
+  "id": "c060"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "GRE+OTT",
+    "label": "GRE+OTT"
+   },
+   {
+    "source": "CShapes",
+    "holder": "GRE",
+    "label": "Greece"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "GRE",
+    "label": "Greece"
+   }
+  ],
+  "start": 1832,
+  "end": 1832,
+  "towns": [
+   "Agrinio",
+   "Athens",
+   "Chalkida",
+   "Ermoupoli",
+   "Kalamata",
+   "Missolonghi",
+   "Nafplio",
+   "Patra",
+   "Piraeus",
+   "Pirgos",
+   "Sparti",
+   "Tripoli"
+  ],
+  "town_ranges": [
+   [
+    "Agrinio",
+    1832,
+    1832
+   ],
+   [
+    "Athens",
+    1832,
+    1832
+   ],
+   [
+    "Chalkida",
+    1832,
+    1832
+   ],
+   [
+    "Ermoupoli",
+    1832,
+    1832
+   ],
+   [
+    "Kalamata",
+    1832,
+    1832
+   ],
+   [
+    "Missolonghi",
+    1832,
+    1832
+   ],
+   [
+    "Nafplio",
+    1832,
+    1832
+   ],
+   [
+    "Patra",
+    1832,
+    1832
+   ],
+   [
+    "Piraeus",
+    1832,
+    1832
+   ],
+   [
+    "Pirgos",
+    1832,
+    1832
+   ],
+   [
+    "Sparti",
+    1832,
+    1832
+   ],
+   [
+    "Tripoli",
+    1832,
+    1832
+   ]
+  ],
+  "town_years": 12,
+  "id": "c061"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "SRB",
+    "label": "Serbia"
+   }
+  ],
+  "start": 1815,
+  "end": 1815,
+  "towns": [
+   "Belgrade",
+   "Kragujevac",
+   "Kruševac",
+   "Kuršumlija",
+   "Negotin",
+   "Niš",
+   "Prokuplje",
+   "Smederevo",
+   "Užice",
+   "Zaječar",
+   "Čačak",
+   "Šabac"
+  ],
+  "town_ranges": [
+   [
+    "Belgrade",
+    1815,
+    1815
+   ],
+   [
+    "Kragujevac",
+    1815,
+    1815
+   ],
+   [
+    "Kruševac",
+    1815,
+    1815
+   ],
+   [
+    "Kuršumlija",
+    1815,
+    1815
+   ],
+   [
+    "Negotin",
+    1815,
+    1815
+   ],
+   [
+    "Niš",
+    1815,
+    1815
+   ],
+   [
+    "Prokuplje",
+    1815,
+    1815
+   ],
+   [
+    "Smederevo",
+    1815,
+    1815
+   ],
+   [
+    "Užice",
+    1815,
+    1815
+   ],
+   [
+    "Zaječar",
+    1815,
+    1815
+   ],
+   [
+    "Čačak",
+    1815,
+    1815
+   ],
+   [
+    "Šabac",
+    1815,
+    1815
+   ]
+  ],
+  "town_years": 12,
+  "id": "c062"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   }
+  ],
+  "start": 1828,
+  "end": 1829,
+  "towns": [
+   "Brăila",
+   "Constanța",
+   "Mangalia",
+   "Medgidia",
+   "Tulcea"
+  ],
+  "town_ranges": [
+   [
+    "Brăila",
+    1828,
+    1829
+   ],
+   [
+    "Constanța",
+    1828,
+    1829
+   ],
+   [
+    "Mangalia",
+    1828,
+    1829
+   ],
+   [
+    "Medgidia",
+    1828,
+    1829
+   ],
+   [
+    "Tulcea",
+    1828,
+    1829
+   ]
+  ],
+  "town_years": 10,
+  "id": "c063"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   }
+  ],
+  "start": 1828,
+  "end": 1833,
+  "towns": [
+   "Ruse",
+   "Silistra"
+  ],
+  "town_ranges": [
+   [
+    "Ruse",
+    1830,
+    1833
+   ],
+   [
+    "Silistra",
+    1828,
+    1833
+   ]
+  ],
+  "town_years": 10,
+  "id": "c064"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "AUT",
+    "label": "Austria"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   }
+  ],
+  "start": 1879,
+  "end": 1879,
+  "towns": [
+   "Banja Luka",
+   "Bihać",
+   "Foča",
+   "Mostar",
+   "Prijedor",
+   "Sarajevo",
+   "Travnik",
+   "Trebinje",
+   "Tuzla",
+   "Zenica"
+  ],
+  "town_ranges": [
+   [
+    "Banja Luka",
+    1879,
+    1879
+   ],
+   [
+    "Bihać",
+    1879,
+    1879
+   ],
+   [
+    "Foča",
+    1879,
+    1879
+   ],
+   [
+    "Mostar",
+    1879,
+    1879
+   ],
+   [
+    "Prijedor",
+    1879,
+    1879
+   ],
+   [
+    "Sarajevo",
+    1879,
+    1879
+   ],
+   [
+    "Travnik",
+    1879,
+    1879
+   ],
+   [
+    "Trebinje",
+    1879,
+    1879
+   ],
+   [
+    "Tuzla",
+    1879,
+    1879
+   ],
+   [
+    "Zenica",
+    1879,
+    1879
+   ]
+  ],
+  "town_years": 10,
+  "id": "c065"
+ },
+ {
+  "category": "gap",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "NONE",
+    "label": "No country"
+   },
+   {
+    "source": "CShapes",
+    "holder": "AUTOCC",
+    "label": "Austria-Hungary (occupation)"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "AUT",
+    "label": "Austria"
+   }
+  ],
+  "start": 1897,
+  "end": 1897,
+  "towns": [
+   "Banja Luka",
+   "Bihać",
+   "Foča",
+   "Mostar",
+   "Prijedor",
+   "Sarajevo",
+   "Travnik",
+   "Trebinje",
+   "Tuzla",
+   "Zenica"
+  ],
+  "town_ranges": [
+   [
+    "Banja Luka",
+    1897,
+    1897
+   ],
+   [
+    "Bihać",
+    1897,
+    1897
+   ],
+   [
+    "Foča",
+    1897,
+    1897
+   ],
+   [
+    "Mostar",
+    1897,
+    1897
+   ],
+   [
+    "Prijedor",
+    1897,
+    1897
+   ],
+   [
+    "Sarajevo",
+    1897,
+    1897
+   ],
+   [
+    "Travnik",
+    1897,
+    1897
+   ],
+   [
+    "Trebinje",
+    1897,
+    1897
+   ],
+   [
+    "Tuzla",
+    1897,
+    1897
+   ],
+   [
+    "Zenica",
+    1897,
+    1897
+   ]
+  ],
+  "town_years": 10,
+  "id": "c066"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "GRE",
+    "label": "Greece"
+   },
+   {
+    "source": "CShapes",
+    "holder": "GRE",
+    "label": "Greece"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "GRE+UK",
+    "label": "GRE+UK"
+   }
+  ],
+  "start": 1865,
+  "end": 1869,
+  "towns": [
+   "Argostoli",
+   "Zakynthos"
+  ],
+  "town_ranges": [
+   [
+    "Argostoli",
+    1865,
+    1869
+   ],
+   [
+    "Zakynthos",
+    1865,
+    1869
+   ]
+  ],
+  "town_years": 10,
+  "id": "c067"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "GRE",
+    "label": "Greece"
+   }
+  ],
+  "start": 1898,
+  "end": 1900,
+  "towns": [
+   "Elassona",
+   "Preveza",
+   "Tyrnavos"
+  ],
+  "town_ranges": [
+   [
+    "Elassona",
+    1898,
+    1900
+   ],
+   [
+    "Preveza",
+    1898,
+    1900
+   ],
+   [
+    "Tyrnavos",
+    1898,
+    1900
+   ]
+  ],
+  "town_years": 9,
+  "id": "c068"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "EGY",
+    "label": "Egypt"
+   },
+   {
+    "source": "CShapes",
+    "holder": "EGY",
+    "label": "Egypt"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "GRE",
+    "label": "Greece"
+   }
+  ],
+  "start": 1831,
+  "end": 1833,
+  "towns": [
+   "Hania",
+   "Iraklio",
+   "Sitia"
+  ],
+  "town_ranges": [
+   [
+    "Hania",
+    1831,
+    1833
+   ],
+   [
+    "Iraklio",
+    1831,
+    1833
+   ],
+   [
+    "Sitia",
+    1831,
+    1833
+   ]
+  ],
+  "town_years": 9,
+  "id": "c069"
+ },
+ {
+  "category": "rule",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "CRT",
+    "label": "Cretan State"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "CRT",
+    "label": "Cretan State"
+   }
+  ],
+  "start": 1898,
+  "end": 1900,
+  "towns": [
+   "Hania",
+   "Iraklio",
+   "Sitia"
+  ],
+  "town_ranges": [
+   [
+    "Hania",
+    1898,
+    1900
+   ],
+   [
+    "Iraklio",
+    1898,
+    1900
+   ],
+   [
+    "Sitia",
+    1898,
+    1900
+   ]
+  ],
+  "town_years": 9,
+  "id": "c070"
+ },
+ {
+  "category": "rule",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "BUL",
+    "label": "Bulgaria"
+   }
+  ],
+  "start": 1898,
+  "end": 1900,
+  "towns": [
+   "Kardzhali",
+   "Kyustendil",
+   "Smolyan"
+  ],
+  "town_ranges": [
+   [
+    "Kardzhali",
+    1898,
+    1900
+   ],
+   [
+    "Kyustendil",
+    1898,
+    1900
+   ],
+   [
+    "Smolyan",
+    1898,
+    1900
+   ]
+  ],
+  "town_years": 9,
+  "id": "c071"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "MOL",
+    "label": "Moldavia"
+   },
+   {
+    "source": "CShapes",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "MOL",
+    "label": "Moldavia"
+   }
+  ],
+  "start": 1834,
+  "end": 1834,
+  "towns": [
+   "Bacău",
+   "Botoșani",
+   "Focșani",
+   "Galați",
+   "Iași",
+   "Piatra-Neamt",
+   "Vaslui"
+  ],
+  "town_ranges": [
+   [
+    "Bacău",
+    1834,
+    1834
+   ],
+   [
+    "Botoșani",
+    1834,
+    1834
+   ],
+   [
+    "Focșani",
+    1834,
+    1834
+   ],
+   [
+    "Galați",
+    1834,
+    1834
+   ],
+   [
+    "Iași",
+    1834,
+    1834
+   ],
+   [
+    "Piatra-Neamt",
+    1834,
+    1834
+   ],
+   [
+    "Vaslui",
+    1834,
+    1834
+   ]
+  ],
+  "town_years": 7,
+  "id": "c072"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "MOL",
+    "label": "Moldavia"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "AUT",
+    "label": "Austria"
+   }
+  ],
+  "start": 1856,
+  "end": 1856,
+  "towns": [
+   "Bacău",
+   "Botoșani",
+   "Focșani",
+   "Galați",
+   "Iași",
+   "Piatra-Neamt",
+   "Vaslui"
+  ],
+  "town_ranges": [
+   [
+    "Bacău",
+    1856,
+    1856
+   ],
+   [
+    "Botoșani",
+    1856,
+    1856
+   ],
+   [
+    "Focșani",
+    1856,
+    1856
+   ],
+   [
+    "Galați",
+    1856,
+    1856
+   ],
+   [
+    "Iași",
+    1856,
+    1856
+   ],
+   [
+    "Piatra-Neamt",
+    1856,
+    1856
+   ],
+   [
+    "Vaslui",
+    1856,
+    1856
+   ]
+  ],
+  "town_years": 7,
+  "id": "c073"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "WAL",
+    "label": "Wallachia"
+   },
+   {
+    "source": "CShapes",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "SRB",
+    "label": "Serbia"
+   }
+  ],
+  "start": 1828,
+  "end": 1834,
+  "towns": [
+   "Drobeta-Turnu Severin"
+  ],
+  "town_ranges": [
+   [
+    "Drobeta-Turnu Severin",
+    1828,
+    1834
+   ]
+  ],
+  "town_years": 7,
+  "id": "c074"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "AUT",
+    "label": "Austria"
+   },
+   {
+    "source": "CShapes",
+    "holder": "AUT",
+    "label": "Austria"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   }
+  ],
+  "start": 1849,
+  "end": 1855,
+  "towns": [
+   "Suceava"
+  ],
+  "town_ranges": [
+   [
+    "Suceava",
+    1849,
+    1855
+   ]
+  ],
+  "town_years": 7,
+  "id": "c075"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "AUT",
+    "label": "Austria"
+   },
+   {
+    "source": "CShapes",
+    "holder": "AUT",
+    "label": "Austria"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   }
+  ],
+  "start": 1828,
+  "end": 1833,
+  "towns": [
+   "Suceava"
+  ],
+  "town_ranges": [
+   [
+    "Suceava",
+    1828,
+    1833
+   ]
+  ],
+  "town_years": 6,
+  "id": "c076"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   }
+  ],
+  "start": 1855,
+  "end": 1855,
+  "towns": [
+   "Bolhrad",
+   "Cahul",
+   "Izmayil",
+   "Kiliya",
+   "Reni",
+   "Vylkove"
+  ],
+  "town_ranges": [
+   [
+    "Bolhrad",
+    1855,
+    1855
+   ],
+   [
+    "Cahul",
+    1855,
+    1855
+   ],
+   [
+    "Izmayil",
+    1855,
+    1855
+   ],
+   [
+    "Kiliya",
+    1855,
+    1855
+   ],
+   [
+    "Reni",
+    1855,
+    1855
+   ],
+   [
+    "Vylkove",
+    1855,
+    1855
+   ]
+  ],
+  "town_years": 6,
+  "id": "c077"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "MOL",
+    "label": "Moldavia"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   }
+  ],
+  "start": 1856,
+  "end": 1856,
+  "towns": [
+   "Bolhrad",
+   "Cahul",
+   "Izmayil",
+   "Kiliya",
+   "Reni",
+   "Vylkove"
+  ],
+  "town_ranges": [
+   [
+    "Bolhrad",
+    1856,
+    1856
+   ],
+   [
+    "Cahul",
+    1856,
+    1856
+   ],
+   [
+    "Izmayil",
+    1856,
+    1856
+   ],
+   [
+    "Kiliya",
+    1856,
+    1856
+   ],
+   [
+    "Reni",
+    1856,
+    1856
+   ],
+   [
+    "Vylkove",
+    1856,
+    1856
+   ]
+  ],
+  "town_years": 6,
+  "id": "c078"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "ROM",
+    "label": "Romania (United Principalities)"
+   }
+  ],
+  "start": 1879,
+  "end": 1879,
+  "towns": [
+   "Bolhrad",
+   "Cahul",
+   "Izmayil",
+   "Kiliya",
+   "Reni",
+   "Vylkove"
+  ],
+  "town_ranges": [
+   [
+    "Bolhrad",
+    1879,
+    1879
+   ],
+   [
+    "Cahul",
+    1879,
+    1879
+   ],
+   [
+    "Izmayil",
+    1879,
+    1879
+   ],
+   [
+    "Kiliya",
+    1879,
+    1879
+   ],
+   [
+    "Reni",
+    1879,
+    1879
+   ],
+   [
+    "Vylkove",
+    1879,
+    1879
+   ]
+  ],
+  "town_years": 6,
+  "id": "c079"
+ },
+ {
+  "category": "rule",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "BUL",
+    "label": "Bulgaria"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "BUL",
+    "label": "Bulgaria"
+   }
+  ],
+  "start": 1880,
+  "end": 1885,
+  "towns": [
+   "Kyustendil"
+  ],
+  "town_ranges": [
+   [
+    "Kyustendil",
+    1880,
+    1885
+   ]
+  ],
+  "town_years": 6,
+  "id": "c080"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "AUT",
+    "label": "Austria"
+   }
+  ],
+  "start": 1898,
+  "end": 1900,
+  "towns": [
+   "Bijelo Polje",
+   "Pljevlja"
+  ],
+  "town_ranges": [
+   [
+    "Bijelo Polje",
+    1898,
+    1900
+   ],
+   [
+    "Pljevlja",
+    1898,
+    1900
+   ]
+  ],
+  "town_years": 6,
+  "id": "c081"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "AUT",
+    "label": "Austria"
+   },
+   {
+    "source": "CShapes",
+    "holder": "MNE",
+    "label": "Montenegro"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   }
+  ],
+  "start": 1879,
+  "end": 1884,
+  "towns": [
+   "Sutomore"
+  ],
+  "town_ranges": [
+   [
+    "Sutomore",
+    1879,
+    1884
+   ]
+  ],
+  "town_years": 6,
+  "id": "c082"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "ROM",
+    "label": "Romania (United Principalities)"
+   },
+   {
+    "source": "CShapes",
+    "holder": "ROM",
+    "label": "Romania (United Principalities)"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   }
+  ],
+  "start": 1879,
+  "end": 1879,
+  "towns": [
+   "Brăila",
+   "Constanța",
+   "Mangalia",
+   "Medgidia",
+   "Tulcea"
+  ],
+  "town_ranges": [
+   [
+    "Brăila",
+    1879,
+    1879
+   ],
+   [
+    "Constanța",
+    1879,
+    1879
+   ],
+   [
+    "Mangalia",
+    1879,
+    1879
+   ],
+   [
+    "Medgidia",
+    1879,
+    1879
+   ],
+   [
+    "Tulcea",
+    1879,
+    1879
+   ]
+  ],
+  "town_years": 5,
+  "id": "c083"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "ERU",
+    "label": "Eastern Rumelia"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   }
+  ],
+  "start": 1879,
+  "end": 1879,
+  "towns": [
+   "Burgas",
+   "Khaskovo",
+   "Plovdiv",
+   "Sliven",
+   "Stara Zagora"
+  ],
+  "town_ranges": [
+   [
+    "Burgas",
+    1879,
+    1879
+   ],
+   [
+    "Khaskovo",
+    1879,
+    1879
+   ],
+   [
+    "Plovdiv",
+    1879,
+    1879
+   ],
+   [
+    "Sliven",
+    1879,
+    1879
+   ],
+   [
+    "Stara Zagora",
+    1879,
+    1879
+   ]
+  ],
+  "town_years": 5,
+  "id": "c084"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "ERU",
+    "label": "Eastern Rumelia"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "BUL",
+    "label": "Bulgaria"
+   }
+  ],
+  "start": 1885,
+  "end": 1885,
+  "towns": [
+   "Burgas",
+   "Khaskovo",
+   "Plovdiv",
+   "Sliven",
+   "Stara Zagora"
+  ],
+  "town_ranges": [
+   [
+    "Burgas",
+    1885,
+    1885
+   ],
+   [
+    "Khaskovo",
+    1885,
+    1885
+   ],
+   [
+    "Plovdiv",
+    1885,
+    1885
+   ],
+   [
+    "Sliven",
+    1885,
+    1885
+   ],
+   [
+    "Stara Zagora",
+    1885,
+    1885
+   ]
+  ],
+  "town_years": 5,
+  "id": "c085"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "GRE",
+    "label": "Greece"
+   }
+  ],
+  "start": 1828,
+  "end": 1828,
+  "towns": [
+   "Agrinio",
+   "Kalamata",
+   "Missolonghi",
+   "Pirgos",
+   "Tripoli"
+  ],
+  "town_ranges": [
+   [
+    "Agrinio",
+    1828,
+    1828
+   ],
+   [
+    "Kalamata",
+    1828,
+    1828
+   ],
+   [
+    "Missolonghi",
+    1828,
+    1828
+   ],
+   [
+    "Pirgos",
+    1828,
+    1828
+   ],
+   [
+    "Tripoli",
+    1828,
+    1828
+   ]
+  ],
+  "town_years": 5,
+  "id": "c086"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "GRE",
+    "label": "Greece"
+   },
+   {
+    "source": "CShapes",
+    "holder": "GRE",
+    "label": "Greece"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "UK",
+    "label": "United Kingdom"
+   }
+  ],
+  "start": 1865,
+  "end": 1869,
+  "towns": [
+   "Lefkada"
+  ],
+  "town_ranges": [
+   [
+    "Lefkada",
+    1865,
+    1869
+   ]
+  ],
+  "town_years": 5,
+  "id": "c087"
+ },
+ {
+  "category": "gap",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "NONE",
+    "label": "No country"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "ION",
+    "label": "Ionian Islands"
+   }
+  ],
+  "start": 1815,
+  "end": 1815,
+  "towns": [
+   "Argostoli",
+   "Kerkira",
+   "Lefkada",
+   "Zakynthos"
+  ],
+  "town_ranges": [
+   [
+    "Argostoli",
+    1815,
+    1815
+   ],
+   [
+    "Kerkira",
+    1815,
+    1815
+   ],
+   [
+    "Lefkada",
+    1815,
+    1815
+   ],
+   [
+    "Zakynthos",
+    1815,
+    1815
+   ]
+  ],
+  "town_years": 4,
+  "id": "c088"
+ },
+ {
+  "category": "rule",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "WAL",
+    "label": "Wallachia"
+   }
+  ],
+  "start": 1857,
+  "end": 1858,
+  "towns": [
+   "Ruse",
+   "Silistra"
+  ],
+  "town_ranges": [
+   [
+    "Ruse",
+    1857,
+    1858
+   ],
+   [
+    "Silistra",
+    1857,
+    1858
+   ]
+  ],
+  "town_years": 4,
+  "id": "c089"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "SRB",
+    "label": "Serbia"
+   },
+   {
+    "source": "CShapes",
+    "holder": "SRB",
+    "label": "Serbia"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   }
+  ],
+  "start": 1879,
+  "end": 1879,
+  "towns": [
+   "Kuršumlija",
+   "Leskovac",
+   "Pirot",
+   "Vranje"
+  ],
+  "town_ranges": [
+   [
+    "Kuršumlija",
+    1879,
+    1879
+   ],
+   [
+    "Leskovac",
+    1879,
+    1879
+   ],
+   [
+    "Pirot",
+    1879,
+    1879
+   ],
+   [
+    "Vranje",
+    1879,
+    1879
+   ]
+  ],
+  "town_years": 4,
+  "id": "c090"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "MNE",
+    "label": "Montenegro"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   }
+  ],
+  "start": 1879,
+  "end": 1880,
+  "towns": [
+   "Bar",
+   "Ulcinj"
+  ],
+  "town_ranges": [
+   [
+    "Bar",
+    1879,
+    1880
+   ],
+   [
+    "Ulcinj",
+    1879,
+    1880
+   ]
+  ],
+  "town_years": 4,
+  "id": "c091"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "AUT",
+    "label": "Austria"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "FRA",
+    "label": "France"
+   }
+  ],
+  "start": 1816,
+  "end": 1819,
+  "towns": [
+   "Kotor"
+  ],
+  "town_ranges": [
+   [
+    "Kotor",
+    1816,
+    1819
+   ]
+  ],
+  "town_years": 4,
+  "id": "c092"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "GRE",
+    "label": "Greece"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "GRE",
+    "label": "Greece"
+   }
+  ],
+  "start": 1898,
+  "end": 1900,
+  "towns": [
+   "Arta"
+  ],
+  "town_ranges": [
+   [
+    "Arta",
+    1898,
+    1900
+   ]
+  ],
+  "town_years": 3,
+  "id": "c093"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "EGY",
+    "label": "Egypt"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "GRE",
+    "label": "Greece"
+   }
+  ],
+  "start": 1830,
+  "end": 1830,
+  "towns": [
+   "Hania",
+   "Iraklio",
+   "Sitia"
+  ],
+  "town_ranges": [
+   [
+    "Hania",
+    1830,
+    1830
+   ],
+   [
+    "Iraklio",
+    1830,
+    1830
+   ],
+   [
+    "Sitia",
+    1830,
+    1830
+   ]
+  ],
+  "town_years": 3,
+  "id": "c094"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "EGY",
+    "label": "Egypt"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   }
+  ],
+  "start": 1840,
+  "end": 1840,
+  "towns": [
+   "Hania",
+   "Iraklio",
+   "Sitia"
+  ],
+  "town_ranges": [
+   [
+    "Hania",
+    1840,
+    1840
+   ],
+   [
+    "Iraklio",
+    1840,
+    1840
+   ],
+   [
+    "Sitia",
+    1840,
+    1840
+   ]
+  ],
+  "town_years": 3,
+  "id": "c095"
+ },
+ {
+  "category": "gap",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "NONE",
+    "label": "No country"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "BUL",
+    "label": "Bulgaria"
+   }
+  ],
+  "start": 1897,
+  "end": 1897,
+  "towns": [
+   "Kardzhali",
+   "Kyustendil",
+   "Smolyan"
+  ],
+  "town_ranges": [
+   [
+    "Kardzhali",
+    1897,
+    1897
+   ],
+   [
+    "Kyustendil",
+    1897,
+    1897
+   ],
+   [
+    "Smolyan",
+    1897,
+    1897
+   ]
+  ],
+  "town_years": 3,
+  "id": "c096"
+ },
+ {
+  "category": "rule",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "SRB",
+    "label": "Serbia"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   }
+  ],
+  "start": 1898,
+  "end": 1900,
+  "towns": [
+   "Novi Pazar"
+  ],
+  "town_ranges": [
+   [
+    "Novi Pazar",
+    1898,
+    1900
+   ]
+  ],
+  "town_years": 3,
+  "id": "c097"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "GRE",
+    "label": "Greece"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   }
+  ],
+  "start": 1882,
+  "end": 1884,
+  "towns": [
+   "Arta"
+  ],
+  "town_ranges": [
+   [
+    "Arta",
+    1882,
+    1884
+   ]
+  ],
+  "town_years": 3,
+  "id": "c098"
+ },
+ {
+  "category": "gap",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "NONE",
+    "label": "No country"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "GRE",
+    "label": "Greece"
+   }
+  ],
+  "start": 1897,
+  "end": 1897,
+  "towns": [
+   "Elassona",
+   "Preveza",
+   "Tyrnavos"
+  ],
+  "town_ranges": [
+   [
+    "Elassona",
+    1897,
+    1897
+   ],
+   [
+    "Preveza",
+    1897,
+    1897
+   ],
+   [
+    "Tyrnavos",
+    1897,
+    1897
+   ]
+  ],
+  "town_years": 3,
+  "id": "c099"
+ },
+ {
+  "category": "gap",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "NONE",
+    "label": "No country"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   }
+  ],
+  "start": 1831,
+  "end": 1832,
+  "towns": [
+   "Tulcea"
+  ],
+  "town_ranges": [
+   [
+    "Tulcea",
+    1831,
+    1832
+   ]
+  ],
+  "town_years": 2,
+  "id": "c100"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "ROM",
+    "label": "Romania (United Principalities)"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   }
+  ],
+  "start": 1877,
+  "end": 1878,
+  "towns": [
+   "Brăila"
+  ],
+  "town_ranges": [
+   [
+    "Brăila",
+    1877,
+    1878
+   ]
+  ],
+  "town_years": 2,
+  "id": "c101"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "WAL",
+    "label": "Wallachia"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "SRB",
+    "label": "Serbia"
+   }
+  ],
+  "start": 1857,
+  "end": 1858,
+  "towns": [
+   "Drobeta-Turnu Severin"
+  ],
+  "town_ranges": [
+   [
+    "Drobeta-Turnu Severin",
+    1857,
+    1858
+   ]
+  ],
+  "town_years": 2,
+  "id": "c102"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "AUT",
+    "label": "Austria"
+   },
+   {
+    "source": "CShapes",
+    "holder": "AUT",
+    "label": "Austria"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "MOL",
+    "label": "Moldavia"
+   }
+  ],
+  "start": 1857,
+  "end": 1858,
+  "towns": [
+   "Suceava"
+  ],
+  "town_ranges": [
+   [
+    "Suceava",
+    1857,
+    1858
+   ]
+  ],
+  "town_years": 2,
+  "id": "c103"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "GRE",
+    "label": "Greece"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "GRE",
+    "label": "Greece"
+   }
+  ],
+  "start": 1831,
+  "end": 1831,
+  "towns": [
+   "Chalkida",
+   "Ermoupoli"
+  ],
+  "town_ranges": [
+   [
+    "Chalkida",
+    1831,
+    1831
+   ],
+   [
+    "Ermoupoli",
+    1831,
+    1831
+   ]
+  ],
+  "town_years": 2,
+  "id": "c104"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "WAL",
+    "label": "Wallachia"
+   }
+  ],
+  "start": 1815,
+  "end": 1815,
+  "towns": [
+   "Ruse",
+   "Silistra"
+  ],
+  "town_ranges": [
+   [
+    "Ruse",
+    1815,
+    1815
+   ],
+   [
+    "Silistra",
+    1815,
+    1815
+   ]
+  ],
+  "town_years": 2,
+  "id": "c105"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "AUT",
+    "label": "Austria"
+   }
+  ],
+  "start": 1856,
+  "end": 1856,
+  "towns": [
+   "Ruse",
+   "Silistra"
+  ],
+  "town_ranges": [
+   [
+    "Ruse",
+    1856,
+    1856
+   ],
+   [
+    "Silistra",
+    1856,
+    1856
+   ]
+  ],
+  "town_years": 2,
+  "id": "c106"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "BUL",
+    "label": "Bulgaria"
+   },
+   {
+    "source": "CShapes",
+    "holder": "BUL",
+    "label": "Bulgaria"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "ROM",
+    "label": "Romania (United Principalities)"
+   }
+  ],
+  "start": 1879,
+  "end": 1879,
+  "towns": [
+   "Ruse",
+   "Silistra"
+  ],
+  "town_ranges": [
+   [
+    "Ruse",
+    1879,
+    1879
+   ],
+   [
+    "Silistra",
+    1879,
+    1879
+   ]
+  ],
+  "town_years": 2,
+  "id": "c107"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "MNE",
+    "label": "Montenegro"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   }
+  ],
+  "start": 1815,
+  "end": 1815,
+  "towns": [
+   "Cetinje",
+   "Danilovgrad"
+  ],
+  "town_ranges": [
+   [
+    "Cetinje",
+    1815,
+    1815
+   ],
+   [
+    "Danilovgrad",
+    1815,
+    1815
+   ]
+  ],
+  "town_years": 2,
+  "id": "c108"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "MNE+OTT",
+    "label": "MNE+OTT"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "MNE",
+    "label": "Montenegro"
+   }
+  ],
+  "start": 1878,
+  "end": 1878,
+  "towns": [
+   "Cetinje",
+   "Danilovgrad"
+  ],
+  "town_ranges": [
+   [
+    "Cetinje",
+    1878,
+    1878
+   ],
+   [
+    "Danilovgrad",
+    1878,
+    1878
+   ]
+  ],
+  "town_years": 2,
+  "id": "c109"
+ },
+ {
+  "category": "gap",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "NONE",
+    "label": "No country"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "AUT",
+    "label": "Austria"
+   }
+  ],
+  "start": 1897,
+  "end": 1897,
+  "towns": [
+   "Bijelo Polje",
+   "Pljevlja"
+  ],
+  "town_ranges": [
+   [
+    "Bijelo Polje",
+    1897,
+    1897
+   ],
+   [
+    "Pljevlja",
+    1897,
+    1897
+   ]
+  ],
+  "town_years": 2,
+  "id": "c110"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "GRE",
+    "label": "Greece"
+   },
+   {
+    "source": "CShapes",
+    "holder": "UK",
+    "label": "United Kingdom"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "GRE+UK",
+    "label": "GRE+UK"
+   }
+  ],
+  "start": 1864,
+  "end": 1864,
+  "towns": [
+   "Argostoli",
+   "Zakynthos"
+  ],
+  "town_ranges": [
+   [
+    "Argostoli",
+    1864,
+    1864
+   ],
+   [
+    "Zakynthos",
+    1864,
+    1864
+   ]
+  ],
+  "town_years": 2,
+  "id": "c111"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "GRE+OTT",
+    "label": "GRE+OTT"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "GRE",
+    "label": "Greece"
+   }
+  ],
+  "start": 1832,
+  "end": 1832,
+  "towns": [
+   "Lamia"
+  ],
+  "town_ranges": [
+   [
+    "Lamia",
+    1832,
+    1832
+   ]
+  ],
+  "town_years": 1,
+  "id": "c112"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "WAL",
+    "label": "Wallachia"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "SRB",
+    "label": "Serbia"
+   }
+  ],
+  "start": 1815,
+  "end": 1815,
+  "towns": [
+   "Drobeta-Turnu Severin"
+  ],
+  "town_ranges": [
+   [
+    "Drobeta-Turnu Severin",
+    1815,
+    1815
+   ]
+  ],
+  "town_years": 1,
+  "id": "c113"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   }
+  ],
+  "start": 1830,
+  "end": 1830,
+  "towns": [
+   "Tulcea"
+  ],
+  "town_ranges": [
+   [
+    "Tulcea",
+    1830,
+    1830
+   ]
+  ],
+  "town_years": 1,
+  "id": "c114"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "AUT",
+    "label": "Austria"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "MOL",
+    "label": "Moldavia"
+   }
+  ],
+  "start": 1815,
+  "end": 1815,
+  "towns": [
+   "Suceava"
+  ],
+  "town_ranges": [
+   [
+    "Suceava",
+    1815,
+    1815
+   ]
+  ],
+  "town_years": 1,
+  "id": "c115"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "GRE",
+    "label": "Greece"
+   },
+   {
+    "source": "CShapes",
+    "holder": "UK",
+    "label": "United Kingdom"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "GRE",
+    "label": "Greece"
+   }
+  ],
+  "start": 1864,
+  "end": 1864,
+  "towns": [
+   "Kerkira"
+  ],
+  "town_ranges": [
+   [
+    "Kerkira",
+    1864,
+    1864
+   ]
+  ],
+  "town_years": 1,
+  "id": "c116"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "GRE",
+    "label": "Greece"
+   }
+  ],
+  "start": 1830,
+  "end": 1830,
+  "towns": [
+   "Ermoupoli"
+  ],
+  "town_ranges": [
+   [
+    "Ermoupoli",
+    1830,
+    1830
+   ]
+  ],
+  "town_years": 1,
+  "id": "c117"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "BUL",
+    "label": "Bulgaria"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   }
+  ],
+  "start": 1879,
+  "end": 1879,
+  "towns": [
+   "Kyustendil"
+  ],
+  "town_ranges": [
+   [
+    "Kyustendil",
+    1879,
+    1879
+   ]
+  ],
+  "town_years": 1,
+  "id": "c118"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   }
+  ],
+  "start": 1828,
+  "end": 1828,
+  "towns": [
+   "Ruse"
+  ],
+  "town_ranges": [
+   [
+    "Ruse",
+    1828,
+    1828
+   ]
+  ],
+  "town_years": 1,
+  "id": "c119"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   },
+   {
+    "source": "CShapes",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "RUS",
+    "label": "Russian Empire"
+   }
+  ],
+  "start": 1829,
+  "end": 1829,
+  "towns": [
+   "Ruse"
+  ],
+  "town_ranges": [
+   [
+    "Ruse",
+    1829,
+    1829
+   ]
+  ],
+  "town_years": 1,
+  "id": "c120"
+ },
+ {
+  "category": "gap",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "NONE",
+    "label": "No country"
+   },
+   {
+    "source": "CShapes",
+    "holder": "SRB",
+    "label": "Serbia"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   }
+  ],
+  "start": 1897,
+  "end": 1897,
+  "towns": [
+   "Novi Pazar"
+  ],
+  "town_ranges": [
+   [
+    "Novi Pazar",
+    1897,
+    1897
+   ]
+  ],
+  "town_years": 1,
+  "id": "c121"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "AUT",
+    "label": "Austria"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "SRB",
+    "label": "Serbia"
+   }
+  ],
+  "start": 1815,
+  "end": 1815,
+  "towns": [
+   "Zemun"
+  ],
+  "town_ranges": [
+   [
+    "Zemun",
+    1815,
+    1815
+   ]
+  ],
+  "town_years": 1,
+  "id": "c122"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "AUT",
+    "label": "Austria"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "FRA",
+    "label": "France"
+   }
+  ],
+  "start": 1815,
+  "end": 1815,
+  "towns": [
+   "Kotor"
+  ],
+  "town_ranges": [
+   [
+    "Kotor",
+    1815,
+    1815
+   ]
+  ],
+  "town_years": 1,
+  "id": "c123"
+ },
+ {
+  "category": "holder",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "AUT+OTT",
+    "label": "AUT+OTT"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   }
+  ],
+  "start": 1815,
+  "end": 1815,
+  "towns": [
+   "Sutomore"
+  ],
+  "town_ranges": [
+   [
+    "Sutomore",
+    1815,
+    1815
+   ]
+  ],
+  "town_years": 1,
+  "id": "c124"
+ },
+ {
+  "category": "gap",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "NONE",
+    "label": "No country"
+   },
+   {
+    "source": "CShapes",
+    "holder": "GRE",
+    "label": "Greece"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "GRE",
+    "label": "Greece"
+   }
+  ],
+  "start": 1897,
+  "end": 1897,
+  "towns": [
+   "Arta"
+  ],
+  "town_ranges": [
+   [
+    "Arta",
+    1897,
+    1897
+   ]
+  ],
+  "town_years": 1,
+  "id": "c125"
+ },
+ {
+  "category": "timing",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "GRE",
+    "label": "Greece"
+   },
+   {
+    "source": "CShapes",
+    "holder": "UK",
+    "label": "United Kingdom"
+   },
+   {
+    "source": "Cliopatria",
+    "holder": "UK",
+    "label": "United Kingdom"
+   }
+  ],
+  "start": 1864,
+  "end": 1864,
+  "towns": [
+   "Lefkada"
+  ],
+  "town_ranges": [
+   [
+    "Lefkada",
+    1864,
+    1864
+   ]
+  ],
+  "town_years": 1,
+  "id": "c126"
+ },
+ {
+  "category": "gap",
+  "claims": [
+   {
+    "source": "OHM",
+    "holder": "NONE",
+    "label": "No country"
+   },
+   {
+    "source": "CShapes",
+    "holder": "OTT",
+    "label": "Ottoman Empire"
+   }
+  ],
+  "start": 1897,
+  "end": 1897,
+  "towns": [
+   "Vathy"
+  ],
+  "town_ranges": [
+   [
+    "Vathy",
+    1897,
+    1897
+   ]
+  ],
+  "town_years": 1,
+  "id": "c127"
+ }
+]

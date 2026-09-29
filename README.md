@@ -17,6 +17,10 @@ Work toward a more complete, better-sourced dataset of historical borders, start
 
 Details: [docs/assessment.md](docs/assessment.md). Every audit check: [data/ohm-vs-cow-transfers-1816-1900.csv](data/ohm-vs-cow-transfers-1816-1900.csv).
 
+## Balkans pilot
+
+A working review tool on real data for the Balkans, 1815–1900. Three datasets are compared town by town and year by year, and their disagreements are grouped into 28 questions, each with suggested answers and sources. See [pilot-balkans/](pilot-balkans/).
+
 ## Where this is going
 
 Store individual claims ("this area belonged to this state from date A to date B, according to source S") with their sources and weights, instead of one map. When sources disagree, the system suggests an answer, and a reviewer approves it when a primary source backs every date; otherwise it goes to an expert. The [mockup](mockup/) shows the review screens.
