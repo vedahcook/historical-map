@@ -21,6 +21,10 @@ Details: [docs/assessment.md](docs/assessment.md). Every audit check: [data/ohm-
 
 A working review tool on real data for the Balkans, 1815–1900. Three datasets are compared town by town and year by year, and their disagreements are grouped into 28 questions, each with suggested answers and sources. See [pilot-balkans/](pilot-balkans/).
 
+## Europe map, 1800–1900
+
+An interactive map of Europe's borders year by year, built on OHM with gaps filled from CShapes-Europe and Cliopatria and a short list of corrections. Where another source draws a different border, the map marks it with a dashed outline and explains the difference. See [europe-map/](europe-map/).
+
 ## Where this is going
 
 Store individual claims ("this area belonged to this state from date A to date B, according to source S") with their sources and weights, instead of one map. When sources disagree, the system suggests an answer, and a reviewer approves it when a primary source backs every date; otherwise it goes to an expert. The [mockup](mockup/) shows the review screens.
@@ -33,6 +37,8 @@ Store individual claims ("this area belonged to this state from date A to date B
 | `data/` | Test places, the 160 spot checks, the 60 COW transfers tested, and the audit results |
 | `scripts/` | Scripts that rerun the checks against OHM, CShapes-Europe and Cliopatria |
 | `mockup/` | Source for the conflict-review mockup (queue, conflict detail, rules) |
+| `pilot-balkans/` | The Balkans review tool and the scripts that build it |
+| `europe-map/` | The Europe 1800–1900 map and the scripts that build it |
 
 ## Rerunning the checks
 

@@ -1,3 +1,6 @@
 out/
 __pycache__/
 .DS_Store
+europe-map/*.pkl
+europe-map/europe-borders-sources.json
+europe-map/geo.json

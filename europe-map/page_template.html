@@ -1,0 +1,594 @@
+<title>Europe's Borders, 1800–1900</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: an atlas plate. The map fills the left, a year slider runs under it, and a side panel explains the year, the place you clicked, and where sources disagree. */
+:root {
+  --bg: #f2f4f1; --surface: #ffffff; --sunk: #e9ece7; --ink: #18201c; --muted: #56605a; --faint: #7d867f; --line: #d6dbd4;
+  --accent: #1f5f6b; --accent-ink: #ffffff; --focus: #1f5f6b;
+  --water: #d6e3e8; --outside: #e4e9e6; --grat: rgba(42,48,44,0.14); --none: #e6e4dc; --border: #2a302c; --vborder: rgba(42,48,44,0.55); --river: #a9c3ce; --halo: rgba(255,255,255,0.88);
+  --alt: #1f5f6b; --alt-fill: rgba(31,95,107,0.16); --sel: #18201c;
+  /*FILLS_LIGHT*/
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --r: 12px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #111513; --surface: #1a201d; --sunk: #151a18; --ink: #e6ece8; --muted: #a3aea7; --faint: #7f8a83; --line: #2e3632;
+  --accent: #7fc4cf; --accent-ink: #0e1412; --focus: #7fc4cf;
+  --water: #14232a; --outside: #161b19; --grat: rgba(223,230,225,0.12); --none: #2a2e2b; --border: #dfe6e1; --vborder: rgba(223,230,225,0.5); --river: #2c4b57; --halo: rgba(17,21,19,0.85);
+  --alt: #7fc4cf; --alt-fill: rgba(127,196,207,0.2); --sel: #ffffff;
+  /*FILLS_DARK*/
+  color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #111513; --surface: #1a201d; --sunk: #151a18; --ink: #e6ece8; --muted: #a3aea7; --faint: #7f8a83; --line: #2e3632;
+  --accent: #7fc4cf; --accent-ink: #0e1412; --focus: #7fc4cf;
+  --water: #14232a; --outside: #161b19; --grat: rgba(223,230,225,0.12); --none: #2a2e2b; --border: #dfe6e1; --vborder: rgba(223,230,225,0.5); --river: #2c4b57; --halo: rgba(17,21,19,0.85);
+  --alt: #7fc4cf; --alt-fill: rgba(127,196,207,0.2); --sel: #ffffff;
+  /*FILLS_DARK*/
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.5; margin: 0; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.2; text-wrap: balance; margin: 0; }
+a { color: var(--accent); }
+button, select, input { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.num { font-variant-numeric: tabular-nums; }
+
+.app { display: grid; grid-template-rows: auto minmax(0, 1fr); height: 100%; padding-inline: 16px; }
+.top { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 18px; padding-block: 12px 10px; }
+.top h1 { font-size: 1.45rem; font-weight: 700; }
+.top p { margin: 0; color: var(--muted); font-size: 0.88rem; }
+.main { display: grid; grid-template-columns: minmax(0, 1fr) 370px; gap: 16px; min-height: 0; padding-block: 0 16px; }
+.mapcol { display: grid; grid-template-rows: minmax(0, 1fr) auto; gap: 10px; min-height: 0; min-width: 0; }
+.panel { overflow-y: auto; min-height: 0; display: flex; flex-direction: column; gap: 12px; padding-bottom: 8px; }
+
+/* map */
+.mapbox { position: relative; border-radius: var(--r); overflow: hidden; background: var(--outside); border: 1px solid var(--line); min-height: 320px; touch-action: none; }
+.mapbox svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; cursor: grab; user-select: none; -webkit-user-select: none; }
+.mapbox svg.drag { cursor: grabbing; }
+#land { fill: var(--none); }
+.fill { stroke: none; }
+.lakes { fill: var(--water); stroke: none; }
+.grat { fill: none; stroke: var(--grat); stroke-width: 0.7px; vector-effect: non-scaling-stroke; }
+.edge { fill: var(--water); stroke: var(--grat); stroke-width: 1px; vector-effect: non-scaling-stroke; }
+.rivers { fill: none; stroke: var(--river); stroke-width: 0.8px; vector-effect: non-scaling-stroke; }
+.borders { fill: none; stroke: var(--border); stroke-width: 1px; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.vborders { fill: none; stroke: var(--vborder); stroke-width: 0.8px; stroke-dasharray: 3 2; vector-effect: non-scaling-stroke; }
+.altline { fill: transparent; stroke: var(--alt); stroke-width: 1.8px; stroke-dasharray: 6 4; vector-effect: non-scaling-stroke; cursor: pointer; }
+.altline.on { fill: var(--alt-fill); stroke-width: 2.4px; }
+.althalo { fill: none; stroke: var(--halo); stroke-width: 4px; vector-effect: non-scaling-stroke; pointer-events: none; }
+.badge circle { fill: var(--alt); stroke: var(--halo); }
+.badge text { fill: var(--accent-ink); font-family: var(--sans); font-weight: 700; text-anchor: middle; dominant-baseline: central; pointer-events: none; }
+.badge { cursor: pointer; }
+.badge.on circle { fill: var(--ink); }
+.lbl { font-family: var(--sans); font-weight: 600; fill: var(--ink); paint-order: stroke; stroke: var(--halo); stroke-linejoin: round; text-anchor: middle; dominant-baseline: central; pointer-events: none; }
+.lbl.big { font-family: var(--serif); font-weight: 700; letter-spacing: 0.04em; }
+.lbl.vas { font-style: italic; }
+.pin circle { fill: var(--sel); stroke: var(--halo); }
+.tip { position: absolute; pointer-events: none; background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; font-size: 0.82rem; box-shadow: 0 6px 18px rgba(0,0,0,0.15); max-width: 270px; z-index: 3; }
+.tip b { display: block; }
+.tip span { color: var(--muted); }
+.zoom { position: absolute; right: 10px; top: 10px; display: flex; flex-direction: column; gap: 4px; z-index: 2; }
+.zoom button { width: 36px; height: 36px; border-radius: 9px; border: 1px solid var(--line); background: var(--surface); cursor: pointer; font-weight: 700; font-size: 1.05rem; line-height: 1; }
+.yearstamp { position: absolute; left: 14px; top: 10px; font-family: var(--serif); font-weight: 700; font-size: 2.6rem; line-height: 1; color: var(--ink); opacity: 0.85; pointer-events: none; text-shadow: 0 0 8px var(--halo); }
+
+/* time bar */
+.timebar { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 6px 12px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 10px 14px; }
+.tctl { display: flex; align-items: center; gap: 4px; }
+.tctl button { width: 38px; height: 38px; border-radius: 9px; border: 1px solid var(--line); background: var(--surface); cursor: pointer; display: grid; place-items: center; }
+.tctl button.play { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.tctl svg { width: 16px; height: 16px; fill: currentColor; }
+.track { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.spark { height: 26px; display: block; width: 100%; }
+.spark rect { fill: var(--faint); }
+.spark rect.cur { fill: var(--accent); }
+#year { width: 100%; accent-color: var(--accent); margin: 0; }
+.ticks { position: relative; height: 16px; font-size: 0.72rem; color: var(--faint); }
+.ticks span { position: absolute; transform: translateX(-50%); }
+.events { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 6px; }
+.events button { border: 1px solid var(--line); background: var(--sunk); border-radius: 999px; padding: 3px 10px; font-size: 0.8rem; cursor: pointer; color: var(--muted); }
+.events button b { color: var(--ink); font-weight: 600; margin-right: 4px; }
+.events button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.events button[aria-pressed="true"] b { color: var(--bg); }
+
+/* panel */
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.card h2 { font-size: 1.2rem; }
+.card h3 { font-family: var(--sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 600; }
+.card p { margin: 0; }
+.muted { color: var(--muted); }
+.small { font-size: 0.85rem; }
+.changes { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; font-size: 0.88rem; }
+.changes li { display: grid; grid-template-columns: 14px minmax(0, 1fr) auto; gap: 8px; align-items: center; }
+.sw { width: 14px; height: 14px; border-radius: 3px; display: inline-block; border: 1px solid var(--line); flex: none; }
+.gain { color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
+.ctable { width: 100%; border-collapse: collapse; font-size: 0.84rem; margin-top: 6px; }
+.ctable td { padding: 3px 4px; border-top: 1px solid var(--line); }
+.ctable td:last-child { text-align: right; font-variant-numeric: tabular-nums; color: var(--muted); white-space: nowrap; }
+.who { display: flex; gap: 10px; align-items: flex-start; }
+.who .sw { width: 18px; height: 18px; margin-top: 3px; }
+.who b { font-family: var(--serif); font-size: 1.15rem; font-weight: 600; display: block; line-height: 1.25; }
+.srcbox { background: var(--sunk); border-radius: 10px; padding: 9px 12px; font-size: 0.86rem; display: flex; flex-direction: column; gap: 4px; }
+.srcbox .k { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 600; }
+.strip { position: relative; height: 30px; background: var(--sunk); border-radius: 6px; overflow: hidden; }
+.strip button { position: absolute; top: 0; height: 30px; border: 0; padding: 0 0 0 3px; border-right: 1px solid var(--surface); display: flex; align-items: center; cursor: pointer; overflow: hidden; }
+.strip button span { background: var(--surface); color: var(--ink); font-size: 0.7rem; font-weight: 600; padding: 0 4px; border-radius: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: calc(100% - 4px); }
+.strip .now { position: absolute; top: -2px; bottom: -2px; width: 2px; background: var(--ink); pointer-events: none; }
+.stripaxis { display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--faint); }
+.alist { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.alist li button { width: 100%; text-align: left; display: grid; grid-template-columns: 24px minmax(0, 1fr); gap: 10px; padding: 9px 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); cursor: pointer; }
+.alist li button[aria-pressed="true"] { border-color: var(--alt); background: var(--sunk); }
+.alist .n { width: 22px; height: 22px; border-radius: 50%; background: var(--alt); color: var(--accent-ink); font-weight: 700; font-size: 0.78rem; display: grid; place-items: center; }
+.alist .t { font-weight: 600; font-size: 0.9rem; }
+.alist .d { font-size: 0.83rem; color: var(--muted); }
+.altdetail { border-left: 3px solid var(--alt); padding: 2px 0 2px 12px; display: flex; flex-direction: column; gap: 6px; font-size: 0.88rem; }
+.legend { display: flex; flex-direction: column; gap: 8px; font-size: 0.84rem; }
+.legend div { display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 10px; align-items: center; }
+.legend svg { width: 30px; height: 18px; border-radius: 3px; }
+.about { font-size: 0.86rem; display: flex; flex-direction: column; gap: 8px; }
+.about ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 4px; }
+.hint { font-size: 0.88rem; color: var(--muted); }
+
+@media (max-width: 920px) {
+  html, body { height: auto; }
+  .app { height: auto; display: block; }
+  .main { grid-template-columns: minmax(0, 1fr); }
+  .mapcol { grid-template-rows: auto auto; }
+  .mapbox { height: 62vh; min-height: 340px; }
+  .panel { overflow: visible; }
+  .yearstamp { font-size: 2rem; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="app">
+  <header class="top">
+    <h1>Europe's Borders, 1800–1900</h1>
+    <p>Who held what, year by year, from OpenHistoricalMap, checked against two other datasets. Dashed outlines mark places where another source draws a different border.</p>
+  </header>
+  <div class="main">
+    <section class="mapcol" aria-label="Map">
+      <div class="mapbox" id="mapbox">
+        <svg id="map" role="img" aria-label="Map of Europe's country borders for the selected year">
+          <defs id="defs"></defs>
+          <rect id="water" x="-99999" y="-99999" width="199998" height="199998" style="fill: var(--outside)"></rect>
+          <path id="edge" class="edge"></path>
+          <path id="grat" class="grat"></path>
+          <path id="land"></path>
+          <g id="fills"></g>
+          <path id="lakes" class="lakes"></path>
+          <path id="rivers" class="rivers"></path>
+          <path id="vborders" class="vborders"></path>
+          <path id="borders" class="borders"></path>
+          <g id="alts"></g>
+          <g id="labels"></g>
+          <g id="badges"></g>
+          <g id="pin" class="pin"></g>
+        </svg>
+        <div class="zoom">
+          <button type="button" id="zin" aria-label="Zoom in">+</button>
+          <button type="button" id="zout" aria-label="Zoom out">−</button>
+          <button type="button" id="zreset" aria-label="Show all of Europe" title="Show all of Europe">⤢</button>
+        </div>
+        <div class="yearstamp num" id="stamp" aria-hidden="true">1815</div>
+        <div class="tip" id="tip" hidden></div>
+      </div>
+      <div class="timebar">
+        <div class="tctl">
+          <button type="button" id="prev" aria-label="Previous year"><svg viewBox="0 0 16 16"><path d="M10.5 3 5 8l5.5 5z"/></svg></button>
+          <button type="button" id="play" class="play" aria-label="Play through the years"><svg viewBox="0 0 16 16" id="playicon"><path d="M4 2.5v11L13 8z"/></svg></button>
+          <button type="button" id="next" aria-label="Next year"><svg viewBox="0 0 16 16"><path d="M5.5 3 11 8l-5.5 5z"/></svg></button>
+        </div>
+        <div class="track">
+          <svg class="spark" id="spark" preserveAspectRatio="none" aria-hidden="true"></svg>
+          <input type="range" id="year" min="1800" max="1900" step="1" value="1815" aria-label="Year">
+          <div class="ticks" id="ticks"></div>
+        </div>
+        <div class="events" id="events" aria-label="Jump to a year"></div>
+      </div>
+    </section>
+    <aside class="panel" aria-label="Details">
+      <section class="card" id="yearcard"></section>
+      <section class="card" id="placecard"></section>
+      <section class="card" id="altcard"></section>
+      <section class="card">
+        <h3>Key</h3>
+        <div class="legend" id="legend"></div>
+      </section>
+      <section class="card about">
+        <h3>How this map was made</h3>
+        <p>Each year shows the borders in force on July 1. The map uses <a href="https://www.openhistoricalmap.org" target="_blank" rel="noopener">OpenHistoricalMap</a> (OHM), which matched the historical record in 149 of 160 spot checks. Where OHM has no record, it falls back to <a href="https://icr.ethz.ch/data/cshapes/" target="_blank" rel="noopener">CShapes-Europe</a> (from 1816) or <a href="https://github.com/Seshat-Global-History-Databank/cliopatria" target="_blank" rel="noopener">Cliopatria</a>. Where our checks found OHM wrong, the map applies a correction and says so.</p>
+        <p>Alternative borders compare OHM with CShapes-Europe from 1816 and with Cliopatria before that. They count only when a source puts an area of at least 400 km² (5,000 km² for the coarser Cliopatria) in a different country for longer than a year. Territories that governed themselves under an overlord count as part of the overlord for this comparison, because the sources disagree on whether to show them.</p>
+        <details>
+          <summary>Corrections to OHM (<span id="nfix"></span>)</summary>
+          <ul id="fixes"></ul>
+        </details>
+        <details>
+          <summary>Sources and licenses</summary>
+          <ul>
+            <li>OpenHistoricalMap: public domain (CC0). Borders fetched September 29, 2026.</li>
+            <li>CShapes-Europe, ETH Zürich: CC BY-NC-SA 4.0. Because this map uses it, the map is for non-commercial use.</li>
+            <li>Cliopatria, Seshat Global History Databank: CC BY 4.0.</li>
+            <li>Coastlines, lakes and rivers: Natural Earth (public domain).</li>
+            <li>Projection: Lambert azimuthal equal-area for Europe (ETRS89-LAEA), so areas compare fairly.</li>
+          </ul>
+        </details>
+        <p>For the Balkans, the <a href="https://claude.ai/artifact/HoMsAe5ShhMtCGeRHaaEdk" target="_blank" rel="noopener">Balkan Borders Review</a> lets you decide each disagreement yourself.</p>
+      </section>
+    </aside>
+  </div>
+</div>
+
+<script type="application/json" id="topo">/*TOPO*/</script>
+<script type="application/json" id="data">/*DATA*/</script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script>
+(() => {
+'use strict';
+const topo = JSON.parse(document.getElementById('topo').textContent);
+const D = JSON.parse(document.getElementById('data').textContent);
+const Y0 = D.years[0], Y1 = D.years[1], NY = Y1 - Y0 + 1;
+const U = D.units, R = D.refs, NM = D.names;
+const regionsObj = topo.objects.regions, geoms = regionsObj.geometries;
+const $ = id => document.getElementById(id);
+const svg = $('map'), NS = 'http://www.w3.org/2000/svg';
+const el = (tag, attrs = {}, parent) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; };
+const fmt = n => Math.round(n).toLocaleString('en-US');
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+// ---------- histories: unit and source record per region per year ----------
+const NSIG = D.hist.length;
+const unitAt = new Int16Array(NSIG * NY).fill(-1), refAt = new Int32Array(NSIG * NY).fill(-1);
+D.hist.forEach((runs, s) => {
+  runs.forEach(([y, u, r], k) => {
+    const end = k + 1 < runs.length ? runs[k + 1][0] - 1 : Y1;
+    for (let yy = y; yy <= end; yy++) { unitAt[s * NY + yy - Y0] = u; refAt[s * NY + yy - Y0] = r; }
+  });
+});
+const uAt = (g, y) => unitAt[g.properties.s * NY + y - Y0];
+
+// ---------- geometry helpers ----------
+const ringD = r => { let d = 'M' + r[0][0].toFixed(1) + ',' + r[0][1].toFixed(1); for (let i = 1; i < r.length; i++) d += 'L' + r[i][0].toFixed(1) + ',' + r[i][1].toFixed(1); return d; };
+function pathOf(g) {
+  if (!g) return '';
+  const t = g.type, c = g.coordinates;
+  if (t === 'Polygon') return c.map(r => ringD(r) + 'Z').join('');
+  if (t === 'MultiPolygon') return c.map(p => p.map(r => ringD(r) + 'Z').join('')).join('');
+  if (t === 'LineString') return ringD(c);
+  if (t === 'MultiLineString') return c.map(ringD).join('');
+  if (t === 'GeometryCollection') return g.geometries.map(pathOf).join('');
+  return '';
+}
+const features = topojson.feature(topo, regionsObj).features;
+const bbox = f => { let a = Infinity, b = Infinity, c = -Infinity, d = -Infinity; const walk = x => { if (typeof x[0] === 'number') { if (x[0] < a) a = x[0]; if (x[0] > c) c = x[0]; if (x[1] < b) b = x[1]; if (x[1] > d) d = x[1]; } else x.forEach(walk); }; walk(f.geometry.coordinates); return [a, b, c, d]; };
+features.forEach(f => f.bb = bbox(f));
+const inRing = (r, x, y) => { let c = false; for (let i = 0, j = r.length - 1; i < r.length; j = i++) { const [xi, yi] = r[i], [xj, yj] = r[j]; if ((yi > y) !== (yj > y) && x < (xj - xi) * (y - yi) / (yj - yi) + xi) c = !c; } return c; };
+const inGeom = (g, x, y) => { const polys = g.type === 'Polygon' ? [g.coordinates] : g.type === 'MultiPolygon' ? g.coordinates : []; return polys.some(p => inRing(p[0], x, y) && !p.slice(1).some(h => inRing(h, x, y))); };
+const regionAt = (x, y) => features.find(f => x >= f.bb[0] && x <= f.bb[2] && y >= f.bb[1] && y <= f.bb[3] && inGeom(f.geometry, x, y));
+const altFeatures = topojson.feature(topo, topo.objects.alts).features;
+altFeatures.forEach(f => f.bb = bbox(f));
+
+// static layers
+$('land').setAttribute('d', pathOf(topojson.merge(topo, geoms)));
+$('lakes').setAttribute('d', pathOf({ type: 'GeometryCollection', geometries: topojson.feature(topo, topo.objects.lakes).features.map(f => f.geometry) }));
+$('grat').setAttribute('d', pathOf({ type: 'GeometryCollection', geometries: topojson.feature(topo, topo.objects.grat).features.map(f => f.geometry) }));
+$('edge').setAttribute('d', pathOf({ type: 'GeometryCollection', geometries: topojson.feature(topo, topo.objects.edge).features.map(f => ({ type: 'Polygon', coordinates: [f.geometry.coordinates] })) }));
+$('rivers').setAttribute('d', pathOf({ type: 'GeometryCollection', geometries: topojson.feature(topo, topo.objects.rivers).features.map(f => f.geometry) }));
+
+// ---------- colors and hatching ----------
+const fillVar = u => `var(--f${U[u].c})`;
+const hueVar = u => `var(--h${U[u].c % 8})`;
+const defs = $('defs'); const patterns = {};
+function hatchFor(ov) {
+  const id = 'hatch-' + U[ov].c % 8;
+  if (!patterns[id]) {
+    const p = el('pattern', { id, patternUnits: 'userSpaceOnUse', width: 10, height: 10, patternTransform: 'rotate(45)' }, defs);
+    const ln = el('rect', { x: 0, y: 0, width: 3, height: 10 }, p); ln.setAttribute('style', `fill: ${hueVar(ov)}; opacity: 0.75`);
+    patterns[id] = p;
+  }
+  return id;
+}
+const isVassal = u => U[u].ov != null;
+
+// ---------- the map for one year ----------
+const cache = new Map();
+function yearGeo(y) {
+  if (cache.has(y)) return cache.get(y);
+  const by = new Map();
+  for (const g of geoms) { const u = uAt(g, y); if (u < 0) continue; if (!by.has(u)) by.set(u, []); by.get(u).push(g); }
+  const fills = [];
+  for (const [u, gs] of by) fills.push({ u, d: pathOf(topojson.merge(topo, gs)) });
+  const borders = pathOf(topojson.mesh(topo, regionsObj, (a, b) => { const ua = uAt(a, y), ub = uAt(b, y); return ua !== ub && !(ua >= 0 && ub >= 0 && (U[ua].ov === ub || U[ub].ov === ua)); }));
+  const vb = pathOf(topojson.mesh(topo, regionsObj, (a, b) => { const ua = uAt(a, y), ub = uAt(b, y); return ua !== ub && ua >= 0 && ub >= 0 && (U[ua].ov === ub || U[ub].ov === ua); }));
+  const area = {};
+  for (const r of (D.labels[y] || [])) area[r[0]] = (area[r[0]] || 0) + r[3];
+  const out = { fills, borders, vb, area };
+  cache.set(y, out);
+  if (cache.size > 40) cache.delete(cache.keys().next().value);
+  return out;
+}
+
+// ---------- view (zoom and pan through the viewBox) ----------
+const VB0 = D.viewBox; // x, y, w, h in km
+const HOME = D.home;
+let view = HOME.slice();
+function fitAspect(v) {
+  const r = svg.getBoundingClientRect(); if (!r.width || !r.height) return v;
+  const ar = r.width / r.height; let [x, y, w, h] = v;
+  if (w / h > ar) { const nh = w / ar; y -= (nh - h) / 2; h = nh; } else { const nw = h * ar; x -= (nw - w) / 2; w = nw; }
+  return [x, y, w, h];
+}
+let shown = view;
+const pxPerKm = () => svg.getBoundingClientRect().width / shown[2];
+function applyView() {
+  shown = fitAspect(view);
+  svg.setAttribute('viewBox', shown.map(v => v.toFixed(2)).join(' '));
+  const s = 1 / pxPerKm();
+  for (const id in patterns) { const p = patterns[id]; const w = 7 * s; p.setAttribute('width', w); p.setAttribute('height', w); p.firstChild.setAttribute('width', w * 0.32); p.firstChild.setAttribute('height', w); }
+  drawLabels(); drawBadges(); drawPin();
+}
+function zoomAt(f, cx, cy) {
+  const [x, y, w, h] = view; const nw = Math.min(Math.max(w / f, 250), VB0[2] * 1.3), k = nw / w;
+  view = [cx - (cx - x) * k, cy - (cy - y) * k, w * k, h * k]; applyView();
+}
+function toMap(ev) { const r = svg.getBoundingClientRect(); return [shown[0] + (ev.clientX - r.left) / r.width * shown[2], shown[1] + (ev.clientY - r.top) / r.height * shown[3]]; }
+svg.addEventListener('wheel', ev => { ev.preventDefault(); const [mx, my] = toMap(ev); zoomAt(Math.exp(-ev.deltaY * 0.0015), mx, my); }, { passive: false });
+const ptrs = new Map(); let dragged = false, pinch0 = null;
+svg.addEventListener('pointerdown', ev => { svg.setPointerCapture(ev.pointerId); ptrs.set(ev.pointerId, [ev.clientX, ev.clientY]); dragged = false; if (ptrs.size === 2) { const [a, b] = [...ptrs.values()]; pinch0 = { d: Math.hypot(a[0] - b[0], a[1] - b[1]), view: view.slice() }; } });
+svg.addEventListener('pointermove', ev => {
+  if (!ptrs.has(ev.pointerId)) { hover(ev); return; }
+  const prev = ptrs.get(ev.pointerId); ptrs.set(ev.pointerId, [ev.clientX, ev.clientY]);
+  if (ptrs.size === 2 && pinch0) {
+    const [a, b] = [...ptrs.values()]; const d = Math.hypot(a[0] - b[0], a[1] - b[1]);
+    const r = svg.getBoundingClientRect(); const cx = shown[0] + ((a[0] + b[0]) / 2 - r.left) / r.width * shown[2], cy = shown[1] + ((a[1] + b[1]) / 2 - r.top) / r.height * shown[3];
+    zoomAt(d / (pinch0.d || d), cx, cy); pinch0.d = d; dragged = true; return;
+  }
+  const dx = ev.clientX - prev[0], dy = ev.clientY - prev[1];
+  if (Math.abs(dx) + Math.abs(dy) > 0) { if (!dragged && Math.hypot(ev.clientX - prev[0], ev.clientY - prev[1]) < 0.5) return; dragged = dragged || Math.abs(dx) + Math.abs(dy) > 2; svg.classList.add('drag'); const k = shown[2] / svg.getBoundingClientRect().width; view[0] -= dx * k; view[1] -= dy * k; applyView(); }
+});
+const endPtr = ev => { ptrs.delete(ev.pointerId); if (ptrs.size < 2) pinch0 = null; if (!ptrs.size) svg.classList.remove('drag'); };
+svg.addEventListener('pointerup', ev => { const wasDrag = dragged; endPtr(ev); if (!wasDrag && ev.button === 0) click(ev); });
+svg.addEventListener('pointercancel', endPtr);
+svg.addEventListener('pointerleave', () => { $('tip').hidden = true; });
+$('zin').onclick = () => zoomAt(1.6, shown[0] + shown[2] / 2, shown[1] + shown[3] / 2);
+$('zout').onclick = () => zoomAt(1 / 1.6, shown[0] + shown[2] / 2, shown[1] + shown[3] / 2);
+$('zreset').onclick = () => { view = HOME.slice(); applyView(); };
+new ResizeObserver(() => applyView()).observe($('mapbox'));
+
+// ---------- state ----------
+let year = 1815, place = null, selAlt = null;
+try { const h = parseInt(location.hash.slice(1), 10); if (h >= Y0 && h <= Y1) year = h; } catch (e) {}
+
+function nameOf(u, y) {
+  const row = (D.labels[y] || []).find(r => r[0] === u);
+  return row ? NM[row[5]] : U[u].n;
+}
+function draw() {
+  const G = yearGeo(year);
+  const fg = $('fills'); fg.textContent = '';
+  for (const f of G.fills) {
+    const p = el('path', { d: f.d, class: 'fill', 'data-u': f.u }, fg); p.setAttribute('style', `fill: ${fillVar(f.u)}`);
+    if (isVassal(f.u)) { const h = el('path', { d: f.d, class: 'fill', 'data-u': f.u }, fg); h.setAttribute('style', `fill: url(#${hatchFor(U[f.u].ov)})`); }
+  }
+  $('borders').setAttribute('d', G.borders); $('vborders').setAttribute('d', G.vb);
+  drawAlts(); applyView();
+  $('stamp').textContent = year; $('year').value = year;
+  document.querySelectorAll('.events button').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.y === year)));
+  document.querySelectorAll('#spark rect').forEach(r => r.classList.toggle('cur', +r.dataset.y === year));
+  renderYear(); renderPlace(); renderAlts();
+  try { history.replaceState(null, '', '#' + year); } catch (e) {}
+}
+
+// ---------- labels ----------
+let labelBoxes = [];
+function drawLabels() {
+  const g = $('labels'); g.textContent = '';
+  const rows = (D.labels[year] || []).slice().sort((a, b) => b[4] - a[4]);
+  const k = pxPerKm(); if (!k) return;
+  const r = svg.getBoundingClientRect(); const placed = []; labelBoxes = placed;
+  for (const [u, x, y, area, varea, ni] of rows) {
+    const sx = (x - shown[0]) * k, sy = (y - shown[1]) * k;
+    if (sx < 0 || sy < 0 || sx > r.width || sy > r.height) continue;
+    const name = NM[ni]; const big = varea > 180000;
+    const fs = big ? Math.min(17, 12 + Math.log10(varea / 180000) * 6) : varea > 40000 ? 12 : 11;
+    const w = name.length * fs * (big ? 0.62 : 0.55) + 6, h = fs * 1.3;
+    const room = Math.sqrt(varea) * k * 1.7;
+    if (w > room * 1.6 && !(w < 70 && varea * k * k > 900)) continue;
+    const box = [sx - w / 2, sy - h / 2, sx + w / 2, sy + h / 2];
+    if (placed.some(b => box[0] < b[2] && box[2] > b[0] && box[1] < b[3] && box[3] > b[1])) continue;
+    placed.push(box);
+    const t = el('text', { x: x.toFixed(1), y: y.toFixed(1), class: 'lbl' + (big ? ' big' : '') + (isVassal(u) ? ' vas' : '') }, g);
+    t.setAttribute('style', `font-size:${(fs / k).toFixed(2)}px; stroke-width:${(3 / k).toFixed(2)}px`);
+    t.textContent = name;
+  }
+}
+
+// ---------- alternative borders ----------
+const altsNow = () => D.alts.map((a, i) => ({ ...a, i })).filter(a => a.y0 <= year && year <= a.y1).sort((a, b) => b.km2 - a.km2);
+function drawAlts() {
+  const g = $('alts'); g.textContent = '';
+  for (const a of altsNow()) {
+    const f = altFeatures.find(f => f.properties.i === a.i); if (!f) continue;
+    const d = pathOf(f.geometry);
+    el('path', { d, class: 'althalo' }, g);
+    el('path', { d, class: 'altline' + (selAlt === a.i ? ' on' : ''), 'data-a': a.i }, g);
+  }
+}
+const badgeAt = {};
+function drawBadges() {
+  const g = $('badges'); g.textContent = ''; const k = pxPerKm(); if (!k) return;
+  const taken = labelBoxes.slice();
+  altsNow().forEach((a, n) => {
+    // keep markers off the country names and off each other: try small offsets around the spot
+    let bx = a.x, by = a.y;
+    const sx0 = (a.x - shown[0]) * k, sy0 = (a.y - shown[1]) * k;
+    for (const [dx, dy] of [[0, 0], [0, 18], [0, -18], [20, 0], [-20, 0], [18, 18], [-18, 18], [18, -18], [-18, -18], [0, 30], [0, -30]]) {
+      const bb = [sx0 + dx - 11, sy0 + dy - 11, sx0 + dx + 11, sy0 + dy + 11];
+      if (!taken.some(t => bb[0] < t[2] && bb[2] > t[0] && bb[1] < t[3] && bb[3] > t[1])) { bx = a.x + dx / k; by = a.y + dy / k; taken.push(bb); break; }
+    }
+    a.bx = bx; a.by = by; badgeAt[a.i] = [bx, by];
+    const b = el('g', { class: 'badge' + (selAlt === a.i ? ' on' : ''), tabindex: 0, role: 'button', 'aria-label': `Alternative border ${n + 1}: ${altTitle(a)}` }, g);
+    el('circle', { cx: bx, cy: by, r: (10 / k).toFixed(2), 'stroke-width': (2 / k).toFixed(2) }, b);
+    const t = el('text', { x: bx, y: by }, b); t.setAttribute('style', `font-size:${(11 / k).toFixed(2)}px`); t.textContent = n + 1;
+    b.addEventListener('keydown', ev => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); selectAlt(a.i); } });
+  });
+}
+const SRCNAME = { cshapes: 'CShapes-Europe', cliopatria: 'Cliopatria', ohm: 'OpenHistoricalMap' };
+const years = a => a.y0 === a.y1 ? String(a.y0) : `${a.y0}–${a.y1}`;
+const defUnit = a => { const f = regionAt(a.x, a.y); const u = f ? uAt(f, year) : -1; return u >= 0 ? u : a.d; };
+const altTitle = a => `${nameOf(defUnit(a), year)} or ${nameOf(a.a, year)}?`;
+function refLine(ri) {
+  const r = R[ri]; if (!r) return '';
+  if (r.t === 'ohm') return `This map follows OpenHistoricalMap: <a href="https://www.openhistoricalmap.org/relation/${r.id}" target="_blank" rel="noopener">${esc(r.n)}</a> (${esc(r.s || '?')} to ${esc(r.e || 'open')}).`;
+  if (r.t === 'bridge') return `This map carries the OpenHistoricalMap record <a href="https://www.openhistoricalmap.org/relation/${r.id}" target="_blank" rel="noopener">${esc(r.n)}</a> across a gap of a year or two in its data.`;
+  if (r.t === 'cs') return `OpenHistoricalMap has no record here, so this map uses CShapes-Europe (“${esc(r.n)}”, ${r.s}–${r.e}).`;
+  if (r.t === 'clio') return `OpenHistoricalMap has no record here, so this map uses Cliopatria (“${esc(r.n)}”, ${r.s}–${r.e}).`;
+  if (r.t === 'fix') return `This map corrects OpenHistoricalMap here. ${esc(r.note)} ${r.ev.map(([t, u]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`).join(' · ')}`;
+  return '';
+}
+function altText(a) {
+  const src = SRCNAME[a.src];
+  const why = a.src === 'ohm' ? '' : R[a.r] && (R[a.r].t === 'ohm' || R[a.r].t === 'bridge') ? ' OpenHistoricalMap matched the historical record more often than the other sources in our checks, so the map uses it by default.' : '';
+  return `<p><b>${esc(src)}</b> puts this area (about ${fmt(a.km2)} km²) in <b>${esc(nameOf(a.a, year))}</b> in ${years(a)}. The map shows <b>${esc(nameOf(defUnit(a), year))}</b>.</p><p class="muted">${refLine(a.r)}${why}</p>`;
+}
+function selectAlt(i) {
+  selAlt = selAlt === i ? null : i;
+  if (selAlt != null) {
+    const a = D.alts[i]; const k = 1 / Math.max(1, pxPerKm());
+    const f = altFeatures.find(f => f.properties.i === i);
+    if (f) { const [a0, b0, a1, b1] = f.bb; const vw = view[2]; if (a0 < shown[0] || a1 > shown[0] + shown[2] || b0 < shown[1] || b1 > shown[1] + shown[3]) { const w = Math.max((a1 - a0) * 2.2, 700); view = [(a0 + a1) / 2 - w / 2, (b0 + b1) / 2 - w * 0.35, w, w * 0.7]; } }
+  }
+  drawAlts(); drawBadges(); renderAlts();
+}
+
+// ---------- panel: year ----------
+function renderYear() {
+  const G = yearGeo(year), P = year > Y0 ? yearGeo(year - 1) : null;
+  const units = Object.keys(G.area).map(Number);
+  const rows = [];
+  if (P) {
+    const all = new Set([...units, ...Object.keys(P.area).map(Number)]);
+    for (const u of all) {
+      const a = G.area[u] || 0, b = P.area[u] || 0;
+      if (!b && a > 50) rows.push({ u, t: `${nameOf(u, year)} appears`, v: a, s: '' });
+      else if (b > 50 && !a) rows.push({ u, t: `${nameOf(u, year - 1)} ends`, v: b, s: '' });
+      else if (Math.abs(a - b) > 1500) rows.push({ u, t: nameOf(u, year), v: Math.abs(a - b), s: (a > b ? '+' : '−') + fmt(Math.abs(a - b)) + ' km²' });
+    }
+  }
+  rows.sort((a, b) => b.v - a.v);
+  const list = rows.slice(0, 7).map(r => `<li><span class="sw" style="background:${fillVar(r.u)}"></span><span>${esc(r.t)}</span><span class="gain">${r.s}</span></li>`).join('');
+  const table = units.filter(u => G.area[u] > 0).sort((a, b) => G.area[b] - G.area[a]).map(u => `<tr><td><span class="sw" style="background:${fillVar(u)};vertical-align:-2px;margin-right:6px"></span>${esc(nameOf(u, year))}${isVassal(u) ? ' <span class="muted">(under ' + esc(U[U[u].ov].n) + ')</span>' : ''}</td><td>${fmt(G.area[u])} km²</td></tr>`).join('');
+  $('yearcard').innerHTML = `<h2 class="num">${year}</h2>` +
+    (P ? (rows.length ? `<h3>Changes since ${year - 1}</h3><ul class="changes">${list}</ul>` : `<p class="muted small">No border changes of more than 1,500 km² since ${year - 1}.</p>`) : `<p class="muted small">The first year on the map.</p>`) +
+    `<details><summary>All ${units.length} countries and territories this year</summary><table class="ctable">${table}</table><p class="muted small">Areas are within the map, as of July 1.</p></details>`;
+}
+
+// ---------- panel: place ----------
+function click(ev) {
+  const [x, y] = toMap(ev);
+  // a numbered marker takes the click first
+  const k = pxPerKm(); const onBadge = altsNow().find(a => { const p = badgeAt[a.i] || [a.x, a.y]; return Math.hypot((p[0] - x) * k, (p[1] - y) * k) <= 13; });
+  if (onBadge) { selectAlt(onBadge.i); return; }
+  const f = regionAt(x, y);
+  place = f ? { x, y, s: f.properties.s } : null;
+  const hit = altsNow().find(a => { const af = altFeatures.find(g => g.properties.i === a.i); return af && x >= af.bb[0] && x <= af.bb[2] && y >= af.bb[1] && y <= af.bb[3] && inGeom(af.geometry, x, y); });
+  if (hit) { selAlt = hit.i; drawAlts(); drawBadges(); renderAlts(); }
+  drawPin(); renderPlace();
+}
+function drawPin() {
+  const g = $('pin'); g.textContent = ''; if (!place) return; const k = pxPerKm(); if (!k) return;
+  el('circle', { cx: place.x, cy: place.y, r: (5 / k).toFixed(2), 'stroke-width': (2 / k).toFixed(2) }, g);
+}
+function renderPlace() {
+  const card = $('placecard');
+  if (!place) { card.innerHTML = `<h3>A place</h3><p class="hint">Click anywhere on the map to see who held it in ${year}, which source says so, and how it changed hands over the century.</p>`; return; }
+  const s = place.s, u = unitAt[s * NY + year - Y0], ri = refAt[s * NY + year - Y0];
+  const head = u < 0 ? `<div class="who"><span class="sw" style="background:var(--none)"></span><div><b>No country</b><span class="muted small">No source assigns this place in ${year}.</span></div></div>`
+    : `<div class="who"><span class="sw" style="background:${fillVar(u)}"></span><div><b>${esc(nameOf(u, year))}</b><span class="muted small">${isVassal(u) ? 'Self-governing under ' + esc(nameOf(U[u].ov, year)) : 'in ' + year}</span></div></div>`;
+  // history strip
+  const runs = []; for (let y = Y0; y <= Y1; y++) { const v = unitAt[s * NY + y - Y0]; if (runs.length && runs[runs.length - 1].u === v) runs[runs.length - 1].b = y; else runs.push({ u: v, a: y, b: y }); }
+  const strip = runs.map(r => { const left = (r.a - Y0) / NY * 100, w = (r.b - r.a + 1) / NY * 100; const nm = r.u < 0 ? 'none' : nameOf(r.u, r.a);
+    return `<button type="button" data-y="${r.a}" title="${esc(nm)}, ${r.a === r.b ? r.a : r.a + '–' + r.b}" style="left:${left}%;width:${w}%;background:${r.u < 0 ? 'var(--none)' : fillVar(r.u)}">${w > 9 ? `<span>${esc(nm)}</span>` : ''}</button>`; }).join('');
+  const now = (year - Y0 + 0.5) / NY * 100;
+  const hand = runs.filter(r => r.u >= 0).map(r => `${esc(nameOf(r.u, r.a))} ${r.a === r.b ? r.a : r.a + '–' + r.b}`).join('; ');
+  card.innerHTML = `<h3>This place</h3>${head}` + (u >= 0 ? `<div class="srcbox"><span class="k">Source</span><span>${refLine(ri)}</span></div>` : '') +
+    `<div><div class="strip" role="group" aria-label="Who held this place, 1800–1900: ${esc(hand)}">${strip}<span class="now" style="left:${now}%"></span></div><div class="stripaxis"><span>1800</span><span>1850</span><span>1900</span></div></div>`;
+  card.querySelectorAll('.strip button').forEach(b => b.onclick = () => setYear(+b.dataset.y));
+}
+
+// ---------- panel: alternatives ----------
+function renderAlts() {
+  const list = altsNow();
+  const card = $('altcard');
+  if (!list.length) { card.innerHTML = `<h3>Alternative borders</h3><p class="hint">In ${year} the other sources agree with this map, apart from small differences in how exactly borders are drawn.</p>`; return; }
+  const sel = list.find(a => a.i === selAlt);
+  card.innerHTML = `<h3>Alternative borders in ${year} (${list.length})</h3>` +
+    (sel ? `<div class="altdetail">${altText(sel)}</div>` : `<p class="hint">Another source draws these areas differently. Pick one to see what each source says.</p>`) +
+    `<ol class="alist">${list.map((a, n) => `<li><button type="button" data-a="${a.i}" aria-pressed="${a.i === selAlt}"><span class="n">${n + 1}</span><span><span class="t">${esc(altTitle(a))}</span><br><span class="d">${esc(SRCNAME[a.src])} · ${years(a)} · ${fmt(a.km2)} km²</span></span></button></li>`).join('')}</ol>`;
+  card.querySelectorAll('.alist button').forEach(b => b.onclick = () => selectAlt(+b.dataset.a));
+}
+
+// ---------- hover ----------
+let hoverRaf = 0;
+function hover(ev) {
+  if (hoverRaf) return;
+  hoverRaf = requestAnimationFrame(() => {
+    hoverRaf = 0;
+    const [x, y] = toMap(ev); const f = regionAt(x, y); const tip = $('tip');
+    if (!f) { tip.hidden = true; return; }
+    const u = uAt(f, year); const box = $('mapbox').getBoundingClientRect();
+    tip.innerHTML = u < 0 ? `<b>No country</b><span>No source assigns this area in ${year}</span>` : `<b>${esc(nameOf(u, year))}</b><span>${isVassal(u) ? 'Under ' + esc(nameOf(U[u].ov, year)) + ' · ' : ''}${year}</span>`;
+    tip.hidden = false;
+    const tx = Math.min(ev.clientX - box.left + 14, box.width - tip.offsetWidth - 8), ty = Math.min(ev.clientY - box.top + 14, box.height - tip.offsetHeight - 8);
+    tip.style.left = tx + 'px'; tip.style.top = ty + 'px';
+  });
+}
+
+// ---------- time controls ----------
+function setYear(y) { y = Math.max(Y0, Math.min(Y1, y)); if (y === year) return; year = y; if (selAlt != null && !altsNow().some(a => a.i === selAlt)) selAlt = null; draw(); }
+let pendingYear = null;
+$('year').addEventListener('input', e => { const first = pendingYear == null; pendingYear = +e.target.value; if (first) requestAnimationFrame(() => { const y = pendingYear; pendingYear = null; setYear(y); }); });
+$('prev').onclick = () => setYear(year - 1); $('next').onclick = () => setYear(year + 1);
+let timer = null;
+function stop() { clearInterval(timer); timer = null; $('playicon').innerHTML = '<path d="M4 2.5v11L13 8z"/>'; $('play').setAttribute('aria-label', 'Play through the years'); }
+$('play').onclick = () => {
+  if (timer) return stop();
+  if (year >= Y1) setYear(Y0);
+  $('playicon').innerHTML = '<path d="M3.5 2.5h3v11h-3zM9.5 2.5h3v11h-3z"/>'; $('play').setAttribute('aria-label', 'Pause');
+  timer = setInterval(() => { if (year >= Y1) return stop(); setYear(year + 1); }, 650);
+};
+document.addEventListener('keydown', e => { if (e.target.closest('input, button, a, summary, [role=button]')) return; if (e.key === 'ArrowLeft') setYear(year - 1); if (e.key === 'ArrowRight') setYear(year + 1); });
+
+// change per year (km² changing hands), drawn above the slider
+(function spark() {
+  const sp = $('spark'); const vals = [];
+  for (let y = Y0; y <= Y1; y++) {
+    if (y === Y0) { vals.push(0); continue; }
+    const a = {}, b = {}; (D.labels[y] || []).forEach(r => a[r[0]] = (a[r[0]] || 0) + r[3]); (D.labels[y - 1] || []).forEach(r => b[r[0]] = (b[r[0]] || 0) + r[3]);
+    let t = 0; new Set([...Object.keys(a), ...Object.keys(b)]).forEach(k => t += Math.abs((a[k] || 0) - (b[k] || 0))); vals.push(t / 2);
+  }
+  const mx = Math.max(...vals.map(v => Math.sqrt(v))); sp.setAttribute('viewBox', `0 0 ${NY} 26`);
+  vals.forEach((v, i) => { if (!v) return; const h = Math.max(1.5, Math.sqrt(v) / mx * 24); const r = el('rect', { x: i + 0.15, y: 26 - h, width: 0.7, height: h, 'data-y': Y0 + i }, sp); const t = el('title', {}, r); t.textContent = `${Y0 + i}: about ${fmt(v)} km² changed hands`; });
+  const ticks = $('ticks'); [1800, 1825, 1850, 1875, 1900].forEach(y => { const s = document.createElement('span'); s.textContent = y; s.style.left = ((y - Y0 + 0.5) / NY * 100) + '%'; ticks.appendChild(s); });
+})();
+const EVENTS = [[1803, 'German states reorganized'], [1806, 'Holy Roman Empire ends'], [1812, 'Napoleon at his height'], [1815, 'Congress of Vienna'], [1831, 'Belgium, Greece'], [1848, 'Revolutions'], [1861, 'Kingdom of Italy'], [1867, 'Austria-Hungary'], [1871, 'German Empire'], [1878, 'Congress of Berlin'], [1886, 'Bulgaria united']];
+$('events').innerHTML = EVENTS.map(([y, t]) => `<button type="button" data-y="${y}" aria-pressed="false"><b class="num">${y}</b>${esc(t)}</button>`).join('');
+$('events').querySelectorAll('button').forEach(b => b.onclick = () => { stop(); setYear(+b.dataset.y); });
+
+// ---------- key ----------
+const sample = U.findIndex(u => u.k === 'SRB');
+$('legend').innerHTML =
+  `<div><svg viewBox="0 0 30 18"><rect width="30" height="18" style="fill:${fillVar(U.findIndex(u => u.k === 'FRA'))}"/></svg><span>Each country has one color for the whole century; neighbors always differ.</span></div>` +
+  `<div><svg viewBox="0 0 30 18"><defs><pattern id="lg-h" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)"><rect width="2" height="6" style="fill:${hueVar(U[sample].ov)};opacity:.75"/></pattern></defs><rect width="30" height="18" style="fill:${fillVar(sample)}"/><rect width="30" height="18" fill="url(#lg-h)"/></svg><span>Stripes: governed itself under an overlord, or run by another power. The stripes take the overlord's color.</span></div>` +
+  `<div><svg viewBox="0 0 30 18"><rect width="30" height="18" style="fill:var(--sunk)"/><rect x="3" y="3" width="24" height="12" style="fill:var(--alt-fill);stroke:var(--alt);stroke-width:1.6;stroke-dasharray:4 3"/></svg><span>Dashed outline and number: another source draws a different border here.</span></div>` +
+  `<div><svg viewBox="0 0 30 18"><rect width="30" height="18" style="fill:var(--none)"/></svg><span>No source assigns this area to a country.</span></div>`;
+const fixes = R.filter(r => r.t === 'fix');
+$('nfix').textContent = fixes.length;
+$('fixes').innerHTML = fixes.map(r => `<li>${esc(r.note)} ${r.ev.map(([t, u]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`).join(' · ')}</li>`).join('');
+
+draw();
+})();
+</script>
