@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rules</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&amp;family=Instrument+Sans:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:#F6F4EF}
+a{color:#1E5F74}a:hover{color:#123F4E}
+</style>
+</helmet>
+<div style="width: 1440px; height: 1480px; box-sizing: border-box; background: #F6F4EF; color: #1D1C1A; font-family: 'Instrument Sans', system-ui, sans-serif; font-size: 14px; line-height: 1.45; display: flex; flex-direction: column">
+
+<header style="height: 64px; flex-shrink: 0; box-sizing: border-box; display: flex; align-items: center; gap: 32px; padding: 0 48px; background: #FFFFFF; border-bottom: 1px solid #DDD8CE">
+<div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 21px; font-weight: 600">Border Review</div>
+<nav aria-label="Main" style="display: flex; gap: 4px">
+<a href="Queue.dc.html" style="padding: 10px 14px; border-radius: 8px; color: #3F3C36; text-decoration: none">Queue</a>
+<a href="Rules.dc.html" aria-current="page" style="padding: 10px 14px; border-radius: 8px; color: #1D1C1A; text-decoration: none; font-weight: 600; background: #EFECE5">Rules</a>
+<a href="#" style="padding: 10px 14px; border-radius: 8px; color: #3F3C36; text-decoration: none">Sources</a>
+<a href="#" style="padding: 10px 14px; border-radius: 8px; color: #3F3C36; text-decoration: none">History</a>
+</nav>
+<div style="flex-grow: 1"></div>
+<div style="color: #5A564E">Dataset: Europe, 1800–1900</div>
+</header>
+
+<section style="padding: 32px 48px 24px; display: flex; flex-direction: column; gap: 8px">
+<h1 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-size: 36px; font-weight: 600; line-height: 1.15">Rules</h1>
+<div style="color: #5A564E; font-size: 15px; max-width: 820px">Many conflicts aren't about facts but about definitions. Decide these once; each rule settles every conflict of that kind, and changing a rule reopens the ones it affects.</div>
+</section>
+
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; padding: 0 48px">
+<sc-for list="{{rules}}" as="r" hint-placeholder-count="5">
+<section style="background: #FFFFFF; border: 1px solid #DDD8CE; border-radius: 14px; padding: 22px 24px; display: flex; flex-direction: column; gap: 14px">
+<h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-size: 20px; font-weight: 600; line-height: 1.25">{{r.q}}</h2>
+<div style="color: #5A564E">{{r.why}}</div>
+<fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px">
+<legend style="position: absolute; width: 1px; height: 1px; overflow: hidden">{{r.q}}</legend>
+<sc-for list="{{r.options}}" as="o" hint-placeholder-count="3">
+<label style="display: flex; align-items: center; gap: 10px; min-height: 40px; padding: 0 12px; border-radius: 10px; border: 1px solid {{o.bd}}; background: {{o.bg}}">
+<input type="radio" name="{{r.id}}" checked="{{o.checked}}" onChange="{{o.pick}}" style="accent-color: #1D1C1A">
+<span style="font-weight: {{o.weight}}">{{o.label}}</span>
+</label>
+</sc-for>
+</fieldset>
+<div style="font-size: 13px; color: #3F3C36"><strong>Settles:</strong> {{r.settles}}</div>
+</section>
+</sc-for>
+</div>
+
+<section style="margin: 24px 48px 48px; background: #FFFFFF; border: 1px solid #DDD8CE; border-radius: 14px; padding: 22px 24px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; align-items: baseline; gap: 12px">
+<h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-size: 20px; font-weight: 600">How much each source counts</h2>
+<span style="color: #5A564E">Weighted separately for each question, because sources are good at different things</span>
+</div>
+<div style="display: grid; grid-template-columns: 240px repeat(3, minmax(0, 1fr)) 220px; gap: 16px; padding: 10px 14px; background: #EFECE5; border-radius: 10px; font-size: 13px; font-weight: 600; color: #3F3C36">
+<span>Source</span><span>Who held it</span><span>When it changed</span><span>Where the line ran</span><span>Track record</span>
+</div>
+<div style="display: grid; grid-template-columns: 240px repeat(3, minmax(0, 1fr)) 220px; gap: 16px; padding: 4px 14px; align-items: center"><span style="font-weight: 600">Treaty texts</span><span>High</span><span>High</span><span>Low — texts rarely fix exact lines</span><span style="color: #5A564E">Primary source</span></div>
+<div style="height: 1px; background: #E7E3DA"></div>
+<div style="display: grid; grid-template-columns: 240px repeat(3, minmax(0, 1fr)) 220px; gap: 16px; padding: 4px 14px; align-items: center"><span style="font-weight: 600">OpenHistoricalMap</span><span>Medium</span><span>Medium</span><span>High</span><span style="color: #5A564E">149 of 160 checks right</span></div>
+<div style="height: 1px; background: #E7E3DA"></div>
+<div style="display: grid; grid-template-columns: 240px repeat(3, minmax(0, 1fr)) 220px; gap: 16px; padding: 4px 14px; align-items: center"><span style="font-weight: 600">CShapes-Europe</span><span>Medium</span><span>Medium — yearly only</span><span>Low</span><span style="color: #5A564E">About 117 of 131 right</span></div>
+<div style="height: 1px; background: #E7E3DA"></div>
+<div style="display: grid; grid-template-columns: 240px repeat(3, minmax(0, 1fr)) 220px; gap: 16px; padding: 4px 14px; align-items: center"><span style="font-weight: 600">COW Territorial Change</span><span>Medium</span><span>Medium — month only</span><span>None — no maps</span><span style="color: #5A564E">Not yet measured</span></div>
+<div style="height: 1px; background: #E7E3DA"></div>
+<div style="display: grid; grid-template-columns: 240px repeat(3, minmax(0, 1fr)) 220px; gap: 16px; padding: 4px 14px; align-items: center"><span style="font-weight: 600">Cliopatria</span><span>Low</span><span>Low</span><span>Low</span><span style="color: #5A564E">About 115 of 160 right</span></div>
+<div style="padding: 12px 14px; border-radius: 10px; background: #EFECE5; color: #3F3C36; font-size: 13px">Weights adjust as reviewed answers pile up: a source that keeps agreeing with approved answers in a region gains weight there.</div>
+</section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1480}}'>
+class Component extends DCLogic {
+  renderVals() {
+    var s = this.state || {};
+    var self = this;
+    var defs = [
+      { id: 'view', q: 'Which kind of control does the main map show?', why: 'Some places were legally one state’s but run by another.', options: ['Legal title', 'Actual control', 'Both, as two maps'], def: 2, settles: 'Bosnia 1878–1908 · Cyprus 1878–1914 · Belgium 1830–1839 · Schleswig 1864' },
+      { id: 'vassal', q: 'How are vassal and self-governing states shown?', why: 'OpenHistoricalMap mixes both approaches today.', options: ['As their own states, marked self-governing', 'As part of the overlord'], def: 0, settles: 'Bulgaria 1878–1908 · Serbia before 1878 · Moldavia and Wallachia · Crete 1898–1913' },
+      { id: 'treaty', q: 'A treaty is signed, then takes effect later. Which date counts?', why: 'Sources pick different dates for the same change.', options: ['The signing', 'The date it takes effect', 'The handover on the ground'], def: 1, settles: 'Belgium and Luxembourg 1839 · Venetia 1866 · Alsace-Lorraine 1871 · German Empire 1871' },
+      { id: 'year', q: 'What does a year-only date like “1864” mean?', why: 'OpenHistoricalMap’s country records for 1800–1900 Europe have 103 of these.', options: ['Uncertain within that year — flag it', 'January 1 of that year'], def: 0, settles: '103 year-only dates in OpenHistoricalMap' },
+      { id: 'approve', q: 'Who can approve a conflict?', why: 'Reviewers don’t need to be historians if the evidence is strong enough.', options: ['Anyone, when every change date links to a primary source', 'Anyone, when one answer leads by a wide margin', 'Experts only'], def: 0, settles: 'Every conflict marked Ready for review' }
+    ];
+    var rules = defs.map(function (r) {
+      var sel = typeof s[r.id] === 'number' ? s[r.id] : r.def;
+      return {
+        id: r.id, q: r.q, why: r.why, settles: r.settles,
+        options: r.options.map(function (label, i) {
+          var on = sel === i;
+          var patch = {}; patch[r.id] = i;
+          return { label: label, checked: on, bd: on ? '#1D1C1A' : '#DDD8CE', bg: on ? '#F6F4EF' : '#FFFFFF', weight: on ? '600' : '400', pick: function () { self.setState(patch); } };
+        })
+      };
+    });
+    return { rules: rules };
+  }
+}
+</script>
+</body>
+</html>

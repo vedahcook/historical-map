@@ -1,0 +1,84 @@
+COW #,Transfer,Test place,COW date,OHM date,Difference (months),Verdict,Note,What OHM shows at this place
+59,Greece independence,Nafplio,1828-12,1832-09,45,OHM gap,OHM has no Greek state before May 1832; Nafplio stays Ottoman. Greece existed from 1822 and was recognized as independent in 1830.,1832-05 Kingdom of Greece + Ottoman Empire → 1832-09 Kingdom of Greece
+64,Belgium independence,Brussels,1830-10,1830-10,0,Agrees,OHM shows Belgium from Oct 1830 but keeps the Dutch claim overlapping it until 1839.,1830-10 Belgium + Kingdom of the Netherlands (claim) → 1839-06 Belgium
+76,West Limburg to Belgium (recognized),Hasselt,1839-04,1839-06,2,Agrees,,1839-06 Belgium
+77,Luxembourg province to Belgium (recognized),Arlon,1839-12,1839-06,-6,Within a year,OHM uses the June 1839 ratification of the Treaty of London; COW says Dec 1839.,1839-06 Belgium
+98,Cracow to Austria,Kraków,1846-11,1846-12,1,Agrees,,1846-12 Austrian Empire
+102,Lucca to Tuscany,Lucca,1847-10,1848-01,3,Within a year,OHM uses the formal handover (Dec 1847); COW uses the Oct 1847 abdication.,1848-01 Grand Duchy of Tuscany
+108,Hohenzollern-Hechingen to Prussia,Hechingen,1849-12,1850-03,3,Within a year,OHM uses the Prussian takeover (Mar 1850); COW uses the Dec 1849 treaty.,1850-01 Hohenzollern-Hechingen + Kingdom of Prussia → 1850-03 Kingdom of Prussia
+125,"Southern Bessarabia, Russia to Moldavia",Izmail,1856-03,1856-04,1,Agrees,,1856-04 Ottoman Empire + Principality of Moldavia (vassal) → 1859-02 United Romanian Principalities (vassal)
+125,"Southern Bessarabia, Russia to Moldavia",Bolhrad,1856-03,1856-04,1,Agrees,,1856-04 Ottoman Empire + Principality of Moldavia (vassal) → 1859-02 United Romanian Principalities (vassal)
+137,"Lombardy, Austria to Sardinia",Milan,1859-11,1859-11,0,Agrees,,1859-07 Austrian Empire + Kingdom of Sardinia → 1859-11 Kingdom of Sardinia → 1861-04 Italy
+137,"Lombardy, Austria to Sardinia",Brescia,1859-11,1859-11,0,Agrees,,1859-07 Austrian Empire + Kingdom of Sardinia → 1859-11 Kingdom of Sardinia → 1861-04 Italy
+142,Savoy and Nice to France,Nice,1860-03,1860-04,1,Agrees,,1859-10 Kingdom of Sardinia → 1860-04 Second French Empire
+142,Savoy and Nice to France,Chambéry,1860-03,1860-04,1,Agrees,,1859-10 Kingdom of Sardinia → 1860-04 Second French Empire
+144,Modena to Sardinia,Modena,1860-03,1860-04,1,Agrees,,1859-12 United Provinces of Central Italy → 1860-04 Kingdom of Sardinia → 1861-04 Italy
+145,Parma to Sardinia,Parma,1860-03,1860-04,1,Agrees,,1859-12 United Provinces of Central Italy → 1860-04 Kingdom of Sardinia → 1861-04 Italy
+146,Tuscany to Sardinia,Florence,1860-03,1860-04,1,Agrees,,1859-12 United Provinces of Central Italy → 1860-04 Kingdom of Sardinia → 1861-04 Italy
+147,Two Sicilies to Sardinia,Naples,1860-12,1861-01,1,Agrees,,1860-09 Dictatorship of Garibaldi → 1861-01 Kingdom of Sardinia → 1861-04 Italy
+147,Two Sicilies to Sardinia,Palermo,1860-12,1861-01,1,Agrees,,1860-09 Dictatorship of Garibaldi → 1861-01 Kingdom of Sardinia → 1861-04 Italy
+148,"Papal Romagna, Marche, Umbria to Sardinia",Bologna,1860-12,1860-04,-8,Within a year,OHM is right: Romagna joined Sardinia in Mar 1860. COW lumps it with the Dec 1860 annexations.,1859-12 United Provinces of Central Italy → 1860-04 Kingdom of Sardinia → 1861-04 Italy
+148,"Papal Romagna, Marche, Umbria to Sardinia",Perugia,1860-12,1860-11,-1,Agrees,,1860-10 Kingdom of Sardinia + Papal States → 1860-11 Kingdom of Sardinia → 1861-04 Italy
+148,"Papal Romagna, Marche, Umbria to Sardinia",Ancona,1860-12,1860-11,-1,Agrees,,1860-10 Kingdom of Sardinia + Papal States → 1860-11 Kingdom of Sardinia → 1861-04 Italy
+154,Menton and Roquebrune to France,Menton,1861,1861-02,0,Agrees,"Minor: OHM's 1860 France record already includes Menton, overlapping Monaco for 10 months before the Feb 1861 purchase.",1860-04 Monaco (vassal) + Second French Empire → 1861-02 Second French Empire
+163,"Lauenburg, Denmark to Prussia",Ratzeburg,1864-10,1867-07,33,OHM gap,No country at all from Jan 1864 to July 1867. Denmark's record ends on a year-only date (1864) before the Oct 1864 Treaty of Vienna.,1864-01 no country → 1867-07 North German Confederation
+164,"Schleswig, Denmark to Prussia",Flensburg,1864-06,1866-10,28,OHM gap,No country from Jan 1864 to Oct 1866; the Austro-Prussian joint rule of Schleswig-Holstein is missing.,1864-01 no country → 1866-10 Kingdom of Prussia
+164,"Schleswig, Denmark to Prussia",Haderslev,1864-06,1866-10,28,OHM gap,No country from Jan 1864 to Oct 1866; the Austro-Prussian joint rule of Schleswig-Holstein is missing.,1864-01 no country → 1866-10 Kingdom of Prussia
+165,"Holstein, Denmark to Austria",Kiel,1864-06,,,OHM gap,Holstein never shown under Austria (1865–66); no country from Jan 1864 to Oct 1866.,1864-01 no country → 1866-10 Kingdom of Prussia
+166,"Ionian Islands, UK to Greece",Corfu,1864-06,1864-06,0,Agrees,,1864-06 Kingdom of Greece
+166,"Ionian Islands, UK to Greece",Zakynthos,1864-06,1864-06,0,Agrees,,1864-06 Kingdom of Greece
+171,"Holstein, Austria to Prussia",Kiel,1866-08,1866-10,2,OHM gap,"Prussian date matches, but OHM never shows the Austrian period it replaced.",1864-01 no country → 1866-10 Kingdom of Prussia
+172,Nassau to Prussia,Wiesbaden,1866-08,1866-10,2,Agrees,,1866-10 Kingdom of Prussia
+173,Frankfurt to Prussia,Frankfurt,1866-08,1866-10,2,Agrees,,1866-10 Kingdom of Prussia
+174,Hanover to Prussia,Hanover,1866-07,1866-10,3,Within a year,OHM uses the formal annexation (Sep/Oct 1866); COW uses the July 1866 conquest.,1866-10 Kingdom of Prussia
+174,Hanover to Prussia,Osnabrück,1866-07,1866-10,3,Within a year,OHM uses the formal annexation (Sep/Oct 1866); COW uses the July 1866 conquest.,1866-10 Kingdom of Prussia
+175,Hesse-Kassel to Prussia,Kassel,1866-07,1866-10,3,Within a year,OHM uses the formal annexation (Sep/Oct 1866); COW uses the July 1866 conquest.,1866-10 Kingdom of Prussia
+176,"Venetia, Austria to Italy",Venice,1866-07,1866-10,3,Within a year,OHM uses the Oct 1866 Treaty of Vienna; COW uses the July 1866 armistice.,1866-10 Italy
+176,"Venetia, Austria to Italy",Verona,1866-07,1866-10,3,Within a year,OHM uses the Oct 1866 Treaty of Vienna; COW uses the July 1866 armistice.,1866-10 Italy
+176,"Venetia, Austria to Italy",Udine,1866-07,1866-10,3,Within a year,OHM uses the Oct 1866 Treaty of Vienna; COW uses the July 1866 armistice.,1866-10 Italy
+180,Luxembourg independence,Luxembourg,1867-12,,,Coding difference,OHM treats Luxembourg as its own state throughout; COW dates independence to 1867.,Luxembourg shown as its own state throughout
+182,Oldenburg into North German Confederation,Oldenburg,1867-07,1867-07,0,Agrees,,1867-07 North German Confederation → 1871-05 German Reich
+183,Bremen into North German Confederation,Bremen,1867-07,1867-07,0,Agrees,,1867-07 North German Confederation → 1871-05 German Reich
+184,Schwarzburg-Rudolstadt into North German Confederation,Rudolstadt,1867-07,1867-07,0,Agrees,,1867-07 North German Confederation → 1871-05 German Reich
+185,Mecklenburg-Strelitz into North German Confederation,Neustrelitz,1867-07,1867-07,0,Agrees,,1867-07 North German Confederation → 1871-05 German Reich
+186,Hamburg into North German Confederation,Hamburg,1867-07,1867-07,0,Agrees,,1867-07 North German Confederation → 1871-05 German Reich
+187,Lippe into North German Confederation,Detmold,1867-07,1867-07,0,Agrees,,1867-07 North German Confederation → 1871-05 German Reich
+188,Schwarzburg-Sondershausen into North German Confederation,Sondershausen,1867-07,1867-07,0,Agrees,,1867-07 North German Confederation → 1871-05 German Reich
+189,Anhalt into North German Confederation,Dessau,1867-07,1867-07,0,Agrees,,1867-07 North German Confederation → 1871-05 German Reich
+190,Saxe-Weimar into North German Confederation,Weimar,1867-07,1867-07,0,Agrees,,1867-07 North German Confederation → 1871-05 German Reich
+191,Brunswick into North German Confederation,Brunswick,1867-07,1867-07,0,Agrees,,1867-07 North German Confederation → 1871-05 German Reich
+192,Saxony into North German Confederation,Dresden,1867-07,1867-07,0,Agrees,,1867-07 North German Confederation → 1871-05 German Reich
+193,Hesse-Darmstadt into North German Confederation,Giessen,1867-07,1867-07,0,Agrees,,1867-07 North German Confederation → 1871-05 German Reich
+193,Hesse-Darmstadt into North German Confederation,Darmstadt,1867-07,1871-05,46,Coding difference,OHM is right: only Upper Hesse (north of the Main) joined in 1867; Darmstadt joined Germany in 1871. COW codes all of Hesse as joining in 1867.,1867-07 Hesse (outside the Confederation) → 1871-05 German Reich
+194,Mecklenburg-Schwerin into North German Confederation,Schwerin,1867-07,1867-07,0,Agrees,,1867-07 North German Confederation → 1871-05 German Reich
+203,Rome to Italy,Rome,1870-10,1870-10,0,Agrees,,1870-10 Italy
+206,"Alsace-Lorraine, France to Germany",Strasbourg,1871-12,1871-05,-7,Within a year,"OHM is right: Treaty of Frankfurt, May 1871. COW says Dec 1871.",1870-09 French Republic → 1871-05 German Reich
+206,"Alsace-Lorraine, France to Germany",Metz,1871-12,1871-05,-7,Within a year,"OHM is right: Treaty of Frankfurt, May 1871. COW says Dec 1871.",1870-09 French Republic → 1871-05 German Reich
+206,"Alsace-Lorraine, France to Germany",Colmar,1871-12,1871-05,-7,Within a year,"OHM is right: Treaty of Frankfurt, May 1871. COW says Dec 1871.",1870-09 French Republic → 1871-05 German Reich
+207,Baden into German Empire,Karlsruhe,1871-01,1871-05,4,Within a year,OHM starts the German Empire on 4 May 1871 (imperial constitution in force); most references use 1 or 18 Jan 1871.,1871-05 German Reich
+208,Württemberg into German Empire,Stuttgart,1871-01,1871-05,4,Within a year,OHM starts the German Empire on 4 May 1871 (imperial constitution in force); most references use 1 or 18 Jan 1871.,1871-05 German Reich
+209,Bavaria into German Empire,Munich,1871-01,1871-05,4,Within a year,OHM starts the German Empire on 4 May 1871 (imperial constitution in force); most references use 1 or 18 Jan 1871.,1871-05 German Reich
+233,"Cyprus, Ottoman to UK",Nicosia,1878-12,,,Coding difference,OHM shows the British protectorate on top of continuing Ottoman sovereignty (defensible: Cyprus stayed legally Ottoman until 1914).,"1878-01 Cyprus Protectorate + Ottoman Empire (both, throughout)"
+235,Bosnia to Austria (occupation),Sarajevo,1878-07,,,Coding difference,OHM keeps Bosnia Ottoman until 1908 (legal sovereignty); COW records the 1878 Austrian occupation.,Ottoman Empire throughout
+236,Herzegovina to Austria (occupation),Mostar,1878-07,,,Coding difference,OHM keeps Herzegovina Ottoman until 1908 (legal sovereignty); COW records the 1878 Austrian occupation.,Ottoman Empire throughout
+237,Spizza to Austria,Sutomore,1878-07,1878-07,0,Agrees,,1878-07 Austria-Hungary
+238,Serbia independence,Belgrade,1878-07,1878-07,0,Agrees,,1867-04 Principality of Serbia + Ottoman Empire → 1878-07 Principality of Serbia
+239,"Niš, Pirot, Vranje to Serbia",Niš,1878-07,1878-07,0,Agrees,,1878-07 Principality of Serbia
+239,"Niš, Pirot, Vranje to Serbia",Pirot,1878-07,1878-07,0,Agrees,,1878-07 Principality of Serbia
+239,"Niš, Pirot, Vranje to Serbia",Vranje,1878-07,1878-07,0,Agrees,,1878-07 Principality of Serbia
+240,Montenegro independence,Cetinje,1878-07,1878-07,0,Agrees,,1878-03 Ottoman Empire + Principality of Montenegro → 1878-07 Principality of Montenegro
+241,"Podgorica, Nikšić, Bar to Montenegro",Podgorica,1878-07,1878-07,0,Agrees,,1878-07 Principality of Montenegro
+241,"Podgorica, Nikšić, Bar to Montenegro",Nikšić,1878-07,1878-07,0,Agrees,,1878-07 Principality of Montenegro
+241,"Podgorica, Nikšić, Bar to Montenegro",Bar,1878-07,1878-07,0,Agrees,,1878-07 Principality of Montenegro
+242,Romania independence,Bucharest,1878-07,1878-07,0,Agrees,,1878-07 United Romanian Principalities → 1881-03 Kingdom of Romania
+243,Northern Dobruja to Romania,Constanța,1878-07,1878-07,0,Agrees,,1878-07 United Romanian Principalities → 1881-03 Kingdom of Romania
+243,Northern Dobruja to Romania,Tulcea,1878-07,1878-07,0,Agrees,,1878-07 United Romanian Principalities → 1881-03 Kingdom of Romania
+245,"Southern Bessarabia, Romania to Russia",Izmail,1878-07,1878-07,0,Agrees,,1878-03 Russian Empire + Romanian Principalities → 1878-07 Russian Empire
+245,"Southern Bessarabia, Romania to Russia",Bolhrad,1878-07,1878-07,0,Agrees,,1878-03 Russian Empire + Romanian Principalities → 1878-07 Russian Empire
+251,Ulcinj to Montenegro,Ulcinj,1880-11,1878-07,-28,OHM error,OHM puts Ulcinj in Montenegro from July 1878; it was handed over in Nov 1880.,1878-07 Principality of Montenegro
+258,Thessaly and Arta to Greece,Larissa,1881-07,1881-07,0,Agrees,,1881-07 Kingdom of Greece
+258,Thessaly and Arta to Greece,Volos,1881-07,1881-07,0,Agrees,,1881-07 Kingdom of Greece
+258,Thessaly and Arta to Greece,Trikala,1881-07,1881-07,0,Agrees,,1881-07 Kingdom of Greece
+258,Thessaly and Arta to Greece,Arta,1881-07,,,OHM error,OHM's 1881 Greek border leaves Arta Ottoman; Arta was ceded to Greece in 1881.,Ottoman Empire throughout (never becomes Greek)
+329,"Heligoland, UK to Germany",Heligoland,1890-07,1890-07,0,Agrees,,1890-07 German Reich
+377,Crete (COW: to UK),Heraklion,1898-11,1898-01,-10,Coding difference,OHM shows the autonomous Cretan State from 1898; COW codes Crete as a British gain. OHM also has no country for Crete in 1897 (Ottoman record gap).,1897 no country → 1898-01 Cretan State

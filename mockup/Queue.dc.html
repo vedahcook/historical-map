@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Conflict queue</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&amp;family=Instrument+Sans:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:#F6F4EF}
+a{color:#1E5F74}a:hover{color:#123F4E}
+</style>
+</helmet>
+<div style="width: 1440px; height: 1300px; box-sizing: border-box; background: #F6F4EF; color: #1D1C1A; font-family: 'Instrument Sans', system-ui, sans-serif; font-size: 14px; line-height: 1.45; display: flex; flex-direction: column">
+
+<header style="height: 64px; flex-shrink: 0; box-sizing: border-box; display: flex; align-items: center; gap: 32px; padding: 0 48px; background: #FFFFFF; border-bottom: 1px solid #DDD8CE">
+<div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 21px; font-weight: 600">Border Review</div>
+<nav aria-label="Main" style="display: flex; gap: 4px">
+<a href="Queue.dc.html" aria-current="page" style="padding: 10px 14px; border-radius: 8px; color: #1D1C1A; text-decoration: none; font-weight: 600; background: #EFECE5">Queue</a>
+<a href="Rules.dc.html" style="padding: 10px 14px; border-radius: 8px; color: #3F3C36; text-decoration: none">Rules</a>
+<a href="#" style="padding: 10px 14px; border-radius: 8px; color: #3F3C36; text-decoration: none">Sources</a>
+<a href="#" style="padding: 10px 14px; border-radius: 8px; color: #3F3C36; text-decoration: none">History</a>
+</nav>
+<div style="flex-grow: 1"></div>
+<div style="color: #5A564E">Dataset: Europe, 1800–1900</div>
+</header>
+
+<section style="padding: 32px 48px 20px; display: flex; align-items: flex-end; gap: 24px">
+<div style="flex-grow: 1; display: flex; flex-direction: column; gap: 8px">
+<h1 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-size: 36px; font-weight: 600; line-height: 1.15">Conflicts to review</h1>
+<div style="color: #5A564E; font-size: 15px">Europe, 1800–1900 · built from 5 sources · 12 open, 1 resolved</div>
+</div>
+<button type="button" style="min-height: 44px; padding: 0 16px; border-radius: 10px; border: 1px solid #CFC9BD; background: #FFFFFF; color: #1D1C1A; font: inherit; font-weight: 600">Compare sources again</button>
+</section>
+
+<div style="margin: 0 48px 20px; padding: 14px 18px; border-radius: 12px; background: #FFFFFF; border: 1px solid #DDD8CE; color: #3F3C36">Conflicts are sorted by what it takes to settle them. <strong>Ready for review</strong> means every change date links to a primary source, so anyone can approve it. The rest go to an expert, wait for more sources, or are settled by a <a href="Rules.dc.html">rule</a>.</div>
+
+<div role="group" aria-label="Filter by status" style="display: flex; gap: 8px; padding: 0 48px 16px">
+<sc-for list="{{tabs}}" as="t" hint-placeholder-count="6">
+<button type="button" aria-pressed="{{t.pressed}}" onClick="{{t.pick}}" style="min-height: 40px; padding: 0 14px; border-radius: 999px; border: 1px solid {{t.bd}}; background: {{t.bg}}; color: {{t.fg}}; font: inherit; font-weight: 600">{{t.label}} · {{t.count}}</button>
+</sc-for>
+</div>
+
+<div style="margin: 0 48px; background: #FFFFFF; border: 1px solid #DDD8CE; border-radius: 14px; overflow: hidden">
+<div style="display: grid; grid-template-columns: 210px 250px minmax(0, 1fr) 190px 160px 96px; gap: 20px; padding: 12px 20px; background: #EFECE5; font-size: 13px; font-weight: 600; color: #3F3C36">
+<span>Place and period</span><span>Question</span><span>What's wrong</span><span>Evidence</span><span>Status</span><span></span>
+</div>
+<sc-for list="{{rows}}" as="r" hint-placeholder-count="8">
+<div style="display: grid; grid-template-columns: 210px 250px minmax(0, 1fr) 190px 160px 96px; gap: 20px; padding: 16px 20px; border-top: 1px solid #E7E3DA; align-items: center">
+<div style="display: flex; flex-direction: column"><span style="font-weight: 600">{{r.place}}</span><span style="color: #5A564E; font-variant-numeric: tabular-nums">{{r.period}}</span></div>
+<div>{{r.question}}</div>
+<div style="color: #3F3C36">{{r.problem}}</div>
+<div style="color: #3F3C36; font-size: 13px">{{r.evidence}}</div>
+<div><span style="display: inline-block; padding: 4px 10px; border-radius: 999px; background: {{r.bg}}; color: {{r.fg}}; font-size: 12px; font-weight: 600">{{r.statusLabel}}</span></div>
+<a href="Main.dc.html" style="min-height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 10px; border: 1px solid #CFC9BD; color: #1D1C1A; text-decoration: none; font-weight: 600">{{r.action}}</a>
+</div>
+</sc-for>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1300}}'>
+class Component extends DCLogic {
+  renderVals() {
+    var s = this.state || {};
+    var filter = s.filter || 'all';
+    var self = this;
+    var look = {
+      ready: { label: 'Ready for review', bg: '#E6F0EC', fg: '#1F5A45' },
+      expert: { label: 'Needs an expert', bg: '#EDE8F5', fg: '#4B3A78' },
+      sources: { label: 'Needs more sources', bg: '#FBEEE3', fg: '#8A3F0E' },
+      rule: { label: 'Rule decision', bg: '#E7EEF6', fg: '#22466E' },
+      done: { label: 'Resolved', bg: '#EFECE5', fg: '#3F3C36' }
+    };
+    var all = [
+      { st: 'ready', place: 'Schleswig', period: '1864–1866', question: 'Who held it after Denmark?', problem: 'OpenHistoricalMap has no country for 34 months; the other sources name different holders.', evidence: '3 treaties, 4 datasets' },
+      { st: 'ready', place: 'Holstein and Lauenburg', period: '1864–1867', question: 'Who held them after Denmark?', problem: 'Same gap. Austria’s rule of Holstein is missing.', evidence: '3 treaties, 4 datasets' },
+      { st: 'ready', place: 'Ulcinj', period: '1878–1880', question: 'When did it become Montenegrin?', problem: 'OpenHistoricalMap says July 1878; COW says November 1880.', evidence: 'Treaty of Berlin, 2 datasets' },
+      { st: 'ready', place: 'Kingdom of Bavaria', period: '1814–1816', question: 'What were its borders?', problem: 'OpenHistoricalMap has no record for 23 months.', evidence: 'Treaty of Munich, 1 dataset' },
+      { st: 'ready', place: 'Crete', period: '1897', question: 'Who held Crete in 1897?', problem: 'OpenHistoricalMap has no country for the year.', evidence: '2 datasets' },
+      { st: 'expert', place: 'Greece', period: '1822–1832', question: 'When should the Greek state start?', problem: 'OpenHistoricalMap starts it in 1832, COW in 1828, Cliopatria earlier.', evidence: 'London Protocol, 3 datasets' },
+      { st: 'expert', place: 'Arta', period: '1881 on', question: 'Where did the 1881 border run?', problem: 'OpenHistoricalMap leaves Arta Ottoman; the other sources put it in Greece. Needs redrawing.', evidence: 'Convention of Constantinople, 2 datasets' },
+      { st: 'expert', place: 'German Empire', period: 'Jan–May 1871', question: 'Which date starts the empire?', problem: 'OpenHistoricalMap uses May 4, 1871; most references use Jan 1 or Jan 18.', evidence: 'Constitution texts, 2 datasets' },
+      { st: 'sources', place: 'Bavaria, Württemberg, Baden', period: '1806–1810', question: 'What were their borders?', problem: 'Missing in OpenHistoricalMap. Only Cliopatria has them, and it scores low.', evidence: '1 dataset' },
+      { st: 'sources', place: 'Saxon duchies', period: '1806–1826', question: 'What were their borders?', problem: 'Missing in OpenHistoricalMap. CShapes covers them only from 1816.', evidence: '1 dataset' },
+      { st: 'rule', place: 'Bulgaria', period: '1885–1908', question: 'Show it as its own state?', problem: 'Self-governing but legally Ottoman. OpenHistoricalMap shows Ottoman; CShapes shows Bulgaria.', evidence: 'Settled by the vassal-state rule' },
+      { st: 'rule', place: 'Bosnia and Herzegovina', period: '1878–1908', question: 'Ottoman or Austro-Hungarian?', problem: 'Legally Ottoman, but run by Austria-Hungary.', evidence: 'Settled by the legal-vs-control rule' },
+      { st: 'done', place: 'Hesse-Darmstadt', period: '1867', question: 'Did all of it join the North German Confederation?', problem: 'Settled: only the north joined. 3 of 4 datasets agree; COW differs.', evidence: '4 datasets' }
+    ];
+    var counts = { all: all.length };
+    all.forEach(function (r) { counts[r.st] = (counts[r.st] || 0) + 1; });
+    var tabDefs = [['all', 'All'], ['ready', 'Ready for review'], ['expert', 'Needs an expert'], ['sources', 'Needs more sources'], ['rule', 'Rule decision'], ['done', 'Resolved']];
+    var tabs = tabDefs.map(function (t) {
+      var on = filter === t[0];
+      return { label: t[1], count: counts[t[0]] || 0, pressed: on ? 'true' : 'false', bg: on ? '#1D1C1A' : '#FFFFFF', fg: on ? '#FFFFFF' : '#1D1C1A', bd: on ? '#1D1C1A' : '#CFC9BD', pick: function () { self.setState({ filter: t[0] }); } };
+    });
+    var rows = all.filter(function (r) { return filter === 'all' || r.st === filter; }).map(function (r) {
+      var l = look[r.st];
+      return { place: r.place, period: r.period, question: r.question, problem: r.problem, evidence: r.evidence, statusLabel: l.label, bg: l.bg, fg: l.fg, action: r.st === 'done' ? 'View' : 'Review' };
+    });
+    return { tabs: tabs, rows: rows };
+  }
+}
+</script>
+</body>
+</html>

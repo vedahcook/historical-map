@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Conflict detail</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&amp;family=Instrument+Sans:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:#F6F4EF}
+a{color:#1E5F74}a:hover{color:#123F4E}
+</style>
+</helmet>
+<div style="width: 1440px; height: 1960px; box-sizing: border-box; background: #F6F4EF; color: #1D1C1A; font-family: 'Instrument Sans', system-ui, sans-serif; font-size: 14px; line-height: 1.45; display: flex; flex-direction: column">
+
+<header style="height: 64px; flex-shrink: 0; box-sizing: border-box; display: flex; align-items: center; gap: 32px; padding: 0 48px; background: #FFFFFF; border-bottom: 1px solid #DDD8CE">
+<div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 21px; font-weight: 600">Border Review</div>
+<nav aria-label="Main" style="display: flex; gap: 4px">
+<a href="Queue.dc.html" style="padding: 10px 14px; border-radius: 8px; color: #1D1C1A; text-decoration: none; font-weight: 600; background: #EFECE5">Queue</a>
+<a href="Rules.dc.html" style="padding: 10px 14px; border-radius: 8px; color: #3F3C36; text-decoration: none">Rules</a>
+<a href="#" style="padding: 10px 14px; border-radius: 8px; color: #3F3C36; text-decoration: none">Sources</a>
+<a href="#" style="padding: 10px 14px; border-radius: 8px; color: #3F3C36; text-decoration: none">History</a>
+</nav>
+<div style="flex-grow: 1"></div>
+<div style="color: #5A564E">Dataset: Europe, 1800–1900</div>
+</header>
+
+<section style="padding: 28px 48px 24px; display: flex; align-items: flex-end; gap: 24px">
+<div style="flex-grow: 1; display: flex; flex-direction: column; gap: 10px">
+<div style="font-size: 13px; color: #5A564E"><a href="Queue.dc.html">Queue</a> › Ready for review › 1 of 5</div>
+<h1 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-size: 36px; font-weight: 600; line-height: 1.15">Who held Schleswig from 1864 to 1866?</h1>
+<div style="color: #5A564E; font-size: 15px">Applies to Flensburg district and the rest of Schleswig · 7 sources · they disagree from January 1864 to October 1866</div>
+<div style="display: flex; gap: 8px; margin-top: 4px">
+<span style="padding: 4px 10px; border-radius: 999px; background: #FBEEE3; color: #8A3F0E; font-size: 13px; font-weight: 600">Gap in OpenHistoricalMap</span>
+<span style="padding: 4px 10px; border-radius: 999px; background: #EFECE5; color: #3F3C36; font-size: 13px; font-weight: 600">Sources name different holders</span>
+<span style="padding: 4px 10px; border-radius: 999px; background: #E6F0EC; color: #1F5A45; font-size: 13px; font-weight: 600">Primary sources available</span>
+</div>
+</div>
+<div style="display: flex; gap: 8px">
+<button type="button" style="min-height: 44px; padding: 0 16px; border-radius: 10px; border: 1px solid #CFC9BD; background: #FFFFFF; color: #1D1C1A; font: inherit; font-weight: 600">Previous</button>
+<button type="button" style="min-height: 44px; padding: 0 16px; border-radius: 10px; border: 1px solid #CFC9BD; background: #FFFFFF; color: #1D1C1A; font: inherit; font-weight: 600">Next</button>
+</div>
+</section>
+
+<div style="display: flex; gap: 32px; padding: 0 48px; align-items: flex-start">
+
+<div style="width: 872px; flex-shrink: 0; display: flex; flex-direction: column; gap: 24px">
+
+<section aria-label="Map" style="background: #FFFFFF; border: 1px solid #DDD8CE; border-radius: 14px; overflow: hidden">
+<div style="display: flex; align-items: center; gap: 16px; padding: 12px 18px; border-bottom: 1px solid #E7E3DA">
+<div role="group" aria-label="Map view" style="display: flex; background: #EFECE5; border-radius: 10px; padding: 3px; gap: 2px">
+<sc-if value="{{isLegal}}" hint-placeholder-val="{{true}}">
+<button type="button" aria-pressed="true" onClick="{{showLegal}}" style="min-height: 38px; padding: 0 14px; border: 0; border-radius: 8px; background: #FFFFFF; color: #1D1C1A; font: inherit; font-weight: 600; box-shadow: 0 1px 2px rgba(0,0,0,0.12)">Legal title</button>
+<button type="button" aria-pressed="false" onClick="{{showActual}}" style="min-height: 38px; padding: 0 14px; border: 0; border-radius: 8px; background: transparent; color: #3F3C36; font: inherit">Actual control</button>
+</sc-if>
+<sc-if value="{{isActual}}" hint-placeholder-val="{{false}}">
+<button type="button" aria-pressed="false" onClick="{{showLegal}}" style="min-height: 38px; padding: 0 14px; border: 0; border-radius: 8px; background: transparent; color: #3F3C36; font: inherit">Legal title</button>
+<button type="button" aria-pressed="true" onClick="{{showActual}}" style="min-height: 38px; padding: 0 14px; border: 0; border-radius: 8px; background: #FFFFFF; color: #1D1C1A; font: inherit; font-weight: 600; box-shadow: 0 1px 2px rgba(0,0,0,0.12)">Actual control</button>
+</sc-if>
+</div>
+<div style="flex-grow: 1"></div>
+<div style="font-size: 13px; color: #5A564E">Overlay borders from</div>
+<label style="display: flex; align-items: center; gap: 6px; font-size: 13px"><input type="checkbox" checked="{{ovOhm}}" onChange="{{toggleOhm}}">OpenHistoricalMap</label>
+<label style="display: flex; align-items: center; gap: 6px; font-size: 13px"><input type="checkbox" checked="{{ovCs}}" onChange="{{toggleCs}}">CShapes</label>
+</div>
+
+<svg viewBox="0 0 872 300" width="870" height="300" role="img" aria-label="Schematic map of Denmark, Schleswig, Holstein and Lauenburg" style="display: block">
+<rect x="0" y="0" width="872" height="300" fill="#DCE7EE"></rect>
+<text x="80" y="140" fill="#4E6878" font-size="14" font-style="italic">North Sea</text>
+<text x="660" y="160" fill="#4E6878" font-size="14" font-style="italic">Baltic Sea</text>
+<polygon points="300,0 420,0 432,40 416,95 400,118 312,118 296,80 305,40" fill="#F0B8AE" stroke="#FFFFFF" stroke-width="2"></polygon>
+<ellipse cx="482" cy="92" rx="38" ry="24" fill="#F0B8AE" stroke="#FFFFFF" stroke-width="2"></ellipse>
+<ellipse cx="604" cy="58" rx="60" ry="44" fill="#F0B8AE" stroke="#FFFFFF" stroke-width="2"></ellipse>
+<text x="324" y="62" fill="#1D1C1A" font-size="13" font-weight="600" letter-spacing="1.5">DENMARK</text>
+<polygon points="170,262 300,262 420,262 478,280 528,275 872,262 872,300 170,300" fill="#E9E5DC" stroke="#FFFFFF" stroke-width="2"></polygon>
+<text x="640" y="290" fill="#3F3C36" font-size="12">Other German states</text>
+<polygon points="300,205 405,205 458,215 470,250 420,262 300,262 285,235" fill="#D7D2C8" stroke="#FFFFFF" stroke-width="2"></polygon>
+<text x="322" y="240" fill="#3F3C36" font-size="12" font-weight="600" letter-spacing="1.5">HOLSTEIN</text>
+<polygon points="470,250 520,248 528,275 478,280" fill="#D7D2C8" stroke="#FFFFFF" stroke-width="2"></polygon>
+<text x="536" y="270" fill="#3F3C36" font-size="11" font-weight="600" letter-spacing="1">LAUENBURG</text>
+<polygon points="312,118 400,118 420,140 425,185 405,205 300,205 292,160" fill="{{schFill}}" stroke="#1D1C1A" stroke-width="3"></polygon>
+<text x="318" y="168" fill="{{schText}}" font-size="13" font-weight="600" letter-spacing="1.5">SCHLESWIG</text>
+<circle cx="404" cy="128" r="4" fill="#1D1C1A"></circle>
+<text x="414" y="132" fill="#1D1C1A" font-size="12">Flensburg</text>
+<sc-if value="{{ovOhm}}" hint-placeholder-val="{{true}}">
+<polyline points="296,114 404,114 426,138 431,188 409,211" fill="none" stroke="#1E5F74" stroke-width="2" stroke-dasharray="6 4"></polyline>
+<text x="436" y="196" fill="#1E5F74" font-size="11">OpenHistoricalMap</text>
+</sc-if>
+<sc-if value="{{ovCs}}" hint-placeholder-val="{{false}}">
+<polyline points="290,124 396,110 430,150 420,200" fill="none" stroke="#8A3F0E" stroke-width="2" stroke-dasharray="2 4"></polyline>
+<text x="436" y="150" fill="#8A3F0E" font-size="11">CShapes</text>
+</sc-if>
+<text x="16" y="290" fill="#5A564E" font-size="11">Schematic for the mockup — the real screen shows the actual map</text>
+</svg>
+
+<div style="display: flex; flex-direction: column; gap: 12px; padding: 14px 18px 16px; border-top: 1px solid #E7E3DA">
+<div style="display: flex; align-items: center; gap: 14px">
+<label for="date" style="font-weight: 600">Date</label>
+<input id="date" type="range" min="0" max="71" step="1" value="{{month}}" onChange="{{setMonth}}" style="width: 460px; accent-color: #1D1C1A">
+<div style="font-variant-numeric: tabular-nums"><strong>{{monthLabel}}</strong> · Schleswig held by <strong>{{holder}}</strong></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 18px; font-size: 13px; color: #3F3C36">
+<span style="display: flex; align-items: center; gap: 6px"><span style="width: 14px; height: 14px; border-radius: 3px; background: #F0B8AE"></span>Denmark</span>
+<span style="display: flex; align-items: center; gap: 6px"><span style="width: 14px; height: 14px; border-radius: 3px; background: #D9953A"></span>Austria and Prussia jointly</span>
+<span style="display: flex; align-items: center; gap: 6px"><span style="width: 14px; height: 14px; border-radius: 3px; background: #2B4C7E"></span>Prussia</span>
+<span style="display: flex; align-items: center; gap: 6px"><span style="width: 14px; height: 14px; border-radius: 3px; background: repeating-linear-gradient(135deg, #D2CCC0 0px, #D2CCC0 3px, #F7F5F0 3px, #F7F5F0 6px)"></span>No country</span>
+<span style="display: flex; align-items: center; gap: 6px"><span style="width: 14px; height: 14px; border-radius: 3px; background: #D7D2C8"></span>Related conflict, not shown</span>
+</div>
+</div>
+</section>
+
+<section aria-label="What each source says" style="background: #FFFFFF; border: 1px solid #DDD8CE; border-radius: 14px; padding: 22px 24px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; align-items: baseline; gap: 12px">
+<h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-size: 22px; font-weight: 600">What each source says</h2>
+<span style="color: #5A564E">Who held Schleswig, month by month</span>
+</div>
+
+<div style="display: flex; gap: 16px; font-size: 12px; color: #5A564E; font-variant-numeric: tabular-nums">
+<div style="width: 188px; flex-shrink: 0"></div>
+<div style="width: 648px; display: flex">
+<span style="width: 108px; border-left: 1px solid #CFC9BD; padding-left: 4px; box-sizing: border-box">1863</span>
+<span style="width: 108px; border-left: 1px solid #CFC9BD; padding-left: 4px; box-sizing: border-box">1864</span>
+<span style="width: 108px; border-left: 1px solid #CFC9BD; padding-left: 4px; box-sizing: border-box">1865</span>
+<span style="width: 108px; border-left: 1px solid #CFC9BD; padding-left: 4px; box-sizing: border-box">1866</span>
+<span style="width: 108px; border-left: 1px solid #CFC9BD; padding-left: 4px; box-sizing: border-box">1867</span>
+<span style="width: 108px; border-left: 1px solid #CFC9BD; padding-left: 4px; box-sizing: border-box">1868</span>
+</div>
+</div>
+
+<div style="display: flex; align-items: center; gap: 16px">
+<div style="width: 188px; flex-shrink: 0; display: flex; flex-direction: column"><span style="font-weight: 600">Treaty texts</span><span style="font-size: 12px; color: #5A564E">Primary · exact days</span></div>
+<div style="position: relative; width: 648px; height: 30px; display: flex; border-radius: 6px; overflow: hidden">
+<div style="flex-shrink: 0; width: 198px; height: 30px; box-sizing: border-box; padding: 0 8px; display: flex; align-items: center; font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; border-right: 2px solid #FFFFFF; background: #F0B8AE">Denmark</div>
+<div style="flex-shrink: 0; width: 195px; height: 30px; box-sizing: border-box; padding: 0 8px; display: flex; align-items: center; font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; border-right: 2px solid #FFFFFF; background: #D9953A">Austria &amp; Prussia jointly</div>
+<div style="flex-shrink: 0; width: 255px; height: 30px; box-sizing: border-box; padding: 0 8px; display: flex; align-items: center; font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; background: #2B4C7E; color: #FFFFFF">Prussia</div>
+<div style="position: absolute; top: 0; bottom: 0; left: {{markerLeft}}px; width: 2px; background: #1D1C1A"></div>
+</div>
+</div>
+
+<div style="display: flex; align-items: center; gap: 16px">
+<div style="width: 188px; flex-shrink: 0; display: flex; flex-direction: column"><span style="font-weight: 600">COW Territorial Change</span><span style="font-size: 12px; color: #5A564E">Dataset · month only</span></div>
+<div style="position: relative; width: 648px; height: 30px; display: flex; border-radius: 6px; overflow: hidden">
+<div style="flex-shrink: 0; width: 153px; height: 30px; box-sizing: border-box; padding: 0 8px; display: flex; align-items: center; font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; border-right: 2px solid #FFFFFF; background: #F0B8AE">Denmark</div>
+<div style="flex-shrink: 0; width: 495px; height: 30px; box-sizing: border-box; padding: 0 8px; display: flex; align-items: center; font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; background: #2B4C7E; color: #FFFFFF">Prussia (from June 1864)</div>
+<div style="position: absolute; top: 0; bottom: 0; left: {{markerLeft}}px; width: 2px; background: #1D1C1A"></div>
+</div>
+</div>
+
+<div style="display: flex; align-items: center; gap: 16px">
+<div style="width: 188px; flex-shrink: 0; display: flex; flex-direction: column"><span style="font-weight: 600">OpenHistoricalMap</span><span style="font-size: 12px; color: #5A564E">Community map · year only here</span></div>
+<div style="position: relative; width: 648px; height: 30px; display: flex; border-radius: 6px; overflow: hidden">
+<div style="flex-shrink: 0; width: 108px; height: 30px; box-sizing: border-box; padding: 0 8px; display: flex; align-items: center; font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; border-right: 2px solid #FFFFFF; background: #F0B8AE">Denmark</div>
+<div style="flex-shrink: 0; width: 297px; height: 30px; box-sizing: border-box; padding: 0 8px; display: flex; align-items: center; font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; border-right: 2px solid #FFFFFF; background: repeating-linear-gradient(135deg, #E1DBCF 0px, #E1DBCF 6px, #F7F5F0 6px, #F7F5F0 12px); color: #1D1C1A">No country</div>
+<div style="flex-shrink: 0; width: 243px; height: 30px; box-sizing: border-box; padding: 0 8px; display: flex; align-items: center; font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; background: #2B4C7E; color: #FFFFFF">Prussia (from Oct 1, 1866)</div>
+<div style="position: absolute; top: 0; bottom: 0; left: {{markerLeft}}px; width: 2px; background: #1D1C1A"></div>
+</div>
+</div>
+
+<div style="display: flex; align-items: center; gap: 16px">
+<div style="width: 188px; flex-shrink: 0; display: flex; flex-direction: column"><span style="font-weight: 600">CShapes-Europe</span><span style="font-size: 12px; color: #5A564E">Dataset · one owner per year</span></div>
+<div style="position: relative; width: 648px; height: 30px; display: flex; border-radius: 6px; overflow: hidden">
+<div style="flex-shrink: 0; width: 216px; height: 30px; box-sizing: border-box; padding: 0 8px; display: flex; align-items: center; font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; border-right: 2px solid #FFFFFF; background: #F0B8AE">Denmark</div>
+<div style="flex-shrink: 0; width: 432px; height: 30px; box-sizing: border-box; padding: 0 8px; display: flex; align-items: center; font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; background: #2B4C7E; color: #FFFFFF">Prussia (from 1865)</div>
+<div style="position: absolute; top: 0; bottom: 0; left: {{markerLeft}}px; width: 2px; background: #1D1C1A"></div>
+</div>
+</div>
+
+<div style="display: flex; align-items: center; gap: 16px">
+<div style="width: 188px; flex-shrink: 0; display: flex; flex-direction: column"><span style="font-weight: 600">Cliopatria</span><span style="font-size: 12px; color: #5A564E">Dataset · one owner per year</span></div>
+<div style="position: relative; width: 648px; height: 30px; display: flex; border-radius: 6px; overflow: hidden">
+<div style="flex-shrink: 0; width: 108px; height: 30px; box-sizing: border-box; padding: 0 8px; display: flex; align-items: center; font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; border-right: 2px solid #FFFFFF; background: #F0B8AE">Denmark</div>
+<div style="flex-shrink: 0; width: 540px; height: 30px; box-sizing: border-box; padding: 0 8px; display: flex; align-items: center; font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; background: repeating-linear-gradient(135deg, #E1DBCF 0px, #E1DBCF 6px, #F7F5F0 6px, #F7F5F0 12px); color: #1D1C1A">No country</div>
+<div style="position: absolute; top: 0; bottom: 0; left: {{markerLeft}}px; width: 2px; background: #1D1C1A"></div>
+</div>
+</div>
+
+<div style="height: 1px; background: #E7E3DA; margin: 6px 0"></div>
+
+<div style="display: flex; align-items: center; gap: 16px">
+<div style="width: 188px; flex-shrink: 0; display: flex; flex-direction: column"><span style="font-weight: 600">Suggested answer</span><span style="font-size: 12px; color: #5A564E">{{viewName}}</span></div>
+<sc-if value="{{isLegal}}" hint-placeholder-val="{{true}}">
+<div style="position: relative; width: 648px; height: 34px; display: flex; border-radius: 6px; overflow: hidden; outline: 2px solid #1D1C1A; outline-offset: 2px">
+<div style="flex-shrink: 0; width: 198px; height: 34px; box-sizing: border-box; padding: 0 8px; display: flex; align-items: center; font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; border-right: 2px solid #FFFFFF; background: #F0B8AE">Denmark</div>
+<div style="flex-shrink: 0; width: 195px; height: 34px; box-sizing: border-box; padding: 0 8px; display: flex; align-items: center; font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; border-right: 2px solid #FFFFFF; background: #D9953A">Austria &amp; Prussia jointly</div>
+<div style="flex-shrink: 0; width: 255px; height: 34px; box-sizing: border-box; padding: 0 8px; display: flex; align-items: center; font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; background: #2B4C7E; color: #FFFFFF">Prussia</div>
+<div style="position: absolute; top: 0; bottom: 0; left: {{markerLeft}}px; width: 2px; background: #1D1C1A"></div>
+</div>
+</sc-if>
+<sc-if value="{{isActual}}" hint-placeholder-val="{{false}}">
+<div style="position: relative; width: 648px; height: 34px; display: flex; border-radius: 6px; overflow: hidden; outline: 2px solid #1D1C1A; outline-offset: 2px">
+<div style="flex-shrink: 0; width: 117px; height: 34px; box-sizing: border-box; padding: 0 8px; display: flex; align-items: center; font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; border-right: 2px solid #FFFFFF; background: #F0B8AE">Denmark</div>
+<div style="flex-shrink: 0; width: 166px; height: 34px; box-sizing: border-box; padding: 0 8px; display: flex; align-items: center; font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; border-right: 2px solid #FFFFFF; background: #D9953A">Occupied by both</div>
+<div style="flex-shrink: 0; width: 365px; height: 34px; box-sizing: border-box; padding: 0 8px; display: flex; align-items: center; font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; background: #2B4C7E; color: #FFFFFF">Prussian administration, then Prussia</div>
+<div style="position: absolute; top: 0; bottom: 0; left: {{markerLeft}}px; width: 2px; background: #1D1C1A"></div>
+</div>
+</sc-if>
+</div>
+</section>
+</div>
+
+<div style="width: 440px; flex-shrink: 0; display: flex; flex-direction: column; gap: 24px">
+
+<section aria-label="Suggested answer" style="background: #FFFFFF; border: 1px solid #DDD8CE; border-radius: 14px; padding: 22px 24px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-size: 22px; font-weight: 600">Suggested answer</h2>
+<span style="padding: 4px 10px; border-radius: 999px; background: #EFECE5; color: #3F3C36; font-size: 12px; font-weight: 600">Drafted automatically</span>
+</div>
+<p style="margin: 0; color: #5A564E">Drafted from the evidence below. Open the linked treaty texts before approving.</p>
+
+<sc-if value="{{isLegal}}" hint-placeholder-val="{{true}}">
+<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px">
+<li style="display: flex; gap: 12px"><span style="width: 14px; height: 14px; margin-top: 4px; flex-shrink: 0; border-radius: 3px; background: #F0B8AE"></span><div><div style="font-weight: 600">Denmark</div><div style="color: #3F3C36">Until Oct 30, 1864 · <a href="#">Treaty of Vienna</a></div></div></li>
+<li style="display: flex; gap: 12px"><span style="width: 14px; height: 14px; margin-top: 4px; flex-shrink: 0; border-radius: 3px; background: #D9953A"></span><div><div style="font-weight: 600">Austria and Prussia jointly</div><div style="color: #3F3C36">Oct 30, 1864 to Aug 23, 1866 · <a href="#">Peace of Prague</a></div></div></li>
+<li style="display: flex; gap: 12px"><span style="width: 14px; height: 14px; margin-top: 4px; flex-shrink: 0; border-radius: 3px; background: #2B4C7E"></span><div><div style="font-weight: 600">Prussia</div><div style="color: #3F3C36">From Aug 23, 1866 · <a href="#">Peace of Prague</a></div></div></li>
+</ol>
+<div style="padding: 12px 14px; border-radius: 10px; background: #E6F0EC; color: #1F5A45"><strong>Confidence: high.</strong> Every change date comes from a treaty text.</div>
+</sc-if>
+<sc-if value="{{isActual}}" hint-placeholder-val="{{false}}">
+<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px">
+<li style="display: flex; gap: 12px"><span style="width: 14px; height: 14px; margin-top: 4px; flex-shrink: 0; border-radius: 3px; background: #F0B8AE"></span><div><div style="font-weight: 600">Denmark</div><div style="color: #3F3C36">Until Feb 1864 · secondary sources only</div></div></li>
+<li style="display: flex; gap: 12px"><span style="width: 14px; height: 14px; margin-top: 4px; flex-shrink: 0; border-radius: 3px; background: #D9953A"></span><div><div style="font-weight: 600">Occupied by Austria and Prussia</div><div style="color: #3F3C36">Feb 1864 to Aug 14, 1865</div></div></li>
+<li style="display: flex; gap: 12px"><span style="width: 14px; height: 14px; margin-top: 4px; flex-shrink: 0; border-radius: 3px; background: #2B4C7E"></span><div><div style="font-weight: 600">Prussian administration, then Prussia</div><div style="color: #3F3C36">From Aug 14, 1865 · <a href="#">Gastein Convention</a></div></div></li>
+</ol>
+<div style="padding: 12px 14px; border-radius: 10px; background: #FBEEE3; color: #8A3F0E"><strong>Confidence: medium.</strong> The February 1864 date rests on secondary sources, not a treaty.</div>
+</sc-if>
+
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="font-weight: 600">Why the sources differ</div>
+<ul style="margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; color: #3F3C36">
+<li>OpenHistoricalMap ends Denmark on a year-only date (1864) and has no record of the joint rule.</li>
+<li>COW counts the June 1864 conquest as a Prussian gain and leaves out Austria.</li>
+<li>CShapes and Cliopatria record one owner per year; Cliopatria has none after 1863.</li>
+</ul>
+</div>
+</section>
+
+<section aria-label="Your decision" style="background: #FFFFFF; border: 1px solid #DDD8CE; border-radius: 14px; padding: 22px 24px; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-size: 22px; font-weight: 600">Your decision</h2>
+<fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px">
+<legend style="padding: 0; margin-bottom: 8px; color: #5A564E">Choose one</legend>
+<sc-for list="{{options}}" as="o" hint-placeholder-count="4">
+<sc-if value="{{o.checked}}" hint-placeholder-val="{{false}}">
+<label style="display: flex; gap: 10px; align-items: flex-start; padding: 12px 14px; border-radius: 10px; border: 2px solid #1D1C1A; background: #F6F4EF">
+<input type="radio" name="decision" value="{{o.id}}" checked="{{o.checked}}" onChange="{{o.pick}}" style="margin-top: 3px; accent-color: #1D1C1A">
+<span style="display: flex; flex-direction: column"><span style="font-weight: 600">{{o.label}}</span><span style="font-size: 13px; color: #5A564E">{{o.hint}}</span></span>
+</label>
+</sc-if>
+<sc-if value="{{o.unchecked}}" hint-placeholder-val="{{true}}">
+<label style="display: flex; gap: 10px; align-items: flex-start; padding: 12px 14px; border-radius: 10px; border: 1px solid #DDD8CE; background: #FFFFFF">
+<input type="radio" name="decision" value="{{o.id}}" checked="{{o.checked}}" onChange="{{o.pick}}" style="margin-top: 3px; accent-color: #1D1C1A">
+<span style="display: flex; flex-direction: column"><span style="font-weight: 600">{{o.label}}</span><span style="font-size: 13px; color: #5A564E">{{o.hint}}</span></span>
+</label>
+</sc-if>
+</sc-for>
+</fieldset>
+
+<sc-if value="{{isSource}}" hint-placeholder-val="{{false}}">
+<label style="display: flex; flex-direction: column; gap: 6px"><span style="font-weight: 600">Source to use</span>
+<select style="min-height: 44px; padding: 0 10px; border-radius: 10px; border: 1px solid #CFC9BD; background: #FFFFFF; font: inherit">
+<option>Treaty texts</option><option>COW Territorial Change</option><option>OpenHistoricalMap</option><option>CShapes-Europe</option><option>Cliopatria</option>
+</select></label>
+</sc-if>
+<sc-if value="{{isExpert}}" hint-placeholder-val="{{false}}">
+<label style="display: flex; flex-direction: column; gap: 6px"><span style="font-weight: 600">What's unclear?</span>
+<textarea rows="3" placeholder="For example: I can't tell whether joint rule should count as a holder" style="padding: 10px 12px; border-radius: 10px; border: 1px solid #CFC9BD; font: inherit; resize: vertical"></textarea></label>
+<div style="font-size: 13px; color: #5A564E">Goes to the next available expert for Central Europe, 1815–1871. It leaves your queue until they answer.</div>
+</sc-if>
+
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="font-weight: 600">Apply to</div>
+<label style="display: flex; align-items: center; gap: 8px"><input type="checkbox" checked="{{applyAll}}" onChange="{{toggleAll}}" style="accent-color: #1D1C1A">All of Schleswig (same treaties)</label>
+<label style="display: flex; align-items: center; gap: 8px"><input type="checkbox" checked="{{applyRelated}}" onChange="{{toggleRelated}}" style="accent-color: #1D1C1A">Holstein and Lauenburg too (related conflict)</label>
+</div>
+
+<label style="display: flex; flex-direction: column; gap: 6px"><span style="font-weight: 600">Note saved with your decision</span>
+<textarea rows="2" placeholder="For example: checked the three treaty dates against the linked texts" style="padding: 10px 12px; border-radius: 10px; border: 1px solid #CFC9BD; font: inherit; resize: vertical"></textarea></label>
+
+<div style="padding: 12px 14px; border-radius: 10px; background: #EFECE5; color: #3F3C36; font-size: 13px"><strong>When to approve:</strong> when every change date in the suggestion links to a primary source you can open. If any date rests only on datasets, send it to an expert. <a href="Rules.dc.html">Change this rule</a></div>
+
+<div style="display: flex; gap: 10px">
+<button type="button" style="flex-grow: 1; min-height: 46px; padding: 0 18px; border-radius: 10px; border: 0; background: #1D1C1A; color: #FFFFFF; font: inherit; font-weight: 600">{{primaryLabel}}</button>
+<button type="button" style="min-height: 46px; padding: 0 16px; border-radius: 10px; border: 1px solid #CFC9BD; background: #FFFFFF; color: #1D1C1A; font: inherit; font-weight: 600">Skip for now</button>
+</div>
+</section>
+</div>
+</div>
+
+<section aria-label="Evidence" style="padding: 32px 48px 48px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; align-items: baseline; gap: 12px">
+<h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-size: 22px; font-weight: 600">Evidence</h2>
+<span style="color: #5A564E">7 items · strongest first</span>
+</div>
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px">
+
+<article style="background: #FFFFFF; border: 1px solid #DDD8CE; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; gap: 8px; align-items: flex-start"><h3 style="margin: 0; font-size: 15px; font-weight: 600">Treaty of Vienna</h3><span style="padding: 2px 8px; border-radius: 999px; background: #E6F0EC; color: #1F5A45; font-size: 12px; font-weight: 600; white-space: nowrap">High weight</span></div>
+<div style="font-size: 13px; color: #5A564E">Primary source · legal title · Oct 30, 1864</div>
+<p style="margin: 0">Denmark gives up Schleswig, Holstein and Lauenburg to Austria and Prussia jointly.</p>
+<div style="margin-top: auto; display: flex; justify-content: space-between; font-size: 13px"><a href="#">Open text</a><span style="color: #5A564E">Primary source</span></div>
+</article>
+
+<article style="background: #FFFFFF; border: 1px solid #DDD8CE; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; gap: 8px; align-items: flex-start"><h3 style="margin: 0; font-size: 15px; font-weight: 600">Gastein Convention</h3><span style="padding: 2px 8px; border-radius: 999px; background: #E6F0EC; color: #1F5A45; font-size: 12px; font-weight: 600; white-space: nowrap">High weight</span></div>
+<div style="font-size: 13px; color: #5A564E">Primary source · administration · Aug 14, 1865</div>
+<p style="margin: 0">Prussia will run Schleswig and Austria will run Holstein. Lauenburg goes to Prussia.</p>
+<div style="margin-top: auto; display: flex; justify-content: space-between; font-size: 13px"><a href="#">Open text</a><span style="color: #5A564E">Primary source</span></div>
+</article>
+
+<article style="background: #FFFFFF; border: 1px solid #DDD8CE; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; gap: 8px; align-items: flex-start"><h3 style="margin: 0; font-size: 15px; font-weight: 600">Peace of Prague</h3><span style="padding: 2px 8px; border-radius: 999px; background: #E6F0EC; color: #1F5A45; font-size: 12px; font-weight: 600; white-space: nowrap">High weight</span></div>
+<div style="font-size: 13px; color: #5A564E">Primary source · legal title · Aug 23, 1866</div>
+<p style="margin: 0">Austria hands its rights in Schleswig and Holstein to Prussia.</p>
+<div style="margin-top: auto; display: flex; justify-content: space-between; font-size: 13px"><a href="#">Open text</a><span style="color: #5A564E">Primary source</span></div>
+</article>
+
+<article style="background: #FFFFFF; border: 1px solid #DDD8CE; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; gap: 8px; align-items: flex-start"><h3 style="margin: 0; font-size: 15px; font-weight: 600">OpenHistoricalMap</h3><span style="padding: 2px 8px; border-radius: 999px; background: #EFECE5; color: #3F3C36; font-size: 12px; font-weight: 600; white-space: nowrap">Medium weight</span></div>
+<div style="font-size: 13px; color: #5A564E">Community map · who, when, lines</div>
+<p style="margin: 0">Denmark until “1864” (year only). No country until Oct 1, 1866, then Prussia.</p>
+<div style="margin-top: auto; display: flex; justify-content: space-between; font-size: 13px"><a href="#">Open records</a><span style="color: #5A564E">149 of 160 checks right</span></div>
+</article>
+
+<article style="background: #FFFFFF; border: 1px solid #DDD8CE; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; gap: 8px; align-items: flex-start"><h3 style="margin: 0; font-size: 15px; font-weight: 600">CShapes-Europe</h3><span style="padding: 2px 8px; border-radius: 999px; background: #EFECE5; color: #3F3C36; font-size: 12px; font-weight: 600; white-space: nowrap">Medium weight</span></div>
+<div style="font-size: 13px; color: #5A564E">Dataset · one owner per year · from 1816</div>
+<p style="margin: 0">Denmark in 1864, Prussia from 1865.</p>
+<div style="margin-top: auto; display: flex; justify-content: space-between; font-size: 13px"><a href="#">Open record</a><span style="color: #5A564E">About 117 of 131 right</span></div>
+</article>
+
+<article style="background: #FFFFFF; border: 1px solid #DDD8CE; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; gap: 8px; align-items: flex-start"><h3 style="margin: 0; font-size: 15px; font-weight: 600">COW Territorial Change #164</h3><span style="padding: 2px 8px; border-radius: 999px; background: #EFECE5; color: #3F3C36; font-size: 12px; font-weight: 600; white-space: nowrap">Medium weight</span></div>
+<div style="font-size: 13px; color: #5A564E">Dataset · who and when · month only</div>
+<p style="margin: 0">Prussia gains Schleswig from Denmark, June 1864.</p>
+<div style="margin-top: auto; display: flex; justify-content: space-between; font-size: 13px"><a href="#">Open record</a><span style="color: #5A564E">Not yet measured</span></div>
+</article>
+
+<article style="background: #FFFFFF; border: 1px solid #DDD8CE; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; gap: 8px; align-items: flex-start"><h3 style="margin: 0; font-size: 15px; font-weight: 600">Cliopatria</h3><span style="padding: 2px 8px; border-radius: 999px; background: #FBEEE3; color: #8A3F0E; font-size: 12px; font-weight: 600; white-space: nowrap">Low weight</span></div>
+<div style="font-size: 13px; color: #5A564E">Dataset · one owner per year · coarse</div>
+<p style="margin: 0">Denmark until 1863. No owner from 1864.</p>
+<div style="margin-top: auto; display: flex; justify-content: space-between; font-size: 13px"><a href="#">Open record</a><span style="color: #5A564E">About 115 of 160 right</span></div>
+</article>
+
+<article style="background: transparent; border: 1px dashed #CFC9BD; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 10px; justify-content: center; align-items: flex-start">
+<h3 style="margin: 0; font-size: 15px; font-weight: 600">Add evidence</h3>
+<p style="margin: 0; color: #5A564E">A treaty, a map sheet or a reference book. It's weighed with the rest.</p>
+<button type="button" style="min-height: 44px; padding: 0 14px; border-radius: 10px; border: 1px solid #CFC9BD; background: #FFFFFF; color: #1D1C1A; font: inherit; font-weight: 600">Add a source</button>
+</article>
+
+</div>
+</section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1960}}'>
+class Component extends DCLogic {
+  renderVals() {
+    var s = this.state || {};
+    var view = s.view || 'legal';
+    var decision = s.decision || 'approve';
+    var month = typeof s.month === 'number' ? s.month : 29;
+    var self = this;
+    var set = function (patch) { return function () { self.setState(patch); }; };
+    var names = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+    var holder, fill;
+    if (view === 'legal') {
+      if (month < 22) { holder = 'Denmark'; fill = '#F0B8AE'; }
+      else if (month < 44) { holder = 'Austria and Prussia jointly'; fill = '#D9953A'; }
+      else { holder = 'Prussia'; fill = '#2B4C7E'; }
+    } else {
+      if (month < 13) { holder = 'Denmark'; fill = '#F0B8AE'; }
+      else if (month < 31) { holder = 'Austria and Prussia (occupation)'; fill = '#D9953A'; }
+      else { holder = 'Prussia (administration)'; fill = '#2B4C7E'; }
+    }
+    var opts = [
+      { id: 'approve', label: 'Approve the suggested answer', hint: 'Every change date links to a treaty text.' },
+      { id: 'source', label: "Use one source's version instead", hint: 'Pick the source you trust most here.' },
+      { id: 'edit', label: 'Edit the dates myself', hint: 'Opens the timeline editor.' },
+      { id: 'expert', label: "I'm not sure — send to an expert", hint: 'It leaves your queue until an expert answers.' }
+    ].map(function (o) {
+      return { id: o.id, label: o.label, hint: o.hint, checked: decision === o.id, unchecked: decision !== o.id, pick: set({ decision: o.id }) };
+    });
+    var labels = { approve: 'Approve and go to next', source: 'Save this version', edit: 'Open the editor', expert: 'Send to an expert' };
+    return {
+      isLegal: view === 'legal',
+      isActual: view === 'actual',
+      viewName: view === 'legal' ? 'Legal title view' : 'Actual control view',
+      showLegal: set({ view: 'legal' }),
+      showActual: set({ view: 'actual' }),
+      month: month,
+      monthLabel: names[month % 12] + ' ' + (1863 + Math.floor(month / 12)),
+      setMonth: function (e) { self.setState({ month: Number(e.target.value) }); },
+      markerLeft: month * 9 + 4,
+      holder: holder,
+      schFill: fill,
+      schText: fill === '#2B4C7E' ? '#FFFFFF' : '#1D1C1A',
+      ovOhm: s.ovOhm !== false,
+      ovCs: s.ovCs === true,
+      toggleOhm: function () { self.setState({ ovOhm: s.ovOhm === false }); },
+      toggleCs: function () { self.setState({ ovCs: s.ovCs !== true }); },
+      options: opts,
+      primaryLabel: labels[decision],
+      isSource: decision === 'source',
+      isExpert: decision === 'expert',
+      applyAll: s.applyAll !== false,
+      applyRelated: s.applyRelated === true,
+      toggleAll: function () { self.setState({ applyAll: s.applyAll === false }); },
+      toggleRelated: function () { self.setState({ applyRelated: s.applyRelated !== true }); }
+    };
+  }
+}
+</script>
+</body>
+</html>

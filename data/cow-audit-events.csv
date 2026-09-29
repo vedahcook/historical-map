@@ -1,0 +1,61 @@
+cow_number,transfer,cow_date,loser_pattern,gainer_pattern,test_places,kind
+59,Greece independence,1828-12,Ottoman,Greece|Hellenic,Nafplio,independence
+64,Belgium independence,1830-10,Netherlands,Belgium,Brussels,independence
+76,West Limburg to Belgium (recognized),1839-04,Netherlands,Belgium,Hasselt,transfer
+77,Luxembourg province to Belgium (recognized),1839-12,Netherlands|Luxembourg,Belgium,Arlon,transfer
+98,Cracow to Austria,1846-11,Cracow,Austria,Kraków,transfer
+102,Lucca to Tuscany,1847-10,Lucca,Tuscany,Lucca,transfer
+108,Hohenzollern-Hechingen to Prussia,1849-12,Hechingen,Prussia,Hechingen,transfer
+125,"Southern Bessarabia, Russia to Moldavia",1856-03,Russia,Ottoman|Moldavia|Romanian,Izmail;Bolhrad,transfer
+137,"Lombardy, Austria to Sardinia",1859-11,Austria,Sardinia|^Italy$,Milan;Brescia,transfer
+142,Savoy and Nice to France,1860-03,Sardinia,French|France,Nice;Chambéry,transfer
+144,Modena to Sardinia,1860-03,Modena,Sardinia|^Italy$,Modena,transfer
+145,Parma to Sardinia,1860-03,Parma,Sardinia|^Italy$,Parma,transfer
+146,Tuscany to Sardinia,1860-03,Tuscany,Sardinia|^Italy$,Florence,transfer
+147,Two Sicilies to Sardinia,1860-12,Two Sicilies,Sardinia|^Italy$,Naples;Palermo,transfer
+148,"Papal Romagna, Marche, Umbria to Sardinia",1860-12,Papal,Sardinia|^Italy$,Bologna;Perugia;Ancona,transfer
+154,Menton and Roquebrune to France,1861,Monaco,French|France,Menton,transfer
+163,"Lauenburg, Denmark to Prussia",1864-10,Denmark,Prussia|North German|German Reich,Ratzeburg,transfer
+164,"Schleswig, Denmark to Prussia",1864-06,Denmark,Prussia|North German|German Reich,Flensburg;Haderslev,transfer
+165,"Holstein, Denmark to Austria",1864-06,Denmark,Austria,Kiel,transfer
+166,"Ionian Islands, UK to Greece",1864-06,United Kingdom|Heligoland|Cyprus|Ionian|Malta|British,Greece|Hellenic,Corfu;Zakynthos,transfer
+171,"Holstein, Austria to Prussia",1866-08,Austria,Prussia|North German|German Reich,Kiel,transfer
+172,Nassau to Prussia,1866-08,Nassau,Prussia|North German|German Reich,Wiesbaden,transfer
+173,Frankfurt to Prussia,1866-08,Frankfur,Prussia|North German|German Reich,Frankfurt,transfer
+174,Hanover to Prussia,1866-07,Hanover,Prussia|North German|German Reich,Hanover;Osnabrück,transfer
+175,Hesse-Kassel to Prussia,1866-07,Electorate of Hesse,Prussia|North German|German Reich,Kassel,transfer
+176,"Venetia, Austria to Italy",1866-07,Austria,Sardinia|^Italy$,Venice;Verona;Udine,transfer
+180,Luxembourg independence,1867-12,Netherlands,Luxembourg,Luxembourg,independence
+182,Oldenburg into North German Confederation,1867-07,Oldenburg,Prussia|North German|German Reich,Oldenburg,transfer
+183,Bremen into North German Confederation,1867-07,Bremen,Prussia|North German|German Reich,Bremen,transfer
+184,Schwarzburg-Rudolstadt into North German Confederation,1867-07,Rudolstadt,Prussia|North German|German Reich,Rudolstadt,transfer
+185,Mecklenburg-Strelitz into North German Confederation,1867-07,Strelitz,Prussia|North German|German Reich,Neustrelitz,transfer
+186,Hamburg into North German Confederation,1867-07,Hamburg,Prussia|North German|German Reich,Hamburg,transfer
+187,Lippe into North German Confederation,1867-07,Lippe,Prussia|North German|German Reich,Detmold,transfer
+188,Schwarzburg-Sondershausen into North German Confederation,1867-07,Sondershausen,Prussia|North German|German Reich,Sondershausen,transfer
+189,Anhalt into North German Confederation,1867-07,Anhalt,Prussia|North German|German Reich,Dessau,transfer
+190,Saxe-Weimar into North German Confederation,1867-07,Weimar,Prussia|North German|German Reich,Weimar,transfer
+191,Brunswick into North German Confederation,1867-07,Brunswick,Prussia|North German|German Reich,Brunswick,transfer
+192,Saxony into North German Confederation,1867-07,Kingdom of Saxony,Prussia|North German|German Reich,Dresden,transfer
+193,Hesse-Darmstadt into North German Confederation,1867-07,Grand Duchy of Hesse|^Hesse$,Prussia|North German|German Reich,Giessen;Darmstadt,transfer
+194,Mecklenburg-Schwerin into North German Confederation,1867-07,Schwerin,Prussia|North German|German Reich,Schwerin,transfer
+203,Rome to Italy,1870-10,Papal,Sardinia|^Italy$,Rome,transfer
+206,"Alsace-Lorraine, France to Germany",1871-12,French|France,German Reich|Prussia|North German,Strasbourg;Metz;Colmar,transfer
+207,Baden into German Empire,1871-01,Baden,German Reich|Prussia|North German,Karlsruhe,transfer
+208,Württemberg into German Empire,1871-01,Württemberg,German Reich|Prussia|North German,Stuttgart,transfer
+209,Bavaria into German Empire,1871-01,Bavaria,German Reich|Prussia|North German,Munich,transfer
+233,"Cyprus, Ottoman to UK",1878-12,Ottoman,United Kingdom|Heligoland|Cyprus|Ionian|Malta|British,Nicosia,transfer
+235,Bosnia to Austria (occupation),1878-07,Ottoman,Austria,Sarajevo,transfer
+236,Herzegovina to Austria (occupation),1878-07,Ottoman,Austria,Mostar,transfer
+237,Spizza to Austria,1878-07,Ottoman,Austria,Sutomore,transfer
+238,Serbia independence,1878-07,Ottoman,Serbia,Belgrade,independence
+239,"Niš, Pirot, Vranje to Serbia",1878-07,Ottoman,Serbia,Niš;Pirot;Vranje,transfer
+240,Montenegro independence,1878-07,Ottoman,Montenegro,Cetinje,independence
+241,"Podgorica, Nikšić, Bar to Montenegro",1878-07,Ottoman,Montenegro,Podgorica;Nikšić;Bar,transfer
+242,Romania independence,1878-07,Ottoman,Romania,Bucharest,independence
+243,Northern Dobruja to Romania,1878-07,Ottoman,Romania,Constanța;Tulcea,transfer
+245,"Southern Bessarabia, Romania to Russia",1878-07,Romania|Moldavia|Ottoman,Russia,Izmail;Bolhrad,transfer
+251,Ulcinj to Montenegro,1880-11,Ottoman,Montenegro,Ulcinj,transfer
+258,Thessaly and Arta to Greece,1881-07,Ottoman,Greece|Hellenic,Larissa;Volos;Trikala;Arta,transfer
+329,"Heligoland, UK to Germany",1890-07,United Kingdom|Heligoland|Cyprus|Ionian|Malta|British,German Reich|Prussia|North German,Heligoland,transfer
+377,Crete (COW codes it as a UK gain),1898-11,Ottoman,United Kingdom|Cretan,Heraklion,transfer
