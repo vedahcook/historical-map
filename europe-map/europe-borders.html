@@ -100,6 +100,8 @@ button, select, input { font: inherit; color: inherit; }
 .mappop .ln { fill: none; stroke: var(--muted); stroke-width: 1.4; }
 .mappop .pt { fill: var(--ink); }
 .mappop .pt.c { fill: var(--surface); stroke: var(--ink); stroke-width: 1.2; }
+.mappop .pt.on { fill: var(--sel); stroke: var(--surface); stroke-width: 1.2; }
+.mappop .hit { fill: transparent; cursor: pointer; }
 .mappop .now { stroke: var(--sel); stroke-width: 1.4; }
 .mappop .cur { fill: var(--sel); }
 .mappop .ax { fill: var(--muted); font-size: 9px; }
@@ -676,7 +678,8 @@ function cityHtml(d) {
   const line = c.P.map((q, j) => (j ? 'L' : 'M') + X(q[0]).toFixed(1) + ',' + Y(q[1]).toFixed(1)).join('');
   const ticks = []; for (let t = Math.ceil(Y0 / 50) * 50; t <= Y1; t += 50) ticks.push(t);
   const chart = `<svg class="pchart" viewBox="0 0 ${W} ${H}" aria-hidden="true"><line class="now" x1="${X(year)}" x2="${X(year)}" y1="2" y2="${H - 11}"/><path class="ln" d="${line}"/>` +
-    c.P.map(q => `<circle class="pt${q[2] === 3 ? ' c' : ''}" cx="${X(q[0]).toFixed(1)}" cy="${Y(q[1]).toFixed(1)}" r="2.2"/>`).join('') +
+    c.P.map(q => `<circle class="pt${q[2] === 3 ? ' c' : ''}${q[0] === year ? ' on' : ''}" cx="${X(q[0]).toFixed(1)}" cy="${Y(q[1]).toFixed(1)}" r="${q[0] === year ? 3.6 : 2.2}"/>`).join('') +
+    c.P.map(q => `<circle class="hit" data-y="${q[0]}" cx="${X(q[0]).toFixed(1)}" cy="${Y(q[1]).toFixed(1)}" r="6"><title>${q[0]}: ${fmt(q[1])}</title></circle>`).join('') +
     (p.k === 'est' ? `<circle class="cur" cx="${X(year)}" cy="${Y(p.v).toFixed(1)}" r="3"/>` : '') +
     ticks.map(t => `<text class="ax" x="${X(t).toFixed(1)}" y="${H - 1}" text-anchor="${t === ticks[0] && X(t) < 16 ? 'start' : 'middle'}">${t}</text>`).join('') + `</svg>`;
   const runs = []; for (let y = Y0; y <= Y1; y++) { const u = unitAt[c.s * NY + y - Y0]; if (runs.length && runs[runs.length - 1].u === u) runs[runs.length - 1].b = y; else runs.push({ u, a: y, b: y }); }
@@ -775,7 +778,7 @@ function renderPop() {
   const sr = svg.getBoundingClientRect(), mb = $('mapbox').getBoundingClientRect();
   pop.innerHTML = d ? cityHtml(d) : countryHtml(fu);
   pop.setAttribute('aria-label', d ? `${d.c.n}: population` : nameOf(fu, year));
-  pop.querySelectorAll('.hstrip button').forEach(b => b.onclick = () => setYear(+b.dataset.y));
+  pop.querySelectorAll('.hstrip button, .pchart .hit').forEach(b => b.onclick = ev => { ev.stopPropagation(); setYear(+b.dataset.y); });
   pop.querySelector('.x').onclick = () => { if (d) { selCity = null; drawCities(); } else popClosed = true; renderPop(); };
   const w = d ? Math.min(330, sr.width - 2 * PAD) : sr.width < 600 ? sr.width - 2 * PAD : 300; pop.style.width = w + 'px';
   pop.style.left = '-9999px'; pop.style.top = '0px'; pop.hidden = false;
