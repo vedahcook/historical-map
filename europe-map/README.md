@@ -6,11 +6,12 @@ The page is `europe-borders.html`, published as a Claude artifact.
 
 ## Using the map
 
-- **Tap a country** to highlight it and dim the rest. Tap it again, or the sea, to clear it; tap another country to switch.
+- **Tap a country** to highlight it and dim the rest. The map zooms so the whole country is on screen, and a popup describes it for that year. Tap it again, or the sea, to clear it; tap another country to switch.
 - **The side panel** then shows a short history of that country for the chosen year (`descriptions.py`: when it began, how, and when it ended), which source the border comes from, and who held the place over the century.
 - **The timeline** shows only that country's events while it is highlighted: when it began or ended, name changes, and gains or losses over 1,500 km².
-- **Cities** appear inside the highlighted country. Tap one for its population that year.
-- **Map font:** a switch between Source Sans 3 and Fira Sans, remembered in the browser.
+- **Cities** appear inside the highlighted country. Tap a city's dot or name for its population that year.
+- **One popup at a time,** placed to cover as little as possible of what it describes (never a tapped city's dot or name). Nothing pops up on hover.
+- **Map font:** Source Sans 3.
 
 ## How the map decides
 

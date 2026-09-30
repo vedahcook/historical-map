@@ -1,5 +1,5 @@
 <title>Europe's Borders, 1800–1900</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Instrument+Sans:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&family=Fira+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Instrument+Sans:wght@400;500;600;700&family=Source+Sans+3:wght@300..700&display=swap">
 <style>
 /* Layout: an atlas plate. The map fills the left, a year slider runs under it, and a side panel explains the year, the place you clicked, and where sources disagree. */
 :root {
@@ -64,9 +64,8 @@ button, select, input { font: inherit; color: inherit; }
 .badge text { fill: var(--accent-ink); font-family: var(--sans); font-weight: 700; text-anchor: middle; dominant-baseline: central; pointer-events: none; }
 .badge { cursor: pointer; }
 .badge.on circle { fill: var(--ink); }
-.mapbox[data-font="fira"] { --mapfont: "Fira Sans", "Instrument Sans", system-ui, sans-serif; }
-.lbl { font-family: var(--mapfont); font-weight: 500; fill: var(--ink); text-anchor: middle; dominant-baseline: central; pointer-events: none; }
-.lbl.big { font-weight: 500; }
+.lbl { font-family: var(--mapfont); font-weight: 450; fill: var(--ink); text-anchor: middle; dominant-baseline: central; pointer-events: none; }
+.lbl.big { font-weight: 450; }
 .dim { fill: var(--dim); fill-rule: evenodd; pointer-events: none; }
 .pin circle { fill: var(--sel); stroke: var(--halo); }
 .city circle { fill: var(--ink); stroke: var(--halo); cursor: pointer; }
@@ -74,34 +73,26 @@ button, select, input { font: inherit; color: inherit; }
 .city.on circle { fill: var(--sel); stroke: var(--halo); }
 .clbl { font-family: var(--mapfont); font-weight: 400; fill: var(--ink); dominant-baseline: central; pointer-events: none; }
 .clbl.on { font-weight: 600; }
-.citypop { font-family: var(--mapfont); position: absolute; z-index: 3; background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 10px; padding: 9px 12px 10px; width: 236px; box-shadow: 0 6px 18px rgba(0,0,0,0.15); font-size: 0.84rem; }
-.citypop .x { position: absolute; right: 4px; top: 4px; width: 28px; height: 28px; border: 0; background: transparent; border-radius: 7px; cursor: pointer; color: var(--muted); font-size: 1.1rem; line-height: 1; }
-.citypop .nm { font-weight: 600; font-size: 0.95rem; padding-right: 26px; }
-.citypop .pop { font-size: 1.35rem; font-weight: 600; margin-top: 2px; font-variant-numeric: tabular-nums; }
-.citypop .pop small { display: block; font-size: 0.8rem; font-weight: 400; color: var(--muted); margin-top: -1px; }
-.citypop.dock { width: auto; padding: 7px 10px 8px; font-size: 0.8rem; }
-.citypop.dock .pop { font-size: 1.15rem; }
-.citypop.dock svg { height: 34px; margin-top: 4px; }
-.citypop p { margin: 3px 0 0; color: var(--muted); line-height: 1.38; }
-.citypop svg { display: block; position: static; width: 100%; height: 48px; margin-top: 7px; cursor: default; }
-.citypop .ln { fill: none; stroke: var(--muted); stroke-width: 1.4; }
-.citypop .pt { fill: var(--ink); }
-.citypop .pt.c { fill: var(--surface); stroke: var(--ink); stroke-width: 1.2; }
-.citypop .now { stroke: var(--sel); stroke-width: 1.4; }
-.citypop .cur { fill: var(--sel); }
-.citypop .ax { fill: var(--muted); font-size: 9px; }
-.fontpick { position: absolute; left: 10px; bottom: 10px; z-index: 2; display: flex; align-items: center; gap: 6px; background: var(--surface); border: 1px solid var(--line); border-radius: 9px; padding: 3px 3px 3px 10px; font-size: 0.78rem; color: var(--muted); }
-.fontpick button { border: 0; background: transparent; border-radius: 7px; padding: 5px 9px; cursor: pointer; color: var(--muted); font-size: 0.8rem; }
-.fontpick button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
-.fontpick button[data-f="source"] { font-family: "Source Sans 3", sans-serif; } .fontpick button[data-f="fira"] { font-family: "Fira Sans", sans-serif; }
-.tip { font-family: var(--mapfont); position: absolute; pointer-events: none; background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; font-size: 0.82rem; box-shadow: 0 6px 18px rgba(0,0,0,0.15); max-width: 270px; z-index: 3; }
-.tip { max-width: 320px; }
-.tip b { display: block; font-size: 0.92rem; }
-.tip .dt, .desc .dt { display: block; color: var(--muted); font-size: 0.8rem; margin-top: 1px; }
-.tip p { margin: 5px 0 4px; line-height: 1.4; }
+.clbl { cursor: pointer; }
+.mappop { font-family: var(--mapfont); position: absolute; z-index: 3; background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px 11px; box-shadow: 0 6px 18px rgba(0,0,0,0.16); font-size: 0.86rem; line-height: 1.4; }
+.mappop .x { position: absolute; right: 4px; top: 4px; width: 30px; height: 30px; border: 0; background: transparent; border-radius: 7px; cursor: pointer; color: var(--muted); font-size: 1.15rem; line-height: 1; }
+.mappop .nm { font-family: var(--serif); font-weight: 600; font-size: 1.05rem; line-height: 1.25; padding-right: 26px; }
+.mappop .dt { color: var(--muted); font-size: 0.8rem; margin-top: 2px; }
+.mappop p { margin: 4px 0 0; color: var(--muted); line-height: 1.38; }
+.mappop p.tx { margin-top: 6px; color: var(--ink); }
+.mappop p.hint { margin-top: 7px; font-size: 0.8rem; }
+.mappop .pop { font-size: 1.35rem; font-weight: 600; margin-top: 2px; font-variant-numeric: tabular-nums; }
+.mappop .pop small { display: block; font-size: 0.8rem; font-weight: 400; color: var(--muted); margin-top: -1px; }
+.mappop svg { display: block; position: static; width: 100%; height: 48px; margin-top: 7px; cursor: default; }
+.mappop .ln { fill: none; stroke: var(--muted); stroke-width: 1.4; }
+.mappop .pt { fill: var(--ink); }
+.mappop .pt.c { fill: var(--surface); stroke: var(--ink); stroke-width: 1.2; }
+.mappop .now { stroke: var(--sel); stroke-width: 1.4; }
+.mappop .cur { fill: var(--sel); }
+.mappop .ax { fill: var(--muted); font-size: 9px; }
+.desc .dt { display: block; color: var(--muted); font-size: 0.8rem; margin-top: 1px; }
 .desc { display: flex; flex-direction: column; gap: 4px; font-size: 0.88rem; }
 .desc p { margin: 0; }
-.tip span { color: var(--muted); }
 .zoom { position: absolute; right: 10px; top: 10px; display: flex; flex-direction: column; gap: 4px; z-index: 2; }
 .zoom button { width: 36px; height: 36px; border-radius: 9px; border: 1px solid var(--line); background: var(--surface); cursor: pointer; font-weight: 700; font-size: 1.05rem; line-height: 1; }
 .yearstamp { position: absolute; left: 14px; top: 10px; font-family: var(--mapfont); font-weight: 600; font-size: 2.4rem; line-height: 1; color: var(--ink); opacity: 0.8; pointer-events: none; }
@@ -210,9 +201,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
           <button type="button" id="zreset" aria-label="Show all of Europe" title="Show all of Europe">⤢</button>
         </div>
         <div class="yearstamp num" id="stamp" aria-hidden="true">1815</div>
-        <div class="fontpick" role="group" aria-label="Map font"><span>Map font</span><button type="button" data-f="source" aria-pressed="true">Source Sans 3</button><button type="button" data-f="fira" aria-pressed="false">Fira Sans</button></div>
-        <div class="tip" id="tip" hidden></div>
-        <div class="citypop" id="citypop" role="dialog" aria-label="City population" hidden></div>
+        <div class="mappop" id="mappop" role="dialog" aria-label="Details" hidden></div>
       </div>
       <div class="timebar">
         <div class="tctl">
@@ -375,9 +364,9 @@ function zoomAt(f, cx, cy) {
   view = [cx - (cx - x) * k, cy - (cy - y) * k, w * k, h * k]; applyView();
 }
 function toMap(ev) { const r = svg.getBoundingClientRect(); return [shown[0] + (ev.clientX - r.left) / r.width * shown[2], shown[1] + (ev.clientY - r.top) / r.height * shown[3]]; }
-svg.addEventListener('wheel', ev => { ev.preventDefault(); const [mx, my] = toMap(ev); zoomAt(Math.exp(-ev.deltaY * 0.0015), mx, my); }, { passive: false });
+svg.addEventListener('wheel', ev => { ev.preventDefault(); stopAnim(); const [mx, my] = toMap(ev); zoomAt(Math.exp(-ev.deltaY * 0.0015), mx, my); }, { passive: false });
 const ptrs = new Map(); let dragged = false, pinch0 = null;
-svg.addEventListener('pointerdown', ev => { svg.setPointerCapture(ev.pointerId); ptrs.set(ev.pointerId, [ev.clientX, ev.clientY]); dragged = false; if (ptrs.size === 2) { const [a, b] = [...ptrs.values()]; pinch0 = { d: Math.hypot(a[0] - b[0], a[1] - b[1]), view: view.slice() }; } });
+svg.addEventListener('pointerdown', ev => { stopAnim(); svg.setPointerCapture(ev.pointerId); ptrs.set(ev.pointerId, [ev.clientX, ev.clientY]); dragged = false; if (ptrs.size === 2) { const [a, b] = [...ptrs.values()]; pinch0 = { d: Math.hypot(a[0] - b[0], a[1] - b[1]), view: view.slice() }; } });
 svg.addEventListener('pointermove', ev => {
   if (!ptrs.has(ev.pointerId)) { hover(ev); return; }
   const prev = ptrs.get(ev.pointerId); ptrs.set(ev.pointerId, [ev.clientX, ev.clientY]);
@@ -392,7 +381,7 @@ svg.addEventListener('pointermove', ev => {
 const endPtr = ev => { ptrs.delete(ev.pointerId); if (ptrs.size < 2) pinch0 = null; if (!ptrs.size) svg.classList.remove('drag'); };
 svg.addEventListener('pointerup', ev => { const wasDrag = dragged; endPtr(ev); if (!wasDrag && ev.button === 0) click(ev); });
 svg.addEventListener('pointercancel', endPtr);
-svg.addEventListener('pointerleave', () => { $('tip').hidden = true; });
+svg.addEventListener('pointerleave', () => { svg.style.cursor = ''; });
 $('zin').onclick = () => zoomAt(1.6, shown[0] + shown[2] / 2, shown[1] + shown[3] / 2);
 $('zout').onclick = () => zoomAt(1 / 1.6, shown[0] + shown[2] / 2, shown[1] + shown[3] / 2);
 $('zreset').onclick = () => { view = HOME.slice(); applyView(); };
@@ -427,29 +416,17 @@ function draw() {
   }
   $('borders').setAttribute('d', G.borders); $('vborders').setAttribute('d', G.vb);
   drawAlts(); drawDim(); applyView();
-  $('stamp').textContent = year; $('year').value = year; $('tip').hidden = true;
+  $('stamp').textContent = year; $('year').value = year;
   renderTimeline(); renderYear(); renderPlace(); renderAlts();
   try { history.replaceState(null, '', '#' + year); } catch (e) {}
 }
 
-// ---------- map font (a viewer choice, remembered in this browser) ----------
-let mapFont = 'source';
-try { if (localStorage.getItem('eb-font') === 'fira') mapFont = 'fira'; } catch (e) {}
-function setFont(f) {
-  mapFont = f; $('mapbox').dataset.font = f;
-  document.querySelectorAll('.fontpick button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.f === f)));
-  try { localStorage.setItem('eb-font', f); } catch (e) {}
-  drawLabels(); drawBadges(); drawCities();
-}
-document.querySelectorAll('.fontpick button').forEach(b => b.onclick = () => setFont(b.dataset.f));
-$('mapbox').dataset.font = mapFont;
-document.querySelectorAll('.fontpick button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.f === mapFont)));
 if (document.fonts) document.fonts.ready.then(() => { drawLabels(); drawCities(); });
 
 // ---------- labels ----------
-let labelBoxes = [];
+let labelBoxes = [], focusBox = null;
 function drawLabels() {
-  const g = $('labels'); g.textContent = ''; const fl = $('focuslabel'); fl.textContent = '';
+  const g = $('labels'); g.textContent = ''; const fl = $('focuslabel'); fl.textContent = ''; focusBox = null;
   const fu = focusUnit();
   const rows = (D.labels[year] || []).slice().sort((a, b) => (b[0] === fu) - (a[0] === fu) || b[4] - a[4]);
   const k = pxPerKm(); if (!k) return;
@@ -459,13 +436,13 @@ function drawLabels() {
     if (sx < 0 || sy < 0 || sx > r.width || sy > r.height) continue;
     const name = NM[ni]; const big = varea > 180000;
     const fs = big ? Math.min(20, 15 + Math.log10(varea / 180000) * 6) : varea > 40000 ? 14 : 13;
-    const w = name.length * fs * (mapFont === 'fira' ? 0.56 : 0.5) + 6, h = fs * 1.3;
+    const w = name.length * fs * 0.5 + 6, h = fs * 1.3;
     const room = Math.sqrt(varea) * k * 1.7;
     const focused = u === fu;
     if (!focused && w > room * 1.6 && !(w < 70 && varea * k * k > 900)) continue;
     const box = [sx - w / 2, sy - h / 2, sx + w / 2, sy + h / 2];
     if (!focused && placed.some(b => box[0] < b[2] && box[2] > b[0] && box[1] < b[3] && box[3] > b[1])) continue;
-    placed.push(box);
+    placed.push(box); if (focused) focusBox = box;
     const t = el('text', { x: x.toFixed(1), y: y.toFixed(1), class: 'lbl' + (big ? ' big' : '') }, focused ? fl : g);
     t.setAttribute('style', `font-size:${(fs / k).toFixed(2)}px`);
     t.textContent = name;
@@ -558,19 +535,20 @@ function click(ev) {
   // a numbered marker takes the click first
   const k = pxPerKm(); const onBadge = altsNow().find(a => { const p = badgeAt[a.i] || [a.x, a.y]; return Math.hypot((p[0] - x) * k, (p[1] - y) * k) <= 13; });
   if (onBadge) { selectAlt(onBadge.i); return; }
-  const c = cityAt(x, y);
-  if (c) { selCity = selCity === c.i ? null : c.i; $('tip').hidden = true; drawCities(); return; }
+  const c = cityAt(ev);                                   // a city (its dot or its name) comes next
+  if (c) { selCity = selCity === c.i ? null : c.i; drawCities(); renderPop(); return; }
   const f = regionAt(x, y);
-  const u = f ? uAt(f, year) : -1, cur = place ? unitAt[place.s * NY + year - Y0] : -2;
-  if (selCity != null && f && u === cur) { selCity = null; drawCities(); return; }   // first tap inside the country just closes the city
+  const u = f ? uAt(f, year) : -1, cur = focusUnit();
+  if (selCity != null && f && u === cur) { selCity = null; drawCities(); renderPop(); return; }   // first tap inside the country just closes the city
   selCity = null;
   if (!f || (place && u === cur)) place = null;          // tapping the highlighted country again, or the sea, clears it
   else {
-    place = { x, y, s: f.properties.s };
+    place = { x, y, s: f.properties.s }; popClosed = false;
     const hit = altsNow().find(a => { const af = altFeatures.find(g => g.properties.i === a.i); return af && x >= af.bb[0] && x <= af.bb[2] && y >= af.bb[1] && y <= af.bb[3] && inGeom(af.geometry, x, y); });
     if (hit) { selAlt = hit.i; drawAlts(); drawBadges(); renderAlts(); }
   }
   drawPin(); drawDim(); drawLabels(); drawBadges(); drawCities(); renderTimeline(); renderPlace();
+  if (place && u >= 0 && u !== cur) fitUnit(u); else renderPop();     // a newly highlighted country is brought fully into view
 }
 // dim everything outside the country that holds the selected place this year
 const focusUnit = () => place ? unitAt[place.s * NY + year - Y0] : -1;
@@ -598,23 +576,29 @@ function popAt(c, y) {
   const n = lo || hi; return { v: n[1], k: Math.abs(n[0] - y) <= 10 ? 'near' : 'none', a: n };
 }
 const round3 = v => { const m = Math.pow(10, Math.max(0, Math.floor(Math.log10(v)) - 2)); return Math.round(v / m) * m; };
-function cityAt(x, y) {
-  if (focusUnit() < 0) return null; const k = pxPerKm(); let best = null, bd = Infinity;
-  for (const d of cityDots) { const dd = Math.hypot((d.c.x - x) * k, (d.c.y - y) * k); if (dd <= Math.max(12, d.r + 6) && dd < bd) { best = d.c; bd = dd; } }
+// the city under the pointer: its dot, or its name
+function cityAt(ev) {
+  if (focusUnit() < 0 || !cityDots.length) return null;
+  const sr = svg.getBoundingClientRect(), px = ev.clientX - sr.left, py = ev.clientY - sr.top; let best = null, bd = Infinity;
+  for (const d of cityDots) {
+    let dd = Math.hypot(d.sx - px, d.sy - py); if (dd > Math.max(12, d.r + 6)) dd = Infinity;
+    if (d.lb && px >= d.lb[0] - 4 && px <= d.lb[2] + 4 && py >= d.lb[1] - 4 && py <= d.lb[3] + 4) dd = Math.min(dd, 6);
+    if (dd < bd) { bd = dd; best = d.c; }
+  }
   return best;
 }
 function drawCities() {
   const g = $('cities'); g.textContent = ''; cityDots = [];
   const fu = focusUnit(), k = pxPerKm(), r = svg.getBoundingClientRect();
-  if (fu < 0 || !k) { selCity = null; cityPop(); return; }
+  if (fu < 0 || !k) { selCity = null; queuePop(); return; }
   const inside = CITIES.filter(c => unitAt[c.s * NY + year - Y0] === fu).map(c => ({ c, p: popAt(c, year) }));
   if (selCity != null && !inside.some(d => d.c.i === selCity)) selCity = null;
   inside.sort((a, b) => (b.c.i === selCity) - (a.c.i === selCity) || b.p.v - a.p.v);
-  const taken = labelBoxes.slice(0, 1), fs = 12, wf = mapFont === 'fira' ? 0.56 : 0.5;
+  const taken = labelBoxes.slice(0, 1), fs = 12, wf = 0.5;
   // dots first (biggest last so they sit on top), then names where they fit
   for (const d of inside) {
     const sx = (d.c.x - shown[0]) * k, sy = (d.c.y - shown[1]) * k;
-    d.sx = sx; d.sy = sy; d.r = Math.min(9, 2.2 + 1.5 * Math.sqrt(d.p.v / 100000));
+    d.sx = sx; d.sy = sy; d.r = Math.min(9, 2.2 + 1.5 * Math.sqrt(d.p.v / 100000)); d.lb = null; d.db = [sx - d.r - 2, sy - d.r - 2, sx + d.r + 2, sy + d.r + 2];
     d.vis = sx > -20 && sy > -20 && sx < r.width + 20 && sy < r.height + 20;
     if (d.vis) { cityDots.push(d); taken.push([sx - d.r, sy - d.r, sx + d.r, sy + d.r]); }
   }
@@ -629,18 +613,16 @@ function drawCities() {
     for (const [bx, by, anchor] of [[d.sx + gap, d.sy - h / 2, 'start'], [d.sx - gap - w, d.sy - h / 2, 'end'], [d.sx - w / 2, d.sy - gap - h, 'middle'], [d.sx - w / 2, d.sy + gap, 'middle']]) {
       const box = [bx, by, bx + w, by + h];
       if (!on && taken.some(t => box[0] < t[2] && box[2] > t[0] && box[1] < t[3] && box[3] > t[1])) continue;
-      taken.push(box);
+      taken.push(box); d.lb = box;
       const tx = anchor === 'start' ? bx : anchor === 'end' ? bx + w : bx + w / 2;
       const t = el('text', { x: (shown[0] + tx / k).toFixed(2), y: (shown[1] + (by + h / 2) / k).toFixed(2), class: 'clbl' + (on ? ' on' : ''), 'text-anchor': anchor }, lg);
       t.setAttribute('style', `font-size:${(fs / k).toFixed(2)}px`); t.textContent = d.c.n;
       break;
     }
   }
-  cityPop();
+  queuePop();
 }
-function cityPop() {
-  const box = $('citypop'); const d = cityDots.find(d => d.c.i === selCity);
-  if (!d) { box.hidden = true; return; }
+function cityHtml(d) {
   const c = d.c, p = d.p;
   const big = p.k === 'fig' ? fmt(p.v) : p.k === 'none' ? '—' : 'about ' + fmt(round3(p.v));
   const src = `Source: ${[...new Set(p.k === 'est' ? [p.a[2], p.b[2]] : [p.a[2]])].map(i => CSRC[i]).join('; ')}.`;
@@ -656,22 +638,126 @@ function cityPop() {
     c.P.map(q => `<circle class="pt${q[2] === 3 ? ' c' : ''}" cx="${X(q[0]).toFixed(1)}" cy="${Y(q[1]).toFixed(1)}" r="2.2"/>`).join('') +
     (p.k === 'est' ? `<circle class="cur" cx="${X(year)}" cy="${Y(p.v).toFixed(1)}" r="3"/>` : '') +
     `<text class="ax" x="${X(1800)}" y="${H - 1}" text-anchor="${x0 < 1795 ? 'middle' : 'start'}">1800</text><text class="ax" x="${X(1850)}" y="${H - 1}" text-anchor="middle">1850</text><text class="ax" x="${X(1900)}" y="${H - 1}" text-anchor="${x1 > 1905 ? 'middle' : 'end'}">1900</text></svg>`;
-  box.innerHTML = `<button type="button" class="x" aria-label="Close">×</button><div class="nm">${esc(c.n)}</div><div class="pop">${big} <small>people in ${year}</small></div><p>${esc(note)}</p>${chart}`;
-  box.querySelector('.x').onclick = () => { selCity = null; drawCities(); };
-  box.hidden = false;
-  const mb = $('mapbox').getBoundingClientRect(), sr = svg.getBoundingClientRect();
-  const cx = sr.left - mb.left + d.sx, cy = sr.top - mb.top + d.sy;
-  // on a narrow map, dock the box across the top or bottom edge, away from the city
-  const dock = mb.width < 560; box.classList.toggle('dock', dock);
-  if (dock) { box.style.left = '8px'; box.style.right = '8px'; box.style.top = ''; box.style.bottom = '';
-    if (cy > mb.height / 2) box.style.top = '8px'; else box.style.bottom = '8px'; return; }
-  box.style.right = ''; box.style.bottom = '';
-  const bw = box.offsetWidth, bh = box.offsetHeight;
-  let left = cx + d.r + 12; if (left + bw > mb.width - 8) left = cx - d.r - 12 - bw;
-  left = Math.max(8, Math.min(left, mb.width - bw - 8));
-  const top = Math.max(8, Math.min(cy - bh / 2, mb.height - bh - 8));
-  box.style.left = left + 'px'; box.style.top = top + 'px';
+  return `<button type="button" class="x" aria-label="Close">×</button><div class="nm">${esc(c.n)}</div><div class="pop">${big} <small>people in ${year}</small></div><p>${esc(note)}</p>${chart}`;
 }
+function countryHtml(u) {
+  const d = descOf(u, year);
+  return `<button type="button" class="x" aria-label="Close">×</button><div class="nm">${esc(d ? d.t : nameOf(u, year))}</div>` +
+    (d && datesOf(d) ? `<div class="dt">${esc(datesOf(d))}</div>` : '') + (d ? `<p class="tx">${esc(d.x)}</p>` : '') +
+    (isVassal(u) ? `<p>Self-governing under ${esc(nameOf(U[u].ov, year))}.</p>` : '') +
+    (cityDots.length ? `<p class="hint">Tap a city for its population in ${year}.</p>` : '');
+}
+
+// ---------- the map popup: only one at a time, for the highlighted country or a tapped city ----------
+const pop = $('mappop'), PAD = 8;
+let popClosed = false, popTimer = 0, animating = false, anim = 0, maskCanvas = null;
+const ovl = (a, b) => Math.max(0, Math.min(a[2], b[2]) - Math.max(a[0], b[0])) * Math.max(0, Math.min(a[3], b[3]) - Math.max(a[1], b[1]));
+const gapTo = (r, b) => Math.hypot(Math.max(0, b[0] - r[2], r[0] - b[2]), Math.max(0, b[1] - r[3], r[1] - b[3]));
+const sumOvl = (r, boxes) => boxes.reduce((t, b) => t + ovl(r, b), 0);
+// the zoom buttons and the year, in map pixels
+function controlBoxes() {
+  const sr = svg.getBoundingClientRect();
+  return [...document.querySelectorAll('#mapbox .zoom, #stamp')].map(e => { const r = e.getBoundingClientRect(); return [r.left - sr.left - 6, r.top - sr.top - 6, r.right - sr.left + 6, r.bottom - sr.top + 6]; });
+}
+// how much of any box on screen the highlighted country covers (its shape drawn at quarter size, then summed)
+function countryMask(u) {
+  const f = yearGeo(year).fills.find(g => g.u === u); if (!f) return () => 0;
+  const sr = svg.getBoundingClientRect(), k = pxPerKm(), S = 4, W = Math.ceil(sr.width / S), H = Math.ceil(sr.height / S);
+  const cv = maskCanvas || (maskCanvas = document.createElement('canvas')); cv.width = W; cv.height = H;
+  const cx = cv.getContext('2d', { willReadFrequently: true });
+  cx.setTransform(k / S, 0, 0, k / S, -shown[0] * k / S, -shown[1] * k / S); cx.fill(new Path2D(f.d));
+  const a = cx.getImageData(0, 0, W, H).data, I = new Float64Array((W + 1) * (H + 1));
+  for (let y = 0; y < H; y++) { let row = 0; for (let x = 0; x < W; x++) { row += a[(y * W + x) * 4 + 3]; I[(y + 1) * (W + 1) + x + 1] = I[y * (W + 1) + x + 1] + row; } }
+  const at = (x, y) => I[y * (W + 1) + x], cl = (v, m) => Math.max(0, Math.min(m, v));
+  return r => { const x0 = cl(Math.floor(r[0] / S), W), y0 = cl(Math.floor(r[1] / S), H), x1 = cl(Math.ceil(r[2] / S), W), y1 = cl(Math.ceil(r[3] / S), H);
+    return (at(x1, y1) - at(x0, y1) - at(x1, y0) + at(x0, y0)) / 255 * S * S; };
+}
+function unitBox(u) {
+  let a = Infinity, b = Infinity, c = -Infinity, d = -Infinity;
+  for (const f of features) if (uAt(f, year) === u) { a = Math.min(a, f.bb[0]); b = Math.min(b, f.bb[1]); c = Math.max(c, f.bb[2]); d = Math.max(d, f.bb[3]); }
+  return a < c ? [a, b, c, d] : null;
+}
+// try every candidate spot and keep the one that hides the least of what matters
+function bestSpot(w, h, cands, cost) {
+  const sr = svg.getBoundingClientRect(); let best = [PAD, PAD], bc = Infinity;
+  for (let [x, y] of cands) {
+    x = Math.max(PAD, Math.min(x, sr.width - w - PAD)); y = Math.max(PAD, Math.min(y, sr.height - h - PAD));
+    const c = cost([x, y, x + w, y + h]); if (c < bc) { bc = c; best = [x, y]; }
+  }
+  return best;
+}
+function gridSpots(w, h, step) {
+  const sr = svg.getBoundingClientRect(), out = [], X1 = sr.width - w - PAD, Y1 = sr.height - h - PAD;
+  for (let x = PAD; x <= X1 + step - 1; x += step) for (let y = PAD; y <= Y1 + step - 1; y += step) out.push([Math.min(x, X1), Math.min(y, Y1)]);
+  return out;
+}
+function renderPop() {
+  clearTimeout(popTimer); popTimer = 0;
+  const fu = focusUnit(), d = cityDots.find(d => d.c.i === selCity);
+  if (animating || fu < 0 || (!d && popClosed)) { pop.hidden = true; return; }
+  const sr = svg.getBoundingClientRect(), mb = $('mapbox').getBoundingClientRect();
+  pop.innerHTML = d ? cityHtml(d) : countryHtml(fu);
+  pop.setAttribute('aria-label', d ? `${d.c.n}: population` : nameOf(fu, year));
+  pop.querySelector('.x').onclick = () => { if (d) { selCity = null; drawCities(); } else popClosed = true; renderPop(); };
+  const w = Math.min(d ? 244 : 300, sr.width - 2 * PAD); pop.style.width = w + 'px';
+  pop.style.left = '-9999px'; pop.style.top = '0px'; pop.hidden = false;
+  const h = pop.offsetHeight, ctrl = controlBoxes(), fb = focusBox ? [focusBox] : [];
+  let spot;
+  if (d) {
+    // a city: never cover its dot or its name; stay close; avoid other cities and the country's name
+    const S = d.lb ? [Math.min(d.db[0], d.lb[0]) - 3, Math.min(d.db[1], d.lb[1]) - 3, Math.max(d.db[2], d.lb[2]) + 3, Math.max(d.db[3], d.lb[3]) + 3] : d.db;
+    const others = cityDots.filter(o => o !== d).flatMap(o => o.lb ? [o.db, o.lb] : [o.db]);
+    const G = 10, mx = (S[0] + S[2]) / 2, my = (S[1] + S[3]) / 2;
+    const cands = [[S[2] + G, my - h / 2], [S[2] + G, S[1] - 8], [S[2] + G, S[3] - h + 8], [S[0] - G - w, my - h / 2], [S[0] - G - w, S[1] - 8], [S[0] - G - w, S[3] - h + 8],
+      [mx - w / 2, S[1] - G - h], [S[0] - 8, S[1] - G - h], [S[2] - w + 8, S[1] - G - h], [mx - w / 2, S[3] + G], [S[0] - 8, S[3] + G], [S[2] - w + 8, S[3] + G], ...gridSpots(w, h, 16)];
+    spot = bestSpot(w, h, cands, r => ovl(r, S) * 1000 + sumOvl(r, ctrl) * 50 + sumOvl(r, fb) * 4 + sumOvl(r, others) * 2 + gapTo(r, S) * 3);
+  } else {
+    // a country: cover as little of it as possible (its name above all), keep off the controls, stay near it
+    const mask = countryMask(fu), bb = unitBox(fu), k = pxPerKm();
+    const ub = bb ? [(bb[0] - shown[0]) * k, (bb[1] - shown[1]) * k, (bb[2] - shown[0]) * k, (bb[3] - shown[1]) * k] : [0, 0, sr.width, sr.height];
+    const dots = cityDots.flatMap(o => o.lb ? [o.db, o.lb] : [o.db]);
+    spot = bestSpot(w, h, gridSpots(w, h, 12), r => mask(r) + sumOvl(r, fb) * 30 + sumOvl(r, dots) * 3 + sumOvl(r, ctrl) * 50 + gapTo(r, ub) * 1.5);
+  }
+  pop.style.left = (spot[0] + sr.left - mb.left) + 'px'; pop.style.top = (spot[1] + sr.top - mb.top) + 'px';
+}
+// after the view moves: a city popup follows its city at once; a country popup settles once the moving stops
+function queuePop() {
+  if (selCity != null) return renderPop();
+  clearTimeout(popTimer); popTimer = setTimeout(renderPop, 90);
+}
+// zoom so the whole highlighted country is on screen, leaving room for its popup
+function fitUnit(u) {
+  const bb = unitBox(u), sr = svg.getBoundingClientRect(); if (!bb || !sr.width) return renderPop();
+  const W = sr.width, H = sr.height, narrow = W < 600, pw = Math.min(300, W - 2 * PAD);
+  let ph = 0;
+  if (narrow) { pop.innerHTML = countryHtml(u); pop.style.width = pw + 'px'; pop.style.left = '-9999px'; pop.hidden = false; ph = pop.offsetHeight; pop.hidden = true; }
+  // wide map: the country goes left of a column for the popup; narrow map: above a band for it
+  const ax0 = 20, ay0 = 52, ax1 = narrow ? W - 52 : W - pw - 2 * PAD - 16, ay1 = narrow ? Math.max(ay0 + 120, H - ph - 2 * PAD - 8) : H - 20;
+  const bw = Math.max(bb[2] - bb[0], 1), bh = Math.max(bb[3] - bb[1], 1);
+  const s = Math.max(Math.min((ax1 - ax0) / bw, (ay1 - ay0) / bh, W / 420), W / (VB0[2] * 1.3));   // no closer than about 420 km across
+  const px = (ax0 + ax1) / 2, py = (ay0 + ay1) / 2;
+  animateTo([(bb[0] + bb[2]) / 2 - px / s, (bb[1] + bb[3]) / 2 - py / s, W / s, H / s]);
+}
+function animateTo(t) {
+  cancelAnimationFrame(anim);
+  const v0 = shown.slice(), T = 450;
+  const done = () => { animating = false; view = t; applyView(); renderPop(); };
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return done();
+  animating = true; pop.hidden = true; const t0 = performance.now();
+  const c0 = [v0[0] + v0[2] / 2, v0[1] + v0[3] / 2], c1 = [t[0] + t[2] / 2, t[1] + t[3] / 2];
+  const step = now => {
+    const q = Math.min(1, (now - t0) / T); if (q >= 1) return done();
+    const e = q < 0.5 ? 2 * q * q : 1 - Math.pow(-2 * q + 2, 2) / 2;
+    const w = v0[2] * Math.pow(t[2] / v0[2], e), h = w * t[3] / t[2], cx = c0[0] + (c1[0] - c0[0]) * e, cy = c0[1] + (c1[1] - c0[1]) * e;
+    view = [cx - w / 2, cy - h / 2, w, h]; applyView(); anim = requestAnimationFrame(step);
+  };
+  anim = requestAnimationFrame(step);
+}
+function stopAnim() { if (animating) { cancelAnimationFrame(anim); animating = false; } }
+document.addEventListener('keydown', e => {
+  if (e.key !== 'Escape') return;
+  if (selCity != null) { selCity = null; drawCities(); renderPop(); } else if (focusUnit() >= 0 && !popClosed) { popClosed = true; renderPop(); }
+});
 function renderPlace() {
   const card = $('placecard');
   if (!place) { card.innerHTML = `<h3>A place</h3><p class="hint">Tap a place on the map to highlight the country that held it in ${year}, see which source says so, and how it changed hands over the century. Tap the country again to clear the highlight.</p>`; return; }
@@ -703,25 +789,11 @@ function renderAlts() {
   card.querySelectorAll('.alist button').forEach(b => b.onclick = () => selectAlt(+b.dataset.a));
 }
 
-// ---------- hover ----------
+// ---------- hover: no popup, just a pointer over cities ----------
 let hoverRaf = 0;
 function hover(ev) {
   if (hoverRaf) return;
-  hoverRaf = requestAnimationFrame(() => {
-    hoverRaf = 0;
-    const [x, y] = toMap(ev); const f = regionAt(x, y); const tip = $('tip');
-    const hc = cityAt(x, y); svg.style.cursor = hc ? 'pointer' : '';
-    if (!f && !hc) { tip.hidden = true; return; }
-    const u = f ? uAt(f, year) : -1; const box = $('mapbox').getBoundingClientRect();
-    const d = u >= 0 ? descOf(u, year) : null;
-    if (hc && hc.i === selCity) { tip.hidden = true; return; }
-    if (hc) { const p = popAt(hc, year); tip.innerHTML = `<b>${esc(hc.n)}</b><span>${p.k === 'fig' ? fmt(p.v) + ' people in ' + year : p.k === 'none' ? 'No population figure near ' + year : 'About ' + fmt(round3(p.v)) + ' people in ' + year + ' (estimate)'} · tap for details</span>`; }
-    else tip.innerHTML = u < 0 ? `<b>No country</b><span>No source assigns this area in ${year}</span>`
-      : `<b>${esc(d ? d.t : nameOf(u, year))}</b>${d && datesOf(d) ? `<span class="dt">${esc(datesOf(d))}</span>` : ''}${d ? `<p>${esc(d.x)}</p>` : ''}<span>${isVassal(u) ? 'Under ' + esc(nameOf(U[u].ov, year)) + ' · ' : ''}${year}</span>`;
-    tip.hidden = false;
-    const tx = Math.min(ev.clientX - box.left + 14, box.width - tip.offsetWidth - 8), ty = Math.min(ev.clientY - box.top + 14, box.height - tip.offsetHeight - 8);
-    tip.style.left = tx + 'px'; tip.style.top = ty + 'px';
-  });
+  hoverRaf = requestAnimationFrame(() => { hoverRaf = 0; svg.style.cursor = cityAt(ev) ? 'pointer' : ''; });
 }
 
 // ---------- time controls ----------
