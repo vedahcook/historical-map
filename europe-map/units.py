@@ -335,7 +335,7 @@ for k, n, ov, fam, dj in [
 # Generic occupation units, one per (occupier, occupied country): O_<occupier>_<country>.
 ADJ = {'GER': 'German', 'AUT': 'Austro-Hungarian', 'BUL_I': 'Bulgarian', 'BUL': 'Bulgarian', 'ITA': 'Italian', 'HUN': 'Hungarian',
        'RUS': 'Soviet', 'GBR': 'British', 'USA': 'American', 'FRA': 'French', 'ROM': 'Romanian', 'GRE': 'Greek', 'TUR': 'Turkish',
-       'FIN_I': 'Finnish', 'BEL': 'Belgian', 'YUG': 'Yugoslav', 'ALB': 'Albanian', 'SRB_I': 'Serbian'}
+       'FIN_I': 'Finnish', 'BEL': 'Belgian', 'YUG': 'Yugoslav', 'ALB': 'Albanian', 'SRB_I': 'Serbian', 'ESP': 'Spanish'}
 def occ_unit(occupier, country, annexed=False):
     key = ('A_' if annexed else 'O_') + occupier + '_' + country
     if key not in UNITS:
@@ -345,7 +345,7 @@ def occ_unit(occupier, country, annexed=False):
     return key
 
 # pairs that get a unit up front (so KEYS is fixed before assignment)
-for a, b in [('GER', 'BEL'), ('GER', 'FRA'), ('GER', 'LUX'), ('GER', 'POL'), ('AUT', 'POL'), ('GER', 'RUS'), ('GER', 'UKR'), ('AUT', 'UKR'),
+for a, b in [('FRA', 'MOR'), ('GER', 'BEL'), ('GER', 'FRA'), ('GER', 'LUX'), ('GER', 'POL'), ('AUT', 'POL'), ('GER', 'RUS'), ('GER', 'UKR'), ('AUT', 'UKR'),
              ('GER', 'BLR'), ('GER', 'EST'), ('GER', 'LVA'), ('GER', 'LTU'), ('AUT', 'SRB_I'), ('BUL_I', 'SRB_I'), ('AUT', 'MNE'), ('GER', 'ROM'),
              ('AUT', 'ROM'), ('BUL_I', 'ROM'), ('AUT', 'ITA'), ('AUT', 'ALB'), ('ITA', 'ALB'), ('FRA', 'ALB'), ('GBR', 'OTT'), ('FRA', 'OTT'),
              ('GRE', 'OTT'), ('ITA', 'OTT'), ('FRA', 'GER'), ('GBR', 'GER'), ('USA', 'GER'), ('BEL', 'GER'), ('ROM', 'HUN'), ('YUG', 'HUN'),
@@ -353,18 +353,18 @@ for a, b in [('GER', 'BEL'), ('GER', 'FRA'), ('GER', 'LUX'), ('GER', 'POL'), ('A
              ('BUL_I', 'YUG'), ('HUN', 'YUG'), ('GER', 'GRE'), ('ITA', 'GRE'), ('BUL_I', 'GRE'), ('ROM', 'RUS'), ('FIN_I', 'RUS'), ('HUN', 'RUS'),
              ('GER', 'ITA'), ('GER', 'HUN'), ('GER', 'ALB'), ('GER', 'MON'), ('ITA', 'MON'), ('GER', 'GBR'), ('GBR', 'ISL'), ('USA', 'ISL'),
              ('GBR', 'DEN'), ('RUS', 'EST'), ('RUS', 'LVA'), ('RUS', 'LTU'), ('ITA', 'MNE'), ('GER', 'MNE'), ('GER', 'DOD'), ('RUS', 'PER'), ('GBR', 'PER'),
-             ('RUS', 'UKR')]:
+             ('RUS', 'UKR'), ('ESP', 'TNG')]:
     occ_unit(a, b)
 for a, b in [('GER', 'CSK'), ('GER', 'POL_I'), ('GER', 'FRA'), ('GER', 'LUX'), ('GER', 'BEL'), ('GER', 'LTU'), ('GER', 'YUG'), ('ITA', 'YUG'),
              ('ITA', 'FRA'), ('ITA', 'GRE'), ('HUN', 'CSK'), ('HUN', 'ROM'), ('HUN', 'YUG'), ('BUL_I', 'YUG'), ('BUL_I', 'GRE'),
-             ('ALB', 'YUG'), ('GER', 'ITA'), ('RUS', 'FIN_I'), ('HUN', 'RUS')]:
+             ('ALB', 'YUG'), ('GER', 'ITA'), ('RUS', 'FIN_I'), ('HUN', 'RUS'), ('ESP', 'TNG')]:
     occ_unit(a, b, annexed=True)
 
 # OHM roles for 1900-2026. Priority 4 = a named occupation regime (beats the country record under it).
 _R20 = [
     # occupation regimes and breakaway states
     (r'^Generalgouvernement$', '3', 'GGV', 4), (r'^Protectorate of Bohemia and Moravia$', '3', 'BOH', 4),
-    (r'^Reichskommissariat Ostland$', '3', 'OST', 4), (r'^Reichskommissariat Ukraine$', '3', 'RKU', 4), (r'^Bezirk Bialystok$', '3', 'O_GER_POL_I', 4),
+    (r'^Reichskommissariat Ostland$', '3', 'OST', 4, 1941, 1944), (r'^Reichskommissariat Ukraine$', '3', 'RKU', 4), (r'^Bezirk Bialystok$', '3', 'O_GER_POL_I', 4, 1941, 1944),
     (r'^Military Administration in Belgium and Northern France$', None, 'BNF', 4), (r'^Territory of the Military Commander in Serbia$', None, 'SRB_O', 4),
     (r'^Governorate of Montenegro$', None, 'O_ITA_MNE', 4), (r'^German-occupied territory of Montenegro$', None, 'O_GER_MNE', 4),
     (r'^Italian protectorate of Albania$', None, 'O_ITA_ALB', 4), (r'^German occupation of Albania$', None, 'O_GER_ALB', 4),
@@ -387,7 +387,7 @@ _R20 = [
     (r'^Condominium of Bosnia and Herzegovina$', '3', 'BIH_A', 3), (r'^Autonomous Province of Korçë$', '3', 'KOR', 3),
     (r'^Italian Islands of the Aegean$', None, 'DOD', 3), (r'^Klaipėda Region$', None, 'MEM', 3),
     (r'^(British Occupation of Cyprus|British Cyprus)$', None, 'CYP_B', 3),
-    (r'^French protectorate in Morocco$', None, 'MOR_F', 3), (r'^Spanish protectorate in Morocco$', None, 'MOR_S', 3),
+    (r'^French protectorate in Morocco$', None, 'O_FRA_MOR', 4, 1900, 1911), (r'^French protectorate in Morocco$', None, 'MOR_F', 3, 1912, 9999), (r'^Spanish protectorate in Morocco$', None, 'MOR_S', 3),
     (r'^Saar Protectorate$', None, 'SAA', 3), (r'^Territory of the Saar Basin$', '3', 'SAA_L', 3), (r'^West Berlin$', '3', 'WBE', 3),
     (r'^(State of Aleppo|State of Damascus|Syrian Federation|State of Syria|Alawite State|Syrian Republic)$', None, 'SYR_M', 3, 1900, 1945),
     (r'^Syrian Republic$', None, 'SYR', 2, 1946, 9999), (r'^(United Arab Republic|Syrian Arab Republic|Syria)$', None, 'SYR', 2),

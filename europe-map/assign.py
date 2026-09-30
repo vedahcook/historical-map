@@ -148,7 +148,7 @@ fix('ionian-french', 'FRA', ion_fr,
 fix('ionian-british', 'GBR', ion & ~ion_fr,
     'OHM has no record for the Ionian Islands between the end of the Septinsular Republic (1807) and the British protectorate (1815). Britain took most of the islands in 1809-10 and Corfu in 1814.',
     [['Ionian Islands under French rule', 'https://en.wikipedia.org/wiki/French_rule_in_the_Ionian_Islands_(1807%E2%80%931814)']])
-fix('bosnia-1878', 'AUT_OCC', (x > 15.6) & (x < 19.8) & (y > 42.4) & (y < 45.3) & (YA >= 1879) & (def_u == KI['OTT']) & ((cs_u == KI['AUT']) | (cs_u == KI['AUT_OCC'])),
+fix('bosnia-1878', 'AUT_OCC', (x > 15.6) & (x < 19.8) & (y > 42.4) & (y < 45.3) & (YA >= 1879) & (YA <= 1908) & (def_u == KI['OTT']) & ((cs_u == KI['AUT']) | (cs_u == KI['AUT_OCC'])),
     'OHM keeps Bosnia and Herzegovina plain Ottoman after 1878. Under the Treaty of Berlin Austria-Hungary occupied and ran it, while it stayed Ottoman territory until the annexation of 1908, so the map shows it as Austrian-run (hatched). The outline comes from CShapes-Europe.',
     [['Treaty of Berlin (1878)', 'https://en.wikipedia.org/wiki/Treaty_of_Berlin_(1878)'], ['Bosnian crisis (1908)', 'https://en.wikipedia.org/wiki/Bosnian_crisis']])
 
@@ -241,6 +241,15 @@ for p, idx in zip(F['co'], F['in_co']):
             if oa == a and y0 <= yy <= y1:
                 m = (h == KI[ob]) & (occ[idx, j] == NONE)
                 occ[idx[m], j] = KI['O_' + oa + '_' + ob]
+# Moldavia (north of the Siret front, from Galați to the Oituz pass) stayed under the Romanian government in 1917-18;
+# Cliopatria's Austria-Hungary covers it, but only Wallachia and Dobruja were occupied
+MOLD = shapely.Polygon([(25.0, 46.25), (26.4, 46.2), (27.23, 45.88), (28.05, 45.40), (28.4, 45.3), (28.4, 48.6), (25.0, 48.6)])
+mold = shapely.contains_xy(MOLD, pts[:, 0], pts[:, 1])
+for yy in (1917, 1918):
+    j = YEARS.index(yy)
+    occ[mold & np.isin(occ[:, j], [KI[k] for k in ('O_GER_ROM', 'O_AUT_ROM', 'O_BUL_I_ROM')]), j] = NONE
+# occupied Wallachia was run by a German-led military administration (Mackensen), though Cliopatria gives it to Austria-Hungary
+occ[occ == KI['O_AUT_ROM']] = KI['O_GER_ROM']
 occ = solid(occ)
 fix_multi('occupation', occ,
     'OHM records most occupations of the two world wars only where an occupying power set up a named administration. Where it shows the country that held the land in law, but Cliopatria puts the area under an occupying power that year, and the occupation is documented, the map shows it as occupied (crosshatched in the occupier’s color). Cliopatria’s outlines are coarse, so the edges of these areas are approximate.',
@@ -262,6 +271,35 @@ ann = solid(ann)
 fix_multi('annexation', ann,
     'OHM shows land annexed during the Second World War as part of the annexing country. Where a country held land only during the war (not in 1937 and not after 1947), the map shows it as annexed (crosshatched), because the annexations were not recognized and were reversed after the war: for example the Sudetenland, Alsace-Lorraine, western Poland, northern Transylvania and parts of Yugoslavia and Greece.',
     [['Territorial changes of Germany', 'https://en.wikipedia.org/wiki/Territorial_changes_of_Germany'], ['Vienna Awards', 'https://en.wikipedia.org/wiki/Vienna_Awards']])
+
+fix('ukraine-1944', 'RUS', isin('RKU') & (YA == 1944) & (x > 25.2),
+    'OHM’s record of the Reichskommissariat Ukraine runs until November 1944 with its full extent. By July 1, 1944 the Red Army had retaken almost all of it (Kyiv in November 1943, Rivne and Lutsk in February 1944); Germany held only the area around Kovel, in the far northwest.',
+    [['Reichskommissariat Ukraine', 'https://en.wikipedia.org/wiki/Reichskommissariat_Ukraine'], ['Dnieper–Carpathian offensive', 'https://en.wikipedia.org/wiki/Dnieper%E2%80%93Carpathian_offensive']])
+# the Smyrna zone: Greek-run from May 1919 under Ottoman sovereignty; retaken by Turkish forces in September 1922
+smy = (x > 26.0) & (x < 29.5) & (y > 37.0) & (y < 39.6) & np.isin(def_u[:, YEARS.index(1918)], [KI['OTT']])[:, None]
+fix('smyrna-1919', 'O_GRE_OTT', smy & (YA == 1919) & (def_u[:, YEARS.index(1920)] == KI['O_GRE_OTT'])[:, None] & isin('OTT'),
+    'OHM keeps Smyrna (İzmir) Ottoman on July 1, 1919. Greek troops landed there on May 15, 1919, with Allied approval, and ran the zone around it; the map shows the zone’s 1920 extent.',
+    [['Occupation of Smyrna', 'https://en.wikipedia.org/wiki/Occupation_of_Smyrna']])
+fix('smyrna-1921', 'O_GRE_OTT', smy & (YA >= 1921) & (YA <= 1922) & isin('GRE'),
+    'OHM makes the Smyrna zone part of Greece from the Treaty of Sèvres (August 1920). The treaty left it under Ottoman sovereignty with Greek administration, and it was never ratified, so the map keeps showing it as occupied until Turkish forces retook it in September 1922.',
+    [['Occupation of Smyrna', 'https://en.wikipedia.org/wiki/Occupation_of_Smyrna'], ['Treaty of Sèvres', 'https://en.wikipedia.org/wiki/Treaty_of_S%C3%A8vres']])
+fix('smyrna-1923', 'TUR', smy & (YA >= 1923) & (YA <= 1924) & isin('GRE'),
+    'OHM keeps the Smyrna zone Greek until 1924. Turkish forces retook İzmir in September 1922, and the Treaty of Lausanne (1923) confirmed it as Turkish.',
+    [['Burning of Smyrna', 'https://en.wikipedia.org/wiki/Burning_of_Smyrna'], ['Treaty of Lausanne', 'https://en.wikipedia.org/wiki/Treaty_of_Lausanne']])
+tzone = (def_u[:, YEARS.index(1930)] == KI['TNG'])[:, None]
+fix('tangier-1912', 'TNG', tzone & (YA >= 1912) & (YA <= 1924),
+    'OHM has no holder for Tangier between the protectorate treaties of 1912 and the start of the international zone in 1925. The treaties left Tangier out of both protectorates for a special regime, so the map shows the later zone’s outline.',
+    [['Tangier International Zone', 'https://en.wikipedia.org/wiki/Tangier_International_Zone']])
+fix('tangier-1940', 'O_ESP_TNG', tzone & (YA == 1940),
+    'OHM has no holder for Tangier during the Second World War. Spain occupied the international zone on June 14, 1940, and annexed it that November.',
+    [['Spanish occupation of Tangier', 'https://en.wikipedia.org/wiki/Spanish_occupation_of_Tangier']])
+fix('tangier-1941', 'A_ESP_TNG', tzone & (YA >= 1941) & (YA <= 1945),
+    'OHM has no holder for Tangier during the Second World War. Spain annexed the international zone in November 1940, unrecognized, and withdrew in October 1945.',
+    [['Spanish occupation of Tangier', 'https://en.wikipedia.org/wiki/Spanish_occupation_of_Tangier']])
+j19 = YEARS.index(1919)
+fix('bessarabia-1918', 'ROM', (x > 26.5) & (x < 30.5) & (y > 45.2) & (y < 48.6) & (YA == 1918) & isin('RUS') & (def_u[:, j19] == KI['ROM'])[:, None],
+    'OHM has no holder for Bessarabia on July 1, 1918, and CShapes-Europe keeps it Russian. Its assembly voted to join Romania in April 1918, and Romanian troops held it from early that year; the union was recognized by the Treaty of Paris of 1920 but never by Soviet Russia.',
+    [['Union of Bessarabia with Romania', 'https://en.wikipedia.org/wiki/Union_of_Bessarabia_with_Romania']])
 
 # breakaway regions and occupied Ukraine (Natural Earth; DeepState)
 fix('transnistria', 'TRN', ext_mask('transnistria') & (YA >= 1992) & isin('MDA', 'RUS'),
@@ -289,6 +327,40 @@ for yy in range(2022, 2027):
 fix('ukraine-2022', 'UKR_O', ukr & isin('UKR', 'RUS', 'UKR_O', 'DLR'),
     'OHM does not record the areas of Ukraine occupied by Russia since the invasion of February 2022. The map uses DeepState’s map of the front line as of July 1 each year (the last update before that date). It includes Crimea and the parts of the Donbas held since 2014. Russia claims to have annexed four Ukrainian regions in September 2022; the UN General Assembly rejected this.',
     [['DeepState map', 'https://deepstatemap.live/en'], ['Russian-occupied territories of Ukraine', 'https://en.wikipedia.org/wiki/Russian-occupied_territories_of_Ukraine']])
+
+# specks and remnants: after 1900, a country that holds under 30 km² in a year (other than Monaco, the Vatican and
+# Fiume), or under 3% of its largest extent (and under 5,000 km²), has only slivers left where two sources draw a
+# border slightly differently, or where a source is missing a year. Each piece goes to the neighbor it touches most.
+# (Austria is left out: after 1945 its remnant is Vienna, under four-power occupation.)
+MICRO = {KI[k] for k in ('MON', 'VAT', 'O_GER_MON', 'O_ITA_MON', 'FIU')}
+tree = shapely.STRtree(faces)
+spk = np.full((NF, NY), NONE, np.int16)
+umax = np.zeros(len(KEYS))
+for j in range(NY):
+    c = def_u[:, j]; m = is_land & (c != NONE)
+    umax = np.maximum(umax, np.bincount(c[m], weights=farea[m], minlength=len(KEYS)))
+nspk = []
+for j, yy in enumerate(YEARS):
+    if yy < 1900: continue
+    col = def_u[:, j]
+    lm = is_land & (col != NONE)
+    tot = np.bincount(col[lm], weights=farea[lm], minlength=len(KEYS))
+    tiny = {int(u) for u in np.unique(col[is_land]) if u != NONE and u not in MICRO and (u != KI['AUT'] or yy < 1945)
+            and (tot[u] < 30 or (tot[u] < 5000 and tot[u] < 0.03 * umax[u]))}
+    for u in tiny:
+        idx = np.where((col == u) & is_land)[0]
+        for part in shapely.get_parts(shapely.union_all(np.array([faces[i] for i in idx], dtype=object)).buffer(1e-4)):
+            pi = idx[shapely.contains_xy(part, pts[idx, 0], pts[idx, 1])]
+            if not len(pi): continue
+            near = tree.query(part.buffer(0.005), predicate='intersects')
+            near = near[(col[near] != u) & (col[near] != NONE) & ~np.isin(col[near], list(tiny))]
+            if not len(near): continue
+            touch = shapely.area(shapely.intersection(np.array([faces[i] for i in near], dtype=object), part.buffer(0.005)))
+            best = max(set(col[near].tolist()), key=lambda v: touch[col[near] == v].sum())
+            spk[pi, j] = best; nspk.append((KEYS[u], yy, round(float(shapely.area(part)), 3), KEYS[best]))
+fix_multi('specks', spk,
+    'Where two sources draw a border slightly differently, a country can be left with a sliver of a few square kilometers in a year when it held nothing there. The map gives each such sliver to the neighbor it touches most.', [])
+print('specks', len(nspk), sorted({(u, t, min(y for uu, y, a, tt in nspk if (uu, tt) == (u, t)), max(y for uu, y, a, tt in nspk if (uu, tt) == (u, t))) for u, y, a, t in nspk}))
 
 print('corrections', [(f['id'], f['n']) for f in FIX])
 

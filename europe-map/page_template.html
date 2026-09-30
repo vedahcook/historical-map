@@ -5,7 +5,7 @@
 :root {
   --bg: #f2f4f1; --surface: #ffffff; --sunk: #e9ece7; --ink: #18201c; --muted: #56605a; --faint: #7d867f; --line: #d6dbd4;
   --accent: #1f5f6b; --accent-ink: #ffffff; --focus: #1f5f6b;
-  --water: #bfd1da; --outside: #e7ebe8; --grat: rgba(42,48,44,0.12); --none: #e6e4dc; --border: rgba(42,48,44,0.38); --vborder: rgba(42,48,44,0.28); --dim: rgba(242,244,241,0.74); --river: #9dbac7; --halo: rgba(255,255,255,0.88);
+  --water: #bfd1da; --outside: #e7ebe8; --grat: rgba(42,48,44,0.12); --none: #e6e4dc; --border: rgba(42,48,44,0.38); --vborder: rgba(42,48,44,0.28); --dim: rgba(242,244,241,0.5); --dimtext: 0.26; --river: #9dbac7; --halo: rgba(255,255,255,0.88);
   --alt: #1f5f6b; --alt-fill: rgba(31,95,107,0.16); --sel: #18201c;
   /*FILLS_LIGHT*/
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -16,14 +16,14 @@
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
   --bg: #111513; --surface: #1a201d; --sunk: #151a18; --ink: #e6ece8; --muted: #a3aea7; --faint: #7f8a83; --line: #2e3632;
   --accent: #7fc4cf; --accent-ink: #0e1412; --focus: #7fc4cf;
-  --water: #14232a; --outside: #161b19; --grat: rgba(223,230,225,0.12); --none: #2a2e2b; --border: rgba(223,230,225,0.34); --vborder: rgba(223,230,225,0.24); --dim: rgba(17,21,19,0.7); --river: #2c4b57; --halo: rgba(17,21,19,0.85);
+  --water: #14232a; --outside: #161b19; --grat: rgba(223,230,225,0.12); --none: #2a2e2b; --border: rgba(223,230,225,0.34); --vborder: rgba(223,230,225,0.24); --dim: rgba(17,21,19,0.48); --dimtext: 0.3; --river: #2c4b57; --halo: rgba(17,21,19,0.85);
   --alt: #7fc4cf; --alt-fill: rgba(127,196,207,0.2); --sel: #ffffff;
   /*FILLS_DARK*/
   color-scheme: dark; } }
 :root[data-theme="dark"] {
   --bg: #111513; --surface: #1a201d; --sunk: #151a18; --ink: #e6ece8; --muted: #a3aea7; --faint: #7f8a83; --line: #2e3632;
   --accent: #7fc4cf; --accent-ink: #0e1412; --focus: #7fc4cf;
-  --water: #14232a; --outside: #161b19; --grat: rgba(223,230,225,0.12); --none: #2a2e2b; --border: rgba(223,230,225,0.34); --vborder: rgba(223,230,225,0.24); --dim: rgba(17,21,19,0.7); --river: #2c4b57; --halo: rgba(17,21,19,0.85);
+  --water: #14232a; --outside: #161b19; --grat: rgba(223,230,225,0.12); --none: #2a2e2b; --border: rgba(223,230,225,0.34); --vborder: rgba(223,230,225,0.24); --dim: rgba(17,21,19,0.48); --dimtext: 0.3; --river: #2c4b57; --halo: rgba(17,21,19,0.85);
   --alt: #7fc4cf; --alt-fill: rgba(127,196,207,0.2); --sel: #ffffff;
   /*FILLS_DARK*/
   color-scheme: dark;
@@ -66,6 +66,7 @@ button, select, input { font: inherit; color: inherit; }
 .badge.on circle { fill: var(--ink); }
 .lbl { font-family: var(--mapfont); font-weight: 450; fill: var(--ink); text-anchor: middle; dominant-baseline: central; pointer-events: none; }
 .lbl.big { font-weight: 450; }
+.lbl.off { opacity: var(--dimtext); }      /* names outside the highlighted country fade more than the map does */
 .dim { fill: var(--dim); fill-rule: evenodd; pointer-events: none; }
 .pin circle { fill: var(--sel); stroke: var(--halo); }
 .city circle { fill: var(--ink); stroke: var(--halo); cursor: pointer; }
@@ -190,9 +191,9 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
           <path id="vborders" class="vborders"></path>
           <path id="borders" class="borders"></path>
           <g id="alts"></g>
-          <g id="labels"></g>
           <g id="badges"></g>
           <path id="dim" class="dim"></path>
+          <g id="labels"></g>
           <g id="pin" class="pin"></g>
           <g id="cities"></g>
           <g id="focuslabel"></g>
@@ -232,7 +233,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
         <p>Each year shows the borders in force on July 1. The map uses <a href="https://www.openhistoricalmap.org" target="_blank" rel="noopener">OpenHistoricalMap</a> (OHM), which matched the historical record in 149 of 160 spot checks. Where OHM has no record, it falls back to <a href="https://icr.ethz.ch/data/cshapes/" target="_blank" rel="noopener">CShapes-Europe</a> (from 1816) or <a href="https://github.com/Seshat-Global-History-Databank/cliopatria" target="_blank" rel="noopener">Cliopatria</a>. Where our checks found OHM wrong, the map applies a correction and says so.</p>
         <p>Occupations: OHM records named occupation regimes, such as the General Government in Poland or the Allied zones of Germany, and the map uses them. Where OHM shows the country that held the land in law, the map adds occupations from Cliopatria’s year-by-year outlines of each power’s control (1914-46), land annexed during the Second World War and given back afterward, and the breakaway regions and occupied parts of Ukraine since 1990. Each of these is listed under corrections.</p>
         <p>Alternative borders compare OHM with CShapes-Europe from 1816 and with Cliopatria before that. They count only when a source puts an area of at least 400 km² (5,000 km² for the coarser Cliopatria) in a different country for longer than a year. Territories that governed themselves under an overlord count as part of the overlord for this comparison, because the sources disagree on whether to show them.</p>
-        <p>Cities appear when a country is highlighted: its largest cities that year (up to ten, and none smaller than a tenth of its biggest), from about 250 of Europe's largest cities by 1900, placed in whichever country held them that year. Tap one for its population. Figures come from censuses where there is one for that year; between figures the map estimates, assuming steady growth, and says so. A hollow dot means there is no figure within ten years. Some early figures are estimates for the wider city, so they are not always comparable with later census counts.</p>
+        <p>Cities appear when a country is highlighted: its largest cities that year (up to ten, and none smaller than 3% of its biggest), from about 390 cities (Europe's largest by 1900, and those that grew large after), placed in whichever country held them that year. Tap one for its population. Figures come from censuses where there is one for that year; between figures the map estimates, assuming steady growth, and says so. A hollow dot means there is no figure within ten years; the map then gives the nearest figures instead of an estimate. Some early figures are estimates for the wider city, so they are not always comparable with later census counts.</p>
         <details>
           <summary>Corrections to OHM (<span id="nfix"></span>)</summary>
           <ul id="fixes"></ul>
@@ -245,7 +246,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
             <li>Cliopatria, Seshat Global History Databank: CC BY 4.0. Also used for the extent of wartime occupations, 1914-46.</li>
             <li>Russian-occupied Ukraine, 2022-26: <a href="https://deepstatemap.live/en" target="_blank" rel="noopener">DeepState</a>’s map, the last update before July 1 each year.</li>
             <li>Breakaway regions (Transnistria, Abkhazia, South Ossetia, Artsakh, Crimea and the Donbas in 2014-21): Natural Earth’s disputed areas (public domain).</li>
-            <li>City populations: Wikidata (CC0), English and German Wikipedia census tables (CC BY-SA 4.0), and estimates by Chandler, de Vries and Mitchell as tabled in Wikipedia's <a href="https://en.wikipedia.org/wiki/Historical_urban_community_sizes" target="_blank" rel="noopener">Historical urban community sizes</a>. Gathered September 29, 2026.</li>
+            <li>City populations: Wikidata (CC0), census tables in English, German, French, Greek and Turkish Wikipedia (CC BY-SA 4.0), and estimates by Chandler, de Vries and Mitchell as tabled in Wikipedia's <a href="https://en.wikipedia.org/wiki/Historical_urban_community_sizes" target="_blank" rel="noopener">Historical urban community sizes</a>. Gathered September 29, 2026.</li>
             <li>Coastlines, lakes and rivers: Natural Earth (public domain).</li>
             <li>Projection: Lambert azimuthal equal-area for Europe (ETRS89-LAEA), so areas compare fairly.</li>
           </ul>
@@ -471,7 +472,7 @@ function drawLabels() {
     const box = [cx - w / 2, cy - h / 2, cx + w / 2, cy + h / 2];
     if (!focused && placed.some(b => box[0] < b[2] && box[2] > b[0] && box[1] < b[3] && box[3] > b[1])) continue;
     placed.push(box); if (focused) focusBox = box;
-    const t = el('text', { x: (shown[0] + cx / k).toFixed(1), y: (shown[1] + cy / k).toFixed(1), class: 'lbl' + (big ? ' big' : '') }, focused ? fl : g);
+    const t = el('text', { x: (shown[0] + cx / k).toFixed(1), y: (shown[1] + cy / k).toFixed(1), class: 'lbl' + (big ? ' big' : '') + (fu >= 0 && !focused ? ' off' : '') }, focused ? fl : g);
     t.setAttribute('style', `font-size:${(fs / k).toFixed(2)}px`);
     t.textContent = name;
   }
@@ -594,14 +595,14 @@ function drawPinOld() {
   el('circle', { cx: place.x, cy: place.y, r: (4 / k).toFixed(2), 'stroke-width': (1.5 / k).toFixed(2) }, g);
 }
 // ---------- cities: shown inside the highlighted country; tap one for its population that year ----------
-const CSRC = ['Wikidata', 'German Wikipedia', 'English Wikipedia', 'Chandler, de Vries and Mitchell (estimates for the wider city)'];
+const CSRC = ['Wikidata', 'German Wikipedia', 'English Wikipedia', 'Chandler, de Vries and Mitchell (estimates for the wider city)', 'French, Greek or Turkish Wikipedia'];
 const CITIES = D.cities.map(([n, x, y, s, P], i) => ({ i, n, x, y, s, P }));
 let selCity = null, cityDots = [];
 // population in year y: the figure for that year, or an estimate between the figures either side (steady growth)
 function popAt(c, y) {
   let lo = null, hi = null;
   for (const p of c.P) { if (p[0] === y) return { v: p[1], k: 'fig', a: p }; if (p[0] < y) lo = p; else if (!hi) hi = p; }
-  if (lo && hi) return { v: lo[1] * Math.pow(hi[1] / lo[1], (y - lo[0]) / (hi[0] - lo[0])), k: 'est', a: lo, b: hi };
+  if (lo && hi) return { v: lo[1] * Math.pow(hi[1] / lo[1], (y - lo[0]) / (hi[0] - lo[0])), k: Math.min(y - lo[0], hi[0] - y) <= 10 ? 'est' : 'gap', a: lo, b: hi };
   const n = lo || hi; return { v: n[1], k: Math.abs(n[0] - y) <= 10 ? 'near' : 'none', a: n };
 }
 const round3 = v => { const m = Math.pow(10, Math.max(0, Math.floor(Math.log10(v)) - 2)); return Math.round(v / m) * m; };
@@ -619,8 +620,10 @@ function cityAt(ev) {
 function focusCities() {
   const fu = focusUnit(), k = pxPerKm(), r = svg.getBoundingClientRect();
   if (fu < 0 || !k) return [];
-  let inside = CITIES.filter(c => unitAt[c.s * NY + year - Y0] === fu).map(c => ({ c, p: popAt(c, year) })).sort((a, b) => b.p.v - a.p.v);
-  if (inside.length) { const top = inside[0].p.v; inside = inside.filter((d, n) => n < 10 && d.p.v >= top * 0.1); }
+  let inside = CITIES.filter(c => unitAt[c.s * NY + year - Y0] === fu).map(c => ({ c, p: popAt(c, year) }))
+    .filter(d => d.p.k !== 'none' || Math.abs(d.p.a[0] - year) <= 25)      // no figure within 25 years: its size then is unknown, so leave it out
+    .sort((a, b) => b.p.v - a.p.v);
+  if (inside.length) { const top = inside[0].p.v; inside = inside.filter((d, n) => n < 10 && d.p.v >= top * 0.03); }   // the 10 largest, none under 3% of the biggest
   for (const d of inside) {
     d.sx = (d.c.x - shown[0]) * k; d.sy = (d.c.y - shown[1]) * k; d.r = Math.min(9, 2.2 + 1.5 * Math.sqrt(d.p.v / 100000));
     d.vis = d.sx > -20 && d.sy > -20 && d.sx < r.width + 20 && d.sy < r.height + 20;
@@ -645,7 +648,7 @@ function drawCities() {
   const dg = el('g', {}, g), lg = el('g', {}, g);
   for (const d of cityDots.slice().reverse()) {
     const on = d.c.i === selCity;
-    const b = el('g', { class: 'city' + (d.p.k === 'none' ? ' nofig' : '') + (on ? ' on' : ''), 'data-c': d.c.i }, dg);
+    const b = el('g', { class: 'city' + (d.p.k === 'none' || d.p.k === 'gap' ? ' nofig' : '') + (on ? ' on' : ''), 'data-c': d.c.i }, dg);
     el('circle', { cx: d.c.x, cy: d.c.y, r: ((on ? d.r + 1.5 : d.r) / k).toFixed(2), 'stroke-width': (1.3 / k).toFixed(2) }, b);
   }
   // names are placed biggest city first, the same way whether or not a city is selected, so tapping one never moves its name
@@ -666,10 +669,11 @@ function drawCities() {
 }
 function cityHtml(d) {
   const c = d.c, p = d.p;
-  const big = p.k === 'fig' ? fmt(p.v) : p.k === 'none' ? '—' : 'about ' + fmt(round3(p.v));
-  const src = `Source: ${[...new Set(p.k === 'est' ? [p.a[2], p.b[2]] : [p.a[2]])].map(i => CSRC[i]).join('; ')}.`;
+  const big = p.k === 'fig' ? fmt(p.v) : p.k === 'none' || p.k === 'gap' ? '—' : 'about ' + fmt(round3(p.v));
+  const src = `Source: ${[...new Set(p.k === 'est' || p.k === 'gap' ? [p.a[2], p.b[2]] : [p.a[2]])].map(i => CSRC[i]).join('; ')}.`;
   const note = p.k === 'fig' ? `Figure for ${year}. ${src}`
     : p.k === 'est' ? `Estimated: no figure for ${year}. Assumes steady growth between ${p.a[0]} (${fmt(p.a[1])}) and ${p.b[0]} (${fmt(p.b[1])}). ${src}`
+    : p.k === 'gap' ? `No figure within ten years of ${year}. The nearest are ${fmt(p.a[1])} in ${p.a[0]} and ${fmt(p.b[1])} in ${p.b[0]}. ${src}`
     : p.k === 'near' ? `No figure for ${year}. Shown: the nearest, from ${p.a[0]}. ${src}`
     : `No figure near ${year}. The nearest is ${fmt(p.a[1])} in ${p.a[0]}. ${src}`;
   // small chart of all the figures, with this year marked
@@ -860,7 +864,13 @@ function hover(ev) {
 }
 
 // ---------- time controls ----------
-function setYear(y) { y = Math.max(Y0, Math.min(Y1, y)); if (y === year) return; year = y; if (selAlt != null && !altsNow().some(a => a.i === selAlt)) selAlt = null; draw(); }
+function setYear(y) {
+  y = Math.max(Y0, Math.min(Y1, y)); if (y === year) return;
+  const pu = focusUnit(); year = y;
+  if (pu >= 0 && !yearGeo(year).fills.some(g => g.u === pu)) { place = null; selCity = null; }   // the highlighted country no longer exists: highlight nothing
+  if (selAlt != null && !altsNow().some(a => a.i === selAlt)) selAlt = null;
+  draw();
+}
 let pendingYear = null;
 $('year').addEventListener('input', e => { const first = pendingYear == null; pendingYear = +e.target.value; if (first) requestAnimationFrame(() => { const y = pendingYear; pendingYear = null; setYear(y); }); });
 $('prev').onclick = () => setYear(year - 1); $('next').onclick = () => setYear(year + 1);
