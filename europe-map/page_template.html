@@ -78,7 +78,16 @@ button, select, input { font: inherit; color: inherit; }
 .mappop { font-family: var(--mapfont); position: absolute; z-index: 3; background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px 11px; box-shadow: 0 6px 18px rgba(0,0,0,0.16); font-size: 0.86rem; line-height: 1.4; }
 .mappop .x { position: absolute; right: 4px; top: 4px; width: 30px; height: 30px; border: 0; background: transparent; border-radius: 7px; cursor: pointer; color: var(--muted); font-size: 1.15rem; line-height: 1; }
 .mappop .nm { font-family: var(--serif); font-weight: 600; font-size: 1.05rem; line-height: 1.25; padding-right: 26px; display: flex; align-items: center; gap: 9px; }
-.mappop .flag { flex: none; border-radius: 2px; box-shadow: 0 0 0 1px var(--line); background-image: url(flags.webp); background-repeat: no-repeat; }
+.mappop .flag { flex: none; border: 0; padding: 0; border-radius: 2px; box-shadow: 0 0 0 1px var(--line); background-color: transparent; background-image: url(flags.webp); background-repeat: no-repeat; }
+.mappop button.flag { cursor: zoom-in; }
+/* the enlarged flag: covers the page; any tap closes it */
+.flagbig { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; padding: 16px; background: rgba(10,14,12,0.72); cursor: zoom-out; }
+.flagbig[hidden] { display: none; }
+.flagbig .card { background: var(--surface); color: var(--ink); border-radius: var(--r); padding: 18px 18px 14px; max-width: min(100%, 540px); box-shadow: 0 12px 40px rgba(0,0,0,0.35); display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; }
+.flagbig img { display: block; max-width: 100%; max-height: 58vh; width: auto; height: auto; object-fit: contain; border-radius: 3px; box-shadow: 0 0 0 1px var(--line); background: var(--sunk); }
+.flagbig .t { font-family: var(--serif); font-weight: 600; font-size: 1.15rem; line-height: 1.25; }
+.flagbig .src { margin: 0; color: var(--muted); font-size: 0.82rem; line-height: 1.4; }
+.flagbig .hint { margin: 0; color: var(--faint); font-size: 0.78rem; }
 .mappop .dt { color: var(--muted); font-size: 0.8rem; margin-top: 2px; }
 .mappop .src { color: var(--muted); font-size: 0.78rem; }
 .mappop p { margin: 4px 0 0; color: var(--muted); line-height: 1.38; }
@@ -254,6 +263,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
     </aside>
   </div>
 </div>
+<div class="flagbig" id="flagbig" role="dialog" aria-modal="true" aria-label="Flag" tabindex="-1" hidden></div>
 
 <script type="application/json" id="topo">/*TOPO*/</script>
 <script type="application/json" id="data">/*DATA*/</script>
@@ -750,20 +760,39 @@ function flagOf(u, y) {
   return run ? run[0] : -1;
 }
 // the flag, drawn at half the sheet's size
+// (a button that shows it larger, when there is a larger copy)
 function flagHtml(i) {
   if (i < 0) return '';
   const F = D.flags, [x, fy, w, h] = F.items[i];
-  return `<span class="flag" role="img" aria-label="Flag" style="width:${w / 2}px;height:${h / 2}px;background-size:${F.sheet[0] / 2}px ${F.sheet[1] / 2}px;background-position:${-x / 2}px ${-fy / 2}px"></span>`;
+  const st = `width:${w / 2}px;height:${h / 2}px;background-size:${F.sheet[0] / 2}px ${F.sheet[1] / 2}px;background-position:${-x / 2}px ${-fy / 2}px`;
+  return F.big && F.big[i] ? `<button type="button" class="flag" data-i="${i}" aria-label="Show the flag larger" style="${st}"></button>`
+    : `<span class="flag" role="img" aria-label="Flag" style="${st}"></span>`;
 }
 const isPD = lic => /public domain|^cc0/i.test(lic || '');
 // where the flag image comes from and its license, with links to the file and the license
-function flagCredit(i) {
+function flagCredit(i, full) {
   if (i < 0) return '';
   const [file, by, lic, url, licUrl] = D.flags.credits[i];
-  const who = by && by.length > 90 ? by.slice(0, 87).trim() + '…' : by;
+  const who = by && by.length > 90 && !full ? by.slice(0, 87).trim() + '…' : by;
   const l = licUrl ? `<a href="${esc(licUrl)}" target="_blank" rel="noopener">${esc(lic)}</a>` : esc(lic);
   return `<p class="src">Flag: <a href="${esc(url)}" target="_blank" rel="noopener">Wikimedia Commons</a>${who && !isPD(lic) ? ', ' + esc(who) : ''}, ${isPD(lic) ? 'public domain' : l}.</p>`;
 }
+// the enlarged flag, over the whole page; a tap anywhere (other than on a link) or Escape closes it
+const flagBig = $('flagbig'); let flagFrom = null;
+function openFlag(i, title) {
+  const [f, w, h] = D.flags.big[i];
+  flagFrom = document.activeElement;
+  flagBig.innerHTML = `<div class="card"><img src="flag-images/${esc(f)}" width="${w}" height="${h}" alt="Flag: ${esc(title)}">` +
+    `<div class="t">${esc(title)}</div>${flagCredit(i, true)}<p class="hint">Tap anywhere to close.</p></div>`;
+  flagBig.setAttribute('aria-label', `Flag: ${title}`);
+  flagBig.hidden = false; flagBig.focus();
+}
+function closeFlag() {
+  if (flagBig.hidden) return;
+  flagBig.hidden = true; flagBig.textContent = '';
+  if (flagFrom && document.contains(flagFrom)) flagFrom.focus(); flagFrom = null;
+}
+flagBig.addEventListener('click', ev => { if (!ev.target.closest('a')) closeFlag(); });
 function countryHtml(u) {
   const d = descOf(u, year), fi = flagOf(u, year);
   return `<button type="button" class="x" aria-label="Close">×</button><div class="nm">${flagHtml(fi)}<span>${esc(d ? d.t : nameOf(u, year))}</span></div>` +
@@ -869,6 +898,8 @@ function renderPop() {
     if (on && (on.offsetTop < hl.scrollTop || on.offsetTop + on.offsetHeight > hl.scrollTop + hl.clientHeight)) hl.scrollTop = on.offsetTop - hl.clientHeight / 2;
   }
   pop.querySelector('.x').onclick = () => { if (d) { selCity = null; drawCities(); } else popClosed = true; renderPop(); };
+  const flagBtn = pop.querySelector('button.flag');
+  if (flagBtn) flagBtn.onclick = ev => { ev.stopPropagation(); openFlag(+flagBtn.dataset.i, pop.querySelector('.nm span').textContent); };
   const w = d ? Math.min(330, sr.width - 2 * PAD) : sr.width < 600 ? sr.width - 2 * PAD : 300; pop.style.width = w + 'px';
   pop.style.left = '-9999px'; pop.style.top = '0px'; pop.hidden = false;
   const h = pop.offsetHeight, ctrl = controlBoxes(), fb = focusBox ? [focusBox] : [];
@@ -946,6 +977,7 @@ function userMoved() {
 function stopAnim() { if (animating) { cancelAnimationFrame(anim); animating = false; } }
 document.addEventListener('keydown', e => {
   if (e.key !== 'Escape') return;
+  if (!flagBig.hidden) { closeFlag(); return; }
   if (selCity != null) { selCity = null; drawCities(); renderPop(); } else if (focusUnit() >= 0 && !popClosed) { popClosed = true; renderPop(); }
 });
 // ---------- panel: alternatives ----------
@@ -985,7 +1017,7 @@ $('play').onclick = () => {
   $('playicon').innerHTML = '<path d="M3.5 2.5h3v11h-3zM9.5 2.5h3v11h-3z"/>'; $('play').setAttribute('aria-label', 'Pause');
   timer = setInterval(() => { if (year >= Y1) return stop(); setYear(year + 1); }, 650);
 };
-document.addEventListener('keydown', e => { if (e.target.closest('input, button, a, summary, [role=button]')) return; if (e.key === 'ArrowLeft') setYear(year - 1); if (e.key === 'ArrowRight') setYear(year + 1); });
+document.addEventListener('keydown', e => { if (!flagBig.hidden || e.target.closest('input, button, a, summary, [role=button]')) return; if (e.key === 'ArrowLeft') setYear(year - 1); if (e.key === 'ArrowRight') setYear(year + 1); });
 
 // ---------- timeline: change per year and key events; filtered to the highlighted country ----------
 [1500, 1600, 1700, 1800, 1900, 2000].forEach(y => { const s = document.createElement('span'); s.textContent = y; s.style.left = ((y - Y0 + 0.5) / NY * 100) + '%'; $('ticks').appendChild(s); });

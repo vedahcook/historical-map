@@ -5,11 +5,12 @@ An interactive map of Europe's country borders, one year at a time (as of July 1
 The page is `europe-borders.html`, published as a Claude artifact. It holds the map for 1800–2026. Two files sit beside it:
 
 - `europe-borders-1500.json`: the map for 1500–1799, which the page loads a moment after it opens (or at once if it opens on an earlier year). Opened straight from disk, a browser may refuse to load it; the page then says so for years before 1800.
-- `flags.webp`: all the flag images in one picture.
+- `flags.webp`: all the flag images in one picture, at the small size the popup shows.
+- `flag-images/`: a larger copy of each flag, one file each, loaded only when a flag is tapped.
 
 ## Using the map
 
-- **Tap a country** to highlight it and dim the rest. The map zooms so the whole country is on screen, and a popup describes it for that year: its flag, when the state began and ended, how, and where the border at that spot comes from. Rings mark detached parts. Tap it again, or the sea, to clear it.
+- **Tap a country** to highlight it and dim the rest. The map zooms so the whole country is on screen, and a popup describes it for that year: its flag (tap it to see it larger; tap anywhere to close), when the state began and ended, how, and where the border at that spot comes from. Rings mark detached parts. Tap it again, or the sea, to clear it.
 - **The highlight follows the country across 1800,** where the page switches between its two maps.
 - **The timeline** shows key events, or only the highlighted country's events: when it began or ended, name changes, and gains or losses over 1,500 km². The row of events scrolls sideways.
 - **Cities** appear inside the highlighted country. Tap a city for its population that year, a chart of all its figures, and who held it over the years. Tap a dot in the chart, a spot on the strip, or a line in the list to go to that year; the popup stays put.
@@ -74,8 +75,8 @@ Each era is built in its own working folder with the same scripts. Setting `ERA=
    - `python3 export.py <folder with Natural Earth lakes and rivers> fills.json`. Run the later era first; for the early era set `KEEP_COLORS=<later era's folder>/data.json` so countries keep their colors.
    - `node topo.mjs geo.json topo.json 0.3 1e5`
 3. **In the later era's folder:** `python3 merge_eras.py <early era's folder>`.
-4. **Flags, same folder:** `python3 flags/flags_plan.py` (which article each description's flag comes from), then run `browser/fetch_flags.js` in a browser console to get `flags_claims.json` (each article's flags and dates from Wikidata) and `flags_files.json` (thumbnails, authors and licenses from Commons), then `python3 flags/build_flags.py`, which writes `flags.webp` and `flags_index.json`. Run `merge_eras.py` again so the page data includes them. The saved `flags/flags_claims.json` can be reused; `flags_files.json` is not kept because of its size.
-5. `python3 build_page.py`. Publish `europe-borders.html` with `europe-borders-1500.json` and `flags.webp` beside it.
+4. **Flags, same folder:** `python3 flags/flags_plan.py` (which article each description's flag comes from), then run `browser/fetch_flags.js` in a browser console to get `flags_claims.json` (each article's flags and dates from Wikidata) and `flags_files.json` (thumbnails, authors and licenses from Commons), then (for the larger copies) `browser/fetch_flags_large.js`, saved as `flags_large.json`, then `python3 flags/build_flags.py`, which writes `flags.webp`, `flag-images/` and `flags_index.json`. Run `merge_eras.py` again so the page data includes them. The saved `flags/flags_claims.json` can be reused; `flags_files.json` is not kept because of its size.
+5. `python3 build_page.py`. Publish `europe-borders.html` with `europe-borders-1500.json`, `flags.webp` and `flag-images/` beside it.
 
 `fills.json` comes from `node fills.mjs` (candidate fill colors and their measured separation). Needs Python 3 with shapely and pyproj, and Node with topojson-server, topojson-simplify and topojson-client.
 

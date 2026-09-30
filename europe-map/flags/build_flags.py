@@ -5,10 +5,13 @@ Inputs, in the current folder:
   flags_claims.json  article -> {"q": Wikidata item, "flags": [{"f": Commons file, "s": start year or null,
                      "e": end year or null, "r": rank}, ...]}                       (browser/fetch_flags.js)
   flags_files.json   Commons file -> {"png": base64 thumbnail, "lic": license, "by": author, "url": file page}
-Output: flags.webp (each flag 40 px high, at most 80 px wide, twice the size shown) and flags_index.json:
+  flags_large.json  (optional) Commons file -> [width, height, base64 WebP], larger copies (browser/fetch_flags_large.js)
+Output: flags.webp (each flag 40 px high, at most 80 px wide, twice the size shown), flag-images/ (the larger
+copies, one file each) and flags_index.json:
   {"sheet": [w, h], "items": [[x, y, w, h], ...], "desc": {index: [[item, first year, last year], ...]},
-   "credits": [[file, author, license, file page, license page], ...]}   (one per item, in the same order)"""
-import base64, io, json, re, sys
+   "credits": [[file, author, license, file page, license page], ...],   (one per item, in the same order)
+   "big": [[image file in flag-images/, width, height] or null, ...]}     (one per item; only with flags_large.json)"""
+import base64, hashlib, io, json, os, re, sys
 from PIL import Image
 sys.path.insert(0, __file__.rsplit('/', 1)[0])
 from articles import BAD_FILES, BAD_WORDS, EXTRA, DATES, AUTHORS
@@ -98,7 +101,17 @@ def lic(f):
     return 'free to use with credit' if l == 'Attribution' else l
 # for each flag: [file, author, license, file page, license page]
 credits = [[f, author(f), lic(f), files[f].get('url', ''), LIC.get(lic(f), '')] for f in sorted(used, key=used.get)]
-json.dump({'sheet': list(sheet.size), 'items': items, 'desc': desc, 'credits': credits},
+# larger copies, one file each, for the enlarged view (browser/fetch_flags_large.js -> flags_large.json): written to
+# flag-images/, named from the Commons file name so a name stays the same between builds; published beside the page
+big = None
+if os.path.exists('flags_large.json'):
+    large = json.load(open('flags_large.json')); os.makedirs('flag-images', exist_ok=True); big = []
+    for f in sorted(used, key=used.get):
+        if f not in large: big.append(None); continue
+        w, h, b64 = large[f]; name = hashlib.sha1(f.encode()).hexdigest()[:12] + '.webp'
+        open(f'flag-images/{name}', 'wb').write(base64.b64decode(b64)); big.append([name, w, h])
+    print('large flags', sum(1 for x in big if x), 'of', len(big))
+json.dump({'sheet': list(sheet.size), 'items': items, 'desc': desc, 'credits': credits, **({'big': big} if big else {})},
           open('flags_index.json', 'w'), ensure_ascii=False, separators=(',', ':'))
 print('flags', len(items), 'descriptions with a flag', len(desc), 'of', len(plan), 'not public domain', sum(1 for c in credits if 'public domain' not in c[2].lower()),
       'sheet', sheet.size, round(len(open('flags.webp', 'rb').read()) / 1024), 'KB')
