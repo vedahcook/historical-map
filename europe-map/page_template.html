@@ -5,7 +5,7 @@
 :root {
   --bg: #f2f4f1; --surface: #ffffff; --sunk: #e9ece7; --ink: #18201c; --muted: #56605a; --faint: #7d867f; --line: #d6dbd4;
   --accent: #1f5f6b; --accent-ink: #ffffff; --focus: #1f5f6b;
-  --water: #d6e3e8; --outside: #e4e9e6; --grat: rgba(42,48,44,0.14); --none: #e6e4dc; --border: #2a302c; --vborder: rgba(42,48,44,0.55); --river: #a9c3ce; --halo: rgba(255,255,255,0.88);
+  --water: #bfd1da; --outside: #e7ebe8; --grat: rgba(42,48,44,0.12); --none: #e6e4dc; --border: #2a302c; --vborder: rgba(42,48,44,0.55); --river: #9dbac7; --halo: rgba(255,255,255,0.88);
   --alt: #1f5f6b; --alt-fill: rgba(31,95,107,0.16); --sel: #18201c;
   /*FILLS_LIGHT*/
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -63,16 +63,15 @@ button, select, input { font: inherit; color: inherit; }
 .badge text { fill: var(--accent-ink); font-family: var(--sans); font-weight: 700; text-anchor: middle; dominant-baseline: central; pointer-events: none; }
 .badge { cursor: pointer; }
 .badge.on circle { fill: var(--ink); }
-.lbl { font-family: var(--sans); font-weight: 600; fill: var(--ink); paint-order: stroke; stroke: var(--halo); stroke-linejoin: round; text-anchor: middle; dominant-baseline: central; pointer-events: none; }
-.lbl.big { font-family: var(--serif); font-weight: 700; letter-spacing: 0.04em; }
-.lbl.vas { font-style: italic; }
+.lbl { font-family: var(--sans); font-weight: 600; fill: var(--ink); text-anchor: middle; dominant-baseline: central; pointer-events: none; }
+.lbl.big { font-weight: 700; }
 .pin circle { fill: var(--sel); stroke: var(--halo); }
 .tip { position: absolute; pointer-events: none; background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; font-size: 0.82rem; box-shadow: 0 6px 18px rgba(0,0,0,0.15); max-width: 270px; z-index: 3; }
 .tip b { display: block; }
 .tip span { color: var(--muted); }
 .zoom { position: absolute; right: 10px; top: 10px; display: flex; flex-direction: column; gap: 4px; z-index: 2; }
 .zoom button { width: 36px; height: 36px; border-radius: 9px; border: 1px solid var(--line); background: var(--surface); cursor: pointer; font-weight: 700; font-size: 1.05rem; line-height: 1; }
-.yearstamp { position: absolute; left: 14px; top: 10px; font-family: var(--serif); font-weight: 700; font-size: 2.6rem; line-height: 1; color: var(--ink); opacity: 0.85; pointer-events: none; text-shadow: 0 0 8px var(--halo); }
+.yearstamp { position: absolute; left: 14px; top: 10px; font-family: var(--sans); font-weight: 700; font-size: 2.4rem; line-height: 1; color: var(--ink); opacity: 0.8; pointer-events: none; }
 
 /* time bar */
 .timebar { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 6px 12px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 10px 14px; }
@@ -286,7 +285,7 @@ function hatchFor(ov) {
   const id = 'hatch-' + U[ov].c % 8;
   if (!patterns[id]) {
     const p = el('pattern', { id, patternUnits: 'userSpaceOnUse', width: 10, height: 10, patternTransform: 'rotate(45)' }, defs);
-    const ln = el('rect', { x: 0, y: 0, width: 3, height: 10 }, p); ln.setAttribute('style', `fill: ${hueVar(ov)}; opacity: 0.75`);
+    const ln = el('rect', { x: 0, y: 0, width: 3, height: 10 }, p); ln.setAttribute('style', `fill: ${hueVar(ov)}; opacity: 0.5`);
     patterns[id] = p;
   }
   return id;
@@ -327,7 +326,7 @@ function applyView() {
   shown = fitAspect(view);
   svg.setAttribute('viewBox', shown.map(v => v.toFixed(2)).join(' '));
   const s = 1 / pxPerKm();
-  for (const id in patterns) { const p = patterns[id]; const w = 7 * s; p.setAttribute('width', w); p.setAttribute('height', w); p.firstChild.setAttribute('width', w * 0.32); p.firstChild.setAttribute('height', w); }
+  for (const id in patterns) { const p = patterns[id]; const w = 7 * s; p.setAttribute('width', w); p.setAttribute('height', w); p.firstChild.setAttribute('width', w * 0.22); p.firstChild.setAttribute('height', w); }
   drawLabels(); drawBadges(); drawPin();
 }
 function zoomAt(f, cx, cy) {
@@ -393,15 +392,15 @@ function drawLabels() {
     const sx = (x - shown[0]) * k, sy = (y - shown[1]) * k;
     if (sx < 0 || sy < 0 || sx > r.width || sy > r.height) continue;
     const name = NM[ni]; const big = varea > 180000;
-    const fs = big ? Math.min(17, 12 + Math.log10(varea / 180000) * 6) : varea > 40000 ? 12 : 11;
-    const w = name.length * fs * (big ? 0.62 : 0.55) + 6, h = fs * 1.3;
+    const fs = big ? Math.min(20, 15 + Math.log10(varea / 180000) * 6) : varea > 40000 ? 14 : 13;
+    const w = name.length * fs * (big ? 0.6 : 0.56) + 6, h = fs * 1.3;
     const room = Math.sqrt(varea) * k * 1.7;
     if (w > room * 1.6 && !(w < 70 && varea * k * k > 900)) continue;
     const box = [sx - w / 2, sy - h / 2, sx + w / 2, sy + h / 2];
     if (placed.some(b => box[0] < b[2] && box[2] > b[0] && box[1] < b[3] && box[3] > b[1])) continue;
     placed.push(box);
-    const t = el('text', { x: x.toFixed(1), y: y.toFixed(1), class: 'lbl' + (big ? ' big' : '') + (isVassal(u) ? ' vas' : '') }, g);
-    t.setAttribute('style', `font-size:${(fs / k).toFixed(2)}px; stroke-width:${(3 / k).toFixed(2)}px`);
+    const t = el('text', { x: x.toFixed(1), y: y.toFixed(1), class: 'lbl' + (big ? ' big' : '') }, g);
+    t.setAttribute('style', `font-size:${(fs / k).toFixed(2)}px`);
     t.textContent = name;
   }
 }
@@ -425,7 +424,7 @@ function drawBadges() {
     // keep markers off the country names and off each other: try small offsets around the spot
     let bx = a.x, by = a.y;
     const sx0 = (a.x - shown[0]) * k, sy0 = (a.y - shown[1]) * k;
-    for (const [dx, dy] of [[0, 0], [0, 18], [0, -18], [20, 0], [-20, 0], [18, 18], [-18, 18], [18, -18], [-18, -18], [0, 30], [0, -30]]) {
+    for (const [dx, dy] of [[0, 0], [0, 18], [0, -18], [20, 0], [-20, 0], [18, 18], [-18, 18], [18, -18], [-18, -18], [0, 30], [0, -30], [32, 0], [-32, 0], [28, 24], [-28, 24], [28, -24], [-28, -24], [0, 42], [0, -42]]) {
       const bb = [sx0 + dx - 11, sy0 + dy - 11, sx0 + dx + 11, sy0 + dy + 11];
       if (!taken.some(t => bb[0] < t[2] && bb[2] > t[0] && bb[1] < t[3] && bb[3] > t[1])) { bx = a.x + dx / k; by = a.y + dy / k; taken.push(bb); break; }
     }
@@ -582,7 +581,7 @@ $('events').querySelectorAll('button').forEach(b => b.onclick = () => { stop(); 
 const sample = U.findIndex(u => u.k === 'SRB');
 $('legend').innerHTML =
   `<div><svg viewBox="0 0 30 18"><rect width="30" height="18" style="fill:${fillVar(U.findIndex(u => u.k === 'FRA'))}"/></svg><span>Each country has one color for the whole century; neighbors always differ.</span></div>` +
-  `<div><svg viewBox="0 0 30 18"><defs><pattern id="lg-h" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)"><rect width="2" height="6" style="fill:${hueVar(U[sample].ov)};opacity:.75"/></pattern></defs><rect width="30" height="18" style="fill:${fillVar(sample)}"/><rect width="30" height="18" fill="url(#lg-h)"/></svg><span>Stripes: governed itself under an overlord, or run by another power. The stripes take the overlord's color.</span></div>` +
+  `<div><svg viewBox="0 0 30 18"><defs><pattern id="lg-h" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)"><rect width="1.4" height="6" style="fill:${hueVar(U[sample].ov)};opacity:.5"/></pattern></defs><rect width="30" height="18" style="fill:${fillVar(sample)}"/><rect width="30" height="18" fill="url(#lg-h)"/></svg><span>Stripes: governed itself under an overlord, or run by another power. The stripes take the overlord's color.</span></div>` +
   `<div><svg viewBox="0 0 30 18"><rect width="30" height="18" style="fill:var(--sunk)"/><rect x="3" y="3" width="24" height="12" style="fill:var(--alt-fill);stroke:var(--alt);stroke-width:1.6;stroke-dasharray:4 3"/></svg><span>Dashed outline and number: another source draws a different border here.</span></div>` +
   `<div><svg viewBox="0 0 30 18"><rect width="30" height="18" style="fill:var(--none)"/></svg><span>No source assigns this area to a country.</span></div>`;
 const fixes = R.filter(r => r.t === 'fix');
