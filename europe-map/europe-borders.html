@@ -88,7 +88,15 @@ button, select, input { font: inherit; color: inherit; }
 .mappop p.hint { margin-top: 7px; font-size: 0.8rem; }
 .mappop .pop { font-size: 1.35rem; font-weight: 600; margin-top: 2px; font-variant-numeric: tabular-nums; }
 .mappop .pop small { display: block; font-size: 0.8rem; font-weight: 400; color: var(--muted); margin-top: -1px; }
-.mappop svg { display: block; position: static; width: 100%; height: 48px; margin-top: 7px; cursor: default; }
+.mappop svg { display: block; position: static; width: 100%; height: auto; margin-top: 7px; cursor: default; }
+.mappop .hk { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 600; margin-top: 6px; }
+.hstrip { position: relative; height: 14px; margin: 4px 1.3% 0; background: var(--sunk); border-radius: 3px; }
+.hstrip button { position: absolute; top: 0; height: 14px; border: 0; padding: 0; border-right: 1px solid var(--surface); cursor: pointer; }
+.hstrip .now { position: absolute; top: -3px; bottom: -3px; width: 2px; margin-left: -1px; background: var(--sel); pointer-events: none; }
+.hlist { list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-direction: column; gap: 2px; font-size: 0.78rem; color: var(--muted); max-height: 9.5em; overflow-y: auto; }
+.hlist li { display: grid; grid-template-columns: 10px 76px minmax(0, 1fr); gap: 6px; align-items: center; }
+.hlist li.on { color: var(--ink); font-weight: 600; }
+.hlist .sw { width: 10px; height: 10px; border-radius: 2px; }
 .mappop .ln { fill: none; stroke: var(--muted); stroke-width: 1.4; }
 .mappop .pt { fill: var(--ink); }
 .mappop .pt.c { fill: var(--surface); stroke: var(--ink); stroke-width: 1.2; }
@@ -655,15 +663,24 @@ function cityHtml(d) {
     : p.k === 'gap' ? `No figure within ten years of ${year}. The nearest are ${fmt(p.a[1])} in ${p.a[0]} and ${fmt(p.b[1])} in ${p.b[0]}. ${src}`
     : p.k === 'near' ? `No figure for ${year}. Shown: the nearest, from ${p.a[0]}. ${src}`
     : `No figure near ${year}. The nearest is ${fmt(p.a[1])} in ${p.a[0]}. ${src}`;
-  // small chart of all the figures, with this year marked
-  const W = 210, H = 48, x0 = Math.min(1800, c.P[0][0]), x1 = Math.max(1900, c.P[c.P.length - 1][0]), vmax = Math.max(...c.P.map(q => q[1])) * 1.08;
-  const X = v => 4 + (v - x0) / (x1 - x0) * (W - 8), Y = v => H - 12 - v / vmax * (H - 16);
+  // chart of all the figures over the map's whole span, with this year marked; under it, who held the city
+  const W = 300, H = 50, vmax = Math.max(...c.P.map(q => q[1])) * 1.08;
+  const X = v => 4 + (v - Y0) / (Y1 - Y0) * (W - 8), Y = v => H - 12 - v / vmax * (H - 16);
   const line = c.P.map((q, j) => (j ? 'L' : 'M') + X(q[0]).toFixed(1) + ',' + Y(q[1]).toFixed(1)).join('');
-  const chart = `<svg viewBox="0 0 ${W} ${H}" aria-hidden="true"><line class="now" x1="${X(year)}" x2="${X(year)}" y1="2" y2="${H - 11}"/><path class="ln" d="${line}"/>` +
+  const ticks = []; for (let t = Math.ceil(Y0 / 50) * 50; t <= Y1; t += 50) ticks.push(t);
+  const chart = `<svg class="pchart" viewBox="0 0 ${W} ${H}" aria-hidden="true"><line class="now" x1="${X(year)}" x2="${X(year)}" y1="2" y2="${H - 11}"/><path class="ln" d="${line}"/>` +
     c.P.map(q => `<circle class="pt${q[2] === 3 ? ' c' : ''}" cx="${X(q[0]).toFixed(1)}" cy="${Y(q[1]).toFixed(1)}" r="2.2"/>`).join('') +
     (p.k === 'est' ? `<circle class="cur" cx="${X(year)}" cy="${Y(p.v).toFixed(1)}" r="3"/>` : '') +
-    `<text class="ax" x="${X(1800)}" y="${H - 1}" text-anchor="${x0 < 1795 ? 'middle' : 'start'}">1800</text><text class="ax" x="${X(1850)}" y="${H - 1}" text-anchor="middle">1850</text><text class="ax" x="${X(1900)}" y="${H - 1}" text-anchor="${x1 > 1905 ? 'middle' : 'end'}">1900</text></svg>`;
-  return `<button type="button" class="x" aria-label="Close">×</button><div class="nm">${esc(c.n)}</div><div class="pop">${big} <small>people in ${year}</small></div><p>${esc(note)}</p>${chart}`;
+    ticks.map(t => `<text class="ax" x="${X(t).toFixed(1)}" y="${H - 1}" text-anchor="${t === ticks[0] && X(t) < 16 ? 'start' : 'middle'}">${t}</text>`).join('') + `</svg>`;
+  const runs = []; for (let y = Y0; y <= Y1; y++) { const u = unitAt[c.s * NY + y - Y0]; if (runs.length && runs[runs.length - 1].u === u) runs[runs.length - 1].b = y; else runs.push({ u, a: y, b: y }); }
+  const nm = r => r.u < 0 ? 'no country' : nameOf(r.u, r.a);
+  const strip = `<div class="hstrip" role="group" aria-label="Who held ${esc(c.n)}">` + runs.map(r => {
+      const l = (X(r.a - 0.5) / W * 100).toFixed(2), w = ((X(r.b + 0.5) - X(r.a - 0.5)) / W * 100).toFixed(2);
+      return `<button type="button" data-y="${r.a}" title="${esc(nm(r))}, ${r.a === r.b ? r.a : r.a + '–' + r.b}" style="left:${l}%;width:${w}%;background:${r.u < 0 ? 'var(--none)' : fillVar(r.u)}"></button>`; }).join('') +
+    `<span class="now" style="left:${(X(year) / W * 100).toFixed(2)}%"></span></div>`;
+  const changes = runs.map((r, i) => `<li${r.a <= year && year <= r.b ? ' class="on"' : ''}><span class="sw" style="background:${r.u < 0 ? 'var(--none)' : fillVar(r.u)}"></span><span>${r.a === Y0 && i === 0 ? r.a : r.a}${r.b > r.a ? '–' + (r.b === Y1 ? '' : r.b) : ''}</span><span>${esc(nm(r))}</span></li>`).join('');
+  return `<button type="button" class="x" aria-label="Close">×</button><div class="nm">${esc(c.n)}</div><div class="pop">${big} <small>people in ${year}</small></div><p>${esc(note)}</p>${chart}` +
+    `<div class="hk">Held by</div>${strip}<ul class="hlist">${changes}</ul>`;
 }
 function countryHtml(u) {
   const d = descOf(u, year);
@@ -751,8 +768,9 @@ function renderPop() {
   const sr = svg.getBoundingClientRect(), mb = $('mapbox').getBoundingClientRect();
   pop.innerHTML = d ? cityHtml(d) : countryHtml(fu);
   pop.setAttribute('aria-label', d ? `${d.c.n}: population` : nameOf(fu, year));
+  pop.querySelectorAll('.hstrip button').forEach(b => b.onclick = () => setYear(+b.dataset.y));
   pop.querySelector('.x').onclick = () => { if (d) { selCity = null; drawCities(); } else popClosed = true; renderPop(); };
-  const w = d ? Math.min(244, sr.width - 2 * PAD) : sr.width < 600 ? sr.width - 2 * PAD : 300; pop.style.width = w + 'px';
+  const w = d ? Math.min(330, sr.width - 2 * PAD) : sr.width < 600 ? sr.width - 2 * PAD : 300; pop.style.width = w + 'px';
   pop.style.left = '-9999px'; pop.style.top = '0px'; pop.hidden = false;
   const h = pop.offsetHeight, ctrl = controlBoxes(), fb = focusBox ? [focusBox] : [];
   let spot;
