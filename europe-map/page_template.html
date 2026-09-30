@@ -510,14 +510,21 @@ function altText(a) {
   const why = a.src === 'ohm' ? '' : R[a.r] && (R[a.r].t === 'ohm' || R[a.r].t === 'bridge') ? ' OpenHistoricalMap matched the historical record more often than the other sources in our checks, so the map uses it by default.' : '';
   return `<p><b>${esc(src)}</b> puts this area (about ${fmt(a.km2)} km²) in <b>${esc(nameOf(a.a, year))}</b> in ${years(a)}. The map shows <b>${esc(nameOf(defUnit(a), year))}</b>.</p><p class="muted">${refLine(a.r)}${why}</p>`;
 }
-function selectAlt(i) {
+// fromList: picked in the side panel, so the map zooms to fit the area, the way it does for a country
+function selectAlt(i, fromList) {
   selAlt = selAlt === i ? null : i;
-  if (selAlt != null) {
-    const a = D.alts[i]; const k = 1 / Math.max(1, pxPerKm());
-    const f = altFeatures.find(f => f.properties.i === i);
-    if (f) { const [a0, b0, a1, b1] = f.bb; const vw = view[2]; if (a0 < shown[0] || a1 > shown[0] + shown[2] || b0 < shown[1] || b1 > shown[1] + shown[3]) { const w = Math.max((a1 - a0) * 2.2, 700); view = [(a0 + a1) / 2 - w / 2, (b0 + b1) / 2 - w * 0.35, w, w * 0.7]; } }
-  }
   drawAlts(); drawBadges(); renderAlts();
+  const f = selAlt != null && altFeatures.find(f => f.properties.i === i);
+  if (!f) return;
+  if (fromList) { if (place) { place = null; selCity = null; draw(); } fitBox(f.bb); return; }   // a highlighted country lets go, so the area is not dimmed
+  const [a0, b0, a1, b1] = f.bb;
+  if (a0 < shown[0] || a1 > shown[0] + shown[2] || b0 < shown[1] || b1 > shown[1] + shown[3]) fitBox(f.bb);
+}
+function fitBox(bb) {
+  const sr = svg.getBoundingClientRect(); if (!sr.width) return;
+  const W = sr.width, H = sr.height, M = 40, bw = Math.max(bb[2] - bb[0], 1), bh = Math.max(bb[3] - bb[1], 1);
+  const s = Math.max(Math.min((W - 2 * M) / bw, (H - 2 * M) / bh, W / 80), W / (VB0[2] * 1.3));   // no closer than 80 km across
+  animateTo([(bb[0] + bb[2]) / 2 - W / 2 / s, (bb[1] + bb[3]) / 2 - H / 2 / s, W / s, H / s]);
 }
 
 // ---------- panel: place ----------
@@ -804,7 +811,7 @@ function renderAlts() {
   card.innerHTML = `<h3>Alternative borders in ${year} (${list.length})</h3><p class="hint">Another source draws these areas differently. Pick one to see what each source says.</p>` +
     `<ol class="alist">${list.map((a, n) => `<li><button type="button" data-a="${a.i}" aria-expanded="${a.i === selAlt}"><span class="n">${n + 1}</span><span><span class="t">${esc(altTitle(a))}</span><br><span class="d">${esc(SRCNAME[a.src])} · ${years(a)} · ${fmt(a.km2)} km²</span></span></button>` +
       (a.i === selAlt ? `<div class="altdetail">${altText(a)}</div>` : '') + `</li>`).join('')}</ol>`;
-  card.querySelectorAll('.alist button').forEach(b => b.onclick = () => selectAlt(+b.dataset.a));
+  card.querySelectorAll('.alist button').forEach(b => b.onclick = () => selectAlt(+b.dataset.a, true));
 }
 
 // ---------- hover: no popup, just a pointer over cities ----------
