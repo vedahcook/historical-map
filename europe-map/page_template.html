@@ -64,7 +64,7 @@ button, select, input { font: inherit; color: inherit; }
 .badge text { fill: var(--accent-ink); font-family: var(--sans); font-weight: 700; text-anchor: middle; dominant-baseline: central; pointer-events: none; }
 .badge { cursor: pointer; }
 .badge.on circle { fill: var(--ink); }
-.lbl { font-family: var(--mapfont); font-weight: 450; fill: var(--ink); text-anchor: middle; dominant-baseline: central; pointer-events: none; }
+.lbl { font-family: var(--mapfont); font-weight: 450; fill: var(--ink); text-anchor: middle; dominant-baseline: central; pointer-events: none; paint-order: stroke; stroke: var(--halo); stroke-width: 0.16em; stroke-linejoin: round; }
 .lbl.big { font-weight: 450; }
 .lbl.off { opacity: var(--dimtext); }      /* names outside the highlighted country fade more than the map does */
 .dim { fill: var(--dim); fill-rule: evenodd; pointer-events: none; }
@@ -72,13 +72,14 @@ button, select, input { font: inherit; color: inherit; }
 .city circle { fill: var(--ink); stroke: var(--halo); cursor: pointer; }
 .city.nofig circle { fill: var(--surface); stroke: var(--ink); }
 .city.on circle { fill: var(--accent); stroke: var(--halo); }
-.clbl { font-family: var(--mapfont); font-weight: 400; fill: var(--ink); dominant-baseline: central; pointer-events: none; }
+.clbl { font-family: var(--mapfont); font-weight: 400; fill: var(--ink); dominant-baseline: central; pointer-events: none; paint-order: stroke; stroke: var(--halo); stroke-width: 0.2em; stroke-linejoin: round; }
 .clbl.on { font-weight: 600; fill: var(--accent); }
 .clbl { cursor: pointer; }
 .mappop { font-family: var(--mapfont); position: absolute; z-index: 3; background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px 11px; box-shadow: 0 6px 18px rgba(0,0,0,0.16); font-size: 0.86rem; line-height: 1.4; }
 .mappop .x { position: absolute; right: 4px; top: 4px; width: 30px; height: 30px; border: 0; background: transparent; border-radius: 7px; cursor: pointer; color: var(--muted); font-size: 1.15rem; line-height: 1; }
 .mappop .nm { font-family: var(--serif); font-weight: 600; font-size: 1.05rem; line-height: 1.25; padding-right: 26px; }
 .mappop .dt { color: var(--muted); font-size: 0.8rem; margin-top: 2px; }
+.mappop .src { color: var(--muted); font-size: 0.78rem; }
 .mappop p { margin: 4px 0 0; color: var(--muted); line-height: 1.38; }
 .mappop p.tx { margin-top: 6px; color: var(--ink); }
 .mappop p.hint { margin-top: 7px; font-size: 0.8rem; }
@@ -91,9 +92,6 @@ button, select, input { font: inherit; color: inherit; }
 .mappop .now { stroke: var(--sel); stroke-width: 1.4; }
 .mappop .cur { fill: var(--sel); }
 .mappop .ax { fill: var(--muted); font-size: 9px; }
-.desc .dt { display: block; color: var(--muted); font-size: 0.8rem; margin-top: 1px; }
-.desc { display: flex; flex-direction: column; gap: 4px; font-size: 0.88rem; }
-.desc p { margin: 0; }
 .zoom { position: absolute; right: 10px; top: 10px; display: flex; flex-direction: column; gap: 4px; z-index: 2; }
 .zoom button { width: 36px; height: 36px; border-radius: 9px; border: 1px solid var(--line); background: var(--surface); cursor: pointer; font-weight: 700; font-size: 1.05rem; line-height: 1; }
 .yearstamp { position: absolute; left: 14px; top: 8px; font-family: var(--serif); font-weight: 600; font-variant-numeric: lining-nums tabular-nums; font-size: 2.5rem; line-height: 1; color: var(--ink); opacity: 0.8; pointer-events: none; }
@@ -125,33 +123,16 @@ button, select, input { font: inherit; color: inherit; }
 .card p { margin: 0; }
 .muted { color: var(--muted); }
 .small { font-size: 0.85rem; }
-.changes { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; font-size: 0.88rem; }
-.changes li { display: grid; grid-template-columns: 14px minmax(0, 1fr) auto; gap: 8px; align-items: center; }
 .sw { width: 14px; height: 14px; border-radius: 3px; display: inline-block; border: 1px solid var(--line); flex: none; }
 .gain { color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
 details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
-.ctable { width: 100%; border-collapse: collapse; font-size: 0.84rem; margin-top: 6px; }
-.ctable td { padding: 3px 4px; border-top: 1px solid var(--line); }
-.ctable td:last-child { text-align: right; font-variant-numeric: tabular-nums; color: var(--muted); white-space: nowrap; }
-.who { display: flex; gap: 10px; align-items: flex-start; }
-.who .sw { width: 18px; height: 18px; margin-top: 3px; }
-.who b { font-family: var(--serif); font-size: 1.15rem; font-weight: 600; display: block; line-height: 1.25; }
-.srcbox { background: var(--sunk); border-radius: 10px; padding: 9px 12px; font-size: 0.86rem; display: flex; flex-direction: column; gap: 4px; }
-.srcbox .k { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 600; }
-.strip { position: relative; height: 30px; background: var(--sunk); border-radius: 6px; overflow: hidden; }
-.strip button { position: absolute; top: 0; height: 30px; border: 0; padding: 0 0 0 3px; border-right: 1px solid var(--surface); display: flex; align-items: center; cursor: pointer; overflow: hidden; }
-.strip button span { background: var(--surface); color: var(--ink); font-size: 0.7rem; font-weight: 600; padding: 0 4px; border-radius: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: calc(100% - 4px); }
-.strip .now { position: absolute; top: -2px; bottom: -2px; width: 2px; background: var(--ink); pointer-events: none; }
-.stripaxis { position: relative; height: 14px; font-size: 0.7rem; color: var(--faint); }
-.stripaxis span { position: absolute; transform: translateX(-50%); }
-.stripaxis span:first-child { transform: none; }
 .alist { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
 .alist li button { width: 100%; text-align: left; display: grid; grid-template-columns: 24px minmax(0, 1fr); gap: 10px; padding: 9px 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); cursor: pointer; }
-.alist li button[aria-pressed="true"] { border-color: var(--alt); background: var(--sunk); }
+.alist li button[aria-expanded="true"] { border-color: var(--alt); background: var(--sunk); }
 .alist .n { width: 22px; height: 22px; border-radius: 50%; background: var(--alt); color: var(--accent-ink); font-weight: 700; font-size: 0.78rem; display: grid; place-items: center; }
 .alist .t { font-weight: 600; font-size: 0.9rem; }
 .alist .d { font-size: 0.83rem; color: var(--muted); }
-.altdetail { border-left: 3px solid var(--alt); padding: 2px 0 2px 12px; display: flex; flex-direction: column; gap: 6px; font-size: 0.88rem; }
+.altdetail { border-left: 3px solid var(--alt); margin: 8px 0 4px 12px; padding: 2px 0 2px 12px; display: flex; flex-direction: column; gap: 6px; font-size: 0.88rem; }
 .legend { display: flex; flex-direction: column; gap: 8px; font-size: 0.84rem; }
 .legend div { display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 10px; align-items: center; }
 .legend svg { width: 30px; height: 18px; border-radius: 3px; }
@@ -221,13 +202,11 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
       </div>
     </section>
     <aside class="panel" aria-label="Details">
-      <section class="card" id="yearcard"></section>
-      <section class="card" id="placecard"></section>
-      <section class="card" id="altcard"></section>
       <section class="card">
         <h3>Key</h3>
         <div class="legend" id="legend"></div>
       </section>
+      <section class="card" id="altcard"></section>
       <section class="card about">
         <h3>How this map was made</h3>
         <p>Each year shows the borders in force on July 1. The map uses <a href="https://www.openhistoricalmap.org" target="_blank" rel="noopener">OpenHistoricalMap</a> (OHM), which matched the historical record in 149 of 160 spot checks. Where OHM has no record, it falls back to <a href="https://icr.ethz.ch/data/cshapes/" target="_blank" rel="noopener">CShapes-Europe</a> (from 1816) or <a href="https://github.com/Seshat-Global-History-Databank/cliopatria" target="_blank" rel="noopener">Cliopatria</a>. Where our checks found OHM wrong, the map applies a correction and says so.</p>
@@ -325,8 +304,8 @@ function hatchFor(ov, occ) {
   const id = (occ ? 'xhatch-' : 'hatch-') + U[ov].c % 8;
   if (!patterns[id]) {
     const p = el('pattern', { id, patternUnits: 'userSpaceOnUse', width: 10, height: 10, patternTransform: 'rotate(45)' }, defs);
-    const ln = el('rect', { x: 0, y: 0, width: 3, height: 10 }, p); ln.setAttribute('style', `fill: ${hueVar(ov)}; opacity: ${occ ? 0.55 : 0.5}`);
-    if (occ) { const l2 = el('rect', { x: 0, y: 0, width: 10, height: 3 }, p); l2.setAttribute('style', `fill: ${hueVar(ov)}; opacity: 0.55`); }
+    const ln = el('rect', { x: 0, y: 0, width: 3, height: 10 }, p); ln.setAttribute('style', `fill: ${hueVar(ov)}; opacity: ${occ ? 0.4 : 0.5}`);
+    if (occ) { const l2 = el('rect', { x: 0, y: 0, width: 10, height: 3 }, p); l2.setAttribute('style', `fill: ${hueVar(ov)}; opacity: 0.4`); }
     patterns[id] = p;
   }
   return id;
@@ -376,7 +355,12 @@ function applyView() {
   shown = fitAspect(view);
   svg.setAttribute('viewBox', shown.map(v => v.toFixed(2)).join(' '));
   const s = 1 / pxPerKm();
-  for (const id in patterns) { const p = patterns[id]; const w = 7 * s; p.setAttribute('width', w); p.setAttribute('height', w); p.firstChild.setAttribute('width', w * 0.22); p.firstChild.setAttribute('height', w); if (p.lastChild !== p.firstChild) { p.lastChild.setAttribute('width', w); p.lastChild.setAttribute('height', w * 0.22); } }
+  // patterns keep the same size on screen at any zoom: stripes every 7 px; the crosshatch sparser and finer, so names stay readable
+  for (const id in patterns) {
+    const p = patterns[id], x = id.startsWith('x'), w = (x ? 11 : 7) * s, t = x ? 0.11 : 0.22;
+    p.setAttribute('width', w); p.setAttribute('height', w); p.firstChild.setAttribute('width', w * t); p.firstChild.setAttribute('height', w);
+    if (p.lastChild !== p.firstChild) { p.lastChild.setAttribute('width', w); p.lastChild.setAttribute('height', w * t); }
+  }
   drawLabels(); drawBadges(); drawPin(); drawCities();
 }
 function zoomAt(f, cx, cy) {
@@ -437,7 +421,7 @@ function draw() {
   $('borders').setAttribute('d', G.borders); $('vborders').setAttribute('d', G.vb);
   drawAlts(); drawDim(); applyView();
   $('stamp').textContent = year; $('year').value = year;
-  renderTimeline(); renderYear(); renderPlace(); renderAlts();
+  renderTimeline(); renderAlts();
   try { history.replaceState(null, '', '#' + year); } catch (e) {}
 }
 
@@ -536,28 +520,6 @@ function selectAlt(i) {
   drawAlts(); drawBadges(); renderAlts();
 }
 
-// ---------- panel: year ----------
-function renderYear() {
-  const G = yearGeo(year), P = year > Y0 ? yearGeo(year - 1) : null;
-  const units = Object.keys(G.area).map(Number);
-  const rows = [];
-  if (P) {
-    const all = new Set([...units, ...Object.keys(P.area).map(Number)]);
-    for (const u of all) {
-      const a = G.area[u] || 0, b = P.area[u] || 0;
-      if (!b && a > 50) rows.push({ u, t: `${nameOf(u, year)} appears`, v: a, s: '' });
-      else if (b > 50 && !a) rows.push({ u, t: `${nameOf(u, year - 1)} ends`, v: b, s: '' });
-      else if (Math.abs(a - b) > 1500) rows.push({ u, t: nameOf(u, year), v: Math.abs(a - b), s: (a > b ? '+' : '−') + fmt(Math.abs(a - b)) + ' km²' });
-    }
-  }
-  rows.sort((a, b) => b.v - a.v);
-  const list = rows.slice(0, 7).map(r => `<li><span class="sw" style="background:${fillVar(r.u)}"></span><span>${esc(r.t)}</span><span class="gain">${r.s}</span></li>`).join('');
-  const table = units.filter(u => G.area[u] > 0).sort((a, b) => G.area[b] - G.area[a]).map(u => `<tr><td><span class="sw" style="background:${fillVar(u)};vertical-align:-2px;margin-right:6px"></span>${esc(nameOf(u, year))}${isVassal(u) ? ' <span class="muted">(' + esc(depText(u).toLowerCase().replace(', without recognition', '')) + ')</span>' : ''}</td><td>${fmt(G.area[u])} km²</td></tr>`).join('');
-  $('yearcard').innerHTML = `<h2 class="num">${year}</h2>` +
-    (P ? (rows.length ? `<h3>Changes since ${year - 1}</h3><ul class="changes">${list}</ul>` : `<p class="muted small">No border changes of more than 1,500 km² since ${year - 1}.</p>`) : `<p class="muted small">The first year on the map.</p>`) +
-    `<details><summary>All ${units.length} countries and territories this year</summary><table class="ctable">${table}</table><p class="muted small">Areas are within the map, as of July 1.</p></details>`;
-}
-
 // ---------- panel: place ----------
 function click(ev) {
   const [x, y] = toMap(ev);
@@ -576,14 +538,13 @@ function click(ev) {
     const hit = altsNow().find(a => { const af = altFeatures.find(g => g.properties.i === a.i); return af && x >= af.bb[0] && x <= af.bb[2] && y >= af.bb[1] && y <= af.bb[3] && inGeom(af.geometry, x, y); });
     if (hit) { selAlt = hit.i; drawAlts(); drawBadges(); renderAlts(); }
   }
-  drawPin(); drawDim(); drawLabels(); drawBadges(); drawCities(); renderTimeline(); renderPlace();
+  drawPin(); drawDim(); drawLabels(); drawBadges(); drawCities(); renderTimeline();
   if (place && u >= 0 && u !== cur) fitUnit(u); else renderPop();     // a newly highlighted country is brought fully into view
 }
 // dim everything outside the country that holds the selected place this year
 const focusUnit = () => place ? unitAt[place.s * NY + year - Y0] : -1;
 function drawDim() {
   const p = $('dim'); const u = focusUnit();
-  $('yearcard').hidden = u >= 0;          // the year summary steps aside while a country is highlighted
   if (u < 0) { p.setAttribute('d', ''); return; }
   const f = yearGeo(year).fills.find(g => g.u === u);
   const [x, y, w, h] = VB0, pad = Math.max(w, h);
@@ -690,8 +651,18 @@ function countryHtml(u) {
   const d = descOf(u, year);
   return `<button type="button" class="x" aria-label="Close">×</button><div class="nm">${esc(d ? d.t : nameOf(u, year))}</div>` +
     (d && datesOf(d) ? `<div class="dt">${esc(datesOf(d))}</div>` : '') + (d ? `<p class="tx">${esc(d.x)}</p>` : '') +
-    (isVassal(u) ? `<p>${esc(depText(u))}.</p>` : '') +
+    (isVassal(u) ? `<p>${esc(depText(u))}.</p>` : '') + srcShort() +
     (cityDots.length ? `<p class="hint">Tap a city for its population in ${year}.</p>` : '');
+}
+// where the border at the tapped spot comes from, in one line
+function srcShort() {
+  const r = place ? R[refAt[place.s * NY + year - Y0]] : null; if (!r) return '';
+  const link = `<a href="https://www.openhistoricalmap.org/relation/${r.id}" target="_blank" rel="noopener">${esc(r.n)}</a>`;
+  const t = r.t === 'ohm' || r.t === 'bridge' ? `OpenHistoricalMap, ${link}`
+    : r.t === 'cs' ? 'CShapes-Europe (OpenHistoricalMap has no record here)'
+    : r.t === 'clio' ? 'Cliopatria (OpenHistoricalMap has no record here)'
+    : r.t === 'fix' ? `corrected from OpenHistoricalMap. ${esc((r.note.match(/^.*?\.(\s|$)/) || [r.note])[0].trim())}` : '';
+  return t ? `<p class="src">Source here: ${t}</p>` : '';
 }
 
 // ---------- the map popup: only one at a time, for the highlighted country or a tapped city ----------
@@ -825,34 +796,14 @@ document.addEventListener('keydown', e => {
   if (e.key !== 'Escape') return;
   if (selCity != null) { selCity = null; drawCities(); renderPop(); } else if (focusUnit() >= 0 && !popClosed) { popClosed = true; renderPop(); }
 });
-function renderPlace() {
-  const card = $('placecard');
-  if (!place) { card.innerHTML = `<h3>A place</h3><p class="hint">Tap a place on the map to highlight the country that held it in ${year}, see which source says so, and how it changed hands over the century. Tap the country again to clear the highlight.</p>`; return; }
-  const s = place.s, u = unitAt[s * NY + year - Y0], ri = refAt[s * NY + year - Y0];
-  const head = u < 0 ? `<div class="who"><span class="sw" style="background:var(--none)"></span><div><b>No country</b><span class="muted small">No source assigns this place in ${year}.</span></div></div>`
-    : `<div class="who"><span class="sw" style="background:${fillVar(u)}"></span><div><b>${esc(nameOf(u, year))}</b><span class="muted small">${isVassal(u) ? esc(depText(u)) : 'in ' + year}</span></div></div>`;
-  // history strip
-  const runs = []; for (let y = Y0; y <= Y1; y++) { const v = unitAt[s * NY + y - Y0]; if (runs.length && runs[runs.length - 1].u === v) runs[runs.length - 1].b = y; else runs.push({ u: v, a: y, b: y }); }
-  const strip = runs.map(r => { const left = (r.a - Y0) / NY * 100, w = (r.b - r.a + 1) / NY * 100; const nm = r.u < 0 ? 'none' : nameOf(r.u, r.a);
-    return `<button type="button" data-y="${r.a}" title="${esc(nm)}, ${r.a === r.b ? r.a : r.a + '–' + r.b}" style="left:${left}%;width:${w}%;background:${r.u < 0 ? 'var(--none)' : fillVar(r.u)}">${w > 9 ? `<span>${esc(nm)}</span>` : ''}</button>`; }).join('');
-  const now = (year - Y0 + 0.5) / NY * 100;
-  const hand = runs.filter(r => r.u >= 0).map(r => `${esc(nameOf(r.u, r.a))} ${r.a === r.b ? r.a : r.a + '–' + r.b}`).join('; ');
-  const dd = u >= 0 ? descOf(u, year) : null;
-  const descHtml = dd ? `<div class="desc"><b>${esc(dd.t)}</b>${datesOf(dd) ? `<span class="dt">${esc(datesOf(dd))}</span>` : ''}<p>${esc(dd.x)}</p></div>` : '';
-  card.innerHTML = `<h3>This place</h3>${head}${descHtml}` + (u >= 0 ? `<div class="srcbox"><span class="k">Source</span><span>${refLine(ri)}</span></div>` : '') +
-    `<div><div class="strip" role="group" aria-label="Who held this place, ${Y0}–${Y1}: ${esc(hand)}">${strip}<span class="now" style="left:${now}%"></span></div><div class="stripaxis">${[1800, 1900, 2000].map(v => `<span style="left:${((v - Y0 + 0.5) / NY * 100).toFixed(1)}%">${v}</span>`).join('')}</div></div>`;
-  card.querySelectorAll('.strip button').forEach(b => b.onclick = () => setYear(+b.dataset.y));
-}
-
 // ---------- panel: alternatives ----------
 function renderAlts() {
   const list = altsNow();
   const card = $('altcard');
   if (!list.length) { card.innerHTML = `<h3>Alternative borders</h3><p class="hint">In ${year} the other sources agree with this map, apart from small differences in how exactly borders are drawn.</p>`; return; }
-  const sel = list.find(a => a.i === selAlt);
-  card.innerHTML = `<h3>Alternative borders in ${year} (${list.length})</h3>` +
-    (sel ? `<div class="altdetail">${altText(sel)}</div>` : `<p class="hint">Another source draws these areas differently. Pick one to see what each source says.</p>`) +
-    `<ol class="alist">${list.map((a, n) => `<li><button type="button" data-a="${a.i}" aria-pressed="${a.i === selAlt}"><span class="n">${n + 1}</span><span><span class="t">${esc(altTitle(a))}</span><br><span class="d">${esc(SRCNAME[a.src])} · ${years(a)} · ${fmt(a.km2)} km²</span></span></button></li>`).join('')}</ol>`;
+  card.innerHTML = `<h3>Alternative borders in ${year} (${list.length})</h3><p class="hint">Another source draws these areas differently. Pick one to see what each source says.</p>` +
+    `<ol class="alist">${list.map((a, n) => `<li><button type="button" data-a="${a.i}" aria-expanded="${a.i === selAlt}"><span class="n">${n + 1}</span><span><span class="t">${esc(altTitle(a))}</span><br><span class="d">${esc(SRCNAME[a.src])} · ${years(a)} · ${fmt(a.km2)} km²</span></span></button>` +
+      (a.i === selAlt ? `<div class="altdetail">${altText(a)}</div>` : '') + `</li>`).join('')}</ol>`;
   card.querySelectorAll('.alist button').forEach(b => b.onclick = () => selectAlt(+b.dataset.a));
 }
 
@@ -939,7 +890,7 @@ const sample = U.findIndex(u => u.k === 'SRB'), osample = Math.max(0, U.findInde
 $('legend').innerHTML =
   `<div><svg viewBox="0 0 30 18"><rect width="30" height="18" style="fill:${fillVar(U.findIndex(u => u.k === 'FRA'))}"/></svg><span>Each country keeps one color throughout; neighbors always differ.</span></div>` +
   `<div><svg viewBox="0 0 30 18"><defs><pattern id="lg-h" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)"><rect width="1.4" height="6" style="fill:${hueVar(U[sample].ov)};opacity:.5"/></pattern></defs><rect width="30" height="18" style="fill:${fillVar(sample)}"/><rect width="30" height="18" fill="url(#lg-h)"/></svg><span>Stripes: self-governing under an overlord, or a protectorate, mandate, colony or client state. The stripes take the overlord's color.</span></div>` +
-  `<div><svg viewBox="0 0 30 18"><defs><pattern id="lg-x" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)"><rect width="1.4" height="6" style="fill:${hueVar(U[osample].ov)};opacity:.55"/><rect width="6" height="1.4" style="fill:${hueVar(U[osample].ov)};opacity:.55"/></pattern></defs><rect width="30" height="18" style="fill:${fillVar(osample)}"/><rect width="30" height="18" fill="url(#lg-x)"/></svg><span>Crosshatch: occupied by another power, annexed without international recognition, or held by a breakaway government with another power's backing. The fill is the country that held the land in law; the lines take the occupier's color.</span></div>` +
+  `<div><svg viewBox="0 0 30 18"><defs><pattern id="lg-x" patternUnits="userSpaceOnUse" width="8" height="8" patternTransform="rotate(45)"><rect width="0.9" height="8" style="fill:${hueVar(U[osample].ov)};opacity:.4"/><rect width="8" height="0.9" style="fill:${hueVar(U[osample].ov)};opacity:.4"/></pattern></defs><rect width="30" height="18" style="fill:${fillVar(osample)}"/><rect width="30" height="18" fill="url(#lg-x)"/></svg><span>Crosshatch: occupied by another power, annexed without international recognition, or held by a breakaway government with another power's backing. The fill is the country that held the land in law; the lines take the occupier's color.</span></div>` +
   `<div><svg viewBox="0 0 30 18"><rect width="30" height="18" style="fill:var(--sunk)"/><rect x="3" y="3" width="24" height="12" style="fill:var(--alt-fill);stroke:var(--alt);stroke-width:1.6;stroke-dasharray:4 3"/></svg><span>Dashed outline and number: another source draws a different border here.</span></div>` +
   `<div><svg viewBox="0 0 30 18"><rect width="30" height="18" style="fill:var(--none)"/></svg><span>No source assigns this area to a country.</span></div>`;
 const fixes = R.filter(r => r.t === 'fix');
