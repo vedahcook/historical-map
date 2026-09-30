@@ -225,7 +225,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
             <li>Cliopatria, Seshat Global History Databank: CC BY 4.0. Also used for the extent of wartime occupations, 1914-46.</li>
             <li>Russian-occupied Ukraine, 2022-26: <a href="https://deepstatemap.live/en" target="_blank" rel="noopener">DeepState</a>’s map, the last update before July 1 each year.</li>
             <li>Breakaway regions (Transnistria, Abkhazia, South Ossetia, Artsakh, Crimea and the Donbas in 2014-21): Natural Earth’s disputed areas (public domain).</li>
-            <li>City populations: Wikidata (CC0), census tables in English, German, French, Greek and Turkish Wikipedia (CC BY-SA 4.0), and estimates by Chandler, de Vries and Mitchell as tabled in Wikipedia's <a href="https://en.wikipedia.org/wiki/Historical_urban_community_sizes" target="_blank" rel="noopener">Historical urban community sizes</a>. Gathered September 29, 2026.</li>
+            <li>City populations: Wikidata (CC0), census tables in city articles in English, German, French, Polish, Russian, Ukrainian, Greek, Turkish and other Wikipedia editions (CC BY-SA 4.0), the UN Statistics Division’s Demographic Yearbook city table (public domain via datasets/population-city), and estimates by Chandler, de Vries and Mitchell as tabled in Wikipedia's <a href="https://en.wikipedia.org/wiki/Historical_urban_community_sizes" target="_blank" rel="noopener">Historical urban community sizes</a>. Gathered September 29, 2026.</li>
             <li>Coastlines, lakes and rivers: Natural Earth (public domain).</li>
             <li>Projection: Lambert azimuthal equal-area for Europe (ETRS89-LAEA), so areas compare fairly.</li>
           </ul>
@@ -563,7 +563,7 @@ function drawPinOld() {
   el('circle', { cx: place.x, cy: place.y, r: (4 / k).toFixed(2), 'stroke-width': (1.5 / k).toFixed(2) }, g);
 }
 // ---------- cities: shown inside the highlighted country; tap one for its population that year ----------
-const CSRC = ['Wikidata', 'German Wikipedia', 'English Wikipedia', 'Chandler, de Vries and Mitchell (estimates for the wider city)', 'French, Greek or Turkish Wikipedia'];
+const CSRC = ['Wikidata', 'German Wikipedia', 'English Wikipedia', 'Chandler, de Vries and Mitchell (estimates for the wider city)', 'the city’s article in another Wikipedia edition', 'UN Statistics Division'];
 const CITIES = D.cities.map(([n, x, y, s, P], i) => ({ i, n, x, y, s, P }));
 let selCity = null, cityDots = [];
 // population in year y: the figure for that year, or an estimate between the figures either side (steady growth)

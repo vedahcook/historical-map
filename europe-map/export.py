@@ -241,7 +241,7 @@ for u in used_units:
     units_out.append({'k': k, 'n': name, 'ov': UI.get(K.index(ov)) if ov and K.index(ov) in UI else None, 'c': col.get(fa, 0), **({'o': 1} if k in KIND else {})})
 # ---------- cities: place each one in its map region, keep its population figures ----------
 HERE = __file__.rsplit('/', 1)[0] or '.'
-CSRC = 'WGECO'   # Wikidata, German Wikipedia, English Wikipedia, Chandler/de Vries/Mitchell estimate
+CSRC = 'WGECOU'   # Wikidata, German Wikipedia, English Wikipedia, Chandler/de Vries/Mitchell estimate, other Wikipedia editions, UN Statistics Division
 cities, offmap = [], []
 for line in open(f'{HERE}/cities.txt', encoding='utf-8'):
     if not line.strip() or line.startswith('#'): continue

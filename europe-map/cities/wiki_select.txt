@@ -1,0 +1,61 @@
+# city|source (as in wiki_tables_raw.txt)|mode (fill: only decades with no figure; replace: this series replaces every figure in its span)|years to leave out
+Paris|fr:Modèle:Données/Paris/évolution population|replace|1793,1797
+Kraków|de:Krakau|fill|
+Wrocław|de:Breslau#0|fill|
+Wrocław|de:Breslau#1|fill|
+Lviv (Lemberg)|ru:Львов#0|fill|2025
+Manchester|de:Manchester|fill|
+Edinburgh|en:Edinburgh#0|fill|
+Leicester|en:Leicester#0|fill|2026
+Newcastle upon Tyne|en:Newcastle upon Tyne#0|fill|2024
+Glasgow|en:Glasgow#0|fill|
+Liverpool|en:Liverpool#0|fill|1720,1835,1937
+Oslo (Christiania)|nn:Oslo#0|fill|
+İzmir|en:İzmir#0|fill|
+Riga|ru:Рига#0|fill|
+Lublin|en:Lublin#0|fill|
+Białystok|en:Białystok#0|fill|
+Kielce|en:Kielce#0|fill|
+Radom|en:Radom#0|fill|
+Toruń|en:Toruń#0|fill|
+Gdańsk|en:Gdańsk#0|fill|
+Gdańsk|de:Danzig|fill|
+Königsberg|en:Kaliningrad#0|fill|
+Tampere|en:Tampere#0|fill|
+Groningen|en:Groningen#0|fill|
+Patras|en:Patras#0|fill|
+Cluj-Napoca|en:Cluj-Napoca#0|fill|
+Constanța|en:Constanța#0|fill|
+Craiova|en:Craiova#0|fill|
+Constantine|fr:Constantine (Algérie)#0|fill|
+Lutsk|en:Lutsk#0|fill|
+Latakia|en:Latakia#0|fill|
+Kayseri|de:Kayseri|fill|
+Şanlıurfa|de:Şanlıurfa|fill|1970
+İzmit|de:İzmit|fill|
+Samsun|de:Samsun|fill|
+Adana|de:Adana|fill|
+Tunis|fr:Tunis|fill|
+Tangier|de:Tanger|fill|
+Tétouan|de:Tétouan|fill|
+Oujda|de:Oujda|fill|
+Algiers|de:Algier|fill|
+Oran|fr:Oran|fill|1953
+Tallinn|et:Tallinn|fill|
+Kaunas|de:Kaunas|fill|
+Chișinău|de:Chișinău|fill|
+Poznań|pl:Poznań|fill|
+Szczecin|de:Stettin|fill|
+Częstochowa|de:Częstochowa|fill|
+Bratislava (Pressburg)|de:Bratislava|fill|
+Aarhus|da:Aarhus|fill|
+Makiivka|uk:Макіївка|fill|
+Horlivka|uk:Горлівка|fill|
+Ivano-Frankivsk|uk:Івано-Франківськ|fill|
+Rivne|de:Riwne|fill|
+Ternopil|uk:Тернопіль|fill|
+Tirana|sq:Tirana|fill|
+Oradea|de:Oradea|fill|
+Skopje|de:Skopje|fill|
+Antwerp|de:Antwerpen|fill|
+Thessaloniki|el:Θεσσαλονίκη|fill|

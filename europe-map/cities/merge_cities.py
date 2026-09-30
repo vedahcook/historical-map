@@ -1,8 +1,6 @@
 """Extend cities.txt to 2026 and add cities that grew large after 1900.
 Inputs: wd_cities.txt (Wikidata: title|QID|lon,lat|year:pop;...), enwiki_cities.txt (English Wikipedia
-{{Historical populations}} tables: title|year:pop;...), extras.txt (tables from other Wikipedia editions: title|source|year:pop;...),
-and the 1785-1905 series (cities-1785-1905.txt). Run here: python3 merge_cities.py cities-1785-1905.txt, then put
-cities_new.txt (after the header of ../cities.txt) in ../cities.txt."""
+{{Historical populations}} tables: title|year:pop;...), and the existing cities.txt."""
 import math, re, sys
 CT = sys.argv[1]
 OLD_TITLES = None
@@ -99,6 +97,39 @@ DROP = {'Lille': {2020}, 'Thessaloniki': {2001, 2011, 2021}, 'Kayseri': {2018}, 
         'Trabzon': {2021}, 'Malatya': {2020}, 'Tabriz': {1976}}
 out = [(n, lo, la, [p for p in ser if p[0] not in DROP.get(n, ())]) for n, lo, la, ser in out]
 added = [(n, lo, la, [p for p in ser if p[0] not in DROP.get(n, ())]) for n, lo, la, ser in added]
+# UN Statistics Division city-proper figures (un_cities.txt, from un_extract.py) fill decades nothing else covers;
+# the figures already chosen stay, and a UN figure off their trend is dropped
+UN = {}
+for l in open('un_cities.txt', encoding='utf-8').read().strip().split('\n'):
+    n, c, ser = l.split('|'); UN[n] = [(int(a), int(b)) for a, b in (p.split(':') for p in ser.split(';'))]
+def add_un(n, ser):
+    have = {y // 10 for y, v, s in ser}
+    new = [p for d, p in pick(UN.get(n, []), 'U').items() if d not in have]
+    return clean(ser + new, {(y, v) for y, v, s in ser}) if new else ser
+out = [(n, lo, la, add_un(n, ser)) for n, lo, la, ser in out]
+added = [(n, lo, la, add_un(n, ser)) for n, lo, la, ser in added]
+# census tables from city articles in several Wikipedia editions (wiki_tables.txt, fetched with
+# browser/fetch_city_tables.js): "fill" adds figures for decades nothing else covers; "replace" swaps in the
+# whole series over its span (Paris: the official census series instead of estimates for the wider city)
+WT = {}
+for l in open('wiki_tables.txt', encoding='utf-8'):
+    if l.startswith('#') or not l.strip(): continue
+    n, code, mode, src, ser = l.rstrip('\n').split('|')
+    WT.setdefault(n, []).append((code, mode, [(int(a), int(b)) for a, b in (p.split(':') for p in ser.split(';'))]))
+def add_wt(n, ser):
+    for code, mode, pts in WT.get(n, []):
+        if mode == 'replace':
+            y0, y1 = pts[0][0], pts[-1][0]
+            ser = sorted([p for p in ser if not y0 <= p[0] <= y1] + list(pick(pts, code).values()))
+        else:
+            have = {y // 10 for y, v, s in ser}
+            new = [p for d, p in pick(pts, code).items() if d not in have]
+            if new: ser = clean(ser + new, {(y, v) for y, v, s in ser})
+    return ser
+out = [(n, lo, la, add_wt(n, ser)) for n, lo, la, ser in out]
+added = [(n, lo, la, add_wt(n, ser)) for n, lo, la, ser in added]
+missing = set(WT) - {n for n, *_ in out + added}
+assert not missing, missing
 lines = header + [f"{n}|{lo}|{la}|" + ';'.join(f'{y - 1700}:{v}{s}' for y, v, s in ser) + '\n' for n, lo, la, ser in out + added]
 open('cities_new.txt', 'w').writelines(lines)
 print('cities', len(out), '+ new', len(added), 'dropped as off-trend', dropped)
