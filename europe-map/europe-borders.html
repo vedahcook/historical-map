@@ -98,7 +98,7 @@ button, select, input { font: inherit; color: inherit; }
 .desc p { margin: 0; }
 .zoom { position: absolute; right: 10px; top: 10px; display: flex; flex-direction: column; gap: 4px; z-index: 2; }
 .zoom button { width: 36px; height: 36px; border-radius: 9px; border: 1px solid var(--line); background: var(--surface); cursor: pointer; font-weight: 700; font-size: 1.05rem; line-height: 1; }
-.yearstamp { position: absolute; left: 14px; top: 10px; font-family: var(--mapfont); font-weight: 600; font-size: 2.4rem; line-height: 1; color: var(--ink); opacity: 0.8; pointer-events: none; }
+.yearstamp { position: absolute; left: 14px; top: 8px; font-family: var(--serif); font-weight: 600; font-variant-numeric: lining-nums tabular-nums; font-size: 2.5rem; line-height: 1; color: var(--ink); opacity: 0.8; pointer-events: none; }
 
 /* time bar */
 .timebar { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 6px 12px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 10px 14px; }
@@ -194,9 +194,9 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
           <g id="labels"></g>
           <g id="badges"></g>
           <path id="dim" class="dim"></path>
+          <g id="pin" class="pin"></g>
           <g id="cities"></g>
           <g id="focuslabel"></g>
-          <g id="pin" class="pin"></g>
         </svg>
         <div class="zoom">
           <button type="button" id="zin" aria-label="Zoom in">+</button>
@@ -367,7 +367,7 @@ function zoomAt(f, cx, cy) {
   view = [cx - (cx - x) * k, cy - (cy - y) * k, w * k, h * k]; applyView();
 }
 function toMap(ev) { const r = svg.getBoundingClientRect(); return [shown[0] + (ev.clientX - r.left) / r.width * shown[2], shown[1] + (ev.clientY - r.top) / r.height * shown[3]]; }
-svg.addEventListener('wheel', ev => { ev.preventDefault(); stopAnim(); const [mx, my] = toMap(ev); zoomAt(Math.exp(-ev.deltaY * 0.0015), mx, my); }, { passive: false });
+svg.addEventListener('wheel', ev => { ev.preventDefault(); stopAnim(); userMoved(); const [mx, my] = toMap(ev); zoomAt(Math.exp(-ev.deltaY * 0.0015), mx, my); }, { passive: false });
 const ptrs = new Map(); let dragged = false, pinch0 = null;
 svg.addEventListener('pointerdown', ev => { stopAnim(); svg.setPointerCapture(ev.pointerId); ptrs.set(ev.pointerId, [ev.clientX, ev.clientY]); dragged = false; if (ptrs.size === 2) { const [a, b] = [...ptrs.values()]; pinch0 = { d: Math.hypot(a[0] - b[0], a[1] - b[1]), view: view.slice() }; } });
 svg.addEventListener('pointermove', ev => {
@@ -376,18 +376,18 @@ svg.addEventListener('pointermove', ev => {
   if (ptrs.size === 2 && pinch0) {
     const [a, b] = [...ptrs.values()]; const d = Math.hypot(a[0] - b[0], a[1] - b[1]);
     const r = svg.getBoundingClientRect(); const cx = shown[0] + ((a[0] + b[0]) / 2 - r.left) / r.width * shown[2], cy = shown[1] + ((a[1] + b[1]) / 2 - r.top) / r.height * shown[3];
-    zoomAt(d / (pinch0.d || d), cx, cy); pinch0.d = d; dragged = true; return;
+    zoomAt(d / (pinch0.d || d), cx, cy); pinch0.d = d; dragged = true; userMoved(); return;
   }
   const dx = ev.clientX - prev[0], dy = ev.clientY - prev[1];
-  if (Math.abs(dx) + Math.abs(dy) > 0) { if (!dragged && Math.hypot(ev.clientX - prev[0], ev.clientY - prev[1]) < 0.5) return; dragged = dragged || Math.abs(dx) + Math.abs(dy) > 2; svg.classList.add('drag'); const k = shown[2] / svg.getBoundingClientRect().width; view[0] -= dx * k; view[1] -= dy * k; applyView(); }
+  if (Math.abs(dx) + Math.abs(dy) > 0) { if (!dragged && Math.hypot(ev.clientX - prev[0], ev.clientY - prev[1]) < 0.5) return; dragged = dragged || Math.abs(dx) + Math.abs(dy) > 2; if (dragged) userMoved(); svg.classList.add('drag'); const k = shown[2] / svg.getBoundingClientRect().width; view[0] -= dx * k; view[1] -= dy * k; applyView(); }
 });
 const endPtr = ev => { ptrs.delete(ev.pointerId); if (ptrs.size < 2) pinch0 = null; if (!ptrs.size) svg.classList.remove('drag'); };
 svg.addEventListener('pointerup', ev => { const wasDrag = dragged; endPtr(ev); if (!wasDrag && ev.button === 0) click(ev); });
 svg.addEventListener('pointercancel', endPtr);
 svg.addEventListener('pointerleave', () => { svg.style.cursor = ''; });
-$('zin').onclick = () => zoomAt(1.6, shown[0] + shown[2] / 2, shown[1] + shown[3] / 2);
-$('zout').onclick = () => zoomAt(1 / 1.6, shown[0] + shown[2] / 2, shown[1] + shown[3] / 2);
-$('zreset').onclick = () => { view = HOME.slice(); applyView(); };
+$('zin').onclick = () => userMoved() || zoomAt(1.6, shown[0] + shown[2] / 2, shown[1] + shown[3] / 2);
+$('zout').onclick = () => userMoved() || zoomAt(1 / 1.6, shown[0] + shown[2] / 2, shown[1] + shown[3] / 2);
+$('zreset').onclick = () => { userMoved(); view = HOME.slice(); applyView(); };
 new ResizeObserver(() => applyView()).observe($('mapbox'));
 
 // ---------- state ----------
@@ -565,7 +565,7 @@ function drawDim() {
 }
 function drawPin() {
   const g = $('pin'); g.textContent = ''; if (!place) return; const k = pxPerKm(); if (!k) return;
-  el('circle', { cx: place.x, cy: place.y, r: (5 / k).toFixed(2), 'stroke-width': (2 / k).toFixed(2) }, g);
+  el('circle', { cx: place.x, cy: place.y, r: (4 / k).toFixed(2), 'stroke-width': (1.5 / k).toFixed(2) }, g);
 }
 // ---------- cities: shown inside the highlighted country; tap one for its population that year ----------
 const CSRC = ['Wikidata', 'German Wikipedia', 'English Wikipedia', 'Chandler, de Vries and Mitchell (estimates for the wider city)'];
@@ -737,7 +737,7 @@ function fitUnit(u) {
   // wide map: the country goes left of a column for the popup; narrow map: above a band for it
   const ax0 = 20, ay0 = 52, ax1 = narrow ? W - 52 : W - pw - 2 * PAD - 16, ay1 = narrow ? Math.max(ay0 + 120, H - ph - 2 * PAD - 8) : H - 20;
   const bw = Math.max(bb[2] - bb[0], 1), bh = Math.max(bb[3] - bb[1], 1);
-  const s = Math.max(Math.min((ax1 - ax0) / bw, (ay1 - ay0) / bh, W / 420), W / (VB0[2] * 1.3));   // no closer than about 420 km across
+  const s = Math.max(Math.min((ax1 - ax0) / bw, (ay1 - ay0) / bh, W / 80), W / (VB0[2] * 1.3));   // as tight as fits, but no closer than 80 km across
   const px = (ax0 + ax1) / 2, py = (ay0 + ay1) / 2;
   animateTo([(bb[0] + bb[2]) / 2 - px / s, (bb[1] + bb[3]) / 2 - py / s, W / s, H / s]);
 }
@@ -755,6 +755,12 @@ function animateTo(t) {
     view = [cx - w / 2, cy - h / 2, w, h]; applyView(); anim = requestAnimationFrame(step);
   };
   anim = requestAnimationFrame(step);
+}
+// the viewer pans or zooms: the popup has done its job, so it closes (tapping a country or city brings one back)
+function userMoved() {
+  if (selCity != null) { selCity = null; drawCities(); }
+  if (focusUnit() >= 0) popClosed = true;
+  clearTimeout(popTimer); pop.hidden = true;
 }
 function stopAnim() { if (animating) { cancelAnimationFrame(anim); animating = false; } }
 document.addEventListener('keydown', e => {
