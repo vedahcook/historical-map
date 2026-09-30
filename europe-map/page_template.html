@@ -1,4 +1,4 @@
-<title>Europe's Borders, 1800–2026</title>
+<title>Europe's Borders, 1500–2026</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Instrument+Sans:wght@400;500;600;700&family=Source+Sans+3:wght@300..700&display=swap">
 <style>
 /* Layout: an atlas plate. The map fills the left, a year slider runs under it, and a side panel explains the year, the place you clicked, and where sources disagree. */
@@ -104,6 +104,7 @@ button, select, input { font: inherit; color: inherit; }
 .mappop .ax { fill: var(--muted); font-size: 9px; }
 .zoom { position: absolute; right: 10px; top: 10px; display: flex; flex-direction: column; gap: 4px; z-index: 2; }
 .zoom button { width: 36px; height: 36px; border-radius: 9px; border: 1px solid var(--line); background: var(--surface); cursor: pointer; font-weight: 700; font-size: 1.05rem; line-height: 1; }
+.loading { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 2; background: var(--surface); color: var(--muted); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; font-size: 0.9rem; }
 .yearstamp { position: absolute; left: 14px; top: 8px; font-family: var(--serif); font-weight: 600; font-variant-numeric: lining-nums tabular-nums; font-size: 2.5rem; line-height: 1; color: var(--ink); opacity: 0.8; pointer-events: none; }
 
 /* time bar */
@@ -119,7 +120,8 @@ button, select, input { font: inherit; color: inherit; }
 #year { width: 100%; accent-color: var(--accent); margin: 0; }
 .ticks { position: relative; height: 16px; font-size: 0.72rem; color: var(--faint); }
 .ticks span { position: absolute; transform: translateX(-50%); }
-.events { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 6px; }
+.events { grid-column: 1 / -1; position: relative; display: flex; flex-wrap: nowrap; gap: 6px; overflow-x: auto; scrollbar-width: thin; padding-bottom: 4px; }
+.events > * { flex: none; }
 .events button { border: 1px solid var(--line); background: var(--sunk); border-radius: 999px; padding: 3px 10px; font-size: 0.8rem; cursor: pointer; color: var(--muted); }
 .events button b { color: var(--ink); font-weight: 600; margin-right: 4px; }
 .events button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
@@ -164,7 +166,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
 
 <div class="app">
   <header class="top">
-    <h1>Europe's Borders, 1800–2026</h1>
+    <h1>Europe's Borders, 1500–2026</h1>
     <p>Who held what on July 1 of every year, from OpenHistoricalMap checked against other datasets. Crosshatching marks occupied land; dashed outlines mark places where another source draws a different border.</p>
   </header>
   <div class="main">
@@ -196,6 +198,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
         </div>
         <div class="yearstamp num" id="stamp" aria-hidden="true">1815</div>
         <div class="mappop" id="mappop" role="dialog" aria-label="Details" hidden></div>
+        <div class="loading" id="loading" role="status" hidden></div>
       </div>
       <div class="timebar">
         <div class="tctl">
@@ -205,7 +208,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
         </div>
         <div class="track">
           <svg class="spark" id="spark" preserveAspectRatio="none" aria-hidden="true"></svg>
-          <input type="range" id="year" min="1800" max="2026" step="1" value="1815" aria-label="Year">
+          <input type="range" id="year" min="1500" max="2026" step="1" value="1815" aria-label="Year">
           <div class="ticks" id="ticks"></div>
         </div>
         <div class="events" id="events" aria-label="Jump to a year"></div>
@@ -219,7 +222,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
       <section class="card" id="altcard"></section>
       <section class="card about">
         <h3>How this map was made</h3>
-        <p>Each year shows the borders in force on July 1. The map uses <a href="https://www.openhistoricalmap.org" target="_blank" rel="noopener">OpenHistoricalMap</a> (OHM), which matched the historical record in 149 of 160 spot checks. Where OHM has no record, it falls back to <a href="https://icr.ethz.ch/data/cshapes/" target="_blank" rel="noopener">CShapes-Europe</a> (from 1816) or <a href="https://github.com/Seshat-Global-History-Databank/cliopatria" target="_blank" rel="noopener">Cliopatria</a>. Where our checks found OHM wrong, the map applies a correction and says so.</p>
+        <p>Each year shows the borders in force on July 1. The map uses <a href="https://www.openhistoricalmap.org" target="_blank" rel="noopener">OpenHistoricalMap</a> (OHM), which matched the historical record in 149 of 160 spot checks. Where OHM has no record, it falls back to <a href="https://icr.ethz.ch/data/cshapes/" target="_blank" rel="noopener">CShapes-Europe</a> (from 1816) or <a href="https://github.com/Seshat-Global-History-Databank/cliopatria" target="_blank" rel="noopener">Cliopatria</a>. Where our checks found OHM wrong, the map applies a correction and says so. Before 1800 OHM has fewer records: it often has the Holy Roman Empire without its member states, so many small German states show as the Empire, and Cliopatria fills more of the map. The map for 1500–1799 loads separately, a moment after the page opens.</p>
         <p>Occupations: OHM records named occupation regimes, such as the General Government in Poland or the Allied zones of Germany, and the map uses them. Where OHM shows the country that held the land in law, the map adds occupations from Cliopatria’s year-by-year outlines of each power’s control (1914-46), land annexed during the Second World War and given back afterward, and the breakaway regions and occupied parts of Ukraine since 1990. Each of these is listed under corrections.</p>
         <p>Alternative borders compare OHM with CShapes-Europe from 1816 and with Cliopatria before that. They count only when a source puts an area of at least 400 km² (5,000 km² for the coarser Cliopatria) in a different country for longer than a year. Territories that governed themselves under an overlord count as part of the overlord for this comparison, because the sources disagree on whether to show them.</p>
         <p>Cities appear when a country is highlighted: its largest cities that year (up to ten, and none smaller than 3% of its biggest), from about 390 cities (Europe's largest by 1900, and those that grew large after), placed in whichever country held them that year. Tap one for its population. Figures come from censuses where there is one for that year; between figures the map estimates, assuming steady growth, and says so. A hollow dot means there is no figure within ten years; the map then gives the nearest figures instead of an estimate. Some early figures are estimates for the wider city, so they are not always comparable with later census counts.</p>
@@ -252,27 +255,15 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
 <script>
 (() => {
 'use strict';
-const topo = JSON.parse(document.getElementById('topo').textContent);
+const topo = JSON.parse(document.getElementById('topo').textContent);     // the 1800-2026 map
 const D = JSON.parse(document.getElementById('data').textContent);
-const Y0 = D.years[0], Y1 = D.years[1], NY = Y1 - Y0 + 1;
-const U = D.units, R = D.refs, NM = D.names;
-const regionsObj = topo.objects.regions, geoms = regionsObj.geometries;
+const Y0 = D.years[0], Y1 = D.years[1], NY = Y1 - Y0 + 1;                 // the whole span, 1500-2026
+const U = D.units, NM = D.names;
 const $ = id => document.getElementById(id);
 const svg = $('map'), NS = 'http://www.w3.org/2000/svg';
 const el = (tag, attrs = {}, parent) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; };
 const fmt = n => Math.round(n).toLocaleString('en-US');
 const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-
-// ---------- histories: unit and source record per region per year ----------
-const NSIG = D.hist.length;
-const unitAt = new Int16Array(NSIG * NY).fill(-1), refAt = new Int32Array(NSIG * NY).fill(-1);
-D.hist.forEach((runs, s) => {
-  runs.forEach(([y, u, r], k) => {
-    const end = k + 1 < runs.length ? runs[k + 1][0] - 1 : Y1;
-    for (let yy = y; yy <= end; yy++) { unitAt[s * NY + yy - Y0] = u; refAt[s * NY + yy - Y0] = r; }
-  });
-});
-const uAt = (g, y) => unitAt[g.properties.s * NY + y - Y0];
 
 // ---------- geometry helpers ----------
 const ringD = r => { let d = 'M' + r[0][0].toFixed(1) + ',' + r[0][1].toFixed(1); for (let i = 1; i < r.length; i++) d += 'L' + r[i][0].toFixed(1) + ',' + r[i][1].toFixed(1); return d; };
@@ -286,20 +277,48 @@ function pathOf(g) {
   if (t === 'GeometryCollection') return g.geometries.map(pathOf).join('');
   return '';
 }
-const features = topojson.feature(topo, regionsObj).features;
 const bbox = f => { let a = Infinity, b = Infinity, c = -Infinity, d = -Infinity; const walk = x => { if (typeof x[0] === 'number') { if (x[0] < a) a = x[0]; if (x[0] > c) c = x[0]; if (x[1] < b) b = x[1]; if (x[1] > d) d = x[1]; } else x.forEach(walk); }; walk(f.geometry.coordinates); return [a, b, c, d]; };
-features.forEach(f => f.bb = bbox(f));
 // area of each piece in km² (map units are km), for ignoring specks when fitting a country to the screen
 const ringArea = r => { let t = 0; for (let i = 0, j = r.length - 1; i < r.length; j = i++) t += (r[j][0] + r[i][0]) * (r[j][1] - r[i][1]); return Math.abs(t) / 2; };
-features.forEach(f => { const g = f.geometry; const ps = g.type === 'Polygon' ? [g.coordinates] : g.type === 'MultiPolygon' ? g.coordinates : []; f.km2 = ps.reduce((t, p) => t + ringArea(p[0]) - p.slice(1).reduce((h, r) => h + ringArea(r), 0), 0); });
 const inRing = (r, x, y) => { let c = false; for (let i = 0, j = r.length - 1; i < r.length; j = i++) { const [xi, yi] = r[i], [xj, yj] = r[j]; if ((yi > y) !== (yj > y) && x < (xj - xi) * (y - yi) / (yj - yi) + xi) c = !c; } return c; };
 const inGeom = (g, x, y) => { const polys = g.type === 'Polygon' ? [g.coordinates] : g.type === 'MultiPolygon' ? g.coordinates : []; return polys.some(p => inRing(p[0], x, y) && !p.slice(1).some(h => inRing(h, x, y))); };
-const regionAt = (x, y) => features.find(f => x >= f.bb[0] && x <= f.bb[2] && y >= f.bb[1] && y <= f.bb[3] && inGeom(f.geometry, x, y));
-const altFeatures = topojson.feature(topo, topo.objects.alts).features;
-altFeatures.forEach(f => f.bb = bbox(f));
+
+// ---------- the two eras: each has its own map pieces ("regions") and who held each one, year by year ----------
+// 1800-2026 is in this page; 1500-1799 is a separate file, loaded soon after the page opens (or at once if it
+// opens on an earlier year). Countries, names and descriptions are shared lists, the same on both sides of 1800.
+const ERAS = D.eras.map((e, i) => ({ ...e, i, ny: e.y1 - e.y0 + 1, ready: false }));
+const eraOf = y => ERAS.find(e => y >= e.y0 && y <= e.y1);
+const LABELS = {}, AREA = {}, ALTS = [];     // by year: country names on the map, and each country's area
+function setupEra(E, tp, d) {
+  E.topo = tp; E.obj = tp.objects.regions; E.geoms = E.obj.geometries; E.R = d.refs;
+  const n = d.hist.length; E.unitAt = new Int16Array(n * E.ny).fill(-1); E.refAt = new Int32Array(n * E.ny).fill(-1);
+  d.hist.forEach((runs, s) => runs.forEach(([y, u, r], k) => {
+    const end = k + 1 < runs.length ? runs[k + 1][0] - 1 : E.y1;
+    for (let yy = y; yy <= end; yy++) { E.unitAt[s * E.ny + yy - E.y0] = u; E.refAt[s * E.ny + yy - E.y0] = r; }
+  }));
+  E.features = topojson.feature(tp, E.obj).features;
+  E.features.forEach(f => { f.bb = bbox(f); const g = f.geometry; const ps = g.type === 'Polygon' ? [g.coordinates] : g.type === 'MultiPolygon' ? g.coordinates : []; f.km2 = ps.reduce((t, p) => t + ringArea(p[0]) - p.slice(1).reduce((h, r) => h + ringArea(r), 0), 0); });
+  const af = topojson.feature(tp, tp.objects.alts).features; af.forEach(f => f.bb = bbox(f));
+  d.alts.forEach((a, li) => ALTS.push({ ...a, E, i: ALTS.length, f: af.find(f => f.properties.i === li) }));
+  for (let y = E.y0; y <= E.y1; y++) { const rows = LABELS[y] = d.labels[y] || []; const a = AREA[y] = {}; rows.forEach(r => a[r[0]] = (a[r[0]] || 0) + r[3]); }
+  E.ready = true;
+}
+setupEra(ERAS.find(e => !e.src), topo, D.late);
+const curEra = () => eraOf(year);
+// the country holding region g (a map piece of year y's era) in year y
+const uAt = (g, y) => { const E = eraOf(y); return E.unitAt[g.properties.s * E.ny + y - E.y0]; };
+const regionAt = (x, y, E = curEra()) => E.ready ? E.features.find(f => x >= f.bb[0] && x <= f.bb[2] && y >= f.bb[1] && y <= f.bb[3] && inGeom(f.geometry, x, y)) : null;
+function loadEra(E) {
+  if (E.ready || E.loading) return;
+  E.loading = fetch(E.src).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(d => {
+    setupEra(E, d.topo, d);
+    timelineFor = undefined; renderFixes();
+    if (curEra() === E) draw(); else renderTimeline();
+  }).catch(() => { E.failed = true; if (curEra() === E) draw(); });
+}
 
 // static layers
-$('land').setAttribute('d', pathOf(topojson.merge(topo, geoms)));
+$('land').setAttribute('d', pathOf(topojson.merge(topo, topo.objects.regions.geometries)));
 $('lakes').setAttribute('d', pathOf({ type: 'GeometryCollection', geometries: topojson.feature(topo, topo.objects.lakes).features.map(f => f.geometry) }));
 $('grat').setAttribute('d', pathOf({ type: 'GeometryCollection', geometries: topojson.feature(topo, topo.objects.grat).features.map(f => f.geometry) }));
 $('edge').setAttribute('d', pathOf({ type: 'GeometryCollection', geometries: topojson.feature(topo, topo.objects.edge).features.map(f => ({ type: 'Polygon', coordinates: [f.geometry.coordinates] })) }));
@@ -342,14 +361,14 @@ function depText(u) {
 const cache = new Map();
 function yearGeo(y) {
   if (cache.has(y)) return cache.get(y);
+  const E = eraOf(y); if (!E.ready) return null;       // that era's map is still loading
   const by = new Map();
-  for (const g of geoms) { const u = uAt(g, y); if (u < 0) continue; if (!by.has(u)) by.set(u, []); by.get(u).push(g); }
+  for (const g of E.geoms) { const u = uAt(g, y); if (u < 0) continue; if (!by.has(u)) by.set(u, []); by.get(u).push(g); }
   const fills = [];
-  for (const [u, gs] of by) fills.push({ u, d: pathOf(topojson.merge(topo, gs)) });
-  const borders = pathOf(topojson.mesh(topo, regionsObj, (a, b) => { const ua = uAt(a, y), ub = uAt(b, y); return ua !== ub && !(ua >= 0 && ub >= 0 && (U[ua].ov === ub || U[ub].ov === ua)); }));
-  const vb = pathOf(topojson.mesh(topo, regionsObj, (a, b) => { const ua = uAt(a, y), ub = uAt(b, y); return ua !== ub && ua >= 0 && ub >= 0 && (U[ua].ov === ub || U[ub].ov === ua); }));
-  const area = {};
-  for (const r of (D.labels[y] || [])) area[r[0]] = (area[r[0]] || 0) + r[3];
+  for (const [u, gs] of by) fills.push({ u, d: pathOf(topojson.merge(E.topo, gs)) });
+  const borders = pathOf(topojson.mesh(E.topo, E.obj, (a, b) => { const ua = uAt(a, y), ub = uAt(b, y); return ua !== ub && !(ua >= 0 && ub >= 0 && (U[ua].ov === ub || U[ub].ov === ua)); }));
+  const vb = pathOf(topojson.mesh(E.topo, E.obj, (a, b) => { const ua = uAt(a, y), ub = uAt(b, y); return ua !== ub && ua >= 0 && ub >= 0 && (U[ua].ov === ub || U[ub].ov === ua); }));
+  const area = AREA[y];
   const out = { fills, borders, vb, area };
   cache.set(y, out);
   if (cache.size > 40) cache.delete(cache.keys().next().value);
@@ -413,12 +432,12 @@ let year = 1815, place = null, selAlt = null;
 try { const h = parseInt(location.hash.slice(1), 10); if (h >= Y0 && h <= Y1) year = h; } catch (e) {}
 
 function nameOf(u, y) {
-  const row = (D.labels[y] || []).find(r => r[0] === u);
+  const row = (LABELS[y] || []).find(r => r[0] === u);
   return row ? NM[row[5]] : U[u].n;
 }
 // description of the state holding this country's place in year y: {t, f, e, x}
 function descOf(u, y) {
-  const row = (D.labels[y] || []).find(r => r[0] === u);
+  const row = (LABELS[y] || []).find(r => r[0] === u);
   return row && row[6] >= 0 ? D.desc[row[6]] : null;
 }
 function datesOf(d) {
@@ -429,13 +448,15 @@ function datesOf(d) {
   return '';
 }
 function draw() {
-  const G = yearGeo(year);
+  const E = curEra(), G = yearGeo(year);
+  if (!E.ready) loadEra(E);
+  const ld = $('loading'); ld.hidden = !!G; ld.textContent = E.failed ? `The map for ${E.y0}–${E.y1} could not be loaded.` : `Loading the map for ${E.y0}–${E.y1}…`;
   const fg = $('fills'); fg.textContent = '';
-  for (const f of G.fills) {
+  for (const f of G ? G.fills : []) {
     const p = el('path', { d: f.d, class: 'fill', 'data-u': f.u }, fg); p.setAttribute('style', `fill: ${fillVar(f.u)}`);
     if (isVassal(f.u)) { const h = el('path', { d: f.d, class: 'fill', 'data-u': f.u }, fg); h.setAttribute('style', `fill: url(#${hatchFor(U[f.u].ov, isOcc(f.u))})`); }
   }
-  $('borders').setAttribute('d', G.borders); $('vborders').setAttribute('d', G.vb);
+  $('borders').setAttribute('d', G ? G.borders : ''); $('vborders').setAttribute('d', G ? G.vb : '');
   drawAlts(); drawDim(); applyView();
   $('stamp').textContent = year; $('year').value = year;
   renderTimeline(); renderAlts();
@@ -449,7 +470,7 @@ let labelBoxes = [], focusBox = null;
 function drawLabels() {
   const g = $('labels'); g.textContent = ''; const fl = $('focuslabel'); fl.textContent = ''; focusBox = null;
   const fu = focusUnit();
-  const rows = (D.labels[year] || []).slice().sort((a, b) => (b[0] === fu) - (a[0] === fu) || b[4] - a[4]);
+  const rows = (LABELS[year] || []).slice().sort((a, b) => (b[0] === fu) - (a[0] === fu) || b[4] - a[4]);
   const k = pxPerKm(); if (!k) return;
   const r = svg.getBoundingClientRect(); const placed = []; labelBoxes = placed;
   for (const [u, x, y, area, varea, ni] of rows) {
@@ -480,11 +501,11 @@ function drawLabels() {
 }
 
 // ---------- alternative borders ----------
-const altsNow = () => D.alts.map((a, i) => ({ ...a, i })).filter(a => a.y0 <= year && year <= a.y1).sort((a, b) => b.km2 - a.km2);
+const altsNow = () => ALTS.filter(a => a.y0 <= year && year <= a.y1).sort((a, b) => b.km2 - a.km2);
 function drawAlts() {
   const g = $('alts'); g.textContent = '';
   for (const a of altsNow()) {
-    const f = altFeatures.find(f => f.properties.i === a.i); if (!f) continue;
+    const f = a.f; if (!f) continue;
     const d = pathOf(f.geometry);
     el('path', { d, class: 'althalo' }, g);
     el('path', { d, class: 'altline' + (selAlt === a.i ? ' on' : ''), 'data-a': a.i }, g);
@@ -513,8 +534,8 @@ const SRCNAME = { cshapes: 'CShapes-Europe', cliopatria: 'Cliopatria', ohm: 'Ope
 const years = a => a.y0 === a.y1 ? String(a.y0) : `${a.y0}–${a.y1}`;
 const defUnit = a => { const f = regionAt(a.x, a.y); const u = f ? uAt(f, year) : -1; return u >= 0 ? u : a.d; };
 const altTitle = a => `${nameOf(defUnit(a), year)} or ${nameOf(a.a, year)}?`;
-function refLine(ri) {
-  const r = R[ri]; if (!r) return '';
+function refLine(r) {
+  if (!r) return '';
   if (r.t === 'ohm') return `This map follows OpenHistoricalMap: <a href="https://www.openhistoricalmap.org/relation/${r.id}" target="_blank" rel="noopener">${esc(r.n)}</a> (${esc(r.s || '?')} to ${esc(r.e || 'open')}).`;
   if (r.t === 'bridge') return `This map carries the OpenHistoricalMap record <a href="https://www.openhistoricalmap.org/relation/${r.id}" target="_blank" rel="noopener">${esc(r.n)}</a> across a gap of a year or two in its data.`;
   if (r.t === 'cs') return `OpenHistoricalMap has no record here, so this map uses CShapes-Europe (“${esc(r.n)}”, ${r.s}–${r.e}).`;
@@ -524,14 +545,15 @@ function refLine(ri) {
 }
 function altText(a) {
   const src = SRCNAME[a.src];
-  const why = a.src === 'ohm' ? '' : R[a.r] && (R[a.r].t === 'ohm' || R[a.r].t === 'bridge') ? ' OpenHistoricalMap matched the historical record more often than the other sources in our checks, so the map uses it by default.' : '';
-  return `<p><b>${esc(src)}</b> puts this area (about ${fmt(a.km2)} km²) in <b>${esc(nameOf(a.a, year))}</b> in ${years(a)}. The map shows <b>${esc(nameOf(defUnit(a), year))}</b>.</p><p class="muted">${refLine(a.r)}${why}</p>`;
+  const r = a.E.R[a.r];
+  const why = a.src === 'ohm' ? '' : r && (r.t === 'ohm' || r.t === 'bridge') ? ' OpenHistoricalMap matched the historical record more often than the other sources in our checks, so the map uses it by default.' : '';
+  return `<p><b>${esc(src)}</b> puts this area (about ${fmt(a.km2)} km²) in <b>${esc(nameOf(a.a, year))}</b> in ${years(a)}. The map shows <b>${esc(nameOf(defUnit(a), year))}</b>.</p><p class="muted">${refLine(r)}${why}</p>`;
 }
 // fromList: picked in the side panel, so the map zooms to fit the area, the way it does for a country
 function selectAlt(i, fromList) {
   selAlt = selAlt === i ? null : i;
   drawAlts(); drawBadges(); renderAlts();
-  const f = selAlt != null && altFeatures.find(f => f.properties.i === i);
+  const f = selAlt != null && ALTS[i].f;
   if (!f) return;
   if (fromList) { if (place) { place = null; selCity = null; draw(); } fitBox(f.bb); return; }   // a highlighted country lets go, so the area is not dimmed
   const [a0, b0, a1, b1] = f.bb;
@@ -558,15 +580,22 @@ function click(ev) {
   selCity = null;
   if (!f || (place && u === cur)) place = null;          // tapping the highlighted country again, or the sea, clears it
   else {
-    place = { x, y, s: f.properties.s }; popClosed = false;
-    const hit = altsNow().find(a => { const af = altFeatures.find(g => g.properties.i === a.i); return af && x >= af.bb[0] && x <= af.bb[2] && y >= af.bb[1] && y <= af.bb[3] && inGeom(af.geometry, x, y); });
+    place = { x, y, s: f.properties.s, E: curEra() }; popClosed = false;
+    const hit = altsNow().find(a => { const af = a.f; return af && x >= af.bb[0] && x <= af.bb[2] && y >= af.bb[1] && y <= af.bb[3] && inGeom(af.geometry, x, y); });
     if (hit) { selAlt = hit.i; drawAlts(); drawBadges(); renderAlts(); }
   }
   drawPin(); drawDim(); drawLabels(); drawBadges(); drawCities(); renderTimeline();
   if (place && u >= 0 && u !== cur) fitUnit(u); else renderPop();     // a newly highlighted country is brought fully into view
 }
 // dim everything outside the country that holds the selected place this year
-const focusUnit = () => place ? unitAt[place.s * NY + year - Y0] : -1;
+// the tapped spot is kept as a point, so it finds its map piece again when the year moves into the other era
+function placeUnit(y) {
+  if (!place) return -1;
+  const E = eraOf(y); if (!E.ready) return -1;
+  if (place.E !== E) { const f = regionAt(place.x, place.y, E); place.E = E; place.s = f ? f.properties.s : -1; }
+  return place.s < 0 ? -1 : E.unitAt[place.s * E.ny + y - E.y0];
+}
+const focusUnit = () => placeUnit(year);
 function drawDim() {
   const p = $('dim'); const u = focusUnit();
   if (u < 0) { p.setAttribute('d', ''); return; }
@@ -589,7 +618,9 @@ function drawPin() {
 }
 // ---------- cities: shown inside the highlighted country; tap one for its population that year ----------
 const CSRC = ['Wikidata', 'German Wikipedia', 'English Wikipedia', 'Chandler, de Vries and Mitchell (estimates for the wider city)', 'the city’s article in another Wikipedia edition', 'UN Statistics Division'];
-const CITIES = D.cities.map(([n, x, y, s, P], i) => ({ i, n, x, y, s, P }));
+const CITIES = D.cities.map(([n, x, y, ss, P], i) => ({ i, n, x, y, ss, P }));
+// who held the city in year y (-2: that era's map has not loaded yet)
+const cityUnit = (c, y) => { const E = eraOf(y); if (!E.ready) return -2; const s = c.ss[E.i]; return s < 0 ? -1 : E.unitAt[s * E.ny + y - E.y0]; };
 let selCity = null, cityDots = [];
 // population in year y: the figure for that year, or an estimate between the figures either side (steady growth)
 function popAt(c, y) {
@@ -613,7 +644,7 @@ function cityAt(ev) {
 function focusCities() {
   const fu = focusUnit(), k = pxPerKm(), r = svg.getBoundingClientRect();
   if (fu < 0 || !k) return [];
-  let inside = CITIES.filter(c => unitAt[c.s * NY + year - Y0] === fu).map(c => ({ c, p: popAt(c, year) }))
+  let inside = CITIES.filter(c => cityUnit(c, year) === fu).map(c => ({ c, p: popAt(c, year) }))
     .filter(d => d.p.k !== 'none' || Math.abs(d.p.a[0] - year) <= 25)      // no figure within 25 years: its size then is unknown, so leave it out
     .sort((a, b) => b.p.v - a.p.v);
   if (inside.length) { const top = inside[0].p.v; inside = inside.filter((d, n) => n < 10 && d.p.v >= top * 0.03); }   // the 10 largest, none under 3% of the biggest
@@ -669,23 +700,29 @@ function cityHtml(d) {
     : p.k === 'gap' ? `No figure within ten years of ${year}. The nearest are ${fmt(p.a[1])} in ${p.a[0]} and ${fmt(p.b[1])} in ${p.b[0]}. ${src}`
     : p.k === 'near' ? `No figure for ${year}. Shown: the nearest, from ${p.a[0]}. ${src}`
     : `No figure near ${year}. The nearest is ${fmt(p.a[1])} in ${p.a[0]}. ${src}`;
-  // chart of all the figures over the map's whole span, with this year marked; under it, who held the city
+  // chart of all the figures, from the first one (or 1800, or the year shown, if earlier) to the end of the map, with
+  // this year marked; under it, who held the city
   const W = 300, H = 50, vmax = Math.max(...c.P.map(q => q[1])) * 1.08;
-  const X = v => 4 + (v - Y0) / (Y1 - Y0) * (W - 8), Y = v => H - 12 - v / vmax * (H - 16);
+  const C0 = Math.floor(Math.min(c.P[0][0], year, 1800) / 50) * 50, step = Y1 - C0 > 300 ? 100 : 50;
+  const X = v => 4 + (v - C0) / (Y1 - C0) * (W - 8), Y = v => H - 12 - v / vmax * (H - 16);
   const line = c.P.map((q, j) => (j ? 'L' : 'M') + X(q[0]).toFixed(1) + ',' + Y(q[1]).toFixed(1)).join('');
-  const ticks = []; for (let t = Math.ceil(Y0 / 50) * 50; t <= Y1; t += 50) ticks.push(t);
+  const ticks = []; for (let t = Math.ceil(C0 / step) * step; t <= Y1; t += step) ticks.push(t);
   const chart = `<svg class="pchart" viewBox="0 0 ${W} ${H}" aria-hidden="true"><line class="now" x1="${X(year)}" x2="${X(year)}" y1="2" y2="${H - 11}"/><path class="ln" d="${line}"/>` +
     c.P.map(q => `<circle class="pt${q[2] === 3 ? ' c' : ''}${q[0] === year ? ' on' : ''}" cx="${X(q[0]).toFixed(1)}" cy="${Y(q[1]).toFixed(1)}" r="${q[0] === year ? 3.6 : 2.2}"/>`).join('') +
     c.P.map(q => `<circle class="hit" data-y="${q[0]}" cx="${X(q[0]).toFixed(1)}" cy="${Y(q[1]).toFixed(1)}" r="6"><title>${q[0]}: ${fmt(q[1])}</title></circle>`).join('') +
     (p.k === 'est' ? `<circle class="cur" cx="${X(year)}" cy="${Y(p.v).toFixed(1)}" r="3"/>` : '') +
     ticks.map(t => `<text class="ax" x="${X(t).toFixed(1)}" y="${H - 1}" text-anchor="${t === ticks[0] && X(t) < 16 ? 'start' : 'middle'}">${t}</text>`).join('') + `</svg>`;
-  const runs = []; for (let y = Y0; y <= Y1; y++) { const u = unitAt[c.s * NY + y - Y0]; if (runs.length && runs[runs.length - 1].u === u) runs[runs.length - 1].b = y; else runs.push({ u, a: y, b: y }); }
+  const runs = [];
+  for (let y = C0; y <= Y1; y++) {
+    const u = cityUnit(c, y), last = runs[runs.length - 1]; if (u === -2) continue;      // years whose map is still loading
+    if (last && last.u === u && last.b === y - 1) last.b = y; else runs.push({ u, a: y, b: y });
+  }
   const nm = r => r.u < 0 ? 'no country' : nameOf(r.u, r.a);
   const strip = `<div class="hstrip" role="group" aria-label="Who held ${esc(c.n)}">` + runs.map(r => {
       const l = (X(r.a - 0.5) / W * 100).toFixed(2), w = ((X(r.b + 0.5) - X(r.a - 0.5)) / W * 100).toFixed(2);
       return `<button type="button" data-y="${r.a}" title="${esc(nm(r))}, ${r.a === r.b ? r.a : r.a + '–' + r.b}" style="left:${l}%;width:${w}%;background:${swatchBg(r.u)}"></button>`; }).join('') +
     `<span class="now" style="left:${(X(year) / W * 100).toFixed(2)}%"></span></div>`;
-  const changes = runs.map((r, i) => `<li${r.a <= year && year <= r.b ? ' class="on"' : ''}><span class="sw" style="background:${swatchBg(r.u)}"></span><span>${r.a === Y0 && i === 0 ? r.a : r.a}${r.b > r.a ? '–' + (r.b === Y1 ? '' : r.b) : ''}</span><span>${esc(nm(r))}</span></li>`).join('');
+  const changes = runs.map(r => `<li${r.a <= year && year <= r.b ? ' class="on"' : ''}><span class="sw" style="background:${swatchBg(r.u)}"></span><span>${r.a}${r.b > r.a ? '–' + (r.b === Y1 ? '' : r.b) : ''}</span><span>${esc(nm(r))}</span></li>`).join('');
   return `<button type="button" class="x" aria-label="Close">×</button><div class="nm">${esc(c.n)}</div><div class="pop">${big} <small>people in ${year}</small></div><p>${esc(note)}</p>${chart}` +
     `<div class="hk">Held by</div>${strip}<ul class="hlist">${changes}</ul>`;
 }
@@ -698,7 +735,8 @@ function countryHtml(u) {
 }
 // where the border at the tapped spot comes from, in one line
 function srcShort() {
-  const r = place ? R[refAt[place.s * NY + year - Y0]] : null; if (!r) return '';
+  const E = curEra(); focusUnit();
+  const r = place && place.E === E && place.s >= 0 ? E.R[E.refAt[place.s * E.ny + year - E.y0]] : null; if (!r) return '';
   const link = `<a href="https://www.openhistoricalmap.org/relation/${r.id}" target="_blank" rel="noopener">${esc(r.n)}</a>`;
   const t = r.t === 'ohm' || r.t === 'bridge' ? `OpenHistoricalMap, ${link}`
     : r.t === 'cs' ? 'CShapes-Europe (OpenHistoricalMap has no record here)'
@@ -734,7 +772,7 @@ function countryMask(u) {
 // the box around a country, ignoring specks (the smallest pieces that together make up under 2% of its area)
 // the box to fit when a country is highlighted: all of it, apart from specks (the smallest 2% of its area)
 function unitBox(u) {
-  const fs = features.filter(f => uAt(f, year) === u).sort((p, q) => q.km2 - p.km2);
+  const fs = curEra().features.filter(f => uAt(f, year) === u).sort((p, q) => q.km2 - p.km2);
   const total = fs.reduce((t, f) => t + f.km2, 0); let sum = 0, a = Infinity, b = Infinity, c = -Infinity, d = -Infinity;
   for (const f of fs) {
     a = Math.min(a, f.bb[0]); b = Math.min(b, f.bb[1]); c = Math.max(c, f.bb[2]); d = Math.max(d, f.bb[3]);
@@ -746,7 +784,7 @@ function unitBox(u) {
 const partCache = new Map();
 function unitParts(u) {
   const key = u + ':' + year; if (partCache.has(key)) return partCache.get(key);
-  const fs = features.filter(f => uAt(f, year) === u), total = fs.reduce((t, f) => t + f.km2, 0), D = 1.5 * Math.sqrt(total);
+  const fs = curEra().features.filter(f => uAt(f, year) === u), total = fs.reduce((t, f) => t + f.km2, 0), D = 1.5 * Math.sqrt(total);
   const gap = (p, q) => Math.max(0, p[0] - q[2], q[0] - p[2], p[1] - q[3], q[1] - p[3]);
   const grp = fs.map((f, i) => i), root = i => grp[i] === i ? i : (grp[i] = root(grp[i]));
   for (let i = 0; i < fs.length; i++) for (let j = i + 1; j < fs.length; j++) if (gap(fs[i].bb, fs[j].bb) <= D) grp[root(i)] = root(j);
@@ -873,8 +911,8 @@ function hover(ev) {
 // ---------- time controls ----------
 function setYear(y) {
   y = Math.max(Y0, Math.min(Y1, y)); if (y === year) return;
-  const pu = focusUnit(); year = y;
-  if (pu >= 0 && !yearGeo(year).fills.some(g => g.u === pu)) { place = null; selCity = null; }   // the highlighted country no longer exists: highlight nothing
+  const pu = focusUnit(); year = y; const G = yearGeo(year);
+  if (pu >= 0 && G && !G.fills.some(g => g.u === pu)) { place = null; selCity = null; }   // the highlighted country no longer exists: highlight nothing
   if (selAlt != null && !altsNow().some(a => a.i === selAlt)) selAlt = null;
   draw();
 }
@@ -892,19 +930,20 @@ $('play').onclick = () => {
 document.addEventListener('keydown', e => { if (e.target.closest('input, button, a, summary, [role=button]')) return; if (e.key === 'ArrowLeft') setYear(year - 1); if (e.key === 'ArrowRight') setYear(year + 1); });
 
 // ---------- timeline: change per year and key events; filtered to the highlighted country ----------
-const AREA = {};
-for (let y = Y0; y <= Y1; y++) { const a = AREA[y] = {}; (D.labels[y] || []).forEach(r => a[r[0]] = (a[r[0]] || 0) + r[3]); }
-[1800, 1850, 1900, 1950, 2000].forEach(y => { const s = document.createElement('span'); s.textContent = y; s.style.left = ((y - Y0 + 0.5) / NY * 100) + '%'; $('ticks').appendChild(s); });
-const EVENTS = [[1806, 'Holy Roman Empire ends'], [1812, 'Napoleon at his height'], [1815, 'Congress of Vienna'], [1848, 'Revolutions'], [1861, 'Kingdom of Italy'], [1871, 'German Empire'], [1878, 'Congress of Berlin'],
+[1500, 1600, 1700, 1800, 1900, 2000].forEach(y => { const s = document.createElement('span'); s.textContent = y; s.style.left = ((y - Y0 + 0.5) / NY * 100) + '%'; $('ticks').appendChild(s); });
+const EVENTS = [[1527, 'Battle of Mohács'], [1553, 'Russia takes Kazan'], [1569, 'Union of Lublin'], [1579, 'Dutch Republic'], [1649, 'Peace of Westphalia'],
+  [1683, 'Ottomans at Vienna'], [1699, 'Treaty of Karlowitz'], [1714, 'Utrecht and Rastatt'], [1722, 'Russian Empire'], [1773, 'First partition of Poland'], [1796, 'Poland partitioned'],
+  [1806, 'Holy Roman Empire ends'], [1812, 'Napoleon at his height'], [1815, 'Congress of Vienna'], [1848, 'Revolutions'], [1861, 'Kingdom of Italy'], [1871, 'German Empire'], [1878, 'Congress of Berlin'],
   [1916, 'First World War'], [1919, 'New states'], [1939, 'Munich and after'], [1942, 'Axis at its height'], [1946, 'Occupation zones'], [1949, 'Two Germanys'], [1992, 'Soviet Union gone'], [2014, 'Crimea'], [2023, 'War in Ukraine']];
 function unitEvents(u) {
-  const by = {}; let pa = 0, pn = null;
-  let maxA = 0; for (let y = Y0; y <= Y1; y++) maxA = Math.max(maxA, AREA[y][u] || 0);
+  const by = {}; let pa = 0, pn = null, prev = false;
+  let maxA = 0; for (let y = Y0; y <= Y1; y++) if (AREA[y]) maxA = Math.max(maxA, AREA[y][u] || 0);
   const areaAt = y => { const a = AREA[y][u] || 0; return a < Math.max(20, maxA * 0.002) ? 0 : a; };   // ignore leftover slivers
   const add = (y, t, w) => { (by[y] = by[y] || { y, t: [], w: 0 }).t.push(t); by[y].w = Math.max(by[y].w, w); };
   for (let y = Y0; y <= Y1; y++) {
+    if (!AREA[y]) { prev = false; continue; }          // an era still loading
     const a = areaAt(y), n = a ? nameOf(u, y) : null;
-    if (y > Y0) {
+    if (prev) {
       if (a && !pa) add(y, `${n} begins`, 1e9);
       else if (!a && pa) add(y, `${pn} ends`, 1e9);
       else if (a && pa) {
@@ -913,9 +952,11 @@ function unitEvents(u) {
         if (Math.abs(d) > Math.max(1500, pa * 0.01)) add(y, `${d > 0 ? 'gains' : 'loses'} ${fmt(Math.abs(d))} km²`, Math.abs(d));
       }
     }
-    pa = a; pn = n;
+    pa = a; pn = n; prev = true;
   }
-  return Object.values(by).sort((a, b) => b.w - a.w).slice(0, 12).sort((a, b) => a.y - b.y).map(e => ({ y: e.y, t: e.t.join('; ') }));
+  // the biggest changes in each era, so the earlier centuries are not crowded out by the larger changes after 1800
+  const top = (a, n) => a.sort((p, q) => q.w - p.w).slice(0, n), ev = Object.values(by);
+  return [...top(ev.filter(e => e.y < 1800), 10), ...top(ev.filter(e => e.y >= 1800), 12)].sort((a, b) => a.y - b.y).map(e => ({ y: e.y, t: e.t.join('; ') }));
 }
 let timelineFor = undefined;
 function renderTimeline() {
@@ -925,7 +966,7 @@ function renderTimeline() {
     const sp = $('spark'); sp.textContent = ''; sp.setAttribute('viewBox', `0 0 ${NY} 26`);
     const vals = [];
     for (let y = Y0; y <= Y1; y++) {
-      if (y === Y0) { vals.push(0); continue; }
+      if (!AREA[y] || !AREA[y - 1]) { vals.push(0); continue; }
       if (key != null) vals.push(Math.abs((AREA[y][key] || 0) - (AREA[y - 1][key] || 0)));
       else { let t = 0; new Set([...Object.keys(AREA[y]), ...Object.keys(AREA[y - 1])]).forEach(k => t += Math.abs((AREA[y][k] || 0) - (AREA[y - 1][k] || 0))); vals.push(t / 2); }
     }
@@ -938,6 +979,9 @@ function renderTimeline() {
     $('events').querySelectorAll('button').forEach(b => b.onclick = () => { stop(); setYear(+b.dataset.y); });
   }
   document.querySelectorAll('.events button').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.y === year)));
+  // keep the events around this year in view: the row scrolls sideways
+  const row = $('events'), bs = [...row.querySelectorAll('button')], near = bs.filter(b => +b.dataset.y <= year).pop() || bs[0];
+  if (near && (near.offsetLeft < row.scrollLeft || near.offsetLeft + near.offsetWidth > row.scrollLeft + row.clientWidth)) row.scrollLeft = near.offsetLeft - row.clientWidth / 2 + near.offsetWidth / 2;
   document.querySelectorAll('#spark rect').forEach(r => r.classList.toggle('cur', +r.dataset.y === year));
 }
 
@@ -949,10 +993,14 @@ $('legend').innerHTML =
   `<div><svg viewBox="0 0 30 18"><defs><pattern id="lg-x" patternUnits="userSpaceOnUse" width="8" height="8" patternTransform="rotate(45)"><rect width="0.9" height="8" style="fill:${hueVar(U[osample].ov)};opacity:.32"/><rect width="8" height="0.9" style="fill:${hueVar(U[osample].ov)};opacity:.32"/></pattern></defs><rect width="30" height="18" style="fill:${fillVar(osample)}"/><rect width="30" height="18" fill="url(#lg-x)"/></svg><span>Crosshatch: occupied by another power, annexed without international recognition, or held by a breakaway government with another power's backing. The fill is the country that held the land in law; the lines take the occupier's color.</span></div>` +
   `<div><svg viewBox="0 0 30 18"><rect width="30" height="18" style="fill:var(--sunk)"/><rect x="3" y="3" width="24" height="12" style="fill:var(--alt-fill);stroke:var(--alt);stroke-width:1.6;stroke-dasharray:4 3"/></svg><span>Dashed outline and number: another source draws a different border here.</span></div>` +
   `<div><svg viewBox="0 0 30 18"><rect width="30" height="18" style="fill:var(--none)"/></svg><span>No source assigns this area to a country.</span></div>`;
-const fixes = R.filter(r => r.t === 'fix');
-$('nfix').textContent = fixes.length;
-$('fixes').innerHTML = fixes.map(r => `<li>${esc(r.note)} ${r.ev.map(([t, u]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`).join(' · ')}</li>`).join('');
+function renderFixes() {
+  const fixes = ERAS.filter(e => e.ready).flatMap(e => e.R.filter(r => r.t === 'fix'));
+  $('nfix').textContent = fixes.length;
+  $('fixes').innerHTML = fixes.map(r => `<li>${esc(r.note)} ${r.ev.map(([t, u]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`).join(' · ')}</li>`).join('');
+}
+renderFixes();
 
 draw();
+setTimeout(() => ERAS.forEach(loadEra), 1500);     // fetch the other era in the background, so the slider moves into it without a wait
 })();
 </script>

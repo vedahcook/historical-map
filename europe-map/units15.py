@@ -27,11 +27,11 @@ UNITS15 = {
     'BOU': ('Bouillon', None, 'BOU'), 'ORA': ('Orange', None, 'ORA'), 'GVA': ('Geneva', None, 'GVA'), 'GRI': ('Three Leagues', None, 'GRI'),
     'MUL': ('Mulhouse', None, 'MUL'), 'LOR': ('Lorraine', None, 'LOR'),
     # Italy and the Mediterranean
-    'VEN': ('Venice', None, 'VEN'), 'MLS': ('Milan', None, 'MLN'), 'MIL_F': ('Milan (French)', 'FRA', 'MLN'),
-    'MIL_S': ('Milan (Spanish)', 'ESP', 'MLN'), 'MIL_A': ('Milan (Austrian)', 'AUT', 'MLN'),
-    'NAP_S': ('Naples (Spanish)', 'ESP', 'NAP'), 'NAP_A': ('Naples (Austrian)', 'AUT', 'NAP'),
-    'SIC_S': ('Sicily (Spanish)', 'ESP', 'SIC'), 'SIC_V': ('Sicily (Savoyard)', 'SAV', 'SIC'), 'SIC_A': ('Sicily (Austrian)', 'AUT', 'SIC'),
-    'SDS': ('Sardinia (Spanish)', 'ESP', 'SDS'), 'SDA': ('Sardinia (Austrian)', 'AUT', 'SDS'),
+    'VEN': ('Venice', None, 'VEN'), 'MLS': ('Duchy of Milan', None, 'MLN'), 'MIL_F': ('Duchy of Milan', 'FRA', 'MLN'),
+    'MIL_S': ('Duchy of Milan', 'ESP', 'MLN'), 'MIL_A': ('Duchy of Milan', 'AUT', 'MLN'),
+    'NAP_S': ('Kingdom of Naples', 'ESP', 'NAP'), 'NAP_A': ('Kingdom of Naples', 'AUT', 'NAP'),
+    'SIC_S': ('Kingdom of Sicily', 'ESP', 'SIC'), 'SIC_V': ('Kingdom of Sicily', 'SAV', 'SIC'), 'SIC_A': ('Kingdom of Sicily', 'AUT', 'SIC'),
+    'SDS': ('Kingdom of Sardinia', 'ESP', 'SDS'), 'SDA': ('Kingdom of Sardinia', 'AUT', 'SDS'),
     'SAV': ('Savoy', None, 'SAR'), 'SIE': ('Siena', None, 'SIE'), 'MAN': ('Mantua', None, 'MAN'), 'MIR': ('Mirandola', None, 'MIR'),
     'GUA': ('Guastalla', None, 'GUA'), 'NOV': ('Novellara', None, 'NOV'), 'CST': ('Castro', None, 'CST'), 'SLZ': ('Saluzzo', None, 'SLZ'),
     'ITM': ('Imperial fiefs in Italy', None, 'ITM'), 'NOL': ('Noli', None, 'NOL'), 'ARC': ('Duchy of the Archipelago', 'VEN', 'ARC'),
@@ -62,9 +62,9 @@ R15 = [
     # ---- British Isles ----
     (r'^Kingdom of England$', '2', 'ENG', 2, 0, E), (r'^(Commonwealth|Commonwealth of England, Scotland and Ireland)$', '2', 'CMW', 2, 0, E),
     (r'^Kingdom of Scotland$', '2', 'SCO', 2, 0, E), (r'^Earldom of Orkney$', '4', 'SCO', 2, 0, E),
-    (r'^Kingdom of Ireland$', '2', 'IRL', 2, 0, E), (r'^(Connacht|Leinster|Ulster|Clare)$', '4', 'IRL', 2, 0, E),
+    (r'^Kingdom of Ireland$', '2', 'IRL', 2, 0, E), (r'^(Connacht|Leinster|Ulster|Munster|Clare)$', '4', 'IRL', 2, 0, E),
     (r'^Kingdom of (Leinster|Thomond|Desmond)$', '2', 'GAE', 2, 0, E), (r'^Irish Catholic Confederation$', '2', 'ICC', 2, 0, E),
-    (r'^(Isle of Man|Guernsey|Jersey)$', '2', 'ENG', 2, 0, 1706), (r'^(Isle of Man|Guernsey|Jersey)$', '2', 'GBR', 2, 1707, E),
+    (r'^(Isle of Man|Guernsey|Jersey)$', '2', 'ENG', 2, 0, 1651), (r'^(Isle of Man|Guernsey|Jersey)$', '2', 'CMW', 2, 1652, 1659), (r'^(Isle of Man|Guernsey|Jersey)$', '2', 'ENG', 2, 1660, 1706), (r'^(Isle of Man|Guernsey|Jersey)$', '2', 'GBR', 2, 1707, E),
     (r'^(Pale of Calais)$', '3', 'ENG', 2, 0, E), (r'^Berwick-upon-Tweed$', '4', 'ENG', 2, 0, 1706), (r'^Dunkirk$', '4', 'ENG', 2, 1659, 1662),
     (r'^English Tangier$', '2', 'ENG', 2, 0, E), (r'^Gibraltar$', '2', 'GBR', 2, 0, E), (r'^Kingdom of Great Britain$', '2', 'GBR', 2, 0, E),
     # ---- France ----
@@ -144,7 +144,7 @@ R15 = [
     (r'^Duchy of Pomerania$', '4', 'POM', 2, 0, E), (r'^(Swedish Pomerania|Swedish Wismar|Duchy of Estonia|Swedish Livonia|Swedish Ingria.*)$', None, 'SWE', 2, 0, 1794),
     (r'^(Bremen-Verden|Principality of Verden)$', '4', 'SWE', 2, 0, 1714), (r'^(Bremen-Verden|Principality of Verden)$', '4', 'HAN', 2, 1715, 1794),
     (r'^Electorate of Cologne$', '4', 'KOL', 2, 0, E), (r'^Electorate of Mainz$', '4', 'MAI', 2, 0, E),
-    (r'^(Prince-Bishopric of Münster|Munster)$', '4', 'MUN', 2, 0, E), (r'^Prince-Bishopric of Würzburg$', '4', 'WRZ', 2, 0, E),
+    (r'^Prince-Bishopric of Münster$', '4', 'MUN', 2, 0, E), (r'^Prince-Bishopric of Würzburg$', '4', 'WRZ', 2, 0, E),
     (r'^Prince-Bishopric of Bamberg$', '4', 'BAM', 2, 0, E), (r'^Prince-Archbishopric of Salzburg$', '4', 'SAL', 2, 0, E),
     (r'^Hanover$', '4', 'HAN', 2, 0, 1794), (r'^Hesse-Kassel$', '4', 'HKA', 2, 0, 1794), (r'^Hesse-Darmstadt$', '4', 'HDA', 2, 0, 1794),
     (r'^(Margraviate of Baden-Durlach|Margraviate of Baden-Baden|Margraviate of Baden)$', '4', 'BAD', 2, 0, 1794),
@@ -185,7 +185,8 @@ R15 = [
     # ---- Ottoman Empire and its neighbors ----
     (r'^Ottoman Empire$', '2', 'OTT', 2, 0, E), (r'^(Eyalet of Cyprus|Eyalet of Crete|Eyalet of the Morea|Rumelia Eyalet|Temeşvar Eyâlet)$', '4', 'OTT', 2, 0, E),
     (r'^Principality of Wallachia$', '3', 'WAL', 3, 0, E), (r'^Prince-Bishopric of Montenegro$', '2', 'MNE', 2, 0, E),
-    (r'^Kingdom of Hungary$', '2', 'HUK', 2, 0, E), (r'^(Kingdom of Slavonia|Circulus .*)$', None, 'HUK', 2, 0, E),
+    (r'^Kingdom of Hungary$', '2', 'HUK', 2, 0, 1526), (r'^(Kingdom of Slavonia|Circulus .*)$', None, 'HUK', 2, 0, 1526),
+    (r'^Kingdom of Hungary$', '2', 'AUT', 2, 1527, E), (r'^(Kingdom of Slavonia|Circulus .*)$', None, 'AUT', 2, 1527, E),   # Habsburg kings from 1526
     (r'^(Transylvania|Banat of Temeswar|Slavonian Military Frontier|Banat Military Frontier|City of Fiume and its District|Galicia and Lodomeria|West Galicia|Bukovina)$', None, 'AUT', 2, 0, E),
     (r'^Mamluk Sultanate$', '2', 'MAM', 2, 0, E),
     (r'^(Afsharid Empire|Zandiyeh|Qajar Iran)$', '2', 'PER', 2, 0, E), (r'^(Erivan Khanate|Nakhichevan Khanate)$', '4', 'PER', 2, 0, E),

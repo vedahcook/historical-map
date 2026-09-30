@@ -6,7 +6,7 @@ populations from cities.txt).
 Needs fills.json (candidate fills and their measured color separation, from the
 dataviz palette validator) and the Natural Earth lakes/rivers files.
 """
-import json, pickle, sys, time, re
+import json, pickle, sys, time, re, os
 from collections import defaultdict
 import numpy as np
 import shapely
@@ -53,6 +53,12 @@ PREF = {'FRA': 'blue-2', 'GBR': 'red-2', 'RUS': 'green-1', 'AUT': 'yellow-1', 'P
         'ESP': 'orange-1', 'SWE': 'blue-1', 'DEN': 'magenta-1', 'SAR': 'green-2', 'NAP': 'orange-2', 'PAP': 'yellow-2',
         'GRE': 'blue-1', 'NLD': 'orange-1', 'BAV': 'blue-1', 'SAX': 'green-1', 'POR': 'violet-1', 'SUI': 'red-1', 'USA': 'blue-2'}
 fams = sorted({f for p in adj for f in p} | {UNITS[k][2] for k in K})
+# a country keeps its color across 1800: the early map (1500-1799) takes the colors of every country the later map
+# already has (KEEP_COLORS names the later map's data.json) and colors only the countries of its own around them
+KEEP = {}
+if os.environ.get('KEEP_COLORS'):
+    for u in json.load(open(os.environ['KEEP_COLORS']))['units']:
+        KEEP[UNITS[u['k']][2]] = u['c']
 nb = defaultdict(dict)
 for (a, b), L in adj.items(): nb[a][b] = L; nb[b][a] = L
 names = fills['names']; NI = {n: i for i, n in enumerate(names)}
@@ -65,8 +71,8 @@ def sep(i, j):
 def color_all():
     """Greedy coloring, most-constrained country first. Each country takes the fill that is
     most distinct from its already-colored neighbors, weighting long shared borders more."""
-    col = {}
-    left = set(fams)
+    col = {f: c for f, c in KEEP.items() if f in fams}
+    left = set(fams) - set(col)
     while left:
         f = max(sorted(left), key=lambda f: (f in PREF, len({col[g] for g in nb[f] if g in col}), sum(nb[f].values())))   # sorted: same colors every run
         left.discard(f)
@@ -172,7 +178,16 @@ SHORT = {'United Kingdom of Great Britain and Ireland': 'United Kingdom', 'Kingd
          'Kingdom of Portugal': 'Portugal', 'Electorate of Hesse': 'Hesse-Kassel', 'Grand Duchy of Hesse': 'Hesse-Darmstadt', 'Hesse': 'Hesse-Darmstadt',
          'Frankfur': 'Frankfurt', 'Dictatorship of Garibaldi': "Garibaldi's Sicily", 'Cyprus Protectorate': 'Cyprus',
          'French protectorate of Tunisia': 'Tunisia', 'Alawi Sultanate': 'Morocco', 'Regency of Algiers': 'Algiers', 'Qajar Iran': 'Persia',
-         'Kingdom of Kartli-Kakheti': 'Kartli-Kakheti', 'North German Confederation': 'North German Confederation', 'Cretan State': 'Crete'}
+         'Kingdom of Kartli-Kakheti': 'Kartli-Kakheti', 'North German Confederation': 'North German Confederation', 'Cretan State': 'Crete',
+         'Duchy of the Archipelago': 'Duchy of the Archipelago', 'Poland-Lithuania': 'Polish–Lithuanian Commonwealth', 'Khanate of Qazan': 'Khanate of Kazan',
+         'Bauernrepublik Dithmarschen': 'Dithmarschen', 'Free State of the Three Leagues': 'Three Leagues', 'Monastic State of the Order of Malta': 'Knights of Malta',
+         'Knights Hospitaller': 'Knights of St John', 'State of the Teutonic Order': 'Teutonic Order', 'Irish Catholic Confederation': 'Confederate Ireland',
+         'Commonwealth of England, Scotland and Ireland': 'Commonwealth of England', 'Commonwealth': 'Commonwealth of England', 'Savoyard state': 'Savoy',
+         'Duchy of Schleswig-Holstein-Gottorp': 'Holstein-Gottorp', 'County of Novellara and Bagnolo': 'Novellara', 'Sovereign Duchy of Bouillon': 'Bouillon',
+         'Principality of Palatinate-Sulzbach': 'Palatinate-Sulzbach', 'Duchy of Palatinate-Zweibrücken': 'Palatinate-Zweibrücken', 'Free County of Burgundy': 'Franche-Comté',
+         'Duchy of Courland and Semigallia': 'Courland', 'County of East Frisia': 'East Frisia', 'County of Guastalla': 'Guastalla', 'Marquisate of Saluzzo': 'Saluzzo',
+         'Republic of the Seven United Netherlands': 'Dutch Republic', 'Swedish Empire': 'Sweden', 'Kingdom of Sweden': 'Sweden', 'Tsardom of Russia': 'Tsardom of Russia',
+         'Grand Principality of Moscow': 'Muscovy', 'Kingdom of Great Britain': 'Great Britain', 'Kingdom of England': 'England', 'Kingdom of Scotland': 'Scotland'}
 SHORT.update({'Russian Soviet Federative Socialist Republic': 'Soviet Russia', 'Kingdom of Serbs, Croats and Slovenes': 'Kingdom of SCS',
     'Czech and Slovak Federative Republic': 'Czechoslovakia', 'Czechoslovak Federative Republic': 'Czechoslovakia', 'Czechoslovak Socialist Republic': 'Czechoslovakia',
     'Czechoslovak Republic': 'Czechoslovakia', 'FPR of Yugoslavia': 'Yugoslavia', 'SFR of Yugoslavia': 'Yugoslavia', 'Democratic Federal Yugoslavia': 'Yugoslavia',
@@ -219,12 +234,13 @@ def short(n, unit, y=1900):
     if m and len(m.group(2)) <= 16 and m.group(1) not in ('Republic',): return m.group(2)
     return n
 # countries whose smaller OHM records are provinces, not the country itself
-PIECES = {'AUT', 'DEN', 'NLD', 'GER', 'PRU', 'HRE', 'SAX', 'HAN', 'HKA', 'BAD', 'HDA', 'MKS', 'MKST', 'OLD', 'BRU', 'SAL', 'SWE', 'GBR', 'FRA', 'RUS', 'OTT', 'PAP', 'NAP'}
+PIECES = {'AUT', 'DEN', 'NLD', 'GER', 'PRU', 'HRE', 'SAX', 'HAN', 'HKA', 'BAD', 'HDA', 'MKS', 'MKST', 'OLD', 'BRU', 'SAL', 'SWE', 'GBR', 'FRA', 'RUS', 'OTT', 'PAP', 'NAP',
+          'HUK', 'PLK', 'PLC', 'LIT', 'HNL', 'SNL', 'ANL', 'JUL', 'PAL', 'ENG', 'IRL', 'VEN', 'MIL_S', 'BRA', 'ESP', 'SAV', 'SAR'}
 names_l, name_i = [], {}
 def nid(s):
     if s not in name_i: name_i[s] = len(names_l); names_l.append(s)
     return name_i[s]
-lab = {}
+lab = {}; nodesc = {}; allfull = {}
 for y, rows in labels.items():
     out = []
     for unit, x, yy, area, varea, (src, r) in rows:
@@ -238,7 +254,10 @@ for y, rows in labels.items():
         # the full record name picks the description (the short label can be shared by several states)
         full = o['n'] if o and (o['l'] == '2' or unit not in PIECES) and unit not in KIND else UNITS[unit][0]
         if unit == 'AUT' and not (o and o['l'] == '2'): full = name
-        out.append([UI[K.index(unit)], round(x / 1000, 1), round(-yy / 1000, 1), round(area), round(varea), nid(name), desc_lookup(unit, full, y)])
+        di = desc_lookup(unit, full, y)
+        if di < 0: nodesc.setdefault((unit, full), []).append(y)
+        allfull.setdefault((unit, full, di), []).append(y)
+        out.append([UI[K.index(unit)], round(x / 1000, 1), round(-yy / 1000, 1), round(area), round(varea), nid(name), di])
     lab[y] = out
 
 units_out = []
@@ -270,8 +289,7 @@ data = {'years': [YEARS[0], YEARS[-1]], 'viewBox': [round(vb[0]), round(vb[1]), 
         'desc': [{'t': t, 'f': f, 'e': e, 'x': x} for (_u, _n, _a, _b, t, f, e, x) in DESC],
         'cities': cities}
 json.dump(data, open('data.json', 'w'), ensure_ascii=False, separators=(',', ':'))
-missing = sorted({(r[0], names_l[r[5]]) for rows in lab.values() for r in rows if r[6] < 0})
-print('labels without a description:', [(units_out[u]['k'], n) for u, n in missing])
+print('labels without a description:', [(u, n, min(ys), max(ys)) for (u, n), ys in sorted(nodesc.items())])
 # a description whose dates don't cover the year it is shown for is probably the wrong one
 yr = lambda v: int(re.findall(r'\d{3,4}', v)[-1]) if re.findall(r'\d{3,4}', v) else None
 odd = set()
@@ -281,6 +299,7 @@ for y, rows in lab.items():
         _u, _n, _a, _b, t, f, e, _x = DESC[r[6]]
         if (yr(f) and yr(f) > y + 1) or (e and yr(e) and yr(e) < y - 1): odd.add((units_out[r[0]]['k'], t, y))
 from itertools import groupby
+if os.environ.get('SHOWFULL'): print('ALLFULL', sorted((u, n, DESC[d][4] if d >= 0 else '', min(ys), max(ys)) for (u, n, d), ys in allfull.items()))
 print('descriptions outside their dates:', sorted({(k, t, min(y for kk, tt, y in odd if (kk, tt) == (k, t)), max(y for kk, tt, y in odd if (kk, tt) == (k, t))) for k, t, _ in odd}))
 print('regions', len(gfeats), 'alts', len(alts), 'refs', len(refs), 'units', len(units_out), round(time.time() - t0), 's')
 bad = [(a, b, names[col[a]], names[col[b]]) for (a, b) in adj if col[a] == col[b]]
