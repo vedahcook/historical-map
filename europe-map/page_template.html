@@ -5,7 +5,7 @@
 :root {
   --bg: #f2f4f1; --surface: #ffffff; --sunk: #e9ece7; --ink: #18201c; --muted: #56605a; --faint: #7d867f; --line: #d6dbd4;
   --accent: #1f5f6b; --accent-ink: #ffffff; --focus: #1f5f6b;
-  --water: #bfd1da; --outside: #e7ebe8; --grat: rgba(42,48,44,0.12); --none: #e6e4dc; --border: #2a302c; --vborder: rgba(42,48,44,0.55); --river: #9dbac7; --halo: rgba(255,255,255,0.88);
+  --water: #bfd1da; --outside: #e7ebe8; --grat: rgba(42,48,44,0.12); --none: #e6e4dc; --border: rgba(42,48,44,0.38); --vborder: rgba(42,48,44,0.28); --dim: rgba(242,244,241,0.74); --river: #9dbac7; --halo: rgba(255,255,255,0.88);
   --alt: #1f5f6b; --alt-fill: rgba(31,95,107,0.16); --sel: #18201c;
   /*FILLS_LIGHT*/
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -15,14 +15,14 @@
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
   --bg: #111513; --surface: #1a201d; --sunk: #151a18; --ink: #e6ece8; --muted: #a3aea7; --faint: #7f8a83; --line: #2e3632;
   --accent: #7fc4cf; --accent-ink: #0e1412; --focus: #7fc4cf;
-  --water: #14232a; --outside: #161b19; --grat: rgba(223,230,225,0.12); --none: #2a2e2b; --border: #dfe6e1; --vborder: rgba(223,230,225,0.5); --river: #2c4b57; --halo: rgba(17,21,19,0.85);
+  --water: #14232a; --outside: #161b19; --grat: rgba(223,230,225,0.12); --none: #2a2e2b; --border: rgba(223,230,225,0.34); --vborder: rgba(223,230,225,0.24); --dim: rgba(17,21,19,0.7); --river: #2c4b57; --halo: rgba(17,21,19,0.85);
   --alt: #7fc4cf; --alt-fill: rgba(127,196,207,0.2); --sel: #ffffff;
   /*FILLS_DARK*/
   color-scheme: dark; } }
 :root[data-theme="dark"] {
   --bg: #111513; --surface: #1a201d; --sunk: #151a18; --ink: #e6ece8; --muted: #a3aea7; --faint: #7f8a83; --line: #2e3632;
   --accent: #7fc4cf; --accent-ink: #0e1412; --focus: #7fc4cf;
-  --water: #14232a; --outside: #161b19; --grat: rgba(223,230,225,0.12); --none: #2a2e2b; --border: #dfe6e1; --vborder: rgba(223,230,225,0.5); --river: #2c4b57; --halo: rgba(17,21,19,0.85);
+  --water: #14232a; --outside: #161b19; --grat: rgba(223,230,225,0.12); --none: #2a2e2b; --border: rgba(223,230,225,0.34); --vborder: rgba(223,230,225,0.24); --dim: rgba(17,21,19,0.7); --river: #2c4b57; --halo: rgba(17,21,19,0.85);
   --alt: #7fc4cf; --alt-fill: rgba(127,196,207,0.2); --sel: #ffffff;
   /*FILLS_DARK*/
   color-scheme: dark;
@@ -63,15 +63,16 @@ button, select, input { font: inherit; color: inherit; }
 .badge text { fill: var(--accent-ink); font-family: var(--sans); font-weight: 700; text-anchor: middle; dominant-baseline: central; pointer-events: none; }
 .badge { cursor: pointer; }
 .badge.on circle { fill: var(--ink); }
-.lbl { font-family: var(--sans); font-weight: 600; fill: var(--ink); text-anchor: middle; dominant-baseline: central; pointer-events: none; }
-.lbl.big { font-weight: 700; }
+.lbl { font-family: var(--sans); font-weight: 500; fill: var(--ink); text-anchor: middle; dominant-baseline: central; pointer-events: none; }
+.lbl.big { font-weight: 500; }
+.dim { fill: var(--dim); fill-rule: evenodd; pointer-events: none; }
 .pin circle { fill: var(--sel); stroke: var(--halo); }
 .tip { position: absolute; pointer-events: none; background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; font-size: 0.82rem; box-shadow: 0 6px 18px rgba(0,0,0,0.15); max-width: 270px; z-index: 3; }
 .tip b { display: block; }
 .tip span { color: var(--muted); }
 .zoom { position: absolute; right: 10px; top: 10px; display: flex; flex-direction: column; gap: 4px; z-index: 2; }
 .zoom button { width: 36px; height: 36px; border-radius: 9px; border: 1px solid var(--line); background: var(--surface); cursor: pointer; font-weight: 700; font-size: 1.05rem; line-height: 1; }
-.yearstamp { position: absolute; left: 14px; top: 10px; font-family: var(--sans); font-weight: 700; font-size: 2.4rem; line-height: 1; color: var(--ink); opacity: 0.8; pointer-events: none; }
+.yearstamp { position: absolute; left: 14px; top: 10px; font-family: var(--sans); font-weight: 600; font-size: 2.4rem; line-height: 1; color: var(--ink); opacity: 0.8; pointer-events: none; }
 
 /* time bar */
 .timebar { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 6px 12px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 10px 14px; }
@@ -165,6 +166,8 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
           <g id="alts"></g>
           <g id="labels"></g>
           <g id="badges"></g>
+          <path id="dim" class="dim"></path>
+          <g id="focuslabel"></g>
           <g id="pin" class="pin"></g>
         </svg>
         <div class="zoom">
@@ -330,7 +333,7 @@ function applyView() {
   drawLabels(); drawBadges(); drawPin();
 }
 function zoomAt(f, cx, cy) {
-  const [x, y, w, h] = view; const nw = Math.min(Math.max(w / f, 250), VB0[2] * 1.3), k = nw / w;
+  const [x, y, w, h] = view; const nw = Math.min(Math.max(w / f, 40), VB0[2] * 1.3), k = nw / w;
   view = [cx - (cx - x) * k, cy - (cy - y) * k, w * k, h * k]; applyView();
 }
 function toMap(ev) { const r = svg.getBoundingClientRect(); return [shown[0] + (ev.clientX - r.left) / r.width * shown[2], shown[1] + (ev.clientY - r.top) / r.height * shown[3]]; }
@@ -373,8 +376,8 @@ function draw() {
     if (isVassal(f.u)) { const h = el('path', { d: f.d, class: 'fill', 'data-u': f.u }, fg); h.setAttribute('style', `fill: url(#${hatchFor(U[f.u].ov)})`); }
   }
   $('borders').setAttribute('d', G.borders); $('vborders').setAttribute('d', G.vb);
-  drawAlts(); applyView();
-  $('stamp').textContent = year; $('year').value = year;
+  drawAlts(); drawDim(); applyView();
+  $('stamp').textContent = year; $('year').value = year; $('tip').hidden = true;
   document.querySelectorAll('.events button').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.y === year)));
   document.querySelectorAll('#spark rect').forEach(r => r.classList.toggle('cur', +r.dataset.y === year));
   renderYear(); renderPlace(); renderAlts();
@@ -384,8 +387,9 @@ function draw() {
 // ---------- labels ----------
 let labelBoxes = [];
 function drawLabels() {
-  const g = $('labels'); g.textContent = '';
-  const rows = (D.labels[year] || []).slice().sort((a, b) => b[4] - a[4]);
+  const g = $('labels'); g.textContent = ''; const fl = $('focuslabel'); fl.textContent = '';
+  const fu = focusUnit();
+  const rows = (D.labels[year] || []).slice().sort((a, b) => (b[0] === fu) - (a[0] === fu) || b[4] - a[4]);
   const k = pxPerKm(); if (!k) return;
   const r = svg.getBoundingClientRect(); const placed = []; labelBoxes = placed;
   for (const [u, x, y, area, varea, ni] of rows) {
@@ -393,13 +397,14 @@ function drawLabels() {
     if (sx < 0 || sy < 0 || sx > r.width || sy > r.height) continue;
     const name = NM[ni]; const big = varea > 180000;
     const fs = big ? Math.min(20, 15 + Math.log10(varea / 180000) * 6) : varea > 40000 ? 14 : 13;
-    const w = name.length * fs * (big ? 0.6 : 0.56) + 6, h = fs * 1.3;
+    const w = name.length * fs * 0.55 + 6, h = fs * 1.3;
     const room = Math.sqrt(varea) * k * 1.7;
-    if (w > room * 1.6 && !(w < 70 && varea * k * k > 900)) continue;
+    const focused = u === fu;
+    if (!focused && w > room * 1.6 && !(w < 70 && varea * k * k > 900)) continue;
     const box = [sx - w / 2, sy - h / 2, sx + w / 2, sy + h / 2];
-    if (placed.some(b => box[0] < b[2] && box[2] > b[0] && box[1] < b[3] && box[3] > b[1])) continue;
+    if (!focused && placed.some(b => box[0] < b[2] && box[2] > b[0] && box[1] < b[3] && box[3] > b[1])) continue;
     placed.push(box);
-    const t = el('text', { x: x.toFixed(1), y: y.toFixed(1), class: 'lbl' + (big ? ' big' : '') }, g);
+    const t = el('text', { x: x.toFixed(1), y: y.toFixed(1), class: 'lbl' + (big ? ' big' : '') }, focused ? fl : g);
     t.setAttribute('style', `font-size:${(fs / k).toFixed(2)}px`);
     t.textContent = name;
   }
@@ -492,10 +497,24 @@ function click(ev) {
   const k = pxPerKm(); const onBadge = altsNow().find(a => { const p = badgeAt[a.i] || [a.x, a.y]; return Math.hypot((p[0] - x) * k, (p[1] - y) * k) <= 13; });
   if (onBadge) { selectAlt(onBadge.i); return; }
   const f = regionAt(x, y);
-  place = f ? { x, y, s: f.properties.s } : null;
-  const hit = altsNow().find(a => { const af = altFeatures.find(g => g.properties.i === a.i); return af && x >= af.bb[0] && x <= af.bb[2] && y >= af.bb[1] && y <= af.bb[3] && inGeom(af.geometry, x, y); });
-  if (hit) { selAlt = hit.i; drawAlts(); drawBadges(); renderAlts(); }
-  drawPin(); renderPlace();
+  const u = f ? uAt(f, year) : -1, cur = place ? unitAt[place.s * NY + year - Y0] : -2;
+  if (!f || (place && u === cur)) place = null;          // tapping the highlighted country again, or the sea, clears it
+  else {
+    place = { x, y, s: f.properties.s };
+    const hit = altsNow().find(a => { const af = altFeatures.find(g => g.properties.i === a.i); return af && x >= af.bb[0] && x <= af.bb[2] && y >= af.bb[1] && y <= af.bb[3] && inGeom(af.geometry, x, y); });
+    if (hit) { selAlt = hit.i; drawAlts(); drawBadges(); renderAlts(); }
+  }
+  drawPin(); drawDim(); drawLabels(); drawBadges(); renderPlace();
+}
+// dim everything outside the country that holds the selected place this year
+const focusUnit = () => place ? unitAt[place.s * NY + year - Y0] : -1;
+function drawDim() {
+  const p = $('dim'); const u = focusUnit();
+  $('yearcard').hidden = u >= 0;          // the year summary steps aside while a country is highlighted
+  if (u < 0) { p.setAttribute('d', ''); return; }
+  const f = yearGeo(year).fills.find(g => g.u === u);
+  const [x, y, w, h] = VB0, pad = Math.max(w, h);
+  p.setAttribute('d', `M${x - pad},${y - pad}H${x + w + pad}V${y + h + pad}H${x - pad}Z` + (f ? f.d : ''));
 }
 function drawPin() {
   const g = $('pin'); g.textContent = ''; if (!place) return; const k = pxPerKm(); if (!k) return;
@@ -503,7 +522,7 @@ function drawPin() {
 }
 function renderPlace() {
   const card = $('placecard');
-  if (!place) { card.innerHTML = `<h3>A place</h3><p class="hint">Click anywhere on the map to see who held it in ${year}, which source says so, and how it changed hands over the century.</p>`; return; }
+  if (!place) { card.innerHTML = `<h3>A place</h3><p class="hint">Tap a place on the map to highlight the country that held it in ${year}, see which source says so, and how it changed hands over the century. Tap the country again to clear the highlight.</p>`; return; }
   const s = place.s, u = unitAt[s * NY + year - Y0], ri = refAt[s * NY + year - Y0];
   const head = u < 0 ? `<div class="who"><span class="sw" style="background:var(--none)"></span><div><b>No country</b><span class="muted small">No source assigns this place in ${year}.</span></div></div>`
     : `<div class="who"><span class="sw" style="background:${fillVar(u)}"></span><div><b>${esc(nameOf(u, year))}</b><span class="muted small">${isVassal(u) ? 'Self-governing under ' + esc(nameOf(U[u].ov, year)) : 'in ' + year}</span></div></div>`;

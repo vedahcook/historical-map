@@ -42,7 +42,7 @@ print('regions', len(regions), round(time.time() - t0), 's')
 # labels: for each year and country, the largest piece inside the view, and a point well inside it
 tr = Transformer.from_crs(4326, 3035, always_xy=True)
 proj = lambda g: shapely.transform(g, lambda c: np.column_stack(tr.transform(c[:, 0], c[:, 1])))
-VIEW = shapely.box(-12, 34.8, 48, 71.5)
+VIEW = shapely.box(-25.5, 34.4, 49.5, 71.8)   # same as the page's map area
 rp = [proj(g) for g, s in regions]
 rarea = np.array([g.area / 1e6 for g in rp])
 rsig = np.array([s for g, s in regions])
@@ -62,7 +62,7 @@ for j, y in enumerate(YEARS):
             g = shapely.make_valid(proj(unary_union([regions[i][0] for i in idx])))
             parts = sorted(shapely.get_parts(g), key=lambda p: -p.area)
             main = parts[0]
-            vg = proj(VIEW)
+            vg = proj(shapely.segmentize(VIEW, 0.25))   # densify so the edges follow parallels and meridians
             main_v = shapely.make_valid(main).intersection(vg)
             if main_v.is_empty: cache[key] = None; continue
             mv = max([p for p in shapely.get_parts(main_v) if p.geom_type == 'Polygon'], key=lambda p: p.area)
