@@ -35,6 +35,9 @@ EDGE = ['GEO', 'AZE', 'ARM', 'MRNC', 'UKR', 'BLR', 'GEO_S', 'AZE_S', 'ARM_S', 'U
 GERMAN = {KI[k] for k in ['SAX', 'MKS', 'MKST', 'OLD', 'BRU', 'HKA', 'HDA', 'NAS', 'HAN', 'ANH', 'LIP', 'SCH', 'WALD', 'REU', 'SWB',
                           'SXW', 'SXA', 'SXC', 'SXM', 'HAM', 'BRE', 'LUB', 'FRK', 'HHO', 'BAV', 'WUR', 'BAD']}
 YA = np.array(YEARS)[None, :]
+HRE_MEMBERS = [KI[k] for k in ['AUT', 'BOK', 'BAV', 'SAX', 'SXO', 'BRA', 'PRU', 'PAL', 'JUL', 'POM', 'KOL', 'MAI', 'TRR', 'MUN', 'BAM', 'WRZ',
+               'SAL', 'HAN', 'HKA', 'HDA', 'BAD', 'WUR', 'NAS', 'WALD', 'LIP', 'SCH', 'ANH', 'SWB', 'MKS', 'MKST', 'OLD', 'EFR', 'HGO',
+               'DIT', 'LUB', 'BRE', 'HAM', 'LIE', 'HOH', 'HGE', 'LOR', 'LGE', 'SAV', 'HNL', 'SNL', 'ANL', 'FCO', 'GEL', 'BRU', 'BERG'] if k in KI]
 
 def conflicts(alt_u, yr_ok):
     a_s = sov(alt_u)
@@ -52,6 +55,10 @@ def conflicts(alt_u, yr_ok):
     c &= ~((YA >= 1918) & (YA <= 1921) & np.isin(du, [KI[k] for k in EDGE]) & (a_s == KI['RUS']))
     c &= ~((d_s == KI['ISL']) & (a_s == KI['DEN']))
     c &= ~((YA == 1918) & (d_s == KI['AUT']))
+    # the Holy Roman Empire before 1806: one source showing its "smaller states" and the other a particular member
+    # state is a difference in detail, not a different border
+    hre = (YA <= 1806) & (((alt_u == KI['HRE']) & np.isin(du, HRE_MEMBERS)) | ((du == KI['HRE']) & np.isin(alt_u, HRE_MEMBERS)))
+    c &= ~hre
     # timing: a one-year disagreement where the other source matches the map a year earlier or later
     sh = lambda M, k: np.concatenate([M[:, :1]] * k + [M[:, :-k]], 1) if k > 0 else np.concatenate([M[:, -k:]] + [M[:, -1:]] * -k, 1)
     cp = np.concatenate([np.zeros_like(c[:, :1]), c[:, :-1]], 1); cn = np.concatenate([c[:, 1:], np.zeros_like(c[:, :1])], 1)

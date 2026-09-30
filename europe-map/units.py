@@ -53,6 +53,10 @@ UNITS = {
     'MRS': ('Neutral Moresnet', None, 'MRS'), 'MLT': ('Malta', None, 'MLT'), 'RHC': ('Confederation of the Rhine', None, 'RHC'),
 }
 
+# the early era, 1500-1799 (units15.py)
+from units15 import UNITS15, R15, C15, HRE_MINOR15
+UNITS.update(UNITS15)
+
 # ---------- OHM ----------
 # (regex on the English name, level or None for any, unit, priority, valid-from year, valid-to year)
 # A role only counts for July-1 samples in [from, to].
@@ -136,6 +140,7 @@ _R = [
     (r'^(Electorate of Brandenburg|Silesia|Province of (South|West|New East) Prussia|New Silesia|Netze District|Duchy of Magdeburg|County of Mark|Duchy of Cleves|Kriegs- und Domänenkammer Minden|General Directory of War and Finance in Pomerania|Principality of (Paderborn|Hildesheim)|Kammer-Deputation für Lingen und Tecklenburg)$', '4', 'PRU', 2, 1795, 1806),
     (r'^(Bohemia|Gubernium Moravia et Silesia|Tirol|Styria|Austria below the Enns|Carinthia|Duchy of Carniola|Triest|Gorizia and Gradisca|Margraviate of Istria|Venetian Province|Transylvania|Slavonian Military Frontier|Banat Military Frontier|City of Fiume and its District|Circulus .*)$', '4', 'AUT', 2, 1795, 1805),
 ]
+_R = R15 + _R                      # early roles first: they win in the years they cover
 ROLES = [(re.compile(x[0]), x[1], x[2], x[3], x[4] if len(x) > 4 else 0, x[5] if len(x) > 5 else 9999) for x in _R]
 # any other level-4 record active 1800-1806 inside the Holy Roman Empire is one of its many small states
 HRE_MINOR = re.compile(r'^(Free Imperial City|Imperial (City|Abbey|County|Lordship)|Prince-(Bishopric|Provostry)|Princely Abbey|County of|Principality of (Hohenlohe|Nassau-Orange-Fulda)|Saint Blaise|Freies Reichsdorf|Sayn-Wittgenstein|Duchy of Palatinate)')
@@ -149,7 +154,10 @@ def ohm_roles(name, level):
     for rx, lv, unit, pri, y0, y1 in ROLES:
         if (lv is None or lv == level) and rx.search(name):
             out.append((unit, pri, y0, y1))
-    if not out and level == '4' and HRE_MINOR.search(name):
+    if not out and level == '4' and HRE_MINOR15.search(name):
+        out.append(('HRE', 2, 0, 1794))
+    # the later map's rule for 1795-1806, unaffected by early roles that end by 1799
+    if level == '4' and HRE_MINOR.search(name) and not any(b > 1799 for u, p, a, b in out):
         out.append(('HRE', 2, 1795, 1806))
     return out
 
@@ -167,7 +175,23 @@ def sovereign(u, year):
     if u is None: return None
     if u in NEW20: u = sovereign20(u, year)
     ov = UNITS[u][1]
-    if u in ('ROM_V', 'WAL', 'MOL', 'SRB', 'BUL', 'ERU', 'CRT', 'EGY', 'ALG', 'TUN'): return 'OTT'
+    if u in ('ROM_V', 'WAL', 'MOL', 'SRB', 'BUL', 'ERU', 'CRT', 'EGY', 'ALG', 'TUN', 'TRS', 'UHU', 'CRI'): return 'OTT'
+    if year <= 1799:
+        # early era: the same crown under different names, and unions the sources count differently
+        if 1519 <= year <= 1556 and u in ('ESP', 'AUT', 'HNL', 'FCO', 'SNL', 'MIL_S', 'NAP_S', 'SIC_S', 'SDS'): return 'AUT'   # Charles V
+        if u in ('IRL', 'CMW'): return 'ENG' if year < 1707 else 'GBR'
+        if u == 'SCO' and year >= 1603: return 'ENG'
+        if u == 'HNL': return 'AUT'
+        if u == 'DPR' and year >= 1618: return 'BRA'
+        if u == 'BRA': return 'PRU'
+        if u in ('VAL', 'GRI', 'GVA', 'MUL'): return 'SUI'
+        if u in ('SAV', 'SIC_V'): return 'SAR'
+        if u in ('LIT', 'PLC'): return 'PLK'
+        if u == 'CRL': return 'PLK'
+        if u == 'SWE' and year <= 1523: return 'DEN'           # the Kalmar Union
+        if u in ('HGO', 'DIT'): return 'DEN'
+        if u in ('QAS', 'RYA'): return 'RUS'
+    if u in UNITS15 and ov in ('ESP', 'AUT'): return ov        # viceroyalties and governorates of Madrid and Vienna
     if u == 'SRB_I': return 'SRB'
     if u in ('FIN', 'POL'): return 'RUS'
     if u == 'NOR' and year < 1905: return 'SWE'
@@ -252,7 +276,7 @@ _C = [
     (r'Septinsular Republic', 'ION_S'), (r'United Principalities', 'ROM_V'), (r'Confederation of the Rhine', 'RHC'),
     (r'German Confederation', None), (r'Nationalists|^Poles$|^Serbs$|Republic of Baden|County of Urgell|Dutch East Indies|French Africa|French Equatorial', None),
 ]
-_CR = [(re.compile(a), b) for a, b in _C]
+_CR = [(re.compile(a), b) for a, b in C15 + _C]      # early names first
 
 
 def clio_unit(name, from_year=0):

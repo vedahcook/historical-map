@@ -18,10 +18,14 @@ def_u, def_src = A['def_u'], A['def_src']
 # which record backs each answer: OHM relation id, CShapes/Cliopatria feature index, or correction number
 ref = np.where(def_src == 0, A['ohm_rec'], np.where(def_src == 1, A['cs_rec'], np.where(def_src == 2, A['cl_rec'],
                np.where(def_src == 3, A['ohm_rec'], def_src))))
-# bridged years: point at the record just before the gap
-for j in range(1, NY):
+# bridged years: point at the OHM record just before the gap (or, failing that, just after)
+last = np.zeros(len(faces), np.int64); nxt = np.zeros(len(faces), np.int64); back = np.zeros_like(ref)
+for j in range(NY - 1, -1, -1):
+    o = def_src[:, j] == 0; nxt[o] = A['ohm_rec'][o, j]; back[:, j] = nxt
+for j in range(NY):
+    o = def_src[:, j] == 0; last[o] = A['ohm_rec'][o, j]
     b = def_src[:, j] == 3
-    ref[b, j] = np.where(ref[b, j - 1] > 0, ref[b, j - 1], ref[b, j])
+    ref[b, j] = np.where(last[b] > 0, last[b], back[b, j])
 
 sig_of = {}; sigs = []; face_sig = np.full(len(faces), -1)
 for i in np.where(land)[0]:

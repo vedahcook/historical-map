@@ -59,6 +59,8 @@ for w in used:
         c = [tuple(x) for x in np.round(np.array(p), 4)]
         for a, b in zip(c[:-1], c[1:]):
             if a != b: S.add((a, b) if a < b else (b, a))
+for rid in ohm:                      # records built from member records: use their outline
+    if not R[rid]['m']: segs(P[rid].simplify(0.0005), S)
 for a, b in pickle.load(open('connectors.pkl', 'rb')):
     a, b = tuple(np.round(a, 4)), tuple(np.round(b, 4))
     if a != b: S.add((a, b) if a < b else (b, a))

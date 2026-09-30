@@ -12,6 +12,10 @@ BOX = box(*B)
 d = json.load(open('europe-borders-sources.json'))
 ways = d['ways']
 rels = {**{k: v for k, v in d['rels'].items()}, **{k: v for k, v in d['rels4'].items()}}
+# some early records are made of other records (a kingdom of its provinces): their members are in 'sub',
+# and their polygon is the union of the members'
+subs, sub = d.get('subs', {}), d.get('sub', {})
+todo = {**sub, **rels}
 
 def segs_of(wids):
     out = []
@@ -31,7 +35,8 @@ def parity(S, xs, ys):
     return ((straddle & (xi < X)).sum(1) % 2) == 1
 
 out = {}; t0 = time.time(); bad = []; gaps = []; connectors = []
-for rid, r in rels.items():
+for rid, r in todo.items():
+    if not r['m'] and subs.get(rid): continue
     wids = [m[0] for m in r['m']]
     lines = [LineString(ways[str(w)]) for w in wids if str(w) in ways and len(ways[str(w)]) >= 2]
     if not lines: bad.append((rid, r['t'].get('n'), 'no lines')); continue
@@ -64,5 +69,14 @@ for rid, r in rels.items():
     if not keep: bad.append((rid, r['t'].get('n'), 'empty')); continue
     poly = unary_union(keep)
     out[rid] = poly
+def build(rid, seen=()):
+    if rid in out: return out[rid]
+    kids = [build(str(c), seen + (rid,)) for c in subs.get(rid, []) if str(c) not in seen]
+    kids = [k for k in kids if k is not None and not k.is_empty]
+    if kids: out[rid] = unary_union(kids)
+    return out.get(rid)
+for rid, r in rels.items():
+    if not r['m'] and subs.get(rid): build(rid)
+out = {k: v for k, v in out.items() if k in rels}
 print('gaps closed:', len(gaps), sorted(gaps, key=lambda g: -g[2])[:25]); print(len(out), 'polygons', round(time.time() - t0), 's'); print('problems:', bad[:30], len(bad))
 pickle.dump(out, open('rel_polys.pkl', 'wb')); pickle.dump(gaps, open('gaps.pkl','wb')); pickle.dump(connectors, open('connectors.pkl','wb'))
