@@ -57,6 +57,9 @@ page = {'years': [E['years'][0], L['years'][1]], 'viewBox': L['viewBox'], 'home'
         'eras': [{'y0': E['years'][0], 'y1': E['years'][1], 'src': 'europe-borders-1500.json'},
                  {'y0': L['years'][0], 'y1': L['years'][1]}],
         'late': era(L)}
+import os
+if os.path.exists('flags_index.json'):      # flags (flags/build_flags.py): the page shows them from flags.webp
+    page['flags'] = json.load(open('flags_index.json'))
 json.dump(page, open('page_data.json', 'w'), ensure_ascii=False, separators=(',', ':'))
 json.dump({'topo': ET, **era(E)}, open('europe-borders-1500.json', 'w'), ensure_ascii=False, separators=(',', ':'))
 print('countries', len(units), '(later', len(L['units']), 'early', len(E['units']), ') names', len(names),

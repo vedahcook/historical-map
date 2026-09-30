@@ -77,7 +77,8 @@ button, select, input { font: inherit; color: inherit; }
 .clbl { cursor: pointer; }
 .mappop { font-family: var(--mapfont); position: absolute; z-index: 3; background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px 11px; box-shadow: 0 6px 18px rgba(0,0,0,0.16); font-size: 0.86rem; line-height: 1.4; }
 .mappop .x { position: absolute; right: 4px; top: 4px; width: 30px; height: 30px; border: 0; background: transparent; border-radius: 7px; cursor: pointer; color: var(--muted); font-size: 1.15rem; line-height: 1; }
-.mappop .nm { font-family: var(--serif); font-weight: 600; font-size: 1.05rem; line-height: 1.25; padding-right: 26px; }
+.mappop .nm { font-family: var(--serif); font-weight: 600; font-size: 1.05rem; line-height: 1.25; padding-right: 26px; display: flex; align-items: center; gap: 9px; }
+.mappop .flag { flex: none; border-radius: 2px; box-shadow: 0 0 0 1px var(--line); background-image: url(flags.webp); background-repeat: no-repeat; }
 .mappop .dt { color: var(--muted); font-size: 0.8rem; margin-top: 2px; }
 .mappop .src { color: var(--muted); font-size: 0.78rem; }
 .mappop p { margin: 4px 0 0; color: var(--muted); line-height: 1.38; }
@@ -232,6 +233,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
           <summary>Corrections to OHM (<span id="nfix"></span>)</summary>
           <ul id="fixes"></ul>
         </details>
+        <details id="flagcredits" hidden></details>
         <details>
           <summary>Sources and licenses</summary>
           <ul>
@@ -241,6 +243,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
             <li>Russian-occupied Ukraine, 2022-26: <a href="https://deepstatemap.live/en" target="_blank" rel="noopener">DeepState</a>’s map, the last update before July 1 each year.</li>
             <li>Breakaway regions (Transnistria, Abkhazia, South Ossetia, Artsakh, Crimea and the Donbas in 2014-21): Natural Earth’s disputed areas (public domain).</li>
             <li>City populations: Wikidata (CC0), census tables in city articles in English, German, French, Polish, Russian, Ukrainian, Greek, Turkish and other Wikipedia editions (CC BY-SA 4.0), the UN Statistics Division’s Demographic Yearbook city table (public domain via datasets/population-city), and estimates by Chandler, de Vries (for 1500–1800) and Mitchell as tabled in Wikipedia's <a href="https://en.wikipedia.org/wiki/Historical_urban_community_sizes" target="_blank" rel="noopener">Historical urban community sizes</a>. Gathered September 29, 2026.</li>
+            <li id="flagsrc" hidden>Flags: Wikimedia Commons, chosen through each state’s Wikidata entry (the flag dated to that year where Wikidata gives dates). Most are in the public domain; the others are credited under Flag credits. Flags of some early states are later reconstructions.</li>
             <li>Coastlines, lakes and rivers: Natural Earth (public domain).</li>
             <li>Projection: Lambert azimuthal equal-area for Europe (ETRS89-LAEA), so areas compare fairly.</li>
           </ul>
@@ -738,9 +741,17 @@ function cityHtml(d) {
   return `<button type="button" class="x" aria-label="Close">×</button><div class="nm">${esc(c.n)}</div><div class="pop">${big} <small>people in ${year}</small></div><p>${esc(note)}</p>${chart}` +
     `<div class="hk">Held by</div>${strip}<ul class="hlist">${changes}</ul>`;
 }
+// the state's flag that year (chosen through Wikidata, images from Wikimedia Commons): a piece of flags.webp, drawn at half size
+function flagHtml(u, y) {
+  const F = D.flags; if (!F) return '';
+  const row = (LABELS[y] || []).find(r => r[0] === u); if (!row || row[6] < 0) return '';
+  const run = (F.desc[row[6]] || []).find(r => r[1] <= y && y <= r[2]); if (!run) return '';
+  const [x, fy, w, h] = F.items[run[0]];
+  return `<span class="flag" role="img" aria-label="Flag" style="width:${w / 2}px;height:${h / 2}px;background-size:${F.sheet[0] / 2}px ${F.sheet[1] / 2}px;background-position:${-x / 2}px ${-fy / 2}px"></span>`;
+}
 function countryHtml(u) {
   const d = descOf(u, year);
-  return `<button type="button" class="x" aria-label="Close">×</button><div class="nm">${esc(d ? d.t : nameOf(u, year))}</div>` +
+  return `<button type="button" class="x" aria-label="Close">×</button><div class="nm">${flagHtml(u, year)}<span>${esc(d ? d.t : nameOf(u, year))}</span></div>` +
     (d && datesOf(d) ? `<div class="dt">${esc(datesOf(d))}</div>` : '') + (d ? `<p class="tx">${esc(d.x)}</p>` : '') +
     (isVassal(u) ? `<p>${esc(depText(u))}.</p>` : '') + srcShort() +
     (cityDots.length ? `<p class="hint">Tap a city for its population in ${year}.</p>` : '');
@@ -1031,6 +1042,12 @@ function renderFixes() {
   $('fixes').innerHTML = fixes.map(r => `<li>${esc(r.note)} ${r.ev.map(([t, u]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`).join(' · ')}</li>`).join('');
 }
 renderFixes();
+if (D.flags) {
+  const cr = D.flags.credits;
+  $('flagsrc').hidden = false;
+  $('flagcredits').hidden = false;
+  $('flagcredits').innerHTML = `<summary>Flag credits (${cr.length} not in the public domain)</summary><ul>` + cr.map(([f, by, lic, url]) => `<li><a href="${esc(url)}" target="_blank" rel="noopener">${esc(f.replace(/\.[a-z]+$/i, ''))}</a>${by ? ', ' + esc(by) : ''}${lic ? ' (' + esc(lic) + ')' : ''}</li>`).join('') + '</ul>';
+}
 
 draw();
 setTimeout(() => ERAS.forEach(loadEra), 1500);     // fetch the other era in the background, so the slider moves into it without a wait
