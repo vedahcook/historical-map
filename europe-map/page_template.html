@@ -68,7 +68,7 @@ button, select, input { font: inherit; color: inherit; }
 .lbl.big { font-weight: 450; }
 .lbl.off { opacity: var(--dimtext); }      /* names outside the highlighted country fade more than the map does */
 .dim { fill: var(--dim); fill-rule: evenodd; pointer-events: none; }
-.pin circle { fill: var(--sel); stroke: var(--halo); }
+.pin circle { fill: none; stroke: var(--accent); stroke-width: 2px; vector-effect: non-scaling-stroke; pointer-events: none; }
 .city circle { fill: var(--ink); stroke: var(--halo); cursor: pointer; }
 .city.nofig circle { fill: var(--surface); stroke: var(--ink); }
 .city.on circle { fill: var(--accent); stroke: var(--halo); }
@@ -557,10 +557,18 @@ function drawDim() {
   const [x, y, w, h] = VB0, pad = Math.max(w, h);
   p.setAttribute('d', `M${x - pad},${y - pad}H${x + w + pad}V${y + h + pad}H${x - pad}Z` + (f ? f.d : ''));
 }
-function drawPin() { $('pin').textContent = ''; }
-function drawPinOld() {
-  const g = $('pin'); g.textContent = ''; if (!place) return; const k = pxPerKm(); if (!k) return;
-  el('circle', { cx: place.x, cy: place.y, r: (4 / k).toFixed(2), 'stroke-width': (1.5 / k).toFixed(2) }, g);
+// a ring around each detached part of the highlighted country (up to 80 px across on screen), so a territory far
+// from the rest is easy to spot; also around the main part when the whole country is tiny. The popup keeps off them.
+let ringBoxes = [];
+function drawPin() {
+  const g = $('pin'); g.textContent = ''; ringBoxes = []; const u = focusUnit(), k = pxPerKm(); if (u < 0 || !k) return;
+  unitParts(u).forEach((p, n) => {
+    const w = (p.bb[2] - p.bb[0]) * k, h = (p.bb[3] - p.bb[1]) * k, size = Math.max(w, h);
+    if (size >= (n ? 80 : 22)) return;
+    const cx = (p.bb[0] + p.bb[2]) / 2, cy = (p.bb[1] + p.bb[3]) / 2, r = size / 2 + 9;
+    el('circle', { cx: cx.toFixed(2), cy: cy.toFixed(2), r: (r / k).toFixed(2) }, g);
+    const sx = (cx - shown[0]) * k, sy = (cy - shown[1]) * k; ringBoxes.push([sx - r, sy - r, sx + r, sy + r]);
+  });
 }
 // ---------- cities: shown inside the highlighted country; tap one for its population that year ----------
 const CSRC = ['Wikidata', 'German Wikipedia', 'English Wikipedia', 'Chandler, de Vries and Mitchell (estimates for the wider city)', 'the city’s article in another Wikipedia edition', 'UN Statistics Division'];
@@ -697,20 +705,27 @@ function countryMask(u) {
     return (at(x1, y1) - at(x0, y1) - at(x1, y0) + at(x0, y0)) / 255 * S * S; };
 }
 // the box around a country, ignoring specks (the smallest pieces that together make up under 2% of its area)
-// the box to fit when a country is highlighted: its main body, leaving out far-off detached pieces that are
-// small (the Azores, or Saxe-Coburg's Lichtenberg on the Saar), so the country is not drawn tiny
+// the box to fit when a country is highlighted: all of it, apart from specks (the smallest 2% of its area)
 function unitBox(u) {
-  const fs = features.filter(f => uAt(f, year) === u); if (!fs.length) return null;
-  const total = fs.reduce((t, f) => t + f.km2, 0), D = 1.5 * Math.sqrt(total);
+  const fs = features.filter(f => uAt(f, year) === u).sort((p, q) => q.km2 - p.km2);
+  const total = fs.reduce((t, f) => t + f.km2, 0); let sum = 0, a = Infinity, b = Infinity, c = -Infinity, d = -Infinity;
+  for (const f of fs) {
+    a = Math.min(a, f.bb[0]); b = Math.min(b, f.bb[1]); c = Math.max(c, f.bb[2]); d = Math.max(d, f.bb[3]);
+    sum += f.km2; if (sum >= total * 0.98) break;
+  }
+  return a < c ? [a, b, c, d] : null;
+}
+// the highlighted country's detached parts, grouped: pieces within 1.5 x the square root of its area (km) of each other
+const partCache = new Map();
+function unitParts(u) {
+  const key = u + ':' + year; if (partCache.has(key)) return partCache.get(key);
+  const fs = features.filter(f => uAt(f, year) === u), total = fs.reduce((t, f) => t + f.km2, 0), D = 1.5 * Math.sqrt(total);
   const gap = (p, q) => Math.max(0, p[0] - q[2], q[0] - p[2], p[1] - q[3], q[1] - p[3]);
-  // group pieces that lie within D km of each other
   const grp = fs.map((f, i) => i), root = i => grp[i] === i ? i : (grp[i] = root(grp[i]));
   for (let i = 0; i < fs.length; i++) for (let j = i + 1; j < fs.length; j++) if (gap(fs[i].bb, fs[j].bb) <= D) grp[root(i)] = root(j);
-  const groups = {}; fs.forEach((f, i) => { const r = root(i); (groups[r] = groups[r] || { km2: 0, bb: [Infinity, Infinity, -Infinity, -Infinity] });
-    const g = groups[r]; g.km2 += f.km2; g.bb = [Math.min(g.bb[0], f.bb[0]), Math.min(g.bb[1], f.bb[1]), Math.max(g.bb[2], f.bb[2]), Math.max(g.bb[3], f.bb[3])]; });
-  const list = Object.values(groups), big = Math.max(...list.map(g => g.km2));
-  const keep = list.filter(g => g.km2 === big || g.km2 >= total * 0.25);
-  return keep.reduce((a, g) => [Math.min(a[0], g.bb[0]), Math.min(a[1], g.bb[1]), Math.max(a[2], g.bb[2]), Math.max(a[3], g.bb[3])], [Infinity, Infinity, -Infinity, -Infinity]);
+  const groups = {}; fs.forEach((f, i) => { const g = groups[root(i)] = groups[root(i)] || { km2: 0, bb: [Infinity, Infinity, -Infinity, -Infinity] };
+    g.km2 += f.km2; g.bb = [Math.min(g.bb[0], f.bb[0]), Math.min(g.bb[1], f.bb[1]), Math.max(g.bb[2], f.bb[2]), Math.max(g.bb[3], f.bb[3])]; });
+  const out = Object.values(groups).sort((p, q) => q.km2 - p.km2); partCache.set(key, out); return out;
 }
 // try every candidate spot and keep the one that hides the least of what matters
 function bestSpot(w, h, cands, cost) {
@@ -745,7 +760,7 @@ function renderPop() {
     const G = 10, mx = (S[0] + S[2]) / 2, my = (S[1] + S[3]) / 2;
     const cands = [[S[2] + G, my - h / 2], [S[2] + G, S[1] - 8], [S[2] + G, S[3] - h + 8], [S[0] - G - w, my - h / 2], [S[0] - G - w, S[1] - 8], [S[0] - G - w, S[3] - h + 8],
       [mx - w / 2, S[1] - G - h], [S[0] - 8, S[1] - G - h], [S[2] - w + 8, S[1] - G - h], [mx - w / 2, S[3] + G], [S[0] - 8, S[3] + G], [S[2] - w + 8, S[3] + G], ...gridSpots(w, h, 16)];
-    spot = bestSpot(w, h, cands, r => ovl(r, S) * 1000 + sumOvl(r, ctrl) * 50 + sumOvl(r, fb) * 4 + sumOvl(r, others) * 2 + gapTo(r, S) * 3);
+    spot = bestSpot(w, h, cands, r => ovl(r, S) * 1000 + sumOvl(r, ctrl) * 50 + sumOvl(r, fb) * 4 + sumOvl(r, others) * 2 + sumOvl(r, ringBoxes) * 20 + gapTo(r, S) * 3);
   } else {
     // a country: cover as little of it as possible (its name above all), keep off the controls, stay near it
     const mask = countryMask(fu), bb = unitBox(fu), k = pxPerKm();
@@ -753,7 +768,7 @@ function renderPop() {
     const dots = cityDots.flatMap(o => o.lb ? [o.db, o.lb] : [o.db]);
     const cands = popReserve === 'right' ? gridSpots(w, h, 12).filter(([cx]) => cx >= sr.width - w - PAD - 1)
       : popReserve === 'bottom' ? gridSpots(w, h, 12).filter(([, cy]) => cy >= sr.height - h - PAD - 1) : gridSpots(w, h, 12);
-    spot = bestSpot(w, h, cands.length ? cands : gridSpots(w, h, 12), r => mask(r) + sumOvl(r, fb) * 30 + sumOvl(r, dots) * 3 + sumOvl(r, ctrl) * 50 + gapTo(r, ub) * 1.5);
+    spot = bestSpot(w, h, cands.length ? cands : gridSpots(w, h, 12), r => mask(r) + sumOvl(r, fb) * 30 + sumOvl(r, dots) * 3 + sumOvl(r, ctrl) * 50 + sumOvl(r, ringBoxes) * 30 + gapTo(r, ub) * 1.5);
   }
   pop.style.left = (spot[0] + sr.left - mb.left) + 'px'; pop.style.top = (spot[1] + sr.top - mb.top) + 'px';
 }
