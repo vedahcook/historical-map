@@ -239,7 +239,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
         <p>Before 1500 OHM draws only part of Europe, and some of its records change only every few decades, so Cliopatria draws most of the map; its outlines change in steps of a few years and are rough at the coasts, so the medieval map is approximate in its details. France’s great fiefs, such as Normandy, Burgundy and Toulouse, are shown in their own colors, striped in France’s color, since they owed homage to the French king; lands in France held by the kings of England are in England’s color, striped in France’s. The larger members of the Holy Roman Empire show as their own states. 324 checks of places and years against the historical record all match, 17 of them where either of two answers is fair (for example Toledo in 1100, when Alfonso VI was king of both León and Castile).</p>
         <p>Occupations: OHM records named occupation regimes, such as the General Government in Poland or the Allied zones of Germany, and the map uses them. Where OHM shows the country that held the land in law, the map adds occupations from Cliopatria’s year-by-year outlines of each power’s control (1914-46), land annexed during the Second World War and given back afterward, and the breakaway regions and occupied parts of Ukraine since 1990. Each of these is listed under corrections.</p>
         <p>Alternative borders compare OHM with CShapes-Europe from 1816 and with Cliopatria before that. They count only when a source puts an area of at least 400 km² (5,000 km² for the coarser Cliopatria) in a different country for longer than a year. Territories that governed themselves under an overlord count as part of the overlord for this comparison, because the sources disagree on whether to show them.</p>
-        <p>Cities appear when a country is highlighted: its largest cities that year (up to ten, and none smaller than 3% of its biggest), from about 450 cities (Europe's largest by 1900, those that grew large after, and large towns of 1500–1800), placed in whichever country held them that year. Tap one for its population. Figures come from censuses where there is one for that year; between figures the map estimates, assuming steady growth, and says so. A hollow dot means there is no figure within ten years (25 years before 1800); the map then gives the nearest figures instead of an estimate. Before 1800 the figures are mostly Jan de Vries’s estimates every 50 years for towns that reached 10,000 people, which cover western and central Europe but not the Ottoman lands or Russia; about 60 towns that were large then but not later (Leiden, Bruges, Toledo, Mantua and others) appear only in those centuries. Early figures are estimates, some for the wider city, so they are not always comparable with later census counts.</p>
+        <p>Cities appear when a country is highlighted: its largest cities that year (up to ten, and none smaller than 3% of its biggest), from about 465 cities (Europe's largest by 1900, those that grew large after, and large towns of 1000–1800), placed in whichever country held them that year. Tap one for its population. Figures come from censuses where there is one for that year; between figures the map estimates, assuming steady growth, and says so. A hollow dot means there is no figure within ten years (25 years before 1800, 50 before 1500); the map then gives the nearest figures instead of an estimate. Before 1800 the figures are mostly Jan de Vries’s estimates every 50 years for towns that reached 10,000 people, which cover western and central Europe but not the Ottoman lands or Russia; about 60 towns that were large then but not later (Leiden, Bruges, Toledo, Mantua and others) appear only in those centuries. Before 1500 there are figures for only about 60 cities, mostly Tertius Chandler’s estimates, so many countries show few or none. Early figures are estimates, some for the wider city, so they are not always comparable with later census counts.</p>
         <details>
           <summary>Corrections to OHM (<span id="nfix"></span>)</summary>
           <ul id="fixes"></ul>
@@ -646,9 +646,9 @@ const CITIES = D.cities.map(([n, x, y, ss, P], i) => ({ i, n, x, y, ss, P }));
 // who held the city in year y (-2: that era's map has not loaded yet)
 const cityUnit = (c, y) => { const E = eraOf(y); if (!E.ready) return -2; const s = c.ss[E.i]; return s < 0 ? -1 : E.unitAt[s * E.ny + y - E.y0]; };
 let selCity = null, cityDots = [];
-// how far away a figure may be for the map to estimate from it: ten years, or 25 before 1800, when the figures
-// (mostly de Vries's estimates) come every 50 years
-const NEAR = y => y < 1800 ? 25 : 10;
+// how far away a figure may be for the map to estimate from it: ten years, 25 before 1800, when the figures
+// (mostly de Vries's estimates) come every 50 years, and 50 before 1500, when they come every 50 to 100 years
+const NEAR = y => y < 1500 ? 50 : y < 1800 ? 25 : 10;
 // population in year y: the figure for that year, or an estimate between the figures either side (steady growth)
 function popAt(c, y) {
   let lo = null, hi = null;
@@ -672,7 +672,7 @@ function focusCities() {
   const fu = focusUnit(), k = pxPerKm(), r = svg.getBoundingClientRect();
   if (fu < 0 || !k) return [];
   let inside = CITIES.filter(c => cityUnit(c, year) === fu).map(c => ({ c, p: popAt(c, year) }))
-    .filter(d => d.p.k !== 'none' || Math.abs(d.p.a[0] - year) <= 25)      // no figure within 25 years: its size then is unknown, so leave it out
+    .filter(d => d.p.k !== 'none' || Math.abs(d.p.a[0] - year) <= Math.max(25, NEAR(year)))      // no figure that close: its size then is unknown, so leave it out
     .sort((a, b) => b.p.v - a.p.v);
   if (inside.length) { const top = inside[0].p.v; inside = inside.filter((d, n) => n < 10 && d.p.v >= top * 0.03); }   // the 10 largest, none under 3% of the biggest
   if (selCity != null && !inside.some(d => d.c.i === selCity) && cityUnit(CITIES[selCity], year) === fu) inside.push({ c: CITIES[selCity], p: popAt(CITIES[selCity], year) });   // and the open city
@@ -731,7 +731,7 @@ function cityHtml(d) {
   // chart of all the figures, from the first one (or 1800, or the year shown, if earlier) to the end of the map, with
   // this year marked; under it, who held the city
   const W = 300, H = 50, vmax = Math.max(...c.P.map(q => q[1])) * 1.08;
-  const C0 = Math.floor(Math.min(c.P[0][0], year, 1800) / 50) * 50, step = Y1 - C0 > 300 ? 100 : 50;
+  const C0 = Math.floor(Math.min(c.P[0][0], year, 1800) / 50) * 50, step = Y1 - C0 > 600 ? 200 : Y1 - C0 > 300 ? 100 : 50;
   const X = v => 4 + (v - C0) / (Y1 - C0) * (W - 8), Y = v => H - 12 - v / vmax * (H - 16);
   const line = c.P.map((q, j) => (j ? 'L' : 'M') + X(q[0]).toFixed(1) + ',' + Y(q[1]).toFixed(1)).join('');
   const ticks = []; for (let t = Math.ceil(C0 / step) * step; t <= Y1; t += step) ticks.push(t);

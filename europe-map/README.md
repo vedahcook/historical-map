@@ -47,17 +47,19 @@ The popup shows the flag the state used that year, from Wikimedia Commons, with 
 
 ## City populations
 
-`cities.txt` lists 451 of Europe's largest cities, with at most one figure per decade. Each figure is tagged with its source:
+`cities.txt` lists 465 of Europe's largest cities, with at most one figure per decade. Each figure is tagged with its source:
 
 | Code | Source |
 |---|---|
 | W | Wikidata |
 | E, G, O | Census tables in the city's English, German or other Wikipedia article |
 | U | UN Statistics Division, Demographic Yearbook city table |
-| C | Estimates by Chandler, de Vries and Mitchell, from Wikipedia's "Historical urban community sizes" |
+| C | Estimates by Chandler, de Vries, Mitchell and others, from Wikipedia's "Historical urban community sizes" |
 | V | Jan de Vries, *European Urbanization 1500–1800* (1984), via the europop dataset (public domain, CC0) |
 
-Before 1800 there are figures for about 250 cities, mostly de Vries's estimates every 50 years for towns of 10,000 or more (`cities/add_early.py`, then `cities/add_devries.py`). 58 of the cities, such as Leiden, Bruges and Toledo, were added because they had at least 20,000 people at some point before 1800; they have no later figures, so they appear only on the early map. There are no figures before 1500 yet, so the medieval map shows cities only in its last 25 years. The page shows the figure for the chosen year if there is one. Otherwise it estimates between the figures either side, assuming steady growth, and labels it as an estimate: within ten years of a figure, or 25 years before 1800. A hollow dot means there is no figure that close.
+Before 1800 there are figures for about 250 cities, mostly de Vries's estimates every 50 years for towns of 10,000 or more (`cities/add_early.py`, then `cities/add_devries.py`). 58 of the cities, such as Leiden, Bruges and Toledo, were added because they had at least 20,000 people at some point before 1800; they have no later figures, so they appear only on the early map.
+
+Before 1500 there are figures for 59 cities, from the same Wikipedia page's tables for 1000–1350, 1400 and 1450 (mostly Tertius Chandler's estimates; `cities/hucs_medieval_raw.txt`, added by `cities/add_medieval.py`). 14 of them, such as Speyer, Amalfi and Sarai, had 20,000 people or more then but are not among the later cities, so they appear only on the medieval map. A figure given as a range more than 2.5 times as wide at the top as at the bottom is left out. Before 1500 the map estimates within 50 years of a figure. The page shows the figure for the chosen year if there is one. Otherwise it estimates between the figures either side, assuming steady growth, and labels it as an estimate: within ten years of a figure, or 25 years before 1800. A hollow dot means there is no figure that close.
 
 ## Checks
 
