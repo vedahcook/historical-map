@@ -4,6 +4,14 @@ An interactive map of Europe's country borders, one year at a time (as of July 1
 
 The page is `europe-borders.html`, published as a Claude artifact.
 
+## Using the map
+
+- **Tap a country** to highlight it and dim the rest. Tap it again, or the sea, to clear it; tap another country to switch.
+- **The side panel** then shows a short history of that country for the chosen year (`descriptions.py`: when it began, how, and when it ended), which source the border comes from, and who held the place over the century.
+- **The timeline** shows only that country's events while it is highlighted: when it began or ended, name changes, and gains or losses over 1,500 km².
+- **Cities** appear inside the highlighted country. Tap one for its population that year.
+- **Map font:** a switch between Source Sans 3 and Fira Sans, remembered in the browser.
+
 ## How the map decides
 
 - **Default: OHM.** It matched the historical record in 149 of 160 spot checks, more than the other sources.
@@ -32,6 +40,18 @@ OHM is compared with CShapes-Europe from 1816 and with Cliopatria before that.
   - CShapes treats the North German Confederation's members as independent until 1871.
   - CShapes folds Hanover into the UK while the two shared a king.
 - **Result:** 114 alternative borders across the century.
+
+## City populations
+
+`cities.txt` lists about 250 of Europe's largest cities by 1900, with population figures from 1785 to 1910 (at most one per decade). Each figure is tagged with its source:
+
+| Code | Source | What it is |
+|---|---|---|
+| W | Wikidata | Census counts with a date |
+| E, G | English and German Wikipedia | The city's census table |
+| C | Chandler, de Vries and Mitchell, via Wikipedia's "Historical urban community sizes" | Estimates, often for the wider city |
+
+The page shows the figure for the chosen year if there is one. Otherwise it estimates between the figures either side, assuming steady growth, and labels it as an estimate. A hollow dot means there is no figure within ten years. `export.py` places each city in its map region, so it moves with border changes.
 
 ## Checks
 
@@ -65,4 +85,5 @@ Needs Python 3 with shapely and pyproj.
 - **One date per year:** July 1. Changes during a year appear the following July.
 - **Year-only end dates in OHM** (such as "1864") are read as the end of that year.
 - **The map covers longitude −25.5 to 49.5 and latitude 34.4 to 71.8.** Places outside it, such as most of Russia and North Africa, are cut off at the edge.
+- **City figures vary in quality.** Paris, Glasgow, Liverpool, Dublin, Bristol and Antwerp have only wider-city estimates, and a few cities (Brussels, Athens, Belgrade, Bradford among them) have only one or two figures.
 - **CShapes-Europe is non-commercial (CC BY-NC-SA 4.0),** so the map is too.

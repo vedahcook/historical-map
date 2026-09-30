@@ -47,8 +47,8 @@ button, select, input { font: inherit; color: inherit; }
 
 /* map */
 .mapbox { position: relative; border-radius: var(--r); overflow: hidden; background: var(--outside); border: 1px solid var(--line); min-height: 320px; touch-action: none; }
-.mapbox svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; cursor: grab; user-select: none; -webkit-user-select: none; }
-.mapbox svg.drag { cursor: grabbing; }
+.mapbox > svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; cursor: grab; user-select: none; -webkit-user-select: none; }
+.mapbox > svg.drag { cursor: grabbing; }
 #land { fill: var(--none); }
 .fill { stroke: none; }
 .lakes { fill: var(--water); stroke: none; }
@@ -69,6 +69,27 @@ button, select, input { font: inherit; color: inherit; }
 .lbl.big { font-weight: 500; }
 .dim { fill: var(--dim); fill-rule: evenodd; pointer-events: none; }
 .pin circle { fill: var(--sel); stroke: var(--halo); }
+.city circle { fill: var(--ink); stroke: var(--halo); cursor: pointer; }
+.city.nofig circle { fill: var(--surface); stroke: var(--ink); }
+.city.on circle { fill: var(--sel); stroke: var(--halo); }
+.clbl { font-family: var(--mapfont); font-weight: 400; fill: var(--ink); dominant-baseline: central; pointer-events: none; }
+.clbl.on { font-weight: 600; }
+.citypop { font-family: var(--mapfont); position: absolute; z-index: 3; background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 10px; padding: 9px 12px 10px; width: 236px; box-shadow: 0 6px 18px rgba(0,0,0,0.15); font-size: 0.84rem; }
+.citypop .x { position: absolute; right: 4px; top: 4px; width: 28px; height: 28px; border: 0; background: transparent; border-radius: 7px; cursor: pointer; color: var(--muted); font-size: 1.1rem; line-height: 1; }
+.citypop .nm { font-weight: 600; font-size: 0.95rem; padding-right: 26px; }
+.citypop .pop { font-size: 1.35rem; font-weight: 600; margin-top: 2px; font-variant-numeric: tabular-nums; }
+.citypop .pop small { display: block; font-size: 0.8rem; font-weight: 400; color: var(--muted); margin-top: -1px; }
+.citypop.dock { width: auto; padding: 7px 10px 8px; font-size: 0.8rem; }
+.citypop.dock .pop { font-size: 1.15rem; }
+.citypop.dock svg { height: 34px; margin-top: 4px; }
+.citypop p { margin: 3px 0 0; color: var(--muted); line-height: 1.38; }
+.citypop svg { display: block; position: static; width: 100%; height: 48px; margin-top: 7px; cursor: default; }
+.citypop .ln { fill: none; stroke: var(--muted); stroke-width: 1.4; }
+.citypop .pt { fill: var(--ink); }
+.citypop .pt.c { fill: var(--surface); stroke: var(--ink); stroke-width: 1.2; }
+.citypop .now { stroke: var(--sel); stroke-width: 1.4; }
+.citypop .cur { fill: var(--sel); }
+.citypop .ax { fill: var(--muted); font-size: 9px; }
 .fontpick { position: absolute; left: 10px; bottom: 10px; z-index: 2; display: flex; align-items: center; gap: 6px; background: var(--surface); border: 1px solid var(--line); border-radius: 9px; padding: 3px 3px 3px 10px; font-size: 0.78rem; color: var(--muted); }
 .fontpick button { border: 0; background: transparent; border-radius: 7px; padding: 5px 9px; cursor: pointer; color: var(--muted); font-size: 0.8rem; }
 .fontpick button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
@@ -179,6 +200,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
           <g id="labels"></g>
           <g id="badges"></g>
           <path id="dim" class="dim"></path>
+          <g id="cities"></g>
           <g id="focuslabel"></g>
           <g id="pin" class="pin"></g>
         </svg>
@@ -190,6 +212,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
         <div class="yearstamp num" id="stamp" aria-hidden="true">1815</div>
         <div class="fontpick" role="group" aria-label="Map font"><span>Map font</span><button type="button" data-f="source" aria-pressed="true">Source Sans 3</button><button type="button" data-f="fira" aria-pressed="false">Fira Sans</button></div>
         <div class="tip" id="tip" hidden></div>
+        <div class="citypop" id="citypop" role="dialog" aria-label="City population" hidden></div>
       </div>
       <div class="timebar">
         <div class="tctl">
@@ -217,6 +240,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
         <h3>How this map was made</h3>
         <p>Each year shows the borders in force on July 1. The map uses <a href="https://www.openhistoricalmap.org" target="_blank" rel="noopener">OpenHistoricalMap</a> (OHM), which matched the historical record in 149 of 160 spot checks. Where OHM has no record, it falls back to <a href="https://icr.ethz.ch/data/cshapes/" target="_blank" rel="noopener">CShapes-Europe</a> (from 1816) or <a href="https://github.com/Seshat-Global-History-Databank/cliopatria" target="_blank" rel="noopener">Cliopatria</a>. Where our checks found OHM wrong, the map applies a correction and says so.</p>
         <p>Alternative borders compare OHM with CShapes-Europe from 1816 and with Cliopatria before that. They count only when a source puts an area of at least 400 km² (5,000 km² for the coarser Cliopatria) in a different country for longer than a year. Territories that governed themselves under an overlord count as part of the overlord for this comparison, because the sources disagree on whether to show them.</p>
+        <p>Cities appear when a country is highlighted: about 250 of Europe's largest cities by 1900, placed in whichever country held them that year. Tap one for its population. Figures come from censuses where there is one for that year; between figures the map estimates, assuming steady growth, and says so. A hollow dot means there is no figure within ten years. Some early figures are estimates for the wider city, so they are not always comparable with later census counts.</p>
         <details>
           <summary>Corrections to OHM (<span id="nfix"></span>)</summary>
           <ul id="fixes"></ul>
@@ -227,6 +251,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
             <li>OpenHistoricalMap: public domain (CC0). Borders fetched September 29, 2026.</li>
             <li>CShapes-Europe, ETH Zürich: CC BY-NC-SA 4.0. Because this map uses it, the map is for non-commercial use.</li>
             <li>Cliopatria, Seshat Global History Databank: CC BY 4.0.</li>
+            <li>City populations: Wikidata (CC0), English and German Wikipedia census tables (CC BY-SA 4.0), and estimates by Chandler, de Vries and Mitchell as tabled in Wikipedia's <a href="https://en.wikipedia.org/wiki/Historical_urban_community_sizes" target="_blank" rel="noopener">Historical urban community sizes</a>. Gathered September 29, 2026.</li>
             <li>Coastlines, lakes and rivers: Natural Earth (public domain).</li>
             <li>Projection: Lambert azimuthal equal-area for Europe (ETRS89-LAEA), so areas compare fairly.</li>
           </ul>
@@ -343,7 +368,7 @@ function applyView() {
   svg.setAttribute('viewBox', shown.map(v => v.toFixed(2)).join(' '));
   const s = 1 / pxPerKm();
   for (const id in patterns) { const p = patterns[id]; const w = 7 * s; p.setAttribute('width', w); p.setAttribute('height', w); p.firstChild.setAttribute('width', w * 0.22); p.firstChild.setAttribute('height', w); }
-  drawLabels(); drawBadges(); drawPin();
+  drawLabels(); drawBadges(); drawPin(); drawCities();
 }
 function zoomAt(f, cx, cy) {
   const [x, y, w, h] = view; const nw = Math.min(Math.max(w / f, 40), VB0[2] * 1.3), k = nw / w;
@@ -414,12 +439,12 @@ function setFont(f) {
   mapFont = f; $('mapbox').dataset.font = f;
   document.querySelectorAll('.fontpick button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.f === f)));
   try { localStorage.setItem('eb-font', f); } catch (e) {}
-  drawLabels(); drawBadges();
+  drawLabels(); drawBadges(); drawCities();
 }
 document.querySelectorAll('.fontpick button').forEach(b => b.onclick = () => setFont(b.dataset.f));
 $('mapbox').dataset.font = mapFont;
 document.querySelectorAll('.fontpick button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.f === mapFont)));
-if (document.fonts) document.fonts.ready.then(() => drawLabels());
+if (document.fonts) document.fonts.ready.then(() => { drawLabels(); drawCities(); });
 
 // ---------- labels ----------
 let labelBoxes = [];
@@ -533,15 +558,19 @@ function click(ev) {
   // a numbered marker takes the click first
   const k = pxPerKm(); const onBadge = altsNow().find(a => { const p = badgeAt[a.i] || [a.x, a.y]; return Math.hypot((p[0] - x) * k, (p[1] - y) * k) <= 13; });
   if (onBadge) { selectAlt(onBadge.i); return; }
+  const c = cityAt(x, y);
+  if (c) { selCity = selCity === c.i ? null : c.i; $('tip').hidden = true; drawCities(); return; }
   const f = regionAt(x, y);
   const u = f ? uAt(f, year) : -1, cur = place ? unitAt[place.s * NY + year - Y0] : -2;
+  if (selCity != null && f && u === cur) { selCity = null; drawCities(); return; }   // first tap inside the country just closes the city
+  selCity = null;
   if (!f || (place && u === cur)) place = null;          // tapping the highlighted country again, or the sea, clears it
   else {
     place = { x, y, s: f.properties.s };
     const hit = altsNow().find(a => { const af = altFeatures.find(g => g.properties.i === a.i); return af && x >= af.bb[0] && x <= af.bb[2] && y >= af.bb[1] && y <= af.bb[3] && inGeom(af.geometry, x, y); });
     if (hit) { selAlt = hit.i; drawAlts(); drawBadges(); renderAlts(); }
   }
-  drawPin(); drawDim(); drawLabels(); drawBadges(); renderTimeline(); renderPlace();
+  drawPin(); drawDim(); drawLabels(); drawBadges(); drawCities(); renderTimeline(); renderPlace();
 }
 // dim everything outside the country that holds the selected place this year
 const focusUnit = () => place ? unitAt[place.s * NY + year - Y0] : -1;
@@ -556,6 +585,92 @@ function drawDim() {
 function drawPin() {
   const g = $('pin'); g.textContent = ''; if (!place) return; const k = pxPerKm(); if (!k) return;
   el('circle', { cx: place.x, cy: place.y, r: (5 / k).toFixed(2), 'stroke-width': (2 / k).toFixed(2) }, g);
+}
+// ---------- cities: shown inside the highlighted country; tap one for its population that year ----------
+const CSRC = ['Wikidata', 'German Wikipedia', 'English Wikipedia', 'Chandler, de Vries and Mitchell (estimates for the wider city)'];
+const CITIES = D.cities.map(([n, x, y, s, P], i) => ({ i, n, x, y, s, P }));
+let selCity = null, cityDots = [];
+// population in year y: the figure for that year, or an estimate between the figures either side (steady growth)
+function popAt(c, y) {
+  let lo = null, hi = null;
+  for (const p of c.P) { if (p[0] === y) return { v: p[1], k: 'fig', a: p }; if (p[0] < y) lo = p; else if (!hi) hi = p; }
+  if (lo && hi) return { v: lo[1] * Math.pow(hi[1] / lo[1], (y - lo[0]) / (hi[0] - lo[0])), k: 'est', a: lo, b: hi };
+  const n = lo || hi; return { v: n[1], k: Math.abs(n[0] - y) <= 10 ? 'near' : 'none', a: n };
+}
+const round3 = v => { const m = Math.pow(10, Math.max(0, Math.floor(Math.log10(v)) - 2)); return Math.round(v / m) * m; };
+function cityAt(x, y) {
+  if (focusUnit() < 0) return null; const k = pxPerKm(); let best = null, bd = Infinity;
+  for (const d of cityDots) { const dd = Math.hypot((d.c.x - x) * k, (d.c.y - y) * k); if (dd <= Math.max(12, d.r + 6) && dd < bd) { best = d.c; bd = dd; } }
+  return best;
+}
+function drawCities() {
+  const g = $('cities'); g.textContent = ''; cityDots = [];
+  const fu = focusUnit(), k = pxPerKm(), r = svg.getBoundingClientRect();
+  if (fu < 0 || !k) { selCity = null; cityPop(); return; }
+  const inside = CITIES.filter(c => unitAt[c.s * NY + year - Y0] === fu).map(c => ({ c, p: popAt(c, year) }));
+  if (selCity != null && !inside.some(d => d.c.i === selCity)) selCity = null;
+  inside.sort((a, b) => (b.c.i === selCity) - (a.c.i === selCity) || b.p.v - a.p.v);
+  const taken = labelBoxes.slice(0, 1), fs = 12, wf = mapFont === 'fira' ? 0.56 : 0.5;
+  // dots first (biggest last so they sit on top), then names where they fit
+  for (const d of inside) {
+    const sx = (d.c.x - shown[0]) * k, sy = (d.c.y - shown[1]) * k;
+    d.sx = sx; d.sy = sy; d.r = Math.min(9, 2.2 + 1.5 * Math.sqrt(d.p.v / 100000));
+    d.vis = sx > -20 && sy > -20 && sx < r.width + 20 && sy < r.height + 20;
+    if (d.vis) { cityDots.push(d); taken.push([sx - d.r, sy - d.r, sx + d.r, sy + d.r]); }
+  }
+  const dg = el('g', {}, g), lg = el('g', {}, g);
+  for (const d of cityDots.slice().reverse()) {
+    const on = d.c.i === selCity;
+    const b = el('g', { class: 'city' + (d.p.k === 'none' ? ' nofig' : '') + (on ? ' on' : ''), 'data-c': d.c.i }, dg);
+    el('circle', { cx: d.c.x, cy: d.c.y, r: ((on ? d.r + 1.5 : d.r) / k).toFixed(2), 'stroke-width': (1.3 / k).toFixed(2) }, b);
+  }
+  for (const d of cityDots) {
+    const on = d.c.i === selCity, w = d.c.n.length * fs * wf + 2, h = fs * 1.25, gap = d.r + 3;
+    for (const [bx, by, anchor] of [[d.sx + gap, d.sy - h / 2, 'start'], [d.sx - gap - w, d.sy - h / 2, 'end'], [d.sx - w / 2, d.sy - gap - h, 'middle'], [d.sx - w / 2, d.sy + gap, 'middle']]) {
+      const box = [bx, by, bx + w, by + h];
+      if (!on && taken.some(t => box[0] < t[2] && box[2] > t[0] && box[1] < t[3] && box[3] > t[1])) continue;
+      taken.push(box);
+      const tx = anchor === 'start' ? bx : anchor === 'end' ? bx + w : bx + w / 2;
+      const t = el('text', { x: (shown[0] + tx / k).toFixed(2), y: (shown[1] + (by + h / 2) / k).toFixed(2), class: 'clbl' + (on ? ' on' : ''), 'text-anchor': anchor }, lg);
+      t.setAttribute('style', `font-size:${(fs / k).toFixed(2)}px`); t.textContent = d.c.n;
+      break;
+    }
+  }
+  cityPop();
+}
+function cityPop() {
+  const box = $('citypop'); const d = cityDots.find(d => d.c.i === selCity);
+  if (!d) { box.hidden = true; return; }
+  const c = d.c, p = d.p;
+  const big = p.k === 'fig' ? fmt(p.v) : p.k === 'none' ? '—' : 'about ' + fmt(round3(p.v));
+  const src = `Source: ${[...new Set(p.k === 'est' ? [p.a[2], p.b[2]] : [p.a[2]])].map(i => CSRC[i]).join('; ')}.`;
+  const note = p.k === 'fig' ? `Figure for ${year}. ${src}`
+    : p.k === 'est' ? `Estimated: no figure for ${year}. Assumes steady growth between ${p.a[0]} (${fmt(p.a[1])}) and ${p.b[0]} (${fmt(p.b[1])}). ${src}`
+    : p.k === 'near' ? `No figure for ${year}. Shown: the nearest, from ${p.a[0]}. ${src}`
+    : `No figure near ${year}. The nearest is ${fmt(p.a[1])} in ${p.a[0]}. ${src}`;
+  // small chart of all the figures, with this year marked
+  const W = 210, H = 48, x0 = Math.min(1800, c.P[0][0]), x1 = Math.max(1900, c.P[c.P.length - 1][0]), vmax = Math.max(...c.P.map(q => q[1])) * 1.08;
+  const X = v => 4 + (v - x0) / (x1 - x0) * (W - 8), Y = v => H - 12 - v / vmax * (H - 16);
+  const line = c.P.map((q, j) => (j ? 'L' : 'M') + X(q[0]).toFixed(1) + ',' + Y(q[1]).toFixed(1)).join('');
+  const chart = `<svg viewBox="0 0 ${W} ${H}" aria-hidden="true"><line class="now" x1="${X(year)}" x2="${X(year)}" y1="2" y2="${H - 11}"/><path class="ln" d="${line}"/>` +
+    c.P.map(q => `<circle class="pt${q[2] === 3 ? ' c' : ''}" cx="${X(q[0]).toFixed(1)}" cy="${Y(q[1]).toFixed(1)}" r="2.2"/>`).join('') +
+    (p.k === 'est' ? `<circle class="cur" cx="${X(year)}" cy="${Y(p.v).toFixed(1)}" r="3"/>` : '') +
+    `<text class="ax" x="${X(1800)}" y="${H - 1}" text-anchor="${x0 < 1795 ? 'middle' : 'start'}">1800</text><text class="ax" x="${X(1850)}" y="${H - 1}" text-anchor="middle">1850</text><text class="ax" x="${X(1900)}" y="${H - 1}" text-anchor="${x1 > 1905 ? 'middle' : 'end'}">1900</text></svg>`;
+  box.innerHTML = `<button type="button" class="x" aria-label="Close">×</button><div class="nm">${esc(c.n)}</div><div class="pop">${big} <small>people in ${year}</small></div><p>${esc(note)}</p>${chart}`;
+  box.querySelector('.x').onclick = () => { selCity = null; drawCities(); };
+  box.hidden = false;
+  const mb = $('mapbox').getBoundingClientRect(), sr = svg.getBoundingClientRect();
+  const cx = sr.left - mb.left + d.sx, cy = sr.top - mb.top + d.sy;
+  // on a narrow map, dock the box across the top or bottom edge, away from the city
+  const dock = mb.width < 560; box.classList.toggle('dock', dock);
+  if (dock) { box.style.left = '8px'; box.style.right = '8px'; box.style.top = ''; box.style.bottom = '';
+    if (cy > mb.height / 2) box.style.top = '8px'; else box.style.bottom = '8px'; return; }
+  box.style.right = ''; box.style.bottom = '';
+  const bw = box.offsetWidth, bh = box.offsetHeight;
+  let left = cx + d.r + 12; if (left + bw > mb.width - 8) left = cx - d.r - 12 - bw;
+  left = Math.max(8, Math.min(left, mb.width - bw - 8));
+  const top = Math.max(8, Math.min(cy - bh / 2, mb.height - bh - 8));
+  box.style.left = left + 'px'; box.style.top = top + 'px';
 }
 function renderPlace() {
   const card = $('placecard');
@@ -595,10 +710,13 @@ function hover(ev) {
   hoverRaf = requestAnimationFrame(() => {
     hoverRaf = 0;
     const [x, y] = toMap(ev); const f = regionAt(x, y); const tip = $('tip');
-    if (!f) { tip.hidden = true; return; }
-    const u = uAt(f, year); const box = $('mapbox').getBoundingClientRect();
+    const hc = cityAt(x, y); svg.style.cursor = hc ? 'pointer' : '';
+    if (!f && !hc) { tip.hidden = true; return; }
+    const u = f ? uAt(f, year) : -1; const box = $('mapbox').getBoundingClientRect();
     const d = u >= 0 ? descOf(u, year) : null;
-    tip.innerHTML = u < 0 ? `<b>No country</b><span>No source assigns this area in ${year}</span>`
+    if (hc && hc.i === selCity) { tip.hidden = true; return; }
+    if (hc) { const p = popAt(hc, year); tip.innerHTML = `<b>${esc(hc.n)}</b><span>${p.k === 'fig' ? fmt(p.v) + ' people in ' + year : p.k === 'none' ? 'No population figure near ' + year : 'About ' + fmt(round3(p.v)) + ' people in ' + year + ' (estimate)'} · tap for details</span>`; }
+    else tip.innerHTML = u < 0 ? `<b>No country</b><span>No source assigns this area in ${year}</span>`
       : `<b>${esc(d ? d.t : nameOf(u, year))}</b>${d && datesOf(d) ? `<span class="dt">${esc(datesOf(d))}</span>` : ''}${d ? `<p>${esc(d.x)}</p>` : ''}<span>${isVassal(u) ? 'Under ' + esc(nameOf(U[u].ov, year)) + ' · ' : ''}${year}</span>`;
     tip.hidden = false;
     const tx = Math.min(ev.clientX - box.left + 14, box.width - tip.offsetWidth - 8), ty = Math.min(ev.clientY - box.top + 14, box.height - tip.offsetHeight - 8);

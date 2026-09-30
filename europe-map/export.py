@@ -1,6 +1,7 @@
 """Step 6: pick fill colors so neighbors always differ, project everything, and write the
 files the page needs: geo.json (regions, alternative-border areas, lakes, rivers as
-GeoJSON in map coordinates) and data.json (country histories, labels, notes).
+GeoJSON in map coordinates) and data.json (country histories, labels, notes, and city
+populations from cities.txt).
 
 Needs fills.json (candidate fills and their measured color separation, from the
 dataviz palette validator) and the Natural Earth lakes/rivers files.
@@ -198,12 +199,30 @@ units_out = []
 for u in used_units:
     k = K[u]; name, ov, fa = UNITS[k]
     units_out.append({'k': k, 'n': name, 'ov': UI.get(K.index(ov)) if ov and K.index(ov) in UI else None, 'c': col.get(fa, 0)})
+# ---------- cities: place each one in its map region, keep its population figures ----------
+HERE = __file__.rsplit('/', 1)[0] or '.'
+CSRC = 'WGEC'   # Wikidata, German Wikipedia, English Wikipedia, Chandler/de Vries/Mitchell estimate
+cities, offmap = [], []
+for line in open(f'{HERE}/cities.txt', encoding='utf-8'):
+    if not line.strip() or line.startswith('#'): continue
+    cname, lon, lat, ser = line.rstrip('\n').split('|')
+    pt = shapely.Point(float(lon), float(lat))
+    hit = [j for j in tree.query(pt) if geoms[j].covers(pt)]
+    if not hit:   # a port just off the simplified coastline: take the nearest region within ~20 km
+        near = tree.query_nearest(pt, max_distance=0.25)
+        hit = list(near[:1])
+    if not hit: offmap.append(cname); continue
+    cx, cy = tr.transform(float(lon), float(lat))
+    pts = sorted([1700 + int(a), int(b[:-1]), CSRC.index(b[-1])] for a, b in (p.split(':') for p in ser.split(';')))
+    cities.append([cname, round(cx / 1000, 1), round(-cy / 1000, 1), int(regions[hit[0]][1]), pts])
+print('cities', len(cities), 'off the map:', offmap)
 hb = proj(shapely.segmentize(box(-24.5, 35.2, 40.5, 71.3), 0.5)).bounds
 data = {'years': [YEARS[0], YEARS[-1]], 'viewBox': [round(vb[0]), round(vb[1]), round(vb[2] - vb[0]), round(vb[3] - vb[1])],
         'home': [round(hb[0]), round(hb[1]), round(hb[2] - hb[0]), round(hb[3] - hb[1])],
         'units': units_out, 'fills': {m: fills[m]['P'] for m in ('light', 'dark')}, 'hist': hist, 'refs': refs,
         'labels': lab, 'names': names_l, 'alts': alts,
-        'desc': [{'t': t, 'f': f, 'e': e, 'x': x} for (_u, _n, _a, _b, t, f, e, x) in DESC]}
+        'desc': [{'t': t, 'f': f, 'e': e, 'x': x} for (_u, _n, _a, _b, t, f, e, x) in DESC],
+        'cities': cities}
 json.dump(data, open('data.json', 'w'), ensure_ascii=False, separators=(',', ':'))
 missing = sorted({(r[0], names_l[r[5]]) for rows in lab.values() for r in rows if r[6] < 0})
 print('labels without a description:', [(units_out[u]['k'], n) for u, n in missing])
