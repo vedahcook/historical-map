@@ -51,7 +51,7 @@ def ok(i, j, nv_min, cvd_min):
     return all(fills[m]['nv'][i][j] >= nv_min and fills[m]['cvd'][i][j] >= cvd_min for m in ('light', 'dark'))
 PREF = {'FRA': 'blue-2', 'GBR': 'red-2', 'RUS': 'green-1', 'AUT': 'yellow-1', 'PRU': 'violet-1', 'OTT': 'aqua-1',
         'ESP': 'orange-1', 'SWE': 'blue-1', 'DEN': 'magenta-1', 'SAR': 'green-2', 'NAP': 'orange-2', 'PAP': 'yellow-2',
-        'GRE': 'blue-1', 'NLD': 'orange-1', 'BAV': 'blue-1', 'SAX': 'green-1', 'POR': 'violet-1', 'SUI': 'red-1'}
+        'GRE': 'blue-1', 'NLD': 'orange-1', 'BAV': 'blue-1', 'SAX': 'green-1', 'POR': 'violet-1', 'SUI': 'red-1', 'USA': 'blue-2'}
 fams = sorted({f for p in adj for f in p} | {UNITS[k][2] for k in K})
 nb = defaultdict(dict)
 for (a, b), L in adj.items(): nb[a][b] = L; nb[b][a] = L
@@ -68,7 +68,7 @@ def color_all():
     col = {}
     left = set(fams)
     while left:
-        f = max(left, key=lambda f: (f in PREF, len({col[g] for g in nb[f] if g in col}), sum(nb[f].values())))
+        f = max(sorted(left), key=lambda f: (f in PREF, len({col[g] for g in nb[f] if g in col}), sum(nb[f].values())))   # sorted: same colors every run
         left.discard(f)
         best, best_score = None, None
         for c in range(NC):
@@ -108,7 +108,13 @@ def ref_id(src, r):
     ref_i[key] = len(refs); refs.append(o)
     return ref_i[key]
 
-used_units = sorted({int(u) for s in sigs for u in s[0] if u >= 0} | {K.index(a[k]) for a in ALT for k in ('def_u', 'alt_u')})
+used_units = {int(u) for s in sigs for u in s[0] if u >= 0} | {K.index(a[k]) for a in ALT for k in ('def_u', 'alt_u')}
+# overlords too (for the stripe and crosshatch color), even ones holding no land on the map, like the United States in 1941-45
+while True:
+    more = {K.index(UNITS[K[u]][1]) for u in used_units if UNITS[K[u]][1]} - used_units
+    if not more: break
+    used_units |= more
+used_units = sorted(used_units)
 UI = {u: i for i, u in enumerate(used_units)}
 hist = []
 for u, src, r in sigs:
