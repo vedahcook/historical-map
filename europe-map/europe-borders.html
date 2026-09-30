@@ -94,9 +94,9 @@ button, select, input { font: inherit; color: inherit; }
 .hstrip button { position: absolute; top: 0; height: 14px; border: 0; padding: 0; border-right: 1px solid var(--surface); cursor: pointer; }
 .hstrip .now { position: absolute; top: -3px; bottom: -3px; width: 2px; margin-left: -1px; background: var(--sel); pointer-events: none; }
 .hlist { list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-direction: column; gap: 2px; font-size: 0.78rem; color: var(--muted); max-height: 9.5em; overflow-y: auto; }
-.hlist li { display: grid; grid-template-columns: 10px 76px minmax(0, 1fr); gap: 6px; align-items: center; }
+.hlist li { display: grid; grid-template-columns: 12px 76px minmax(0, 1fr); gap: 6px; align-items: center; }
 .hlist li.on { color: var(--ink); font-weight: 600; }
-.hlist .sw { width: 10px; height: 10px; border-radius: 2px; }
+.hlist .sw { width: 12px; height: 12px; border-radius: 2px; }
 .mappop .ln { fill: none; stroke: var(--muted); stroke-width: 1.4; }
 .mappop .pt { fill: var(--ink); }
 .mappop .pt.c { fill: var(--surface); stroke: var(--ink); stroke-width: 1.2; }
@@ -323,6 +323,13 @@ function hatchFor(ov, occ) {
 }
 const isVassal = u => U[u].ov != null;
 const isOcc = u => !!U[u].o;
+// the map's look for a unit as a CSS background: its fill, with crosshatch (occupied) or stripes (under an overlord)
+function swatchBg(u) {
+  if (u < 0) return 'var(--none)';
+  const ov = U[u].ov; if (ov == null) return fillVar(u);
+  const h = hueVar(ov), line = (a) => `repeating-linear-gradient(${a}deg, color-mix(in srgb, ${h} 55%, transparent) 0 1.4px, transparent 1.4px 5px)`;
+  return (isOcc(u) ? line(45) + ', ' + line(-45) : line(45)) + ', ' + fillVar(u);
+}
 // how a dependent territory relates to the power over it
 function depText(u) {
   const ov = nameOf(U[u].ov, year), k = U[u].k;
@@ -676,9 +683,9 @@ function cityHtml(d) {
   const nm = r => r.u < 0 ? 'no country' : nameOf(r.u, r.a);
   const strip = `<div class="hstrip" role="group" aria-label="Who held ${esc(c.n)}">` + runs.map(r => {
       const l = (X(r.a - 0.5) / W * 100).toFixed(2), w = ((X(r.b + 0.5) - X(r.a - 0.5)) / W * 100).toFixed(2);
-      return `<button type="button" data-y="${r.a}" title="${esc(nm(r))}, ${r.a === r.b ? r.a : r.a + '–' + r.b}" style="left:${l}%;width:${w}%;background:${r.u < 0 ? 'var(--none)' : fillVar(r.u)}"></button>`; }).join('') +
+      return `<button type="button" data-y="${r.a}" title="${esc(nm(r))}, ${r.a === r.b ? r.a : r.a + '–' + r.b}" style="left:${l}%;width:${w}%;background:${swatchBg(r.u)}"></button>`; }).join('') +
     `<span class="now" style="left:${(X(year) / W * 100).toFixed(2)}%"></span></div>`;
-  const changes = runs.map((r, i) => `<li${r.a <= year && year <= r.b ? ' class="on"' : ''}><span class="sw" style="background:${r.u < 0 ? 'var(--none)' : fillVar(r.u)}"></span><span>${r.a === Y0 && i === 0 ? r.a : r.a}${r.b > r.a ? '–' + (r.b === Y1 ? '' : r.b) : ''}</span><span>${esc(nm(r))}</span></li>`).join('');
+  const changes = runs.map((r, i) => `<li${r.a <= year && year <= r.b ? ' class="on"' : ''}><span class="sw" style="background:${swatchBg(r.u)}"></span><span>${r.a === Y0 && i === 0 ? r.a : r.a}${r.b > r.a ? '–' + (r.b === Y1 ? '' : r.b) : ''}</span><span>${esc(nm(r))}</span></li>`).join('');
   return `<button type="button" class="x" aria-label="Close">×</button><div class="nm">${esc(c.n)}</div><div class="pop">${big} <small>people in ${year}</small></div><p>${esc(note)}</p>${chart}` +
     `<div class="hk">Held by</div>${strip}<ul class="hlist">${changes}</ul>`;
 }
