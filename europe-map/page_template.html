@@ -324,7 +324,7 @@ const isOcc = u => !!U[u].o;
 function swatchBg(u) {
   if (u < 0) return 'var(--none)';
   const ov = U[u].ov; if (ov == null) return fillVar(u);
-  const h = hueVar(ov), line = (a) => `repeating-linear-gradient(${a}deg, color-mix(in srgb, ${h} 55%, transparent) 0 1.4px, transparent 1.4px 5px)`;
+  const h = hueVar(ov), line = (a) => `repeating-linear-gradient(${a}deg, color-mix(in srgb, ${h} 85%, transparent) 0 1.5px, transparent 1.5px 4.5px)`;
   return (isOcc(u) ? line(45) + ', ' + line(-45) : line(45)) + ', ' + fillVar(u);
 }
 // how a dependent territory relates to the power over it
