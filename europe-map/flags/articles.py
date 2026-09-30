@@ -40,6 +40,7 @@ ARTICLE = {
     'Kingdom of Shirvan': 'Shirvanshah',
     'Hafsid Sultanate of Tunis': 'Hafsid dynasty',
     'Duchy of Bouillon': 'Duchy of Bouillon',
+    'Duchy of Schleswig-Holstein-Gottorp': 'Holstein-Gottorp',
     # ---------- 1800-1899 ----------
     'Principality of Andorra': 'Andorra',
     'Principality of Anhalt-Dessau': 'Anhalt-Dessau', 'Duchy of Anhalt-Dessau': 'Anhalt-Dessau',
@@ -108,11 +109,11 @@ ARTICLE = {
     ('SVK', 'Slovak Republic'): 'Slovakia',
     'Hungary after the Habsburgs': 'First Hungarian Republic',
     ('HUN', 'Kingdom of Hungary'): 'Kingdom of Hungary (1920–1946)',
-    'Communist Hungary': 'Hungarian People\'s Republic',
+    'Communist Hungary': 'Hungary',
     'Republic of Hungary': 'Hungary',
     'Bosnia and Herzegovina, annexed by Austria-Hungary': 'Condominium of Bosnia and Herzegovina',
     'Republic of Bulgaria': 'Bulgaria',
-    'Communist Romania': 'Socialist Republic of Romania',
+    'Communist Romania': 'Romania',
     'Hellenic Republic': 'Greece',
     'Italian Dodecanese (Italian Islands of the Aegean)': 'Italian Islands of the Aegean',
     'Republic of Serbia': 'Serbia',
@@ -149,4 +150,37 @@ ARTICLE = {
     'Lebanon under French mandate': 'Greater Lebanon',
     'British mandate of Iraq': 'Mandatory Iraq',
     'Iran': [('Pahlavi Iran', 1926, 1978), ('Iran', 1979, 2026)],
+    ('IRL', 'Ireland'): 'Republic of Ireland',
+    'Tsardom of Bulgaria': 'Bulgaria',
+    'Mountain Republic of the Northern Caucasus': 'Mountainous Republic of the Northern Caucasus',
 }
+ARTICLE['Knights of St John (Knights Hospitaller)'] = 'Knights Hospitaller'
+
+# Flags Wikidata gives that are not the state's own: a modern city flag, a battle banner, a regimental flag, another
+# duchy's flag, and flags Wikimedia itself marks as invented
+BAD_FILES = {'Flagge der kreisfreien Stadt Oldenburg.svg', 'Grunwald Słupsk i Szczecin.svg',
+             'Flag of Hesse-Darmstadt Regiment during the Seven Years War (1756-1763).svg',
+             'Flagge Herzogtum Sachsen-Coburg-Gotha (1826-1911).svg', 'Banner of Sigismund III Vasa.svg',
+             # no license on its Commons page; the current flag (public domain) stands in for 1991-1993
+             'Flag of Russia (1991–1993).svg'}
+
+# Dates for flags Wikidata leaves undated where the state used another flag before: (article, file) -> (from, to)
+DATES = {('Tsardom of Russia', 'Flag of Russia.svg'): (1694, None)}
+BAD_WORDS = ('Fictitious', 'fictitious')
+
+# States Wikidata gives no flag for, with the flag Wikimedia Commons has for them: article -> [(file, from, to)]
+EXTRA = {'Austria-Hungary': [('Flag of Austria-Hungary (1869-1918).svg', 1869, 1918)],
+         'Habsburg Netherlands': [('Flag of Cross of Burgundy.svg', 1506, 1555)],
+         'Kalmar Union': [('Flag of the Kalmar Union.svg', None, None)],
+         'Russia': [('Flag of Russia.svg', 1991, 1993)]}
+
+# Authors to credit where the Commons "author" field is not a plain name (a note about the file, "myself", or a
+# chain of derivative works), checked on each file page: file -> credit line
+AUTHORS = {'Medici Flag of Tuscany.png': 'Jack1755',
+           'Flag of Republic of Venice (1659-1675).svg': 'Facquis',
+           'Flag of Brandenburg (1657-1701).svg': 'Odejea, derivative work by Amber and Black',
+           'Banner of the Electorate of Mainz.svg': 'Sodacan',
+           'Thokoly imre zaszlaja.jpg': 'unknown author, uploaded by Füleki',
+           'Flag of Koritsa.svg': 'Titimaster',
+           'Third Flag of the Duchy of Lucca.svg': 'Parair',
+           'Etrurian Kingdom and War Flag with lesser coat of arms.svg': 'Parair'}

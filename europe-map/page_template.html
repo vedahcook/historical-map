@@ -49,7 +49,7 @@ button, select, input { font: inherit; color: inherit; }
 .mapbox { position: relative; border-radius: var(--r); overflow: hidden; background: var(--outside); border: 1px solid var(--line); min-height: 320px; touch-action: none; }
 .mapbox > svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; cursor: grab; user-select: none; -webkit-user-select: none; }
 .mapbox > svg.drag { cursor: grabbing; }
-#land { fill: var(--none); }
+#land, #outland { fill: var(--none); }
 .fill { stroke: none; }
 .lakes { fill: var(--water); stroke: none; }
 .grat { fill: none; stroke: var(--grat); stroke-width: 0.7px; vector-effect: non-scaling-stroke; }
@@ -177,9 +177,10 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
       <div class="mapbox" id="mapbox">
         <svg id="map" role="img" aria-label="Map of Europe's country borders for the selected year">
           <defs id="defs"></defs>
-          <rect id="water" x="-99999" y="-99999" width="199998" height="199998" style="fill: var(--outside)"></rect>
+          <rect id="water" x="-99999" y="-99999" width="199998" height="199998" style="fill: var(--water)"></rect>
           <path id="edge" class="edge"></path>
           <path id="grat" class="grat"></path>
+          <path id="outland"></path>
           <path id="land"></path>
           <g id="fills"></g>
           <path id="lakes" class="lakes"></path>
@@ -228,7 +229,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
         <p>Each year shows the borders in force on July 1. The map uses <a href="https://www.openhistoricalmap.org" target="_blank" rel="noopener">OpenHistoricalMap</a> (OHM), which matched the historical record in 149 of 160 spot checks. Where OHM has no record, it falls back to <a href="https://icr.ethz.ch/data/cshapes/" target="_blank" rel="noopener">CShapes-Europe</a> (from 1816) or <a href="https://github.com/Seshat-Global-History-Databank/cliopatria" target="_blank" rel="noopener">Cliopatria</a>. Where our checks found OHM wrong, the map applies a correction and says so. Before 1800 OHM has fewer records: it often has the Holy Roman Empire without its member states, so many small German states show as the Empire, and Cliopatria fills more of the map. The map for 1500–1799 loads separately, a moment after the page opens.</p>
         <p>Occupations: OHM records named occupation regimes, such as the General Government in Poland or the Allied zones of Germany, and the map uses them. Where OHM shows the country that held the land in law, the map adds occupations from Cliopatria’s year-by-year outlines of each power’s control (1914-46), land annexed during the Second World War and given back afterward, and the breakaway regions and occupied parts of Ukraine since 1990. Each of these is listed under corrections.</p>
         <p>Alternative borders compare OHM with CShapes-Europe from 1816 and with Cliopatria before that. They count only when a source puts an area of at least 400 km² (5,000 km² for the coarser Cliopatria) in a different country for longer than a year. Territories that governed themselves under an overlord count as part of the overlord for this comparison, because the sources disagree on whether to show them.</p>
-        <p>Cities appear when a country is highlighted: its largest cities that year (up to ten, and none smaller than 3% of its biggest), from about 390 cities (Europe's largest by 1900, and those that grew large after), placed in whichever country held them that year. Tap one for its population. Figures come from censuses where there is one for that year; between figures the map estimates, assuming steady growth, and says so. A hollow dot means there is no figure within ten years (25 years before 1800); the map then gives the nearest figures instead of an estimate. Before 1800 there are figures for only about 60 of the largest cities, mostly Jan de Vries’s estimates every 50 years, so most other cities appear only from the late 1700s. Early figures are estimates, some for the wider city, so they are not always comparable with later census counts.</p>
+        <p>Cities appear when a country is highlighted: its largest cities that year (up to ten, and none smaller than 3% of its biggest), from about 450 cities (Europe's largest by 1900, those that grew large after, and large towns of 1500–1800), placed in whichever country held them that year. Tap one for its population. Figures come from censuses where there is one for that year; between figures the map estimates, assuming steady growth, and says so. A hollow dot means there is no figure within ten years (25 years before 1800); the map then gives the nearest figures instead of an estimate. Before 1800 the figures are mostly Jan de Vries’s estimates every 50 years for towns that reached 10,000 people, which cover western and central Europe but not the Ottoman lands or Russia; about 60 towns that were large then but not later (Leiden, Bruges, Toledo, Mantua and others) appear only in those centuries. Early figures are estimates, some for the wider city, so they are not always comparable with later census counts.</p>
         <details>
           <summary>Corrections to OHM (<span id="nfix"></span>)</summary>
           <ul id="fixes"></ul>
@@ -242,8 +243,8 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
             <li>Cliopatria, Seshat Global History Databank: CC BY 4.0. Also used for the extent of wartime occupations, 1914-46.</li>
             <li>Russian-occupied Ukraine, 2022-26: <a href="https://deepstatemap.live/en" target="_blank" rel="noopener">DeepState</a>’s map, the last update before July 1 each year.</li>
             <li>Breakaway regions (Transnistria, Abkhazia, South Ossetia, Artsakh, Crimea and the Donbas in 2014-21): Natural Earth’s disputed areas (public domain).</li>
-            <li>City populations: Wikidata (CC0), census tables in city articles in English, German, French, Polish, Russian, Ukrainian, Greek, Turkish and other Wikipedia editions (CC BY-SA 4.0), the UN Statistics Division’s Demographic Yearbook city table (public domain via datasets/population-city), and estimates by Chandler, de Vries (for 1500–1800) and Mitchell as tabled in Wikipedia's <a href="https://en.wikipedia.org/wiki/Historical_urban_community_sizes" target="_blank" rel="noopener">Historical urban community sizes</a>. Gathered September 29, 2026.</li>
-            <li id="flagsrc" hidden>Flags: Wikimedia Commons, chosen through each state’s Wikidata entry (the flag dated to that year where Wikidata gives dates). Most are in the public domain; the others are credited under Flag credits. Flags of some early states are later reconstructions.</li>
+            <li>City populations: Wikidata (CC0), census tables in city articles in English, German, French, Polish, Russian, Ukrainian, Greek, Turkish and other Wikipedia editions (CC BY-SA 4.0), the UN Statistics Division’s Demographic Yearbook city table (public domain via datasets/population-city), Jan de Vries’s estimates for 1500–1800 (<i>European Urbanization, 1500–1800</i>, 1984) from Matthew Lincoln’s europop dataset (CC0), and estimates by Chandler, de Vries and Mitchell as tabled in Wikipedia's <a href="https://en.wikipedia.org/wiki/Historical_urban_community_sizes" target="_blank" rel="noopener">Historical urban community sizes</a>. Gathered September 29, 2026.</li>
+            <li id="flagsrc" hidden>Flags: Wikimedia Commons, chosen through each state’s Wikidata entry (the flag dated to that year where Wikidata gives dates). Most are in the public domain; each popup names its flag’s license, and the others are credited under Flag credits. Flags of some early states are later reconstructions.</li>
             <li>Coastlines, lakes and rivers: Natural Earth (public domain).</li>
             <li>Projection: Lambert azimuthal equal-area for Europe (ETRS89-LAEA), so areas compare fairly.</li>
           </ul>
@@ -326,7 +327,8 @@ function loadEra(E) {
 $('land').setAttribute('d', pathOf(topojson.merge(topo, topo.objects.regions.geometries)));
 $('lakes').setAttribute('d', pathOf({ type: 'GeometryCollection', geometries: topojson.feature(topo, topo.objects.lakes).features.map(f => f.geometry) }));
 $('grat').setAttribute('d', pathOf({ type: 'GeometryCollection', geometries: topojson.feature(topo, topo.objects.grat).features.map(f => f.geometry) }));
-$('edge').setAttribute('d', pathOf({ type: 'GeometryCollection', geometries: topojson.feature(topo, topo.objects.edge).features.map(f => ({ type: 'Polygon', coordinates: [f.geometry.coordinates] })) }));
+// beyond the mapped area: plain land and sea, so the map fills the screen (no country colors there)
+if (topo.objects.outland) $('outland').setAttribute('d', pathOf({ type: 'GeometryCollection', geometries: topojson.feature(topo, topo.objects.outland).features.map(f => f.geometry) }));
 $('rivers').setAttribute('d', pathOf({ type: 'GeometryCollection', geometries: topojson.feature(topo, topo.objects.rivers).features.map(f => f.geometry) }));
 
 // ---------- colors and hatching ----------
@@ -628,7 +630,7 @@ function drawPin() {
   });
 }
 // ---------- cities: shown inside the highlighted country; tap one for its population that year ----------
-const CSRC = ['Wikidata', 'German Wikipedia', 'English Wikipedia', 'Chandler, de Vries and Mitchell (estimates for the wider city)', 'the city’s article in another Wikipedia edition', 'UN Statistics Division'];
+const CSRC = ['Wikidata', 'German Wikipedia', 'English Wikipedia', 'Chandler, de Vries and Mitchell (estimates for the wider city)', 'the city’s article in another Wikipedia edition', 'UN Statistics Division', 'Jan de Vries, European Urbanization 1500–1800 (estimate)'];
 const CITIES = D.cities.map(([n, x, y, ss, P], i) => ({ i, n, x, y, ss, P }));
 // who held the city in year y (-2: that era's map has not loaded yet)
 const cityUnit = (c, y) => { const E = eraOf(y); if (!E.ready) return -2; const s = c.ss[E.i]; return s < 0 ? -1 : E.unitAt[s * E.ny + y - E.y0]; };
@@ -723,7 +725,7 @@ function cityHtml(d) {
   const line = c.P.map((q, j) => (j ? 'L' : 'M') + X(q[0]).toFixed(1) + ',' + Y(q[1]).toFixed(1)).join('');
   const ticks = []; for (let t = Math.ceil(C0 / step) * step; t <= Y1; t += step) ticks.push(t);
   const chart = `<svg class="pchart" viewBox="0 0 ${W} ${H}" aria-hidden="true"><line class="now" x1="${X(year)}" x2="${X(year)}" y1="2" y2="${H - 11}"/><path class="ln" d="${line}"/>` +
-    c.P.map(q => `<circle class="pt${q[2] === 3 ? ' c' : ''}${q[0] === year ? ' on' : ''}" cx="${X(q[0]).toFixed(1)}" cy="${Y(q[1]).toFixed(1)}" r="${q[0] === year ? 3.6 : 2.2}"/>`).join('') +
+    c.P.map(q => `<circle class="pt${q[2] === 3 || q[2] === 6 ? ' c' : ''}${q[0] === year ? ' on' : ''}" cx="${X(q[0]).toFixed(1)}" cy="${Y(q[1]).toFixed(1)}" r="${q[0] === year ? 3.6 : 2.2}"/>`).join('') +
     c.P.map(q => `<circle class="hit" data-y="${q[0]}" cx="${X(q[0]).toFixed(1)}" cy="${Y(q[1]).toFixed(1)}" r="6"><title>${q[0]}: ${fmt(q[1])}</title></circle>`).join('') +
     (p.k === 'est' ? `<circle class="cur" cx="${X(year)}" cy="${Y(p.v).toFixed(1)}" r="3"/>` : '') +
     ticks.map(t => `<text class="ax" x="${X(t).toFixed(1)}" y="${H - 1}" text-anchor="${t === ticks[0] && X(t) < 16 ? 'start' : 'middle'}">${t}</text>`).join('') + `</svg>`;
@@ -741,19 +743,33 @@ function cityHtml(d) {
   return `<button type="button" class="x" aria-label="Close">×</button><div class="nm">${esc(c.n)}</div><div class="pop">${big} <small>people in ${year}</small></div><p>${esc(note)}</p>${chart}` +
     `<div class="hk">Held by</div>${strip}<ul class="hlist">${changes}</ul>`;
 }
-// the state's flag that year (chosen through Wikidata, images from Wikimedia Commons): a piece of flags.webp, drawn at half size
-function flagHtml(u, y) {
-  const F = D.flags; if (!F) return '';
-  const row = (LABELS[y] || []).find(r => r[0] === u); if (!row || row[6] < 0) return '';
-  const run = (F.desc[row[6]] || []).find(r => r[1] <= y && y <= r[2]); if (!run) return '';
-  const [x, fy, w, h] = F.items[run[0]];
+// the state's flag that year (chosen through Wikidata, images from Wikimedia Commons): its index in the flag sheet
+function flagOf(u, y) {
+  const F = D.flags; if (!F) return -1;
+  const row = (LABELS[y] || []).find(r => r[0] === u); if (!row || row[6] < 0) return -1;
+  const run = (F.desc[row[6]] || []).find(r => r[1] <= y && y <= r[2]);
+  return run ? run[0] : -1;
+}
+// the flag, drawn at half the sheet's size
+function flagHtml(i) {
+  if (i < 0) return '';
+  const F = D.flags, [x, fy, w, h] = F.items[i];
   return `<span class="flag" role="img" aria-label="Flag" style="width:${w / 2}px;height:${h / 2}px;background-size:${F.sheet[0] / 2}px ${F.sheet[1] / 2}px;background-position:${-x / 2}px ${-fy / 2}px"></span>`;
 }
+const isPD = lic => /public domain|^cc0/i.test(lic || '');
+// where the flag image comes from and its license, with links to the file and the license
+function flagCredit(i) {
+  if (i < 0) return '';
+  const [file, by, lic, url, licUrl] = D.flags.credits[i];
+  const who = by && by.length > 90 ? by.slice(0, 87).trim() + '…' : by;
+  const l = licUrl ? `<a href="${esc(licUrl)}" target="_blank" rel="noopener">${esc(lic)}</a>` : esc(lic);
+  return `<p class="src">Flag: <a href="${esc(url)}" target="_blank" rel="noopener">Wikimedia Commons</a>${who && !isPD(lic) ? ', ' + esc(who) : ''}, ${isPD(lic) ? 'public domain' : l}.</p>`;
+}
 function countryHtml(u) {
-  const d = descOf(u, year);
-  return `<button type="button" class="x" aria-label="Close">×</button><div class="nm">${flagHtml(u, year)}<span>${esc(d ? d.t : nameOf(u, year))}</span></div>` +
+  const d = descOf(u, year), fi = flagOf(u, year);
+  return `<button type="button" class="x" aria-label="Close">×</button><div class="nm">${flagHtml(fi)}<span>${esc(d ? d.t : nameOf(u, year))}</span></div>` +
     (d && datesOf(d) ? `<div class="dt">${esc(datesOf(d))}</div>` : '') + (d ? `<p class="tx">${esc(d.x)}</p>` : '') +
-    (isVassal(u) ? `<p>${esc(depText(u))}.</p>` : '') + srcShort() +
+    (isVassal(u) ? `<p>${esc(depText(u))}.</p>` : '') + srcShort() + flagCredit(fi) +
     (cityDots.length ? `<p class="hint">Tap a city for its population in ${year}.</p>` : '');
 }
 // where the border at the tapped spot comes from, in one line
@@ -1046,7 +1062,9 @@ if (D.flags) {
   const cr = D.flags.credits;
   $('flagsrc').hidden = false;
   $('flagcredits').hidden = false;
-  $('flagcredits').innerHTML = `<summary>Flag credits (${cr.length} not in the public domain)</summary><ul>` + cr.map(([f, by, lic, url]) => `<li><a href="${esc(url)}" target="_blank" rel="noopener">${esc(f.replace(/\.[a-z]+$/i, ''))}</a>${by ? ', ' + esc(by) : ''}${lic ? ' (' + esc(lic) + ')' : ''}</li>`).join('') + '</ul>';
+  const nf = cr.filter(c => !isPD(c[2]));
+  $('flagcredits').innerHTML = `<summary>Flag credits</summary><p class="hint">${cr.length} flag images from Wikimedia Commons, shown smaller than the originals. ${cr.length - nf.length} are in the public domain; these ${nf.length} are used under the license named:</p><ul>` +
+    nf.map(([f, by, lic, url, lu]) => `<li><a href="${esc(url)}" target="_blank" rel="noopener">${esc(f.replace(/\.[a-z]+$/i, ''))}</a>${by ? ' by ' + esc(by) : ''}, ${lu ? `<a href="${esc(lu)}" target="_blank" rel="noopener">${esc(lic)}</a>` : esc(lic)}</li>`).join('') + '</ul>';
 }
 
 draw();

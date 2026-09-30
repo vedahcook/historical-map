@@ -154,11 +154,23 @@ rfeats = [feat(proj(shape(f['geometry']).intersection(VIEW)), {}) for f in river
 lfeats = [f for f in lfeats if f['geometry']['coordinates']]; rfeats = [f for f in rfeats if f['geometry']['coordinates']]
 # graticule every 10 degrees, plus the edge of the mapped area
 from shapely.geometry import LineString
-grat = [LineString([(lon, la / 10) for la in range(344, 719)]) for lon in range(-20, 50, 10)]
-grat += [LineString([(lo / 10, lat) for lo in range(-255, 496)]) for lat in range(40, 71, 10)]
-gratf = [feat(proj(g), {}) for g in grat]
 edgef = [feat(proj(shapely.segmentize(VIEW, 0.1).boundary), {})]
+# around the mapped area, out to half the map's size again on every side: plain land (Natural Earth) and the
+# graticule, so the map fills the screen instead of ending in a fan shape. Only the later era's file carries these.
+vb0 = proj(VIEW).bounds; dw, dh = (vb0[2] - vb0[0]) / 2, (vb0[3] - vb0[1]) / 2
+RECT = box(vb0[0] - dw, vb0[1] - dh, vb0[2] + dw, vb0[3] + dh)
+grat = [LineString([(lon, la / 2) for la in range(0, 171)]) for lon in range(-180, 180, 10)]
+grat += [LineString([(lo / 2, lat) for lo in range(-360, 361)]) for lat in range(10, 81, 10)]
+gratf = [feat(g, {}) for g in (proj(g).intersection(RECT) for g in grat) if not g.is_empty]
+outf = []
+if os.environ.get('ERA') != 'early':
+    nh = box(-180, 1, 180, 90)
+    land = [shapely.make_valid(shape(f['geometry'])).intersection(nh) for f in json.load(open(f'{BAL}/ne_50m_land.geojson'))['features']]
+    out = shapely.unary_union([proj(g) for g in land if not g.is_empty]).intersection(RECT).difference(proj(shapely.segmentize(VIEW, 0.1)))
+    outf = [feat(p.simplify(1.5), {}) for p in shapely.get_parts(shapely.make_valid(out)) if p.area > 30]
+    print('land outside the mapped area:', len(outf), 'pieces')
 json.dump({'grat': {'type': 'FeatureCollection', 'features': gratf}, 'edge': {'type': 'FeatureCollection', 'features': edgef},
+           'outland': {'type': 'FeatureCollection', 'features': outf},
            'regions': {'type': 'FeatureCollection', 'features': gfeats}, 'alts': {'type': 'FeatureCollection', 'features': afeats},
            'lakes': {'type': 'FeatureCollection', 'features': lfeats}, 'rivers': {'type': 'FeatureCollection', 'features': rfeats}},
           open('geo.json', 'w'))
@@ -266,7 +278,7 @@ for u in used_units:
     units_out.append({'k': k, 'n': name, 'ov': UI.get(K.index(ov)) if ov and K.index(ov) in UI else None, 'c': col.get(fa, 0), **({'o': 1} if k in KIND else {})})
 # ---------- cities: place each one in its map region, keep its population figures ----------
 HERE = __file__.rsplit('/', 1)[0] or '.'
-CSRC = 'WGECOU'   # Wikidata, German Wikipedia, English Wikipedia, Chandler/de Vries/Mitchell estimate, other Wikipedia editions, UN Statistics Division
+CSRC = 'WGECOUV'   # Wikidata, German Wikipedia, English Wikipedia, Chandler/de Vries/Mitchell estimate, other Wikipedia editions, UN Statistics Division, de Vries 1984 (europop)
 cities, offmap = [], []
 for line in open(f'{HERE}/cities.txt', encoding='utf-8'):
     if not line.strip() or line.startswith('#'): continue

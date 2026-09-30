@@ -2,14 +2,17 @@
 
 An interactive map of Europe's country borders, one year at a time (as of July 1). It shows OpenHistoricalMap (OHM) by default. Where another source draws a different border, the map outlines that area with a dashed line and a numbered marker, and says what each source claims.
 
-The page is `europe-borders.html`, published as a Claude artifact. It holds the map for 1800–2026. The map for 1500–1799 is `europe-borders-1500.json`, which the page loads from beside it a moment after it opens (or at once if it opens on an earlier year). Opened straight from disk, a browser may refuse to load that file; the page then says so for years before 1800.
+The page is `europe-borders.html`, published as a Claude artifact. It holds the map for 1800–2026. Two files sit beside it:
+
+- `europe-borders-1500.json`: the map for 1500–1799, which the page loads a moment after it opens (or at once if it opens on an earlier year). Opened straight from disk, a browser may refuse to load it; the page then says so for years before 1800.
+- `flags.webp`: all the flag images in one picture.
 
 ## Using the map
 
-- **Tap a country** to highlight it and dim the rest. The map zooms so the whole country is on screen, and a popup describes it for that year: when the state began and ended, how, and where the border at that spot comes from. Rings mark detached parts. Tap it again, or the sea, to clear it.
+- **Tap a country** to highlight it and dim the rest. The map zooms so the whole country is on screen, and a popup describes it for that year: its flag, when the state began and ended, how, and where the border at that spot comes from. Rings mark detached parts. Tap it again, or the sea, to clear it.
 - **The highlight follows the country across 1800,** where the page switches between its two maps.
 - **The timeline** shows key events, or only the highlighted country's events: when it began or ended, name changes, and gains or losses over 1,500 km². The row of events scrolls sideways.
-- **Cities** appear inside the highlighted country. Tap a city for its population that year, a chart of all its figures, and who held it over the years. Tap a dot in the chart or a band in the strip to go to that year.
+- **Cities** appear inside the highlighted country. Tap a city for its population that year, a chart of all its figures, and who held it over the years. Tap a dot in the chart, a spot on the strip, or a line in the list to go to that year; the popup stays put.
 - **One popup at a time,** placed to cover as little as possible of what it describes.
 
 ## How the map decides
@@ -32,9 +35,17 @@ OHM is compared with CShapes-Europe from 1816 and with Cliopatria before that.
 
 `descriptions.py` (1800–1899), `descriptions20.py` (1900–2026) and `descriptions15.py` (1500–1799) give each state a title, dates and two sentences on how it began and ended. Early entries for countries that also exist after 1799 end by 1799, so they never apply to the later map. They were checked against the introductions of the Wikipedia articles on each state.
 
+## Flags
+
+The popup shows the flag the state used that year, from Wikimedia Commons, with its license.
+
+- **Which flag:** the flag images Wikidata lists for the state's Wikipedia article, with the years each was in use (from Wikidata, or else from the file name). Where the dates overlap, the most recently adopted flag wins. `flags/articles.py` names the article for each state and fixes wrong or missing entries; `flags/flags_plan.py` and `flags/build_flags.py` pick the flag for each year and pack the images.
+- **No flag** for occupied land, and for about 75 states Wikidata has no flag for (mostly short-lived or early ones).
+- **Licenses:** 316 images; about 250 are in the public domain. The rest are under Creative Commons or similar licenses, so the popup names the author and links the license, and the page's "Flag credits" list gives all of them. `flags/flags_files_meta.json` has the author and license of each file as Commons gives them; `AUTHORS` in `flags/articles.py` fixes the ones that are not a plain name.
+
 ## City populations
 
-`cities.txt` lists about 390 of Europe's largest cities, with at most one figure per decade. Each figure is tagged with its source:
+`cities.txt` lists 451 of Europe's largest cities, with at most one figure per decade. Each figure is tagged with its source:
 
 | Code | Source |
 |---|---|
@@ -42,8 +53,9 @@ OHM is compared with CShapes-Europe from 1816 and with Cliopatria before that.
 | E, G, O | Census tables in the city's English, German or other Wikipedia article |
 | U | UN Statistics Division, Demographic Yearbook city table |
 | C | Estimates by Chandler, de Vries and Mitchell, from Wikipedia's "Historical urban community sizes" |
+| V | Jan de Vries, *European Urbanization 1500–1800* (1984), via the europop dataset (public domain, CC0) |
 
-Before 1800 there are figures for about 60 of the largest cities, mostly Jan de Vries's estimates every 50 years (`cities/add_early.py`). The page shows the figure for the chosen year if there is one. Otherwise it estimates between the figures either side, assuming steady growth, and labels it as an estimate: within ten years of a figure, or 25 years before 1800. A hollow dot means there is no figure that close.
+Before 1800 there are figures for about 250 cities, mostly de Vries's estimates every 50 years for towns of 10,000 or more (`cities/add_early.py`, then `cities/add_devries.py`). 58 of the cities, such as Leiden, Bruges and Toledo, were added because they had at least 20,000 people at some point before 1800; they have no later figures, so they appear only on the early map. The page shows the figure for the chosen year if there is one. Otherwise it estimates between the figures either side, assuming steady growth, and labels it as an estimate: within ten years of a figure, or 25 years before 1800. A hollow dot means there is no figure that close.
 
 ## Checks
 
@@ -61,14 +73,16 @@ Each era is built in its own working folder with the same scripts. Setting `ERA=
    - `python3 rel_polys.py`, `python3 faces.py`, `python3 assign.py`, `python3 alts.py`, `python3 regions.py`
    - `python3 export.py <folder with Natural Earth lakes and rivers> fills.json`. Run the later era first; for the early era set `KEEP_COLORS=<later era's folder>/data.json` so countries keep their colors.
    - `node topo.mjs geo.json topo.json 0.3 1e5`
-3. **In the later era's folder:** `python3 merge_eras.py <early era's folder>`, then `python3 build_page.py`. Publish `europe-borders.html` with `europe-borders-1500.json` beside it.
+3. **In the later era's folder:** `python3 merge_eras.py <early era's folder>`.
+4. **Flags, same folder:** `python3 flags/flags_plan.py` (which article each description's flag comes from), then run `browser/fetch_flags.js` in a browser console to get `flags_claims.json` (each article's flags and dates from Wikidata) and `flags_files.json` (thumbnails, authors and licenses from Commons), then `python3 flags/build_flags.py`, which writes `flags.webp` and `flags_index.json`. Run `merge_eras.py` again so the page data includes them. The saved `flags/flags_claims.json` can be reused; `flags_files.json` is not kept because of its size.
+5. `python3 build_page.py`. Publish `europe-borders.html` with `europe-borders-1500.json` and `flags.webp` beside it.
 
 `fills.json` comes from `node fills.mjs` (candidate fill colors and their measured separation). Needs Python 3 with shapely and pyproj, and Node with topojson-server, topojson-simplify and topojson-client.
 
 ## Limits
 
 - **One date per year:** July 1. Changes during a year appear the following July.
-- **The map covers longitude −25.5 to 49.5 and latitude 34.4 to 71.8.** Places outside it are cut off at the edge.
+- **The map covers longitude −25.5 to 49.5 and latitude 34.4 to 71.8.** Countries stop at that edge; land beyond it is shown in plain gray (Natural Earth), so the map fills the frame.
 - **The early map is coarser.** Small states of the Holy Roman Empire are often missing before about 1700, the steppe and the Caucasus are only roughly drawn, and Cliopatria's outlines are simplified.
 - **City figures vary in quality.** Early figures are estimates, some for the wider city.
-- **CShapes-Europe is non-commercial (CC BY-NC-SA 4.0),** so the map is too.
+- **CShapes-Europe is non-commercial (CC BY-NC-SA 4.0),** so the map is too. Flag images keep their own licenses (see Flags).
