@@ -170,7 +170,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
 <div class="app">
   <header class="top">
     <h1>Europe's Borders, 1500–2026</h1>
-    <p>Who held what on July 1 of every year, from OpenHistoricalMap checked against other datasets. Crosshatching marks occupied land; dashed outlines mark places where another source draws a different border.</p>
+    <p>Who held what on July 1 of every year, from OpenHistoricalMap checked against other datasets. Crosshatching marks occupied land. Where another source draws a different border, the side panel lists it; pick one to outline it on the map.</p>
   </header>
   <div class="main">
     <section class="mapcol" aria-label="Map">
@@ -509,9 +509,10 @@ function drawLabels() {
 
 // ---------- alternative borders ----------
 const altsNow = () => ALTS.filter(a => a.y0 <= year && year <= a.y1).sort((a, b) => b.km2 - a.km2);
+// the map outlines an alternative border only while it is picked (from the side panel), so the map stays uncluttered
 function drawAlts() {
   const g = $('alts'); g.textContent = '';
-  for (const a of altsNow()) {
+  for (const a of altsNow().filter(a => a.i === selAlt)) {
     const f = a.f; if (!f) continue;
     const d = pathOf(f.geometry);
     el('path', { d, class: 'althalo' }, g);
@@ -523,7 +524,8 @@ function drawBadges() {
   const g = $('badges'); g.textContent = ''; const k = pxPerKm(); if (!k) return;
   const taken = labelBoxes.slice();
   altsNow().forEach((a, n) => {
-    // keep markers off the country names and off each other: try small offsets around the spot
+    if (a.i !== selAlt) return;             // numbered as in the side panel's list
+    // keep the marker off the country names: try small offsets around the spot
     let bx = a.x, by = a.y;
     const sx0 = (a.x - shown[0]) * k, sy0 = (a.y - shown[1]) * k;
     for (const [dx, dy] of [[0, 0], [0, 18], [0, -18], [20, 0], [-20, 0], [18, 18], [-18, 18], [18, -18], [-18, -18], [0, 30], [0, -30], [32, 0], [-32, 0], [28, 24], [-28, 24], [28, -24], [-28, -24], [0, 42], [0, -42]]) {
@@ -577,7 +579,7 @@ function fitBox(bb) {
 function click(ev) {
   const [x, y] = toMap(ev);
   // a numbered marker takes the click first
-  const k = pxPerKm(); const onBadge = altsNow().find(a => { const p = badgeAt[a.i] || [a.x, a.y]; return Math.hypot((p[0] - x) * k, (p[1] - y) * k) <= 13; });
+  const k = pxPerKm(); const onBadge = altsNow().find(a => { if (a.i !== selAlt) return false; const p = badgeAt[a.i] || [a.x, a.y]; return Math.hypot((p[0] - x) * k, (p[1] - y) * k) <= 13; });
   if (onBadge) { selectAlt(onBadge.i); return; }
   const c = cityAt(ev);                                   // a city (its dot or its name) comes next
   if (c) { selCity = selCity === c.i ? null : c.i; drawCities(); renderPop(); return; }
@@ -586,11 +588,8 @@ function click(ev) {
   if (selCity != null && f && u === cur) { selCity = null; drawCities(); renderPop(); return; }   // first tap inside the country just closes the city
   selCity = null;
   if (!f || (place && u === cur)) place = null;          // tapping the highlighted country again, or the sea, clears it
-  else {
-    place = { x, y, s: f.properties.s, E: curEra() }; popClosed = false;
-    const hit = altsNow().find(a => { const af = a.f; return af && x >= af.bb[0] && x <= af.bb[2] && y >= af.bb[1] && y <= af.bb[3] && inGeom(af.geometry, x, y); });
-    if (hit) { selAlt = hit.i; drawAlts(); drawBadges(); renderAlts(); }
-  }
+  else { place = { x, y, s: f.properties.s, E: curEra() }; popClosed = false; }
+  if (!f && selAlt != null) { selAlt = null; drawAlts(); renderAlts(); }   // the sea also clears a picked alternative border
   drawPin(); drawDim(); drawLabels(); drawBadges(); drawCities(); renderTimeline();
   if (place && u >= 0 && u !== cur) fitUnit(u); else renderPop();     // a newly highlighted country is brought fully into view
 }
@@ -954,7 +953,7 @@ function renderAlts() {
   const list = altsNow();
   const card = $('altcard');
   if (!list.length) { card.innerHTML = `<h3>Alternative borders</h3><p class="hint">In ${year} the other sources agree with this map, apart from small differences in how exactly borders are drawn.</p>`; return; }
-  card.innerHTML = `<h3>Alternative borders in ${year} (${list.length})</h3><p class="hint">Another source draws these areas differently. Pick one to see what each source says.</p>` +
+  card.innerHTML = `<h3>Alternative borders in ${year} (${list.length})</h3><p class="hint">Another source draws these areas differently. Pick one to outline it on the map and see what each source says.</p>` +
     `<ol class="alist">${list.map((a, n) => `<li><button type="button" data-a="${a.i}" aria-expanded="${a.i === selAlt}"><span class="n">${n + 1}</span><span><span class="t">${esc(altTitle(a))}</span><br><span class="d">${esc(SRCNAME[a.src])} · ${years(a)} · ${fmt(a.km2)} km²</span></span></button>` +
       (a.i === selAlt ? `<div class="altdetail">${altText(a)}</div>` : '') + `</li>`).join('')}</ol>`;
   card.querySelectorAll('.alist button').forEach(b => b.onclick = () => selectAlt(+b.dataset.a, true));
@@ -1050,7 +1049,7 @@ $('legend').innerHTML =
   `<div><svg viewBox="0 0 30 18"><rect width="30" height="18" style="fill:${fillVar(U.findIndex(u => u.k === 'FRA'))}"/></svg><span>Each country keeps one color throughout; neighbors always differ.</span></div>` +
   `<div><svg viewBox="0 0 30 18"><defs><pattern id="lg-h" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)"><rect width="1.1" height="6" style="fill:${hueVar(U[sample].ov)};opacity:.38"/></pattern></defs><rect width="30" height="18" style="fill:${fillVar(sample)}"/><rect width="30" height="18" fill="url(#lg-h)"/></svg><span>Stripes: self-governing under an overlord, or a protectorate, mandate, colony or client state. The stripes take the overlord's color.</span></div>` +
   `<div><svg viewBox="0 0 30 18"><defs><pattern id="lg-x" patternUnits="userSpaceOnUse" width="8" height="8" patternTransform="rotate(45)"><rect width="0.9" height="8" style="fill:${hueVar(U[osample].ov)};opacity:.32"/><rect width="8" height="0.9" style="fill:${hueVar(U[osample].ov)};opacity:.32"/></pattern></defs><rect width="30" height="18" style="fill:${fillVar(osample)}"/><rect width="30" height="18" fill="url(#lg-x)"/></svg><span>Crosshatch: occupied by another power, annexed without international recognition, or held by a breakaway government with another power's backing. The fill is the country that held the land in law; the lines take the occupier's color.</span></div>` +
-  `<div><svg viewBox="0 0 30 18"><rect width="30" height="18" style="fill:var(--sunk)"/><rect x="3" y="3" width="24" height="12" style="fill:var(--alt-fill);stroke:var(--alt);stroke-width:1.6;stroke-dasharray:4 3"/></svg><span>Dashed outline and number: another source draws a different border here.</span></div>` +
+  `<div><svg viewBox="0 0 30 18"><rect width="30" height="18" style="fill:var(--sunk)"/><rect x="3" y="3" width="24" height="12" style="fill:var(--alt-fill);stroke:var(--alt);stroke-width:1.6;stroke-dasharray:4 3"/></svg><span>Dashed outline: an area another source draws differently, shown when you pick it from the list of alternative borders.</span></div>` +
   `<div><svg viewBox="0 0 30 18"><rect width="30" height="18" style="fill:var(--none)"/></svg><span>No source assigns this area to a country.</span></div>`;
 function renderFixes() {
   const fixes = ERAS.filter(e => e.ready).flatMap(e => e.R.filter(r => r.t === 'fix'));

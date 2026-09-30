@@ -1,6 +1,6 @@
 # Europe's borders, 1500–2026
 
-An interactive map of Europe's country borders, one year at a time (as of July 1). It shows OpenHistoricalMap (OHM) by default. Where another source draws a different border, the map outlines that area with a dashed line and a numbered marker, and says what each source claims.
+An interactive map of Europe's country borders, one year at a time (as of July 1). It shows OpenHistoricalMap (OHM) by default. Where another source draws a different border, the side panel lists it; picking one outlines the area on the map with a dashed line and says what each source claims. Nothing is outlined until one is picked.
 
 The page is `europe-borders.html`, published as a Claude artifact. It holds the map for 1800–2026. Two files sit beside it:
 
