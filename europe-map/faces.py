@@ -11,7 +11,7 @@ from shapely.geometry import shape, box
 from shapely.ops import unary_union, polygonize
 from shapely.strtree import STRtree
 sys.path.insert(0, __file__.rsplit('/', 1)[0])
-from units import ohm_roles, cs_unit, clio_unit
+from units import ohm_roles, cs_unit, clio_unit, CLIO_OCCUPIER
 
 B = (-26.0, 34.0, 50.0, 72.0)
 BOX = box(*B)
@@ -22,16 +22,26 @@ P = pickle.load(open('rel_polys.pkl', 'rb'))
 land = pickle.load(open('land.pkl', 'rb'))
 clio = pickle.load(open('clio.pkl', 'rb'))
 
-# records that matter: OHM records with a role; CShapes 1816-1900; Cliopatria 1795-1815 (+ all years for gap filling)
+# records that matter: OHM records with a role; CShapes from 1816; Cliopatria 1795-1815 (+ all years for gap filling,
+# and each power's area of control in 1914-46 for occupations); breakaway regions and occupied Ukraine
 ohm = {rid: g for rid, g in P.items() if ohm_roles(R[rid]['t'].get('n'), R[rid]['t']['l'])}
 cs = []
 for f in d['cshapes']['features']:
     p = f['properties']
-    if p['To'] >= 1816 and p['From'] <= 1900 and cs_unit(p['Name'], p['Status'], p['From']):
+    if p['To'] >= 1816 and cs_unit(p['Name'], p['Status'], p['From']):
         g = shapely.make_valid(shape(f['geometry'])).intersection(BOX)
         if not g.is_empty: cs.append((p, g.simplify(0.002)))
-cl = [(p, shapely.make_valid(g)) for p, g in clio if clio_unit(p['Name']) and p['FromYear'] <= 1900]
-print('records: ohm', len(ohm), 'cshapes', len(cs), 'clio', len(cl), round(time.time() - t0), 's')
+cl = [(p, shapely.make_valid(g)) for p, g in clio if clio_unit(p['Name'], p['FromYear'])]
+co = [(p, shapely.make_valid(g)) for p, g in clio if p['Name'] in CLIO_OCCUPIER and p['ToYear'] >= 1914 and p['FromYear'] <= 1946]
+ext = []
+for k, g in d['naturalearth'].items():
+    ext.append(({'k': k, 'src': 'naturalearth'}, shapely.make_valid(shape(g)).intersection(BOX)))
+UA = box(22, 44, 41, 52.5)     # DeepState also marks old Finnish, Estonian and Latvian border areas held by Russia; keep Ukraine only
+for y, gs in d['deepstate'].items():
+    gs = [shapely.make_valid(shape(x)) for x in gs]
+    g = shapely.make_valid(shapely.union_all([x for x in gs if UA.contains(x.representative_point())])).intersection(BOX)
+    ext.append(({'k': 'ukraine-' + y, 'src': 'deepstate', 'y': int(y)}, g))
+print('records: ohm', len(ohm), 'cshapes', len(cs), 'clio', len(cl), 'clio powers', len(co), 'other', len(ext), round(time.time() - t0), 's')
 
 # Collect every border line as unique 2-point segments (many records repeat the same lines).
 def segs(g, out, nd=4):
@@ -57,6 +67,8 @@ segs(land, S); segs(BOX, S)
 for p, g in cs: segs(g, S)
 for p, g in cl:
     if p['FromYear'] <= 1815: segs(g.simplify(0.003), S)
+for p, g in co: segs(g.simplify(0.003), S)
+for p, g in ext: segs(g.simplify(0.002), S)
 print('segments: ohm', n_ohm, 'all', len(S), round(time.time() - t0), 's')
 L = unary_union(shapely.linestrings(np.array([[a, b] for a, b in S])))
 print('noded', round(time.time() - t0), 's')
@@ -75,7 +87,10 @@ def members(g):
 in_ohm = {rid: members(g) for rid, g in ohm.items()}
 in_cs = [members(g) for p, g in cs]
 in_cl = [members(g) for p, g in cl]
+in_co = [members(g) for p, g in co]
+in_ext = [members(g) for p, g in ext]
 print('membership done', round(time.time() - t0), 's')
 pickle.dump({'faces': faces, 'pts': pts, 'land': is_land, 'in_ohm': in_ohm, 'cs': [p for p, g in cs], 'in_cs': in_cs,
-             'cl': [p for p, g in cl], 'in_cl': in_cl}, open('faces.pkl', 'wb'))
+             'cl': [p for p, g in cl], 'in_cl': in_cl, 'co': [p for p, g in co], 'in_co': in_co,
+             'ext': [p for p, g in ext], 'in_ext': in_ext}, open('faces.pkl', 'wb'))
 print('saved', round(time.time() - t0), 's')

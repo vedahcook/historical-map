@@ -13,7 +13,7 @@ import shapely
 from shapely.ops import unary_union
 from pyproj import Transformer
 sys.path.insert(0, __file__.rsplit('/', 1)[0])
-from units import UNITS, sovereign
+from units import UNITS, sovereign, KIND
 
 MIN_KM2 = 400        # smallest alternative region shown
 ERODE_M = 3000       # must still exist after shrinking by 3 km (so at least ~6 km wide)
@@ -27,6 +27,11 @@ for i, k in enumerate(K):
     for j, y in enumerate(YEARS): SOV[i, j] = KI[sovereign(k, y)]
 sov = lambda U: SOV[U, np.arange(NY)[None, :]]
 d_s = sov(A['def_u'])
+IS_OCC = np.array([k in KIND for k in K] + [False])
+OCC_SOV = np.full((len(K) + 1, NY), NONE, np.int16)
+for k in KIND:
+    for j, y in enumerate(YEARS): OCC_SOV[KI[k], j] = KI[sovereign(UNITS[k][1], y)]
+EDGE = ['GEO', 'AZE', 'ARM', 'MRNC', 'UKR', 'BLR', 'GEO_S', 'AZE_S', 'ARM_S', 'UKR_S', 'BLR_S', 'TSF', 'WHT', 'EST', 'LVA', 'LTU']
 GERMAN = {KI[k] for k in ['SAX', 'MKS', 'MKST', 'OLD', 'BRU', 'HKA', 'HDA', 'NAS', 'HAN', 'ANH', 'LIP', 'SCH', 'WALD', 'REU', 'SWB',
                           'SXW', 'SXA', 'SXC', 'SXM', 'HAM', 'BRE', 'LUB', 'FRK', 'HHO', 'BAV', 'WUR', 'BAD']}
 YA = np.array(YEARS)[None, :]
@@ -38,6 +43,15 @@ def conflicts(alt_u, yr_ok):
     c &= ~((YA >= 1867) & (YA <= 1870) & (d_s == KI['PRU']) & np.isin(alt_u, list(GERMAN)))
     # CShapes folds Hanover into the UK while they shared a king (to 1837)
     c &= ~((YA <= 1837) & (A['def_u'] == KI['HAN']) & (a_s == KI['GBR']))
+    # occupations: the crosshatch already shows both the occupier and the country that held the land in law, so a source
+    # that shows the occupier, or (during the world wars) a different prewar owner, is not a further alternative
+    du = A['def_u']
+    c &= ~(IS_OCC[du] & (((YA >= 1914) & (YA <= 1945)) | (a_s == OCC_SOV[du, np.arange(NY)[None, :]])))
+    # CShapes follows the Correlates of War list, which leaves out the states of 1918-21 on Russia's edges and counts
+    # Iceland as Danish until 1944; and it shows the Habsburg successor states for all of 1918
+    c &= ~((YA >= 1918) & (YA <= 1921) & np.isin(du, [KI[k] for k in EDGE]) & (a_s == KI['RUS']))
+    c &= ~((d_s == KI['ISL']) & (a_s == KI['DEN']))
+    c &= ~((YA == 1918) & (d_s == KI['AUT']))
     # timing: a one-year disagreement where the other source matches the map a year earlier or later
     sh = lambda M, k: np.concatenate([M[:, :1]] * k + [M[:, :-k]], 1) if k > 0 else np.concatenate([M[:, -k:]] + [M[:, -1:]] * -k, 1)
     cp = np.concatenate([np.zeros_like(c[:, :1]), c[:, :-1]], 1); cn = np.concatenate([c[:, 1:], np.zeros_like(c[:, :1])], 1)

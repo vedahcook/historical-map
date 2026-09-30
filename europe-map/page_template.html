@@ -1,4 +1,4 @@
-<title>Europe's Borders, 1800–1900</title>
+<title>Europe's Borders, 1800–2026</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Instrument+Sans:wght@400;500;600;700&family=Source+Sans+3:wght@300..700&display=swap">
 <style>
 /* Layout: an atlas plate. The map fills the left, a year slider runs under it, and a side panel explains the year, the place you clicked, and where sources disagree. */
@@ -70,9 +70,9 @@ button, select, input { font: inherit; color: inherit; }
 .pin circle { fill: var(--sel); stroke: var(--halo); }
 .city circle { fill: var(--ink); stroke: var(--halo); cursor: pointer; }
 .city.nofig circle { fill: var(--surface); stroke: var(--ink); }
-.city.on circle { fill: var(--sel); stroke: var(--halo); }
+.city.on circle { fill: var(--accent); stroke: var(--halo); }
 .clbl { font-family: var(--mapfont); font-weight: 400; fill: var(--ink); dominant-baseline: central; pointer-events: none; }
-.clbl.on { font-weight: 600; }
+.clbl.on { font-weight: 600; fill: var(--accent); }
 .clbl { cursor: pointer; }
 .mappop { font-family: var(--mapfont); position: absolute; z-index: 3; background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px 11px; box-shadow: 0 6px 18px rgba(0,0,0,0.16); font-size: 0.86rem; line-height: 1.4; }
 .mappop .x { position: absolute; right: 4px; top: 4px; width: 30px; height: 30px; border: 0; background: transparent; border-radius: 7px; cursor: pointer; color: var(--muted); font-size: 1.15rem; line-height: 1; }
@@ -141,7 +141,9 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
 .strip button { position: absolute; top: 0; height: 30px; border: 0; padding: 0 0 0 3px; border-right: 1px solid var(--surface); display: flex; align-items: center; cursor: pointer; overflow: hidden; }
 .strip button span { background: var(--surface); color: var(--ink); font-size: 0.7rem; font-weight: 600; padding: 0 4px; border-radius: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: calc(100% - 4px); }
 .strip .now { position: absolute; top: -2px; bottom: -2px; width: 2px; background: var(--ink); pointer-events: none; }
-.stripaxis { display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--faint); }
+.stripaxis { position: relative; height: 14px; font-size: 0.7rem; color: var(--faint); }
+.stripaxis span { position: absolute; transform: translateX(-50%); }
+.stripaxis span:first-child { transform: none; }
 .alist { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
 .alist li button { width: 100%; text-align: left; display: grid; grid-template-columns: 24px minmax(0, 1fr); gap: 10px; padding: 9px 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); cursor: pointer; }
 .alist li button[aria-pressed="true"] { border-color: var(--alt); background: var(--sunk); }
@@ -170,8 +172,8 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
 
 <div class="app">
   <header class="top">
-    <h1>Europe's Borders, 1800–1900</h1>
-    <p>Who held what, year by year, from OpenHistoricalMap, checked against two other datasets. Dashed outlines mark places where another source draws a different border.</p>
+    <h1>Europe's Borders, 1800–2026</h1>
+    <p>Who held what on July 1 of every year, from OpenHistoricalMap checked against other datasets. Crosshatching marks occupied land; dashed outlines mark places where another source draws a different border.</p>
   </header>
   <div class="main">
     <section class="mapcol" aria-label="Map">
@@ -211,7 +213,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
         </div>
         <div class="track">
           <svg class="spark" id="spark" preserveAspectRatio="none" aria-hidden="true"></svg>
-          <input type="range" id="year" min="1800" max="1900" step="1" value="1815" aria-label="Year">
+          <input type="range" id="year" min="1800" max="2026" step="1" value="1815" aria-label="Year">
           <div class="ticks" id="ticks"></div>
         </div>
         <div class="events" id="events" aria-label="Jump to a year"></div>
@@ -228,8 +230,9 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
       <section class="card about">
         <h3>How this map was made</h3>
         <p>Each year shows the borders in force on July 1. The map uses <a href="https://www.openhistoricalmap.org" target="_blank" rel="noopener">OpenHistoricalMap</a> (OHM), which matched the historical record in 149 of 160 spot checks. Where OHM has no record, it falls back to <a href="https://icr.ethz.ch/data/cshapes/" target="_blank" rel="noopener">CShapes-Europe</a> (from 1816) or <a href="https://github.com/Seshat-Global-History-Databank/cliopatria" target="_blank" rel="noopener">Cliopatria</a>. Where our checks found OHM wrong, the map applies a correction and says so.</p>
+        <p>Occupations: OHM records named occupation regimes, such as the General Government in Poland or the Allied zones of Germany, and the map uses them. Where OHM shows the country that held the land in law, the map adds occupations from Cliopatria’s year-by-year outlines of each power’s control (1914-46), land annexed during the Second World War and given back afterward, and the breakaway regions and occupied parts of Ukraine since 1990. Each of these is listed under corrections.</p>
         <p>Alternative borders compare OHM with CShapes-Europe from 1816 and with Cliopatria before that. They count only when a source puts an area of at least 400 km² (5,000 km² for the coarser Cliopatria) in a different country for longer than a year. Territories that governed themselves under an overlord count as part of the overlord for this comparison, because the sources disagree on whether to show them.</p>
-        <p>Cities appear when a country is highlighted: about 250 of Europe's largest cities by 1900, placed in whichever country held them that year. Tap one for its population. Figures come from censuses where there is one for that year; between figures the map estimates, assuming steady growth, and says so. A hollow dot means there is no figure within ten years. Some early figures are estimates for the wider city, so they are not always comparable with later census counts.</p>
+        <p>Cities appear when a country is highlighted: its largest cities that year (up to ten, and none smaller than a tenth of its biggest), from about 250 of Europe's largest cities by 1900, placed in whichever country held them that year. Tap one for its population. Figures come from censuses where there is one for that year; between figures the map estimates, assuming steady growth, and says so. A hollow dot means there is no figure within ten years. Some early figures are estimates for the wider city, so they are not always comparable with later census counts.</p>
         <details>
           <summary>Corrections to OHM (<span id="nfix"></span>)</summary>
           <ul id="fixes"></ul>
@@ -239,7 +242,9 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
           <ul>
             <li>OpenHistoricalMap: public domain (CC0). Borders fetched September 29, 2026.</li>
             <li>CShapes-Europe, ETH Zürich: CC BY-NC-SA 4.0. Because this map uses it, the map is for non-commercial use.</li>
-            <li>Cliopatria, Seshat Global History Databank: CC BY 4.0.</li>
+            <li>Cliopatria, Seshat Global History Databank: CC BY 4.0. Also used for the extent of wartime occupations, 1914-46.</li>
+            <li>Russian-occupied Ukraine, 2022-26: <a href="https://deepstatemap.live/en" target="_blank" rel="noopener">DeepState</a>’s map, the last update before July 1 each year.</li>
+            <li>Breakaway regions (Transnistria, Abkhazia, South Ossetia, Artsakh, Crimea and the Donbas in 2014-21): Natural Earth’s disputed areas (public domain).</li>
             <li>City populations: Wikidata (CC0), English and German Wikipedia census tables (CC BY-SA 4.0), and estimates by Chandler, de Vries and Mitchell as tabled in Wikipedia's <a href="https://en.wikipedia.org/wiki/Historical_urban_community_sizes" target="_blank" rel="noopener">Historical urban community sizes</a>. Gathered September 29, 2026.</li>
             <li>Coastlines, lakes and rivers: Natural Earth (public domain).</li>
             <li>Projection: Lambert azimuthal equal-area for Europe (ETRS89-LAEA), so areas compare fairly.</li>
@@ -294,6 +299,9 @@ function pathOf(g) {
 const features = topojson.feature(topo, regionsObj).features;
 const bbox = f => { let a = Infinity, b = Infinity, c = -Infinity, d = -Infinity; const walk = x => { if (typeof x[0] === 'number') { if (x[0] < a) a = x[0]; if (x[0] > c) c = x[0]; if (x[1] < b) b = x[1]; if (x[1] > d) d = x[1]; } else x.forEach(walk); }; walk(f.geometry.coordinates); return [a, b, c, d]; };
 features.forEach(f => f.bb = bbox(f));
+// area of each piece in km² (map units are km), for ignoring specks when fitting a country to the screen
+const ringArea = r => { let t = 0; for (let i = 0, j = r.length - 1; i < r.length; j = i++) t += (r[j][0] + r[i][0]) * (r[j][1] - r[i][1]); return Math.abs(t) / 2; };
+features.forEach(f => { const g = f.geometry; const ps = g.type === 'Polygon' ? [g.coordinates] : g.type === 'MultiPolygon' ? g.coordinates : []; f.km2 = ps.reduce((t, p) => t + ringArea(p[0]) - p.slice(1).reduce((h, r) => h + ringArea(r), 0), 0); });
 const inRing = (r, x, y) => { let c = false; for (let i = 0, j = r.length - 1; i < r.length; j = i++) { const [xi, yi] = r[i], [xj, yj] = r[j]; if ((yi > y) !== (yj > y) && x < (xj - xi) * (y - yi) / (yj - yi) + xi) c = !c; } return c; };
 const inGeom = (g, x, y) => { const polys = g.type === 'Polygon' ? [g.coordinates] : g.type === 'MultiPolygon' ? g.coordinates : []; return polys.some(p => inRing(p[0], x, y) && !p.slice(1).some(h => inRing(h, x, y))); };
 const regionAt = (x, y) => features.find(f => x >= f.bb[0] && x <= f.bb[2] && y >= f.bb[1] && y <= f.bb[3] && inGeom(f.geometry, x, y));
@@ -311,16 +319,27 @@ $('rivers').setAttribute('d', pathOf({ type: 'GeometryCollection', geometries: t
 const fillVar = u => `var(--f${U[u].c})`;
 const hueVar = u => `var(--h${U[u].c % 8})`;
 const defs = $('defs'); const patterns = {};
-function hatchFor(ov) {
-  const id = 'hatch-' + U[ov].c % 8;
+// stripes for self-governing territories and client states; a crosshatch for occupied or annexed land
+function hatchFor(ov, occ) {
+  const id = (occ ? 'xhatch-' : 'hatch-') + U[ov].c % 8;
   if (!patterns[id]) {
     const p = el('pattern', { id, patternUnits: 'userSpaceOnUse', width: 10, height: 10, patternTransform: 'rotate(45)' }, defs);
-    const ln = el('rect', { x: 0, y: 0, width: 3, height: 10 }, p); ln.setAttribute('style', `fill: ${hueVar(ov)}; opacity: 0.5`);
+    const ln = el('rect', { x: 0, y: 0, width: 3, height: 10 }, p); ln.setAttribute('style', `fill: ${hueVar(ov)}; opacity: ${occ ? 0.55 : 0.5}`);
+    if (occ) { const l2 = el('rect', { x: 0, y: 0, width: 10, height: 3 }, p); l2.setAttribute('style', `fill: ${hueVar(ov)}; opacity: 0.55`); }
     patterns[id] = p;
   }
   return id;
 }
 const isVassal = u => U[u].ov != null;
+const isOcc = u => !!U[u].o;
+// how a dependent territory relates to the power over it
+function depText(u) {
+  const ov = nameOf(U[u].ov, year), k = U[u].k;
+  if (!isOcc(u)) return 'Self-governing under ' + ov;
+  if (/^A_|_ANX$|_SSR$/.test(k)) return 'Annexed by ' + ov + ', without recognition';
+  if (['TRN', 'ABK', 'SOS', 'ART', 'NCY', 'DLR'].includes(k)) return 'Breakaway region, backed by ' + ov;
+  return 'Occupied by ' + ov;
+}
 
 // ---------- the map for one year ----------
 const cache = new Map();
@@ -356,7 +375,7 @@ function applyView() {
   shown = fitAspect(view);
   svg.setAttribute('viewBox', shown.map(v => v.toFixed(2)).join(' '));
   const s = 1 / pxPerKm();
-  for (const id in patterns) { const p = patterns[id]; const w = 7 * s; p.setAttribute('width', w); p.setAttribute('height', w); p.firstChild.setAttribute('width', w * 0.22); p.firstChild.setAttribute('height', w); }
+  for (const id in patterns) { const p = patterns[id]; const w = 7 * s; p.setAttribute('width', w); p.setAttribute('height', w); p.firstChild.setAttribute('width', w * 0.22); p.firstChild.setAttribute('height', w); if (p.lastChild !== p.firstChild) { p.lastChild.setAttribute('width', w); p.lastChild.setAttribute('height', w * 0.22); } }
   drawLabels(); drawBadges(); drawPin(); drawCities();
 }
 function zoomAt(f, cx, cy) {
@@ -412,7 +431,7 @@ function draw() {
   const fg = $('fills'); fg.textContent = '';
   for (const f of G.fills) {
     const p = el('path', { d: f.d, class: 'fill', 'data-u': f.u }, fg); p.setAttribute('style', `fill: ${fillVar(f.u)}`);
-    if (isVassal(f.u)) { const h = el('path', { d: f.d, class: 'fill', 'data-u': f.u }, fg); h.setAttribute('style', `fill: url(#${hatchFor(U[f.u].ov)})`); }
+    if (isVassal(f.u)) { const h = el('path', { d: f.d, class: 'fill', 'data-u': f.u }, fg); h.setAttribute('style', `fill: url(#${hatchFor(U[f.u].ov, isOcc(f.u))})`); }
   }
   $('borders').setAttribute('d', G.borders); $('vborders').setAttribute('d', G.vb);
   drawAlts(); drawDim(); applyView();
@@ -435,15 +454,24 @@ function drawLabels() {
     const sx = (x - shown[0]) * k, sy = (y - shown[1]) * k;
     if (sx < 0 || sy < 0 || sx > r.width || sy > r.height) continue;
     const name = NM[ni]; const big = varea > 180000;
-    const fs = big ? Math.min(20, 15 + Math.log10(varea / 180000) * 6) : varea > 40000 ? 14 : 13;
+    const focused = u === fu;
+    // the highlighted country's name stays well above city-name size (12px) at any zoom
+    const fs = Math.max(focused ? 19 : 0, big ? Math.min(20, 15 + Math.log10(varea / 180000) * 6) : varea > 40000 ? 14 : 13);
     const w = name.length * fs * 0.5 + 6, h = fs * 1.3;
     const room = Math.sqrt(varea) * k * 1.7;
-    const focused = u === fu;
     if (!focused && w > room * 1.6 && !(w < 70 && varea * k * k > 900)) continue;
-    const box = [sx - w / 2, sy - h / 2, sx + w / 2, sy + h / 2];
+    let cx = sx, cy = sy;
+    if (focused) {
+      // move the name off any city dot or name it would sit on
+      const dots = focusCities().filter(d => d.vis).map(d => [d.sx - d.r - 4, d.sy - d.r - 4, d.sx + d.r + 4 + d.c.n.length * 6.2, d.sy + d.r + 4]);
+      const offs = [[0, 0], [0, -h], [0, h], [-w * 0.4, 0], [w * 0.4, 0], [0, -2 * h], [0, 2 * h], [-w * 0.4, -h], [w * 0.4, -h], [-w * 0.4, h], [w * 0.4, h]];
+      const free = offs.find(([dx, dy]) => !dots.some(b => sx + dx - w / 2 < b[2] && sx + dx + w / 2 > b[0] && sy + dy - h / 2 < b[3] && sy + dy + h / 2 > b[1]));
+      if (free) { cx = sx + free[0]; cy = sy + free[1]; }
+    }
+    const box = [cx - w / 2, cy - h / 2, cx + w / 2, cy + h / 2];
     if (!focused && placed.some(b => box[0] < b[2] && box[2] > b[0] && box[1] < b[3] && box[3] > b[1])) continue;
     placed.push(box); if (focused) focusBox = box;
-    const t = el('text', { x: x.toFixed(1), y: y.toFixed(1), class: 'lbl' + (big ? ' big' : '') }, focused ? fl : g);
+    const t = el('text', { x: (shown[0] + cx / k).toFixed(1), y: (shown[1] + cy / k).toFixed(1), class: 'lbl' + (big ? ' big' : '') }, focused ? fl : g);
     t.setAttribute('style', `font-size:${(fs / k).toFixed(2)}px`);
     t.textContent = name;
   }
@@ -523,7 +551,7 @@ function renderYear() {
   }
   rows.sort((a, b) => b.v - a.v);
   const list = rows.slice(0, 7).map(r => `<li><span class="sw" style="background:${fillVar(r.u)}"></span><span>${esc(r.t)}</span><span class="gain">${r.s}</span></li>`).join('');
-  const table = units.filter(u => G.area[u] > 0).sort((a, b) => G.area[b] - G.area[a]).map(u => `<tr><td><span class="sw" style="background:${fillVar(u)};vertical-align:-2px;margin-right:6px"></span>${esc(nameOf(u, year))}${isVassal(u) ? ' <span class="muted">(under ' + esc(U[U[u].ov].n) + ')</span>' : ''}</td><td>${fmt(G.area[u])} km²</td></tr>`).join('');
+  const table = units.filter(u => G.area[u] > 0).sort((a, b) => G.area[b] - G.area[a]).map(u => `<tr><td><span class="sw" style="background:${fillVar(u)};vertical-align:-2px;margin-right:6px"></span>${esc(nameOf(u, year))}${isVassal(u) ? ' <span class="muted">(' + esc(depText(u).toLowerCase().replace(', without recognition', '')) + ')</span>' : ''}</td><td>${fmt(G.area[u])} km²</td></tr>`).join('');
   $('yearcard').innerHTML = `<h2 class="num">${year}</h2>` +
     (P ? (rows.length ? `<h3>Changes since ${year - 1}</h3><ul class="changes">${list}</ul>` : `<p class="muted small">No border changes of more than 1,500 km² since ${year - 1}.</p>`) : `<p class="muted small">The first year on the map.</p>`) +
     `<details><summary>All ${units.length} countries and territories this year</summary><table class="ctable">${table}</table><p class="muted small">Areas are within the map, as of July 1.</p></details>`;
@@ -560,7 +588,8 @@ function drawDim() {
   const [x, y, w, h] = VB0, pad = Math.max(w, h);
   p.setAttribute('d', `M${x - pad},${y - pad}H${x + w + pad}V${y + h + pad}H${x - pad}Z` + (f ? f.d : ''));
 }
-function drawPin() {
+function drawPin() { $('pin').textContent = ''; }
+function drawPinOld() {
   const g = $('pin'); g.textContent = ''; if (!place) return; const k = pxPerKm(); if (!k) return;
   el('circle', { cx: place.x, cy: place.y, r: (4 / k).toFixed(2), 'stroke-width': (1.5 / k).toFixed(2) }, g);
 }
@@ -587,14 +616,25 @@ function cityAt(ev) {
   }
   return best;
 }
+function focusCities() {
+  const fu = focusUnit(), k = pxPerKm(), r = svg.getBoundingClientRect();
+  if (fu < 0 || !k) return [];
+  let inside = CITIES.filter(c => unitAt[c.s * NY + year - Y0] === fu).map(c => ({ c, p: popAt(c, year) })).sort((a, b) => b.p.v - a.p.v);
+  if (inside.length) { const top = inside[0].p.v; inside = inside.filter((d, n) => n < 10 && d.p.v >= top * 0.1); }
+  for (const d of inside) {
+    d.sx = (d.c.x - shown[0]) * k; d.sy = (d.c.y - shown[1]) * k; d.r = Math.min(9, 2.2 + 1.5 * Math.sqrt(d.p.v / 100000));
+    d.vis = d.sx > -20 && d.sy > -20 && d.sx < r.width + 20 && d.sy < r.height + 20;
+  }
+  return inside;
+}
 function drawCities() {
   const g = $('cities'); g.textContent = ''; cityDots = [];
   const fu = focusUnit(), k = pxPerKm(), r = svg.getBoundingClientRect();
   if (fu < 0 || !k) { selCity = null; queuePop(); return; }
-  const inside = CITIES.filter(c => unitAt[c.s * NY + year - Y0] === fu).map(c => ({ c, p: popAt(c, year) }));
+  // only the country's larger cities: at most 10, and none smaller than a tenth of its biggest that year
+  const inside = focusCities();
   if (selCity != null && !inside.some(d => d.c.i === selCity)) selCity = null;
-  inside.sort((a, b) => (b.c.i === selCity) - (a.c.i === selCity) || b.p.v - a.p.v);
-  const taken = labelBoxes.slice(0, 1), fs = 12, wf = 0.5;
+  const taken = focusBox ? [focusBox.slice()] : [], fs = 12, wf = 0.5;
   // dots first (biggest last so they sit on top), then names where they fit
   for (const d of inside) {
     const sx = (d.c.x - shown[0]) * k, sy = (d.c.y - shown[1]) * k;
@@ -608,17 +648,19 @@ function drawCities() {
     const b = el('g', { class: 'city' + (d.p.k === 'none' ? ' nofig' : '') + (on ? ' on' : ''), 'data-c': d.c.i }, dg);
     el('circle', { cx: d.c.x, cy: d.c.y, r: ((on ? d.r + 1.5 : d.r) / k).toFixed(2), 'stroke-width': (1.3 / k).toFixed(2) }, b);
   }
+  // names are placed biggest city first, the same way whether or not a city is selected, so tapping one never moves its name
+  const put = (d, bx, by, w, h, anchor) => {
+    d.lb = [bx, by, bx + w, by + h];
+    const tx = anchor === 'start' ? bx : anchor === 'end' ? bx + w : bx + w / 2;
+    const t = el('text', { x: (shown[0] + tx / k).toFixed(2), y: (shown[1] + (by + h / 2) / k).toFixed(2), class: 'clbl' + (d.c.i === selCity ? ' on' : ''), 'text-anchor': anchor }, lg);
+    t.setAttribute('style', `font-size:${(fs / k).toFixed(2)}px`); t.textContent = d.c.n;
+  };
   for (const d of cityDots) {
-    const on = d.c.i === selCity, w = d.c.n.length * fs * wf + 2, h = fs * 1.25, gap = d.r + 3;
-    for (const [bx, by, anchor] of [[d.sx + gap, d.sy - h / 2, 'start'], [d.sx - gap - w, d.sy - h / 2, 'end'], [d.sx - w / 2, d.sy - gap - h, 'middle'], [d.sx - w / 2, d.sy + gap, 'middle']]) {
-      const box = [bx, by, bx + w, by + h];
-      if (!on && taken.some(t => box[0] < t[2] && box[2] > t[0] && box[1] < t[3] && box[3] > t[1])) continue;
-      taken.push(box); d.lb = box;
-      const tx = anchor === 'start' ? bx : anchor === 'end' ? bx + w : bx + w / 2;
-      const t = el('text', { x: (shown[0] + tx / k).toFixed(2), y: (shown[1] + (by + h / 2) / k).toFixed(2), class: 'clbl' + (on ? ' on' : ''), 'text-anchor': anchor }, lg);
-      t.setAttribute('style', `font-size:${(fs / k).toFixed(2)}px`); t.textContent = d.c.n;
-      break;
-    }
+    const w = d.c.n.length * fs * wf + 2, h = fs * 1.25, gap = d.r + 3;
+    const spots = [[d.sx + gap, d.sy - h / 2, 'start'], [d.sx - gap - w, d.sy - h / 2, 'end'], [d.sx - w / 2, d.sy - gap - h, 'middle'], [d.sx - w / 2, d.sy + gap, 'middle']];
+    const s = spots.find(([bx, by]) => !taken.some(t => bx < t[2] && bx + w > t[0] && by < t[3] && by + h > t[1]));
+    if (s) { taken.push([s[0], s[1], s[0] + w, s[1] + h]); put(d, s[0], s[1], w, h, s[2]); }
+    else if (d.c.i === selCity) put(d, spots[0][0], spots[0][1], w, h, 'start');     // a selected city with no room still gets its name
   }
   queuePop();
 }
@@ -644,7 +686,7 @@ function countryHtml(u) {
   const d = descOf(u, year);
   return `<button type="button" class="x" aria-label="Close">×</button><div class="nm">${esc(d ? d.t : nameOf(u, year))}</div>` +
     (d && datesOf(d) ? `<div class="dt">${esc(datesOf(d))}</div>` : '') + (d ? `<p class="tx">${esc(d.x)}</p>` : '') +
-    (isVassal(u) ? `<p>Self-governing under ${esc(nameOf(U[u].ov, year))}.</p>` : '') +
+    (isVassal(u) ? `<p>${esc(depText(u))}.</p>` : '') +
     (cityDots.length ? `<p class="hint">Tap a city for its population in ${year}.</p>` : '');
 }
 
@@ -672,9 +714,14 @@ function countryMask(u) {
   return r => { const x0 = cl(Math.floor(r[0] / S), W), y0 = cl(Math.floor(r[1] / S), H), x1 = cl(Math.ceil(r[2] / S), W), y1 = cl(Math.ceil(r[3] / S), H);
     return (at(x1, y1) - at(x0, y1) - at(x1, y0) + at(x0, y0)) / 255 * S * S; };
 }
+// the box around a country, ignoring specks (the smallest pieces that together make up under 2% of its area)
 function unitBox(u) {
-  let a = Infinity, b = Infinity, c = -Infinity, d = -Infinity;
-  for (const f of features) if (uAt(f, year) === u) { a = Math.min(a, f.bb[0]); b = Math.min(b, f.bb[1]); c = Math.max(c, f.bb[2]); d = Math.max(d, f.bb[3]); }
+  const fs = features.filter(f => uAt(f, year) === u).sort((p, q) => q.km2 - p.km2);
+  const total = fs.reduce((t, f) => t + f.km2, 0); let sum = 0, a = Infinity, b = Infinity, c = -Infinity, d = -Infinity;
+  for (const f of fs) {
+    a = Math.min(a, f.bb[0]); b = Math.min(b, f.bb[1]); c = Math.max(c, f.bb[2]); d = Math.max(d, f.bb[3]);
+    sum += f.km2; if (sum >= total * 0.98) break;
+  }
   return a < c ? [a, b, c, d] : null;
 }
 // try every candidate spot and keep the one that hides the least of what matters
@@ -699,7 +746,7 @@ function renderPop() {
   pop.innerHTML = d ? cityHtml(d) : countryHtml(fu);
   pop.setAttribute('aria-label', d ? `${d.c.n}: population` : nameOf(fu, year));
   pop.querySelector('.x').onclick = () => { if (d) { selCity = null; drawCities(); } else popClosed = true; renderPop(); };
-  const w = Math.min(d ? 244 : 300, sr.width - 2 * PAD); pop.style.width = w + 'px';
+  const w = d ? Math.min(244, sr.width - 2 * PAD) : sr.width < 600 ? sr.width - 2 * PAD : 300; pop.style.width = w + 'px';
   pop.style.left = '-9999px'; pop.style.top = '0px'; pop.hidden = false;
   const h = pop.offsetHeight, ctrl = controlBoxes(), fb = focusBox ? [focusBox] : [];
   let spot;
@@ -716,7 +763,9 @@ function renderPop() {
     const mask = countryMask(fu), bb = unitBox(fu), k = pxPerKm();
     const ub = bb ? [(bb[0] - shown[0]) * k, (bb[1] - shown[1]) * k, (bb[2] - shown[0]) * k, (bb[3] - shown[1]) * k] : [0, 0, sr.width, sr.height];
     const dots = cityDots.flatMap(o => o.lb ? [o.db, o.lb] : [o.db]);
-    spot = bestSpot(w, h, gridSpots(w, h, 12), r => mask(r) + sumOvl(r, fb) * 30 + sumOvl(r, dots) * 3 + sumOvl(r, ctrl) * 50 + gapTo(r, ub) * 1.5);
+    const cands = popReserve === 'right' ? gridSpots(w, h, 12).filter(([cx]) => cx >= sr.width - w - PAD - 1)
+      : popReserve === 'bottom' ? gridSpots(w, h, 12).filter(([, cy]) => cy >= sr.height - h - PAD - 1) : gridSpots(w, h, 12);
+    spot = bestSpot(w, h, cands.length ? cands : gridSpots(w, h, 12), r => mask(r) + sumOvl(r, fb) * 30 + sumOvl(r, dots) * 3 + sumOvl(r, ctrl) * 50 + gapTo(r, ub) * 1.5);
   }
   pop.style.left = (spot[0] + sr.left - mb.left) + 'px'; pop.style.top = (spot[1] + sr.top - mb.top) + 'px';
 }
@@ -726,16 +775,23 @@ function queuePop() {
   clearTimeout(popTimer); popTimer = setTimeout(renderPop, 90);
 }
 // zoom so the whole highlighted country is on screen, leaving room for its popup
+let popReserve = null;     // where the country popup goes after a fit: 'right' (a column) or 'bottom' (a band)
 function fitUnit(u) {
   const bb = unitBox(u), sr = svg.getBoundingClientRect(); if (!bb || !sr.width) return renderPop();
-  const W = sr.width, H = sr.height, narrow = W < 600, pw = Math.min(300, W - 2 * PAD);
-  let ph = 0;
-  if (narrow) { pop.innerHTML = countryHtml(u); pop.style.width = pw + 'px'; pop.style.left = '-9999px'; pop.hidden = false; ph = pop.offsetHeight; pop.hidden = true; }
-  // wide map: the country goes left of a column for the popup; narrow map: above a band for it
-  const ax0 = 20, ay0 = 52, ax1 = narrow ? W - 52 : W - pw - 2 * PAD - 16, ay1 = narrow ? Math.max(ay0 + 120, H - ph - 2 * PAD - 8) : H - 20;
+  const W = sr.width, H = sr.height, pw = Math.min(300, W - 2 * PAD), M = 14;
+  // measure the popup, then give the country the rest of the map: beside a column for the popup, or above a band for it,
+  // whichever lets it be drawn bigger
+  pop.innerHTML = countryHtml(u); pop.style.width = (W < 600 ? W - 2 * PAD : pw) + 'px'; pop.style.left = '-9999px'; pop.hidden = false;
+  const ph = pop.offsetHeight, pwb = pop.offsetWidth; pop.hidden = true;
   const bw = Math.max(bb[2] - bb[0], 1), bh = Math.max(bb[3] - bb[1], 1);
-  const s = Math.max(Math.min((ax1 - ax0) / bw, (ay1 - ay0) / bh, W / 80), W / (VB0[2] * 1.3));   // as tight as fits, but no closer than 80 km across
-  const px = (ax0 + ax1) / 2, py = (ay0 + ay1) / 2;
+  const areas = [];
+  if (W >= 600) areas.push({ side: 'right', r: [M, M, W - pw - 2 * PAD - M, H - M] });
+  areas.push({ side: 'bottom', r: [M, M, W - M, H - ph - 2 * PAD - M] });
+  for (const a of areas) a.s = Math.min((a.r[2] - a.r[0]) / bw, (a.r[3] - a.r[1]) / bh);
+  const best = areas.reduce((p, q) => (q.s > p.s ? q : p));
+  const s = Math.max(Math.min(best.s, W / 80), W / (VB0[2] * 1.3));   // as big as fits, but no closer than 80 km across
+  const px = (best.r[0] + best.r[2]) / 2, py = (best.r[1] + best.r[3]) / 2;
+  popReserve = best.side;
   animateTo([(bb[0] + bb[2]) / 2 - px / s, (bb[1] + bb[3]) / 2 - py / s, W / s, H / s]);
 }
 function animateTo(t) {
@@ -755,6 +811,7 @@ function animateTo(t) {
 }
 // the viewer pans or zooms: the popup has done its job, so it closes (tapping a country or city brings one back)
 function userMoved() {
+  popReserve = null;
   if (selCity != null) { selCity = null; drawCities(); }
   if (focusUnit() >= 0) popClosed = true;
   clearTimeout(popTimer); pop.hidden = true;
@@ -769,7 +826,7 @@ function renderPlace() {
   if (!place) { card.innerHTML = `<h3>A place</h3><p class="hint">Tap a place on the map to highlight the country that held it in ${year}, see which source says so, and how it changed hands over the century. Tap the country again to clear the highlight.</p>`; return; }
   const s = place.s, u = unitAt[s * NY + year - Y0], ri = refAt[s * NY + year - Y0];
   const head = u < 0 ? `<div class="who"><span class="sw" style="background:var(--none)"></span><div><b>No country</b><span class="muted small">No source assigns this place in ${year}.</span></div></div>`
-    : `<div class="who"><span class="sw" style="background:${fillVar(u)}"></span><div><b>${esc(nameOf(u, year))}</b><span class="muted small">${isVassal(u) ? 'Self-governing under ' + esc(nameOf(U[u].ov, year)) : 'in ' + year}</span></div></div>`;
+    : `<div class="who"><span class="sw" style="background:${fillVar(u)}"></span><div><b>${esc(nameOf(u, year))}</b><span class="muted small">${isVassal(u) ? esc(depText(u)) : 'in ' + year}</span></div></div>`;
   // history strip
   const runs = []; for (let y = Y0; y <= Y1; y++) { const v = unitAt[s * NY + y - Y0]; if (runs.length && runs[runs.length - 1].u === v) runs[runs.length - 1].b = y; else runs.push({ u: v, a: y, b: y }); }
   const strip = runs.map(r => { const left = (r.a - Y0) / NY * 100, w = (r.b - r.a + 1) / NY * 100; const nm = r.u < 0 ? 'none' : nameOf(r.u, r.a);
@@ -779,7 +836,7 @@ function renderPlace() {
   const dd = u >= 0 ? descOf(u, year) : null;
   const descHtml = dd ? `<div class="desc"><b>${esc(dd.t)}</b>${datesOf(dd) ? `<span class="dt">${esc(datesOf(dd))}</span>` : ''}<p>${esc(dd.x)}</p></div>` : '';
   card.innerHTML = `<h3>This place</h3>${head}${descHtml}` + (u >= 0 ? `<div class="srcbox"><span class="k">Source</span><span>${refLine(ri)}</span></div>` : '') +
-    `<div><div class="strip" role="group" aria-label="Who held this place, 1800–1900: ${esc(hand)}">${strip}<span class="now" style="left:${now}%"></span></div><div class="stripaxis"><span>1800</span><span>1850</span><span>1900</span></div></div>`;
+    `<div><div class="strip" role="group" aria-label="Who held this place, ${Y0}–${Y1}: ${esc(hand)}">${strip}<span class="now" style="left:${now}%"></span></div><div class="stripaxis">${[1800, 1900, 2000].map(v => `<span style="left:${((v - Y0 + 0.5) / NY * 100).toFixed(1)}%">${v}</span>`).join('')}</div></div>`;
   card.querySelectorAll('.strip button').forEach(b => b.onclick = () => setYear(+b.dataset.y));
 }
 
@@ -820,8 +877,9 @@ document.addEventListener('keydown', e => { if (e.target.closest('input, button,
 // ---------- timeline: change per year and key events; filtered to the highlighted country ----------
 const AREA = {};
 for (let y = Y0; y <= Y1; y++) { const a = AREA[y] = {}; (D.labels[y] || []).forEach(r => a[r[0]] = (a[r[0]] || 0) + r[3]); }
-[1800, 1825, 1850, 1875, 1900].forEach(y => { const s = document.createElement('span'); s.textContent = y; s.style.left = ((y - Y0 + 0.5) / NY * 100) + '%'; $('ticks').appendChild(s); });
-const EVENTS = [[1803, 'German states reorganized'], [1806, 'Holy Roman Empire ends'], [1812, 'Napoleon at his height'], [1815, 'Congress of Vienna'], [1831, 'Belgium, Greece'], [1848, 'Revolutions'], [1861, 'Kingdom of Italy'], [1867, 'Austria-Hungary'], [1871, 'German Empire'], [1878, 'Congress of Berlin'], [1886, 'Bulgaria united']];
+[1800, 1850, 1900, 1950, 2000].forEach(y => { const s = document.createElement('span'); s.textContent = y; s.style.left = ((y - Y0 + 0.5) / NY * 100) + '%'; $('ticks').appendChild(s); });
+const EVENTS = [[1806, 'Holy Roman Empire ends'], [1812, 'Napoleon at his height'], [1815, 'Congress of Vienna'], [1848, 'Revolutions'], [1861, 'Kingdom of Italy'], [1871, 'German Empire'], [1878, 'Congress of Berlin'],
+  [1916, 'First World War'], [1919, 'New states'], [1939, 'Munich and after'], [1942, 'Axis at its height'], [1946, 'Occupation zones'], [1949, 'Two Germanys'], [1992, 'Soviet Union gone'], [2014, 'Crimea'], [2023, 'War in Ukraine']];
 function unitEvents(u) {
   const by = {}; let pa = 0, pn = null;
   let maxA = 0; for (let y = Y0; y <= Y1; y++) maxA = Math.max(maxA, AREA[y][u] || 0);
@@ -859,7 +917,7 @@ function renderTimeline() {
     const list = key != null ? unitEvents(key) : EVENTS.map(([y, t]) => ({ y, t }));
     $('events').innerHTML = (key != null ? `<span class="evhead">Events for ${esc(nameOf(key, year))}</span>` : '') +
       list.map(e => `<button type="button" data-y="${e.y}" aria-pressed="false"><b class="num">${e.y}</b>${esc(e.t)}</button>`).join('') +
-      (key != null && !list.length ? '<span class="evhead">No border changes over 1,500 km² in the century</span>' : '');
+      (key != null && !list.length ? '<span class="evhead">No border changes over 1,500 km²</span>' : '');
     $('events').querySelectorAll('button').forEach(b => b.onclick = () => { stop(); setYear(+b.dataset.y); });
   }
   document.querySelectorAll('.events button').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.y === year)));
@@ -867,10 +925,11 @@ function renderTimeline() {
 }
 
 // ---------- key ----------
-const sample = U.findIndex(u => u.k === 'SRB');
+const sample = U.findIndex(u => u.k === 'SRB'), osample = Math.max(0, U.findIndex(u => u.k === 'O_GER_FRA'));
 $('legend').innerHTML =
-  `<div><svg viewBox="0 0 30 18"><rect width="30" height="18" style="fill:${fillVar(U.findIndex(u => u.k === 'FRA'))}"/></svg><span>Each country has one color for the whole century; neighbors always differ.</span></div>` +
-  `<div><svg viewBox="0 0 30 18"><defs><pattern id="lg-h" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)"><rect width="1.4" height="6" style="fill:${hueVar(U[sample].ov)};opacity:.5"/></pattern></defs><rect width="30" height="18" style="fill:${fillVar(sample)}"/><rect width="30" height="18" fill="url(#lg-h)"/></svg><span>Stripes: governed itself under an overlord, or run by another power. The stripes take the overlord's color.</span></div>` +
+  `<div><svg viewBox="0 0 30 18"><rect width="30" height="18" style="fill:${fillVar(U.findIndex(u => u.k === 'FRA'))}"/></svg><span>Each country keeps one color throughout; neighbors always differ.</span></div>` +
+  `<div><svg viewBox="0 0 30 18"><defs><pattern id="lg-h" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)"><rect width="1.4" height="6" style="fill:${hueVar(U[sample].ov)};opacity:.5"/></pattern></defs><rect width="30" height="18" style="fill:${fillVar(sample)}"/><rect width="30" height="18" fill="url(#lg-h)"/></svg><span>Stripes: self-governing under an overlord, or a protectorate, mandate, colony or client state. The stripes take the overlord's color.</span></div>` +
+  `<div><svg viewBox="0 0 30 18"><defs><pattern id="lg-x" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)"><rect width="1.4" height="6" style="fill:${hueVar(U[osample].ov)};opacity:.55"/><rect width="6" height="1.4" style="fill:${hueVar(U[osample].ov)};opacity:.55"/></pattern></defs><rect width="30" height="18" style="fill:${fillVar(osample)}"/><rect width="30" height="18" fill="url(#lg-x)"/></svg><span>Crosshatch: occupied by another power, annexed without international recognition, or held by a breakaway government with another power's backing. The fill is the country that held the land in law; the lines take the occupier's color.</span></div>` +
   `<div><svg viewBox="0 0 30 18"><rect width="30" height="18" style="fill:var(--sunk)"/><rect x="3" y="3" width="24" height="12" style="fill:var(--alt-fill);stroke:var(--alt);stroke-width:1.6;stroke-dasharray:4 3"/></svg><span>Dashed outline and number: another source draws a different border here.</span></div>` +
   `<div><svg viewBox="0 0 30 18"><rect width="30" height="18" style="fill:var(--none)"/></svg><span>No source assigns this area to a country.</span></div>`;
 const fixes = R.filter(r => r.t === 'fix');

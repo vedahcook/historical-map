@@ -165,6 +165,7 @@ def sovereign(u, year):
     """The unit that holds sovereignty (used to compare sources, which disagree about
     whether self-governing territories count as their own)."""
     if u is None: return None
+    if u in NEW20: u = sovereign20(u, year)
     ov = UNITS[u][1]
     if u in ('ROM_V', 'WAL', 'MOL', 'SRB', 'BUL', 'ERU', 'CRT', 'EGY', 'ALG', 'TUN'): return 'OTT'
     if u == 'SRB_I': return 'SRB'
@@ -208,6 +209,18 @@ def cs_unit(name, status, year):
     u = CS.get(name)
     if u == 'PRU' and year >= 1871: u = 'GER'
     if u == 'BUL' and status == 'independent' and year < 1908: u = 'BUL'
+    if year < 1906: return u
+    # 1906 onward
+    u = CS20.get(name, u)
+    if name == 'Bulgaria' and year >= 1908: u = 'BUL_I'
+    if name == 'Turkey (Ottoman Empire)' and year >= 1923: u = 'TUR'
+    if name in ('Serbia', 'Montenegro') and status == 'occupied': u = 'O_AUT_SRB_I' if name == 'Serbia' else 'O_AUT_MNE'
+    if name == 'German Federal Republic': u = 'GER_FR' if status == 'occupied' else ('FRG' if year < 1990 else 'GER')
+    if name == 'German Democratic Republic': u = 'GER_SU' if status == 'occupied' else 'GDR'
+    if name == 'Iceland': u = 'DEN' if status == 'colony' else ('O_USA_ISL' if status == 'occupied' else 'ISL')
+    if name == 'Malta': u = 'GBR' if status == 'colony' else 'MLT'
+    if name == 'Tunisia': u = 'TUN_F' if status == 'protectorate' else 'TUN_I'
+    if name == 'Finland': u = 'FIN_I'
     return u
 
 
@@ -242,8 +255,323 @@ _C = [
 _CR = [(re.compile(a), b) for a, b in _C]
 
 
-def clio_unit(name):
+def clio_unit(name, from_year=0):
     if name.startswith('('): return None          # umbrella groupings
+    if from_year >= 1906:
+        u = CLIO20.get(name)
+        if u is not None: return u or None
     for rx, u in _CR:
         if rx.search(name): return u
     return None
+
+
+_OLD_UNITS = set(UNITS)
+
+# =====================================================================================
+# 1900-2026
+# =====================================================================================
+# Two kinds of dependent territory are drawn differently:
+#   stripes    self-governing under an overlord, a protectorate, mandate or colony, or a
+#              client state set up by another power (overlord = UNITS[u][1])
+#   crosshatch occupied by another power, annexed without international recognition, or
+#              held by a breakaway government with another power's backing (KIND[u] == 'occ')
+# DEJURE[u] is the country an occupied area belonged to in law; alternative borders are
+# compared against it, because the sources differ on whether to show occupations.
+KIND, DEJURE = {}, {}
+
+def _u(key, name, ov, fam, occ=None):
+    UNITS[key] = (name, ov, fam)
+    if occ: KIND[key] = 'occ'; DEJURE[key] = occ
+
+for k, n, ov, fam in [
+    ('TUR', 'Turkey', None, 'OTT'), ('BUL_I', 'Bulgaria', None, 'BUL'), ('FIN_I', 'Finland', None, 'FIN'),
+    ('POL_I', 'Poland', None, 'POL'), ('POL_R', 'Kingdom of Poland (German-backed)', 'GER', 'POL'),
+    ('EST', 'Estonia', None, 'EST'), ('LVA', 'Latvia', None, 'LVA'), ('LTU', 'Lithuania', None, 'LTU'),
+    ('BLR', 'Belarus', None, 'BLR'), ('UKR', 'Ukraine', None, 'UKR'), ('MDA', 'Moldova', None, 'MDA'),
+    ('ARM', 'Armenia', None, 'ARM'), ('AZE', 'Azerbaijan', None, 'AZE'), ('KAZ', 'Kazakhstan', None, 'KAZ'),
+    ('UKR_S', 'Soviet Ukraine', 'RUS', 'UKR'), ('BLR_S', 'Soviet Belarus', 'RUS', 'BLR'), ('GEO_S', 'Soviet Georgia', 'RUS', 'GEO'),
+    ('ARM_S', 'Soviet Armenia', 'RUS', 'ARM'), ('AZE_S', 'Soviet Azerbaijan', 'RUS', 'AZE'), ('TSF', 'Transcaucasian SFSR', 'RUS', 'AZE'),
+    ('WHT', 'South Russia (White government)', None, 'WHT'), ('MRNC', 'Mountain Republic', None, 'CAU'),
+    ('CSK', 'Czechoslovakia', None, 'CSK'), ('CZE', 'Czech Republic', None, 'CSK'), ('SVK', 'Slovakia', None, 'SVK'),
+    ('SVK_W', 'Slovak Republic (German client)', 'GER', 'SVK'), ('HUN', 'Hungary', None, 'HUN'),
+    ('YUG', 'Yugoslavia', None, 'SRB'), ('HRV', 'Croatia', None, 'HRV'), ('SVN', 'Slovenia', None, 'SVN'),
+    ('BIH', 'Bosnia and Herzegovina', None, 'BIH'), ('MKD', 'North Macedonia', None, 'MKD'), ('KOS', 'Kosovo', None, 'KOS'),
+    ('NDH', 'Independent State of Croatia (Axis client)', 'GER', 'HRV'), ('BIH_A', 'Bosnia and Herzegovina (Austro-Hungarian)', 'AUT', 'AUT'),
+    ('ALB', 'Albania', None, 'ALB'), ('KOR', 'Korçë (French-protected)', 'FRA', 'ALB'),
+    ('ISL', 'Iceland', None, 'ISL'), ('IRL', 'Ireland', None, 'IRL'), ('VAT', 'Vatican City', None, 'VAT'),
+    ('FRG', 'West Germany', None, 'PRU'), ('GDR', 'East Germany', None, 'GDR'), ('WBE', 'West Berlin', 'FRG', 'PRU'),
+    ('RSI', 'Italian Social Republic (German client)', 'GER', 'SAR'), ('DOD', 'Italian Aegean Islands', 'ITA', 'DOD'),
+    ('DAN', 'Danzig', None, 'DAN'), ('FIU', 'Fiume', None, 'FIU'), ('MEM', 'Memel Territory (Allied-run)', 'FRA', 'MEM'),
+    ('SAA_L', 'Saar (League of Nations)', None, 'SAA'), ('SAA', 'Saar Protectorate', 'FRA', 'SAA'),
+    ('TRI', 'Free Territory of Trieste', None, 'TRI'),
+    ('CYP_B', 'Cyprus (British)', 'GBR', 'GBR'), ('CYP_I', 'Cyprus', None, 'CYP'), ('MLT', 'Malta', None, 'MLT'),
+    ('MOR_F', 'Morocco (French protectorate)', 'FRA', 'MOR'), ('MOR_S', 'Morocco (Spanish protectorate)', 'ESP', 'MOR'),
+    ('TNG', 'Tangier', None, 'TNG'), ('RIF', 'Republic of the Rif', None, 'RIF'), ('TUN_I', 'Tunisia', None, 'TUN'),
+    ('ALG_I', 'Algeria', None, 'ALG'), ('SYR_M', 'Syria (French mandate)', 'FRA', 'SYR'), ('SYR', 'Syria', None, 'SYR'),
+    ('LEB_M', 'Lebanon (French mandate)', 'FRA', 'LEB'), ('LEB', 'Lebanon', None, 'LEB'),
+    ('IRQ_M', 'Iraq (British mandate)', 'GBR', 'IRQ'), ('IRQ', 'Iraq', None, 'IRQ'), ('USA', 'United States', None, 'USA'),
+]:
+    _u(k, n, ov, fam)
+
+# named occupation regimes and breakaway states (drawn crosshatched)
+for k, n, ov, fam, dj in [
+    ('GGV', 'General Government', 'GER', 'POL', 'POL_I'), ('BOH', 'Protectorate of Bohemia and Moravia', 'GER', 'CSK', 'CSK'),
+    ('OST', 'Reichskommissariat Ostland', 'GER', 'LTU', 'RUS'), ('RKU', 'Reichskommissariat Ukraine', 'GER', 'UKR', 'RUS'),
+    ('BNF', 'German-occupied Belgium and northern France', 'GER', 'BEL', 'BEL'),
+    ('SRB_O', 'German-occupied Serbia', 'GER', 'SRB', 'YUG'), ('AUT_ANX', 'Austria (annexed by Germany)', 'GER', 'AUT', 'AUT'),
+    ('EST_SSR', 'Estonian SSR (Soviet-annexed)', 'RUS', 'EST', 'EST'), ('LVA_SSR', 'Latvian SSR (Soviet-annexed)', 'RUS', 'LVA', 'LVA'),
+    ('LTU_SSR', 'Lithuanian SSR (Soviet-annexed)', 'RUS', 'LTU', 'LTU'),
+    ('GER_US', 'American zone of Germany', 'USA', 'PRU', 'GER'), ('GER_UK', 'British zone of Germany', 'GBR', 'PRU', 'GER'),
+    ('GER_FR', 'French zone of Germany', 'FRA', 'PRU', 'GER'), ('GER_SU', 'Soviet zone of Germany', 'RUS', 'PRU', 'GER'),
+    ('AUT_US', 'American zone of Austria', 'USA', 'AUT', 'AUT'), ('AUT_UK', 'British zone of Austria', 'GBR', 'AUT', 'AUT'),
+    ('AUT_FR', 'French zone of Austria', 'FRA', 'AUT', 'AUT'), ('AUT_SU', 'Soviet zone of Austria', 'RUS', 'AUT', 'AUT'),
+    ('TRA', 'Trieste Zone A (Allied-run)', 'GBR', 'TRI', 'TRI'), ('TRB', 'Trieste Zone B (Yugoslav-run)', 'YUG', 'TRI', 'TRI'),
+    ('NCY', 'Northern Cyprus', 'TUR', 'CYP', 'CYP_I'), ('TRN', 'Transnistria', 'RUS', 'MDA', 'MDA'),
+    ('ABK', 'Abkhazia', 'RUS', 'GEO', 'GEO'), ('SOS', 'South Ossetia', 'RUS', 'GEO', 'GEO'), ('ART', 'Artsakh (Nagorno-Karabakh)', 'ARM', 'AZE', 'AZE'),
+    ('DLR', 'Donetsk and Luhansk "people’s republics"', 'RUS', 'UKR', 'UKR'), ('UKR_O', 'Russian-occupied Ukraine', 'RUS', 'UKR', 'UKR'),
+]:
+    _u(k, n, ov, fam, dj)
+
+# Generic occupation units, one per (occupier, occupied country): O_<occupier>_<country>.
+ADJ = {'GER': 'German', 'AUT': 'Austro-Hungarian', 'BUL_I': 'Bulgarian', 'BUL': 'Bulgarian', 'ITA': 'Italian', 'HUN': 'Hungarian',
+       'RUS': 'Soviet', 'GBR': 'British', 'USA': 'American', 'FRA': 'French', 'ROM': 'Romanian', 'GRE': 'Greek', 'TUR': 'Turkish',
+       'FIN_I': 'Finnish', 'BEL': 'Belgian', 'YUG': 'Yugoslav', 'ALB': 'Albanian', 'SRB_I': 'Serbian'}
+def occ_unit(occupier, country, annexed=False):
+    key = ('A_' if annexed else 'O_') + occupier + '_' + country
+    if key not in UNITS:
+        cname = UNITS[country][0]
+        name = f'{cname} (annexed by {UNITS[occupier][0]})' if annexed else f'{ADJ.get(occupier, UNITS[occupier][0])}-occupied {cname}'
+        _u(key, name, occupier, UNITS[country][2], country)
+    return key
+
+# pairs that get a unit up front (so KEYS is fixed before assignment)
+for a, b in [('GER', 'BEL'), ('GER', 'FRA'), ('GER', 'LUX'), ('GER', 'POL'), ('AUT', 'POL'), ('GER', 'RUS'), ('GER', 'UKR'), ('AUT', 'UKR'),
+             ('GER', 'BLR'), ('GER', 'EST'), ('GER', 'LVA'), ('GER', 'LTU'), ('AUT', 'SRB_I'), ('BUL_I', 'SRB_I'), ('AUT', 'MNE'), ('GER', 'ROM'),
+             ('AUT', 'ROM'), ('BUL_I', 'ROM'), ('AUT', 'ITA'), ('AUT', 'ALB'), ('ITA', 'ALB'), ('FRA', 'ALB'), ('GBR', 'OTT'), ('FRA', 'OTT'),
+             ('GRE', 'OTT'), ('ITA', 'OTT'), ('FRA', 'GER'), ('GBR', 'GER'), ('USA', 'GER'), ('BEL', 'GER'), ('ROM', 'HUN'), ('YUG', 'HUN'),
+             ('GER', 'POL_I'), ('GER', 'CSK'), ('GER', 'NOR'), ('GER', 'DEN'), ('GER', 'NLD'), ('ITA', 'FRA'), ('GER', 'YUG'), ('ITA', 'YUG'),
+             ('BUL_I', 'YUG'), ('HUN', 'YUG'), ('GER', 'GRE'), ('ITA', 'GRE'), ('BUL_I', 'GRE'), ('ROM', 'RUS'), ('FIN_I', 'RUS'), ('HUN', 'RUS'),
+             ('GER', 'ITA'), ('GER', 'HUN'), ('GER', 'ALB'), ('GER', 'MON'), ('ITA', 'MON'), ('GER', 'GBR'), ('GBR', 'ISL'), ('USA', 'ISL'),
+             ('GBR', 'DEN'), ('RUS', 'EST'), ('RUS', 'LVA'), ('RUS', 'LTU'), ('ITA', 'MNE'), ('GER', 'MNE'), ('GER', 'DOD'), ('RUS', 'PER'), ('GBR', 'PER'),
+             ('RUS', 'UKR')]:
+    occ_unit(a, b)
+for a, b in [('GER', 'CSK'), ('GER', 'POL_I'), ('GER', 'FRA'), ('GER', 'LUX'), ('GER', 'BEL'), ('GER', 'LTU'), ('GER', 'YUG'), ('ITA', 'YUG'),
+             ('ITA', 'FRA'), ('ITA', 'GRE'), ('HUN', 'CSK'), ('HUN', 'ROM'), ('HUN', 'YUG'), ('BUL_I', 'YUG'), ('BUL_I', 'GRE'),
+             ('ALB', 'YUG'), ('GER', 'ITA'), ('RUS', 'FIN_I'), ('HUN', 'RUS')]:
+    occ_unit(a, b, annexed=True)
+
+# OHM roles for 1900-2026. Priority 4 = a named occupation regime (beats the country record under it).
+_R20 = [
+    # occupation regimes and breakaway states
+    (r'^Generalgouvernement$', '3', 'GGV', 4), (r'^Protectorate of Bohemia and Moravia$', '3', 'BOH', 4),
+    (r'^Reichskommissariat Ostland$', '3', 'OST', 4), (r'^Reichskommissariat Ukraine$', '3', 'RKU', 4), (r'^Bezirk Bialystok$', '3', 'O_GER_POL_I', 4),
+    (r'^Military Administration in Belgium and Northern France$', None, 'BNF', 4), (r'^Territory of the Military Commander in Serbia$', None, 'SRB_O', 4),
+    (r'^Governorate of Montenegro$', None, 'O_ITA_MNE', 4), (r'^German-occupied territory of Montenegro$', None, 'O_GER_MNE', 4),
+    (r'^Italian protectorate of Albania$', None, 'O_ITA_ALB', 4), (r'^German occupation of Albania$', None, 'O_GER_ALB', 4),
+    (r'^German occupation of Italy$', None, 'O_GER_ITA', 4), (r'^Operational Zone of the (Alpine Foothills|Adriatic Littoral)$', '4', 'A_GER_ITA', 5),
+    (r'^German occupation of the Dodecanese$', None, 'O_GER_DOD', 4), (r'^Italian occupation of Corsica$', '4', 'O_ITA_FRA', 4),
+    (r'^Occupied Monaco$', None, 'O_ITA_MON', 4, 1942, 1943), (r'^Occupied Monaco$', None, 'O_GER_MON', 4, 1944, 1944),
+    (r'^German Occupation Zone-Denmark$', None, 'O_GER_DEN', 4),
+    (r'^(State of Austria|Ostmark|Alpen- und Donau-Reichsgaue)$', '3', 'AUT_ANX', 4),
+    (r'^Estonia SSR$', '3', 'EST_SSR', 3), (r'^Latvian Soviet Socialist Republic$', '3', 'LVA_SSR', 3), (r'^Lithuanian SSR$', '3', 'LTU_SSR', 3),
+    (r'^American occupation zone in Germany$', None, 'GER_US', 4, 1945, 1948), (r'^British occupation zone in Germany$', None, 'GER_UK', 4, 1945, 1948),
+    (r'^American Occupation Zone in Austria$', '3', 'AUT_US', 4), (r'^British Occupation Zone in Austria$', '3', 'AUT_UK', 4),
+    (r'^French Occupation Zone in Austria$', '3', 'AUT_FR', 4), (r'^Soviet Occupation Zone in Austria$', '3', 'AUT_SU', 4),
+    (r'^Zona A$', '3', 'TRA', 4), (r'^Zona B$', '3', 'TRB', 4), (r'^Free Territory of Trieste$', None, 'TRI', 1),
+    (r'^Northern Cyprus$', '4', 'NCY', 4), (r'^(Republic of Artsakh|Արցախի Հանրապետություն)$', '3', 'ART', 4, 1994, 2023),
+    (r'^Republic of Crimea$', '4', 'UKR_O', 4, 2014, 2021),
+    # client states, protectorates, mandates, colonies (stripes)
+    (r'^Regency Kingdom of Poland$', None, 'POL_R', 3), (r'^General Government of Warsaw$', None, 'O_GER_POL', 4),
+    (r'^General Government of Lublin$', None, 'O_AUT_POL', 4), (r'^(Slovak State|Slovak Republic)$', '2', 'SVK_W', 3),
+    (r'^Independent State of Croatia$', None, 'NDH', 3), (r'^Italian Social Republic$', None, 'RSI', 3),
+    (r'^Condominium of Bosnia and Herzegovina$', '3', 'BIH_A', 3), (r'^Autonomous Province of Korçë$', '3', 'KOR', 3),
+    (r'^Italian Islands of the Aegean$', None, 'DOD', 3), (r'^Klaipėda Region$', None, 'MEM', 3),
+    (r'^(British Occupation of Cyprus|British Cyprus)$', None, 'CYP_B', 3),
+    (r'^French protectorate in Morocco$', None, 'MOR_F', 3), (r'^Spanish protectorate in Morocco$', None, 'MOR_S', 3),
+    (r'^Saar Protectorate$', None, 'SAA', 3), (r'^Territory of the Saar Basin$', '3', 'SAA_L', 3), (r'^West Berlin$', '3', 'WBE', 3),
+    (r'^(State of Aleppo|State of Damascus|Syrian Federation|State of Syria|Alawite State|Syrian Republic)$', None, 'SYR_M', 3, 1900, 1945),
+    (r'^Syrian Republic$', None, 'SYR', 2, 1946, 9999), (r'^(United Arab Republic|Syrian Arab Republic|Syria)$', None, 'SYR', 2),
+    (r'^(State of Greater Lebanon|Lebanese Republic)$', None, 'LEB_M', 3), (r'^Lebanon$', None, 'LEB', 2),
+    (r'^Mandatory Iraq$', None, 'IRQ_M', 3), (r'^(Hashemite Kingdom of Iraq|Iraq)$', None, 'IRQ', 2),
+    (r'^Ukrainian SSR$', '2', 'UKR_S', 3), (r'^Ukrainian SSR$', '3', 'UKR_S', 3, 1900, 1922), (r'^Byelorussian SSR$', '3', 'BLR_S', 3, 1900, 1922),
+    (r'^SSR of Georgia$', '2', 'GEO_S', 3), (r'^SSR of Armenia$', '2', 'ARM_S', 3), (r'^Azerbaijan SSR$', None, 'AZE_S', 3, 1900, 1922),
+    (r'^Abkhazia SSR$', '3', 'GEO_S', 3), (r'^FUSSR of Transcaucasia$', '2', 'TSF', 3),
+    # Soviet republics inside the USSR (1923-1991) are part of it
+    (r'^(Ukrainian SSR|Byelorussian SSR|Azerbaijan SSR|Georgian SSR|Armenian SSR|Kazakh SSR|Moldavian SSR|Karelo-Finnish Soviet Socialist Republic|Transcaucasian SFSR|Russian Soviet Federative Socialist Republic|Dagestan SSR|Republic of Moldova)$', '3', 'RUS', 2),
+    # countries
+    (r'^(Russian Republic|Russian Soviet Federative Socialist Republic|Soviet Union|Russia)$', '2', 'RUS', 2),
+    (r'^(Central|Northwestern|Southern|Volga|North Caucasian|Crimean) Federal District$', '3', 'RUS', 2),
+    (r'^(State of Turkey|Turkey|Türkiye)$', '2', 'TUR', 2), (r'^(Tsardom of Bulgaria|People\'s Republic of Bulgaria|Bulgaria)$', '2', 'BUL_I', 2),
+    (r'^Finland$', '2', 'FIN_I', 2), (r'^Poland$', '2', 'POL_I', 2), (r'^Estonia$', '2', 'EST', 2), (r'^Latvia$', '2', 'LVA', 2),
+    (r'^Lithuania$', '2', 'LTU', 2), (r'^(Belarusian People\'s Republic|Belarus)$', '2', 'BLR', 2), (r'^Ukraine$', '2', 'UKR', 2),
+    (r'^Moldova$', '2', 'MDA', 2), (r'^Armenia$', '2', 'ARM', 2), (r'^Azerbaijan$', '2', 'AZE', 2), (r'^Georgia$', '2', 'GEO', 2),
+    (r'^Kazakhstan$', '2', 'KAZ', 2), (r'^Government of South Russia$', None, 'WHT', 2),
+    (r'^Mountainous Republic of the Northern Caucasus$', None, 'MRNC', 2),
+    (r'^(Czechoslovakia|Czechoslovak Republic|Czechoslovak Socialist Republic|Czechoslovak Federative Republic|Czech and Slovak Federative Republic)$', '2', 'CSK', 2),
+    (r'^(Czech Republic|Slovakia)$', '3', 'CSK', 2), (r'^Czech Republic$', '2', 'CZE', 2), (r'^Slovakia$', '2', 'SVK', 2),
+    (r'^(Kingdom of Hungary|Hungarian Republic|Hungarian People\'s Republic|Hungary)$', '2', 'HUN', 2),
+    (r'^(Kingdom of Serbs, Croats and Slovenes|Kingdom of Yugoslavia|Democratic Federal Yugoslavia|FPR of Yugoslavia|SFR of Yugoslavia|Yugoslavia|Serbia and Montenegro)$', '2', 'YUG', 2),
+    (r'^(Province of Bosnia and Herzegovina|Province of Croatia and Slavonia|Province of Slovenia|Republic of Serbia|Montenegro)$', '3', 'YUG', 2),
+    (r'^Serbia$', '2', 'SRB_I', 2), (r'^Montenegro$', '2', 'MNE', 2), (r'^Kingdom of Montenegro$', '2', 'MNE', 2),
+    (r'^Croatia$', '2', 'HRV', 2), (r'^Slovenia$', '2', 'SVN', 2), (r'^Bosnia and Herzegovina$', '2', 'BIH', 2),
+    (r'^(FYR Macedonia|North Macedonia)$', '2', 'MKD', 2), (r'^Kosovo$', '2', 'KOS', 2),
+    (r'^(Principality of Albania|Albanian Republic|Albanian Kingdom|Albania|Democratic Government of Albania|People\'s Republic of Albania|People\'s Socialist Republic of Albania)$', '2', 'ALB', 2),
+    (r'^(Kingdom of Iceland|Iceland)$', '2', 'ISL', 2), (r'^(Irish Free State|Ireland)$', '2', 'IRL', 2), (r'^Vatican City$', None, 'VAT', 2),
+    (r'^Austria$', '2', 'AUT', 2), (r'^(Free State of Prussia)$', '3', 'GER', 2), (r'^West Germany$', '2', 'FRG', 2),
+    (r'^East Germany$', '2', 'GDR', 2), (r'^Germany$', '2', 'GER', 2),
+    (r'^(France|French State)$', '2', 'FRA', 2), (r'^Akrotiri and Dhekelia$', None, 'GBR', 2), (r'^United Kingdom$', '2', 'GBR', 2),
+    (r'^British (Dependent|Overseas) Territories$', '3', 'GBR', 2), (r'^Greece$', '2', 'GRE', 2), (r'^Portugal$', '2', 'POR', 2),
+    (r'^(Kingdom of Romania|Romanian People\'s Republic|Socialist Republic of Romania|Romania)$', '2', 'ROM', 2),
+    (r'^Cyprus$', '2', 'CYP_I', 2), (r'^Malta$', '2', 'MLT', 2), (r'^Morocco$', '2', 'MOR', 2), (r'^Tangier International Zone$', None, 'TNG', 2),
+    (r'^Republic of the Rif$', None, 'RIF', 2), (r'^Tunisia$', '2', 'TUN_I', 2), (r'^Algeria$', '2', 'ALG_I', 2), (r'^Iran$', '2', 'PER', 2),
+    (r'^Free City of Danzig$', '2', 'DAN', 2), (r'^Free State of Fiume$', None, 'FIU', 2), (r'^Greenland$', None, 'DEN', 2),
+]
+_R20_ROLES = [(re.compile(x[0]), x[1], x[2], x[3], x[4] if len(x) > 4 else 1900, x[5] if len(x) > 5 else 9999) for x in _R20]
+# the 19th-century roles stop in 1905 unless nothing newer applies
+ROLES[:] = _R20_ROLES + ROLES
+
+# de jure owner of the client states, for comparing sources
+DEJURE.update({'SVK_W': 'CSK', 'NDH': 'YUG', 'RSI': 'ITA', 'POL_R': 'POL_I', 'WBE': 'FRG'})
+
+
+def sovereign20(u, year):
+    """Sovereignty for comparing sources, 1900 onward (see sovereign())."""
+    if u in DEJURE: return sovereign20(DEJURE[u], year)
+    if u in ('UKR_S', 'BLR_S', 'GEO_S', 'ARM_S', 'AZE_S', 'TSF'): return 'RUS'
+    if u in ('MOR_F', 'MOR_S'): return 'MOR'
+    if u == 'SYR_M': return 'SYR'
+    if u == 'LEB_M': return 'LEB'
+    if u == 'IRQ_M': return 'IRQ'
+    if u in ('CYP_B', 'CYP'): return 'GBR' if year < 1960 else 'CYP_I'
+    if u == 'BIH_A': return 'AUT'
+    if u == 'KOR': return 'ALB'
+    if u in ('FRG', 'GER'): return 'GER'
+    if u == 'CZE': return 'CZE'
+    if u in ('SAA', 'SAA_L'): return 'GER' if year < 1947 else 'SAA'
+    if u == 'DOD': return 'ITA'
+    if u == 'MEM': return 'LTU'
+    return u
+
+
+CS20 = {'Albania': 'ALB', 'Austria': 'AUT', 'Azerbaijan': 'AZE', 'Belarus (Byelorussia)': 'BLR', 'Bosnia-Herzegovina': 'BIH',
+        'Croatia': 'HRV', 'Czech Republic': 'CZE', 'Czechoslovakia': 'CSK', 'Danzig': 'DAN', 'Estonia': 'EST', 'Georgia': 'GEO',
+        'Hungary': 'HUN', 'Ireland': 'IRL', 'Kazakhstan': 'KAZ', 'Kosovo': 'KOS', 'Latvia': 'LVA', 'Lithuania': 'LTU',
+        'Macedonia (FYROM/North Macedonia)': 'MKD', 'Moldova': 'MDA', 'Poland': 'POL_I', 'Serbia': 'SRB_I', 'Slovakia': 'SVK',
+        'Slovenia': 'SVN', 'Ukraine': 'UKR', 'Yugoslavia': 'YUG', 'Armenia': 'ARM'}
+NEW20 = set(UNITS) - set(_OLD_UNITS)
+
+
+# ---------- occupations read from Cliopatria (1914-1946) ----------
+# Cliopatria draws each power's area of control year by year, occupied land included. Where it
+# puts an area under one of these powers while OHM shows the country that held it in law, and the
+# pair is a documented occupation for that year, the map shows the area as occupied.
+CLIO_OCCUPIER = {'German Empire': 'GER', 'Nazi Germany': 'GER', 'Austria-Hungary': 'AUT', 'Principality of Bulgaria': 'BUL_I',
+                 'Kingdom of Bulgaria': 'BUL_I', 'Kingdom of Italy': 'ITA', 'Hungarian Republic': 'HUN',
+                 'Union of Soviet Socialist Republics': 'RUS', 'United States of America': 'USA', '(British Empire)': 'GBR',
+                 'Kingdom of Great Britain': 'GBR', 'French Third Republic': 'FRA', 'Kingdom of Romania': 'ROM',
+                 'First Hellenic Republic': 'GRE', 'Kingdom of Greece': 'GRE', 'Republic of Finland': 'FIN_I', 'Kingdom of Belgium': 'BEL',
+                 'Yugoslavia': 'YUG'}
+# (occupier, country OHM shows) -> (first, last year, July 1)
+OCC_PAIRS = [   # (occupier, country OHM shows, first year, last year), July 1
+    ('GER', 'BEL', 1915, 1918),
+    ('GER', 'FRA', 1915, 1918),
+    ('GER', 'LUX', 1915, 1918),
+    ('GER', 'POL', 1915, 1918),
+    ('AUT', 'POL', 1915, 1918),
+    ('GER', 'RUS', 1915, 1918),
+    ('GER', 'UKR', 1918, 1918),
+    ('AUT', 'UKR', 1918, 1918),
+    ('GER', 'BLR', 1918, 1918),
+    ('GER', 'EST', 1918, 1918),
+    ('GER', 'LVA', 1918, 1918),
+    ('GER', 'LTU', 1918, 1918),
+    ('AUT', 'SRB_I', 1916, 1918),
+    ('BUL_I', 'SRB_I', 1916, 1918),
+    ('AUT', 'MNE', 1916, 1918),
+    ('GER', 'ROM', 1917, 1918),
+    ('AUT', 'ROM', 1917, 1918),
+    ('BUL_I', 'ROM', 1917, 1918),
+    ('AUT', 'ITA', 1918, 1918),
+    ('AUT', 'ALB', 1916, 1918),
+    ('ITA', 'ALB', 1915, 1920),
+    ('FRA', 'ALB', 1917, 1920),
+    ('FRA', 'OTT', 1919, 1921),
+    ('GRE', 'OTT', 1919, 1922),
+    ('ITA', 'OTT', 1919, 1921),
+    ('GER', 'POL_I', 1940, 1944),
+    ('GER', 'NOR', 1940, 1944),
+    ('GER', 'DEN', 1940, 1944),
+    ('GER', 'NLD', 1940, 1944),
+    ('GER', 'BEL', 1940, 1944),
+    ('GER', 'LUX', 1940, 1944),
+    ('GER', 'FRA', 1940, 1944),
+    ('ITA', 'FRA', 1940, 1943),
+    ('GER', 'YUG', 1941, 1944),
+    ('ITA', 'YUG', 1941, 1943),
+    ('BUL_I', 'YUG', 1941, 1944),
+    ('HUN', 'YUG', 1941, 1944),
+    ('GER', 'GRE', 1941, 1944),
+    ('ITA', 'GRE', 1941, 1943),
+    ('BUL_I', 'GRE', 1941, 1944),
+    ('GER', 'RUS', 1941, 1944),
+    ('ROM', 'RUS', 1941, 1944),
+    ('FIN_I', 'RUS', 1941, 1944),
+    ('HUN', 'RUS', 1941, 1944),
+    ('GER', 'ITA', 1944, 1945),
+    ('GER', 'HUN', 1944, 1944),
+    ('GER', 'ALB', 1944, 1944),
+    ('ITA', 'ALB', 1939, 1943),
+    ('GER', 'MON', 1944, 1944),
+    ('ITA', 'MON', 1943, 1943),
+    ('GER', 'GBR', 1940, 1944),
+    ('GBR', 'ISL', 1940, 1941),
+    ('GBR', 'DEN', 1940, 1945),
+    ('RUS', 'EST', 1940, 1940),
+    ('RUS', 'LVA', 1940, 1940),
+    ('RUS', 'LTU', 1940, 1940),
+    ('GER', 'DOD', 1944, 1944),
+]
+# Land a power held only during the Second World War (neither before nor after) was annexed without
+# lasting recognition; the map shows it crosshatched as annexed.
+ANNEXERS = {'GER', 'ITA', 'HUN', 'BUL_I', 'ROM'}
+for a, b in [('GER', 'DAN'), ('HUN', 'RUS'), ('BUL_I', 'ROM'), ('GER', 'AUT'), ('HUN', 'AUT')]:
+    occ_unit(a, b, annexed=True)
+NEW20 |= {k for k in UNITS if k.startswith(('O_', 'A_'))}
+
+
+# Cliopatria names from 1906 on (used only where OHM and CShapes have nothing); '' = skip
+CLIO20 = {'French Africa': 'FRA', "People's Democratic Republic of Algeria": 'ALG_I', 'Republic of Tunisia': 'TUN_I', 'Morocco': 'MOR',
+          'Republic of Turkey': 'TUR', 'Ottoman Empire': 'OTT', 'Qajar Dynasty': 'PER', 'Pahlavi Dynasty': 'PER', 'Islamic Republic of Iran': 'PER',
+          'Kingdom of Iraq': 'IRQ', 'Iraqi Republic': 'IRQ', 'Republic of Iraq': 'IRQ', 'Syria': 'SYR', 'Republic of Syria': 'SYR',
+          'Second Syrian Republic': 'SYR', "Ba'athist Syria": 'SYR', 'United Arab Republic': 'SYR', 'French Mandate for Syria and Lebanon': 'SYR_M',
+          'Lebanon': 'LEB', 'Republic of Cyprus': 'CYP_I', 'Turkish Republic of Northern Cyprus': 'NCY', 'Malta': 'MLT',
+          'Russian Empire': 'RUS', 'Russian Republic': 'RUS', 'Union of Soviet Socialist Republics': 'RUS', 'Russian Federation': 'RUS',
+          'Kazakhstan': 'KAZ', 'Georgia': 'GEO', 'Republic of Armenia': 'ARM', 'Armenia': 'ARM', 'Republic of Azerbaijan': 'AZE',
+          'Azerbaijan Democratic Republic': 'AZE', 'German Empire': 'GER', 'Weimar Republic': 'GER', 'Nazi Germany': 'GER',
+          'Federal Republic of Germany': 'FRG', 'Federated Republic of Germany': 'GER', 'German Democratic Republic': 'GDR',
+          'Kingdom of Italy': 'ITA', 'Republic of Italy': 'ITA', 'French Third Republic': 'FRA', 'French Fourth Republic': 'FRA',
+          'French Fifth Republic': 'FRA', 'Vichy France': 'FRA', 'Francoist Spain': 'ESP', 'Kingdom of Spain': 'ESP',
+          'Second Spanish Republic': 'ESP', 'Spanish Nationalists': 'ESP', 'Estado Novo': 'POR', 'Portuguese Republic': 'POR', 'Portugal': 'POR',
+          'Kingdom of Greece': 'GRE', 'Third Hellenic Republic': 'GRE', 'First Hellenic Republic': 'GRE', 'Greek junta': 'GRE',
+          'Kingdom of Bulgaria': 'BUL_I', "People's Republic of Bulgaria": 'BUL_I', 'Republic of Bulgaria': 'BUL_I', 'Principality of Bulgaria': 'BUL_I',
+          'Kingdom of Romania': 'ROM', 'Socialist Republic of Romania': 'ROM', 'Romania': 'ROM', 'Hungarian Republic': 'HUN',
+          "Hungarian People's Republic": 'HUN', 'Hungary': 'HUN', 'Czechoslovakia': 'CSK', 'Czech Republic': 'CZE', 'Slovakia': 'SVK',
+          'Second Polish Republic': 'POL_I', 'Republic of Poland': 'POL_I', 'Yugoslavia': 'YUG', 'Socialist Federal Republic of Yugoslavia': 'YUG',
+          'Serbia-Montenegro': 'YUG', 'Serbia': 'SRB_I', 'Montenegro': 'MNE', 'Republic of Croatia': 'HRV', 'Republic of Slovenia': 'SVN',
+          'Bosnia and Herzegovina': 'BIH', 'Former Yugoslav Republic of Macedonia': 'MKD', 'Kosovo': 'KOS', 'Albania': 'ALB',
+          'Republic of Albania': 'ALB', "People's Socialist Republic of Albania": 'ALB', 'Independent State of Croatia': 'NDH',
+          'Republic of Austria': 'AUT', 'Second Republic of Austria': 'AUT', 'Austria-Hungary': 'AUT', 'Swiss Confederation': 'SUI',
+          'Kingdom of Belgium': 'BEL', 'Netherlands': 'NLD', 'Luxembourg': 'LUX', 'Denmark': 'DEN', 'Kingdom of Norway': 'NOR',
+          'Kingdom of Sweden': 'SWE', 'Republic of Finland': 'FIN_I', 'Kingdom of Iceland': 'ISL', 'Republic of Iceland': 'ISL',
+          'Irish Free State': 'IRL', 'Éire': 'IRL', 'Kingdom of Great Britain': 'GBR', 'Republic of Estonia': 'EST', 'Estonia': 'EST',
+          'Republic of Latvia': 'LVA', 'Republic of Lithuania': 'LTU', 'Kingdom of Lithuania': 'LTU', 'Republic of Belarus': 'BLR',
+          'Ukraine': 'UKR', "Ukrainian People's Republic": 'UKR', 'Republic of Moldova': 'MDA', 'Free City of Danzig': 'DAN',
+          'Principality of Monaco': 'MON', 'Kingdom of Monaco': 'MON', 'Principality of Andorra': 'AND', 'Tangier International Zone': 'TNG',
+          'Republic of the Rif': 'RIF', 'Cretan State': 'CRT', 'Montenegro ': 'MNE', 'Greenland': 'DEN', 'Denmark-Norway': 'DEN',
+          'United Kingdoms of Sweden and Norway': 'SWE', 'Kingdom of Portugal': 'POR', 'Principality of Monaco ': 'MON',
+          'Russian-occupied territories': '', 'Chechen Republic': 'RUS', 'Mujahideen': '', 'Polish Armed Forces': '', 'Serbs': '',
+          'Hungarian Nationalists': '', 'Yugoslav Partisans': '', 'Spanish Nationalists ': '', 'State of Israel': '', 'Kingdom of Hejaz': '',
+          'Arab Federation': 'IRQ', "Arab Socialist Ba'ath Party": '', 'British Africa': '', 'British Colonial Empire': '',
+          'British Overseas Territories': 'GBR', 'United States of America': '', 'Republics of the Soviet Union': 'RUS',
+          'United Principalities of Moldavia and Wallachia': 'ROM', 'Kingdom of Great Britain ': 'GBR', 'Republic of Cyprus ': 'CYP_I',
+          'Swiss Confederation ': 'SUI', 'Kingdom of Norway ': 'NOR'}

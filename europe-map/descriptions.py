@@ -316,6 +316,13 @@ D = [
 ]
 
 
+# 1900-2026 entries come first, so that where an older entry has no year bounds the newer one wins
+import sys as _sys
+_sys.path.insert(0, __file__.rsplit('/', 1)[0])
+from descriptions20 import D20
+D[:0] = D20
+
+
 def lookup(unit, name, year):
     """Index of the description for this country, name and year (or -1)."""
     for i, (u, n, a, b, *_rest) in enumerate(D):

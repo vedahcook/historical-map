@@ -15,7 +15,7 @@ from shapely.strtree import STRtree
 from shapely.ops import polylabel
 from pyproj import Transformer
 sys.path.insert(0, __file__.rsplit('/', 1)[0])
-from units import UNITS
+from units import UNITS, KIND, DEJURE, ADJ
 from descriptions import D as DESC, lookup as desc_lookup
 
 t0 = time.time()
@@ -167,8 +167,47 @@ SHORT = {'United Kingdom of Great Britain and Ireland': 'United Kingdom', 'Kingd
          'Frankfur': 'Frankfurt', 'Dictatorship of Garibaldi': "Garibaldi's Sicily", 'Cyprus Protectorate': 'Cyprus',
          'French protectorate of Tunisia': 'Tunisia', 'Alawi Sultanate': 'Morocco', 'Regency of Algiers': 'Algiers', 'Qajar Iran': 'Persia',
          'Kingdom of Kartli-Kakheti': 'Kartli-Kakheti', 'North German Confederation': 'North German Confederation', 'Cretan State': 'Crete'}
-def short(n, unit):
+SHORT.update({'Russian Soviet Federative Socialist Republic': 'Soviet Russia', 'Kingdom of Serbs, Croats and Slovenes': 'Kingdom of SCS',
+    'Czech and Slovak Federative Republic': 'Czechoslovakia', 'Czechoslovak Federative Republic': 'Czechoslovakia', 'Czechoslovak Socialist Republic': 'Czechoslovakia',
+    'Czechoslovak Republic': 'Czechoslovakia', 'FPR of Yugoslavia': 'Yugoslavia', 'SFR of Yugoslavia': 'Yugoslavia', 'Democratic Federal Yugoslavia': 'Yugoslavia',
+    'Tsardom of Bulgaria': 'Bulgaria', "People's Republic of Bulgaria": 'Bulgaria', "Hungarian People's Republic": 'Hungary', 'Hungarian Republic': 'Hungary',
+    "People's Republic of Albania": 'Albania', "People's Socialist Republic of Albania": 'Albania', 'Albanian Kingdom': 'Albania', 'Albanian Republic': 'Albania',
+    'Democratic Government of Albania': 'Albania', "Romanian People's Republic": 'Romania', 'Socialist Republic of Romania': 'Romania',
+    'French State': 'Vichy France', 'Syrian Arab Republic': 'Syria', 'Syrian Republic': 'Syria', 'Hashemite Kingdom of Iraq': 'Iraq', 'Mandatory Iraq': 'Iraq',
+    'Lebanese Republic': 'Lebanon', 'State of Greater Lebanon': 'Greater Lebanon', 'French protectorate in Morocco': 'French Morocco',
+    'Spanish protectorate in Morocco': 'Spanish Morocco', 'Italian Islands of the Aegean': 'Italian Dodecanese', 'Territory of the Saar Basin': 'Saar',
+    'Free State of Fiume': 'Fiume', 'Free Territory of Trieste': 'Trieste', 'Klaipėda Region': 'Memel Territory', 'Government of South Russia': 'South Russia (Whites)',
+    'Mountainous Republic of the Northern Caucasus': 'Mountain Republic', 'FYR Macedonia': 'Macedonia', 'State of Turkey': 'Turkey',
+    'United Kingdom of Great Britain and Ireland': 'United Kingdom', 'British Cyprus': 'Cyprus', 'British Occupation of Cyprus': 'Cyprus',
+    'Condominium of Bosnia and Herzegovina': 'Bosnia-Herzegovina', 'Autonomous Province of Korçë': 'Korçë', 'Regency Kingdom of Poland': 'Kingdom of Poland',
+    'Slovak State': 'Slovakia', 'Slovak Republic': 'Slovakia', 'Belarusian People\'s Republic': 'Belarus', 'Azerbaijan SSR': 'Soviet Azerbaijan',
+    'Ukrainian SSR': 'Soviet Ukraine', 'Byelorussian SSR': 'Soviet Belarus', 'SSR of Georgia': 'Soviet Georgia', 'SSR of Armenia': 'Soviet Armenia',
+    'FUSSR of Transcaucasia': 'Transcaucasian SFSR', 'Irish Free State': 'Irish Free State', 'Kingdom of Iceland': 'Iceland', 'West Berlin': 'West Berlin'})
+def default_name(unit, y):
+    if unit == 'RUS': return 'Russian Empire' if y <= 1916 else 'Russia' if y == 1917 else 'Soviet Russia' if y <= 1922 else 'Soviet Union' if y <= 1991 else 'Russia'
+    if unit == 'GER': return 'German Empire' if y <= 1918 else 'Germany'
+    if unit == 'OTT': return 'Ottoman Empire'
+    return UNITS[unit][0]
+OCC_LABEL = {'O_GER_GBR': 'German-occupied Channel Islands', 'O_GBR_DEN': 'British-occupied Faroe Islands', 'O_FRA_OTT': 'French-occupied Cilicia',
+             'O_GRE_OTT': 'Greek-occupied Smyrna', 'O_ITA_OTT': 'Italian-occupied Antalya', 'O_AUT_ITA': 'Austro-Hungarian-occupied Venetia',
+             'O_BUL_I_ROM': 'Bulgarian-occupied Dobruja', 'O_FIN_I_RUS': 'Finnish-occupied East Karelia', 'O_ROM_RUS': 'Romanian-occupied Transnistria',
+             'O_GER_GRE': 'Axis-occupied Greece', 'O_GER_POL': 'German-occupied Poland', 'O_AUT_POL': 'Austro-Hungarian-occupied Poland'}
+DJN = {'POL': 'Russian Poland', 'POL_I': 'Poland', 'SRB_I': 'Serbia', 'BUL_I': 'Bulgaria', 'FIN_I': 'Finland', 'CYP_I': 'Cyprus', 'DOD': 'Dodecanese'}
+def occ_name(u, y):
+    """Map label for an occupied or annexed area in year y."""
+    occ = UNITS[u][1]
+    if u in OCC_LABEL: return OCC_LABEL[u]
+    if u == 'O_GER_RUS' and y <= 1918: return 'German-occupied Russia'
+    if u.startswith('A_'): return 'Annexed by ' + default_name(occ, y).replace('German Empire', 'Germany')
+    if u.startswith('O_'):
+        dj = DEJURE[u]
+        adj = ('Soviet' if 1923 <= y <= 1991 else 'Russian') if occ == 'RUS' else ADJ.get(occ, UNITS[occ][0])
+        country = DJN.get(dj) or (default_name(dj, y) if dj in ('RUS', 'GER') else UNITS[dj][0])
+        return f'{adj}-occupied {country}'
+    return UNITS[u][0]
+def short(n, unit, y=1900):
     if not n: return UNITS[unit][0]
+    if n == 'German Reich': return 'German Empire' if y <= 1918 else 'Germany'
     if n in SHORT: return SHORT[n]
     m = re.match(r'^(Kingdom|Grand Duchy|Duchy|Principality|Electorate|Margraviate|Republic|Free City|Prince-Bishopric) of (.+)$', n)
     if m and len(m.group(2)) <= 16 and m.group(1) not in ('Republic',): return m.group(2)
@@ -185,12 +224,13 @@ for y, rows in labels.items():
     for unit, x, yy, area, varea, (src, r) in rows:
         if unit not in [K[u] for u in used_units]: continue
         o = refs[ref_id(src, r)] if src in (0, 3) else None
-        if o and (o['l'] == '2' or unit not in PIECES): name = short(o['n'], unit)
-        elif unit == 'AUT': name = 'Habsburg Monarchy' if y < 1804 else 'Austrian Empire' if y < 1867 else 'Austria-Hungary'
-        else: name = UNITS[unit][0]
+        if unit in KIND: name = occ_name(unit, y)
+        elif o and (o['l'] == '2' or unit not in PIECES): name = short(o['n'], unit, y)
+        elif unit == 'AUT': name = 'Habsburg Monarchy' if y < 1804 else 'Austrian Empire' if y < 1867 else 'Austria-Hungary' if y <= 1918 else 'Austria'
+        else: name = default_name(unit, y)
         if unit == 'SHC': name = 'Schleswig-Holstein'
         # the full record name picks the description (the short label can be shared by several states)
-        full = o['n'] if o and (o['l'] == '2' or unit not in PIECES) else UNITS[unit][0]
+        full = o['n'] if o and (o['l'] == '2' or unit not in PIECES) and unit not in KIND else UNITS[unit][0]
         if unit == 'AUT' and not (o and o['l'] == '2'): full = name
         out.append([UI[K.index(unit)], round(x / 1000, 1), round(-yy / 1000, 1), round(area), round(varea), nid(name), desc_lookup(unit, full, y)])
     lab[y] = out
@@ -198,7 +238,7 @@ for y, rows in labels.items():
 units_out = []
 for u in used_units:
     k = K[u]; name, ov, fa = UNITS[k]
-    units_out.append({'k': k, 'n': name, 'ov': UI.get(K.index(ov)) if ov and K.index(ov) in UI else None, 'c': col.get(fa, 0)})
+    units_out.append({'k': k, 'n': name, 'ov': UI.get(K.index(ov)) if ov and K.index(ov) in UI else None, 'c': col.get(fa, 0), **({'o': 1} if k in KIND else {})})
 # ---------- cities: place each one in its map region, keep its population figures ----------
 HERE = __file__.rsplit('/', 1)[0] or '.'
 CSRC = 'WGEC'   # Wikidata, German Wikipedia, English Wikipedia, Chandler/de Vries/Mitchell estimate
@@ -226,6 +266,16 @@ data = {'years': [YEARS[0], YEARS[-1]], 'viewBox': [round(vb[0]), round(vb[1]), 
 json.dump(data, open('data.json', 'w'), ensure_ascii=False, separators=(',', ':'))
 missing = sorted({(r[0], names_l[r[5]]) for rows in lab.values() for r in rows if r[6] < 0})
 print('labels without a description:', [(units_out[u]['k'], n) for u, n in missing])
+# a description whose dates don't cover the year it is shown for is probably the wrong one
+yr = lambda v: int(re.findall(r'\d{3,4}', v)[-1]) if re.findall(r'\d{3,4}', v) else None
+odd = set()
+for y, rows in lab.items():
+    for r in rows:
+        if r[6] < 0: continue
+        _u, _n, _a, _b, t, f, e, _x = DESC[r[6]]
+        if (yr(f) and yr(f) > y + 1) or (e and yr(e) and yr(e) < y - 1): odd.add((units_out[r[0]]['k'], t, y))
+from itertools import groupby
+print('descriptions outside their dates:', sorted({(k, t, min(y for kk, tt, y in odd if (kk, tt) == (k, t)), max(y for kk, tt, y in odd if (kk, tt) == (k, t))) for k, t, _ in odd}))
 print('regions', len(gfeats), 'alts', len(alts), 'refs', len(refs), 'units', len(units_out), round(time.time() - t0), 's')
 bad = [(a, b, names[col[a]], names[col[b]]) for (a, b) in adj if col[a] == col[b]]
 print('same-color neighbors:', bad[:10])
