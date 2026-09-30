@@ -95,6 +95,9 @@ button, select, input { font: inherit; color: inherit; }
 .mappop p.hint { margin-top: 7px; font-size: 0.8rem; }
 .mappop .pop { font-size: 1.35rem; font-weight: 600; margin-top: 2px; font-variant-numeric: tabular-nums; }
 .mappop .pop small { display: block; font-size: 0.8rem; font-weight: 400; color: var(--muted); margin-top: -1px; }
+/* a city: its name large, its population smaller */
+.mappop .nm.city { font-size: 1.35rem; }
+.mappop .pop.city { font-size: 1.05rem; margin-top: 4px; }
 .mappop svg { display: block; position: static; width: 100%; height: auto; margin-top: 7px; cursor: default; }
 .mappop .hk { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 600; margin-top: 6px; }
 .hstrip { position: relative; height: 14px; margin: 4px 1.3% 0; background: var(--sunk); border-radius: 3px; }
@@ -330,7 +333,7 @@ function loadEra(E) {
   E.loading = fetch(E.src).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(d => {
     setupEra(E, d.topo, d);
     timelineFor = undefined; renderFixes();
-    if (curEra() === E) draw(); else renderTimeline();
+    if (curEra() === E) draw(); else { renderTimeline(); if (selCity != null && !pop.hidden) renderPop(); }
   }).catch(() => { E.failed = true; if (curEra() === E) draw(); });
 }
 
@@ -740,6 +743,7 @@ function cityHtml(d) {
     c.P.map(q => `<circle class="hit" data-y="${q[0]}" cx="${X(q[0]).toFixed(1)}" cy="${Y(q[1]).toFixed(1)}" r="6"><title>${q[0]}: ${fmt(q[1])}</title></circle>`).join('') +
     (p.k === 'est' ? `<circle class="cur" cx="${X(year)}" cy="${Y(p.v).toFixed(1)}" r="3"/>` : '') +
     ticks.map(t => `<text class="ax" x="${X(t).toFixed(1)}" y="${H - 1}" text-anchor="${t === ticks[0] && X(t) < 16 ? 'start' : 'middle'}">${t}</text>`).join('') + `</svg>`;
+  ERAS.forEach(E => { if (E.y1 >= C0 && !E.ready) loadEra(E); });      // the strip needs every era the chart covers; it redraws when they arrive
   const runs = [];
   for (let y = C0; y <= Y1; y++) {
     const u = cityUnit(c, y), last = runs[runs.length - 1]; if (u === -2) continue;      // years whose map is still loading
@@ -751,7 +755,7 @@ function cityHtml(d) {
       return `<button type="button" data-y="${r.a}" title="${esc(nm(r))}, ${r.a === r.b ? r.a : r.a + '–' + r.b}" style="left:${l}%;width:${w}%;background:${swatchBg(r.u)}"></button>`; }).join('') +
     `<span class="now" style="left:${(X(year) / W * 100).toFixed(2)}%"></span></div>`;
   const changes = runs.map(r => `<li role="button" tabindex="0" data-y="${r.a}"${r.a <= year && year <= r.b ? ' class="on"' : ''}><span class="sw" style="background:${swatchBg(r.u)}"></span><span>${r.a}${r.b > r.a ? '–' + (r.b === Y1 ? '' : r.b) : ''}</span><span>${esc(nm(r))}</span></li>`).join('');
-  return `<button type="button" class="x" aria-label="Close">×</button><div class="nm">${esc(c.n)}</div><div class="pop">${big} <small>people in ${year}</small></div><p>${esc(note)}</p>${chart}` +
+  return `<button type="button" class="x" aria-label="Close">×</button><div class="nm city">${esc(c.n)}</div><div class="pop city">${big} <small>people in ${year}</small></div><p>${esc(note)}</p>${chart}` +
     `<div class="hk">Held by</div>${strip}<ul class="hlist">${changes}</ul>`;
 }
 // the state's flag that year (chosen through Wikidata, images from Wikimedia Commons): its index in the flag sheet
