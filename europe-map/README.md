@@ -80,6 +80,15 @@ Each era is built in its own working folder with the same scripts. Setting `ERA=
 
 `fills.json` comes from `node fills.mjs` (candidate fill colors and their measured separation). Needs Python 3 with shapely and pyproj, and Node with topojson-server, topojson-simplify and topojson-client.
 
+## Hosting it elsewhere
+
+The map is plain files, so any web host can serve it.
+
+- `python3 make_site.py` writes `../_site/`: `index.html` (the page with the standard page header, which Claude artifacts otherwise add) and the files it loads. Upload that folder to any host, or embed its `index.html` in another site with an iframe.
+- `./deploy_site.sh` builds the folder and pushes it to the `gh-pages` branch, replacing what was there. GitHub Pages serves it at https://vedahcook.github.io/historical-map/ (Settings → Pages → Source: "Deploy from a branch", branch `gh-pages`). Run it after each rebuild.
+- The page loads fonts from Google Fonts and the topojson-client library from jsDelivr.
+- CShapes-Europe's license is non-commercial, so the map can't be hosted on a commercial site.
+
 ## Limits
 
 - **One date per year:** July 1. Changes during a year appear the following July.
