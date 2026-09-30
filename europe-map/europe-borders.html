@@ -93,8 +93,10 @@ button, select, input { font: inherit; color: inherit; }
 .hstrip { position: relative; height: 14px; margin: 4px 1.3% 0; background: var(--sunk); border-radius: 3px; }
 .hstrip button { position: absolute; top: 0; height: 14px; border: 0; padding: 0; border-right: 1px solid var(--surface); cursor: pointer; }
 .hstrip .now { position: absolute; top: -3px; bottom: -3px; width: 2px; margin-left: -1px; background: var(--sel); pointer-events: none; }
-.hlist { list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-direction: column; gap: 2px; font-size: 0.78rem; color: var(--muted); max-height: 9.5em; overflow-y: auto; }
-.hlist li { display: grid; grid-template-columns: 12px 76px minmax(0, 1fr); gap: 6px; align-items: center; }
+.hlist { position: relative; list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-direction: column; gap: 2px; font-size: 0.78rem; color: var(--muted); max-height: 9.5em; overflow-y: auto; }
+.hlist li { display: grid; grid-template-columns: 12px 76px minmax(0, 1fr); gap: 6px; align-items: center; cursor: pointer; border-radius: 4px; }
+.hlist li:hover { background: var(--sunk); }
+.hstrip { cursor: pointer; }
 .hlist li.on { color: var(--ink); font-weight: 600; }
 .hlist .sw { width: 12px; height: 12px; border-radius: 2px; }
 .mappop .ln { fill: none; stroke: var(--muted); stroke-width: 1.4; }
@@ -592,11 +594,17 @@ function click(ev) {
 }
 // dim everything outside the country that holds the selected place this year
 // the tapped spot is kept as a point, so it finds its map piece again when the year moves into the other era
+// After a jump in time from a city's popup, the place is that city (place.city), so the highlight follows whoever held it.
+function placeRegion(E) {
+  if (place.city != null) return CITIES[place.city].ss[E.i];
+  if (place.E !== E) { const f = regionAt(place.x, place.y, E); place.E = E; place.s = f ? f.properties.s : -1; }
+  return place.s;
+}
 function placeUnit(y) {
   if (!place) return -1;
   const E = eraOf(y); if (!E.ready) return -1;
-  if (place.E !== E) { const f = regionAt(place.x, place.y, E); place.E = E; place.s = f ? f.properties.s : -1; }
-  return place.s < 0 ? -1 : E.unitAt[place.s * E.ny + y - E.y0];
+  const s = placeRegion(E);
+  return s < 0 ? -1 : E.unitAt[s * E.ny + y - E.y0];
 }
 const focusUnit = () => placeUnit(year);
 function drawDim() {
@@ -654,6 +662,7 @@ function focusCities() {
     .filter(d => d.p.k !== 'none' || Math.abs(d.p.a[0] - year) <= 25)      // no figure within 25 years: its size then is unknown, so leave it out
     .sort((a, b) => b.p.v - a.p.v);
   if (inside.length) { const top = inside[0].p.v; inside = inside.filter((d, n) => n < 10 && d.p.v >= top * 0.03); }   // the 10 largest, none under 3% of the biggest
+  if (selCity != null && !inside.some(d => d.c.i === selCity) && cityUnit(CITIES[selCity], year) === fu) inside.push({ c: CITIES[selCity], p: popAt(CITIES[selCity], year) });   // and the open city
   for (const d of inside) {
     d.sx = (d.c.x - shown[0]) * k; d.sy = (d.c.y - shown[1]) * k; d.r = Math.min(9, 2.2 + 1.5 * Math.sqrt(d.p.v / 100000));
     d.vis = d.sx > -20 && d.sy > -20 && d.sx < r.width + 20 && d.sy < r.height + 20;
@@ -724,11 +733,11 @@ function cityHtml(d) {
     if (last && last.u === u && last.b === y - 1) last.b = y; else runs.push({ u, a: y, b: y });
   }
   const nm = r => r.u < 0 ? 'no country' : nameOf(r.u, r.a);
-  const strip = `<div class="hstrip" role="group" aria-label="Who held ${esc(c.n)}">` + runs.map(r => {
+  const strip = `<div class="hstrip" role="group" aria-label="Who held ${esc(c.n)}" data-c0="${C0}" data-w="${W}">` + runs.map(r => {
       const l = (X(r.a - 0.5) / W * 100).toFixed(2), w = ((X(r.b + 0.5) - X(r.a - 0.5)) / W * 100).toFixed(2);
       return `<button type="button" data-y="${r.a}" title="${esc(nm(r))}, ${r.a === r.b ? r.a : r.a + '–' + r.b}" style="left:${l}%;width:${w}%;background:${swatchBg(r.u)}"></button>`; }).join('') +
     `<span class="now" style="left:${(X(year) / W * 100).toFixed(2)}%"></span></div>`;
-  const changes = runs.map(r => `<li${r.a <= year && year <= r.b ? ' class="on"' : ''}><span class="sw" style="background:${swatchBg(r.u)}"></span><span>${r.a}${r.b > r.a ? '–' + (r.b === Y1 ? '' : r.b) : ''}</span><span>${esc(nm(r))}</span></li>`).join('');
+  const changes = runs.map(r => `<li role="button" tabindex="0" data-y="${r.a}"${r.a <= year && year <= r.b ? ' class="on"' : ''}><span class="sw" style="background:${swatchBg(r.u)}"></span><span>${r.a}${r.b > r.a ? '–' + (r.b === Y1 ? '' : r.b) : ''}</span><span>${esc(nm(r))}</span></li>`).join('');
   return `<button type="button" class="x" aria-label="Close">×</button><div class="nm">${esc(c.n)}</div><div class="pop">${big} <small>people in ${year}</small></div><p>${esc(note)}</p>${chart}` +
     `<div class="hk">Held by</div>${strip}<ul class="hlist">${changes}</ul>`;
 }
@@ -741,8 +750,8 @@ function countryHtml(u) {
 }
 // where the border at the tapped spot comes from, in one line
 function srcShort() {
-  const E = curEra(); focusUnit();
-  const r = place && place.E === E && place.s >= 0 ? E.R[E.refAt[place.s * E.ny + year - E.y0]] : null; if (!r) return '';
+  const E = curEra(), s = place && E.ready ? placeRegion(E) : -1;
+  const r = s >= 0 ? E.R[E.refAt[s * E.ny + year - E.y0]] : null; if (!r) return '';
   const link = `<a href="https://www.openhistoricalmap.org/relation/${r.id}" target="_blank" rel="noopener">${esc(r.n)}</a>`;
   const t = r.t === 'ohm' || r.t === 'bridge' ? `OpenHistoricalMap, ${link}`
     : r.t === 'cs' ? 'CShapes-Europe (OpenHistoricalMap has no record here)'
@@ -753,7 +762,7 @@ function srcShort() {
 
 // ---------- the map popup: only one at a time, for the highlighted country or a tapped city ----------
 const pop = $('mappop'), PAD = 8;
-let popClosed = false, popTimer = 0, animating = false, anim = 0, maskCanvas = null;
+let popClosed = false, popTimer = 0, animating = false, anim = 0, maskCanvas = null, keepPop = null;
 const ovl = (a, b) => Math.max(0, Math.min(a[2], b[2]) - Math.max(a[0], b[0])) * Math.max(0, Math.min(a[3], b[3]) - Math.max(a[1], b[1]));
 const gapTo = (r, b) => Math.hypot(Math.max(0, b[0] - r[2], r[0] - b[2]), Math.max(0, b[1] - r[3], r[1] - b[3]));
 const sumOvl = (r, boxes) => boxes.reduce((t, b) => t + ovl(r, b), 0);
@@ -817,13 +826,33 @@ function renderPop() {
   const fu = focusUnit(), d = cityDots.find(d => d.c.i === selCity);
   if (animating || fu < 0 || (!d && popClosed)) { pop.hidden = true; return; }
   const sr = svg.getBoundingClientRect(), mb = $('mapbox').getBoundingClientRect();
-  pop.innerHTML = d ? cityHtml(d) : countryHtml(fu);
+  const same = d && pop.dataset.city === String(d.c.i) && !pop.hidden, hl0 = pop.querySelector('.hlist'), scroll = same && hl0 ? hl0.scrollTop : 0;
+  pop.innerHTML = d ? cityHtml(d) : countryHtml(fu); pop.dataset.city = d ? d.c.i : '';
   pop.setAttribute('aria-label', d ? `${d.c.n}: population` : nameOf(fu, year));
-  pop.querySelectorAll('.hstrip button, .pchart .hit').forEach(b => b.onclick = ev => { ev.stopPropagation(); setYear(+b.dataset.y); });
+  if (d) {
+    // a dot in the chart, a band of the strip (the year tapped) or a row of the list (its first year) moves the whole
+    // map to that year; the popup stays put, and the highlight follows whoever held the city
+    const jump = y => { stop(); place = { x: d.c.x, y: d.c.y, city: d.c.i }; popClosed = false; keepPop = [pop.offsetLeft, pop.offsetTop]; setYear(y); keepPop = null; };
+    pop.querySelectorAll('.pchart .hit, .hlist li').forEach(b => { b.onclick = ev => { ev.stopPropagation(); jump(+b.dataset.y); }; b.onkeydown = ev => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); jump(+b.dataset.y); } }; });
+    const hs = pop.querySelector('.hstrip');
+    hs.onclick = ev => {
+      ev.stopPropagation();
+      if (!ev.detail && ev.target.dataset.y) return jump(+ev.target.dataset.y);      // from the keyboard: the band's first year
+      const r = hs.getBoundingClientRect(), W = +hs.dataset.w, c0 = +hs.dataset.c0;
+      jump(Math.max(c0, Math.min(Y1, Math.round(c0 + (((ev.clientX - r.left) / r.width) * W - 4) / (W - 8) * (Y1 - c0)))));
+    };
+    const hl = pop.querySelector('.hlist'), on = hl.querySelector('li.on');
+    hl.scrollTop = scroll;
+    if (on && (on.offsetTop < hl.scrollTop || on.offsetTop + on.offsetHeight > hl.scrollTop + hl.clientHeight)) hl.scrollTop = on.offsetTop - hl.clientHeight / 2;
+  }
   pop.querySelector('.x').onclick = () => { if (d) { selCity = null; drawCities(); } else popClosed = true; renderPop(); };
   const w = d ? Math.min(330, sr.width - 2 * PAD) : sr.width < 600 ? sr.width - 2 * PAD : 300; pop.style.width = w + 'px';
   pop.style.left = '-9999px'; pop.style.top = '0px'; pop.hidden = false;
   const h = pop.offsetHeight, ctrl = controlBoxes(), fb = focusBox ? [focusBox] : [];
+  if (d && keepPop) {      // moved in time from inside the popup: stay put, just kept inside the map
+    pop.style.left = Math.max(PAD, Math.min(keepPop[0], mb.width - w - PAD)) + 'px'; pop.style.top = Math.max(PAD, Math.min(keepPop[1], mb.height - h - PAD)) + 'px';
+    return;
+  }
   let spot;
   if (d) {
     // a city: never cover its dot or its name; stay close; avoid other cities and the country's name
@@ -918,7 +947,7 @@ function hover(ev) {
 function setYear(y) {
   y = Math.max(Y0, Math.min(Y1, y)); if (y === year) return;
   const pu = focusUnit(); year = y; const G = yearGeo(year);
-  if (pu >= 0 && G && !G.fills.some(g => g.u === pu)) { place = null; selCity = null; }   // the highlighted country no longer exists: highlight nothing
+  if (pu >= 0 && G && !G.fills.some(g => g.u === pu) && !(place && place.city != null)) { place = null; selCity = null; }   // (a city's popup instead follows whoever holds the city)   // the highlighted country no longer exists: highlight nothing
   if (selAlt != null && !altsNow().some(a => a.i === selAlt)) selAlt = null;
   draw();
 }
