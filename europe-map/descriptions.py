@@ -321,7 +321,8 @@ import sys as _sys
 _sys.path.insert(0, __file__.rsplit('/', 1)[0])
 from descriptions20 import D20
 from descriptions15 import D15
-D[:0] = D15 + D20
+from descriptions10 import D10
+D[:0] = D10 + D15 + D20
 
 
 def lookup(unit, name, year):

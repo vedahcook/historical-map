@@ -14,9 +14,11 @@ from pyproj import Transformer
 sys.path.insert(0, __file__.rsplit('/', 1)[0])
 from units import UNITS, ohm_roles, cs_unit, clio_unit, sovereign, KIND, CLIO_OCCUPIER, OCC_PAIRS, ANNEXERS
 
-# ERA=early runs the 1500-1799 map from its own sources (europe-borders-sources.json in that working folder)
-EARLY = __import__('os').environ.get('ERA') == 'early'
-Y0, Y1 = (1500, 1799) if EARLY else (1800, 2026)
+# ERA=early runs the 1500-1799 map, ERA=medieval the 1000-1499 map, each from its own sources
+# (europe-borders-sources.json in that working folder)
+ERA = __import__('os').environ.get('ERA')
+EARLY, MEDIEVAL = ERA == 'early', ERA == 'medieval'
+Y0, Y1 = (1000, 1499) if MEDIEVAL else (1500, 1799) if EARLY else (1800, 2026)
 YEARS = list(range(Y0, Y1 + 1)); NY = len(YEARS)
 t0 = time.time()
 d = json.load(open('europe-borders-sources.json'))
@@ -77,7 +79,8 @@ def fill_source(props, members, unit_of, yr):
 
 cs_u, cs_rec = fill_source(F['cs'], F['in_cs'], lambda p, y: cs_unit(p['Name'], p['Status'], y) if y >= 1816 else None,
                            lambda p: (p['From'], p['To']))
-cl_u, cl_rec = fill_source(F['cl'], F['in_cl'], lambda p, y: clio_unit(p['Name'], p['FromYear']), lambda p: (p['FromYear'], p['ToYear']))
+# (the medieval map applies Cliopatria's names year by year: its records span several years, and a state can end inside one)
+cl_u, cl_rec = fill_source(F['cl'], F['in_cl'], lambda p, y: clio_unit(p['Name'], y if MEDIEVAL else p['FromYear']), lambda p: (p['FromYear'], p['ToYear']))
 print('cshapes/clio done', round(time.time() - t0), 's')
 
 # ---------- the map's answer ----------
@@ -127,7 +130,7 @@ def fix_multi(fid, U, note, ev):
     k = len(SRC) + len(FIX) - 1
     def_u[mask] = U[mask]; def_src[mask] = k
 
-if not EARLY:
+if not EARLY and not MEDIEVAL:
     fix('caucasus-1801', 'RUS', (x > 38) & (x < 50) & (y > 38.5) & (y < 44.5) & (YA >= 1802) & (YA <= 1813) & (def_u == KI['PER']) & (cl_u == KI['RUS']),
         'OHM keeps eastern Georgia and the khanates north of the Aras River under Persia until the Treaty of Gulistan (1813). Russia annexed Kartli-Kakheti in 1801 and took most of the khanates in 1804-06; the treaty confirmed this. For these years the map uses Cliopatria\u2019s outline.',
         [['Russian annexation of Georgia', 'https://en.wikipedia.org/wiki/Annexation_of_the_Kingdom_of_Kartli-Kakheti_by_the_Russian_Empire'], ['Treaty of Gulistan (1813)', 'https://en.wikipedia.org/wiki/Treaty_of_Gulistan']])
@@ -370,6 +373,8 @@ if not EARLY:
 
 if EARLY:
     exec(open(__file__.rsplit('/', 1)[0] + '/assign15.py').read())
+if MEDIEVAL:
+    exec(open(__file__.rsplit('/', 1)[0] + '/assign10.py').read())
 
 # ---------- report gaps ----------
 nodef = is_land[:, None] & (def_u == NONE)

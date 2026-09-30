@@ -37,7 +37,11 @@ GERMAN = {KI[k] for k in ['SAX', 'MKS', 'MKST', 'OLD', 'BRU', 'HKA', 'HDA', 'NAS
 YA = np.array(YEARS)[None, :]
 HRE_MEMBERS = [KI[k] for k in ['AUT', 'BOK', 'BAV', 'SAX', 'SXO', 'BRA', 'PRU', 'PAL', 'JUL', 'POM', 'KOL', 'MAI', 'TRR', 'MUN', 'BAM', 'WRZ',
                'SAL', 'HAN', 'HKA', 'HDA', 'BAD', 'WUR', 'NAS', 'WALD', 'LIP', 'SCH', 'ANH', 'SWB', 'MKS', 'MKST', 'OLD', 'EFR', 'HGO',
-               'DIT', 'LUB', 'BRE', 'HAM', 'LIE', 'HOH', 'HGE', 'LOR', 'LGE', 'SAV', 'HNL', 'SNL', 'ANL', 'FCO', 'GEL', 'BRU', 'BERG'] if k in KI]
+               'DIT', 'LUB', 'BRE', 'HAM', 'LIE', 'HOH', 'HGE', 'LOR', 'LGE', 'SAV', 'HNL', 'SNL', 'ANL', 'FCO', 'GEL', 'BRU', 'BERG',
+               # medieval members (1000-1499): stem duchies, the Low Countries, the Kingdom of Arles, northern Italy
+               'SXD', 'SWA', 'FRC', 'THU', 'CAR', 'AQL', 'LLO', 'HLD', 'HAI', 'BRB', 'FRI', 'LUX', 'ARL', 'PRV', 'DAU', 'FCM', 'BGS',
+               'TSC', 'VRN', 'SPO', 'MLS', 'TUS', 'PIS', 'SIE', 'LUC', 'MAN', 'MOD', 'MAS', 'MIR', 'GUA', 'NOV', 'SLZ', 'SUI', 'ORA'] if k in KI]
+UMBRELLAS = [KI[k] for k in ('HRE', 'ARL') if k in KI]
 
 def conflicts(alt_u, yr_ok):
     a_s = sov(alt_u)
@@ -57,7 +61,7 @@ def conflicts(alt_u, yr_ok):
     c &= ~((YA == 1918) & (d_s == KI['AUT']))
     # the Holy Roman Empire before 1806: one source showing its "smaller states" and the other a particular member
     # state is a difference in detail, not a different border
-    hre = (YA <= 1806) & (((alt_u == KI['HRE']) & np.isin(du, HRE_MEMBERS)) | ((du == KI['HRE']) & np.isin(alt_u, HRE_MEMBERS)))
+    hre = (YA <= 1806) & ((np.isin(alt_u, UMBRELLAS) & np.isin(du, HRE_MEMBERS)) | (np.isin(du, UMBRELLAS) & np.isin(alt_u, HRE_MEMBERS)))
     c &= ~hre
     # timing: a one-year disagreement where the other source matches the map a year earlier or later
     sh = lambda M, k: np.concatenate([M[:, :1]] * k + [M[:, :-k]], 1) if k > 0 else np.concatenate([M[:, -k:]] + [M[:, -1:]] * -k, 1)
@@ -70,7 +74,7 @@ yr = YA + 0 * A['def_u']
 cs_c, cs_s = conflicts(A['cs_u'], yr >= 1816)
 cl_c, cl_s = conflicts(A['cl_u'], yr <= 1815)
 # Cliopatria is coarse and groups states into umbrellas; only compare against real states
-cl_c &= ~np.isin(A['cl_u'], [KI['RHC'], KI['HRE']]) & (A['def_u'] != KI['HRE'])
+cl_c &= ~np.isin(A['cl_u'], [KI['RHC']] + UMBRELLAS) & ~np.isin(A['def_u'], UMBRELLAS)
 # where the map overrode OHM with a correction, OHM itself is the alternative
 ohm_c, ohm_s = conflicts(np.where(A['ohm_pri'] >= 2, A['ohm_u'], NONE), (A['def_src'] >= 4))
 print('conflict face-years: cshapes', int(cs_c.sum()), 'cliopatria', int(cl_c.sum()), 'ohm', int(ohm_c.sum()))

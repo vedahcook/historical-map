@@ -1,4 +1,4 @@
-<title>Europe's Borders, 1500–2026</title>
+<title>Europe's Borders, 1000–2026</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Instrument+Sans:wght@400;500;600;700&family=Source+Sans+3:wght@300..700&display=swap">
 <style>
 /* Layout: an atlas plate. The map fills the left, a year slider runs under it, and a side panel explains the year, the place you clicked, and where sources disagree. */
@@ -178,7 +178,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
 
 <div class="app">
   <header class="top">
-    <h1>Europe's Borders, 1500–2026</h1>
+    <h1>Europe's Borders, 1000–2026</h1>
     <p>Who held what on July 1 of every year, from OpenHistoricalMap checked against other datasets. Crosshatching marks occupied land. Where another source draws a different border, the side panel lists it; pick one to outline it on the map.</p>
   </header>
   <div class="main">
@@ -221,7 +221,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
         </div>
         <div class="track">
           <svg class="spark" id="spark" preserveAspectRatio="none" aria-hidden="true"></svg>
-          <input type="range" id="year" min="1500" max="2026" step="1" value="1815" aria-label="Year">
+          <input type="range" id="year" min="1000" max="2026" step="1" value="1815" aria-label="Year">
           <div class="ticks" id="ticks"></div>
         </div>
         <div class="events" id="events" aria-label="Jump to a year"></div>
@@ -235,7 +235,8 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
       <section class="card" id="altcard"></section>
       <section class="card about">
         <h3>How this map was made</h3>
-        <p>Each year shows the borders in force on July 1. The map uses <a href="https://www.openhistoricalmap.org" target="_blank" rel="noopener">OpenHistoricalMap</a> (OHM), which matched the historical record in 149 of 160 spot checks. Where OHM has no record, it falls back to <a href="https://icr.ethz.ch/data/cshapes/" target="_blank" rel="noopener">CShapes-Europe</a> (from 1816) or <a href="https://github.com/Seshat-Global-History-Databank/cliopatria" target="_blank" rel="noopener">Cliopatria</a>. Where our checks found OHM wrong, the map applies a correction and says so. Before 1800 OHM has fewer records: it often has the Holy Roman Empire without its member states, so many small German states show as the Empire, and Cliopatria fills more of the map. The map for 1500–1799 loads separately, a moment after the page opens.</p>
+        <p>Each year shows the borders in force on July 1. The map uses <a href="https://www.openhistoricalmap.org" target="_blank" rel="noopener">OpenHistoricalMap</a> (OHM), which matched the historical record in 149 of 160 spot checks. Where OHM has no record, it falls back to <a href="https://icr.ethz.ch/data/cshapes/" target="_blank" rel="noopener">CShapes-Europe</a> (from 1816) or <a href="https://github.com/Seshat-Global-History-Databank/cliopatria" target="_blank" rel="noopener">Cliopatria</a>. Where our checks found OHM wrong, the map applies a correction and says so. Before 1800 OHM has fewer records: it often has the Holy Roman Empire without its member states, so many small German states show as the Empire, and Cliopatria fills more of the map. The maps for 1000–1499 and 1500–1799 load separately, a moment after the page opens.</p>
+        <p>Before 1500 OHM draws only part of Europe, and some of its records change only every few decades, so Cliopatria draws most of the map; its outlines change in steps of a few years and are rough at the coasts, so the medieval map is approximate in its details. France’s great fiefs, such as Normandy, Burgundy and Toulouse, are shown in their own colors, striped in France’s color, since they owed homage to the French king; lands in France held by the kings of England are in England’s color, striped in France’s. The larger members of the Holy Roman Empire show as their own states. 324 checks of places and years against the historical record all match, 17 of them where either of two answers is fair (for example Toledo in 1100, when Alfonso VI was king of both León and Castile).</p>
         <p>Occupations: OHM records named occupation regimes, such as the General Government in Poland or the Allied zones of Germany, and the map uses them. Where OHM shows the country that held the land in law, the map adds occupations from Cliopatria’s year-by-year outlines of each power’s control (1914-46), land annexed during the Second World War and given back afterward, and the breakaway regions and occupied parts of Ukraine since 1990. Each of these is listed under corrections.</p>
         <p>Alternative borders compare OHM with CShapes-Europe from 1816 and with Cliopatria before that. They count only when a source puts an area of at least 400 km² (5,000 km² for the coarser Cliopatria) in a different country for longer than a year. Territories that governed themselves under an overlord count as part of the overlord for this comparison, because the sources disagree on whether to show them.</p>
         <p>Cities appear when a country is highlighted: its largest cities that year (up to ten, and none smaller than 3% of its biggest), from about 450 cities (Europe's largest by 1900, those that grew large after, and large towns of 1500–1800), placed in whichever country held them that year. Tap one for its population. Figures come from censuses where there is one for that year; between figures the map estimates, assuming steady growth, and says so. A hollow dot means there is no figure within ten years (25 years before 1800); the map then gives the nearest figures instead of an estimate. Before 1800 the figures are mostly Jan de Vries’s estimates every 50 years for towns that reached 10,000 people, which cover western and central Europe but not the Ottoman lands or Russia; about 60 towns that were large then but not later (Leiden, Bruges, Toledo, Mantua and others) appear only in those centuries. Early figures are estimates, some for the wider city, so they are not always comparable with later census counts.</p>
@@ -273,7 +274,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
 'use strict';
 const topo = JSON.parse(document.getElementById('topo').textContent);     // the 1800-2026 map
 const D = JSON.parse(document.getElementById('data').textContent);
-const Y0 = D.years[0], Y1 = D.years[1], NY = Y1 - Y0 + 1;                 // the whole span, 1500-2026
+const Y0 = D.years[0], Y1 = D.years[1], NY = Y1 - Y0 + 1;                 // the whole span, 1000-2026
 const U = D.units, NM = D.names;
 const $ = id => document.getElementById(id);
 const svg = $('map'), NS = 'http://www.w3.org/2000/svg';
@@ -299,9 +300,9 @@ const ringArea = r => { let t = 0; for (let i = 0, j = r.length - 1; i < r.lengt
 const inRing = (r, x, y) => { let c = false; for (let i = 0, j = r.length - 1; i < r.length; j = i++) { const [xi, yi] = r[i], [xj, yj] = r[j]; if ((yi > y) !== (yj > y) && x < (xj - xi) * (y - yi) / (yj - yi) + xi) c = !c; } return c; };
 const inGeom = (g, x, y) => { const polys = g.type === 'Polygon' ? [g.coordinates] : g.type === 'MultiPolygon' ? g.coordinates : []; return polys.some(p => inRing(p[0], x, y) && !p.slice(1).some(h => inRing(h, x, y))); };
 
-// ---------- the two eras: each has its own map pieces ("regions") and who held each one, year by year ----------
-// 1800-2026 is in this page; 1500-1799 is a separate file, loaded soon after the page opens (or at once if it
-// opens on an earlier year). Countries, names and descriptions are shared lists, the same on both sides of 1800.
+// ---------- the eras: each has its own map pieces ("regions") and who held each one, year by year ----------
+// 1800-2026 is in this page; 1000-1499 and 1500-1799 are separate files, loaded soon after the page opens (or at once
+// if it opens on an earlier year). Countries, names and descriptions are shared lists, the same in every era.
 const ERAS = D.eras.map((e, i) => ({ ...e, i, ny: e.y1 - e.y0 + 1, ready: false }));
 const eraOf = y => ERAS.find(e => y >= e.y0 && y <= e.y1);
 const LABELS = {}, AREA = {}, ALTS = [];     // by year: country names on the map, and each country's area
@@ -477,6 +478,7 @@ function draw() {
   drawAlts(); drawDim(); applyView();
   $('stamp').textContent = year; $('year').value = year;
   renderTimeline(); renderAlts();
+  setTimeout(preloadNear, 1500);
   try { history.replaceState(null, '', '#' + year); } catch (e) {}
 }
 
@@ -1020,8 +1022,13 @@ $('play').onclick = () => {
 document.addEventListener('keydown', e => { if (!flagBig.hidden || e.target.closest('input, button, a, summary, [role=button]')) return; if (e.key === 'ArrowLeft') setYear(year - 1); if (e.key === 'ArrowRight') setYear(year + 1); });
 
 // ---------- timeline: change per year and key events; filtered to the highlighted country ----------
-[1500, 1600, 1700, 1800, 1900, 2000].forEach(y => { const s = document.createElement('span'); s.textContent = y; s.style.left = ((y - Y0 + 0.5) / NY * 100) + '%'; $('ticks').appendChild(s); });
-const EVENTS = [[1527, 'Battle of Mohács'], [1553, 'Russia takes Kazan'], [1569, 'Union of Lublin'], [1579, 'Dutch Republic'], [1649, 'Peace of Westphalia'],
+[1000, 1200, 1400, 1600, 1800, 2000].forEach(y => { const s = document.createElement('span'); s.textContent = y; s.style.left = ((y - Y0 + 0.5) / NY * 100) + '%'; $('ticks').appendChild(s); });
+const EVENTS = [[1017, 'Cnut rules England'], [1032, 'Caliphate of Córdoba ends'], [1067, 'Norman Conquest'], [1072, 'Battle of Manzikert'],
+  [1085, 'Castile takes Toledo'], [1099, 'First Crusade'], [1131, 'Kingdom of Sicily'], [1155, 'Angevin Empire'], [1204, 'Fourth Crusade'],
+  [1213, 'Las Navas de Tolosa'], [1241, 'Mongols take Kiev'], [1262, 'Byzantium restored'], [1282, 'Sicilian Vespers'], [1346, 'Serbian Empire'],
+  [1386, 'Poland and Lithuania joined'], [1397, 'Kalmar Union'], [1403, 'Battle of Ankara'], [1411, 'Battle of Grunwald'],
+  [1453, 'Fall of Constantinople'], [1477, 'Burgundy divided'], [1481, 'Moscow free of the Horde'], [1492, 'Granada falls'],
+  [1527, 'Battle of Mohács'], [1553, 'Russia takes Kazan'], [1569, 'Union of Lublin'], [1579, 'Dutch Republic'], [1649, 'Peace of Westphalia'],
   [1683, 'Ottomans at Vienna'], [1699, 'Treaty of Karlowitz'], [1714, 'Utrecht and Rastatt'], [1722, 'Russian Empire'], [1773, 'First partition of Poland'], [1796, 'Poland partitioned'],
   [1806, 'Holy Roman Empire ends'], [1812, 'Napoleon at his height'], [1815, 'Congress of Vienna'], [1848, 'Revolutions'], [1861, 'Kingdom of Italy'], [1871, 'German Empire'], [1878, 'Congress of Berlin'],
   [1916, 'First World War'], [1919, 'New states'], [1939, 'Munich and after'], [1942, 'Axis at its height'], [1946, 'Occupation zones'], [1949, 'Two Germanys'], [1992, 'Soviet Union gone'], [2014, 'Crimea'], [2023, 'War in Ukraine']];
@@ -1079,7 +1086,7 @@ function renderTimeline() {
 const sample = U.findIndex(u => u.k === 'SRB'), osample = Math.max(0, U.findIndex(u => u.k === 'O_GER_FRA'));
 $('legend').innerHTML =
   `<div><svg viewBox="0 0 30 18"><rect width="30" height="18" style="fill:${fillVar(U.findIndex(u => u.k === 'FRA'))}"/></svg><span>Each country keeps one color throughout; neighbors always differ.</span></div>` +
-  `<div><svg viewBox="0 0 30 18"><defs><pattern id="lg-h" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)"><rect width="1.1" height="6" style="fill:${hueVar(U[sample].ov)};opacity:.38"/></pattern></defs><rect width="30" height="18" style="fill:${fillVar(sample)}"/><rect width="30" height="18" fill="url(#lg-h)"/></svg><span>Stripes: self-governing under an overlord, or a protectorate, mandate, colony or client state. The stripes take the overlord's color.</span></div>` +
+  `<div><svg viewBox="0 0 30 18"><defs><pattern id="lg-h" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)"><rect width="1.1" height="6" style="fill:${hueVar(U[sample].ov)};opacity:.38"/></pattern></defs><rect width="30" height="18" style="fill:${fillVar(sample)}"/><rect width="30" height="18" fill="url(#lg-h)"/></svg><span>Stripes: self-governing under an overlord (before 1500, often a fief that owed homage to a king), or a protectorate, mandate, colony or client state. The stripes take the overlord's color.</span></div>` +
   `<div><svg viewBox="0 0 30 18"><defs><pattern id="lg-x" patternUnits="userSpaceOnUse" width="8" height="8" patternTransform="rotate(45)"><rect width="0.9" height="8" style="fill:${hueVar(U[osample].ov)};opacity:.32"/><rect width="8" height="0.9" style="fill:${hueVar(U[osample].ov)};opacity:.32"/></pattern></defs><rect width="30" height="18" style="fill:${fillVar(osample)}"/><rect width="30" height="18" fill="url(#lg-x)"/></svg><span>Crosshatch: occupied by another power, annexed without international recognition, or held by a breakaway government with another power's backing. The fill is the country that held the land in law; the lines take the occupier's color.</span></div>` +
   `<div><svg viewBox="0 0 30 18"><rect width="30" height="18" style="fill:var(--sunk)"/><rect x="3" y="3" width="24" height="12" style="fill:var(--alt-fill);stroke:var(--alt);stroke-width:1.6;stroke-dasharray:4 3"/></svg><span>Dashed outline: an area another source draws differently, shown when you pick it from the list of alternative borders.</span></div>` +
   `<div><svg viewBox="0 0 30 18"><rect width="30" height="18" style="fill:var(--none)"/></svg><span>No source assigns this area to a country.</span></div>`;
@@ -1098,7 +1105,13 @@ if (D.flags) {
     nf.map(([f, by, lic, url, lu]) => `<li><a href="${esc(url)}" target="_blank" rel="noopener">${esc(f.replace(/\.[a-z]+$/i, ''))}</a>${by ? ' by ' + esc(by) : ''}, ${lu ? `<a href="${esc(lu)}" target="_blank" rel="noopener">${esc(lic)}</a>` : esc(lic)}</li>`).join('') + '</ul>';
 }
 
+// the eras on either side of the one shown, fetched in the background so the slider moves into them without a wait
+// (only those, so a visitor who stays in recent years doesn't download the medieval map)
+let nearFor = null;
+function preloadNear() {
+  const E = curEra(); if (!E.ready || nearFor === E) return;
+  nearFor = E; [ERAS[E.i - 1], ERAS[E.i + 1]].forEach(e => e && loadEra(e));
+}
 draw();
-setTimeout(() => ERAS.forEach(loadEra), 1500);     // fetch the other era in the background, so the slider moves into it without a wait
 })();
 </script>

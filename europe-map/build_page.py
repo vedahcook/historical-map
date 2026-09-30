@@ -1,5 +1,6 @@
 """Step 8: put the map data into the page template -> europe-borders.html. Run after merge_eras.py; the page loads
-europe-borders-1500.json (the 1500-1799 map) from beside it when needed."""
+the earlier maps (europe-borders-1500.json for 1500-1799, europe-borders-1000.json for 1000-1499) from beside it
+when needed."""
 import json, sys
 here = __file__.rsplit('/', 1)[0]
 tpl = open(f'{here}/page_template.html').read()

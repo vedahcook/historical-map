@@ -31,7 +31,9 @@ for f in d['cshapes']['features']:
     if p['To'] >= 1816 and cs_unit(p['Name'], p['Status'], p['From']):
         g = shapely.make_valid(shape(f['geometry'])).intersection(BOX)
         if not g.is_empty: cs.append((p, g.simplify(0.002)))
-cl = [(p, shapely.make_valid(g)) for p, g in clio if clio_unit(p['Name'], p['FromYear'])]
+_med = __import__('os').environ.get('ERA') == 'medieval'
+cl = [(p, shapely.make_valid(g)) for p, g in clio
+      if clio_unit(p['Name'], p['FromYear']) or (_med and any(clio_unit(p['Name'], y) for y in range(p['FromYear'], p['ToYear'] + 1)))]
 co = [(p, shapely.make_valid(g)) for p, g in clio if p['Name'] in CLIO_OCCUPIER and p['ToYear'] >= 1914 and p['FromYear'] <= 1946]
 ext = []
 for k, g in d['naturalearth'].items():

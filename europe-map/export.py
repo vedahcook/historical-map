@@ -56,12 +56,31 @@ fams = sorted({f for p in adj for f in p} | {UNITS[k][2] for k in K})
 # a country keeps its color across 1800: the early map (1500-1799) takes the colors of every country the later map
 # already has (KEEP_COLORS names the later map's data.json) and colors only the countries of its own around them
 KEEP = {}
-if os.environ.get('KEEP_COLORS'):
-    for u in json.load(open(os.environ['KEEP_COLORS']))['units']:
-        KEEP[UNITS[u['k']][2]] = u['c']
+if os.environ.get('KEEP_COLORS'):                   # one data.json, or several separated by ':' (the medieval map keeps both later maps' colors)
+    for path in os.environ['KEEP_COLORS'].split(':'):
+        for u in json.load(open(path))['units']:
+            KEEP.setdefault(UNITS[u['k']][2], u['c'])
 nb = defaultdict(dict)
 for (a, b), L in adj.items(): nb[a][b] = L; nb[b][a] = L
+# neighbors in another era (EXTRA_ADJ names that era's adj.json): a country colored here also keeps clear of the
+# countries it borders there, so it can keep its color in both (the 1500s map is colored with the medieval map's neighbors)
+if os.environ.get('EXTRA_ADJ'):
+    for path in os.environ['EXTRA_ADJ'].split(':'):
+        for a, b, L in json.load(open(path)):
+            if (a in fams or a in KEEP) and (b in fams or b in KEEP) and a != b:
+                nb[a][b] = nb[a].get(b, 0) + L; nb[b][a] = nb[b].get(a, 0) + L
+json.dump(sorted([a, b, round(L, 1)] for (a, b), L in adj.items()), open('adj.json', 'w'))
 names = fills['names']; NI = {n: i for i, n in enumerate(names)}
+# colors.json (beside this script) holds every country's color from the last build, so a rebuild keeps them: a country
+# keeps its old color unless a neighbor now has the same one (then the one with less border is recolored).
+# RECOLOR=1 ignores it and colors everything afresh.
+COLORS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'colors.json')
+PREV = json.load(open(COLORS_FILE)) if os.path.exists(COLORS_FILE) and not os.environ.get('RECOLOR') else {}
+_area = np.zeros(len(sigs))
+for g, s in regions: _area[s] += g.area
+_pu = np.bincount(np.where(sig_u >= 0, sig_u, len(K)).ravel(), weights=np.repeat(_area, sig_u.shape[1]), minlength=len(K) + 1)
+presence = defaultdict(float)
+for u in range(len(K)): presence[fam(u)] += _pu[u]
 
 def sep(i, j):
     """Separation of two fills, 1.0 = meets the chart targets (normal-vision 15, colorblind 8) in both modes."""
@@ -71,7 +90,15 @@ def sep(i, j):
 def color_all():
     """Greedy coloring, most-constrained country first. Each country takes the fill that is
     most distinct from its already-colored neighbors, weighting long shared borders more."""
-    col = {f: c for f, c in KEEP.items() if f in fams}
+    col = dict(KEEP)
+    prev = {f: NI[PREV[f]] for f in fams if f not in col and PREV.get(f) in NI}
+    while True:
+        clash = [(f, g) for f in sorted(prev) for g in nb[f] if prev[f] == prev.get(g, col.get(g))]
+        if not clash: break
+        f, g = clash[0]          # recolor the one that covers less of this map (area times years), so big countries keep theirs
+        drop = f if g not in prev or (presence[f], f) < (presence[g], g) else g
+        del prev[drop]
+    col.update(prev)
     left = set(fams) - set(col)
     while left:
         f = max(sorted(left), key=lambda f: (f in PREF, len({col[g] for g in nb[f] if g in col}), sum(nb[f].values())))   # sorted: same colors every run
@@ -79,12 +106,15 @@ def color_all():
         best, best_score = None, None
         for c in range(NC):
             worst = min([sep(c, col[g]) + (0.15 if nb[f][g] < 60 else 0) for g in nb[f] if g in col] or [9])
-            score = (min(worst, 1.0), c == NI.get(PREF.get(f, ''), -1), worst, -sum(1 for v in col.values() if v == c))
+            same = any(col[g] == c for g in nb[f] if g in col)       # the same color as a neighbor only if nothing else is left
+            score = (not same, min(worst, 1.0), c == NI.get(PREF.get(f, ''), -1), worst, -sum(1 for v in col.values() if v == c))
             if best_score is None or score > best_score: best, best_score = c, score
         col[f] = best
     return col
 
 col = color_all()
+print('colors kept from the last build:', sum(1 for f in fams if PREV.get(f) == names[col[f]]), 'of', len(fams))
+json.dump(dict(sorted({**PREV, **{f: names[c] for f, c in col.items() if f in fams}}.items())), open(COLORS_FILE, 'w'), indent=0)
 worst = sorted(((sep(col[a], col[b]), a, b, round(L)) for (a, b), L in adj.items()))[:15]
 print('weakest neighbor pairs (1.0 = meets targets):', [(round(w, 2), a, b, L) for w, a, b, L in worst])
 
@@ -163,7 +193,7 @@ grat = [LineString([(lon, la / 2) for la in range(0, 171)]) for lon in range(-18
 grat += [LineString([(lo / 2, lat) for lo in range(-360, 361)]) for lat in range(10, 81, 10)]
 gratf = [feat(g, {}) for g in (proj(g).intersection(RECT) for g in grat) if not g.is_empty]
 outf = []
-if os.environ.get('ERA') != 'early':
+if os.environ.get('ERA') not in ('early', 'medieval'):
     nh = box(-180, 1, 180, 90)
     land = [shapely.make_valid(shape(f['geometry'])).intersection(nh) for f in json.load(open(f'{BAL}/ne_50m_land.geojson'))['features']]
     out = shapely.unary_union([proj(g) for g in land if not g.is_empty]).intersection(RECT).difference(proj(shapely.segmentize(VIEW, 0.1)))
@@ -216,7 +246,14 @@ SHORT.update({'Russian Soviet Federative Socialist Republic': 'Soviet Russia', '
     'Slovak State': 'Slovakia', 'Slovak Republic': 'Slovakia', 'Belarusian People\'s Republic': 'Belarus', 'Azerbaijan SSR': 'Soviet Azerbaijan',
     'Ukrainian SSR': 'Soviet Ukraine', 'Byelorussian SSR': 'Soviet Belarus', 'SSR of Georgia': 'Soviet Georgia', 'SSR of Armenia': 'Soviet Armenia',
     'FUSSR of Transcaucasia': 'Transcaucasian SFSR', 'Irish Free State': 'Irish Free State', 'Kingdom of Iceland': 'Iceland', 'West Berlin': 'West Berlin'})
+# medieval labels (1000-1499) for countries whose usual name fits only later years
+NAME10 = {'RUS': 'Muscovy', 'TUS': 'Florence', 'SUI': 'Swiss Confederacy', 'GAE': 'Gaelic Ireland', 'AUT': 'Austria'}
 def default_name(unit, y):
+    if y < 1500:
+        if unit in NAME10: return NAME10[unit]
+        if unit == 'JUL': return 'Cleves and Jülich-Berg'
+        if unit == 'LIV' and y < 1419: return 'Livonia'
+        if unit == 'MLS' and y < 1395: return 'Milan'
     if unit == 'RUS': return 'Russian Empire' if y <= 1916 else 'Russia' if y == 1917 else 'Soviet Russia' if y <= 1922 else 'Soviet Union' if y <= 1991 else 'Russia'
     if unit == 'GER': return 'German Empire' if y <= 1918 else 'Germany'
     if unit == 'OTT': return 'Ottoman Empire'
@@ -238,8 +275,21 @@ def occ_name(u, y):
         country = DJN.get(dj) or (default_name(dj, y) if dj in ('RUS', 'GER') else UNITS[dj][0])
         return f'{adj}-occupied {country}'
     return UNITS[u][0]
+# OHM's medieval record names that need a shorter or English label
+SHORT10 = {'Eastern Roman Empire': 'Byzantine Empire', 'Comtat de Cerdanya 950-1150': 'Cerdanya', 'Ростовское княжество': 'Rostov',
+           'Княжество Московское': 'Moscow', 'Golden Ambrosian Republic': 'Ambrosian Republic', 'Sodor': 'Kingdom of the Isles',
+           'Lands of the Crovan Dynasty': 'Kingdom of the Isles', 'Crown of Castile': 'Castile', 'Crown of Aragon': 'Aragon',
+           'Il-khanate': 'Ilkhanate', 'Peasant Republic of Dithmarschen': 'Dithmarschen', 'Bauernrepublik Dithmarschen': 'Dithmarschen',
+           'Kingdom of Glywysing/Morgannwg': 'Morgannwg', 'Muscovy (1462)': 'Muscovy', 'Grand Duchy of Moscow': 'Muscovy',
+           'Principality of Moscow': 'Moscow', 'Seljuk Empire': 'Great Seljuk Empire', 'Mongol Empire': 'Mongol Empire',
+           'Kingdom of Pamplona': 'Pamplona', 'Independent Moorish States': 'Taifa kingdoms', 'Rhwng Gwy a Hafren': 'Rhwng Gwy a Hafren'}
 def short(n, unit, y=1900):
     if not n: return UNITS[unit][0]
+    if y < 1500:
+        if unit == 'ARL': return 'Kingdom of Burgundy' if y < 1033 else 'Kingdom of Arles'   # not "Burgundy", beside the duchy
+        if n in SHORT10: return SHORT10[n]
+        if re.match(r'^Grand Principality of Moscow', n): return 'Muscovy'
+        n = re.sub(r'\s*\(?\d{3,4}\s*[-–]\s*\d{3,4}\)?$', '', n)        # a date range in the name
     if n == 'German Reich': return 'German Empire' if y <= 1918 else 'Germany'
     if n in SHORT: return SHORT[n]
     m = re.match(r'^(Kingdom|Grand Duchy|Duchy|Principality|Electorate|Margraviate|Republic|Free City|Prince-Bishopric) of (.+)$', n)
@@ -260,7 +310,7 @@ for y, rows in labels.items():
         o = refs[ref_id(src, r)] if src in (0, 3) else None
         if unit in KIND: name = occ_name(unit, y)
         elif o and (o['l'] == '2' or unit not in PIECES): name = short(o['n'], unit, y)
-        elif unit == 'AUT': name = 'Habsburg Monarchy' if y < 1804 else 'Austrian Empire' if y < 1867 else 'Austria-Hungary' if y <= 1918 else 'Austria'
+        elif unit == 'AUT': name = 'Austria' if y < 1500 else 'Habsburg Monarchy' if y < 1804 else 'Austrian Empire' if y < 1867 else 'Austria-Hungary' if y <= 1918 else 'Austria'
         else: name = default_name(unit, y)
         if unit == 'SHC': name = 'Schleswig-Holstein'
         # the full record name picks the description (the short label can be shared by several states)

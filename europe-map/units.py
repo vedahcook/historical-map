@@ -56,6 +56,10 @@ UNITS = {
 # the early era, 1500-1799 (units15.py)
 from units15 import UNITS15, R15, C15, HRE_MINOR15
 UNITS.update(UNITS15)
+# the medieval era, 1000-1499 (units10.py): its roles and Cliopatria names apply only when that era is built
+from units10 import UNITS10, R10, C10
+UNITS.update(UNITS10)
+MEDIEVAL = __import__('os').environ.get('ERA') == 'medieval'
 
 # ---------- OHM ----------
 # (regex on the English name, level or None for any, unit, priority, valid-from year, valid-to year)
@@ -141,6 +145,7 @@ _R = [
     (r'^(Bohemia|Gubernium Moravia et Silesia|Tirol|Styria|Austria below the Enns|Carinthia|Duchy of Carniola|Triest|Gorizia and Gradisca|Margraviate of Istria|Venetian Province|Transylvania|Slavonian Military Frontier|Banat Military Frontier|City of Fiume and its District|Circulus .*)$', '4', 'AUT', 2, 1795, 1805),
 ]
 _R = R15 + _R                      # early roles first: they win in the years they cover
+if MEDIEVAL: _R = R10 + _R          # medieval roles before those
 ROLES = [(re.compile(x[0]), x[1], x[2], x[3], x[4] if len(x) > 4 else 0, x[5] if len(x) > 5 else 9999) for x in _R]
 # any other level-4 record active 1800-1806 inside the Holy Roman Empire is one of its many small states
 HRE_MINOR = re.compile(r'^(Free Imperial City|Imperial (City|Abbey|County|Lordship)|Prince-(Bishopric|Provostry)|Princely Abbey|County of|Principality of (Hohenlohe|Nassau-Orange-Fulda)|Saint Blaise|Freies Reichsdorf|Sayn-Wittgenstein|Duchy of Palatinate)')
@@ -176,6 +181,14 @@ def sovereign(u, year):
     if u in NEW20: u = sovereign20(u, year)
     ov = UNITS[u][1]
     if u in ('ROM_V', 'WAL', 'MOL', 'SRB', 'BUL', 'ERU', 'CRT', 'EGY', 'ALG', 'TUN', 'TRS', 'UHU', 'CRI'): return 'OTT'
+    if year <= 1499:
+        # medieval era: fiefs and vassals count as their overlord's; the Scandinavian unions
+        if u == 'SWE' and year >= 1397: return 'DEN'           # the Kalmar Union
+        if u == 'NOR' and year >= 1380: return 'DEN'
+        if u == 'BRI': return 'FRA'
+        if u == 'HNL': return 'AUT'
+        if ov: return sovereign(ov, year)
+        return u
     if year <= 1799:
         # early era: the same crown under different names, and unions the sources count differently
         if 1519 <= year <= 1556 and u in ('ESP', 'AUT', 'HNL', 'FCO', 'SNL', 'MIL_S', 'NAP_S', 'SIC_S', 'SDS'): return 'AUT'   # Charles V
@@ -279,8 +292,14 @@ _C = [
 _CR = [(re.compile(a), b) for a, b in C15 + _C]      # early names first
 
 
+_C10 = [(re.compile(x[0]), x[1], x[2] if len(x) > 2 else 0, x[3] if len(x) > 3 else 9999) for x in C10]
+
+
 def clio_unit(name, from_year=0):
     if name.startswith('('): return None          # umbrella groupings
+    if MEDIEVAL:                                  # medieval names first, by the record's first year
+        for rx, u, a, b in _C10:
+            if a <= from_year <= b and rx.search(name): return u
     if from_year >= 1906:
         u = CLIO20.get(name)
         if u is not None: return u or None
