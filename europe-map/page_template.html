@@ -1,5 +1,5 @@
 <title>Europe's Borders, 1800–1900</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Instrument+Sans:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&family=Fira+Sans:wght@400;500;600&display=swap">
 <style>
 /* Layout: an atlas plate. The map fills the left, a year slider runs under it, and a side panel explains the year, the place you clicked, and where sources disagree. */
 :root {
@@ -10,6 +10,7 @@
   /*FILLS_LIGHT*/
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
   --sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mapfont: "Source Sans 3", "Instrument Sans", system-ui, sans-serif;
   --r: 12px;
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
@@ -63,16 +64,26 @@ button, select, input { font: inherit; color: inherit; }
 .badge text { fill: var(--accent-ink); font-family: var(--sans); font-weight: 700; text-anchor: middle; dominant-baseline: central; pointer-events: none; }
 .badge { cursor: pointer; }
 .badge.on circle { fill: var(--ink); }
-.lbl { font-family: var(--sans); font-weight: 500; fill: var(--ink); text-anchor: middle; dominant-baseline: central; pointer-events: none; }
+.mapbox[data-font="fira"] { --mapfont: "Fira Sans", "Instrument Sans", system-ui, sans-serif; }
+.lbl { font-family: var(--mapfont); font-weight: 500; fill: var(--ink); text-anchor: middle; dominant-baseline: central; pointer-events: none; }
 .lbl.big { font-weight: 500; }
 .dim { fill: var(--dim); fill-rule: evenodd; pointer-events: none; }
 .pin circle { fill: var(--sel); stroke: var(--halo); }
-.tip { position: absolute; pointer-events: none; background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; font-size: 0.82rem; box-shadow: 0 6px 18px rgba(0,0,0,0.15); max-width: 270px; z-index: 3; }
-.tip b { display: block; }
+.fontpick { position: absolute; left: 10px; bottom: 10px; z-index: 2; display: flex; align-items: center; gap: 6px; background: var(--surface); border: 1px solid var(--line); border-radius: 9px; padding: 3px 3px 3px 10px; font-size: 0.78rem; color: var(--muted); }
+.fontpick button { border: 0; background: transparent; border-radius: 7px; padding: 5px 9px; cursor: pointer; color: var(--muted); font-size: 0.8rem; }
+.fontpick button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+.fontpick button[data-f="source"] { font-family: "Source Sans 3", sans-serif; } .fontpick button[data-f="fira"] { font-family: "Fira Sans", sans-serif; }
+.tip { font-family: var(--mapfont); position: absolute; pointer-events: none; background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; font-size: 0.82rem; box-shadow: 0 6px 18px rgba(0,0,0,0.15); max-width: 270px; z-index: 3; }
+.tip { max-width: 320px; }
+.tip b { display: block; font-size: 0.92rem; }
+.tip .dt, .desc .dt { display: block; color: var(--muted); font-size: 0.8rem; margin-top: 1px; }
+.tip p { margin: 5px 0 4px; line-height: 1.4; }
+.desc { display: flex; flex-direction: column; gap: 4px; font-size: 0.88rem; }
+.desc p { margin: 0; }
 .tip span { color: var(--muted); }
 .zoom { position: absolute; right: 10px; top: 10px; display: flex; flex-direction: column; gap: 4px; z-index: 2; }
 .zoom button { width: 36px; height: 36px; border-radius: 9px; border: 1px solid var(--line); background: var(--surface); cursor: pointer; font-weight: 700; font-size: 1.05rem; line-height: 1; }
-.yearstamp { position: absolute; left: 14px; top: 10px; font-family: var(--sans); font-weight: 600; font-size: 2.4rem; line-height: 1; color: var(--ink); opacity: 0.8; pointer-events: none; }
+.yearstamp { position: absolute; left: 14px; top: 10px; font-family: var(--mapfont); font-weight: 600; font-size: 2.4rem; line-height: 1; color: var(--ink); opacity: 0.8; pointer-events: none; }
 
 /* time bar */
 .timebar { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 6px 12px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 10px 14px; }
@@ -92,6 +103,7 @@ button, select, input { font: inherit; color: inherit; }
 .events button b { color: var(--ink); font-weight: 600; margin-right: 4px; }
 .events button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 .events button[aria-pressed="true"] b { color: var(--bg); }
+.evhead { font-size: 0.8rem; font-weight: 600; color: var(--muted); align-self: center; margin-right: 4px; }
 
 /* panel */
 .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
@@ -176,6 +188,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
           <button type="button" id="zreset" aria-label="Show all of Europe" title="Show all of Europe">⤢</button>
         </div>
         <div class="yearstamp num" id="stamp" aria-hidden="true">1815</div>
+        <div class="fontpick" role="group" aria-label="Map font"><span>Map font</span><button type="button" data-f="source" aria-pressed="true">Source Sans 3</button><button type="button" data-f="fira" aria-pressed="false">Fira Sans</button></div>
         <div class="tip" id="tip" hidden></div>
       </div>
       <div class="timebar">
@@ -368,6 +381,18 @@ function nameOf(u, y) {
   const row = (D.labels[y] || []).find(r => r[0] === u);
   return row ? NM[row[5]] : U[u].n;
 }
+// description of the state holding this country's place in year y: {t, f, e, x}
+function descOf(u, y) {
+  const row = (D.labels[y] || []).find(r => r[0] === u);
+  return row && row[6] >= 0 ? D.desc[row[6]] : null;
+}
+function datesOf(d) {
+  if (!d) return '';
+  if (d.f && d.e) return `${d.f} – ${d.e}`;
+  if (d.f) return `Since ${d.f}`;
+  if (d.e) return `Until ${d.e}`;
+  return '';
+}
 function draw() {
   const G = yearGeo(year);
   const fg = $('fills'); fg.textContent = '';
@@ -378,11 +403,23 @@ function draw() {
   $('borders').setAttribute('d', G.borders); $('vborders').setAttribute('d', G.vb);
   drawAlts(); drawDim(); applyView();
   $('stamp').textContent = year; $('year').value = year; $('tip').hidden = true;
-  document.querySelectorAll('.events button').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.y === year)));
-  document.querySelectorAll('#spark rect').forEach(r => r.classList.toggle('cur', +r.dataset.y === year));
-  renderYear(); renderPlace(); renderAlts();
+  renderTimeline(); renderYear(); renderPlace(); renderAlts();
   try { history.replaceState(null, '', '#' + year); } catch (e) {}
 }
+
+// ---------- map font (a viewer choice, remembered in this browser) ----------
+let mapFont = 'source';
+try { if (localStorage.getItem('eb-font') === 'fira') mapFont = 'fira'; } catch (e) {}
+function setFont(f) {
+  mapFont = f; $('mapbox').dataset.font = f;
+  document.querySelectorAll('.fontpick button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.f === f)));
+  try { localStorage.setItem('eb-font', f); } catch (e) {}
+  drawLabels(); drawBadges();
+}
+document.querySelectorAll('.fontpick button').forEach(b => b.onclick = () => setFont(b.dataset.f));
+$('mapbox').dataset.font = mapFont;
+document.querySelectorAll('.fontpick button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.f === mapFont)));
+if (document.fonts) document.fonts.ready.then(() => drawLabels());
 
 // ---------- labels ----------
 let labelBoxes = [];
@@ -397,7 +434,7 @@ function drawLabels() {
     if (sx < 0 || sy < 0 || sx > r.width || sy > r.height) continue;
     const name = NM[ni]; const big = varea > 180000;
     const fs = big ? Math.min(20, 15 + Math.log10(varea / 180000) * 6) : varea > 40000 ? 14 : 13;
-    const w = name.length * fs * 0.55 + 6, h = fs * 1.3;
+    const w = name.length * fs * (mapFont === 'fira' ? 0.56 : 0.5) + 6, h = fs * 1.3;
     const room = Math.sqrt(varea) * k * 1.7;
     const focused = u === fu;
     if (!focused && w > room * 1.6 && !(w < 70 && varea * k * k > 900)) continue;
@@ -504,7 +541,7 @@ function click(ev) {
     const hit = altsNow().find(a => { const af = altFeatures.find(g => g.properties.i === a.i); return af && x >= af.bb[0] && x <= af.bb[2] && y >= af.bb[1] && y <= af.bb[3] && inGeom(af.geometry, x, y); });
     if (hit) { selAlt = hit.i; drawAlts(); drawBadges(); renderAlts(); }
   }
-  drawPin(); drawDim(); drawLabels(); drawBadges(); renderPlace();
+  drawPin(); drawDim(); drawLabels(); drawBadges(); renderTimeline(); renderPlace();
 }
 // dim everything outside the country that holds the selected place this year
 const focusUnit = () => place ? unitAt[place.s * NY + year - Y0] : -1;
@@ -532,7 +569,9 @@ function renderPlace() {
     return `<button type="button" data-y="${r.a}" title="${esc(nm)}, ${r.a === r.b ? r.a : r.a + '–' + r.b}" style="left:${left}%;width:${w}%;background:${r.u < 0 ? 'var(--none)' : fillVar(r.u)}">${w > 9 ? `<span>${esc(nm)}</span>` : ''}</button>`; }).join('');
   const now = (year - Y0 + 0.5) / NY * 100;
   const hand = runs.filter(r => r.u >= 0).map(r => `${esc(nameOf(r.u, r.a))} ${r.a === r.b ? r.a : r.a + '–' + r.b}`).join('; ');
-  card.innerHTML = `<h3>This place</h3>${head}` + (u >= 0 ? `<div class="srcbox"><span class="k">Source</span><span>${refLine(ri)}</span></div>` : '') +
+  const dd = u >= 0 ? descOf(u, year) : null;
+  const descHtml = dd ? `<div class="desc"><b>${esc(dd.t)}</b>${datesOf(dd) ? `<span class="dt">${esc(datesOf(dd))}</span>` : ''}<p>${esc(dd.x)}</p></div>` : '';
+  card.innerHTML = `<h3>This place</h3>${head}${descHtml}` + (u >= 0 ? `<div class="srcbox"><span class="k">Source</span><span>${refLine(ri)}</span></div>` : '') +
     `<div><div class="strip" role="group" aria-label="Who held this place, 1800–1900: ${esc(hand)}">${strip}<span class="now" style="left:${now}%"></span></div><div class="stripaxis"><span>1800</span><span>1850</span><span>1900</span></div></div>`;
   card.querySelectorAll('.strip button').forEach(b => b.onclick = () => setYear(+b.dataset.y));
 }
@@ -558,7 +597,9 @@ function hover(ev) {
     const [x, y] = toMap(ev); const f = regionAt(x, y); const tip = $('tip');
     if (!f) { tip.hidden = true; return; }
     const u = uAt(f, year); const box = $('mapbox').getBoundingClientRect();
-    tip.innerHTML = u < 0 ? `<b>No country</b><span>No source assigns this area in ${year}</span>` : `<b>${esc(nameOf(u, year))}</b><span>${isVassal(u) ? 'Under ' + esc(nameOf(U[u].ov, year)) + ' · ' : ''}${year}</span>`;
+    const d = u >= 0 ? descOf(u, year) : null;
+    tip.innerHTML = u < 0 ? `<b>No country</b><span>No source assigns this area in ${year}</span>`
+      : `<b>${esc(d ? d.t : nameOf(u, year))}</b>${d && datesOf(d) ? `<span class="dt">${esc(datesOf(d))}</span>` : ''}${d ? `<p>${esc(d.x)}</p>` : ''}<span>${isVassal(u) ? 'Under ' + esc(nameOf(U[u].ov, year)) + ' · ' : ''}${year}</span>`;
     tip.hidden = false;
     const tx = Math.min(ev.clientX - box.left + 14, box.width - tip.offsetWidth - 8), ty = Math.min(ev.clientY - box.top + 14, box.height - tip.offsetHeight - 8);
     tip.style.left = tx + 'px'; tip.style.top = ty + 'px';
@@ -580,21 +621,54 @@ $('play').onclick = () => {
 };
 document.addEventListener('keydown', e => { if (e.target.closest('input, button, a, summary, [role=button]')) return; if (e.key === 'ArrowLeft') setYear(year - 1); if (e.key === 'ArrowRight') setYear(year + 1); });
 
-// change per year (km² changing hands), drawn above the slider
-(function spark() {
-  const sp = $('spark'); const vals = [];
-  for (let y = Y0; y <= Y1; y++) {
-    if (y === Y0) { vals.push(0); continue; }
-    const a = {}, b = {}; (D.labels[y] || []).forEach(r => a[r[0]] = (a[r[0]] || 0) + r[3]); (D.labels[y - 1] || []).forEach(r => b[r[0]] = (b[r[0]] || 0) + r[3]);
-    let t = 0; new Set([...Object.keys(a), ...Object.keys(b)]).forEach(k => t += Math.abs((a[k] || 0) - (b[k] || 0))); vals.push(t / 2);
-  }
-  const mx = Math.max(...vals.map(v => Math.sqrt(v))); sp.setAttribute('viewBox', `0 0 ${NY} 26`);
-  vals.forEach((v, i) => { if (!v) return; const h = Math.max(1.5, Math.sqrt(v) / mx * 24); const r = el('rect', { x: i + 0.15, y: 26 - h, width: 0.7, height: h, 'data-y': Y0 + i }, sp); const t = el('title', {}, r); t.textContent = `${Y0 + i}: about ${fmt(v)} km² changed hands`; });
-  const ticks = $('ticks'); [1800, 1825, 1850, 1875, 1900].forEach(y => { const s = document.createElement('span'); s.textContent = y; s.style.left = ((y - Y0 + 0.5) / NY * 100) + '%'; ticks.appendChild(s); });
-})();
+// ---------- timeline: change per year and key events; filtered to the highlighted country ----------
+const AREA = {};
+for (let y = Y0; y <= Y1; y++) { const a = AREA[y] = {}; (D.labels[y] || []).forEach(r => a[r[0]] = (a[r[0]] || 0) + r[3]); }
+[1800, 1825, 1850, 1875, 1900].forEach(y => { const s = document.createElement('span'); s.textContent = y; s.style.left = ((y - Y0 + 0.5) / NY * 100) + '%'; $('ticks').appendChild(s); });
 const EVENTS = [[1803, 'German states reorganized'], [1806, 'Holy Roman Empire ends'], [1812, 'Napoleon at his height'], [1815, 'Congress of Vienna'], [1831, 'Belgium, Greece'], [1848, 'Revolutions'], [1861, 'Kingdom of Italy'], [1867, 'Austria-Hungary'], [1871, 'German Empire'], [1878, 'Congress of Berlin'], [1886, 'Bulgaria united']];
-$('events').innerHTML = EVENTS.map(([y, t]) => `<button type="button" data-y="${y}" aria-pressed="false"><b class="num">${y}</b>${esc(t)}</button>`).join('');
-$('events').querySelectorAll('button').forEach(b => b.onclick = () => { stop(); setYear(+b.dataset.y); });
+function unitEvents(u) {
+  const by = {}; let pa = 0, pn = null;
+  let maxA = 0; for (let y = Y0; y <= Y1; y++) maxA = Math.max(maxA, AREA[y][u] || 0);
+  const areaAt = y => { const a = AREA[y][u] || 0; return a < Math.max(20, maxA * 0.002) ? 0 : a; };   // ignore leftover slivers
+  const add = (y, t, w) => { (by[y] = by[y] || { y, t: [], w: 0 }).t.push(t); by[y].w = Math.max(by[y].w, w); };
+  for (let y = Y0; y <= Y1; y++) {
+    const a = areaAt(y), n = a ? nameOf(u, y) : null;
+    if (y > Y0) {
+      if (a && !pa) add(y, `${n} begins`, 1e9);
+      else if (!a && pa) add(y, `${pn} ends`, 1e9);
+      else if (a && pa) {
+        if (n !== pn) add(y, `becomes ${n}`, 1e9);
+        const d = a - pa;
+        if (Math.abs(d) > Math.max(1500, pa * 0.01)) add(y, `${d > 0 ? 'gains' : 'loses'} ${fmt(Math.abs(d))} km²`, Math.abs(d));
+      }
+    }
+    pa = a; pn = n;
+  }
+  return Object.values(by).sort((a, b) => b.w - a.w).slice(0, 12).sort((a, b) => a.y - b.y).map(e => ({ y: e.y, t: e.t.join('; ') }));
+}
+let timelineFor = undefined;
+function renderTimeline() {
+  const u = focusUnit(), key = u >= 0 ? u : null;
+  if (key !== timelineFor) {
+    timelineFor = key;
+    const sp = $('spark'); sp.textContent = ''; sp.setAttribute('viewBox', `0 0 ${NY} 26`);
+    const vals = [];
+    for (let y = Y0; y <= Y1; y++) {
+      if (y === Y0) { vals.push(0); continue; }
+      if (key != null) vals.push(Math.abs((AREA[y][key] || 0) - (AREA[y - 1][key] || 0)));
+      else { let t = 0; new Set([...Object.keys(AREA[y]), ...Object.keys(AREA[y - 1])]).forEach(k => t += Math.abs((AREA[y][k] || 0) - (AREA[y - 1][k] || 0))); vals.push(t / 2); }
+    }
+    const mx = Math.max(1, ...vals.map(v => Math.sqrt(v)));
+    vals.forEach((v, i) => { if (!v) return; const h = Math.max(1.5, Math.sqrt(v) / mx * 24); const r = el('rect', { x: i + 0.15, y: 26 - h, width: 0.7, height: h, 'data-y': Y0 + i }, sp); const t = el('title', {}, r); t.textContent = key != null ? `${Y0 + i}: ${nameOf(key, Y0 + i)} changed by about ${fmt(v)} km²` : `${Y0 + i}: about ${fmt(v)} km² changed hands`; });
+    const list = key != null ? unitEvents(key) : EVENTS.map(([y, t]) => ({ y, t }));
+    $('events').innerHTML = (key != null ? `<span class="evhead">Events for ${esc(nameOf(key, year))}</span>` : '') +
+      list.map(e => `<button type="button" data-y="${e.y}" aria-pressed="false"><b class="num">${e.y}</b>${esc(e.t)}</button>`).join('') +
+      (key != null && !list.length ? '<span class="evhead">No border changes over 1,500 km² in the century</span>' : '');
+    $('events').querySelectorAll('button').forEach(b => b.onclick = () => { stop(); setYear(+b.dataset.y); });
+  }
+  document.querySelectorAll('.events button').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.y === year)));
+  document.querySelectorAll('#spark rect').forEach(r => r.classList.toggle('cur', +r.dataset.y === year));
+}
 
 // ---------- key ----------
 const sample = U.findIndex(u => u.k === 'SRB');

@@ -15,6 +15,7 @@ from shapely.ops import polylabel
 from pyproj import Transformer
 sys.path.insert(0, __file__.rsplit('/', 1)[0])
 from units import UNITS
+from descriptions import D as DESC, lookup as desc_lookup
 
 t0 = time.time()
 BAL = sys.argv[1] if len(sys.argv) > 1 else '../balkans'
@@ -187,7 +188,10 @@ for y, rows in labels.items():
         elif unit == 'AUT': name = 'Habsburg Monarchy' if y < 1804 else 'Austrian Empire' if y < 1867 else 'Austria-Hungary'
         else: name = UNITS[unit][0]
         if unit == 'SHC': name = 'Schleswig-Holstein'
-        out.append([UI[K.index(unit)], round(x / 1000, 1), round(-yy / 1000, 1), round(area), round(varea), nid(name)])
+        # the full record name picks the description (the short label can be shared by several states)
+        full = o['n'] if o and (o['l'] == '2' or unit not in PIECES) else UNITS[unit][0]
+        if unit == 'AUT' and not (o and o['l'] == '2'): full = name
+        out.append([UI[K.index(unit)], round(x / 1000, 1), round(-yy / 1000, 1), round(area), round(varea), nid(name), desc_lookup(unit, full, y)])
     lab[y] = out
 
 units_out = []
@@ -198,8 +202,11 @@ hb = proj(shapely.segmentize(box(-24.5, 35.2, 40.5, 71.3), 0.5)).bounds
 data = {'years': [YEARS[0], YEARS[-1]], 'viewBox': [round(vb[0]), round(vb[1]), round(vb[2] - vb[0]), round(vb[3] - vb[1])],
         'home': [round(hb[0]), round(hb[1]), round(hb[2] - hb[0]), round(hb[3] - hb[1])],
         'units': units_out, 'fills': {m: fills[m]['P'] for m in ('light', 'dark')}, 'hist': hist, 'refs': refs,
-        'labels': lab, 'names': names_l, 'alts': alts}
+        'labels': lab, 'names': names_l, 'alts': alts,
+        'desc': [{'t': t, 'f': f, 'e': e, 'x': x} for (_u, _n, _a, _b, t, f, e, x) in DESC]}
 json.dump(data, open('data.json', 'w'), ensure_ascii=False, separators=(',', ':'))
+missing = sorted({(r[0], names_l[r[5]]) for rows in lab.values() for r in rows if r[6] < 0})
+print('labels without a description:', [(units_out[u]['k'], n) for u, n in missing])
 print('regions', len(gfeats), 'alts', len(alts), 'refs', len(refs), 'units', len(units_out), round(time.time() - t0), 's')
 bad = [(a, b, names[col[a]], names[col[b]]) for (a, b) in adj if col[a] == col[b]]
 print('same-color neighbors:', bad[:10])

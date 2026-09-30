@@ -97,6 +97,8 @@ gap = (def_u == NONE) | (ohm_pri == 1)
 use_cs = gap & (cs_u != NONE) & (YA >= 1816)
 def_u[use_cs] = cs_u[use_cs]; def_src[use_cs] = 1
 use_cl = gap & ~use_cs & (cl_u != NONE) & ((ohm_pri == 0) | (cl_u != KI['HRE']))
+# Cliopatria keeps a Grand Duchy of Berg after 1813, when it no longer existed
+use_cl &= ~((cl_u == KI['BERG']) & (YA > 1813))
 def_u[use_cl] = cl_u[use_cl]; def_src[use_cl] = 2
 
 # ---------- corrections ----------
