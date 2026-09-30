@@ -225,7 +225,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
         <p>Each year shows the borders in force on July 1. The map uses <a href="https://www.openhistoricalmap.org" target="_blank" rel="noopener">OpenHistoricalMap</a> (OHM), which matched the historical record in 149 of 160 spot checks. Where OHM has no record, it falls back to <a href="https://icr.ethz.ch/data/cshapes/" target="_blank" rel="noopener">CShapes-Europe</a> (from 1816) or <a href="https://github.com/Seshat-Global-History-Databank/cliopatria" target="_blank" rel="noopener">Cliopatria</a>. Where our checks found OHM wrong, the map applies a correction and says so. Before 1800 OHM has fewer records: it often has the Holy Roman Empire without its member states, so many small German states show as the Empire, and Cliopatria fills more of the map. The map for 1500–1799 loads separately, a moment after the page opens.</p>
         <p>Occupations: OHM records named occupation regimes, such as the General Government in Poland or the Allied zones of Germany, and the map uses them. Where OHM shows the country that held the land in law, the map adds occupations from Cliopatria’s year-by-year outlines of each power’s control (1914-46), land annexed during the Second World War and given back afterward, and the breakaway regions and occupied parts of Ukraine since 1990. Each of these is listed under corrections.</p>
         <p>Alternative borders compare OHM with CShapes-Europe from 1816 and with Cliopatria before that. They count only when a source puts an area of at least 400 km² (5,000 km² for the coarser Cliopatria) in a different country for longer than a year. Territories that governed themselves under an overlord count as part of the overlord for this comparison, because the sources disagree on whether to show them.</p>
-        <p>Cities appear when a country is highlighted: its largest cities that year (up to ten, and none smaller than 3% of its biggest), from about 390 cities (Europe's largest by 1900, and those that grew large after), placed in whichever country held them that year. Tap one for its population. Figures come from censuses where there is one for that year; between figures the map estimates, assuming steady growth, and says so. A hollow dot means there is no figure within ten years; the map then gives the nearest figures instead of an estimate. Some early figures are estimates for the wider city, so they are not always comparable with later census counts.</p>
+        <p>Cities appear when a country is highlighted: its largest cities that year (up to ten, and none smaller than 3% of its biggest), from about 390 cities (Europe's largest by 1900, and those that grew large after), placed in whichever country held them that year. Tap one for its population. Figures come from censuses where there is one for that year; between figures the map estimates, assuming steady growth, and says so. A hollow dot means there is no figure within ten years (25 years before 1800); the map then gives the nearest figures instead of an estimate. Before 1800 there are figures for only about 60 of the largest cities, mostly Jan de Vries’s estimates every 50 years, so most other cities appear only from the late 1700s. Early figures are estimates, some for the wider city, so they are not always comparable with later census counts.</p>
         <details>
           <summary>Corrections to OHM (<span id="nfix"></span>)</summary>
           <ul id="fixes"></ul>
@@ -238,7 +238,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
             <li>Cliopatria, Seshat Global History Databank: CC BY 4.0. Also used for the extent of wartime occupations, 1914-46.</li>
             <li>Russian-occupied Ukraine, 2022-26: <a href="https://deepstatemap.live/en" target="_blank" rel="noopener">DeepState</a>’s map, the last update before July 1 each year.</li>
             <li>Breakaway regions (Transnistria, Abkhazia, South Ossetia, Artsakh, Crimea and the Donbas in 2014-21): Natural Earth’s disputed areas (public domain).</li>
-            <li>City populations: Wikidata (CC0), census tables in city articles in English, German, French, Polish, Russian, Ukrainian, Greek, Turkish and other Wikipedia editions (CC BY-SA 4.0), the UN Statistics Division’s Demographic Yearbook city table (public domain via datasets/population-city), and estimates by Chandler, de Vries and Mitchell as tabled in Wikipedia's <a href="https://en.wikipedia.org/wiki/Historical_urban_community_sizes" target="_blank" rel="noopener">Historical urban community sizes</a>. Gathered September 29, 2026.</li>
+            <li>City populations: Wikidata (CC0), census tables in city articles in English, German, French, Polish, Russian, Ukrainian, Greek, Turkish and other Wikipedia editions (CC BY-SA 4.0), the UN Statistics Division’s Demographic Yearbook city table (public domain via datasets/population-city), and estimates by Chandler, de Vries (for 1500–1800) and Mitchell as tabled in Wikipedia's <a href="https://en.wikipedia.org/wiki/Historical_urban_community_sizes" target="_blank" rel="noopener">Historical urban community sizes</a>. Gathered September 29, 2026.</li>
             <li>Coastlines, lakes and rivers: Natural Earth (public domain).</li>
             <li>Projection: Lambert azimuthal equal-area for Europe (ETRS89-LAEA), so areas compare fairly.</li>
           </ul>
@@ -622,12 +622,15 @@ const CITIES = D.cities.map(([n, x, y, ss, P], i) => ({ i, n, x, y, ss, P }));
 // who held the city in year y (-2: that era's map has not loaded yet)
 const cityUnit = (c, y) => { const E = eraOf(y); if (!E.ready) return -2; const s = c.ss[E.i]; return s < 0 ? -1 : E.unitAt[s * E.ny + y - E.y0]; };
 let selCity = null, cityDots = [];
+// how far away a figure may be for the map to estimate from it: ten years, or 25 before 1800, when the figures
+// (mostly de Vries's estimates) come every 50 years
+const NEAR = y => y < 1800 ? 25 : 10;
 // population in year y: the figure for that year, or an estimate between the figures either side (steady growth)
 function popAt(c, y) {
   let lo = null, hi = null;
   for (const p of c.P) { if (p[0] === y) return { v: p[1], k: 'fig', a: p }; if (p[0] < y) lo = p; else if (!hi) hi = p; }
-  if (lo && hi) return { v: lo[1] * Math.pow(hi[1] / lo[1], (y - lo[0]) / (hi[0] - lo[0])), k: Math.min(y - lo[0], hi[0] - y) <= 10 ? 'est' : 'gap', a: lo, b: hi };
-  const n = lo || hi; return { v: n[1], k: Math.abs(n[0] - y) <= 10 ? 'near' : 'none', a: n };
+  if (lo && hi) return { v: lo[1] * Math.pow(hi[1] / lo[1], (y - lo[0]) / (hi[0] - lo[0])), k: Math.min(y - lo[0], hi[0] - y) <= NEAR(y) ? 'est' : 'gap', a: lo, b: hi };
+  const n = lo || hi; return { v: n[1], k: Math.abs(n[0] - y) <= NEAR(y) ? 'near' : 'none', a: n };
 }
 const round3 = v => { const m = Math.pow(10, Math.max(0, Math.floor(Math.log10(v)) - 2)); return Math.round(v / m) * m; };
 // the city under the pointer: its dot, or its name
@@ -697,7 +700,7 @@ function cityHtml(d) {
   const src = `Source: ${[...new Set(p.k === 'est' || p.k === 'gap' ? [p.a[2], p.b[2]] : [p.a[2]])].map(i => CSRC[i]).join('; ')}.`;
   const note = p.k === 'fig' ? `Figure for ${year}. ${src}`
     : p.k === 'est' ? `Estimated: no figure for ${year}. Assumes steady growth between ${p.a[0]} (${fmt(p.a[1])}) and ${p.b[0]} (${fmt(p.b[1])}). ${src}`
-    : p.k === 'gap' ? `No figure within ten years of ${year}. The nearest are ${fmt(p.a[1])} in ${p.a[0]} and ${fmt(p.b[1])} in ${p.b[0]}. ${src}`
+    : p.k === 'gap' ? `No figure within ${NEAR(year) === 10 ? 'ten' : NEAR(year)} years of ${year}. The nearest are ${fmt(p.a[1])} in ${p.a[0]} and ${fmt(p.b[1])} in ${p.b[0]}. ${src}`
     : p.k === 'near' ? `No figure for ${year}. Shown: the nearest, from ${p.a[0]}. ${src}`
     : `No figure near ${year}. The nearest is ${fmt(p.a[1])} in ${p.a[0]}. ${src}`;
   // chart of all the figures, from the first one (or 1800, or the year shown, if earlier) to the end of the map, with
