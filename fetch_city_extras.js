@@ -146,10 +146,12 @@
         if (!(x.at[c] || '').includes(r.k.value)) { x.at[c] = (x.at[c] || '') + r.k.value; n[c] = (n[c] || 0) + 1; }
       }
     };
-    for (const [min, size, pick] of [[30, 30, all], [10, 40, null]]) {
+    // the first pass looks only at the city itself (the largest cities have thousands of people born there); the second
+    // also at places within the city, for the places with few people so far
+    for (const [min, size, pick, hop] of [[30, 25, all, false], [10, 30, null, true]]) {
       const list = pick || all.filter(c => (n[c] || 0) < 8);
       HM.retry = [];
-      await batched(list, size, b => make(b, min, true), (rows, b) => { if (rows) add(rows); else HM.retry = HM.retry.concat(b); }, 'people (' + min + '+)');
+      await batched(list, size, b => make(b, min, hop), (rows, b) => { if (rows) add(rows); else HM.retry = HM.retry.concat(b); }, 'people (' + min + '+)');
       for (const c of HM.retry) add(await sparql(make([c], min, false)));
     }
     HM.status = 'people done'; note('people: ' + Object.keys(pp).length);
