@@ -25,7 +25,7 @@ page = f'''<!doctype html>
 if os.path.exists(OUT): shutil.rmtree(OUT)
 os.makedirs(OUT)
 open(f'{OUT}/index.html', 'w', encoding='utf-8').write(page)
-for f in sorted(glob.glob('europe-borders-[0-9]*.json')) + ['flags.webp']: shutil.copy(f, OUT)   # the earlier eras' maps
+for f in sorted(glob.glob('europe-borders-[0-9]*.json')) + ['flags.webp', 'relief.webp', 'terrain.json', 'city-events.json', 'city-people.json']: shutil.copy(f, OUT)   # the earlier eras' maps, terrain, events, people
 shutil.copytree('flag-images', f'{OUT}/flag-images')
 open(f'{OUT}/.nojekyll', 'w').close()                  # GitHub Pages: serve the files as they are
 n = sum(len(fs) for _, _, fs in os.walk(OUT)); size = sum(os.path.getsize(os.path.join(d, f)) for d, _, fs in os.walk(OUT) for f in fs)

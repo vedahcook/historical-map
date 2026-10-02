@@ -5,7 +5,7 @@
 :root {
   --bg: #f2f4f1; --surface: #ffffff; --sunk: #e9ece7; --ink: #18201c; --muted: #56605a; --faint: #7d867f; --line: #d6dbd4;
   --accent: #1f5f6b; --accent-ink: #ffffff; --focus: #1f5f6b;
-  --water: #bfd1da; --outside: #e7ebe8; --grat: rgba(42,48,44,0.12); --none: #e6e4dc; --border: rgba(42,48,44,0.38); --vborder: rgba(42,48,44,0.28); --dim: rgba(242,244,241,0.5); --dimtext: 0.26; --river: #9dbac7; --halo: rgba(255,255,255,0.88);
+  --water: #bfd1da; --outside: #e7ebe8; --grat: rgba(42,48,44,0.12); --none: #e6e4dc; --border: rgba(42,48,44,0.38); --vborder: rgba(42,48,44,0.28); --dim: rgba(242,244,241,0.5); --dimtext: 0.26; --river: #86adc0; --halo: rgba(255,255,255,0.88); --river-ink: #2f6c86; --mtn-ink: #6e5233; --relief: 0.8;
   --alt: #1f5f6b; --alt-fill: rgba(31,95,107,0.16); --sel: #18201c;
   --f0: #cedff3; --f1: #f8dbcf; --f2: #cbebdf; --f3: #f9e8c4; --f4: #f8e0e8; --f5: #c5e1c4; --f6: #d5d1e9; --f7: #f7d5d4; --f8: #accaed; --f9: #f6c4af; --f10: #a7dfca; --f11: #f6d99c; --f12: #f4cbda; --f13: #9cce9c; --f14: #b8b2db; --f15: #f3b8b7;
   --h0: #2a78d6; --h1: #eb6834; --h2: #1baf7a; --h3: #eda100; --h4: #e87ba4; --h5: #008300; --h6: #4a3aa7; --h7: #e34948;
@@ -17,7 +17,7 @@
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
   --bg: #111513; --surface: #1a201d; --sunk: #151a18; --ink: #e6ece8; --muted: #a3aea7; --faint: #7f8a83; --line: #2e3632;
   --accent: #7fc4cf; --accent-ink: #0e1412; --focus: #7fc4cf;
-  --water: #14232a; --outside: #161b19; --grat: rgba(223,230,225,0.12); --none: #2a2e2b; --border: rgba(223,230,225,0.34); --vborder: rgba(223,230,225,0.24); --dim: rgba(17,21,19,0.48); --dimtext: 0.3; --river: #2c4b57; --halo: rgba(17,21,19,0.85);
+  --water: #14232a; --outside: #161b19; --grat: rgba(223,230,225,0.12); --none: #2a2e2b; --border: rgba(223,230,225,0.34); --vborder: rgba(223,230,225,0.24); --dim: rgba(17,21,19,0.48); --dimtext: 0.3; --river: #2c4b57; --halo: rgba(17,21,19,0.85); --river-ink: #8cbcd0; --mtn-ink: #cdb08f; --relief: 0.62;
   --alt: #7fc4cf; --alt-fill: rgba(127,196,207,0.2); --sel: #ffffff;
   --f0: #2a5383; --f1: #7d3b20; --f2: #195f46; --f3: #75520c; --f4: #7b374f; --f5: #0c510c; --f6: #575285; --f7: #844242; --f8: #316bb0; --f9: #a74923; --f10: #197c59; --f11: #9c6907; --f12: #a44366; --f13: #076807; --f14: #7169b3; --f15: #b15353;
   --h0: #3987e5; --h1: #d95926; --h2: #199e70; --h3: #c98500; --h4: #d55181; --h5: #008300; --h6: #9085e9; --h7: #e66767;
@@ -25,7 +25,7 @@
 :root[data-theme="dark"] {
   --bg: #111513; --surface: #1a201d; --sunk: #151a18; --ink: #e6ece8; --muted: #a3aea7; --faint: #7f8a83; --line: #2e3632;
   --accent: #7fc4cf; --accent-ink: #0e1412; --focus: #7fc4cf;
-  --water: #14232a; --outside: #161b19; --grat: rgba(223,230,225,0.12); --none: #2a2e2b; --border: rgba(223,230,225,0.34); --vborder: rgba(223,230,225,0.24); --dim: rgba(17,21,19,0.48); --dimtext: 0.3; --river: #2c4b57; --halo: rgba(17,21,19,0.85);
+  --water: #14232a; --outside: #161b19; --grat: rgba(223,230,225,0.12); --none: #2a2e2b; --border: rgba(223,230,225,0.34); --vborder: rgba(223,230,225,0.24); --dim: rgba(17,21,19,0.48); --dimtext: 0.3; --river: #2c4b57; --halo: rgba(17,21,19,0.85); --river-ink: #8cbcd0; --mtn-ink: #cdb08f; --relief: 0.62;
   --alt: #7fc4cf; --alt-fill: rgba(127,196,207,0.2); --sel: #ffffff;
   --f0: #2a5383; --f1: #7d3b20; --f2: #195f46; --f3: #75520c; --f4: #7b374f; --f5: #0c510c; --f6: #575285; --f7: #844242; --f8: #316bb0; --f9: #a74923; --f10: #197c59; --f11: #9c6907; --f12: #a44366; --f13: #076807; --f14: #7169b3; --f15: #b15353;
   --h0: #3987e5; --h1: #d95926; --h2: #199e70; --h3: #c98500; --h4: #d55181; --h5: #008300; --h6: #9085e9; --h7: #e66767;
@@ -58,6 +58,13 @@ button, select, input { font: inherit; color: inherit; }
 .grat { fill: none; stroke: var(--grat); stroke-width: 0.7px; vector-effect: non-scaling-stroke; }
 .edge { fill: var(--water); stroke: var(--grat); stroke-width: 1px; vector-effect: non-scaling-stroke; }
 .rivers { fill: none; stroke: var(--river); stroke-width: 0.8px; vector-effect: non-scaling-stroke; }
+.relief { pointer-events: none; opacity: var(--relief); }
+.riv { fill: none; stroke: var(--river); stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; pointer-events: none; }
+.riv.w1 { stroke-width: 1.8px; } .riv.w2 { stroke-width: 1.35px; } .riv.w3 { stroke-width: 1px; } .riv.w4 { stroke-width: 0.7px; }
+.lake2 { fill: var(--water); stroke: none; pointer-events: none; }
+/* names of rivers (along them) and of mountain ranges and plains: on screen only at the zoom Natural Earth gives them */
+.rlbl { font-family: var(--mapfont); font-style: italic; font-weight: 450; fill: var(--river-ink); stroke: var(--halo); stroke-linejoin: round; paint-order: stroke; letter-spacing: 0.03em; pointer-events: none; }
+.mlbl { font-family: var(--mapfont); font-style: italic; font-weight: 500; fill: var(--mtn-ink); stroke: var(--halo); stroke-linejoin: round; paint-order: stroke; letter-spacing: 0.16em; text-transform: uppercase; text-anchor: middle; dominant-baseline: central; pointer-events: none; }
 .borders { fill: none; stroke: var(--border); stroke-width: 1px; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
 .vborders { fill: none; stroke: var(--vborder); stroke-width: 0.8px; stroke-dasharray: 3 2; vector-effect: non-scaling-stroke; }
 .altline { fill: transparent; stroke: var(--alt); stroke-width: 1.8px; stroke-dasharray: 6 4; vector-effect: non-scaling-stroke; cursor: pointer; }
@@ -116,6 +123,31 @@ button, select, input { font: inherit; color: inherit; }
 /* the power over a dependent territory, under its name */
 .hlist .by { display: block; font-weight: 400; color: var(--faint); }
 .hlist li.on .by { color: var(--muted); }
+/* the city popup's tabs: population, who held it, events there, people born or died there */
+.ptabs { display: flex; gap: 0; margin: 8px -2px 0; border-bottom: 1px solid var(--line); }
+.ptabs button { flex: 1 1 auto; border: 0; background: none; padding: 5px 4px 6px; font: inherit; font-size: 0.76rem; font-weight: 600; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; white-space: nowrap; }
+.ptabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+.ptabs small { font-weight: 500; color: var(--faint); font-size: 0.7rem; margin-left: 2px; }
+.tabp { min-height: 9.6em; }
+.tabp > .hint:first-child { margin-top: 8px; }
+.hlist.elist li { grid-template-columns: 15px 64px minmax(0, 1fr); }
+.hlist.plist li { grid-template-columns: 70px minmax(0, 1fr); }
+.hlist .ei svg { display: block; width: 15px; height: 15px; margin-top: 1px; }
+.hlist a { color: inherit; text-decoration: underline; text-decoration-color: color-mix(in srgb, currentColor 30%, transparent); text-underline-offset: 2px; }
+.hlist li.on a { text-decoration-color: currentColor; }
+.ki circle, .evm circle { fill: var(--ink); }
+.ki .gl, .evm .gl { fill: none; stroke: var(--bg); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.ki .gf, .evm .gf { fill: var(--bg); stroke: none; }
+/* an event in a city this year: its kind's icon on the city, with the city's name */
+.evm { cursor: pointer; }
+.evm circle { stroke: var(--halo); }
+.evm.on circle { fill: var(--accent); }
+.evm.off { opacity: 0.5; }
+.elbl { font-family: var(--mapfont); font-weight: 600; fill: var(--ink); dominant-baseline: central; pointer-events: none; }
+.elbl.off { opacity: 0.5; }
+.legend .kinds { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 10px; }
+.legend .kinds span { display: flex; align-items: center; gap: 6px; font-size: 0.8rem; }
+.legend .kinds svg { width: 16px; height: 16px; flex: none; }
 .mappop .ln { fill: none; stroke: var(--muted); stroke-width: 1.4; }
 .mappop .pt { fill: var(--ink); }
 .mappop .pt.c { fill: var(--surface); stroke: var(--ink); stroke-width: 1.2; }
@@ -125,6 +157,9 @@ button, select, input { font: inherit; color: inherit; }
 .mappop .cur { fill: var(--sel); }
 .mappop .ax { fill: var(--muted); font-size: 9px; }
 .zoom { position: absolute; right: 10px; top: 10px; display: flex; flex-direction: column; gap: 4px; z-index: 2; }
+.zoom button.tog { display: grid; place-items: center; color: var(--muted); }
+.zoom button.tog svg { width: 20px; height: 20px; fill: currentColor; }
+.zoom button.tog[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
 .zoom button { width: 36px; height: 36px; border-radius: 9px; border: 1px solid var(--line); background: var(--surface); cursor: pointer; font-weight: 700; font-size: 1.05rem; line-height: 1; }
 .loading { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 2; background: var(--surface); color: var(--muted); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; font-size: 0.9rem; }
 .yearstamp { position: absolute; left: 14px; top: 8px; font-family: var(--serif); font-weight: 600; font-variant-numeric: lining-nums tabular-nums; font-size: 2.5rem; line-height: 1; color: var(--ink); opacity: 0.8; pointer-events: none; }
@@ -202,22 +237,28 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
           <path id="outland"></path>
           <path id="land"></path>
           <g id="fills"></g>
+          <image id="relief" class="relief" preserveAspectRatio="none" visibility="hidden"></image>
           <path id="lakes" class="lakes"></path>
+          <g id="lakes2"></g>
           <path id="rivers" class="rivers"></path>
+          <g id="rivers2"></g>
           <path id="vborders" class="vborders"></path>
           <path id="borders" class="borders"></path>
           <g id="alts"></g>
           <g id="badges"></g>
+          <g id="tlabels"></g>
           <path id="dim" class="dim"></path>
           <g id="labels"></g>
           <g id="pin" class="pin"></g>
           <g id="cities"></g>
+          <g id="evmarks"></g>
           <g id="focuslabel"></g>
         </svg>
         <div class="zoom">
           <button type="button" id="zin" aria-label="Zoom in">+</button>
           <button type="button" id="zout" aria-label="Zoom out">−</button>
           <button type="button" id="zreset" aria-label="Show all of Europe" title="Show all of Europe">⤢</button>
+          <button type="button" id="terrain" class="tog" aria-pressed="true" aria-label="Terrain: shaded relief and the names of mountain ranges" title="Terrain"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M1.5 16.5 7 7.2l2.6 4.3 1.9-2.9 7 7.9z"/><path d="M5.6 9.6 7 7.2l1.5 2.4-1.5-.6z" style="fill:var(--surface);opacity:.75"/></svg></button>
         </div>
         <div class="yearstamp num" id="stamp" aria-hidden="true">1815</div>
         <div class="mappop" id="mappop" role="dialog" aria-label="Details" hidden></div>
@@ -250,6 +291,8 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
         <p>Occupations: OHM records named occupation regimes, such as the General Government in Poland or the Allied zones of Germany, and the map uses them. Where OHM shows the country that held the land in law, the map adds occupations from Cliopatria’s year-by-year outlines of each power’s control (1914-46), land annexed during the Second World War and given back afterward, and the breakaway regions and occupied parts of Ukraine since 1990. Each of these is listed under corrections.</p>
         <p>Alternative borders compare OHM with CShapes-Europe from 1816 and with Cliopatria before that. They count only when a source puts an area of at least 400 km² (5,000 km² for the coarser Cliopatria) in a different country for longer than a year. Territories that governed themselves under an overlord count as part of the overlord for this comparison, because the sources disagree on whether to show them.</p>
         <p>Cities appear when a country is highlighted: the ten largest of its cities on screen that year, so zooming in brings in smaller towns. They come from about 4,900 cities and towns (Europe's largest by 1900, those that grew large after, large towns of 1000–1800, and every town that reached about 20,000 people), placed in whichever country held them that year. Tap one for its population. Figures come from censuses where there is one for that year; between figures the map estimates, assuming steady growth, and says so. A hollow dot means there is no figure within ten years (25 years before 1800, 50 before 1500); the map then gives the nearest figures instead of an estimate. The smaller towns’ figures come from Wikidata and from population tables in Wikipedia articles (checked against Wikidata), so they are thinner in Britain, Portugal, Turkey and before the mid-1800s, and zoomed-in views there can show fewer than ten. Before 1800 the figures are mostly Jan de Vries’s estimates every 50 years for towns that reached 10,000 people, which cover western and central Europe but not the Ottoman lands or Russia. Before 1500 there are figures for only about 60 cities, mostly Tertius Chandler’s estimates, so many countries show few or none. Early figures are estimates, some for the wider city, so they are not always comparable with later census counts.</p>
+        <p>Events and people come from Wikidata. An icon marks an event located in a city in the year shown: a battle, siege or bombing; a massacre, assassination or attack; an uprising, revolution or protest; a treaty, congress or conference; a church council or papal election; a coronation; a great fire; an earthquake, flood or epidemic; a world’s fair or Olympic Games; or a trial, crisis, scandal or declaration. Up to seven show at a time: the most written about (by the number of Wikipedia languages with an article), the highlighted country’s first. A city’s popup lists its most written-about events from 1000 on, up to 30 for a large city and 12 for a town, no more than about a third of them from any one century, and the people Wikidata records as born or died there who have articles in at least ten languages (up to 14 for a large city, 6 for a town). Wikidata sometimes records an event or a birth for a district or region rather than the city, so some are missing.</p>
+        <p>Terrain comes from Natural Earth. The shaded relief is drawn from a picture about 2.5 km to the pixel, so it fades as you zoom in. Smaller rivers, and the names of rivers and mountain ranges, appear as you zoom in. The mountain button beside the zoom buttons turns the relief and the names of mountain ranges on and off.</p>
         <details>
           <summary>Corrections to OHM (<span id="nfix"></span>)</summary>
           <ul id="fixes"></ul>
@@ -265,7 +308,8 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
             <li>Breakaway regions (Transnistria, Abkhazia, South Ossetia, Artsakh, Crimea and the Donbas in 2014-21): Natural Earth’s disputed areas (public domain).</li>
             <li>City populations: Wikidata (CC0), census tables in city articles in English, German, French, Polish, Russian, Ukrainian, Greek, Turkish and other Wikipedia editions (CC BY-SA 4.0), the UN Statistics Division’s Demographic Yearbook city table (public domain via datasets/population-city), Jan de Vries’s estimates for 1500–1800 (<i>European Urbanization, 1500–1800</i>, 1984) from Matthew Lincoln’s europop dataset (CC0), and estimates by Chandler, de Vries and Mitchell as tabled in Wikipedia's <a href="https://en.wikipedia.org/wiki/Historical_urban_community_sizes" target="_blank" rel="noopener">Historical urban community sizes</a>. Gathered September 29, 2026.</li>
             <li id="flagsrc" hidden>Flags: Wikimedia Commons, chosen through each state’s Wikidata entry (the flag dated to that year where Wikidata gives dates). Most are in the public domain; each popup names its flag’s license, and the others are credited under Flag credits. Flags of some early states are later reconstructions.</li>
-            <li>Coastlines, lakes and rivers: Natural Earth (public domain).</li>
+            <li>Coastlines, lakes and rivers, shaded relief and the names of mountain ranges: Natural Earth (public domain). The relief comes from Natural Earth’s 1:50m shaded relief as packaged with the basemap-data library.</li>
+            <li>Events in cities, and people born or died there: Wikidata (CC0), linked to English Wikipedia. Gathered October 2, 2026.</li>
             <li>Projection: Lambert azimuthal equal-area for Europe (ETRS89-LAEA), so areas compare fairly.</li>
           </ul>
         </details>
@@ -433,7 +477,7 @@ function applyView() {
     p.setAttribute('width', w); p.setAttribute('height', w); p.firstChild.setAttribute('width', w * t); p.firstChild.setAttribute('height', w);
     if (p.lastChild !== p.firstChild) { p.lastChild.setAttribute('width', w); p.lastChild.setAttribute('height', w * t); }
   }
-  drawLabels(); drawBadges(); drawPin(); drawCities();
+  drawTerrain(); drawLabels(); drawBadges(); drawPin(); drawCities();
 }
 function zoomAt(f, cx, cy) {
   const [x, y, w, h] = view; const nw = Math.min(Math.max(w / f, 40), VB0[2] * 1.3), k = nw / w;
@@ -611,8 +655,10 @@ function click(ev) {
   // a numbered marker takes the click first
   const k = pxPerKm(); const onBadge = altsNow().find(a => { if (a.i !== selAlt) return false; const p = badgeAt[a.i] || [a.x, a.y]; return Math.hypot((p[0] - x) * k, (p[1] - y) * k) <= 13; });
   if (onBadge) { selectAlt(onBadge.i); return; }
+  const mk = markAt(ev);                                  // an event's icon
+  if (mk) { openEvent(mk); return; }
   const c = cityAt(ev);                                   // a city (its dot or its name) comes next
-  if (c) { selCity = selCity === c.i ? null : c.i; drawCities(); renderPop(); return; }
+  if (c) { selCity = selCity === c.i ? null : c.i; popEv = null; drawCities(); renderPop(); return; }
   const f = regionAt(x, y);
   const u = f ? uAt(f, year) : -1, cur = focusUnit();
   if (selCity != null && f && u === cur) { selCity = null; drawCities(); renderPop(); return; }   // first tap inside the country just closes the city
@@ -709,7 +755,8 @@ function focusCities() {
 function drawCities() {
   const g = $('cities'); g.textContent = ''; cityDots = [];
   const fu = focusUnit(), k = pxPerKm(), r = svg.getBoundingClientRect();
-  if (fu < 0 || !k) { selCity = null; queuePop(); return; }
+  const marks = eventMarks(), marked = new Set(marks.map(m => m.c.i));      // this year's events, as icons on their cities
+  if (fu < 0 || !k) { selCity = null; queuePop(); drawMarks(marks, labelBoxes.concat(marks.map(m => [m.sx - MR, m.sy - MR, m.sx + MR, m.sy + MR]))); drawOverlays(); return; }
   // only the country's larger cities on screen: at most 10 (focusCities)
   const inside = focusCities();
   if (selCity != null && !inside.some(d => d.c.i === selCity)) selCity = null;
@@ -717,12 +764,14 @@ function drawCities() {
   // dots first (biggest last so they sit on top), then names where they fit
   for (const d of inside) {
     const sx = (d.c.x - shown[0]) * k, sy = (d.c.y - shown[1]) * k;
-    d.sx = sx; d.sy = sy; d.r = Math.min(9, 2.2 + 1.5 * Math.sqrt(d.p.v / 100000)); d.lb = null; d.db = [sx - d.r - 2, sy - d.r - 2, sx + d.r + 2, sy + d.r + 2];
+    d.sx = sx; d.sy = sy; d.r = Math.min(9, 2.2 + 1.5 * Math.sqrt(d.p.v / 100000)); if (marked.has(d.c.i)) d.r = MR; d.lb = null; d.db = [sx - d.r - 2, sy - d.r - 2, sx + d.r + 2, sy + d.r + 2];
     d.vis = sx > -20 && sy > -20 && sx < r.width + 20 && sy < r.height + 20;
     if (d.vis) { cityDots.push(d); taken.push([sx - d.r, sy - d.r, sx + d.r, sy + d.r]); }
   }
   const dg = el('g', {}, g), lg = el('g', {}, g);
+  for (const m of marks) if (!cityDots.some(d => d.c.i === m.c.i)) taken.push([m.sx - MR, m.sy - MR, m.sx + MR, m.sy + MR]);
   for (const d of cityDots.slice().reverse()) {
+    if (marked.has(d.c.i)) continue;                 // the event's icon stands for the city's dot
     const on = d.c.i === selCity;
     const b = el('g', { class: 'city' + (d.p.k === 'none' || d.p.k === 'gap' ? ' nofig' : '') + (on ? ' on' : ''), 'data-c': d.c.i }, dg);
     el('circle', { cx: d.c.x, cy: d.c.y, r: ((on ? d.r + 1.5 : d.r) / k).toFixed(2), 'stroke-width': (1.3 / k).toFixed(2) }, b);
@@ -741,7 +790,216 @@ function drawCities() {
     if (s) { taken.push([s[0], s[1], s[0] + w, s[1] + h]); put(d, s[0], s[1], w, h, s[2]); }
     else if (d.c.i === selCity) put(d, spots[0][0], spots[0][1], w, h, 'start');     // a selected city with no room still gets its name
   }
-  queuePop();
+  drawMarks(marks, taken.concat(labelBoxes));
+  queuePop(); drawOverlays();
+}
+// what goes over the map after the countries and cities are placed, keeping clear of their names
+function drawOverlays() {
+  const boxes = labelBoxes.concat(cityDots.flatMap(d => d.lb ? [d.db, d.lb] : [d.db]), evDots.flatMap(m => m.lb ? [m.db, m.lb] : [m.db]), controlBoxes(), focusBox ? [focusBox] : []);
+  drawTerrainLabels(boxes);
+}
+// ---------- events in cities, and people born or died there (city-events.json, city-people.json, from Wikidata) ----------
+// Events: battles and sieges, massacres and attacks, uprisings, treaties and congresses, church councils, coronations,
+// great fires and other disasters, world fairs and Olympic Games located in a city, from 1000 on. In its year an event
+// shows as its kind's icon on the city: the most important few on screen (by the number of Wikipedia articles about it),
+// the highlighted country's first. A city's popup lists them all, and the people born or died there.
+const GLYPH = {
+  war: ['s', 'M5.6 14.4 14.4 5.6M5.6 5.6l8.8 8.8M3.9 12.7l3.4 3.4M12.7 16.1l3.4-3.4'],
+  violence: ['s', 'M10 4.8v6.4M10 14.6v.2'],
+  uprising: ['s', 'M6.5 16.2V3.8M6.5 4.6h7.6l-2 3 2 3H6.5'],
+  treaty: ['s', 'M6 3.8h8v12.4H6zM8.2 7.3h3.6M8.2 9.9h3.6M8.2 12.5h2.4'],
+  religion: ['s', 'M10 3.8v12.4M6.4 7.8h7.2'],
+  crown: ['s', 'M4.4 14.6h11.2M4.4 14.6 3.8 7.4l3.6 3.1L10 5.4l2.6 5.1 3.6-3.1-.6 7.2'],
+  fire: ['f', 'M10 16.6c-3 0-4.6-2-4.6-4.5 0-2.6 2-3.6 2.6-6.7 1.4 1.3 2 2.8 2 4 .9-.8 1.5-1.9 1.5-3.2 2.1 1.5 3.1 3.6 3.1 5.8 0 2.6-1.6 4.6-4.6 4.6z'],
+  disaster: ['s', 'M10 4.2 16.6 15.8H3.4zM10 8.9v3.1M10 14v.1'],
+  culture: ['f', 'M10 3.6l1.9 4 4.4.6-3.2 3 .8 4.4L10 13.5l-3.9 2.1.8-4.4-3.2-3 4.4-.6z'],
+  other: ['f', 'M10 7a3 3 0 1 0 0 6 3 3 0 1 0 0-6z'],
+};
+const glyph = k => { const [t, d] = GLYPH[k] || GLYPH.other; return `<path class="${t === 's' ? 'gl' : 'gf'}" d="${d}" transform="translate(-10 -10)"/>`; };
+const kindIcon = k => `<svg class="ki" viewBox="-10 -10 20 20" aria-hidden="true"><circle r="10"/>${glyph(k)}</svg>`;
+let KINDS = [], CEV = null, EVY = null, CPP = null, evDots = [], popTab = 'pop', popEv = null;
+function loadEvents() {
+  if (CEV || loadEvents.busy) return; loadEvents.busy = true;
+  fetch('city-events.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(d => {
+    KINDS = d.kinds; CEV = []; EVY = new Map();
+    for (const [ci, y, md, ki, sl, n, t, end] of d.ev) {
+      const e = { ci, y, md, k: d.kinds[ki][0], sl, n, t, end };
+      (CEV[ci] = CEV[ci] || []).push(e);
+      for (let yy = y, y1 = end && end - y <= 10 ? end : y; yy <= y1; yy++) { if (!EVY.has(yy)) EVY.set(yy, []); EVY.get(yy).push(e); }
+    }
+    renderLegend(); drawCities(); refreshCityPop();
+  }).catch(() => { loadEvents.busy = false; });
+}
+function loadPeople() {
+  if (CPP || loadPeople.busy) return; loadPeople.busy = true;
+  fetch('city-people.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(d => {
+    CPP = []; for (const [ci, w, b, dd, sl, n, role, t] of d.pp) (CPP[ci] = CPP[ci] || []).push({ w, b, d: dd, sl, n, role, t });
+    refreshCityPop();
+  }).catch(() => { loadPeople.busy = false; });
+}
+// an open city popup takes in data that has just arrived, without moving
+function refreshCityPop() { if (selCity == null || pop.hidden) return; keepPop = [pop.offsetLeft, pop.offsetTop]; renderPop(); keepPop = null; }
+// a link to the English Wikipedia article (t: '' when its title is the name), or to the Wikidata item (t: 'Q…')
+const wikiA = (n, t) => `<a href="${/^Q\d+$/.test(t) ? 'https://www.wikidata.org/wiki/' + t : 'https://en.wikipedia.org/wiki/' + encodeURIComponent((t || n).replace(/ /g, '_'))}" target="_blank" rel="noopener">${esc(n)}</a>`;
+const EV_MAX = 7, MR = 10;
+// this year's events on screen, one per city, as icons: the highlighted country's first, then the most written about
+function eventMarks() {
+  if (!EVY) return [];
+  const k = pxPerKm(), r = svg.getBoundingClientRect(); if (!k) return [];
+  const fu = focusUnit(), under = controlBoxes();
+  const list = (EVY.get(year) || []).map(e => { const c = CITIES[e.ci]; return { e, c, sx: (c.x - shown[0]) * k, sy: (c.y - shown[1]) * k }; })
+    .filter(m => m.sx > MR && m.sy > MR && m.sx < r.width - MR && m.sy < r.height - MR && !under.some(b => m.sx > b[0] - MR && m.sx < b[2] + MR && m.sy > b[1] - MR && m.sy < b[3] + MR));
+  const inFocus = m => fu >= 0 && cityUnit(m.c, year) === fu;
+  list.sort((a, b) => (inFocus(b) - inFocus(a)) || b.e.sl - a.e.sl);
+  const out = [];
+  for (const m of list) {
+    if (out.some(o => o.c.i === m.c.i || Math.hypot(o.sx - m.sx, o.sy - m.sy) < 2 * MR + 3)) continue;
+    m.off = fu >= 0 && !inFocus(m); out.push(m); if (out.length >= EV_MAX) break;
+  }
+  return out;
+}
+// draw the icons; a city without a name on the map gets one beside its icon, where it fits
+function drawMarks(marks, taken) {
+  const g = $('evmarks'); g.textContent = ''; evDots = [];
+  const k = pxPerKm(); if (!k) return;
+  const fs = 12, named = new Set(cityDots.filter(d => d.lb).map(d => d.c.i));
+  for (const m of marks) {
+    const on = popEv === m.e && selCity === m.c.i;
+    const b = el('g', { class: 'evm' + (m.off ? ' off' : '') + (on ? ' on' : ''), transform: `translate(${m.c.x} ${m.c.y}) scale(${(1 / k).toFixed(5)})` }, g);
+    b.innerHTML = `<circle r="${MR}" stroke-width="1.5"/>${glyph(m.e.k)}<title>${esc(m.e.n)}, ${esc(m.c.n)}</title>`;
+    m.db = [m.sx - MR - 2, m.sy - MR - 2, m.sx + MR + 2, m.sy + MR + 2]; evDots.push(m);
+    if (named.has(m.c.i)) continue;
+    const w = m.c.n.length * fs * 0.52 + 2, h = fs * 1.25, gap = MR + 3;
+    const spots = [[m.sx + gap, m.sy - h / 2, 'start'], [m.sx - gap - w, m.sy - h / 2, 'end'], [m.sx - w / 2, m.sy - gap - h, 'middle'], [m.sx - w / 2, m.sy + gap, 'middle']];
+    const s = spots.find(([bx, by]) => !taken.some(t => bx < t[2] && bx + w > t[0] && by < t[3] && by + h > t[1]));
+    if (!s) continue;
+    m.lb = [s[0], s[1], s[0] + w, s[1] + h]; taken.push(m.lb);
+    const tx = s[2] === 'start' ? s[0] : s[2] === 'end' ? s[0] + w : s[0] + w / 2;
+    const t = el('text', { x: (shown[0] + tx / k).toFixed(2), y: (shown[1] + (s[1] + h / 2) / k).toFixed(2), class: 'elbl' + (m.off ? ' off' : ''), 'text-anchor': s[2] }, g);
+    t.setAttribute('style', `font-size:${(fs / k).toFixed(2)}px`); t.textContent = m.c.n;
+  }
+}
+// the icon (or its city's name beside it) under the pointer
+function markAt(ev) {
+  const sr = svg.getBoundingClientRect(), px = ev.clientX - sr.left, py = ev.clientY - sr.top;
+  return evDots.find(m => Math.hypot(m.sx - px, m.sy - py) <= MR + 4 || (m.lb && px >= m.lb[0] - 3 && px <= m.lb[2] + 3 && py >= m.lb[1] - 3 && py <= m.lb[3] + 3)) || null;
+}
+// tapping an icon highlights whoever held the city and opens the city's popup on its events
+function openEvent(m) {
+  stop(); popTab = 'ev'; popEv = m.e;
+  place = { x: m.c.x, y: m.c.y, city: m.c.i }; selCity = m.c.i; popClosed = false;
+  drawPin(); drawDim(); drawLabels(); drawBadges(); drawCities(); renderTimeline(); renderPop();
+}
+// ---------- terrain: shaded relief, rivers and lakes in more detail, and names (terrain.json and relief.webp) ----------
+// Loaded a moment after the page opens. Rivers and lakes come from Natural Earth, which tags each with the zoom level of a
+// web map from which it should show; the map converts that to its own scale, so smaller rivers appear as you zoom in.
+// The relief (light and shade only) and the names of mountain ranges and plains can be switched off with the button.
+let T = null, terrainOn = true, tlTimer = 0;
+try { const v = localStorage.getItem('hm-terrain'); if (v != null) terrainOn = v === '1'; } catch (e) {}
+const webZoom = () => Math.log2(100.6 * pxPerKm());        // a web map's zoom level at this scale, at about 50°N
+const flatD = c => { let d = 'M' + c[0] + ',' + c[1]; for (let i = 2; i < c.length; i += 2) d += 'L' + c[i] + ',' + c[i + 1]; return d; };
+function loadTerrain() {
+  if (T || loadTerrain.busy) return; loadTerrain.busy = true;
+  fetch('terrain.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(t => { T = t; setupTerrain(); applyView(); }).catch(() => { loadTerrain.busy = false; });
+}
+function setupTerrain() {
+  const tiers = {}, lt = {};
+  T.rivers.forEach(r => {
+    let a = Infinity, b = Infinity, c = -Infinity, d = -Infinity;
+    r.c.forEach(p => { for (let i = 0; i < p.length; i += 2) { a = Math.min(a, p[i]); c = Math.max(c, p[i]); b = Math.min(b, p[i + 1]); d = Math.max(d, p[i + 1]); } });
+    r.bb = [a, b, c, d];
+    const w = r.r <= 2 ? 1 : r.r <= 4 ? 2 : r.r <= 7 ? 3 : 4, key = r.z + ':' + w;
+    (tiers[key] = tiers[key] || { z: r.z, w, d: [] }).d.push(r.c.map(flatD).join(''));
+  });
+  for (const t of Object.values(tiers).sort((p, q) => q.w - p.w)) el('path', { class: 'riv w' + t.w, d: t.d.join(''), 'data-z': t.z }, $('rivers2'));
+  T.lakes.forEach(l => (lt[l.z] = lt[l.z] || []).push(l.c.map(r => flatD(r) + 'Z').join('')));
+  for (const z in lt) el('path', { class: 'lake2', d: lt[z].join(''), 'data-z': z, 'fill-rule': 'evenodd' }, $('lakes2'));
+  $('rivers').style.display = 'none'; $('lakes').style.display = 'none';      // the page's own, coarser rivers and lakes
+  const b = T.relief.box, rel = $('relief');
+  rel.setAttribute('x', b[0]); rel.setAttribute('y', b[1]); rel.setAttribute('width', b[2]); rel.setAttribute('height', b[3]);
+}
+function setTerrain(on) {
+  terrainOn = on; $('terrain').setAttribute('aria-pressed', String(on));
+  try { localStorage.setItem('hm-terrain', on ? '1' : '0'); } catch (e) {}
+  applyView();
+}
+$('terrain').onclick = () => setTerrain(!terrainOn);
+$('terrain').setAttribute('aria-pressed', String(terrainOn));
+// which rivers and lakes show at this zoom, and the relief
+function drawTerrain() {
+  if (!T) return;
+  const z = webZoom();
+  $('rivers2').querySelectorAll('path').forEach(p => p.style.display = +p.dataset.z <= z + 0.2 ? '' : 'none');
+  $('lakes2').querySelectorAll('path').forEach(p => p.style.display = +p.dataset.z <= z + 0.6 ? '' : 'none');
+  const rel = $('relief');
+  if (terrainOn && !rel.getAttribute('href')) rel.setAttribute('href', T.relief.src);
+  rel.setAttribute('visibility', terrainOn ? 'visible' : 'hidden');
+  // the relief is drawn from a picture about 2.5 km to the pixel, so it fades as the map zooms in past it
+  rel.style.opacity = `calc(var(--relief) * ${Math.max(0.3, Math.min(1, (6.8 - z) / 1.6)).toFixed(2)})`;
+}
+// names of mountain ranges and plains (terrain on), then of rivers along their course, where they fit among the other
+// names; river names wait until the map stops moving
+function drawTerrainLabels(boxes) {
+  const g = $('tlabels'); g.textContent = ''; clearTimeout(tlTimer);
+  if (!T) return;
+  const k = pxPerKm(), z = webZoom(), sr = svg.getBoundingClientRect(); if (!k) return;
+  const taken = boxes.slice(), hit = b => taken.some(t => b[0] < t[2] && b[2] > t[0] && b[1] < t[3] && b[3] > t[1]);
+  if (terrainOn) for (const m of T.names) {
+    if (m.z > z + 0.3) continue;
+    const sx = (m.x - shown[0]) * k, sy = (m.y - shown[1]) * k, fs = m.k === 'r' ? 11.5 : 10.5;
+    const w = m.n.length * fs * 0.78 + 8, h = fs * 1.4, b = [sx - w / 2, sy - h / 2, sx + w / 2, sy + h / 2];
+    if (b[0] < 0 || b[1] < 0 || b[2] > sr.width || b[3] > sr.height || hit(b)) continue;
+    if (Math.max(m.w, m.h) * k < w * 0.45) continue;             // the range is a speck at this zoom
+    taken.push(b);
+    const t = el('text', { x: m.x, y: m.y, class: 'mlbl' }, g); t.setAttribute('style', `font-size:${(fs / k).toFixed(2)}px;stroke-width:${(2.6 / k).toFixed(2)}px`); t.textContent = m.n;
+  }
+  if (animating || svg.classList.contains('drag')) { tlTimer = setTimeout(() => drawRiverNames(taken), 160); return; }
+  drawRiverNames(taken);
+}
+function drawRiverNames(taken) {
+  const g = $('tlabels'), k = pxPerKm(), z = webZoom(), sr = svg.getBoundingClientRect(); if (!k) return;
+  g.querySelectorAll('.rlbl, defs').forEach(e => e.remove());
+  const defs = el('defs', {}, g), hit = b => taken.some(t => b[0] < t[2] && b[2] > t[0] && b[1] < t[3] && b[3] > t[1]);
+  const x0 = shown[0], y0 = shown[1], x1 = x0 + sr.width / k, y1 = y0 + sr.height / k, M = 14;
+  const fs = 11.5; let n = 0;
+  const rivers = T.rivers.filter(r => r.n && r.z <= z + 0.2 && r.lz <= z + 0.4 && r.bb[2] > x0 && r.bb[0] < x1 && r.bb[3] > y0 && r.bb[1] < y1).sort((p, q) => p.r - q.r);
+  for (const r of rivers) {
+    if (n >= 14) break;
+    const w = r.n.length * fs * 0.52 + 6;
+    // the longest stretch of the river on screen, in screen pixels
+    let best = null;
+    for (const c of r.c) {
+      let run = [];
+      const flush = () => { if (run.length > 1) { let L = 0; for (let i = 1; i < run.length; i++) L += Math.hypot(run[i][0] - run[i - 1][0], run[i][1] - run[i - 1][1]); if (!best || L > best.L) best = { pts: run, L }; } run = []; };
+      for (let i = 0; i < c.length; i += 2) {
+        const sx = (c[i] - x0) * k, sy = (c[i + 1] - y0) * k;
+        if (sx > M && sy > M && sx < sr.width - M && sy < sr.height - M) run.push([sx, sy]); else flush();
+      }
+      flush();
+    }
+    if (!best || best.L < w * 1.5) continue;
+    // the middle of that stretch, a little longer than the name; skip it if it bends too much
+    const pts = best.pts, cum = [0]; for (let i = 1; i < pts.length; i++) cum.push(cum[i - 1] + Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]));
+    const at = d => { let i = 1; while (i < cum.length - 1 && cum[i] < d) i++; const f = (d - cum[i - 1]) / ((cum[i] - cum[i - 1]) || 1); return [pts[i - 1][0] + (pts[i][0] - pts[i - 1][0]) * f, pts[i - 1][1] + (pts[i][1] - pts[i - 1][1]) * f]; };
+    let placed = false;
+    for (const f of [0.5, 0.3, 0.7]) {
+      const L = w * 1.15, s0 = Math.max(0, best.L * f - L / 2), s1 = Math.min(best.L, s0 + L); if (s1 - s0 < L * 0.95) continue;
+      let seg = []; for (let j = 0; j <= 8; j++) seg.push(at(s0 + (s1 - s0) * j / 8));
+      const ang = (a, b) => Math.atan2(b[1] - a[1], b[0] - a[0]);
+      let bend = 0; for (let j = 2; j < seg.length; j++) { let d = Math.abs(ang(seg[j - 1], seg[j]) - ang(seg[j - 2], seg[j - 1])); if (d > Math.PI) d = 2 * Math.PI - d; bend += d; }
+      if (bend > 1.1) continue;
+      if (seg[seg.length - 1][0] < seg[0][0]) seg.reverse();         // read left to right
+      const xs = seg.map(p => p[0]), ys = seg.map(p => p[1]);
+      const b = [Math.min(...xs) - fs * 0.6, Math.min(...ys) - fs * 0.8, Math.max(...xs) + fs * 0.6, Math.max(...ys) + fs * 0.8];
+      if (hit(b)) continue;
+      taken.push(b); placed = true;
+      const id = 'rl' + n; el('path', { id, d: 'M' + seg.map(p => (x0 + p[0] / k).toFixed(2) + ',' + (y0 + p[1] / k).toFixed(2)).join('L') }, defs);
+      const t = el('text', { class: 'rlbl', dy: (-0.35 * fs / k).toFixed(2) }, g); t.setAttribute('style', `font-size:${(fs / k).toFixed(2)}px;stroke-width:${(2.6 / k).toFixed(2)}px`);
+      const tp = el('textPath', { href: '#' + id, startOffset: '50%', 'text-anchor': 'middle' }, t); tp.textContent = r.n;
+      break;
+    }
+    if (placed) n++;
+  }
 }
 // who held a city in year y, for its popup's list: t, the state's full name; by, the power over it if it was a
 // dependent territory and its name does not already say so ("Kingdom of Sicily (under Austria)" does); bg, its swatch
@@ -787,8 +1045,23 @@ function cityHtml(d) {
       return `<button type="button" data-y="${r.a}" title="${esc(nm(r))}, ${r.a === r.b ? r.a : r.a + '–' + r.b}" style="left:${l}%;width:${w}%;background:${r.bg}"></button>`; }).join('') +
     `<span class="now" style="left:${(X(year) / W * 100).toFixed(2)}%"></span></div>`;
   const changes = runs.map(r => `<li role="button" tabindex="0" data-y="${r.a}"${r.a <= year && year <= r.b ? ' class="on"' : ''}><span class="sw" style="background:${r.bg}"></span><span>${r.a}${r.b > r.a ? '–' + (r.b === Y1 ? '' : r.b) : ''}</span><span>${esc(r.t)}${r.by ? `<span class="by">${esc(r.by)}</span>` : ''}</span></li>`).join('');
-  return `<button type="button" class="x" aria-label="Close">×</button><div class="nm city">${esc(c.n)}</div><div class="pop city">${big} <small>people in ${year}</small></div><p>${esc(note)}</p>${chart}` +
-    `<div class="hk">Held by</div>${strip}<ul class="hlist">${changes}</ul>`;
+  // events in the city, oldest first; this year's are marked
+  const evs = CEV ? CEV[c.i] || [] : null, pps = CPP ? CPP[c.i] || [] : null;
+  const evList = evs == null ? `<p class="hint">Loading the events…</p>` : !evs.length ? `<p class="hint">Wikidata records no events here from 1000 on, of the kinds this map shows.</p>`
+    : `<ul class="hlist elist">${evs.map(e => { const on = e.y <= year && year <= (e.end && e.end - e.y <= 10 ? e.end : e.y);
+        return `<li role="button" tabindex="0" data-y="${e.y}"${on ? ' class="on"' : ''}><span class="ei">${kindIcon(e.k)}</span><span>${e.y}${e.end && e.end > e.y ? '–' + e.end : ''}</span><span>${wikiA(e.n, e.t)}</span></li>`; }).join('')}</ul>`;
+  // people born or died here, by year of birth; those alive this year are marked. A row goes to the year they were
+  // born here (or died here)
+  const where = w => w === 'bd' ? 'born and died here' : w === 'b' ? 'born here' : 'died here';
+  const pplList = pps == null ? `<p class="hint">Loading the people…</p>` : !pps.length ? `<p class="hint">No one Wikidata records as born or died here is written about in many languages.</p>`
+    : `<ul class="hlist plist">${pps.map(q => { const on = q.b != null && q.b <= year && year <= (q.d != null ? q.d : q.b + 100);
+        return `<li role="button" tabindex="0" data-y="${q.w.includes('b') && q.b != null ? q.b : q.d != null ? q.d : q.b}" data-b="${q.b != null ? q.b : q.d}"${on ? ' class="on"' : ''}><span>${q.b != null ? q.b : '?'}–${q.d != null ? q.d : ''}</span><span>${wikiA(q.n, q.t)}<span class="by">${q.role ? esc(q.role) + ' · ' : ''}${where(q.w)}</span></span></li>`; }).join('')}</ul>`;
+  const n = a => a && a.length ? ` <small>${a.length}</small>` : '';
+  const tabs = [['pop', 'Population'], ['held', 'Held by'], ['ev', 'Events' + n(evs)], ['ppl', 'People' + n(pps)]];
+  const body = popTab === 'held' ? `${strip}<ul class="hlist">${changes}</ul>` : popTab === 'ev' ? evList : popTab === 'ppl' ? pplList : `<p>${esc(note)}</p>${chart}`;
+  return `<button type="button" class="x" aria-label="Close">×</button><div class="nm city">${esc(c.n)}</div><div class="pop city">${big} <small>people in ${year}</small></div>` +
+    `<div class="ptabs" role="tablist" aria-label="${esc(c.n)}">${tabs.map(([k, t]) => `<button type="button" role="tab" data-t="${k}" aria-selected="${k === popTab}">${t}</button>`).join('')}</div>` +
+    `<div class="tabp" role="tabpanel">${body}</div>`;
 }
 // the state's flag that year (chosen through Wikidata, images from Wikimedia Commons): its index in the flag sheet
 function flagOf(u, y) {
@@ -836,7 +1109,7 @@ function countryHtml(u) {
   return `<button type="button" class="x" aria-label="Close">×</button><div class="nm">${flagHtml(fi)}<span>${esc(d ? d.t : nameOf(u, year))}</span></div>` +
     (d && datesOf(d) ? `<div class="dt">${esc(datesOf(d))}</div>` : '') + (d ? `<p class="tx">${esc(d.x)}</p>` : '') +
     (isVassal(u) ? `<p>${esc(depText(u))}.</p>` : '') + srcShort() + flagCredit(fi) +
-    (cityDots.length ? `<p class="hint">Tap a city for its population in ${year}.</p>` : '');
+    (cityDots.length ? `<p class="hint">Tap a city for its population in ${year}, who held it, its events and its people.</p>` : '');
 }
 // where the border at the tapped spot comes from, in one line
 function srcShort() {
@@ -916,24 +1189,36 @@ function renderPop() {
   const fu = focusUnit(), d = cityDots.find(d => d.c.i === selCity);
   if (animating || fu < 0 || (!d && popClosed)) { pop.hidden = true; return; }
   const sr = svg.getBoundingClientRect(), mb = $('mapbox').getBoundingClientRect();
-  const same = d && pop.dataset.city === String(d.c.i) && !pop.hidden, hl0 = pop.querySelector('.hlist'), scroll = same && hl0 ? hl0.scrollTop : 0;
-  pop.innerHTML = d ? cityHtml(d) : countryHtml(fu); pop.dataset.city = d ? d.c.i : '';
+  const same = d && pop.dataset.city === String(d.c.i) && pop.dataset.tab === popTab && !pop.hidden, hl0 = pop.querySelector('.hlist'), scroll = same && hl0 ? hl0.scrollTop : 0;
+  if (d) loadPeople();                  // the people file (larger) is fetched the first time a city is opened
+  pop.innerHTML = d ? cityHtml(d) : countryHtml(fu); pop.dataset.city = d ? d.c.i : ''; pop.dataset.tab = popTab;
   pop.setAttribute('aria-label', d ? `${d.c.n}: population` : nameOf(fu, year));
   if (d) {
     // a dot in the chart, a band of the strip (the year tapped) or a row of the list (its first year) moves the whole
     // map to that year; the popup stays put, and the highlight follows whoever held the city
     const jump = y => { stop(); place = { x: d.c.x, y: d.c.y, city: d.c.i }; popClosed = false; keepPop = [pop.offsetLeft, pop.offsetTop]; setYear(y); keepPop = null; };
-    pop.querySelectorAll('.pchart .hit, .hlist li').forEach(b => { b.onclick = ev => { ev.stopPropagation(); jump(+b.dataset.y); }; b.onkeydown = ev => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); jump(+b.dataset.y); } }; });
+    pop.querySelectorAll('.pchart .hit, .hlist li').forEach(b => { b.onclick = ev => { if (ev.target.closest('a')) return; ev.stopPropagation(); jump(+b.dataset.y); }; b.onkeydown = ev => { if (ev.target.closest('a')) return; if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); jump(+b.dataset.y); } }; });
+    // a tab: the popup stays where it is
+    pop.querySelectorAll('.ptabs button').forEach(b => b.onclick = ev => {
+      ev.stopPropagation(); popTab = b.dataset.t; if (popTab === 'ppl') loadPeople();
+      keepPop = [pop.offsetLeft, pop.offsetTop]; renderPop(); keepPop = null;
+      const t = pop.querySelector(`.ptabs button[data-t="${popTab}"]`); if (t) t.focus();
+    });
     const hs = pop.querySelector('.hstrip');
-    hs.onclick = ev => {
+    if (hs) hs.onclick = ev => {
       ev.stopPropagation();
       if (!ev.detail && ev.target.dataset.y) return jump(+ev.target.dataset.y);      // from the keyboard: the band's first year
       const r = hs.getBoundingClientRect(), W = +hs.dataset.w, c0 = +hs.dataset.c0;
       jump(Math.max(c0, Math.min(Y1, Math.round(c0 + (((ev.clientX - r.left) / r.width) * W - 4) / (W - 8) * (Y1 - c0)))));
     };
-    const hl = pop.querySelector('.hlist'), on = hl.querySelector('li.on');
-    hl.scrollTop = scroll;
-    if (on && (on.offsetTop < hl.scrollTop || on.offsetTop + on.offsetHeight > hl.scrollTop + hl.clientHeight)) hl.scrollTop = on.offsetTop - hl.clientHeight / 2;
+    const hl = pop.querySelector('.hlist');
+    if (hl) {
+      // keep this year in view: its row, or else the first row after it
+      const on = hl.querySelector('li.on') || [...hl.querySelectorAll('li')].find(li => +(li.dataset.b || li.dataset.y) > year);
+      hl.scrollTop = same ? scroll : 0;
+      // a newly opened list centers this year's row; an open one scrolls only if the row has gone out of view
+      if (on && (!same || on.offsetTop < hl.scrollTop || on.offsetTop + on.offsetHeight > hl.scrollTop + hl.clientHeight)) hl.scrollTop = on.offsetTop - hl.clientHeight / 2 + on.offsetHeight / 2;
+    }
   }
   pop.querySelector('.x').onclick = () => { if (d) { selCity = null; drawCities(); } else popClosed = true; renderPop(); };
   const flagBtn = pop.querySelector('button.flag');
@@ -1033,7 +1318,7 @@ function renderAlts() {
 let hoverRaf = 0;
 function hover(ev) {
   if (hoverRaf) return;
-  hoverRaf = requestAnimationFrame(() => { hoverRaf = 0; svg.style.cursor = cityAt(ev) ? 'pointer' : ''; });
+  hoverRaf = requestAnimationFrame(() => { hoverRaf = 0; svg.style.cursor = cityAt(ev) || markAt(ev) ? 'pointer' : ''; });
 }
 
 // ---------- time controls ----------
@@ -1120,12 +1405,16 @@ function renderTimeline() {
 
 // ---------- key ----------
 const sample = U.findIndex(u => u.k === 'SRB'), osample = Math.max(0, U.findIndex(u => u.k === 'O_GER_FRA'));
+function renderLegend() {
 $('legend').innerHTML =
   `<div><svg viewBox="0 0 30 18"><rect width="30" height="18" style="fill:${fillVar(U.findIndex(u => u.k === 'FRA'))}"/></svg><span>Each country keeps one color throughout; neighbors always differ.</span></div>` +
   `<div><svg viewBox="0 0 30 18"><defs><pattern id="lg-h" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)"><rect width="1.1" height="6" style="fill:${hueVar(U[sample].ov)};opacity:.38"/></pattern></defs><rect width="30" height="18" style="fill:${fillVar(sample)}"/><rect width="30" height="18" fill="url(#lg-h)"/></svg><span>Stripes: self-governing under an overlord (before 1500, often a fief that owed homage to a king), or a protectorate, mandate, colony or client state. The stripes take the overlord's color.</span></div>` +
   `<div><svg viewBox="0 0 30 18"><defs><pattern id="lg-x" patternUnits="userSpaceOnUse" width="8" height="8" patternTransform="rotate(45)"><rect width="0.9" height="8" style="fill:${hueVar(U[osample].ov)};opacity:.32"/><rect width="8" height="0.9" style="fill:${hueVar(U[osample].ov)};opacity:.32"/></pattern></defs><rect width="30" height="18" style="fill:${fillVar(osample)}"/><rect width="30" height="18" fill="url(#lg-x)"/></svg><span>Crosshatch: occupied by another power, annexed without international recognition, or held by a breakaway government with another power's backing. The fill is the country that held the land in law; the lines take the occupier's color.</span></div>` +
   `<div><svg viewBox="0 0 30 18"><rect width="30" height="18" style="fill:var(--sunk)"/><rect x="3" y="3" width="24" height="12" style="fill:var(--alt-fill);stroke:var(--alt);stroke-width:1.6;stroke-dasharray:4 3"/></svg><span>Dashed outline: an area another source draws differently, shown when you pick it from the list of alternative borders.</span></div>` +
-  `<div><svg viewBox="0 0 30 18"><rect width="30" height="18" style="fill:var(--none)"/></svg><span>No source assigns this area to a country.</span></div>`;
+  `<div><svg viewBox="0 0 30 18"><rect width="30" height="18" style="fill:var(--none)"/></svg><span>No source assigns this area to a country.</span></div>` +
+  (KINDS.length ? `<p class="small muted" style="margin:4px 0 0">Icons mark an event in a city in the year shown. Tap one for the city's events.</p><div class="kinds">${KINDS.map(([k, t]) => `<span>${kindIcon(k)}${esc(t)}</span>`).join('')}</div>` : '');
+}
+renderLegend();
 function renderFixes() {
   const fixes = ERAS.filter(e => e.ready).flatMap(e => e.R.filter(r => r.t === 'fix'));
   $('nfix').textContent = fixes.length;
@@ -1149,5 +1438,6 @@ function preloadNear() {
   nearFor = E; [ERAS[E.i - 1], ERAS[E.i + 1]].forEach(e => e && loadEra(e));
 }
 draw();
+setTimeout(() => { loadEvents(); loadTerrain(); }, 300);
 })();
 </script>

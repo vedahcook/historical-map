@@ -7,6 +7,8 @@ The page is `europe-borders.html`, published as a Claude artifact. It holds the 
 - `europe-borders-1500.json` (1500–1799) and `europe-borders-1000.json` (1000–1499): the earlier maps. The page loads the one next to the era on screen a moment after it opens, and any era at once when the slider reaches it. Opened straight from disk, a browser may refuse to load them; the page then says so for years before 1800.
 - `flags.webp`: all the flag images in one picture, at the small size the popup shows.
 - `flag-images/`: a larger copy of each flag, one file each, loaded only when a flag is tapped.
+- `city-events.json` and `city-people.json`: events in each city and people born or died there (from Wikidata), loaded a moment after the page opens.
+- `terrain.json` and `relief.webp`: rivers, lakes and the names of mountain ranges in more detail, and the shaded relief (from Natural Earth), loaded a moment after the page opens.
 
 ## Using the map
 
@@ -14,6 +16,9 @@ The page is `europe-borders.html`, published as a Claude artifact. It holds the 
 - **The highlight follows the country across 1500 and 1800,** where the page switches between its three maps.
 - **The timeline** shows key events, or only the highlighted country's events: when it began or ended, name changes, and gains or losses over 1,500 km². The row of events scrolls sideways.
 - **Cities** appear inside the highlighted country: the ten largest of its cities on screen that year. Zooming in or panning brings in smaller towns, so a view about 200 km across still shows ten in most of Europe from the 1800s on. Tap a city for its population that year, a chart of all its figures, and who held it over the years. The list of holders uses each state's full name, as in its own popup, and for a dependent territory names the power that controlled it ("under the Ottoman Empire", "occupied by Germany") unless the name already says so; a renamed state (Russian Empire, Soviet Union, Russia) gets a line for each name. Tap a dot in the chart, a spot on the strip, or a line in the list to go to that year; the popup stays put.
+- **City popups have tabs:** *Population* (the figure and chart), *Held by*, *Events* (what happened there, with links to Wikipedia; tap a row to go to that year) and *People* (who was born or died there; those alive in the year shown are in bold). The tab chosen stays chosen from city to city.
+- **Event icons:** in the year of an event, its city shows an icon for the kind of event (battle or siege, massacre or attack, uprising, treaty or congress, church council, coronation, great fire, other disaster, world's fair or Olympic Games, trial, crisis or scandal), with the city's name. Up to seven at a time, the most written-about first (the highlighted country's before the rest), so zooming in brings in others. Tapping one highlights whoever held the city and opens its popup on the Events tab.
+- **Terrain:** shaded relief, faint under the country colors, fading as you zoom in; more rivers and lakes as you zoom in, with river names along their course; names of mountain ranges and plains. The mountain button beside the zoom buttons turns the relief and the mountain names on and off (remembered in the browser).
 - **One popup at a time,** placed to cover as little as possible of what it describes.
 
 ## How the map decides
@@ -73,6 +78,24 @@ So the map keeps ten cities on screen as the viewer zooms in, the list adds ever
 
 Coverage is uneven: Wikidata and Wikipedia have long series for France, Italy, Spain, Germany, the Netherlands, Czechia and much of Russia, but British towns often have only recent figures (sometimes for the whole borough), Portuguese municipalities mostly one figure, and Turkish cities' recent figures cover their whole province (from 2013 these are left out for its large cities). Before the mid-1800s most smaller towns have no figure, so zoomed-in views show fewer than ten.
 
+## Events and people in cities (October 2026)
+
+From Wikidata, gathered by `browser/fetch_city_extras.js` (run in the browser on an ordinary Wikidata page; see its header) and assembled by `cities/make_extras.py`:
+
+1. **The cities' Wikidata items** (`cities` step): the ids already known for the 465 large cities and the towns, checked against each city's position (within 30 km); the rest found by searching their names and taking the most written-about item within 8 km. Three early cities have none (Ani, Sarai, Gorodishche).
+2. **Events** (`events`): items located in the city (P276 location, P131 in the administrative area, or P276 a place within the city), dated (P585, else P580) from 1000 to 2026, with Wikipedia articles in at least three languages.
+3. **Kinds** (`classes`, `roots`): each event's classes are traced up the class tree (P279) to the root classes in `cities/event_kinds.py`, which sets ten kinds (each with an icon) and the classes to leave out (sports, festivals, awards, accidents, buildings and so on). Events of no kind are left out.
+4. **People** (`people`): those born (P19) or died (P20) in the city with articles in at least 30 languages; for places with fewer than 8 such people, at least 10 languages, in the place itself and then in places within it (P131). People who lived before 1000 are left out.
+5. `python3 cities/make_extras.py select WD` picks each city's events (the most written-about, up to 30 for the large cities and 12 for towns, no more than about a third from any century) and people (up to 14 and 6, spread the same way) and lists the items whose names it needs; the `details` step fetches their English labels, descriptions and English Wikipedia titles; `python3 cities/make_extras.py build WD` writes `city-events.json` and `city-people.json`.
+
+The browser tool returns large results in pieces of 230,000 characters (`HM.prep`, `HM.part`), joined again in order.
+
+Limits: Wikidata sometimes places an event or a birth in a district or region rather than the city, or not at all, so lists can be incomplete. Wars and battles are the best-recorded kind of event. Counts of Wikipedia languages favor recent events and people.
+
+## Terrain (October 2026)
+
+`python3 terrain/make_terrain.py <folder with the sources>` writes `relief.webp` and `terrain.json`. The sources are Natural Earth (public domain): the 1:50m shaded relief (`shadedrelief.jpg` from the basemap-data Python package, which ships Natural Earth's picture) and, from github.com/nvkelso/natural-earth-vector, the 10m rivers (with the Europe supplement), 10m lakes, the 10m geography regions (mountain ranges and plains) and the 50m land. The relief keeps only the light and shade of the picture (its brightness against the local average), drawn in the map's projection at 2.5 km to the pixel as black and white with transparency. Rivers and lakes carry Natural Earth's zoom levels, which the page converts to its own scale.
+
 ## Checks
 
 - `spot_checks.py` tests the 1800–2026 map against 123 well-documented place-and-year facts. 121 pass; the two that fail are Heligoland, which is too small to appear in the coastline data.
@@ -95,7 +118,9 @@ Each era is built in its own working folder with the same scripts. Setting `ERA=
    - `node topo.mjs geo.json topo.json 0.3 1e5`
 3. **In the latest era's folder:** `python3 merge_eras.py <1500–1799 folder> <1000–1499 folder>`.
 4. **Flags, same folder:** `python3 flags/flags_plan.py` (which article each description's flag comes from), then run `browser/fetch_flags.js` in a browser console to get `flags_claims.json` (each article's flags and dates from Wikidata) and `flags_files.json` (thumbnails, authors and licenses from Commons), then (for the larger copies) `browser/fetch_flags_large.js`, saved as `flags_large.json`, then `python3 flags/build_flags.py`, which writes `flags.webp`, `flag-images/` and `flags_index.json`. Run `merge_eras.py` again so the page data includes them. The saved `flags/flags_claims.json` can be reused; `flags_files.json` is not kept because of its size.
-5. `python3 build_page.py`. Publish `europe-borders.html` with `europe-borders-1000.json`, `europe-borders-1500.json`, `flags.webp` and `flag-images/` beside it.
+5. `python3 build_page.py`. Publish `europe-borders.html` with `europe-borders-1000.json`, `europe-borders-1500.json`, `flags.webp`, `flag-images/`, `city-events.json`, `city-people.json`, `terrain.json` and `relief.webp` beside it.
+
+To change only the page's code (`page_template.html`), the map data can be taken from the built page instead of rebuilding: extract the `topo` and `data` scripts of `europe-borders.html` into `topo.json` and `page_data.json` (as `cities/place_cities.py` reads them) and run `build_page.py`.
 
 `fills.json` comes from `node fills.mjs` (candidate fill colors and their measured separation). Needs Python 3 with shapely and pyproj, and Node with topojson-server, topojson-simplify and topojson-client.
 
@@ -115,4 +140,5 @@ The map is plain files, so any web host can serve it.
 - **The medieval map is coarser still.** Cliopatria's outlines change in steps of a few years and are simplified, and borders in the east (the steppe, Anatolia, the Caucasus) are rough.
 - **The early map is coarser.** Small states of the Holy Roman Empire are often missing before about 1700, the steppe and the Caucasus are only roughly drawn, and Cliopatria's outlines are simplified.
 - **City figures vary in quality.** Early figures are estimates, some for the wider city.
+- **The relief is coarse up close:** it is drawn from a picture about 2.5 km to the pixel, so it fades as the map zooms in.
 - **CShapes-Europe is non-commercial (CC BY-NC-SA 4.0),** so the map is too. Flag images keep their own licenses (see Flags).
