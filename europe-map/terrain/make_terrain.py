@@ -53,6 +53,11 @@ ratio = np.where(land > 0, L / np.maximum(avg, 1), 1.0)
 # the picture's own coastlines carry a thin dark rim; ease the shading off within two pixels of the water
 dist = ndimage.distance_transform_edt(land)
 ratio = 1 + (ratio - 1) * np.clip((dist - 1) / 2.5, 0, 1)
+# soften: the picture's shading is fine-grained texture at this scale; blurring it leaves the broad mountain masses
+import os
+SOFT = float(os.environ.get('SOFT', '1.2'))          # pixels of the source picture (October 2, 2026: 1.2)
+if SOFT: ratio = 1 + ndimage.gaussian_filter((ratio - 1) * land, SOFT) / np.maximum(ndimage.gaussian_filter(land, SOFT), 1e-3) * land
+STRENGTH = float(os.environ.get('STRENGTH', '1'))   # the page draws it at half opacity (--relief) on top of this
 
 # sample it at each pixel of the map grid (bilinear)
 gx = x0 + (np.arange(NX) + 0.5) * KM; gy = y0 + (np.arange(NY) + 0.5) * KM
@@ -81,7 +86,7 @@ M = np.asarray(mask).astype(np.float32) / 255
 # shade below 1, light above; strength chosen so the Alps read clearly and the plains stay clean
 s = (r - 1)
 s = np.sign(s) * np.minimum(np.abs(s), 0.4)
-a_shade = np.clip(-s * 1.7, 0, 0.5); a_light = np.clip(s * 0.8, 0, 0.16)
+a_shade = np.clip(-s * 1.7 * STRENGTH, 0, 0.5 * STRENGTH); a_light = np.clip(s * 0.8 * STRENGTH, 0, 0.16 * STRENGTH)
 alpha = (np.where(s < 0, a_shade, a_light) * M)
 gray = np.where(s < 0, 0, 255).astype(np.uint8)
 alpha8 = np.clip(alpha * 255, 0, 255).astype(np.uint8)
