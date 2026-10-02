@@ -45,7 +45,8 @@
       if (!(l[0] === '|' || l[0] === '!')) { if (out.length) out[out.length - 1] += ' ' + l; continue; }
       for (let c of l.slice(1).split(/\|\||!!/)) { const k = c.indexOf('|'); if (k >= 0 && /=/.test(c.slice(0, k)) && !/\[\[|\{\{/.test(c.slice(0, k))) c = c.slice(k + 1); out.push(c.trim()); } }
     return out; };
-  const tables = w => { const out = []; let i = 0; while ((i = w.indexOf('{|', i)) >= 0) { let d = 0, j = i; for (; j < w.length - 1; j++) { if (w[j] === '{' && w[j + 1] === '|') d++; else if (w[j] === '|' && w[j + 1] === '}') { d--; if (!d) break; } } out.push(w.slice(i + 2, j)); i = j + 2; } return out; };
+  // every table, nested ones too (German articles often set two or three tables side by side inside another)
+  const tables = w => { const out = []; let i = 0; while ((i = w.indexOf('{|', i)) >= 0) { let d = 0, j = i; for (; j < w.length - 1; j++) { if (w[j] === '{' && w[j + 1] === '|') d++; else if (w[j] === '|' && w[j + 1] === '}') { d--; if (!d) break; } } out.push(w.slice(i + 2, j)); i += 2; } return out; };
   const fromTable = tb => {
     tb = tb.replace(/\{\|[\s\S]*?\|\}/g, '');                           // nested tables are read on their own
     const rows = tb.split(/\n\|-[^\n]*/).map(cellsOf).filter(r => r.length);
@@ -62,7 +63,7 @@
   const tplAt = (w, i) => { let d = 0, j = i; for (; j < w.length - 1; j++) { if (w[j] === '{' && w[j + 1] === '{') { d++; j++; } else if (w[j] === '}' && w[j + 1] === '}') { d--; j++; if (!d) break; } } return w.slice(i, j + 1); };
   const fromEsGraph = w => { const out = []; for (const m of w.matchAll(/\{\{\s*Gráfica de evoluci[oó]n/g)) { const body = tplAt(w, m.index).slice(2, -2).replace(/\{\{[\s\S]*?\}\}/g, ''); const toks = strip(body).split('|').map(s => s.trim()).filter(s => /^\d[\d.]*$/.test(s)).map(s => +s.replace(/\./g, '')); let i = toks.findIndex(t => t >= 1000 && t <= 2029); if (i < 0) continue; for (; i + 1 < toks.length; i += 2) { if (!(toks[i] >= 1000 && toks[i] <= 2029)) break; if (toks[i + 1] >= 1000) out.push([toks[i], toks[i + 1]]); } } return out; };
   const fromPl = w => [...w.matchAll(/bar:\s*(\d{4})\s+from:\s*0\s+till:\s*(\d+)/g)].map(m => [+m[1], +m[2]]).filter(p => p[1] >= 1000);
-  const norm = c => { const d = {}; for (const [y, n] of c) if (!(y in d)) d[y] = n; return Object.entries(d).map(([y, n]) => [+y, n]).sort((a, b) => a[0] - b[0]); };
+  const norm = c => { const d = {}; for (const [y, n] of c) if (!(y in d) && n !== y) d[y] = n; return Object.entries(d).map(([y, n]) => [+y, n]).sort((a, b) => a[0] - b[0]); };
   const keep = (q, src, cands) => {
     const best = cands.map(norm).filter(c => c.length >= 3).sort((a, b) => b.filter(p => p[0] >= 1780).length - a.filter(p => p[0] >= 1780).length).slice(0, 3);
     if (best.length) (G.out[q] = G.out[q] || []).push(...best.map(c => [src, c]));
