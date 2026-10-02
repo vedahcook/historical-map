@@ -140,6 +140,8 @@ button, select, input { font: inherit; color: inherit; }
 .tabp { min-height: 9.6em; }
 .tabp > .hint:first-child { margin-top: 8px; }
 .hlist.elist li { grid-template-columns: 15px 64px minmax(0, 1fr); }
+.hlist.elist.noicon li { grid-template-columns: 64px minmax(0, 1fr); }
+.hlist.elist.noicon .ei { display: none; }
 .hlist.plist li { grid-template-columns: 70px minmax(0, 1fr); }
 .hlist .ei svg { display: block; width: 15px; height: 15px; margin-top: 1px; }
 .hlist a { color: inherit; text-decoration: underline; text-decoration-color: color-mix(in srgb, currentColor 30%, transparent); text-underline-offset: 2px; }
@@ -210,6 +212,8 @@ button, select, input { font: inherit; color: inherit; }
 .tpan { position: absolute; top: 48px; display: none; width: 24px; height: 24px; border: 1px solid var(--line); border-radius: 50%; background: var(--surface); color: var(--muted); cursor: pointer; font-size: 0.9rem; line-height: 1; padding: 0; z-index: 1; }
 .timebar.zoomed .tpan { display: grid; place-items: center; }
 .tpan.l { left: -12px; } .tpan.r { right: -12px; }
+.timebar.nolane .tlane { display: none; }
+.timebar.nolane .tpan { top: 35px; }
 .events button .ki { width: 15px; height: 15px; vertical-align: -3px; margin-right: 4px; }
 .events { grid-column: 1 / -1; position: relative; display: flex; flex-wrap: nowrap; gap: 6px; overflow-x: auto; scrollbar-width: thin; padding-bottom: 4px; }
 .events > * { flex: none; }
@@ -336,8 +340,8 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
         <p>Occupations: OHM records named occupation regimes, such as the General Government in Poland or the Allied zones of Germany, and the map uses them. Where OHM shows the country that held the land in law, the map adds occupations from Cliopatria’s year-by-year outlines of each power’s control (1914-46), land annexed during the Second World War and given back afterward, and the breakaway regions and occupied parts of Ukraine since 1990. Each of these is listed under corrections.</p>
         <p>Alternative borders compare OHM with CShapes-Europe from 1816 and with Cliopatria before that. They count only when a source puts an area of at least 400 km² (5,000 km² for the coarser Cliopatria) in a different country for longer than a year. Territories that governed themselves under an overlord count as part of the overlord for this comparison, because the sources disagree on whether to show them.</p>
         <p>Cities appear when a country is highlighted: the ten largest of its cities on screen that year, so zooming in brings in smaller towns. They come from about 4,900 cities and towns (Europe's largest by 1900, those that grew large after, large towns of 1000–1800, and every town that reached about 20,000 people), placed in whichever country held them that year. Tap one for its population. Figures come from censuses where there is one for that year; between figures the map estimates, assuming steady growth, and says so. A hollow dot means there is no figure within ten years (25 years before 1800, 50 before 1500); the map then gives the nearest figures instead of an estimate. The smaller towns’ figures come from Wikidata and from population tables in Wikipedia articles (checked against Wikidata), so they are thinner in Britain, Portugal, Turkey and before the mid-1800s, and zoomed-in views there can show fewer than ten. Before 1800 the figures are mostly Jan de Vries’s estimates every 50 years for towns that reached 10,000 people, which cover western and central Europe but not the Ottoman lands or Russia. Before 1500 there are figures for only about 60 cities, mostly Tertius Chandler’s estimates, so many countries show few or none. Early figures are estimates, some for the wider city, so they are not always comparable with later census counts.</p>
-        <p>Events and people come from Wikidata. An icon marks an event located in a city in the year shown: a battle, siege or bombing; a massacre, assassination or attack; an uprising, revolution or protest; a treaty, congress or conference; a church council or papal election; a coronation; a great fire; an earthquake, flood or epidemic; a world’s fair or Olympic Games; or a trial, crisis, scandal or declaration. Up to seven show at a time: the most written about (by the number of Wikipedia languages with an article), the highlighted country’s first. A city’s popup lists its most written-about events from 1000 on, up to 30 for a large city and 12 for a town, no more than about a third of them from any one century, and the people Wikidata records as born or died there who have articles in at least ten languages (up to 14 for a large city, 6 for a town). Wikidata sometimes records an event or a birth for a district or region rather than the city, so some are missing.</p>
-        <p>Letting go of the year slider zooms the timeline in around that year: from a few years to a few centuries, as many as it takes to hold about ten of the events on screen (or in the highlighted country), which then show at their dates. The arrows at its ends, or dragging it sideways, move along. The thin bar above it shows all the years, with the stretch on view marked: drag along it to move quickly through time (the timeline zooms in again where you let go), or press “All years” to zoom out. Borders still change once a year, on July 1.</p>
+        <p>Events and people come from Wikidata: battles, sieges and bombings; massacres, assassinations and attacks; uprisings, revolutions and protests; treaties, congresses and conferences; church councils and papal elections; coronations; great fires; earthquakes, floods and epidemics; world’s fairs and Olympic Games; and trials, crises, scandals and declarations. A city’s popup lists its most written-about events from 1000 on, up to 30 for a large city and 12 for a town, no more than about a third of them from any one century, and the people Wikidata records as born or died there who have articles in at least ten languages (up to 14 for a large city, 6 for a town). Wikidata sometimes records an event or a birth for a district or region rather than the city, so some are missing.</p>
+        <p>Letting go of the year slider zooms the timeline in around that year: from a few years to a few centuries, as many as it takes to hold about ten of the events on screen (or in the highlighted country), which are then listed below it. The arrows at its ends, or dragging it sideways, move along. The thin bar above it shows all the years, with the stretch on view marked: drag along it to move quickly through time (the timeline zooms in again where you let go), or press “All years” to zoom out. Borders still change once a year, on July 1.</p>
         <p>Terrain: the shaded relief is drawn from NASA’s elevation data (about 2 km to the pixel) and lit from the northwest; rivers and lakes come from Natural Earth and add detail as you zoom in. Man-made reservoirs show only from the year they were filled (the Kakhovka Reservoir until its dam was destroyed in 2023). Names of physical features (seas and straits, lakes and lagoons, mountain ranges, plains, rivers, and passes and peaks that mattered in Europe’s history) are a layer of their own, set along each feature in a serif italic, and appear as the zoom allows. A few take the name of the time: the IJsselmeer is the Zuiderzee until it was dammed in 1932. The mountain button beside the zoom buttons turns the relief and these names on and off.</p>
         <details>
           <summary>Corrections to OHM (<span id="nfix"></span>)</summary>
@@ -864,7 +868,7 @@ const GLYPH = {
   other: ['f', 'M10 7a3 3 0 1 0 0 6 3 3 0 1 0 0-6z'],
 };
 const glyph = k => { const [t, d] = GLYPH[k] || GLYPH.other; return `<path class="${t === 's' ? 'gl' : 'gf'}" d="${d}" transform="translate(-10 -10)"/>`; };
-const kindIcon = k => `<svg class="ki" viewBox="-10 -10 20 20" aria-hidden="true"><circle r="10"/>${glyph(k)}</svg>`;
+const kindIcon = k => EVENT_ICONS ? `<svg class="ki" viewBox="-10 -10 20 20" aria-hidden="true"><circle r="10"/>${glyph(k)}</svg>` : '';
 let KINDS = [], CEV = null, EVY = null, ALLEV = null, CPP = null, evDots = [], popTab = 'pop', popEv = null;
 function loadEvents() {
   if (CEV || loadEvents.busy) return; loadEvents.busy = true;
@@ -890,9 +894,13 @@ function refreshCityPop() { if (selCity == null || pop.hidden) return; keepPop =
 // a link to the English Wikipedia article (t: '' when its title is the name), or to the Wikidata item (t: 'Q…')
 const wikiA = (n, t) => `<a href="${/^Q\d+$/.test(t) ? 'https://www.wikidata.org/wiki/' + t : 'https://en.wikipedia.org/wiki/' + encodeURIComponent((t || n).replace(/ /g, '_'))}" target="_blank" rel="noopener">${esc(n)}</a>`;
 const EV_MAX = 7, MR = 10;
+// Event icons are switched off for now (October 2, 2026): no icons on the map, in the key, on the zoomed timeline or in
+// the lists; the events themselves still show as text in the city popup and below the zoomed timeline. Set to true to
+// bring the icons back.
+const EVENT_ICONS = false;
 // this year's events on screen, one per city, as icons: the highlighted country's first, then the most written about
 function eventMarks() {
-  if (!EVY) return [];
+  if (!EVENT_ICONS || !EVY) return [];
   const k = pxPerKm(), r = svg.getBoundingClientRect(); if (!k) return [];
   const fu = focusUnit(), under = controlBoxes();
   const list = (EVY.get(year) || []).map(e => { const c = CITIES[e.ci]; return { e, c, sx: (c.x - shown[0]) * k, sy: (c.y - shown[1]) * k }; })
@@ -1224,7 +1232,7 @@ function cityHtml(d) {
   // events in the city, oldest first; this year's are marked
   const evs = CEV ? CEV[c.i] || [] : null, pps = CPP ? CPP[c.i] || [] : null;
   const evList = evs == null ? `<p class="hint">Loading the events…</p>` : !evs.length ? `<p class="hint">Wikidata records no events here from 1000 on, of the kinds this map shows.</p>`
-    : `<ul class="hlist elist">${evs.map(e => { const on = e.y <= year && year <= (e.end && e.end - e.y <= 10 ? e.end : e.y);
+    : `<ul class="hlist elist${EVENT_ICONS ? '' : ' noicon'}">${evs.map(e => { const on = e.y <= year && year <= (e.end && e.end - e.y <= 10 ? e.end : e.y);
         return `<li role="button" tabindex="0" data-y="${e.y}"${on ? ' class="on"' : ''}><span class="ei">${kindIcon(e.k)}</span><span>${e.y}${e.end && e.end > e.y ? '–' + e.end : ''}</span><span>${wikiA(e.n, e.t)}</span></li>`; }).join('')}</ul>`;
   // people born or died here, by year of birth; those alive this year are marked. A row goes to the year they were
   // born here (or died here)
@@ -1617,6 +1625,7 @@ function updTov() {
   f.querySelector('path').setAttribute('d', `M${x0} 0L0 ${H}H${tr.width}L${x1} 0Z`);
 }
 new ResizeObserver(() => updTov()).observe($('timebar'));
+$('timebar').classList.toggle('nolane', !EVENT_ICONS);                    // (the lane of event icons)
 {
   const bar = $('tovbar'); let on = false;
   const at = ev => { const r = bar.getBoundingClientRect(); return Math.round(Y0 + Math.max(0, Math.min(1, (ev.clientX - r.left) / r.width)) * (NY - 1)); };
@@ -1666,7 +1675,7 @@ function renderTimeline() {
         const x = (evT(e) - tz.a) / n; if (placed.some(p => Math.abs(p.x - x) * lane.clientWidth < 14)) continue; placed.push({ e, x });
         if (placed.length >= 60) break;
       }
-      lane.innerHTML = placed.map(({ e, x }, i) => `<button type="button" data-i="${ALLEV.indexOf(e)}" style="left:${(x * 100).toFixed(2)}%" title="${e.y} ${esc(e.n)}, ${esc(CITIES[e.ci].n)}">${kindIcon(e.k)}</button>`).join('');
+      if (EVENT_ICONS) lane.innerHTML = placed.map(({ e, x }, i) => `<button type="button" data-i="${ALLEV.indexOf(e)}" style="left:${(x * 100).toFixed(2)}%" title="${e.y} ${esc(e.n)}, ${esc(CITIES[e.ci].n)}">${kindIcon(e.k)}</button>`).join('');
       list = list.filter(e => e.y >= tz.a && e.y <= tz.b).map(e => ({ ...e, t0: e.y + 0.5 }))
         .concat(evs.map(e => ({ y: e.y, t: e.n, ev: e, t0: evT(e) }))).sort((p, q) => p.t0 - q.t0);
     }
@@ -1693,7 +1702,7 @@ $('legend').innerHTML =
   `<div><svg viewBox="0 0 30 18"><defs><pattern id="lg-x" patternUnits="userSpaceOnUse" width="8" height="8" patternTransform="rotate(45)"><rect width="0.9" height="8" style="fill:${hueVar(U[osample].ov)};opacity:.32"/><rect width="8" height="0.9" style="fill:${hueVar(U[osample].ov)};opacity:.32"/></pattern></defs><rect width="30" height="18" style="fill:${fillVar(osample)}"/><rect width="30" height="18" fill="url(#lg-x)"/></svg><span>Crosshatch: occupied by another power, annexed without international recognition, or held by a breakaway government with another power's backing. The fill is the country that held the land in law; the lines take the occupier's color.</span></div>` +
   `<div><svg viewBox="0 0 30 18"><rect width="30" height="18" style="fill:var(--sunk)"/><rect x="3" y="3" width="24" height="12" style="fill:var(--alt-fill);stroke:var(--alt);stroke-width:1.6;stroke-dasharray:4 3"/></svg><span>Dashed outline: an area another source draws differently, shown when you pick it from the list of alternative borders.</span></div>` +
   `<div><svg viewBox="0 0 30 18"><rect width="30" height="18" style="fill:var(--none)"/></svg><span>No source assigns this area to a country.</span></div>` +
-  (KINDS.length ? `<p class="small muted" style="margin:4px 0 0">Icons mark an event in a city in the year shown. Tap one for the city's events.</p><div class="kinds">${KINDS.map(([k, t]) => `<span>${kindIcon(k)}${esc(t)}</span>`).join('')}</div>` : '');
+  (EVENT_ICONS && KINDS.length ? `<p class="small muted" style="margin:4px 0 0">Icons mark an event in a city in the year shown. Tap one for the city's events.</p><div class="kinds">${KINDS.map(([k, t]) => `<span>${kindIcon(k)}${esc(t)}</span>`).join('')}</div>` : '');
 }
 renderLegend();
 function renderFixes() {
