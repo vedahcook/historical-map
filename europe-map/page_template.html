@@ -399,8 +399,9 @@ function yearGeo(y) {
 
 // ---------- view (zoom and pan through the viewBox) ----------
 const VB0 = D.viewBox; // x, y, w, h in km
-const HOME = D.home;
-let view = HOME.slice();
+const HOME = D.home;                         // all of Europe: the ⤢ button goes back to it
+const START = [2870, -3615, 3355, 2030];     // the opening view, closer in: Ireland to Crimea, Denmark to Sicily
+let view = START.slice();
 function fitAspect(v) {
   const r = svg.getBoundingClientRect(); if (!r.width || !r.height) return v;
   const ar = r.width / r.height; let [x, y, w, h] = v;
