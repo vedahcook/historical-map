@@ -83,7 +83,7 @@
   // time, else P580 start) from 1000 on, with at least 3 Wikipedia articles. Kept: item, date and precision, end year,
   // number of articles, classes (P31).
   steps.events = async () => {
-    const cities = [...new Set(HM.qid.filter(Boolean))]; const ev = HM.ev = {};
+    const cities = HM.only || [...new Set(HM.qid.filter(Boolean))]; const ev = HM.ev = HM.ev || {};   // HM.only: just these cities, added to what is there
     const make = (b, hop) => `SELECT ?city ?e ?d ?pr ?d2 ?pr2 ?end ?sl (GROUP_CONCAT(DISTINCT ?c; separator=" ") AS ?cls) WHERE {
       VALUES ?city { ${V(b)} }
       { ?e wdt:P276 ?city } UNION { ?e wdt:P131 ?city } ${hop ? 'UNION { ?e wdt:P276 ?l . ?l wdt:P131 ?city }' : ''}
@@ -102,7 +102,8 @@
         if (!x.c.includes(c)) x.c.push(c);
       }
     };
-    await batched(cities, 40, b => make(b, true), (rows, b) => { if (rows) add(rows); else HM.retry = (HM.retry || []).concat(b); }, 'events');
+    HM.retry = [];
+    await batched(cities, 40, b => make(b, true), (rows, b) => { if (rows) add(rows); else HM.retry = HM.retry.concat(b); }, 'events');
     // a city whose query timed out with the extra hop: once more without it
     for (const c of HM.retry || []) add(await sparql(make([c], false)));
     HM.status = 'events done'; note('events: ' + Object.keys(ev).length);
@@ -124,7 +125,7 @@
 
   // 4. people born (P19) or died (P20) in each city, or in a place in it, with at least 10 Wikipedia articles
   steps.people = async () => {
-    const cities = [...new Set(HM.qid.filter(Boolean))]; const pp = HM.pp = {};
+    const cities = HM.only || [...new Set(HM.qid.filter(Boolean))]; const pp = HM.pp = HM.pp || {};
     const make = (b, hop) => `SELECT ?city ?p ?k ?sl ?b ?d WHERE {
       VALUES ?city { ${V(b)} }
       { ?p wdt:P19 ?city BIND("b" AS ?k) } UNION { ?p wdt:P20 ?city BIND("d" AS ?k) }
