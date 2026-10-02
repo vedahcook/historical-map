@@ -1,45 +1,763 @@
 {
-  "about": "Places in Europe's physical geography that mattered in its history and that Natural Earth does not have: passes, gorges and gaps, straits, a few peaks, and some plains, marshes and forests. Positions from Wikidata (October 2, 2026) except where noted. Fields: name, kind, longitude, latitude, rank (1 shows first as you zoom in, 3 last), English Wikipedia article.",
-  "kinds": {"pass": "mountain pass", "gorge": "gorge", "gap": "gap between mountain ranges", "strait": "strait", "peak": "mountain", "plain": "plain", "forest": "forest or wooded hills", "marsh": "marshland", "field": "battlefield plain"},
+  "about": "Places in Europe's physical geography that mattered in its history and that Natural Earth does not have: passes, gorges and gaps, straits, a few peaks, and some plains, marshes and forests. Positions from Wikidata (October 2, 2026) except where noted. 'features' fields: name, kind, longitude, latitude, rank (1 shows first as you zoom in, 3 last), English Wikipedia article.",
+  "kinds": {
+    "pass": "mountain pass",
+    "gorge": "gorge",
+    "gap": "gap between mountain ranges",
+    "strait": "strait",
+    "peak": "mountain",
+    "plain": "plain",
+    "forest": "forest or wooded hills",
+    "marsh": "marshland",
+    "field": "battlefield plain"
+  },
   "features": [
-    ["Brenner Pass", "pass", 11.507, 47.007, 1, "Brenner Pass"],
-    ["Great St Bernard Pass", "pass", 7.170, 45.869, 2, "Great St Bernard Pass"],
-    ["Little St Bernard Pass", "pass", 6.884, 45.680, 3, "Little St Bernard Pass"],
-    ["Mont Cenis Pass", "pass", 6.900, 45.250, 2, "Mont Cenis"],
-    ["Simplon Pass", "pass", 8.032, 46.250, 3, "Simplon Pass"],
-    ["Gotthard Pass", "pass", 8.562, 46.559, 2, "Gotthard Pass"],
-    ["Roncevaux Pass", "pass", -1.324, 43.020, 2, "Roncevaux Pass"],
-    ["Somosierra Pass", "pass", -3.581, 41.150, 3, "Somosierra"],
-    ["Shipka Pass", "pass", 25.317, 42.767, 2, "Shipka Pass"],
-    ["Dukla Pass", "pass", 21.696, 49.418, 3, "Dukla Pass"],
-    ["Thermopylae", "pass", 22.536, 38.796, 2, "Thermopylae"],
-    ["Cilician Gates", "pass", 34.786, 37.285, 2, "Cilician Gates"],
-    ["Vale of Tempe", "gorge", 22.547, 39.873, 3, "Vale of Tempe"],
-    ["Darial Gorge", "gorge", 44.623, 42.745, 2, "Darial Gorge"],
-    ["Iron Gates", "gorge", 22.530, 44.671, 1, "Iron Gates"],
-    ["Moravian Gate", "gap", 17.756, 49.591, 2, "Moravian Gate"],
-    ["Belfort Gap", "gap", 6.995, 47.604, 3, "Belfort Gap"],
-    ["Fulda Gap", "gap", 9.670, 50.840, 3, "Fulda Gap"],
-    ["Strait of Dover", "strait", 1.450, 51.000, 1, "Strait of Dover"],
-    ["Strait of Messina", "strait", 15.633, 38.246, 2, "Strait of Messina"],
-    ["Strait of Otranto", "strait", 18.926, 40.219, 2, "Strait of Otranto"],
-    ["Kerch Strait", "strait", 36.650, 45.350, 2, "Kerch Strait"],
-    ["Mont Blanc", "peak", 6.865, 45.833, 1, "Mont Blanc"],
-    ["Mount Etna", "peak", 14.993, 37.751, 1, "Mount Etna"],
-    ["Mount Vesuvius", "peak", 14.429, 40.823, 2, "Mount Vesuvius"],
-    ["Mount Olympus", "peak", 22.350, 40.083, 2, "Mount Olympus"],
-    ["Mount Athos", "peak", 24.327, 40.158, 2, "Mount Athos"],
-    ["Mount Elbrus", "peak", 42.438, 43.353, 1, "Mount Elbrus"],
-    ["Mount Ararat", "peak", 44.298, 39.702, 2, "Mount Ararat"],
-    ["Pripet Marshes", "marsh", 27.500, 52.000, 1, "Pinsk Marshes"],
-    ["Black Forest", "forest", 8.150, 48.300, 2, "Black Forest"],
-    ["Teutoburg Forest", "forest", 8.814, 51.896, 3, "Teutoburg Forest"],
-    ["Thuringian Forest", "forest", 10.833, 50.667, 3, "Thuringian Forest"],
-    ["Po Valley", "plain", 9.799, 45.330, 1, "Po Valley"],
-    ["Wallachian Plain", "plain", 26.250, 44.500, 2, "Wallachian Plain"],
-    ["Kosovo Field", "field", 21.085, 42.718, 3, "Kosovo field"],
-    ["Marchfeld", "field", 16.667, 48.250, 3, "Marchfeld"],
-    ["Meseta", "plain", -3.500, 40.500, 1, "Meseta Central"]
+    [
+      "Brenner Pass",
+      "pass",
+      11.507,
+      47.007,
+      1,
+      "Brenner Pass"
+    ],
+    [
+      "Great St Bernard Pass",
+      "pass",
+      7.17,
+      45.869,
+      2,
+      "Great St Bernard Pass"
+    ],
+    [
+      "Little St Bernard Pass",
+      "pass",
+      6.884,
+      45.68,
+      3,
+      "Little St Bernard Pass"
+    ],
+    [
+      "Mont Cenis Pass",
+      "pass",
+      6.9,
+      45.25,
+      2,
+      "Mont Cenis"
+    ],
+    [
+      "Simplon Pass",
+      "pass",
+      8.032,
+      46.25,
+      3,
+      "Simplon Pass"
+    ],
+    [
+      "Gotthard Pass",
+      "pass",
+      8.562,
+      46.559,
+      2,
+      "Gotthard Pass"
+    ],
+    [
+      "Roncevaux Pass",
+      "pass",
+      -1.324,
+      43.02,
+      2,
+      "Roncevaux Pass"
+    ],
+    [
+      "Somosierra Pass",
+      "pass",
+      -3.581,
+      41.15,
+      3,
+      "Somosierra"
+    ],
+    [
+      "Shipka Pass",
+      "pass",
+      25.317,
+      42.767,
+      2,
+      "Shipka Pass"
+    ],
+    [
+      "Dukla Pass",
+      "pass",
+      21.696,
+      49.418,
+      3,
+      "Dukla Pass"
+    ],
+    [
+      "Thermopylae",
+      "pass",
+      22.536,
+      38.796,
+      2,
+      "Thermopylae"
+    ],
+    [
+      "Cilician Gates",
+      "pass",
+      34.786,
+      37.285,
+      2,
+      "Cilician Gates"
+    ],
+    [
+      "Vale of Tempe",
+      "gorge",
+      22.547,
+      39.873,
+      3,
+      "Vale of Tempe"
+    ],
+    [
+      "Darial Gorge",
+      "gorge",
+      44.623,
+      42.745,
+      2,
+      "Darial Gorge"
+    ],
+    [
+      "Iron Gates",
+      "gorge",
+      22.53,
+      44.671,
+      1,
+      "Iron Gates"
+    ],
+    [
+      "Moravian Gate",
+      "gap",
+      17.756,
+      49.591,
+      2,
+      "Moravian Gate"
+    ],
+    [
+      "Belfort Gap",
+      "gap",
+      6.995,
+      47.604,
+      3,
+      "Belfort Gap"
+    ],
+    [
+      "Fulda Gap",
+      "gap",
+      9.67,
+      50.84,
+      3,
+      "Fulda Gap"
+    ],
+    [
+      "Strait of Dover",
+      "strait",
+      1.45,
+      51.0,
+      1,
+      "Strait of Dover"
+    ],
+    [
+      "Strait of Messina",
+      "strait",
+      15.633,
+      38.246,
+      2,
+      "Strait of Messina"
+    ],
+    [
+      "Strait of Otranto",
+      "strait",
+      18.926,
+      40.219,
+      2,
+      "Strait of Otranto"
+    ],
+    [
+      "Kerch Strait",
+      "strait",
+      36.65,
+      45.35,
+      2,
+      "Kerch Strait"
+    ],
+    [
+      "Mont Blanc",
+      "peak",
+      6.865,
+      45.833,
+      1,
+      "Mont Blanc"
+    ],
+    [
+      "Mount Etna",
+      "peak",
+      14.993,
+      37.751,
+      1,
+      "Mount Etna"
+    ],
+    [
+      "Mount Vesuvius",
+      "peak",
+      14.429,
+      40.823,
+      2,
+      "Mount Vesuvius"
+    ],
+    [
+      "Mount Olympus",
+      "peak",
+      22.35,
+      40.083,
+      2,
+      "Mount Olympus"
+    ],
+    [
+      "Mount Athos",
+      "peak",
+      24.327,
+      40.158,
+      2,
+      "Mount Athos"
+    ],
+    [
+      "Mount Elbrus",
+      "peak",
+      42.438,
+      43.353,
+      1,
+      "Mount Elbrus"
+    ],
+    [
+      "Mount Ararat",
+      "peak",
+      44.298,
+      39.702,
+      2,
+      "Mount Ararat"
+    ],
+    [
+      "Pripet Marshes",
+      "marsh",
+      27.5,
+      52.0,
+      1,
+      "Pinsk Marshes"
+    ],
+    [
+      "Black Forest",
+      "forest",
+      8.15,
+      48.3,
+      2,
+      "Black Forest"
+    ],
+    [
+      "Teutoburg Forest",
+      "forest",
+      8.814,
+      51.896,
+      3,
+      "Teutoburg Forest"
+    ],
+    [
+      "Thuringian Forest",
+      "forest",
+      10.833,
+      50.667,
+      3,
+      "Thuringian Forest"
+    ],
+    [
+      "Po Valley",
+      "plain",
+      9.799,
+      45.33,
+      1,
+      "Po Valley"
+    ],
+    [
+      "Wallachian Plain",
+      "plain",
+      26.25,
+      44.5,
+      2,
+      "Wallachian Plain"
+    ],
+    [
+      "Kosovo Field",
+      "field",
+      21.085,
+      42.718,
+      3,
+      "Kosovo field"
+    ],
+    [
+      "Marchfeld",
+      "field",
+      16.667,
+      48.25,
+      3,
+      "Marchfeld"
+    ],
+    [
+      "Meseta",
+      "plain",
+      -3.5,
+      40.5,
+      1,
+      "Meseta Central"
+    ]
   ],
-  "notes": "Thermopylae, the Pripet (Pinsk) Marshes and the Somosierra pass are placed by hand: Wikidata's search found the wrong item or none."
+  "notes": "Thermopylae, the Pripet (Pinsk) Marshes and the Somosierra pass are placed by hand: Wikidata's search found the wrong item or none.",
+  "lakes_about": "Lakes and lagoons to name: name, longitude, latitude (a point in the lake, used to find its outline in Natural Earth's lakes), the zoom level from which the name may show (about 4 is all of Europe, 5 the opening view, 7 a region), English Wikipedia article, and optionally earlier names as [until year, name].",
+  "lakes": [
+    [
+      "Lake Ladoga",
+      31.5,
+      60.8,
+      4.0,
+      "Lake Ladoga"
+    ],
+    [
+      "Lake Onega",
+      35.5,
+      61.7,
+      4.3,
+      "Lake Onega"
+    ],
+    [
+      "Vänern",
+      13.3,
+      58.9,
+      4.5,
+      "Vänern"
+    ],
+    [
+      "Vättern",
+      14.55,
+      58.3,
+      5.2,
+      "Vättern"
+    ],
+    [
+      "Mälaren",
+      17.0,
+      59.4,
+      5.4,
+      "Mälaren"
+    ],
+    [
+      "Hjälmaren",
+      15.9,
+      59.25,
+      6.6,
+      "Hjälmaren"
+    ],
+    [
+      "Saimaa",
+      28.3,
+      61.3,
+      5.0,
+      "Saimaa",
+      "Saimaa"
+    ],
+    [
+      "Päijänne",
+      25.5,
+      61.5,
+      5.8,
+      "Päijänne",
+      "Päijänne"
+    ],
+    [
+      "Lake Inari",
+      27.8,
+      69.0,
+      6.0,
+      "Lake Inari",
+      "Inari"
+    ],
+    [
+      "Oulujärvi",
+      27.2,
+      64.3,
+      6.4,
+      "Oulujärvi",
+      "Oulujärvi"
+    ],
+    [
+      "Lake Peipus",
+      27.5,
+      58.75,
+      4.8,
+      "Lake Peipus",
+      "Peipus"
+    ],
+    [
+      "Lake Ilmen",
+      31.3,
+      58.27,
+      5.6,
+      "Lake Ilmen",
+      "Ilmen"
+    ],
+    [
+      "Lake Beloye",
+      37.7,
+      60.18,
+      6.4,
+      "Lake Beloye",
+      "Beloe"
+    ],
+    [
+      "Lake Geneva",
+      6.55,
+      46.45,
+      5.0,
+      "Lake Geneva",
+      "Geneva"
+    ],
+    [
+      "Lake Constance",
+      9.35,
+      47.6,
+      5.0,
+      "Lake Constance",
+      "Constance"
+    ],
+    [
+      "Lake Balaton",
+      17.7,
+      46.83,
+      5.3,
+      "Lake Balaton",
+      "Balaton"
+    ],
+    [
+      "Lake Neusiedl",
+      16.77,
+      47.83,
+      6.6,
+      "Lake Neusiedl",
+      "Neusiedl"
+    ],
+    [
+      "Lake Garda",
+      10.68,
+      45.6,
+      6.0,
+      "Lake Garda",
+      "Garda"
+    ],
+    [
+      "Lake Como",
+      9.27,
+      46.0,
+      6.4,
+      "Lake Como",
+      "Como"
+    ],
+    [
+      "Lake Maggiore",
+      8.63,
+      45.95,
+      6.4,
+      "Lake Maggiore"
+    ],
+    [
+      "Lake Lugano",
+      8.97,
+      45.98,
+      7.2,
+      "Lake Lugano",
+      "Lugano"
+    ],
+    [
+      "Lake Lucerne",
+      8.43,
+      47.0,
+      6.6,
+      "Lake Lucerne",
+      "Lucerne"
+    ],
+    [
+      "Lake Zurich",
+      8.7,
+      47.25,
+      6.8,
+      "Lake Zurich",
+      "Zurich"
+    ],
+    [
+      "Lake Neuchâtel",
+      6.85,
+      46.9,
+      6.8,
+      "Lake Neuchâtel",
+      "Neuchâtel"
+    ],
+    [
+      "Lake Trasimeno",
+      12.1,
+      43.13,
+      7.0,
+      "Lake Trasimeno",
+      "Trasimeno"
+    ],
+    [
+      "Lake Bolsena",
+      11.93,
+      42.6,
+      7.2,
+      "Lake Bolsena",
+      "Bolsena"
+    ],
+    [
+      "Chiemsee",
+      12.45,
+      47.87,
+      7.2,
+      "Chiemsee",
+      "Chiemsee"
+    ],
+    [
+      "Müritz",
+      12.68,
+      53.45,
+      7.2,
+      "Müritz",
+      "Müritz"
+    ],
+    [
+      "Lake Ohrid",
+      20.75,
+      41.03,
+      6.0,
+      "Lake Ohrid"
+    ],
+    [
+      "Lake Prespa",
+      21.05,
+      40.9,
+      7.0,
+      "Lake Prespa"
+    ],
+    [
+      "Lake Scutari",
+      19.3,
+      42.2,
+      6.0,
+      "Lake Skadar",
+      "Skadar"
+    ],
+    [
+      "Lake Doiran",
+      22.75,
+      41.2,
+      7.2,
+      "Lake Doiran",
+      "Dojran"
+    ],
+    [
+      "Lough Neagh",
+      -6.42,
+      54.62,
+      5.8,
+      "Lough Neagh",
+      "Neagh"
+    ],
+    [
+      "Lough Erne",
+      -7.75,
+      54.45,
+      6.8,
+      "Lough Erne",
+      "Lower Erne"
+    ],
+    [
+      "Loch Ness",
+      -4.5,
+      57.27,
+      6.8,
+      "Loch Ness",
+      "Loch Ness"
+    ],
+    [
+      "Loch Lomond",
+      -4.6,
+      56.1,
+      7.0,
+      "Loch Lomond",
+      "Loch Lomond"
+    ],
+    [
+      "Mjøsa",
+      10.9,
+      60.8,
+      6.6,
+      "Mjøsa",
+      "Mjøsa"
+    ],
+    [
+      "Siljan",
+      14.8,
+      60.85,
+      6.8,
+      "Siljan (lake)",
+      "Siljan"
+    ],
+    [
+      "IJsselmeer",
+      5.4,
+      52.8,
+      5.2,
+      "IJsselmeer",
+      "IJsselmeer",
+      [
+        [
+          1932,
+          "Zuiderzee"
+        ]
+      ]
+    ],
+    [
+      "Vistula Lagoon",
+      19.9,
+      54.45,
+      6.0,
+      "Vistula Lagoon",
+      "Vistula Lagoon"
+    ],
+    [
+      "Syvash",
+      34.9,
+      45.9,
+      6.0,
+      "Syvash",
+      "Syvash"
+    ],
+    [
+      "Lake Van",
+      42.9,
+      38.6,
+      5.0,
+      "Lake Van",
+      "Van"
+    ],
+    [
+      "Lake Urmia",
+      45.4,
+      37.7,
+      5.6,
+      "Lake Urmia",
+      "Urmia"
+    ],
+    [
+      "Lake Sevan",
+      45.3,
+      40.4,
+      5.8,
+      "Lake Sevan",
+      "Sevan"
+    ],
+    [
+      "Lake Tuz",
+      33.4,
+      38.8,
+      5.8,
+      "Lake Tuz",
+      "Tuz"
+    ]
+  ],
+  "spines_about": "Hand-drawn lines (longitude, latitude) for names that Natural Earth's shapes place badly: the Atlantic (its shape is the whole ocean) and the Mediterranean (its middle line runs off the bottom of the map). 'alt': other lines to try when the first is off screen or blocked.",
+  "spines": {
+    "Atlantic Ocean": {
+      "kind": "sea",
+      "z": 3.0,
+      "rank": 1,
+      "line": [
+        [
+          -29.67,
+          43.97
+        ],
+        [
+          -24.39,
+          44.7
+        ],
+        [
+          -18.76,
+          45.9
+        ],
+        [
+          -13.21,
+          47.38
+        ]
+      ],
+      "alt": [
+        [
+          [
+            -11.4,
+            36.6
+          ],
+          [
+            -12.2,
+            39.0
+          ],
+          [
+            -12.4,
+            41.5
+          ],
+          [
+            -12.0,
+            44.2
+          ]
+        ]
+      ]
+    },
+    "Mediterranean Sea": {
+      "line": [
+        [
+          -2.5,
+          36.3
+        ],
+        [
+          0.5,
+          37.4
+        ],
+        [
+          4.5,
+          38.0
+        ],
+        [
+          8.5,
+          38.2
+        ],
+        [
+          11.0,
+          37.6
+        ],
+        [
+          14.5,
+          36.4
+        ],
+        [
+          18.5,
+          35.9
+        ],
+        [
+          22.5,
+          35.3
+        ]
+      ]
+    }
+  }
 }

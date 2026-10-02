@@ -3,9 +3,11 @@ peaks. Writes them into terrain.json ('feat'), which the page draws as its own l
 
 Usage (in europe-map/): python3 terrain/make_features.py <folder with the Natural Earth sources> [terrain.json]
 
-Sources: Natural Earth 10m marine areas (seas, gulfs, straits) and geography regions (ranges, plains, uplands, deltas),
-public domain; terrain/features_extra.json, a short list of passes, gorges, gaps, straits, peaks, marshes and forests
-that mattered in Europe's history, placed from Wikidata.
+Sources: Natural Earth 10m marine areas (seas, gulfs, straits, lagoons), lakes and geography regions (ranges, plains,
+uplands, deltas), public domain; terrain/features_extra.json: a short list of passes, gorges, gaps, straits, peaks,
+marshes and forests that mattered in Europe's history, placed from Wikidata; the lakes to name (found in Natural Earth's
+lakes by name or by a point inside them), some with earlier names; and hand-drawn lines for the Atlantic and the
+Mediterranean.
 
 Each area (a sea, a range) gets a 'spine': the longest line through the middle of its shape (the shape drawn on a grid,
 thinned to its skeleton, and the longest path through that taken and smoothed). The page sets the name along the part
@@ -75,18 +77,69 @@ def add(name, kind, z, rank, geom=None, at=None, wiki=''):
     if wiki: f['wk'] = wiki
     feats.append(f)
 
-# ---------- seas, gulfs and straits ----------
+# a lake's name goes along its middle line when the lake is large enough on screen, and beside it otherwise, so each
+# also keeps a point inside it and its outline's box
+def lakebox(f, g):
+    f['bb'] = [round(v, 1) for v in g.bounds]
+    c = g.representative_point(); f['p'] = [round(c.x, 1), round(c.y, 1)]
+
+# ---------- seas, gulfs, straits and lagoons ----------
 MARINE = {'sea': 'sea', 'ocean': 'sea', 'bay': 'gulf', 'gulf': 'gulf', 'channel': 'gulf', 'sound': 'strait', 'strait': 'strait', 'fjord': 'gulf'}
-SKIP = {'Greenland Sea', 'Scoresby Sound', 'Denmark Strait', 'Boknafjord', 'Vestfjorden', 'Sognefjord', 'Trondheimsfjord', 'Gulf of Gabès', 'Sea of the Hebrides', 'Atlantic Ocean', 'Barents Sea', 'White Sea', 'Caspian Sea'}
+MARINE['lagoon'] = 'lake'
+SKIP = {'Greenland Sea', 'Scoresby Sound', 'Denmark Strait', 'Boknafjord', 'Vestfjorden', 'Sognefjord', 'Trondheimsfjord', 'Gulf of Gabès', 'Sea of the Hebrides', 'Atlantic Ocean'}
+MRENAME = {'Kaliningrad': 'Curonian Lagoon'}                 # Natural Earth's name for the Curonian Lagoon
+MKIND = {'Wadden Sea': 'gulf'}
+MZ = {'Curonian Lagoon': 6.0, 'Szczecin Lagoon': 6.4, 'Wadden Sea': 6.8}
 for f in json.load(open(f'{SRC}/ne_10m_geography_marine_polys.geojson'))['features']:
     p = f['properties']; name = p.get('name_en') or p.get('name'); fc = (p.get('featurecla') or '').lower()
     kind = MARINE.get(fc)
     if not name or not kind or name in SKIP: continue
+    name = MRENAME.get(name, name); kind = MKIND.get(name, kind)
     g = shapely.make_valid(shape(f['geometry']))
     if not g.intersects(VIEW): continue
     g = shapely.make_valid(proj(g.intersection(WIDE)))
     if g.is_empty: continue
-    add(name, kind, float(p.get('min_label') or 6), int(p.get('scalerank') or 5), geom=g)
+    add(name, kind, MZ.get(name, float(p.get('min_label') or 6)), int(p.get('scalerank') or 5), geom=g)
+    if kind == 'lake': lakebox(feats[-1], g)
+
+# ---------- lakes: the ones in features_extra.json, with their outlines from Natural Earth ----------
+X = json.load(open(__file__.rsplit('/', 1)[0] + '/features_extra.json'))
+LAKES = []
+for fn in ('ne_10m_lakes.geojson', 'ne_10m_lakes_europe.geojson'):
+    for f in json.load(open(f'{SRC}/{fn}'))['features']:
+        g = shapely.make_valid(shape(f['geometry']))
+        if not g.intersects(WIDE): continue
+        p = f['properties']; LAKES.append((' | '.join(str(p.get(k) or '') for k in ('name', 'name_en', 'name_alt')), g))
+from shapely.geometry import Point
+from shapely.ops import unary_union
+for row in X['lakes']:
+    name, lon, lat, z, wiki = row[:5]; match = row[5] if len(row) > 5 else None; old = row[6] if len(row) > 6 else None
+    pt0 = Point(lon, lat)
+    parts = [g for nm, g in LAKES if match and match in nm.split(' | ')] if match else []
+    if not parts: parts = [g for nm, g in LAKES if g.contains(pt0)]
+    if not parts:
+        near = min(LAKES, key=lambda r: r[1].distance(pt0))
+        if near[1].distance(pt0) < 0.08: parts = [near[1]]
+    if parts:
+        # pieces of the same lake drawn separately (the Vistula Lagoon on each side of the border) are joined
+        g = shapely.make_valid(proj(unary_union(parts).buffer(0.003).buffer(-0.003)))
+        # only the piece at the point, and pieces touching it (Natural Earth's two Lakes Como take in Lake Lugano)
+        here = Point(pt(lon, lat)); pcs = list(shapely.get_parts(g)); main = min(pcs, key=lambda q: q.distance(here))
+        g = unary_union([q for q in pcs if q.distance(main) < 2])
+        add(name, 'lake', z, 4, geom=g, wiki=wiki); lakebox(feats[-1], g)
+    else:
+        add(name, 'lake', z, 4, at=pt(lon, lat), wiki=wiki); print('no outline:', name)
+    feats[-1]['p'] = list(pt(lon, lat)) if not parts else feats[-1]['p']
+    if old: feats[-1]['old'] = old
+
+# ---------- hand-drawn lines ----------
+def hand_spines():
+    for name, d in X.get('spines', {}).items():
+        line = [pt(lon, lat) for lon, lat in d['line']]
+        f = next((f for f in feats if f['n'] == name), None)
+        if f is None: add(name, d['kind'], d['z'], d['rank'], at=(0, 0)); f = feats[-1]; f.pop('p')
+        f['c'] = [c for xy in line for c in xy]; f['len'] = round(LineString(line).length); f.setdefault('w', 600)
+        if d.get('alt'): f['alt'] = [[c for lon, lat in ln for c in pt(lon, lat)] for ln in d['alt']]
 
 # ---------- mountain ranges, plains and uplands ----------
 KEEP = {'Range/mtn': 'range', 'Plateau': 'lowland', 'Plain': 'lowland', 'Lowland': 'lowland', 'Delta': 'lowland', 'Tundra': 'lowland'}
@@ -105,12 +158,12 @@ for f in json.load(open(f'{SRC}/ne_10m_geography_regions_polys.geojson'))['featu
     add(name, kind, float(p['MIN_LABEL']), int(p['SCALERANK']), geom=shapely.make_valid(proj(g.intersection(WIDE))))
 
 # ---------- passes, gorges, peaks and the rest, from the hand-made list ----------
-X = json.load(open(__file__.rsplit('/', 1)[0] + '/features_extra.json'))
 STYLE = {'pass': 'pass', 'gorge': 'pass', 'gap': 'pass', 'strait': 'strait', 'peak': 'peak', 'plain': 'lowland', 'forest': 'lowland', 'marsh': 'lowland', 'field': 'lowland'}
 for name, kind, lon, lat, rank, wiki in X['features']:
     add(name, STYLE[kind], {1: 4.8, 2: 5.5, 3: 6.2}[rank], rank + 3, at=pt(lon, lat), wiki=wiki)
     feats[-1]['t'] = kind
 
+hand_spines()
 T = json.load(open(TJ)); T.pop('names', None); T['feat'] = feats
 json.dump(T, open(TJ, 'w'), separators=(',', ':'))
 print(len(feats), 'features:', collections.Counter(f['k'] for f in feats))

@@ -183,7 +183,7 @@ button, select, input { font: inherit; color: inherit; }
 #year { width: 100%; accent-color: var(--accent); margin: 0; }
 .ticks { position: relative; height: 16px; font-size: 0.72rem; color: var(--faint); }
 .ticks span { position: absolute; transform: translateX(-50%); }
-/* the zoomed timeline: a lane of event icons over the slider, arrows to move along, and a button back to all years */
+/* the zoomed timeline: a lane of event icons over the slider, arrows to move along, and an "All years" button to zoom out */
 .tlane { position: relative; height: 0; transition: height .15s; }
 .timebar.zoomed .tlane { height: 20px; }
 .tlane button { position: absolute; top: 1px; width: 18px; height: 18px; margin-left: -9px; padding: 0; border: 0; background: none; cursor: pointer; border-radius: 50%; }
@@ -191,9 +191,20 @@ button, select, input { font: inherit; color: inherit; }
 .tlane button.on .ki circle, .events button[aria-pressed="true"] .ki circle { fill: var(--accent); }
 .track { position: relative; }
 .timebar.zoomed .spark, .timebar.zoomed .tlane { cursor: grab; touch-action: pan-y; }
-.tctl .tz { display: none; width: auto; padding: 0 9px; font-size: 0.78rem; font-weight: 600; color: var(--muted); white-space: nowrap; }
-.timebar.zoomed .tctl .tz { display: grid; }
-.tpan { position: absolute; top: 18px; display: none; width: 24px; height: 24px; border: 1px solid var(--line); border-radius: 50%; background: var(--surface); color: var(--muted); cursor: pointer; font-size: 0.9rem; line-height: 1; padding: 0; z-index: 1; }
+.tctl .tz { display: none; width: auto; padding: 0 11px 0 8px; gap: 5px; font-size: 0.8rem; font-weight: 600; color: var(--accent); border-color: var(--accent); white-space: nowrap; }
+.tctl .tz svg { width: 15px; height: 15px; }
+.timebar.zoomed .tctl .tz { display: flex; align-items: center; }
+/* zoomed in: a bar of all the years above, with the stretch shown marked and joined to the timeline below it */
+.tov { display: none; align-items: center; gap: 6px; height: 18px; font-size: 0.68rem; color: var(--faint); font-variant-numeric: tabular-nums; }
+.timebar.zoomed .tov { display: flex; }
+.tovbar { position: relative; flex: 1; height: 18px; cursor: pointer; touch-action: none; }
+.tovbar::before { content: ""; position: absolute; left: 0; right: 0; top: 7px; height: 4px; border-radius: 2px; background: var(--line); }
+.tovwin { position: absolute; top: 3px; height: 12px; min-width: 7px; border: 1.5px solid var(--accent); border-radius: 3px; background: color-mix(in srgb, var(--accent) 22%, var(--surface)); box-sizing: border-box; pointer-events: none; }
+.tovbar:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 3px; }
+.tfun { display: none; width: 100%; height: 12px; overflow: visible; }
+.timebar.zoomed .tfun { display: block; }
+.tfun path { fill: color-mix(in srgb, var(--accent) 7%, transparent); stroke: var(--accent); stroke-opacity: 0.4; stroke-width: 1; }
+.tpan { position: absolute; top: 48px; display: none; width: 24px; height: 24px; border: 1px solid var(--line); border-radius: 50%; background: var(--surface); color: var(--muted); cursor: pointer; font-size: 0.9rem; line-height: 1; padding: 0; z-index: 1; }
 .timebar.zoomed .tpan { display: grid; place-items: center; }
 .tpan.l { left: -12px; } .tpan.r { right: -12px; }
 .events button .ki { width: 15px; height: 15px; vertical-align: -3px; margin-right: 4px; }
@@ -283,7 +294,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
           <button type="button" id="zin" aria-label="Zoom in">+</button>
           <button type="button" id="zout" aria-label="Zoom out">−</button>
           <button type="button" id="zreset" aria-label="Show all of Europe" title="Show all of Europe">⤢</button>
-          <button type="button" id="terrain" class="tog" aria-pressed="true" aria-label="Terrain: shaded relief and the names of seas, rivers, mountains and plains" title="Terrain and physical names"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M1.5 16.5 7 7.2l2.6 4.3 1.9-2.9 7 7.9z"/><path d="M5.6 9.6 7 7.2l1.5 2.4-1.5-.6z" style="fill:var(--surface);opacity:.75"/></svg></button>
+          <button type="button" id="terrain" class="tog" aria-pressed="true" aria-label="Terrain: shaded relief and the names of seas, lakes, rivers, mountains and plains" title="Terrain and physical names"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M1.5 16.5 7 7.2l2.6 4.3 1.9-2.9 7 7.9z"/><path d="M5.6 9.6 7 7.2l1.5 2.4-1.5-.6z" style="fill:var(--surface);opacity:.75"/></svg></button>
         </div>
         <div class="yearstamp num" id="stamp" aria-hidden="true">1815</div>
         <div class="mappop" id="mappop" role="dialog" aria-label="Details" hidden></div>
@@ -294,9 +305,11 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
           <button type="button" id="prev" aria-label="Previous year"><svg viewBox="0 0 16 16"><path d="M10.5 3 5 8l5.5 5z"/></svg></button>
           <button type="button" id="play" class="play" aria-label="Play through the years"><svg viewBox="0 0 16 16" id="playicon"><path d="M4 2.5v11L13 8z"/></svg></button>
           <button type="button" id="next" aria-label="Next year"><svg viewBox="0 0 16 16"><path d="M5.5 3 11 8l-5.5 5z"/></svg></button>
-          <button type="button" id="tzout" class="tz" aria-label="Show all years on the timeline" title="Show all years">1000–2026</button>
+          <button type="button" id="tzout" class="tz" aria-label="Zoom the timeline out to all years" title="Zoom out to all years"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="4.6" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M4.6 6.8h4.4M10.3 10.3 14 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>All years</button>
         </div>
-        <div class="track">
+        <div class="track" id="track">
+          <div class="tov" id="tov"><span>1000</span><div class="tovbar" id="tovbar" role="slider" tabindex="0" aria-label="All years: drag to move quickly through time" aria-valuemin="1000" aria-valuemax="2026"><div class="tovwin" id="tovwin"></div></div><span>2026</span></div>
+          <svg class="tfun" id="tfun" aria-hidden="true"><path/></svg>
           <div class="tlane" id="tlane" aria-label="Events in these years"></div>
           <svg class="spark" id="spark" preserveAspectRatio="none" aria-hidden="true"></svg>
           <button type="button" class="tpan l" id="tpl" aria-label="Earlier years">‹</button>
@@ -321,8 +334,8 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
         <p>Alternative borders compare OHM with CShapes-Europe from 1816 and with Cliopatria before that. They count only when a source puts an area of at least 400 km² (5,000 km² for the coarser Cliopatria) in a different country for longer than a year. Territories that governed themselves under an overlord count as part of the overlord for this comparison, because the sources disagree on whether to show them.</p>
         <p>Cities appear when a country is highlighted: the ten largest of its cities on screen that year, so zooming in brings in smaller towns. They come from about 4,900 cities and towns (Europe's largest by 1900, those that grew large after, large towns of 1000–1800, and every town that reached about 20,000 people), placed in whichever country held them that year. Tap one for its population. Figures come from censuses where there is one for that year; between figures the map estimates, assuming steady growth, and says so. A hollow dot means there is no figure within ten years (25 years before 1800, 50 before 1500); the map then gives the nearest figures instead of an estimate. The smaller towns’ figures come from Wikidata and from population tables in Wikipedia articles (checked against Wikidata), so they are thinner in Britain, Portugal, Turkey and before the mid-1800s, and zoomed-in views there can show fewer than ten. Before 1800 the figures are mostly Jan de Vries’s estimates every 50 years for towns that reached 10,000 people, which cover western and central Europe but not the Ottoman lands or Russia. Before 1500 there are figures for only about 60 cities, mostly Tertius Chandler’s estimates, so many countries show few or none. Early figures are estimates, some for the wider city, so they are not always comparable with later census counts.</p>
         <p>Events and people come from Wikidata. An icon marks an event located in a city in the year shown: a battle, siege or bombing; a massacre, assassination or attack; an uprising, revolution or protest; a treaty, congress or conference; a church council or papal election; a coronation; a great fire; an earthquake, flood or epidemic; a world’s fair or Olympic Games; or a trial, crisis, scandal or declaration. Up to seven show at a time: the most written about (by the number of Wikipedia languages with an article), the highlighted country’s first. A city’s popup lists its most written-about events from 1000 on, up to 30 for a large city and 12 for a town, no more than about a third of them from any one century, and the people Wikidata records as born or died there who have articles in at least ten languages (up to 14 for a large city, 6 for a town). Wikidata sometimes records an event or a birth for a district or region rather than the city, so some are missing.</p>
-        <p>Letting go of the year slider zooms the timeline in around that year: from a few years to a few centuries, as many as it takes to hold about ten of the events on screen (or in the highlighted country), which then show at their dates. The arrows at its ends, or dragging it sideways, move along; the button with the full range of years zooms back out. Borders still change once a year, on July 1.</p>
-        <p>Terrain: the shaded relief is drawn from NASA’s elevation data (about 2 km to the pixel) and lit from the northwest; rivers and lakes come from Natural Earth and add detail as you zoom in. Names of physical features (seas and straits, mountain ranges, plains, rivers, and passes and peaks that mattered in Europe’s history) are a layer of their own, set along each feature in a serif italic, and appear as the zoom allows. The mountain button beside the zoom buttons turns the relief and these names on and off.</p>
+        <p>Letting go of the year slider zooms the timeline in around that year: from a few years to a few centuries, as many as it takes to hold about ten of the events on screen (or in the highlighted country), which then show at their dates. The arrows at its ends, or dragging it sideways, move along. The thin bar above it shows all the years, with the stretch on view marked: drag along it to move quickly through time (the timeline zooms in again where you let go), or press “All years” to zoom out. Borders still change once a year, on July 1.</p>
+        <p>Terrain: the shaded relief is drawn from NASA’s elevation data (about 2 km to the pixel) and lit from the northwest; rivers and lakes come from Natural Earth and add detail as you zoom in. Names of physical features (seas and straits, lakes and lagoons, mountain ranges, plains, rivers, and passes and peaks that mattered in Europe’s history) are a layer of their own, set along each feature in a serif italic, and appear as the zoom allows. A few take the name of the time: the IJsselmeer is the Zuiderzee until it was dammed in 1932. The mountain button beside the zoom buttons turns the relief and these names on and off.</p>
         <details>
           <summary>Corrections to OHM (<span id="nfix"></span>)</summary>
           <ul id="fixes"></ul>
@@ -983,10 +996,13 @@ const FST = {
   gulf:    { cls: 'fw', fs: () => 12, caps: false, tr: [0.04, 0.45], max: 6 },
   strait:  { cls: 'fw', fs: () => 11, caps: false, tr: [0, 0.12], max: 6 },
   lowland: { cls: 'fl', fs: r => r <= 3 ? 11.5 : 10.5, caps: true, tr: [0.2, 0.7], max: 6, fill: 0.45 },
+  lake:    { cls: 'fw', fs: () => 11, caps: false, tr: [0.02, 0.3], max: 10, fill: 0.6 },
   pass:    { cls: 'fp', fs: () => 10.5, max: 8 },
   peak:    { cls: 'fp', fs: () => 10.5, max: 6 },
 };
-const ORDER = ['sea', 'range', 'river', 'gulf', 'strait', 'lowland', 'peak', 'pass'];
+const ORDER = ['sea', 'range', 'river', 'lake', 'gulf', 'strait', 'lowland', 'peak', 'pass'];
+// a feature's name in the year shown (the IJsselmeer was the Zuiderzee until it was dammed in 1932)
+const fname = f => (f.old && f.old.find(o => year < o[0]) || [0, f.n])[1];
 const measure = (() => { const cx = document.createElement('canvas').getContext('2d'); return (t, fs, italic, wt) => { cx.font = `${italic ? 'italic ' : ''}${wt} ${fs}px "Source Serif 4", Georgia, serif`; return cx.measureText(t).width; }; })();
 let flTimer = 0;
 function drawTerrainLabels(boxes) {
@@ -1043,12 +1059,12 @@ function placeFeatures(taken) {
   const x0 = shown[0], y0 = shown[1], x1 = x0 + sr.width / k, y1 = y0 + sr.height / k;
   let nid = 0; const count = {};
   // a name along a line: tracked out to fill up to 80% of the line, centered on it; its letters must all be clear
-  const alongLine = (pts, L, name, st, fs, italic, wt, caps) => {
+  const alongLine = (pts, L, name, st, fs, italic, wt, caps, offs = [0, -1.3, 1.3, -2.6, 2.6]) => {
     const text = caps ? name.toUpperCase() : name, n = text.length, w0 = measure(text, fs, italic, wt), [tmin, tmax] = st.tr;
     // spread wide first; where that collides, tighter, and at other places along the line
     for (const fill of [st.fill || 0.8, 0.5, 0]) {
     const ls = Math.min(tmax, Math.max(tmin, (L * fill - w0) / Math.max(1, n - 1) / fs)), W = w0 + (n - 1) * ls * fs; if (W > L * 0.92) continue;
-    for (const f of [0.5, 0.38, 0.62, 0.26, 0.74]) for (const off of [0, -1.3, 1.3, -2.6, 2.6]) {
+    for (const f of [0.5, 0.38, 0.62, 0.26, 0.74]) for (const off of offs) {
       if (L * f - W / 2 < 0 || L * f + W / 2 > L) continue;
       const mid = L * f, seg0 = cut(pts, Math.max(0, mid - W / 2 - fs), Math.min(L, mid + W / 2 + fs)); if (!seg0) continue;
       // or a little to one side of the line, where the names around leave more room
@@ -1059,8 +1075,9 @@ function placeFeatures(taken) {
       // bends too sharp for letters: skip
       let bend = 0; for (let i = 2; i < seg.length; i++) { const t1 = Math.atan2(seg[i - 1][1] - seg[i - 2][1], seg[i - 1][0] - seg[i - 2][0]), t2 = Math.atan2(seg[i][1] - seg[i - 1][1], seg[i][0] - seg[i - 1][0]); let d = Math.abs(t2 - t1); if (d > Math.PI) d = 2 * Math.PI - d; bend = Math.max(bend, d); }
       if (bend > 0.5) continue;
+      if (runLen(seg) < W + fs) continue;                                        // (a line moved to the inside of a bend is shorter)
       const boxes = resample(seg, Math.max(6, fs * 0.8)).map(([x, y]) => [x - fs * 0.55, y - fs * 0.6, x + fs * 0.55, y + fs * 0.6]);
-      if (boxes.some(b => hit(b))) continue;
+      if (boxes.some(b => hit(b) || b[0] < 2 || b[1] < 2 || b[2] > sr.width - 2 || b[3] > sr.height - 2)) continue;
       taken.push(...boxes);
       const id = 'fl' + nid++; el('path', { id, d: 'M' + seg.map(p => (x0 + p[0] / k).toFixed(2) + ',' + (y0 + p[1] / k).toFixed(2)).join('L') }, defs);
       const t = el('text', { class: st.cls, dy: (0.34 * fs / k).toFixed(2) }, g);
@@ -1074,7 +1091,7 @@ function placeFeatures(taken) {
   // a name beside a point (with a mark for a pass or a peak), or centered on it
   const atPoint = (f, st, fs) => {
     const sx = (f.p[0] - x0) * k, sy = (f.p[1] - y0) * k; if (sx < 10 || sy < 10 || sx > sr.width - 10 || sy > sr.height - 10) return false;
-    const mark = f.k === 'pass' || f.k === 'peak', caps = f.k === 'lowland', italic = f.k !== 'lowland', text = caps ? f.n.toUpperCase() : f.n;
+    const mark = f.k === 'pass' || f.k === 'peak', caps = f.k === 'lowland', italic = f.k !== 'lowland', text = caps ? fname(f).toUpperCase() : fname(f);
     const ls = caps ? 0.2 : 0.02, w = measure(text, fs, italic, 500) + text.length * ls * fs, h = fs * 1.25;
     const spots = mark ? [[sx + 7, sy - h / 2, 'start'], [sx - 7 - w, sy - h / 2, 'end'], [sx - w / 2, sy - 6 - h, 'middle'], [sx - w / 2, sy + 6, 'middle']] : [[sx - w / 2, sy - h / 2, 'middle']];
     const mb = mark ? [sx - 5, sy - 5, sx + 5, sy + 5] : null; if (mb && hit(mb)) return false;
@@ -1089,6 +1106,24 @@ function placeFeatures(taken) {
     t.setAttribute('style', `font-size:${(fs / k).toFixed(2)}px;stroke-width:${(2.4 / k).toFixed(2)}px;letter-spacing:${ls}em`); t.textContent = text;
     return true;
   };
+  // a lake's name: along the lake when it is large enough on screen, otherwise just beside it (right, left, above, below)
+  const atLake = (f, st, fs) => {
+    const b = f.bb, bx0 = (b[0] - x0) * k, by0 = (b[1] - y0) * k, bx1 = (b[2] - x0) * k, by1 = (b[3] - y0) * k;
+    if (bx1 < 8 || by1 < 8 || bx0 > sr.width - 8 || by0 > sr.height - 8) return false;
+    const text = fname(f), w = measure(text, fs, true, 400) + text.length * 0.02 * fs, h = fs * 1.25;
+    if (f.c && f.w * k >= fs * 2.5 && f.len * k >= w * 1.3) {
+      const run = screenRun(f.c, k, sr, 12);
+      if (run && run.L >= w * 1.2 && alongLine(run.pts, run.L, text, st, fs, true, 400, false, [0])) return true;
+    }
+    if (bx1 - bx0 < 2 && by1 - by0 < 2) return false;                // too small to see
+    const cx = (bx0 + bx1) / 2, cy = (by0 + by1) / 2;
+    const spots = [[bx1 + 3, cy - h / 2], [bx0 - 3 - w, cy - h / 2], [cx - w / 2, by0 - 2 - h], [cx - w / 2, by1 + 2]];
+    const s = spots.find(([sx, sy]) => sx > 4 && sy > 4 && sx + w < sr.width - 4 && sy + h < sr.height - 4 && !hit([sx, sy, sx + w, sy + h])); if (!s) return false;
+    taken.push([s[0], s[1], s[0] + w, s[1] + h]);
+    const t = el('text', { x: (x0 + s[0] / k).toFixed(2), y: (y0 + (s[1] + h / 2) / k).toFixed(2), class: st.cls, 'dominant-baseline': 'central' }, g);
+    t.setAttribute('style', `font-size:${(fs / k).toFixed(2)}px;stroke-width:${(2.4 / k).toFixed(2)}px;letter-spacing:0.02em`); t.textContent = text;
+    return true;
+  };
   const inView = c => { for (let i = 0; i < c.length; i += 2) if (c[i] > x0 && c[i] < x1 && c[i + 1] > y0 && c[i + 1] < y1) return true; return false; };
   for (const kind of ORDER) {
     if (kind === 'river') { placeRivers(taken, defs, g, k, z, sr); continue; }
@@ -1098,10 +1133,12 @@ function placeFeatures(taken) {
       if (count[kind] >= st.max) break;
       const fs = st.fs(f.r);
       let ok = false;
-      if (f.p) ok = atPoint(f, st, fs);
-      else if (inView(f.c)) {
-        const run = screenRun(f.c, k, sr, 12); if (!run || run.L < 40) continue;
-        ok = alongLine(run.pts, run.L, f.n, st, fs, kind !== 'lowland', kind === 'range' ? 500 : 400, st.caps) || alongLine(run.pts, run.L, f.n, st, fs * 0.85, kind !== 'lowland', 500, st.caps);
+      if (kind === 'lake') ok = atLake(f, st, f.len > 150 ? 12 : fs);
+      else if (f.p) ok = atPoint(f, st, fs);
+      else for (const c of [f.c, ...(f.alt || [])]) {                 // (a hand-drawn line, then others to try)
+        if (ok || !inView(c)) continue;
+        const run = screenRun(c, k, sr, 12); if (!run || run.L < 40) continue;
+        ok = alongLine(run.pts, run.L, fname(f), st, fs, kind !== 'lowland', kind === 'range' ? 500 : 400, st.caps) || alongLine(run.pts, run.L, fname(f), st, fs * 0.85, kind !== 'lowland', 500, st.caps);
       }
       if (ok) count[kind]++;
     }
@@ -1514,8 +1551,10 @@ function unitEvents(u) {
 // ---------- the timeline, zoomed in ----------
 // Letting go of the slider zooms the timeline in around the year: from a few years to a few centuries, as many as it
 // takes to hold about ten events in the part of the map on screen (or in the highlighted country). It then shows those
-// events as icons at their dates, and lists them below. The arrows (or dragging the bar) move along at that scale;
-// the button by the year controls goes back to all years.
+// events as icons at their dates, and lists them below. The arrows (or dragging the bar) move along at that scale.
+// Above it, a thin bar of all the years marks the stretch shown, joined to the timeline below by two lines; dragging
+// along that bar moves quickly through all the years, and letting go zooms in again where it stops. The "All years"
+// button by the year controls zooms back out.
 let tz = null;                                          // {a, b}: the first and last year shown, when zoomed in
 const evT = e => e.y + (e.md ? (Math.floor(e.md / 100) - 1 + (e.md % 100 ? (e.md % 100 - 0.5) / 31 : 0.5)) / 12 : 0.5);   // its date as a fraction of years
 function scopedEvents() {
@@ -1561,6 +1600,27 @@ $('year').addEventListener('change', () => {
   const sp = tz.b - tz.a; if (year - tz.a < sp * 0.1 || tz.b - year < sp * 0.1) setWindow(Math.round(year - sp / 2), sp);   // near an end: center it
 });
 $('tzout').onclick = () => { tz = null; applyTimeline(); };
+// the bar of all the years: where the stretch shown sits, and the lines from it to the ends of the zoomed timeline
+function updTov() {
+  if (!tz) return;
+  const bar = $('tovbar'), w = $('tovwin'), Wb = bar.clientWidth; if (!Wb) return;
+  const l = (tz.a - Y0) / NY * Wb, r = (tz.b + 1 - Y0) / NY * Wb, ww = Math.max(7, r - l), wl = Math.min(Wb - ww, Math.max(0, (l + r) / 2 - ww / 2));
+  w.style.left = wl + 'px'; w.style.width = ww + 'px';
+  bar.setAttribute('aria-valuenow', year); bar.setAttribute('aria-valuetext', `${year}; showing ${tz.a} to ${tz.b}`);
+  const tr = $('track').getBoundingClientRect(), br = bar.getBoundingClientRect(), f = $('tfun'), H = 12, x0 = br.left - tr.left + wl, x1 = x0 + ww;
+  f.setAttribute('viewBox', `0 0 ${tr.width} ${H}`);
+  f.querySelector('path').setAttribute('d', `M${x0} 0L0 ${H}H${tr.width}L${x1} 0Z`);
+}
+new ResizeObserver(() => updTov()).observe($('timebar'));
+{
+  const bar = $('tovbar'); let on = false;
+  const at = ev => { const r = bar.getBoundingClientRect(); return Math.round(Y0 + Math.max(0, Math.min(1, (ev.clientX - r.left) / r.width)) * (NY - 1)); };
+  bar.addEventListener('pointerdown', ev => { if (!tz) return; on = true; bar.setPointerCapture(ev.pointerId); stop(); setYear(at(ev)); });
+  bar.addEventListener('pointermove', ev => { if (on) setYear(at(ev)); });
+  const end = () => { if (!on) return; on = false; zoomTimeline(year); };
+  bar.addEventListener('pointerup', end); bar.addEventListener('pointercancel', end);
+  bar.addEventListener('keydown', ev => { const d = { ArrowLeft: -10, ArrowRight: 10, PageDown: -50, PageUp: 50 }[ev.key]; if (!d) return; ev.preventDefault(); setYear(year + d); clearTimeout(bar.t); bar.t = setTimeout(() => zoomTimeline(year), 600); });
+}
 $('tpl').onclick = () => tz && setWindow(tz.a - Math.ceil((tz.b - tz.a) / 2), tz.b - tz.a);
 $('tpr').onclick = () => tz && setWindow(tz.a + Math.ceil((tz.b - tz.a) / 2), tz.b - tz.a);
 // dragging the bar (or the lane of icons) sideways moves along the years
@@ -1576,6 +1636,7 @@ let scopeTimer = 0;
 function scopeChanged() { if (!tz) return; clearTimeout(scopeTimer); scopeTimer = setTimeout(() => { timelineFor = undefined; renderTimeline(); }, 250); }
 let timelineFor = undefined;
 function renderTimeline() {
+  updTov();
   const u = focusUnit(), key = u >= 0 ? u : null;
   if (key !== timelineFor) {
     timelineFor = key;
