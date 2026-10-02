@@ -3,7 +3,8 @@
 // lets a script read GitHub and the query service; query.wikidata.org's own page does not allow GitHub). Load with
 //   const SRC = 'https://raw.githubusercontent.com/vedahcook/historical-map/<branch>/';
 //   (0, eval)(await (await fetch(SRC + 'fetch_city_extras.js')).text());
-// then HM.run('cities'), HM.run('events'), HM.run('classes'), HM.run('people'), HM.run('details'); poll HM.status.
+// then HM.run('cities'), HM.run('events'), HM.run('classes'), HM.run('roots') (with HM.ROOTS set), HM.run('people'),
+// HM.run('battles'), HM.run('details') (with HM.want set); poll HM.status.
 // Each step keeps its result in HM (HM.qid, HM.ev, HM.cls, HM.pp, HM.lab). HM.dump(name) gives a step's result as text.
 // Input: cities_in.json (written by cities/extras_input.py): [index, name, lon, lat, Wikidata id or null] per city.
 (() => {
@@ -123,30 +124,55 @@
     HM.status = 'roots done';
   };
 
-  // 4. people born (P19) or died (P20) in each city, or in a place in it, with at least 10 Wikipedia articles
+  // 4. people born (P19) or died (P20) in each city, or in a place in it (P131): first everyone with at least 30
+  // Wikipedia articles, then, for places with fewer than 8 such people, everyone with at least 10
   steps.people = async () => {
-    const cities = HM.only || [...new Set(HM.qid.filter(Boolean))]; const pp = HM.pp = HM.pp || {};
-    const make = (b, hop) => `SELECT ?city ?p ?k ?sl ?b ?d WHERE {
+    const all = HM.only || [...new Set(HM.qid.filter(Boolean))]; const pp = HM.pp = HM.pp || {};
+    const make = (b, min, hop) => `SELECT ?city ?p ?k (SAMPLE(?sl) AS ?s) (MIN(?b) AS ?bb) (MAX(?d) AS ?dd) WHERE {
       VALUES ?city { ${V(b)} }
       { ?p wdt:P19 ?city BIND("b" AS ?k) } UNION { ?p wdt:P20 ?city BIND("d" AS ?k) }
       ${hop ? 'UNION { ?p wdt:P19 ?l . ?l wdt:P131 ?city BIND("b" AS ?k) } UNION { ?p wdt:P20 ?l . ?l wdt:P131 ?city BIND("d" AS ?k) }' : ''}
-      ?p wikibase:sitelinks ?sl . FILTER(?sl >= 10)
+      ?p wikibase:sitelinks ?sl . FILTER(?sl >= ${min})
       ?p wdt:P31 wd:Q5 .
       OPTIONAL { ?p wdt:P569 ?b } OPTIONAL { ?p wdt:P570 ?d }
-    }`;
+    } GROUP BY ?city ?p ?k`;
+    const n = {};
     const add = rows => {
       for (const r of rows || []) {
-        const p = id(r.p.value), c = id(r.city.value), b = r.b ? parseInt(r.b.value, 10) : null, d = r.d ? parseInt(r.d.value, 10) : null;
+        const p = id(r.p.value), c = id(r.city.value), b = r.bb ? parseInt(r.bb.value, 10) : null, d = r.dd ? parseInt(r.dd.value, 10) : null;
         if ((d != null && d < 1000) || (d == null && b != null && b < 950)) continue;     // lived before the map begins
-        const x = pp[p] = pp[p] || { sl: +r.sl.value, b, d, at: {} };
+        const x = pp[p] = pp[p] || { sl: +r.s.value, b, d, at: {} };
         if (b != null && (x.b == null || b < x.b)) x.b = b; if (d != null && (x.d == null || d > x.d)) x.d = d;
-        x.at[c] = (x.at[c] || '').includes(r.k.value) ? x.at[c] : (x.at[c] || '') + r.k.value;
+        if (!(x.at[c] || '').includes(r.k.value)) { x.at[c] = (x.at[c] || '') + r.k.value; n[c] = (n[c] || 0) + 1; }
       }
     };
-    HM.retry = [];
-    await batched(cities, 25, b => make(b, true), (rows, b) => { if (rows) add(rows); else HM.retry = HM.retry.concat(b); }, 'people');
-    for (const c of HM.retry) add(await sparql(make([c], false)));
+    for (const [min, size, pick] of [[30, 30, all], [10, 40, null]]) {
+      const list = pick || all.filter(c => (n[c] || 0) < 8);
+      HM.retry = [];
+      await batched(list, size, b => make(b, min, true), (rows, b) => { if (rows) add(rows); else HM.retry = HM.retry.concat(b); }, 'people (' + min + '+)');
+      for (const c of HM.retry) add(await sparql(make([c], min, false)));
+    }
     HM.status = 'people done'; note('people: ' + Object.keys(pp).length);
+  };
+
+  // battles and sieges anywhere on the map (P625 position), dated from 1000 on, with at least 8 Wikipedia articles: for a
+  // later layer of events outside cities
+  steps.battles = async () => {
+    const out = HM.bt = {};
+    for (const root of ['Q178561', 'Q188055']) {
+      const rows = await sparql(`SELECT ?e ?p ?d ?pr ?d2 ?pr2 ?sl WHERE {
+        ?c wdt:P279* wd:${root} . ?e wdt:P31 ?c . ?e wdt:P625 ?p . ?e wikibase:sitelinks ?sl . FILTER(?sl >= 8)
+        OPTIONAL { ?e p:P585/psv:P585 [ wikibase:timeValue ?d ; wikibase:timePrecision ?pr ] }
+        OPTIONAL { ?e p:P580/psv:P580 [ wikibase:timeValue ?d2 ; wikibase:timePrecision ?pr2 ] }
+      }`, 2) || [];
+      for (const r of rows) {
+        const d = r.d || r.d2, pr = r.pr || r.pr2; if (!d) continue; const y = parseInt(d.value, 10); if (!(y >= 1000 && y <= 2026)) continue;
+        const q = pt(r.p.value); if (!q || q[0] < -26 || q[0] > 50 || q[1] < 34 || q[1] > 72) continue;
+        out[id(r.e.value)] = { t: d.value.slice(0, 10), p: +pr.value, sl: +r.sl.value, x: q, k: root === 'Q178561' ? 'b' : 's' };
+      }
+      HM.status = 'battles: ' + Object.keys(out).length;
+    }
+    HM.status = 'battles done';
   };
 
   // 5. labels, short descriptions and English Wikipedia titles for the items chosen (HM.want), 50 at a time
@@ -169,4 +195,8 @@
   HM.run = name => { HM.status = name + ': starting'; steps[name]().catch(e => { HM.status = name + ' failed: ' + e; HM.errors.push(String(e && e.stack || e)); }); return HM.status; };
   // a step's result as text. Short results are padded, so the tool that reads them saves them to a file
   HM.dump = (obj, pad = 150000) => { const s = 'HMDATA ' + JSON.stringify(obj); return s.length < pad ? s + ' '.repeat(pad - s.length) : s; };
+  // a large result in pieces small enough for the browser tool (it cuts results at about 260,000 characters):
+  // HM.prep(obj) gives the number of pieces, HM.part(i) each piece (joined again by join.py)
+  HM.prep = obj => { HM._s = JSON.stringify(obj); return Math.ceil(HM._s.length / 230000); };
+  HM.part = i => { const s = 'HMPART ' + i + ' ' + HM._s.slice(i * 230000, (i + 1) * 230000); return s.length < 150000 ? s + ' '.repeat(150000 - s.length) : s; };
 })();
