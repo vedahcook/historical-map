@@ -124,36 +124,38 @@
     HM.status = 'roots done';
   };
 
-  // 4. people born (P19) or died (P20) in each city, or in a place in it (P131): first everyone with at least 30
-  // Wikipedia articles, then, for places with fewer than 8 such people, everyone with at least 10
+  // 4. people born (P19) or died (P20) in each city, or in a place in it (P131): everyone with at least 30 Wikipedia
+  // articles; then, for places with fewer than 8 such people, everyone with at least 10, in the place itself and then
+  // in places within it
   steps.people = async () => {
     const all = HM.only || [...new Set(HM.qid.filter(Boolean))]; const pp = HM.pp = HM.pp || {};
-    const make = (b, min, hop) => `SELECT ?city ?p ?k (SAMPLE(?sl) AS ?s) (MIN(?b) AS ?bb) (MAX(?d) AS ?dd) WHERE {
+    // one query for births and one for deaths (a UNION of the two is far slower on the query service)
+    const make = (b, min, hop, prop) => `SELECT ?city ?p ?sl ?b ?d WHERE {
       VALUES ?city { ${V(b)} }
-      { ?p wdt:P19 ?city BIND("b" AS ?k) } UNION { ?p wdt:P20 ?city BIND("d" AS ?k) }
-      ${hop ? 'UNION { ?p wdt:P19 ?l . ?l wdt:P131 ?city BIND("b" AS ?k) } UNION { ?p wdt:P20 ?l . ?l wdt:P131 ?city BIND("d" AS ?k) }' : ''}
+      ${hop ? `?p wdt:${prop} ?l . ?l wdt:P131 ?city .` : `?p wdt:${prop} ?city .`}
       ?p wikibase:sitelinks ?sl . FILTER(?sl >= ${min})
-      ?p wdt:P31 wd:Q5 .
       OPTIONAL { ?p wdt:P569 ?b } OPTIONAL { ?p wdt:P570 ?d }
-    } GROUP BY ?city ?p ?k`;
+    }`;
     const n = {};
-    const add = rows => {
+    const add = (rows, k) => {
       for (const r of rows || []) {
-        const p = id(r.p.value), c = id(r.city.value), b = r.bb ? parseInt(r.bb.value, 10) : null, d = r.dd ? parseInt(r.dd.value, 10) : null;
-        if ((d != null && d < 1000) || (d == null && b != null && b < 950)) continue;     // lived before the map begins
-        const x = pp[p] = pp[p] || { sl: +r.s.value, b, d, at: {} };
+        const p = id(r.p.value), c = id(r.city.value), b = r.b ? parseInt(r.b.value, 10) : null, d = r.d ? parseInt(r.d.value, 10) : null;
+        const x = pp[p] = pp[p] || { sl: +r.sl.value, b, d, at: {} };
         if (b != null && (x.b == null || b < x.b)) x.b = b; if (d != null && (x.d == null || d > x.d)) x.d = d;
-        if (!(x.at[c] || '').includes(r.k.value)) { x.at[c] = (x.at[c] || '') + r.k.value; n[c] = (n[c] || 0) + 1; }
+        if (!(x.at[c] || '').includes(k)) { x.at[c] = (x.at[c] || '') + k; n[c] = (n[c] || 0) + 1; }
       }
     };
-    // the first pass looks only at the city itself (the largest cities have thousands of people born there); the second
-    // also at places within the city, for the places with few people so far
-    for (const [min, size, pick, hop] of [[30, 25, all, false], [10, 30, null, true]]) {
+    // passes: 30+ articles in the city itself (the largest cities have thousands of people born there); then, for
+    // places with fewer than 8 people so far, 10+ in the place itself, then 10+ in places within it
+    for (const [min, size, pick, hop] of [[30, 60, all, false], [10, 60, null, false], [10, 40, null, true]]) {
       const list = pick || all.filter(c => (n[c] || 0) < 8);
-      HM.retry = [];
-      await batched(list, size, b => make(b, min, hop), (rows, b) => { if (rows) add(rows); else HM.retry = HM.retry.concat(b); }, 'people (' + min + '+)');
-      for (const c of HM.retry) add(await sparql(make([c], min, false)));
+      for (const [prop, k] of [['P19', 'b'], ['P20', 'd']]) {
+        HM.retry = [];
+        await batched(list, size, b => make(b, min, hop, prop), (rows, b) => { if (rows) add(rows, k); else HM.retry = HM.retry.concat(b); }, `people (${k}, ${min}+${hop ? ', within' : ''})`);
+      }
     }
+    // people who lived before the map begins
+    for (const [p, x] of Object.entries(pp)) if ((x.d != null && x.d < 1000) || (x.d == null && x.b != null && x.b < 950)) delete pp[p];
     HM.status = 'people done'; note('people: ' + Object.keys(pp).length);
   };
 
