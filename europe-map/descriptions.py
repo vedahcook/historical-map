@@ -185,7 +185,7 @@ D = [
      'A tiny state in northwest Germany, created in 1647 when the County of Schaumburg was divided after its ruling line died out. Its count became a prince in 1807.'),
     ('SIC', 'Kingdom of Sicily', 1848, 1849, 'Kingdom of Sicily (revolution of 1848–49)', 'March 25, 1848', 'May 15, 1849',
      'A breakaway state set up by the Sicilian revolution of January 1848 against Bourbon rule from Naples. Neapolitan troops retook the island in 1849.'),
-    ('SIC', None, None, None, 'Kingdom of Sicily', '1130', 'December 1816',
+    ('SIC', None, None, None, 'Kingdom of Sicily (Bourbon kings of Naples)', '1130', 'December 1816',
      'The island kingdom, ruled by the Bourbon king of Naples. When the French took Naples in 1806, the king ruled from Palermo under British protection until 1815; Sicily and Naples were merged into the Two Sicilies in 1816.'),
     ('SMR', None, None, None, 'Republic of San Marino', '301', '',
      'A small republic on Monte Titano, by tradition founded in 301. It kept its independence through the Napoleonic era and the unification of Italy.'),

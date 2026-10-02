@@ -13,7 +13,7 @@ The page is `europe-borders.html`, published as a Claude artifact. It holds the 
 - **Tap a country** to highlight it and dim the rest. The map zooms so the whole country is on screen, and a popup describes it for that year: its flag (tap it to see it larger; tap anywhere to close), when the state began and ended, how, and where the border at that spot comes from. Rings mark detached parts. Tap it again, or the sea, to clear it.
 - **The highlight follows the country across 1500 and 1800,** where the page switches between its three maps.
 - **The timeline** shows key events, or only the highlighted country's events: when it began or ended, name changes, and gains or losses over 1,500 km². The row of events scrolls sideways.
-- **Cities** appear inside the highlighted country. Tap a city for its population that year, a chart of all its figures, and who held it over the years. Tap a dot in the chart, a spot on the strip, or a line in the list to go to that year; the popup stays put.
+- **Cities** appear inside the highlighted country. Tap a city for its population that year, a chart of all its figures, and who held it over the years. The list of holders uses each state's full name, as in its own popup, and for a dependent territory names the power that controlled it ("under the Ottoman Empire", "occupied by Germany") unless the name already says so; a renamed state (Russian Empire, Soviet Union, Russia) gets a line for each name. Tap a dot in the chart, a spot on the strip, or a line in the list to go to that year; the popup stays put.
 - **One popup at a time,** placed to cover as little as possible of what it describes.
 
 ## How the map decides

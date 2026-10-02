@@ -259,7 +259,7 @@ D10 = [
      'Muslim Sicily, ruled from Palermo by emirs under the Fatimid caliphs. It broke up into rival emirates in the 1040s and was conquered by the Normans in 1061–91.'),
     ('SIC_M', None, None, None, 'Kingdom of Sicily', '1130', '1282',
      'The Norman kingdom of Roger II, which took in the island and southern Italy and was ruled from Palermo. It passed to the Hohenstaufen emperors in 1194 and to Charles of Anjou in 1266; the Sicilian Vespers revolt of 1282 split off the island.'),
-    ('SIC', None, 1000, 1408, 'Kingdom of Sicily', '1282', '1409',
+    ('SIC', None, 1000, 1408, 'Kingdom of Sicily (Aragonese dynasty)', '1282', '1409',
      'The island of Sicily, which rebelled against the Angevin king in 1282 and chose the king of Aragon instead. A branch of the Aragonese royal family ruled it until 1409.'),
     ('SIC_R', None, None, None, 'Kingdom of Sicily (under Aragon)', '1409', '1816',
      'From 1409 Sicily was ruled by the kings of Aragon through viceroys.'),

@@ -104,12 +104,15 @@ button, select, input { font: inherit; color: inherit; }
 .hstrip { position: relative; height: 14px; margin: 4px 1.3% 0; background: var(--sunk); border-radius: 3px; }
 .hstrip button { position: absolute; top: 0; height: 14px; border: 0; padding: 0; border-right: 1px solid var(--surface); cursor: pointer; }
 .hstrip .now { position: absolute; top: -3px; bottom: -3px; width: 2px; margin-left: -1px; background: var(--sel); pointer-events: none; }
-.hlist { position: relative; list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-direction: column; gap: 2px; font-size: 0.78rem; color: var(--muted); max-height: 9.5em; overflow-y: auto; }
-.hlist li { display: grid; grid-template-columns: 12px 76px minmax(0, 1fr); gap: 6px; align-items: center; cursor: pointer; border-radius: 4px; }
+.hlist { position: relative; list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-direction: column; gap: 3px; font-size: 0.78rem; line-height: 1.3; color: var(--muted); max-height: 11.5em; overflow-y: auto; }
+.hlist li { display: grid; grid-template-columns: 12px 76px minmax(0, 1fr); gap: 6px; align-items: start; cursor: pointer; border-radius: 4px; }
 .hlist li:hover { background: var(--sunk); }
 .hstrip { cursor: pointer; }
 .hlist li.on { color: var(--ink); font-weight: 600; }
-.hlist .sw { width: 12px; height: 12px; border-radius: 2px; }
+.hlist .sw { width: 12px; height: 12px; border-radius: 2px; margin-top: 2px; }
+/* the power over a dependent territory, under its name */
+.hlist .by { display: block; font-weight: 400; color: var(--faint); }
+.hlist li.on .by { color: var(--muted); }
 .mappop .ln { fill: none; stroke: var(--muted); stroke-width: 1.4; }
 .mappop .pt { fill: var(--ink); }
 .mappop .pt.c { fill: var(--surface); stroke: var(--ink); stroke-width: 1.2; }
@@ -370,13 +373,20 @@ function swatchBg(u) {
   const h = hueVar(ov), line = (a) => `repeating-linear-gradient(${a}deg, color-mix(in srgb, ${h} 85%, transparent) 0 1.5px, transparent 1.5px 4.5px)`;
   return (isOcc(u) ? line(45) + ', ' + line(-45) : line(45)) + ', ' + fillVar(u);
 }
-// how a dependent territory relates to the power over it
+// "the" before names such as the Ottoman Empire or the Soviet Union, not before France or Savoy
+const withThe = n => /^the /i.test(n) || !/Empire|Monarchy|Kingdom|Republic|Union|Caliphate|Sultanate|Khanate|Horde|Order|Confederation|Commonwealth|States|Netherlands/.test(n) ? n : 'the ' + n;
+// the power over a dependent territory in year y, and how: "under the Russian Empire", "occupied by Germany"
+function ctlText(u, y) {
+  const ov = withThe(nameOf(U[u].ov, y)), k = U[u].k;
+  if (!isOcc(u)) return 'under ' + ov;
+  if (/^A_|_ANX$|_SSR$/.test(k)) return 'annexed by ' + ov + ', without recognition';
+  if (['TRN', 'ABK', 'SOS', 'ART', 'NCY', 'DLR'].includes(k)) return 'breakaway region, backed by ' + ov;
+  return 'occupied by ' + ov;
+}
+// the same, as a sentence for the country's popup
 function depText(u) {
-  const ov = nameOf(U[u].ov, year), k = U[u].k;
-  if (!isOcc(u)) return 'Self-governing under ' + ov;
-  if (/^A_|_ANX$|_SSR$/.test(k)) return 'Annexed by ' + ov + ', without recognition';
-  if (['TRN', 'ABK', 'SOS', 'ART', 'NCY', 'DLR'].includes(k)) return 'Breakaway region, backed by ' + ov;
-  return 'Occupied by ' + ov;
+  const t = ctlText(u, year);
+  return t.startsWith('under ') ? 'Self-governing ' + t : t[0].toUpperCase() + t.slice(1);
 }
 
 // ---------- the map for one year ----------
@@ -724,6 +734,13 @@ function drawCities() {
   }
   queuePop();
 }
+// who held a city in year y, for its popup's list: t, the state's full name; by, the power over it if it was a
+// dependent territory and its name does not already say so ("Kingdom of Sicily (under Austria)" does); bg, its swatch
+function heldBy(u, y) {
+  if (u < 0) return { t: 'no country', by: '', bg: swatchBg(u) };
+  const d = descOf(u, y), t = d ? d.t : nameOf(u, y);
+  return { t, by: isVassal(u) && !/\bunder\b|occup|annex|held by|backed/i.test(t) ? ctlText(u, y) : '', bg: swatchBg(u) };
+}
 function cityHtml(d) {
   const c = d.c, p = d.p;
   const big = p.k === 'fig' ? fmt(p.v) : p.k === 'none' || p.k === 'gap' ? '—' : 'about ' + fmt(round3(p.v));
@@ -746,17 +763,21 @@ function cityHtml(d) {
     (p.k === 'est' ? `<circle class="cur" cx="${X(year)}" cy="${Y(p.v).toFixed(1)}" r="3"/>` : '') +
     ticks.map(t => `<text class="ax" x="${X(t).toFixed(1)}" y="${H - 1}" text-anchor="${t === ticks[0] && X(t) < 16 ? 'start' : 'middle'}">${t}</text>`).join('') + `</svg>`;
   ERAS.forEach(E => { if (E.y1 >= C0 && !E.ready) loadEra(E); });      // the strip needs every era the chart covers; it redraws when they arrive
+  // A row for each stretch of years with the same holder: the state's full name, as in its own popup, and for a
+  // dependent territory the power that controlled it (unless the name already says so). A new row starts when
+  // either changes, so a state that was renamed (Russian Empire, Soviet Union, Russia) gets a row for each name.
   const runs = [];
   for (let y = C0; y <= Y1; y++) {
     const u = cityUnit(c, y), last = runs[runs.length - 1]; if (u === -2) continue;      // years whose map is still loading
-    if (last && last.u === u && last.b === y - 1) last.b = y; else runs.push({ u, a: y, b: y });
+    const h = heldBy(u, y);
+    if (last && last.b === y - 1 && last.t === h.t && last.by === h.by && last.bg === h.bg) last.b = y; else runs.push({ ...h, a: y, b: y });
   }
-  const nm = r => r.u < 0 ? 'no country' : nameOf(r.u, r.a);
+  const nm = r => r.t + (r.by ? ` (${r.by})` : '');
   const strip = `<div class="hstrip" role="group" aria-label="Who held ${esc(c.n)}" data-c0="${C0}" data-w="${W}">` + runs.map(r => {
       const l = (X(r.a - 0.5) / W * 100).toFixed(2), w = ((X(r.b + 0.5) - X(r.a - 0.5)) / W * 100).toFixed(2);
-      return `<button type="button" data-y="${r.a}" title="${esc(nm(r))}, ${r.a === r.b ? r.a : r.a + '–' + r.b}" style="left:${l}%;width:${w}%;background:${swatchBg(r.u)}"></button>`; }).join('') +
+      return `<button type="button" data-y="${r.a}" title="${esc(nm(r))}, ${r.a === r.b ? r.a : r.a + '–' + r.b}" style="left:${l}%;width:${w}%;background:${r.bg}"></button>`; }).join('') +
     `<span class="now" style="left:${(X(year) / W * 100).toFixed(2)}%"></span></div>`;
-  const changes = runs.map(r => `<li role="button" tabindex="0" data-y="${r.a}"${r.a <= year && year <= r.b ? ' class="on"' : ''}><span class="sw" style="background:${swatchBg(r.u)}"></span><span>${r.a}${r.b > r.a ? '–' + (r.b === Y1 ? '' : r.b) : ''}</span><span>${esc(nm(r))}</span></li>`).join('');
+  const changes = runs.map(r => `<li role="button" tabindex="0" data-y="${r.a}"${r.a <= year && year <= r.b ? ' class="on"' : ''}><span class="sw" style="background:${r.bg}"></span><span>${r.a}${r.b > r.a ? '–' + (r.b === Y1 ? '' : r.b) : ''}</span><span>${esc(r.t)}${r.by ? `<span class="by">${esc(r.by)}</span>` : ''}</span></li>`).join('');
   return `<button type="button" class="x" aria-label="Close">×</button><div class="nm city">${esc(c.n)}</div><div class="pop city">${big} <small>people in ${year}</small></div><p>${esc(note)}</p>${chart}` +
     `<div class="hk">Held by</div>${strip}<ul class="hlist">${changes}</ul>`;
 }
