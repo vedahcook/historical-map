@@ -13,7 +13,7 @@ The page is `europe-borders.html`, published as a Claude artifact. It holds the 
 - **Tap a country** to highlight it and dim the rest. The map zooms so the whole country is on screen, and a popup describes it for that year: its flag (tap it to see it larger; tap anywhere to close), when the state began and ended, how, and where the border at that spot comes from. Rings mark detached parts. Tap it again, or the sea, to clear it.
 - **The highlight follows the country across 1500 and 1800,** where the page switches between its three maps.
 - **The timeline** shows key events, or only the highlighted country's events: when it began or ended, name changes, and gains or losses over 1,500 km². The row of events scrolls sideways.
-- **Cities** appear inside the highlighted country. Tap a city for its population that year, a chart of all its figures, and who held it over the years. Tap a dot in the chart, a spot on the strip, or a line in the list to go to that year; the popup stays put.
+- **Cities** appear inside the highlighted country: the ten largest of its cities on screen that year. Zooming in or panning brings in smaller towns, so a view about 200 km across still shows ten in most of Europe from the 1800s on. Tap a city for its population that year, a chart of all its figures, and who held it over the years. Tap a dot in the chart, a spot on the strip, or a line in the list to go to that year; the popup stays put.
 - **One popup at a time,** placed to cover as little as possible of what it describes.
 
 ## How the map decides
@@ -47,7 +47,7 @@ The popup shows the flag the state used that year, from Wikimedia Commons, with 
 
 ## City populations
 
-`cities.txt` lists 465 of Europe's largest cities, with at most one figure per decade. Each figure is tagged with its source:
+`cities.txt` lists about 4,900 cities and towns, with at most one figure per decade: 465 of Europe's largest cities, then (after the line `# Towns added by cities/towns_merge.py`) about 4,400 towns that reached 20,000 people. Each figure is tagged with its source:
 
 | Code | Source |
 |---|---|
@@ -57,9 +57,21 @@ The popup shows the flag the state used that year, from Wikimedia Commons, with 
 | C | Estimates by Chandler, de Vries, Mitchell and others, from Wikipedia's "Historical urban community sizes" |
 | V | Jan de Vries, *European Urbanization 1500–1800* (1984), via the europop dataset (public domain, CC0) |
 
-Before 1800 there are figures for about 250 cities, mostly de Vries's estimates every 50 years for towns of 10,000 or more (`cities/add_early.py`, then `cities/add_devries.py`). 58 of the cities, such as Leiden, Bruges and Toledo, were added because they had at least 20,000 people at some point before 1800; they have no later figures, so they appear only on the early map.
+Before 1800 there are figures for about 250 cities, mostly de Vries's estimates every 50 years for towns of 10,000 or more (`cities/add_early.py`, then `cities/add_devries.py`). 58 of the cities, such as Leiden, Bruges and Toledo, were added because they had at least 20,000 people at some point before 1800; their later figures now come from the towns step below.
 
 Before 1500 there are figures for 59 cities, from the same Wikipedia page's tables for 1000–1350, 1400 and 1450 (mostly Tertius Chandler's estimates; `cities/hucs_medieval_raw.txt`, added by `cities/add_medieval.py`). 14 of them, such as Speyer, Amalfi and Sarai, had 20,000 people or more then but are not among the later cities, so they appear only on the medieval map. A figure given as a range more than 2.5 times as wide at the top as at the bottom is left out. Before 1500 the map estimates within 50 years of a figure. The page shows the figure for the chosen year if there is one. Otherwise it estimates between the figures either side, assuming steady growth, and labels it as an estimate: within ten years of a figure, or 25 years before 1800. A hollow dot means there is no figure that close.
+
+### Smaller towns (October 2026)
+
+So the map keeps ten cities on screen as the viewer zooms in, the list adds every town in the map's area that Wikidata gives 20,000 people or more at some point:
+
+1. **Candidates** (browser query on query.wikidata.org, saved as `cities/hm-candidates.json`, not kept in the repository): every item with a population figure of 20,000 or more and coordinates in the map's area, with its classes. `python3 towns_select.py classes hm-candidates.json` keeps the towns: kinds of human settlement, and municipalities where the municipality is the town (France, Italy, Spain, Portugal, the Netherlands, Belgium, Algeria, Tunisia), leaving out parts of cities (boroughs, quarters, districts).
+2. **Wikidata figures** for those towns (browser, `cities/hm-series.json`, not kept), then `python3 towns_select.py dedupe hm-series.json`: drops towns already listed (within 3 km, or 15 km with a similar name), districts of large cities (within 4 km of a city of 500,000 or more; inside Greater London, the Brussels-Capital Region, Belgrade, Birmingham or Leeds, whose figures already count them; the districts Turkey made of its large cities in 2008), and a town's duplicate municipality. Writes `towns_new.json` and `towns_extend.json` (cities listed only before 1800 that match a town).
+3. **Wikipedia tables:** `browser/fetch_town_tables.js` reads each town's article in its country's language, German and English (tables, census templates, the French and Italian data pages, the Spanish census chart, Russian Wikipedia's population table), saved as `cities/hm-town-tables.json`.
+4. `python3 towns_merge.py hm-town-tables.json ../cities.txt` checks each Wikipedia series against Wikidata (they must agree within a factor of 3/2 where both have a figure), fills the decades Wikidata lacks, adds de Vries's figures within 12 km, drops figures off the trend, and keeps towns with at least two figures, one of them 20,000 or more. Wikipedia figures before 1800 are kept only from German Wikipedia. It also carries the early-only cities forward (`extend_tables.txt`). Re-running it replaces the towns it added before.
+5. `python3 cities/patch_page.py` (in `europe-map/`) puts the new cities into the built page without rebuilding the maps (each placed in each era's map regions by `cities/place_cities.py`); a full rebuild gives the same result, since `export.py` reads `cities.txt`.
+
+Coverage is uneven: Wikidata and Wikipedia have long series for France, Italy, Spain, Germany, the Netherlands, Czechia and much of Russia, but British towns often have only recent figures (sometimes for the whole borough), Portuguese municipalities mostly one figure, and Turkish cities' recent figures cover their whole province (from 2013 these are left out for its large cities). Before the mid-1800s most smaller towns have no figure, so zoomed-in views show fewer than ten.
 
 ## Checks
 

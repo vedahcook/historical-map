@@ -243,7 +243,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
         <p>Before 1500 OHM draws only part of Europe, and some of its records change only every few decades, so Cliopatria draws most of the map; its outlines change in steps of a few years and are rough at the coasts, so the medieval map is approximate in its details. France’s great fiefs, such as Normandy, Burgundy and Toulouse, are shown in their own colors, striped in France’s color, since they owed homage to the French king; lands in France held by the kings of England are in England’s color, striped in France’s. The larger members of the Holy Roman Empire show as their own states. 324 checks of places and years against the historical record all match, 17 of them where either of two answers is fair (for example Toledo in 1100, when Alfonso VI was king of both León and Castile).</p>
         <p>Occupations: OHM records named occupation regimes, such as the General Government in Poland or the Allied zones of Germany, and the map uses them. Where OHM shows the country that held the land in law, the map adds occupations from Cliopatria’s year-by-year outlines of each power’s control (1914-46), land annexed during the Second World War and given back afterward, and the breakaway regions and occupied parts of Ukraine since 1990. Each of these is listed under corrections.</p>
         <p>Alternative borders compare OHM with CShapes-Europe from 1816 and with Cliopatria before that. They count only when a source puts an area of at least 400 km² (5,000 km² for the coarser Cliopatria) in a different country for longer than a year. Territories that governed themselves under an overlord count as part of the overlord for this comparison, because the sources disagree on whether to show them.</p>
-        <p>Cities appear when a country is highlighted: its largest cities that year (up to ten, and none smaller than 3% of its biggest), from about 465 cities (Europe's largest by 1900, those that grew large after, and large towns of 1000–1800), placed in whichever country held them that year. Tap one for its population. Figures come from censuses where there is one for that year; between figures the map estimates, assuming steady growth, and says so. A hollow dot means there is no figure within ten years (25 years before 1800, 50 before 1500); the map then gives the nearest figures instead of an estimate. Before 1800 the figures are mostly Jan de Vries’s estimates every 50 years for towns that reached 10,000 people, which cover western and central Europe but not the Ottoman lands or Russia; about 60 towns that were large then but not later (Leiden, Bruges, Toledo, Mantua and others) appear only in those centuries. Before 1500 there are figures for only about 60 cities, mostly Tertius Chandler’s estimates, so many countries show few or none. Early figures are estimates, some for the wider city, so they are not always comparable with later census counts.</p>
+        <p>Cities appear when a country is highlighted: the ten largest of its cities on screen that year, so zooming in brings in smaller towns. They come from about 4,900 cities and towns (Europe's largest by 1900, those that grew large after, large towns of 1000–1800, and every town that reached about 20,000 people), placed in whichever country held them that year. Tap one for its population. Figures come from censuses where there is one for that year; between figures the map estimates, assuming steady growth, and says so. A hollow dot means there is no figure within ten years (25 years before 1800, 50 before 1500); the map then gives the nearest figures instead of an estimate. The smaller towns’ figures come from Wikidata and from population tables in Wikipedia articles (checked against Wikidata), so they are thinner in Britain, Portugal, Turkey and before the mid-1800s, and zoomed-in views there can show fewer than ten. Before 1800 the figures are mostly Jan de Vries’s estimates every 50 years for towns that reached 10,000 people, which cover western and central Europe but not the Ottoman lands or Russia. Before 1500 there are figures for only about 60 cities, mostly Tertius Chandler’s estimates, so many countries show few or none. Early figures are estimates, some for the wider city, so they are not always comparable with later census counts.</p>
         <details>
           <summary>Corrections to OHM (<span id="nfix"></span>)</summary>
           <ul id="fixes"></ul>
@@ -673,16 +673,22 @@ function cityAt(ev) {
   }
   return best;
 }
+// the highlighted country's 10 largest cities on screen: zooming in or panning brings in smaller ones, so the screen
+// keeps up to 10 at any zoom (as many as the city list has there)
+const CITY_MAX = 10;
 function focusCities() {
   const fu = focusUnit(), k = pxPerKm(), r = svg.getBoundingClientRect();
   if (fu < 0 || !k) return [];
-  let inside = CITIES.filter(c => cityUnit(c, year) === fu).map(c => ({ c, p: popAt(c, year) }))
-    .filter(d => d.p.k !== 'none' || Math.abs(d.p.a[0] - year) <= Math.max(25, NEAR(year)))      // no figure that close: its size then is unknown, so leave it out
-    .sort((a, b) => b.p.v - a.p.v);
-  if (inside.length) { const top = inside[0].p.v; inside = inside.filter((d, n) => n < 10 && d.p.v >= top * 0.03); }   // the 10 largest, none under 3% of the biggest
-  if (selCity != null && !inside.some(d => d.c.i === selCity) && cityUnit(CITIES[selCity], year) === fu) inside.push({ c: CITIES[selCity], p: popAt(CITIES[selCity], year) });   // and the open city
+  const at = c => ({ c, p: popAt(c, year), sx: (c.x - shown[0]) * k, sy: (c.y - shown[1]) * k });
+  const under = controlBoxes();       // a city under the zoom buttons or the year can't be seen, so it doesn't count
+  const onScreen = d => d.sx >= 0 && d.sy >= 0 && d.sx <= r.width && d.sy <= r.height && !under.some(b => d.sx > b[0] && d.sx < b[2] && d.sy > b[1] && d.sy < b[3]);
+  const x0 = shown[0], y0 = shown[1], x1 = x0 + r.width / k, y1 = y0 + r.height / k;      // the screen, in map km
+  const inside = CITIES.filter(c => c.x >= x0 && c.x <= x1 && c.y >= y0 && c.y <= y1 && cityUnit(c, year) === fu).map(at)
+    .filter(d => onScreen(d) && (d.p.k !== 'none' || Math.abs(d.p.a[0] - year) <= Math.max(25, NEAR(year))))   // no figure that close: its size then is unknown, so leave it out
+    .sort((a, b) => b.p.v - a.p.v).slice(0, CITY_MAX);
+  if (selCity != null && !inside.some(d => d.c.i === selCity) && cityUnit(CITIES[selCity], year) === fu) inside.push(at(CITIES[selCity]));   // and the open city
   for (const d of inside) {
-    d.sx = (d.c.x - shown[0]) * k; d.sy = (d.c.y - shown[1]) * k; d.r = Math.min(9, 2.2 + 1.5 * Math.sqrt(d.p.v / 100000));
+    d.r = Math.min(9, 2.2 + 1.5 * Math.sqrt(d.p.v / 100000));
     d.vis = d.sx > -20 && d.sy > -20 && d.sx < r.width + 20 && d.sy < r.height + 20;
   }
   return inside;
@@ -691,7 +697,7 @@ function drawCities() {
   const g = $('cities'); g.textContent = ''; cityDots = [];
   const fu = focusUnit(), k = pxPerKm(), r = svg.getBoundingClientRect();
   if (fu < 0 || !k) { selCity = null; queuePop(); return; }
-  // only the country's larger cities: at most 10, and none smaller than a tenth of its biggest that year
+  // only the country's larger cities on screen: at most 10 (focusCities)
   const inside = focusCities();
   if (selCity != null && !inside.some(d => d.c.i === selCity)) selCity = null;
   const taken = focusBox ? [focusBox.slice()] : [], fs = 12, wf = 0.5;

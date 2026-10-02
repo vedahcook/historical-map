@@ -6,3 +6,7 @@ europe-map/europe-borders-sources.json
 europe-map/geo.json
 sources/
 _site/
+europe-map/cities/hm-candidates.json
+europe-map/cities/hm-series.json
+europe-map/cities/towns_qids.json
+europe-map/cities/towns_input.json
