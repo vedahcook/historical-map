@@ -123,6 +123,6 @@
       if (part[k]) keep(part[k], `ru:{{Население|${ruArg[part[k]]}}}`, [pts]);
     });
   }
-  SAVE('hm-town-tables.json', JSON.stringify(G.out));
+  SAVE(window.OUT_NAME || 'hm-town-tables.json', JSON.stringify(G.out));
   G.status = 'done';
 })();
