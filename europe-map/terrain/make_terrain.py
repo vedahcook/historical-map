@@ -132,17 +132,34 @@ for (path, num, name), xs in groups.items():
 print('rivers', len(riv), sum(len(c) for x in riv for c in x['c']) // 2, 'points')
 
 # ---------- lakes: Natural Earth 10m, the larger ones (the page's own 50m lakes cover the rest from far out) ----------
+# Man-made reservoirs (terrain/reservoirs.json) carry the years they existed, 'y': [[first, last or null], ...], so the
+# page shows them only then: a reservoir is the lake that holds its point, and any copy of it in the other file.
+from shapely.geometry import Point
+RES = json.load(open(__file__.rsplit('/', 1)[0] + '/reservoirs.json'))['reservoirs']
+geoms = [shapely.make_valid(shape(f['geometry'])) for f in lakes_all]
+years = [None] * len(lakes_all); used = set()
+for name, lon, lat, yr, note in RES:
+    hit = [i for i, g in enumerate(geoms) if g.contains(Point(lon, lat))]
+    if not hit: hit = [i for i, g in enumerate(geoms) if g.distance(Point(lon, lat)) < 0.03][:1]   # (points rounded off a narrow lake)
+    if not hit: print('reservoir not found:', name)
+    for i in hit: years[i] = yr; used.add(name)
+for i, g in enumerate(geoms):                     # the same reservoir in both Natural Earth files
+    if years[i] is None and g.intersects(WIDE):
+        for j, h in enumerate(geoms):
+            if years[j] is not None and g.intersects(h) and g.intersection(h).area > 0.5 * min(g.area, h.area): years[i] = years[j]; break
 lk = []
-for f in lakes_all:
-    p = f['properties']; g = shapely.make_valid(shape(f['geometry']))
+for f, g, yr in zip(lakes_all, geoms, years):
+    p = f['properties']
     if not g.intersects(WIDE): continue
     g = shapely.make_valid(proj(g.intersection(WIDE))).simplify(0.8)
     if g.area < 25: continue
     z = float(p.get('min_zoom') or 6)
+    if yr is None and p.get('featurecla') == 'Reservoir': print('  kept as a natural lake:', p.get('name'))
     for q in shapely.get_parts(g):
         if q.geom_type != 'Polygon' or q.area < 25: continue
         lk.append({'z': z, 'c': [[round(c, 1) for xy in ring.coords for c in xy] for ring in [q.exterior, *q.interiors]]})
-print('lakes', len(lk))
+        if yr: lk[-1]['y'] = yr
+print('lakes', len(lk), 'of which reservoirs', sum('y' in l for l in lk))
 
 # ---------- names of mountain ranges, uplands and plains ----------
 from shapely.ops import polylabel

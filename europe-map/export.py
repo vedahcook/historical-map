@@ -178,6 +178,11 @@ for a in sorted(ALT, key=lambda a: (a['y0'], -a['km2'])):
                  'y0': a['y0'], 'y1': a['y1'], 'km2': a['km2'], 'x': round(pt.x, 1), 'y': round(pt.y, 1)})
     afeats.append(feat(g, {'i': len(alts) - 1}))
 lakes = [f for f in json.load(open(f'{BAL}/ne_50m_lakes.geojson'))['features'] if (f['properties'].get('scalerank') or 0) <= 4]
+# man-made reservoirs are left out of this coarse layer (it shows only until terrain.json loads, whose lakes show each
+# reservoir in its own years): Rybinsk, Kremenchuk, Kakhovka and Kuybyshev
+from shapely.geometry import Point
+RES = json.load(open('terrain/reservoirs.json'))['reservoirs']
+lakes = [f for f in lakes if not any(shape(f['geometry']).distance(Point(r[1], r[2])) < 0.03 for r in RES)]
 lfeats = [feat(proj(shapely.make_valid(shape(f['geometry'])).intersection(VIEW)), {}) for f in lakes if shape(f['geometry']).intersects(VIEW)]
 rivers = [f for f in json.load(open(f'{BAL}/ne_50m_rivers_lake_centerlines.geojson'))['features'] if (f['properties'].get('scalerank') or 9) <= 5]
 rfeats = [feat(proj(shape(f['geometry']).intersection(VIEW)), {}) for f in rivers if shape(f['geometry']).intersects(VIEW)]
