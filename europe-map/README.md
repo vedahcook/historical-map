@@ -7,6 +7,7 @@ The page is `europe-borders.html`, published as a Claude artifact. It holds the 
 - `europe-borders-1500.json` (1500–1799) and `europe-borders-1000.json` (1000–1499): the earlier maps. The page loads the one next to the era on screen a moment after it opens, and any era at once when the slider reaches it. Opened straight from disk, a browser may refuse to load them; the page then says so for years before 1800.
 - `flags.webp`: all the flag images in one picture, at the small size the popup shows.
 - `flag-images/`: a larger copy of each flag, one file each, loaded only when a flag is tapped.
+- `terrain.json` also holds the names of physical features and the spines they are set along.
 - `city-events.json` and `city-people.json`: events in each city and people born or died there (from Wikidata), loaded a moment after the page opens.
 - `terrain.json` and `relief.webp`: rivers, lakes and the names of mountain ranges in more detail, and the shaded relief (from Natural Earth), loaded a moment after the page opens.
 
@@ -18,7 +19,7 @@ The page is `europe-borders.html`, published as a Claude artifact. It holds the 
 - **Cities** appear inside the highlighted country: the ten largest of its cities on screen that year. Zooming in or panning brings in smaller towns, so a view about 200 km across still shows ten in most of Europe from the 1800s on. Tap a city for its population that year, a chart of all its figures, and who held it over the years. The list of holders uses each state's full name, as in its own popup, and for a dependent territory names the power that controlled it ("under the Ottoman Empire", "occupied by Germany") unless the name already says so; a renamed state (Russian Empire, Soviet Union, Russia) gets a line for each name. Tap a dot in the chart, a spot on the strip, or a line in the list to go to that year; the popup stays put.
 - **City popups have tabs:** *Population* (the figure and chart), *Held by*, *Events* (what happened there, with links to Wikipedia; tap a row to go to that year) and *People* (who was born or died there; those alive in the year shown are in bold). The tab chosen stays chosen from city to city.
 - **Event icons:** in the year of an event, its city shows an icon for the kind of event (battle or siege, massacre or attack, uprising, treaty or congress, church council, coronation, great fire, other disaster, world's fair or Olympic Games, trial, crisis or scandal), with the city's name. Up to seven at a time, the most written-about first (the highlighted country's before the rest), so zooming in brings in others. Tapping one highlights whoever held the city and opens its popup on the Events tab.
-- **Terrain:** shaded relief, faint under the country colors, fading as you zoom in; more rivers and lakes as you zoom in, with river names along their course; names of mountain ranges and plains. The mountain button beside the zoom buttons turns the relief and the mountain names on and off (remembered in the browser).
+- **Terrain:** shaded relief from elevation data, faint under the country colors; more rivers and lakes as you zoom in; and a layer of names of physical features (seas, ranges, plains, rivers, passes, peaks), set along each feature in a serif italic. The mountain button beside the zoom buttons turns the relief and these names on and off (remembered in the browser).
 - **Zoomed timeline:** letting go of the year slider zooms the timeline in around that year, to a span of 6 to 400 years: the shortest that holds about ten city events on screen (or in the highlighted country). The events then show as icons at their dates above the slider and as a list below it (tap one to go to its year and open its city). The arrows at the ends, or dragging the bar, move along at that scale; the button showing 1000–2026 zooms back out.
 - **One popup at a time,** placed to cover as little as possible of what it describes.
 
@@ -95,7 +96,21 @@ Limits: Wikidata sometimes places an event or a birth in a district or region ra
 
 ## Terrain (October 2026)
 
-`python3 terrain/make_terrain.py <folder with the sources>` writes `relief.webp` and `terrain.json`. The sources are Natural Earth (public domain): the 1:50m shaded relief (`shadedrelief.jpg` from the basemap-data Python package, which ships Natural Earth's picture) and, from github.com/nvkelso/natural-earth-vector, the 10m rivers (with the Europe supplement), 10m lakes, the 10m geography regions (mountain ranges and plains) and the 50m land. The relief keeps only the light and shade of the picture (its brightness against the local average), drawn in the map's projection at 2.5 km to the pixel as black and white with transparency. Rivers and lakes carry Natural Earth's zoom levels, which the page converts to its own scale.
+Three steps, in `europe-map/`, with the Natural Earth files in a folder SRC (from github.com/nvkelso/natural-earth-vector, geojson folder: the 10m rivers with the Europe supplement, the 10m lakes and Europe lakes, the 10m geography regions and marine areas, the 50m land; and `shadedrelief.jpg` from the basemap-data Python package):
+
+1. `python3 terrain/make_terrain.py SRC`: rivers and lakes (with Natural Earth's zoom levels, which the page converts to its own scale) into `terrain.json`. It also draws a relief from Natural Earth's shaded-relief picture, which step 2 replaces.
+2. `python3 terrain/make_relief_dem.py terrain/srtm_ramp2_eu.u8.gz SRC terrain.json`: the shaded relief from elevation data. The heights are NASA's, as the 8-bit picture "Srtm ramp2.world.21600x10800.jpg" on Wikimedia Commons (public domain, one pixel per minute of arc, about 37 m per gray level, checked against known peaks), cut to Europe by `browser/fetch_dem.js` and kept in `terrain/srtm_ramp2_eu.u8.gz`. Smoothed a little, resampled to the map's projection at 1.6 km to the pixel, lit from four directions around the northwest, and drawn as black or white with transparency, so the page lays it over the country colors (`relief.webp`).
+3. `python3 terrain/make_features.py SRC terrain.json`: the names of physical features (below).
+
+### Names of physical features
+
+One layer of names, apart from the political ones: seas, gulfs and straits, mountain ranges, plains and uplands, rivers, passes, gorges and peaks. They are set in a serif italic (plains upright), water in blue and land in browns, and each shows from the zoom its rank allows.
+
+- **Seas and ranges** (Natural Earth's marine areas and geography regions) carry a spine, the longest line through the middle of their shape (the shape drawn on a grid, thinned to a skeleton, the longest path taken and smoothed). The page sets the name along the part of the spine on screen, spaced out to stretch across it, as older atlases do; where other names are in the way it tightens the spacing, moves along the line, or moves a little to one side of it.
+- **Rivers** are named along their course.
+- **Passes, gorges, gaps, straits, peaks, marshes and forests** that mattered in Europe's history but are not in Natural Earth come from `terrain/features_extra.json` (positions from Wikidata): passes and peaks get a small mark.
+- **Order** when names compete for room: countries, cities and events, then seas, ranges, rivers, gulfs and straits, plains, peaks, passes.
+- The mountain button turns the relief and this layer off (the rivers themselves stay).
 
 ## Checks
 
@@ -141,5 +156,5 @@ The map is plain files, so any web host can serve it.
 - **The medieval map is coarser still.** Cliopatria's outlines change in steps of a few years and are simplified, and borders in the east (the steppe, Anatolia, the Caucasus) are rough.
 - **The early map is coarser.** Small states of the Holy Roman Empire are often missing before about 1700, the steppe and the Caucasus are only roughly drawn, and Cliopatria's outlines are simplified.
 - **City figures vary in quality.** Early figures are estimates, some for the wider city.
-- **The relief is coarse up close:** it is drawn from a picture about 2.5 km to the pixel, so it fades as the map zooms in.
+- **The relief is coarse up close:** the elevation data has about 2 km to the pixel, so it softens and fades somewhat when zoomed in far.
 - **CShapes-Europe is non-commercial (CC BY-NC-SA 4.0),** so the map is too. Flag images keep their own licenses (see Flags).

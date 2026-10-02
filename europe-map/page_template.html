@@ -1,29 +1,30 @@
 <title>Europe's Borders, 1000–2026</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Instrument+Sans:wght@400;500;600;700&family=Source+Sans+3:wght@300..700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=Instrument+Sans:wght@400;500;600;700&family=Source+Sans+3:wght@300..700&display=swap">
 <style>
 /* Layout: an atlas plate. The map fills the left, a year slider runs under it, and a side panel explains the year, the place you clicked, and where sources disagree. */
 :root {
   --bg: #f2f4f1; --surface: #ffffff; --sunk: #e9ece7; --ink: #18201c; --muted: #56605a; --faint: #7d867f; --line: #d6dbd4;
   --accent: #1f5f6b; --accent-ink: #ffffff; --focus: #1f5f6b;
-  --water: #bfd1da; --outside: #e7ebe8; --grat: rgba(42,48,44,0.12); --none: #e6e4dc; --border: rgba(42,48,44,0.38); --vborder: rgba(42,48,44,0.28); --dim: rgba(242,244,241,0.5); --dimtext: 0.26; --river: #86adc0; --halo: rgba(255,255,255,0.88); --river-ink: #2f6c86; --mtn-ink: #6e5233; --relief: 0.5;
+  --water: #bfd1da; --outside: #e7ebe8; --grat: rgba(42,48,44,0.12); --none: #e6e4dc; --border: rgba(42,48,44,0.38); --vborder: rgba(42,48,44,0.28); --dim: rgba(242,244,241,0.5); --dimtext: 0.26; --river: #86adc0; --halo: rgba(255,255,255,0.88); --river-ink: #2f6c86; --mtn-ink: #7a5534; --plain-ink: #85784f; --relief: 0.5;
   --alt: #1f5f6b; --alt-fill: rgba(31,95,107,0.16); --sel: #18201c;
   /*FILLS_LIGHT*/
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
   --sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   --mapfont: "Source Sans 3", "Instrument Sans", system-ui, sans-serif;
+  --phys: "Source Serif 4", Georgia, "Times New Roman", serif;    /* names of physical features */
   --r: 12px;
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
   --bg: #111513; --surface: #1a201d; --sunk: #151a18; --ink: #e6ece8; --muted: #a3aea7; --faint: #7f8a83; --line: #2e3632;
   --accent: #7fc4cf; --accent-ink: #0e1412; --focus: #7fc4cf;
-  --water: #14232a; --outside: #161b19; --grat: rgba(223,230,225,0.12); --none: #2a2e2b; --border: rgba(223,230,225,0.34); --vborder: rgba(223,230,225,0.24); --dim: rgba(17,21,19,0.48); --dimtext: 0.3; --river: #2c4b57; --halo: rgba(17,21,19,0.85); --river-ink: #8cbcd0; --mtn-ink: #cdb08f; --relief: 0.42;
+  --water: #14232a; --outside: #161b19; --grat: rgba(223,230,225,0.12); --none: #2a2e2b; --border: rgba(223,230,225,0.34); --vborder: rgba(223,230,225,0.24); --dim: rgba(17,21,19,0.48); --dimtext: 0.3; --river: #2c4b57; --halo: rgba(17,21,19,0.85); --river-ink: #8cbcd0; --mtn-ink: #d2b08c; --plain-ink: #bdb08a; --relief: 0.42;
   --alt: #7fc4cf; --alt-fill: rgba(127,196,207,0.2); --sel: #ffffff;
   /*FILLS_DARK*/
   color-scheme: dark; } }
 :root[data-theme="dark"] {
   --bg: #111513; --surface: #1a201d; --sunk: #151a18; --ink: #e6ece8; --muted: #a3aea7; --faint: #7f8a83; --line: #2e3632;
   --accent: #7fc4cf; --accent-ink: #0e1412; --focus: #7fc4cf;
-  --water: #14232a; --outside: #161b19; --grat: rgba(223,230,225,0.12); --none: #2a2e2b; --border: rgba(223,230,225,0.34); --vborder: rgba(223,230,225,0.24); --dim: rgba(17,21,19,0.48); --dimtext: 0.3; --river: #2c4b57; --halo: rgba(17,21,19,0.85); --river-ink: #8cbcd0; --mtn-ink: #cdb08f; --relief: 0.42;
+  --water: #14232a; --outside: #161b19; --grat: rgba(223,230,225,0.12); --none: #2a2e2b; --border: rgba(223,230,225,0.34); --vborder: rgba(223,230,225,0.24); --dim: rgba(17,21,19,0.48); --dimtext: 0.3; --river: #2c4b57; --halo: rgba(17,21,19,0.85); --river-ink: #8cbcd0; --mtn-ink: #d2b08c; --plain-ink: #bdb08a; --relief: 0.42;
   --alt: #7fc4cf; --alt-fill: rgba(127,196,207,0.2); --sel: #ffffff;
   /*FILLS_DARK*/
   color-scheme: dark;
@@ -59,9 +60,17 @@ button, select, input { font: inherit; color: inherit; }
 .riv { fill: none; stroke: var(--river); stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; pointer-events: none; }
 .riv.w1 { stroke-width: 1.8px; } .riv.w2 { stroke-width: 1.35px; } .riv.w3 { stroke-width: 1px; } .riv.w4 { stroke-width: 0.7px; }
 .lake2 { fill: var(--water); stroke: none; pointer-events: none; }
-/* names of rivers (along them) and of mountain ranges and plains: on screen only at the zoom Natural Earth gives them */
-.rlbl { font-family: var(--mapfont); font-style: italic; font-weight: 450; fill: var(--river-ink); stroke: var(--halo); stroke-linejoin: round; paint-order: stroke; letter-spacing: 0.03em; pointer-events: none; }
-.mlbl { font-family: var(--mapfont); font-style: italic; font-weight: 500; fill: var(--mtn-ink); stroke: var(--halo); stroke-linejoin: round; paint-order: stroke; letter-spacing: 0.16em; text-transform: uppercase; text-anchor: middle; dominant-baseline: central; pointer-events: none; }
+/* names of physical features: a serif italic, apart from the political names; water blue, mountains brown, plains a
+   lighter brown and upright */
+.rlbl, .fw, .fr, .fl, .fp { font-family: var(--phys); font-style: italic; stroke: var(--halo); stroke-linejoin: round; paint-order: stroke; pointer-events: none; }
+.rlbl { fill: var(--river-ink); font-weight: 400; letter-spacing: 0.06em; }
+.fw { fill: var(--river-ink); font-weight: 400; }
+.fr { fill: var(--mtn-ink); font-weight: 500; }
+.fl { fill: var(--plain-ink); font-style: normal; font-weight: 500; }
+.fp { fill: var(--mtn-ink); font-weight: 400; }
+.fmark { pointer-events: none; }
+.fmark path { fill: none; stroke: var(--mtn-ink); stroke-width: 1.4; stroke-linecap: round; }
+.fmark.peak path { fill: var(--mtn-ink); stroke: var(--halo); stroke-width: 1; }
 .borders { fill: none; stroke: var(--border); stroke-width: 1px; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
 .vborders { fill: none; stroke: var(--vborder); stroke-width: 0.8px; stroke-dasharray: 3 2; vector-effect: non-scaling-stroke; }
 .altline { fill: transparent; stroke: var(--alt); stroke-width: 1.8px; stroke-dasharray: 6 4; vector-effect: non-scaling-stroke; cursor: pointer; }
@@ -274,7 +283,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
           <button type="button" id="zin" aria-label="Zoom in">+</button>
           <button type="button" id="zout" aria-label="Zoom out">−</button>
           <button type="button" id="zreset" aria-label="Show all of Europe" title="Show all of Europe">⤢</button>
-          <button type="button" id="terrain" class="tog" aria-pressed="true" aria-label="Terrain: shaded relief and the names of mountain ranges" title="Terrain"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M1.5 16.5 7 7.2l2.6 4.3 1.9-2.9 7 7.9z"/><path d="M5.6 9.6 7 7.2l1.5 2.4-1.5-.6z" style="fill:var(--surface);opacity:.75"/></svg></button>
+          <button type="button" id="terrain" class="tog" aria-pressed="true" aria-label="Terrain: shaded relief and the names of seas, rivers, mountains and plains" title="Terrain and physical names"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M1.5 16.5 7 7.2l2.6 4.3 1.9-2.9 7 7.9z"/><path d="M5.6 9.6 7 7.2l1.5 2.4-1.5-.6z" style="fill:var(--surface);opacity:.75"/></svg></button>
         </div>
         <div class="yearstamp num" id="stamp" aria-hidden="true">1815</div>
         <div class="mappop" id="mappop" role="dialog" aria-label="Details" hidden></div>
@@ -313,7 +322,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
         <p>Cities appear when a country is highlighted: the ten largest of its cities on screen that year, so zooming in brings in smaller towns. They come from about 4,900 cities and towns (Europe's largest by 1900, those that grew large after, large towns of 1000–1800, and every town that reached about 20,000 people), placed in whichever country held them that year. Tap one for its population. Figures come from censuses where there is one for that year; between figures the map estimates, assuming steady growth, and says so. A hollow dot means there is no figure within ten years (25 years before 1800, 50 before 1500); the map then gives the nearest figures instead of an estimate. The smaller towns’ figures come from Wikidata and from population tables in Wikipedia articles (checked against Wikidata), so they are thinner in Britain, Portugal, Turkey and before the mid-1800s, and zoomed-in views there can show fewer than ten. Before 1800 the figures are mostly Jan de Vries’s estimates every 50 years for towns that reached 10,000 people, which cover western and central Europe but not the Ottoman lands or Russia. Before 1500 there are figures for only about 60 cities, mostly Tertius Chandler’s estimates, so many countries show few or none. Early figures are estimates, some for the wider city, so they are not always comparable with later census counts.</p>
         <p>Events and people come from Wikidata. An icon marks an event located in a city in the year shown: a battle, siege or bombing; a massacre, assassination or attack; an uprising, revolution or protest; a treaty, congress or conference; a church council or papal election; a coronation; a great fire; an earthquake, flood or epidemic; a world’s fair or Olympic Games; or a trial, crisis, scandal or declaration. Up to seven show at a time: the most written about (by the number of Wikipedia languages with an article), the highlighted country’s first. A city’s popup lists its most written-about events from 1000 on, up to 30 for a large city and 12 for a town, no more than about a third of them from any one century, and the people Wikidata records as born or died there who have articles in at least ten languages (up to 14 for a large city, 6 for a town). Wikidata sometimes records an event or a birth for a district or region rather than the city, so some are missing.</p>
         <p>Letting go of the year slider zooms the timeline in around that year: from a few years to a few centuries, as many as it takes to hold about ten of the events on screen (or in the highlighted country), which then show at their dates. The arrows at its ends, or dragging it sideways, move along; the button with the full range of years zooms back out. Borders still change once a year, on July 1.</p>
-        <p>Terrain comes from Natural Earth. The shaded relief is drawn from a picture about 2.5 km to the pixel, so it fades as you zoom in. Smaller rivers, and the names of rivers and mountain ranges, appear as you zoom in. The mountain button beside the zoom buttons turns the relief and the names of mountain ranges on and off.</p>
+        <p>Terrain: the shaded relief is drawn from NASA’s elevation data (about 2 km to the pixel) and lit from the northwest; rivers and lakes come from Natural Earth and add detail as you zoom in. Names of physical features (seas and straits, mountain ranges, plains, rivers, and passes and peaks that mattered in Europe’s history) are a layer of their own, set along each feature in a serif italic, and appear as the zoom allows. The mountain button beside the zoom buttons turns the relief and these names on and off.</p>
         <details>
           <summary>Corrections to OHM (<span id="nfix"></span>)</summary>
           <ul id="fixes"></ul>
@@ -329,7 +338,9 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
             <li>Breakaway regions (Transnistria, Abkhazia, South Ossetia, Artsakh, Crimea and the Donbas in 2014-21): Natural Earth’s disputed areas (public domain).</li>
             <li>City populations: Wikidata (CC0), census tables in city articles in English, German, French, Polish, Russian, Ukrainian, Greek, Turkish and other Wikipedia editions (CC BY-SA 4.0), the UN Statistics Division’s Demographic Yearbook city table (public domain via datasets/population-city), Jan de Vries’s estimates for 1500–1800 (<i>European Urbanization, 1500–1800</i>, 1984) from Matthew Lincoln’s europop dataset (CC0), and estimates by Chandler, de Vries and Mitchell as tabled in Wikipedia's <a href="https://en.wikipedia.org/wiki/Historical_urban_community_sizes" target="_blank" rel="noopener">Historical urban community sizes</a>. Gathered September 29, 2026.</li>
             <li id="flagsrc" hidden>Flags: Wikimedia Commons, chosen through each state’s Wikidata entry (the flag dated to that year where Wikidata gives dates). Most are in the public domain; each popup names its flag’s license, and the others are credited under Flag credits. Flags of some early states are later reconstructions.</li>
-            <li>Coastlines, lakes and rivers, shaded relief and the names of mountain ranges: Natural Earth (public domain). The relief comes from Natural Earth’s 1:50m shaded relief as packaged with the basemap-data library.</li>
+            <li>Coastlines, lakes, rivers, seas, mountain ranges and plains: Natural Earth (public domain).</li>
+            <li>Shaded relief: NASA elevation data (SRTM and bathymetry, as the 21600 x 10800 heightmap on Wikimedia Commons; public domain).</li>
+            <li>Passes, gorges, straits and peaks added by hand: positions from Wikidata (CC0).</li>
             <li>Events in cities, and people born or died there: Wikidata (CC0), linked to English Wikipedia. Gathered October 2, 2026.</li>
             <li>Projection: Lambert azimuthal equal-area for Europe (ETRS89-LAEA), so areas compare fairly.</li>
           </ul>
@@ -955,67 +966,169 @@ function drawTerrain() {
   const rel = $('relief');
   if (terrainOn && !rel.getAttribute('href')) rel.setAttribute('href', T.relief.src);
   rel.setAttribute('visibility', terrainOn ? 'visible' : 'hidden');
-  // the relief is drawn from a picture about 2.5 km to the pixel, so it fades as the map zooms in past it
-  rel.style.opacity = `calc(var(--relief) * ${Math.max(0.3, Math.min(1, (6.8 - z) / 1.6)).toFixed(2)})`;
+  // the relief (about 1.6 km to the pixel) fades somewhat as the map zooms in past it
+  rel.style.opacity = `calc(var(--relief) * ${Math.max(0.5, Math.min(1, (8.2 - z) / 2)).toFixed(2)})`;
 }
-// names of mountain ranges and plains (terrain on), then of rivers along their course, where they fit among the other
-// names; river names wait until the map stops moving
+// ---------- names of physical features: one layer, apart from the political names ----------
+// Seas, gulfs and straits, mountain ranges, plains and uplands, rivers, passes and peaks (terrain.json: 'feat', and the
+// rivers). They are set in a serif italic (plains upright), water in blue and land in browns, and placed along each
+// feature's spine (its longest middle line, computed by terrain/make_features.py), spaced out to stretch across the part
+// on screen, the way older atlases name ranges and seas; passes and peaks get a small mark. Each shows from the zoom its
+// rank allows, and only where it keeps clear of the names already placed: countries, cities and events first, then seas,
+// ranges, rivers, gulfs and straits, plains, and last passes and peaks. The mountain button turns this layer and the
+// relief off. While the map moves, the layer waits until it stops.
+const FST = {
+  sea:     { cls: 'fw', fs: r => r <= 1 ? 16 : r <= 2 ? 14.5 : 13, caps: true, tr: [0.18, 1.0], max: 6, fill: 0.65 },
+  range:   { cls: 'fr', fs: r => r <= 2 ? 13.5 : r <= 3 ? 12.5 : 11.5, caps: true, tr: [0.22, 1.2], max: 10 },
+  gulf:    { cls: 'fw', fs: () => 12, caps: false, tr: [0.04, 0.45], max: 6 },
+  strait:  { cls: 'fw', fs: () => 11, caps: false, tr: [0, 0.12], max: 6 },
+  lowland: { cls: 'fl', fs: r => r <= 3 ? 11.5 : 10.5, caps: true, tr: [0.2, 0.7], max: 6, fill: 0.45 },
+  pass:    { cls: 'fp', fs: () => 10.5, max: 8 },
+  peak:    { cls: 'fp', fs: () => 10.5, max: 6 },
+};
+const ORDER = ['sea', 'range', 'river', 'gulf', 'strait', 'lowland', 'peak', 'pass'];
+const measure = (() => { const cx = document.createElement('canvas').getContext('2d'); return (t, fs, italic, wt) => { cx.font = `${italic ? 'italic ' : ''}${wt} ${fs}px "Source Serif 4", Georgia, serif`; return cx.measureText(t).width; }; })();
+let flTimer = 0;
 function drawTerrainLabels(boxes) {
-  const g = $('tlabels'); g.textContent = ''; clearTimeout(tlTimer);
-  if (!T) return;
-  const k = pxPerKm(), z = webZoom(), sr = svg.getBoundingClientRect(); if (!k) return;
-  const taken = boxes.slice(), hit = b => taken.some(t => b[0] < t[2] && b[2] > t[0] && b[1] < t[3] && b[3] > t[1]);
-  if (terrainOn) for (const m of T.names) {
-    if (m.z > z + 0.3) continue;
-    const sx = (m.x - shown[0]) * k, sy = (m.y - shown[1]) * k, fs = m.k === 'r' ? 11.5 : 10.5;
-    const w = m.n.length * fs * 0.78 + 8, h = fs * 1.4, b = [sx - w / 2, sy - h / 2, sx + w / 2, sy + h / 2];
-    if (b[0] < 0 || b[1] < 0 || b[2] > sr.width || b[3] > sr.height || hit(b)) continue;
-    if (Math.max(m.w, m.h) * k < w * 0.45) continue;             // the range is a speck at this zoom
-    taken.push(b);
-    const t = el('text', { x: m.x, y: m.y, class: 'mlbl' }, g); t.setAttribute('style', `font-size:${(fs / k).toFixed(2)}px;stroke-width:${(2.6 / k).toFixed(2)}px`); t.textContent = m.n;
-  }
-  if (animating || svg.classList.contains('drag')) { tlTimer = setTimeout(() => drawRiverNames(taken), 160); return; }
-  drawRiverNames(taken);
+  const g = $('tlabels'); g.textContent = ''; clearTimeout(flTimer);
+  if (!T || !terrainOn) return;
+  if (animating || svg.classList.contains('drag')) { flTimer = setTimeout(() => placeFeatures(boxes.slice()), 160); return; }
+  placeFeatures(boxes.slice());
 }
-function drawRiverNames(taken) {
-  const g = $('tlabels'), k = pxPerKm(), z = webZoom(), sr = svg.getBoundingClientRect(); if (!k) return;
-  g.querySelectorAll('.rlbl, defs').forEach(e => e.remove());
+// a line on screen (pixels) from a feature's spine: the longest stretch inside the screen, resampled every 6 px and smoothed
+function screenRun(c, k, sr, M) {
+  let best = null, run = [];
+  const flush = () => { if (run.length > 1) { const L = runLen(run); if (!best || L > best.L) best = { pts: run, L }; } run = []; };
+  for (let i = 0; i < c.length; i += 2) {
+    const sx = (c[i] - shown[0]) * k, sy = (c[i + 1] - shown[1]) * k;
+    if (sx > M && sy > M && sx < sr.width - M && sy < sr.height - M) run.push([sx, sy]); else { if (run.length && i + 2 < c.length) run.push(clipTo(run[run.length - 1], [sx, sy], sr, M)); flush(); }
+  }
+  flush();
+  if (!best) return null;
+  const pts = resample(best.pts, 6);
+  for (let pass = 0; pass < 3; pass++) for (let i = 1; i < pts.length - 1; i++) pts[i] = [(pts[i - 1][0] + 2 * pts[i][0] + pts[i + 1][0]) / 4, (pts[i - 1][1] + 2 * pts[i][1] + pts[i + 1][1]) / 4];
+  return { pts, L: runLen(pts) };
+}
+const runLen = p => { let L = 0; for (let i = 1; i < p.length; i++) L += Math.hypot(p[i][0] - p[i - 1][0], p[i][1] - p[i - 1][1]); return L; };
+function clipTo(a, b, sr, M) {        // the point where the segment a→b leaves the screen (inset by M)
+  let t = 1;
+  if (b[0] < M) t = Math.min(t, (a[0] - M) / (a[0] - b[0])); if (b[0] > sr.width - M) t = Math.min(t, (sr.width - M - a[0]) / (b[0] - a[0]));
+  if (b[1] < M) t = Math.min(t, (a[1] - M) / (a[1] - b[1])); if (b[1] > sr.height - M) t = Math.min(t, (sr.height - M - a[1]) / (b[1] - a[1]));
+  return [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t];
+}
+function resample(p, step) {
+  const out = [p[0]]; let carry = 0;
+  for (let i = 1; i < p.length; i++) {
+    const [ax, ay] = p[i - 1], [bx, by] = p[i], d = Math.hypot(bx - ax, by - ay); let t = step - carry;
+    while (t <= d) { out.push([ax + (bx - ax) * t / d, ay + (by - ay) * t / d]); t += step; }
+    carry = d - (t - step);
+  }
+  if (out.length < 2) out.push(p[p.length - 1]);
+  return out;
+}
+// the stretch of a run from distance s0 to s1 (pixels along it)
+function cut(pts, s0, s1) {
+  const out = []; let acc = 0;
+  for (let i = 1; i < pts.length; i++) {
+    const d = Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]);
+    if (acc + d >= s0 && acc <= s1) out.push(pts[i - 1]);
+    acc += d; if (acc > s1) { out.push(pts[i]); break; }
+  }
+  return out.length > 1 ? out : null;
+}
+function placeFeatures(taken) {
+  const g = $('tlabels'); g.textContent = '';
+  const k = pxPerKm(), z = webZoom(), sr = svg.getBoundingClientRect(); if (!k) return;
   const defs = el('defs', {}, g), hit = b => taken.some(t => b[0] < t[2] && b[2] > t[0] && b[1] < t[3] && b[3] > t[1]);
-  const x0 = shown[0], y0 = shown[1], x1 = x0 + sr.width / k, y1 = y0 + sr.height / k, M = 14;
+  const x0 = shown[0], y0 = shown[1], x1 = x0 + sr.width / k, y1 = y0 + sr.height / k;
+  let nid = 0; const count = {};
+  // a name along a line: tracked out to fill up to 80% of the line, centered on it; its letters must all be clear
+  const alongLine = (pts, L, name, st, fs, italic, wt, caps) => {
+    const text = caps ? name.toUpperCase() : name, n = text.length, w0 = measure(text, fs, italic, wt), [tmin, tmax] = st.tr;
+    // spread wide first; where that collides, tighter, and at other places along the line
+    for (const fill of [st.fill || 0.8, 0.5, 0]) {
+    const ls = Math.min(tmax, Math.max(tmin, (L * fill - w0) / Math.max(1, n - 1) / fs)), W = w0 + (n - 1) * ls * fs; if (W > L * 0.92) continue;
+    for (const f of [0.5, 0.38, 0.62, 0.26, 0.74]) for (const off of [0, -1.3, 1.3, -2.6, 2.6]) {
+      if (L * f - W / 2 < 0 || L * f + W / 2 > L) continue;
+      const mid = L * f, seg0 = cut(pts, Math.max(0, mid - W / 2 - fs), Math.min(L, mid + W / 2 + fs)); if (!seg0) continue;
+      // or a little to one side of the line, where the names around leave more room
+      const seg = off ? seg0.map((p, i) => { const a = seg0[Math.max(0, i - 1)], b = seg0[Math.min(seg0.length - 1, i + 1)], dx = b[0] - a[0], dy = b[1] - a[1], d = Math.hypot(dx, dy) || 1; return [p[0] - dy / d * off * fs, p[1] + dx / d * off * fs]; }) : seg0;
+      // read left to right (and upward when the line is steep)
+      const a = seg[0], b = seg[seg.length - 1], steep = Math.abs(b[0] - a[0]) < 0.35 * Math.abs(b[1] - a[1]);
+      if (steep ? b[1] > a[1] : b[0] < a[0]) seg.reverse();
+      // bends too sharp for letters: skip
+      let bend = 0; for (let i = 2; i < seg.length; i++) { const t1 = Math.atan2(seg[i - 1][1] - seg[i - 2][1], seg[i - 1][0] - seg[i - 2][0]), t2 = Math.atan2(seg[i][1] - seg[i - 1][1], seg[i][0] - seg[i - 1][0]); let d = Math.abs(t2 - t1); if (d > Math.PI) d = 2 * Math.PI - d; bend = Math.max(bend, d); }
+      if (bend > 0.5) continue;
+      const boxes = resample(seg, Math.max(6, fs * 0.8)).map(([x, y]) => [x - fs * 0.55, y - fs * 0.6, x + fs * 0.55, y + fs * 0.6]);
+      if (boxes.some(b => hit(b))) continue;
+      taken.push(...boxes);
+      const id = 'fl' + nid++; el('path', { id, d: 'M' + seg.map(p => (x0 + p[0] / k).toFixed(2) + ',' + (y0 + p[1] / k).toFixed(2)).join('L') }, defs);
+      const t = el('text', { class: st.cls, dy: (0.34 * fs / k).toFixed(2) }, g);
+      t.setAttribute('style', `font-size:${(fs / k).toFixed(2)}px;stroke-width:${(2.4 / k).toFixed(2)}px;letter-spacing:${ls.toFixed(3)}em`);
+      const tp = el('textPath', { href: '#' + id, startOffset: '50%', 'text-anchor': 'middle' }, t); tp.textContent = text;
+      return true;
+    }
+    }
+    return false;
+  };
+  // a name beside a point (with a mark for a pass or a peak), or centered on it
+  const atPoint = (f, st, fs) => {
+    const sx = (f.p[0] - x0) * k, sy = (f.p[1] - y0) * k; if (sx < 10 || sy < 10 || sx > sr.width - 10 || sy > sr.height - 10) return false;
+    const mark = f.k === 'pass' || f.k === 'peak', caps = f.k === 'lowland', italic = f.k !== 'lowland', text = caps ? f.n.toUpperCase() : f.n;
+    const ls = caps ? 0.2 : 0.02, w = measure(text, fs, italic, 500) + text.length * ls * fs, h = fs * 1.25;
+    const spots = mark ? [[sx + 7, sy - h / 2, 'start'], [sx - 7 - w, sy - h / 2, 'end'], [sx - w / 2, sy - 6 - h, 'middle'], [sx - w / 2, sy + 6, 'middle']] : [[sx - w / 2, sy - h / 2, 'middle']];
+    const mb = mark ? [sx - 5, sy - 5, sx + 5, sy + 5] : null; if (mb && hit(mb)) return false;
+    const s = spots.find(([bx, by]) => !hit([bx, by, bx + w, by + h])); if (!s) return false;
+    taken.push([s[0], s[1], s[0] + w, s[1] + h]); if (mb) taken.push(mb);
+    if (mark) {
+      const m = el('g', { class: 'fmark ' + f.k, transform: `translate(${f.p[0]} ${f.p[1]}) scale(${(1 / k).toFixed(5)})` }, g);
+      m.innerHTML = f.k === 'peak' ? '<path d="M-4 3 0-4 4 3z"/>' : '<path d="M-3.6-4c2 2 2 6 0 8M3.6-4c-2 2-2 6 0 8"/>';
+    }
+    const tx = s[2] === 'start' ? s[0] : s[2] === 'end' ? s[0] + w : s[0] + w / 2;
+    const t = el('text', { x: (x0 + tx / k).toFixed(2), y: (y0 + (s[1] + h / 2) / k).toFixed(2), class: st.cls + (caps ? ' fl' : ''), 'text-anchor': s[2], 'dominant-baseline': 'central' }, g);
+    t.setAttribute('style', `font-size:${(fs / k).toFixed(2)}px;stroke-width:${(2.4 / k).toFixed(2)}px;letter-spacing:${ls}em`); t.textContent = text;
+    return true;
+  };
+  const inView = c => { for (let i = 0; i < c.length; i += 2) if (c[i] > x0 && c[i] < x1 && c[i + 1] > y0 && c[i + 1] < y1) return true; return false; };
+  for (const kind of ORDER) {
+    if (kind === 'river') { placeRivers(taken, defs, g, k, z, sr); continue; }
+    const st = FST[kind]; count[kind] = 0;
+    const list = (T.feat || []).filter(f => f.k === kind && f.z <= z + 0.3).sort((a, b) => a.z - b.z || a.r - b.r);
+    for (const f of list) {
+      if (count[kind] >= st.max) break;
+      const fs = st.fs(f.r);
+      let ok = false;
+      if (f.p) ok = atPoint(f, st, fs);
+      else if (inView(f.c)) {
+        const run = screenRun(f.c, k, sr, 12); if (!run || run.L < 40) continue;
+        ok = alongLine(run.pts, run.L, f.n, st, fs, kind !== 'lowland', kind === 'range' ? 500 : 400, st.caps) || alongLine(run.pts, run.L, f.n, st, fs * 0.85, kind !== 'lowland', 500, st.caps);
+      }
+      if (ok) count[kind]++;
+    }
+  }
+}
+// river names along their course: the larger rivers first, at most 14
+function placeRivers(taken, defs, g, k, z, sr) {
+  const x0 = shown[0], y0 = shown[1], x1 = x0 + sr.width / k, y1 = y0 + sr.height / k, hit = b => taken.some(t => b[0] < t[2] && b[2] > t[0] && b[1] < t[3] && b[3] > t[1]);
   const fs = 11.5; let n = 0;
   const rivers = T.rivers.filter(r => r.n && r.z <= z + 0.2 && r.lz <= z + 0.4 && r.bb[2] > x0 && r.bb[0] < x1 && r.bb[3] > y0 && r.bb[1] < y1).sort((p, q) => p.r - q.r);
   for (const r of rivers) {
     if (n >= 14) break;
-    const w = r.n.length * fs * 0.52 + 6;
-    // the longest stretch of the river on screen, in screen pixels
+    const w = measure(r.n, fs, true, 400) + r.n.length * 0.06 * fs;
     let best = null;
-    for (const c of r.c) {
-      let run = [];
-      const flush = () => { if (run.length > 1) { let L = 0; for (let i = 1; i < run.length; i++) L += Math.hypot(run[i][0] - run[i - 1][0], run[i][1] - run[i - 1][1]); if (!best || L > best.L) best = { pts: run, L }; } run = []; };
-      for (let i = 0; i < c.length; i += 2) {
-        const sx = (c[i] - x0) * k, sy = (c[i + 1] - y0) * k;
-        if (sx > M && sy > M && sx < sr.width - M && sy < sr.height - M) run.push([sx, sy]); else flush();
-      }
-      flush();
-    }
-    if (!best || best.L < w * 1.5) continue;
-    // the middle of that stretch, a little longer than the name; skip it if it bends too much
-    const pts = best.pts, cum = [0]; for (let i = 1; i < pts.length; i++) cum.push(cum[i - 1] + Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]));
-    const at = d => { let i = 1; while (i < cum.length - 1 && cum[i] < d) i++; const f = (d - cum[i - 1]) / ((cum[i] - cum[i - 1]) || 1); return [pts[i - 1][0] + (pts[i][0] - pts[i - 1][0]) * f, pts[i - 1][1] + (pts[i][1] - pts[i - 1][1]) * f]; };
+    for (const c of r.c) { const run = screenRun(c, k, sr, 14); if (run && (!best || run.L > best.L)) best = run; }
+    if (!best || best.L < w * 1.6) continue;
     let placed = false;
     for (const f of [0.5, 0.3, 0.7]) {
-      const L = w * 1.15, s0 = Math.max(0, best.L * f - L / 2), s1 = Math.min(best.L, s0 + L); if (s1 - s0 < L * 0.95) continue;
-      let seg = []; for (let j = 0; j <= 8; j++) seg.push(at(s0 + (s1 - s0) * j / 8));
-      const ang = (a, b) => Math.atan2(b[1] - a[1], b[0] - a[0]);
-      let bend = 0; for (let j = 2; j < seg.length; j++) { let d = Math.abs(ang(seg[j - 1], seg[j]) - ang(seg[j - 2], seg[j - 1])); if (d > Math.PI) d = 2 * Math.PI - d; bend += d; }
-      if (bend > 1.1) continue;
-      if (seg[seg.length - 1][0] < seg[0][0]) seg.reverse();         // read left to right
-      const xs = seg.map(p => p[0]), ys = seg.map(p => p[1]);
-      const b = [Math.min(...xs) - fs * 0.6, Math.min(...ys) - fs * 0.8, Math.max(...xs) + fs * 0.6, Math.max(...ys) + fs * 0.8];
-      if (hit(b)) continue;
-      taken.push(b); placed = true;
+      const seg = cut(best.pts, Math.max(0, best.L * f - w / 2 - 12), Math.min(best.L, best.L * f + w / 2 + 12)); if (!seg) continue;
+      if (seg[seg.length - 1][0] < seg[0][0]) seg.reverse();
+      let bend = 0; for (let i = 2; i < seg.length; i++) { const t1 = Math.atan2(seg[i - 1][1] - seg[i - 2][1], seg[i - 1][0] - seg[i - 2][0]), t2 = Math.atan2(seg[i][1] - seg[i - 1][1], seg[i][0] - seg[i - 1][0]); let d = Math.abs(t2 - t1); if (d > Math.PI) d = 2 * Math.PI - d; bend = Math.max(bend, d); }
+      if (bend > 0.45) continue;
+      const boxes = resample(seg, 8).map(([x, y]) => [x - 5, y - fs * 0.9, x + 5, y + fs * 0.2]);
+      if (boxes.some(b => hit(b))) continue;
+      taken.push(...boxes); placed = true;
       const id = 'rl' + n; el('path', { id, d: 'M' + seg.map(p => (x0 + p[0] / k).toFixed(2) + ',' + (y0 + p[1] / k).toFixed(2)).join('L') }, defs);
-      const t = el('text', { class: 'rlbl', dy: (-0.35 * fs / k).toFixed(2) }, g); t.setAttribute('style', `font-size:${(fs / k).toFixed(2)}px;stroke-width:${(2.6 / k).toFixed(2)}px`);
+      const t = el('text', { class: 'rlbl', dy: (-0.3 * fs / k).toFixed(2) }, g); t.setAttribute('style', `font-size:${(fs / k).toFixed(2)}px;stroke-width:${(2.4 / k).toFixed(2)}px`);
       const tp = el('textPath', { href: '#' + id, startOffset: '50%', 'text-anchor': 'middle' }, t); tp.textContent = r.n;
       break;
     }
