@@ -110,6 +110,36 @@
     HM.status = 'events done'; note('events: ' + Object.keys(ev).length);
   };
 
+  // 2b. for the largest cities, events two or three steps down (P131 in a district of the city, or P276 a place in a
+  // district): Paris's events are often in an arrondissement (the storming of the Bastille). One city at a time.
+  steps.events2 = async () => {
+    const ev = HM.ev = HM.ev || {}; const cities = HM.only; let n = 0;
+    const date = `OPTIONAL { ?e p:P585/psv:P585 [ wikibase:timeValue ?d ; wikibase:timePrecision ?pr ] }
+      OPTIONAL { ?e p:P580/psv:P580 [ wikibase:timeValue ?d2 ; wikibase:timePrecision ?pr2 ] }
+      OPTIONAL { ?e wdt:P582 ?end }
+      FILTER(BOUND(?d) || BOUND(?d2))
+      OPTIONAL { ?e wdt:P31 ?c }`;
+    for (const c of cities) {
+      for (const path of ['?e wdt:P131 ?l . ?l wdt:P131 ?city .', '?e wdt:P276 ?l . ?l wdt:P131 ?m . ?m wdt:P131 ?city .']) {
+        const rows = await sparql(`SELECT ?city ?e ?d ?pr ?d2 ?pr2 ?end ?sl (GROUP_CONCAT(DISTINCT ?c; separator=" ") AS ?cls) WHERE {
+          VALUES ?city { wd:${c} } ${path}
+          ?e wikibase:sitelinks ?sl . FILTER(?sl >= 5)
+          ${date}
+        } GROUP BY ?city ?e ?d ?pr ?d2 ?pr2 ?end ?sl`, 2);
+        for (const r of rows || []) {
+          const e = id(r.e.value), d = r.d || r.d2, pr = r.pr || r.pr2;
+          const y = parseInt(d.value, 10); if (!(y >= 1000 && y <= 2026)) continue;
+          const x = ev[e] = ev[e] || { c: [], t: d.value.slice(0, 10), p: +pr.value, sl: +r.sl.value, cls: r.cls.value.split(' ').filter(Boolean).map(id), end: r.end ? parseInt(r.end.value, 10) : null, deep: 1 };
+          if (!x.c.includes(c)) x.c.push(c);
+        }
+        if (!rows) HM.errors.push('events2 failed for ' + c + ' ' + path.slice(0, 20));
+        await sleep(300);
+      }
+      HM.status = `events2: ${++n} of ${cities.length}`;
+    }
+    HM.status = 'events2 done';
+  };
+
   // 3. the classes of those events, with labels and how many events of each, for choosing which kinds to keep
   steps.classes = async () => {
     const n = {}; for (const e of Object.values(HM.ev)) for (const c of e.cls) n[c] = (n[c] || 0) + 1;
