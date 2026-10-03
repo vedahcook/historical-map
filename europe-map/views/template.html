@@ -96,6 +96,9 @@ button { font: inherit; color: inherit; }
 .axis span { position: absolute; top: 0; transform: translateX(-50%); }
 .axis span.first { transform: none; }
 .band { position: relative; height: 84px; }
+.vgrid { position: absolute; top: 19px; bottom: 20px; width: 1px; margin-left: -0.5px; background: var(--line); opacity: 0.55; pointer-events: none; z-index: 0; }
+.vgrid.lab { opacity: 1; }
+.band { z-index: 1; }
 .nowline { position: absolute; top: 0; bottom: 16px; width: 2px; margin-left: -1px; background: var(--now); box-shadow: 0 0 0 1px var(--surface); pointer-events: none; z-index: 1; }
 .nowtag { position: absolute; top: 0; height: 15px; padding: 0 5px; border-radius: 3px; background: var(--now); color: var(--now-ink); font-size: 0.68rem; font-weight: 700; line-height: 15px; font-variant-numeric: tabular-nums; transform: translateX(-50%); pointer-events: none; z-index: 3; }
 .nowtag.l { transform: none; } .nowtag.r { transform: translateX(-100%); }
@@ -325,7 +328,8 @@ const W = 300, HB = 84;                                   // the band's drawing 
 // recent centuries get more room: 1800–today takes about half the width instead of a fifth
 const K = 120, LT = v => Math.log(1 + Math.max(0, Y1 - v) / K), LT0 = LT(Y0);
 const X = v => 4 + (1 - LT(v) / LT0) * (W - 8), pct = v => (X(v) / W * 100).toFixed(2) + '%';
-const TICKS = [1000, 1300, 1500, 1700, 1800, 1900, 1950, 2000];
+const TICKS = [1000, 1300, 1500, 1700, 1800, 1900, 2000];
+const CENTURIES = []; for (let t = 1000; t <= 2000; t += 100) CENTURIES.push(t);
 let shownPic = null;      // the picture on the card (a city view, or the tapped event's picture)
 function cardHtml() {
   const c = D.cities[city], p = popAt(c, year), v = pickView(c, year);
@@ -341,7 +345,7 @@ function cardHtml() {
   const axis = `<div class="axis" aria-hidden="true">` + ticks.map((t, i) => `<span${i ? '' : ' class="first"'} style="left:${pct(t)}">${t}</span>`).join('') + `</div>`;
   const body = tab === 'events' ? eventsTab(c) : tab === 'held' ? heldTab(c) : popTab(c, p);
   shownPic = selEv && selEv.img ? { ...selEv.img, ev: selEv } : v;
-  return `<div class="card">${head}${picHtml(c, shownPic)}${tabs}<div class="tl"><div class="band"${body.h ? ` style="height:${body.h}px"` : ''}>${body.band}</div>${axis}<span class="nowline" style="left:${pct(year)}"></span><span class="nowtag${X(year) / W < 0.06 ? ' l' : X(year) / W > 0.94 ? ' r' : ''}" style="left:${pct(year)}">${year}</span></div>${body.detail}` +
+  return `<div class="card">${head}${picHtml(c, shownPic)}${tabs}<div class="tl">${CENTURIES.map(t => `<span class="vgrid${TICKS.includes(t) ? ' lab' : ''}" style="left:${pct(t)}"></span>`).join('')}<div class="band"${body.h ? ` style="height:${body.h}px"` : ''}>${body.band}</div>${axis}<span class="nowline" style="left:${pct(year)}"></span><span class="nowtag${X(year) / W < 0.06 ? ' l' : X(year) / W > 0.94 ? ' r' : ''}" style="left:${pct(year)}">${year}</span></div>${body.detail}` +
     `<div class="scroll" data-tab="${tab}"><ul class="tlist${tab === 'pop' ? ' pop' : ''}">${body.list}</ul><div class="credit">${body.foot || creditInner(shownPic)}</div></div></div>`;
 }
 
