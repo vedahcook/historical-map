@@ -610,14 +610,14 @@ function drawLabels() {
     const focused = u === fu;
     // the highlighted country's name stays well above city-name size (12px) at any zoom
     const fs = Math.max(focused ? 19 : 0, big ? Math.min(20, 15 + Math.log10(varea / 180000) * 6) : varea > 40000 ? 14 : 13);
-    if (focused) {          // inside its borders, near the middle of the part on screen, slanted along it if need be
+    if (focused) {          // inside its borders, near the middle of the part on screen (focusNamePlace)
       const P = focusNamePlace(u, name, fs);
       if (P) {
-        const mx = shown[0] + P.sx / k, my = shown[1] + P.sy / k;
-        const t = el('text', { x: mx.toFixed(1), y: my.toFixed(1), class: 'lbl' + (big ? ' big' : '') }, fl);
-        if (P.a) t.setAttribute('transform', `rotate(${P.a} ${mx.toFixed(1)} ${my.toFixed(1)})`);
-        t.setAttribute('style', `font-size:${(P.fs / k).toFixed(2)}px`); t.textContent = name;
-        focusParts = rotBoxes(P.sx, P.sy, P.w, P.h, P.a); focusBox = boxAround(focusParts); placed.push(...focusParts);
+        const mx = shown[0] + P.sx / k, t = el('text', { x: mx.toFixed(1), class: 'lbl' + (big ? ' big' : '') }, fl);
+        t.setAttribute('style', `font-size:${(P.fs / k).toFixed(2)}px`);
+        P.lines.forEach((ln, i) => { const ts = el('tspan', { x: mx.toFixed(1), y: (shown[1] + (P.sy + P.dy[i]) / k).toFixed(1) }, t); ts.textContent = ln; });
+        focusParts = P.lines.map((ln, i) => [P.sx - P.lw[i] / 2, P.sy + P.dy[i] - P.lh / 2, P.sx + P.lw[i] / 2, P.sy + P.dy[i] + P.lh / 2]);
+        focusBox = boxAround(focusParts); placed.push(...focusParts);
         continue;
       }
     }
@@ -643,82 +643,101 @@ function drawLabels() {
   }
 }
 
-// The highlighted country's name: tried at points well inside the part of the country on screen (from a map of each
-// spot's distance to the border, the country drawn at a third of screen size) and at angles from -60° to 60°, so a long
-// slanting country gets its name along it. A try counts only if the whole name fits inside the borders. Tries are
-// scored by distance from the middle of the country on screen, then slant, and they keep off city dots, city names
-// and the map's buttons. If nothing fits, smaller sizes are tried (down to 14px); if still nothing, the name goes on
-// the country's label point as before (null). While the map is panned, the name stays put as long as it stays on screen.
+// The highlighted country's name, level, inside its borders and as near the middle of the part on screen as it fits.
+// The country on screen is drawn at a third of screen size; a running total of its cells tells at once how much of
+// any box lies inside it. The name is tried on one line, then on two (split where the lines come out most even), at
+// its usual size and then smaller (down to 14px); the first that fits wholly inside wins, at the spot nearest the
+// middle of the country on screen, keeping off city dots and names and the map's buttons. If nothing fits, it goes
+// on one line at its usual size where most of it lies inside, near the middle. While the map is panned, the name stays
+// put as long as it stays on screen.
 let nameCanvas = null, nameCache = null;
-const NAME_ANGLES = [0, -7.5, 7.5, -15, 15, -22.5, 22.5, -30, 30, -37.5, 37.5, -45, 45, -52.5, 52.5, -60, 60];
-const rotPts = (cx, cy, w, h, a) => { const c = Math.cos(a * Math.PI / 180), s = Math.sin(a * Math.PI / 180);
-  return [[-1, -1], [1, -1], [1, 1], [-1, 1]].map(([i, j]) => [cx + i * w / 2 * c - j * h / 2 * s, cy + i * w / 2 * s + j * h / 2 * c]); };
-// a slanted name as a few boxes along it, so city names can sit close to it
-function rotBoxes(cx, cy, w, h, a) {
-  if (!a) return [[cx - w / 2, cy - h / 2, cx + w / 2, cy + h / 2]];
-  const n = Math.max(1, Math.ceil(w / h)), c = Math.cos(a * Math.PI / 180), s = Math.sin(a * Math.PI / 180), out = [];
-  for (let i = 0; i < n; i++) { const t = (i + 0.5) / n - 0.5; out.push(boxAround(rotPts(cx + t * w * c, cy + t * w * s, w / n, h, a).map(([x, y]) => [x, y, x, y]))); }
-  return out;
-}
 const boxAround = bs => [Math.min(...bs.map(b => b[0])), Math.min(...bs.map(b => b[1])), Math.max(...bs.map(b => b[2])), Math.max(...bs.map(b => b[3]))];
 function focusNamePlace(u, name, fs0) {
   const G = yearGeo(year), f = G && G.fills.find(g => g.u === u), k = pxPerKm(), sr = svg.getBoundingClientRect();
   if (!f || !k || !sr.width) return null;
   const cv = nameCanvas || (nameCanvas = document.createElement('canvas')), cx = cv.getContext('2d', { willReadFrequently: true });
   const font = getComputedStyle(svg).getPropertyValue('--mapfont') || 'sans-serif';
-  const measure = fs => { cx.setTransform(1, 0, 0, 1, 0, 0); cx.font = `450 ${fs}px ${font}`; return cx.measureText(name).width; };
+  const measure = (t, fs) => { cx.setTransform(1, 0, 0, 1, 0, 0); cx.font = `450 ${fs}px ${font}`; return cx.measureText(t).width; };
   const cities = focusCities().filter(d => d.vis), ctrl = controlBoxes();
-  const key = [u, year, name, fs0, Math.round(measure(fs0)), cities.map(d => d.c.i).join('.'), sr.width | 0, sr.height | 0].join('|');
-  const onScreenFree = (sx, sy, w, h, a) => rotPts(sx, sy, w, h, a).every(([x, y]) => x >= 2 && y >= 2 && x <= sr.width - 2 && y <= sr.height - 2 && !ctrl.some(b => x > b[0] && x < b[2] && y > b[1] && y < b[3]));
-  if (nameCache && nameCache.key === key && k / nameCache.k > 0.85 && k / nameCache.k < 1.6) {
-    const P = nameCache.P, sx = (P.x - shown[0]) * k, sy = (P.y - shown[1]) * k;
-    if (onScreenFree(sx, sy, P.w, P.h, P.a)) return { ...P, sx, sy };
+  const key = [u, year, name, fs0, Math.round(measure(name, fs0)), cities.map(d => d.c.i).join('.'), sr.width | 0, sr.height | 0].join('|');
+  const free = b => b[0] >= 2 && b[1] >= 2 && b[2] <= sr.width - 2 && b[3] <= sr.height - 2 && !ctrl.some(c => b[0] < c[2] && b[2] > c[0] && b[1] < c[3] && b[3] > c[1]);
+  if (nameCache && nameCache.key === key && k / nameCache.k > 0.95 && k / nameCache.k < 1.6) {
+    const P = nameCache.P, sx = (P.x - shown[0]) * k, sy = (P.y - shown[1]) * k, b = [sx - P.w / 2, sy - P.h / 2, sx + P.w / 2, sy + P.h / 2];
+    if (free(b) && !cities.some(d => d.sx + d.r + 3 > b[0] && d.sx - d.r - 3 < b[2] && d.sy + d.r + 3 > b[1] && d.sy - d.r - 3 < b[3])) return { ...P, sx, sy };
   }
-  // the country on screen, and each spot's distance to its border (or the screen's edge), in cells of S px
-  const S = 3, W = Math.ceil(sr.width / S), H = Math.ceil(sr.height / S), n = W * H;
+  // the country on screen, in cells of S px, and a running total of its cells
+  const S = 3, W = Math.ceil(sr.width / S), H = Math.ceil(sr.height / S);
   cv.width = W; cv.height = H;
   cx.setTransform(k / S, 0, 0, k / S, -shown[0] * k / S, -shown[1] * k / S); cx.fill(new Path2D(f.d));
-  const px = cx.getImageData(0, 0, W, H).data, D = new Float32Array(n);
-  let m0 = 0, mx = 0, my = 0;
-  for (let i = 0; i < n; i++) if (px[i * 4 + 3] > 127) { D[i] = 1e6; m0++; mx += i % W; my += (i / W) | 0; }
-  if (m0 < 40) return null;
-  const R2 = Math.SQRT2;
-  for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) { const i = y * W + x; if (!D[i]) continue;
-    D[i] = Math.min(D[i], x ? D[i - 1] + 1 : 1, y ? D[i - W] + 1 : 1, x && y ? D[i - W - 1] + R2 : R2, y && x < W - 1 ? D[i - W + 1] + R2 : R2); }
-  for (let y = H - 1; y >= 0; y--) for (let x = W - 1; x >= 0; x--) { const i = y * W + x; if (!D[i]) continue;
-    D[i] = Math.min(D[i], x < W - 1 ? D[i + 1] + 1 : 1, y < H - 1 ? D[i + W] + 1 : 1, x < W - 1 && y < H - 1 ? D[i + W + 1] + R2 : R2, y < H - 1 && x ? D[i + W - 1] + R2 : R2); }
-  const clear = (x, y) => { const cx_ = Math.floor(x / S), cy_ = Math.floor(y / S); return cx_ < 0 || cy_ < 0 || cx_ >= W || cy_ >= H ? 0 : D[cy_ * W + cx_] * S; };
+  const px = cx.getImageData(0, 0, W, H).data, I = new Int32Array((W + 1) * (H + 1));
+  const inC = new Uint8Array(W * H);
+  for (let y = 0; y < H; y++) { let row = 0; for (let x = 0; x < W; x++) { const v = px[(y * W + x) * 4 + 3] > 127 ? 1 : 0; inC[y * W + x] = v; row += v; I[(y + 1) * (W + 1) + x + 1] = I[y * (W + 1) + x + 1] + row; } }
+  // the middle: of the largest piece on screen, so an island or an outlying territory doesn't pull the name off the mainland
+  let m0 = 0, mx = 0, my = 0; const seen = new Uint8Array(W * H), stack = [];
+  for (let i0 = 0; i0 < W * H; i0++) {
+    if (!inC[i0] || seen[i0]) continue;
+    let c = 0, sx_ = 0, sy_ = 0; seen[i0] = 1; stack.push(i0);
+    while (stack.length) { const i = stack.pop(), x = i % W, y = (i / W) | 0; c++; sx_ += x; sy_ += y;
+      if (x > 0 && inC[i - 1] && !seen[i - 1]) { seen[i - 1] = 1; stack.push(i - 1); }
+      if (x < W - 1 && inC[i + 1] && !seen[i + 1]) { seen[i + 1] = 1; stack.push(i + 1); }
+      if (y > 0 && inC[i - W] && !seen[i - W]) { seen[i - W] = 1; stack.push(i - W); }
+      if (y < H - 1 && inC[i + W] && !seen[i + W]) { seen[i + W] = 1; stack.push(i + W); } }
+    if (c > m0) { m0 = c; mx = sx_; my = sy_; }
+  }
+  if (m0 < 20) return null;
+  const at = (x, y) => I[y * (W + 1) + x], cl = (v, m) => Math.max(0, Math.min(m, v));
+  // the share of a box (screen px) inside the country; off screen counts as outside
+  const inside = b => { const x0 = Math.floor(b[0] / S), y0 = Math.floor(b[1] / S), x1 = Math.ceil(b[2] / S), y1 = Math.ceil(b[3] / S), area = (x1 - x0) * (y1 - y0);
+    const X0 = cl(x0, W), Y0 = cl(y0, H), X1 = cl(x1, W), Y1 = cl(y1, H); return area > 0 ? (at(X1, Y1) - at(X0, Y1) - at(X1, Y0) + at(X0, Y0)) / area : 0; };
   const midX = (mx / m0 + 0.5) * S, midY = (my / m0 + 0.5) * S, Rm = Math.sqrt(m0 * S * S / Math.PI);
-  const dots = cities.map(d => [d.sx, d.sy, d.r + 3]), names = cities.map(d => [d.sx + d.r, d.sy - 8, d.sx + d.r + 6 + d.c.n.length * 6.2, d.sy + 8]);
-  for (const fs of [fs0, Math.max(14, fs0 * 0.85), Math.max(14, fs0 * 0.74)]) {
-    const w = measure(fs) + 6, h = fs * 1.15, hh = h / 2, step = Math.max(2, hh / 1.6), ns = Math.ceil(w / step);
-    // spots far enough from the border for the name's height, thinned to about 900, nearest the middle first
-    let spots = []; for (let i = 0; i < n; i++) if (D[i] * S >= hh) spots.push(i);
-    const stride = Math.max(1, Math.round(Math.sqrt(spots.length / 900)));
-    spots = spots.filter(i => !((i % W) % stride) && !(((i / W) | 0) % stride)).map(i => { const sx = (i % W + 0.5) * S, sy = (((i / W) | 0) + 0.5) * S; return [Math.hypot(sx - midX, sy - midY) / Rm, sx, sy]; }).sort((p, q) => p[0] - q[0]);
-    let best = null;
-    for (const [dm, sx, sy] of spots) {
-      if (best && dm > best.s) break;                  // no spot further out can beat the best so far
-      for (const a of NAME_ANGLES) {
-        const c = Math.cos(a * Math.PI / 180), s = Math.sin(a * Math.PI / 180);
-        let score = dm + 0.3 * (a / 60) ** 2, ok = true;
-        if (best && score > best.s) continue;
-        for (let q = 0; q <= ns && ok; q++) {
-          const t = -w / 2 + w * q / ns, x = sx + t * c, y = sy + t * s;
-          if (clear(x, y) < hh - S * 0.5) { ok = false; break; }
-          for (const [dx, dy, dr] of dots) if (Math.hypot(x - dx, y - dy) < dr + hh) score += 0.6;
-          for (const b of names) if (x > b[0] - hh && x < b[2] + hh && y > b[1] - hh && y < b[3] + hh) score += 0.08;
-          for (const b of ctrl) if (x > b[0] - hh && x < b[2] + hh && y > b[1] - hh && y < b[3] + hh) score += 2;
-        }
-        if (ok && (!best || score < best.s)) best = { s: score, sx, sy, a };
-      }
-    }
-    if (best) {
-      const P = { x: shown[0] + best.sx / k, y: shown[1] + best.sy / k, a: best.a, w, h, fs };
-      nameCache = { key, k, P }; return { ...P, sx: best.sx, sy: best.sy };
+  const dots = cities.map(d => [d.sx - d.r - 3, d.sy - d.r - 3, d.sx + d.r + 3, d.sy + d.r + 3]), names = cities.map(d => [d.sx + d.r, d.sy - 8, d.sx + d.r + 6 + d.c.n.length * 6.2, d.sy + 8]);
+  const hit = (a, b) => a[0] < b[2] && a[2] > b[0] && a[1] < b[3] && a[3] > b[1];
+  const cost = b => { let c = 0; for (const d of dots) if (hit(b, d)) c += 2; for (const n of names) if (hit(b, n)) c += 0.3; for (const q of ctrl) if (hit(b, q)) c += 3; return c; };
+  // the ways to set the name: one line, or two split where the lines come out most even
+  const words = name.split(' '), layouts = [];
+  for (const fs of [fs0, Math.max(14, Math.round(fs0 * 0.85)), Math.max(14, Math.round(fs0 * 0.74))]) {
+    layouts.push({ fs, lines: [name] });
+    if (words.length > 1) {
+      let bestSplit = null;
+      for (let i = 1; i < words.length; i++) { const a = words.slice(0, i).join(' '), b = words.slice(i).join(' '), m = Math.max(measure(a, fs), measure(b, fs)); if (!bestSplit || m < bestSplit.m) bestSplit = { m, lines: [a, b] }; }
+      layouts.push({ fs, lines: bestSplit.lines });
     }
   }
-  nameCache = null; return null;
+  const shape = L => { const lw = L.lines.map(t => measure(t, L.fs) + 6), lh = L.fs * 1.15, gap = L.fs * 1.1, n = L.lines.length;
+    return { ...L, lw, lh, w: Math.max(...lw), h: lh + gap * (n - 1), dy: L.lines.map((t, i) => (i - (n - 1) / 2) * gap) }; };
+  const boxesAt = (L, sx, sy) => L.lw.map((w, i) => [sx - w / 2, sy + L.dy[i] - L.lh / 2, sx + w / 2, sy + L.dy[i] + L.lh / 2]);
+  // centers to try: every few cells, nearest the middle of the country on screen first
+  const stride = Math.max(1, Math.round(Math.sqrt(W * H / 12000)));
+  const spots = [];
+  for (let gy = 0; gy < H; gy += stride) for (let gx = 0; gx < W; gx += stride) { const sx = (gx + 0.5) * S, sy = (gy + 0.5) * S; spots.push([Math.hypot(sx - midX, sy - midY) / Rm, sx, sy]); }
+  spots.sort((p, q) => p[0] - q[0]);
+  let pick = null;
+  for (const L0 of layouts) {
+    const L = shape(L0); let best = null;
+    for (const [dm, sx, sy] of spots) {
+      if (best && dm > best.s) break;                     // no spot further out can beat the best so far
+      const bs = boxesAt(L, sx, sy);
+      if (!bs.every(b => inside([b[0] - 2, b[1] - 1, b[2] + 2, b[3] + 1]) >= 0.995)) continue;
+      const s = dm + bs.reduce((t, b) => t + cost(b), 0);
+      if (!best || s < best.s) best = { s, sx, sy };
+    }
+    if (best) { pick = { L, ...best }; break; }
+  }
+  if (!pick) {                                             // nothing fits: the setting and spot with most of the name inside, near the middle
+    for (const L0 of layouts) {
+      const L = shape(L0), shrink = 1 - L.fs / fs0;
+      for (const [dm, sx, sy] of spots) {
+        const bs = boxesAt(L, sx, sy), area = bs.reduce((t, b) => t + (b[2] - b[0]) * (b[3] - b[1]), 0);
+        if (bs.some(b => b[0] < 0 || b[1] < 0 || b[2] > sr.width || b[3] > sr.height)) continue;
+        const inn = bs.reduce((t, b) => t + inside(b) * (b[2] - b[0]) * (b[3] - b[1]), 0) / area;
+        const s = -2 * inn + 0.15 * dm + 0.3 * bs.reduce((t, b) => t + cost(b), 0) + shrink + (L.lines.length - 1) * 0.1;
+        if (!pick || s < pick.s) pick = { L, s, sx, sy };
+      }
+    }
+    if (!pick) { nameCache = null; return null; }
+  }
+  const { L } = pick, P = { x: shown[0] + pick.sx / k, y: shown[1] + pick.sy / k, fs: L.fs, lines: L.lines, lw: L.lw, lh: L.lh, dy: L.dy, w: L.w, h: L.h };
+  nameCache = { key, k, P }; return { ...P, sx: pick.sx, sy: pick.sy };
 }
 
 // ---------- alternative borders ----------
