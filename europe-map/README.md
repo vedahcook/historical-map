@@ -8,7 +8,8 @@ The page is `europe-borders.html`, published as a Claude artifact. It holds the 
 - `flags.webp`: all the flag images in one picture, at the small size the popup shows.
 - `flag-images/`: a larger copy of each flag, one file each, loaded only when a flag is tapped.
 - `terrain.json` also holds the names of physical features and the spines they are set along.
-- `city-events.json` and `city-people.json`: events in each city and people born or died there (from Wikidata), loaded a moment after the page opens.
+- `city-events.json` and `city-people.json`: events in each city and people born or died there (from Wikidata), loaded a moment after the page opens. Each row ends with its Wikidata id; its link goes to the English Wikipedia article, or, where there is none, to the article in another language (marked "Spanish Wikipedia" and so on), or to the Wikidata entry.
+- `wiki-titles.json` (not published yet): for each of those Wikidata ids, the article titles in English, French, German, Spanish and Italian, for pages in those languages later.
 - `terrain.json` and `relief.webp`: rivers, lakes and the names of mountain ranges in more detail, and the shaded relief (from Natural Earth), loaded a moment after the page opens.
 
 ## Using the map
@@ -89,6 +90,8 @@ From Wikidata, gathered by `browser/fetch_city_extras.js` (run in the browser on
 3. **Kinds** (`classes`, `roots`): each event's classes are traced up the class tree (P279) to the root classes in `cities/event_kinds.py`, which sets ten kinds (each with an icon) and the classes to leave out (sports, festivals, awards, accidents, buildings and so on). Events of no kind are left out.
 4. **People** (`people`): those born (P19) or died (P20) in the city with articles in at least 30 languages; for places with fewer than 8 such people, at least 10 languages, in the place itself and then in places within it (P131). People who lived before 1000 are left out.
 5. `python3 cities/make_extras.py select WD` picks each city's events (the most written-about, up to 30 for the large cities and 12 for towns, no more than about a third from any century) and people (up to 14 and 6, spread the same way) and lists the items whose names it needs; the `details` step fetches their English labels, descriptions and English Wikipedia titles; `python3 cities/make_extras.py build WD` writes `city-events.json` and `city-people.json`.
+
+6. `python3 cities/wiki_links.py list`, then `fetch` (on a machine Wikimedia doesn't throttle; run again until it says DONE), then `apply`: checks every link against Wikidata as it is now (articles renamed, deleted or added since), keeps the Wikidata id, picks another language's article where there is no English one (the city's own language if it is French, German, Spanish or Italian, else the first of those, else another of the city's languages, using `cities/city_country.json`), and writes `wiki-titles.json`. First run October 3, 2026: of 4,321 events, 1 English article had been deleted (the Concord of Segovia, now linked to the Spanish article) and 360 events with no English article now link to another language instead of Wikidata; of 23,418 people, 1 article had been renamed and 62 now link to another language.
 
 The browser tool returns large results in pieces of 230,000 characters (`HM.prep`, `HM.part`), joined again in order.
 

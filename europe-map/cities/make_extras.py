@@ -104,12 +104,12 @@ for i in sorted(evs):
         # an end year only for what lasts (a siege, an uprising, an epidemic, a council), not a treaty's expiry
         end = x['end'] if x['end'] and x['end'] > x['y'] and x['end'] - x['y'] <= 60 and KINDS[x['ki']][0] in ('war', 'uprising', 'disaster', 'religion', 'violence') else 0
         if name(x['q']) in CANCELLED or re.fullmatch(r'Q\d+', name(x['q'])): continue      # never held, or no name in any language
-        rows.append([i, x['y'], md, x['ki'], x['sl'], name(x['q']), title(x['q']), end])
+        rows.append([i, x['y'], md, x['ki'], x['sl'], name(x['q']), title(x['q']), end, x['q']])   # then cities/wiki_links.py checks the links
 json.dump({'source': 'Wikidata (CC0), gathered October 2, 2026', 'kinds': kinds, 'ev': rows}, open('city-events.json', 'w'), ensure_ascii=False, separators=(',', ':'))
 prow = []
 for i in sorted(pps):
     for x in sorted(pps[i], key=lambda x: (x['b'] if x['b'] is not None else x['d'] or 0, x['q'])):
-        prow.append([i, x['w'], x['b'], x['d'], x['sl'], name(x['q']), role(x['q']), title(x['q'])])
+        prow.append([i, x['w'], x['b'], x['d'], x['sl'], name(x['q']), role(x['q']), title(x['q']), x['q']])
 json.dump({'source': 'Wikidata (CC0), gathered October 2, 2026', 'pp': prow}, open('city-people.json', 'w'), ensure_ascii=False, separators=(',', ':'))
 import os
 print('city-events.json', len(rows), os.path.getsize('city-events.json') // 1024, 'KB; city-people.json', len(prow), os.path.getsize('city-people.json') // 1024, 'KB')

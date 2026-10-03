@@ -37,6 +37,7 @@ html, body { height: 100%; }
 body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.5; margin: 0; }
 h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.2; text-wrap: balance; margin: 0; }
 a { color: var(--accent); }
+.wlang { color: var(--faint); font-size: 0.85em; white-space: nowrap; }
 button, select, input { font: inherit; color: inherit; }
 :focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
 .num { font-variant-numeric: tabular-nums; }
@@ -874,8 +875,8 @@ function loadEvents() {
   if (CEV || loadEvents.busy) return; loadEvents.busy = true;
   fetch('city-events.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(d => {
     KINDS = d.kinds; CEV = []; EVY = new Map(); ALLEV = [];
-    for (const [ci, y, md, ki, sl, n, t, end] of d.ev) {
-      const e = { ci, y, md, k: d.kinds[ki][0], sl, n, t, end };
+    for (const [ci, y, md, ki, sl, n, t, end, q] of d.ev) {
+      const e = { ci, y, md, k: d.kinds[ki][0], sl, n, t, end, q };
       (CEV[ci] = CEV[ci] || []).push(e); ALLEV.push(e);
       for (let yy = y, y1 = end && end - y <= 10 ? end : y; yy <= y1; yy++) { if (!EVY.has(yy)) EVY.set(yy, []); EVY.get(yy).push(e); }
     }
@@ -885,14 +886,21 @@ function loadEvents() {
 function loadPeople() {
   if (CPP || loadPeople.busy) return; loadPeople.busy = true;
   fetch('city-people.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(d => {
-    CPP = []; for (const [ci, w, b, dd, sl, n, role, t] of d.pp) (CPP[ci] = CPP[ci] || []).push({ w, b, d: dd, sl, n, role, t });
+    CPP = []; for (const [ci, w, b, dd, sl, n, role, t, q] of d.pp) (CPP[ci] = CPP[ci] || []).push({ w, b, d: dd, sl, n, role, t, q });
     refreshCityPop();
   }).catch(() => { loadPeople.busy = false; });
 }
 // an open city popup takes in data that has just arrived, without moving
 function refreshCityPop() { if (selCity == null || pop.hidden) return; keepPop = [pop.offsetLeft, pop.offsetTop]; renderPop(); keepPop = null; }
-// a link to the English Wikipedia article (t: '' when its title is the name), or to the Wikidata item (t: 'Q…')
-const wikiA = (n, t) => `<a href="${/^Q\d+$/.test(t) ? 'https://www.wikidata.org/wiki/' + t : 'https://en.wikipedia.org/wiki/' + encodeURIComponent((t || n).replace(/ /g, '_'))}" target="_blank" rel="noopener">${esc(n)}</a>`;
+// a link to the Wikipedia article: t is '' (English, titled like the name), 'Title' (English), 'xx:Title' (no English
+// article: the edition in language xx, marked as such), or null (no article: the Wikidata entry q instead, if known)
+const WIKI_LANG = {fr:'French',de:'German',es:'Spanish',it:'Italian',ru:'Russian',uk:'Ukrainian',be:'Belarusian',pl:'Polish',cs:'Czech',sk:'Slovak',sr:'Serbian',hr:'Croatian',bs:'Bosnian',sl:'Slovene',bg:'Bulgarian',mk:'Macedonian',ro:'Romanian',hu:'Hungarian',el:'Greek',tr:'Turkish',nl:'Dutch',pt:'Portuguese',ca:'Catalan',eu:'Basque',gl:'Galician',sv:'Swedish',da:'Danish',no:'Norwegian',nn:'Norwegian',fi:'Finnish',et:'Estonian',lv:'Latvian',lt:'Lithuanian',ka:'Georgian',hy:'Armenian',az:'Azerbaijani',ar:'Arabic',fa:'Persian',he:'Hebrew',sq:'Albanian',is:'Icelandic',ga:'Irish',cy:'Welsh',lb:'Luxembourgish',mt:'Maltese',eo:'Esperanto',la:'Latin'};
+const wikiA = (n, t, q) => {
+  if (t == null || /^Q\d+$/.test(t)) { const id = t || q; return id ? `<a href="https://www.wikidata.org/wiki/${id}" target="_blank" rel="noopener">${esc(n)}</a>` : esc(n); }
+  const m = /^([a-z][a-z-]*):(.+)$/.exec(t), lang = m ? m[1] : 'en', title = m ? m[2] : t || n;
+  return `<a href="https://${lang}.wikipedia.org/wiki/${encodeURIComponent(title.replace(/ /g, '_'))}" target="_blank" rel="noopener">${esc(n)}</a>` +
+    (m ? ` <span class="wlang">(${WIKI_LANG[lang] || lang} Wikipedia)</span>` : '');
+};
 const EV_MAX = 7, MR = 10;
 // Event icons are switched off for now (October 2, 2026): no icons on the map, in the key, on the zoomed timeline or in
 // the lists; the events themselves still show as text in the city popup and below the zoomed timeline. Set to true to
@@ -1233,13 +1241,13 @@ function cityHtml(d) {
   const evs = CEV ? CEV[c.i] || [] : null, pps = CPP ? CPP[c.i] || [] : null;
   const evList = evs == null ? `<p class="hint">Loading the events…</p>` : !evs.length ? `<p class="hint">Wikidata records no events here from 1000 on, of the kinds this map shows.</p>`
     : `<ul class="hlist elist${EVENT_ICONS ? '' : ' noicon'}">${evs.map(e => { const on = e.y <= year && year <= (e.end && e.end - e.y <= 10 ? e.end : e.y);
-        return `<li role="button" tabindex="0" data-y="${e.y}"${on ? ' class="on"' : ''}><span class="ei">${kindIcon(e.k)}</span><span>${e.y}${e.end && e.end > e.y ? '–' + e.end : ''}</span><span>${wikiA(e.n, e.t)}</span></li>`; }).join('')}</ul>`;
+        return `<li role="button" tabindex="0" data-y="${e.y}"${on ? ' class="on"' : ''}><span class="ei">${kindIcon(e.k)}</span><span>${e.y}${e.end && e.end > e.y ? '–' + e.end : ''}</span><span>${wikiA(e.n, e.t, e.q)}</span></li>`; }).join('')}</ul>`;
   // people born or died here, by year of birth; those alive this year are marked. A row goes to the year they were
   // born here (or died here)
   const where = w => w === 'bd' ? 'born and died here' : w === 'b' ? 'born here' : 'died here';
   const pplList = pps == null ? `<p class="hint">Loading the people…</p>` : !pps.length ? `<p class="hint">No one Wikidata records as born or died here is written about in many languages.</p>`
     : `<ul class="hlist plist">${pps.map(q => { const on = q.b != null && q.b <= year && year <= (q.d != null ? q.d : q.b + 100);
-        return `<li role="button" tabindex="0" data-y="${q.w.includes('b') && q.b != null ? q.b : q.d != null ? q.d : q.b}" data-b="${q.b != null ? q.b : q.d}"${on ? ' class="on"' : ''}><span>${q.b != null ? q.b : '?'}–${q.d != null ? q.d : ''}</span><span>${wikiA(q.n, q.t)}<span class="by">${q.role ? esc(q.role) + ' · ' : ''}${where(q.w)}</span></span></li>`; }).join('')}</ul>`;
+        return `<li role="button" tabindex="0" data-y="${q.w.includes('b') && q.b != null ? q.b : q.d != null ? q.d : q.b}" data-b="${q.b != null ? q.b : q.d}"${on ? ' class="on"' : ''}><span>${q.b != null ? q.b : '?'}–${q.d != null ? q.d : ''}</span><span>${wikiA(q.n, q.t, q.q)}<span class="by">${q.role ? esc(q.role) + ' · ' : ''}${where(q.w)}</span></span></li>`; }).join('')}</ul>`;
   const n = a => a && a.length ? ` <small>${a.length}</small>` : '';
   const tabs = [['pop', 'Population'], ['held', 'Held by'], ['ev', 'Events' + n(evs)], ['ppl', 'People' + n(pps)]];
   const body = popTab === 'held' ? `${strip}<ul class="hlist">${changes}</ul>` : popTab === 'ev' ? evList : popTab === 'ppl' ? pplList : `<p>${esc(note)}</p>${chart}`;

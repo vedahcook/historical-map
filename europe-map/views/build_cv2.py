@@ -21,6 +21,12 @@ ORDER = ['london', 'paris', 'vienna', 'berlin', 'saint-petersburg', 'moscow', 'i
 names = [l.split('|')[0] for l in open('/home/claude/historical-map/europe-map/cities.txt') if not l.startswith('#') and l.strip()]
 EV = json.load(open('/home/claude/historical-map/europe-map/city-events.json'))['ev']
 EPI = re.compile(r'plague|cholera|epidemic|pandemic|influenza|typhus|smallpox|black death|outbreak', re.I)
+WIKI_LANG = {'fr': 'French', 'de': 'German', 'es': 'Spanish', 'it': 'Italian', 'ru': 'Russian', 'uk': 'Ukrainian', 'be': 'Belarusian', 'pl': 'Polish',
+             'cs': 'Czech', 'sk': 'Slovak', 'sr': 'Serbian', 'hr': 'Croatian', 'bs': 'Bosnian', 'sl': 'Slovene', 'bg': 'Bulgarian', 'mk': 'Macedonian',
+             'ro': 'Romanian', 'hu': 'Hungarian', 'el': 'Greek', 'tr': 'Turkish', 'nl': 'Dutch', 'pt': 'Portuguese', 'ca': 'Catalan', 'eu': 'Basque',
+             'gl': 'Galician', 'sv': 'Swedish', 'da': 'Danish', 'no': 'Norwegian', 'nn': 'Norwegian', 'fi': 'Finnish', 'et': 'Estonian', 'lv': 'Latvian',
+             'lt': 'Lithuanian', 'ka': 'Georgian', 'hy': 'Armenian', 'az': 'Azerbaijani', 'ar': 'Arabic', 'fa': 'Persian', 'he': 'Hebrew', 'sq': 'Albanian',
+             'is': 'Icelandic', 'ga': 'Irish', 'cy': 'Welsh', 'lb': 'Luxembourgish', 'mt': 'Maltese', 'eo': 'Esperanto', 'la': 'Latin'}
 def kind(k, label):
     return ['war', 'war', 'revolt', 'politics', 'faith', 'politics', 'fire', 'epidemic' if EPI.search(label) else 'quake', 'building', 'politics'][k]
 Y0, Y1 = 1000, cd['Y1']; GAP = 21 / 350 * (Y1 - Y0)
@@ -34,10 +40,15 @@ def fits(evs):
         else: rowEnd[r] = e['y']
     return True
 def wd_events(name):
-    i = names.index(name); rows = sorted((r for r in EV if r[0] == i and Y0 <= r[1] <= Y1 and not re.match(r'^Q\d+$', r[6] or '')), key=lambda r: -r[4])
+    i = names.index(name); rows = sorted((r for r in EV if r[0] == i and Y0 <= r[1] <= Y1), key=lambda r: -r[4])
     out = []
     for r in rows:
-        e = {'y': r[1], 'k': kind(r[3], r[5]), 'n': r[5], 'x': '', 'wt': r[6] or r[5]}
+        e = {'y': r[1], 'k': kind(r[3], r[5]), 'n': r[5], 'x': ''}
+        link = r[6]                                  # '' / 'Title' (English), 'xx:Title' (another edition), None (no article)
+        m = re.match(r'^([a-z][a-z-]*):(.+)$', link or '')
+        if m: e['wt'], e['wl'], e['wn'] = m.group(2), m.group(1), WIKI_LANG.get(m.group(1), m.group(1))
+        elif link is not None and not re.match(r'^Q\d+$', link): e['wt'] = link or r[5]
+        if len(r) > 8 and r[8]: e['q'] = r[8]
         if r[2] and not r[7]: e['d'] = [r[2] // 100, str(r[2] % 100)]
         if fits(out + [e]): out.append(e)
         if len(out) >= 16: break

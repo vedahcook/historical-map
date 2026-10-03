@@ -353,8 +353,8 @@ function eventsTab(c) {
     return `<button type="button" class="ev${e === selEv ? ' sel' : e.y === year ? ' on' : ''}" data-e="${c.events.indexOf(e)}" aria-pressed="${e === selEv}" style="left:${pct(e.y)};top:${r * 21}px" title="${when(e)}: ${esc(e.n)}" aria-label="${when(e)}: ${esc(e.n)} (${KIND[e.k]})">${ico(e.k)}</button>`;
   }).join('');
   const past = c.events.filter(e => e.y <= year), last = selEv || past[past.length - 1];
-  const wiki = e => `https://en.wikipedia.org/wiki/${encodeURIComponent(e.wt.replace(/ /g, '_'))}`;
-  const detail = last ? `<div class="detail ev${last.y === year ? ' on' : ''}" role="button" tabindex="0" data-e="${c.events.indexOf(last)}">${ico(last.k)}<div><div class="t"><b data-dates="${esc([when(last), when(last, 1), last.y].filter((v, i, a) => a.indexOf(v) === i).join('|'))}"><span class="dt">${when(last)}</span> · ${esc(last.n)}</b><a href="${wiki(last)}" target="_blank" rel="noopener">Wikipedia</a></div>` +
+  const wiki = e => e.wt ? `<a href="https://${e.wl || 'en'}.wikipedia.org/wiki/${encodeURIComponent(e.wt.replace(/ /g, '_'))}" target="_blank" rel="noopener">Wikipedia${e.wn ? ` (${e.wn})` : ''}</a>` : '';
+  const detail = last ? `<div class="detail ev${last.y === year ? ' on' : ''}" role="button" tabindex="0" data-e="${c.events.indexOf(last)}">${ico(last.k)}<div><div class="t"><b data-dates="${esc([when(last), when(last, 1), last.y].filter((v, i, a) => a.indexOf(v) === i).join('|'))}"><span class="dt">${when(last)}</span> · ${esc(last.n)}</b>${wiki(last)}</div>` +
       `<div class="xt">${last.y === year ? '' : `<span class="ago">${yrs(year - last.y)} earlier.</span> `}${esc(last.x)}</div></div></div>`
     : `<div class="detail empty">No events listed before ${c.events[0].y}.</div>`;
   const list = c.events.map(e => `<li role="button" tabindex="0" data-e="${c.events.indexOf(e)}"${e === last ? ' class="on"' : ''}>${ico(e.k)}<span>${e.y}</span><span>${esc(e.n)}</span></li>`).join('');
