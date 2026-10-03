@@ -22,15 +22,19 @@ EV = json.load(open('/home/claude/historical-map/europe-map/city-events.json'))[
 EPI = re.compile(r'plague|cholera|epidemic|pandemic|influenza|typhus|smallpox|black death|outbreak', re.I)
 def kind(k, label):
     return ['war', 'war', 'revolt', 'politics', 'faith', 'politics', 'fire', 'epidemic' if EPI.search(label) else 'quake', 'building', 'politics'][k]
-Y0, Y1 = 1000, cd['Y1']; GAP = 21 / 350 * (Y1 - Y0)
+import math
+Y0, Y1 = 1000, cd['Y1']; K = 120; W = 300
+LT = lambda v: math.log(1 + max(0, Y1 - v) / K)
+X = lambda v: 4 + (1 - LT(v) / LT(Y0)) * (W - 8)          # the page's stretched time scale
+GAP = 21 / 350 * (W - 8)
 def fits(evs):
     rowEnd = []
     for e in sorted(evs, key=lambda e: e['y']):
-        r = next((i for i, y in enumerate(rowEnd) if e['y'] - y >= GAP), -1)
+        xe = X(e['y']); r = next((i for i, x in enumerate(rowEnd) if xe - x >= GAP), -1)
         if r < 0:
             if len(rowEnd) >= 4: return False
-            rowEnd.append(e['y'])
-        else: rowEnd[r] = e['y']
+            rowEnd.append(xe)
+        else: rowEnd[r] = xe
     return True
 def wd_events(name):
     i = names.index(name); rows = sorted((r for r in EV if r[0] == i and Y0 <= r[1] <= Y1 and not re.match(r'^Q\d+$', r[6] or '')), key=lambda r: -r[4])
