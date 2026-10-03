@@ -1,0 +1,113 @@
+{
+ "city": "Belgrade",
+ "picks": [
+  {
+   "n": 1,
+   "file": "GRIECHISCH WEISSENBURG BELAGERT.jpg",
+   "y": 1578,
+   "lab": "1578",
+   "what": "Woodcut in Sebastian Münster’s Cosmographia",
+   "who": "Sebastian Münster",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.29,
+    0.97,
+    0.98
+   ],
+   "focal": [
+    0.6,
+    0.38
+   ],
+   "why": "labeled view of the fortress town above the Sava and Danube; text block above cut"
+  },
+  {
+   "n": 3,
+   "file": "Antonio Calza - An Episode from the Battle of Belgrade.jpg",
+   "y": 1720,
+   "lab": "about 1720",
+   "what": "The Battle of Belgrade (1717), painting",
+   "who": "Antonio Calza",
+   "lic": "PD",
+   "event": true,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.3,
+    0.38
+   ],
+   "why": "color view of the walled town on its promontory at the river confluence behind the 1717 battle"
+  },
+  {
+   "n": 9,
+   "file": "The landing-place near cathedral, Belgrade, Servia-LCCN2001698828.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The riverfront and the cathedral across the Sava, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.02,
+    0.985,
+    0.94
+   ],
+   "focal": [
+    0.48,
+    0.4
+   ],
+   "why": "general view of the old town skyline from the river with the cathedral tower; dark border and caption cut"
+  },
+  {
+   "n": 15,
+   "file": "ETH-BIB-Belgrad-Weitere-LBS MH02-25-0027.tif",
+   "y": 1934,
+   "lab": "1934",
+   "what": "Aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.04,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.58,
+    0.5
+   ],
+   "why": "city, King Alexander Bridge and the fortress point at the Sava–Danube confluence; vignetted left edge trimmed"
+  },
+  {
+   "n": 22,
+   "file": "Belgrade from LH1407.jpg",
+   "y": 2012,
+   "lab": "2012",
+   "what": "Aerial photograph",
+   "who": "Wizardist",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.35
+   ],
+   "why": "color aerial over the Sava bridges to the city center"
+  }
+ ],
+ "gaps": "P0: no candidates; P3: only Kunike’s 1826 view from Zemun (#4), where Belgrade is a faint line on the horizon; P6 has no close view of the fortress and old town (panoramas are at night, at sunset, or face New Belgrade)",
+ "notes": "#1: the Münster block probably first appeared in an earlier Cosmographia edition (#2, a cleaner scan of the same block, claims 1545 but its record is marked as wrong), so 1578 is the date of this printing; drop it if a firm first-publication year is required. #3 shows the 1717 battle (marked as event); the title comes from the Dorotheum auction record and Calza died in 1725. P4 alternative: #7, the same city seen from Kalemegdan. #12 (1865 Tour du monde engraving of the fortress from the Danube) is a good black-and-white P4 alternative but only 30 years from the photochrom.",
+ "_reviewed": true
+}

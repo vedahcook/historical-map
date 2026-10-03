@@ -1,0 +1,92 @@
+{
+ "city": "Tabriz",
+ "picks": [
+  {
+   "n": 1,
+   "file": "View of Tabriz. Tevârîh-i Âl-i Osmân, circa 1550 (Dresden Sachsische Landesbibliothek, MS E. 391 and E. 391a) fol. 197b–198a.jpg",
+   "y": 1550,
+   "lab": "about 1550",
+   "what": "Bird’s-eye view, Ottoman manuscript painting (Saxon State Library, Dresden)",
+   "who": "Matrakçı Nasuh",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "Ottoman topographic view of the whole city with its mosques and river; double page, gutter left in"
+  },
+  {
+   "n": 3,
+   "file": "1686 view of Tabriz, Iran.jpg",
+   "y": 1686,
+   "lab": "1686",
+   "what": "Panorama, engraving in Jean Chardin’s Journal du voyage en Perse",
+   "who": "Jean Chardin",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.075,
+    0.042,
+    0.99,
+    0.96
+   ],
+   "focal": [
+    0.45,
+    0.55
+   ],
+   "why": "large, detailed panorama of the city in its ring of hills; legend panel trimmed"
+  },
+  {
+   "n": 11,
+   "file": "CH-NB - Persien, Täbris (Täbriz)- Stadtansicht - Annemarie Schwarzenbach - SLA-Schwarzenbach-A-5-06-042.jpg",
+   "y": 1935,
+   "lab": "1935",
+   "what": "General view of the city and the mountains behind it, photograph (Swiss National Library)",
+   "who": "Annemarie Schwarzenbach",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.02,
+    0.98,
+    0.985
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "general view over the flat-roofed city to the mountains; firmly dated"
+  },
+  {
+   "n": 16,
+   "file": "2010-06-15 15-30-01 Tabriz - Tehran.jpg",
+   "y": 2010,
+   "lab": "2010",
+   "what": "Aerial photograph of the city below Mount Eynali",
+   "who": "Hansueli Krapf",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "clear view of the city spreading up to the red Eynali hills"
+  }
+ ],
+ "gaps": "P0: none. P3: only Luigi Pesce photos (#6 faded street scene, #7 blank), dated only 1840s–60s. P4: none.",
+ "notes": "#1 is a grayscale scan of a color miniature; its date comes from the description (‘circa 1550’); the Commons date field says only 16th century. #5 is a small copy of #3. #4 is a generic 1698 earthquake scene. #12 (1955 aerial, Arg visible) is a P5 alternative. P6 aerials are airplane-window shots, not Quality images; no ground-level skyline photo among candidates.",
+ "_reviewed": true
+}

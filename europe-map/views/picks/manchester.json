@@ -1,0 +1,92 @@
+{
+ "city": "Manchester",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Manchester1746panoramic.jpg",
+   "y": 1746,
+   "lab": "1746",
+   "what": "The south-west prospect of Manchester and Salford, engraving",
+   "who": "Casson and Berry",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "only early general view; collegiate church (now cathedral) tower and St Ann’s spire visible"
+  },
+  {
+   "n": 12,
+   "file": "Manchester, from Kersal Moor (NYPL Hades-256054-431071).jpg",
+   "y": 1855,
+   "lab": "1850s",
+   "what": "Manchester from Kersal Moor, steel engraving after William Wyld (New York Public Library)",
+   "who": "Edward Goodall after William Wyld",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.085,
+    0.108,
+    0.93,
+    0.885
+   ],
+   "focal": [
+    0.62,
+    0.45
+   ],
+   "why": "classic general view of the mill town, skyline of chimneys across the Irwell"
+  },
+  {
+   "n": 5,
+   "file": "Manchester Cathedral LCCN2017659726.jpg",
+   "y": 1905,
+   "lab": "1900s",
+   "what": "The cathedral and Cromwell statue, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.015,
+    0.98,
+    0.985
+   ],
+   "focal": [
+    0.5,
+    0.34
+   ],
+   "why": "color landmark scene; cathedral tower, Cromwell statue, tram"
+  },
+  {
+   "n": 20,
+   "file": "Manchester from Hartshead Pike.jpg",
+   "y": 2019,
+   "lab": "2019",
+   "what": "The city center skyline from Hartshead Pike, photograph",
+   "who": "G-13114",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.15,
+    1,
+    0.85
+   ],
+   "focal": [
+    0.5,
+    0.42
+   ],
+   "why": "whole modern skyline in one view"
+  }
+ ],
+ "gaps": "P0, P1: nothing. P3: nothing reliably dated (Creswick painting #3 has no date; ‘1811’ is his birth year). P5: only a vertical RAF photo and Luftwaffe target sheets, skipped.",
+ "notes": "#1 is small (1009×251). #12 engraving reproduces Wyld’s 1852 watercolor for Queen Victoria; plate year unknown, so labeled 1850s. #5: Library of Congress dates the photochrom 1890, but it shows an electric trolley tram, and Manchester’s electric trams began in 1901, so labeled 1900s; maker credited as Photoglob Zürich by series convention, record names none. Many hits are other Manchesters (New Hampshire, Manchester-by-the-Sea, San Diego hotel, Providence power station), all excluded.",
+ "_reviewed": true
+}

@@ -1,0 +1,29 @@
+{
+ "city": "Porto",
+ "picks": [
+  {
+   "n": 34,
+   "file": "General view of Porto (4).JPG",
+   "y": 2013,
+   "lab": "2013",
+   "what": "Rooftops of the old town and the Douro, photograph",
+   "who": "José Luiz",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.55
+   ],
+   "why": "sharp modern view over the tiled houses of the historic center to the river; gray sky, no famous landmark in frame"
+  }
+ ],
+ "gaps": "P0–P3: no candidates of Porto (all hits are other places with ‘porto’ in the name, or capriccio harbor paintings). P4: only #26, left out for its date. P5: nothing usable (a motor race, a football team, a street sketch dated only ‘before 1926’).",
+ "notes": "#26 (Bain News Service, LoC ggbain.00063) is a strong general view of the Ribeira, the Clérigos tower and the cathedral from the Serra do Pilar, but Commons gives both ‘1919’ (title) and ‘before 1887’ (date field). The sailing ships, the suspension bridge category and the absence of the Dom Luís I bridge (built 1881–86) in the foreground point to about the 1870s; add it as ‘about 1875’ only if that dating is accepted. #1 is a better P6 panorama (Ribeira, cathedral and the Dom Luís I bridge) but has no date at all and is a 6:1 strip; #37 is a university facade with banners.",
+ "_reviewed": true
+}

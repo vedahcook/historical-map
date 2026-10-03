@@ -1,0 +1,92 @@
+{
+ "city": "Turin",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Atlas Van der Hagen-KW1049B12 055-PROSPECTVS PLATAE VETERIS ANTE CASTRVM.jpeg",
+   "y": 1682,
+   "lab": "1682",
+   "what": "Piazza Castello and the Royal Palace, colored engraving from Blaeu’s town book of Italy",
+   "who": "Romeyn de Hooghe and the heirs of Joan Blaeu",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.08,
+    0.385,
+    0.92,
+    0.975
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "colored, high-resolution; the main square with the Royal Palace; focal set below the putti cartouche"
+  },
+  {
+   "n": 10,
+   "file": "Veduta generale verso greco, Torino, 1831.jpg",
+   "y": 1831,
+   "lab": "1831",
+   "what": "General view with the Po, drawing",
+   "who": "Clemente Rovere",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.94
+   ],
+   "focal": [
+    0.55,
+    0.55
+   ],
+   "why": "whole city on the plain with the Po and the Alps behind; book caption cut"
+  },
+  {
+   "n": 19,
+   "file": "General view from Mount of the Capuchins, Turin, Italy-LCCN2001700975.tif",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "View from the Monte dei Cappuccini, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.03,
+    0.968,
+    0.93
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "Mole Antonelliana over the city across the Po; classic general view"
+  },
+  {
+   "n": 30,
+   "file": "Turin aerial 2009.JPG",
+   "y": 2009,
+   "lab": "2009",
+   "what": "View from the Mole Antonelliana, photograph",
+   "who": "chensiyuan",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "sharp view over the center to the hills; best of the modern set"
+  }
+ ],
+ "gaps": "P0: nothing. P1: only #1, a 1640 siege map of the plain. P5: only Egyptian tomb photos from the Museo Egizio archive (wrong subject)",
+ "notes": "Alternative for P2: Bellotto’s 1745 view from the Royal Gardens (#5), a true general view but only 1329 px wide; Blaeu plate chosen for size and color. #3 is the Venaria Reale hunting palace, #2 is Rome, #6 is Venice. Photochrom credited to Photoglob Zürich from the “P.Z.” imprint on the print. #28 is a 2007 re-upload of photochrom #18. #30 year taken from the file title.",
+ "_reviewed": true
+}

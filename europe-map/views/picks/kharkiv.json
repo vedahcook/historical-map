@@ -1,0 +1,50 @@
+{
+ "city": "Kharkiv",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Charkow.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Dormition Cathedral above the river, photochrom print",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0,
+    1,
+    0.955
+   ],
+   "focal": [
+    0.6,
+    0.4
+   ],
+   "why": "color view of the center with the cathedral bell tower and the Pokrovsky Monastery; color-cleaned copy of #1"
+  },
+  {
+   "n": 11,
+   "file": "Осень в Харькове - panoramio.jpg",
+   "y": 2012,
+   "lab": "2012",
+   "what": "The Dormition Cathedral bell tower across the river, photograph",
+   "who": "belocerkovskij",
+   "lic": "CC BY 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.42,
+    0.4
+   ],
+   "why": "the city’s best-known landmark reflected in the river, color"
+  }
+ ],
+ "gaps": "P0–P3: no candidates. P5: nothing strong (#5, a 1963 colored print of a central square, is a photo of a postcard and the square is hard to recognize).",
+ "notes": "#3 is the same photochrom as LOC #1 without the dark frame; caption strip at the bottom trimmed. #4 (watercolor view from Kholodnaya Gora, signed, ‘late 19th century’) skipped: artist and date unclear. P6 has no general skyline view; #10 (pedestrian bridge) and #8 (railway with distant skyline) are weaker.",
+ "_reviewed": true
+}

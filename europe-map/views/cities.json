@@ -523,5 +523,4029 @@
    "de": "Edinburgh",
    "en": "Edinburgh"
   }
+ },
+ "Kyiv": {
+  "qid": "Q1899",
+  "commonscat": "Kyiv",
+  "labels": {
+   "en": "Kyiv",
+   "nb": "Kyiv",
+   "ru": "Киев",
+   "fr": "Kiev",
+   "es": "Kiev",
+   "bg": "Киев",
+   "cs": "Kyjev",
+   "da": "Kijev",
+   "de": "Kiew",
+   "el": "Κίεβο",
+   "fi": "Kiova",
+   "hr": "Kijev",
+   "hu": "Kijev",
+   "it": "Kiev",
+   "la": "Kiovia",
+   "nl": "Kiev",
+   "pl": "Kijów",
+   "pt": "Kiev",
+   "ro": "Kiev",
+   "sr": "Кијев",
+   "sv": "Kiev",
+   "tr": "Kiev",
+   "uk": "Київ"
+  },
+  "native": [
+   "Київ"
+  ],
+  "aliases": {
+   "de": [
+    "Kyjiw"
+   ],
+   "en": [
+    "Kyjiw",
+    "Kyiw",
+    "Kyïv",
+    "Kief"
+   ]
+  }
+ },
+ "Hamburg": {
+  "qid": "Q1055",
+  "commonscat": "Hamburg",
+  "labels": {
+   "la": "Gambrivium",
+   "hu": "Hamburg",
+   "ro": "Hamburg",
+   "de": "Hamburg",
+   "sr": "Хамбург",
+   "cs": "Hamburk",
+   "bg": "Хамбург",
+   "uk": "Гамбург",
+   "es": "Hamburgo",
+   "tr": "Hamburg",
+   "nb": "Hamburg",
+   "nl": "Hamburg",
+   "en": "Hamburg",
+   "sv": "Hamburg",
+   "it": "Amburgo",
+   "pt": "Hamburgo",
+   "da": "Hamborg",
+   "el": "Αμβούργο",
+   "hr": "Hamburg",
+   "fr": "Hambourg",
+   "pl": "Hamburg",
+   "ru": "Гамбург",
+   "fi": "Hampuri"
+  },
+  "native": [
+   "Freie und Hansestadt Hamburg",
+   "Hamburg"
+  ],
+  "aliases": {
+   "de": [
+    "Hansestadt Hamburg",
+    "Freie und Hansestadt Hamburg",
+    "DE-HH",
+    "HH"
+   ],
+   "en": [
+    "Free and Hanseatic City of Hamburg",
+    "Hamburg, Germany",
+    "Hamburg, Freie und Hansestadt"
+   ]
+  }
+ },
+ "Genoa": {
+  "qid": "Q1449",
+  "commonscat": "Genoa",
+  "labels": {
+   "en": "Genoa",
+   "it": "Genova",
+   "fr": "Gênes",
+   "bg": "Генуа",
+   "cs": "Janov",
+   "da": "Genova",
+   "de": "Genua",
+   "es": "Génova",
+   "fi": "Genova",
+   "hr": "Genova",
+   "hu": "Genova",
+   "la": "Genua",
+   "nl": "Genua",
+   "pl": "Genua",
+   "pt": "Génova",
+   "ro": "Genova",
+   "ru": "Генуя",
+   "sr": "Ђенова",
+   "sv": "Genua",
+   "tr": "Cenova",
+   "uk": "Генуя",
+   "nb": "Genova",
+   "el": "Γένοβα"
+  },
+  "native": [
+   "Zena"
+  ],
+  "aliases": {
+   "en": [
+    "Genoa, Italy",
+    "Genova, Italy",
+    "Zena"
+   ],
+   "de": [
+    "Genoa"
+   ]
+  }
+ },
+ "Palermo": {
+  "qid": "Q2656",
+  "commonscat": "Palermo",
+  "labels": {
+   "it": "Palermo",
+   "en": "Palermo",
+   "fr": "Palerme",
+   "es": "Palermo",
+   "bg": "Палермо",
+   "cs": "Palermo",
+   "da": "Palermo",
+   "de": "Palermo",
+   "el": "Παλέρμο",
+   "fi": "Palermo",
+   "hr": "Palermo",
+   "hu": "Palermo",
+   "la": "Panormus",
+   "nl": "Palermo",
+   "pl": "Palermo",
+   "pt": "Palermo",
+   "ro": "Palermo",
+   "ru": "Палермо",
+   "sr": "Палермо",
+   "sv": "Palermo",
+   "tr": "Palermo",
+   "uk": "Палермо",
+   "nb": "Palermo"
+  },
+  "native": [
+   "Palermo",
+   "Palièimmu"
+  ],
+  "aliases": {
+   "en": [
+    "Palermo, Italy"
+   ]
+  }
+ },
+ "Bucharest": {
+  "qid": "Q19660",
+  "commonscat": "Bucharest",
+  "labels": {
+   "pl": "Bukareszt",
+   "es": "Bucarest",
+   "hu": "Bukarest",
+   "nl": "Boekarest",
+   "pt": "Bucareste",
+   "sr": "Букурешт",
+   "fi": "Bukarest",
+   "uk": "Бухарест",
+   "hr": "Bukurešt",
+   "da": "Bukarest",
+   "it": "Bucarest",
+   "la": "Bucaresta",
+   "cs": "Bukurešť",
+   "bg": "Букурещ",
+   "el": "Βουκουρέστι",
+   "sv": "Bukarest",
+   "ru": "Бухарест",
+   "tr": "Bükreş",
+   "fr": "Bucarest",
+   "de": "Bukarest",
+   "en": "Bucharest",
+   "ro": "București",
+   "nb": "București"
+  },
+  "native": [
+   "București"
+  ],
+  "aliases": {
+   "de": [
+    "Bucharest",
+    "București",
+    "Bucuresti",
+    "RO-B"
+   ],
+   "en": [
+    "Little Paris",
+    "Paris of the East",
+    "București",
+    "Bucureşti"
+   ]
+  }
+ },
+ "Tabriz": {
+  "qid": "Q80053",
+  "commonscat": "Tabriz",
+  "labels": {
+   "pl": "Tebriz",
+   "es": "Tabriz",
+   "hu": "Tebriz",
+   "el": "Ταμπρίζ",
+   "nl": "Tabriz",
+   "sv": "Tabriz",
+   "pt": "Tabriz",
+   "ru": "Тебриз",
+   "sr": "Табриз",
+   "tr": "Tebriz",
+   "fi": "Tabrīz",
+   "uk": "Тебриз",
+   "hr": "Tabriz",
+   "da": "Tabriz",
+   "fr": "Tabriz",
+   "it": "Tabriz",
+   "de": "Täbris",
+   "en": "Tabriz",
+   "ro": "Tabriz",
+   "la": "Tauris",
+   "cs": "Tabríz",
+   "bg": "Тебриз",
+   "nb": "Tabriz"
+  },
+  "native": [
+   "تبریز",
+   "تبریز"
+  ],
+  "aliases": {
+   "de": [
+    "Tabris",
+    "Täbriz"
+   ]
+  }
+ },
+ "Bursa": {
+  "qid": "Q40738",
+  "commonscat": "Bursa",
+  "labels": {
+   "pl": "Bursa",
+   "es": "Bursa",
+   "hu": "Bursa",
+   "el": "Προύσα",
+   "sv": "Bursa",
+   "nl": "Bursa",
+   "pt": "Bursa",
+   "ru": "Бурса",
+   "sr": "Бурса",
+   "tr": "Bursa",
+   "fi": "Bursa",
+   "uk": "Бурса",
+   "hr": "Bursa",
+   "da": "Bursa",
+   "fr": "Bursa",
+   "it": "Bursa",
+   "de": "Bursa",
+   "en": "Bursa",
+   "ro": "Bursa",
+   "cs": "Bursa",
+   "bg": "Бурса",
+   "nb": "Bursa",
+   "la": "Prusa"
+  },
+  "native": [
+   "Bursa"
+  ],
+  "aliases": {
+   "de": [
+    "Brussa",
+    "Prusa ad Olympum"
+   ],
+   "en": [
+    "Broussa"
+   ]
+  }
+ },
+ "Lyon": {
+  "qid": "Q456",
+  "commonscat": "Lyon",
+  "labels": {
+   "en": "Lyon",
+   "fr": "Lyon",
+   "es": "Lyon",
+   "it": "Lione",
+   "bg": "Лион",
+   "cs": "Lyon",
+   "da": "Lyon",
+   "de": "Lyon",
+   "el": "Λυών",
+   "fi": "Lyon",
+   "hr": "Lyon",
+   "hu": "Lyon",
+   "la": "Lugdunum",
+   "nl": "Lyon",
+   "pl": "Lyon",
+   "pt": "Lyon",
+   "ro": "Lyon",
+   "ru": "Лион",
+   "sr": "Лион",
+   "sv": "Lyon",
+   "tr": "Lyon",
+   "uk": "Ліон",
+   "nb": "Lyon"
+  },
+  "native": [
+   "Lyon",
+   "Lugdunum"
+  ],
+  "aliases": {
+   "en": [
+    "Commune-Affranchie",
+    "City of Lyon"
+   ],
+   "de": [
+    "Lion",
+    "Leyden",
+    "Welsch-Leyden"
+   ]
+  }
+ },
+ "Marseille": {
+  "qid": "Q23482",
+  "commonscat": "Marseille",
+  "labels": {
+   "pl": "Marsylia",
+   "es": "Marsella",
+   "hu": "Marseille",
+   "nl": "Marseille",
+   "pt": "Marselha",
+   "sr": "Марсељ",
+   "fi": "Marseille",
+   "uk": "Марсель",
+   "hr": "Marseille",
+   "da": "Marseille",
+   "it": "Marsiglia",
+   "la": "Massilia",
+   "cs": "Marseille",
+   "bg": "Марсилия",
+   "el": "Μασσαλία",
+   "sv": "Marseille",
+   "ru": "Марсель",
+   "tr": "Marsilya",
+   "fr": "Marseille",
+   "de": "Marseille",
+   "en": "Marseille",
+   "ro": "Marsilia",
+   "nb": "Marseille"
+  },
+  "native": [
+   "Marseille"
+  ],
+  "aliases": {
+   "de": [
+    "Massaliotisch",
+    "Marseillais",
+    "Massillia"
+   ],
+   "en": [
+    "Massaliotes",
+    "Marsailles",
+    "Marsielles",
+    "Marsielle"
+   ]
+  }
+ },
+ "Barcelona": {
+  "qid": "Q1492",
+  "commonscat": "Barcelona",
+  "labels": {
+   "fr": "Barcelone",
+   "nb": "Barcelona",
+   "ru": "Барселона",
+   "it": "Barcellona",
+   "es": "Barcelona",
+   "de": "Barcelona",
+   "bg": "Барселона",
+   "cs": "Barcelona",
+   "da": "Barcelona",
+   "fi": "Barcelona",
+   "hr": "Barcelona",
+   "hu": "Barcelona",
+   "la": "Barcino",
+   "nl": "Barcelona",
+   "pl": "Barcelona",
+   "pt": "Barcelona",
+   "ro": "Barcelona",
+   "sr": "Барселона",
+   "sv": "Barcelona",
+   "tr": "Barselona",
+   "uk": "Барселона",
+   "en": "Barcelona",
+   "el": "Βαρκελώνη"
+  },
+  "native": [
+   "Barcelona"
+  ],
+  "aliases": {
+   "en": [
+    "B'na",
+    "Barcelona, Spain",
+    "Barcelona, Catalonia",
+    "Barcelona City"
+   ],
+   "de": [
+    "Stadt Barcelona",
+    "Barcelona Stadt"
+   ]
+  }
+ },
+ "Antwerp": {
+  "qid": "Q12892",
+  "commonscat": "Antwerp",
+  "labels": {
+   "en": "Antwerp",
+   "fr": "Anvers",
+   "de": "Antwerpen",
+   "bg": "Антверпен",
+   "cs": "Antverpy",
+   "da": "Antwerpen",
+   "el": "Αμβέρσα",
+   "es": "Amberes",
+   "fi": "Antwerpen",
+   "hr": "Antwerpen",
+   "hu": "Antwerpen",
+   "it": "Anversa",
+   "la": "Antverpia",
+   "nl": "Antwerpen",
+   "pl": "Antwerpia",
+   "pt": "Antuérpia",
+   "ro": "Anvers",
+   "ru": "Антверпен",
+   "sr": "Антверпен",
+   "sv": "Antwerpen",
+   "tr": "Anvers",
+   "uk": "Антверпен",
+   "nb": "Antwerpen"
+  },
+  "native": [
+   "Antwerpen",
+   "Antwerpn",
+   "Antwerp",
+   "Anvers"
+  ],
+  "aliases": {
+   "en": [
+    "City of Antwerp",
+    "Antwerpen"
+   ],
+   "de": [
+    "Antorff",
+    "Antorf"
+   ]
+  }
+ },
+ "Valencia": {
+  "qid": "Q8818",
+  "commonscat": "Valencia",
+  "labels": {
+   "it": "Valencia",
+   "en": "Valencia",
+   "fr": "Valence",
+   "es": "Valencia",
+   "bg": "Валенсия",
+   "cs": "Valencie",
+   "da": "Valencia",
+   "de": "Valencia",
+   "el": "Βαλένθια",
+   "fi": "Valencia",
+   "hr": "Valencia",
+   "hu": "Valencia",
+   "la": "Valentia",
+   "nl": "Valencia",
+   "pl": "Walencja",
+   "pt": "Valência",
+   "ro": "Valencia",
+   "ru": "Валенсия",
+   "sr": "Валенсија",
+   "sv": "Valencia",
+   "tr": "Valensiya",
+   "uk": "Валенсія",
+   "nb": "Valencia"
+  },
+  "native": [
+   "València"
+  ],
+  "aliases": {
+   "en": [
+    "City of Valencia",
+    "Valencia, Spain"
+   ]
+  }
+ },
+ "Edirne": {
+  "qid": "Q43387",
+  "commonscat": "Edirne",
+  "labels": {
+   "pl": "Edirne",
+   "es": "Edirne",
+   "hu": "Edirne",
+   "el": "Αδριανούπολη",
+   "nl": "Edirne",
+   "sv": "Edirne",
+   "pt": "Edirne",
+   "ru": "Эдирне",
+   "sr": "Једрене",
+   "tr": "Edirne",
+   "fi": "Edirne",
+   "uk": "Едірне",
+   "hr": "Edirne",
+   "da": "Edirne",
+   "fr": "Edirne",
+   "it": "Edirne",
+   "de": "Edirne",
+   "en": "Edirne",
+   "ro": "Edirne",
+   "la": "Hadrianopolis",
+   "cs": "Edirne",
+   "bg": "Одрин",
+   "nb": "Edirne"
+  },
+  "native": [
+   "Edirne"
+  ],
+  "aliases": {
+   "de": [
+    "Andrianopol",
+    "Adrianopel",
+    "Uscudama",
+    "Adrianoupolis"
+   ],
+   "en": [
+    "Edirne City",
+    "Hadrianopolis",
+    "Adrianopolis"
+   ]
+  }
+ },
+ "Gdańsk": {
+  "qid": "Q1792",
+  "commonscat": "Gdańsk",
+  "labels": {
+   "de": "Danzig",
+   "en": "Gdańsk",
+   "nb": "Gdańsk",
+   "pl": "Gdańsk",
+   "bg": "Гданск",
+   "cs": "Gdaňsk",
+   "da": "Gdańsk",
+   "el": "Γκντανσκ",
+   "es": "Gdansk",
+   "fi": "Gdańsk",
+   "fr": "Gdańsk",
+   "hr": "Gdanjsk",
+   "hu": "Gdańsk",
+   "it": "Danzica",
+   "la": "Gedanum",
+   "nl": "Gdańsk",
+   "pt": "Gdansk",
+   "ro": "Gdańsk",
+   "ru": "Гданьск",
+   "sr": "Гдањск",
+   "sv": "Gdańsk",
+   "tr": "Gdańsk",
+   "uk": "Гданськ"
+  },
+  "native": [
+   "Gdańsk",
+   "Danzig"
+  ],
+  "aliases": {
+   "en": [
+    "Gdansk",
+    "Dantzig",
+    "Dantzick",
+    "Gedanum"
+   ]
+  }
+ },
+ "Bologna": {
+  "qid": "Q1891",
+  "commonscat": "Bologna",
+  "labels": {
+   "it": "Bologna",
+   "nb": "Bologna",
+   "fr": "Bologne",
+   "en": "Bologna",
+   "es": "Bolonia",
+   "bg": "Болоня",
+   "cs": "Bologna",
+   "da": "Bologna",
+   "de": "Bologna",
+   "el": "Μπολόνια",
+   "fi": "Bologna",
+   "hr": "Bologna",
+   "hu": "Bologna",
+   "la": "Bononia",
+   "nl": "Bologna",
+   "pl": "Bolonia",
+   "pt": "Bolonha",
+   "ro": "Bologna",
+   "ru": "Болонья",
+   "sr": "Болоња",
+   "sv": "Bologna",
+   "tr": "Bologna",
+   "uk": "Болонья"
+  },
+  "native": [
+   "Bologna"
+  ],
+  "aliases": {
+   "en": [
+    "Bologna, Italy"
+   ]
+  }
+ },
+ "Thessaloniki": {
+  "qid": "Q17151",
+  "commonscat": "Thessaloniki",
+  "labels": {
+   "en": "Thessaloniki",
+   "bg": "Солун",
+   "cs": "Soluň",
+   "da": "Thessaloniki",
+   "de": "Thessaloniki",
+   "el": "Θεσσαλονίκη",
+   "es": "Salónica",
+   "fi": "Thessaloniki",
+   "fr": "Thessalonique",
+   "hr": "Solun",
+   "hu": "Szaloniki",
+   "it": "Salonicco",
+   "la": "Thessalonica",
+   "nl": "Thessaloniki",
+   "pl": "Saloniki",
+   "pt": "Salonica",
+   "ro": "Salonic",
+   "ru": "Салоники",
+   "sr": "Солун",
+   "sv": "Thessaloníki",
+   "tr": "Selanik",
+   "uk": "Салоніки",
+   "nb": "Thessaloniki"
+  },
+  "native": [
+   "Θεσσαλονίκη"
+  ],
+  "aliases": {
+   "en": [
+    "Thessalonica",
+    "Salonica",
+    "Saloniki"
+   ],
+   "de": [
+    "Saloniki"
+   ]
+  }
+ },
+ "Turin": {
+  "qid": "Q495",
+  "commonscat": "Turin",
+  "labels": {
+   "en": "Turin",
+   "fr": "Turin",
+   "it": "Torino",
+   "nb": "Torino",
+   "es": "Turín",
+   "bg": "Торино",
+   "cs": "Turín",
+   "da": "Torino",
+   "de": "Turin",
+   "el": "Τορίνο",
+   "fi": "Torino",
+   "hr": "Torino",
+   "hu": "Torino",
+   "la": "Augusta Taurinorum",
+   "nl": "Turijn",
+   "pl": "Turyn",
+   "pt": "Turim",
+   "ro": "Torino",
+   "ru": "Турин",
+   "sr": "Торино",
+   "sv": "Turin",
+   "tr": "Torino",
+   "uk": "Турин"
+  },
+  "native": [
+   "Torino",
+   "Turin"
+  ],
+  "aliases": {
+   "en": [
+    "Turin, Italy"
+   ]
+  }
+ },
+ "Granada": {
+  "qid": "Q8810",
+  "commonscat": "Granada",
+  "labels": {
+   "it": "Granada",
+   "fr": "Grenade",
+   "en": "Granada",
+   "es": "Granada",
+   "de": "Granada",
+   "bg": "Гранада",
+   "cs": "Granada",
+   "da": "Granada",
+   "el": "Γρανάδα",
+   "fi": "Granada",
+   "hr": "Granada",
+   "hu": "Granada",
+   "la": "Granata",
+   "nl": "Granada",
+   "pl": "Grenada",
+   "pt": "Granada",
+   "ro": "Granada",
+   "ru": "Гранада",
+   "sr": "Гранада",
+   "sv": "Granada",
+   "tr": "Granada",
+   "uk": "Гранада",
+   "nb": "Granada"
+  },
+  "native": [
+   "Granada"
+  ],
+  "aliases": {}
+ },
+ "Toulouse": {
+  "qid": "Q7880",
+  "commonscat": "Toulouse",
+  "labels": {
+   "fr": "Toulouse",
+   "en": "Toulouse",
+   "de": "Toulouse",
+   "bg": "Тулуза",
+   "cs": "Toulouse",
+   "da": "Toulouse",
+   "es": "Toulouse",
+   "fi": "Toulouse",
+   "hr": "Toulouse",
+   "hu": "Toulouse",
+   "it": "Tolosa",
+   "la": "Tolosa",
+   "nl": "Toulouse",
+   "pl": "Tuluza",
+   "pt": "Toulouse",
+   "ro": "Toulouse",
+   "ru": "Тулуза",
+   "sr": "Тулуза",
+   "sv": "Toulouse",
+   "tr": "Toulouse",
+   "uk": "Тулуза",
+   "nb": "Toulouse",
+   "el": "Τουλούζη"
+  },
+  "native": [
+   "Tolosa",
+   "Toulouse"
+  ],
+  "aliases": {
+   "de": [
+    "Ville rose",
+    "Tholosen"
+   ],
+   "en": [
+    "Tolosa",
+    "Toulouse, France",
+    "Toulouse, Occitania",
+    "Pink City"
+   ]
+  }
+ },
+ "Wrocław": {
+  "qid": "Q1799",
+  "commonscat": "Wrocław",
+  "labels": {
+   "de": "Breslau",
+   "en": "Wrocław",
+   "pl": "Wrocław",
+   "bg": "Вроцлав",
+   "cs": "Vratislav",
+   "da": "Wrocław",
+   "el": "Βρότσλαβ",
+   "es": "Breslavia",
+   "fi": "Wrocław",
+   "fr": "Wrocław",
+   "hr": "Wrocław",
+   "hu": "Wrocław",
+   "it": "Breslavia",
+   "la": "Vratislavia",
+   "nl": "Wrocław",
+   "pt": "Breslávia",
+   "ro": "Wrocław",
+   "ru": "Вроцлав",
+   "sr": "Вроцлав",
+   "sv": "Wrocław",
+   "tr": "Wrocław",
+   "uk": "Вроцлав",
+   "nb": "Wrocław"
+  },
+  "native": [
+   "Wrocław",
+   "Breslau",
+   "Brassel"
+  ],
+  "aliases": {
+   "en": [
+    "Brassel"
+   ]
+  }
+ },
+ "Rotterdam": {
+  "qid": "Q34370",
+  "commonscat": "Rotterdam",
+  "labels": {
+   "pl": "Rotterdam",
+   "es": "Róterdam",
+   "hu": "Rotterdam",
+   "el": "Ρότερνταμ",
+   "nl": "Rotterdam",
+   "sv": "Rotterdam",
+   "pt": "Roterdão",
+   "ru": "Роттердам",
+   "sr": "Ротердам",
+   "tr": "Rotterdam",
+   "fi": "Rotterdam",
+   "uk": "Роттердам",
+   "hr": "Rotterdam",
+   "da": "Rotterdam",
+   "fr": "Rotterdam",
+   "it": "Rotterdam",
+   "de": "Rotterdam",
+   "en": "Rotterdam",
+   "ro": "Rotterdam",
+   "la": "Roterodamum",
+   "cs": "Rotterdam",
+   "bg": "Ротердам",
+   "nb": "Rotterdam"
+  },
+  "native": [
+   "Rotterdam"
+  ],
+  "aliases": {
+   "de": [
+    "R'dam"
+   ],
+   "en": [
+    "R'dam",
+    "Roffa",
+    "Rotjeknor"
+   ]
+  }
+ },
+ "Ghent": {
+  "qid": "Q1296",
+  "commonscat": "Ghent",
+  "labels": {
+   "en": "Ghent",
+   "es": "Gante",
+   "fr": "Gand",
+   "nl": "Gent",
+   "de": "Gent",
+   "it": "Gand",
+   "pt": "Gante",
+   "sv": "Gent",
+   "bg": "Гент",
+   "cs": "Gent",
+   "da": "Gent",
+   "el": "Γάνδη",
+   "fi": "Gent",
+   "hr": "Gent",
+   "hu": "Gent",
+   "la": "Gandavum",
+   "pl": "Gandawa",
+   "ro": "Gent",
+   "ru": "Гент",
+   "sr": "Гент",
+   "tr": "Gent",
+   "uk": "Гент",
+   "nb": "Gent"
+  },
+  "native": [
+   "Gent"
+  ],
+  "aliases": {
+   "de": [
+    "Blumenstadt"
+   ]
+  }
+ },
+ "Zaragoza": {
+  "qid": "Q10305",
+  "commonscat": "Zaragoza",
+  "labels": {
+   "it": "Saragozza",
+   "fr": "Saragosse",
+   "en": "Zaragoza",
+   "de": "Saragossa",
+   "es": "Zaragoza",
+   "bg": "Сарагоса",
+   "cs": "Zaragoza",
+   "da": "Zaragoza",
+   "el": "Σαραγόσα",
+   "fi": "Zaragoza",
+   "hr": "Zaragoza",
+   "hu": "Zaragoza",
+   "nl": "Zaragoza",
+   "pl": "Saragossa",
+   "pt": "Saragoça",
+   "ro": "Zaragoza",
+   "ru": "Сарагоса",
+   "sr": "Сарагоса",
+   "sv": "Zaragoza",
+   "tr": "Zaragoza",
+   "uk": "Сарагоса",
+   "nb": "Zaragoza",
+   "la": "Caesaraugusta"
+  },
+  "native": [],
+  "aliases": {
+   "de": [
+    "Zaragoza",
+    "Zaragosa"
+   ],
+   "en": [
+    "Saragossa",
+    "Zaragoza Municipality"
+   ]
+  }
+ },
+ "Bordeaux": {
+  "qid": "Q1479",
+  "commonscat": "Bordeaux",
+  "labels": {
+   "fr": "Bordeaux",
+   "en": "Bordeaux",
+   "bg": "Бордо",
+   "cs": "Bordeaux",
+   "da": "Bordeaux",
+   "de": "Bordeaux",
+   "es": "Burdeos",
+   "fi": "Bordeaux",
+   "hr": "Bordeaux",
+   "hu": "Bordeaux",
+   "it": "Bordeaux",
+   "la": "Burdigala",
+   "nl": "Bordeaux",
+   "pl": "Bordeaux",
+   "pt": "Bordéus",
+   "ro": "Bordeaux",
+   "ru": "Бордо",
+   "sr": "Бордо",
+   "sv": "Bordeaux",
+   "tr": "Bordeaux",
+   "uk": "Бордо",
+   "nb": "Bordeaux",
+   "el": "Μπορντώ"
+  },
+  "native": [
+   "Bordeaux",
+   "Bordèu"
+  ],
+  "aliases": {
+   "en": [
+    "Bordèu",
+    "Bordele",
+    "Bordeu",
+    "Commune-Franklin"
+   ]
+  }
+ },
+ "Frankfurt": {
+  "qid": "Q1794",
+  "commonscat": "Frankfurt am Main",
+  "labels": {
+   "de": "Frankfurt am Main",
+   "fr": "Francfort-sur-le-Main",
+   "en": "Frankfurt",
+   "bg": "Франкфурт на Майн",
+   "cs": "Frankfurt nad Mohanem",
+   "da": "Frankfurt am Main",
+   "el": "Φρανκφούρτη",
+   "es": "Fráncfort del Meno",
+   "fi": "Frankfurt am Main",
+   "hr": "Frankfurt na Majni",
+   "hu": "Frankfurt am Main",
+   "it": "Francoforte sul Meno",
+   "la": "Francofurtum ad Moenum",
+   "nl": "Frankfurt am Main",
+   "pl": "Frankfurt nad Menem",
+   "pt": "Frankfurt am Main",
+   "ro": "Frankfurt pe Main",
+   "ru": "Франкфурт-на-Майне",
+   "sr": "Франкфурт на Мајни",
+   "sv": "Frankfurt am Main",
+   "tr": "Frankfurt",
+   "uk": "Франкфурт-на-Майні",
+   "nb": "Frankfurt"
+  },
+  "native": [
+   "Frankfurt am Main"
+  ],
+  "aliases": {
+   "de": [
+    "FFM",
+    "Frankfurt a. M.",
+    "Ffm",
+    "Ffm."
+   ],
+   "en": [
+    "Kreisfreie Stadt Frankfurt am Main",
+    "Frankfurt, Germany",
+    "Frankfurt am Main, Germany",
+    "Francfort"
+   ]
+  }
+ },
+ "Dublin": {
+  "qid": "Q1761",
+  "commonscat": "Dublin",
+  "labels": {
+   "de": "Dublin",
+   "fr": "Dublin",
+   "it": "Dublino",
+   "en": "Dublin",
+   "bg": "Дъблин",
+   "cs": "Dublin",
+   "da": "Dublin",
+   "el": "Δουβλίνο",
+   "es": "Dublín",
+   "fi": "Dublin",
+   "hr": "Dublin",
+   "hu": "Dublin",
+   "la": "Eblana",
+   "nl": "Dublin",
+   "pl": "Dublin",
+   "pt": "Dublin",
+   "ro": "Dublin",
+   "ru": "Дублин",
+   "sr": "Даблин",
+   "sv": "Dublin",
+   "tr": "Dublin",
+   "uk": "Дублін",
+   "nb": "Dublin"
+  },
+  "native": [
+   "Baile Átha Cliath",
+   "Dublin"
+  ],
+  "aliases": {
+   "en": [
+    "Dublin city",
+    "City of Dublin",
+    "Dublin, Ireland"
+   ]
+  }
+ },
+ "Córdoba": {
+  "qid": "Q900722",
+  "commonscat": "Córdoba",
+  "labels": {
+   "el": "Κόρδοβα",
+   "en": "Córdoba",
+   "it": "Córdoba",
+   "cs": "Córdoba",
+   "es": "Córdoba",
+   "ru": "Кордова",
+   "pt": "Córdoba",
+   "tr": "Córdoba",
+   "ro": "Córdoba",
+   "pl": "Córdoba",
+   "fr": "Córdoba",
+   "bg": "Кордоба",
+   "hr": "Córdoba",
+   "de": "Córdoba",
+   "fi": "Córdoba",
+   "hu": "Córdoba",
+   "sr": "Кордоба",
+   "sv": "Córdoba",
+   "uk": "Кордова",
+   "nl": "Córdoba",
+   "nb": "Córdoba",
+   "da": "Córdoba"
+  },
+  "native": [],
+  "aliases": {}
+ },
+ "Nantes": {
+  "qid": "Q12191",
+  "commonscat": "Nantes",
+  "labels": {
+   "fr": "Nantes",
+   "en": "Nantes",
+   "de": "Nantes",
+   "it": "Nantes",
+   "bg": "Нант",
+   "cs": "Nantes",
+   "da": "Nantes",
+   "es": "Nantes",
+   "fi": "Nantes",
+   "hr": "Nantes",
+   "hu": "Nantes",
+   "la": "Portus Namnetum",
+   "nl": "Nantes",
+   "pl": "Nantes",
+   "pt": "Nantes",
+   "ro": "Nantes",
+   "ru": "Нант",
+   "sr": "Нант",
+   "sv": "Nantes",
+   "tr": "Nantes",
+   "uk": "Нант",
+   "nb": "Nantes",
+   "el": "Νάντη"
+  },
+  "native": [
+   "Nantes"
+  ],
+  "aliases": {
+   "de": [
+    "Naoned",
+    "Naunnt"
+   ],
+   "en": [
+    "Naoned",
+    "Naunnt"
+   ]
+  }
+ },
+ "Montpellier": {
+  "qid": "Q6441",
+  "commonscat": "Montpellier",
+  "labels": {
+   "en": "Montpellier",
+   "de": "Montpellier",
+   "bg": "Монпелие",
+   "cs": "Montpellier",
+   "da": "Montpellier",
+   "el": "Μονπελιέ",
+   "es": "Montpellier",
+   "fi": "Montpellier",
+   "fr": "Montpellier",
+   "hr": "Montpellier",
+   "hu": "Montpellier",
+   "it": "Montpellier",
+   "la": "Monspessulanus",
+   "nl": "Montpellier",
+   "pl": "Montpellier",
+   "pt": "Montpellier",
+   "ro": "Montpellier",
+   "ru": "Монпелье",
+   "sr": "Монпеље",
+   "sv": "Montpellier",
+   "tr": "Montpellier",
+   "uk": "Монпельє",
+   "nb": "Montpellier"
+  },
+  "native": [
+   "Montpelhièr"
+  ],
+  "aliases": {}
+ },
+ "Rouen": {
+  "qid": "Q30974",
+  "commonscat": "Rouen",
+  "labels": {
+   "pl": "Rouen",
+   "es": "Ruan",
+   "hu": "Rouen",
+   "nl": "Rouen",
+   "pt": "Ruão",
+   "sr": "Руан",
+   "fi": "Rouen",
+   "uk": "Руан",
+   "hr": "Rouen",
+   "da": "Rouen",
+   "it": "Rouen",
+   "la": "Rothomagus",
+   "cs": "Rouen",
+   "bg": "Руан",
+   "el": "Ρουέν",
+   "sv": "Rouen",
+   "ru": "Руан",
+   "tr": "Rouen",
+   "fr": "Rouen",
+   "de": "Rouen",
+   "en": "Rouen",
+   "ro": "Rouen",
+   "nb": "Rouen"
+  },
+  "native": [
+   "Rouen"
+  ],
+  "aliases": {
+   "en": [
+    "Rotomagus"
+   ]
+  }
+ },
+ "Verona": {
+  "qid": "Q2028",
+  "commonscat": "Verona",
+  "labels": {
+   "it": "Verona",
+   "ru": "Верона",
+   "fr": "Vérone",
+   "en": "Verona",
+   "nb": "Verona",
+   "bg": "Верона",
+   "cs": "Verona",
+   "da": "Verona",
+   "de": "Verona",
+   "es": "Verona",
+   "fi": "Verona",
+   "hr": "Verona",
+   "hu": "Verona",
+   "la": "Verona",
+   "nl": "Verona",
+   "pl": "Werona",
+   "pt": "Verona",
+   "ro": "Verona",
+   "sr": "Верона",
+   "sv": "Verona",
+   "tr": "Verona",
+   "uk": "Верона",
+   "el": "Βερόνα"
+  },
+  "native": [
+   "Verona",
+   "Veròna"
+  ],
+  "aliases": {}
+ },
+ "Magdeburg": {
+  "qid": "Q1733",
+  "commonscat": "Magdeburg",
+  "labels": {
+   "de": "Magdeburg",
+   "it": "Magdeburgo",
+   "en": "Magdeburg",
+   "bg": "Магдебург",
+   "cs": "Magdeburk",
+   "da": "Magdeburg",
+   "el": "Μαγδεμβούργο",
+   "es": "Magdeburgo",
+   "fi": "Magdeburg",
+   "fr": "Magdebourg",
+   "hr": "Magdeburg",
+   "hu": "Magdeburg",
+   "la": "Magdeburgum",
+   "nl": "Maagdenburg",
+   "pl": "Magdeburg",
+   "pt": "Magdeburgo",
+   "ro": "Magdeburg",
+   "ru": "Магдебург",
+   "sr": "Магдебург",
+   "sv": "Magdeburg",
+   "tr": "Magdeburg",
+   "uk": "Магдебург",
+   "nb": "Magdeburg"
+  },
+  "native": [
+   "Magdeburg"
+  ],
+  "aliases": {
+   "en": [
+    "MD"
+   ],
+   "de": [
+    "MD",
+    "Landeshauptstadt Magdeburg",
+    "Ottostadt"
+   ]
+  }
+ },
+ "The Hague": {
+  "qid": "Q36600",
+  "commonscat": "The Hague",
+  "labels": {
+   "pl": "Haga",
+   "es": "La Haya",
+   "hu": "Hága",
+   "nl": "Den Haag",
+   "pt": "Haia",
+   "sr": "Хаг",
+   "fi": "Haag",
+   "uk": "Гаага",
+   "hr": "Haag",
+   "da": "Haag",
+   "it": "L'Aia",
+   "la": "Haga",
+   "cs": "Haag",
+   "bg": "Хага",
+   "el": "Χάγη",
+   "sv": "Haag",
+   "ru": "Гаага",
+   "tr": "Lahey",
+   "fr": "La Haye",
+   "de": "Den Haag",
+   "en": "The Hague",
+   "ro": "Haga",
+   "nb": "Haag"
+  },
+  "native": [
+   "'s-Gravenhage"
+  ],
+  "aliases": {
+   "de": [
+    "’s-Gravenhage",
+    "'s Gravenhage",
+    "Der Haag",
+    "’s Gravenhage"
+   ],
+   "en": [
+    "Den Haag"
+   ]
+  }
+ },
+ "Messina": {
+  "qid": "Q13666",
+  "commonscat": "Messina",
+  "labels": {
+   "it": "Messina",
+   "fr": "Messine",
+   "en": "Messina",
+   "ru": "Мессина",
+   "de": "Messina",
+   "bg": "Месина",
+   "cs": "Messina",
+   "da": "Messina",
+   "el": "Μεσσίνα",
+   "es": "Mesina",
+   "fi": "Messina",
+   "hr": "Messina",
+   "hu": "Messina",
+   "la": "Messana",
+   "nl": "Messina",
+   "pl": "Mesyna",
+   "pt": "Messina",
+   "ro": "Messina",
+   "sr": "Месина",
+   "sv": "Messina",
+   "tr": "Messina",
+   "uk": "Мессіна",
+   "nb": "Messina"
+  },
+  "native": [
+   "Messina"
+  ],
+  "aliases": {
+   "de": [
+    "Zancle",
+    "Messana",
+    "Zankle"
+   ],
+   "en": [
+    "Missina",
+    "Messana"
+   ]
+  }
+ },
+ "Valladolid": {
+  "qid": "Q8356",
+  "commonscat": "Valladolid",
+  "labels": {
+   "es": "Valladolid",
+   "de": "Valladolid",
+   "fr": "Valladolid",
+   "en": "Valladolid",
+   "it": "Valladolid",
+   "bg": "Валядолид",
+   "cs": "Valladolid",
+   "da": "Valladolid",
+   "el": "Βαγιαδολίδ",
+   "fi": "Valladolid",
+   "hr": "Valladolid",
+   "hu": "Valladolid",
+   "la": "Valdoletum",
+   "nl": "Valladolid",
+   "pl": "Valladolid",
+   "pt": "Valladolid",
+   "ro": "Valladolid",
+   "ru": "Вальядолид",
+   "sr": "Ваљадолид",
+   "sv": "Valladolid",
+   "tr": "Valladolid",
+   "uk": "Вальядолід",
+   "nb": "Valladolid"
+  },
+  "native": [
+   "Valladolid"
+  ],
+  "aliases": {
+   "en": [
+    "Pucela"
+   ]
+  }
+ },
+ "Strasbourg": {
+  "qid": "Q6602",
+  "commonscat": "Strasbourg",
+  "labels": {
+   "en": "Strasbourg",
+   "nb": "Strasbourg",
+   "bg": "Страсбург",
+   "cs": "Štrasburk",
+   "da": "Strasbourg",
+   "de": "Straßburg",
+   "el": "Στρασβούργο",
+   "es": "Estrasburgo",
+   "fi": "Strasbourg",
+   "fr": "Strasbourg",
+   "hr": "Strasbourg",
+   "hu": "Strasbourg",
+   "it": "Strasburgo",
+   "la": "Argentoratum",
+   "nl": "Straatsburg",
+   "pl": "Strasburg",
+   "pt": "Estrasburgo",
+   "ro": "Strasbourg",
+   "ru": "Страсбург",
+   "sr": "Стразбур",
+   "sv": "Strasbourg",
+   "tr": "Strazburg",
+   "uk": "Страсбург"
+  },
+  "native": [
+   "Strasbourg",
+   "Strosbùri"
+  ],
+  "aliases": {
+   "en": [
+    "Schdroosburi",
+    "Strossburig",
+    "Strosburi",
+    "Strasburg"
+   ],
+   "de": [
+    "Schdroosburi",
+    "Strossburig"
+   ]
+  }
+ },
+ "Lille": {
+  "qid": "Q648",
+  "commonscat": "Lille",
+  "labels": {
+   "fr": "Lille",
+   "nb": "Lille",
+   "en": "Lille",
+   "es": "Lille",
+   "nl": "Rijsel",
+   "bg": "Лил",
+   "cs": "Lille",
+   "da": "Lille",
+   "de": "Lille",
+   "el": "Λιλ",
+   "fi": "Lille",
+   "hr": "Lille",
+   "hu": "Lille",
+   "it": "Lilla",
+   "la": "Insula",
+   "pl": "Lille",
+   "pt": "Lille",
+   "ro": "Lille",
+   "ru": "Лилль",
+   "sr": "Лил",
+   "sv": "Lille",
+   "tr": "Lille",
+   "uk": "Лілль"
+  },
+  "native": [
+   "Lille",
+   "Rijsel",
+   "Lile",
+   "Rysel"
+  ],
+  "aliases": {
+   "en": [
+    "Rijsel",
+    "Lile",
+    "Rysel"
+   ],
+   "de": [
+    "Rijsel"
+   ]
+  }
+ },
+ "Glasgow": {
+  "qid": "Q4093",
+  "commonscat": "Glasgow",
+  "labels": {
+   "fr": "Glasgow",
+   "de": "Glasgow",
+   "bg": "Глазгоу",
+   "cs": "Glasgow",
+   "da": "Glasgow",
+   "el": "Γλασκώβη",
+   "es": "Glasgow",
+   "fi": "Glasgow",
+   "hr": "Glasgow",
+   "hu": "Glasgow",
+   "it": "Glasgow",
+   "la": "Glasgovia",
+   "nl": "Glasgow",
+   "pl": "Glasgow",
+   "pt": "Glasgow",
+   "ro": "Glasgow",
+   "ru": "Глазго",
+   "sr": "Глазгов",
+   "sv": "Glasgow",
+   "tr": "Glasgow",
+   "uk": "Глазго",
+   "nb": "Glasgow",
+   "en": "Glasgow"
+  },
+  "native": [
+   "Glaschu",
+   "Glesga",
+   "Glasgow"
+  ],
+  "aliases": {
+   "en": [
+    "Glasgow, Scotland",
+    "Glasgow, UK"
+   ]
+  }
+ },
+ "Augsburg": {
+  "qid": "Q2749",
+  "commonscat": "Augsburg",
+  "labels": {
+   "de": "Augsburg",
+   "fr": "Augsbourg",
+   "en": "Augsburg",
+   "bg": "Аугсбург",
+   "cs": "Augsburg",
+   "da": "Augsburg",
+   "el": "Άουγκσμπουργκ",
+   "es": "Augsburgo",
+   "fi": "Augsburg",
+   "hr": "Augsburg",
+   "hu": "Augsburg",
+   "it": "Augusta",
+   "la": "Augusta Vindelicorum",
+   "nl": "Augsburg",
+   "pl": "Augsburg",
+   "pt": "Augsburgo",
+   "ro": "Augsburg",
+   "ru": "Аугсбург",
+   "sr": "Аугзбург",
+   "sv": "Augsburg",
+   "tr": "Augsburg",
+   "uk": "Аугсбург",
+   "nb": "Augsburg"
+  },
+  "native": [
+   "Augsburg"
+  ],
+  "aliases": {
+   "en": [
+    "Kreisfreie Stadt Augsburg",
+    "Mixed Imperial City of Augsburg",
+    "Auguste Vindelicor",
+    "Augusta Vindelicorum"
+   ],
+   "de": [
+    "Aug. Vind."
+   ]
+  }
+ },
+ "Bremen": {
+  "qid": "Q24879",
+  "commonscat": "Bremen",
+  "labels": {
+   "ru": "Бремен",
+   "bg": "Бремен",
+   "cs": "Brémy",
+   "da": "Bremen",
+   "de": "Bremen",
+   "el": "Βρέμη",
+   "en": "Bremen",
+   "es": "Bremen",
+   "fi": "Bremen",
+   "fr": "Brême",
+   "hr": "Bremen",
+   "hu": "Bréma",
+   "it": "Brema",
+   "la": "Brema",
+   "nl": "Bremen",
+   "pl": "Brema",
+   "pt": "Bremen",
+   "sr": "Бремен",
+   "sv": "Bremen",
+   "tr": "Bremen",
+   "uk": "Бремен",
+   "nb": "Bremen",
+   "ro": "Bremen"
+  },
+  "native": [
+   "Bremen"
+  ],
+  "aliases": {
+   "de": [
+    "Hansestadt Bremen"
+   ],
+   "en": [
+    "City Municipality of Bremen",
+    "Hansestadt Bremen"
+   ]
+  }
+ },
+ "Leipzig": {
+  "qid": "Q2079",
+  "commonscat": "Leipzig",
+  "labels": {
+   "de": "Leipzig",
+   "fr": "Leipzig",
+   "en": "Leipzig",
+   "es": "Leipzig",
+   "bg": "Лайпциг",
+   "cs": "Lipsko",
+   "da": "Leipzig",
+   "el": "Λειψία",
+   "fi": "Leipzig",
+   "hr": "Leipzig",
+   "hu": "Lipcse",
+   "it": "Lipsia",
+   "la": "Lipsia",
+   "nl": "Leipzig",
+   "pl": "Lipsk",
+   "pt": "Leipzig",
+   "ro": "Leipzig",
+   "ru": "Лейпциг",
+   "sr": "Лајпциг",
+   "sv": "Leipzig",
+   "tr": "Leipzig",
+   "uk": "Лейпциг",
+   "nb": "Leipzig"
+  },
+  "native": [
+   "Leipzig"
+  ],
+  "aliases": {
+   "de": [
+    "Leipzsch"
+   ]
+  }
+ },
+ "Ankara": {
+  "qid": "Q3640",
+  "commonscat": "Ankara",
+  "labels": {
+   "en": "Ankara",
+   "fr": "Ankara",
+   "bg": "Анкара",
+   "cs": "Ankara",
+   "da": "Ankara",
+   "de": "Ankara",
+   "el": "Άγκυρα",
+   "es": "Ankara",
+   "fi": "Ankara",
+   "hr": "Ankara",
+   "hu": "Ankara",
+   "it": "Ankara",
+   "la": "Ancyra",
+   "nl": "Ankara",
+   "pl": "Ankara",
+   "pt": "Ancara",
+   "ro": "Ankara",
+   "ru": "Анкара",
+   "sr": "Анкара",
+   "sv": "Ankara",
+   "tr": "Ankara",
+   "uk": "Анкара",
+   "nb": "Ankara"
+  },
+  "native": [
+   "Ankara",
+   "آنقره"
+  ],
+  "aliases": {}
+ },
+ "Antakya (Antioch)": {
+  "qid": "Q80561",
+  "commonscat": "Antakya",
+  "labels": {
+   "es": "Antioquía",
+   "hu": "Antakya",
+   "el": "Αντάκια",
+   "sv": "Antakya",
+   "nl": "Antiochië",
+   "pt": "Antáquia",
+   "ru": "Антакья",
+   "sr": "Антиохија",
+   "tr": "Antakya",
+   "fi": "Antakya",
+   "uk": "Антак'я",
+   "hr": "Antiohija",
+   "da": "Antiokia",
+   "fr": "Antakya",
+   "it": "Antiochia",
+   "de": "Antakya",
+   "en": "Antakya",
+   "ro": "Antakya",
+   "la": "Antiochia ad Orontem",
+   "cs": "Antakya",
+   "bg": "Антакия",
+   "nb": "Antakya",
+   "pl": "Antiochia"
+  },
+  "native": [
+   "Antakya"
+  ],
+  "aliases": {}
+ },
+ "Catania": {
+  "qid": "Q1903",
+  "commonscat": "Catania",
+  "labels": {
+   "it": "Catania",
+   "fr": "Catane",
+   "en": "Catania",
+   "de": "Catania",
+   "es": "Catania",
+   "bg": "Катания",
+   "cs": "Katánie",
+   "da": "Catania",
+   "el": "Κατάνια",
+   "fi": "Catania",
+   "hr": "Catania",
+   "hu": "Catania",
+   "la": "Catana",
+   "nl": "Catania",
+   "pl": "Katania",
+   "pt": "Catânia",
+   "ro": "Catania",
+   "ru": "Катания",
+   "sr": "Катанија",
+   "sv": "Catania",
+   "tr": "Katanya",
+   "uk": "Катанія",
+   "nb": "Catania"
+  },
+  "native": [
+   "Catania"
+  ],
+  "aliases": {}
+ },
+ "Minsk": {
+  "qid": "Q2280",
+  "commonscat": "Minsk",
+  "labels": {
+   "en": "Minsk",
+   "fr": "Minsk",
+   "nb": "Minsk",
+   "ru": "Минск",
+   "bg": "Минск",
+   "cs": "Minsk",
+   "da": "Minsk",
+   "de": "Minsk",
+   "el": "Μινσκ",
+   "es": "Minsk",
+   "fi": "Minsk",
+   "hr": "Minsk",
+   "hu": "Minszk",
+   "it": "Minsk",
+   "la": "Minscum",
+   "nl": "Minsk",
+   "pl": "Mińsk",
+   "pt": "Minsk",
+   "ro": "Minsk",
+   "sr": "Минск",
+   "sv": "Minsk",
+   "tr": "Minsk",
+   "uk": "Мінськ"
+  },
+  "native": [
+   "Мінск",
+   "Менск"
+  ],
+  "aliases": {
+   "en": [
+    "Мінск",
+    "Менск",
+    "Минск",
+    "Mińsk"
+   ]
+  }
+ },
+ "Veliky Novgorod": {
+  "qid": "Q2235",
+  "commonscat": "Velikiy Novgorod",
+  "labels": {
+   "en": "Veliky Novgorod",
+   "bg": "Велики Новгород",
+   "cs": "Veliký Novgorod",
+   "da": "Velikij Novgorod",
+   "de": "Weliki Nowgorod",
+   "el": "Νόβγκοροντ",
+   "es": "Nóvgorod",
+   "fi": "Novgorod",
+   "fr": "Novgorod",
+   "hr": "Veliki Novgorod",
+   "hu": "Velikij Novgorod",
+   "it": "Velikij Novgorod",
+   "la": "Novogardia Magna",
+   "nl": "Veliki Novgorod",
+   "pl": "Nowogród Wielki",
+   "pt": "Veliky Novgorod",
+   "ro": "Veliki Novgorod",
+   "ru": "Великий Новгород",
+   "sr": "Велики Новгород",
+   "sv": "Novgorod",
+   "tr": "Veliki Novgorod",
+   "uk": "Великий Новгород",
+   "nb": "Novgorod"
+  },
+  "native": [
+   "Великий Новгород"
+  ],
+  "aliases": {
+   "en": [
+    "Nowgorod-Weliki",
+    "Nowgorod",
+    "Novgorod",
+    "Velikiy Novgorod"
+   ],
+   "de": [
+    "Navgard",
+    "Naugard",
+    "Neugarten"
+   ]
+  }
+ },
+ "Utrecht": {
+  "qid": "Q803",
+  "commonscat": "Utrecht (city)",
+  "labels": {
+   "en": "Utrecht",
+   "ru": "Утрехт",
+   "fr": "Utrecht",
+   "nb": "Utrecht",
+   "es": "Utrecht",
+   "nl": "Utrecht",
+   "bg": "Утрехт",
+   "cs": "Utrecht",
+   "da": "Utrecht",
+   "de": "Utrecht",
+   "el": "Ουτρέχτη",
+   "fi": "Utrecht",
+   "hr": "Utrecht",
+   "hu": "Utrecht",
+   "it": "Utrecht",
+   "la": "Traiectum ad Rhenum",
+   "pl": "Utrecht",
+   "pt": "Utreque",
+   "ro": "Utrecht",
+   "sr": "Утрехт",
+   "sv": "Utrecht",
+   "tr": "Utrecht",
+   "uk": "Утрехт"
+  },
+  "native": [
+   "Utrecht"
+  ],
+  "aliases": {
+   "en": [
+    "Utreg",
+    "Utrecht (city)"
+   ]
+  }
+ },
+ "Bristol": {
+  "qid": "Q23154",
+  "commonscat": "Bristol",
+  "labels": {
+   "en": "Bristol",
+   "bg": "Бристъл",
+   "cs": "Bristol",
+   "da": "Bristol",
+   "de": "Bristol",
+   "el": "Μπρίστολ",
+   "es": "Bristol",
+   "fi": "Bristol",
+   "fr": "Bristol",
+   "hr": "Bristol",
+   "hu": "Bristol",
+   "it": "Bristol",
+   "la": "Bristolium",
+   "nl": "Bristol",
+   "pl": "Bristol",
+   "pt": "Bristol",
+   "ro": "Bristol",
+   "ru": "Бристоль",
+   "sr": "Бристол",
+   "sv": "Bristol",
+   "tr": "Bristol",
+   "uk": "Бристоль",
+   "nb": "Bristol"
+  },
+  "native": [
+   "Bristol",
+   "Bristle"
+  ],
+  "aliases": {
+   "en": [
+    "Bristol, England",
+    "Bristol, Gloucestershire",
+    "Bristol, UK"
+   ]
+  }
+ },
+ "Belgrade": {
+  "qid": "Q3711",
+  "commonscat": "Belgrade",
+  "labels": {
+   "en": "Belgrade",
+   "ru": "Белград",
+   "fr": "Belgrade",
+   "de": "Belgrad",
+   "bg": "Белград",
+   "cs": "Bělehrad",
+   "da": "Beograd",
+   "el": "Βελιγράδι",
+   "es": "Belgrado",
+   "fi": "Belgrad",
+   "hr": "Beograd",
+   "hu": "Belgrád",
+   "it": "Belgrado",
+   "la": "Belgradum",
+   "nl": "Belgrado",
+   "pl": "Belgrad",
+   "pt": "Belgrado",
+   "ro": "Belgrad",
+   "sr": "Beograd",
+   "sv": "Belgrad",
+   "tr": "Belgrad",
+   "uk": "Белград",
+   "nb": "Beograd"
+  },
+  "native": [
+   "Београд",
+   "Beograd"
+  ],
+  "aliases": {
+   "en": [
+    "City of Belgrade",
+    "Belgrade, Serbia"
+   ],
+   "de": [
+    "Stadt Belgrad",
+    "Belgrad, Serbien"
+   ]
+  }
+ },
+ "Stuttgart": {
+  "qid": "Q1022",
+  "commonscat": "Stuttgart",
+  "labels": {
+   "de": "Stuttgart",
+   "en": "Stuttgart",
+   "fr": "Stuttgart",
+   "ru": "Штутгарт",
+   "bg": "Щутгарт",
+   "cs": "Stuttgart",
+   "da": "Stuttgart",
+   "el": "Στουτγκάρδη",
+   "es": "Stuttgart",
+   "fi": "Stuttgart",
+   "hr": "Stuttgart",
+   "hu": "Stuttgart",
+   "it": "Stoccarda",
+   "la": "Stutgardia",
+   "nl": "Stuttgart",
+   "pl": "Stuttgart",
+   "pt": "Estugarda",
+   "ro": "Stuttgart",
+   "sr": "Штутгарт",
+   "sv": "Stuttgart",
+   "tr": "Stuttgart",
+   "uk": "Штутгарт",
+   "nb": "Stuttgart"
+  },
+  "native": [
+   "Stuttgart",
+   "Schduagert"
+  ],
+  "aliases": {
+   "de": [
+    "Stutengarten",
+    "Landeshauptstadt Stuttgart",
+    "Schduágórd",
+    "Stadt Stuttgart"
+   ]
+  }
+ },
+ "Algiers": {
+  "qid": "Q3561",
+  "commonscat": "Algiers",
+  "labels": {
+   "de": "Algier",
+   "fr": "Alger",
+   "en": "Algiers",
+   "it": "Algeri",
+   "nl": "Algiers",
+   "bg": "Алжир",
+   "cs": "Alžír",
+   "da": "Algier",
+   "el": "Αλγέρι",
+   "es": "Argel",
+   "fi": "Alger",
+   "hr": "Alžir",
+   "hu": "Algír",
+   "la": "Algeria",
+   "pl": "Algier",
+   "pt": "Argel",
+   "ro": "Alger",
+   "ru": "Алжир",
+   "sr": "Алжир",
+   "sv": "Alger",
+   "tr": "Cezayir",
+   "uk": "Алжир",
+   "nb": "Alger"
+  },
+  "native": [
+   "الجزائر",
+   "Lezzayer",
+   "Alger",
+   "Dzayer"
+  ],
+  "aliases": {}
+ },
+ "Sofia": {
+  "qid": "Q472",
+  "commonscat": "Sofia",
+  "labels": {
+   "en": "Sofia",
+   "it": "Sofia",
+   "fr": "Sofia",
+   "es": "Sofía",
+   "bg": "София",
+   "cs": "Sofie",
+   "da": "Sofia",
+   "de": "Sofia",
+   "el": "Σόφια",
+   "fi": "Sofia",
+   "hr": "Sofija",
+   "hu": "Szófia",
+   "la": "Serdica",
+   "nl": "Sofia",
+   "pl": "Sofia",
+   "pt": "Sófia",
+   "ro": "Sofia",
+   "ru": "София",
+   "sr": "Софија",
+   "sv": "Sofia",
+   "tr": "Sofya",
+   "uk": "Софія",
+   "nb": "Sofia"
+  },
+  "native": [
+   "Со̀фия"
+  ],
+  "aliases": {
+   "en": [
+    "Serdica",
+    "Sredets",
+    "Sredez",
+    "Sofija"
+   ],
+   "de": [
+    "Serdica",
+    "Sredez"
+   ]
+  }
+ },
+ "Tbilisi": {
+  "qid": "Q994",
+  "commonscat": "Tbilisi",
+  "labels": {
+   "en": "Tbilisi",
+   "fr": "Tbilissi",
+   "ru": "Тбилиси",
+   "es": "Tiflis",
+   "de": "Tiflis",
+   "bg": "Тбилиси",
+   "cs": "Tbilisi",
+   "da": "Tbilisi",
+   "el": "Τιφλίδα",
+   "fi": "Tbilisi",
+   "hr": "Tbilisi",
+   "hu": "Tbiliszi",
+   "it": "Tbilisi",
+   "la": "Tiphlis",
+   "nl": "Tbilisi",
+   "pl": "Tbilisi",
+   "pt": "Tiblíssi",
+   "ro": "Tbilisi",
+   "sr": "Тбилиси",
+   "sv": "Tbilisi",
+   "tr": "Tiflis",
+   "uk": "Тбілісі",
+   "nb": "Tbilisi"
+  },
+  "native": [
+   "თბილისი"
+  ],
+  "aliases": {
+   "de": [
+    "Tbilissi"
+   ],
+   "en": [
+    "Tiflis",
+    "Tpilisi",
+    "Tbilissi",
+    "Tpilissi"
+   ]
+  }
+ },
+ "Helsinki": {
+  "qid": "Q1757",
+  "commonscat": "Helsinki",
+  "labels": {
+   "de": "Helsinki",
+   "fr": "Helsinki",
+   "en": "Helsinki",
+   "bg": "Хелзинки",
+   "cs": "Helsinky",
+   "da": "Helsingfors",
+   "el": "Ελσίνκι",
+   "es": "Helsinki",
+   "fi": "Helsinki",
+   "hr": "Helsinki",
+   "hu": "Helsinki",
+   "it": "Helsinki",
+   "la": "Helsingia",
+   "nl": "Helsinki",
+   "pl": "Helsinki",
+   "pt": "Helsínquia",
+   "ro": "Helsinki",
+   "ru": "Хельсинки",
+   "sr": "Хелсинки",
+   "sv": "Helsingfors",
+   "tr": "Helsinki",
+   "uk": "Гельсінкі",
+   "nb": "Helsingfors"
+  },
+  "native": [
+   "Helsinki",
+   "Helsingfors"
+  ],
+  "aliases": {
+   "en": [
+    "Helsingia",
+    "Helsingin kaupunki",
+    "Stadi",
+    "Hesa"
+   ]
+  }
+ },
+ "Krasnodar (Yekaterinodar)": {
+  "qid": "Q3646",
+  "commonscat": "Krasnodar",
+  "labels": {
+   "en": "Krasnodar",
+   "nb": "Krasnodar",
+   "fr": "Krasnodar",
+   "bg": "Краснодар",
+   "cs": "Krasnodar",
+   "da": "Krasnodar",
+   "de": "Krasnodar",
+   "el": "Κρασνοντάρ",
+   "es": "Krasnodar",
+   "fi": "Krasnodar",
+   "hr": "Krasnodar",
+   "hu": "Krasznodar",
+   "it": "Krasnodar",
+   "la": "Crasnodaria",
+   "nl": "Krasnodar",
+   "pl": "Krasnodar",
+   "pt": "Crasnodar",
+   "ro": "Krasnodar",
+   "ru": "Краснодар",
+   "sr": "Краснодар",
+   "sv": "Krasnodar",
+   "tr": "Krasnodar",
+   "uk": "Краснодар"
+  },
+  "native": [
+   "Краснодар"
+  ],
+  "aliases": {
+   "en": [
+    "Yekaterinodar",
+    "Katerynodar",
+    "Ekaterinodar"
+   ]
+  }
+ },
+ "Oslo (Christiania)": {
+  "qid": "Q585",
+  "commonscat": "Oslo",
+  "labels": {
+   "ru": "Осло",
+   "bg": "Осло",
+   "el": "Όσλο",
+   "la": "Asloa",
+   "sr": "Осло",
+   "uk": "Осло",
+   "en": "Oslo"
+  },
+  "native": [
+   "Oslo"
+  ],
+  "aliases": {
+   "en": [
+    "NOOSL",
+    "Oslo, Norway"
+   ]
+  }
+ },
+ "Brescia": {
+  "qid": "Q6221",
+  "commonscat": "Brescia",
+  "labels": {
+   "it": "Brescia",
+   "fr": "Brescia",
+   "en": "Brescia",
+   "bg": "Бреша",
+   "cs": "Brescia",
+   "da": "Brescia",
+   "de": "Brescia",
+   "es": "Brescia",
+   "fi": "Brescia",
+   "hr": "Brescia",
+   "hu": "Brescia",
+   "la": "Brixia",
+   "nl": "Brescia",
+   "pl": "Brescia",
+   "pt": "Bréscia",
+   "ro": "Brescia",
+   "ru": "Брешиа",
+   "sr": "Бреша",
+   "sv": "Brescia",
+   "tr": "Brescia",
+   "uk": "Брешія",
+   "nb": "Brescia",
+   "el": "Μπρέσια"
+  },
+  "native": [
+   "Brescia"
+  ],
+  "aliases": {
+   "en": [
+    "Lioness of Italy"
+   ]
+  }
+ },
+ "Manchester": {
+  "qid": "Q18125",
+  "commonscat": "Manchester",
+  "labels": {
+   "en": "Manchester",
+   "bg": "Манчестър",
+   "cs": "Manchester",
+   "da": "Manchester",
+   "de": "Manchester",
+   "el": "Μάντσεστερ",
+   "es": "Mánchester",
+   "fi": "Manchester",
+   "fr": "Manchester",
+   "hr": "Manchester",
+   "hu": "Manchester",
+   "la": "Mancunium",
+   "nl": "Manchester",
+   "pl": "Manchester",
+   "pt": "Manchester",
+   "ru": "Манчестер",
+   "sr": "Манчестер",
+   "sv": "Manchester",
+   "tr": "Manchester",
+   "uk": "Манчестер",
+   "nb": "Manchester",
+   "it": "Manchester",
+   "ro": "Manchester"
+  },
+  "native": [
+   "Manchester"
+  ],
+  "aliases": {
+   "en": [
+    "Manchester, England",
+    "Manchester, UK",
+    "Cottonopolis",
+    "Warehouse City"
+   ]
+  }
+ },
+ "Riga": {
+  "qid": "Q1773",
+  "commonscat": "Riga",
+  "labels": {
+   "de": "Riga",
+   "fr": "Riga",
+   "it": "Riga",
+   "en": "Riga",
+   "bg": "Рига",
+   "cs": "Riga",
+   "da": "Riga",
+   "el": "Ρίγα",
+   "es": "Riga",
+   "fi": "Riika",
+   "hr": "Riga",
+   "hu": "Riga",
+   "la": "Riga",
+   "nl": "Riga",
+   "pl": "Ryga",
+   "pt": "Riga",
+   "ro": "Riga",
+   "ru": "Рига",
+   "sr": "Рига",
+   "sv": "Riga",
+   "tr": "Riga",
+   "uk": "Рига",
+   "nb": "Riga"
+  },
+  "native": [
+   "Rīga"
+  ],
+  "aliases": {
+   "en": [
+    "Rige",
+    "Riia",
+    "Rija",
+    "Rīgõ"
+   ]
+  }
+ },
+ "Yerevan": {
+  "qid": "Q1953",
+  "commonscat": "Yerevan",
+  "labels": {
+   "fr": "Erevan",
+   "ru": "Ереван",
+   "en": "Yerevan",
+   "de": "Jerewan",
+   "es": "Ereván",
+   "bg": "Ереван",
+   "cs": "Jerevan",
+   "da": "Jerevan",
+   "el": "Γερεβάν",
+   "fi": "Jerevan",
+   "hr": "Erevan",
+   "hu": "Jereván",
+   "it": "Erevan",
+   "la": "Erivanum",
+   "nl": "Jerevan",
+   "pl": "Erywań",
+   "pt": "Erevã",
+   "ro": "Erevan",
+   "sr": "Јереван",
+   "sv": "Jerevan",
+   "tr": "Erivan",
+   "uk": "Єреван",
+   "nb": "Jerevan"
+  },
+  "native": [
+   "Երևան"
+  ],
+  "aliases": {
+   "en": [
+    "Erivan",
+    "The Pink City",
+    "Irevan",
+    "Iravan"
+   ],
+   "de": [
+    "Eriwan",
+    "Erivan"
+   ]
+  }
+ },
+ "Nice": {
+  "qid": "Q33959",
+  "commonscat": "Nice",
+  "labels": {
+   "pl": "Nicea",
+   "es": "Niza",
+   "hu": "Nizza",
+   "el": "Νίκαια",
+   "sv": "Nice",
+   "nl": "Nice",
+   "pt": "Nice",
+   "ru": "Ницца",
+   "sr": "Ница",
+   "tr": "Nice",
+   "fi": "Nizza",
+   "uk": "Ніцца",
+   "hr": "Nica",
+   "da": "Nice",
+   "fr": "Nice",
+   "it": "Nizza",
+   "de": "Nizza",
+   "en": "Nice",
+   "ro": "Nisa",
+   "la": "Nicaea",
+   "cs": "Nice",
+   "bg": "Ница",
+   "nb": "Nice"
+  },
+  "native": [
+   "Nice",
+   "Niça"
+  ],
+  "aliases": {
+   "en": [
+    "Nice, French Riviera",
+    "Nice, Côte d'Azur",
+    "Niça",
+    "Nissa"
+   ],
+   "de": [
+    "Nice",
+    "Niça"
+   ]
+  }
+ },
+ "Zagreb": {
+  "qid": "Q1435",
+  "commonscat": "Zagreb",
+  "labels": {
+   "en": "Zagreb",
+   "de": "Zagreb",
+   "hr": "Zagreb",
+   "it": "Zagabria",
+   "bg": "Загреб",
+   "cs": "Záhřeb",
+   "da": "Zagreb",
+   "el": "Ζάγκρεμπ",
+   "es": "Zagreb",
+   "fi": "Zagreb",
+   "fr": "Zagreb",
+   "hu": "Zágráb",
+   "la": "Zagrabia",
+   "nl": "Zagreb",
+   "pl": "Zagrzeb",
+   "pt": "Zagreb",
+   "ro": "Zagreb",
+   "ru": "Загреб",
+   "sr": "Загреб",
+   "sv": "Zagreb",
+   "tr": "Zagreb",
+   "uk": "Загреб",
+   "nb": "Zagreb"
+  },
+  "native": [
+   "Zagreb"
+  ],
+  "aliases": {}
+ },
+ "Padua": {
+  "qid": "Q617",
+  "commonscat": "Padua",
+  "labels": {
+   "it": "Padova",
+   "en": "Padua",
+   "de": "Padua",
+   "ru": "Падуя",
+   "fr": "Padoue",
+   "pl": "Padwa",
+   "es": "Padua",
+   "bg": "Падуа",
+   "cs": "Padova",
+   "da": "Padova",
+   "fi": "Padova",
+   "hr": "Padova",
+   "hu": "Padova",
+   "la": "Patavium",
+   "nl": "Padua",
+   "pt": "Pádua",
+   "ro": "Padova",
+   "sr": "Падова",
+   "sv": "Padua",
+   "tr": "Padova",
+   "uk": "Падуя",
+   "nb": "Padova",
+   "el": "Πάντοβα"
+  },
+  "native": [],
+  "aliases": {
+   "en": [
+    "Padova",
+    "Pàva"
+   ]
+  }
+ },
+ "Königsberg": {
+  "qid": "Q4120832",
+  "commonscat": "Königsberg",
+  "labels": {
+   "it": "Königsberg",
+   "de": "Königsberg",
+   "bg": "Кьонигсберг",
+   "en": "Königsberg",
+   "es": "Königsberg",
+   "nl": "Koningsbergen",
+   "pt": "Königsberg",
+   "ro": "Königsberg",
+   "ru": "Кёнигсберг",
+   "fr": "Königsberg",
+   "hu": "Königsberg",
+   "nb": "Königsberg",
+   "da": "Königsberg",
+   "sv": "Königsberg",
+   "pl": "Królewiec",
+   "cs": "Königsberg",
+   "el": "Κούνιχσμπεργκ",
+   "fi": "Königsberg",
+   "uk": "Кенігсберг",
+   "sr": "Кенигсберг",
+   "tr": "Königsberg",
+   "la": "Regiomontium"
+  },
+  "native": [
+   "Königsberg"
+  ],
+  "aliases": {
+   "en": [
+    "Twangste"
+   ]
+  }
+ },
+ "Hanover": {
+  "qid": "Q1715",
+  "commonscat": "Hannover",
+  "labels": {
+   "de": "Hannover",
+   "fr": "Hanovre",
+   "en": "Hanover",
+   "bg": "Хановер",
+   "cs": "Hannover",
+   "da": "Hannover",
+   "el": "Αννόβερο",
+   "es": "Hannover",
+   "fi": "Hannover",
+   "hr": "Hannover",
+   "hu": "Hannover",
+   "it": "Hannover",
+   "la": "Hannovera",
+   "nl": "Hannover",
+   "pl": "Hanower",
+   "pt": "Hanôver",
+   "ro": "Hanovra",
+   "ru": "Ганновер",
+   "sr": "Хановер",
+   "sv": "Hannover",
+   "tr": "Hannover",
+   "uk": "Ганновер",
+   "nb": "Hannover"
+  },
+  "native": [
+   "Hannover"
+  ],
+  "aliases": {
+   "en": [
+    "Hannover",
+    "Hanover, Germany",
+    "Hannover, Germany",
+    "Hannober"
+   ],
+   "de": [
+    "LHH",
+    "Landeshauptstadt Hannover"
+   ]
+  }
+ },
+ "Ani": {
+  "qid": "Q546010",
+  "commonscat": "Ani",
+  "labels": {
+   "el": "Ανί",
+   "de": "Ani",
+   "it": "Ani",
+   "hu": "Ani",
+   "fr": "Ani",
+   "en": "Ani",
+   "bg": "Ани (град)",
+   "es": "Ani",
+   "ru": "Ани",
+   "nl": "Ani",
+   "pt": "Ani",
+   "tr": "Ani",
+   "sv": "Ani",
+   "uk": "Ані",
+   "pl": "Ani",
+   "cs": "Ani",
+   "nb": "Ani (historisk by)",
+   "hr": "Ani",
+   "fi": "Ani",
+   "sr": "Ани",
+   "ro": "Ani (oraș)"
+  },
+  "native": [],
+  "aliases": {
+   "de": [
+    "Ani (Türkei)"
+   ],
+   "en": [
+    "Abnicum"
+   ]
+  }
+ },
+ "Zürich": {
+  "qid": "Q72",
+  "commonscat": "Zürich",
+  "labels": {
+   "en": "Zurich",
+   "fr": "Zurich",
+   "de": "Zürich",
+   "it": "Zurigo",
+   "ru": "Цюрих",
+   "es": "Zúrich",
+   "nl": "Zürich",
+   "pl": "Zurych",
+   "da": "Zürich",
+   "sv": "Zürich",
+   "fi": "Zürich",
+   "uk": "Цюрих",
+   "bg": "Цюрих",
+   "cs": "Curych",
+   "el": "Ζυρίχη",
+   "hr": "Zürich",
+   "hu": "Zürich",
+   "la": "Turicum",
+   "pt": "Zurique",
+   "ro": "Zürich",
+   "sr": "Цирих",
+   "tr": "Zürih",
+   "nb": "Zürich"
+  },
+  "native": [
+   "Zürich"
+  ],
+  "aliases": {
+   "en": [
+    "City of Zurich",
+    "Stadt Zürich",
+    "Zurich, Switzerland",
+    "Zürich"
+   ],
+   "de": [
+    "Stadt Zürich",
+    "Zuerich"
+   ]
+  }
+ },
+ "Düsseldorf": {
+  "qid": "Q1718",
+  "commonscat": "Düsseldorf",
+  "labels": {
+   "de": "Düsseldorf",
+   "en": "Düsseldorf",
+   "fr": "Düsseldorf",
+   "bg": "Дюселдорф",
+   "cs": "Düsseldorf",
+   "da": "Düsseldorf",
+   "el": "Ντύσσελντορφ",
+   "es": "Düsseldorf",
+   "fi": "Düsseldorf",
+   "hr": "Düsseldorf",
+   "hu": "Düsseldorf",
+   "it": "Düsseldorf",
+   "la": "Dusseldorpium",
+   "nl": "Düsseldorf",
+   "pl": "Düsseldorf",
+   "pt": "Düsseldorf",
+   "ro": "Düsseldorf",
+   "ru": "Дюссельдорф",
+   "sr": "Диселдорф",
+   "sv": "Düsseldorf",
+   "tr": "Düsseldorf",
+   "uk": "Дюссельдорф",
+   "nb": "Düsseldorf"
+  },
+  "native": [
+   "Düsseldorf"
+  ],
+  "aliases": {
+   "en": [
+    "Duesseldorf"
+   ],
+   "de": [
+    "Landeshauptstadt Düsseldorf",
+    "DUS",
+    "DSSD",
+    "Stadt Düsseldorf"
+   ]
+  }
+ },
+ "Vilnius": {
+  "qid": "Q216",
+  "commonscat": "Vilnius",
+  "labels": {
+   "en": "Vilnius",
+   "fr": "Vilnius",
+   "de": "Vilnius",
+   "pl": "Wilno",
+   "it": "Vilnius",
+   "es": "Vilna",
+   "ru": "Вильнюс",
+   "fi": "Vilna",
+   "bg": "Вилнюс",
+   "cs": "Vilnius",
+   "da": "Vilnius",
+   "el": "Βίλνιους",
+   "hr": "Vilnius",
+   "hu": "Vilnius",
+   "la": "Vilna",
+   "nl": "Vilnius",
+   "pt": "Vilnius",
+   "ro": "Vilnius",
+   "sr": "Вилњус",
+   "sv": "Vilnius",
+   "tr": "Vilnius",
+   "uk": "Вільнюс",
+   "nb": "Vilnius"
+  },
+  "native": [
+   "Vilnius"
+  ],
+  "aliases": {
+   "en": [
+    "Viļņa",
+    "Vilnia",
+    "Vilno",
+    "Vilnyus"
+   ],
+   "de": [
+    "ווילנע",
+    "Wilne"
+   ]
+  }
+ },
+ "Málaga": {
+  "qid": "Q8851",
+  "commonscat": "Málaga",
+  "labels": {
+   "it": "Malaga",
+   "fr": "Malaga",
+   "en": "Málaga",
+   "de": "Málaga",
+   "bg": "Малага",
+   "cs": "Malaga",
+   "da": "Málaga",
+   "el": "Μάλαγα",
+   "es": "Málaga",
+   "fi": "Málaga",
+   "hr": "Málaga",
+   "hu": "Málaga",
+   "la": "Malaca",
+   "nl": "Málaga",
+   "pl": "Malaga",
+   "pt": "Málaga",
+   "ro": "Málaga",
+   "ru": "Малага",
+   "sr": "Малага",
+   "sv": "Málaga",
+   "tr": "Málaga",
+   "uk": "Малага",
+   "nb": "Málaga"
+  },
+  "native": [
+   "Málaga"
+  ],
+  "aliases": {
+   "de": [
+    "Malacitanum"
+   ],
+   "en": [
+    "Malaga"
+   ]
+  }
+ },
+ "Birmingham": {
+  "qid": "Q2256",
+  "commonscat": "Birmingham",
+  "labels": {
+   "en": "Birmingham",
+   "fr": "Birmingham",
+   "de": "Birmingham",
+   "bg": "Бирмингам",
+   "cs": "Birmingham",
+   "da": "Birmingham",
+   "el": "Μπέρμιγχαμ",
+   "es": "Birmingham",
+   "fi": "Birmingham",
+   "hr": "Birmingham",
+   "hu": "Birmingham",
+   "it": "Birmingham",
+   "la": "Birminghamia",
+   "nl": "Birmingham",
+   "pl": "Birmingham",
+   "pt": "Birmingham",
+   "ro": "Birmingham",
+   "ru": "Бирмингем",
+   "sr": "Бирмингем",
+   "sv": "Birmingham",
+   "tr": "Birmingham",
+   "uk": "Бірмінгем",
+   "nb": "Birmingham"
+  },
+  "native": [
+   "Birmingham"
+  ],
+  "aliases": {
+   "en": [
+    "Birmingham, England",
+    "Birmingham, West Midlands",
+    "Birmingham, UK"
+   ]
+  }
+ },
+ "Mainz": {
+  "qid": "Q1720",
+  "commonscat": "Mainz",
+  "labels": {
+   "de": "Mainz",
+   "fr": "Mayence",
+   "en": "Mainz",
+   "bg": "Майнц",
+   "cs": "Mohuč",
+   "da": "Mainz",
+   "el": "Μάιντς",
+   "es": "Maguncia",
+   "fi": "Mainz",
+   "hr": "Mainz",
+   "hu": "Mainz",
+   "it": "Magonza",
+   "la": "Moguntiacum",
+   "nl": "Mainz",
+   "pl": "Moguncja",
+   "pt": "Mainz",
+   "ro": "Mainz",
+   "ru": "Майнц",
+   "sr": "Мајнц",
+   "sv": "Mainz",
+   "tr": "Mainz",
+   "uk": "Майнц",
+   "nb": "Mainz"
+  },
+  "native": [
+   "Mainz"
+  ],
+  "aliases": {
+   "en": [
+    "Mogontiacum",
+    "Maguncia",
+    "Mayence"
+   ],
+   "de": [
+    "Mogontiacum",
+    "Mainz am Rhein"
+   ]
+  }
+ },
+ "Leiden": {
+  "qid": "Q43631",
+  "commonscat": "Leiden",
+  "labels": {
+   "pl": "Lejda",
+   "es": "Leiden",
+   "hu": "Leiden",
+   "el": "Λέιντεν",
+   "nl": "Leiden",
+   "sv": "Leidens kommun",
+   "pt": "Leiden",
+   "ru": "Лейден",
+   "sr": "Лајден",
+   "tr": "Leiden",
+   "fi": "Leiden",
+   "uk": "Лейден",
+   "hr": "Leiden",
+   "da": "Leiden",
+   "fr": "Leyde",
+   "it": "Leida",
+   "de": "Leiden",
+   "en": "Leiden",
+   "ro": "Leiden",
+   "la": "Leida",
+   "cs": "Leiden",
+   "bg": "Лайден",
+   "nb": "Leiden"
+  },
+  "native": [
+   "Leiden"
+  ],
+  "aliases": {
+   "de": [
+    "Leyden"
+   ],
+   "en": [
+    "Leyden"
+   ]
+  }
+ },
+ "Erfurt": {
+  "qid": "Q1729",
+  "commonscat": "Erfurt",
+  "labels": {
+   "de": "Erfurt",
+   "fr": "Erfurt",
+   "en": "Erfurt",
+   "bg": "Ерфурт",
+   "cs": "Erfurt",
+   "da": "Erfurt",
+   "el": "Ερφούρτη",
+   "es": "Érfurt",
+   "fi": "Erfurt",
+   "hr": "Erfurt",
+   "hu": "Erfurt",
+   "it": "Erfurt",
+   "la": "Erfordia",
+   "nl": "Erfurt",
+   "pl": "Erfurt",
+   "pt": "Erfurt",
+   "ro": "Erfurt",
+   "ru": "Эрфурт",
+   "sr": "Ерфурт",
+   "sv": "Erfurt",
+   "tr": "Erfurt",
+   "uk": "Ерфурт",
+   "nb": "Erfurt"
+  },
+  "native": [
+   "Erfurt"
+  ],
+  "aliases": {}
+ },
+ "Liverpool": {
+  "qid": "Q24826",
+  "commonscat": "Liverpool",
+  "labels": {
+   "pl": "Liverpool",
+   "es": "Liverpool",
+   "hu": "Liverpool",
+   "nl": "Liverpool",
+   "pt": "Liverpool",
+   "sr": "Ливерпул",
+   "fi": "Liverpool",
+   "uk": "Ліверпуль",
+   "hr": "Liverpool",
+   "da": "Liverpool",
+   "it": "Liverpool",
+   "la": "Liverpolium",
+   "cs": "Liverpool",
+   "bg": "Ливърпул",
+   "el": "Λίβερπουλ",
+   "sv": "Liverpool",
+   "ru": "Ливерпуль",
+   "tr": "Liverpool",
+   "fr": "Liverpool",
+   "de": "Liverpool",
+   "en": "Liverpool",
+   "ro": "Liverpool",
+   "nb": "Liverpool"
+  },
+  "native": [
+   "Liverpool"
+  ],
+  "aliases": {
+   "de": [
+    "Liverpudlian"
+   ],
+   "en": [
+    "City of Liverpool",
+    "Liverpool, Merseyside",
+    "Liverpool, UK",
+    "Liverpool, England"
+   ]
+  }
+ },
+ "İzmir": {
+  "qid": "Q35997",
+  "commonscat": "İzmir",
+  "labels": {
+   "pl": "Izmir",
+   "es": "Esmirna",
+   "hu": "İzmir",
+   "el": "Σμύρνη",
+   "sv": "Izmir",
+   "nl": "İzmir",
+   "pt": "Esmirna",
+   "ru": "Измир",
+   "sr": "Измир",
+   "tr": "İzmir",
+   "fi": "İzmir",
+   "uk": "Ізмір",
+   "hr": "İzmir",
+   "da": "Izmir",
+   "fr": "Izmir",
+   "it": "Smirne",
+   "de": "Izmir",
+   "en": "İzmir",
+   "ro": "İzmir",
+   "la": "Smyrna",
+   "cs": "Smyrna",
+   "bg": "Измир",
+   "nb": "Izmir"
+  },
+  "native": [
+   "İzmir"
+  ],
+  "aliases": {
+   "de": [
+    "Smyrni"
+   ],
+   "en": [
+    "Izmir",
+    "Smyrna"
+   ]
+  }
+ },
+ "Chișinău": {
+  "qid": "Q21197",
+  "commonscat": "Chișinău",
+  "labels": {
+   "pl": "Kiszyniów",
+   "hu": "Chișinău",
+   "nl": "Chisinau",
+   "pt": "Chișinău",
+   "sr": "Кишињев",
+   "fi": "Chișinău",
+   "uk": "Кишинів",
+   "hr": "Kišinjev",
+   "da": "Chișinău",
+   "it": "Chișinău",
+   "la": "Chisinovia",
+   "cs": "Kišiněv",
+   "bg": "Кишинев",
+   "el": "Κισινάου",
+   "sv": "Chișinău",
+   "ru": "Кишинёв",
+   "tr": "Kişinev",
+   "fr": "Chișinău",
+   "de": "Kischinau",
+   "ro": "Chișinău",
+   "nb": "Chișinău",
+   "es": "Chisináu",
+   "en": "Chișinău"
+  },
+  "native": [
+   "Chișinău"
+  ],
+  "aliases": {
+   "de": [
+    "Kischinew",
+    "Kischenew",
+    "Kishinau",
+    "Kischineu"
+   ],
+   "en": [
+    "Chisinau",
+    "Kishinev",
+    "Chişinău",
+    "Keshenev"
+   ]
+  }
+ },
+ "Lübeck": {
+  "qid": "Q2843",
+  "commonscat": "Lübeck",
+  "labels": {
+   "de": "Lübeck",
+   "fr": "Lübeck",
+   "en": "Lübeck",
+   "nb": "Lübeck",
+   "es": "Lübeck",
+   "bg": "Любек",
+   "cs": "Lübeck",
+   "da": "Lübeck",
+   "el": "Λύμπεκ",
+   "fi": "Lyypekki",
+   "hr": "Lübeck",
+   "hu": "Lübeck",
+   "it": "Lubecca",
+   "la": "Lubeca",
+   "nl": "Lübeck",
+   "pl": "Lubeka",
+   "pt": "Lübeck",
+   "ro": "Lübeck",
+   "ru": "Любек",
+   "sr": "Либек",
+   "sv": "Lübeck",
+   "tr": "Lübeck",
+   "uk": "Любек"
+  },
+  "native": [
+   "Lübeck"
+  ],
+  "aliases": {
+   "en": [
+    "Hanseatic City of Lübeck",
+    "Lybeck",
+    "Kreisfreie Stadt Lübeck"
+   ],
+   "de": [
+    "Hansestadt Lübeck",
+    "Freie und Hansestadt Lübeck"
+   ]
+  }
+ },
+ "Kharkiv": {
+  "qid": "Q42308",
+  "commonscat": "Kharkiv",
+  "labels": {
+   "pl": "Charków",
+   "es": "Járkov",
+   "hu": "Harkiv",
+   "el": "Χάρκοβο",
+   "sv": "Charkiv",
+   "nl": "Charkiv",
+   "pt": "Carcóvia",
+   "ru": "Харьков",
+   "sr": "Харков",
+   "tr": "Harkiv",
+   "fi": "Harkova",
+   "uk": "Харків",
+   "hr": "Harkov",
+   "da": "Kharkiv",
+   "fr": "Kharkiv",
+   "it": "Kharkiv",
+   "de": "Charkiw",
+   "en": "Kharkiv",
+   "ro": "Harkov",
+   "la": "Charcovia",
+   "cs": "Charkov",
+   "bg": "Харков",
+   "nb": "Kharkiv"
+  },
+  "native": [
+   "Харків",
+   "Харьков"
+  ],
+  "aliases": {
+   "de": [
+    "Kharkov",
+    "Charkiv",
+    "Kharkiv",
+    "Charków"
+   ],
+   "en": [
+    "Kharkov",
+    "Chárkiv",
+    "Harkov",
+    "Khar'kov"
+   ]
+  }
+ },
+ "Tirana": {
+  "qid": "Q19689",
+  "commonscat": "Tirana",
+  "labels": {
+   "pl": "Tirana",
+   "es": "Tirana",
+   "hu": "Tirana",
+   "nl": "Tirana",
+   "pt": "Tirana",
+   "sr": "Тирана",
+   "fi": "Tirana",
+   "uk": "Тирана",
+   "hr": "Tirana",
+   "da": "Tirana",
+   "it": "Tirana",
+   "la": "Tyrana",
+   "cs": "Tirana",
+   "bg": "Тирана",
+   "el": "Τίρανα",
+   "sv": "Tirana",
+   "ru": "Тирана",
+   "tr": "Tiran",
+   "fr": "Tirana",
+   "de": "Tirana",
+   "en": "Tirana",
+   "ro": "Tirana",
+   "nb": "Tirana"
+  },
+  "native": [
+   "Tirana",
+   "Tirona",
+   "Tiranë"
+  ],
+  "aliases": {
+   "de": [
+    "Tirona"
+   ]
+  }
+ },
+ "Tallinn": {
+  "qid": "Q1770",
+  "commonscat": "Tallinn",
+  "labels": {
+   "de": "Tallinn",
+   "fr": "Tallinn",
+   "it": "Tallinn",
+   "en": "Tallinn",
+   "bg": "Талин",
+   "cs": "Tallinn",
+   "da": "Tallinn",
+   "el": "Τάλιν",
+   "es": "Tallin",
+   "fi": "Tallinna",
+   "hr": "Tallinn",
+   "hu": "Tallinn",
+   "la": "Tallinna",
+   "nl": "Tallinn",
+   "pl": "Tallinn",
+   "pt": "Tallinn",
+   "ro": "Tallinn",
+   "ru": "Таллин",
+   "sr": "Талин",
+   "sv": "Tallinn",
+   "tr": "Tallinn",
+   "uk": "Таллінн",
+   "nb": "Tallinn"
+  },
+  "native": [
+   "Tallinn"
+  ],
+  "aliases": {
+   "en": [
+    "Reval",
+    "Revel",
+    "Rewel",
+    "Kolywan"
+   ],
+   "de": [
+    "Reval"
+   ]
+  }
+ },
+ "Lviv (Lemberg)": {
+  "qid": "Q36036",
+  "commonscat": "Lviv",
+  "labels": {
+   "pl": "Lwów",
+   "es": "Leópolis",
+   "hu": "Lviv",
+   "el": "Λβιβ",
+   "sv": "Lviv",
+   "nl": "Lviv",
+   "pt": "Lviv",
+   "ru": "Львов",
+   "sr": "Лавов",
+   "tr": "Lviv",
+   "fi": "Lviv",
+   "uk": "Львів",
+   "hr": "Lavov",
+   "da": "Lviv",
+   "fr": "Lviv",
+   "it": "Leopoli",
+   "de": "Lwiw",
+   "en": "Lviv",
+   "ro": "Liov",
+   "la": "Leopolis",
+   "cs": "Lvov",
+   "bg": "Лвов",
+   "nb": "Lviv"
+  },
+  "native": [
+   "Львів"
+  ],
+  "aliases": {
+   "en": [
+    "Lemberik",
+    "L'vov",
+    "Leopol"
+   ],
+   "de": [
+    "Lemberg"
+   ]
+  }
+ },
+ "Kazan": {
+  "qid": "Q900",
+  "commonscat": "Kazan",
+  "labels": {
+   "en": "Kazan",
+   "ru": "Казань",
+   "es": "Kazán",
+   "fr": "Kazan",
+   "de": "Kasan",
+   "bg": "Казан",
+   "cs": "Kazaň",
+   "da": "Kasan",
+   "el": "Καζάν",
+   "fi": "Kazan",
+   "hr": "Kazan",
+   "hu": "Kazany",
+   "it": "Kazan’",
+   "la": "Casanum",
+   "nl": "Kazan",
+   "pl": "Kazań",
+   "pt": "Cazã",
+   "ro": "Kazan",
+   "sr": "Казањ",
+   "sv": "Kazan",
+   "tr": "Kazan",
+   "uk": "Казань",
+   "nb": "Kazan"
+  },
+  "native": [
+   "Казань",
+   "Казан"
+  ],
+  "aliases": {
+   "en": [
+    "Qazan"
+   ],
+   "de": [
+    "Qassan"
+   ]
+  }
+ },
+ "Sarajevo": {
+  "qid": "Q11194",
+  "commonscat": "Sarajevo",
+  "labels": {
+   "nl": "Sarajevo",
+   "fr": "Sarajevo",
+   "en": "Sarajevo",
+   "ru": "Сараево",
+   "de": "Sarajevo",
+   "bg": "Сараево",
+   "cs": "Sarajevo",
+   "da": "Sarajevo",
+   "el": "Σαράγιεβο",
+   "es": "Sarajevo",
+   "fi": "Sarajevo",
+   "hr": "Sarajevo",
+   "hu": "Szarajevó",
+   "it": "Sarajevo",
+   "la": "Seraium",
+   "pl": "Sarajewo",
+   "pt": "Sarajevo",
+   "ro": "Sarajevo",
+   "sr": "Сарајево",
+   "sv": "Sarajevo",
+   "tr": "Saraybosna",
+   "uk": "Сараєво",
+   "nb": "Sarajevo"
+  },
+  "native": [
+   "Sarajevo",
+   "Sarajevo",
+   "Сарајево"
+  ],
+  "aliases": {
+   "de": [
+    "Saraybosna",
+    "Sarajewo"
+   ],
+   "en": [
+    "City of Sarajevo",
+    "Bosna-Serai"
+   ]
+  }
+ },
+ "Tunis": {
+  "qid": "Q3572",
+  "commonscat": "Tunis",
+  "labels": {
+   "de": "Tunis",
+   "fr": "Tunis",
+   "en": "Tunis",
+   "it": "Tunisi",
+   "nl": "Tunis",
+   "bg": "Тунис",
+   "cs": "Tunis",
+   "da": "Tunis",
+   "el": "Τύνιδα",
+   "es": "Túnez",
+   "fi": "Tunis",
+   "hr": "Tunis",
+   "hu": "Tunisz",
+   "la": "Tunes",
+   "pl": "Tunis",
+   "pt": "Tunes",
+   "ro": "Tunis",
+   "ru": "Тунис",
+   "sr": "Тунис",
+   "sv": "Tunis",
+   "tr": "Tunus",
+   "uk": "Туніс",
+   "nb": "Tunis"
+  },
+  "native": [
+   "تونس"
+  ],
+  "aliases": {}
+ },
+ "Bratislava (Pressburg)": {
+  "qid": "Q1780",
+  "commonscat": "Bratislava",
+  "labels": {
+   "de": "Bratislava",
+   "fr": "Bratislava",
+   "en": "Bratislava",
+   "bg": "Братислава",
+   "cs": "Bratislava",
+   "da": "Bratislava",
+   "el": "Μπρατισλάβα",
+   "es": "Bratislava",
+   "fi": "Bratislava",
+   "hr": "Bratislava",
+   "hu": "Pozsony",
+   "it": "Bratislava",
+   "la": "Bratislavia",
+   "nl": "Bratislava",
+   "pl": "Bratysława",
+   "pt": "Bratislava",
+   "ro": "Bratislava",
+   "ru": "Братислава",
+   "sr": "Братислава",
+   "sv": "Bratislava",
+   "tr": "Bratislava",
+   "uk": "Братислава",
+   "nb": "Bratislava"
+  },
+  "native": [
+   "Bratislava",
+   "Pozsony",
+   "Pressburg",
+   "Prešporok",
+   "Bratislava"
+  ],
+  "aliases": {
+   "de": [
+    "Pressburg",
+    "Preßburg"
+   ]
+  }
+ },
+ "Murcia": {
+  "qid": "Q12225",
+  "commonscat": "Murcia",
+  "labels": {
+   "it": "Murcia",
+   "fr": "Murcie",
+   "en": "Murcia",
+   "es": "Murcia",
+   "de": "Murcia",
+   "bg": "Мурсия",
+   "cs": "Murcia",
+   "da": "Murcia",
+   "fi": "Murcia",
+   "hr": "Murcia",
+   "hu": "Murcia",
+   "la": "Murcia",
+   "nl": "Murcia",
+   "pl": "Murcja",
+   "pt": "Múrcia",
+   "ro": "Murcia",
+   "ru": "Мурсия",
+   "sr": "Мурсија",
+   "sv": "Murcia",
+   "tr": "Murcia",
+   "uk": "Мурсія",
+   "nb": "Murcia",
+   "el": "Μούρθια"
+  },
+  "native": [
+   "Murcia"
+  ],
+  "aliases": {}
+ },
+ "Bari": {
+  "qid": "Q3519",
+  "commonscat": "Bari",
+  "labels": {
+   "it": "Bari",
+   "fr": "Bari",
+   "en": "Bari",
+   "de": "Bari",
+   "es": "Bari",
+   "bg": "Бари",
+   "cs": "Bari",
+   "da": "Bari",
+   "el": "Μπάρι",
+   "fi": "Bari",
+   "hr": "Bari",
+   "hu": "Bari",
+   "la": "Barium",
+   "nl": "Bari",
+   "pl": "Bari",
+   "pt": "Bari",
+   "ro": "Bari",
+   "ru": "Бари",
+   "sr": "Бари",
+   "sv": "Bari",
+   "tr": "Bari",
+   "uk": "Барі",
+   "nb": "Bari"
+  },
+  "native": [
+   "Bari"
+  ],
+  "aliases": {
+   "en": [
+    "Bare"
+   ]
+  }
+ },
+ "Porto": {
+  "qid": "Q36433",
+  "commonscat": "Porto",
+  "labels": {
+   "pl": "Porto",
+   "es": "Oporto",
+   "hu": "Porto",
+   "el": "Πόρτο",
+   "nl": "Porto",
+   "sv": "Porto",
+   "pt": "Porto",
+   "ru": "Порту",
+   "sr": "Порто",
+   "tr": "Porto",
+   "fi": "Porto",
+   "uk": "Порту",
+   "hr": "Porto",
+   "da": "Porto",
+   "fr": "Porto",
+   "it": "Porto",
+   "de": "Porto",
+   "en": "Porto",
+   "ro": "Porto",
+   "la": "Portus Cale",
+   "cs": "Porto",
+   "bg": "Порто",
+   "nb": "Porto"
+  },
+  "native": [
+   "Porto"
+  ],
+  "aliases": {
+   "en": [
+    "Porto Municipality"
+   ]
+  }
+ },
+ "Skopje": {
+  "qid": "Q384",
+  "commonscat": "Skopje",
+  "labels": {
+   "en": "Skopje",
+   "fr": "Skopje",
+   "nl": "Skopje",
+   "it": "Skopje",
+   "de": "Skopje",
+   "bg": "Скопие",
+   "cs": "Skopje",
+   "da": "Skopje",
+   "el": "Σκόπια",
+   "es": "Skopie",
+   "fi": "Skopje",
+   "hr": "Skoplje",
+   "hu": "Szkopje",
+   "la": "Scupi",
+   "pl": "Skopje",
+   "pt": "Skopje",
+   "ro": "Skopje",
+   "ru": "Скопье",
+   "sr": "Скопље",
+   "sv": "Skopje",
+   "tr": "Üsküp",
+   "uk": "Скоп'є",
+   "nb": "Skopje"
+  },
+  "native": [
+   "Скопје",
+   "mak. Скопје alb. Shkup"
+  ],
+  "aliases": {
+   "de": [
+    "Üsküb",
+    "Uesküb",
+    "Skoplje",
+    "Скопје"
+   ],
+   "en": [
+    "Üsküb",
+    "Skoplje",
+    "Shkup",
+    "Shkupi"
+   ]
+  }
+ },
+ "Liège": {
+  "qid": "Q3992",
+  "commonscat": "Liège",
+  "labels": {
+   "en": "Liège",
+   "nb": "Liège",
+   "fr": "Liège",
+   "de": "Lüttich",
+   "bg": "Лиеж",
+   "cs": "Lutych",
+   "da": "Liège",
+   "el": "Λιέγη",
+   "es": "Lieja",
+   "fi": "Liège",
+   "hr": "Liège",
+   "hu": "Liège",
+   "it": "Liegi",
+   "la": "Leodium",
+   "nl": "Luik",
+   "pl": "Liège",
+   "pt": "Liège",
+   "ro": "Liège",
+   "ru": "Льеж",
+   "sr": "Лијеж",
+   "sv": "Liège",
+   "tr": "Liège",
+   "uk": "Льєж"
+  },
+  "native": [
+   "Liège",
+   "Lîdje"
+  ],
+  "aliases": {
+   "en": [
+    "Lîdje",
+    "Luik",
+    "Luuk",
+    "Lüttich"
+   ],
+   "de": [
+    "Liège",
+    "Luik",
+    "Liége",
+    "Lîdje"
+   ]
+  }
+ },
+ "Bruges": {
+  "qid": "Q12994",
+  "commonscat": "Bruges",
+  "labels": {
+   "en": "Bruges",
+   "fr": "Bruges",
+   "it": "Bruges",
+   "de": "Brügge",
+   "bg": "Брюге",
+   "cs": "Bruggy",
+   "da": "Brugge",
+   "el": "Μπρυζ",
+   "es": "Brujas",
+   "fi": "Brugge",
+   "hr": "Brugge",
+   "hu": "Brugge",
+   "la": "Brugae",
+   "nl": "Brugge",
+   "pl": "Brugia",
+   "pt": "Bruges",
+   "ro": "Bruges",
+   "ru": "Брюгге",
+   "sr": "Бриж",
+   "sv": "Brygge",
+   "tr": "Brugge",
+   "uk": "Брюгге",
+   "nb": "Brugge"
+  },
+  "native": [
+   "Brugge",
+   "Brugge"
+  ],
+  "aliases": {
+   "de": [
+    "Bruges",
+    "Venedig des Nordens"
+   ]
+  }
+ },
+ "Szczecin": {
+  "qid": "Q393",
+  "commonscat": "Szczecin",
+  "labels": {
+   "pl": "Szczecin",
+   "fr": "Szczecin",
+   "ru": "Щецин",
+   "de": "Stettin",
+   "it": "Stettino",
+   "bg": "Шчечин",
+   "cs": "Štětín",
+   "da": "Stettin",
+   "el": "Στσέτσιν",
+   "es": "Szczecin",
+   "fi": "Szczecin",
+   "hr": "Szczecin",
+   "hu": "Szczecin",
+   "la": "Stettinum",
+   "nl": "Szczecin",
+   "pt": "Estetino",
+   "ro": "Szczecin",
+   "sr": "Шчећин",
+   "sv": "Stettin",
+   "tr": "Szczecin",
+   "uk": "Щецин",
+   "nb": "Szczecin",
+   "en": "Szczecin"
+  },
+  "native": [
+   "Szczecin"
+  ],
+  "aliases": {
+   "de": [
+    "Szczecin"
+   ],
+   "en": [
+    "Stettin"
+   ]
+  }
+ },
+ "Salerno": {
+  "qid": "Q1083",
+  "commonscat": "Salerno",
+  "labels": {
+   "it": "Salerno",
+   "de": "Salerno",
+   "en": "Salerno",
+   "fr": "Salerne",
+   "bg": "Салерно",
+   "cs": "Salerno",
+   "el": "Σαλέρνο",
+   "es": "Salerno",
+   "fi": "Salerno",
+   "hu": "Salerno",
+   "la": "Salernum",
+   "nl": "Salerno",
+   "pl": "Salerno",
+   "pt": "Salerno",
+   "ro": "Salerno",
+   "ru": "Салерно",
+   "sr": "Салерно",
+   "sv": "Salerno",
+   "tr": "Salerno",
+   "uk": "Салерно",
+   "nb": "Salerno",
+   "hr": "Salerno",
+   "da": "Salerno"
+  },
+  "native": [
+   "Salerno"
+  ],
+  "aliases": {}
+ },
+ "Gothenburg": {
+  "qid": "Q25287",
+  "commonscat": "Göteborg",
+  "labels": {
+   "pl": "Göteborg",
+   "es": "Gotemburgo",
+   "hu": "Göteborg",
+   "el": "Γκέτεμποργκ",
+   "nl": "Göteborg",
+   "sv": "Göteborg",
+   "pt": "Gotemburgo",
+   "ru": "Гётеборг",
+   "sr": "Гетеборг",
+   "tr": "Göteborg",
+   "fi": "Göteborg",
+   "uk": "Гетеборг",
+   "hr": "Göteborg",
+   "da": "Göteborg",
+   "fr": "Göteborg",
+   "it": "Göteborg",
+   "de": "Göteborg",
+   "en": "Gothenburg",
+   "ro": "Göteborg",
+   "la": "Gothoburgum",
+   "cs": "Göteborg",
+   "bg": "Гьотеборг",
+   "nb": "Göteborg"
+  },
+  "native": [
+   "Göteborg"
+  ],
+  "aliases": {
+   "en": [
+    "Göteborg",
+    "Gothenburg, Sweden"
+   ]
+  }
+ },
+ "Aleppo": {
+  "qid": "Q41183",
+  "commonscat": "Aleppo",
+  "labels": {
+   "pl": "Aleppo",
+   "es": "Alepo",
+   "hu": "Aleppó",
+   "el": "Χαλέπι",
+   "nl": "Aleppo",
+   "sv": "Aleppo",
+   "pt": "Alepo",
+   "ru": "Алеппо",
+   "sr": "Алеп",
+   "tr": "Halep",
+   "fi": "Aleppo",
+   "uk": "Алеппо",
+   "hr": "Alep",
+   "da": "Aleppo",
+   "fr": "Alep",
+   "it": "Aleppo",
+   "de": "Aleppo",
+   "en": "Aleppo",
+   "ro": "Alep",
+   "la": "Beroea",
+   "cs": "Aleppo",
+   "bg": "Халеб",
+   "nb": "Aleppo"
+  },
+  "native": [
+   "ﺣَﻠَﺐ‎",
+   "Helep",
+   "Halep",
+   "ܚܠܒ"
+  ],
+  "aliases": {
+   "de": [
+    "Halab",
+    "Beroia"
+   ],
+   "en": [
+    "Aleppo City",
+    "Aleppo, Syria",
+    "Aleppo, Aleppo",
+    "Aleppo, Mount Simeon"
+   ]
+  }
+ },
+ "Parma": {
+  "qid": "Q2683",
+  "commonscat": "Parma",
+  "labels": {
+   "it": "Parma",
+   "fr": "Parme",
+   "es": "Parma",
+   "bg": "Парма",
+   "de": "Parma",
+   "fi": "Parma",
+   "hr": "Parma",
+   "hu": "Parma",
+   "la": "Parma",
+   "nl": "Parma",
+   "pt": "Parma",
+   "ro": "Parma",
+   "ru": "Парма",
+   "sr": "Парма",
+   "sv": "Parma",
+   "tr": "Parma",
+   "uk": "Парма",
+   "nb": "Parma",
+   "el": "Πάρμα",
+   "en": "Parma"
+  },
+  "native": [
+   "Parma"
+  ],
+  "aliases": {}
+ },
+ "Nizhny Novgorod": {
+  "qid": "Q891",
+  "commonscat": "Nizhny Novgorod",
+  "labels": {
+   "en": "Nizhny Novgorod",
+   "ru": "Нижний Новгород",
+   "fr": "Nijni Novgorod",
+   "es": "Nizhni Nóvgorod",
+   "bg": "Нижни Новгород",
+   "cs": "Nižnij Novgorod",
+   "da": "Nisjnij Novgorod",
+   "de": "Nischni Nowgorod",
+   "el": "Νίζνι Νόβγκοροντ",
+   "fi": "Nižni Novgorod",
+   "hr": "Nižnji Novgorod",
+   "hu": "Nyizsnyij Novgorod",
+   "it": "Nižnij Novgorod",
+   "la": "Novogardia Inferior",
+   "nl": "Nizjni Novgorod",
+   "pl": "Niżny Nowogród",
+   "pt": "Níjni Novgorod",
+   "ro": "Nijni Novgorod",
+   "sr": "Нижњи Новгород",
+   "sv": "Nizjnij Novgorod",
+   "tr": "Nijni Novgorod",
+   "uk": "Нижній Новгород",
+   "nb": "Nizjnij Novgorod"
+  },
+  "native": [
+   "Нижний Новгород"
+  ],
+  "aliases": {
+   "de": [
+    "Nizhni Novgorod",
+    "Nischni-Nowgorod",
+    "Nischnij Nowgorod",
+    "Nishnij Nowgorod"
+   ],
+   "en": [
+    "Gorky",
+    "Nizhny",
+    "Nether Novgorod",
+    "Nijni-Novgorod"
+   ]
+  }
+ },
+ "Regensburg": {
+  "qid": "Q2978",
+  "commonscat": "Regensburg",
+  "labels": {
+   "de": "Regensburg",
+   "fr": "Ratisbonne",
+   "en": "Regensburg",
+   "es": "Ratisbona",
+   "bg": "Регенсбург",
+   "cs": "Řezno",
+   "da": "Regensburg",
+   "el": "Ρέγκενσμπουργκ",
+   "fi": "Regensburg",
+   "hr": "Regensburg",
+   "hu": "Regensburg",
+   "it": "Ratisbona",
+   "la": "Ratisbona",
+   "nl": "Regensburg",
+   "pl": "Ratyzbona",
+   "pt": "Ratisbona",
+   "ro": "Regensburg",
+   "ru": "Регенсбург",
+   "sr": "Регензбург",
+   "sv": "Regensburg",
+   "tr": "Regensburg",
+   "uk": "Регенсбург",
+   "nb": "Regensburg"
+  },
+  "native": [
+   "Regensburg"
+  ],
+  "aliases": {
+   "de": [
+    "Regensburg, St"
+   ],
+   "en": [
+    "Ratisbo",
+    "Ratisbon"
+   ]
+  }
+ },
+ "Donetsk": {
+  "qid": "Q43070",
+  "commonscat": "Donetsk",
+  "labels": {
+   "pl": "Donieck",
+   "es": "Donetsk",
+   "hu": "Doneck",
+   "el": "Ντονέτσκ",
+   "sv": "Donetsk",
+   "nl": "Donetsk",
+   "pt": "Donetsk",
+   "ru": "Донецк",
+   "sr": "Доњецк",
+   "tr": "Donetsk",
+   "fi": "Donetsk",
+   "uk": "Донецьк",
+   "hr": "Donjeck",
+   "da": "Donetsk",
+   "fr": "Donetsk",
+   "it": "Donec’k",
+   "de": "Donezk",
+   "en": "Donetsk",
+   "ro": "Donețk",
+   "cs": "Doněck",
+   "bg": "Донецк",
+   "nb": "Donetsk",
+   "la": "Donetsk"
+  },
+  "native": [
+   "Донецьк",
+   "Донецк"
+  ],
+  "aliases": {
+   "de": [
+    "Jusowka",
+    "Stalino",
+    "Donezstadt"
+   ],
+   "en": [
+    "Hughesovka",
+    "Yuzovka",
+    "Aleksandrovka",
+    "Stalin"
+   ]
+  }
  }
 }

@@ -1,0 +1,113 @@
+{
+ "city": "Marseille",
+ "picks": [
+  {
+   "n": 8,
+   "file": "Marseille by Braun Hogenberg (110199026).jpg",
+   "y": 1575,
+   "lab": "1575",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 2",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.016,
+    0.016,
+    0.984,
+    0.984
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "colored bird’s-eye view of the walled town and the old port; cleanly cropped high-resolution plate"
+  },
+  {
+   "n": 11,
+   "file": "Massilia - btv1b53152757k (1 of 2).jpg",
+   "y": 1655,
+   "lab": "about 1655",
+   "what": "View across the harbor, engraving from Merian’s Topographia Galliae",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.01,
+    0.99,
+    0.99
+   ],
+   "focal": [
+    0.62,
+    0.5
+   ],
+   "why": "true general view: Saint-Victor abbey in front, the port and town beyond"
+  },
+  {
+   "n": 21,
+   "file": "Gezicht op de haven van Marseille, RP-P-1943-511.jpg",
+   "y": 1760,
+   "lab": "1760",
+   "what": "Inside the port of Marseille, engraving after Joseph Vernet’s Ports of France series",
+   "who": "Charles-Nicolas Cochin and Jacques-Philippe Le Bas",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.024,
+    0.024,
+    0.978,
+    0.865
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "the famous Vernet view of the old port, firmly dated; caption cut"
+  },
+  {
+   "n": 36,
+   "file": "Marseille-Vieux port vers 1900-2.jpg",
+   "y": 1900,
+   "lab": "about 1900",
+   "what": "The Old Port and Notre-Dame de la Garde, photochrom print (Library of Congress)",
+   "who": "Detroit Photographic Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.4
+   ],
+   "why": "color view across the Old Port to the basilica and its lift; listed under 2010 only because of the upload date"
+  },
+  {
+   "n": 37,
+   "file": "Marseille 20131005 06.jpg",
+   "y": 2013,
+   "lab": "2013",
+   "what": "Notre-Dame de la Garde above the Old Port, photograph",
+   "who": "Georges Seguin",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "sharp recent view with the city’s main landmark"
+  }
+ ],
+ "gaps": "P0: Nuremberg Chronicle ‘Massilia’ woodcut looks imaginary (domed Italianate town), skipped",
+ "notes": "Merian date is an estimate: BnF gives only ‘17th century’, Amsterdam Museum 1650–99; assumed Topographia Galliae (1655–61). Alternative P2: #12 panorama ‘La Ville de Marseille’ (Visscher plate, reissued 1726, so made before 1702). #32 is a dull gray photo; drop it if P5 is better left blank. #36 who per record ‘Detroit Photographic Company’.",
+ "_reviewed": true
+}

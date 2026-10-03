@@ -1,0 +1,20 @@
+{
+ "city": "Kyiv",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "St. Michael's monastery photochrom, 1890s; crop clean"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "Lavra above the Dnieper, dated 1918 in record; crop clean"
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "modest but acceptable river view with Lavra bell tower; crop includes tower"
+  }
+ ]
+}

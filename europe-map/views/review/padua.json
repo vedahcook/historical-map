@@ -1,0 +1,51 @@
+{
+ "city": "Padua",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.13,
+     0.17,
+     0.84,
+     0.84
+    ],
+    "focal": [
+     0.5,
+     0.3
+    ]
+   },
+   "reason": "painted arch border with Latin lettering sits inside the crop at both top corners; trim moves inside the fresco of the city"
+  },
+  {
+   "n": 14,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.16,
+     0.1,
+     0.834,
+     0.72
+    ]
+   },
+   "reason": "trim included about 2 px of blank paper beyond the plate's right edge"
+  },
+  {
+   "n": 17,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.5,
+     0.55
+    ]
+   },
+   "reason": "current crop cuts the cart wheels and the people at the bottom; lower focal keeps them and still holds the spire tops"
+  },
+  {
+   "n": 26,
+   "verdict": "ok",
+   "reason": "fine"
+  }
+ ]
+}

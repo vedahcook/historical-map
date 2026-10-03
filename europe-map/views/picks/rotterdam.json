@@ -1,0 +1,113 @@
+{
+ "city": "Rotterdam",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Rotterdam ; Goude - btv1b531790016 (1 of 2).jpg",
+   "y": 1581,
+   "lab": "1581",
+   "what": "View from the Maas, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 3 (Bibliothèque nationale de France)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.07,
+    0.078,
+    0.93,
+    0.495
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "colored loose sheet; town and the Laurenskerk across the water; trimmed to the Rotterdam half (Gouda below cut)"
+  },
+  {
+   "n": 9,
+   "file": "Rotterdam Panorama by Caspar Merian 1659.jpg",
+   "y": 1654,
+   "lab": "1654",
+   "what": "Panorama from the Maas, colored engraving in Zeiller and Merian’s Topographia Germaniae Inferioris",
+   "who": "Caspar Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.05,
+    0.995,
+    0.935
+   ],
+   "focal": [
+    0.64,
+    0.45
+   ],
+   "why": "colored river panorama with the Laurenskerk; same plate as #7, which is uncolored"
+  },
+  {
+   "n": 25,
+   "file": "The Kolk, Rotterdam, Holland-LCCN2001699539.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Kolk with the elevated railway and the Laurenskerk, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.015,
+    0.98,
+    0.985
+   ],
+   "focal": [
+    0.56,
+    0.4
+   ],
+   "why": "color; Laurenskerk tower and the railway viaduct, both landmarks of the old city"
+  },
+  {
+   "n": 32,
+   "file": "Luchtopname van de Willemsbrug en Willemsspoorbrug over de Nieuwe Maas met de Boompjes, Nationale Levensverzekeringsbank, Bolwerk, Oudehaven, Wijnhaven, spoorbrug over de Wijnhaven, Witte Huis en station Rotterdam Beurs 1930.jpg",
+   "y": 1930,
+   "lab": "1930",
+   "what": "The Willemsbrug, the Boompjes and the Witte Huis, aerial photograph (Rotterdam City Archives)",
+   "who": "KLM Aerocarto",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.03,
+    0.04,
+    0.97,
+    0.955
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "prewar old center from the air: river bridges, waterfront and the Witte Huis; white border cut"
+  },
+  {
+   "n": 37,
+   "file": "RotterdamMaasNederland.jpg",
+   "y": 2009,
+   "lab": "2009",
+   "what": "The Erasmus Bridge and the Kop van Zuid across the Maas, photograph",
+   "who": "Massimo Catarinella",
+   "lic": "CC BY 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.35,
+    0.5
+   ],
+   "why": "the city’s best-known modern view, sharp dusk panorama"
+  }
+ ],
+ "gaps": "P0: no candidates. P3: only single buildings and a vaguely dated (1827–1900) Maas view (#18); skipped",
+ "notes": "Merian plate: Rijksmuseum (#7) dates it 1654, the dealer record for #9 says published 1659 in Zeiller’s Topographia (Germaniae Inferioris, which covers Holland); used 1659. James Webb painting (#20) has no known date, skipped. 1946 and 1952 aerials show the bombed center (event views), not used.",
+ "_reviewed": true
+}

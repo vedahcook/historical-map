@@ -1,0 +1,73 @@
+{
+ "city": "Augsburg",
+ "checks": [
+  {
+   "n": 9,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.07,
+     0.1,
+     0.928,
+     0.885
+    ]
+   },
+   "reason": "B&H 1572 plate is right; the red hand-colored frame band is inside the trim at left and right; cut it"
+  },
+  {
+   "n": 13,
+   "verdict": "replace",
+   "replace_with": 17,
+   "fix": {
+    "file": "Gezicht op Augsburg, 1726 La Ville d'Augspurg, dans la Souabe (titel op object) Les Forces de l'Europe, Asie, Afrique et Amerique Comme aussi les Cartes des Côtes de France et d'Espagne (serietitel , RP-P-OB-83.035-202.jpg",
+    "y": 1726,
+    "lab": "1726",
+    "trim": [
+     0.23,
+     0.22,
+     0.75,
+     0.805
+    ],
+    "focal": [
+     0.5,
+     0.55
+    ],
+    "what": "General view of the city, engraving in Les Forces de l’Europe, Asie, Afrique et Amérique (Rijksmuseum)",
+    "who": "unknown artist",
+    "lic": "CC0",
+    "event": false
+   },
+   "reason": "Hollar plate is signed 'W. Hollar fecit 163?' (third digit reads 3, not 6); Commons 1665 looks like a misreading, which would put it in P1 beside #9. #17 is a whole-city skyline titled Augspurg, dated 1726 by the Rijksmuseum; fix fields are for #17 (trim cuts the book page to the framed plate)"
+  },
+  {
+   "n": 20,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.046,
+     0.04,
+     0.962,
+     0.82
+    ]
+   },
+   "reason": "Lange steel engraving fits; plate edge lines and 2-3 px of paper remain at left and right of the trim"
+  },
+  {
+   "n": 24,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.026,
+     0.02,
+     0.968,
+     0.95
+    ],
+    "focal": [
+     0.5,
+     0.53
+    ]
+   },
+   "reason": "Right square, Detroit record; 4 px white margin at right of the trim, and the Rathaus dome tip touches the top edge of the crop (the tall Perlach Tower is unavoidably cut in a portrait photo)"
+  }
+ ]
+}

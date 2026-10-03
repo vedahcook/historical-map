@@ -1,0 +1,92 @@
+{
+ "city": "Birmingham",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Westley---East-Prospect-of-Birmingham-1732.jpg",
+   "y": 1732,
+   "lab": "1732",
+   "what": "The East Prospect of Birmingham, engraving",
+   "who": "William Westley",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.08,
+    0.995,
+    0.88
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "the classic general view with St. Martin’s spire and the new St. Philip’s; title and key text cut; low resolution"
+  },
+  {
+   "n": 4,
+   "file": "A poetic survey round Birmingham - James Bisset - 1800 - plate Q.jpg",
+   "y": 1800,
+   "lab": "1800",
+   "what": "View from the Warwick Canal, engraving in James Bisset’s Magnificent Directory",
+   "who": "James Bisset",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.118,
+    0.092,
+    0.91,
+    0.325
+   ],
+   "focal": [
+    0.4,
+    0.55
+   ],
+   "why": "true dated view with St. Martin’s and St. Philip’s and smoking factories; trimmed off the directory text; small (about 800 px wide), photographed from the book"
+  },
+  {
+   "n": 13,
+   "file": "-Group of 6 Early Stereograph Views of Birmingham, England- MET DP72780.jpg",
+   "y": 1870,
+   "lab": "about 1870",
+   "what": "The Town Hall and Christ Church, stereo photograph (Metropolitan Museum of Art)",
+   "who": "unknown photographer",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.095,
+    0.05,
+    0.495,
+    0.93
+   ],
+   "focal": [
+    0.5,
+    0.42
+   ],
+   "why": "left half of the stereo card; Town Hall with the spire of Christ Church (demolished 1899); the Met dates it 1860s–80s"
+  },
+  {
+   "n": 25,
+   "file": "Panorama of Birmingham.jpg",
+   "y": 2021,
+   "lab": "2021",
+   "what": "Panorama of the city center skyline, photograph",
+   "who": "Smileyface",
+   "lic": "CC BY-SA 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0.1,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "wide, sharp skyline of the city center towers; some sky cut"
+  }
+ ],
+ "gaps": "P0, P1: nothing; P5: only 1948 RAF aerials of rail yards, suburbs and a golf course, not recognizable",
+ "notes": "Many hits are other Birminghams: #2 and #10 are Pittsburgh (Birmingham, Pennsylvania), #8, #9, #16–#18 Birmingham, Alabama, #26–#27 Baie-Mahault, Guadeloupe. #23–#24 are photos of a museum gallery. #3 is a generic landscape of the ‘environs’. #6 (J. I. Richards, Old Cross and St. Martin’s) must predate the Cross’s removal in 1784 but has no firmer date than ‘before 1811’, so skipped. #7 (James Holland) is undated; 1799 is the painter’s birth year. #4 is weak (small, page photo) and can be dropped if a better P3 turns up.",
+ "_reviewed": true
+}

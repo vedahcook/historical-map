@@ -1,0 +1,36 @@
+{
+ "city": "Yerevan",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.133,
+     0.15,
+     0.852,
+     0.746
+    ]
+   },
+   "reason": "A hairline of white paper shows along the top (and slightly right/bottom) of the crop; tighten to the plate edge. Year 1686 is a plausible first publication of the plate (Journal du voyage; could be 1711 in the Amsterdam edition)."
+  },
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0.22,
+     1,
+     0.81
+    ]
+   },
+   "reason": "Bottom trim at 0.85 includes the dark blurred wall in the foreground; cut it off (and a little of the empty hazy sky)."
+  },
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "Best of the modern panoramas; the 16:9 crop of a 5.4:1 panorama is unavoidably narrow (33% of width) but sharp enough at 9844 px and shows the city center with Ararat faint on the horizon; credits match."
+  }
+ ]
+}

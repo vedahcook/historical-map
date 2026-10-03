@@ -1,0 +1,13 @@
+{
+ "city": "Donetsk",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "what": "Winter panorama over the Lower Kalmius reservoir and the city, photograph"
+   },
+   "reason": "weak but the only general view; the crop is mostly the frozen reservoir, so 'Kalininskyi district' is not what a viewer sees; record says only 'Panorama of Donetsk'"
+  }
+ ]
+}

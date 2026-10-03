@@ -1,0 +1,134 @@
+{
+ "city": "Barcelona",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Braun Barcelona UBHD.jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Panorama, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.03,
+    0.995,
+    0.97
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "colored panorama of the walled city with the cathedral and the shore; best colored copy (Heidelberg)"
+  },
+  {
+   "n": 9,
+   "file": "Gezicht op Barcelona, ca. 1702 Veue ou Profil de Barcelone Capitale de Catalogne (titel op object) Les Forces de l'Europe, Asie, Afrique et Amerique, ou description des principales villes avec leurs, RP-P-OB-83.034-261.jpg",
+   "y": 1702,
+   "lab": "about 1702",
+   "what": "Profile view from the harbor, etching in Les Forces de l’Europe",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.262,
+    0.158,
+    0.785,
+    0.61
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "true profile of the city with the harbor lighthouse and Montjuïc; trimmed to the plate, key cut"
+  },
+  {
+   "n": 17,
+   "file": "1806-1820, Voyage pittoresque et historique de l'Espagne, tomo I, Vista general de la ciudad y del puerto de Barcelona tomada del pie de Montjouy.jpg",
+   "y": 1806,
+   "lab": "1806",
+   "what": "General view of the city and harbor from the foot of Montjuïc, engraving in Alexandre de Laborde’s Voyage pittoresque et historique de l’Espagne",
+   "who": "Jacques Moulinier and François-Jacques Dequevauviller",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.178,
+    0.148,
+    0.822,
+    0.742
+   ],
+   "focal": [
+    0.42,
+    0.55
+   ],
+   "why": "general view across the bay to the walled city; margins and caption cut"
+  },
+  {
+   "n": 27,
+   "file": "Barcelona en 1850.jpg",
+   "y": 1856,
+   "lab": "1856",
+   "what": "Bird’s-eye view from above the Mataró railway station, lithograph",
+   "who": "Alfred Guesdon",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "color bird’s-eye view with Montjuïc, the harbor and the old city; the file name’s ‘1850’ is not the print date"
+  },
+  {
+   "n": 33,
+   "file": "ETH-BIB-Hafen von Barcelona mit Sicht über die Altstadt-Tschadseeflug 1930-31-LBS MH02-08-0112.tif",
+   "y": 1930,
+   "lab": "1930–31",
+   "what": "The harbor and the old city, aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.97
+   ],
+   "focal": [
+    0.4,
+    0.4
+   ],
+   "why": "Columbus monument, the foot of the Rambla and the Gothic quarter with the cathedral"
+  },
+  {
+   "n": 38,
+   "file": "Coastal aerial of Barcelona with Port-Nou in foreground.jpg",
+   "y": 2024,
+   "lab": "2024",
+   "what": "The city and harbor from over the sea, aerial photograph",
+   "who": "Joe Mabel",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.1,
+    1,
+    0.62
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "sharp recent view of the whole city between Montjuïc, the hills and the sea; trim cuts most of the breakwater"
+  }
+ ],
+ "gaps": "P0: no candidates",
+ "notes": "P1 alternative: #8 Wyngaerde 1563 view from Montjuïc (poor yellowed reproduction). #1 description notes the drawing shows the city around 1535; dated by plate. Guesdon date taken from the record (1856); his Spanish bird’s-eye series is sometimes dated 1853–56. Skipped Pérelle profiles (#12–14, dated 1641–95) and the 1842 bombardment prints (event). P6 options are weak; #36 Montjuïc panorama is hazy with a cluttered foreground.",
+ "_reviewed": true
+}

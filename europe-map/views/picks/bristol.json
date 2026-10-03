@@ -1,0 +1,134 @@
+{
+ "city": "Bristol",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Brightstowe, vulgo- quondam venta, florentissimum Angliae Emporium (BM Y,5.162).jpg",
+   "y": 1581,
+   "lab": "1581",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 3 (British Museum)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.04,
+    0.04,
+    0.96,
+    0.96
+   ],
+   "focal": [
+    0.55,
+    0.42
+   ],
+   "why": "clean hand-colored copy; walled town on the Avon and Frome with the bridge and castle"
+  },
+  {
+   "n": 11,
+   "file": "Perspective view of the city of Bristol, in the counties of Somerset and Gloucester (NYPL Hades-268511-EM2949).tiff",
+   "y": 1760,
+   "lab": "about 1760",
+   "what": "Perspective view of the city, engraving (New York Public Library)",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.065,
+    0.09,
+    0.924,
+    0.82
+   ],
+   "focal": [
+    0.45,
+    0.62
+   ],
+   "why": "general view over the town with towers and the harbor; title line and paper margins cut"
+  },
+  {
+   "n": 10,
+   "file": "William James Müller - Vue de Bristol depuis Clifton wood (1837).jpg",
+   "y": 1837,
+   "lab": "1837",
+   "what": "View from Clifton Wood, painting (Bristol Museum and Art Gallery)",
+   "who": "William James Müller",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "color general view with the cathedral tower and ships in the harbor; 77 years after the 1760 view"
+  },
+  {
+   "n": 21,
+   "file": "St. Augustine's Bridge, Bristol, England-LCCN2002696422.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "St. Augustine’s Bridge and the harbor, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.036,
+    0.025,
+    0.976,
+    0.965
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "busy city center at the head of the harbor with St. Stephen’s tower; white mount cut"
+  },
+  {
+   "n": 29,
+   "file": "Bristol, 1946 showing bomb damage on bottom right of image.png",
+   "y": 1946,
+   "lab": "1946",
+   "what": "Aerial photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "general aerial view of the center and the Floating Harbour; bomb damage only in one corner"
+  },
+  {
+   "n": 30,
+   "file": "Bristol - view from Windmill Hill.jpg",
+   "y": 2011,
+   "lab": "2011",
+   "what": "View from Windmill Hill, photograph",
+   "who": "Nick",
+   "lic": "CC BY 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0.29,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.5
+   ],
+   "why": "color skyline with the Wills Memorial Building tower; overhanging branches trimmed"
+  }
+ ],
+ "gaps": "P0: no candidates; P2: only Francis Place’s 1678 pencil panorama (#9), too faint to read",
+ "notes": "Clifton Suspension Bridge photochroms (#17, #19) are the alternative for P4 if a landmark is preferred over a city scene. #29 is a general aerial; marked event false since the Blitz damage is minor in the frame. #15 (1831 riots) skipped as an event view. #35 is a 1973 aerial (upload date 2018), usable if a black-and-white P6 is wanted.",
+ "_reviewed": true
+}

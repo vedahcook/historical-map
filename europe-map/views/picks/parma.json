@@ -1,0 +1,71 @@
+{
+ "city": "Parma",
+ "picks": [
+  {
+   "n": 7,
+   "file": "Braun Parma UBHD.jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.036,
+    0.05,
+    0.972,
+    0.945
+   ],
+   "focal": [
+    0.52,
+    0.5
+   ],
+   "why": "colored copy (German edition) of the 1572 plate, trimmed to the ‘Parma’ panel of the four-city sheet; walled town on both banks with the cathedral and baptistery"
+  },
+  {
+   "n": 12,
+   "file": "Vedutadiparma.jpg",
+   "y": 1816,
+   "lab": "1816",
+   "what": "View across the Ducal Park to the city, watercolor (Museo Glauco Lombardi)",
+   "who": "Marie Louise, Duchess of Parma",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.42
+   ],
+   "why": "color general view with the skyline of domes and towers behind the park"
+  },
+  {
+   "n": 17,
+   "file": "Panorama di Parma, visto dall’Osservatorio Astronomico (xilografia).jpg",
+   "y": 1888,
+   "lab": "1888",
+   "what": "Panorama from the observatory, wood engraving in Le Cento Città d’Italia",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    0.99,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "rooftop panorama with the Steccata dome, cathedral and baptistery"
+  }
+ ],
+ "gaps": "P0: no candidates; P2: nothing usable; P6: no modern photograph among the candidates",
+ "notes": "#19 is a loose, painterly view; drop it if a documentary picture is preferred for P5. P1 alternatives: #7 is the same Parma panel colored but only 1004 px; #1 is the earlier anonymous print (about 1570) that Braun and Hogenberg copied, uncolored and small. Skipped #2/#3 (Siege of Neuss by the Duke of Parma), #4/#5 (other copies of the same B&H sheet), #8 (1639 town plan), #9 (Bellotto capriccio of Rome held in Parma), #10 (1726 small generic view in Les Forces de l’Europe), #15 (Paris interior), #16 (1840 SDUK map; the panorama is only a thin inset strip). P3 alternatives: #11/#13 (Palazzo Ducale and Pilotta, about 1835/1840) and #14 (Piazza Maggiore, 1845) are single-square scenes, too close in date to #12 for a second P3.",
+ "_reviewed": true
+}

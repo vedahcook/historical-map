@@ -1,0 +1,23 @@
+{
+ "city": "Dublin",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "Phoenix Park view, title in print matches; caption and margin excluded"
+  },
+  {
+   "n": 13,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.025,
+     0.02,
+     0.975,
+     0.94
+    ]
+   },
+   "reason": "white photochrom margin at right edge inside crop"
+  }
+ ]
+}

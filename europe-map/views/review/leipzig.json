@@ -1,0 +1,38 @@
+{
+ "city": "Leipzig",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "Leipzig panel of the Dresden and Leipzig sheet (vol. 1, 1572); trim sits inside the frame; crop is tight on a long strip but about half the panel and shows the cartouche and town"
+  },
+  {
+   "n": 14,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.066,
+     0.09,
+     0.94,
+     0.78
+    ]
+   },
+   "reason": "Bird's-eye view with buildings, Rijksmuseum 1657; plate border lines remain at left and right edges"
+  },
+  {
+   "n": 19,
+   "verdict": "ok",
+   "reason": "Bechstein 1844 general view across the meadows; trim and crop are clean"
+  },
+  {
+   "n": 26,
+   "verdict": "ok",
+   "reason": "Market square with the Old Town Hall, color photochrom; crop keeps the tower whole"
+  },
+  {
+   "n": 40,
+   "verdict": "ok",
+   "reason": "Sharp view over the old town, 2012; record details match"
+  }
+ ]
+}

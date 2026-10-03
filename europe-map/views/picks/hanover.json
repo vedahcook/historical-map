@@ -1,0 +1,92 @@
+{
+ "city": "Hanover",
+ "picks": [
+  {
+   "n": 2,
+   "file": "1641 erstmals veröffentlichter Kupferstich Hannover vom Nordosten, Matthäus Merian.jpg",
+   "y": 1641,
+   "lab": "1641",
+   "what": "View from the northeast, engraving",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.07,
+    0.98,
+    0.915
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "walled town with the Marktkirche spire; better tonal scan than #1"
+  },
+  {
+   "n": 8,
+   "file": "Friedrich Bernhard Werner, Ansicht der Stadt Hannover von Südwesten mit Blick über die Ihme, Kupferstich um 1730, b1, Der kleine Werner, Abdruck kpl. Druckplatte mit Künstlermonogramm, 600dpi.jpg",
+   "y": 1730,
+   "lab": "about 1730",
+   "what": "View from the southwest across the Ihme, engraving",
+   "who": "Friedrich Bernhard Werner",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0.016,
+    0.07,
+    0.984,
+    0.9
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "drawn from the Lindener Berg in 1729; city fills the frame, very high resolution; chosen over Merian 1654 (#4) for a better spread of dates"
+  },
+  {
+   "n": 12,
+   "file": "Gezicht op Hannover vanuit het zuidwesten, RP-P-2018-1368-1.jpg",
+   "y": 1839,
+   "lab": "1839",
+   "what": "View from the Lindener Berg, steel engraving",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.196,
+    0.247,
+    0.75,
+    0.685
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "general view with the skyline of church towers; trimmed to the plate"
+  },
+  {
+   "n": 9,
+   "file": "Gezicht op Hannover Hannover aus der vogelschau (titel op object), RP-P-2018-971.jpg",
+   "y": 1854,
+   "lab": "about 1854",
+   "what": "Bird’s-eye view over the Waterlooplatz, etching",
+   "who": "Adolf Eltzner",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.118,
+    0.125,
+    0.864,
+    0.8
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "excellent general view: Waterloo Column, old town and church towers; trimmed off the title"
+  }
+ ],
+ "gaps": "P0: nothing. P5: nothing (most hits are Hanover Street, Boston, and Hanover Square, New York). P6: only a 2007 360° panorama from a university tower (#31) without recognizable landmarks.",
+ "notes": "Eltzner’s bird’s-eye view (#9): the Rijksmuseum dates it only 1826–1891; Commons files it under 1854, which fits Eltzner’s career (born 1816) — reviewer may want to confirm. P3 alternative: the colored Waterloo Platz lithograph (#11, about 1835, very high resolution). The photochroms of Göttingen and Hameln are other towns in the Province of Hanover; Welfenschloss (#21) and Herrenhausen (#22) are genuine Hanover but single buildings.",
+ "_reviewed": true
+}

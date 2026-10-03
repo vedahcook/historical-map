@@ -1,0 +1,57 @@
+{
+ "city": "Tbilisi",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.01,
+     0.025,
+     0.99,
+     1.0
+    ]
+   },
+   "reason": "Labeled Tiflis view, 1717 first publication is right; the scan has a faint lighter strip about 4 px wide along the left and top edges that shows in the crop"
+  },
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.034,
+     0.03,
+     0.97,
+     0.915
+    ]
+   },
+   "reason": "Lithograph's frame sits at 3% from the left and 97.4% from the right; the current trim leaves white margin slivers on both sides of the full-width crop"
+  },
+  {
+   "n": 7,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.035,
+     0.06,
+     0.956,
+     0.905
+    ]
+   },
+   "reason": "Photochrom's dark frame line at the right sits at 96.2%; the current right edge (96.5%) keeps it in the crop"
+  },
+  {
+   "n": 16,
+   "verdict": "ok",
+   "reason": "1964 color photo over the old town and the Kura; CC BY 2.0 matches; hazy but usable"
+  },
+  {
+   "n": 22,
+   "verdict": "fix",
+   "fix": {
+    "what": "Panorama of the city with the Holy Trinity Cathedral, photograph"
+   },
+   "reason": "The record gives no vantage point (just Panorama of Tbilisi); the Mtatsminda claim cannot be confirmed from the record, so describe what is shown"
+  }
+ ]
+}

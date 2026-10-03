@@ -1,0 +1,113 @@
+{
+ "city": "Rouen",
+ "picks": [
+  {
+   "n": 7,
+   "file": "Nimes 1569.jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "View of the city and the Seine, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1 (colored copy, National Library of Spain)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.108,
+    0.125,
+    0.905,
+    0.447
+   ],
+   "focal": [
+    0.52,
+    0.5
+   ],
+   "why": "colored general view: cathedral, walls, bridge and river; top view of a three-city plate (Rouen, Nîmes, Bordeaux), trimmed to Rouen"
+  },
+  {
+   "n": 15,
+   "file": "View near Rouen MET DT4937.jpg",
+   "y": 1825,
+   "lab": "about 1825",
+   "what": "View near Rouen, painting (Metropolitan Museum of Art)",
+   "who": "Richard Parkes Bonington",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.01,
+    0.01,
+    0.99,
+    0.99
+   ],
+   "focal": [
+    0.78,
+    0.62
+   ],
+   "why": "color oil sketch; the city’s church towers appear through the trees at right; best of a thin period"
+  },
+  {
+   "n": 25,
+   "file": "Bonsecours, Rouen, France-LCCN2001698685.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The city and the Seine from Bonsecours hill, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.1,
+    0.96,
+    0.92
+   ],
+   "focal": [
+    0.62,
+    0.4
+   ],
+   "why": "the classic panorama: river, islands and the cathedral spire; frame and caption cut"
+  },
+  {
+   "n": 31,
+   "file": "Rouen. Vu de la colline de Bon-Secours. - btv1b10051899b.jpg",
+   "y": 1940,
+   "lab": "1940",
+   "what": "The city from Bonsecours hill, pencil drawing (Rouen Municipal Library)",
+   "who": "Alexis de Perceval",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.03,
+    0.98,
+    0.84
+   ],
+   "focal": [
+    0.55,
+    0.4
+   ],
+   "why": "general view with the cathedral spire and the Seine; inscribed with the date ‘/9/40’; inscription strip cut"
+  },
+  {
+   "n": 33,
+   "file": "Rouen as seen from Le Gros Horloge tower 140215 1.jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The Palais de Justice and the cathedral from the Gros-Horloge tower, photograph",
+   "who": "DXR",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.56,
+    0.5
+   ],
+   "why": "sharp recent panorama over the old town; cathedral spire and Palais de Justice recognizable"
+  }
+ ],
+ "gaps": "P0: nothing. P2: no independent view (all Merian views carry the date 1620).",
+ "notes": "P1 alternative: #5 (also #3/#4, #10–#13) Merian’s large panorama ‘Rothomagus Rovan 1620’ (black and white; the plate is dated 1620, later reissued in Topographia Galliae 1657–63, so not used for P2); #1/#2/#8 Braun and Hogenberg vol. 3 bird’s-eye plan (1581). Skipped #17 ‘Vue de Rouen, about 1830’: the cathedral with a tall spire and the market boats look like Amiens, and Rouen had no spire between 1822 and the 1870s. Skipped #30 Pissarro: the ‘1920’ is the British Museum accession number; the etching is from the 1880s. Skipped #29 (date only ‘20th century’). #9 is a flat plan.",
+ "_reviewed": true
+}

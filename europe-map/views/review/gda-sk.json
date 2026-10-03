@@ -1,0 +1,76 @@
+{
+ "city": "Gdańsk",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.082,
+     0.091,
+     0.943,
+     0.905
+    ],
+    "focal": [
+     0.5,
+     0.42
+    ]
+   },
+   "reason": "crop includes the sheet margin and plate border at left, right and top; trim to the plate"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 17,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.25,
+     0.195,
+     0.786,
+     0.64
+    ],
+    "focal": [
+     0.5,
+     0.5
+    ]
+   },
+   "reason": "plate frame lines show on all four sides of the crop; trim inside the frame"
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "city is small on the horizon but skyline with St. Mary’s and the Town Hall tower is recognizable"
+  },
+  {
+   "n": 25,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 33,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.01,
+     0.115,
+     0.99,
+     0.99
+    ],
+    "focal": [
+     0.55,
+     0.5
+    ]
+   },
+   "reason": "postcard captions ‘Danzig’ and ‘Totalansicht’ are cut by the crop top; trim above them"
+  },
+  {
+   "n": 37,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

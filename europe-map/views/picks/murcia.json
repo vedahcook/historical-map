@@ -1,0 +1,71 @@
+{
+ "city": "Murcia",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Vista occidental de la Ciudad de Murcia.jpg",
+   "y": 1778,
+   "lab": "1778",
+   "what": "West view of the city, engraving in Bernardo Espinalt’s Atlante español",
+   "who": "Juan Fernando Palomino",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.045,
+    1,
+    0.77
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "cathedral tower, the old bridge over the Segura and the riverside quay; title and numbered legend cut"
+  },
+  {
+   "n": 4,
+   "file": "Murcia. Plaza de Palacio y Catedral LCCN2017660773.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The cathedral and Plaza del Palacio, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.022,
+    0.028,
+    0.978,
+    0.975
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "color view of the city’s landmark: the baroque cathedral front and its tower; gray border cut"
+  },
+  {
+   "n": 9,
+   "file": "Murcia.JPG",
+   "y": 2007,
+   "lab": "2007",
+   "what": "View from the Fuensanta sanctuary, photograph",
+   "who": "Mac",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.42,
+    0.45
+   ],
+   "why": "the city spread across the plain with the cathedral tower rising in the middle"
+  }
+ ],
+ "gaps": "P0–P2: no candidates; P5: none (the 1930–31 Mittelholzer aerials, #6 and #7, show Águilas, a different town)",
+ "notes": "#1 (Cartagena), #3 (Cantavieja, Aragon), #6/#7 (Águilas) and #10 (La Unión) are other places in or near the region, not the city. P4 alternative: #5, a Rijksmuseum albumen print (about 1885–92) of the town across the Segura with the cathedral tower small at left; a general view but black and white, with the city a thin strip. #9 is hazy and modest in size (2016 px); #11 (2007) is a broader view of the city in the valley but without recognizable landmarks.",
+ "_reviewed": true
+}

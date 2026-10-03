@@ -1,0 +1,13 @@
+{
+ "city": "Porto",
+ "checks": [
+  {
+   "n": 34,
+   "verdict": "fix",
+   "fix": {
+    "what": "Rooftops of the old town and the Douro, photograph"
+   },
+   "reason": "Genuine Porto view (category Rua dos Mercadores, tiled houses, river); the Grilos viewpoint is not in the record. Overcast but the only usable P6 view; crop is clean."
+  }
+ ]
+}

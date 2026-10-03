@@ -1,0 +1,25 @@
+{
+ "city": "Antakya (Antioch)",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "Cassas plate titled Antioche, Bab el-Medineh gate; only pre-1850 view; caption cut; date 1799 fine"
+  },
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "Matson view of Antioch from Mt. Silpius, right half of the stereo pair, label avoided; hazy but a genuine view from a height"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "Gadmer autochrome, 26 Oct 1921, general view; plate border cut"
+  },
+  {
+   "n": 13,
+   "verdict": "ok",
+   "reason": "Wide view over the city, 2011; record details match"
+  }
+ ]
+}

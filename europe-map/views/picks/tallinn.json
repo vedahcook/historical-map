@@ -1,0 +1,113 @@
+{
+ "city": "Tallinn",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Revalia ; Nerva - btv1b53235810v (1 of 2).jpg",
+   "y": 1645,
+   "lab": "about 1645",
+   "what": "Engraving after Matthäus Merian (Bibliothèque nationale de France)",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.026,
+    0.054,
+    0.972,
+    0.474
+   ],
+   "focal": [
+    0.554,
+    0.5
+   ],
+   "why": "true view from the harbor side; St. Olaf’s spire, the walls and Toompea castle, with a key; Reval half of the Reval/Narva plate"
+  },
+  {
+   "n": 4,
+   "file": "Aivazovsky - Reval 1845.jpg",
+   "y": 1845,
+   "lab": "1845",
+   "what": "The city from the sea, painting",
+   "who": "Ivan Aivazovsky",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.7,
+    0.6
+   ],
+   "why": "color view; Toompea castle, the cathedral and St. Olaf’s spires above the bay"
+  },
+  {
+   "n": 9,
+   "file": "Reval, general view, 1890 - 1900 - edited.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "General view, photochrom print",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.95
+   ],
+   "focal": [
+    0.6,
+    0.38
+   ],
+   "why": "color view of Toompea, the town wall towers and St. Olaf’s; cleaned copy of #8"
+  },
+  {
+   "n": 16,
+   "file": "Nikolai Triik. View on Tallinn.TKM 0234M.jpg",
+   "y": 1915,
+   "lab": "1915",
+   "what": "View toward St. Olaf’s Church, painting (Tartu Art Museum)",
+   "who": "Nikolai Triik",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "color view over roofs to St. Olaf’s spire; dated painting"
+  },
+  {
+   "n": 23,
+   "file": "Vistas panorámicas desde la iglesia de San Olaf, Tallinn, Estonia, 2012-08-05, DD 23.JPG",
+   "y": 2012,
+   "lab": "2012",
+   "what": "The old town and Toompea from St. Olaf’s Church, photograph",
+   "who": "Diego Delso",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "sharp high view; St. Nicholas’, the Alexander Nevsky Cathedral, Tall Hermann and the Dome Church"
+  }
+ ],
+ "gaps": "P0: nothing. P2: nothing usable (#2 Bodenehr, about 1740, copies the Merian view). Second P3/P4 views: none strong enough.",
+ "notes": "#1: BnF gives only ‘17th century’; the Merian Reval/Narva plate is dated 1638–1652 in different sources (Archontologia Cosmica or the Topographia), hence ‘about 1645’; trimmed to the Reval view (top half). #9: Commons gives 1896, but the LOC record says about 1890–1900, so ‘1890s’; bottom caption strip trimmed. #15 (Gartenlaube 1854) repeats the composition of Kügelgen’s painting #3 (about 1828), and #14 is a 1908 book reproduction of an 1828 painting by Johannes Hau, so neither used. P3 alternative: #3 Kügelgen, 1827–30, distant city across the bay (large, color). P5 alternative: #17 Adolf Purve, 1930s photograph of the skyline from the south (distant, black and white).",
+ "_reviewed": true
+}

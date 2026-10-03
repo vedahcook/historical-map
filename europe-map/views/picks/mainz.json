@@ -1,0 +1,134 @@
+{
+ "city": "Mainz",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Mainz Braun Hogenberg 1572.jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "View across the Rhine, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.05,
+    0.985,
+    0.9
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "colored riverfront skyline with the cathedral and labeled churches; red border cut"
+  },
+  {
+   "n": 16,
+   "file": "Ansicht von Mainz nach der Belagerung von 1793 (SM 6021z).png",
+   "y": 1793,
+   "lab": "1793",
+   "what": "The city and the Rhine after the siege of 1793, watercolor drawing",
+   "who": "Georg Melchior Kraus",
+   "lic": "PD",
+   "event": true,
+   "trim": [
+    0.015,
+    0.45,
+    0.62,
+    0.945
+   ],
+   "focal": [
+    0.68,
+    0.5
+   ],
+   "why": "color general view from the heights with citadel and cathedral, dated July 1793; trimmed to the city half"
+  },
+  {
+   "n": 18,
+   "file": "Carl Morgenstern - View of Mainz on the Rhine - M.Ob.509 MNW - National Museum in Warsaw.jpg",
+   "y": 1846,
+   "lab": "1846",
+   "what": "View over the Rhine with the cathedral, painting (National Museum in Warsaw)",
+   "who": "Carl Morgenstern",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0,
+    0.99,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.55
+   ],
+   "why": "color general view, cathedral and the bridge of boats recognizable"
+  },
+  {
+   "n": 24,
+   "file": "Mainz, towards the Rhine, the Rhine, Germany-LCCN2002714114.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The cathedral and the old town toward the Rhine, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.02,
+    0.98,
+    0.98
+   ],
+   "focal": [
+    0.65,
+    0.55
+   ],
+   "why": "color view over the roofs with the cathedral dominant and the Rhine bridge behind; LoC original rather than the Flickr copy #23"
+  },
+  {
+   "n": 33,
+   "file": "Blick vom Dom auf die Nordseite des Marktes (um 1930).jpg",
+   "y": 1930,
+   "lab": "about 1930",
+   "what": "Old town roofs seen from the cathedral, photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.32
+   ],
+   "why": "prewar old town from above with St. Quintin and distant towers, before the 1942–45 destruction"
+  },
+  {
+   "n": 36,
+   "file": "Mainz Theodor-Heuss-Bruecke blaue Stunde Panorama.jpg",
+   "y": 2013,
+   "lab": "2013",
+   "what": "The Rhine front with the cathedral at dusk, panorama photograph",
+   "who": "Arcalino",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0.1,
+    1,
+    0.95
+   ],
+   "focal": [
+    0.2,
+    0.55
+   ],
+   "why": "riverfront with the cathedral towers and the bridge; best of the modern options"
+  }
+ ],
+ "gaps": "P0: nothing (#1 is a page of imperial coats of arms); P2: only distant van Call views and copies, skipped",
+ "notes": "P1 alternative: #2 Merian 1633 (large, black and white, Swedish boat bridge and camp); B&H preferred for color. #13 (1657, Janssonius) re-issues Merian’s 1646 landward view; #11 (1726) is a copy; #21 (1759 optical print) copies the 1572 skyline. #15 Schütz is dated only by the painter’s life (1718–91). #16 is an event view (after the 1793 siege) and can be dropped if only ordinary views are wanted. #39 (2019 riverfront at dusk) is an alternative for P6 but does not show the cathedral.",
+ "_reviewed": true
+}

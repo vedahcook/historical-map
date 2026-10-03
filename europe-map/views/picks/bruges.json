@@ -1,0 +1,113 @@
+{
+ "city": "Bruges",
+ "picks": [
+  {
+   "n": 9,
+   "file": "Antoon van den Wijngaerde, View of Bruges. Drawing, 44,4 × 115,2 cm. Collectie Stad Antwerpen, Museum Plantin-Moretus (Printroom Collection, inv. PK.OT.0347.jpg",
+   "y": 1557,
+   "lab": "1557–58",
+   "what": "Panorama, pen and wash drawing (Museum Plantin-Moretus, Antwerp)",
+   "who": "Anton van den Wyngaerde",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.06,
+    0.98,
+    0.95
+   ],
+   "focal": [
+    0.57,
+    0.45
+   ],
+   "why": "eyewitness general view of the walled city with the Belfry and the Church of Our Lady; very large file; mount edges cut"
+  },
+  {
+   "n": 10,
+   "file": "Gezicht op Brugge, RP-P-AO-18-50.jpg",
+   "y": 1654,
+   "lab": "1654",
+   "what": "View from outside the walls, etching in Merian’s Topographia Circuli Burgundici",
+   "who": "Caspar Merian",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.082,
+    0.066,
+    0.953,
+    0.52
+   ],
+   "focal": [
+    0.45,
+    0.6
+   ],
+   "why": "clear skyline of towers and walls; sheet margins, color bar and the legend scroll below cut"
+  },
+  {
+   "n": 17,
+   "file": "Tessaro Borremans Hotel du Franc de Bruges R01.jpg",
+   "y": 1837,
+   "lab": "1837",
+   "what": "The Groenerei and the Liberty of Bruges, with the Belfry, colored lithograph in the Album pittoresque de Bruges",
+   "who": "Henri Borremans after Antonio Tessaro",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.042,
+    0.075,
+    0.958,
+    0.82
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "color canal scene with Gothic gables and the Belfry tower; title and captions cut"
+  },
+  {
+   "n": 23,
+   "file": "Canal and Belfry, Bruges, Belgium-LCCN2001697899.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Canal and Belfry, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.035,
+    0.975,
+    0.94
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "the classic canal view toward the Belfry; caption and frame cut"
+  },
+  {
+   "n": 31,
+   "file": "View of Bruges - panoramio.jpg",
+   "y": 2011,
+   "lab": "2011",
+   "what": "Roofs of the old town and the Belfry, photograph",
+   "who": "YvesSch",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.35,
+    0.4
+   ],
+   "why": "old town roofs with the Belfry rising behind; gray sky"
+  }
+ ],
+ "gaps": "P0: none (#1 is a fabric detail of van Eyck’s van der Paele Madonna). P5: only #30, left out for its date.",
+ "notes": "P1 alternatives: the Braun and Hogenberg bird’s-eye plan (best colored copy #7, 1572, small file; #2 1577 uncolored, large); the Wyngaerde panorama is the stronger true view. P2 alternatives: Josua de Grave’s pale drawing of the skyline dated 2 April 1677 (#11) and the anonymous Musea Brugge painting from Sint-Kruis (#12, about 1681–1700, city small in the distance). P4 alternative: #24, Groenerei (‘Quai vert’) with bridge and Belfry. #30 (Gilbert von Canal, Minnewater with the Church of Our Lady) is dated only ‘by 1927’, the year the painter died. P6 is weak: #34/#35 (2023 Markt) are crowded with tourists; #36 has scaffolding.",
+ "_reviewed": true
+}

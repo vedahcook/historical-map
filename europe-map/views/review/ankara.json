@@ -1,0 +1,23 @@
+{
+ "city": "Ankara",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "lab": "about 1750"
+   },
+   "reason": "Real view of the walled city and citadel (Rijksmuseum, 1700-1799); '18th century' does not read after 'From', so use 'about 1750'; only early view so keep"
+  },
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "1933-34 Schwarzenbach view over the new town; weak but a genuine general view; trim cuts the film edge"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "Sharp 2024 view from the castle; record details match"
+  }
+ ]
+}

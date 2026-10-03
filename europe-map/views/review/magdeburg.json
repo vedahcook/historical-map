@@ -1,0 +1,53 @@
+{
+ "city": "Magdeburg",
+ "checks": [
+  {
+   "n": 6,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.03,
+     0.04,
+     0.945,
+     0.955
+    ],
+    "focal": [
+     0.5,
+     0.3
+    ]
+   },
+   "reason": "plate border lines at right (x 475, 478 of 500) and paper margin fall inside the trim; trimmed in, focal moved up (title cartouche at bottom left remains, part of the plate)"
+  },
+  {
+   "n": 10,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.02,
+     0.055,
+     0.975,
+     0.935
+    ]
+   },
+   "reason": "double frame lines at top, bottom, left and right edges inside the trim; crop is about 45% of the sheet width (source is 5120 px)"
+  },
+  {
+   "n": 22,
+   "verdict": "ok",
+   "reason": "cathedral across the Elbe; caption below the trim"
+  },
+  {
+   "n": 30,
+   "verdict": "fix",
+   "reason": "clear view of cathedral and riverfront, dated 1929; one light column at the right edge cut",
+   "fix": {
+    "trim": [
+     0,
+     0,
+     0.996,
+     1
+    ]
+   }
+  }
+ ]
+}

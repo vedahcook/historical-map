@@ -1,0 +1,65 @@
+{
+ "city": "Strasbourg",
+ "checks": [
+  {
+   "n": 6,
+   "verdict": "replace",
+   "replace_with": 3,
+   "fix": {
+    "trim": [
+     0.012,
+     0.014,
+     0.992,
+     0.975
+    ],
+    "focal": [
+     0.58,
+     0.2
+    ],
+    "what": "Woodcut in Hartmann Schedel’s Nuremberg Chronicle"
+   },
+   "reason": "#6 is a colored fold-out spread: a gutter fold runs down the middle and the spire rises into a large white margin, so a 16:9 crop either shows blank paper or cuts the spire; #3 is the same labeled woodcut as a clean single frame with the full spire (uncolored); fix fields are for #3"
+  },
+  {
+   "n": 18,
+   "verdict": "ok",
+   "reason": "Merian view of Strasbourg with cathedral and fortifications; dated by first edition 1644; faint centre fold in the sky is acceptable"
+  },
+  {
+   "n": 25,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.13,
+     0.055,
+     0.868,
+     0.835
+    ]
+   },
+   "reason": "white margin at right (print ends at x 438 of 500) and a light top row fall inside the trim"
+  },
+  {
+   "n": 27,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.03,
+     0.03,
+     0.972,
+     0.925
+    ]
+   },
+   "reason": "photochrom frame line at left (x 10) and mat at right (x 489+) sit on the crop edges"
+  },
+  {
+   "n": 36,
+   "verdict": "ok",
+   "reason": "Place Kléber with the cathedral; album published after 1918, about 1920; spire tip touches the print’s top edge in the source"
+  },
+  {
+   "n": 45,
+   "verdict": "ok",
+   "reason": "sharp view from the cathedral platform; best P6 option"
+  }
+ ]
+}

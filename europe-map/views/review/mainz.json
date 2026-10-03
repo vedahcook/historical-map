@@ -1,0 +1,73 @@
+{
+ "city": "Mainz",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.015,
+     0.05,
+     0.985,
+     0.9
+    ],
+    "focal": [
+     0.5,
+     0.5
+    ]
+   },
+   "reason": "1572 (vol. 1) is right, but the red plate border at the bottom starts about 92.5% down, so a 95% trim kept it in the crop; the old focal also put the edge of the MOGUNTIA text cartouche in the crop's left corner. New crop is the cathedral skyline between the cartouche and the castle"
+  },
+  {
+   "n": 16,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.015,
+     0.45,
+     0.62,
+     0.945
+    ],
+    "focal": [
+     0.68,
+     0.5
+    ]
+   },
+   "reason": "Event view (after 1793 siege) is right and flagged, but the old crop included the ink frame at left, the frame line and paper margin at the bottom, and was two-thirds empty sky with the city a tiny strip; tighter trim to the horizon band shows the city, bastions and Rhine bend. Still a modest view"
+  },
+  {
+   "n": 18,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.01,
+     0,
+     0.99,
+     1
+    ]
+   },
+   "reason": "Morgenstern 1846 painting is a good pick; a 2-3 px canvas-edge margin runs along the left and right sides and would appear in the full-width crop"
+  },
+  {
+   "n": 24,
+   "verdict": "ok",
+   "reason": "LoC photochrom of the cathedral and old town; white border outside the trim; 1890s is right"
+  },
+  {
+   "n": 33,
+   "verdict": "fix",
+   "fix": {
+    "what": "Old town roofs seen from the cathedral, photograph"
+   },
+   "reason": "Crop shows the roofs and towers, not the market square (the square is in the lower third, outside the 16:9 crop); caption adjusted. About 1930 and PD fine"
+  },
+  {
+   "n": 36,
+   "verdict": "fix",
+   "fix": {
+    "what": "The Rhine front with the cathedral at dusk, panorama photograph"
+   },
+   "reason": "The 16:9 crop covers only the left 38% of the panorama (cathedral and riverfront); the bridge starts at about 40% and is not in it, so the caption should not name it"
+  }
+ ]
+}

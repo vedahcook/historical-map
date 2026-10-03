@@ -1,0 +1,15 @@
+{
+ "city": "Kharkiv",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "Photochrom of the Dormition bell tower and the Lopan bridge; captions are outside the crop; date and maker (P.Z. in the caption) fine."
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "Dormition bell tower across the Lopan, color photo 2012, CC BY 3.0 matches; crop clean."
+  }
+ ]
+}

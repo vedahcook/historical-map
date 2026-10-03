@@ -1,0 +1,50 @@
+{
+ "city": "Brescia",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Panorama della città di Brescia.jpg",
+   "y": 1882,
+   "lab": "1882",
+   "what": "General view, wood engraving",
+   "who": "Antonio Bonamore and Francesco Canedi",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "the city below its castle hill with the dome of the New Cathedral"
+  },
+  {
+   "n": 7,
+   "file": "Panorama di Brescia SO dalla Via Panoramica.jpg",
+   "y": 2020,
+   "lab": "2020",
+   "what": "The old town and the New Cathedral from the Via Panoramica, photograph",
+   "who": "Wolfgang Moroder",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "sharp high view over the old town’s rooftops with the cathedral dome"
+  }
+ ],
+ "gaps": "P0–P3 and P5: nothing usable",
+ "notes": "#1 and #2 are a Nuremberg Chronicle portrait of Bartholomew of Brescia, not a city view. #3 is a fish-market print (after Snyders, Houghton Hall) held in a Brescia museum, not Brescia. #4 (1897) shows only the monumental cemetery. #6, #8, #10 and #11 are weaker modern views (mostly greenery, suburbs or the newer town).",
+ "_reviewed": true
+}

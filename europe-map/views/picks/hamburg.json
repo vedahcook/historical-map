@@ -1,0 +1,134 @@
+{
+ "city": "Hamburg",
+ "picks": [
+  {
+   "n": 8,
+   "file": "PPN750079541 Hamburgum (1588).jpg",
+   "y": 1588,
+   "lab": "1588",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 4",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.01,
+    0.99,
+    0.99
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "colored, high-resolution bird’s-eye of the walled city on the Elbe with its church spires"
+  },
+  {
+   "n": 14,
+   "file": "PPN611193396 Hamburgum (1653).jpg",
+   "y": 1653,
+   "lab": "1653",
+   "what": "Bird’s-eye view, engraving in Merian’s Topographia Saxoniae Inferioris",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.01,
+    0.985,
+    0.975
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "buildings drawn in perspective inside the new star-shaped fortifications; Alster and Elbe shown"
+  },
+  {
+   "n": 20,
+   "file": "PPN787617350 Hamburgs Vergangenheit in bildlichen Darstellungen Ansicht von Hamburg von der Vorstadt St. Georg über die Alster 1830 (1965).jpg",
+   "y": 1830,
+   "lab": "1830",
+   "what": "The city seen across the Alster from St. Georg, colored lithograph",
+   "who": "Peter Suhr",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.01,
+    0.99,
+    0.935
+   ],
+   "focal": [
+    0.6,
+    0.62
+   ],
+   "why": "color view across the Alster to the city skyline; year 1830 is in the plate’s own caption"
+  },
+  {
+   "n": 22,
+   "file": "Alster Arcade, Hamburg, Germany-LCCN2002713676.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Alster Arcades, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.03,
+    0.98,
+    0.94
+   ],
+   "focal": [
+    0.42,
+    0.6
+   ],
+   "why": "broad color view over the water to the Alster Arcades with St. Michael’s tower"
+  },
+  {
+   "n": 31,
+   "file": "Hamburg 1945 by USAF.jpg",
+   "y": 1945,
+   "lab": "about 1945",
+   "what": "The bombed city seen across the harbor, photograph (US Air Force)",
+   "who": "US Air Force",
+   "lic": "PD",
+   "event": true,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.53,
+    0.4
+   ],
+   "why": "St. Michael’s and St. Nicholas spires above the war ruins; only well-dated P5 general view"
+  },
+  {
+   "n": 39,
+   "file": "2013-06-08 Highflyer HP L4729.JPG",
+   "y": 2013,
+   "lab": "2013",
+   "what": "The central station and the Outer Alster, aerial photograph",
+   "who": "Alchemist-hp",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "sharp high-resolution view over the city center to the Alster lake"
+  }
+ ],
+ "gaps": "P0: none. P5 has only an event view (1945 ruins); the NARA aerials #33/#34 are dated only by an uploader’s guess (‘likely around 1920’).",
+ "notes": "#29/#30 are Hamburg, Pennsylvania; #16 is a Bellotto capriccio held in Hamburg; #9 is Harburg (separate town in 1654); #11 is a 1675 reissue of the 1572 Braun and Hogenberg plate; #15 is an 1828 copy. #17 (1842 panorama of the ruins after the Great Fire) is a strong general view but an event; #19 (1780 optical view of the Jungfernstieg) is a possible second P3 if wanted. P6 alternative: #36, the classic spires-across-the-Binnenalster view, but backlit and dark.",
+ "_reviewed": true
+}

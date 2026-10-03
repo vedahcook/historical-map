@@ -1,0 +1,4922 @@
+{
+ "aleppo": [
+  {
+   "id": "aleppo-1537",
+   "y": 1537,
+   "lab": "about 1537",
+   "what": "Miniature in Matrakçı Nasuh’s account of Süleyman’s Iraq campaign (Istanbul University Library)",
+   "who": "Matrakçı Nasuh",
+   "lic": "PD",
+   "f": "Aleppo ca1537 by Matrakci Nasuh Istanbul University Library ms5964.png",
+   "w": 1234,
+   "h": 896
+  },
+  {
+   "id": "aleppo-1698",
+   "y": 1698,
+   "lab": "1698",
+   "what": "Panorama of the city with the citadel, etching after Cornelis de Bruyn in his Reizen (Rijksmuseum)",
+   "who": "Jan Luyken and Pieter Schenk after Cornelis de Bruyn",
+   "lic": "CC0",
+   "f": "Gezicht op Aleppo (rechter plaat), RP-P-OB-67.847.jpg",
+   "w": 1600,
+   "h": 717
+  },
+  {
+   "id": "aleppo-1754",
+   "y": 1754,
+   "lab": "1754",
+   "what": "The citadel above the city, colored engraving in Alexander Drummond’s Travels",
+   "who": "Johann Sebastian Müller after Alexander Drummond",
+   "lic": "PD",
+   "f": "Drummond, Alexander Drummond – Travels through different cities of Germany, Italy, Greece, and several parts of Asia, as far as the banks of the Euphrates, 1754 – BEIC 6247245 Aleppo.jpg",
+   "w": 1177,
+   "h": 857
+  },
+  {
+   "id": "aleppo-1844",
+   "y": 1844,
+   "lab": "1844",
+   "what": "View from the Antioch Gate toward the citadel, daguerreotype (Metropolitan Museum of Art)",
+   "who": "Joseph-Philibert Girault de Prangey",
+   "lic": "CC0",
+   "f": "Aleppo, Viewed from the Antioch Gate- MET DP-13897-041.jpg",
+   "w": 1185,
+   "h": 922
+  },
+  {
+   "id": "aleppo-1910",
+   "y": 1910,
+   "lab": "about 1910",
+   "what": "The city and the citadel from the southwest, photograph (Library of Congress)",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "f": "Aleppo and castle from southwest LCCN98506115.jpg",
+   "w": 973,
+   "h": 966
+  },
+  {
+   "id": "aleppo-1925",
+   "y": 1925,
+   "lab": "1925",
+   "what": "The citadel gate, photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "f": "ETH-BIB-Castell in Aleppo-Persienflug 1924-1925-LBS MH02-02-0018-AL-FL.tif",
+   "w": 1280,
+   "h": 876
+  },
+  {
+   "id": "aleppo-1996",
+   "y": 1996,
+   "lab": "1996",
+   "what": "View over the old city from the citadel, photograph",
+   "who": "Spielvogel",
+   "lic": "CC0",
+   "f": "Aleppo View from citadel. Spielvogel 1996.JPG",
+   "w": 1280,
+   "h": 853
+  }
+ ],
+ "algiers": [
+  {
+   "id": "algiers-1575",
+   "y": 1575,
+   "lab": "1575",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 2",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "View of Algiers and its Bay in the XVI century.jpg",
+   "w": 1195,
+   "h": 639
+  },
+  {
+   "id": "algiers-1665",
+   "y": 1665,
+   "lab": "1662–68",
+   "what": "View from the sea with De Ruyter’s ship De Liefde, painting (Rijksmuseum)",
+   "who": "Reinier Nooms",
+   "lic": "CC0",
+   "f": "Gezicht op Algiers met De Ruyters schip 'De Liefde', 1662, SK-A-1396.jpg",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "algiers-1762",
+   "y": 1762,
+   "lab": "1762",
+   "what": "View from the sea, etching (Rijksmuseum)",
+   "who": "Caspar Philips",
+   "lic": "CC0",
+   "f": "Gezicht op Algiers De Stad Algiers (titel op object), RP-P-1909-1656.jpg",
+   "w": 1460,
+   "h": 576
+  },
+  {
+   "id": "algiers-1818",
+   "y": 1818,
+   "lab": "1818",
+   "what": "View from the sea, aquatint (Library of Congress)",
+   "who": "unknown artist",
+   "lic": "PD",
+   "f": "View of Algiers from the Sea LCCN2006683443.tif",
+   "w": 1178,
+   "h": 827
+  },
+  {
+   "id": "algiers-1899",
+   "y": 1899,
+   "lab": "about 1899",
+   "what": "The harbor and the waterfront from the Admiralty, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "From the admiralty, Algiers, Algeria-LCCN2001697801.jpg",
+   "w": 1221,
+   "h": 888
+  },
+  {
+   "id": "algiers-1928",
+   "y": 1928,
+   "lab": "1928",
+   "what": "Aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "f": "ETH-BIB-Algier aus 500 m Höhe-Mittelmeerflug 1928-LBS MH02-04-0180.tif",
+   "w": 1280,
+   "h": 897
+  },
+  {
+   "id": "algiers-2014",
+   "y": 2014,
+   "lab": "2014",
+   "what": "View over the Casbah to the bay, photograph",
+   "who": "Dan Sloan",
+   "lic": "CC BY-SA 2.0",
+   "f": "Algers.jpg",
+   "w": 1280,
+   "h": 851
+  }
+ ],
+ "ani": [
+  {
+   "id": "ani-2006",
+   "y": 2006,
+   "lab": "2006",
+   "what": "Ruined church on the plateau of the abandoned city, photograph",
+   "who": "Dosseman",
+   "lic": "CC BY-SA 4.0",
+   "f": "Ani General view 3490.jpg",
+   "w": 1280,
+   "h": 850
+  }
+ ],
+ "ankara": [
+  {
+   "id": "ankara-1750",
+   "y": 1750,
+   "lab": "about 1750",
+   "what": "The walled city above the mohair workshops and market, painting (Rijksmuseum)",
+   "who": "unknown artist",
+   "lic": "PD",
+   "f": "Gezicht op Ankara Rijksmuseum SK-A-2055.jpeg",
+   "w": 1280,
+   "h": 739
+  },
+  {
+   "id": "ankara-1933",
+   "y": 1933,
+   "lab": "1933–34",
+   "what": "View over the new town being built, photograph (Swiss National Library)",
+   "who": "Annemarie Schwarzenbach",
+   "lic": "PD",
+   "f": "CH-NB - Türkei, Ankara- Stadtansicht - Annemarie Schwarzenbach - SLA-Schwarzenbach-A-5-02-073.jpg",
+   "w": 1166,
+   "h": 1280
+  },
+  {
+   "id": "ankara-2024",
+   "y": 2024,
+   "lab": "2024",
+   "what": "View from the castle over the old town to the modern center, photograph",
+   "who": "Diego Delso",
+   "lic": "CC BY-SA 4.0",
+   "f": "Vista de Ankara, Turquía, 2024-10-02, DD 05-07 HDR.jpg",
+   "w": 1280,
+   "h": 739
+  }
+ ],
+ "antakya-antioch": [
+  {
+   "id": "antakya-antioch-1799",
+   "y": 1799,
+   "lab": "1799",
+   "what": "The Bab el-Medineh gate seen from inside the city, engraving in Cassas’s Voyage pittoresque de la Syrie",
+   "who": "Louis-François Cassas",
+   "lic": "PD",
+   "f": "Louis-François Cassas, Antioche, appeler par les Arabes Anthakyeh, Vue de la pote Bab El Medynah.jpg",
+   "w": 1242,
+   "h": 809
+  },
+  {
+   "id": "antakya-antioch-1900",
+   "y": 1900,
+   "lab": "about 1900",
+   "what": "View from Mount Silpius over the town and plain, photograph (Matson Collection, Library of Congress)",
+   "who": "American Colony Photo Department",
+   "lic": "PD",
+   "f": "Antioch (Antakiyeh) and environs. View of Antioch from Mt. Silpius LOC matpc.02181.jpg",
+   "w": 572,
+   "h": 781
+  },
+  {
+   "id": "antakya-antioch-1921",
+   "y": 1921,
+   "lab": "1921",
+   "what": "General view of the town, autochrome (Archives de la Planète)",
+   "who": "Frédéric Gadmer",
+   "lic": "CC BY-SA 4.0",
+   "f": "Panorama sur la plaine d'Antioche - A30021S.jpg",
+   "w": 1184,
+   "h": 893
+  },
+  {
+   "id": "antakya-antioch-2011",
+   "y": 2011,
+   "lab": "2011",
+   "what": "View over the city from the hillside, photograph",
+   "who": "maarten sepp",
+   "lic": "CC BY-SA 2.0",
+   "f": "View of Antakya.jpg",
+   "w": 1280,
+   "h": 960
+  }
+ ],
+ "antwerp": [
+  {
+   "id": "antwerp-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1 (Metropolitan Museum of Art)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "CC0",
+   "f": "Anverpia from Braun and Hogenberg's Civitates Orbis Terrarum MET DP325824.jpg",
+   "w": 986,
+   "h": 686
+  },
+  {
+   "id": "antwerp-1654",
+   "y": 1654,
+   "lab": "1654",
+   "what": "View from the Scheldt, engraving in Merian’s Topographia Circuli Burgundici",
+   "who": "Caspar Merian",
+   "lic": "CC0",
+   "f": "Gezicht op Antwerpen Antwerpen (titel op object), RP-P-AO-17-24A.jpg",
+   "w": 1600,
+   "h": 326
+  },
+  {
+   "id": "antwerp-1843",
+   "y": 1843,
+   "lab": "1843",
+   "what": "The city and the riverfront from the left bank, panoramic lithograph",
+   "who": "after Egide Linnig",
+   "lic": "PD",
+   "f": "Egide Linnig - Panoramic view of the city and the wharf of Antwerp from the left bank.jpg",
+   "w": 1018,
+   "h": 263
+  },
+  {
+   "id": "antwerp-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Antwerp across the Scheldt, photochrom print",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "Antwerp across the Scheldt, photochrom.png",
+   "w": 1280,
+   "h": 934
+  },
+  {
+   "id": "antwerp-1919",
+   "y": 1919,
+   "lab": "1919",
+   "what": "General view over the roofs to the Scheldt, photograph (U.S. Army Signal Corps)",
+   "who": "U.S. Army Signal Corps",
+   "lic": "PD",
+   "f": "American First World War Official Exchange Collection Q64696.jpg",
+   "w": 1280,
+   "h": 936
+  },
+  {
+   "id": "antwerp-2014",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The cathedral and the Boerentoren from the left bank, photograph",
+   "who": "Steven Lek",
+   "lic": "CC BY-SA 4.0",
+   "f": "View of Antwerp from Linkeroever 2014.JPG",
+   "w": 1280,
+   "h": 853
+  }
+ ],
+ "augsburg": [
+  {
+   "id": "augsburg-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Beschreibung der Städt der Welt - Braun & Hogenberg - btv1b52512111k (128 of 378).jpg",
+   "w": 1098,
+   "h": 774
+  },
+  {
+   "id": "augsburg-1726",
+   "y": 1726,
+   "lab": "1726",
+   "what": "General view of the city, engraving in Les Forces de l’Europe, Asie, Afrique et Amérique (Rijksmuseum)",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "f": "Gezicht op Augsburg, 1726 La Ville d'Augspurg, dans la Souabe (titel op object) Les Forces de l'Europe, Asie, Afrique et Amerique Comme aussi les Cartes des Côtes de France et d'Espagne (serietitel , RP-P-OB-83.035-202.jpg",
+   "w": 666,
+   "h": 518
+  },
+  {
+   "id": "augsburg-1837",
+   "y": 1837,
+   "lab": "1837",
+   "what": "General view across the fields, steel engraving",
+   "who": "Julius Lange and Emil Höfer",
+   "lic": "PD",
+   "f": "Lange Städte in Deutschland Band 1 Nr. 51.jpg",
+   "w": 1172,
+   "h": 780
+  },
+  {
+   "id": "augsburg-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The town hall and the Perlach Tower, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "f": "Market place, Augsburg, Bavaria, Germany-LCCN2002696106.jpg",
+   "w": 968,
+   "h": 1280
+  }
+ ],
+ "barcelona": [
+  {
+   "id": "barcelona-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Panorama, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Braun Barcelona UBHD.jpg",
+   "w": 1600,
+   "h": 563
+  },
+  {
+   "id": "barcelona-1702",
+   "y": 1702,
+   "lab": "about 1702",
+   "what": "Profile view from the harbor, etching in Les Forces de l’Europe",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "f": "Gezicht op Barcelona, ca. 1702 Veue ou Profil de Barcelone Capitale de Catalogne (titel op object) Les Forces de l'Europe, Asie, Afrique et Amerique, ou description des principales villes avec leurs, RP-P-OB-83.034-261.jpg",
+   "w": 670,
+   "h": 396
+  },
+  {
+   "id": "barcelona-1806",
+   "y": 1806,
+   "lab": "1806",
+   "what": "General view of the city and harbor from the foot of Montjuïc, engraving in Alexandre de Laborde’s Voyage pittoresque et historique de l’Espagne",
+   "who": "Jacques Moulinier and François-Jacques Dequevauviller",
+   "lic": "PD",
+   "f": "1806-1820, Voyage pittoresque et historique de l'Espagne, tomo I, Vista general de la ciudad y del puerto de Barcelona tomada del pie de Montjouy.jpg",
+   "w": 824,
+   "h": 542
+  },
+  {
+   "id": "barcelona-1856",
+   "y": 1856,
+   "lab": "1856",
+   "what": "Bird’s-eye view from above the Mataró railway station, lithograph",
+   "who": "Alfred Guesdon",
+   "lic": "PD",
+   "f": "Barcelona en 1850.jpg",
+   "w": 1280,
+   "h": 824
+  },
+  {
+   "id": "barcelona-1930",
+   "y": 1930,
+   "lab": "1930–31",
+   "what": "The harbor and the old city, aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "f": "ETH-BIB-Hafen von Barcelona mit Sicht über die Altstadt-Tschadseeflug 1930-31-LBS MH02-08-0112.tif",
+   "w": 1280,
+   "h": 756
+  },
+  {
+   "id": "barcelona-2024",
+   "y": 2024,
+   "lab": "2024",
+   "what": "The city and harbor from over the sea, aerial photograph",
+   "who": "Joe Mabel",
+   "lic": "CC BY-SA 4.0",
+   "f": "Coastal aerial of Barcelona with Port-Nou in foreground.jpg",
+   "w": 1280,
+   "h": 444
+  }
+ ],
+ "bari": [
+  {
+   "id": "bari-1778",
+   "y": 1778,
+   "lab": "1778",
+   "what": "The town from the harbor on the south side, watercolor (Rijksmuseum)",
+   "who": "Louis Ducros",
+   "lic": "CC0",
+   "f": "Gezicht op de haven van Bari aan de zuidkant Vue du port de Bari, du côté du Midi (titel op object) Voyage en Italie, en Sicile et à Malte - 1778 (serietitel), RP-T-00-492-59B.jpg",
+   "w": 1216,
+   "h": 395
+  },
+  {
+   "id": "bari-1845",
+   "y": 1845,
+   "lab": "1845",
+   "what": "The town from the harbor, engraving",
+   "who": "Antonio Verico",
+   "lic": "CC BY-SA 4.0",
+   "f": "Veduta di Bari, capoluogo della provincia.jpg",
+   "w": 1139,
+   "h": 728
+  },
+  {
+   "id": "bari-1888",
+   "y": 1888,
+   "lab": "1888",
+   "what": "The old town and the new harbor, wood engraving in Le Cento Città d’Italia",
+   "who": "unknown artist",
+   "lic": "PD",
+   "f": "Panorama del Porto Nuovo di Bari (xilografia).jpg",
+   "w": 1280,
+   "h": 840
+  },
+  {
+   "id": "bari-1936",
+   "y": 1936,
+   "lab": "1936",
+   "what": "The eastern side of the city from the cathedral bell tower, photograph (Touring Club Italiano)",
+   "who": "unknown photographer",
+   "lic": "CC BY-SA 4.0",
+   "f": "Photo View of the eastern side of the city of Bari taken from the bell tower of the Cathedral 1936 - Touring Club Italiano s05986-01.jpg",
+   "w": 1091,
+   "h": 865
+  }
+ ],
+ "belgrade": [
+  {
+   "id": "belgrade-1578",
+   "y": 1578,
+   "lab": "1578",
+   "what": "Woodcut in Sebastian Münster’s Cosmographia",
+   "who": "Sebastian Münster",
+   "lic": "PD",
+   "f": "GRIECHISCH WEISSENBURG BELAGERT.jpg",
+   "w": 1204,
+   "h": 868
+  },
+  {
+   "id": "belgrade-1720",
+   "y": 1720,
+   "lab": "about 1720",
+   "what": "The Battle of Belgrade (1717), painting",
+   "who": "Antonio Calza",
+   "lic": "PD",
+   "f": "Antonio Calza - An Episode from the Battle of Belgrade.jpg",
+   "w": 1280,
+   "h": 1035,
+   "event": true
+  },
+  {
+   "id": "belgrade-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The riverfront and the cathedral across the Sava, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "f": "The landing-place near cathedral, Belgrade, Servia-LCCN2001698828.jpg",
+   "w": 1242,
+   "h": 883
+  },
+  {
+   "id": "belgrade-1934",
+   "y": 1934,
+   "lab": "1934",
+   "what": "Aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "f": "ETH-BIB-Belgrad-Weitere-LBS MH02-25-0027.tif",
+   "w": 1229,
+   "h": 853
+  },
+  {
+   "id": "belgrade-2012",
+   "y": 2012,
+   "lab": "2012",
+   "what": "Aerial photograph",
+   "who": "Wizardist",
+   "lic": "CC BY-SA 3.0",
+   "f": "Belgrade from LH1407.jpg",
+   "w": 1280,
+   "h": 960
+  }
+ ],
+ "birmingham": [
+  {
+   "id": "birmingham-1732",
+   "y": 1732,
+   "lab": "1732",
+   "what": "The East Prospect of Birmingham, engraving",
+   "who": "William Westley",
+   "lic": "PD",
+   "f": "Westley---East-Prospect-of-Birmingham-1732.jpg",
+   "w": 1018,
+   "h": 393
+  },
+  {
+   "id": "birmingham-1800",
+   "y": 1800,
+   "lab": "1800",
+   "what": "View from the Warwick Canal, engraving in James Bisset’s Magnificent Directory",
+   "who": "James Bisset",
+   "lic": "PD",
+   "f": "A poetic survey round Birmingham - James Bisset - 1800 - plate Q.jpg",
+   "w": 779,
+   "h": 373
+  },
+  {
+   "id": "birmingham-1870",
+   "y": 1870,
+   "lab": "about 1870",
+   "what": "The Town Hall and Christ Church, stereo photograph (Metropolitan Museum of Art)",
+   "who": "unknown photographer",
+   "lic": "CC0",
+   "f": "-Group of 6 Early Stereograph Views of Birmingham, England- MET DP72780.jpg",
+   "w": 512,
+   "h": 571
+  },
+  {
+   "id": "birmingham-2021",
+   "y": 2021,
+   "lab": "2021",
+   "what": "Panorama of the city center skyline, photograph",
+   "who": "Smileyface",
+   "lic": "CC BY-SA 2.0",
+   "f": "Panorama of Birmingham.jpg",
+   "w": 1600,
+   "h": 369
+  }
+ ],
+ "bologna": [
+  {
+   "id": "bologna-1588",
+   "y": 1588,
+   "lab": "1588",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 4",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Civitates orbis terrarum. Urbium praecipuarum totius mundi. Liber quartus (page 102).jpg",
+   "w": 988,
+   "h": 647
+  },
+  {
+   "id": "bologna-1663",
+   "y": 1663,
+   "lab": "1663",
+   "what": "Bird’s-eye view, engraving in Blaeu’s Theatrum Civitatum et Admirandorum Italiae",
+   "who": "Joan Blaeu",
+   "lic": "PD",
+   "f": "Joan Blaeu - Theatrum civitatum et admirandorum Italiae - page 087 Bononia Bologna 21 (46).jpg",
+   "w": 1093,
+   "h": 898
+  },
+  {
+   "id": "bologna-1883",
+   "y": 1883,
+   "lab": "about 1883",
+   "what": "Panorama over the rooftops, photograph (Hallwyl Museum, Stockholm)",
+   "who": "Pietro Poppi",
+   "lic": "PD",
+   "f": "Fotografi över Bologna - Hallwylska museet - 107380.tif",
+   "w": 1168,
+   "h": 807
+  },
+  {
+   "id": "bologna-1968",
+   "y": 1968,
+   "lab": "1968",
+   "what": "View over the rooftops, photograph (BEIC, Milan)",
+   "who": "Paolo Monti",
+   "lic": "CC BY-SA 4.0",
+   "f": "Paolo Monti - Servizio fotografico (Bologna, 1968) - BEIC 6330702.jpg",
+   "w": 1280,
+   "h": 850
+  },
+  {
+   "id": "bologna-2010",
+   "y": 2010,
+   "lab": "2010",
+   "what": "Panorama from San Michele in Bosco, photograph",
+   "who": "Qbert88",
+   "lic": "CC BY-SA 3.0",
+   "f": "Panorama di Bologna.jpg",
+   "w": 1268,
+   "h": 336
+  }
+ ],
+ "bordeaux": [
+  {
+   "id": "bordeaux-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Burdigala XIVe.jpg",
+   "w": 1203,
+   "h": 887
+  },
+  {
+   "id": "bordeaux-1661",
+   "y": 1661,
+   "lab": "1661",
+   "what": "View across the Garonne, engraving in Zeiller and Merian’s Topographia Galliae (Amsterdam Museum)",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "f": "Bordeaux, objectnr A 57374.jpg",
+   "w": 1242,
+   "h": 471
+  },
+  {
+   "id": "bordeaux-1759",
+   "y": 1759,
+   "lab": "1759",
+   "what": "The port seen from the Château Trompette, painting in the Ports of France series (Musée national de la Marine)",
+   "who": "Joseph Vernet",
+   "lic": "PD",
+   "f": "Deuxieme vue du port de Bordeaux prise du château Trompette.jpg",
+   "w": 1280,
+   "h": 806
+  },
+  {
+   "id": "bordeaux-1830",
+   "y": 1830,
+   "lab": "about 1830",
+   "what": "The city and the Pont de Pierre, colored view",
+   "who": "Ambroise Louis Garneray",
+   "lic": "PD",
+   "f": "Vue de la ville et du pont de Pierre - 1830.JPG",
+   "w": 1600,
+   "h": 677
+  },
+  {
+   "id": "bordeaux-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The city across the Garonne from La Bastide, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "From the Bastile, Bordeaux, France-LCCN2001697585.jpg",
+   "w": 1188,
+   "h": 886
+  },
+  {
+   "id": "bordeaux-1930",
+   "y": 1930,
+   "lab": "about 1930",
+   "what": "The old town and the Garonne from the Saint-Michel tower, postcard",
+   "who": "CIM",
+   "lic": "PD",
+   "f": "Bordeaux-Vue Générale sur la Garonne et le Pont Transbordeur vers 1930.jpg",
+   "w": 1184,
+   "h": 759
+  }
+ ],
+ "bratislava-pressburg": [
+  {
+   "id": "bratislava-pressburg-1588",
+   "y": 1588,
+   "lab": "1588",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 4",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Bratislava in 16th century.jpg",
+   "w": 1222,
+   "h": 740
+  },
+  {
+   "id": "bratislava-pressburg-1787",
+   "y": 1787,
+   "lab": "1787",
+   "what": "View across the Danube, colored engraving",
+   "who": "Joseph and Peter Schaffer",
+   "lic": "PD",
+   "f": "Joseph Schaffer, Die Königliche Freystadt Presburg in Ungarn (FL39696835 3700093).jpg",
+   "w": 986,
+   "h": 623
+  },
+  {
+   "id": "bratislava-pressburg-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Photochrom print",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "Pressburg.png",
+   "w": 1280,
+   "h": 888
+  },
+  {
+   "id": "bratislava-pressburg-1958",
+   "y": 1958,
+   "lab": "1958",
+   "what": "View from the castle over the old town, photograph (Fortepan)",
+   "who": "Fortepan / Nagy Gyula",
+   "lic": "CC BY-SA 3.0",
+   "f": "Látkép a várból, előtérben a Hal tér és a zsinagóga. Fortepan 51261.jpg",
+   "w": 1280,
+   "h": 778
+  },
+  {
+   "id": "bratislava-pressburg-2006",
+   "y": 2006,
+   "lab": "2006",
+   "what": "View from the SNP Bridge, photograph",
+   "who": "Stimoroll",
+   "lic": "PD",
+   "f": "View of Bratislava St1.JPG",
+   "w": 1280,
+   "h": 960
+  }
+ ],
+ "bremen": [
+  {
+   "id": "bremen-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "View across the Weser, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Beschreibung der Städt der Welt - Braun & Hogenberg - btv1b52512111k (083 of 378).jpg",
+   "w": 538,
+   "h": 239
+  },
+  {
+   "id": "bremen-1653",
+   "y": 1653,
+   "lab": "1653",
+   "what": "The market square with the town hall, the Roland and the Schütting, engraving in Merian’s Topographia Saxoniae Inferioris (Rijksmuseum)",
+   "who": "Matthäus Merian",
+   "lic": "CC0",
+   "f": "Gezicht op de markt te Bremen, RP-P-2018-1316.jpg",
+   "w": 998,
+   "h": 732
+  },
+  {
+   "id": "bremen-1845",
+   "y": 1845,
+   "lab": "1845",
+   "what": "View across the Weser with the Great Weser Bridge, colored engraving in Bechstein’s Album der Haupt- und Residenzstädte Europa’s",
+   "who": "unknown artist",
+   "lic": "PD",
+   "f": "BECHSTEIN(1845) p508 Blick auf Bremen.jpg",
+   "w": 1205,
+   "h": 687
+  },
+  {
+   "id": "bremen-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The cathedral seen from Kaiser-Wilhelm-Platz, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "f": "Emperor William's Place, Bremen, Germany-LCCN2002713646.jpg",
+   "w": 982,
+   "h": 1280
+  }
+ ],
+ "brescia": [
+  {
+   "id": "brescia-1882",
+   "y": 1882,
+   "lab": "1882",
+   "what": "General view, wood engraving",
+   "who": "Antonio Bonamore and Francesco Canedi",
+   "lic": "PD",
+   "f": "Panorama della città di Brescia.jpg",
+   "w": 1280,
+   "h": 899
+  },
+  {
+   "id": "brescia-2020",
+   "y": 2020,
+   "lab": "2020",
+   "what": "The old town and the New Cathedral from the Via Panoramica, photograph",
+   "who": "Wolfgang Moroder",
+   "lic": "CC BY-SA 3.0",
+   "f": "Panorama di Brescia SO dalla Via Panoramica.jpg",
+   "w": 1600,
+   "h": 677
+  }
+ ],
+ "bristol": [
+  {
+   "id": "bristol-1581",
+   "y": 1581,
+   "lab": "1581",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 3 (British Museum)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Brightstowe, vulgo- quondam venta, florentissimum Angliae Emporium (BM Y,5.162).jpg",
+   "w": 1178,
+   "h": 932
+  },
+  {
+   "id": "bristol-1760",
+   "y": 1760,
+   "lab": "about 1760",
+   "what": "Perspective view of the city, engraving (New York Public Library)",
+   "who": "unknown artist",
+   "lic": "PD",
+   "f": "Perspective view of the city of Bristol, in the counties of Somerset and Gloucester (NYPL Hades-268511-EM2949).tiff",
+   "w": 1100,
+   "h": 625
+  },
+  {
+   "id": "bristol-1837",
+   "y": 1837,
+   "lab": "1837",
+   "what": "View from Clifton Wood, painting (Bristol Museum and Art Gallery)",
+   "who": "William James Müller",
+   "lic": "PD",
+   "f": "William James Müller - Vue de Bristol depuis Clifton wood (1837).jpg",
+   "w": 1280,
+   "h": 650
+  },
+  {
+   "id": "bristol-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "St. Augustine’s Bridge and the harbor, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "f": "St. Augustine's Bridge, Bristol, England-LCCN2002696422.jpg",
+   "w": 1203,
+   "h": 900
+  },
+  {
+   "id": "bristol-1946",
+   "y": 1946,
+   "lab": "1946",
+   "what": "Aerial photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "f": "Bristol, 1946 showing bomb damage on bottom right of image.png",
+   "w": 1280,
+   "h": 694
+  },
+  {
+   "id": "bristol-2011",
+   "y": 2011,
+   "lab": "2011",
+   "what": "View from Windmill Hill, photograph",
+   "who": "Nick",
+   "lic": "CC BY 2.0",
+   "f": "Bristol - view from Windmill Hill.jpg",
+   "w": 1280,
+   "h": 602
+  }
+ ],
+ "bruges": [
+  {
+   "id": "bruges-1557",
+   "y": 1557,
+   "lab": "1557–58",
+   "what": "Panorama, pen and wash drawing (Museum Plantin-Moretus, Antwerp)",
+   "who": "Anton van den Wyngaerde",
+   "lic": "PD",
+   "f": "Antoon van den Wijngaerde, View of Bruges. Drawing, 44,4 × 115,2 cm. Collectie Stad Antwerpen, Museum Plantin-Moretus (Printroom Collection, inv. PK.OT.0347.jpg",
+   "w": 1600,
+   "h": 565
+  },
+  {
+   "id": "bruges-1654",
+   "y": 1654,
+   "lab": "1654",
+   "what": "View from outside the walls, etching in Merian’s Topographia Circuli Burgundici",
+   "who": "Caspar Merian",
+   "lic": "CC0",
+   "f": "Gezicht op Brugge, RP-P-AO-18-50.jpg",
+   "w": 1115,
+   "h": 338
+  },
+  {
+   "id": "bruges-1837",
+   "y": 1837,
+   "lab": "1837",
+   "what": "The Groenerei and the Liberty of Bruges, with the Belfry, colored lithograph in the Album pittoresque de Bruges",
+   "who": "Henri Borremans after Antonio Tessaro",
+   "lic": "PD",
+   "f": "Tessaro Borremans Hotel du Franc de Bruges R01.jpg",
+   "w": 1172,
+   "h": 835
+  },
+  {
+   "id": "bruges-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Canal and Belfry, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "Canal and Belfry, Bruges, Belgium-LCCN2001697899.jpg",
+   "w": 1216,
+   "h": 861
+  },
+  {
+   "id": "bruges-2011",
+   "y": 2011,
+   "lab": "2011",
+   "what": "Roofs of the old town and the Belfry, photograph",
+   "who": "YvesSch",
+   "lic": "CC BY-SA 3.0",
+   "f": "View of Bruges - panoramio.jpg",
+   "w": 1280,
+   "h": 851
+  }
+ ],
+ "bucharest": [
+  {
+   "id": "bucharest-1717",
+   "y": 1717,
+   "lab": "1717",
+   "what": "View of the town on the Dâmbovița, print published in Leipzig",
+   "who": "unknown artist",
+   "lic": "PD",
+   "f": "Bucharest, woodcut, published in Leipzig in 1717.jpg",
+   "w": 1280,
+   "h": 644
+  },
+  {
+   "id": "bucharest-1868",
+   "y": 1868,
+   "lab": "1868",
+   "what": "View over the rooftops from the Colțea Tower, painting (Bucharest Metropolitan Library)",
+   "who": "Amedeo Preziosi",
+   "lic": "PD",
+   "f": "Preziosi Colţei overview.jpg",
+   "w": 1280,
+   "h": 659
+  },
+  {
+   "id": "bucharest-1916",
+   "y": 1916,
+   "lab": "1916–17",
+   "what": "Aerial photograph of the city center and Cișmigiu Park, taken by the German army",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "f": "WWI Bucharest German panorama.jpg",
+   "w": 1280,
+   "h": 898
+  },
+  {
+   "id": "bucharest-2023",
+   "y": 2023,
+   "lab": "2023",
+   "what": "The Palace of the Parliament seen from the Metropolitan Hill, photograph",
+   "who": "Chainwit",
+   "lic": "CC BY-SA 4.0",
+   "f": "Bucharest view from Dealul Mitropoliei (2023).jpg",
+   "w": 1280,
+   "h": 960
+  }
+ ],
+ "bursa": [
+  {
+   "id": "bursa-1745",
+   "y": 1745,
+   "lab": "1745",
+   "what": "Engraving in Richard Pococke’s A Description of the East",
+   "who": "Richard Pococke",
+   "lic": "PD",
+   "f": "1745 view of Bursa (cropped).jpg",
+   "w": 1240,
+   "h": 475
+  },
+  {
+   "id": "bursa-1838",
+   "y": 1838,
+   "lab": "1838",
+   "what": "The Great Mosque (Ulu Camii) and part of the city, lithograph in Léon de Laborde’s Voyage de l’Asie Mineure",
+   "who": "Léon de Laborde",
+   "lic": "PD",
+   "f": "Brousse Vue de la grande mosquée et d'une partie de la ville - Laborde Léon Emmanuel Simon Joseph - 1838.jpg",
+   "w": 955,
+   "h": 630
+  },
+  {
+   "id": "bursa-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "View from the military school, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "Bursa.jpg",
+   "w": 1280,
+   "h": 896
+  },
+  {
+   "id": "bursa-2011",
+   "y": 2011,
+   "lab": "2011",
+   "what": "Panorama of the city center from Tophane, photograph",
+   "who": "Eusebius",
+   "lic": "CC BY 3.0",
+   "f": "Pano Bursa (cropped).jpg",
+   "w": 1600,
+   "h": 501
+  }
+ ],
+ "catania": [
+  {
+   "id": "catania-1598",
+   "y": 1598,
+   "lab": "1598",
+   "what": "Bird’s-eye view with Mount Etna, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 5",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Catana Urbs Siciliae.jpg",
+   "w": 1216,
+   "h": 814
+  },
+  {
+   "id": "catania-1845",
+   "y": 1845,
+   "lab": "1845",
+   "what": "View across the harbor to the cathedral and Etna, engraving in Zuccagni-Orlandini’s Corografia dell’Italia",
+   "who": "Francesco Corsi",
+   "lic": "CC BY-SA 4.0",
+   "f": "Veduta della città di Catania in Sicilia.jpg",
+   "w": 1129,
+   "h": 733
+  },
+  {
+   "id": "catania-1891",
+   "y": 1891,
+   "lab": "1891",
+   "what": "Panorama of the city from the sea, engraving in Le Cento Città d’Italia",
+   "who": "unknown artist",
+   "lic": "PD",
+   "f": "Catania – Panorama della citta (dal mare).jpg",
+   "w": 1600,
+   "h": 744
+  },
+  {
+   "id": "catania-2007",
+   "y": 2007,
+   "lab": "2007",
+   "what": "Aerial photograph of the historic center and harbor",
+   "who": "Giovanni from Catania",
+   "lic": "CC BY-SA 2.0",
+   "f": "Cataniavistaarea.jpg",
+   "w": 857,
+   "h": 1280
+  }
+ ],
+ "chi-in-u": [],
+ "cordoba": [
+  {
+   "id": "cordoba-1617",
+   "y": 1617,
+   "lab": "1617",
+   "what": "View across the Guadalquivir, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 6",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Theatri praecipvarvm totivs mvndi vrbivm - liber sextvs 1618 (97691020).jpg",
+   "w": 979,
+   "h": 474
+  },
+  {
+   "id": "cordoba-1668",
+   "y": 1668,
+   "lab": "1668–69",
+   "what": "Panorama, drawing for the account of Cosimo de’ Medici’s journey through Spain (National Library of Portugal)",
+   "who": "Pier Maria Baldi",
+   "lic": "PD",
+   "f": "Cordova (1668-1669).jpg",
+   "w": 1600,
+   "h": 368
+  },
+  {
+   "id": "cordoba-1855",
+   "y": 1855,
+   "lab": "1855",
+   "what": "The Roman bridge and the Mosque-Cathedral across the Guadalquivir, lithograph in Recuerdos y bellezas de España",
+   "who": "Francisco Javier Parcerisa",
+   "lic": "PD",
+   "f": "Vista de Córdoba - F. J. Parcerisa.png",
+   "w": 1075,
+   "h": 724
+  },
+  {
+   "id": "cordoba-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Roman bridge, the Calahorra tower and the Mosque-Cathedral, photochrom print (Library of Congress)",
+   "who": "Photoglob Co.",
+   "lic": "PD",
+   "f": "Córdoba. El Puente LCCN2017660396.jpg",
+   "w": 994,
+   "h": 722
+  },
+  {
+   "id": "cordoba-2012",
+   "y": 2012,
+   "lab": "2012",
+   "what": "The Mosque-Cathedral from the left bank of the Guadalquivir, photograph",
+   "who": "Humberto Moreno",
+   "lic": "CC BY 2.0",
+   "f": "Córdoba (7213447116).jpg",
+   "w": 1280,
+   "h": 857
+  }
+ ],
+ "d-sseldorf": [
+  {
+   "id": "d-sseldorf-1647",
+   "y": 1647,
+   "lab": "1647",
+   "what": "View across the Rhine from the west, engraving in Merian’s Topographia Westphaliae",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "f": "Merian d. Ä., Matthäus - Ansicht von Düsseldorf (1647).jpg",
+   "w": 1234,
+   "h": 473
+  },
+  {
+   "id": "d-sseldorf-1667",
+   "y": 1667,
+   "lab": "1667",
+   "what": "St. Andrew’s Church, painting (Mauritshuis, The Hague)",
+   "who": "Jan van der Heyden and Adriaen van de Velde",
+   "lic": "PD",
+   "f": "Jan van der Heyden and Adriaen van de Velde - View of Düsseldorf with the church of St. Andrew in the centre.jpg",
+   "w": 1200,
+   "h": 944
+  },
+  {
+   "id": "d-sseldorf-1840",
+   "y": 1840,
+   "lab": "about 1840",
+   "what": "The Rhine bank and old town from the Golzheim island, painting",
+   "who": "unknown artist",
+   "lic": "PD",
+   "f": "Stadtbild Düsseldorf von der Golzheimer Insel aus, um 1840, unbekannter Maler.jpg",
+   "w": 1280,
+   "h": 883
+  },
+  {
+   "id": "d-sseldorf-1896",
+   "y": 1896,
+   "lab": "about 1896",
+   "what": "The old town from across the Rhine, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "Düsseldorf from the Rhine, the Rhine, Germany-LCCN2002714104.jpg",
+   "w": 1228,
+   "h": 895
+  },
+  {
+   "id": "d-sseldorf-1962",
+   "y": 1962,
+   "lab": "1962",
+   "what": "Aerial view of the old town, the Oberkassel bridge and the Rhine bend, color slide",
+   "who": "unknown photographer",
+   "lic": "CC BY 4.0",
+   "f": "Rhein vor dem Ausbau 1962 bei Düsseldorf 1962-09-10 HBdia02187.jpg",
+   "w": 1280,
+   "h": 849
+  },
+  {
+   "id": "d-sseldorf-2014",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The Rhine front at night with the castle tower, St. Lambertus and the Rhine Tower, photograph",
+   "who": "Subhransu sekhar",
+   "lic": "CC BY-SA 4.0",
+   "f": "Düsseldorf at night.jpg",
+   "w": 1280,
+   "h": 600
+  }
+ ],
+ "donetsk": [],
+ "dublin": [
+  {
+   "id": "dublin-1778",
+   "y": 1778,
+   "lab": "1778–79",
+   "what": "The city from Phoenix Park, etching in Middleton’s New and Complete System of Geography (Rijksmuseum)",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "f": "Gezicht op Dublin, RP-P-2018-2021.jpg",
+   "w": 910,
+   "h": 544
+  },
+  {
+   "id": "dublin-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Sackville Street (O’Connell Street) from O’Connell Bridge, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "Sackville Street and O'Connell Bridge, Dublin. County Dublin, Ireland-LCCN2002717398.tif",
+   "w": 1216,
+   "h": 878
+  }
+ ],
+ "edirne": [
+  {
+   "id": "edirne-2012",
+   "y": 2012,
+   "lab": "2012",
+   "what": "View from a minaret of the Selimiye Mosque, photograph",
+   "who": "Ggia",
+   "lic": "CC BY-SA 3.0",
+   "f": "20120604 Edirne view from the top of the Minaret of Selimiye Mosque Edirne Turkey Panoramic.jpg",
+   "w": 1344,
+   "h": 311
+  }
+ ],
+ "erfurt": [
+  {
+   "id": "erfurt-1493",
+   "y": 1493,
+   "lab": "1493",
+   "what": "Woodcut in Hartmann Schedel’s Nuremberg Chronicle",
+   "who": "Michael Wolgemut and Wilhelm Pleydenwurff",
+   "lic": "PD",
+   "f": "Nuremberg chronicles - ERFORDIA.png",
+   "w": 914,
+   "h": 810
+  },
+  {
+   "id": "erfurt-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Distant view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Weimaria ; Iena Thuringiae urbs... ; Erdfordia, magnifica atq. celeberrima Thuringorum urbs - btv1b531789035 (1 of 2).jpg",
+   "w": 492,
+   "h": 200
+  },
+  {
+   "id": "erfurt-1650",
+   "y": 1650,
+   "lab": "1650",
+   "what": "Bird’s-eye plan of the fortified city, engraving in Merian’s Topographia Superioris Saxoniae",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "f": "Erfurt-1650-Merian.jpg",
+   "w": 1254,
+   "h": 859
+  },
+  {
+   "id": "erfurt-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The cathedral and St. Severus over the city, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "f": "Dom Erfurt 1900.jpg",
+   "w": 1280,
+   "h": 914
+  },
+  {
+   "id": "erfurt-2018",
+   "y": 2018,
+   "lab": "2018",
+   "what": "View from the tower of the Ägidienkirche, photograph",
+   "who": "Jannis Raabe",
+   "lic": "CC BY 4.0",
+   "f": "2018-03 Erfurt von der Ägidienkirche 03.jpg",
+   "w": 1280,
+   "h": 719
+  }
+ ],
+ "frankfurt": [
+  {
+   "id": "frankfurt-1618",
+   "y": 1618,
+   "lab": "about 1618",
+   "what": "View from the southwest, engraving",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "f": "Frankfurt Am Main-Matthaeus Merian der Aeltere-Ansicht von Suedwesten.jpg",
+   "w": 1600,
+   "h": 353
+  },
+  {
+   "id": "frankfurt-1658",
+   "y": 1658,
+   "lab": "1658",
+   "what": "The Römer and the Römerberg, engraving in the book on the 1658 coronation",
+   "who": "Caspar Merian",
+   "lic": "PD",
+   "f": "Frankfurt Am Main-Caspar Merian-BUAAKUCEWUCA-111 112-Curia Francofurtensis ad Moenum cum Foro Piscario Roemer oder Rathhauss zu Franckfurt am Mayn Sampbt dem Platz der Roemerberg genant.jpg",
+   "w": 1228,
+   "h": 785
+  },
+  {
+   "id": "frankfurt-1758",
+   "y": 1758,
+   "lab": "1751–65",
+   "what": "View over Sachsenhausen to the city and the Taunus, painting (Städel Museum)",
+   "who": "German painter of the 18th century",
+   "lic": "PD",
+   "f": "View of Frankfurt Overlooking Sachsenhausen (SM 1047).png",
+   "w": 1242,
+   "h": 902
+  },
+  {
+   "id": "frankfurt-1845",
+   "y": 1845,
+   "lab": "about 1845",
+   "what": "The city from the Main, steel engraving in Braunfels, Die Mainufer",
+   "who": "after Fritz Bamberger",
+   "lic": "PD",
+   "f": "Frankfurt am Main um 1845 Stahlstich nach Fritz Bamberger.jpg",
+   "w": 1280,
+   "h": 787
+  },
+  {
+   "id": "frankfurt-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Römerberg with the Justice Fountain and St. Nicholas Church, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "f": "Romerberg and Nicholas Church, Frankfort on Main (i.e. Frankfurt am Main), Germany-LCCN2002713664.tif",
+   "w": 1242,
+   "h": 884
+  },
+  {
+   "id": "frankfurt-1935",
+   "y": 1935,
+   "lab": "about 1935",
+   "what": "The Main and the city from the west, aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "f": "ETH-BIB-Frankfurt am Main-Weitere-LBS MH02-46-0008.tif",
+   "w": 1024,
+   "h": 703
+  },
+  {
+   "id": "frankfurt-2013",
+   "y": 2013,
+   "lab": "2013",
+   "what": "The skyline and the cathedral across the Main at dusk, photograph",
+   "who": "Martin Falbisoner",
+   "lic": "CC BY-SA 3.0",
+   "f": "Frankfurt at Dusk - 3.JPG",
+   "w": 1280,
+   "h": 960
+  }
+ ],
+ "gda-sk": [
+  {
+   "id": "gda-sk-1575",
+   "y": 1575,
+   "lab": "1575",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 2",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Dantzigt. 1573 (60783973).jpg",
+   "w": 1102,
+   "h": 765
+  },
+  {
+   "id": "gda-sk-1652",
+   "y": 1652,
+   "lab": "1652",
+   "what": "Panorama, engraving in Merian’s Topographia",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "f": "Dantiscum - btv1b53235797x (2 of 3).jpg",
+   "w": 1600,
+   "h": 621
+  },
+  {
+   "id": "gda-sk-1765",
+   "y": 1765,
+   "lab": "about 1765",
+   "what": "The Highland Gate with St. Mary’s and the Town Hall tower, etching from 50 Prospecte von Danzig",
+   "who": "Matthäus Deisch",
+   "lic": "PD",
+   "f": "50 Prospecte von Danzig sind zu haben bey Matthaus Deisch. przedm. 10 Julius 1765 (498714).jpg",
+   "w": 686,
+   "h": 370
+  },
+  {
+   "id": "gda-sk-1829",
+   "y": 1829,
+   "lab": "1829",
+   "what": "View of Danzig from the ramparts, painting",
+   "who": "Friedrich Eduard Meyerheim",
+   "lic": "PD",
+   "f": "Eduard Meyerheim Widok Gdańska.jpg",
+   "w": 1127,
+   "h": 887
+  },
+  {
+   "id": "gda-sk-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Long Market, Town Hall and St. Mary’s, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "Langen Market and Court House, Danzig, West Prussia, Germany (i.e., Gdańsk, Poland)-LCCN2002714025.tif",
+   "w": 1240,
+   "h": 890
+  },
+  {
+   "id": "gda-sk-1916",
+   "y": 1916,
+   "lab": "about 1916",
+   "what": "General view, colored postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "f": "Danzig. Totalansicht.jpg",
+   "w": 1254,
+   "h": 741
+  },
+  {
+   "id": "gda-sk-2010",
+   "y": 2010,
+   "lab": "2010",
+   "what": "St. Mary’s Church and the Town Hall tower, photograph",
+   "who": "Ragesoss",
+   "lic": "CC BY 3.0",
+   "f": "View of Gdańsk from dorm 6 at Wikimania 2010.jpg",
+   "w": 1280,
+   "h": 853
+  }
+ ],
+ "genoa": [
+  {
+   "id": "genoa-1493",
+   "y": 1493,
+   "lab": "1493",
+   "what": "Woodcut in Hartmann Schedel’s Nuremberg Chronicle",
+   "who": "Michael Wolgemut and Wilhelm Pleydenwurff",
+   "lic": "PD",
+   "f": "Genova1493.png",
+   "w": 1250,
+   "h": 1071
+  },
+  {
+   "id": "genoa-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Georg Braun-Frans Hogenberg -Genua Ligurum domina (cropped-Genua).jpg",
+   "w": 1600,
+   "h": 517
+  },
+  {
+   "id": "genoa-1704",
+   "y": 1704,
+   "lab": "1704",
+   "what": "Bird’s-eye view from the sea, engraving in Mortier’s Nouveau Théâtre de l’Italie",
+   "who": "Bastiaen Stopendael after Alessandro Baratta",
+   "lic": "PD",
+   "f": "Bastian Stoopendal, Pieter Mortier, Alessandro Baratta, Veduta di Genova, fine XVII secolo.jpg",
+   "w": 1600,
+   "h": 701
+  },
+  {
+   "id": "genoa-1845",
+   "y": 1845,
+   "lab": "1845",
+   "what": "The city seen from the Darsena harbor, etching",
+   "who": "Leonardo De Vigni",
+   "lic": "CC BY 4.0",
+   "f": "Veduta di Genova dalla darsena (acquaforte).jpg",
+   "w": 1191,
+   "h": 806
+  },
+  {
+   "id": "genoa-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Piazza Acquaverde and the Columbus monument, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "CC BY 2.0",
+   "f": "Flickr - …trialsanderrors - Piazza Acquaverde, Genoa, Italy, ca. 1895.jpg",
+   "w": 1280,
+   "h": 875
+  },
+  {
+   "id": "genoa-1922",
+   "y": 1922,
+   "lab": "1922",
+   "what": "Rooftops of the old city looking east, press photograph (Agence Meurisse)",
+   "who": "Agence Meurisse",
+   "lic": "PD",
+   "f": "Gênes - vue panoramique du côté du levant - btv1b90546371.jpg",
+   "w": 1159,
+   "h": 854
+  },
+  {
+   "id": "genoa-2024",
+   "y": 2024,
+   "lab": "2024",
+   "what": "The city and harbor from above, photograph",
+   "who": "Superchilum",
+   "lic": "CC BY-SA 4.0",
+   "f": "View of Genoa from the archiepiscopal seminary 003.JPG",
+   "w": 1280,
+   "h": 960
+  }
+ ],
+ "ghent": [
+  {
+   "id": "ghent-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1 (Rijksmuseum)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "CC0",
+   "f": "Plattegrond van Gent, RP-P-2019-2579.jpg",
+   "w": 1127,
+   "h": 799
+  },
+  {
+   "id": "ghent-1654",
+   "y": 1654,
+   "lab": "1654",
+   "what": "Etching in Merian’s Topographia (Rijksmuseum)",
+   "who": "Caspar Merian",
+   "lic": "CC0",
+   "f": "Gezicht op Gent Gent (titel op object), RP-P-AO-18-86.jpg",
+   "w": 1600,
+   "h": 377
+  },
+  {
+   "id": "ghent-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "St. Nicholas’ Church and the Korenmarkt, with the belfry behind, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "St. Nicolas Church, Ghent, Belgium-LCCN2001697934.jpg",
+   "w": 1211,
+   "h": 889
+  },
+  {
+   "id": "ghent-2012",
+   "y": 2012,
+   "lab": "2012",
+   "what": "Guild houses along the Lys in the old town, photograph",
+   "who": "Michael Schmalenstroer",
+   "lic": "CC BY-SA 3.0",
+   "f": "Panorama of Ghent, Belgium.jpg",
+   "w": 1600,
+   "h": 660
+  }
+ ],
+ "glasgow": [
+  {
+   "id": "glasgow-1700",
+   "y": 1700,
+   "lab": "about 1700",
+   "what": "View from the south across the Clyde, engraving (Rijksmuseum)",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "f": "Gezicht op Glasgow, RP-P-2018-1932.jpg",
+   "w": 1139,
+   "h": 552
+  },
+  {
+   "id": "glasgow-1760",
+   "y": 1760,
+   "lab": "1760",
+   "what": "View from the south across the Clyde, engraving (New York Public Library)",
+   "who": "unknown artist",
+   "lic": "PD",
+   "f": "Perspective view of the City of Glasgow, in the county of Clydesdale (NYPL Hades-268405-1253246).tiff",
+   "w": 1098,
+   "h": 609
+  },
+  {
+   "id": "glasgow-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The cathedral from the Necropolis, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "f": "Cathedral, Glasgow, Scotland-LCCN2001706003.jpg",
+   "w": 1242,
+   "h": 906
+  },
+  {
+   "id": "glasgow-1957",
+   "y": 1957,
+   "lab": "1957",
+   "what": "Stobcross Quay and the Finnieston Crane, photograph",
+   "who": "Ben Brooksbank",
+   "lic": "CC BY-SA 2.0",
+   "f": "Stobcross Quay and the Finnieston Crane - geograph.org.uk - 2182047.jpg",
+   "w": 1024,
+   "h": 705
+  },
+  {
+   "id": "glasgow-2008",
+   "y": 2008,
+   "lab": "2008",
+   "what": "View over the city from Queen’s Park, photograph",
+   "who": "John Lindie",
+   "lic": "CC BY 2.0",
+   "f": "View of Glasgow from Queens Park.jpg",
+   "w": 1280,
+   "h": 960
+  }
+ ],
+ "gothenburg": [
+  {
+   "id": "gothenburg-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Great Harbor Canal with the German Church, photochrom print (Library of Congress)",
+   "who": "Photoglob Co.",
+   "lic": "PD",
+   "f": "Göteborg. Norra och Södra Hamngatorne LCCN2017660907.jpg",
+   "w": 978,
+   "h": 695
+  },
+  {
+   "id": "gothenburg-1965",
+   "y": 1965,
+   "lab": "1965",
+   "what": "View over the rooftops to the harbor and shipyards, color photograph",
+   "who": "Andy Eick",
+   "lic": "CC BY 2.0",
+   "f": "Goteborg and harbor.jpg",
+   "w": 1280,
+   "h": 860
+  },
+  {
+   "id": "gothenburg-2016",
+   "y": 2016,
+   "lab": "2016",
+   "what": "View over Korsvägen and the city center from the Liseberg wheel, photograph",
+   "who": "Netha Hussain",
+   "lic": "CC BY-SA 4.0",
+   "f": "View of Gothenburg city from Lisberg giant wheel.jpg",
+   "w": 1280,
+   "h": 960
+  }
+ ],
+ "granada": [
+  {
+   "id": "granada-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1 (Rijksmuseum)",
+   "who": "Georg Braun and Frans Hogenberg, after Joris Hoefnagel",
+   "lic": "CC0",
+   "f": "Gezicht op de stad Granada, BI-1956-1074-50.jpg",
+   "w": 1139,
+   "h": 840
+  },
+  {
+   "id": "granada-1694",
+   "y": 1694,
+   "lab": "1694",
+   "what": "The Alhambra and the Torres Bermejas above the city, engraving in Theatrum Hispaniae (Rijksmuseum)",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "f": "Gezicht op Granada en de gebouwen van het Alhambra, BI-1956-1074-54-1.jpg",
+   "w": 1036,
+   "h": 653
+  },
+  {
+   "id": "granada-1836",
+   "y": 1836,
+   "lab": "1836",
+   "what": "Towers of the Alhambra seen from a balcony, tinted lithograph (British Museum)",
+   "who": "unknown artist",
+   "lic": "PD",
+   "f": "Granada (BM 1948,0410.133).jpg",
+   "w": 918,
+   "h": 1280
+  },
+  {
+   "id": "granada-1899",
+   "y": 1899,
+   "lab": "about 1899",
+   "what": "The Alhambra and the Sierra Nevada over the Albaicín, photochrom print (Library of Congress)",
+   "who": "Photoglob Co.",
+   "lic": "PD",
+   "f": "Granada. Vista generale de la Alhambra y Sierra Nevada LCCN2017660753.jpg",
+   "w": 1228,
+   "h": 908
+  },
+  {
+   "id": "granada-1932",
+   "y": 1932,
+   "lab": "1932",
+   "what": "Aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "f": "ETH-BIB-Granada-Nordafrikaflug 1932-LBS MH02-13-0575.tif",
+   "w": 1050,
+   "h": 828
+  },
+  {
+   "id": "granada-2018",
+   "y": 2018,
+   "lab": "2018",
+   "what": "The Alhambra from the Mirador de San Nicolás, photograph",
+   "who": "tinman6",
+   "lic": "CC BY-SA 2.0",
+   "f": "Evening view of Granada.jpg",
+   "w": 1280,
+   "h": 725
+  }
+ ],
+ "hamburg": [
+  {
+   "id": "hamburg-1588",
+   "y": 1588,
+   "lab": "1588",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 4",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "PPN750079541 Hamburgum (1588).jpg",
+   "w": 1254,
+   "h": 885
+  },
+  {
+   "id": "hamburg-1653",
+   "y": 1653,
+   "lab": "1653",
+   "what": "Bird’s-eye view, engraving in Merian’s Topographia Saxoniae Inferioris",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "f": "PPN611193396 Hamburgum (1653).jpg",
+   "w": 1235,
+   "h": 1030
+  },
+  {
+   "id": "hamburg-1830",
+   "y": 1830,
+   "lab": "1830",
+   "what": "The city seen across the Alster from St. Georg, colored lithograph",
+   "who": "Peter Suhr",
+   "lic": "PD",
+   "f": "PPN787617350 Hamburgs Vergangenheit in bildlichen Darstellungen Ansicht von Hamburg von der Vorstadt St. Georg über die Alster 1830 (1965).jpg",
+   "w": 1254,
+   "h": 871
+  },
+  {
+   "id": "hamburg-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Alster Arcades, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "f": "Alster Arcade, Hamburg, Germany-LCCN2002713676.jpg",
+   "w": 1228,
+   "h": 875
+  },
+  {
+   "id": "hamburg-1945",
+   "y": 1945,
+   "lab": "about 1945",
+   "what": "The bombed city seen across the harbor, photograph (US Air Force)",
+   "who": "US Air Force",
+   "lic": "PD",
+   "f": "Hamburg 1945 by USAF.jpg",
+   "w": 1600,
+   "h": 591,
+   "event": true
+  },
+  {
+   "id": "hamburg-2013",
+   "y": 2013,
+   "lab": "2013",
+   "what": "The central station and the Outer Alster, aerial photograph",
+   "who": "Alchemist-hp",
+   "lic": "CC BY-SA 3.0",
+   "f": "2013-06-08 Highflyer HP L4729.JPG",
+   "w": 1280,
+   "h": 833
+  }
+ ],
+ "hanover": [
+  {
+   "id": "hanover-1641",
+   "y": 1641,
+   "lab": "1641",
+   "what": "View from the northeast, engraving",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "f": "1641 erstmals veröffentlichter Kupferstich Hannover vom Nordosten, Matthäus Merian.jpg",
+   "w": 1600,
+   "h": 450
+  },
+  {
+   "id": "hanover-1730",
+   "y": 1730,
+   "lab": "about 1730",
+   "what": "View from the southwest across the Ihme, engraving",
+   "who": "Friedrich Bernhard Werner",
+   "lic": "CC BY-SA 3.0",
+   "f": "Friedrich Bernhard Werner, Ansicht der Stadt Hannover von Südwesten mit Blick über die Ihme, Kupferstich um 1730, b1, Der kleine Werner, Abdruck kpl. Druckplatte mit Künstlermonogramm, 600dpi.jpg",
+   "w": 1600,
+   "h": 445
+  },
+  {
+   "id": "hanover-1839",
+   "y": 1839,
+   "lab": "1839",
+   "what": "View from the Lindener Berg, steel engraving",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "f": "Gezicht op Hannover vanuit het zuidwesten, RP-P-2018-1368-1.jpg",
+   "w": 709,
+   "h": 486
+  },
+  {
+   "id": "hanover-1854",
+   "y": 1854,
+   "lab": "about 1854",
+   "what": "Bird’s-eye view over the Waterlooplatz, etching",
+   "who": "Adolf Eltzner",
+   "lic": "CC0",
+   "f": "Gezicht op Hannover Hannover aus der vogelschau (titel op object), RP-P-2018-971.jpg",
+   "w": 955,
+   "h": 637
+  }
+ ],
+ "helsinki": [
+  {
+   "id": "helsinki-1848",
+   "y": 1848,
+   "lab": "1845–52",
+   "what": "The city from the northwest, lithograph in Topelius’s Finland framställdt i teckningar",
+   "who": "Magnus von Wright",
+   "lic": "PD",
+   "f": "Helsingfors från N.W. - Magnus von Wright - Finland framställdt i teckningar - 41.jpg",
+   "w": 1117,
+   "h": 682
+  },
+  {
+   "id": "helsinki-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The South Harbor and the Uspenski Cathedral, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "The Russian cathedral and the harbor, Helsingfors, Russia, i.e., Helsinki, Finland-LCCN2001697409.jpg",
+   "w": 1237,
+   "h": 859
+  },
+  {
+   "id": "helsinki-1938",
+   "y": 1938,
+   "lab": "1938",
+   "what": "The city center looking north, photograph (Helsinki City Museum)",
+   "who": "Hugo Sundström",
+   "lic": "CC BY 4.0",
+   "f": "View from Helsinki 1938 (6501B; JOKAHBL3B I52-1).tif",
+   "w": 1280,
+   "h": 892
+  },
+  {
+   "id": "helsinki-2010",
+   "y": 2010,
+   "lab": "2010",
+   "what": "Aerial view from a hot-air balloon, photograph",
+   "who": "MKFI",
+   "lic": "PD",
+   "f": "Töölönlahti area from air.JPG",
+   "w": 1280,
+   "h": 960
+  }
+ ],
+ "i-zmir": [
+  {
+   "id": "i-zmir-1705",
+   "y": 1705,
+   "lab": "1687–1723",
+   "what": "Smyrna and its harbor, painting (Rijksmuseum)",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "f": "Gezicht op Smyrna met op de voorgrond de ontvangst van de Nederlandse consul Daniël Jan Baron de Hochepied (1657-1723) in de Divan, SK-A-4085.jpg",
+   "w": 1280,
+   "h": 501
+  },
+  {
+   "id": "i-zmir-1779",
+   "y": 1779,
+   "lab": "1779",
+   "what": "The city from the sea with Mount Pagos, painting (Rijksmuseum)",
+   "who": "N. Knop",
+   "lic": "PD",
+   "f": "Gezicht op Smyrna Rijksmuseum SK-A-3947.jpeg",
+   "w": 1280,
+   "h": 716
+  },
+  {
+   "id": "i-zmir-1829",
+   "y": 1829,
+   "lab": "1829",
+   "what": "The town and bay from the sea, painting (Peabody Essex Museum)",
+   "who": "Raffael Corsini",
+   "lic": "PD",
+   "f": "View of the Town and Bay of Smyrna (1829) by Raffael Corsini (PEM M25790).jpg",
+   "w": 1280,
+   "h": 564
+  },
+  {
+   "id": "i-zmir-1862",
+   "y": 1862,
+   "lab": "1862",
+   "what": "The town and harbor from the hillside, photograph",
+   "who": "Francis Bedford",
+   "lic": "PD",
+   "f": "İzmir 18 May 1862.jpg",
+   "w": 1280,
+   "h": 674
+  },
+  {
+   "id": "i-zmir-1924",
+   "y": 1924,
+   "lab": "1924",
+   "what": "The harbor, photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "f": "ETH-BIB-Hafen von Smyrna-Persienflug 1924-1925-LBS MH02-02-0006-AL-FL.tif",
+   "w": 1280,
+   "h": 905
+  },
+  {
+   "id": "i-zmir-2014",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The city and the gulf from Kadifekale, photograph",
+   "who": "Bernard Gagnon",
+   "lic": "CC BY-SA 3.0",
+   "f": "Izmir 01.jpg",
+   "w": 1280,
+   "h": 853
+  }
+ ],
+ "k-nigsberg": [
+  {
+   "id": "k-nigsberg-1581",
+   "y": 1581,
+   "lab": "1581",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 3",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Die Furstliche Haupttstatt Königsbergh in Preussen - btv1b530781763 (1 of 2).jpg",
+   "w": 1280,
+   "h": 738
+  },
+  {
+   "id": "k-nigsberg-1652",
+   "y": 1652,
+   "lab": "1652",
+   "what": "Bird’s-eye view, engraving in Merian’s Topographia Prussiae et Pomerelliae",
+   "who": "Matthäus Merian and heirs",
+   "lic": "PD",
+   "f": "Koningsberga - btv1b532358047 (1 of 2).jpg",
+   "w": 1228,
+   "h": 878
+  },
+  {
+   "id": "k-nigsberg-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Exchange and the harbor on the Pregel, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "f": "The bourse and harbor, Konigsberg, East Prussia, Germany (i.e., Kaliningrad, Kaliningradskai︠a︡ oblastʹ, Russia)-LCCN2002714018.jpg",
+   "w": 1228,
+   "h": 908
+  },
+  {
+   "id": "k-nigsberg-1925",
+   "y": 1925,
+   "lab": "1925",
+   "what": "Aerial photograph of the castle and old town",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "f": "Königsberg (Luftaufnahme).JPG",
+   "w": 1073,
+   "h": 1280
+  }
+ ],
+ "kazan": [
+  {
+   "id": "kazan-1767",
+   "y": 1767,
+   "lab": "1767",
+   "what": "General view from the river, engraving",
+   "who": "Nicolas Louis de Lespinasse",
+   "lic": "PD",
+   "f": "1767 illustration of Kazan.jpg",
+   "w": 1600,
+   "h": 528
+  },
+  {
+   "id": "kazan-1867",
+   "y": 1867,
+   "lab": "1867",
+   "what": "The 1552 memorial church and the Kremlin, wood engraving in Le Tour du monde",
+   "who": "Jean-Pierre Moynet",
+   "lic": "PD",
+   "f": "Le Tour du monde - 15 (page 68 crop).jpg",
+   "w": 1600,
+   "h": 768
+  },
+  {
+   "id": "kazan-2018",
+   "y": 2018,
+   "lab": "2018",
+   "what": "The Kremlin from across the Kazanka, photograph",
+   "who": "Dmitriy Protsenko",
+   "lic": "PD",
+   "f": "View of Kazan.jpg",
+   "w": 1280,
+   "h": 639
+  }
+ ],
+ "kharkiv": [
+  {
+   "id": "kharkiv-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Dormition Cathedral above the river, photochrom print",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "Charkow.jpg",
+   "w": 1254,
+   "h": 889
+  },
+  {
+   "id": "kharkiv-2012",
+   "y": 2012,
+   "lab": "2012",
+   "what": "The Dormition Cathedral bell tower across the river, photograph",
+   "who": "belocerkovskij",
+   "lic": "CC BY 3.0",
+   "f": "Осень в Харькове - panoramio.jpg",
+   "w": 1280,
+   "h": 853
+  }
+ ],
+ "krasnodar-yekaterinodar": [
+  {
+   "id": "krasnodar-yekaterinodar-2020",
+   "y": 2020,
+   "lab": "2020",
+   "what": "Rooftops and high-rise skyline from above, photograph",
+   "who": "Alexey Komarov",
+   "lic": "CC BY-SA 4.0",
+   "f": "View of Krasnodar taken from Kozhevennaya street, 24 2020-04-18-4.jpg",
+   "w": 1280,
+   "h": 854
+  }
+ ],
+ "kyiv": [
+  {
+   "id": "kyiv-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "St. Michael’s Golden-Domed Monastery, photochrom print",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "Kiev overview.jpg",
+   "w": 1280,
+   "h": 899
+  },
+  {
+   "id": "kyiv-1918",
+   "y": 1918,
+   "lab": "1918",
+   "what": "The Kyiv Pechersk Lavra above the Dnieper, photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "f": "Oekraïne, SFA022829596.jpg",
+   "w": 1254,
+   "h": 866
+  },
+  {
+   "id": "kyiv-2023",
+   "y": 2023,
+   "lab": "2023",
+   "what": "Pechersk hills across the Dnieper, photograph",
+   "who": "Ввласенко",
+   "lic": "CC BY-SA 4.0",
+   "f": "Venetian channel, beach and Pechersk. View from the Venetian bridge. Kyiv, Ukraine.jpg",
+   "w": 1600,
+   "h": 609
+  }
+ ],
+ "l-beck": [
+  {
+   "id": "l-beck-1493",
+   "y": 1493,
+   "lab": "1493",
+   "what": "Woodcut in Hartmann Schedel’s Nuremberg Chronicle",
+   "who": "Michael Wolgemut and Wilhelm Pleydenwurff",
+   "lic": "PD",
+   "f": "Nuremberg chronicles - LUBECA.png",
+   "w": 928,
+   "h": 721
+  },
+  {
+   "id": "l-beck-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Braun Lübeck UBHD.jpg",
+   "w": 873,
+   "h": 565
+  },
+  {
+   "id": "l-beck-1653",
+   "y": 1653,
+   "lab": "1653",
+   "what": "Engraving in Merian’s Topographia Saxoniae Inferioris",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "f": "Lvbecca (Merian).jpg",
+   "w": 1222,
+   "h": 638
+  },
+  {
+   "id": "l-beck-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "General view across the water, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "General view, Lubeck, Germany-LCCN2002713934.jpg",
+   "w": 1234,
+   "h": 874
+  },
+  {
+   "id": "l-beck-1915",
+   "y": 1915,
+   "lab": "1910s",
+   "what": "The Untertrave harbor and the skyline, photograph (postcard)",
+   "who": "Johannes Maaß",
+   "lic": "PD",
+   "f": "Hafen Untertrave.jpg",
+   "w": 1190,
+   "h": 725
+  },
+  {
+   "id": "l-beck-2018",
+   "y": 2018,
+   "lab": "2018",
+   "what": "The Holsten Gate and the Salt Storehouses from St. Peter’s Church, photograph",
+   "who": "Jan-Herm Janßen",
+   "lic": "CC BY-SA 4.0",
+   "f": "Luebeck 86.jpg",
+   "w": 1280,
+   "h": 812
+  }
+ ],
+ "leiden": [
+  {
+   "id": "leiden-1575",
+   "y": 1575,
+   "lab": "1575",
+   "what": "Bird’s-eye view of the walled town and its surroundings, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 2",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "CC0",
+   "f": "Kaart met stadsplattegrond van Leiden en omgeving, ingekleurd (1574).jpg",
+   "w": 794,
+   "h": 612
+  },
+  {
+   "id": "leiden-1654",
+   "y": 1654,
+   "lab": "1654",
+   "what": "Profile view of the city, engraving in Merian’s Topographia Germaniae Inferioris",
+   "who": "Caspar Merian",
+   "lic": "CC0",
+   "f": "Gezicht op Leiden Leyden (titel op object), RP-P-AO-10-18L.jpg",
+   "w": 1600,
+   "h": 532
+  },
+  {
+   "id": "leiden-1832",
+   "y": 1832,
+   "lab": "1826–39",
+   "what": "The Hooglandse Kerk, lithograph (Rijksmuseum)",
+   "who": "J.B. Clermans, printed by Desguerrois & Co.",
+   "lic": "CC0",
+   "f": "Gezicht op de Hooglandse Kerk in Leiden De Hogelandsche Kerk - Eglise de Hogeland (titel op object), RP-P-1905-1020.jpg",
+   "w": 668,
+   "h": 484
+  },
+  {
+   "id": "leiden-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The town hall on the Breestraat, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "f": "Leiden - Stadhuis 1900.jpg",
+   "w": 1280,
+   "h": 917
+  },
+  {
+   "id": "leiden-1927",
+   "y": 1927,
+   "lab": "1927",
+   "what": "View over the roofs along the Breestraat, photograph (Erfgoed Leiden)",
+   "who": "Willem Johannes Kret",
+   "lic": "CC0",
+   "f": "Leiden in vogelvlucht, Objectnr PV KRET70.jpg",
+   "w": 1265,
+   "h": 926
+  },
+  {
+   "id": "leiden-2011",
+   "y": 2011,
+   "lab": "2011",
+   "what": "Canal in the historic center, photograph",
+   "who": "Arch",
+   "lic": "CC0",
+   "f": "Leiden Panorama 2.JPG",
+   "w": 1600,
+   "h": 690
+  }
+ ],
+ "leipzig": [
+  {
+   "id": "leipzig-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "View of the walled city, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Georg Braun & Frans Hogenberg - Dresden and Leipzig.jpg",
+   "w": 1136,
+   "h": 349
+  },
+  {
+   "id": "leipzig-1657",
+   "y": 1657,
+   "lab": "1657",
+   "what": "Bird’s-eye view, engraving (Rijksmuseum)",
+   "who": "unknown engraver, published by Frederik de Wit",
+   "lic": "CC0",
+   "f": "Gezicht op Leipzig Die statt Leijptzig (titel op object), RP-P-2018-979.jpg",
+   "w": 1119,
+   "h": 761
+  },
+  {
+   "id": "leipzig-1844",
+   "y": 1844,
+   "lab": "1844",
+   "what": "General view across the meadows, engraving in Bechstein’s Album der Haupt- und Residenzstädte Europa’s",
+   "who": "unknown artist",
+   "lic": "PD",
+   "f": "BECHSTEIN(1844) p228 Blick auf Leipzig.jpg",
+   "w": 1235,
+   "h": 705
+  },
+  {
+   "id": "leipzig-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The market square and the Old Town Hall, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "f": "Market place and Hotel de Ville, Leipsig (i.e., Leipzig), Saxony, Germany-LCCN2002720591.jpg",
+   "w": 1242,
+   "h": 875
+  },
+  {
+   "id": "leipzig-2012",
+   "y": 2012,
+   "lab": "2012",
+   "what": "View over the old town, photograph",
+   "who": "Acediscovery",
+   "lic": "CC BY 4.0",
+   "f": "Leipzig-Germany-September-2012.jpg",
+   "w": 1280,
+   "h": 960
+  }
+ ],
+ "li-ge": [
+  {
+   "id": "li-ge-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Liège - Civitates orbis terrarum.jpg",
+   "w": 1228,
+   "h": 584
+  },
+  {
+   "id": "li-ge-1738",
+   "y": 1738,
+   "lab": "1738–39",
+   "what": "Panorama from the Chartreuse hill, pen drawing (Ville de Liège, Fonds patrimoniaux)",
+   "who": "Remacle Le Loup",
+   "lic": "PD",
+   "f": "Remacle Leloup, Vue et perspective de la ville de Liege,et des environs prise des chartreus designez sur le lieu même l'an 1739.jpg",
+   "w": 1600,
+   "h": 414
+  },
+  {
+   "id": "li-ge-1839",
+   "y": 1839,
+   "lab": "about 1839",
+   "what": "Liège from the Pont des Arches, gouache and watercolor (Tate)",
+   "who": "J. M. W. Turner",
+   "lic": "PD",
+   "f": "7. Liège from the Pont des Arches.jpg",
+   "w": 1216,
+   "h": 893
+  },
+  {
+   "id": "li-ge-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The city from the north, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "From the north, Liège, Belgium-LCCN2001697944.jpg",
+   "w": 1242,
+   "h": 871
+  },
+  {
+   "id": "li-ge-2017",
+   "y": 2017,
+   "lab": "2017",
+   "what": "The old town and the Meuse from the Citadel, photograph",
+   "who": "Nordenfan",
+   "lic": "CC BY-SA 4.0",
+   "f": "Liége City Panorama.jpg",
+   "w": 1280,
+   "h": 781
+  }
+ ],
+ "lille": [
+  {
+   "id": "lille-1581",
+   "y": 1581,
+   "lab": "1581",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 3 (colored copy of the 1645 French edition)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Plan de Lille.jpg",
+   "w": 1247,
+   "h": 953
+  },
+  {
+   "id": "lille-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Grand Place, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "La Grande Place, Lille, France-LCCN2001698413.jpg",
+   "w": 1190,
+   "h": 862
+  },
+  {
+   "id": "lille-1935",
+   "y": 1935,
+   "lab": "1935",
+   "what": "Aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "f": "ETH-BIB-Lille-Weitere-LBS MH02-43-0036.tif",
+   "w": 1280,
+   "h": 722
+  },
+  {
+   "id": "lille-2009",
+   "y": 2009,
+   "lab": "2009",
+   "what": "View over the city center, photograph",
+   "who": "Jérémy Jännick",
+   "lic": "PD",
+   "f": "Lille - Vue aérienne 02.JPG",
+   "w": 1280,
+   "h": 960
+  }
+ ],
+ "liverpool": [
+  {
+   "id": "liverpool-1811",
+   "y": 1811,
+   "lab": "about 1811",
+   "what": "The town and its waterfront from across the Mersey, painting (Merseyside Maritime Museum)",
+   "who": "Henry Freeman James",
+   "lic": "PD",
+   "f": "Henry Freeman James (d.1823) - View of Liverpool, c.1811 - 55.411 - Merseyside Maritime Museum.jpg",
+   "w": 1000,
+   "h": 666
+  },
+  {
+   "id": "liverpool-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "St. George’s Hall and Lime Street, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "f": "St. George's Hall, Liverpool, England-LCCN2002696916.jpg",
+   "w": 1211,
+   "h": 883
+  },
+  {
+   "id": "liverpool-1946",
+   "y": 1946,
+   "lab": "1946",
+   "what": "Aerial view of the city center (Britain from Above)",
+   "who": "Aerofilms",
+   "lic": "PD",
+   "f": "Liverpool, 1946.png",
+   "w": 1075,
+   "h": 1126
+  },
+  {
+   "id": "liverpool-2017",
+   "y": 2017,
+   "lab": "2017",
+   "what": "Liverpool and its Anglican Cathedral from across the Mersey, photograph",
+   "who": "Ian Greig",
+   "lic": "CC BY-SA 2.0",
+   "f": "A view of Liverpool from across the river - geograph.org.uk - 5478713.jpg",
+   "w": 1280,
+   "h": 778
+  }
+ ],
+ "lviv-lemberg": [
+  {
+   "id": "lviv-lemberg-1617",
+   "y": 1617,
+   "lab": "1617",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 6",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Lviv - map by Braun Hogenberg (97694025).jpg",
+   "w": 1223,
+   "h": 666
+  },
+  {
+   "id": "lviv-lemberg-1865",
+   "y": 1865,
+   "lab": "about 1865",
+   "what": "St. George’s Cathedral, photograph (carte de visite)",
+   "who": "Karol Ferdynand Lang",
+   "lic": "PD",
+   "f": "Widoki miasta Lwowa -Lang K.F. (6).jpg",
+   "w": 1152,
+   "h": 672
+  },
+  {
+   "id": "lviv-lemberg-1912",
+   "y": 1912,
+   "lab": "1910–14",
+   "what": "View from the Town Hall tower over the old town, photograph",
+   "who": "Józef Jaworski",
+   "lic": "PD",
+   "f": "Lwów, widok z wieży ratuszowej.jpg",
+   "w": 1272,
+   "h": 710
+  },
+  {
+   "id": "lviv-lemberg-1921",
+   "y": 1921,
+   "lab": "1921",
+   "what": "Aerial photograph of the center from 900 meters",
+   "who": "Stan. Mayzenhalter, 2nd Aviation Regiment",
+   "lic": "PD",
+   "f": "Lwow (Lviv). Aerial photo- 1921-10-07.jpg",
+   "w": 1264,
+   "h": 865
+  },
+  {
+   "id": "lviv-lemberg-2007",
+   "y": 2007,
+   "lab": "2007",
+   "what": "The old town from the Town Hall tower, photograph",
+   "who": "Jan Mehlich",
+   "lic": "CC BY-SA 3.0",
+   "f": "Lwów - Widok z wieży ratuszowej 01.jpg",
+   "w": 1280,
+   "h": 791
+  }
+ ],
+ "lyon": [
+  {
+   "id": "lyon-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1 (later colored copy, BnF)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Lugdunum - btv1b53178913k (1 of 2).jpg",
+   "w": 1093,
+   "h": 736
+  },
+  {
+   "id": "lyon-1655",
+   "y": 1655,
+   "lab": "about 1655",
+   "what": "View from the west, engraving from Merian’s Topographia Galliae",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "f": "Prosp de la Ville de Lyon du Coste de Occidens, objectnr A 57403.jpg",
+   "w": 1254,
+   "h": 388
+  },
+  {
+   "id": "lyon-1780",
+   "y": 1780,
+   "lab": "about 1780",
+   "what": "The Saône and the Château de Pierre-Scize, painting (Minneapolis Institute of Art)",
+   "who": "William Marlow",
+   "lic": "PD",
+   "f": "William Marlow - View of the Saône and the Château Pierre-Scize (Lyon, France) - 39.9 - Minneapolis Institute of Arts.jpg",
+   "w": 1228,
+   "h": 1026
+  },
+  {
+   "id": "lyon-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The hill of Fourvière from the Quai Saint-Antoine, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "CC BY 2.0",
+   "f": "The Hill of Fourvière from St. Antoine Quay, Lyon, France, ca. 1895 (3338114478).jpg",
+   "w": 1280,
+   "h": 907
+  },
+  {
+   "id": "lyon-1934",
+   "y": 1934,
+   "lab": "1934",
+   "what": "Aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "f": "ETH-BIB-Lyon-Weitere-LBS MH02-23-0021.tif",
+   "w": 1190,
+   "h": 860
+  },
+  {
+   "id": "lyon-2024",
+   "y": 2024,
+   "lab": "2024",
+   "what": "Saint-Jean Cathedral and the Saône from Fourvière, photograph",
+   "who": "Tournasol7",
+   "lic": "CC BY 4.0",
+   "f": "View of Lyon (5).jpg",
+   "w": 1600,
+   "h": 402
+  }
+ ],
+ "m-laga": [
+  {
+   "id": "m-laga-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "View from the sea, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Malaga - 1578 views of Sevilla, Cadiz and Malaga (cropped).jpg",
+   "w": 1600,
+   "h": 373
+  },
+  {
+   "id": "m-laga-1836",
+   "y": 1836,
+   "lab": "1836",
+   "what": "View over the city and the cathedral, watercolor (Rijksmuseum)",
+   "who": "Adrien Dauzats",
+   "lic": "CC0",
+   "f": "Gezicht op Malaga vanuit het Noorden, RP-T-1953-291.jpg",
+   "w": 1280,
+   "h": 785
+  },
+  {
+   "id": "m-laga-1870",
+   "y": 1870,
+   "lab": "about 1870",
+   "what": "The cathedral and Gibralfaro over the rooftops, stereo photograph (Rijksmuseum)",
+   "who": "Jean Andrieu",
+   "lic": "CC0",
+   "f": "Gezicht op Málaga, met op de achtergrond de Kathedraal VUE DE MALAGA & DE LA CATHÉDRALE (titel op object), RP-F-F07610.jpg",
+   "w": 412,
+   "h": 502
+  },
+  {
+   "id": "m-laga-1961",
+   "y": 1961,
+   "lab": "about 1961",
+   "what": "The bullring and the port from Gibralfaro, photograph (U.S. Navy)",
+   "who": "U.S. Navy",
+   "lic": "PD",
+   "f": "View of the Port of Málaga c1961.jpg",
+   "w": 1280,
+   "h": 832
+  },
+  {
+   "id": "m-laga-2023",
+   "y": 2023,
+   "lab": "2023",
+   "what": "View from Gibralfaro Castle over the Alcazaba, the port and the cathedral, photograph",
+   "who": "Diego Delso",
+   "lic": "CC BY-SA 4.0",
+   "f": "Vista de Málaga desde el castillo de Gibralfaro, España, 2023-05-20, DD 113.jpg",
+   "w": 1280,
+   "h": 481
+  }
+ ],
+ "magdeburg": [
+  {
+   "id": "magdeburg-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1 (colored copy, BnF)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Magdeburgum - btv1b531788761 (1 of 2).jpg",
+   "w": 1172,
+   "h": 872
+  },
+  {
+   "id": "magdeburg-1653",
+   "y": 1653,
+   "lab": "1653",
+   "what": "View across the Elbe, engraving from Merian’s Topographia Saxoniae Inferioris",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "f": "Magdeburg-1640-Merian.jpg",
+   "w": 1600,
+   "h": 424
+  },
+  {
+   "id": "magdeburg-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The cathedral across the Elbe from the Citadel, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "View from the Citadel, Magdeburg, Germany, Saxony-Anhalt, Germany-LCCN2002720635.jpg",
+   "w": 1280,
+   "h": 758
+  },
+  {
+   "id": "magdeburg-1929",
+   "y": 1929,
+   "lab": "1929",
+   "what": "The cathedral across the Elbe, photograph",
+   "who": "Rudolf Hatzold",
+   "lic": "PD",
+   "f": "Magdeburg Blick über die Elbe zum Magdeburger Dom.jpg",
+   "w": 1275,
+   "h": 899
+  }
+ ],
+ "mainz": [
+  {
+   "id": "mainz-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "View across the Rhine, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Mainz Braun Hogenberg 1572.jpg",
+   "w": 1600,
+   "h": 409
+  },
+  {
+   "id": "mainz-1793",
+   "y": 1793,
+   "lab": "1793",
+   "what": "The city and the Rhine after the siege of 1793, watercolor drawing",
+   "who": "Georg Melchior Kraus",
+   "lic": "PD",
+   "f": "Ansicht von Mainz nach der Belagerung von 1793 (SM 6021z).png",
+   "w": 1161,
+   "h": 440,
+   "event": true
+  },
+  {
+   "id": "mainz-1846",
+   "y": 1846,
+   "lab": "1846",
+   "what": "View over the Rhine with the cathedral, painting (National Museum in Warsaw)",
+   "who": "Carl Morgenstern",
+   "lic": "PD",
+   "f": "Carl Morgenstern - View of Mainz on the Rhine - M.Ob.509 MNW - National Museum in Warsaw.jpg",
+   "w": 1254,
+   "h": 864
+  },
+  {
+   "id": "mainz-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The cathedral and the old town toward the Rhine, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "Mainz, towards the Rhine, the Rhine, Germany-LCCN2002714114.jpg",
+   "w": 1228,
+   "h": 915
+  },
+  {
+   "id": "mainz-1930",
+   "y": 1930,
+   "lab": "about 1930",
+   "what": "Old town roofs seen from the cathedral, photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "f": "Blick vom Dom auf die Nordseite des Marktes (um 1930).jpg",
+   "w": 886,
+   "h": 1280
+  },
+  {
+   "id": "mainz-2013",
+   "y": 2013,
+   "lab": "2013",
+   "what": "The Rhine front with the cathedral at dusk, panorama photograph",
+   "who": "Arcalino",
+   "lic": "CC BY-SA 3.0",
+   "f": "Mainz Theodor-Heuss-Bruecke blaue Stunde Panorama.jpg",
+   "w": 1600,
+   "h": 343
+  }
+ ],
+ "manchester": [
+  {
+   "id": "manchester-1746",
+   "y": 1746,
+   "lab": "1746",
+   "what": "The south-west prospect of Manchester and Salford, engraving",
+   "who": "Casson and Berry",
+   "lic": "PD",
+   "f": "Manchester1746panoramic.jpg",
+   "w": 1009,
+   "h": 251
+  },
+  {
+   "id": "manchester-1855",
+   "y": 1855,
+   "lab": "1850s",
+   "what": "Manchester from Kersal Moor, steel engraving after William Wyld (New York Public Library)",
+   "who": "Edward Goodall after William Wyld",
+   "lic": "PD",
+   "f": "Manchester, from Kersal Moor (NYPL Hades-256054-431071).jpg",
+   "w": 1081,
+   "h": 633
+  },
+  {
+   "id": "manchester-1905",
+   "y": 1905,
+   "lab": "1900s",
+   "what": "The cathedral and Cromwell statue, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "Manchester Cathedral LCCN2017659726.jpg",
+   "w": 938,
+   "h": 1280
+  },
+  {
+   "id": "manchester-2019",
+   "y": 2019,
+   "lab": "2019",
+   "what": "The city center skyline from Hartshead Pike, photograph",
+   "who": "G-13114",
+   "lic": "CC BY-SA 4.0",
+   "f": "Manchester from Hartshead Pike.jpg",
+   "w": 1280,
+   "h": 672
+  }
+ ],
+ "marseille": [
+  {
+   "id": "marseille-1575",
+   "y": 1575,
+   "lab": "1575",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 2",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Marseille by Braun Hogenberg (110199026).jpg",
+   "w": 1240,
+   "h": 1116
+  },
+  {
+   "id": "marseille-1655",
+   "y": 1655,
+   "lab": "about 1655",
+   "what": "View across the harbor, engraving from Merian’s Topographia Galliae",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "f": "Massilia - btv1b53152757k (1 of 2).jpg",
+   "w": 1254,
+   "h": 772
+  },
+  {
+   "id": "marseille-1760",
+   "y": 1760,
+   "lab": "1760",
+   "what": "Inside the port of Marseille, engraving after Joseph Vernet’s Ports of France series",
+   "who": "Charles-Nicolas Cochin and Jacques-Philippe Le Bas",
+   "lic": "CC0",
+   "f": "Gezicht op de haven van Marseille, RP-P-1943-511.jpg",
+   "w": 1221,
+   "h": 767
+  },
+  {
+   "id": "marseille-1900",
+   "y": 1900,
+   "lab": "about 1900",
+   "what": "The Old Port and Notre-Dame de la Garde, photochrom print (Library of Congress)",
+   "who": "Detroit Photographic Co.",
+   "lic": "PD",
+   "f": "Marseille-Vieux port vers 1900-2.jpg",
+   "w": 1280,
+   "h": 930
+  },
+  {
+   "id": "marseille-2013",
+   "y": 2013,
+   "lab": "2013",
+   "what": "Notre-Dame de la Garde above the Old Port, photograph",
+   "who": "Georges Seguin",
+   "lic": "CC BY-SA 3.0",
+   "f": "Marseille 20131005 06.jpg",
+   "w": 1280,
+   "h": 853
+  }
+ ],
+ "messina": [
+  {
+   "id": "messina-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1 (colored copy, BnF)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Messana, urbs est Siciliae maxima... - btv1b53178835x (1 of 2).jpg",
+   "w": 883,
+   "h": 635
+  },
+  {
+   "id": "messina-1735",
+   "y": 1735,
+   "lab": "1735",
+   "what": "View across the harbor, colored engraving (Rijksmuseum)",
+   "who": "Johannes Ratelband",
+   "lic": "CC0",
+   "f": "Gezicht op Messina Messina (titel op object), BI-B-FM-090-72.jpg",
+   "w": 991,
+   "h": 519
+  },
+  {
+   "id": "messina-1782",
+   "y": 1782,
+   "lab": "1782–83",
+   "what": "The harbor and the Palazzata, drawing",
+   "who": "Louis-François Cassas",
+   "lic": "PD",
+   "f": "Louis François Cassas's View of Messina Harbor with the Palazzata, designed by Simone Gullì in 1623.jpg",
+   "w": 1204,
+   "h": 758
+  },
+  {
+   "id": "messina-1845",
+   "y": 1845,
+   "lab": "1845",
+   "what": "View over the city and harbor, engraving (Atlante illustrativo for Zuccagni-Orlandini’s Corografia dell’Italia)",
+   "who": "Achille Parboni",
+   "lic": "CC BY-SA 4.0",
+   "f": "Veduta di Messina in Sicilia.jpg",
+   "w": 1132,
+   "h": 733
+  },
+  {
+   "id": "messina-1888",
+   "y": 1888,
+   "lab": "1888",
+   "what": "Panorama over the city and harbor, photograph (Hallwyl Museum, Stockholm)",
+   "who": "L. Cella",
+   "lic": "PD",
+   "f": "Panoramafoto från Messina - Hallwylska museet - 107911.tif",
+   "w": 1214,
+   "h": 903
+  },
+  {
+   "id": "messina-1929",
+   "y": 1929,
+   "lab": "1929–30",
+   "what": "The rebuilt city and the harbor, aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "f": "ETH-BIB-Hafen von Messina-Kilimanjaroflug 1929-30-LBS MH02-07-0584.tif",
+   "w": 1177,
+   "h": 981
+  },
+  {
+   "id": "messina-2019",
+   "y": 2019,
+   "lab": "2019",
+   "what": "The city and the Christ the King shrine from the port, photograph",
+   "who": "Ad Meskens",
+   "lic": "CC BY-SA 4.0",
+   "f": "Messina Town view 03.jpg",
+   "w": 1280,
+   "h": 920
+  }
+ ],
+ "minsk": [
+  {
+   "id": "minsk-2019",
+   "y": 2019,
+   "lab": "2019",
+   "what": "View of the city center from the park by the Hotel Belarus, photograph",
+   "who": "Homoatrox",
+   "lic": "CC BY-SA 3.0",
+   "f": "View of Minsk (180819) 01.jpg",
+   "w": 1280,
+   "h": 853
+  }
+ ],
+ "montpellier": [
+  {
+   "id": "montpellier-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1 (colored copy, Heidelberg University Library)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Braun Montpellier UBHD.jpg",
+   "w": 978,
+   "h": 520
+  },
+  {
+   "id": "montpellier-1657",
+   "y": 1657,
+   "lab": "1655–61",
+   "what": "View of the town, engraving from Merian’s Topographia Galliae",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "f": "Montpelier (Montpellier) - btv1b10661082q.jpg",
+   "w": 992,
+   "h": 689
+  },
+  {
+   "id": "montpellier-1821",
+   "y": 1821,
+   "lab": "1821–45",
+   "what": "View from the Croix du Capitaine, southwest of the town, watercolor",
+   "who": "Jean-Marie Amelin",
+   "lic": "PD",
+   "f": "Vue de Montpellier prise de la Croix du Capitaine du sud-ouest de la ville - btv1b104853183.jpg",
+   "w": 1210,
+   "h": 893
+  },
+  {
+   "id": "montpellier-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "General view over the rooftops, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "General view, Montpelier, France-LCCN2001698467.jpg",
+   "w": 1191,
+   "h": 776
+  },
+  {
+   "id": "montpellier-2025",
+   "y": 2025,
+   "lab": "2025",
+   "what": "Saint-Pierre Cathedral above the old town, seen from the Corum, photograph",
+   "who": "Pierre-Félix Vautrin",
+   "lic": "CC0",
+   "f": "Corum Montpellier 2025.jpg",
+   "w": 1280,
+   "h": 720
+  }
+ ],
+ "murcia": [
+  {
+   "id": "murcia-1778",
+   "y": 1778,
+   "lab": "1778",
+   "what": "West view of the city, engraving in Bernardo Espinalt’s Atlante español",
+   "who": "Juan Fernando Palomino",
+   "lic": "PD",
+   "f": "Vista occidental de la Ciudad de Murcia.jpg",
+   "w": 1280,
+   "h": 660
+  },
+  {
+   "id": "murcia-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The cathedral and Plaza del Palacio, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "Murcia. Plaza de Palacio y Catedral LCCN2017660773.jpg",
+   "w": 1224,
+   "h": 905
+  },
+  {
+   "id": "murcia-2007",
+   "y": 2007,
+   "lab": "2007",
+   "what": "View from the Fuensanta sanctuary, photograph",
+   "who": "Mac",
+   "lic": "CC BY-SA 3.0",
+   "f": "Murcia.JPG",
+   "w": 1280,
+   "h": 960
+  }
+ ],
+ "nantes": [
+  {
+   "id": "nantes-1650",
+   "y": 1650,
+   "lab": "about 1650",
+   "what": "View across the Loire, drawing with wash (Metropolitan Museum of Art)",
+   "who": "Lambert Doomer",
+   "lic": "CC0",
+   "f": "View of Nantes MET DP800194.jpg",
+   "w": 1242,
+   "h": 792
+  },
+  {
+   "id": "nantes-1823",
+   "y": 1823,
+   "lab": "1823",
+   "what": "The port seen from Les Salorges, engraving",
+   "who": "Louis Garneray",
+   "lic": "PD",
+   "f": "Nantes Salorges Garneray.jpg",
+   "w": 1044,
+   "h": 642
+  },
+  {
+   "id": "nantes-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Town and harbor from a height, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "Nantes, France, ca. 1897.jpg",
+   "w": 1280,
+   "h": 663
+  },
+  {
+   "id": "nantes-2017",
+   "y": 2017,
+   "lab": "2017",
+   "what": "Aerial photograph of the Loire and the city",
+   "who": "Duch",
+   "lic": "CC BY-SA 4.0",
+   "f": "Aerial view of Nantes.jpg",
+   "w": 1178,
+   "h": 557
+  }
+ ],
+ "nice": [
+  {
+   "id": "nice-1694",
+   "y": 1694,
+   "lab": "1693–95",
+   "what": "Bird’s-eye view, etching in Nicolas de Fer, Les Forces de l’Europe (Rijksmuseum)",
+   "who": "Nicolas de Fer",
+   "lic": "CC0",
+   "f": "Gezicht op Nice, ca. 1693-1695, RP-P-OB-83.033A-72.jpg",
+   "w": 669,
+   "h": 433
+  },
+  {
+   "id": "nice-1834",
+   "y": 1834,
+   "lab": "1834",
+   "what": "The quays and the Pont Neuf over the Paillon, lithograph (Rijksmuseum)",
+   "who": "Paul-Émile Barberi",
+   "lic": "CC0",
+   "f": "Zicht op de Pont Neuf in Nice Vue des quais et du Pont Neuf à Nice (titel op object) Herinneringen aan Nice en zijn kust (serietitel) Souvenir de la ville de Nice maritime et de ses environs (serietitel), RP-P-1907-5562.jpg",
+   "w": 966,
+   "h": 587
+  },
+  {
+   "id": "nice-1889",
+   "y": 1889,
+   "lab": "1889",
+   "what": "The market on the Cours Saleya, photochrom print (Rijksmuseum)",
+   "who": "Photoglob Zürich",
+   "lic": "CC0",
+   "f": "Nice le Marche, RP-F-F16559.jpg",
+   "w": 1228,
+   "h": 908
+  },
+  {
+   "id": "nice-1925",
+   "y": 1925,
+   "lab": "1925",
+   "what": "The old town and the Baie des Anges from the castle hill, photograph (Agence Meurisse)",
+   "who": "Agence Meurisse",
+   "lic": "PD",
+   "f": "Congrès radical socialiste - une vue de Nice - btv1b9024880w.jpg",
+   "w": 1233,
+   "h": 850
+  },
+  {
+   "id": "nice-2011",
+   "y": 2011,
+   "lab": "2011",
+   "what": "The Baie des Anges, the Promenade des Anglais and the old town from the castle hill, photograph",
+   "who": "Tobi 87",
+   "lic": "CC BY-SA 3.0",
+   "f": "Nizza-Côte d'Azur (cropped).jpg",
+   "w": 1600,
+   "h": 368
+  }
+ ],
+ "nizhny-novgorod": [
+  {
+   "id": "nizhny-novgorod-1837",
+   "y": 1837,
+   "lab": "1837",
+   "what": "View from the Kremlin over the meeting of the Oka and the Volga, painting",
+   "who": "Nikanor Chernetsov",
+   "lic": "PD",
+   "f": "View of Nizhny Novgorod.jpg",
+   "w": 1200,
+   "h": 863
+  },
+  {
+   "id": "nizhny-novgorod-1910",
+   "y": 1910,
+   "lab": "about 1910",
+   "what": "The Kremlin above the river front, colored postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "f": "View of Nizhny Novgorod 1910.jpg",
+   "w": 1087,
+   "h": 618
+  }
+ ],
+ "oslo-christiania": [
+  {
+   "id": "oslo-christiania-1699",
+   "y": 1699,
+   "lab": "1699",
+   "what": "Akershus Fortress and the town from Hovedøya, painting (National Museum, Oslo)",
+   "who": "Jacob Coning",
+   "lic": "PD",
+   "f": "Jacob Coning - Panoramic view of Akershus Fortress near Christiania Oslo, seen from Hovedøya - NG.M.00543 - National Museum of Art, Architecture and Design.jpg",
+   "w": 1259,
+   "h": 1017
+  },
+  {
+   "id": "oslo-christiania-1792",
+   "y": 1792,
+   "lab": "1792",
+   "what": "The town from the Ekeberg ridge, painting (National Museum, Oslo)",
+   "who": "Christian August Lorentzen",
+   "lic": "PD",
+   "f": "Christian August Lorentzen - Utsikt fra Ekebergåsen - NMK.2012.0263 - National Museum of Art, Architecture and Design.jpg",
+   "w": 1280,
+   "h": 1071
+  },
+  {
+   "id": "oslo-christiania-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Karl Johans gate and the Royal Palace, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "Carl Johans Gade with Slotted (i.e., Slottet), Christinia, Norway-LCCN2001699463.jpg",
+   "w": 1254,
+   "h": 888
+  },
+  {
+   "id": "oslo-christiania-1955",
+   "y": 1955,
+   "lab": "1950s",
+   "what": "The harbor at Bjørvika and the city from Ekeberg, photograph",
+   "who": "David Hunter",
+   "lic": "CC BY 2.0",
+   "f": "View of Bjørvika 1950s.jpg",
+   "w": 1280,
+   "h": 646
+  },
+  {
+   "id": "oslo-christiania-2016",
+   "y": 2016,
+   "lab": "2016",
+   "what": "The city and the Opera House from Ekeberg, photograph",
+   "who": "Zinneke",
+   "lic": "CC BY-SA 3.0",
+   "f": "Oslo from Ekeberg 2016-04 --1.JPG",
+   "w": 1261,
+   "h": 853
+  }
+ ],
+ "padua": [
+  {
+   "id": "padua-1382",
+   "y": 1382,
+   "lab": "1382",
+   "what": "View of Padua in a fresco in the Basilica of Sant’Antonio (Belludi chapel)",
+   "who": "Giusto de’ Menabuoi",
+   "lic": "PD",
+   "f": "Giusto de Menabuoi - Veduta di Padova nel trecento - Basilica di Sant Antonio - Cappella del Beato Luca Belludi.jpg",
+   "w": 909,
+   "h": 780
+  },
+  {
+   "id": "padua-1755",
+   "y": 1755,
+   "lab": "1750s",
+   "what": "Padua from the Ponte dei Graici on the Brenta, etching in Gianfrancesco Costa, Le delizie del fiume Brenta",
+   "who": "Gianfrancesco Costa",
+   "lic": "CC0",
+   "f": "Padua en de Ponte de Graici over de Brenta Veduta della Città di Padova al Ponte de Graic (titel op object) Le delicie della Brenta (serietitel) Les delices de la Brenta (serietitel) Gezichten op de rivier de Brenta , RP-P-1965-147.jpg",
+   "w": 863,
+   "h": 596
+  },
+  {
+   "id": "padua-1836",
+   "y": 1836,
+   "lab": "1836",
+   "what": "The Basilica of Sant’Antonio, painting",
+   "who": "Rudolf von Alt",
+   "lic": "PD",
+   "f": "Rudolf von Alt Basilika San Antonio in Padua 1836.jpg",
+   "w": 1280,
+   "h": 1025
+  },
+  {
+   "id": "padua-2024",
+   "y": 2024,
+   "lab": "2024",
+   "what": "View from La Specola over the old town to the cathedral, photograph",
+   "who": "Ricalvo10",
+   "lic": "CC0",
+   "f": "View of Padua from La Specola.jpg",
+   "w": 1280,
+   "h": 717
+  }
+ ],
+ "palermo": [
+  {
+   "id": "palermo-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Parma ; Sena ; Palermo - btv1b531790033 (1 of 2).jpg",
+   "w": 1100,
+   "h": 299
+  },
+  {
+   "id": "palermo-1778",
+   "y": 1778,
+   "lab": "1778",
+   "what": "The harbor below Monte Pellegrino, watercolor (Rijksmuseum)",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "f": "Gezicht op de grote haven en de zeevloot van Palermo Vue d'une partie du Grand Port & de la Marine de Palerme (titel op object) Voyage en Italie, en Sicile et à Malte - 1778 (serietitel), RP-T-00-494-54.jpg",
+   "w": 1600,
+   "h": 525
+  },
+  {
+   "id": "palermo-1845",
+   "y": 1845,
+   "lab": "1845",
+   "what": "General view from Monte Pellegrino, etching",
+   "who": "Saverio Corsi",
+   "lic": "CC BY-SA 4.0",
+   "f": "Veduta generale di Palermo presa dal Monte Pellegrino.jpg",
+   "w": 1178,
+   "h": 775
+  },
+  {
+   "id": "palermo-1886",
+   "y": 1886,
+   "lab": "1886",
+   "what": "Panorama from the Villa Belmonte, photograph",
+   "who": "Giorgio Sommer",
+   "lic": "PD",
+   "f": "BAAG-StAAG Palermo, Sicilien-1886 F.MG-1294.tif",
+   "w": 749,
+   "h": 579
+  },
+  {
+   "id": "palermo-2016",
+   "y": 2016,
+   "lab": "2016",
+   "what": "The city from Monte Pellegrino, photograph",
+   "who": "Radek Kucharski",
+   "lic": "CC BY 2.0",
+   "f": "Palermo skyline.jpg",
+   "w": 1280,
+   "h": 720
+  }
+ ],
+ "parma": [
+  {
+   "id": "parma-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Braun Parma UBHD.jpg",
+   "w": 940,
+   "h": 500
+  },
+  {
+   "id": "parma-1816",
+   "y": 1816,
+   "lab": "1816",
+   "what": "View across the Ducal Park to the city, watercolor (Museo Glauco Lombardi)",
+   "who": "Marie Louise, Duchess of Parma",
+   "lic": "PD",
+   "f": "Vedutadiparma.jpg",
+   "w": 1280,
+   "h": 822
+  },
+  {
+   "id": "parma-1888",
+   "y": 1888,
+   "lab": "1888",
+   "what": "Panorama from the observatory, wood engraving in Le Cento Città d’Italia",
+   "who": "unknown artist",
+   "lic": "PD",
+   "f": "Panorama di Parma, visto dall’Osservatorio Astronomico (xilografia).jpg",
+   "w": 1267,
+   "h": 791
+  }
+ ],
+ "porto": [
+  {
+   "id": "porto-2013",
+   "y": 2013,
+   "lab": "2013",
+   "what": "Rooftops of the old town and the Douro, photograph",
+   "who": "José Luiz",
+   "lic": "CC BY-SA 3.0",
+   "f": "General view of Porto (4).JPG",
+   "w": 1280,
+   "h": 853
+  }
+ ],
+ "regensburg": [
+  {
+   "id": "regensburg-1493",
+   "y": 1493,
+   "lab": "1493",
+   "what": "Woodcut in Hartmann Schedel’s Nuremberg Chronicle",
+   "who": "Michael Wolgemut and Wilhelm Pleydenwurff",
+   "lic": "PD",
+   "f": "Nuremberg chronicles f 097v98r 1.png",
+   "w": 927,
+   "h": 694
+  },
+  {
+   "id": "regensburg-1598",
+   "y": 1598,
+   "lab": "1598",
+   "what": "View from the north, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 5",
+   "who": "Georg Braun and Frans Hogenberg, after Jacob Hoefnagel",
+   "lic": "PD",
+   "f": "Ratis Bona.JPG",
+   "w": 1259,
+   "h": 904
+  },
+  {
+   "id": "regensburg-1840",
+   "y": 1840,
+   "lab": "about 1840",
+   "what": "View from the north with the Stone Bridge, colored steel engraving",
+   "who": "Henry Winkles",
+   "lic": "PD",
+   "f": "Regensburg - Ansicht von Norden mit Steinerner Brücke - Henry Winkles.jpg",
+   "w": 1280,
+   "h": 806
+  },
+  {
+   "id": "regensburg-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Stone Bridge and the cathedral, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "f": "Stone Bridge (i.e. Steinerne Brücke) and cathedral, Ratisbon (Regensburg), Bavaria, Germany-LCCN2002696173.jpg",
+   "w": 1216,
+   "h": 881
+  },
+  {
+   "id": "regensburg-2019",
+   "y": 2019,
+   "lab": "2019",
+   "what": "The Stone Bridge, the bridge tower and the cathedral across the Danube, photograph",
+   "who": "Doktent",
+   "lic": "CC BY-SA 4.0",
+   "f": "DSC2422 Donaublick Regensburg.tif",
+   "w": 1280,
+   "h": 853
+  }
+ ],
+ "riga": [
+  {
+   "id": "riga-1581",
+   "y": 1581,
+   "lab": "1581",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 3",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Panorama of Riga, 1572 (v2).jpg",
+   "w": 1600,
+   "h": 636
+  },
+  {
+   "id": "riga-1700",
+   "y": 1700,
+   "lab": "about 1700",
+   "what": "View across the Daugava, colored etching",
+   "who": "Pierre Aveline",
+   "lic": "PD",
+   "f": "Profil de la ville de Riga, Capitale de la province de Livonie 1710.jpg",
+   "w": 1178,
+   "h": 770
+  },
+  {
+   "id": "riga-1815",
+   "y": 1815,
+   "lab": "about 1815",
+   "what": "The harbor and old town from across the Daugava, painting",
+   "who": "Carl Traugott Fechhelm",
+   "lic": "PD",
+   "f": "Riga panorama by Carl Traugott Fechhelm (1815).jpg",
+   "w": 1200,
+   "h": 415
+  },
+  {
+   "id": "riga-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The quay on the Daugava, photochrom print",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "Riga Panorama 1890-1900.jpg",
+   "w": 1280,
+   "h": 896
+  },
+  {
+   "id": "riga-2012",
+   "y": 2012,
+   "lab": "2012",
+   "what": "View from St. Peter’s Church over the old town, the Central Market and the Daugava, photograph",
+   "who": "Diego Delso",
+   "lic": "CC BY-SA 3.0",
+   "f": "Vistas desde la iglesia de San Pedro, Riga, Letonia, 2012-08-07, DD 08.JPG",
+   "w": 1280,
+   "h": 607
+  }
+ ],
+ "rotterdam": [
+  {
+   "id": "rotterdam-1581",
+   "y": 1581,
+   "lab": "1581",
+   "what": "View from the Maas, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 3 (Bibliothèque nationale de France)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Rotterdam ; Goude - btv1b531790016 (1 of 2).jpg",
+   "w": 1100,
+   "h": 403
+  },
+  {
+   "id": "rotterdam-1654",
+   "y": 1654,
+   "lab": "1654",
+   "what": "Panorama from the Maas, colored engraving in Zeiller and Merian’s Topographia Germaniae Inferioris",
+   "who": "Caspar Merian",
+   "lic": "PD",
+   "f": "Rotterdam Panorama by Caspar Merian 1659.jpg",
+   "w": 1600,
+   "h": 445
+  },
+  {
+   "id": "rotterdam-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Kolk with the elevated railway and the Laurenskerk, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "The Kolk, Rotterdam, Holland-LCCN2001699539.jpg",
+   "w": 1235,
+   "h": 896
+  },
+  {
+   "id": "rotterdam-1930",
+   "y": 1930,
+   "lab": "1930",
+   "what": "The Willemsbrug, the Boompjes and the Witte Huis, aerial photograph (Rotterdam City Archives)",
+   "who": "KLM Aerocarto",
+   "lic": "CC0",
+   "f": "Luchtopname van de Willemsbrug en Willemsspoorbrug over de Nieuwe Maas met de Boompjes, Nationale Levensverzekeringsbank, Bolwerk, Oudehaven, Wijnhaven, spoorbrug over de Wijnhaven, Witte Huis en station Rotterdam Beurs 1930.jpg",
+   "w": 1204,
+   "h": 847
+  },
+  {
+   "id": "rotterdam-2009",
+   "y": 2009,
+   "lab": "2009",
+   "what": "The Erasmus Bridge and the Kop van Zuid across the Maas, photograph",
+   "who": "Massimo Catarinella",
+   "lic": "CC BY 3.0",
+   "f": "RotterdamMaasNederland.jpg",
+   "w": 1600,
+   "h": 653
+  }
+ ],
+ "rouen": [
+  {
+   "id": "rouen-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "View of the city and the Seine, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1 (colored copy, National Library of Spain)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Nimes 1569.jpg",
+   "w": 1020,
+   "h": 299
+  },
+  {
+   "id": "rouen-1825",
+   "y": 1825,
+   "lab": "about 1825",
+   "what": "View near Rouen, painting (Metropolitan Museum of Art)",
+   "who": "Richard Parkes Bonington",
+   "lic": "CC0",
+   "f": "View near Rouen MET DT4937.jpg",
+   "w": 1254,
+   "h": 1051
+  },
+  {
+   "id": "rouen-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The city and the Seine from Bonsecours hill, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "Bonsecours, Rouen, France-LCCN2001698685.jpg",
+   "w": 1191,
+   "h": 782
+  },
+  {
+   "id": "rouen-1940",
+   "y": 1940,
+   "lab": "1940",
+   "what": "The city from Bonsecours hill, pencil drawing (Rouen Municipal Library)",
+   "who": "Alexis de Perceval",
+   "lic": "PD",
+   "f": "Rouen. Vu de la colline de Bon-Secours. - btv1b10051899b.jpg",
+   "w": 1228,
+   "h": 777
+  },
+  {
+   "id": "rouen-2014",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The Palais de Justice and the cathedral from the Gros-Horloge tower, photograph",
+   "who": "DXR",
+   "lic": "CC BY-SA 3.0",
+   "f": "Rouen as seen from Le Gros Horloge tower 140215 1.jpg",
+   "w": 1600,
+   "h": 482
+  }
+ ],
+ "salerno": [
+  {
+   "id": "salerno-1845",
+   "y": 1845,
+   "lab": "1845",
+   "what": "View from the west with the castle hill, engraving",
+   "who": "Francesco Corsi",
+   "lic": "CC BY-SA 4.0",
+   "f": "Veduta di Salerno capoluogo di provincia del Principato Citeriore.jpg",
+   "w": 1152,
+   "h": 767
+  },
+  {
+   "id": "salerno-1891",
+   "y": 1891,
+   "lab": "1891",
+   "what": "Panorama from the west with the port, wood engraving in Le Cento Città d’Italia",
+   "who": "Barberis",
+   "lic": "PD",
+   "f": "Panorama di Salerno (xilografia).jpg",
+   "w": 1600,
+   "h": 796
+  },
+  {
+   "id": "salerno-2008",
+   "y": 2008,
+   "lab": "2008",
+   "what": "View over the city and the bay from the hills, photograph",
+   "who": "Sabrina",
+   "lic": "CC BY 2.0",
+   "f": "Salerno - Sunset Panorama.jpg",
+   "w": 1280,
+   "h": 662
+  }
+ ],
+ "sarajevo": [
+  {
+   "id": "sarajevo-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "f": "Sarajcvo (i.e., Sarajevo), from the north, Bosnia, Austro-Hungary-LCCN2002708496.jpg",
+   "w": 1242,
+   "h": 877
+  },
+  {
+   "id": "sarajevo-1930",
+   "y": 1930,
+   "lab": "about 1930",
+   "what": "Photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "f": "Sarajevo panorama 1930s.jpg",
+   "w": 1280,
+   "h": 735
+  },
+  {
+   "id": "sarajevo-2018",
+   "y": 2018,
+   "lab": "2018",
+   "what": "View from the Yellow Fortress, photograph",
+   "who": "Skelanard",
+   "lic": "CC BY-SA 4.0",
+   "f": "A view of Sarajevo from the Yellow Fortress.jpg",
+   "w": 1280,
+   "h": 745
+  }
+ ],
+ "skopje": [
+  {
+   "id": "skopje-1928",
+   "y": 1928,
+   "lab": "1928",
+   "what": "The Vardar and both banks of the town, colored postcard (State Archives of North Macedonia)",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "f": "Skoje, razglednica so Vardar, 1928.jpg",
+   "w": 1280,
+   "h": 666
+  },
+  {
+   "id": "skopje-2014",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The city center, the Stone Bridge and Mount Vodno, photograph",
+   "who": "Diego Delso",
+   "lic": "CC BY-SA 3.0",
+   "f": "Vista de Skopie, Macedonia, 2014-04-16, DD 56.JPG",
+   "w": 1600,
+   "h": 768
+  }
+ ],
+ "sofia": [
+  {
+   "id": "sofia-1930",
+   "y": 1930,
+   "lab": "about 1930",
+   "what": "The Alexander Nevsky Cathedral and the city center, aerial photograph (Bulgarian State Archives)",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "f": "BASA-746K-1-84-13 central Sofia from the air 1930s.jpg",
+   "w": 1229,
+   "h": 870
+  },
+  {
+   "id": "sofia-2020",
+   "y": 2020,
+   "lab": "2020",
+   "what": "View over the city center toward the Balkan Mountains, photograph",
+   "who": "Ivano Giambattista",
+   "lic": "CC BY-SA 4.0",
+   "f": "Panorama of Sofia 3.jpg",
+   "w": 1280,
+   "h": 565
+  }
+ ],
+ "strasbourg": [
+  {
+   "id": "strasbourg-1493",
+   "y": 1493,
+   "lab": "1493",
+   "what": "Woodcut in Hartmann Schedel’s Nuremberg Chronicle",
+   "who": "Michael Wolgemut and Wilhelm Pleydenwurff",
+   "lic": "PD",
+   "f": "Argentina Straſʒburg 1493.jpg",
+   "w": 1255,
+   "h": 787
+  },
+  {
+   "id": "strasbourg-1644",
+   "y": 1644,
+   "lab": "1644",
+   "what": "View from a height, engraving in Merian’s Topographia Alsatiae",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "f": "Topographia Alsatiae (Merian) p 023.JPG",
+   "w": 1228,
+   "h": 634
+  },
+  {
+   "id": "strasbourg-1839",
+   "y": 1839,
+   "lab": "1839",
+   "what": "View from the Pont d’Âne, lithograph",
+   "who": "Jacques Rothmuller",
+   "lic": "PD",
+   "f": "Vue de Strasbourg, depuis le pont d'âne - btv1b10202899p.jpg",
+   "w": 945,
+   "h": 650
+  },
+  {
+   "id": "strasbourg-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "General view over the roofs, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "Strassburg, general view, Alsace Lorraine, Germany-LCCN2002695083.tif",
+   "w": 1206,
+   "h": 858
+  },
+  {
+   "id": "strasbourg-1920",
+   "y": 1920,
+   "lab": "about 1920",
+   "what": "Place Kléber and the cathedral, photograph (album Souvenir de Strasbourg)",
+   "who": "Compagnie alsacienne des Arts Photomécaniques",
+   "lic": "PD",
+   "f": "Strasbourg-FR-67-ancien-01.jpg",
+   "w": 1144,
+   "h": 727
+  },
+  {
+   "id": "strasbourg-2022",
+   "y": 2022,
+   "lab": "2022",
+   "what": "View over the old town from the cathedral platform, photograph",
+   "who": "Edelseider",
+   "lic": "CC BY-SA 4.0",
+   "f": "Une vue de Strasbourg depuis la plateforme de la cathédrale 03.jpg",
+   "w": 1280,
+   "h": 960
+  }
+ ],
+ "stuttgart": [
+  {
+   "id": "stuttgart-1720",
+   "y": 1720,
+   "lab": "about 1720",
+   "what": "Panorama, engraving",
+   "who": "heirs of Jeremias Wolff",
+   "lic": "PD",
+   "f": "Historische Ansichten von Stuttgart, 001.jpg",
+   "w": 1413,
+   "h": 405
+  },
+  {
+   "id": "stuttgart-1840",
+   "y": 1840,
+   "lab": "1840",
+   "what": "Steel engraving in Lange, Original-Ansichten der vornehmsten Städte in Deutschland, vol. 2",
+   "who": "Carl Gerstner after Heinrich Schönfeld",
+   "lic": "PD",
+   "f": "Lange Städte in Deutschland Band 2 Nr. 21.jpg",
+   "w": 1190,
+   "h": 747
+  },
+  {
+   "id": "stuttgart-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "f": "General view, Stuttgart, Wurtemburg, Germany-LCCN2002720820.jpg",
+   "w": 1242,
+   "h": 931
+  },
+  {
+   "id": "stuttgart-1934",
+   "y": 1934,
+   "lab": "1934",
+   "what": "Aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "f": "ETH-BIB-Stuttgart-Weitere-LBS MH02-35-0036.tif",
+   "w": 1280,
+   "h": 855
+  },
+  {
+   "id": "stuttgart-2018",
+   "y": 2018,
+   "lab": "2018",
+   "what": "The Schlossplatz with the New and Old Palace, aerial photograph",
+   "who": "Rolf Kickuth",
+   "lic": "CC BY-SA 4.0",
+   "f": "StuttgartSchloss2018-05-08-15-06-56.jpg",
+   "w": 1280,
+   "h": 853
+  }
+ ],
+ "szczecin": [
+  {
+   "id": "szczecin-1588",
+   "y": 1588,
+   "lab": "1588",
+   "what": "Bird’s-eye view across the Oder, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 4",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Civitates orbis terrarum. Urbium praecipuarum totius mundi. Liber quartus (page 86).jpg",
+   "w": 996,
+   "h": 655
+  },
+  {
+   "id": "szczecin-1836",
+   "y": 1836,
+   "lab": "1836",
+   "what": "The ducal castle seen across the harbor from the Lastadie, painting",
+   "who": "Ludwig Eduard Lütke",
+   "lic": "PD",
+   "f": "Ludwig Eduard Lütke - Stettin - Blick von der Lastadie-Oderinsel 1836.jpg",
+   "w": 1111,
+   "h": 671
+  },
+  {
+   "id": "szczecin-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "St. James’s Church and the Long Bridge over the Oder, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "f": "General view and Great Bridge, Stettin, Germany-LCCN2002696191.jpg",
+   "w": 1228,
+   "h": 871
+  },
+  {
+   "id": "szczecin-2021",
+   "y": 2021,
+   "lab": "2021",
+   "what": "Jasne Błonia park with the city skyline beyond, aerial photograph",
+   "who": "Kapitel",
+   "lic": "CC BY-SA 4.0",
+   "f": "Szczecin PCP i Jasne Blonia dron (1).jpg",
+   "w": 1280,
+   "h": 1094
+  }
+ ],
+ "tabriz": [
+  {
+   "id": "tabriz-1550",
+   "y": 1550,
+   "lab": "about 1550",
+   "what": "Bird’s-eye view, Ottoman manuscript painting (Saxon State Library, Dresden)",
+   "who": "Matrakçı Nasuh",
+   "lic": "PD",
+   "f": "View of Tabriz. Tevârîh-i Âl-i Osmân, circa 1550 (Dresden Sachsische Landesbibliothek, MS E. 391 and E. 391a) fol. 197b–198a.jpg",
+   "w": 1280,
+   "h": 938
+  },
+  {
+   "id": "tabriz-1686",
+   "y": 1686,
+   "lab": "1686",
+   "what": "Panorama, engraving in Jean Chardin’s Journal du voyage en Perse",
+   "who": "Jean Chardin",
+   "lic": "PD",
+   "f": "1686 view of Tabriz, Iran.jpg",
+   "w": 1600,
+   "h": 629
+  },
+  {
+   "id": "tabriz-1935",
+   "y": 1935,
+   "lab": "1935",
+   "what": "General view of the city and the mountains behind it, photograph (Swiss National Library)",
+   "who": "Annemarie Schwarzenbach",
+   "lic": "PD",
+   "f": "CH-NB - Persien, Täbris (Täbriz)- Stadtansicht - Annemarie Schwarzenbach - SLA-Schwarzenbach-A-5-06-042.jpg",
+   "w": 1212,
+   "h": 1280
+  },
+  {
+   "id": "tabriz-2010",
+   "y": 2010,
+   "lab": "2010",
+   "what": "Aerial photograph of the city below Mount Eynali",
+   "who": "Hansueli Krapf",
+   "lic": "CC BY-SA 3.0",
+   "f": "2010-06-15 15-30-01 Tabriz - Tehran.jpg",
+   "w": 1280,
+   "h": 898
+  }
+ ],
+ "tallinn": [
+  {
+   "id": "tallinn-1645",
+   "y": 1645,
+   "lab": "about 1645",
+   "what": "Engraving after Matthäus Merian (Bibliothèque nationale de France)",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "f": "Revalia ; Nerva - btv1b53235810v (1 of 2).jpg",
+   "w": 1211,
+   "h": 362
+  },
+  {
+   "id": "tallinn-1845",
+   "y": 1845,
+   "lab": "1845",
+   "what": "The city from the sea, painting",
+   "who": "Ivan Aivazovsky",
+   "lic": "PD",
+   "f": "Aivazovsky - Reval 1845.jpg",
+   "w": 1280,
+   "h": 928
+  },
+  {
+   "id": "tallinn-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "General view, photochrom print",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "f": "Reval, general view, 1890 - 1900 - edited.jpg",
+   "w": 1280,
+   "h": 886
+  },
+  {
+   "id": "tallinn-1915",
+   "y": 1915,
+   "lab": "1915",
+   "what": "View toward St. Olaf’s Church, painting (Tartu Art Museum)",
+   "who": "Nikolai Triik",
+   "lic": "PD",
+   "f": "Nikolai Triik. View on Tallinn.TKM 0234M.jpg",
+   "w": 1280,
+   "h": 1037
+  },
+  {
+   "id": "tallinn-2012",
+   "y": 2012,
+   "lab": "2012",
+   "what": "The old town and Toompea from St. Olaf’s Church, photograph",
+   "who": "Diego Delso",
+   "lic": "CC BY-SA 3.0",
+   "f": "Vistas panorámicas desde la iglesia de San Olaf, Tallinn, Estonia, 2012-08-05, DD 23.JPG",
+   "w": 1280,
+   "h": 806
+  }
+ ],
+ "tbilisi": [
+  {
+   "id": "tbilisi-1717",
+   "y": 1717,
+   "lab": "1717",
+   "what": "Engraving in Tournefort’s Relation d’un voyage du Levant",
+   "who": "Joseph Pitton de Tournefort",
+   "lic": "PD",
+   "f": "General view of Tiflis. Engraved by Tournefort in 1701.jpg",
+   "w": 980,
+   "h": 631
+  },
+  {
+   "id": "tbilisi-1830",
+   "y": 1830,
+   "lab": "about 1830",
+   "what": "General view, lithograph",
+   "who": "Godefroy Engelmann after Louis Firmin Le Camus",
+   "lic": "PD",
+   "f": "Vue de Tiflis (1830s), Engelmann, after Louis Firmin Le Camus.jpg",
+   "w": 1179,
+   "h": 723
+  },
+  {
+   "id": "tbilisi-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The fortress and the town, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "Town and fortress, Tiflis, Russia, (Tbilisi, Georgia)-LCCN2001697511.jpg",
+   "w": 1179,
+   "h": 841
+  },
+  {
+   "id": "tbilisi-1964",
+   "y": 1964,
+   "lab": "1964",
+   "what": "The old town and the Kura from above, photograph",
+   "who": "Jacques Dupakiers",
+   "lic": "CC BY 2.0",
+   "f": "471 - Panorama of the old city and the fortress of Tbilisi.jpg",
+   "w": 1280,
+   "h": 847
+  },
+  {
+   "id": "tbilisi-2015",
+   "y": 2015,
+   "lab": "2015",
+   "what": "Panorama of the city with the Holy Trinity Cathedral, photograph",
+   "who": "jagermesh",
+   "lic": "CC BY-SA 2.0",
+   "f": "Tbilisi (16671628463).jpg",
+   "w": 1600,
+   "h": 573
+  }
+ ],
+ "the-hague": [
+  {
+   "id": "the-hague-1647",
+   "y": 1647,
+   "lab": "1647",
+   "what": "View from the northwest, painting (Metropolitan Museum of Art)",
+   "who": "Jan van Goyen",
+   "lic": "CC0",
+   "f": "A View of The Hague from the Northwest MET DP147601.jpg",
+   "w": 1254,
+   "h": 869
+  },
+  {
+   "id": "the-hague-1765",
+   "y": 1765,
+   "lab": "1760s",
+   "what": "The Binnenhof with the Knights’ Hall, painting",
+   "who": "Paulus Constantijn la Fargue",
+   "lic": "PD",
+   "f": "Paulus Constantijn la Fargue - Cityscape The Hague.jpg",
+   "w": 1280,
+   "h": 829
+  },
+  {
+   "id": "the-hague-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Knights’ Hall in the Binnenhof, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "Ridderzaal (the Knights' Hall), Hague, Holland-LCCN2001698793.jpg",
+   "w": 1229,
+   "h": 855
+  },
+  {
+   "id": "the-hague-1930",
+   "y": 1930,
+   "lab": "1920–40",
+   "what": "The Peace Palace, aerial photograph (Netherlands Institute of Military History)",
+   "who": "unknown photographer",
+   "lic": "CC BY-SA 4.0",
+   "f": "NIMH - 2011 - 3749 - Aerial photograph of Den Haag, The Netherlands.jpg",
+   "w": 1210,
+   "h": 1205
+  },
+  {
+   "id": "the-hague-2022",
+   "y": 2022,
+   "lab": "2022",
+   "what": "View over the city toward Scheveningen and the sea, photograph",
+   "who": "Joris van Rooden",
+   "lic": "CC BY-SA 4.0",
+   "f": "View of The Hague and Scheveningen 2022.jpg",
+   "w": 1280,
+   "h": 960
+  }
+ ],
+ "thessaloniki": [
+  {
+   "id": "thessaloniki-1896",
+   "y": 1896,
+   "lab": "about 1896",
+   "what": "Panorama from the sea, photograph (Hallwyl Museum, Stockholm)",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "f": "Fotografi av Thessaloniki - Hallwylska museet - 103097.tif",
+   "w": 1190,
+   "h": 555
+  },
+  {
+   "id": "thessaloniki-1937",
+   "y": 1937,
+   "lab": "1937",
+   "what": "View from the White Tower toward the upper town, photograph (Staatsarchiv Freiburg)",
+   "who": "Willy Pragher",
+   "lic": "CC BY 4.0",
+   "f": "Saloniki- Ausblick durch den weißen Turm, links Straße drauf (mit Straßenbahn) - LABW - Staatsarchiv Freiburg W 134 Nr. 012707.jpg",
+   "w": 1280,
+   "h": 820
+  },
+  {
+   "id": "thessaloniki-2018",
+   "y": 2018,
+   "lab": "2018",
+   "what": "The waterfront and the White Tower, aerial photograph",
+   "who": "Johannesjom",
+   "lic": "CC BY-SA 4.0",
+   "f": "Thessaloniki beach promenade.jpg",
+   "w": 1536,
+   "h": 724
+  }
+ ],
+ "tirana": [
+  {
+   "id": "tirana-1930",
+   "y": 1930,
+   "lab": "about 1930",
+   "what": "View over the old town, press photograph (Agence Meurisse, Gallica)",
+   "who": "Agence Meurisse",
+   "lic": "PD",
+   "f": "Albanie - vue de Tirana - btv1b9048038b.jpg",
+   "w": 1203,
+   "h": 866
+  },
+  {
+   "id": "tirana-2021",
+   "y": 2021,
+   "lab": "2021",
+   "what": "View of the city from the Sauk hills, photograph",
+   "who": "Terfili",
+   "lic": "CC BY-SA 4.0",
+   "f": "View of Tirana from the Lapidar.jpg",
+   "w": 1280,
+   "h": 576
+  }
+ ],
+ "toulouse": [
+  {
+   "id": "toulouse-1642",
+   "y": 1642,
+   "lab": "1642",
+   "what": "Panorama from the Bazacle mills, engraving (Musée Paul-Dupuy, Toulouse)",
+   "who": "Colignon",
+   "lic": "PD",
+   "f": "MPD-2005-Colignon-Vue panoramique de Toulouse-1642.jpg",
+   "w": 1600,
+   "h": 314
+  },
+  {
+   "id": "toulouse-1661",
+   "y": 1661,
+   "lab": "1661",
+   "what": "Engraving in Merian’s Topographia Galliae (BnF)",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "f": "Thoulouse (Toulouse) - btv1b10661093k.jpg",
+   "w": 1600,
+   "h": 551
+  },
+  {
+   "id": "toulouse-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Place du Capitole, photochrom print",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "Capitol Place, Toulouse, France, ca. 1895.jpg",
+   "w": 1280,
+   "h": 900
+  },
+  {
+   "id": "toulouse-1961",
+   "y": 1961,
+   "lab": "1961",
+   "what": "The Garonne and its bridges, aerial photograph (Toulouse city archives)",
+   "who": "André Cros",
+   "lic": "CC BY-SA 4.0",
+   "f": "15.02.1961.Vues aériennes de Toulouse. (1961) - 53Fi3061.jpg",
+   "w": 1280,
+   "h": 1094
+  },
+  {
+   "id": "toulouse-2015",
+   "y": 2015,
+   "lab": "2015",
+   "what": "Aerial photograph from an airplane",
+   "who": "Handelsgeselschaft",
+   "lic": "CC BY-SA 4.0",
+   "f": "Vue aérienne Toulouse.jpg",
+   "w": 832,
+   "h": 883
+  }
+ ],
+ "tunis": [
+  {
+   "id": "tunis-1575",
+   "y": 1575,
+   "lab": "1575",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 2",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Civitates orbis terrarum. De praecipuis totius universi urbibus. Liber secundus (page 124).jpg",
+   "w": 952,
+   "h": 237
+  },
+  {
+   "id": "tunis-1713",
+   "y": 1713,
+   "lab": "1708–19",
+   "what": "Engraving in Henri Abraham Chatelain’s Atlas historique",
+   "who": "Henri Abraham Chatelain",
+   "lic": "PD",
+   "f": "Vue de Tunis - btv1b53143340j.jpg",
+   "w": 838,
+   "h": 619
+  },
+  {
+   "id": "tunis-1840",
+   "y": 1840,
+   "lab": "about 1840",
+   "what": "Steel engraving after Sir Grenville Temple (Government Art Collection)",
+   "who": "Charles Bentley and James Sands, after Sir Grenville Temple",
+   "lic": "PD",
+   "f": "Tunis, from the Saneeah Eftoor GAC 17669.jpg",
+   "w": 1050,
+   "h": 677
+  },
+  {
+   "id": "tunis-1899",
+   "y": 1899,
+   "lab": "about 1899",
+   "what": "View over the medina from the Hôtel de Paris, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "CC BY 2.0",
+   "f": "Flickr - …trialsanderrors - View from Paris Hotel, Tunis, Tunisia, ca. 1899.jpg",
+   "w": 1280,
+   "h": 934
+  },
+  {
+   "id": "tunis-1928",
+   "y": 1928,
+   "lab": "1928",
+   "what": "The Zitouna Mosque minaret above the medina, photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "f": "ETH-BIB-Grosse Moschee von Tunis-Mittelmeerflug 1928-LBS MH02-04-0163.tif",
+   "w": 1280,
+   "h": 740
+  }
+ ],
+ "turin": [
+  {
+   "id": "turin-1682",
+   "y": 1682,
+   "lab": "1682",
+   "what": "Piazza Castello and the Royal Palace, colored engraving from Blaeu’s town book of Italy",
+   "who": "Romeyn de Hooghe and the heirs of Joan Blaeu",
+   "lic": "PD",
+   "f": "Atlas Van der Hagen-KW1049B12 055-PROSPECTVS PLATAE VETERIS ANTE CASTRVM.jpeg",
+   "w": 1076,
+   "h": 574
+  },
+  {
+   "id": "turin-1831",
+   "y": 1831,
+   "lab": "1831",
+   "what": "General view with the Po, drawing",
+   "who": "Clemente Rovere",
+   "lic": "CC BY 4.0",
+   "f": "Veduta generale verso greco, Torino, 1831.jpg",
+   "w": 1600,
+   "h": 736
+  },
+  {
+   "id": "turin-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "View from the Monte dei Cappuccini, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "General view from Mount of the Capuchins, Turin, Italy-LCCN2001700975.tif",
+   "w": 1201,
+   "h": 843
+  },
+  {
+   "id": "turin-2009",
+   "y": 2009,
+   "lab": "2009",
+   "what": "View from the Mole Antonelliana, photograph",
+   "who": "chensiyuan",
+   "lic": "CC BY-SA 4.0",
+   "f": "Turin aerial 2009.JPG",
+   "w": 1280,
+   "h": 857
+  }
+ ],
+ "utrecht": [
+  {
+   "id": "utrecht-1625",
+   "y": 1625,
+   "lab": "1625",
+   "what": "View of the city with the Dom Tower, etching (sheet 2 of a multi-sheet profile; Rijksmuseum)",
+   "who": "Joost Cornelisz Droochsloot",
+   "lic": "CC0",
+   "f": "Stadsgezicht van Utrecht (tweede deel) Utrecht (titel op object), RP-P-AO-5-57-2.jpg",
+   "w": 1193,
+   "h": 894
+  },
+  {
+   "id": "utrecht-1713",
+   "y": 1713,
+   "lab": "about 1713",
+   "what": "The town hall during the peace congress of 1712–13, with the Dom Tower, etching (Rijksmuseum)",
+   "who": "unknown artist, published by Jan Smit",
+   "lic": "CC0",
+   "f": "Stadhuis van Utrecht waar het vredescongres werd gehouden, 1712 Stadhuis van Utrecht, alwaar het congres van een generale vreden, door de plenipotentiares werd gehouden La Maison de Ville d'Utrecht, ou s'assemblent les , RP-P-OB-59.588.jpg",
+   "w": 1200,
+   "h": 1019
+  },
+  {
+   "id": "utrecht-1756",
+   "y": 1756,
+   "lab": "1756",
+   "what": "The city seen from the Paardenveld, etching in Tirion’s Het Verheerlykt Nederland",
+   "who": "Jan Caspar Philips after Jan de Beijer",
+   "lic": "CC0",
+   "f": "Gezicht op Utrecht De Stad Utrecht, van het Paarden Veld te zien (titel op object), RP-P-1911-3165.jpg",
+   "w": 1600,
+   "h": 612
+  },
+  {
+   "id": "utrecht-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Oudegracht and the Dom Tower, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "The Oude Gracht Hamburgerbrug, Utrecht, Holland-LCCN2001699554.jpg",
+   "w": 1247,
+   "h": 884
+  },
+  {
+   "id": "utrecht-1930",
+   "y": 1930,
+   "lab": "1920–40",
+   "what": "The Dom Tower and cathedral, aerial photograph (Netherlands Institute of Military History)",
+   "who": "unknown photographer",
+   "lic": "CC BY-SA 4.0",
+   "f": "NIMH - 2011 - 4995 - Aerial photograph of Utrecht, The Netherlands.jpg",
+   "w": 1222,
+   "h": 1235
+  },
+  {
+   "id": "utrecht-2024",
+   "y": 2024,
+   "lab": "2024",
+   "what": "The Dom Tower over the Oudegracht from the Stadhuisbrug, photograph",
+   "who": "Andy Li",
+   "lic": "CC0",
+   "f": "View of Utrecht Dom Tower from Stadhuisbrug 2024-11-28.jpg",
+   "w": 964,
+   "h": 1280
+  }
+ ],
+ "valencia": [
+  {
+   "id": "valencia-1563",
+   "y": 1563,
+   "lab": "1563",
+   "what": "Panorama, drawing",
+   "who": "Anton van den Wyngaerde",
+   "lic": "PD",
+   "f": "València el 1563, per Anton van den Wyngaerde.jpg",
+   "w": 1600,
+   "h": 457
+  },
+  {
+   "id": "valencia-1812",
+   "y": 1812,
+   "lab": "1812–14",
+   "what": "The Market Square with the Silk Exchange (Lonja), colored aquatint",
+   "who": "Louis Lecoeur",
+   "lic": "CC0",
+   "f": "Gezicht op een plein in Valencia, RP-P-1907-2721.jpg",
+   "w": 717,
+   "h": 491
+  },
+  {
+   "id": "valencia-1855",
+   "y": 1855,
+   "lab": "1850s",
+   "what": "Bird’s-eye view, lithograph",
+   "who": "Alfred Guesdon",
+   "lic": "PD",
+   "f": "València el 1832, per A. Guesdon.jpg",
+   "w": 1280,
+   "h": 840
+  },
+  {
+   "id": "valencia-2010",
+   "y": 2010,
+   "lab": "2010",
+   "what": "The old city from the Micalet tower, photograph",
+   "who": "Kiban",
+   "lic": "CC BY-SA 3.0",
+   "f": "Dalla Torre del Micalet cut.jpg",
+   "w": 1600,
+   "h": 634
+  }
+ ],
+ "valladolid": [
+  {
+   "id": "valladolid-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1 (colored copy, Heidelberg University Library)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Braun Valladolid UBHD.jpg",
+   "w": 1600,
+   "h": 403
+  },
+  {
+   "id": "valladolid-1700",
+   "y": 1700,
+   "lab": "about 1700",
+   "what": "General view, colored etching in Pieter van den Berge’s Theatrum Hispaniae (Rijksmuseum)",
+   "who": "Pieter van den Berge",
+   "lic": "CC0",
+   "f": "Gezicht op de stad Valladolid, BI-1956-1074-115-2.jpg",
+   "w": 1005,
+   "h": 642
+  },
+  {
+   "id": "valladolid-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The University, photochrom print (Library of Congress)",
+   "who": "Photoglob Co.",
+   "lic": "PD",
+   "f": "Valladolid. La Universidad LCCN2017660789.jpg",
+   "w": 1228,
+   "h": 903
+  },
+  {
+   "id": "valladolid-2014",
+   "y": 2014,
+   "lab": "2014",
+   "what": "View over the city center from the cathedral’s south tower, photograph",
+   "who": "Ángel Cantero",
+   "lic": "CC BY-SA 2.0",
+   "f": "Exterior Valladolid desde la Torre sur de la Catedral 11 (14211546950).jpg",
+   "w": 1280,
+   "h": 835
+  }
+ ],
+ "veliky-novgorod": [
+  {
+   "id": "veliky-novgorod-2021",
+   "y": 2021,
+   "lab": "2021",
+   "what": "The Kremlin (Detinets) and the Volkhov River, aerial photograph",
+   "who": "SadPetzl",
+   "lic": "CC BY-SA 4.0",
+   "f": "Velikiy Novgorod Detinets aerial 4.jpg",
+   "w": 1280,
+   "h": 960
+  }
+ ],
+ "verona": [
+  {
+   "id": "verona-1581",
+   "y": 1581,
+   "lab": "1581",
+   "what": "View of the town, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 3 (colored copy, BnF)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Magnifica illa civitas Verona ; Colonia augusta Verona nova gallieniana - btv1b53178837t (1 of 2).jpg",
+   "w": 1069,
+   "h": 279
+  },
+  {
+   "id": "verona-1715",
+   "y": 1715,
+   "lab": "1710s",
+   "what": "The Adige at San Giorgio in Braida, painting",
+   "who": "Gaspar van Wittel",
+   "lic": "PD",
+   "f": "Caspar van Wittel Veduta di Verona.jpg",
+   "w": 1228,
+   "h": 902
+  },
+  {
+   "id": "verona-1770",
+   "y": 1770,
+   "lab": "1768–71",
+   "what": "The Adige from the Ponte Nuovo, painting after Bernardo Bellotto (Courtauld Gallery)",
+   "who": "William Marlow",
+   "lic": "PD",
+   "f": "William Marlow (1740-1813) - View of Verona (after Bernardo Bellotto) - P.1947.LF.241 - Courtauld Gallery.jpg",
+   "w": 1200,
+   "h": 692
+  },
+  {
+   "id": "verona-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Arena and the city, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "The Arena, Verona, Italy-LCCN2001701085.jpg",
+   "w": 1216,
+   "h": 876
+  },
+  {
+   "id": "verona-2021",
+   "y": 2021,
+   "lab": "2021",
+   "what": "The Adige and the old town from Castel San Pietro, photograph",
+   "who": "Krzysztof Golik",
+   "lic": "CC BY-SA 4.0",
+   "f": "View of Verona (1).jpg",
+   "w": 1600,
+   "h": 443
+  }
+ ],
+ "vilnius": [
+  {
+   "id": "vilnius-1581",
+   "y": 1581,
+   "lab": "1581",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 3",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Vilnius - map by Braun Hogenberg (34065617).jpg",
+   "w": 1234,
+   "h": 909
+  },
+  {
+   "id": "vilnius-1840",
+   "y": 1840,
+   "lab": "about 1840",
+   "what": "Castle Hill and the town from the Green Bridge in winter, lithograph",
+   "who": "Barthélemy Lauvergne",
+   "lic": "PD",
+   "f": "Commission scientifique du Nord - B. Lauvergne - Vue de Vilnius prise de la tête du pont vert.jpg",
+   "w": 1268,
+   "h": 819
+  },
+  {
+   "id": "vilnius-1872",
+   "y": 1872,
+   "lab": "1872",
+   "what": "View from Tauras Hill, painting",
+   "who": "Józef Marszewski",
+   "lic": "PD",
+   "f": "Józef Marszewski - Vilnius viewed from Tauras Hill (1872).jpg",
+   "w": 1280,
+   "h": 856
+  },
+  {
+   "id": "vilnius-1944",
+   "y": 1944,
+   "lab": "1944",
+   "what": "The Old Town from the bell tower of All Saints’ Church, photograph",
+   "who": "Jan Bułhak",
+   "lic": "PD",
+   "f": "Panorama of the Vilnius Old Town, 1944.jpg",
+   "w": 1280,
+   "h": 797
+  },
+  {
+   "id": "vilnius-2017",
+   "y": 2017,
+   "lab": "2017",
+   "what": "The Old Town from Gediminas Tower, photograph",
+   "who": "Radosław Botev",
+   "lic": "CC BY 3.0 pl",
+   "f": "View from Gediminas Tower (3).jpg",
+   "w": 1280,
+   "h": 864
+  }
+ ],
+ "wroc-aw": [
+  {
+   "id": "wroc-aw-1493",
+   "y": 1493,
+   "lab": "1493",
+   "what": "Woodcut in Hartmann Schedel’s Nuremberg Chronicle",
+   "who": "Michael Wolgemut and Wilhelm Pleydenwurff",
+   "lic": "PD",
+   "f": "Nuremberg chronicles - BRESSLA.png",
+   "w": 1600,
+   "h": 724
+  },
+  {
+   "id": "wroc-aw-1588",
+   "y": 1588,
+   "lab": "1588",
+   "what": "Bird’s-eye view in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 4",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Civitates orbis terrarum. Urbium praecipuarum totius mundi. Liber quartus (page 88).jpg",
+   "w": 969,
+   "h": 729
+  },
+  {
+   "id": "wroc-aw-1650",
+   "y": 1650,
+   "lab": "1650",
+   "what": "Engraving in Merian’s Topographia Bohemiae, Moraviae et Silesiae",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "f": "Breslau merian.JPG",
+   "w": 1600,
+   "h": 719
+  },
+  {
+   "id": "wroc-aw-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Town Hall from the east, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "Town hall from the east, Breslau, Silesia, Germany (i.e., Wrocław, Poland)-LCCN2002720684.tif",
+   "w": 1228,
+   "h": 907
+  },
+  {
+   "id": "wroc-aw-1929",
+   "y": 1929,
+   "lab": "about 1929",
+   "what": "Centennial Hall and the exhibition grounds, aerial photograph",
+   "who": "Aerokartographisches Institut",
+   "lic": "PD",
+   "f": "Breslau und Umgebung 067.jpg",
+   "w": 1280,
+   "h": 905
+  },
+  {
+   "id": "wroc-aw-2009",
+   "y": 2009,
+   "lab": "2009",
+   "what": "View over the old town from St. Elizabeth’s Church, photograph",
+   "who": "Klearchos Kapoutsis",
+   "lic": "CC BY 2.0",
+   "f": "Wrocław from above (3622389464).jpg",
+   "w": 1280,
+   "h": 724
+  }
+ ],
+ "yerevan": [
+  {
+   "id": "yerevan-1686",
+   "y": 1686,
+   "lab": "1686",
+   "what": "View of Erivan, engraving from Jean Chardin’s Journal du voyage en Perse",
+   "who": "Jean Chardin",
+   "lic": "PD",
+   "f": "Chardin Yerevan 1811.jpg",
+   "w": 921,
+   "h": 483
+  },
+  {
+   "id": "yerevan-1964",
+   "y": 1964,
+   "lab": "1964",
+   "what": "View from Victory Park, photograph",
+   "who": "Thomas Taylor Hammond",
+   "lic": "CC BY-SA 4.0",
+   "f": "Hammond Slides Armenia 33. View of Yerevan.jpg",
+   "w": 1280,
+   "h": 489
+  },
+  {
+   "id": "yerevan-2010",
+   "y": 2010,
+   "lab": "2010",
+   "what": "Panorama from the top of the Cascade, photograph",
+   "who": "Serouj Ourishian",
+   "lic": "CC BY-SA 3.0",
+   "f": "Yerevan, Armenia.jpg",
+   "w": 1574,
+   "h": 357
+  }
+ ],
+ "z-rich": [
+  {
+   "id": "z-rich-1581",
+   "y": 1581,
+   "lab": "1581",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 3",
+   "who": "Georg Braun and Frans Hogenberg, after Jos Murer",
+   "lic": "PD",
+   "f": "Map of Zurich by Braun Hogenberg (34065120).jpg",
+   "w": 1250,
+   "h": 944
+  },
+  {
+   "id": "z-rich-1726",
+   "y": 1726,
+   "lab": "1726",
+   "what": "View from the lake, engraving in Les Forces de l’Europe, Asie, Afrique et Amerique",
+   "who": "Pieter van der Aa (publisher)",
+   "lic": "CC0",
+   "f": "Gezicht op Zürich, 1726 La Ville de Zurich, en Profil (titel op object) Les Forces de l'Europe, Asie, Afrique et Amerique Comme aussi les Cartes des Côtes de France et d'Espagne (serietitel op objec, RP-P-OB-83.036-90.jpg",
+   "w": 1024,
+   "h": 601
+  },
+  {
+   "id": "z-rich-1765",
+   "y": 1765,
+   "lab": "1765",
+   "what": "View from the lake, etching on a guild journeyman’s certificate (Zentralbibliothek Zürich)",
+   "who": "Johann Rudolf Metzger",
+   "lic": "PD",
+   "f": "Zentralbibliothek Zürich - Handwerkskundschaft der Zunft der Buchbinder - 991037222059705501.jpg",
+   "w": 737,
+   "h": 235
+  },
+  {
+   "id": "z-rich-1870",
+   "y": 1870,
+   "lab": "1870",
+   "what": "The Limmatquai and Niederdorf with the Polytechnikum, photograph (Baugeschichtliches Archiv Zürich)",
+   "who": "Adolphe Braun",
+   "lic": "PD",
+   "f": "BAZ - Blick auf das untere Limmatquai.tiff",
+   "w": 1254,
+   "h": 731
+  },
+  {
+   "id": "z-rich-1919",
+   "y": 1919,
+   "lab": "1919",
+   "what": "The main station, Landesmuseum and Limmat, aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "f": "ETH-BIB-Zürich, Hauptbahnhof, Landesmuseum, Limmat aus 100 m-Inlandflüge-LBS MH01-001793.tif",
+   "w": 1254,
+   "h": 879
+  },
+  {
+   "id": "z-rich-2020",
+   "y": 2020,
+   "lab": "2020",
+   "what": "View down the Limmat from the Quaibrücke, photograph",
+   "who": "Daniel Kraft",
+   "lic": "CC BY-SA 3.0",
+   "f": "Zürich view Quaibrücke 20200702.jpg",
+   "w": 1280,
+   "h": 665
+  }
+ ],
+ "zagreb": [
+  {
+   "id": "zagreb-1822",
+   "y": 1822,
+   "lab": "1822",
+   "what": "Prospect of the city from the south, copper engraving on Bishop Verhovac’s map of the Zagreb diocese (Zagreb City Museum)",
+   "who": "Ferencz Karacz after Josip Szemán",
+   "lic": "PD",
+   "f": "Bakrorez panorame Zagreba iz 1822.jpg",
+   "w": 1140,
+   "h": 628
+  },
+  {
+   "id": "zagreb-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Kaptol Square and the Virgin Mary column, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "Agram, Capital Palace, with Maria Statue, by Fernkorn, Croatia, Austro-Hungary-LCCN2002710734.jpg",
+   "w": 1254,
+   "h": 913
+  },
+  {
+   "id": "zagreb-1934",
+   "y": 1934,
+   "lab": "1932–36",
+   "what": "The cathedral and the city center, aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "f": "ETH-BIB-Zagreb-Weitere-LBS MH02-48-0079.tif",
+   "w": 1280,
+   "h": 845
+  },
+  {
+   "id": "zagreb-2014",
+   "y": 2014,
+   "lab": "2014",
+   "what": "View over the rooftops to the cathedral, photograph",
+   "who": "Diego Delso",
+   "lic": "CC BY-SA 3.0",
+   "f": "Vista de Zagreb, Croacia, 2014-04-13, DD 01.JPG",
+   "w": 1600,
+   "h": 628
+  }
+ ],
+ "zaragoza": [
+  {
+   "id": "zaragoza-1647",
+   "y": 1647,
+   "lab": "1647",
+   "what": "View across the Ebro, painting (Museo del Prado)",
+   "who": "Juan Bautista Martínez del Mazo",
+   "lic": "PD",
+   "f": "Vista de Zaragoza en 1647.jpg",
+   "w": 1280,
+   "h": 651
+  },
+  {
+   "id": "zaragoza-1820",
+   "y": 1820,
+   "lab": "about 1820",
+   "what": "The stone bridge and the Pilar, lithograph",
+   "who": "Louis-Albert-Guislain Bacler d’Albe and Godefroy Engelmann",
+   "lic": "PD",
+   "f": "Vista de Zaragoza 02.jpg",
+   "w": 979,
+   "h": 727
+  },
+  {
+   "id": "zaragoza-1850",
+   "y": 1850,
+   "lab": "1850",
+   "what": "The Church of San Pablo, lithograph in España artística y monumental, vol. 3",
+   "who": "Genaro Pérez Villaamil and Alfred Guesdon",
+   "lic": "PD",
+   "f": "1850, España artística y monumental, vistas y descripción de los sitios y monumentos más notables de españa, vol 3, Yglesia de San Pablo en Zaragoza.jpg",
+   "w": 954,
+   "h": 744
+  },
+  {
+   "id": "zaragoza-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Ebro and the Basilica del Pilar, photochrom print (Library of Congress)",
+   "who": "Photoglob Co.",
+   "lic": "PD",
+   "f": "Zaragoza. Rio Ebro y Nuestra Senora del Pilar LCCN2017660909.jpg",
+   "w": 1228,
+   "h": 901
+  },
+  {
+   "id": "zaragoza-1925",
+   "y": 1925,
+   "lab": "about 1925",
+   "what": "Paseo de la Independencia, photograph (La Revista de Viajes)",
+   "who": "Hauser y Menet",
+   "lic": "PD",
+   "f": "1925 REVISTA VIAJES 12.jpg",
+   "w": 1280,
+   "h": 831
+  }
+ ]
+}

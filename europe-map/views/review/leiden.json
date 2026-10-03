@@ -1,0 +1,71 @@
+{
+ "city": "Leiden",
+ "checks": [
+  {
+   "n": 8,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.24,
+     0.08,
+     0.86,
+     0.72
+    ]
+   },
+   "reason": "Edge of the red cartouche shows at the left of the 16:9 crop; trim a little further right. Date, credit and license fine."
+  },
+  {
+   "n": 10,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.035,
+     0.14,
+     0.965,
+     0.81
+    ],
+    "focal": [
+     0.5,
+     0.5
+    ]
+   },
+   "reason": "Trim still contains paper margin, the plate frame lines and the signature strip; cut to the inside of the frame. Real view of Leiden, 1654 fine."
+  },
+  {
+   "n": 16,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.2,
+     0.235,
+     0.722,
+     0.72
+    ]
+   },
+   "reason": "Right side of trim runs past the print into paper and the frame line (picture ends at about x=0.722). Still just over half the width."
+  },
+  {
+   "n": 28,
+   "verdict": "ok",
+   "reason": "Town hall facade, clean photochrom (LOC copy); crop keeps the tower top."
+  },
+  {
+   "n": 31,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.012,
+     0,
+     1,
+     1
+    ]
+   },
+   "reason": "Dark vertical strip along the left edge of the plate shows in the crop; Kret record confirms Breestraat view, 5 June 1927."
+  },
+  {
+   "n": 40,
+   "verdict": "ok",
+   "reason": "Clean wide canal view; crop fine."
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+{
+ "city": "Kyiv",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Kiev overview.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "St. Michael’s Golden-Domed Monastery, photochrom print",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.955
+   ],
+   "focal": [
+    0.53,
+    0.42
+   ],
+   "why": "color; St. Michael’s domes and the old upper city recognizable; caption strip trimmed"
+  },
+  {
+   "n": 11,
+   "file": "Oekraïne, SFA022829596.jpg",
+   "y": 1918,
+   "lab": "1918",
+   "what": "The Kyiv Pechersk Lavra above the Dnieper, photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.02,
+    0.99,
+    0.98
+   ],
+   "focal": [
+    0.5,
+    0.42
+   ],
+   "why": "the Lavra bell tower and monastery on the hill seen across the river; dated 1918 in the record"
+  },
+  {
+   "n": 15,
+   "file": "Venetian channel, beach and Pechersk. View from the Venetian bridge. Kyiv, Ukraine.jpg",
+   "y": 2023,
+   "lab": "2023",
+   "what": "Pechersk hills across the Dnieper, photograph",
+   "who": "Ввласенко",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.32,
+    0.45
+   ],
+   "why": "high-resolution river view with the Lavra bell tower on the hill at left"
+  }
+ ],
+ "gaps": "P0, P1, P2, P3: nothing usable (#1 is a portrait; #2 is a c. 1900 postcard misdated 1800)",
+ "notes": "Thin set. P4 could alternatively use #10 (view over Podil from the funicular, c. 1900) but #3 is the more recognizable landmark. P6 is only a modest choice: no skyline or historic-center photo among candidates; landmarks in #15 are small. Photographer credit is the Commons username as given in the artist field. #3 print bears the P.Z. (Photoglob Zürich) mark; the record says unknown author.",
+ "_reviewed": true
+}

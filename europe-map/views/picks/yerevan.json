@@ -1,0 +1,71 @@
+{
+ "city": "Yerevan",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Chardin Yerevan 1811.jpg",
+   "y": 1686,
+   "lab": "1686",
+   "what": "View of Erivan, engraving from Jean Chardin’s Journal du voyage en Perse",
+   "who": "Jean Chardin",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.133,
+    0.15,
+    0.852,
+    0.746
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "only early view; the whole walled town in its valley below the mountains, keyed landmarks"
+  },
+  {
+   "n": 2,
+   "file": "Hammond Slides Armenia 33. View of Yerevan.jpg",
+   "y": 1964,
+   "lab": "1964",
+   "what": "View from Victory Park, photograph",
+   "who": "Thomas Taylor Hammond",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.22,
+    1,
+    0.81
+   ],
+   "focal": [
+    0.45,
+    0.6
+   ],
+   "why": "color general view of the Soviet-era center, firmly dated"
+  },
+  {
+   "n": 4,
+   "file": "Yerevan, Armenia.jpg",
+   "y": 2010,
+   "lab": "2010",
+   "what": "Panorama from the top of the Cascade, photograph",
+   "who": "Serouj Ourishian",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0.1,
+    0,
+    0.92,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.55
+   ],
+   "why": "the city center with the Cascade monument in front and Mount Ararat faintly on the horizon"
+  }
+ ],
+ "gaps": "P0, P1, P3, P4: no candidates.",
+ "notes": "#1 is the re-engraved plate from the 1811 Langlès edition, labeled with the year of the original plate (assumed to be in the 1686 Journal du voyage like the Tabriz view; if it first appeared in the 1711 edition, use 1711). It shows the town as drawn on Chardin’s 1673 visit. #6 is an HDR version of the same Cascade panorama as #4, if brighter shadows are wanted. #2 is hazy, with a blurred wall at the bottom (trimmed).",
+ "_reviewed": true
+}

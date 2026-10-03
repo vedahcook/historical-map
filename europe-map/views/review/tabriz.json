@@ -1,0 +1,36 @@
+{
+ "city": "Tabriz",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "Ottoman town view, date from file title 'circa 1550'; gutter is part of the double page"
+  },
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.075,
+     0.042,
+     0.99,
+     0.96
+    ]
+   },
+   "reason": "engraving frame line/paper strip at the top and bottom edge stays inside the crop with the old trim"
+  },
+  {
+   "n": 11,
+   "verdict": "fix",
+   "fix": {
+    "what": "General view of the city and the mountains behind it, photograph (Swiss National Library)"
+   },
+   "reason": "record only says city view with mountain range; 'from the Arg citadel' is not supported by the record"
+  },
+  {
+   "n": 16,
+   "verdict": "ok",
+   "reason": "clear aerial with red hills; as good as the other 2010 aerials"
+  }
+ ]
+}

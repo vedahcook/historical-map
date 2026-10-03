@@ -1,0 +1,134 @@
+{
+ "city": "Granada",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Gezicht op de stad Granada, BI-1956-1074-50.jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1 (Rijksmuseum)",
+   "who": "Georg Braun and Frans Hogenberg, after Joris Hoefnagel",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.06,
+    0.07,
+    0.95,
+    0.925
+   ],
+   "focal": [
+    0.55,
+    0.37
+   ],
+   "why": "colored view from the west; Alhambra and city on their hills recognizable"
+  },
+  {
+   "n": 11,
+   "file": "Gezicht op Granada en de gebouwen van het Alhambra, BI-1956-1074-54-1.jpg",
+   "y": 1694,
+   "lab": "1694",
+   "what": "The Alhambra and the Torres Bermejas above the city, engraving in Theatrum Hispaniae (Rijksmuseum)",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.095,
+    0.14,
+    0.905,
+    0.835
+   ],
+   "focal": [
+    0.38,
+    0.6
+   ],
+   "why": "only usable late-17th-century view; Alhambra and Torres Bermejas clear"
+  },
+  {
+   "n": 13,
+   "file": "Granada (BM 1948,0410.133).jpg",
+   "y": 1836,
+   "lab": "1836",
+   "what": "Towers of the Alhambra seen from a balcony, tinted lithograph (British Museum)",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.01,
+    0.99,
+    0.99
+   ],
+   "focal": [
+    0.54,
+    0.385
+   ],
+   "why": "best period-3 option; Alhambra towers, though with a genre figure in front"
+  },
+  {
+   "n": 21,
+   "file": "Granada. Vista generale de la Alhambra y Sierra Nevada LCCN2017660753.jpg",
+   "y": 1899,
+   "lab": "about 1899",
+   "what": "The Alhambra and the Sierra Nevada over the Albaicín, photochrom print (Library of Congress)",
+   "who": "Photoglob Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.025,
+    0.98,
+    0.975
+   ],
+   "focal": [
+    0.55,
+    0.32
+   ],
+   "why": "classic view of the Alhambra with snowy mountains, color"
+  },
+  {
+   "n": 27,
+   "file": "ETH-BIB-Granada-Nordafrikaflug 1932-LBS MH02-13-0575.tif",
+   "y": 1932,
+   "lab": "1932",
+   "what": "Aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.02,
+    0.82,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "whole city with cathedral and Alhambra hill; black edge trimmed"
+  },
+  {
+   "n": 35,
+   "file": "Evening view of Granada.jpg",
+   "y": 2018,
+   "lab": "2018",
+   "what": "The Alhambra from the Mirador de San Nicolás, photograph",
+   "who": "tinman6",
+   "lic": "CC BY-SA 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0.15,
+    1,
+    1
+   ],
+   "focal": [
+    0.52,
+    0.44
+   ],
+   "why": "iconic modern view of the Alhambra"
+  }
+ ],
+ "gaps": "P0: none. P2: only a modest engraving (#11); #9 is a 1657 reissue of a Braun and Hogenberg plate, #10 is a single building with an uncertain 1735–1805 date. P3: no general view; #13 is the best available.",
+ "notes": "#32 is Granada, Nicaragua (excluded). #11 dated 1694 per Rijksmuseum (Theatrum Hispaniae series, probably Pieter van den Berge, about 1694–1708). #21 publisher not named in its record; neighboring LoC records in the same series credit Photoglob Co.; LoC date given as 1899. #13 is probably by John Frederick Lewis but the record names no artist. #12 Chénot lithograph skipped: dated only 1800–1899. #2 (large colored plate with cartouche) is probably vol. 5 (1598), not 1572 as Commons says, so #4 used for period 1.",
+ "_reviewed": true
+}

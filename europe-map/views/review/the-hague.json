@@ -1,0 +1,46 @@
+{
+ "city": "The Hague",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "van Goyen 1647, skyline with St James tower; clean"
+  },
+  {
+   "n": 20,
+   "verdict": "ok",
+   "reason": "Binnenhof and Knights’ Hall; upper painting trimmed correctly"
+  },
+  {
+   "n": 25,
+   "verdict": "fix",
+   "reason": "dark film-edge column at left (x 7–8 of 500) sits on the crop edge; trimmed in slightly",
+   "fix": {
+    "trim": [
+     0.022,
+     0.025,
+     0.982,
+     0.935
+    ]
+   }
+  },
+  {
+   "n": 31,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.03,
+     0.025,
+     0.975,
+     0.975
+    ]
+   },
+   "reason": "dark film edge at left (x 10–12 of 500) and top rows inside the trim; Peace Palace from the air is a landmark scene, better than the other P5 aerials (#32–34 are plans or housing)"
+  },
+  {
+   "n": 37,
+   "verdict": "ok",
+   "reason": "sharp modern view over the center toward the sea from the Turfmarkt tower; best P6 option"
+  }
+ ]
+}

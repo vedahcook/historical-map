@@ -1,0 +1,72 @@
+{
+ "city": "Aleppo",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0,
+     0.964,
+     1
+    ]
+   },
+   "reason": "about 3% cream manuscript margin and a dark edge at the right side of the spread; trim at the city-wall frame"
+  },
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.025,
+     0.045,
+     0.989,
+     0.985
+    ]
+   },
+   "reason": "top of trim includes paper and the lower edge of the plate title (plate starts at y=0.04) and 4 px of margin at left"
+  },
+  {
+   "n": 6,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.066,
+     0.034,
+     0.985,
+     0.875
+    ]
+   },
+   "reason": "plate begins at x=0.064; current trim leaves a 2% paper strip on the left"
+  },
+  {
+   "n": 5,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.032,
+     0.042,
+     0.958,
+     0.955
+    ]
+   },
+   "reason": "daguerreotype plate rim and rust stain are inside the trim on right, top and bottom; murky but the citadel is recognizable, so keep"
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "lantern-slide card; trim removes matte, caption and rounded corners; citadel and minarets in frame"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "citadel gate and entrance block, clear landmark; crop fine"
+  },
+  {
+   "n": 19,
+   "verdict": "ok",
+   "reason": "1996 view over the old city from the citadel; hazy but only usable modern view"
+  }
+ ]
+}

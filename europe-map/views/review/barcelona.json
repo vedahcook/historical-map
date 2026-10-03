@@ -1,0 +1,47 @@
+{
+ "city": "Barcelona",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.005,
+     0.03,
+     0.995,
+     0.97
+    ],
+    "focal": [
+     0.5,
+     0.45
+    ]
+   },
+   "reason": "red plate border lines sit on the top and bottom edge of the crop; trim inside them"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 17,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 27,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 33,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 38,
+   "verdict": "ok",
+   "reason": "weak but best of a poor modern set"
+  }
+ ]
+}

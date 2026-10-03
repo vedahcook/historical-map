@@ -1,0 +1,113 @@
+{
+ "city": "Córdoba",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Theatri praecipvarvm totivs mvndi vrbivm - liber sextvs 1618 (97691020).jpg",
+   "y": 1617,
+   "lab": "1617",
+   "what": "View across the Guadalquivir, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 6",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.16,
+    0.315,
+    0.925,
+    0.85
+   ],
+   "focal": [
+    0.52,
+    0.5
+   ],
+   "why": "colored copy; walled city behind the Roman bridge and the Calahorra tower; legend boxes and book margins cut (faint gutter fold in the middle)"
+  },
+  {
+   "n": 6,
+   "file": "Cordova (1668-1669).jpg",
+   "y": 1668,
+   "lab": "1668–69",
+   "what": "Panorama, drawing for the account of Cosimo de’ Medici’s journey through Spain (National Library of Portugal)",
+   "who": "Pier Maria Baldi",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.97
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "only view for the period; firmly dated general view of the walled city; gray and low contrast"
+  },
+  {
+   "n": 12,
+   "file": "Vista de Córdoba - F. J. Parcerisa.png",
+   "y": 1855,
+   "lab": "1855",
+   "what": "The Roman bridge and the Mosque-Cathedral across the Guadalquivir, lithograph in Recuerdos y bellezas de España",
+   "who": "Francisco Javier Parcerisa",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.085,
+    0.1,
+    0.925,
+    0.82
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "river view with the bridge, the Mosque-Cathedral and its bell tower; title and margins cut"
+  },
+  {
+   "n": 10,
+   "file": "Córdoba. El Puente LCCN2017660396.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Roman bridge, the Calahorra tower and the Mosque-Cathedral, photochrom print (Library of Congress)",
+   "who": "Photoglob Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.02,
+    0.985,
+    0.965
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "color; the city’s three landmarks in one frame; only 1024 px wide; 40 years after the Parcerisa"
+  },
+  {
+   "n": 18,
+   "file": "Córdoba (7213447116).jpg",
+   "y": 2012,
+   "lab": "2012",
+   "what": "The Mosque-Cathedral from the left bank of the Guadalquivir, photograph",
+   "who": "Humberto Moreno",
+   "lic": "CC BY 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.4
+   ],
+   "why": "sharp sunny view of the Mosque-Cathedral and its bell tower above the river walls"
+  }
+ ],
+ "gaps": "P0: no candidates. P3: nothing (#7 is Córdoba, Argentina; #8 is a history painting). P5: no candidates",
+ "notes": "P1 alternatives: #3, an uncolored Italian print of the same composition dated 1585–90 by the Biblioteca Nacional de España (apparently the model for the Braun and Hogenberg plate), and the 1567 Wyngaerde panorama (#4, 8:1 strip, too narrow for the card). Baldi is not named on Commons but drew the views for Cosimo de’ Medici’s 1668–69 journey. #10 photochrom: LOC date field says 1890; labeled 1890s per the photochrom rule. Bossuet painting (#14) undated, skipped. Excluded Córdoba, Argentina (#7, #16), Córdoba, Veracruz (#20, #21), reservoir in the province (#19), and Gonzalo Fernández de Córdoba hits (#5, #8).",
+ "_reviewed": true
+}

@@ -1,0 +1,48 @@
+{
+ "city": "Toulouse",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "Colignon panorama, labeled Toulouse; wide strip so crop is narrow but sharp (14870 px)"
+  },
+  {
+   "n": 10,
+   "verdict": "fix",
+   "fix": {
+    "y": 1661,
+    "lab": "1661",
+    "trim": [
+     0.02,
+     0.06,
+     0.98,
+     0.84
+    ]
+   },
+   "reason": "Merian plate is in Topographia Galliae vol. 11 (Languedoc), 1661; crop included paper strip and frame line at top"
+  },
+  {
+   "n": 18,
+   "verdict": "ok",
+   "reason": "Place du Capitole photochrom, caption strip excluded"
+  },
+  {
+   "n": 22,
+   "verdict": "ok",
+   "reason": "1961 aerial of Garonne and bridges, record matches"
+  },
+  {
+   "n": 30,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0.08,
+     0.65,
+     1
+    ]
+   },
+   "reason": "airplane wing tip sits right at the trim edge; cut a little more"
+  }
+ ]
+}

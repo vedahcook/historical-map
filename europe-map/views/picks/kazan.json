@@ -1,0 +1,71 @@
+{
+ "city": "Kazan",
+ "picks": [
+  {
+   "n": 3,
+   "file": "1767 illustration of Kazan.jpg",
+   "y": 1767,
+   "lab": "1767",
+   "what": "General view from the river, engraving",
+   "who": "Nicolas Louis de Lespinasse",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.04,
+    0.1,
+    0.955,
+    0.885
+   ],
+   "focal": [
+    0.33,
+    0.45
+   ],
+   "why": "panorama of the Kremlin and the whole town from the river; plate inscribed “Cazan 1767”; margins and date line cut"
+  },
+  {
+   "n": 7,
+   "file": "Le Tour du monde - 15 (page 68 crop).jpg",
+   "y": 1867,
+   "lab": "1867",
+   "what": "The 1552 memorial church and the Kremlin, wood engraving in Le Tour du monde",
+   "who": "Jean-Pierre Moynet",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "pyramid memorial church with the Kremlin, Söyembikä tower and cathedral on the skyline"
+  },
+  {
+   "n": 14,
+   "file": "View of Kazan.jpg",
+   "y": 2018,
+   "lab": "2018",
+   "what": "The Kremlin from across the Kazanka, photograph",
+   "who": "Dmitriy Protsenko",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.2,
+    1,
+    0.95
+   ],
+   "focal": [
+    0.52,
+    0.45
+   ],
+   "why": "Kremlin walls, Qolşärif mosque, cathedral and Söyembikä tower; empty sky trimmed"
+  }
+ ],
+ "gaps": "P0–P2: no candidates; P5: only 1966 spy-satellite frames of fields and suburbs and a 1910s factory postcard (#9)",
+ "notes": "#1 is the same 1767 view in a Russian–French edition, photographed across a book gutter; #3 is the clean plate. Lespinasse’s plate records the view at the time of Catherine II’s 1767 visit; the engraving may have been printed somewhat later. #7: Moynet’s Volga travel account was published in Le Tour du monde vol. 15 (1867). #2, #4, #5 and #16 show Kazan Cathedrals in St. Petersburg and Moscow, and #8 is the Kazan hill in Smolensk: all other cities.",
+ "_reviewed": true
+}

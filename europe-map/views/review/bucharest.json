@@ -1,0 +1,28 @@
+{
+ "city": "Bucharest",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "labeled BUCHOREST view with the Dambovita; date per record"
+  },
+  {
+   "n": 8,
+   "verdict": "fix",
+   "fix": {
+    "what": "View over the rooftops from the Colțea Tower, painting (Bucharest Metropolitan Library)"
+   },
+   "reason": "record gives no medium (and Commons files it under engravings); 'watercolor' is inferred, so use the safer 'painting'"
+  },
+  {
+   "n": 12,
+   "verdict": "ok",
+   "reason": "German WWI aerial of the centre; record gives 1916-17"
+  },
+  {
+   "n": 19,
+   "verdict": "ok",
+   "reason": "Palace of the Parliament over the rooftops; crop fine, modest quality"
+  }
+ ]
+}

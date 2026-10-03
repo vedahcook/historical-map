@@ -1,0 +1,10 @@
+{
+ "city": "Edirne",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "city": "Málaga",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.01,
+     0.05,
+     0.99,
+     0.95
+    ],
+    "focal": [
+     0.42,
+     0.5
+    ]
+   },
+   "reason": "1572 (vol. 1) is right, but the orange plate border covers the top 4% and bottom 4.5% of the strip and the crop uses the full height, so the border showed top and bottom; with this trim the crop keeps the city, castle and harbor and stops before the legend box (starts at 65% of width)"
+  },
+  {
+   "n": 13,
+   "verdict": "ok",
+   "reason": "Dauzats watercolor, Rijksmuseum, June 1836, CC0; cathedral and bay recognizable; crop clean"
+  },
+  {
+   "n": 21,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.14,
+     0.09,
+     0.462,
+     0.86
+    ],
+    "focal": [
+     0.5,
+     0.2
+    ]
+   },
+   "reason": "Cathedral tower top sits at about 10% of the card height and the old trim (12%) cut its dome; the arched top corners of the stereo half also reach into the old trim. New trim stays inside the arch and the crop starts at the sky above the tower"
+  },
+  {
+   "n": 26,
+   "verdict": "ok",
+   "reason": "U.S. Navy photo, about 1961, bullring and port; no frame or text in the crop"
+  },
+  {
+   "n": 30,
+   "verdict": "ok",
+   "reason": "Delso 2023 view from Gibralfaro, CC BY-SA 4.0; crop has the Alcazaba, cathedral and part of the port; tree foreground is large but acceptable"
+  }
+ ]
+}

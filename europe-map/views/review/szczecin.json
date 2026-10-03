@@ -1,0 +1,40 @@
+{
+ "city": "Szczecin",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.105,
+     0.135,
+     0.883,
+     0.875
+    ]
+   },
+   "reason": "2-3 px of paper margin remain on left, top and right of the plate; plate edge is at x=0.10, y=0.13, right 0.886"
+  },
+  {
+   "n": 13,
+   "verdict": "ok",
+   "reason": "Lütke view of the castle across the harbor; date field and title agree (1836); crop good"
+  },
+  {
+   "n": 16,
+   "verdict": "ok",
+   "reason": "photochrom of the Long Bridge and St James church spire; crop clean"
+  },
+  {
+   "n": 30,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.5,
+     0.32
+    ],
+    "what": "Jasne Błonia park with the city skyline beyond, aerial photograph"
+   },
+   "reason": "current crop cuts off the skyline and most of the monument, and the 'city hall' is not in the record; a higher crop shows the park axis with the city behind it"
+  }
+ ]
+}

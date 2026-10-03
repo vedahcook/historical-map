@@ -1,0 +1,20 @@
+{
+ "city": "Gothenburg",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "photochrom of the Great Harbor Canal with the German Church tower; border and caption cut cleanly"
+  },
+  {
+   "n": 12,
+   "verdict": "ok",
+   "reason": "1965 color view over rooftops to the harbor; crop fine"
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "best of the modern candidates (#16 is a gloomy repeat, #17 hillside); Gothia Towers in frame"
+  }
+ ]
+}

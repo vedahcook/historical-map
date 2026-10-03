@@ -1,0 +1,39 @@
+{
+ "city": "Manchester",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "True 1746 prospect; the unavoidable 16:9 crop of a 4:1 strip is only 44% of the width and low-res, but it holds both church towers. Title banner and sheet seam visible but part of the print."
+  },
+  {
+   "n": 12,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.085,
+     0.108,
+     0.93,
+     0.885
+    ]
+   },
+   "reason": "Top trim sits on the plate's frame line (a thin light/dark strip shows along the top of the crop); move it down a little."
+  },
+  {
+   "n": 5,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.5,
+     0.34
+    ]
+   },
+   "reason": "Portrait print: focal y 0.45 cuts the pinnacles off the top of the cathedral tower and the tram at the bottom. With 0.34 the whole tower top, clock and statue head show."
+  },
+  {
+   "n": 20,
+   "verdict": "ok",
+   "reason": "Whole city-center skyline in one hazy but clear view; crop fine; credits match."
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "city": "Skopje",
+ "checks": [
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "Colored 1928 postcard of the Vardar in Skopje; dated by title and description, clean edges."
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "Sharp 2014 view with the Stone Bridge and Vodno; clean edges, 85% width crop."
+  }
+ ]
+}

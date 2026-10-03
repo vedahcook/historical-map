@@ -1,0 +1,50 @@
+{
+ "city": "Nizhny Novgorod",
+ "picks": [
+  {
+   "n": 1,
+   "file": "View of Nizhny Novgorod.jpg",
+   "y": 1837,
+   "lab": "1837",
+   "what": "View from the Kremlin over the meeting of the Oka and the Volga, painting",
+   "who": "Nikanor Chernetsov",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.62
+   ],
+   "why": "Archangel Cathedral, Minin and Pozharsky obelisk, Kremlin wall and the river spit with the fair; #2 is the same painting"
+  },
+  {
+   "n": 7,
+   "file": "View of Nizhny Novgorod 1910.jpg",
+   "y": 1910,
+   "lab": "about 1910",
+   "what": "The Kremlin above the river front, colored postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.012,
+    0.99,
+    0.885
+   ],
+   "focal": [
+    0.6,
+    0.35
+   ],
+   "why": "Kremlin towers on the hill and the lower town from the river, in color; caption strip cut"
+  }
+ ],
+ "gaps": "P0–P2: no candidates; P5: only 1941–43 German target map and annotated bombing aerial; P6: only hazy, snowy airplane shots where the city can’t be made out",
+ "notes": "P4 alternative to #7: #5 Bogolyubov 1878 (color painting, 1898 px), but it repeats the 1837 viewpoint from the Kremlin and is only 32 years from #7, so not both. #6 (‘1860’, halftone book print, unknown author) has a doubtful date. #8 Dmitriev 1911 is a thin 5:1 strip. #4 Benois is a decorative flower card with a small view. #3 photochrom is a single building (Main Fair building).",
+ "_reviewed": true
+}

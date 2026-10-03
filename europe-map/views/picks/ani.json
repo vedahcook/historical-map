@@ -1,0 +1,29 @@
+{
+ "city": "Ani",
+ "picks": [
+  {
+   "n": 7,
+   "file": "Ani General view 3490.jpg",
+   "y": 2006,
+   "lab": "2006",
+   "what": "Ruined church on the plateau of the abandoned city, photograph",
+   "who": "Dosseman",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.3,
+    0.4
+   ],
+   "why": "the empty grassland of the ruined city with a church ruin; the only candidate that works at card proportions"
+  }
+ ],
+ "gaps": "P0–P5: nothing (the only old item, #1, is Marr’s 1934 site plan).",
+ "notes": "Weak set: none of the photos shows the cathedral or the Church of St. Gregory clearly. The north-walls panorama (#2) is the most recognizable image but far too wide (almost 9:1) for a 16:9 card. A better modern view of the cathedral or the walls would be worth finding.",
+ "_reviewed": true
+}

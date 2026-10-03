@@ -1,0 +1,98 @@
+{
+ "city": "Messina",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "replace",
+   "replace_with": 3,
+   "fix": {
+    "trim": [
+     0.075,
+     0.15,
+     0.765,
+     0.8
+    ],
+    "focal": [
+     0.5,
+     0.4
+    ],
+    "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1 (colored copy, BnF)"
+   },
+   "reason": "#5 is a two-page book spread: the gutter fold runs through the middle of the city, the orange frame shows at left and top, and a text cartouche sits at right; #3 is the same plate on one colored sheet (BnF 1645 sheet; date stays 1572 by plate); fix fields are for #3"
+  },
+  {
+   "n": 13,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.058,
+     0.21,
+     0.832,
+     0.775
+    ]
+   },
+   "reason": "frame lines remained at top (row 72–73) and right (x 417) edges of the crop"
+  },
+  {
+   "n": 20,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.03,
+     0.05,
+     0.97,
+     0.95
+    ]
+   },
+   "reason": "dark frame line at left (x 11), right (x 486) and top (row 14) inside the trim"
+  },
+  {
+   "n": 16,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.045,
+     0.1,
+     0.93,
+     0.875
+    ]
+   },
+   "reason": "white paper margin at right (x 467 onward) and a hairline at left inside the trim"
+  },
+  {
+   "n": 24,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.03,
+     0.025,
+     0.978,
+     0.905
+    ]
+   },
+   "reason": "mount edge hairline at left (x 12) inside the trim"
+  },
+  {
+   "n": 30,
+   "verdict": "fix",
+   "reason": "black vignette at right edge and top-right corner, handwritten number at top left; trimmed in",
+   "fix": {
+    "trim": [
+     0.01,
+     0.04,
+     0.93,
+     0.99
+    ],
+    "focal": [
+     0.62,
+     0.5
+    ]
+   }
+  },
+  {
+   "n": 32,
+   "verdict": "ok",
+   "reason": "telephoto view of the Christ the King shrine above the town; a landmark scene rather than a general view, but no better P6 candidate (#33–37 are street or hillside views)"
+  }
+ ]
+}

@@ -1,0 +1,92 @@
+{
+ "city": "Helsinki",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Helsingfors från N.W. - Magnus von Wright - Finland framställdt i teckningar - 41.jpg",
+   "y": 1848,
+   "lab": "1845–52",
+   "what": "The city from the northwest, lithograph in Topelius’s Finland framställdt i teckningar",
+   "who": "Magnus von Wright",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.066,
+    0.1,
+    0.938,
+    0.81
+   ],
+   "focal": [
+    0.4,
+    0.45
+   ],
+   "why": "general view across the water; the domed St. Nicholas (now Lutheran) Cathedral at left"
+  },
+  {
+   "n": 9,
+   "file": "The Russian cathedral and the harbor, Helsingfors, Russia, i.e., Helsinki, Finland-LCCN2001697409.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The South Harbor and the Uspenski Cathedral, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.022,
+    0.022,
+    0.988,
+    0.935
+   ],
+   "focal": [
+    0.55,
+    0.4
+   ],
+   "why": "color view across the harbor to the waterfront and the Uspenski Cathedral; larger copy of the same plate as #14"
+  },
+  {
+   "n": 19,
+   "file": "View from Helsinki 1938 (6501B; JOKAHBL3B I52-1).tif",
+   "y": 1938,
+   "lab": "1938",
+   "what": "The city center looking north, photograph (Helsinki City Museum)",
+   "who": "Hugo Sundström",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "rooftop view over the center with the new main post office, the rail yard and Töölö Bay"
+  },
+  {
+   "n": 21,
+   "file": "Töölönlahti area from air.JPG",
+   "y": 2010,
+   "lab": "2010",
+   "what": "Aerial view from a hot-air balloon, photograph",
+   "who": "MKFI",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "the city around Töölö Bay out to the sea and islands"
+  }
+ ],
+ "gaps": "P0–P2: nothing",
+ "notes": "#7 (Senate Square, the Lutheran Cathedral and the Alexander II statue, photochrom 1896, very large) is the strongest landmark scene and a good alternative to #9 for P4. #6 (le Moine painting, 1824, color) was passed over for #2 because it predates the cathedral and shows no recognizable landmark. #1 (Lauvergne, about 1840) shows no recognizable landmark. #2 is dated only to the years the work appeared in parts (1845–52).",
+ "_reviewed": true
+}

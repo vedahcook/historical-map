@@ -1,0 +1,113 @@
+{
+ "city": "Bratislava",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Bratislava in 16th century.jpg",
+   "y": 1588,
+   "lab": "1588",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 4",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.028,
+    0.045,
+    0.983,
+    0.965
+   ],
+   "focal": [
+    0.4,
+    0.45
+   ],
+   "why": "colored view across the Danube: castle on its hill, St. Martin’s Cathedral and the walled town; white margin cut"
+  },
+  {
+   "n": 10,
+   "file": "Joseph Schaffer, Die Königliche Freystadt Presburg in Ungarn (FL39696835 3700093).jpg",
+   "y": 1787,
+   "lab": "1787",
+   "what": "View across the Danube, colored engraving",
+   "who": "Joseph and Peter Schaffer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.115,
+    0.15,
+    0.885,
+    0.74
+   ],
+   "focal": [
+    0.45,
+    0.55
+   ],
+   "why": "rebuilt four-towered castle, cathedral spire and riverfront with the flying-bridge ferry; mat and caption cut"
+  },
+  {
+   "n": 11,
+   "file": "Pressburg.png",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Photochrom print",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.94
+   ],
+   "focal": [
+    0.55,
+    0.4
+   ],
+   "why": "color view from the Danube bank: the burned-out castle, St. Martin’s Cathedral and the waterfront; caption cut"
+  },
+  {
+   "n": 17,
+   "file": "Látkép a várból, előtérben a Hal tér és a zsinagóga. Fortepan 51261.jpg",
+   "y": 1958,
+   "lab": "1958",
+   "what": "View from the castle over the old town, photograph (Fortepan)",
+   "who": "Fortepan / Nagy Gyula",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "color view over the old town roofs, the Fish Square synagogue and the Danube bridge"
+  },
+  {
+   "n": 20,
+   "file": "View of Bratislava St1.JPG",
+   "y": 2006,
+   "lab": "2006",
+   "what": "View from the SNP Bridge, photograph",
+   "who": "Stimoroll",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "castle, St. Martin’s Cathedral, old town and the Danube in one frame"
+  }
+ ],
+ "gaps": "P0: no candidates; P2: nothing (the Merian view is dated 1638)",
+ "notes": "P1 alternative: #5, Merian’s colored 1638 view from the hills (smaller, 2399 px), which would sit closer to P2 years; #7 is an uncolored copy. #10 is the same Schaffer plate as #9, which Commons dates 1787; #10 is the colored, much larger scan. #11 carries the imprint “9203 P.Z. Pressburg a.d. Donau.” #17 is a faded color slide with some scratches; the 1965 Fortepan views (#18, #19) are sharper but black and white. #13 (1885 painting) is too close to the photochrom for a second P4 view.",
+ "_reviewed": true
+}

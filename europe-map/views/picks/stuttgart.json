@@ -1,0 +1,113 @@
+{
+ "city": "Stuttgart",
+ "picks": [
+  {
+   "n": 10,
+   "file": "Historische Ansichten von Stuttgart, 001.jpg",
+   "y": 1720,
+   "lab": "about 1720",
+   "what": "Panorama, engraving",
+   "who": "heirs of Jeremias Wolff",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.065,
+    0.985,
+    0.85
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "clean general view with the Stiftskirche and the palace; key below cut"
+  },
+  {
+   "n": 11,
+   "file": "Lange Städte in Deutschland Band 2 Nr. 21.jpg",
+   "y": 1840,
+   "lab": "1840",
+   "what": "Steel engraving in Lange, Original-Ansichten der vornehmsten Städte in Deutschland, vol. 2",
+   "who": "Carl Gerstner after Heinrich Schönfeld",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.035,
+    0.04,
+    0.965,
+    0.85
+   ],
+   "focal": [
+    0.65,
+    0.5
+   ],
+   "why": "general view over the town to the Stiftskirche in its valley; title cut"
+  },
+  {
+   "n": 17,
+   "file": "General view, Stuttgart, Wurtemburg, Germany-LCCN2002720820.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.02,
+    0.985,
+    0.98
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "color general view across the city in its valley; white mount cut"
+  },
+  {
+   "n": 29,
+   "file": "ETH-BIB-Stuttgart-Weitere-LBS MH02-35-0036.tif",
+   "y": 1934,
+   "lab": "1934",
+   "what": "Aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.35
+   ],
+   "why": "general aerial view of the city filling its valley"
+  },
+  {
+   "n": 34,
+   "file": "StuttgartSchloss2018-05-08-15-06-56.jpg",
+   "y": 2018,
+   "lab": "2018",
+   "what": "The Schlossplatz with the New and Old Palace, aerial photograph",
+   "who": "Rolf Kickuth",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.48,
+    0.5
+   ],
+   "why": "sharp color aerial of the historic center around the Schlossplatz"
+  }
+ ],
+ "gaps": "P0: no candidates; P3 has only one view (nothing strong before 1800)",
+ "notes": "#8 is weak: a Merian equestrian portrait whose city backdrop is partly hidden by the horse; drop it if a blank P1 is preferred. The 1624 Merian emblem prints (#1–7) show villages and lakes around Stuttgart, not the town. #9 is a later reduced copy of #10 with garish yellow key numbers. #30 (1934, Rosenstein Park and the main station) is an alternative P5. #22/#23 are 1870s albumen general views, too close to the photochrom for a second P4.",
+ "_reviewed": true
+}

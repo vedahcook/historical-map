@@ -1,0 +1,113 @@
+{
+ "city": "Vilnius",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Vilnius - map by Braun Hogenberg (34065617).jpg",
+   "y": 1581,
+   "lab": "1581",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 3",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.018,
+    0.018,
+    0.982,
+    0.982
+   ],
+   "focal": [
+    0.35,
+    0.35
+   ],
+   "why": "colored copy (1616 printing) of the 1581 plate, buildings drawn, castle by the Neris; sharpest of the copies"
+  },
+  {
+   "n": 14,
+   "file": "Commission scientifique du Nord - B. Lauvergne - Vue de Vilnius prise de la tête du pont vert.jpg",
+   "y": 1840,
+   "lab": "about 1840",
+   "what": "Castle Hill and the town from the Green Bridge in winter, lithograph",
+   "who": "Barthélemy Lauvergne",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "Gediminas Tower on Castle Hill and town towers recognizable; drawn on the 1838–40 French Northern expedition"
+  },
+  {
+   "n": 21,
+   "file": "Józef Marszewski - Vilnius viewed from Tauras Hill (1872).jpg",
+   "y": 1872,
+   "lab": "1872",
+   "what": "View from Tauras Hill, painting",
+   "who": "Józef Marszewski",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "color general view with St. John’s bell tower and the Missionaries’ church; better copy than #22"
+  },
+  {
+   "n": 28,
+   "file": "Panorama of the Vilnius Old Town, 1944.jpg",
+   "y": 1944,
+   "lab": "1944",
+   "what": "The Old Town from the bell tower of All Saints’ Church, photograph",
+   "who": "Jan Bułhak",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.35
+   ],
+   "why": "true photographic panorama over the Old Town roofs and church towers"
+  },
+  {
+   "n": 35,
+   "file": "View from Gediminas Tower (3).jpg",
+   "y": 2017,
+   "lab": "2017",
+   "what": "The Old Town from Gediminas Tower, photograph",
+   "who": "Radosław Botev",
+   "lic": "CC BY 3.0 pl",
+   "event": false,
+   "trim": [
+    0,
+    0.1,
+    1,
+    1
+   ],
+   "focal": [
+    0.65,
+    0.45
+   ],
+   "why": "classic view with St. John’s bell tower and the university; some sky cut"
+  }
+ ],
+ "gaps": "P0: nothing; P2: only re-engraved copies of the 1581 plate (#9–#12), skipped",
+ "notes": "#1–#8 and #10 are copies or details of the same Braun and Hogenberg plate. #11 (1659), #12 (1729, Van der Aa) and #9 (1719, Chatelain) are later re-engravings of the 1581 view, so they show the 16th-century city, not their own date. #18 Sleńdziński 1884 is a good color alternative for P4 but shows outer rooftops without main landmarks. #36 (2019 aerial) is a strong alternative for P6.",
+ "_reviewed": true
+}

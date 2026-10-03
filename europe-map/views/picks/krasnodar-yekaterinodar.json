@@ -1,0 +1,29 @@
+{
+ "city": "Krasnodar",
+ "picks": [
+  {
+   "n": 4,
+   "file": "View of Krasnodar taken from Kozhevennaya street, 24 2020-04-18-4.jpg",
+   "y": 2020,
+   "lab": "2020",
+   "what": "Rooftops and high-rise skyline from above, photograph",
+   "who": "Alexey Komarov",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "sharp high view over low-rise houses to the high-rise skyline; the best of a near-identical set"
+  }
+ ],
+ "gaps": "P0–P5: no candidates at all",
+ "notes": "All six candidates are 2020 views from one rooftop on Kozhevennaya Street; none shows the historic center or a landmark (no cathedral, Krasnaya Street or Kuban river front). #4 is a modest pick and can be dropped if a stronger modern view is found.",
+ "_reviewed": true
+}

@@ -1,0 +1,92 @@
+{
+ "city": "Bremen",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Beschreibung der Städt der Welt - Braun & Hogenberg - btv1b52512111k (083 of 378).jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "View across the Weser, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.068,
+    0.66,
+    0.488,
+    0.9
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "colored copy (German edition) of the 1572 plate; trimmed to the ‘Brema’ panel from the four-city sheet; church spires, ships and the Weser bridge"
+  },
+  {
+   "n": 9,
+   "file": "Gezicht op de markt te Bremen, RP-P-2018-1316.jpg",
+   "y": 1653,
+   "lab": "1653",
+   "what": "The market square with the town hall, the Roland and the Schütting, engraving in Merian’s Topographia Saxoniae Inferioris (Rijksmuseum)",
+   "who": "Matthäus Merian",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.114,
+    0.14,
+    0.894,
+    0.825
+   ],
+   "focal": [
+    0.5,
+    0.47
+   ],
+   "why": "the city’s best-known scene; cleaner and larger than the book scan #11; legend and margins cut"
+  },
+  {
+   "n": 17,
+   "file": "BECHSTEIN(1845) p508 Blick auf Bremen.jpg",
+   "y": 1845,
+   "lab": "1845",
+   "what": "View across the Weser with the Great Weser Bridge, colored engraving in Bechstein’s Album der Haupt- und Residenzstädte Europa’s",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.024,
+    0.06,
+    0.966,
+    0.89
+   ],
+   "focal": [
+    0.6,
+    0.65
+   ],
+   "why": "colored general view of the old town’s river front and church towers; title cut"
+  },
+  {
+   "n": 20,
+   "file": "Emperor William's Place, Bremen, Germany-LCCN2002713646.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The cathedral seen from Kaiser-Wilhelm-Platz, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.02,
+    0.966,
+    0.945
+   ],
+   "focal": [
+    0.5,
+    0.3
+   ],
+   "why": "color view of the cathedral’s twin spires behind the town hall; border and caption cut"
+  }
+ ],
+ "gaps": "P0: no candidates; P5: nothing good; P6: nothing usable",
+ "notes": "#31 is Bremerhaven, a different city. P5 options left out: #29 (1965 color slide across the Weser, cathedral spires tiny, barbed wire in front) and #28 (port aerial dated only 1955–65). P6 candidates are only flood and port aerials. Skipped #19 (1818 journeyman’s certificate: skyline strip under text, likely copied from an older plate) and #15/#16 (dated only 1800–1899). #2 is a later B&H plan in a tightly bound book.",
+ "_reviewed": true
+}

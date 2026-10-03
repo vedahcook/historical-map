@@ -1,0 +1,68 @@
+{
+ "city": "Algiers",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.032,
+     0.045,
+     0.966,
+     0.74
+    ],
+    "focal": [
+     0.55,
+     0.45
+    ]
+   },
+   "reason": "Red plate frame lines sit at about 1.5-3% on left, top and right and stay in the current crop; the title box at lower right starts at 74% height and is also inside it. 1575 (vol. 2) is right"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "Rijksmuseum painting of Algiers from the sea, signed R. Zeeman (Reinier Nooms); date range 1662-68 matches"
+  },
+  {
+   "n": 17,
+   "verdict": "ok",
+   "reason": "Titled De Stad Algiers; trim keeps the town and avoids title, legend and the fold; weaker than the others but acceptable"
+  },
+  {
+   "n": 15,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.04,
+     0.09,
+     0.96,
+     0.91
+    ]
+   },
+   "reason": "Picture ends at 96.5% of the width; the current right edge (97%) adds a white sliver of mount to the full-width crop"
+  },
+  {
+   "n": 22,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.026,
+     0.032,
+     0.98,
+     0.97
+    ]
+   },
+   "reason": "Top row of the trim is the dark photochrom border (picture starts at 2.7% of the height) and the left and bottom edges are soft border too; this removes the dark line along the top of the crop"
+  },
+  {
+   "n": 31,
+   "verdict": "ok",
+   "reason": "Mittelholzer aerial of Algiers, 26 Feb 1928; Casbah and harbor clear"
+  },
+  {
+   "n": 40,
+   "verdict": "ok",
+   "reason": "Sharp color view over the Casbah to the bay; CC BY-SA 2.0 matches"
+  }
+ ]
+}

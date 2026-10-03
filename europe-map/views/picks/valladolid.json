@@ -1,0 +1,92 @@
+{
+ "city": "Valladolid",
+ "picks": [
+  {
+   "n": 6,
+   "file": "Braun Valladolid UBHD.jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1 (colored copy, Heidelberg University Library)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.075,
+    0.98,
+    0.9
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "colored general view of the city skyline over the fields; plate shared with Toledo, trimmed to the lower Valladolid view"
+  },
+  {
+   "n": 9,
+   "file": "Gezicht op de stad Valladolid, BI-1956-1074-115-2.jpg",
+   "y": 1700,
+   "lab": "about 1700",
+   "what": "General view, colored etching in Pieter van den Berge’s Theatrum Hispaniae (Rijksmuseum)",
+   "who": "Pieter van den Berge",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.108,
+    0.14,
+    0.893,
+    0.78
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "color general view; same plate as #10 (Biblioteca Nacional dates it about 1700); text block cut"
+  },
+  {
+   "n": 13,
+   "file": "Valladolid. La Universidad LCCN2017660789.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The University, photochrom print (Library of Congress)",
+   "who": "Photoglob Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.022,
+    0.98,
+    0.97
+   ],
+   "focal": [
+    0.47,
+    0.38
+   ],
+   "why": "color; whole baroque facade fits the wide card"
+  },
+  {
+   "n": 21,
+   "file": "Exterior Valladolid desde la Torre sur de la Catedral 11 (14211546950).jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "View over the city center from the cathedral’s south tower, photograph",
+   "who": "Ángel Cantero",
+   "lic": "CC BY-SA 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "sharp high view over the center; best of a weak set of modern photos"
+  }
+ ],
+ "gaps": "P0: no candidates. P5: no candidates. P4 general view (#17, Passos 1885) is pale, folded and small; not used.",
+ "notes": "P1: #1 (Rijksmuseum, dated 1572) shows the view on its own with a tall added sky and no cartouche, which looks like a later reissue of the plate, so the 1582 colored copy was used. P2 view #9 copies the Braun and Hogenberg view, so it adds little new. P4 alternative: San Pablo church photochrom (#14), more famous but an upright picture that loses its towers in a wide crop. P6 photos are all weak; #18 (2008 aerial of the Royal Palace) is a single building.",
+ "_reviewed": true
+}

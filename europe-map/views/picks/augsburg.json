@@ -1,0 +1,92 @@
+{
+ "city": "Augsburg",
+ "picks": [
+  {
+   "n": 9,
+   "file": "Beschreibung der Städt der Welt - Braun & Hogenberg - btv1b52512111k (128 of 378).jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.07,
+    0.1,
+    0.928,
+    0.885
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "colored copy (German edition) of the 1572 plate, buildings drawn; sharper than #12; page edges cut"
+  },
+  {
+   "n": 17,
+   "file": "Gezicht op Augsburg, 1726 La Ville d'Augspurg, dans la Souabe (titel op object) Les Forces de l'Europe, Asie, Afrique et Amerique Comme aussi les Cartes des Côtes de France et d'Espagne (serietitel , RP-P-OB-83.035-202.jpg",
+   "y": 1726,
+   "lab": "1726",
+   "what": "General view of the city, engraving in Les Forces de l’Europe, Asie, Afrique et Amérique (Rijksmuseum)",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.23,
+    0.22,
+    0.75,
+    0.805
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "true view with the tower of St. Ulrich and Afra; dated on the plate; cleaner than #14"
+  },
+  {
+   "n": 20,
+   "file": "Lange Städte in Deutschland Band 1 Nr. 51.jpg",
+   "y": 1837,
+   "lab": "1837",
+   "what": "General view across the fields, steel engraving",
+   "who": "Julius Lange and Emil Höfer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.046,
+    0.04,
+    0.962,
+    0.82
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "whole skyline with St. Ulrich, the Perlach Tower, town hall and cathedral spires; title cut"
+  },
+  {
+   "n": 24,
+   "file": "Market place, Augsburg, Bavaria, Germany-LCCN2002696106.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The town hall and the Perlach Tower, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.026,
+    0.02,
+    0.968,
+    0.95
+   ],
+   "focal": [
+    0.5,
+    0.53
+   ],
+   "why": "the city’s signature square in color; border and caption cut"
+  }
+ ],
+ "gaps": "P0: Nuremberg Chronicle woodcut (#1, #2) left out, not sure it is a true view; P5: only factory aerials; P6: nothing good",
+ "notes": "#10 ‘Augsburg 1585’ is misdated: it shows Elias Holl’s town hall (1615–20) and the rebuilt Perlach Tower, and is credited to R. Custodis (active 17th century), so skipped. #19 (von Mechel after Gignoux, 1763) is an imaginary landscape with a harbor, not Augsburg. #18 (about 1689) view is a thin strip under three large portraits. Optical prints #21–23 are dated only 1742–1801. P6 fallback if wanted: #35 (2017 drone view with the Hotelturm and, small in the distance, St. Ulrich), dull and mostly rail yards and trees. P0: #1/#2 could be added if the Augsburg woodcut is known to be a true view (it is a unique double-page block labeled ‘Augusta’).",
+ "_reviewed": true
+}

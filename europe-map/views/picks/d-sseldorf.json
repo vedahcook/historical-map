@@ -1,0 +1,134 @@
+{
+ "city": "Düsseldorf",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Merian d. Ä., Matthäus - Ansicht von Düsseldorf (1647).jpg",
+   "y": 1647,
+   "lab": "1647",
+   "what": "View across the Rhine from the west, engraving in Merian’s Topographia Westphaliae",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.018,
+    0.2,
+    0.982,
+    0.78
+   ],
+   "focal": [
+    0.42,
+    0.5
+   ],
+   "why": "whole riverfront skyline with St. Lambertus and the castle; outer border cut"
+  },
+  {
+   "n": 2,
+   "file": "Jan van der Heyden and Adriaen van de Velde - View of Düsseldorf with the church of St. Andrew in the centre.jpg",
+   "y": 1667,
+   "lab": "1667",
+   "what": "St. Andrew’s Church, painting (Mauritshuis, The Hague)",
+   "who": "Jan van der Heyden and Adriaen van de Velde",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "color, the twin-towered St. Andreas recognizable; original rather than the later copy #3"
+  },
+  {
+   "n": 9,
+   "file": "Stadtbild Düsseldorf von der Golzheimer Insel aus, um 1840, unbekannter Maler.jpg",
+   "y": 1840,
+   "lab": "about 1840",
+   "what": "The Rhine bank and old town from the Golzheim island, painting",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.35,
+    0.45
+   ],
+   "why": "color view with the leaning spire of St. Lambertus and the castle tower"
+  },
+  {
+   "n": 10,
+   "file": "Düsseldorf from the Rhine, the Rhine, Germany-LCCN2002714104.jpg",
+   "y": 1896,
+   "lab": "about 1896",
+   "what": "The old town from across the Rhine, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.02,
+    0.98,
+    0.95
+   ],
+   "focal": [
+    0.62,
+    0.52
+   ],
+   "why": "color riverfront with St. Lambertus; description dates it to the start of the Oberkassel bridge, about 1896; caption cut"
+  },
+  {
+   "n": 20,
+   "file": "Rhein vor dem Ausbau 1962 bei Düsseldorf 1962-09-10 HBdia02187.jpg",
+   "y": 1962,
+   "lab": "1962",
+   "what": "Aerial view of the old town, the Oberkassel bridge and the Rhine bend, color slide",
+   "who": "unknown photographer",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.65
+   ],
+   "why": "color aerial with St. Lambertus, the old town and the bridge; city shape clear"
+  },
+  {
+   "n": 24,
+   "file": "Düsseldorf at night.jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The Rhine front at night with the castle tower, St. Lambertus and the Rhine Tower, photograph",
+   "who": "Subhransu sekhar",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.2,
+    1,
+    0.9
+   ],
+   "focal": [
+    0.42,
+    0.4
+   ],
+   "why": "only modern skyline view; landmarks recognizable; empty night sky and water trimmed"
+  }
+ ],
+ "gaps": "P0: nothing; P6 is weak (night shot, temporary Ferris wheel)",
+ "notes": "#3 is a later replica of #2. #4–#6 are 1828 lithographs after the 1667 painting, so not views of their own date. #7/#8 are river landscapes without the city. #23 Kiederich is dated only ‘before 1929’ (his death year), so #20 used for P5. #16 (Bleuler, before 1850) is a decent alternative for P3 but black and white and undated. Some writers treat the van der Heyden view (#2) as partly composed, but St. Andreas itself is accurate.",
+ "_reviewed": true
+}

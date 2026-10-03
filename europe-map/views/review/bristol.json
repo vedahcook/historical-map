@@ -1,0 +1,71 @@
+{
+ "city": "Bristol",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.04,
+     0.04,
+     0.96,
+     0.96
+    ]
+   },
+   "reason": "Plate has a decorated gold border about 3-4% wide on every side; the current trim keeps it inside the crop"
+  },
+  {
+   "n": 11,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.065,
+     0.09,
+     0.924,
+     0.82
+    ]
+   },
+   "reason": "Titled view of Bristol is right, but the plate's frame lines (top 8%, right 93%, bottom 82%) and the white strip under them are inside the nearly full-size crop"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "Muller painting of Bristol from Clifton Wood, 1837 per record; clean crop"
+  },
+  {
+   "n": 21,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.036,
+     0.025,
+     0.976,
+     0.965
+    ]
+   },
+   "reason": "Soft white-to-dark halo at the left edge (about 3.5% wide) and a sliver at the right are inside the full-width crop"
+  },
+  {
+   "n": 29,
+   "verdict": "ok",
+   "reason": "General aerial of the center, dated 1946 by title; near 16:9 already"
+  },
+  {
+   "n": 30,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0.29,
+     1,
+     1
+    ],
+    "focal": [
+     0.4,
+     0.5
+    ]
+   },
+   "reason": "Tree leaves hang down to about 27% of the height and still show at the top of the crop; trimming 29% removes them and keeps 84% of the width"
+  }
+ ]
+}

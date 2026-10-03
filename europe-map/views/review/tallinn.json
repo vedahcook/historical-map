@@ -1,0 +1,42 @@
+{
+ "city": "Tallinn",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.026,
+     0.054,
+     0.972,
+     0.474
+    ],
+    "focal": [
+     0.554,
+     0.5
+    ]
+   },
+   "reason": "Current focal point (0.63) cuts St. Olaf's spire at the left edge of the crop, and the top trim leaves paper and the frame line along the top; recentre so St. Olaf's, the second church spire, the gate tower and the Toompea hill with its church are in, and trim inside the frame (crop is then exactly about half the width)."
+  },
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "Aivazovsky painting of Reval from the sea; colorful, city recognizable at the horizon."
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "Reval photochrom general view; caption strip trimmed; 1890s/Detroit Publishing Co. agrees with sibling record #8."
+  },
+  {
+   "n": 16,
+   "verdict": "ok",
+   "reason": "Triik painting, dated 1915, St. Olaf's spire over roofs; stylized but categorized as a view of Tallinn; the alternative #17 is distant and weak."
+  },
+  {
+   "n": 23,
+   "verdict": "ok",
+   "reason": "Sharp view from St. Olaf's; photographer and CC BY-SA 3.0 match."
+  }
+ ]
+}

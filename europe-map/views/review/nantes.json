@@ -1,0 +1,33 @@
+{
+ "city": "Nantes",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "Doomer view across the Loire, cathedral and château, clean crop"
+  },
+  {
+   "n": 9,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.018,
+     0.025,
+     0.984,
+     0.845
+    ]
+   },
+   "reason": "white paper at right (x 494+ of 500) and a light top row fall inside the trim; caption already cut"
+  },
+  {
+   "n": 17,
+   "verdict": "ok",
+   "reason": "Nantes photochrom, port and skyline, caption cut"
+  },
+  {
+   "n": 20,
+   "verdict": "ok",
+   "reason": "aerial of Nantes; window frame cut; weak but only usable general view in P6"
+  }
+ ]
+}

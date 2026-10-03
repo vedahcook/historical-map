@@ -1,0 +1,71 @@
+{
+ "city": "Sarajevo",
+ "picks": [
+  {
+   "n": 7,
+   "file": "Sarajcvo (i.e., Sarajevo), from the north, Bosnia, Austro-Hungary-LCCN2002708496.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.012,
+    0.985,
+    0.94
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "color general view down the Miljacka valley over the whole town; white border and caption cut"
+  },
+  {
+   "n": 11,
+   "file": "Sarajevo panorama 1930s.jpg",
+   "y": 1930,
+   "lab": "about 1930",
+   "what": "Photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.52,
+    0.55
+   ],
+   "why": "view over the old town roofs and minarets, Gazi Husrev-beg Mosque, the river and the valley"
+  },
+  {
+   "n": 16,
+   "file": "A view of Sarajevo from the Yellow Fortress.jpg",
+   "y": 2018,
+   "lab": "2018",
+   "what": "View from the Yellow Fortress, photograph",
+   "who": "Skelanard",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "color general view over the old town and the city filling the valley"
+  }
+ ],
+ "gaps": "P0–P3: no candidates (#1 is a 2009 street photo misread as 1001)",
+ "notes": "#7: credited to Detroit Publishing Co. per the Library of Congress record (the print itself carries the Photoglob “P.Z.” number). #5/#9 (Šeher-Ćehaja bridge toward Alifakovac) is a good landmark alternative. #11’s “about 1930” comes from the uploader without a source; #13 (1934 postcard, Catholic cathedral and Austro-Hungarian buildings) has a firmer date but is a weaker view. #10 is undated within 1914–1920s (its title says Yugoslavia) and is a stereocard. P6 alternative: #19 (2019, broader view under an overcast sky).",
+ "_reviewed": true
+}

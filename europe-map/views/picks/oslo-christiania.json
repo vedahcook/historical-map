@@ -1,0 +1,113 @@
+{
+ "city": "Oslo",
+ "picks": [
+  {
+   "n": 7,
+   "file": "Jacob Coning - Panoramic view of Akershus Fortress near Christiania Oslo, seen from Hovedøya - NG.M.00543 - National Museum of Art, Architecture and Design.jpg",
+   "y": 1699,
+   "lab": "1699",
+   "what": "Akershus Fortress and the town from Hovedøya, painting (National Museum, Oslo)",
+   "who": "Jacob Coning",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.005,
+    0.995,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "color panorama across the fjord: Akershus Fortress with the town stretching to the right"
+  },
+  {
+   "n": 11,
+   "file": "Christian August Lorentzen - Utsikt fra Ekebergåsen - NMK.2012.0263 - National Museum of Art, Architecture and Design.jpg",
+   "y": 1792,
+   "lab": "1792",
+   "what": "The town from the Ekeberg ridge, painting (National Museum, Oslo)",
+   "who": "Christian August Lorentzen",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.62
+   ],
+   "why": "general view across the bay to the town and Akershus, the old Oslo church in the foreground"
+  },
+  {
+   "n": 18,
+   "file": "Carl Johans Gade with Slotted (i.e., Slottet), Christinia, Norway-LCCN2001699463.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Karl Johans gate and the Royal Palace, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.015,
+    0.99,
+    0.955
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "color; the main street with the Grand Hotel and the Royal Palace at its end"
+  },
+  {
+   "n": 23,
+   "file": "View of Bjørvika 1950s.jpg",
+   "y": 1955,
+   "lab": "1950s",
+   "what": "The harbor at Bjørvika and the city from Ekeberg, photograph",
+   "who": "David Hunter",
+   "lic": "CC BY 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.78
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "color general view over the harbor and the city to the hills"
+  },
+  {
+   "n": 31,
+   "file": "Oslo from Ekeberg 2016-04 --1.JPG",
+   "y": 2016,
+   "lab": "2016",
+   "what": "The city and the Opera House from Ekeberg, photograph",
+   "who": "Zinneke",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    0.985,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "clear view over Bjørvika: the Opera House, the Barcode towers and the fjord"
+  }
+ ],
+ "gaps": "P0 and P1: nothing",
+ "notes": "#1–#6 are 20th-century postcards whose catalog numbers were read as years (1128–1408); skipped. #8 (Coning, 1699, the town from the east) is an alternative to #7. For P4, #21 (Frich wood engraving, 1859) and #22 (postcard from St. Hanshaugen, 1906) could replace #18 as a pair of general views 47 years apart, but both are black and white and middling. #24 (balloon view of the Royal Palace) is dated only 1899–1930. #23’s Commons date (1 January 1950) looks like a placeholder for the 1950s given in its title.",
+ "_reviewed": true
+}

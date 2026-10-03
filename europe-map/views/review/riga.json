@@ -1,0 +1,56 @@
+{
+ "city": "Riga",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.03,
+     0.062,
+     0.97,
+     0.94
+    ],
+    "focal": [
+     0.4,
+     0.5
+    ]
+   },
+   "reason": "Trim includes the white paper margin and frame line at the top/left/right of the plate. With the plate-only trim and focal 0.40 the castle is whole and St. Peter's spire stays in, with only a sliver of the cartouche. Year 1581 (vol. 3) is right."
+  },
+  {
+   "n": 14,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.04,
+     0.05,
+     0.96,
+     0.895
+    ]
+   },
+   "reason": "Trim leaves a few pixels of paper margin along the top, left and right edges of the colored print; tighten. Date about 1700 is a fair hedge (Commons 1710; caption says Sweden still holds Riga)."
+  },
+  {
+   "n": 18,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.43,
+     0.4
+    ]
+   },
+   "reason": "At focal 0.5 the castle at the left of the skyline is cut off by the 16:9 crop; 0.43 keeps the castle, the Dome and St. Peter's spire in. Date from file title and description (1815)."
+  },
+  {
+   "n": 24,
+   "verdict": "ok",
+   "reason": "Clean color quay view with the Dome tower; no margins; photochrom 1890s fine."
+  },
+  {
+   "n": 31,
+   "verdict": "ok",
+   "reason": "Sharp view over the old town, market halls and river; crop clean; credits match."
+  }
+ ]
+}

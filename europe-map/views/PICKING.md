@@ -17,7 +17,7 @@ For each city folder you are given:
 - Modern period (P6): a good, recent photograph of the city's skyline or historic center, ideally a Commons Quality or Featured image.
 
 ## Dates
-- `y` is the year the picture was made (an integer used for matching); `lab` is how the label shows it: "1572", "1890s", "about 1860", "1758–61".
+- `y` is the year the picture was made (an integer used for matching); `lab` is how the label shows it: "1572", "1890s", "about 1860", "1758–61". The label reads "From 1572, 316 years earlier", so never write "before 1844" or "by 1844"; if the date is that uncertain, skip the picture.
 - Prints from books take the year the plate was first published, even for later colored copies: Braun & Hogenberg vol. 1 1572, vol. 2 1575, vol. 3 1581, vol. 4 1588, vol. 5 1598, vol. 6 1617. Merian's Topographia: the year of that volume (for example Topographia Bohemiae 1650, Topographia Germaniae volumes 1642–1654, Topographia Italiae 1688). If you know the plate's year from the description, use it.
 - Commons sometimes gives the date a painting was photographed or a book was reprinted; correct it from the description, or skip the picture if the true date is unclear.
 - Photochrom prints: "1890s", `y` 1895, unless the record gives a specific year.
@@ -34,7 +34,7 @@ For each city folder you are given:
 - `what`: short plain description in this style: "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1" · "Bird’s-eye view, etching" · "The Charles Bridge and the castle, painting (National Gallery Prague)" · "Photochrom print (Library of Congress)" · "Aerial photograph (ETH Library, Zurich)" · "Photograph". Name what is shown when it isn't the whole city ("The Opernring, photochrom print").
 - `who`: the maker(s) as usually credited: "Georg Braun and Frans Hogenberg" · "Matthäus Merian" · "Detroit Publishing Co." (or "Photoglob Zürich", per the record) · "Walter Mittelholzer" · the photographer's name for modern photos (from the artist field, cleaned of usernames in brackets). Use "unknown artist" or "unknown photographer" if none.
 - `lic`: "PD" for public domain (including "PDM-owner"), "CC0", or the exact Creative Commons short name ("CC BY-SA 4.0").
-- `trim`: fractions [left, top, right, bottom] of the picture to keep, cutting book margins, page gutters, text blocks, color bars and frames. A plate with two cities (Prague above Eger) is trimmed to this city's half.
+- `trim`: fractions [left, top, right, bottom] of the picture to keep, cutting book margins, page gutters, text blocks, color bars and frames. A plate with two views (two cities, or a castle above a city view) is trimmed to the one general view of this city. Don't zoom in far: the card is 720 px wide and comes from a copy 1280 px wide (1920 for wide panoramas), so keep at least about half the picture's width.
 - `focal`: the point [x, y] (fractions of the trimmed picture) that a 16:9 crop should center on: the most recognizable part (cathedral, castle, river front).
 - `why`: a few words for the reviewer.
 - Use typographic apostrophes (’), American spelling, plain words.

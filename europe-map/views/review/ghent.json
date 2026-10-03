@@ -1,0 +1,45 @@
+{
+ "city": "Ghent",
+ "checks": [
+  {
+   "n": 8,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.055,
+     0.07,
+     0.935,
+     0.895
+    ],
+    "focal": [
+     0.52,
+     0.5
+    ]
+   },
+   "reason": "trim sits between the outer and inner plate borders, so double frame lines and blank band show at left and right"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "Merian/Caspar Merian view labeled Gent, Rijksmuseum 1654; strip is wide so crop is ~40% of width but 4724 px source"
+  },
+  {
+   "n": 23,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.026,
+     0.03,
+     0.972,
+     0.97
+    ]
+   },
+   "reason": "dark photochrom border at left and right edges inside crop"
+  },
+  {
+   "n": 31,
+   "verdict": "ok",
+   "reason": "Graslei and Korenlei on the Lys, record matches"
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "city": "Brescia",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "Engraving of the city below the castle hill with the New Cathedral dome; no frame; credits and 1882 match record."
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "Sharp high view with the cathedral domes; crop (75% of width) is clean; best of the modern set (others are mostly greenery or suburbs)."
+  }
+ ]
+}

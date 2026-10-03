@@ -1,0 +1,10 @@
+{
+ "city": "Minsk",
+ "checks": [
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "2019 skyline view from the park by Hotel Belarus; record details match; crop fine"
+  }
+ ]
+}

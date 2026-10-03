@@ -1,0 +1,55 @@
+{
+ "city": "Lyon",
+ "checks": [
+  {
+   "n": 10,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.074,
+     0.123,
+     0.928,
+     0.877
+    ]
+   },
+   "reason": "old trim leaves 2-3% of paper margin outside the plate frame at top, right and bottom; year 1572 (vol. 1) is right"
+  },
+  {
+   "n": 13,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.01,
+     0.03,
+     0.99,
+     0.415
+    ]
+   },
+   "reason": "frame line and paper strip at the top edge are inside the old crop"
+  },
+  {
+   "n": 23,
+   "verdict": "fix",
+   "fix": {
+    "y": 1780,
+    "lab": "about 1780"
+   },
+   "reason": "museum says only late 18th century (other sources 1766-94); 'about 1770' is an unsupported guess, midpoint is safer"
+  },
+  {
+   "n": 26,
+   "verdict": "ok",
+   "reason": "Fourvière photochrom; caption outside the crop; lic per record CC BY 2.0"
+  },
+  {
+   "n": 33,
+   "verdict": "ok",
+   "reason": "1934 Mittelholzer aerial, wing edge trimmed"
+  },
+  {
+   "n": 43,
+   "verdict": "ok",
+   "reason": "cathedral and Saône from Fourvière; crop is about 0.45 of the width but the source is 11560 px wide and no better P6 option exists"
+  }
+ ]
+}

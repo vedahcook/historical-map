@@ -1,0 +1,59 @@
+{
+ "city": "Zürich",
+ "checks": [
+  {
+   "n": 7,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.012,
+     0.022,
+     0.988,
+     0.982
+    ]
+   },
+   "reason": "plate scan has 3-6 px of paper and the frame line along every edge, inside the crop on left and right"
+  },
+  {
+   "n": 13,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.042,
+     0.135,
+     0.842,
+     0.78
+    ]
+   },
+   "reason": "crop included the plate frame line at top and right edge"
+  },
+  {
+   "n": 17,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.2,
+     0.078,
+     0.776,
+     0.313
+    ]
+   },
+   "reason": "trim included the rolled-scroll band above the picture (frame strip and dark line at top of the crop)"
+  },
+  {
+   "n": 24,
+   "verdict": "ok",
+   "reason": "fine"
+  },
+  {
+   "n": 34,
+   "verdict": "ok",
+   "reason": "fine"
+  },
+  {
+   "n": 40,
+   "verdict": "ok",
+   "reason": "fine"
+  }
+ ]
+}

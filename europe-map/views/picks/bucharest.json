@@ -1,0 +1,92 @@
+{
+ "city": "Bucharest",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Bucharest, woodcut, published in Leipzig in 1717.jpg",
+   "y": 1717,
+   "lab": "1717",
+   "what": "View of the town on the Dâmbovița, print published in Leipzig",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.6
+   ],
+   "why": "earliest general view, labeled BUCHOREST, churches and princely court along the river"
+  },
+  {
+   "n": 8,
+   "file": "Preziosi Colţei overview.jpg",
+   "y": 1868,
+   "lab": "1868",
+   "what": "View over the rooftops from the Colțea Tower, painting (Bucharest Metropolitan Library)",
+   "who": "Amedeo Preziosi",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "color general view of the old city with its church towers"
+  },
+  {
+   "n": 12,
+   "file": "WWI Bucharest German panorama.jpg",
+   "y": 1916,
+   "lab": "1916–17",
+   "what": "Aerial photograph of the city center and Cișmigiu Park, taken by the German army",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "high-resolution aerial of the center with Cișmigiu Park and the Dâmbovița; ordinary city, not war damage"
+  },
+  {
+   "n": 19,
+   "file": "Bucharest view from Dealul Mitropoliei (2023).jpg",
+   "y": 2023,
+   "lab": "2023",
+   "what": "The Palace of the Parliament seen from the Metropolitan Hill, photograph",
+   "who": "Chainwit",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.48
+   ],
+   "why": "the city’s best-known landmark above the rooftops"
+  }
+ ],
+ "gaps": "P0, P1: none. P3: only #3, a single church (1845 book illustration), skipped. P6 photo is ordinary in quality.",
+ "notes": "P4 alternative: #4 (1890s photochrom general view with St. Spyridon) is equally good; #8 chosen for its earlier date and wider spread. #13 is a smaller copy of #12 (dated 1916 there). #10 (1865) shows the flood, an event. #9 (1864 Szathmari photo panorama) is too thin (7:1). #12’s source dates it 1916–18; Commons says probably before the Battle of Bucharest, Nov–Dec 1916. #8 medium inferred from appearance (Preziosi’s 1868 Bucharest watercolors); Commons files it under engravings.",
+ "_reviewed": true
+}

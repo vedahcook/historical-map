@@ -1,0 +1,134 @@
+{
+ "city": "Zürich",
+ "picks": [
+  {
+   "n": 7,
+   "file": "Map of Zurich by Braun Hogenberg (34065120).jpg",
+   "y": 1581,
+   "lab": "1581",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 3",
+   "who": "Georg Braun and Frans Hogenberg, after Jos Murer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.022,
+    0.988,
+    0.982
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "colored bird’s-eye view; Limmat, Grossmünster and Fraumünster clear; highest-resolution copy, already cut to the plate (from the 1616 edition)"
+  },
+  {
+   "n": 13,
+   "file": "Gezicht op Zürich, 1726 La Ville de Zurich, en Profil (titel op object) Les Forces de l'Europe, Asie, Afrique et Amerique Comme aussi les Cartes des Côtes de France et d'Espagne (serietitel op objec, RP-P-OB-83.036-90.jpg",
+   "y": 1726,
+   "lab": "1726",
+   "what": "View from the lake, engraving in Les Forces de l’Europe, Asie, Afrique et Amerique",
+   "who": "Pieter van der Aa (publisher)",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.042,
+    0.135,
+    0.842,
+    0.78
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "lake front with the minster towers; trimmed to the plate"
+  },
+  {
+   "n": 17,
+   "file": "Zentralbibliothek Zürich - Handwerkskundschaft der Zunft der Buchbinder - 991037222059705501.jpg",
+   "y": 1765,
+   "lab": "1765",
+   "what": "View from the lake, etching on a guild journeyman’s certificate (Zentralbibliothek Zürich)",
+   "who": "Johann Rudolf Metzger",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.2,
+    0.078,
+    0.776,
+    0.313
+   ],
+   "focal": [
+    0.47,
+    0.5
+   ],
+   "why": "panorama ‘drawn from nature 1765’; trimmed to the picture above the certificate text"
+  },
+  {
+   "n": 24,
+   "file": "BAZ - Blick auf das untere Limmatquai.tiff",
+   "y": 1870,
+   "lab": "1870",
+   "what": "The Limmatquai and Niederdorf with the Polytechnikum, photograph (Baugeschichtliches Archiv Zürich)",
+   "who": "Adolphe Braun",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.01,
+    0.99,
+    0.99
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "general view from a height over the old town and river to the ETH building"
+  },
+  {
+   "n": 34,
+   "file": "ETH-BIB-Zürich, Hauptbahnhof, Landesmuseum, Limmat aus 100 m-Inlandflüge-LBS MH01-001793.tif",
+   "y": 1919,
+   "lab": "1919",
+   "what": "The main station, Landesmuseum and Limmat, aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.01,
+    0.99,
+    0.99
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "high resolution; station hall and Landesmuseum instantly recognizable"
+  },
+  {
+   "n": 40,
+   "file": "Zürich view Quaibrücke 20200702.jpg",
+   "y": 2020,
+   "lab": "2020",
+   "what": "View down the Limmat from the Quaibrücke, photograph",
+   "who": "Daniel Kraft",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "Fraumünster, St. Peter and Grossmünster in one sunny frame; very high resolution"
+  }
+ ],
+ "gaps": "P0: nothing. P3 has only 1765; nothing from 1770–1849.",
+ "notes": "P2 (#13, 1726) re-engraves Merian’s 1642 view from the lake, so it shows the city as of about 1640; drop it if a derivative is unwanted (Merian’s own 1642 plate, #4, is the alternative but shares P1 with Braun and Hogenberg). The same 1765 Metzger view without the certificate (#19) shows the Grossmünster towers burning (the 1763 lightning fire), so I used the ordinary version. #27 (photochrom from the Utoquai, 1890s) is a color alternative for P4 but the city is small in the frame. #10, #12 and #20 are paintings of other places held in the Kunsthaus; #11 is Eglisau.",
+ "_reviewed": true
+}

@@ -1,0 +1,39 @@
+{
+ "city": "Birmingham",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "Westley East Prospect 1732; crop clean of the title and frame; low resolution (1028 px) but the only P2 view"
+  },
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.118,
+     0.092,
+     0.91,
+     0.325
+    ]
+   },
+   "reason": "Full description confirms View of Birmingham from the Warwick Canal, 1800; the old trim left the engraving's frame line at the left and top inside the crop; slightly tighter trim removes it. Small and from a page photo, but acceptable for P3"
+  },
+  {
+   "n": 13,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.5,
+     0.42
+    ]
+   },
+   "reason": "Town Hall with Christ Church spire, Met stereo; at focal 0.45 the crop top sits at the tip of the spire and may clip it; 0.42 leaves margin above the spire. About 1870 sits inside the 1860s-80s range"
+  },
+  {
+   "n": 25,
+   "verdict": "ok",
+   "reason": "Skyline panorama, Beetham Tower and city center towers, CC BY-SA 2.0; crop shows the central towers"
+  }
+ ]
+}

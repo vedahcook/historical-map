@@ -1,0 +1,92 @@
+{
+ "city": "Lille",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Plan de Lille.jpg",
+   "y": 1581,
+   "lab": "1581",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 3 (colored copy of the 1645 French edition)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.014,
+    0.015,
+    0.988,
+    0.99
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "colored bird’s-eye view of the walled city with its churches and the old castle drawn; already cut to the plate (same scan as #6)"
+  },
+  {
+   "n": 20,
+   "file": "La Grande Place, Lille, France-LCCN2001698413.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Grand Place, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.034,
+    0.035,
+    0.964,
+    0.945
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "color; the main square with the Goddess column and the belfry of the Grand’Garde; frame and caption cut"
+  },
+  {
+   "n": 24,
+   "file": "ETH-BIB-Lille-Weitere-LBS MH02-43-0036.tif",
+   "y": 1935,
+   "lab": "1935",
+   "what": "Aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.85
+   ],
+   "focal": [
+    0.42,
+    0.55
+   ],
+   "why": "dated 8 July 1935; whole city with Vauban’s star-shaped citadel; dark wing shadow at the bottom cut"
+  },
+  {
+   "n": 30,
+   "file": "Lille - Vue aérienne 02.JPG",
+   "y": 2009,
+   "lab": "2009",
+   "what": "View over the city center, photograph",
+   "who": "Jérémy Jännick",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.32,
+    0.42
+   ],
+   "why": "high view toward the old town with the Chamber of Commerce belfry; modern buildings in front; best of a weak modern set"
+  }
+ ],
+ "gaps": "P0: no view (#1 is a portrait woodcut). P2: no usable view. P3: no candidates (only portraits).",
+ "notes": "P2: Van der Meulen’s wide view of Lille with the king’s army before the town in 1667 (#13 full print, #12 right half) is a strong view but an event scene whose engraving date is unknown (records give only 1632–90 or 1654–1711), so left out; worth adding if the print can be dated. Merian’s ‘Lille Rysselia’ (#10) is a plan of uncertain edition. #16–17 are Bergen, Norway (photochrom of Lille Lungegårdsvann lake), not Lille. #7–8 are Rhodes and Famagusta.",
+ "_reviewed": true
+}

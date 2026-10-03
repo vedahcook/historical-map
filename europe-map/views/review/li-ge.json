@@ -1,0 +1,38 @@
+{
+ "city": "Liège",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.02,
+     0.036,
+     0.98,
+     0.695
+    ]
+   },
+   "reason": "Correct 1572 plate; the gold frame band at the top and the top edge of the legend panels were inside the trim."
+  },
+  {
+   "n": 12,
+   "verdict": "ok",
+   "reason": "True Le Loup panorama of Liège (drawn 1738–39); strip, so the crop is about 44% of the width, acceptable; inscription cut."
+  },
+  {
+   "n": 18,
+   "verdict": "ok",
+   "reason": "Turner’s gouache titled Liège from the Pont des Arches, c. 1839; loose but a real general view; edges clean."
+  },
+  {
+   "n": 20,
+   "verdict": "ok",
+   "reason": "Photochrom of Liège from the north (P.Z. mark visible), 1890s; frame and caption outside the crop."
+  },
+  {
+   "n": 30,
+   "verdict": "ok",
+   "reason": "Nordenfan 2017 view from the Citadelle; clean."
+  }
+ ]
+}

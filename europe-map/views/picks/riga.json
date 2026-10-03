@@ -1,0 +1,113 @@
+{
+ "city": "Riga",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Panorama of Riga, 1572 (v2).jpg",
+   "y": 1581,
+   "lab": "1581",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 3",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.062,
+    0.97,
+    0.94
+   ],
+   "focal": [
+    0.4,
+    0.5
+   ],
+   "why": "colored river view; castle, St. Peter’s, the Dome and St. James’s all labeled"
+  },
+  {
+   "n": 14,
+   "file": "Profil de la ville de Riga, Capitale de la province de Livonie 1710.jpg",
+   "y": 1700,
+   "lab": "about 1700",
+   "what": "View across the Daugava, colored etching",
+   "who": "Pierre Aveline",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.04,
+    0.05,
+    0.96,
+    0.895
+   ],
+   "focal": [
+    0.5,
+    0.35
+   ],
+   "why": "only ordinary view for P2; numbered landmarks along the river front"
+  },
+  {
+   "n": 18,
+   "file": "Riga panorama by Carl Traugott Fechhelm (1815).jpg",
+   "y": 1815,
+   "lab": "about 1815",
+   "what": "The harbor and old town from across the Daugava, painting",
+   "who": "Carl Traugott Fechhelm",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.43,
+    0.4
+   ],
+   "why": "color general view with St. Peter’s spire and the castle above the busy harbor"
+  },
+  {
+   "n": 24,
+   "file": "Riga Panorama 1890-1900.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The quay on the Daugava, photochrom print",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.965
+   ],
+   "focal": [
+    0.4,
+    0.5
+   ],
+   "why": "river front with the Dome tower; color-cleaned copy of #21"
+  },
+  {
+   "n": 31,
+   "file": "Vistas desde la iglesia de San Pedro, Riga, Letonia, 2012-08-07, DD 08.JPG",
+   "y": 2012,
+   "lab": "2012",
+   "what": "View from St. Peter’s Church over the old town, the Central Market and the Daugava, photograph",
+   "who": "Diego Delso",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0.1,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "sharp high view; old town roofs, market halls, river and TV tower"
+  }
+ ],
+ "gaps": "P0: nothing. P5: nothing reliably dated (#29 is a 1915 negative of the 1890s photochrom #27; #25 dated only 1900–18; Hammond slide #30 undated, and its skyline may show St. Peter’s spire rebuilt in 1973).",
+ "notes": "#2 Commons says 1572, but the Riga plate (with Königsberg) is in vol. 3, so 1581. P1 alternative: Thum and Mollyn’s 1612 panorama (#8, or the large dark CC0 scan #7), a true view printed in Riga, black and white. #14 is signed ‘fait par Aveline’; its caption says Sweden still holds Riga, so it predates 1710 (Commons gives 1710); decorative and probably derived from older views, so weaker. Merian’s bird’s-eye plan (#6, #9, #10) is dated 1638–1652 in different copies, so not used for P2. #18 is small (1200×415); its date comes from the file title. P3 alternative: 1830 lithograph of the Town Hall Square with the Blackheads’ House and St. Peter’s (#15, black and white, large). Sieges and the 1701 river crossing (#11, #13, #19, #20) skipped as event views.",
+ "_reviewed": true
+}

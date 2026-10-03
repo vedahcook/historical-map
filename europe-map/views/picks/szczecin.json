@@ -1,0 +1,92 @@
+{
+ "city": "Szczecin",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Civitates orbis terrarum. Urbium praecipuarum totius mundi. Liber quartus (page 86).jpg",
+   "y": 1588,
+   "lab": "1588",
+   "what": "Bird’s-eye view across the Oder, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 4",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.105,
+    0.135,
+    0.883,
+    0.875
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "hand-colored 1594 copy of the vol. 4 plate, largest scan; walled town, castle, bridge and Oder; book margins cut"
+  },
+  {
+   "n": 13,
+   "file": "Ludwig Eduard Lütke - Stettin - Blick von der Lastadie-Oderinsel 1836.jpg",
+   "y": 1836,
+   "lab": "1836",
+   "what": "The ducal castle seen across the harbor from the Lastadie, painting",
+   "who": "Ludwig Eduard Lütke",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.52,
+    0.6
+   ],
+   "why": "color view of the river front with the castle towers; date in title and date field agree"
+  },
+  {
+   "n": 16,
+   "file": "General view and Great Bridge, Stettin, Germany-LCCN2002696191.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "St. James’s Church and the Long Bridge over the Oder, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.03,
+    0.98,
+    0.93
+   ],
+   "focal": [
+    0.45,
+    0.42
+   ],
+   "why": "color river-front view with the cathedral spire; LoC master of the same print as #22; border and caption cut"
+  },
+  {
+   "n": 30,
+   "file": "Szczecin PCP i Jasne Blonia dron (1).jpg",
+   "y": 2021,
+   "lab": "2021",
+   "what": "Jasne Błonia park with the city skyline beyond, aerial photograph",
+   "who": "Kapitel",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.32
+   ],
+   "why": "recognizable central Szczecin scene, city hall and towers behind; the other P6 drone shots are outer suburbs"
+  }
+ ],
+ "gaps": "P0: no candidates; P2: only flat Merian fortification plans (#9, #10); P5: nothing usable",
+ "notes": "Braun and Hogenberg year set to vol. 4 (1588) rather than the 1594 copy date; #7 is a brighter colored copy but only 1407 px. Skipped #15 (Most, finer and larger P3 painting, but date field says 1847 and file name 1857), #14 (file name 1836, date field 1839) and #12 (dated only 1830–1870). #11 is a good pre-war aerial postcard with St. James’s spire, but undated (‘1720’ is a card number), so skipped. #26 (port aerial, ‘likely around 1920’) and the 1944 vertical aerials are not city views. #33 (2014 high-altitude aerial of the whole city) is an alternative for P6 but dark and without recognizable landmarks.",
+ "_reviewed": true
+}

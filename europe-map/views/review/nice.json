@@ -1,0 +1,38 @@
+{
+ "city": "Nice",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.175,
+     0.282,
+     0.698,
+     0.715
+    ]
+   },
+   "reason": "Trim includes the paper margin above and left of the plate and the plate's frame line; tighten to the engraved area. True 1693-95 bird's-eye view with labels; credits match."
+  },
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "Pont Neuf over the Paillon with the old town and castle hill; caption and margin cut cleanly; 1834 per Rijksmuseum."
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "Color market scene on the Cours Saleya below the castle hill; crop clean; 1889 per Rijksmuseum record."
+  },
+  {
+   "n": 22,
+   "verdict": "ok",
+   "reason": "Good general view over the old town and bay; glass-plate edges excluded; Meurisse press photo dated 20 Oct 1925."
+  },
+  {
+   "n": 26,
+   "verdict": "ok",
+   "reason": "Bay, Promenade des Anglais and old town; 16:9 crop of a 4.3:1 panorama is 41% of the width (unavoidable, 8303 px so sharp)."
+  }
+ ]
+}

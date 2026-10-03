@@ -1,0 +1,84 @@
+{
+ "city": "Genoa",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.012,
+     0,
+     0.988,
+     0.985
+    ],
+    "focal": [
+     0.45,
+     0.58
+    ]
+   },
+   "reason": "woodcut frame lines at left/right edges are inside the crop; focal y 0.5 cuts the mole base under the lighthouse"
+  },
+  {
+   "n": 7,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.008,
+     0.03,
+     0.992,
+     0.972
+    ],
+    "focal": [
+     0.49,
+     0.5
+    ]
+   },
+   "reason": "orange plate border remains at top/bottom with the old trim; focal x 0.62 brings the legend cartouche into the crop"
+  },
+  {
+   "n": 16,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.025,
+     0.06,
+     0.968,
+     0.927
+    ],
+    "focal": [
+     0.5,
+     0.5
+    ]
+   },
+   "reason": "paper margins and plate frame inside the old trim on all sides; focal x 0.55 includes the legend table"
+  },
+  {
+   "n": 24,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.03,
+     0.09,
+     0.96,
+     0.885
+    ]
+   },
+   "reason": "strip of paper margin at right edge (plate ends at about 0.96)"
+  },
+  {
+   "n": 28,
+   "verdict": "ok",
+   "reason": "Piazza Acquaverde photochrom; lic per record (CC BY 2.0)"
+  },
+  {
+   "n": 38,
+   "verdict": "ok",
+   "reason": "Meurisse April 1922 rooftops; numbers and borders trimmed"
+  },
+  {
+   "n": 46,
+   "verdict": "ok",
+   "reason": "clear modern view to port"
+  }
+ ]
+}

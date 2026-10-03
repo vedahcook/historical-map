@@ -1,0 +1,155 @@
+{
+ "city": "Messina",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Messana, urbs est Siciliae maxima... - btv1b53178835x (1 of 2).jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1 (colored copy, BnF)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.075,
+    0.15,
+    0.765,
+    0.8
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "large richly colored copy; walled city behind the sickle-shaped harbor; name legend below cut"
+  },
+  {
+   "n": 13,
+   "file": "Gezicht op Messina Messina (titel op object), BI-B-FM-090-72.jpg",
+   "y": 1735,
+   "lab": "1735",
+   "what": "View across the harbor, colored engraving (Rijksmuseum)",
+   "who": "Johannes Ratelband",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.058,
+    0.21,
+    0.832,
+    0.775
+   ],
+   "focal": [
+    0.62,
+    0.55
+   ],
+   "why": "color general view of the waterfront and harbor; Etna drawn smoking in the background as decoration; book page cut away"
+  },
+  {
+   "n": 20,
+   "file": "Louis François Cassas's View of Messina Harbor with the Palazzata, designed by Simone Gullì in 1623.jpg",
+   "y": 1782,
+   "lab": "1782–83",
+   "what": "The harbor and the Palazzata, drawing",
+   "who": "Louis-François Cassas",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.05,
+    0.97,
+    0.95
+   ],
+   "focal": [
+    0.38,
+    0.5
+   ],
+   "why": "the famous curved harbor front before the 1783 earthquake destroyed it"
+  },
+  {
+   "n": 16,
+   "file": "Veduta di Messina in Sicilia.jpg",
+   "y": 1845,
+   "lab": "1845",
+   "what": "View over the city and harbor, engraving (Atlante illustrativo for Zuccagni-Orlandini’s Corografia dell’Italia)",
+   "who": "Achille Parboni",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.045,
+    0.1,
+    0.93,
+    0.875
+   ],
+   "focal": [
+    0.6,
+    0.6
+   ],
+   "why": "general view from the hill: rebuilt town, harbor arm and the Calabrian coast; second P3 view, 63 years after Cassas"
+  },
+  {
+   "n": 24,
+   "file": "Panoramafoto från Messina - Hallwylska museet - 107911.tif",
+   "y": 1888,
+   "lab": "1888",
+   "what": "Panorama over the city and harbor, photograph (Hallwyl Museum, Stockholm)",
+   "who": "L. Cella",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.025,
+    0.978,
+    0.905
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "firmly dated view of the city 20 years before the 1908 earthquake; mount and caption cut"
+  },
+  {
+   "n": 30,
+   "file": "ETH-BIB-Hafen von Messina-Kilimanjaroflug 1929-30-LBS MH02-07-0584.tif",
+   "y": 1929,
+   "lab": "1929–30",
+   "what": "The rebuilt city and the harbor, aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.04,
+    0.93,
+    0.99
+   ],
+   "focal": [
+    0.62,
+    0.5
+   ],
+   "why": "whole city after post-earthquake rebuilding, with the sickle harbor; dark edge at right cut"
+  },
+  {
+   "n": 32,
+   "file": "Messina Town view 03.jpg",
+   "y": 2019,
+   "lab": "2019",
+   "what": "The city and the Christ the King shrine from the port, photograph",
+   "who": "Ad Meskens",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.53,
+    0.38
+   ],
+   "why": "sharp color view with the city’s best-known modern landmark above the town"
+  }
+ ],
+ "gaps": "P0: no candidates. P4 event (1908 earthquake ruins): no photograph of the ruins among the candidates; Beckmann’s 1909 painting (#27) is a figure scene, not a city view.",
+ "notes": "P2 alternative: Willem Schellinks’s dated drawing of 30 November 1664 (#11), an eyewitness view from the east, pale gray ink. #17 Ducros 1789 watercolor of the ruined waterfront after the 1783 earthquake (event view, small file) left out since P3 already has two views. Sommer panoramas (#22, #23) dated only 1857–1914.",
+ "_reviewed": true
+}

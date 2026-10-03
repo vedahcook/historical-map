@@ -1,0 +1,36 @@
+{
+ "city": "Liverpool",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "Title says View of Liverpool c.1811; skyline and shipping fit; 1000 px source is enough."
+  },
+  {
+   "n": 7,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.026,
+     0.032,
+     0.972,
+     0.955
+    ]
+   },
+   "reason": "White photochrom border still inside the trim at left and right (picture spans x about 0.026 to 0.974)."
+  },
+  {
+   "n": 18,
+   "verdict": "ok",
+   "reason": "St. George’s Hall, gardens and Lime Street shed visible; scratch cut off."
+  },
+  {
+   "n": 26,
+   "verdict": "fix",
+   "fix": {
+    "what": "Liverpool and its Anglican Cathedral from across the Mersey, photograph"
+   },
+   "reason": "Record only says view of Liverpool from across the river; “south docks” is not supported. Crop and credit fine."
+  }
+ ]
+}

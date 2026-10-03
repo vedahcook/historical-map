@@ -1,0 +1,38 @@
+{
+ "city": "Salerno",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "engraving of the town below the castle hill; trim sits on the plate edge; caption cut"
+  },
+  {
+   "n": 11,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.57,
+     0.45
+    ]
+   },
+   "reason": "crop starts inside the wall terrace at the lower left; shifting right drops that fragment and keeps the town and port"
+  },
+  {
+   "n": 22,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0.14,
+     1,
+     1
+    ],
+    "focal": [
+     0.45,
+     0.6
+    ]
+   },
+   "reason": "about 40% of the 16:9 crop is empty sky; trimming the top puts the city and bay in the frame"
+  }
+ ]
+}

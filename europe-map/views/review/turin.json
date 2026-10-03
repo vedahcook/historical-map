@@ -1,0 +1,49 @@
+{
+ "city": "Turin",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.08,
+     0.385,
+     0.92,
+     0.975
+    ],
+    "focal": [
+     0.6,
+     0.5
+    ]
+   },
+   "reason": "crop cuts through the putti and coat of arms at the top and includes the plate border lines at the sides; trim to the square below the cartouche"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "faint drawing but the only true general view of the period"
+  },
+  {
+   "n": 19,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.03,
+     0.03,
+     0.968,
+     0.93
+    ],
+    "focal": [
+     0.6,
+     0.45
+    ]
+   },
+   "reason": "2 px of the black mount show at the right edge; trim inside the photo"
+  },
+  {
+   "n": 30,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

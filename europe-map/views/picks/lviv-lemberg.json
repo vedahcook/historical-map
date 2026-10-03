@@ -1,0 +1,113 @@
+{
+ "city": "Lviv",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Lviv - map by Braun Hogenberg (97694025).jpg",
+   "y": 1617,
+   "lab": "1617",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 6",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.024,
+    0.036,
+    0.98,
+    0.968
+   ],
+   "focal": [
+    0.5,
+    0.62
+   ],
+   "why": "colored true view with the High Castle hill and the Latin cathedral labeled; largest copy"
+  },
+  {
+   "n": 10,
+   "file": "Widoki miasta Lwowa -Lang K.F. (6).jpg",
+   "y": 1865,
+   "lab": "about 1865",
+   "what": "St. George’s Cathedral, photograph (carte de visite)",
+   "who": "Karol Ferdynand Lang",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.05,
+    0.05,
+    0.95,
+    0.94
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "early photograph of the city’s best-known Baroque landmark; only view between 1617 and 1890"
+  },
+  {
+   "n": 11,
+   "file": "Lwów, widok z wieży ratuszowej.jpg",
+   "y": 1912,
+   "lab": "1910–14",
+   "what": "View from the Town Hall tower over the old town, photograph",
+   "who": "Józef Jaworski",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.004,
+    0.004,
+    0.998,
+    0.992
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "general view with the Dominican church, the Korniakt Tower and the Castle Hill"
+  },
+  {
+   "n": 17,
+   "file": "Lwow (Lviv). Aerial photo- 1921-10-07.jpg",
+   "y": 1921,
+   "lab": "1921",
+   "what": "Aerial photograph of the center from 900 meters",
+   "who": "Stan. Mayzenhalter, 2nd Aviation Regiment",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.006,
+    0.006,
+    0.994,
+    0.994
+   ],
+   "focal": [
+    0.47,
+    0.4
+   ],
+   "why": "sharp, exactly dated; the Opera House at the head of the central boulevard"
+  },
+  {
+   "n": 21,
+   "file": "Lwów - Widok z wieży ratuszowej 01.jpg",
+   "y": 2007,
+   "lab": "2007",
+   "what": "The old town from the Town Hall tower, photograph",
+   "who": "Jan Mehlich",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "color counterpart of #11; Dominican church, Dormition Church and Korniakt Tower, Castle Hill behind"
+  }
+ ],
+ "gaps": "P0: nothing. P2: nothing usable (#6 is an anonymous small copy dated only 1650–1749). P3: no candidates.",
+ "notes": "#1: Commons gives 1618 (the Latin edition of vol. 6); dated 1617 per the vol. 6 rule. #10 and #11 are the two P4 views (about 47 years apart). P4 alternatives: #7 Rybkowski’s 1895 color painting of the Easter fair on Bernardine Square (landmark scene, but only 30 years after #10), and #8 Trzemeski’s 1890 general view from Kleparów (black and white). #20 (Münz, view from the Town Hall) is dated only ‘before 1924’. #15 (1942–44) shows the ruined synagogue, skipped.",
+ "_reviewed": true
+}

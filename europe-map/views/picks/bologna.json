@@ -1,0 +1,113 @@
+{
+ "city": "Bologna",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Civitates orbis terrarum. Urbium praecipuarum totius mundi. Liber quartus (page 102).jpg",
+   "y": 1588,
+   "lab": "1588",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 4",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.118,
+    0.145,
+    0.89,
+    0.875
+   ],
+   "focal": [
+    0.5,
+    0.42
+   ],
+   "why": "colored bird’s-eye view with buildings drawn; walls and street pattern clear; book page trimmed"
+  },
+  {
+   "n": 10,
+   "file": "Joan Blaeu - Theatrum civitatum et admirandorum Italiae - page 087 Bononia Bologna 21 (46).jpg",
+   "y": 1663,
+   "lab": "1663",
+   "what": "Bird’s-eye view, engraving in Blaeu’s Theatrum Civitatum et Admirandorum Italiae",
+   "who": "Joan Blaeu",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.078,
+    0.025,
+    0.932,
+    0.855
+   ],
+   "focal": [
+    0.5,
+    0.33
+   ],
+   "why": "detailed bird’s-eye view with the hills and San Michele in Bosco behind; legend cut"
+  },
+  {
+   "n": 23,
+   "file": "Fotografi över Bologna - Hallwylska museet - 107380.tif",
+   "y": 1883,
+   "lab": "about 1883",
+   "what": "Panorama over the rooftops, photograph (Hallwyl Museum, Stockholm)",
+   "who": "Pietro Poppi",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.04,
+    0.095,
+    0.952,
+    0.905
+   ],
+   "focal": [
+    0.4,
+    0.35
+   ],
+   "why": "Asinelli and Garisenda towers and the old-town towers over the roofs; album captions cut"
+  },
+  {
+   "n": 28,
+   "file": "Paolo Monti - Servizio fotografico (Bologna, 1968) - BEIC 6330702.jpg",
+   "y": 1968,
+   "lab": "1968",
+   "what": "View over the rooftops, photograph (BEIC, Milan)",
+   "who": "Paolo Monti",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.4
+   ],
+   "why": "general view with the Asinelli tower and church domes"
+  },
+  {
+   "n": 34,
+   "file": "Panorama di Bologna.jpg",
+   "y": 2010,
+   "lab": "2010",
+   "what": "Panorama from San Michele in Bosco, photograph",
+   "who": "Qbert88",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0.12,
+    0,
+    0.78,
+    1
+   ],
+   "focal": [
+    0.42,
+    0.5
+   ],
+   "why": "whole city on a clear day with the Asinelli tower at center; outer edges of a 5.7:1 panorama trimmed"
+  }
+ ],
+ "gaps": "P0: nothing. P3: only single buildings, outskirts or Rome paintings held in Bologna (#14, #15 are Villa Borghese)",
+ "notes": "Poppi photo year 1883 is the Hallwyl album date, so labeled about 1883; the 1887 woodcut #24 copies the same view. Grubacs painting #25 is dated only ‘before 1878’, skipped. Van Wittel #11 dated only ‘17th century’, skipped. Blaeu #9 is the same plate but tiny.",
+ "_reviewed": true
+}

@@ -1,0 +1,113 @@
+{
+ "city": "The Hague",
+ "picks": [
+  {
+   "n": 5,
+   "file": "A View of The Hague from the Northwest MET DP147601.jpg",
+   "y": 1647,
+   "lab": "1647",
+   "what": "View from the northwest, painting (Metropolitan Museum of Art)",
+   "who": "Jan van Goyen",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.01,
+    0.01,
+    0.99,
+    0.99
+   ],
+   "focal": [
+    0.46,
+    0.62
+   ],
+   "why": "true general view in color; skyline with the Great Church (St. James) tower; cleaner museum copy of #4"
+  },
+  {
+   "n": 20,
+   "file": "Paulus Constantijn la Fargue - Cityscape The Hague.jpg",
+   "y": 1765,
+   "lab": "1760s",
+   "what": "The Binnenhof with the Knights’ Hall, painting",
+   "who": "Paulus Constantijn la Fargue",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.497
+   ],
+   "focal": [
+    0.68,
+    0.45
+   ],
+   "why": "color; the Knights’ Hall is the city’s signature building; file holds a pair of paintings, trimmed to the upper one"
+  },
+  {
+   "n": 25,
+   "file": "Ridderzaal (the Knights' Hall), Hague, Holland-LCCN2001698793.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Knights’ Hall in the Binnenhof, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.022,
+    0.025,
+    0.982,
+    0.935
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "color; the city’s best-known landmark; frame and caption cut"
+  },
+  {
+   "n": 31,
+   "file": "NIMH - 2011 - 3749 - Aerial photograph of Den Haag, The Netherlands.jpg",
+   "y": 1930,
+   "lab": "1920–40",
+   "what": "The Peace Palace, aerial photograph (Netherlands Institute of Military History)",
+   "who": "unknown photographer",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.03,
+    0.025,
+    0.975,
+    0.975
+   ],
+   "focal": [
+    0.42,
+    0.45
+   ],
+   "why": "famous landmark from the air; dated only to 1920–40 by the archive"
+  },
+  {
+   "n": 37,
+   "file": "View of The Hague and Scheveningen 2022.jpg",
+   "y": 2022,
+   "lab": "2022",
+   "what": "View over the city toward Scheveningen and the sea, photograph",
+   "who": "Joris van Rooden",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "sharp high view from the Turfmarkt with the Castalia towers, Malieveld and the coast"
+  }
+ ],
+ "gaps": "P0: no candidates. P2: only street plans (#9–14). P1 alternative not used: Braun and Hogenberg 1618 (#1), a colored plan with buildings drawn.",
+ "notes": "#7 (Jan van Londerseel bird’s-eye view) is a strong view but dated only 1608–65; skipped for the date doubt. P3 alternative: Jan ten Compe’s 1750 distant view (#17, MAS Antwerp), skyline too small to recognize. P5 alternative: firmly dated 1934 aerial of the Bezuidenhout district (#29), housing only. #35, #38–40 are recent photos of 19th–20th-century paintings, not modern views.",
+ "_reviewed": true
+}

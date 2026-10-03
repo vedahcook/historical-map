@@ -1,0 +1,31 @@
+{
+ "city": "Catania",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.48,
+     0.42
+    ]
+   },
+   "reason": "Colored B&H plate is right; crop at 0.6 cuts off the summit of Etna, moving up keeps the summit, city and harbor wall"
+  },
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "Corsi view across the harbor to the dome and Etna, 1845; trim inside the plate"
+  },
+  {
+   "n": 12,
+   "verdict": "ok",
+   "reason": "Le Cento Citta d'Italia panorama from the sea with dome and Etna; crop fine"
+  },
+  {
+   "n": 17,
+   "verdict": "ok",
+   "reason": "Aerial of the historic center with Via Etnea and the harbor; middle band crop works"
+  }
+ ]
+}

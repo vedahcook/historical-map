@@ -1,0 +1,92 @@
+{
+ "city": "Bursa",
+ "picks": [
+  {
+   "n": 1,
+   "file": "1745 view of Bursa (cropped).jpg",
+   "y": 1745,
+   "lab": "1745",
+   "what": "Engraving in Richard Pococke’s A Description of the East",
+   "who": "Richard Pococke",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.016,
+    0.27,
+    0.984,
+    0.97
+   ],
+   "focal": [
+    0.55,
+    0.55
+   ],
+   "why": "general view of the town below Mount Olympus (Uludağ); trim cuts the archive stamp in the sky"
+  },
+  {
+   "n": 4,
+   "file": "Brousse Vue de la grande mosquée et d'une partie de la ville - Laborde Léon Emmanuel Simon Joseph - 1838.jpg",
+   "y": 1838,
+   "lab": "1838",
+   "what": "The Great Mosque (Ulu Camii) and part of the city, lithograph in Léon de Laborde’s Voyage de l’Asie Mineure",
+   "who": "Léon de Laborde",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.03,
+    0.97,
+    0.86
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "the many-domed Great Mosque with Uludağ behind; clearer than the cruder 1801 Dallaway view (#3)"
+  },
+  {
+   "n": 9,
+   "file": "Bursa.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "View from the military school, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.95
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "color general view over the roofs with mosques and the mountain; cleanest scan of plate 16517 (same as #7, #11)"
+  },
+  {
+   "n": 19,
+   "file": "Pano Bursa (cropped).jpg",
+   "y": 2011,
+   "lab": "2011",
+   "what": "Panorama of the city center from Tophane, photograph",
+   "who": "Eusebius",
+   "lic": "CC BY 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "present-day skyline from Tophane; best of the modern options"
+  }
+ ],
+ "gaps": "P0, P1: no candidates; P5: nothing",
+ "notes": "P3 alternative: #3 Dallaway 1801 general view from Olympus (German edition plate), only 37 years from the 1838 pick so not used. Modern skyline is mostly generic high-rises; no Quality image among candidates.",
+ "_reviewed": true
+}

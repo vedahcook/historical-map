@@ -1,0 +1,7 @@
+{"city": "Belgrade", "checks": [
+ {"n": 1, "verdict": "fix", "fix": {"trim": [0.03, 0.29, 0.97, 0.98], "focal": [0.6, 0.38]}, "reason": "Woodcut's black frame lines sit at about 3%/97% sideways and 28.5% from the top; current trim keeps them and the 16:9 crop cuts the top spire. 1578 is the printing date from the dealer record, acceptable"},
+ {"n": 3, "verdict": "ok", "reason": "Calza battle painting with walled Belgrade at the river confluence; event flag correct; about 1720 fits (record: by 1725)"},
+ {"n": 9, "verdict": "ok", "reason": "Photochrom of the Sava riverfront with cathedral tower; caption and border outside the crop"},
+ {"n": 15, "verdict": "ok", "reason": "Mittelholzer aerial dated 28 June 1934 in the record; city, Sava bridge and confluence"},
+ {"n": 22, "verdict": "ok", "reason": "Color aerial of Belgrade from a flight, 2012 per EXIF; acceptable P6 (other P6 panoramas are weaker)"}
+]}

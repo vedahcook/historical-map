@@ -1,0 +1,50 @@
+{
+ "city": "Dublin",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Gezicht op Dublin, RP-P-2018-2021.jpg",
+   "y": 1778,
+   "lab": "1778–79",
+   "what": "The city from Phoenix Park, etching in Middleton’s New and Complete System of Geography (Rijksmuseum)",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.134,
+    0.088,
+    0.845,
+    0.757
+   ],
+   "focal": [
+    0.6,
+    0.38
+   ],
+   "why": "only general view; the Liffey, its bridges and the church spires; title and caption cut"
+  },
+  {
+   "n": 13,
+   "file": "Sackville Street and O'Connell Bridge, Dublin. County Dublin, Ireland-LCCN2002717398.tif",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Sackville Street (O’Connell Street) from O’Connell Bridge, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.02,
+    0.975,
+    0.94
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "color; the city’s main street with the O’Connell Monument and Nelson’s Pillar; caption cut"
+  }
+ ],
+ "gaps": "P0, P1, P2, P5: no candidates. P6: only a dull overcast Liffey view (#18) and a parking-lot panorama of Dublin Castle (#19); skipped",
+ "notes": "Kingstown and Howth photochroms (#7–10) are separate towns, not the city; #2 and #4 show Heywood in Queen’s County; #20 is Dublin, California. Malton’s colored Royal Exchange (1792, #5) is a good fallback for P3 but too close in date to #1 to take both. #3 (1826 lithograph from Phoenix Park) left out: soldiers fill the foreground and the city is indistinct. Fore-edge painting (#6) has no date of its own. #18 could serve as a weak P6 if wanted.",
+ "_reviewed": true
+}

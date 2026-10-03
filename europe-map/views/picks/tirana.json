@@ -1,0 +1,50 @@
+{
+ "city": "Tirana",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Albanie - vue de Tirana - btv1b9048038b.jpg",
+   "y": 1930,
+   "lab": "about 1930",
+   "what": "View over the old town, press photograph (Agence Meurisse, Gallica)",
+   "who": "Agence Meurisse",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.045,
+    0.03,
+    0.985,
+    0.97
+   ],
+   "focal": [
+    0.6,
+    0.44
+   ],
+   "why": "high view of the low town with the clock tower and a minaret, mountains behind"
+  },
+  {
+   "n": 9,
+   "file": "View of Tirana from the Lapidar.jpg",
+   "y": 2021,
+   "lab": "2021",
+   "what": "View of the city from the Sauk hills, photograph",
+   "who": "Terfili",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.4,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "clear general view of the whole city against the mountains; sky trimmed"
+  }
+ ],
+ "gaps": "P0–P4: no candidates. P5 only 1930.",
+ "notes": "#1 is a glass-plate negative scan; the dark left edge with handwritten numbers is trimmed. Gallica gives 17 June 1930 as the press coverage date. #3 is dated 1955 but looks like a modern digital photo (CC BY-SA 4.0 by the uploader), so skipped. P6 has no view of Skanderbeg Square or the historic center; #8 (2019, from the Sky Tower over central streets toward Mount Dajti) is the alternative.",
+ "_reviewed": true
+}

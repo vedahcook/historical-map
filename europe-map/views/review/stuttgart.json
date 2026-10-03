@@ -1,0 +1,8 @@
+{"city": "Stuttgart", "checks": [
+ {"n": 8, "verdict": "drop", "reason": "Equestrian portrait of the duke; in every usable 16:9 crop the horse's legs and belly cover a large part of the thin strip of town, so it does not work as a view of the city; no better P1 candidate (#1-7 show villages, lakes, emblems)"},
+ {"n": 10, "verdict": "fix", "fix": {"trim": [0.015, 0.065, 0.985, 0.85]}, "reason": "Plate frame line and a white strip sit at 4-6% from the top and stay in the full-height crop; 0.065 removes them (crop is still about half the picture width)"},
+ {"n": 11, "verdict": "ok", "reason": "Titled Ansicht von Stuttgart, general view with Stiftskirche; frame and title outside the crop"},
+ {"n": 17, "verdict": "ok", "reason": "Photochrom general view, correct city per title, borders trimmed"},
+ {"n": 29, "verdict": "ok", "reason": "Mittelholzer 1934 aerial filed under Stuttgart; best of the 1934 set (#25, #26, #30 show less city)"},
+ {"n": 34, "verdict": "ok", "reason": "Sharp aerial of the Schlossplatz with New and Old Palace, 2018, CC BY-SA 4.0 matches"}
+]}

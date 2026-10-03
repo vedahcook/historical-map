@@ -1,0 +1,59 @@
+{
+ "city": "Antwerp",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.115,
+     0.11,
+     0.885,
+     0.865
+    ],
+    "focal": [
+     0.48,
+     0.4
+    ]
+   },
+   "reason": "plate border line shows at the left and top edge; trim inside it"
+  },
+  {
+   "n": 10,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.03,
+     0.17,
+     0.968,
+     0.89
+    ],
+    "focal": [
+     0.46,
+     0.5
+    ]
+   },
+   "reason": "crop is full height of a long strip and includes the plate frame lines at top and bottom plus the sheet number; trim inside the frame, center on the cathedral and the next towers"
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 27,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 30,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 35,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

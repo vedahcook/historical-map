@@ -1,0 +1,155 @@
+{
+ "city": "Algiers",
+ "picks": [
+  {
+   "n": 4,
+   "file": "View of Algiers and its Bay in the XVI century.jpg",
+   "y": 1575,
+   "lab": "1575",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 2",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.032,
+    0.045,
+    0.966,
+    0.74
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "clean hand-colored copy; walled city with the mole and the island fort; legend box cut; record’s 1540 is Braun’s birth year"
+  },
+  {
+   "n": 14,
+   "file": "Gezicht op Algiers met De Ruyters schip 'De Liefde', 1662, SK-A-1396.jpg",
+   "y": 1665,
+   "lab": "1662–68",
+   "what": "View from the sea with De Ruyter’s ship De Liefde, painting (Rijksmuseum)",
+   "who": "Reinier Nooms",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.38,
+    0.55
+   ],
+   "why": "color view of the white walled town climbing its hill above the harbor"
+  },
+  {
+   "n": 17,
+   "file": "Gezicht op Algiers De Stad Algiers (titel op object), RP-P-1909-1656.jpg",
+   "y": 1762,
+   "lab": "1762",
+   "what": "View from the sea, etching (Rijksmuseum)",
+   "who": "Caspar Philips",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.02,
+    0.15,
+    0.78,
+    0.86
+   ],
+   "focal": [
+    0.5,
+    0.68
+   ],
+   "why": "panorama of the town and the coast with ships; trimmed toward the town, title and legend cut"
+  },
+  {
+   "n": 15,
+   "file": "View of Algiers from the Sea LCCN2006683443.tif",
+   "y": 1818,
+   "lab": "1818",
+   "what": "View from the sea, aquatint (Library of Congress)",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.04,
+    0.09,
+    0.96,
+    0.91
+   ],
+   "focal": [
+    0.5,
+    0.65
+   ],
+   "why": "the classic white triangle of the town, mole and lighthouse; 56 years after the 1762 view; title and margins cut"
+  },
+  {
+   "n": 22,
+   "file": "From the admiralty, Algiers, Algeria-LCCN2001697801.jpg",
+   "y": 1899,
+   "lab": "about 1899",
+   "what": "The harbor and the waterfront from the Admiralty, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.026,
+    0.032,
+    0.98,
+    0.97
+   ],
+   "focal": [
+    0.6,
+    0.35
+   ],
+   "why": "harbor with the arcaded boulevard and the white city rising up the hill behind"
+  },
+  {
+   "n": 31,
+   "file": "ETH-BIB-Algier aus 500 m Höhe-Mittelmeerflug 1928-LBS MH02-04-0180.tif",
+   "y": 1928,
+   "lab": "1928",
+   "what": "Aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.55
+   ],
+   "why": "whole city from above with the Casbah’s dense triangle and the harbor"
+  },
+  {
+   "n": 40,
+   "file": "Algers.jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "View over the Casbah to the bay, photograph",
+   "who": "Dan Sloan",
+   "lic": "CC BY-SA 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "sharp color view across the old town roofs to the harbor"
+  }
+ ],
+ "gaps": "P0: no candidates",
+ "notes": "#17 is the weaker of the two P3 views (small town in a wide panorama); drop it if only strong views should double up. Skipped Humbert de Molard’s paper negatives (#19, #20): damaged, dated only 1845–53, and the place is hard to confirm. Other P4 options: #23 (bay from Notre-Dame d’Afrique) and #21/#24 (from Mustapha), both general views where the old town is less visible. #37 is Algiers, Louisiana.",
+ "_reviewed": true
+}

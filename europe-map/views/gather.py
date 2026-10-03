@@ -55,9 +55,11 @@ def period_of(y):
     return None
 
 def names_of(city):
-    info = C[city]; names = [city] + [n for n in EXTRA.get(city, []) if n != city]
-    la = info['labels'].get('la')
-    if la and la not in names and ' ' not in la: names.append(la)
+    info = C[city]; base = re.sub(r'\s*\(.*\)', '', city).strip(); names = [base]
+    m = re.search(r'\((.*)\)', city)
+    extra = ([m.group(1)] if m else []) + info.get('native', []) + [info['labels'].get(l) for l in ('de', 'la')] + EXTRA.get(city, []) + info.get('aliases', {}).get('de', [])[:1]
+    for n in extra:
+        if n and n not in names and len(n) > 2: names.append(n)
     return names
 
 def save(path, obj):
@@ -80,10 +82,11 @@ def run(city):
     Q = []
     for n in names[:6]: Q += [f'Braun Hogenberg {n}', f'Merian {n}']
     for n in names[:4]: Q += [f'Schedel {n}']
-    Q += [f'photochrom {city}', f'"{city}" panorama 19th century', f'"View of {city}"', f'"Panorama of {city}"', f'{city} veduta painting',
-          f'{city} aerial photograph 1930', f'{city} from the air 1920s', f'Mittelholzer {names[1] if len(names) > 1 else city}',
-          f'{city} skyline panorama incategory:Quality_images', f'{city} panorama incategory:Featured_pictures_on_Wikimedia_Commons',
-          f'{city} view lithograph', f'{city} view engraving 18th century', f'{city} early photograph view 1860']
+    b = names[0]
+    Q += [f'photochrom {b}', f'"{b}" panorama 19th century', f'"View of {b}"', f'"Panorama of {b}"', f'{b} veduta painting',
+          f'{b} aerial photograph 1930', f'{b} from the air 1920s', f'Mittelholzer {info["labels"].get("de") or b}',
+          f'{b} skyline panorama incategory:Quality_images', f'{b} panorama incategory:Featured_pictures_on_Wikimedia_Commons',
+          f'{b} view lithograph', f'{b} view engraving 18th century', f'{b} early photograph view 1860']
     for lang, pre in FRV.items():
         lab = info['labels'].get(lang)
         if lab: Q.append(f'"{pre} {lab}"')

@@ -1,7 +1,7 @@
 # City views (Europe map)
 
 Period views of cities for the map's city popup. Decisions and plan: project doc `claude/city-views-pilot.md`.
-Live test page: https://vedahcook.github.io/historical-map/staging/city-views/ (29 cities, October 2, 2026).
+Live test page: https://vedahcook.github.io/historical-map/staging/city-views/ (129 cities as of October 3, 2026: the 4 pilot cities, batch 1 (25) and batch 2 (100)).
 Pictures are not stored here: the processed ones are on the gh-pages branch (`staging/city-views/views/`), the originals on
 Veda's Mac (`europe-map/views/pilot/` for the pilot, `europe-map/views/citywork/full/` for batch 1) and on Wikimedia Commons.
 
@@ -18,3 +18,10 @@ Steps (batch 1 ran these; paths in the scripts point at the Claude workspace, /h
 6. `build_cv.py` builds the page from `template.html`: batch-1 views, the map's Wikidata events for the new cities (unchecked,
    no pictures), and the pilot's sample events, pictures and population changes for Cologne, Vienna, Paris and Istanbul.
 7. Publish: `../deploy_site.sh staging DIR city-views` with DIR holding index.html, flags.webp and views/.
+
+Batch 2 (October 3, 2026): `batch2.txt` lists the 100 cities, chosen from the map's 465 largest by peak population, number of Wikipedia
+editions and population before 1700 (`batch2-ranking.json`). `round2.py` runs the search and preview steps in rounds of under 3 minutes on
+the Mac's Claude workspace (background jobs there stop when each command ends). Picks in `picks/`, checks in `review/`, processed views in
+`views-batch2.json`. `build_cv2.py` builds the page for all 129 cities with a city drop-down; `check3.cjs` checks that nothing moves as the
+year changes. Downloads ran on the Mac (`dl2.py` pattern: 8 threads, rounds of 2 minutes) because Wikimedia blocked the cloud workspace's
+picture downloads with "429 Too Many Requests".

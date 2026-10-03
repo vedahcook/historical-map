@@ -1,0 +1,49 @@
+{
+ "city": "Lille",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.014,
+     0.015,
+     0.988,
+     0.99
+    ]
+   },
+   "reason": "Right city, date right (vol. 3, 1581); thin paper margin and red frame line show on all four sides of the scan, so trim in a little"
+  },
+  {
+   "n": 20,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.034,
+     0.035,
+     0.964,
+     0.945
+    ]
+   },
+   "reason": "Grand Place photochrom is right; a dark border pixel line remains at left and right edges"
+  },
+  {
+   "n": 24,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0,
+     1,
+     0.85
+    ]
+   },
+   "reason": "Aerial is right; the wing shadow at bottom left still reaches the crop at 0.9, cut at 0.85"
+  },
+  {
+   "n": 30,
+   "verdict": "ok",
+   "reason": "Modern view of the center with the Chamber of Commerce belfry; date, maker and license match; best of the weak set"
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+{
+ "city": "Salerno",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Veduta di Salerno capoluogo di provincia del Principato Citeriore.jpg",
+   "y": 1845,
+   "lab": "1845",
+   "what": "View from the west with the castle hill, engraving",
+   "who": "Francesco Corsi",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.055,
+    0.07,
+    0.955,
+    0.875
+   ],
+   "focal": [
+    0.6,
+    0.55
+   ],
+   "why": "general view of the town on the bay below the Arechi castle; caption and margins cut"
+  },
+  {
+   "n": 11,
+   "file": "Panorama di Salerno (xilografia).jpg",
+   "y": 1891,
+   "lab": "1891",
+   "what": "Panorama from the west with the port, wood engraving in Le Cento Città d’Italia",
+   "who": "Barberis",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.57,
+    0.45
+   ],
+   "why": "clear wide view of the city, harbor and castle hill; large scan"
+  },
+  {
+   "n": 22,
+   "file": "Salerno - Sunset Panorama.jpg",
+   "y": 2008,
+   "lab": "2008",
+   "what": "View over the city and the bay from the hills, photograph",
+   "who": "Sabrina",
+   "lic": "CC BY 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0.14,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.6
+   ],
+   "why": "color view over the city and the seafront along the bay; better than the hazy port panorama #17"
+  }
+ ],
+ "gaps": "P0, P1, P2: no candidates; P5: only distant Mittelholzer aerials of the bay (#14–#16)",
+ "notes": "Second P4 not possible: #13 (1879, port view) is too close to #11; #9 (Alinari photo, ca. 1880–95) has the city small behind a tree. Skipped #12 (Horner watercolor, dated only ‘19th century’), #7 and #2 (dated only 1850–1899 and 1800–1900), #10 (looks like the Sorrento coast with Vesuvius, undated), #3–#6 (Vietri and La Trinità, not the city), #8 (1864 drawing of a seafront corner, small), #18–#20 (space-station photos), #21 (apartment blocks).",
+ "_reviewed": true
+}

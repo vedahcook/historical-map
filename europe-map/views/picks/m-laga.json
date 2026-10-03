@@ -1,0 +1,113 @@
+{
+ "city": "Málaga",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Malaga - 1578 views of Sevilla, Cadiz and Malaga (cropped).jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "View from the sea, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.05,
+    0.99,
+    0.95
+   ],
+   "focal": [
+    0.42,
+    0.5
+   ],
+   "why": "colored Málaga strip of the 1572 Seville–Cádiz–Málaga plate; Gibralfaro, the Alcazaba and the harbor; border cut"
+  },
+  {
+   "n": 13,
+   "file": "Gezicht op Malaga vanuit het Noorden, RP-T-1953-291.jpg",
+   "y": 1836,
+   "lab": "1836",
+   "what": "View over the city and the cathedral, watercolor (Rijksmuseum)",
+   "who": "Adrien Dauzats",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "color, dated June 1836; cathedral, beach and mountains unmistakable"
+  },
+  {
+   "n": 21,
+   "file": "Gezicht op Málaga, met op de achtergrond de Kathedraal VUE DE MALAGA & DE LA CATHÉDRALE (titel op object), RP-F-F07610.jpg",
+   "y": 1870,
+   "lab": "about 1870",
+   "what": "The cathedral and Gibralfaro over the rooftops, stereo photograph (Rijksmuseum)",
+   "who": "Jean Andrieu",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.14,
+    0.09,
+    0.462,
+    0.86
+   ],
+   "focal": [
+    0.5,
+    0.2
+   ],
+   "why": "trimmed to the left half of the stereo card; cathedral and castle hill both in view; Rijksmuseum dates it 1862–76"
+  },
+  {
+   "n": 26,
+   "file": "View of the Port of Málaga c1961.jpg",
+   "y": 1961,
+   "lab": "about 1961",
+   "what": "The bullring and the port from Gibralfaro, photograph (U.S. Navy)",
+   "who": "U.S. Navy",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "only general view for the 20th century; bullring, lighthouse and harbor recognizable"
+  },
+  {
+   "n": 30,
+   "file": "Vista de Málaga desde el castillo de Gibralfaro, España, 2023-05-20, DD 113.jpg",
+   "y": 2023,
+   "lab": "2023",
+   "what": "View from Gibralfaro Castle over the Alcazaba, the port and the cathedral, photograph",
+   "who": "Diego Delso",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.1,
+    1,
+    0.85
+   ],
+   "focal": [
+    0.68,
+    0.5
+   ],
+   "why": "high-resolution modern view with the Alcazaba, cathedral and harbor; tree foreground trimmed"
+  }
+ ],
+ "gaps": "P0: nothing; P2: only copies of the 1572 view (#9, #10), skipped",
+ "notes": "#1, #4, #5, #7 are Vélez-Málaga, a different town. #14–#16 are Bécquer paintings of Seville held in the Carmen Thyssen museum in Málaga. #9 (1657, Janssonius) and #10 (about 1700, van den Berge) re-engrave the 1572 Braun and Hogenberg view. #12 (Laborde, 1812) is a good black-and-white alternative for P3. #17 (Laurent) is low-resolution and only loosely dated. #24 (1900s postcard of the bullring and port) would fill the early 20th century but is too close in date to #21 for a second P4.",
+ "_reviewed": true
+}

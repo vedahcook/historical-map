@@ -1,0 +1,134 @@
+{
+ "city": "Strasbourg",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Argentina Straſʒburg 1493.jpg",
+   "y": 1493,
+   "lab": "1493",
+   "what": "Woodcut in Hartmann Schedel’s Nuremberg Chronicle",
+   "who": "Michael Wolgemut and Wilhelm Pleydenwurff",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.014,
+    0.992,
+    0.975
+   ],
+   "focal": [
+    0.58,
+    0.2
+   ],
+   "why": "labeled true view; the cathedral’s single spire breaks out of the frame as in the book; colored"
+  },
+  {
+   "n": 18,
+   "file": "Topographia Alsatiae (Merian) p 023.JPG",
+   "y": 1644,
+   "lab": "1644",
+   "what": "View from a height, engraving in Merian’s Topographia Alsatiae",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.096,
+    0.98,
+    0.775
+   ],
+   "focal": [
+    0.47,
+    0.5
+   ],
+   "why": "true general view: cathedral towering over the walled city and its bastions; numbered legend cut; edition not stated, so dated by the first edition"
+  },
+  {
+   "n": 25,
+   "file": "Vue de Strasbourg, depuis le pont d'âne - btv1b10202899p.jpg",
+   "y": 1839,
+   "lab": "1839",
+   "what": "View from the Pont d’Âne, lithograph",
+   "who": "Jacques Rothmuller",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.13,
+    0.055,
+    0.868,
+    0.835
+   ],
+   "focal": [
+    0.58,
+    0.45
+   ],
+   "why": "river, covered-bridge towers and the cathedral spire; margins and title cut"
+  },
+  {
+   "n": 27,
+   "file": "Strassburg, general view, Alsace Lorraine, Germany-LCCN2002695083.tif",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "General view over the roofs, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.03,
+    0.972,
+    0.925
+   ],
+   "focal": [
+    0.4,
+    0.4
+   ],
+   "why": "color; cathedral and St. Thomas over the old town; frame and caption cut"
+  },
+  {
+   "n": 36,
+   "file": "Strasbourg-FR-67-ancien-01.jpg",
+   "y": 1920,
+   "lab": "about 1920",
+   "what": "Place Kléber and the cathedral, photograph (album Souvenir de Strasbourg)",
+   "who": "Compagnie alsacienne des Arts Photomécaniques",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.05,
+    0.065,
+    0.944,
+    0.88
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "main square with the cathedral spire; album published after November 1918, about 1920"
+  },
+  {
+   "n": 45,
+   "file": "Une vue de Strasbourg depuis la plateforme de la cathédrale 03.jpg",
+   "y": 2022,
+   "lab": "2022",
+   "what": "View over the old town from the cathedral platform, photograph",
+   "who": "Edelseider",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.64
+   ],
+   "why": "sharp high view of the old town roofs with St. Peter the Younger’s spires and the cathedral’s own roofs in front"
+  }
+ ],
+ "gaps": "P2: nothing usable (Jollain 1670 #15 is a copy of the Braun and Hogenberg plan; #16–17 are Canaletto’s Venice in the Strasbourg museum). P3 has one view only.",
+ "notes": "P1 alternative: Braun and Hogenberg 1572 colored bird’s-eye plan (#10); Merian chosen as a true view that also covers up to 1744. P3 alternative: hand-colored 1839 street lithograph with the cathedral (#22, unknown artist, British Museum), upright format. #21 Prout ‘St. Omer, Strasbourg’ left out as uncertain. #42 (‘Strassburg um 1870’) comes from a 1900 book; skipped. The 1920 album photo may be somewhat older than its publication.",
+ "_reviewed": true
+}

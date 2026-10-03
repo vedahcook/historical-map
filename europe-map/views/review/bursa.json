@@ -1,0 +1,33 @@
+{
+ "city": "Bursa",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.016,
+     0.27,
+     0.984,
+     0.97
+    ]
+   },
+   "reason": "plate frame line and paper margin at the bottom (and sides) are inside the old trim; the bottom strip shows in the crop"
+  },
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "Laborde lithograph, Great Mosque; dark arch pillars are part of the print; source only 1017 px so full width is right"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "photochrom 'vue prise de l'Ecole militaire', caption trimmed"
+  },
+  {
+   "n": 19,
+   "verdict": "ok",
+   "reason": "modest modern skyline; crop fine"
+  }
+ ]
+}

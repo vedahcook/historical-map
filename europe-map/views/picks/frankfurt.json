@@ -1,0 +1,155 @@
+{
+ "city": "Frankfurt am Main",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Frankfurt Am Main-Matthaeus Merian der Aeltere-Ansicht von Suedwesten.jpg",
+   "y": 1618,
+   "lab": "about 1618",
+   "what": "View from the southwest, engraving",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.095,
+    0.99,
+    0.97
+   ],
+   "focal": [
+    0.49,
+    0.45
+   ],
+   "why": "large panorama with the cathedral, the Old Bridge and Sachsenhausen; better general view than the plain 1572 Braun and Hogenberg plan (#9)"
+  },
+  {
+   "n": 11,
+   "file": "Frankfurt Am Main-Caspar Merian-BUAAKUCEWUCA-111 112-Curia Francofurtensis ad Moenum cum Foro Piscario Roemer oder Rathhauss zu Franckfurt am Mayn Sampbt dem Platz der Roemerberg genant.jpg",
+   "y": 1658,
+   "lab": "1658",
+   "what": "The Römer and the Römerberg, engraving in the book on the 1658 coronation",
+   "who": "Caspar Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.033,
+    0.98,
+    0.855
+   ],
+   "focal": [
+    0.53,
+    0.45
+   ],
+   "why": "the city hall square, the city’s emblem; key text below cut. The only general views of the period (#14–16) are small and weak"
+  },
+  {
+   "n": 22,
+   "file": "View of Frankfurt Overlooking Sachsenhausen (SM 1047).png",
+   "y": 1758,
+   "lab": "1751–65",
+   "what": "View over Sachsenhausen to the city and the Taunus, painting (Städel Museum)",
+   "who": "German painter of the 18th century",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.025,
+    0.985,
+    0.97
+   ],
+   "focal": [
+    0.46,
+    0.6
+   ],
+   "why": "color general view, cathedral tower and church spires against the Taunus"
+  },
+  {
+   "n": 18,
+   "file": "Frankfurt am Main um 1845 Stahlstich nach Fritz Bamberger.jpg",
+   "y": 1845,
+   "lab": "about 1845",
+   "what": "The city from the Main, steel engraving in Braunfels, Die Mainufer",
+   "who": "after Fritz Bamberger",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.53,
+    0.5
+   ],
+   "why": "river view with the cathedral and the Old Bridge; book issued 1844–47, drawing about 1845; 87 years after the painting"
+  },
+  {
+   "n": 27,
+   "file": "Romerberg and Nicholas Church, Frankfort on Main (i.e. Frankfurt am Main), Germany-LCCN2002713664.tif",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Römerberg with the Justice Fountain and St. Nicholas Church, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.02,
+    0.985,
+    0.93
+   ],
+   "focal": [
+    0.6,
+    0.47
+   ],
+   "why": "color view of the old town square before its wartime destruction; caption strip cut"
+  },
+  {
+   "n": 31,
+   "file": "ETH-BIB-Frankfurt am Main-Weitere-LBS MH02-46-0008.tif",
+   "y": 1935,
+   "lab": "about 1935",
+   "what": "The Main and the city from the west, aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.03,
+    0.8,
+    0.86
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "prewar city along the river with its bridges; hazy corner at lower right cut"
+  },
+  {
+   "n": 40,
+   "file": "Frankfurt at Dusk - 3.JPG",
+   "y": 2013,
+   "lab": "2013",
+   "what": "The skyline and the cathedral across the Main at dusk, photograph",
+   "who": "Martin Falbisoner",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.42,
+    0.35
+   ],
+   "why": "lit cathedral beside the bank towers, river and bridge; sharp"
+  }
+ ],
+ "gaps": "P0: no candidates (#1 and #2 are 18th-century paintings with museum numbers read as years)",
+ "notes": "Excluded Frankfurt (Oder) hits (#3, #8, #10, #38). Mittelholzer film is filed under October 1935 but ETH notes it is probably misfiled; the same film shows the Rhein-Main airport being cleared (opened 1936), so about 1935 holds. Merian panorama dated about 1617–18 on Commons.",
+ "_reviewed": true
+}

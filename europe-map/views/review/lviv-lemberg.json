@@ -1,0 +1,54 @@
+{
+ "city": "Lviv",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.024,
+     0.036,
+     0.98,
+     0.968
+    ]
+   },
+   "reason": "Trim leaves the orange border frame along all four edges (visible as lines at top and bottom of the crop); tighten to just inside the frame."
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "Lang carte de visite of St. George's, about 1865; trim sits inside the print edge."
+  },
+  {
+   "n": 11,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.004,
+     0.004,
+     0.998,
+     0.992
+    ]
+   },
+   "reason": "Hairline white edge at the left and bottom of the scan would show in the crop; trim it. Otherwise fine (Dominican church, Korniakt Tower, Castle Hill)."
+  },
+  {
+   "n": 17,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.006,
+     0.006,
+     0.994,
+     0.994
+    ]
+   },
+   "reason": "White scan edge on all four sides and a dark corner at the top left; trim a hair. Otherwise fine."
+  },
+  {
+   "n": 21,
+   "verdict": "ok",
+   "reason": "Old town from the Town Hall tower, color; photographer and CC BY-SA 3.0 match."
+  }
+ ]
+}

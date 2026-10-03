@@ -1,0 +1,34 @@
+{
+ "city": "Kazan",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.04,
+     0.1,
+     0.955,
+     0.885
+    ]
+   },
+   "reason": "Cream paper strip and plate line show at top and left of the old trim; plate begins at about 0.098 from top and 0.036 from left. Otherwise a true view of Kazan, inscribed Cazan 1767."
+  },
+  {
+   "n": 7,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.5,
+     0.55
+    ]
+   },
+   "reason": "Focal at 0.6 cuts the left corner of the memorial pyramid; 0.5 keeps the whole pyramid and the Kremlin skyline. Kazan (category Kazan in the 19th century), Moynet/Le Tour du monde vol. 15, 1867 are right."
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "Kremlin from the river; no borders, tower tops well inside the crop; record agrees (PD, Protsenko)."
+  }
+ ]
+}

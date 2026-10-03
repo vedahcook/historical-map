@@ -1,0 +1,40 @@
+{
+ "city": "Parma",
+ "checks": [
+  {
+   "n": 6,
+   "verdict": "replace",
+   "replace_with": 7,
+   "fix": {
+    "y": 1572,
+    "lab": "1572",
+    "trim": [
+     0.036,
+     0.05,
+     0.972,
+     0.945
+    ],
+    "focal": [
+     0.52,
+     0.5
+    ]
+   },
+   "reason": "Parma panel is only 41% of a four-city sheet (about 530 px at the 1280 copy, soft and muddy) and the trim cuts the 'PARMA' title in half; #7 is the same plate as a single panel (1004 px, vivid color, date field 1572); use the trim and focal given here for #7"
+  },
+  {
+   "n": 12,
+   "verdict": "ok",
+   "reason": "Marie Louise watercolor of the city across the Ducal Park, 1816 in record"
+  },
+  {
+   "n": 17,
+   "verdict": "ok",
+   "reason": "rooftop panorama with Steccata dome, cathedral and baptistery; crop fine"
+  },
+  {
+   "n": 19,
+   "verdict": "drop",
+   "reason": "loose expressionist oil painting; domes and towers cannot be recognized as Parma and the date is approximate; weak for a period view, and #17 already covers up to 1988"
+  }
+ ]
+}

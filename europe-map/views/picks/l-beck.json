@@ -1,0 +1,134 @@
+{
+ "city": "Lübeck",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Nuremberg chronicles - LUBECA.png",
+   "y": 1493,
+   "lab": "1493",
+   "what": "Woodcut in Hartmann Schedel’s Nuremberg Chronicle",
+   "who": "Michael Wolgemut and Wilhelm Pleydenwurff",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.022,
+    0.04,
+    0.505,
+    0.94
+   ],
+   "focal": [
+    0.5,
+    0.3
+   ],
+   "why": "colored, labeled true view; the cathedral’s and St. Mary’s twin spires recognizable"
+  },
+  {
+   "n": 9,
+   "file": "Braun Lübeck UBHD.jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.515,
+    0.078,
+    0.97,
+    0.918
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "colored panorama across the Trave with the churches labeled; Lübeck half of the Lübeck/Hamburg plate"
+  },
+  {
+   "n": 14,
+   "file": "Lvbecca (Merian).jpg",
+   "y": 1653,
+   "lab": "1653",
+   "what": "Engraving in Merian’s Topographia Saxoniae Inferioris",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.03,
+    0.975,
+    0.96
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "clean scan of the full skyline with all main spires"
+  },
+  {
+   "n": 20,
+   "file": "General view, Lubeck, Germany-LCCN2002713934.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "General view across the water, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.018,
+    0.022,
+    0.982,
+    0.93
+   ],
+   "focal": [
+    0.5,
+    0.35
+   ],
+   "why": "color general view; the cathedral, St. Peter’s and St. Mary’s spires all visible"
+  },
+  {
+   "n": 29,
+   "file": "Hafen Untertrave.jpg",
+   "y": 1915,
+   "lab": "1910s",
+   "what": "The Untertrave harbor and the skyline, photograph (postcard)",
+   "who": "Johannes Maaß",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.035,
+    0.045,
+    0.965,
+    0.948
+   ],
+   "focal": [
+    0.35,
+    0.4
+   ],
+   "why": "river front with St. Mary’s and St. Peter’s, before the 1942 bombing"
+  },
+  {
+   "n": 37,
+   "file": "Luebeck 86.jpg",
+   "y": 2018,
+   "lab": "2018",
+   "what": "The Holsten Gate and the Salt Storehouses from St. Peter’s Church, photograph",
+   "who": "Jan-Herm Janßen",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "sharp color high view of the city’s best-known landmark and the Trave"
+  }
+ ],
+ "gaps": "P3: nothing usable (#15 Carmine 1806 is a mirror-reversed optical view of doubtful accuracy; #19 Findorff 1761 shows the St. Gertrud suburb, not the city; #18 Nielsen undated within 1841–1910; #16, #17 are modern photos with numbers in the file name).",
+ "notes": "#9 is the Lübeck strip of the 1572 vol. 1 plate; #7 (1582 German edition, 8178 px) is the same plate in higher resolution if a larger copy is wanted (trim to the top half, about [0.06, 0.07, 0.9, 0.47]). #14 Merian: #8 is the same plate with ‘1641’ in its file name but no source; dated here by the Topographia Saxoniae Inferioris volume (1653). P4 alternative: #25 Untertrave photochrom with St. Mary’s and St. Peter’s large in frame. #29 dated only ‘about 1910–1920’. P6 alternative: #38 (2020 skyline from the north, backlit silhouette).",
+ "_reviewed": true
+}

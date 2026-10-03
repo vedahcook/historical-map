@@ -1,0 +1,134 @@
+{
+ "city": "Antwerp",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Anverpia from Braun and Hogenberg's Civitates Orbis Terrarum MET DP325824.jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1 (Metropolitan Museum of Art)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.115,
+    0.11,
+    0.885,
+    0.865
+   ],
+   "focal": [
+    0.48,
+    0.4
+   ],
+   "why": "clean colored copy; walled city on the Scheldt with the cathedral and the new citadel; sheet margins cut"
+  },
+  {
+   "n": 10,
+   "file": "Gezicht op Antwerpen Antwerpen (titel op object), RP-P-AO-17-24A.jpg",
+   "y": 1654,
+   "lab": "1654",
+   "what": "View from the Scheldt, engraving in Merian’s Topographia Circuli Burgundici",
+   "who": "Caspar Merian",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.03,
+    0.17,
+    0.968,
+    0.89
+   ],
+   "focal": [
+    0.46,
+    0.5
+   ],
+   "why": "river panorama with the cathedral spire; cleaner sheet than #9 (same plate, Plantin-Moretus dates it 1651)"
+  },
+  {
+   "n": 15,
+   "file": "Egide Linnig - Panoramic view of the city and the wharf of Antwerp from the left bank.jpg",
+   "y": 1843,
+   "lab": "1843",
+   "what": "The city and the riverfront from the left bank, panoramic lithograph",
+   "who": "after Egide Linnig",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.27,
+    0.22,
+    0.8,
+    0.8
+   ],
+   "focal": [
+    0.54,
+    0.45
+   ],
+   "why": "general river view with the cathedral; very long strip trimmed to its central half around the cathedral, title and labels cut"
+  },
+  {
+   "n": 27,
+   "file": "Antwerp across the Scheldt, photochrom.png",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Antwerp across the Scheldt, photochrom print",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "classic color river view with the cathedral tower and the Steen; cleaned copy of #25"
+  },
+  {
+   "n": 30,
+   "file": "American First World War Official Exchange Collection Q64696.jpg",
+   "y": 1919,
+   "lab": "1919",
+   "what": "General view over the roofs to the Scheldt, photograph (U.S. Army Signal Corps)",
+   "who": "U.S. Army Signal Corps",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.03,
+    1,
+    0.92
+   ],
+   "focal": [
+    0.65,
+    0.4
+   ],
+   "why": "firmly dated high view of the old town, St. Paul’s Church and the river; trim cuts the negative number"
+  },
+  {
+   "n": 35,
+   "file": "View of Antwerp from Linkeroever 2014.JPG",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The cathedral and the Boerentoren from the left bank, photograph",
+   "who": "Steven Lek",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.35,
+    0.5
+   ],
+   "why": "sharp modern skyline across the Scheldt; echoes the 1654 and 1890s views"
+  }
+ ],
+ "gaps": "P0: no candidates",
+ "notes": "P3 second view possible: #20 Samuel Ireland aquatint ‘Antwerp from across the Scheld’ (record says 1795, but his tour book first appeared 1790; small plate), left out for the date doubt. Skipped siege prints (#16–19) and the 1940–50 aerial (#29, vague date).",
+ "_reviewed": true
+}

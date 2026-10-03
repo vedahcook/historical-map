@@ -1,0 +1,32 @@
+{
+ "city": "Thessaloniki",
+ "checks": [
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 10,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0.025,
+     1,
+     1
+    ],
+    "focal": [
+     0.6,
+     0.4
+    ]
+   },
+   "reason": "film sprocket holes show along the top edge; trim them"
+  },
+  {
+   "n": 16,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

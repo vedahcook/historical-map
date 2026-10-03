@@ -1,0 +1,10 @@
+{
+ "city": "Ani",
+ "checks": [
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "weak but the only 16:9-suitable general view; crop keeps the church ruin and the hills"
+  }
+ ]
+}

@@ -1,0 +1,113 @@
+{
+ "city": "Montpellier",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Braun Montpellier UBHD.jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1 (colored copy, Heidelberg University Library)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.035,
+    0.05,
+    0.97,
+    0.775
+   ],
+   "focal": [
+    0.58,
+    0.45
+   ],
+   "why": "colored bird’s-eye view of the walled town; only 1046 px wide, but #2 (same plate, BnF) would need a trim to 40% of its width"
+  },
+  {
+   "n": 7,
+   "file": "Montpelier (Montpellier) - btv1b10661082q.jpg",
+   "y": 1657,
+   "lab": "1655–61",
+   "what": "View of the town, engraving from Merian’s Topographia Galliae",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.115,
+    0.135,
+    0.89,
+    0.865
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "true profile view with the cathedral towers and the citadel; volume published 1655–61"
+  },
+  {
+   "n": 11,
+   "file": "Vue de Montpellier prise de la Croix du Capitaine du sud-ouest de la ville - btv1b104853183.jpg",
+   "y": 1821,
+   "lab": "1821–45",
+   "what": "View from the Croix du Capitaine, southwest of the town, watercolor",
+   "who": "Jean-Marie Amelin",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.04,
+    0.975,
+    0.885
+   ],
+   "focal": [
+    0.45,
+    0.6
+   ],
+   "why": "color view with the Peyrou water tower and the old town; inscribed as sketched 14 November 1821, retouched January 1845"
+  },
+  {
+   "n": 15,
+   "file": "General view, Montpelier, France-LCCN2001698467.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "General view over the rooftops, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.12,
+    0.96,
+    0.92
+   ],
+   "focal": [
+    0.45,
+    0.6
+   ],
+   "why": "only general view of the period; color; frame and caption cut"
+  },
+  {
+   "n": 24,
+   "file": "Corum Montpellier 2025.jpg",
+   "y": 2025,
+   "lab": "2025",
+   "what": "Saint-Pierre Cathedral above the old town, seen from the Corum, photograph",
+   "who": "Pierre-Félix Vautrin",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.48,
+    0.55
+   ],
+   "why": "recent, sharp view of the cathedral and the old town roofs"
+  }
+ ],
+ "gaps": "P0: nothing. P5: only a hazy 1928 aerial.",
+ "notes": "P1 alternatives: #2 same Braun and Hogenberg plate in color at high resolution (BnF 1645 sheet; Montpellier is the top-left of three views), #5/#6 uncolored single sheets. P3 alternatives: #12 Laurens lithograph 1835 and #14 Laurens 1841 (black and white, town small in the distance). P4 alternative: #22 the Peyrou promenade with the Louis XIV statue and water tower (famous landmark scene). Skipped #23 Mittelholzer 1928 aerial: smoke and cloud cover most of the town.",
+ "_reviewed": true
+}

@@ -1,0 +1,61 @@
+{
+ "city": "Utrecht",
+ "checks": [
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "True general view with labeled churches and the Dom Tower; trim clean; 1625 first-state date is a defensible reading of the record"
+  },
+  {
+   "n": 12,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.028,
+     0.02,
+     0.966,
+     0.94
+    ]
+   },
+   "reason": "Plate frame lines at about 97% of the width stay inside the full-width crop (dark sliver at the right edge); town hall and Dom Tower view is otherwise right, about 1713 fits"
+  },
+  {
+   "n": 17,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.04,
+     0.108,
+     0.96,
+     0.86
+    ],
+    "focal": [
+     0.64,
+     0.5
+    ]
+   },
+   "reason": "With focal 0.5 the Meiboom windmill is cut off at the right of the 16:9 crop; 0.64 keeps the whole mill and both towers. Top trim raised slightly to drop the plate frame line"
+  },
+  {
+   "n": 28,
+   "verdict": "ok",
+   "reason": "Photochrom of the Oudegracht with the Dom Tower; frame trimmed"
+  },
+  {
+   "n": 32,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.5,
+     0.34
+    ]
+   },
+   "reason": "Nearly square aerial; at focal y 0.45 the top of the Dom Tower is cut off in the 16:9 crop; 0.34 keeps the whole tower"
+  },
+  {
+   "n": 39,
+   "verdict": "ok",
+   "reason": "Sharp modern photo, whole tower inside the crop"
+  }
+ ]
+}

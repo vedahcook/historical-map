@@ -1,0 +1,53 @@
+{
+ "city": "Córdoba",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.16,
+     0.315,
+     0.925,
+     0.85
+    ],
+    "focal": [
+     0.52,
+     0.5
+    ]
+   },
+   "reason": "trim sits between plate borders (blank band and inner frame line at left/right), ornament fragments at top, paper at bottom; gutter fold is visible but cannot be cropped out"
+  },
+  {
+   "n": 6,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0,
+     1,
+     0.97
+    ]
+   },
+   "reason": "bottom edge line inside crop; faint low-contrast drawing but labeled Cordova and only P2 view"
+  },
+  {
+   "n": 12,
+   "verdict": "ok",
+   "reason": "Parcerisa lithograph, 1855, crop clean"
+  },
+  {
+   "n": 10,
+   "verdict": "fix",
+   "fix": {
+    "who": "Photoglob Co."
+   },
+   "reason": "record credits Photoglob Co., not Photoglob Zürich"
+  },
+  {
+   "n": 18,
+   "verdict": "ok",
+   "reason": "Mosque-Cathedral from left bank, record matches"
+  }
+ ]
+}

@@ -1,0 +1,113 @@
+{
+ "city": "Regensburg",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Nuremberg chronicles f 097v98r 1.png",
+   "y": 1493,
+   "lab": "1493",
+   "what": "Woodcut in Hartmann Schedel’s Nuremberg Chronicle",
+   "who": "Michael Wolgemut and Wilhelm Pleydenwurff",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.04,
+    0.495,
+    0.97
+   ],
+   "focal": [
+    0.6,
+    0.3
+   ],
+   "why": "colored double-page view labeled Ratispona; the Stone Bridge, Stadtamhof and the cathedral are recognizable, so a true view, not a stock block"
+  },
+  {
+   "n": 4,
+   "file": "Ratis Bona.JPG",
+   "y": 1598,
+   "lab": "1598",
+   "what": "View from the north, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 5",
+   "who": "Georg Braun and Frans Hogenberg, after Jacob Hoefnagel",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.006,
+    0.006,
+    0.99,
+    0.99
+   ],
+   "focal": [
+    0.45,
+    0.25
+   ],
+   "why": "largest colored copy of the plate; cathedral and skyline across the Danube"
+  },
+  {
+   "n": 14,
+   "file": "Regensburg - Ansicht von Norden mit Steinerner Brücke - Henry Winkles.jpg",
+   "y": 1840,
+   "lab": "about 1840",
+   "what": "View from the north with the Stone Bridge, colored steel engraving",
+   "who": "Henry Winkles",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.45
+   ],
+   "why": "cathedral with its unfinished towers, the Stone Bridge and the bridge towers; from Wigand’s Das malerische und romantische Deutschland (1836–41)"
+  },
+  {
+   "n": 18,
+   "file": "Stone Bridge (i.e. Steinerne Brücke) and cathedral, Ratisbon (Regensburg), Bavaria, Germany-LCCN2002696173.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Stone Bridge and the cathedral, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.026,
+    0.03,
+    0.976,
+    0.93
+   ],
+   "focal": [
+    0.4,
+    0.35
+   ],
+   "why": "the city’s signature scene in color, with the finished spires and bridge tower; border and caption cut"
+  },
+  {
+   "n": 36,
+   "file": "DSC2422 Donaublick Regensburg.tif",
+   "y": 2019,
+   "lab": "2019",
+   "what": "The Stone Bridge, the bridge tower and the cathedral across the Danube, photograph",
+   "who": "Doktent",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.4
+   ],
+   "why": "sharp, recent color view of the historic river front"
+  }
+ ],
+ "gaps": "P2: only a Merian interior of the 1653 royal election (#10); P5: only aerials of bombing raids on the Messerschmitt works",
+ "notes": "#4 (and #2, #6, #8) is the Hoefnagel plate: Commons dates #2 to 1575, but 1575 is the renovation date carved on the wayside shrine in the corner; the cartouche says Jacob Hoefnagel drew it at the 1594 Diet, so it is from vol. 5 (1598). The 1572 six-town plate (#3, #5, #7, #9) has only a small Regensburg panel. #21 is the same photochrom as #18. P3 alternative: Turner’s 1840 watercolor #16, in color but vague. #23 (Obernetter collotype, spires finished, so after 1869) carries only a 1856–87 range; #22 stereo (1860s) is distant and dim. P6: twilight panoramas #31/#34/#35 (2006) are very wide strips.",
+ "_reviewed": true
+}

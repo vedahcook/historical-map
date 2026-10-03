@@ -1,0 +1,47 @@
+{
+ "city": "Hamburg",
+ "checks": [
+  {
+   "n": 8,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.5,
+     0.4
+    ]
+   },
+   "reason": "focal y 0.45 cuts the HAMBURGVM title banner at the crop top; 0.4 keeps it whole"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "Merian 1653 perspective bird's-eye; crop fine"
+  },
+  {
+   "n": 20,
+   "verdict": "ok",
+   "reason": "Suhr Alster view, 1830 in plate caption; skyline small but title/caption support Hamburg"
+  },
+  {
+   "n": 22,
+   "verdict": "ok",
+   "reason": "Alsterarkaden photochrom, 1890s; frame and caption trimmed"
+  },
+  {
+   "n": 31,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.53,
+     0.4
+    ]
+   },
+   "reason": "at focal x 0.5 the St. Nicholas spire sits on the right crop edge and is cut; 0.53 keeps both spires"
+  },
+  {
+   "n": 39,
+   "verdict": "ok",
+   "reason": "sharp aerial of centre and Alster; fine"
+  }
+ ]
+}

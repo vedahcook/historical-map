@@ -1,0 +1,134 @@
+{
+ "city": "Utrecht",
+ "picks": [
+  {
+   "n": 9,
+   "file": "Stadsgezicht van Utrecht (tweede deel) Utrecht (titel op object), RP-P-AO-5-57-2.jpg",
+   "y": 1625,
+   "lab": "1625",
+   "what": "View of the city with the Dom Tower, etching (sheet 2 of a multi-sheet profile; Rijksmuseum)",
+   "who": "Joost Cornelisz Droochsloot",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.02,
+    0.055,
+    0.952,
+    0.922
+   ],
+   "focal": [
+    0.6,
+    0.4
+   ],
+   "why": "true general view; Dom Tower and labeled churches recognizable; much better than the plan-like Braun and Hogenberg plate"
+  },
+  {
+   "n": 12,
+   "file": "Stadhuis van Utrecht waar het vredescongres werd gehouden, 1712 Stadhuis van Utrecht, alwaar het congres van een generale vreden, door de plenipotentiares werd gehouden La Maison de Ville d'Utrecht, ou s'assemblent les , RP-P-OB-59.588.jpg",
+   "y": 1713,
+   "lab": "about 1713",
+   "what": "The town hall during the peace congress of 1712–13, with the Dom Tower, etching (Rijksmuseum)",
+   "who": "unknown artist, published by Jan Smit",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.028,
+    0.02,
+    0.966,
+    0.94
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "landmark scene: old town hall and Dom Tower; caption trimmed; largest and cleanest of three impressions (#11, #13)"
+  },
+  {
+   "n": 17,
+   "file": "Gezicht op Utrecht De Stad Utrecht, van het Paarden Veld te zien (titel op object), RP-P-1911-3165.jpg",
+   "y": 1756,
+   "lab": "1756",
+   "what": "The city seen from the Paardenveld, etching in Tirion’s Het Verheerlykt Nederland",
+   "who": "Jan Caspar Philips after Jan de Beijer",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.04,
+    0.108,
+    0.96,
+    0.86
+   ],
+   "focal": [
+    0.64,
+    0.5
+   ],
+   "why": "general view of the skyline with the Dom Tower and the Meiboom windmill; #21 is the same plate"
+  },
+  {
+   "n": 28,
+   "file": "The Oude Gracht Hamburgerbrug, Utrecht, Holland-LCCN2001699554.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Oudegracht and the Dom Tower, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.017,
+    0.986,
+    0.95
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "color; the canal with its wharf cellars and the Dom Tower, the classic Utrecht scene"
+  },
+  {
+   "n": 32,
+   "file": "NIMH - 2011 - 4995 - Aerial photograph of Utrecht, The Netherlands.jpg",
+   "y": 1930,
+   "lab": "1920–40",
+   "what": "The Dom Tower and cathedral, aerial photograph (Netherlands Institute of Military History)",
+   "who": "unknown photographer",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.02,
+    0.015,
+    0.975,
+    0.985
+   ],
+   "focal": [
+    0.5,
+    0.34
+   ],
+   "why": "sharp oblique aerial; Dom Tower (under scaffolding) and cathedral unmistakable"
+  },
+  {
+   "n": 39,
+   "file": "View of Utrecht Dom Tower from Stadhuisbrug 2024-11-28.jpg",
+   "y": 2024,
+   "lab": "2024",
+   "what": "The Dom Tower over the Oudegracht from the Stadhuisbrug, photograph",
+   "who": "Andy Li",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.34
+   ],
+   "why": "sharp color photo of the city’s landmark; portrait, so focal set to keep the whole tower in the 16:9 band"
+  }
+ ],
+ "gaps": "P0: nothing usable (#1 is a Nuremberg Chronicle bridge-collapse scene captioned Utrecht or Maastricht)",
+ "notes": "Droochsloot #9: Rijksmuseum dates it “1625 and/or 1662–1679”; read as etched 1625, with this impression (4th state) published by Clement de Jonghe 1662–79. If that reading is doubted, use the colored Braun and Hogenberg plate #2 for P1 instead (y 1572, lab “1572”, vol. 1). Town hall #12: Rijksmuseum range 1713–48 (publisher dates); the print shows the 1712–13 congress, so labeled about 1713 — drop it if that is too loose; P2 years are already within 100 years of 1625 and 1756. Skipped #10 (Rademaker, made 1727–33 but titled 1663, gallows field with small towers). Mittelholzer #30 (1931) is precisely dated but the landmarks are hard to pick out; #32 is dated only 1920–40 (scaffolding suggests before the tower restoration ended in 1931). Photochrom #24 (Bakkerbrug with Dom Tower) is an equally good alternative to #28.",
+ "_reviewed": true
+}

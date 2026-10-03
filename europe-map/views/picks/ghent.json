@@ -1,0 +1,92 @@
+{
+ "city": "Ghent",
+ "picks": [
+  {
+   "n": 8,
+   "file": "Plattegrond van Gent, RP-P-2019-2579.jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1 (Rijksmuseum)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.055,
+    0.07,
+    0.935,
+    0.895
+   ],
+   "focal": [
+    0.52,
+    0.5
+   ],
+   "why": "colored bird’s-eye view with buildings drawn; rivers, citadel and churches"
+  },
+  {
+   "n": 9,
+   "file": "Gezicht op Gent Gent (titel op object), RP-P-AO-18-86.jpg",
+   "y": 1654,
+   "lab": "1654",
+   "what": "Etching in Merian’s Topographia (Rijksmuseum)",
+   "who": "Caspar Merian",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.01,
+    0.15,
+    0.99,
+    0.79
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "true general view from the northeast; belfry and church towers along the skyline"
+  },
+  {
+   "n": 23,
+   "file": "St. Nicolas Church, Ghent, Belgium-LCCN2001697934.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "St. Nicholas’ Church and the Korenmarkt, with the belfry behind, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.026,
+    0.03,
+    0.972,
+    0.97
+   ],
+   "focal": [
+    0.53,
+    0.4
+   ],
+   "why": "color; two of the three towers of Ghent, horse trams"
+  },
+  {
+   "n": 31,
+   "file": "Panorama of Ghent, Belgium.jpg",
+   "y": 2012,
+   "lab": "2012",
+   "what": "Guild houses along the Lys in the old town, photograph",
+   "who": "Michael Schmalenstroer",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "bright, unmistakable view of the historic waterfront"
+  }
+ ],
+ "gaps": "P0: nothing. P3: nothing strong (only a small 1831 etching of a Prinsenhof gate, #19). P5: nothing usable.",
+ "notes": "#8 is a 1575 printing of the vol. 1 plate, dated to first publication, 1572. P2 alternative: #12 Chéreau colored view ‘c. 1720’ (dealer date, stylized and probably derivative). #14 Vrijdagmarkt wood engraving is captioned 1870, not 1830s; too close to the 1890s photochrom for a second P4. #17/#18 show the Hôtel de Cluny in Paris; #11 is a 19th-century pastiche; #10 is a plan. #19 (De Noter, 1831) skipped as weak; it could fill P3 if a weak view is preferred to a blank. P5 options #28 (1928 etching of a quay) and #29 (Willaert painting, 1908–38) are weak or loosely dated. P6 alternatives: #33 (three towers from the Gravensteen, but cranes) and #32 (three towers from St. Michael’s Bridge, dark).",
+ "_reviewed": true
+}

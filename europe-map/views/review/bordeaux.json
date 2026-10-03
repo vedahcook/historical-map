@@ -1,0 +1,76 @@
+{
+ "city": "Bordeaux",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.025,
+     0.02,
+     0.965,
+     0.97
+    ],
+    "focal": [
+     0.5,
+     0.42
+    ]
+   },
+   "reason": "hand-colored red border and paper strip at right/left edges inside trim"
+  },
+  {
+   "n": 10,
+   "verdict": "fix",
+   "fix": {
+    "y": 1661,
+    "lab": "1661",
+    "trim": [
+     0.015,
+     0.14,
+     0.985,
+     0.86
+    ]
+   },
+   "reason": "Merian plate is in Topographia Galliae vol. 10 (Guyenne), 1661, not 1657; paper strip and frame line at top and bottom of crop"
+  },
+  {
+   "n": 12,
+   "verdict": "ok",
+   "reason": "Vernet 1759, Musée national de la Marine"
+  },
+  {
+   "n": 15,
+   "verdict": "fix",
+   "fix": {
+    "what": "The city and the Pont de Pierre, colored view"
+   },
+   "reason": "record does not name a museum or say print; Commons source is \"Own work\""
+  },
+  {
+   "n": 21,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.032,
+     0.03,
+     0.96,
+     0.965
+    ]
+   },
+   "reason": "dark photochrom border at left and right inside crop"
+  },
+  {
+   "n": 26,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.035,
+     0.035,
+     0.96,
+     0.95
+    ]
+   },
+   "reason": "paper edge at right inside crop"
+  }
+ ]
+}

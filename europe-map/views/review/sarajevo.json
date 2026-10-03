@@ -1,0 +1,20 @@
+{
+ "city": "Sarajevo",
+ "checks": [
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "Photochrom of Sarajevo from the north (P.Z. 16788); trim removes border and caption cleanly; Detroit Publishing credit follows the record."
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "General view of old town; date is the uploader's circa 1930 (no source), acceptable but unverified; no borders."
+  },
+  {
+   "n": 16,
+   "verdict": "ok",
+   "reason": "Good color general view from the Yellow Fortress; aspect already near 16:9; record agrees (CC BY-SA 4.0, Skelanard). #19 is an equal alternative, no change needed."
+  }
+ ]
+}

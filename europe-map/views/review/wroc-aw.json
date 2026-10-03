@@ -1,0 +1,66 @@
+{
+ "city": "Wrocław",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0.02,
+     1,
+     0.965
+    ]
+   },
+   "reason": "paper margin strip at top and bottom of the woodcut inside the crop"
+  },
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.115,
+     0.093,
+     0.872,
+     0.915
+    ],
+    "focal": [
+     0.45,
+     0.37
+    ]
+   },
+   "reason": "page margin (left, right, top, bottom) still inside trim; legend boxes cut by 16:9 window"
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "Merian view of Breslau, 1650 volume; crop clean"
+  },
+  {
+   "n": 17,
+   "verdict": "drop",
+   "reason": "harbor with boats and warehouses; no landmark, not recognizable as Breslau without the inscription; no better P3 candidate"
+  },
+  {
+   "n": 20,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.54,
+     0.38
+    ]
+   },
+   "reason": "tip of the town hall tower is cut off by the 16:9 window; move window up"
+  },
+  {
+   "n": 31,
+   "verdict": "ok",
+   "reason": "Centennial Hall aerial, dated by the 1929 book"
+  },
+  {
+   "n": 33,
+   "verdict": "ok",
+   "reason": "rooftops and cathedral spires; HDR but best P6 available"
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "city": "Edirne",
+ "picks": [
+  {
+   "n": 1,
+   "file": "20120604 Edirne view from the top of the Minaret of Selimiye Mosque Edirne Turkey Panoramic.jpg",
+   "y": 2012,
+   "lab": "2012",
+   "what": "View from a minaret of the Selimiye Mosque, photograph",
+   "who": "Ggia",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0.25,
+    0,
+    0.95,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "high-resolution panorama over the old town; Bedesten domes and Üç Şerefeli Mosque recognizable"
+  }
+ ],
+ "gaps": "P0–P5: no candidates",
+ "notes": "Only modern photos were found. #2 and #3 (2022) show the Selimiye only as tiny minarets on a far skyline across a field, so the minaret panorama is used instead. Trim cuts the outer edges of a 6:1 panorama.",
+ "_reviewed": true
+}

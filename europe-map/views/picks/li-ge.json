@@ -1,0 +1,113 @@
+{
+ "city": "Liège",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Liège - Civitates orbis terrarum.jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.036,
+    0.98,
+    0.695
+   ],
+   "focal": [
+    0.5,
+    0.62
+   ],
+   "why": "colored copy, largest file; the walled city in the Meuse valley with St. Lambert’s Cathedral; legend panels below cut"
+  },
+  {
+   "n": 12,
+   "file": "Remacle Leloup, Vue et perspective de la ville de Liege,et des environs prise des chartreus designez sur le lieu même l'an 1739.jpg",
+   "y": 1738,
+   "lab": "1738–39",
+   "what": "Panorama from the Chartreuse hill, pen drawing (Ville de Liège, Fonds patrimoniaux)",
+   "who": "Remacle Le Loup",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.07,
+    0.985,
+    0.83
+   ],
+   "focal": [
+    0.48,
+    0.45
+   ],
+   "why": "true general view drawn on the spot, the cathedral towers and the citadel hill; long strip, inscription cut"
+  },
+  {
+   "n": 18,
+   "file": "7. Liège from the Pont des Arches.jpg",
+   "y": 1839,
+   "lab": "about 1839",
+   "what": "Liège from the Pont des Arches, gouache and watercolor (Tate)",
+   "who": "J. M. W. Turner",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.03,
+    0.975,
+    0.97
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "color view of the town along the Meuse below the citadel hill; loosely painted, landmarks only suggested"
+  },
+  {
+   "n": 20,
+   "file": "From the north, Liège, Belgium-LCCN2001697944.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The city from the north, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.02,
+    0.985,
+    0.94
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "classic color general view over the roofs to the Meuse and its bridges, domed church and St. Paul’s spire; caption and frame cut"
+  },
+  {
+   "n": 30,
+   "file": "Liége City Panorama.jpg",
+   "y": 2017,
+   "lab": "2017",
+   "what": "The old town and the Meuse from the Citadel, photograph",
+   "who": "Nordenfan",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "warm evening view over the historic center to the river, the classic viewpoint of the older views"
+  }
+ ],
+ "gaps": "P0: none (#1, a Josua de Grave drawing, is undated and late 17th century). P5: only #28, left out for its date.",
+ "notes": "The Le Loup drawing is dated 1738 by Commons but its inscription (as transcribed in the file name) says drawn in 1739, hence ‘1738–39’. P1 alternative: Blaeu’s colored bird’s-eye view (#4, 1649; the Rijksmuseum copies #10/#11/#13 of the same plate say 1652), more detailed but closer to a plan. P3 alternative: #15, the Prince-Bishops’ Palace (1838 steel engraving), sharper but a single building. #28 is a pre-war ‘Panorama général’ postcard stamped by a German unit in 1915; the photograph itself may be some years older, and the file is small (1024 px). P6 alternative: #32 (2022, sharp, but a construction crane in front) and #29 (2009 panorama, 3:1).",
+ "_reviewed": true
+}

@@ -1,0 +1,27 @@
+{
+ "city": "Tirana",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.045,
+     0.03,
+     0.985,
+     0.97
+    ],
+    "focal": [
+     0.6,
+     0.44
+    ]
+   },
+   "reason": "Crop cuts off the flag and finial on top of the right-hand tower; raise the focal point so the whole tower top shows, and trim the dark plate edge at the right a little more."
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "Clear general view of Tirana from the Sauk hills, sky trimmed; photographer and CC BY-SA 4.0 match."
+  }
+ ]
+}

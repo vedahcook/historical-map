@@ -1,0 +1,155 @@
+{
+ "city": "Aleppo",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Aleppo ca1537 by Matrakci Nasuh Istanbul University Library ms5964.png",
+   "y": 1537,
+   "lab": "about 1537",
+   "what": "Miniature in Matrakçı Nasuh’s account of Süleyman’s Iraq campaign (Istanbul University Library)",
+   "who": "Matrakçı Nasuh",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    0.964,
+    1
+   ],
+   "focal": [
+    0.72,
+    0.5
+   ],
+   "why": "famous color view of the walled city around the citadel mound; full two-page spread, larger than #2"
+  },
+  {
+   "n": 3,
+   "file": "Gezicht op Aleppo (rechter plaat), RP-P-OB-67.847.jpg",
+   "y": 1698,
+   "lab": "1698",
+   "what": "Panorama of the city with the citadel, etching after Cornelis de Bruyn in his Reizen (Rijksmuseum)",
+   "who": "Jan Luyken and Pieter Schenk after Cornelis de Bruyn",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.025,
+    0.045,
+    0.989,
+    0.985
+   ],
+   "focal": [
+    0.4,
+    0.4
+   ],
+   "why": "wide skyline with the citadel and minarets; the companion plate #4 lacks the citadel"
+  },
+  {
+   "n": 6,
+   "file": "Drummond, Alexander Drummond – Travels through different cities of Germany, Italy, Greece, and several parts of Asia, as far as the banks of the Euphrates, 1754 – BEIC 6247245 Aleppo.jpg",
+   "y": 1754,
+   "lab": "1754",
+   "what": "The citadel above the city, colored engraving in Alexander Drummond’s Travels",
+   "who": "Johann Sebastian Müller after Alexander Drummond",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.066,
+    0.034,
+    0.985,
+    0.875
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "hand-colored, larger copy of #7; citadel, domes and minarets; dedication text cut"
+  },
+  {
+   "n": 5,
+   "file": "Aleppo, Viewed from the Antioch Gate- MET DP-13897-041.jpg",
+   "y": 1844,
+   "lab": "1844",
+   "what": "View from the Antioch Gate toward the citadel, daguerreotype (Metropolitan Museum of Art)",
+   "who": "Joseph-Philibert Girault de Prangey",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.032,
+    0.042,
+    0.958,
+    0.955
+   ],
+   "focal": [
+    0.45,
+    0.38
+   ],
+   "why": "earliest photograph of the city; citadel and minarets recognizable; 90 years after #6"
+  },
+  {
+   "n": 8,
+   "file": "Aleppo and castle from southwest LCCN98506115.jpg",
+   "y": 1910,
+   "lab": "about 1910",
+   "what": "The city and the citadel from the southwest, photograph (Library of Congress)",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.125,
+    0.185,
+    0.885,
+    0.79
+   ],
+   "focal": [
+    0.55,
+    0.4
+   ],
+   "why": "general view with the citadel, domes and minarets; mount and caption cut"
+  },
+  {
+   "n": 11,
+   "file": "ETH-BIB-Castell in Aleppo-Persienflug 1924-1925-LBS MH02-02-0018-AL-FL.tif",
+   "y": 1925,
+   "lab": "1925",
+   "what": "The citadel gate, photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.965
+   ],
+   "focal": [
+    0.6,
+    0.48
+   ],
+   "why": "the city’s best-known landmark, gate tower and entrance block; no general view from this period"
+  },
+  {
+   "n": 19,
+   "file": "Aleppo View from citadel. Spielvogel 1996.JPG",
+   "y": 1996,
+   "lab": "1996",
+   "what": "View over the old city from the citadel, photograph",
+   "who": "Spielvogel",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "color view over the old city with a minaret and green dome, before the war damage"
+  }
+ ],
+ "gaps": "P0: no candidates; P4 has one view only",
+ "notes": "P3 has two views (1754 and 1844); #5 is murky as an image, so drop it if the reviewer prefers. Skipped #9 (Matson stereo negative, catalog date ‘1900’ unreliable), #10/#14 (people at a plane landing outside the city), #12/#13 (citadel details; #11 is clearer), #15 (outer quarters), #17 (posters of the Assad family), #21 (street view), #16/#18 (2010 panoramas from the citadel are 8:1 to 9:1 strips, too narrow for a 16:9 card). Modern pick is from 1996; nothing post-war among the candidates.",
+ "_reviewed": true
+}

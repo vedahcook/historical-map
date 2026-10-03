@@ -1,0 +1,41 @@
+{
+ "city": "Helsinki",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.066,
+     0.1,
+     0.938,
+     0.81
+    ]
+   },
+   "reason": "Lithograph's frame lines at 5.8% (left), 94.2% (right) and 9.4% (top) are inside the current trim and the crop"
+  },
+  {
+   "n": 9,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.022,
+     0.022,
+     0.988,
+     0.935
+    ]
+   },
+   "reason": "Dark photochrom edge at 1.4-1.6% of the width remains inside the crop on the left; P.Z. mark on the print confirms Photoglob Zurich"
+  },
+  {
+   "n": 19,
+   "verdict": "ok",
+   "reason": "Hugo Sundstrom 1938 rooftop view over the center with the main post office; CC BY 4.0 matches"
+  },
+  {
+   "n": 21,
+   "verdict": "ok",
+   "reason": "Balloon aerial over the center and Toolo Bay; record says public domain, 2010"
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "city": "Bremen",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "Brema panel of the German-edition 1582 copy of the 1572 plate; trim sits just inside the red frame; crop fine"
+  },
+  {
+   "n": 9,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.114,
+     0.14,
+     0.894,
+     0.825
+    ],
+    "focal": [
+     0.5,
+     0.47
+    ]
+   },
+   "reason": "Merian market square 1653 is right; crop slices through the engraved title and cuts the Schutting gable top; plate edge lines at left and right"
+  },
+  {
+   "n": 17,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.024,
+     0.06,
+     0.966,
+     0.89
+    ]
+   },
+   "reason": "Bechstein 1845 general view is right; about 4 px of paper at right of the trim"
+  },
+  {
+   "n": 20,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.03,
+     0.02,
+     0.966,
+     0.945
+    ],
+    "focal": [
+     0.5,
+     0.3
+    ],
+    "what": "The cathedral seen from Kaiser-Wilhelm-Platz, photochrom print (Library of Congress)"
+   },
+   "reason": "Crop cuts the tops of both cathedral spires; move up to include them. The red brick building in front looks like the Borse, not the town hall, so name only the cathedral; white margin at right"
+  }
+ ]
+}

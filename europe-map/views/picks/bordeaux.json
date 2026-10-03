@@ -1,0 +1,134 @@
+{
+ "city": "Bordeaux",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Burdigala XIVe.jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.02,
+    0.965,
+    0.97
+   ],
+   "focal": [
+    0.5,
+    0.42
+   ],
+   "why": "colored copy of the Bordeaux panel alone; walled city on the Garonne, cathedral and the Roman amphitheater"
+  },
+  {
+   "n": 10,
+   "file": "Bordeaux, objectnr A 57374.jpg",
+   "y": 1661,
+   "lab": "1661",
+   "what": "View across the Garonne, engraving in Zeiller and Merian’s Topographia Galliae (Amsterdam Museum)",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.14,
+    0.985,
+    0.86
+   ],
+   "focal": [
+    0.47,
+    0.5
+   ],
+   "why": "only general view for the period; riverfront with the church spires; modest resolution"
+  },
+  {
+   "n": 12,
+   "file": "Deuxieme vue du port de Bordeaux prise du château Trompette.jpg",
+   "y": 1759,
+   "lab": "1759",
+   "what": "The port seen from the Château Trompette, painting in the Ports of France series (Musée national de la Marine)",
+   "who": "Joseph Vernet",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.65
+   ],
+   "why": "famous view of the quays and the new Place Royale; cleaner copy than the 1758 first view (#13)"
+  },
+  {
+   "n": 15,
+   "file": "Vue de la ville et du pont de Pierre - 1830.JPG",
+   "y": 1830,
+   "lab": "about 1830",
+   "what": "The city and the Pont de Pierre, colored view",
+   "who": "Ambroise Louis Garneray",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "color view of the new stone bridge, the waterfront and the Saint-Michel tower; 71 years after the Vernet"
+  },
+  {
+   "n": 21,
+   "file": "From the Bastile, Bordeaux, France-LCCN2001697585.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The city across the Garonne from La Bastide, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.032,
+    0.03,
+    0.96,
+    0.965
+   ],
+   "focal": [
+    0.62,
+    0.5
+   ],
+   "why": "color general view of the riverfront with the Saint-Michel spire and the cathedral"
+  },
+  {
+   "n": 26,
+   "file": "Bordeaux-Vue Générale sur la Garonne et le Pont Transbordeur vers 1930.jpg",
+   "y": 1930,
+   "lab": "about 1930",
+   "what": "The old town and the Garonne from the Saint-Michel tower, postcard",
+   "who": "CIM",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.035,
+    0.035,
+    0.96,
+    0.95
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "general view over the roofs to the river and the towers of the unfinished transporter bridge"
+  }
+ ],
+ "gaps": "P0: no candidates (#1 is misdated, really 1572). P6: only a bland rooftop view (#32) and high-altitude airplane shots; skipped",
+ "notes": "Merian date: Amsterdam Museum gives only 1650–99; the Bordeaux plate belongs to the Topographia Galliae (1655–61), so labeled about 1657. #26 postcard was mailed in March 1937 and shows the transporter bridge towers (stood 1913–42); file title says about 1930. Hugo d’Alesi bird’s-eye (#30, #31) skipped: undated and photographed at an angle with glare.",
+ "_reviewed": true
+}

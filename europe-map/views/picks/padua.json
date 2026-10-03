@@ -1,0 +1,92 @@
+{
+ "city": "Padua",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Giusto de Menabuoi - Veduta di Padova nel trecento - Basilica di Sant Antonio - Cappella del Beato Luca Belludi.jpg",
+   "y": 1382,
+   "lab": "1382",
+   "what": "View of Padua in a fresco in the Basilica of Sant’Antonio (Belludi chapel)",
+   "who": "Giusto de’ Menabuoi",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.13,
+    0.17,
+    0.84,
+    0.84
+   ],
+   "focal": [
+    0.5,
+    0.3
+   ],
+   "why": "the walled medieval city painted from life; trimmed off the saint and fresco border"
+  },
+  {
+   "n": 14,
+   "file": "Padua en de Ponte de Graici over de Brenta Veduta della Città di Padova al Ponte de Graic (titel op object) Le delicie della Brenta (serietitel) Les delices de la Brenta (serietitel) Gezichten op de rivier de Brenta , RP-P-1965-147.jpg",
+   "y": 1755,
+   "lab": "1750s",
+   "what": "Padua from the Ponte dei Graici on the Brenta, etching in Gianfrancesco Costa, Le delizie del fiume Brenta",
+   "who": "Gianfrancesco Costa",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.16,
+    0.1,
+    0.834,
+    0.72
+   ],
+   "focal": [
+    0.35,
+    0.45
+   ],
+   "why": "true general view; skyline with the domes of the Santo and towers; trimmed to the plate"
+  },
+  {
+   "n": 17,
+   "file": "Rudolf von Alt Basilika San Antonio in Padua 1836.jpg",
+   "y": 1836,
+   "lab": "1836",
+   "what": "The Basilica of Sant’Antonio, painting",
+   "who": "Rudolf von Alt",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "color, high resolution; the city’s signature landmark with Donatello’s Gattamelata"
+  },
+  {
+   "n": 26,
+   "file": "View of Padua from La Specola.jpg",
+   "y": 2024,
+   "lab": "2024",
+   "what": "View from La Specola over the old town to the cathedral, photograph",
+   "who": "Ricalvo10",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.53,
+    0.45
+   ],
+   "why": "sunny panorama of the historic center; cathedral and canal visible"
+  }
+ ],
+ "gaps": "P1: only a flat city plan (#6) and a map of the walls (#4); #7 is a 19th-century lithograph misdated 1545. P2: only Canaletto’s Imaginary View of Padua (a capriccio, #8–#13), skipped as not a true view. P4: the photochroms are Mission San Antonio de Padua in California; Grubacs (#24) is dated only ‘before 1878’. P5: nothing.",
+ "notes": "If a P2 view is wanted, Canaletto’s Imaginary View of Padua (#8, 1741–44, very high resolution) combines Paduan buildings but is invented. Guardi’s Prato della Valle (#16, 1760s, color) is a good alternative for P3 but only 1052 px wide.",
+ "_reviewed": true
+}

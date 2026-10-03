@@ -1,0 +1,134 @@
+{
+ "city": "İzmir",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Gezicht op Smyrna met op de voorgrond de ontvangst van de Nederlandse consul Daniël Jan Baron de Hochepied (1657-1723) in de Divan, SK-A-4085.jpg",
+   "y": 1705,
+   "lab": "1687–1723",
+   "what": "Smyrna and its harbor, painting (Rijksmuseum)",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.62
+   ],
+   "focal": [
+    0.68,
+    0.5
+   ],
+   "why": "detailed colored bird’s-eye of the town under Mount Pagos and its castle; trimmed to the city, cutting the consul’s reception scene below; dated by the consul’s term"
+  },
+  {
+   "n": 6,
+   "file": "Gezicht op Smyrna Rijksmuseum SK-A-3947.jpeg",
+   "y": 1779,
+   "lab": "1779",
+   "what": "The city from the sea with Mount Pagos, painting (Rijksmuseum)",
+   "who": "N. Knop",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.62,
+    0.55
+   ],
+   "why": "dated general view along the waterfront, Kadifekale ruins on the hill at right; larger copy of #7"
+  },
+  {
+   "n": 8,
+   "file": "View of the Town and Bay of Smyrna (1829) by Raffael Corsini (PEM M25790).jpg",
+   "y": 1829,
+   "lab": "1829",
+   "what": "The town and bay from the sea, painting (Peabody Essex Museum)",
+   "who": "Raffael Corsini",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.875
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "colorful panorama of the town and the crowded harbor, 50 years after #6; title strip cut"
+  },
+  {
+   "n": 16,
+   "file": "İzmir 18 May 1862.jpg",
+   "y": 1862,
+   "lab": "1862",
+   "what": "The town and harbor from the hillside, photograph",
+   "who": "Francis Bedford",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.1,
+    1,
+    0.75
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "firmly dated general view over the roofs to the bay and anchored ships; bare foreground cut"
+  },
+  {
+   "n": 23,
+   "file": "ETH-BIB-Hafen von Smyrna-Persienflug 1924-1925-LBS MH02-02-0006-AL-FL.tif",
+   "y": 1924,
+   "lab": "1924",
+   "what": "The harbor, photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "quay and harbor two years after the 1922 fire; weak on landmarks but the only ordinary view for the period"
+  },
+  {
+   "n": 26,
+   "file": "Izmir 01.jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The city and the gulf from Kadifekale, photograph",
+   "who": "Bernard Gagnon",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "sharp modern panorama over the old town to the Gulf of İzmir"
+  }
+ ],
+ "gaps": "P0–P1: no candidates",
+ "notes": "P2 alternatives: Cornelis de Bruijn’s large engraved panorama (#4, very high resolution, probably from his 1698 travel book but undated on Commons) and Tournefort’s 1717 plate (#5, small). P4: #12 (1880s, larger) is a good alternative looking toward Kadifekale; #15 is a stylized Ottoman lithograph. P5: Mittelholzer’s ruins photos (#21, #22) would need event marking; left out.",
+ "_reviewed": true
+}

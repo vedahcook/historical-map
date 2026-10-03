@@ -1,0 +1,155 @@
+{
+ "city": "Gdańsk",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Dantzigt. 1573 (60783973).jpg",
+   "y": 1575,
+   "lab": "1575",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 2",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.082,
+    0.091,
+    0.943,
+    0.905
+   ],
+   "focal": [
+    0.5,
+    0.42
+   ],
+   "why": "colored, high-resolution loose plate; walled city with St. Mary’s across the plain"
+  },
+  {
+   "n": 10,
+   "file": "Dantiscum - btv1b53235797x (2 of 3).jpg",
+   "y": 1652,
+   "lab": "1652",
+   "what": "Panorama, engraving in Merian’s Topographia",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.02,
+    0.99,
+    0.87
+   ],
+   "focal": [
+    0.42,
+    0.55
+   ],
+   "why": "classic Merian panorama, sharper and larger than the copy #9; legend cut"
+  },
+  {
+   "n": 17,
+   "file": "50 Prospecte von Danzig sind zu haben bey Matthaus Deisch. przedm. 10 Julius 1765 (498714).jpg",
+   "y": 1765,
+   "lab": "about 1765",
+   "what": "The Highland Gate with St. Mary’s and the Town Hall tower, etching from 50 Prospecte von Danzig",
+   "who": "Matthäus Deisch",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.25,
+    0.195,
+    0.786,
+    0.64
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "St. Mary’s and the Town Hall spire rising over the walls; album page and caption trimmed"
+  },
+  {
+   "n": 15,
+   "file": "Eduard Meyerheim Widok Gdańska.jpg",
+   "y": 1829,
+   "lab": "1829",
+   "what": "View of Danzig from the ramparts, painting",
+   "who": "Friedrich Eduard Meyerheim",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.065,
+    0.075,
+    0.945,
+    0.925
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "color view with St. Mary’s tower on the skyline; frame trimmed; 64 years after the Deisch view"
+  },
+  {
+   "n": 25,
+   "file": "Langen Market and Court House, Danzig, West Prussia, Germany (i.e., Gdańsk, Poland)-LCCN2002714025.tif",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Long Market, Town Hall and St. Mary’s, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.016,
+    0.02,
+    0.984,
+    0.95
+   ],
+   "focal": [
+    0.42,
+    0.38
+   ],
+   "why": "Town Hall tower and St. Mary’s together over the Long Market"
+  },
+  {
+   "n": 33,
+   "file": "Danzig. Totalansicht.jpg",
+   "y": 1916,
+   "lab": "about 1916",
+   "what": "General view, colored postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.115,
+    0.99,
+    0.99
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "color general view: St. Mary’s, Town Hall and the Great Synagogue"
+  },
+  {
+   "n": 37,
+   "file": "View of Gdańsk from dorm 6 at Wikimania 2010.jpg",
+   "y": 2010,
+   "lab": "2010",
+   "what": "St. Mary’s Church and the Town Hall tower, photograph",
+   "who": "Ragesoss",
+   "lic": "CC BY 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.42
+   ],
+   "why": "the two main landmarks clearly over old-town roofs"
+  }
+ ],
+ "gaps": "P0: nothing",
+ "notes": "B&H plate dated 1573 in the Polona record; used the vol. 2 year 1575 per the rule. Merian dated 1652 (Topographia Prussiae et Pomerelliae). Deisch album preface is dated 10 July 1765, so the plate is labeled about 1765. Postcard #33 year 1916 is the Commons date (likely postmark), hence about 1916. No P6 Quality image among candidates; #38 shows the same landmarks but with a highway in front. Photochrom credited to Photoglob Zürich from the “P.Z.” imprint on the print (record names no maker).",
+ "_reviewed": true
+}

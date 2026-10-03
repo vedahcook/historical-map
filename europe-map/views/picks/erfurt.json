@@ -1,0 +1,113 @@
+{
+ "city": "Erfurt",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Nuremberg chronicles - ERFORDIA.png",
+   "y": 1493,
+   "lab": "1493",
+   "what": "Woodcut in Hartmann Schedel’s Nuremberg Chronicle",
+   "who": "Michael Wolgemut and Wilhelm Pleydenwurff",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.04,
+    0.488,
+    0.985
+   ],
+   "focal": [
+    0.5,
+    0.3
+   ],
+   "why": "colored true view labeled ERFORDIA; cathedral and St. Severus on the Domberg at left, Petersberg at right"
+  },
+  {
+   "n": 5,
+   "file": "Weimaria ; Iena Thuringiae urbs... ; Erdfordia, magnifica atq. celeberrima Thuringorum urbs - btv1b531789035 (1 of 2).jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Distant view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.508,
+    0.402,
+    0.892,
+    0.608
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "colored single sheet; trimmed to the Erfurt panel of a five-town plate; cathedral hill recognizable"
+  },
+  {
+   "n": 9,
+   "file": "Erfurt-1650-Merian.jpg",
+   "y": 1650,
+   "lab": "1650",
+   "what": "Bird’s-eye plan of the fortified city, engraving in Merian’s Topographia Superioris Saxoniae",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.085,
+    0.99,
+    0.99
+   ],
+   "focal": [
+    0.55,
+    0.41
+   ],
+   "why": "buildings drawn in bird’s-eye view, not a flat plan; unmarked copy (#10 and #11 have modern overlays)"
+  },
+  {
+   "n": 17,
+   "file": "Dom Erfurt 1900.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The cathedral and St. Severus over the city, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.45
+   ],
+   "why": "the classic Erfurt view with the old town behind; cleaned copy of #16 without the caption"
+  },
+  {
+   "n": 21,
+   "file": "2018-03 Erfurt von der Ägidienkirche 03.jpg",
+   "y": 2018,
+   "lab": "2018",
+   "what": "View from the tower of the Ägidienkirche, photograph",
+   "who": "Jannis Raabe",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.35,
+    0.5
+   ],
+   "why": "old town with the cathedral and St. Severus, and the houses of the Krämerbrücke below"
+  }
+ ],
+ "gaps": "P3: no candidates; P5: nothing usable",
+ "notes": "P1: B&H vol. 1 dated from the 1582 German edition’s page order (#6, p. 89, sits among vol. 1 plates); the c. 1550 woodcut (#7) is a true view but only 1000 px. P4: #18 (album photo, 1858–68) is under 40 years from the photochrom, so left out. P5: #20 (Corsep painting) is dated only ‘before 1944’.",
+ "_reviewed": true
+}

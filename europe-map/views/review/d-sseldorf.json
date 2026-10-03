@@ -1,0 +1,53 @@
+{
+ "city": "Düsseldorf",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.018,
+     0.2,
+     0.982,
+     0.78
+    ],
+    "focal": [
+     0.42,
+     0.5
+    ]
+   },
+   "reason": "Merian 1647 is right, but the full-height crop includes the title scroll at top and the legend scroll at bottom, and a double plate frame runs to about 1.6% on the sides; trim to the skyline band (skyline spans 28-58% of height, legend starts about 83%)"
+  },
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "Title, description and categories name Düsseldorf and St. Andreas; Mauritshuis painting of 1667; the setting is partly composed but the church is real and no other P2 original exists; crop clean"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "Color painting from the Golzheim island, twisted spire of St. Lambertus recognizable; 'um 1840' matches; no frame in the crop"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "LoC photochrom, record description gives about 1896; white border and caption stay outside the crop"
+  },
+  {
+   "n": 20,
+   "verdict": "ok",
+   "reason": "Dated 10 Sept 1962, CC BY 4.0, unknown author as in the record; aerial shows the old town, Oberkassel bridge and Rhine bend; crop clean"
+  },
+  {
+   "n": 24,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.42,
+     0.4
+    ]
+   },
+   "reason": "At focal 0.45 the crop's left edge falls on the St. Lambertus spire and clips it; 0.42 keeps the spire and still includes the Rhine Tower. Weak night shot but the only modern skyline view"
+  }
+ ]
+}

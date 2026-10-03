@@ -1,0 +1,55 @@
+{
+ "city": "Marseille",
+ "checks": [
+  {
+   "n": 8,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.016,
+     0.016,
+     0.984,
+     0.984
+    ]
+   },
+   "reason": "orange plate frame (about 1.3% on each side) is inside the full-bleed trim and shows as stripes at the crop's left and right edges"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "labeled Massilia/Marseille general view; date 'about 1655' is an estimate within Topographia Galliae (1655-61)"
+  },
+  {
+   "n": 21,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.024,
+     0.024,
+     0.978,
+     0.865
+    ]
+   },
+   "reason": "thin paper margin left and right of the engraved image inside the old trim"
+  },
+  {
+   "n": 36,
+   "verdict": "fix",
+   "fix": {
+    "y": 1900,
+    "lab": "about 1900"
+   },
+   "reason": "record description and file title say 'vers 1900', not 1890s"
+  },
+  {
+   "n": 32,
+   "verdict": "drop",
+   "reason": "city is a thin strip on the horizon in a dull gray photo (mostly sea and sky) and date is only inferred ('evtl.' from the Abyssinia flight return); weak, and nearby periods already cover these years"
+  },
+  {
+   "n": 37,
+   "verdict": "ok",
+   "reason": "sharp view with Notre-Dame de la Garde; lic and credit match record"
+  }
+ ]
+}

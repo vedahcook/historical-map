@@ -1,0 +1,113 @@
+{
+ "city": "Nice",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Gezicht op Nice, ca. 1693-1695, RP-P-OB-83.033A-72.jpg",
+   "y": 1694,
+   "lab": "1693–95",
+   "what": "Bird’s-eye view, etching in Nicolas de Fer, Les Forces de l’Europe (Rijksmuseum)",
+   "who": "Nicolas de Fer",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.175,
+    0.282,
+    0.698,
+    0.715
+   ],
+   "focal": [
+    0.55,
+    0.35
+   ],
+   "why": "labeled view of the town under the castle hill, before the castle was razed in 1706; earliest and largest state of this plate"
+  },
+  {
+   "n": 6,
+   "file": "Zicht op de Pont Neuf in Nice Vue des quais et du Pont Neuf à Nice (titel op object) Herinneringen aan Nice en zijn kust (serietitel) Souvenir de la ville de Nice maritime et de ses environs (serietitel), RP-P-1907-5562.jpg",
+   "y": 1834,
+   "lab": "1834",
+   "what": "The quays and the Pont Neuf over the Paillon, lithograph (Rijksmuseum)",
+   "who": "Paul-Émile Barberi",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.12,
+    0.1,
+    0.875,
+    0.705
+   ],
+   "focal": [
+    0.6,
+    0.55
+   ],
+   "why": "river front of the town with the castle hill behind; book margin and caption cut"
+  },
+  {
+   "n": 14,
+   "file": "Nice le Marche, RP-F-F16559.jpg",
+   "y": 1889,
+   "lab": "1889",
+   "what": "The market on the Cours Saleya, photochrom print (Rijksmuseum)",
+   "who": "Photoglob Zürich",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.02,
+    0.025,
+    0.98,
+    0.975
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "color old-town market scene below the castle hill"
+  },
+  {
+   "n": 22,
+   "file": "Congrès radical socialiste - une vue de Nice - btv1b9024880w.jpg",
+   "y": 1925,
+   "lab": "1925",
+   "what": "The old town and the Baie des Anges from the castle hill, photograph (Agence Meurisse)",
+   "who": "Agence Meurisse",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.045,
+    0.975,
+    0.965
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "general view over old-town roofs, domes and bell towers to the bay; glass-plate edges cut"
+  },
+  {
+   "n": 26,
+   "file": "Nizza-Côte d'Azur (cropped).jpg",
+   "y": 2011,
+   "lab": "2011",
+   "what": "The Baie des Anges, the Promenade des Anglais and the old town from the castle hill, photograph",
+   "who": "Tobi 87",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.6
+   ],
+   "why": "the classic view of the bay and city in bright color"
+  }
+ ],
+ "gaps": "P0: nothing (#1 is an undated modern photo; ‘1200’ is its pixel width). P1: nothing (17th-century drawing #2 is dated only 1600–1699).",
+ "notes": "#4 (1726) and #3 (1702) are later, smaller states of the de Fer plate. #10 (Barberi’s general view from the hills, same series, BM dates 1824–35) is a P3 alternative, but trees fill most of the frame. #14 date is the Rijksmuseum’s; #19 is the Library of Congress copy of a similar market view (dated only 1890s). P5 alternative: #23 (1929, the Promenade des Anglais and Jetée-Promenade from above). #22 was taken for a press report on a party congress, but the view itself is ordinary.",
+ "_reviewed": true
+}

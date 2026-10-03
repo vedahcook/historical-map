@@ -1,0 +1,113 @@
+{
+ "city": "Tbilisi",
+ "picks": [
+  {
+   "n": 1,
+   "file": "General view of Tiflis. Engraved by Tournefort in 1701.jpg",
+   "y": 1717,
+   "lab": "1717",
+   "what": "Engraving in Tournefort’s Relation d’un voyage du Levant",
+   "who": "Joseph Pitton de Tournefort",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.025,
+    0.99,
+    1.0
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "labeled “Tiflis, Capitale de Géorgie”; walled Narikala fortress above the town"
+  },
+  {
+   "n": 2,
+   "file": "Vue de Tiflis (1830s), Engelmann, after Louis Firmin Le Camus.jpg",
+   "y": 1830,
+   "lab": "about 1830",
+   "what": "General view, lithograph",
+   "who": "Godefroy Engelmann after Louis Firmin Le Camus",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.034,
+    0.03,
+    0.97,
+    0.915
+   ],
+   "focal": [
+    0.35,
+    0.4
+   ],
+   "why": "Narikala fortress, the Kura and the town spread below; larger copy of the same plate as #3"
+  },
+  {
+   "n": 7,
+   "file": "Town and fortress, Tiflis, Russia, (Tbilisi, Georgia)-LCCN2001697511.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The fortress and the town, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.035,
+    0.06,
+    0.956,
+    0.905
+   ],
+   "focal": [
+    0.45,
+    0.55
+   ],
+   "why": "color general view from above: Narikala walls, the Kura and the whole town"
+  },
+  {
+   "n": 16,
+   "file": "471 - Panorama of the old city and the fortress of Tbilisi.jpg",
+   "y": 1964,
+   "lab": "1964",
+   "what": "The old town and the Kura from above, photograph",
+   "who": "Jacques Dupakiers",
+   "lic": "CC BY 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0.02,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "color view over the old town, the river and the Metekhi cliff, with the fortress hill at right"
+  },
+  {
+   "n": 22,
+   "file": "Tbilisi (16671628463).jpg",
+   "y": 2015,
+   "lab": "2015",
+   "what": "Panorama of the city with the Holy Trinity Cathedral, photograph",
+   "who": "jagermesh",
+   "lic": "CC BY-SA 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.4
+   ],
+   "why": "sharp panorama of the whole city with the Holy Trinity Cathedral and the Kura"
+  }
+ ],
+ "gaps": "P0 and P1: nothing",
+ "notes": "#1: Commons dates it 1701, the year of Tournefort’s visit (drawing by Claude Aubriet); the plate was first published in the Relation d’un voyage du Levant, 1717, so y is 1717. #11 (Paul von Franken painting, 1859, very large) is a strong alternative for P4 but only 36 years from the photochrom, and its foreground genre scene dominates. #19 (1918, German expedition) and #14 (1914–18) are black and white with foreground figures or a single church; the 1964 color view was preferred for P5. #12 (Prokudin-Gorskii, Havlabar) has no exact year.",
+ "_reviewed": true
+}

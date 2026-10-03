@@ -1,0 +1,42 @@
+{
+ "city": "Tunis",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "Colored Braun and Hogenberg vol. 2 (1575) Tunis panel; trim sits just inside the panel frame; panorama is a thin city strip but is the best P1 view (others are the siege plan)."
+  },
+  {
+   "n": 11,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.16,
+     0.12,
+     0.815,
+     0.9
+    ],
+    "focal": [
+     0.55,
+     0.4
+    ]
+   },
+   "reason": "Old trim leaves gold corner scrolls and the right frame line inside the crop; narrower trim is clean and keeps city, lake fort and ships. Labeled Tunis view, date range acceptable."
+  },
+  {
+   "n": 12,
+   "verdict": "ok",
+   "reason": "Hand-colored steel engraving of Tunis from the hill; trim is inside the plate mark and cuts the caption; credits match the record; #13 is the lake, not the city."
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "Color photochrom, Zitouna minaret over the medina roofs; no borders; CC BY 2.0 matches the Commons record."
+  },
+  {
+   "n": 25,
+   "verdict": "ok",
+   "reason": "Mittelholzer 1928 aerial of the Great (Zitouna) Mosque minaret with the medina; no borders; record agrees."
+  }
+ ]
+}

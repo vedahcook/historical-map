@@ -1,0 +1,15 @@
+{
+ "city": "Nizhny Novgorod",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "Chernetsov 1837 view from the Kremlin hill; crop good"
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "colored postcard of the Kremlin hill and river front; trim sits inside the picture edge"
+  }
+ ]
+}

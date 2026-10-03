@@ -1,0 +1,25 @@
+{
+ "city": "Valencia",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "1850s label is sound (walls still standing, railway-era smoke)"
+  },
+  {
+   "n": 22,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

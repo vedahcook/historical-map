@@ -1,0 +1,134 @@
+{
+ "city": "Wrocław",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Nuremberg chronicles - BRESSLA.png",
+   "y": 1493,
+   "lab": "1493",
+   "what": "Woodcut in Hartmann Schedel’s Nuremberg Chronicle",
+   "who": "Michael Wolgemut and Wilhelm Pleydenwurff",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.02,
+    1,
+    0.965
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "colored true view labeled BRESSLA; walls and church towers"
+  },
+  {
+   "n": 4,
+   "file": "Civitates orbis terrarum. Urbium praecipuarum totius mundi. Liber quartus (page 88).jpg",
+   "y": 1588,
+   "lab": "1588",
+   "what": "Bird’s-eye view in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 4",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.115,
+    0.093,
+    0.872,
+    0.915
+   ],
+   "focal": [
+    0.45,
+    0.37
+   ],
+   "why": "colored bird’s-eye view with buildings drawn; market square, Oder islands"
+  },
+  {
+   "n": 8,
+   "file": "Breslau merian.JPG",
+   "y": 1650,
+   "lab": "1650",
+   "what": "Engraving in Merian’s Topographia Bohemiae, Moraviae et Silesiae",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.05,
+    1,
+    0.98
+   ],
+   "focal": [
+    0.48,
+    0.55
+   ],
+   "why": "classic general view; all main church towers along the skyline"
+  },
+  {
+   "n": 20,
+   "file": "Town hall from the east, Breslau, Silesia, Germany (i.e., Wrocław, Poland)-LCCN2002720684.tif",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Town Hall from the east, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.02,
+    0.98,
+    0.95
+   ],
+   "focal": [
+    0.54,
+    0.38
+   ],
+   "why": "the city’s best-known building, color"
+  },
+  {
+   "n": 31,
+   "file": "Breslau und Umgebung 067.jpg",
+   "y": 1929,
+   "lab": "about 1929",
+   "what": "Centennial Hall and the exhibition grounds, aerial photograph",
+   "who": "Aerokartographisches Institut",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.62,
+    0.42
+   ],
+   "why": "famous landmark, firmly dated by the 1929 book"
+  },
+  {
+   "n": 33,
+   "file": "Wrocław from above (3622389464).jpg",
+   "y": 2009,
+   "lab": "2009",
+   "what": "View over the old town from St. Elizabeth’s Church, photograph",
+   "who": "Klearchos Kapoutsis",
+   "lic": "CC BY 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0.15,
+    1,
+    1
+   ],
+   "focal": [
+    0.56,
+    0.39
+   ],
+   "why": "old-town rooftops with the cathedral spires on the horizon"
+  }
+ ],
+ "gaps": "None by period, but P3 is weak (harbor scene without landmarks) and P5 shows the Centennial Hall rather than the old town.",
+ "notes": "#8 Merian view dated 1650 (Topographia Bohemiae, Moraviae et Silesiae); Commons says 1642, and the colored copy #7 is captioned ‘Breslau im Jahre 1650’. #4 is the 1594 printing of B&H vol. 4, dated to vol. 4’s first publication, 1588. #17 inscription reads roughly ‘Breslau. Der Hafen … Oderbrücke 1835’; #18 is a photo reproduction of the same drawing. #20 chosen over #24 (same photochrom with altered colors). Skipped: #16 vue d’optique looks fanciful and is dated only 1742–1801; #27 is an older engraving reprinted in a 1929 book; #28 NARA aerial has only a guessed date (about 1920); #30 is a reprint of an old engraving in a 1924 book. P6 photo is heavily HDR-processed; a better modern view of the Market Square or Ostrów Tumski would help if available.",
+ "_reviewed": true
+}

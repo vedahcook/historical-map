@@ -1,0 +1,50 @@
+{
+ "city": "Skopje",
+ "picks": [
+  {
+   "n": 6,
+   "file": "Skoje, razglednica so Vardar, 1928.jpg",
+   "y": 1928,
+   "lab": "1928",
+   "what": "The Vardar and both banks of the town, colored postcard (State Archives of North Macedonia)",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "color, firmly dated general view along the river with the mountains behind"
+  },
+  {
+   "n": 8,
+   "file": "Vista de Skopie, Macedonia, 2014-04-16, DD 56.JPG",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The city center, the Stone Bridge and Mount Vodno, photograph",
+   "who": "Diego Delso",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "sharp high view of Macedonia Square, the Stone Bridge over the Vardar and the Millennium Cross on Vodno"
+  }
+ ],
+ "gaps": "P0–P3: no candidates. P4: only #1 (1903), a small unnamed mosque behind a wall, not a city view.",
+ "notes": "P5 alternative: #5, Austro-Hungarian war press office ‘Gesamtansicht der Stadt’ (1914–18), a gray but genuine-looking general view of the Ottoman town with minarets; the city name comes only from its Commons category. #3 is a fine old-town view with the clock tower and minarets but is dated only ‘20th century’; #2 and #4 likewise undated. If a P4 view is wanted at any cost, #1 (Nopcsa, 1903) is the only dated one.",
+ "_reviewed": true
+}

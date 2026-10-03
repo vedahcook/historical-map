@@ -1,0 +1,155 @@
+{
+ "city": "Genoa",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Genova1493.png",
+   "y": 1493,
+   "lab": "1493",
+   "what": "Woodcut in Hartmann Schedel’s Nuremberg Chronicle",
+   "who": "Michael Wolgemut and Wilhelm Pleydenwurff",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0,
+    0.988,
+    0.985
+   ],
+   "focal": [
+    0.45,
+    0.58
+   ],
+   "why": "labeled GENUA; true view of the harbor with the Lanterna lighthouse and the mole"
+  },
+  {
+   "n": 7,
+   "file": "Georg Braun-Frans Hogenberg -Genua Ligurum domina (cropped-Genua).jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.008,
+    0.03,
+    0.992,
+    0.972
+   ],
+   "focal": [
+    0.49,
+    0.5
+   ],
+   "why": "colored panorama of the city and harbor from the sea, already cropped to Genoa; this copy from the 1582 edition"
+  },
+  {
+   "n": 16,
+   "file": "Bastian Stoopendal, Pieter Mortier, Alessandro Baratta, Veduta di Genova, fine XVII secolo.jpg",
+   "y": 1704,
+   "lab": "1704",
+   "what": "Bird’s-eye view from the sea, engraving in Mortier’s Nouveau Théâtre de l’Italie",
+   "who": "Bastiaen Stopendael after Alessandro Baratta",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.06,
+    0.968,
+    0.927
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "large panorama of the whole city, harbor and moles; published 1704"
+  },
+  {
+   "n": 24,
+   "file": "Veduta di Genova dalla darsena (acquaforte).jpg",
+   "y": 1845,
+   "lab": "1845",
+   "what": "The city seen from the Darsena harbor, etching",
+   "who": "Leonardo De Vigni",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0.03,
+    0.09,
+    0.96,
+    0.885
+   ],
+   "focal": [
+    0.4,
+    0.55
+   ],
+   "why": "only P3 view showing the city along the harbor rather than a single building"
+  },
+  {
+   "n": 28,
+   "file": "Flickr - …trialsanderrors - Piazza Acquaverde, Genoa, Italy, ca. 1895.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Piazza Acquaverde and the Columbus monument, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "CC BY 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.93
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "color; Columbus monument with the city climbing the hill behind"
+  },
+  {
+   "n": 38,
+   "file": "Gênes - vue panoramique du côté du levant - btv1b90546371.jpg",
+   "y": 1922,
+   "lab": "1922",
+   "what": "Rooftops of the old city looking east, press photograph (Agence Meurisse)",
+   "who": "Agence Meurisse",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.08,
+    0.03,
+    0.985,
+    0.94
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "general view over the old town with the Carignano dome; dated April 1922"
+  },
+  {
+   "n": 46,
+   "file": "View of Genoa from the archiepiscopal seminary 003.JPG",
+   "y": 2024,
+   "lab": "2024",
+   "what": "The city and harbor from above, photograph",
+   "who": "Superchilum",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "clear high view over the city to the port"
+  }
+ ],
+ "gaps": "none; P3 is only a modest harbor etching",
+ "notes": "#28’s Commons license is the Flickr uploader’s CC BY 2.0; the photochrom itself is public domain (LoC), so PD may be used if preferred. #30 (Armanino color panorama of the harbor with the Lanterna) is the best P4 general view but Rijksmuseum dates it only ‘ca. 1880–1920’. #40 (Brogi panorama) is dated only ‘before 1925’. #4–#6 are 1929 photos misread as 1389, and show the Bisagno valley. #25 (Villa del Principe, ‘ante 1769’) skipped: single building and vague date.",
+ "_reviewed": true
+}

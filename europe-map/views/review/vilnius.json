@@ -1,0 +1,38 @@
+{
+ "city": "Vilnius",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.018,
+     0.018,
+     0.982,
+     0.982
+    ]
+   },
+   "reason": "Colored 1581 (vol. 3) plate is right, but the red double frame extends to about 1.3-1.6% on every side and a 0.5% trim leaves it in the crop"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "Lauvergne lithograph titled as a view of Vilnius from the Green Bridge; Gediminas Tower visible; vignette edges, no frame; about 1840 is fine"
+  },
+  {
+   "n": 21,
+   "verdict": "ok",
+   "reason": "Marszewski 1872 painting from Tauras Hill, clean full-picture crop"
+  },
+  {
+   "n": 28,
+   "verdict": "ok",
+   "reason": "Bułhak photograph from All Saints bell tower, dated 1944 in the record; crop clean"
+  },
+  {
+   "n": 35,
+   "verdict": "ok",
+   "reason": "Gediminas Tower view with St. John's bell tower, CC BY 3.0 pl as in the record; top of the bell tower stays inside the crop"
+  }
+ ]
+}

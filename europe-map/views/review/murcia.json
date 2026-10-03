@@ -1,0 +1,20 @@
+{
+ "city": "Murcia",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "Palomino plate in Espinalt's Atlante espanol, Tomo I Reyno de Murcia (1778): cathedral tower and old bridge; trim removes title and legend; no frame left."
+  },
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "Photochrom of the cathedral and Plaza del Palacio; trim is tight to the image edge but clean; tower top is inside the 16:9 crop."
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "2007 view of the city with the cathedral tower from Fuensanta; modest but the best P6 option (others lack landmarks or are vertical or not city views); record agrees."
+  }
+ ]
+}

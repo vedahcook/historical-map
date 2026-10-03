@@ -1,0 +1,38 @@
+{
+ "city": "Bratislava",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.028,
+     0.045,
+     0.983,
+     0.965
+    ]
+   },
+   "reason": "Old trim still includes the paper margin and the plate's dark border line at top (rows near 0.03-0.037) and left (about 0.02); tighten. Colored Braun and Hogenberg vol. 4 (1588) Posonium view is right."
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "Colored Schaffer view across the Danube; trim is clean inside the plate lines; 1787 taken from the same plate (#9); credits agree."
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "Photochrom with P.Z. imprint; trim cuts the caption; 1890s is safe for the 1890-1905 record."
+  },
+  {
+   "n": 17,
+   "verdict": "ok",
+   "reason": "Fortepan 1958 color view from the castle (Fish Square synagogue, Danube bridge); faded but a real city view; CC BY-SA 3.0; donor credit follows Fortepan convention."
+  },
+  {
+   "n": 20,
+   "verdict": "ok",
+   "reason": "2006 view from SNP Bridge with cathedral, old town, castle at left edge; no borders; best P6 option among candidates."
+  }
+ ]
+}

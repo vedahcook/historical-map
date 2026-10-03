@@ -1,0 +1,92 @@
+{
+ "city": "Catania",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Catana Urbs Siciliae.jpg",
+   "y": 1598,
+   "lab": "1598",
+   "what": "Bird’s-eye view with Mount Etna, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 5",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.06,
+    0.975,
+    0.9
+   ],
+   "focal": [
+    0.48,
+    0.42
+   ],
+   "why": "colored copy; walled city, harbor and Etna; legend and title trimmed"
+  },
+  {
+   "n": 5,
+   "file": "Veduta della città di Catania in Sicilia.jpg",
+   "y": 1845,
+   "lab": "1845",
+   "what": "View across the harbor to the cathedral and Etna, engraving in Zuccagni-Orlandini’s Corografia dell’Italia",
+   "who": "Francesco Corsi",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.058,
+    0.1,
+    0.94,
+    0.872
+   ],
+   "focal": [
+    0.53,
+    0.5
+   ],
+   "why": "general view; cathedral dome and smoking Etna recognizable; captions trimmed"
+  },
+  {
+   "n": 12,
+   "file": "Catania – Panorama della citta (dal mare).jpg",
+   "y": 1891,
+   "lab": "1891",
+   "what": "Panorama of the city from the sea, engraving in Le Cento Città d’Italia",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.42,
+    0.4
+   ],
+   "why": "seafront with the railway arches, cathedral dome and Etna"
+  },
+  {
+   "n": 17,
+   "file": "Cataniavistaarea.jpg",
+   "y": 2007,
+   "lab": "2007",
+   "what": "Aerial photograph of the historic center and harbor",
+   "who": "Giovanni from Catania",
+   "lic": "CC BY-SA 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "sharp aerial of the old center, Via Etnea, Villa Bellini and port; portrait, so the 16:9 crop takes the middle band"
+  }
+ ],
+ "gaps": "P0, P2, P5: nothing usable",
+ "notes": "Dated the colored Braun and Hogenberg plate to vol. 5 (1598) though Commons says 1592; #1 and #2 are later uncolored printings of the same plate, #3 a Venetian copy. Skipped #10 (Ducros watercolor of the harbor, 1778): a long strip dominated by foreground lava rocks. Skipped #11 (Püttner, dated only “before 1881”) and #13 (1866, low resolution). #18/#19 (2011 aerials with Etna) have an airplane wing in frame.",
+ "_reviewed": true
+}

@@ -1,0 +1,50 @@
+{
+ "city": "Sofia",
+ "picks": [
+  {
+   "n": 10,
+   "file": "BASA-746K-1-84-13 central Sofia from the air 1930s.jpg",
+   "y": 1930,
+   "lab": "about 1930",
+   "what": "The Alexander Nevsky Cathedral and the city center, aerial photograph (Bulgarian State Archives)",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.04,
+    0.97,
+    0.98
+   ],
+   "focal": [
+    0.47,
+    0.45
+   ],
+   "why": "central Sofia from above with the cathedral square, National Assembly and university; record dates it 1927–34; inscription and dark corner trimmed"
+  },
+  {
+   "n": 15,
+   "file": "Panorama of Sofia 3.jpg",
+   "y": 2020,
+   "lab": "2020",
+   "what": "View over the city center toward the Balkan Mountains, photograph",
+   "who": "Ivano Giambattista",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.3,
+    1,
+    0.89
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "color view over the dense center with the mountains behind; specks in the sky and the camera watermark trimmed"
+  }
+ ],
+ "gaps": "P0–P4: no usable candidates (the 1852 lithographs #1–8 show Hagia Sophia in Constantinople, not Sofia)",
+ "notes": "#9 (1920s) shows only the Royal Palace. P6 alternative: #14, a cleaner CC0 daylight view from the same spot, but it faces South Park and residential blocks rather than the center.",
+ "_reviewed": true
+}

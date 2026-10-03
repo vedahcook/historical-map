@@ -1,0 +1,92 @@
+{
+ "city": "Nantes",
+ "picks": [
+  {
+   "n": 4,
+   "file": "View of Nantes MET DP800194.jpg",
+   "y": 1650,
+   "lab": "about 1650",
+   "what": "View across the Loire, drawing with wash (Metropolitan Museum of Art)",
+   "who": "Lambert Doomer",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.015,
+    0.02,
+    0.985,
+    0.98
+   ],
+   "focal": [
+    0.58,
+    0.55
+   ],
+   "why": "toned general view; cathedral towers and château clearly visible across the river"
+  },
+  {
+   "n": 9,
+   "file": "Nantes Salorges Garneray.jpg",
+   "y": 1823,
+   "lab": "1823",
+   "what": "The port seen from Les Salorges, engraving",
+   "who": "Louis Garneray",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.018,
+    0.025,
+    0.984,
+    0.845
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "port of Nantes with ships and an early steamboat; caption cut; only 1080 px wide"
+  },
+  {
+   "n": 17,
+   "file": "Nantes, France, ca. 1897.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Town and harbor from a height, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.2,
+    1,
+    0.9
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "best general view: quays, sailing ships and the city skyline; frameless copy of #15"
+  },
+  {
+   "n": 20,
+   "file": "Aerial view of Nantes.jpg",
+   "y": 2017,
+   "lab": "2017",
+   "what": "Aerial photograph of the Loire and the city",
+   "who": "Duch",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.08,
+    0.12,
+    1,
+    0.7
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "only real general view in P6; trim cuts the plane window frame; gray day, not a Quality image"
+  }
+ ],
+ "gaps": "P0: nothing. P1: nothing securely dated. P5: nothing.",
+ "notes": "P2 alternative: #3 Merian/Zeiller panorama, Topographia Galliae 1656 (wide, black and white). Skipped #1/#2 Collignon after L. de Lincler (strong views, but Rijksmuseum dates only 1620–1687). Skipped #10 Nicolas Ozanne view of the port from Île Gloriette (Musée Dobrée, probably 1770s, but no date in the record). P6 is weak; #21 (Place de la Bourse street view, 2019) is the clean alternative.",
+ "_reviewed": true
+}

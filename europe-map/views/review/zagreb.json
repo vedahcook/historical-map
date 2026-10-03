@@ -1,0 +1,33 @@
+{
+ "city": "Zagreb",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.034,
+     0.106,
+     0.925,
+     0.76
+    ]
+   },
+   "reason": "Trim includes the plate's left frame line and the bottom frame line (rows just above the legend box); tighten slightly. 1822 and credits match the record."
+  },
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "Kaptol Square with the Marian column and the church spire; caption strip cut; spire and statue top not cut."
+  },
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "Oblique aerial with the twin-spired cathedral fully in the crop; 1932-36 per record."
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "Sharp view with the cathedral spires above the roofs; spires whole; credits match."
+  }
+ ]
+}

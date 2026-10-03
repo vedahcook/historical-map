@@ -1,0 +1,50 @@
+{
+ "city": "Rouen",
+ "checks": [
+  {
+   "n": 7,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.108,
+     0.125,
+     0.905,
+     0.447
+    ],
+    "focal": [
+     0.52,
+     0.5
+    ]
+   },
+   "reason": "crop included the plate frame, title band and the text cartouche at the bottom left; tighter trim and focal move keep the city and cathedral (crop is about 42% of the sheet width, source is 6735 px)"
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "Bonington landscape; the city towers show only at the far right, so weak, but it is a true Rouen view and the period has nothing better (#17 is Amiens)"
+  },
+  {
+   "n": 25,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.03,
+     0.1,
+     0.96,
+     0.92
+    ]
+   },
+   "reason": "dark photochrom mat remains at right edge (x 483 and beyond of 500)"
+  },
+  {
+   "n": 31,
+   "verdict": "ok",
+   "reason": "dated 2/9/40 in the inscription; cast-iron spire visible, so after 1877; clean crop"
+  },
+  {
+   "n": 33,
+   "verdict": "ok",
+   "reason": "sharp panorama; cathedral at right and Palais de Justice at left, spire tips not cut"
+  }
+ ]
+}

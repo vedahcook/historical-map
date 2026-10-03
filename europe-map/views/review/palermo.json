@@ -1,0 +1,50 @@
+{
+ "city": "Palermo",
+ "checks": [
+  {
+   "n": 7,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.07,
+     0.428,
+     0.93,
+     0.735
+    ],
+    "focal": [
+     0.56,
+     0.5
+    ]
+   },
+   "reason": "old trim leaves frame lines and paper at top/bottom inside the crop; focal x 0.5 catches the right edge of the description box at the crop's left edge; year 1572 confirmed as Liber Primus"
+  },
+  {
+   "n": 16,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.01,
+     0.035,
+     0.985,
+     0.775
+    ]
+   },
+   "reason": "bottom of old trim includes the drawing's lower frame line; acceptable only view for 1778, port with Monte Pellegrino is recognizable"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "general view from Monte Pellegrino, crop clean"
+  },
+  {
+   "n": 22,
+   "verdict": "ok",
+   "reason": "Sommer photograph, mount and color chart trimmed; date per archive record"
+  },
+  {
+   "n": 27,
+   "verdict": "ok",
+   "reason": "modest but acceptable modern high view"
+  }
+ ]
+}

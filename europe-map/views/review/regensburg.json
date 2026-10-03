@@ -1,0 +1,54 @@
+{
+ "city": "Regensburg",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.012,
+     0.04,
+     0.495,
+     0.97
+    ],
+    "focal": [
+     0.6,
+     0.3
+    ]
+   },
+   "reason": "the book gutter runs through the middle of the current crop (tone break and notch at the top edge); use the left page, which holds the cathedral, bridge and RATISBONA label"
+  },
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.006,
+     0.006,
+     0.99,
+     0.99
+    ],
+    "focal": [
+     0.45,
+     0.25
+    ]
+   },
+   "reason": "current crop starts mid-way through the title RATIS BONA and cuts its letters in half; crop from the top; light right-edge paper also trimmed (faint center fold of the plate is unavoidable)"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "Winkles colored steel engraving of the Stone Bridge and cathedral, about 1840; full frame, no margins"
+  },
+  {
+   "n": 18,
+   "verdict": "ok",
+   "reason": "photochrom of the Stone Bridge and cathedral with finished spires; border cut cleanly"
+  },
+  {
+   "n": 36,
+   "verdict": "ok",
+   "reason": "sharp recent view of the bridge, bridge tower and cathedral; spires in frame"
+  }
+ ]
+}

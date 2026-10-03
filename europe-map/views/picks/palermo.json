@@ -1,0 +1,113 @@
+{
+ "city": "Palermo",
+ "picks": [
+  {
+   "n": 7,
+   "file": "Parma ; Sena ; Palermo - btv1b531790033 (1 of 2).jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.07,
+    0.428,
+    0.93,
+    0.735
+   ],
+   "focal": [
+    0.56,
+    0.5
+   ],
+   "why": "colored panorama of the city from the sea with the mountains behind; trimmed to the Palermo strip (plate also shows Parma, Siena, Trapani)"
+  },
+  {
+   "n": 16,
+   "file": "Gezicht op de grote haven en de zeevloot van Palermo Vue d'une partie du Grand Port & de la Marine de Palerme (titel op object) Voyage en Italie, en Sicile et à Malte - 1778 (serietitel), RP-T-00-494-54.jpg",
+   "y": 1778,
+   "lab": "1778",
+   "what": "The harbor below Monte Pellegrino, watercolor (Rijksmuseum)",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.01,
+    0.035,
+    0.985,
+    0.775
+   ],
+   "focal": [
+    0.4,
+    0.5
+   ],
+   "why": "color; Monte Pellegrino, the harbor and the lighthouse mole; dated 1778 travel album; caption trimmed"
+  },
+  {
+   "n": 14,
+   "file": "Veduta generale di Palermo presa dal Monte Pellegrino.jpg",
+   "y": 1845,
+   "lab": "1845",
+   "what": "General view from Monte Pellegrino, etching",
+   "who": "Saverio Corsi",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.04,
+    0.07,
+    0.96,
+    0.87
+   ],
+   "focal": [
+    0.6,
+    0.55
+   ],
+   "why": "the city on the bay with the mountains of the Conca d’Oro; titles trimmed"
+  },
+  {
+   "n": 22,
+   "file": "BAAG-StAAG Palermo, Sicilien-1886 F.MG-1294.tif",
+   "y": 1886,
+   "lab": "1886",
+   "what": "Panorama from the Villa Belmonte, photograph",
+   "who": "Giorgio Sommer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.125,
+    0.135,
+    0.71,
+    0.745
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "photograph of the city along the bay; trimmed off the archive mount and color chart"
+  },
+  {
+   "n": 27,
+   "file": "Palermo skyline.jpg",
+   "y": 2016,
+   "lab": "2016",
+   "what": "The city from Monte Pellegrino, photograph",
+   "who": "Radek Kucharski",
+   "lic": "CC BY 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.35,
+    0.55
+   ],
+   "why": "high view over the city and the Conca d’Oro"
+  }
+ ],
+ "gaps": "P0: none. P2: only #10 (small colored bird’s-eye, dated only 1690–1729). P5: none (#25 is the Palermo district of Buenos Aires).",
+ "notes": "#17/#18 are Palermo park in Buenos Aires. #11 is the same Corografia plate as #13 (c. 1845), misattributed by LoC to 1765–80. #16 is from the Rijksmuseum’s 1778 ‘Voyage en Italie, en Sicile et à Malte’ album, probably by Louis Ducros; it shows the harbor more than the town, so drop it if a stricter second P3 is wanted. #22: the Aargau archive gives 1886, which may be the year the Gewerbemuseum acquired the print; Sommer could have made it some years earlier. #21 (Monte Pellegrino over the city from S. Maria di Gesù) is a stronger view but dated only ‘19th century’. P6 alternative: #26 (2008 panorama of center and port, but 6:1).",
+ "_reviewed": true
+}

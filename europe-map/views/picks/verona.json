@@ -1,0 +1,113 @@
+{
+ "city": "Verona",
+ "picks": [
+  {
+   "n": 9,
+   "file": "Magnifica illa civitas Verona ; Colonia augusta Verona nova gallieniana - btv1b53178837t (1 of 2).jpg",
+   "y": 1581,
+   "lab": "1581",
+   "what": "View of the town, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 3 (colored copy, BnF)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.09,
+    0.19,
+    0.925,
+    0.475
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "colored general view of the walled city and its hills; upper view of the plate, plan below cut; dated by plate (vol. 3), not the 1645 sheet"
+  },
+  {
+   "n": 10,
+   "file": "Caspar van Wittel Veduta di Verona.jpg",
+   "y": 1715,
+   "lab": "1710s",
+   "what": "The Adige at San Giorgio in Braida, painting",
+   "who": "Gaspar van Wittel",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.025,
+    0.98,
+    0.97
+   ],
+   "focal": [
+    0.55,
+    0.6
+   ],
+   "why": "high-resolution color view; San Giorgio’s dome and Castel San Pietro clear; signature read as 1710 or 1719, hence ‘1710s’"
+  },
+  {
+   "n": 16,
+   "file": "William Marlow (1740-1813) - View of Verona (after Bernardo Bellotto) - P.1947.LF.241 - Courtauld Gallery.jpg",
+   "y": 1770,
+   "lab": "1768–71",
+   "what": "The Adige from the Ponte Nuovo, painting after Bernardo Bellotto (Courtauld Gallery)",
+   "who": "William Marlow",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.42,
+    0.5
+   ],
+   "why": "general view with Castel San Pietro and the Sant’Anastasia bell tower; a copy of Bellotto’s 1740s composition, 1200 px wide"
+  },
+  {
+   "n": 22,
+   "file": "The Arena, Verona, Italy-LCCN2001701085.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Arena and the city, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.035,
+    0.97,
+    0.93
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "Arena in front of the rooftops and hills, Torre dei Lamberti at left; says ‘Verona’ at once"
+  },
+  {
+   "n": 36,
+   "file": "View of Verona (1).jpg",
+   "y": 2021,
+   "lab": "2021",
+   "what": "The Adige and the old town from Castel San Pietro, photograph",
+   "who": "Krzysztof Golik",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.65,
+    0.5
+   ],
+   "why": "recent sharp panorama; river bend, Sant’Anastasia and Torre dei Lamberti"
+  }
+ ],
+ "gaps": "P0: nothing (#1 is an 18th-century Van Kessel drawing; ‘1410’ is a shelfmark). P5: only an amateur 1935 watercolor of Castel San Pietro.",
+ "notes": "#3, #5, #6, #7 are ‘Verona nunc Bonna’, i.e. Bonn — excluded. P2 alternative: #12 Bellotto, the Adige from the Ponte Nuovo (Dresden, 1747–48; only 1158 px); #11 Bellotto, Castelvecchio and Ponte Scaligero (1745–46). P3 alternative: #19/#20 Harding after Bonington, Corso Sant’Anastasia lithograph 1830 (street scene, portrait format). Skipped #18 (Schütze after Pezoldt, dated only 1835–60) and #17 (Guardi capriccio, not a Verona view). P4 alternatives: #21 general view along the Adige, #23 Ponte Pietra. #30 Joachim Lutz 1935 watercolor skipped as weak.",
+ "_reviewed": true
+}

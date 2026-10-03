@@ -1,0 +1,92 @@
+{
+ "city": "Magdeburg",
+ "picks": [
+  {
+   "n": 6,
+   "file": "Magdeburgum - btv1b531788761 (1 of 2).jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1 (colored copy, BnF)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.04,
+    0.945,
+    0.955
+   ],
+   "focal": [
+    0.5,
+    0.3
+   ],
+   "why": "colored bird’s-eye view of the walled old town, Neustadt and the Elbe; dated by plate (vol. 1), not the 1645 sheet"
+  },
+  {
+   "n": 10,
+   "file": "Magdeburg-1640-Merian.jpg",
+   "y": 1653,
+   "lab": "1653",
+   "what": "View across the Elbe, engraving from Merian’s Topographia Saxoniae Inferioris",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.055,
+    0.975,
+    0.935
+   ],
+   "focal": [
+    0.38,
+    0.55
+   ],
+   "why": "true profile view with the cathedral and the Elbe bridges; cleanest copy of the plate (#15 is the same plate from the 1653 volume)"
+  },
+  {
+   "n": 22,
+   "file": "View from the Citadel, Magdeburg, Germany, Saxony-Anhalt, Germany-LCCN2002720635.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The cathedral across the Elbe from the Citadel, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.12,
+    1,
+    0.93
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "the classic Magdeburg view, in color; caption cut"
+  },
+  {
+   "n": 30,
+   "file": "Magdeburg Blick über die Elbe zum Magdeburger Dom.jpg",
+   "y": 1929,
+   "lab": "1929",
+   "what": "The cathedral across the Elbe, photograph",
+   "who": "Rudolf Hatzold",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    0.996,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "clear view of the cathedral and riverfront before the 1945 destruction"
+  }
+ ],
+ "gaps": "P0: Nuremberg Chronicle woodcut is a stock block also used for Paris and Tarvisio. P3: no candidates. P6: only 2020 drone views over Buckau; the historic center is lost in the haze.",
+ "notes": "#10’s Commons date ‘1640’ has no source; the plate appears in Topographia Saxoniae Inferioris (1653, see #15), so dated by that volume. If the reviewer can confirm an earlier 1640 printing it would move to P1 and duplicate the period. It may show the city as before the 1631 sack. P1 alternatives: #4 (bright colored copy, 3000 px), #9 UBHD (gutter in the middle). P4 alternatives: #21 general view with the Elbe bridge, #18 stereo photograph of the cathedral and Elbe (1860–66).",
+ "_reviewed": true
+}

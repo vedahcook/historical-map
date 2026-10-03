@@ -1,0 +1,92 @@
+{
+ "city": "Zagreb",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Bakrorez panorame Zagreba iz 1822.jpg",
+   "y": 1822,
+   "lab": "1822",
+   "what": "Prospect of the city from the south, copper engraving on Bishop Verhovac’s map of the Zagreb diocese (Zagreb City Museum)",
+   "who": "Ferencz Karacz after Josip Szemán",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.034,
+    0.106,
+    0.925,
+    0.76
+   ],
+   "focal": [
+    0.4,
+    0.6
+   ],
+   "why": "general view of Kaptol and Gradec on their hills; border and legend cut"
+  },
+  {
+   "n": 2,
+   "file": "Agram, Capital Palace, with Maria Statue, by Fernkorn, Croatia, Austro-Hungary-LCCN2002710734.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Kaptol Square and the Virgin Mary column, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.01,
+    0.99,
+    0.95
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "color market scene at the Marian column by Fernkorn; caption strip cut"
+  },
+  {
+   "n": 5,
+   "file": "ETH-BIB-Zagreb-Weitere-LBS MH02-48-0079.tif",
+   "y": 1934,
+   "lab": "1932–36",
+   "what": "The cathedral and the city center, aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.65
+   ],
+   "why": "oblique aerial with the twin-spired cathedral in front"
+  },
+  {
+   "n": 8,
+   "file": "Vista de Zagreb, Croacia, 2014-04-13, DD 01.JPG",
+   "y": 2014,
+   "lab": "2014",
+   "what": "View over the rooftops to the cathedral, photograph",
+   "who": "Diego Delso",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.62,
+    0.55
+   ],
+   "why": "sharp color view with the cathedral spires above red roofs"
+  }
+ ],
+ "gaps": "P0, P1, P2: no candidates.",
+ "notes": "#2’s Commons title says ‘Capital Palace’, but the print caption reads ‘Kapitelplatz mit Mariensäule’ (Kaptol Square). P4 alternative: #3 (Academy Palace with the St. George monument, same series). #6 is a second Mittelholzer aerial taken moments apart, showing more of the city around the cathedral.",
+ "_reviewed": true
+}

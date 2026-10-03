@@ -1,0 +1,29 @@
+{
+ "city": "Veliky Novgorod",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Velikiy Novgorod Detinets aerial 4.jpg",
+   "y": 2021,
+   "lab": "2021",
+   "what": "The Kremlin (Detinets) and the Volkhov River, aerial photograph",
+   "who": "SadPetzl",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.4
+   ],
+   "why": "sharp color aerial; kremlin walls, St. Sophia’s Cathedral, bridge and river all recognizable"
+  }
+ ],
+ "gaps": "P0–P5: nothing usable",
+ "notes": "Only 2 candidates. #1 (market view, Rijksmuseum print) is dated only “between 1800 and 1899”, so skipped.",
+ "_reviewed": true
+}

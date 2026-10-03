@@ -1,0 +1,29 @@
+{
+ "city": "Minsk",
+ "picks": [
+  {
+   "n": 10,
+   "file": "View of Minsk (180819) 01.jpg",
+   "y": 2019,
+   "lab": "2019",
+   "what": "View of the city center from the park by the Hotel Belarus, photograph",
+   "who": "Homoatrox",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "sharp color skyline view; best of the modern photos (the National Library series is dim sunset views of outer districts)"
+  }
+ ],
+ "gaps": "P0–P5: nothing usable",
+ "notes": "Only 10 candidates. #1 and #2 are 1918 German archive cards showing groups of officers, not the city; #3 (1944) and #4 (1939) are vertical aerial photos that read like maps.",
+ "_reviewed": true
+}

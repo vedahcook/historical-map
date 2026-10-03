@@ -1,0 +1,41 @@
+{
+ "city": "Bari",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.025,
+     0.388,
+     0.975,
+     0.8
+    ]
+   },
+   "reason": "Genuine 1778 Bari harbor watercolor; the drawn border lines at the top and bottom were inside the trim. Maker is not in the (truncated) record; Louis Ducros is the usual attribution for this Rijksmuseum album."
+  },
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.045,
+     0.07,
+     0.935,
+     0.86
+    ]
+   },
+   "reason": "Right view and date; about 2 px of paper margin at the left edge was inside the crop."
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "Le Cento Città d’Italia woodcut of Bari, 1888; clean edges, good bird’s-eye view."
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "Touring Club Italiano photo of 1936 from the cathedral bell tower; mount edges are outside the trim."
+  }
+ ]
+}

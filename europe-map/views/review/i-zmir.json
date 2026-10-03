@@ -1,0 +1,47 @@
+{
+ "city": "İzmir",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0,
+     1,
+     0.62
+    ],
+    "focal": [
+     0.68,
+     0.5
+    ]
+   },
+   "reason": "Trim bottom still includes the top edge of the reception pavilion roof (dark band at the foot of the crop); cut higher. Date is a wide range (consul’s term) but within P2 and honestly labeled."
+  },
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "Knop 1779, Rijksmuseum; description confirms Smyrna and Kadifekale; crop clean."
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "Dated 8 June 1829; caption strip excluded."
+  },
+  {
+   "n": 16,
+   "verdict": "ok",
+   "reason": "Bedford, 18 May 1862; good general view over the roofs to the bay."
+  },
+  {
+   "n": 23,
+   "verdict": "ok",
+   "reason": "Weak composition but titled harbor of Smyrna, Dec. 1924, with fire-damaged quay buildings; only ordinary view for P5."
+  },
+  {
+   "n": 26,
+   "verdict": "ok",
+   "reason": "Gagnon 2014 from Kadifekale; sharp, credit and license match."
+  }
+ ]
+}

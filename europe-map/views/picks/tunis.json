@@ -1,0 +1,113 @@
+{
+ "city": "Tunis",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Civitates orbis terrarum. De praecipuis totius universi urbibus. Liber secundus (page 124).jpg",
+   "y": 1575,
+   "lab": "1575",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 2",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.138,
+    0.142,
+    0.882,
+    0.395
+   ],
+   "focal": [
+    0.4,
+    0.45
+   ],
+   "why": "colored panorama of the city and kasbah drawn on Charles V’s 1535 campaign; trimmed to the Tunis panel (the plate also shows Mahdia and Peñón de Vélez)"
+  },
+  {
+   "n": 11,
+   "file": "Vue de Tunis - btv1b53143340j.jpg",
+   "y": 1713,
+   "lab": "1708–19",
+   "what": "Engraving in Henri Abraham Chatelain’s Atlas historique",
+   "who": "Henri Abraham Chatelain",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.16,
+    0.12,
+    0.815,
+    0.9
+   ],
+   "focal": [
+    0.55,
+    0.4
+   ],
+   "why": "colored view labeled Tunis: walled city on its slope beyond the lake, with a harbor fort; ornamental frame mostly cut"
+  },
+  {
+   "n": 12,
+   "file": "Tunis, from the Saneeah Eftoor GAC 17669.jpg",
+   "y": 1840,
+   "lab": "about 1840",
+   "what": "Steel engraving after Sir Grenville Temple (Government Art Collection)",
+   "who": "Charles Bentley and James Sands, after Sir Grenville Temple",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.065,
+    0.085,
+    0.94,
+    0.84
+   ],
+   "focal": [
+    0.68,
+    0.55
+   ],
+   "why": "hand-colored view toward the white city with domes and minarets; margins and caption cut"
+  },
+  {
+   "n": 14,
+   "file": "Flickr - …trialsanderrors - View from Paris Hotel, Tunis, Tunisia, ca. 1899.jpg",
+   "y": 1899,
+   "lab": "about 1899",
+   "what": "View over the medina from the Hôtel de Paris, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "CC BY 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.35
+   ],
+   "why": "color general view over the roofs of the medina to the Zitouna minaret"
+  },
+  {
+   "n": 25,
+   "file": "ETH-BIB-Grosse Moschee von Tunis-Mittelmeerflug 1928-LBS MH02-04-0163.tif",
+   "y": 1928,
+   "lab": "1928",
+   "what": "The Zitouna Mosque minaret above the medina, photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.55
+   ],
+   "why": "the city’s best-known landmark with the medina roofs stretching to the lake"
+  }
+ ],
+ "gaps": "P0: no candidates; P6: no modern photograph among the candidates (every “2007” file is an upload of an 1899 photochrom)",
+ "notes": "#1: Braun and Hogenberg print Johann Maior’s (Jan Vermeyen’s) panorama made during the 1535 siege; horsemen skirmish in the foreground but the city is intact, so not marked as an event. #4 is an uncolored, larger scan of the same panel. #11: the BnF record dates it 1708, but the plate is marked Tome VI of the Atlas historique, which is usually dated 1719; the view is a stylized copy from older sources, so drop it if a firmer P2 is wanted (#9, Nooms’s 1660s painting, shows only a low coast with forts, probably La Goulette). #12: Commons gives 1840 and the Government Art Collection says Temple’s book appeared in 1843; the plate may first have appeared in Fisher’s Shores and Islands of the Mediterranean (1840). #14 is a Library of Congress photochrom; its Commons copy carries a Flickr CC BY 2.0 license (#28 is a smaller framed copy). P5 alternatives: #22 (1932, roofs of the medina toward Bou Kornine) and #27 (1928, aerial view of the medina).",
+ "_reviewed": true
+}

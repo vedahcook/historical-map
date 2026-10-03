@@ -1,0 +1,113 @@
+{
+ "city": "Toulouse",
+ "picks": [
+  {
+   "n": 3,
+   "file": "MPD-2005-Colignon-Vue panoramique de Toulouse-1642.jpg",
+   "y": 1642,
+   "lab": "1642",
+   "what": "Panorama from the Bazacle mills, engraving (Musée Paul-Dupuy, Toulouse)",
+   "who": "Colignon",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.04,
+    0.99,
+    0.94
+   ],
+   "focal": [
+    0.22,
+    0.5
+   ],
+   "why": "true panorama: Bazacle mills, ramparts, Saint-Sernin tower, Garonne"
+  },
+  {
+   "n": 10,
+   "file": "Thoulouse (Toulouse) - btv1b10661093k.jpg",
+   "y": 1661,
+   "lab": "1661",
+   "what": "Engraving in Merian’s Topographia Galliae (BnF)",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.06,
+    0.98,
+    0.84
+   ],
+   "focal": [
+    0.35,
+    0.6
+   ],
+   "why": "view from the river with numbered landmarks; cleaner copy of the 1642 view"
+  },
+  {
+   "n": 18,
+   "file": "Capitol Place, Toulouse, France, ca. 1895.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Place du Capitole, photochrom print",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.95
+   ],
+   "focal": [
+    0.6,
+    0.4
+   ],
+   "why": "color; Capitole and square with horse trams, unmistakably Toulouse"
+  },
+  {
+   "n": 22,
+   "file": "15.02.1961.Vues aériennes de Toulouse. (1961) - 53Fi3061.jpg",
+   "y": 1961,
+   "lab": "1961",
+   "what": "The Garonne and its bridges, aerial photograph (Toulouse city archives)",
+   "who": "André Cros",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.15,
+    1,
+    1
+   ],
+   "focal": [
+    0.48,
+    0.5
+   ],
+   "why": "Pont-Neuf and the river through the old town clearly visible"
+  },
+  {
+   "n": 30,
+   "file": "Vue aérienne Toulouse.jpg",
+   "y": 2015,
+   "lab": "2015",
+   "what": "Aerial photograph from an airplane",
+   "who": "Handelsgeselschaft",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.08,
+    0.65,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "whole city with the Garonne bends; airplane wing trimmed off"
+  }
+ ],
+ "gaps": "P0: nothing (#1 is a bishop portrait). P2 covered only by Merian’s copy of the 1642 view. P3: nothing with a reliable date.",
+ "notes": "#10 Merian date: Topographia Galliae parts appeared 1655–1661; exact part year unknown, hence ‘about 1660’. #11 (Vue de Toulouse, Baugean after De Veze, Ostervald) skipped: museum dates it 1779–1830 and the caption names the Haute-Garonne department, so it is after 1790 and the 1779 date is wrong; it could fill P3 as ‘about 1815–20’ if the reviewer can date the Ostervald series. #17 (Garonne general view, 1890s) is a good alternative for P4 but the city is a thin strip. #6–8 show the Hôtel de la Vrillière (Hôtel de Toulouse) in Paris, not Toulouse. #2/#4/#5 (Thomas Aquinas procession, 1610) have only a generic town in the background. P6 is weak (window shot from a plane); a ground-level photo of the old town would be better if one can be found.",
+ "_reviewed": true
+}

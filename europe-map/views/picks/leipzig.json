@@ -1,0 +1,113 @@
+{
+ "city": "Leipzig",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Georg Braun & Frans Hogenberg - Dresden and Leipzig.jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "View of the walled city, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.056,
+    0.545,
+    0.944,
+    0.922
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "bright colored copy; trimmed to the ‘Leipzigk’ panel (Dresden above cut); walls, Pleissenburg and church towers"
+  },
+  {
+   "n": 14,
+   "file": "Gezicht op Leipzig Die statt Leijptzig (titel op object), RP-P-2018-979.jpg",
+   "y": 1657,
+   "lab": "1657",
+   "what": "Bird’s-eye view, engraving (Rijksmuseum)",
+   "who": "unknown engraver, published by Frederik de Wit",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.066,
+    0.09,
+    0.94,
+    0.78
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "detailed bird’s-eye view of the walled city with its churches and castle; key and margins cut"
+  },
+  {
+   "n": 19,
+   "file": "BECHSTEIN(1844) p228 Blick auf Leipzig.jpg",
+   "y": 1844,
+   "lab": "1844",
+   "what": "General view across the meadows, engraving in Bechstein’s Album der Haupt- und Residenzstädte Europa’s",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.02,
+    0.98,
+    0.875
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "whole skyline with the town hall tower and church towers; title cut"
+  },
+  {
+   "n": 26,
+   "file": "Market place and Hotel de Ville, Leipsig (i.e., Leipzig), Saxony, Germany-LCCN2002720591.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The market square and the Old Town Hall, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.02,
+    0.985,
+    0.94
+   ],
+   "focal": [
+    0.6,
+    0.4
+   ],
+   "why": "the city’s signature square in color; border and caption cut"
+  },
+  {
+   "n": 40,
+   "file": "Leipzig-Germany-September-2012.jpg",
+   "y": 2012,
+   "lab": "2012",
+   "what": "View over the old town, photograph",
+   "who": "Acediscovery",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.5
+   ],
+   "why": "sharp high view over the center’s roofs with St. Thomas Church"
+  }
+ ],
+ "gaps": "P0: no candidates; P5: nothing usable (cloud shots, wartime aerials, a Taunus postcard)",
+ "notes": "#14 bears Frederik de Wit’s imprint; the Rijksmuseum dates the plate 1657, and its composition copies the 1617 Braun and Hogenberg bird’s-eye view (#1, #7), which I passed over for P1 so the two picks don’t repeat one view. Alternative for P1 if preferred: #1 (1617 colored bird’s-eye, 1683 px). P3 alternatives: #18 (1846 panorama from Niesens Haus, a very long strip) and #20 (1815 aquatint of the Grimma suburb after the battle, would need event:true).",
+ "_reviewed": true
+}

@@ -1,0 +1,65 @@
+{
+ "city": "Granada",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.06,
+     0.07,
+     0.95,
+     0.925
+    ],
+    "focal": [
+     0.55,
+     0.37
+    ]
+   },
+   "reason": "hand-colored yellow border and plate frame show along all four edges of the crop; trim to the plate"
+  },
+  {
+   "n": 11,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.095,
+     0.14,
+     0.905,
+     0.835
+    ],
+    "focal": [
+     0.38,
+     0.6
+    ]
+   },
+   "reason": "crop includes plate frame lines, the colored margin at the right and the start of the caption at the bottom; trim inside the plate"
+  },
+  {
+   "n": 13,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.54,
+     0.385
+    ]
+   },
+   "reason": "top of the woman’s head is cut at the bottom of the crop; move the crop up so it shows the towers between the columns only"
+  },
+  {
+   "n": 21,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 27,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 35,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

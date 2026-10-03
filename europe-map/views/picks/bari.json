@@ -1,0 +1,92 @@
+{
+ "city": "Bari",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Gezicht op de haven van Bari aan de zuidkant Vue du port de Bari, du côté du Midi (titel op object) Voyage en Italie, en Sicile et à Malte - 1778 (serietitel), RP-T-00-492-59B.jpg",
+   "y": 1778,
+   "lab": "1778",
+   "what": "The town from the harbor on the south side, watercolor (Rijksmuseum)",
+   "who": "Louis Ducros",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.025,
+    0.388,
+    0.975,
+    0.8
+   ],
+   "focal": [
+    0.42,
+    0.4
+   ],
+   "why": "color; walls, domes and bell tower of the old town behind beached boats; dated 1778 travel album; color chart and sheet margins cut"
+  },
+  {
+   "n": 1,
+   "file": "Veduta di Bari, capoluogo della provincia.jpg",
+   "y": 1845,
+   "lab": "1845",
+   "what": "The town from the harbor, engraving",
+   "who": "Antonio Verico",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.045,
+    0.07,
+    0.935,
+    0.86
+   ],
+   "focal": [
+    0.6,
+    0.55
+   ],
+   "why": "general waterfront view with domes and the tall bell tower; 67 years after the 1778 view; caption and plate number cut"
+  },
+  {
+   "n": 7,
+   "file": "Panorama del Porto Nuovo di Bari (xilografia).jpg",
+   "y": 1888,
+   "lab": "1888",
+   "what": "The old town and the new harbor, wood engraving in Le Cento Città d’Italia",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "high bird’s-eye view over the flat roofs of the old town to the harbor moles and ships; sharper and clearer than #8"
+  },
+  {
+   "n": 11,
+   "file": "Photo View of the eastern side of the city of Bari taken from the bell tower of the Cathedral 1936 - Touring Club Italiano s05986-01.jpg",
+   "y": 1936,
+   "lab": "1936",
+   "what": "The eastern side of the city from the cathedral bell tower, photograph (Touring Club Italiano)",
+   "who": "unknown photographer",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.015,
+    0.02,
+    0.985,
+    0.98
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "dated general view over the old town roofs, the domes and the waterfront; mount edges cut"
+  }
+ ],
+ "gaps": "P0, P1, P2: no candidates. P6: nothing usable (two railway station platforms; #15–#18 are places called Bari in India).",
+ "notes": "The 1778 Rijksmuseum album ‘Voyage en Italie, en Sicile et à Malte’ is usually credited to Louis Ducros (the Commons record names only the Rijksmuseum). P3 alternative: #2, the same album’s view of the town point from the inn window with the cathedral bell tower (gray wash, not as wide). #8 (1888, Molo Vecchio) is the same series as #7 and also fine. Skipped #10 and #12 (single buildings) and #3, #5, #6 (harbor and shipyard scenes with little of the town).",
+ "_reviewed": true
+}

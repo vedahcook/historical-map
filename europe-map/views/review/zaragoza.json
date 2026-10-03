@@ -1,0 +1,50 @@
+{
+ "city": "Zaragoza",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "Mazo painting, Prado, 1647"
+  },
+  {
+   "n": 10,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.125,
+     0.14,
+     0.89,
+     0.83
+    ]
+   },
+   "reason": "plate edge line at left and paper strip at right inside trim"
+  },
+  {
+   "n": 17,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.13,
+     0.02,
+     0.875,
+     0.89
+    ],
+    "focal": [
+     0.44,
+     0.37
+    ]
+   },
+   "reason": "paper edge at left and right inside trim; spire tip clipped by 16:9 window"
+  },
+  {
+   "n": 16,
+   "verdict": "ok",
+   "reason": "Ebro and Pilar photochrom, clean crop"
+  },
+  {
+   "n": 23,
+   "verdict": "ok",
+   "reason": "Paseo de la Independencia, 1925 magazine photo, clean crop"
+  }
+ ]
+}

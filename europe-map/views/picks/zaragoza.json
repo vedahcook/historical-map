@@ -1,0 +1,113 @@
+{
+ "city": "Zaragoza",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Vista de Zaragoza en 1647.jpg",
+   "y": 1647,
+   "lab": "1647",
+   "what": "View across the Ebro, painting (Museo del Prado)",
+   "who": "Juan Bautista Martínez del Mazo",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "famous color panorama; stone bridge, Pilar and Seo along the river"
+  },
+  {
+   "n": 10,
+   "file": "Vista de Zaragoza 02.jpg",
+   "y": 1820,
+   "lab": "about 1820",
+   "what": "The stone bridge and the Pilar, lithograph",
+   "who": "Louis-Albert-Guislain Bacler d’Albe and Godefroy Engelmann",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.125,
+    0.14,
+    0.89,
+    0.83
+   ],
+   "focal": [
+    0.65,
+    0.55
+   ],
+   "why": "colored; bridge and Pilar domes recognizable"
+  },
+  {
+   "n": 17,
+   "file": "1850, España artística y monumental, vistas y descripción de los sitios y monumentos más notables de españa, vol 3, Yglesia de San Pablo en Zaragoza.jpg",
+   "y": 1850,
+   "lab": "1850",
+   "what": "The Church of San Pablo, lithograph in España artística y monumental, vol. 3",
+   "who": "Genaro Pérez Villaamil and Alfred Guesdon",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.13,
+    0.02,
+    0.875,
+    0.89
+   ],
+   "focal": [
+    0.44,
+    0.37
+   ],
+   "why": "fine street scene with the Mudéjar tower; 45 years before the photochrom"
+  },
+  {
+   "n": 16,
+   "file": "Zaragoza. Rio Ebro y Nuestra Senora del Pilar LCCN2017660909.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Ebro and the Basilica del Pilar, photochrom print (Library of Congress)",
+   "who": "Photoglob Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.025,
+    0.98,
+    0.97
+   ],
+   "focal": [
+    0.6,
+    0.4
+   ],
+   "why": "color; the city’s signature view with bridge and basilica"
+  },
+  {
+   "n": 23,
+   "file": "1925 REVISTA VIAJES 12.jpg",
+   "y": 1925,
+   "lab": "about 1925",
+   "what": "Paseo de la Independencia, photograph (La Revista de Viajes)",
+   "who": "Hauser y Menet",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "main arcaded boulevard; motor vehicles fit the 1925 date"
+  }
+ ],
+ "gaps": "P0: nothing. P2: nothing. P6: nothing — all modern candidates are other towns in the province (Cariñena, Moros, Valpalmas, Calatayud, Tarazona).",
+ "notes": "#10 is Bacler d’Albe’s lithograph (Engelmann), numbered in his Souvenirs pittoresques series, published about 1818–24; Commons gives 1824 from the uploader, hence ‘about 1820’. #17 is the optional second P4 (single landmark church); drop it if only general views are wanted for that slot. P1 alternative: #4 Wyngaerde drawing 1563 (general view, low resolution). P3 alternatives: #11 Westall distant view (London, J. Murray, 1820s), #9 Laborde distant view. Event views of the 1808–09 sieges (#12 Santa Engracia ruins, #21 Calle del Coso) not used. #19 albumen photo is dated only ‘before 1880’. #23 is from a 1925 magazine; the photo itself may be a few years older. #25 (La Seo, same magazine) is an alternative for P5. A modern photo of the Pilar and the Ebro is needed for P6.",
+ "_reviewed": true
+}

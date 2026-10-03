@@ -1,0 +1,64 @@
+{
+ "city": "Valladolid",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "replace",
+   "replace_with": 6,
+   "fix": {
+    "trim": [
+     0.02,
+     0.075,
+     0.98,
+     0.9
+    ],
+    "focal": [
+     0.55,
+     0.5
+    ],
+    "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1 (colored copy, Heidelberg University Library)"
+   },
+   "reason": "#5 is a two-page spread: the gutter fold runs through the view, an orange frame line sits at the bottom, and the crop is under half the picture width; #6 is the single colored Valladolid view, dated 1572; fix fields are for #6"
+  },
+  {
+   "n": 9,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.108,
+     0.14,
+     0.893,
+     0.78
+    ]
+   },
+   "reason": "plate frame lines at left (x 50), top (row 50–51) and right (x 450) fell inside the trim"
+  },
+  {
+   "n": 11,
+   "verdict": "drop",
+   "reason": "interior courtyard of one building, not a view of the city; no general view in the period, so leave P3 blank"
+  },
+  {
+   "n": 13,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.02,
+     0.022,
+     0.98,
+     0.97
+    ],
+    "focal": [
+     0.47,
+     0.38
+    ]
+   },
+   "reason": "crop cut off the cross and top ornaments of the central tower; moving the focal up keeps the tower top and still includes the façade base"
+  },
+  {
+   "n": 21,
+   "verdict": "ok",
+   "reason": "roofs of the center with the Torozos hills; weak but best P6 option"
+  }
+ ]
+}

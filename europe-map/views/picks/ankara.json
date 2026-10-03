@@ -1,0 +1,71 @@
+{
+ "city": "Ankara",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Gezicht op Ankara Rijksmuseum SK-A-2055.jpeg",
+   "y": 1750,
+   "lab": "about 1750",
+   "what": "The walled city above the mohair workshops and market, painting (Rijksmuseum)",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "the only early view: citadel hill and walls in color; larger copy than #2 (same painting)"
+  },
+  {
+   "n": 5,
+   "file": "CH-NB - Türkei, Ankara- Stadtansicht - Annemarie Schwarzenbach - SLA-Schwarzenbach-A-5-02-073.jpg",
+   "y": 1933,
+   "lab": "1933–34",
+   "what": "View over the new town being built, photograph (Swiss National Library)",
+   "who": "Annemarie Schwarzenbach",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.01,
+    0.955,
+    0.985
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "the young capital’s new quarter of villas and building sites against the hills; dark edges cut"
+  },
+  {
+   "n": 14,
+   "file": "Vista de Ankara, Turquía, 2024-10-02, DD 05-07 HDR.jpg",
+   "y": 2024,
+   "lab": "2024",
+   "what": "View from the castle over the old town to the modern center, photograph",
+   "who": "Diego Delso",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "sharp sunset view with the castle walls, old houses, a minaret and the high-rise skyline"
+  }
+ ],
+ "gaps": "P0, P1, P4: no candidates; P2/P3: only the one undated 18th-century painting",
+ "notes": "#1 is dated only ‘18th century’ by the Rijksmuseum (1700–1799), so y is the midpoint 1750 and the label says ‘18th century’; drop it if that is too loose, though it is the only pre-1930 view. #4 (1933–34, toward the citadel hill) is half blocked by a man’s silhouette. P6 alternative: #9 (2018, the castle with its flag above old houses).",
+ "_reviewed": true
+}

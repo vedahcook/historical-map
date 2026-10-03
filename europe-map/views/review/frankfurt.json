@@ -1,0 +1,78 @@
+{
+ "city": "Frankfurt am Main",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.012,
+     0.095,
+     0.99,
+     0.97
+    ]
+   },
+   "reason": "Latin banner text strip and plate frame line at top, frame at right inside crop"
+  },
+  {
+   "n": 11,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.02,
+     0.033,
+     0.98,
+     0.855
+    ],
+    "focal": [
+     0.53,
+     0.45
+    ]
+   },
+   "reason": "paper margin and double frame line at left, right and top inside crop; keep title line in window"
+  },
+  {
+   "n": 22,
+   "verdict": "ok",
+   "reason": "Städel painting; cathedral tower and Taunus, record matches"
+  },
+  {
+   "n": 18,
+   "verdict": "ok",
+   "reason": "Bamberger steel engraving, river view with cathedral and Old Bridge"
+  },
+  {
+   "n": 27,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.6,
+     0.47
+    ]
+   },
+   "reason": "tip of St. Nicholas spire touches top of crop; move window up slightly"
+  },
+  {
+   "n": 31,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0.03,
+     0.8,
+     0.86
+    ],
+    "focal": [
+     0.5,
+     0.5
+    ]
+   },
+   "reason": "hazy streak at lower right still inside crop; trim right and bottom"
+  },
+  {
+   "n": 40,
+   "verdict": "ok",
+   "reason": "sharp dusk skyline with cathedral"
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "city": "Rotterdam",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.07,
+     0.078,
+     0.93,
+     0.495
+    ],
+    "focal": [
+     0.5,
+     0.4
+    ]
+   },
+   "reason": "right coat of arms and a frame line were inside the crop; re-center on the town"
+  },
+  {
+   "n": 9,
+   "verdict": "fix",
+   "fix": {
+    "y": 1654,
+    "lab": "1654",
+    "trim": [
+     0.005,
+     0.05,
+     0.995,
+     0.935
+    ]
+   },
+   "reason": "same plate is dated 1654 by the Rijksmuseum (#7) and Ghent from the same Merian volume is dated 1654; 1659 is the later edition. Top paper strip and bottom frame line inside crop"
+  },
+  {
+   "n": 25,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.015,
+     0.015,
+     0.98,
+     0.985
+    ]
+   },
+   "reason": "dark photochrom border at right edge inside crop"
+  },
+  {
+   "n": 32,
+   "verdict": "ok",
+   "reason": "1930 KLM aerial, record matches"
+  },
+  {
+   "n": 37,
+   "verdict": "ok",
+   "reason": "Erasmus Bridge panorama, record matches"
+  }
+ ]
+}

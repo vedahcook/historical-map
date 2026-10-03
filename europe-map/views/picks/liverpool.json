@@ -1,0 +1,92 @@
+{
+ "city": "Liverpool",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Henry Freeman James (d.1823) - View of Liverpool, c.1811 - 55.411 - Merseyside Maritime Museum.jpg",
+   "y": 1811,
+   "lab": "about 1811",
+   "what": "The town and its waterfront from across the Mersey, painting (Merseyside Maritime Museum)",
+   "who": "Henry Freeman James",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.62
+   ],
+   "why": "only true general view of the early town; skyline with church spires and shipping; small file (1000 px)"
+  },
+  {
+   "n": 7,
+   "file": "St. George's Hall, Liverpool, England-LCCN2002696916.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "St. George’s Hall and Lime Street, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.026,
+    0.032,
+    0.972,
+    0.955
+   ],
+   "focal": [
+    0.4,
+    0.45
+   ],
+   "why": "the city’s best-known civic scene, with the Wellington Column and trams; white border cut"
+  },
+  {
+   "n": 18,
+   "file": "Liverpool, 1946.png",
+   "y": 1946,
+   "lab": "1946",
+   "what": "Aerial view of the city center (Britain from Above)",
+   "who": "Aerofilms",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.16,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "St. George’s Hall, St. John’s Gardens and Lime Street Station clearly seen; trim cuts a scratch along the left edge"
+  },
+  {
+   "n": 26,
+   "file": "A view of Liverpool from across the river - geograph.org.uk - 5478713.jpg",
+   "y": 2017,
+   "lab": "2017",
+   "what": "Liverpool and its Anglican Cathedral from across the Mersey, photograph",
+   "who": "Ian Greig",
+   "lic": "CC BY-SA 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.42,
+    0.5
+   ],
+   "why": "only modern skyline view among the candidates; cathedral tower dominates"
+  }
+ ],
+ "gaps": "P0–P2: no candidates",
+ "notes": "P3: Robert Salmon’s ‘A Packet off Liverpool’ (#3, 1809, larger file) is a ship portrait with the town hidden behind the ship; #2 is a color-inverted copy. P4: stereo views #12–13 have only a 1850–80 range. P5: 1924 aerials (#16, #17) are firmly dated and larger but show less recognizable parts of the center. P6: #21, #24, #25 are Liverpool Street station in London; #23 (Albert Dock) frames the Pier Head through columns.",
+ "_reviewed": true
+}

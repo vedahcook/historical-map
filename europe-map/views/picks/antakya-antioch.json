@@ -1,0 +1,92 @@
+{
+ "city": "Antakya (Antioch)",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Louis-François Cassas, Antioche, appeler par les Arabes Anthakyeh, Vue de la pote Bab El Medynah.jpg",
+   "y": 1799,
+   "lab": "1799",
+   "what": "The Bab el-Medineh gate seen from inside the city, engraving in Cassas’s Voyage pittoresque de la Syrie",
+   "who": "Louis-François Cassas",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.018,
+    0.035,
+    0.988,
+    0.872
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "true view drawn on site; only usable pre-1850 picture; caption trimmed"
+  },
+  {
+   "n": 4,
+   "file": "Antioch (Antakiyeh) and environs. View of Antioch from Mt. Silpius LOC matpc.02181.jpg",
+   "y": 1900,
+   "lab": "about 1900",
+   "what": "View from Mount Silpius over the town and plain, photograph (Matson Collection, Library of Congress)",
+   "who": "American Colony Photo Department",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.515,
+    0.12,
+    0.962,
+    0.93
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "general view from a height; stereo pair trimmed to the right half, which has no paper label"
+  },
+  {
+   "n": 11,
+   "file": "Panorama sur la plaine d'Antioche - A30021S.jpg",
+   "y": 1921,
+   "lab": "1921",
+   "what": "General view of the town, autochrome (Archives de la Planète)",
+   "who": "Frédéric Gadmer",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.04,
+    0.03,
+    0.965,
+    0.97
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "color general view; mosques and roofs with the hills behind; near-duplicate #10"
+  },
+  {
+   "n": 13,
+   "file": "View of Antakya.jpg",
+   "y": 2011,
+   "lab": "2011",
+   "what": "View over the city from the hillside, photograph",
+   "who": "maarten sepp",
+   "lic": "CC BY-SA 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "wide view of the whole city before the 2023 earthquake"
+  }
+ ],
+ "gaps": "P0, P1, P2: nothing usable (Merian #1 is an imagined siege of 1098; Drummond #3 is a sheet of architectural details)",
+ "notes": "Matson #6 is a better view but dated only 1898–1946, so skipped; #5 is a good view from the west but only 1024 px wide as a stereo pair; #12 (2023) shows earthquake damage only.",
+ "_reviewed": true
+}

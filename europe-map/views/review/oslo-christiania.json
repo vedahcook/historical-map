@@ -1,0 +1,46 @@
+{
+ "city": "Oslo",
+ "checks": [
+  {
+   "n": 7,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.012,
+     0.005,
+     0.995,
+     1
+    ]
+   },
+   "reason": "Thin dark painting edge shows along the left side of the crop; otherwise a true view of Akershus and the town, dated 1699."
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "Clear view of the town across the bay from Ekeberg; crop fine."
+  },
+  {
+   "n": 18,
+   "verdict": "ok",
+   "reason": "Karl Johans gate with palace; caption strip excluded by the 16:9 crop. who follows series convention (record names only the collection)."
+  },
+  {
+   "n": 23,
+   "verdict": "ok",
+   "reason": "Color view over the harbor from Ekeberg; 1950s label sensible (Commons 1950-01-01 is a placeholder); person at the bottom edge is acceptable."
+  },
+  {
+   "n": 31,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0,
+     0.985,
+     1
+    ]
+   },
+   "reason": "Dark post at the right edge of the photo would show in the crop; trim it off."
+  }
+ ]
+}

@@ -1,0 +1,134 @@
+{
+ "city": "Lyon",
+ "picks": [
+  {
+   "n": 10,
+   "file": "Lugdunum - btv1b53178913k (1 of 2).jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1 (later colored copy, BnF)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.074,
+    0.123,
+    0.928,
+    0.877
+   ],
+   "focal": [
+    0.42,
+    0.52
+   ],
+   "why": "colored bird’s-eye view; Saône, Rhône and the peninsula clear; dated by plate (vol. 1), not the 1645 sheet"
+  },
+  {
+   "n": 13,
+   "file": "Prosp de la Ville de Lyon du Coste de Occidens, objectnr A 57403.jpg",
+   "y": 1655,
+   "lab": "about 1655",
+   "what": "View from the west, engraving from Merian’s Topographia Galliae",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.03,
+    0.99,
+    0.415
+   ],
+   "focal": [
+    0.45,
+    0.6
+   ],
+   "why": "true profile view with the Fourvière hill and the Rhône bridge; upper of two views, key strip cut"
+  },
+  {
+   "n": 23,
+   "file": "William Marlow - View of the Saône and the Château Pierre-Scize (Lyon, France) - 39.9 - Minneapolis Institute of Arts.jpg",
+   "y": 1780,
+   "lab": "about 1780",
+   "what": "The Saône and the Château de Pierre-Scize, painting (Minneapolis Institute of Art)",
+   "who": "William Marlow",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.02,
+    0.98,
+    0.98
+   ],
+   "focal": [
+    0.3,
+    0.4
+   ],
+   "why": "color painting of a famous Lyon scene; Commons ‘1750’ is only the century, museum says late 18th century"
+  },
+  {
+   "n": 26,
+   "file": "The Hill of Fourvière from St. Antoine Quay, Lyon, France, ca. 1895 (3338114478).jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The hill of Fourvière from the Quai Saint-Antoine, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "CC BY 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.96
+   ],
+   "focal": [
+    0.6,
+    0.35
+   ],
+   "why": "basilica, metal tower and Palais de Justice across the Saône; the defining Lyon view"
+  },
+  {
+   "n": 33,
+   "file": "ETH-BIB-Lyon-Weitere-LBS MH02-23-0021.tif",
+   "y": 1934,
+   "lab": "1934",
+   "what": "Aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    0.93,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "clearest of the 1934 aerials: both rivers, the peninsula and Place Bellecour; trim cuts the dark wing edge"
+  },
+  {
+   "n": 43,
+   "file": "View of Lyon (5).jpg",
+   "y": 2024,
+   "lab": "2024",
+   "what": "Saint-Jean Cathedral and the Saône from Fourvière, photograph",
+   "who": "Tournasol7",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.62,
+    0.6
+   ],
+   "why": "recent high-resolution view; cathedral, river and peninsula instantly recognizable"
+  }
+ ],
+ "gaps": "P0: only a saint woodcut and a plague relief, no view",
+ "notes": "P1 alternative: #8 Hoefnagel profile view of Lyon (upper half of a Lyon/Vienne plate, B&H vol. 5). Marlow date ‘about 1770’ is an estimate (he toured France 1765–66); museum gives only ‘late 18th century’. #13 date from Topographia Galliae (1655–61); museum gives 1650–99. Skipped #18 (dated 1771–1816, too vague).",
+ "_reviewed": true
+}

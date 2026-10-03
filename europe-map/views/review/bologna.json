@@ -1,0 +1,66 @@
+{
+ "city": "Bologna",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.118,
+     0.145,
+     0.89,
+     0.875
+    ],
+    "focal": [
+     0.5,
+     0.42
+    ]
+   },
+   "reason": "crop includes the right-hand page margin and a strip of paper at the top; trim to the plate"
+  },
+  {
+   "n": 10,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.078,
+     0.025,
+     0.932,
+     0.855
+    ],
+    "focal": [
+     0.5,
+     0.33
+    ]
+   },
+   "reason": "crop includes the page margins and plate frame at both sides; trim to the plate and start the crop at the title block so no caption line is cut"
+  },
+  {
+   "n": 23,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.04,
+     0.095,
+     0.952,
+     0.905
+    ],
+    "focal": [
+     0.4,
+     0.35
+    ]
+   },
+   "reason": "strip of the album card shows at the right edge of the crop; trim inside the photo"
+  },
+  {
+   "n": 28,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 34,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

@@ -1,0 +1,92 @@
+{
+ "city": "Valencia",
+ "picks": [
+  {
+   "n": 1,
+   "file": "València el 1563, per Anton van den Wyngaerde.jpg",
+   "y": 1563,
+   "lab": "1563",
+   "what": "Panorama, drawing",
+   "who": "Anton van den Wyngaerde",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.03,
+    1,
+    0.97
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "true view drawn on the spot: walled city, cathedral and the Turia bridges"
+  },
+  {
+   "n": 4,
+   "file": "Gezicht op een plein in Valencia, RP-P-1907-2721.jpg",
+   "y": 1812,
+   "lab": "1812–14",
+   "what": "The Market Square with the Silk Exchange (Lonja), colored aquatint",
+   "who": "Louis Lecoeur",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.218,
+    0.206,
+    0.778,
+    0.726
+   ],
+   "focal": [
+    0.62,
+    0.55
+   ],
+   "why": "titled view of the Plaza del Mercado with the crenellated Lonja; only usable view between 1563 and the 1850s"
+  },
+  {
+   "n": 5,
+   "file": "València el 1832, per A. Guesdon.jpg",
+   "y": 1855,
+   "lab": "1850s",
+   "what": "Bird’s-eye view, lithograph",
+   "who": "Alfred Guesdon",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "superb color bird’s-eye view with the Turia, its bridges, the Serranos gate and the walled city; date corrected, see notes"
+  },
+  {
+   "n": 22,
+   "file": "Dalla Torre del Micalet cut.jpg",
+   "y": 2010,
+   "lab": "2010",
+   "what": "The old city from the Micalet tower, photograph",
+   "who": "Kiban",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0.08,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "historic center around the Plaça de la Reina from the cathedral tower; trim cuts the tower parapet"
+  }
+ ],
+ "gaps": "P0: none; P2: no candidates; P5: only tiny low-resolution stereo halves (#19, #20) with vague dates, and #17/#18 are not Valencia (#18 is Alicante)",
+ "notes": "Guesdon (#5): the file name and description say 1830s (from a website), but Guesdon’s Spanish bird’s-eye series dates from the 1850s (his Barcelona view in this batch is dated 1856) and the print shows a smoking railway-era chimney, so labeled ‘1850s’. If that correction is not accepted, use #9 (Plaza de la Seo with the cathedral and Micalet, color photochrom, 1890) or #13 (Esplugas panorama from a tower, 1888–92) for P4 instead. A second P4 view was not added because the photochroms (1890) are less than 40 years after the 1850s.",
+ "_reviewed": true
+}

@@ -1,0 +1,75 @@
+{
+ "city": "Lübeck",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.022,
+     0.04,
+     0.505,
+     0.94
+    ],
+    "focal": [
+     0.5,
+     0.3
+    ]
+   },
+   "reason": "Current crop leaves cream page margins top and bottom, cuts the 'LVBECA' label at the right edge and runs the book gutter (with a visible seam and vertical offset) through the middle; keep the left page of the woodcut only (twin spires, walls), which also keeps about half the width."
+  },
+  {
+   "n": 9,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.515,
+     0.078,
+     0.97,
+     0.918
+    ],
+    "focal": [
+     0.5,
+     0.4
+    ]
+   },
+   "reason": "Trim leaves the orange border frame on all sides and the gutter runs as a dark line through the middle of any decent crop; keep the right half of the strip (St. Mary's twin spires, St. Peter's, bastion, ships), trimmed inside the frame, focal high to leave out the title cartouche."
+  },
+  {
+   "n": 14,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.02,
+     0.03,
+     0.975,
+     0.96
+    ]
+   },
+   "reason": "Trim still includes the engraved frame line and a sliver of paper on every side; tighten to just inside the frame."
+  },
+  {
+   "n": 20,
+   "verdict": "ok",
+   "reason": "Lübeck photochrom general view; white margin and caption are outside the crop."
+  },
+  {
+   "n": 29,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.035,
+     0.045,
+     0.965,
+     0.948
+    ]
+   },
+   "reason": "Slivers of the cream postcard border remain at left, right and bottom; tighten slightly."
+  },
+  {
+   "n": 37,
+   "verdict": "ok",
+   "reason": "Holstentor and Salzspeicher from St. Petri, sharp; license and photographer match."
+  }
+ ]
+}

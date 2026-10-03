@@ -1,0 +1,134 @@
+{
+ "city": "Leiden",
+ "picks": [
+  {
+   "n": 8,
+   "file": "Kaart met stadsplattegrond van Leiden en omgeving, ingekleurd (1574).jpg",
+   "y": 1575,
+   "lab": "1575",
+   "what": "Bird’s-eye view of the walled town and its surroundings, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 2",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.24,
+    0.08,
+    0.86,
+    0.72
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "clean colored single sheet; town drawn with its houses inside the walls; trimmed toward the town, cartouche and outer countryside cut"
+  },
+  {
+   "n": 10,
+   "file": "Gezicht op Leiden Leyden (titel op object), RP-P-AO-10-18L.jpg",
+   "y": 1654,
+   "lab": "1654",
+   "what": "Profile view of the city, engraving in Merian’s Topographia Germaniae Inferioris",
+   "who": "Caspar Merian",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.035,
+    0.14,
+    0.965,
+    0.81
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "general view with the Pieterskerk, Hooglandse Kerk and town hall tower; firmly dated (Wüthrich NLB 97); sheet margins cut"
+  },
+  {
+   "n": 16,
+   "file": "Gezicht op de Hooglandse Kerk in Leiden De Hogelandsche Kerk - Eglise de Hogeland (titel op object), RP-P-1905-1020.jpg",
+   "y": 1832,
+   "lab": "1826–39",
+   "what": "The Hooglandse Kerk, lithograph (Rijksmuseum)",
+   "who": "J.B. Clermans, printed by Desguerrois & Co.",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.2,
+    0.235,
+    0.722,
+    0.72
+   ],
+   "focal": [
+    0.54,
+    0.45
+   ],
+   "why": "only usable view for this period; one of the city’s main churches; trimmed to the image, captions cut"
+  },
+  {
+   "n": 28,
+   "file": "Leiden - Stadhuis 1900.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The town hall on the Breestraat, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.97
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "the city’s best-known facade before the 1929 fire; cleaner copy of #25; caption strip cut"
+  },
+  {
+   "n": 31,
+   "file": "Leiden in vogelvlucht, Objectnr PV KRET70.jpg",
+   "y": 1927,
+   "lab": "1927",
+   "what": "View over the roofs along the Breestraat, photograph (Erfgoed Leiden)",
+   "who": "Willem Johannes Kret",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.012,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.4
+   ],
+   "why": "dated 5 June 1927, probably taken from the town hall tower; old town and a main church"
+  },
+  {
+   "n": 40,
+   "file": "Leiden Panorama 2.JPG",
+   "y": 2011,
+   "lab": "2011",
+   "what": "Canal in the historic center, photograph",
+   "who": "Arch",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.55
+   ],
+   "why": "sharp wide canal view with gabled houses; best modern general view among the candidates"
+  }
+ ],
+ "gaps": "P0: no real candidates (#1 is a 19th-century drawing misdated from its shelfmark)",
+ "notes": "P1: B&H Leiden is in vol. 2 (1575); the cartouche itself is dated 1574. P2: #12 (Doesburg after Blaeu) is a finer view but undated — ‘1723’ comes from the object number; #15 is a Blaeu profile with only the printer’s death year. P3: Rapenburg facade rows of 1807 (#19–21) are elevations, not views. P6: no skyline photo; Burcht photos (#36–38) are single-structure close-ups.",
+ "_reviewed": true
+}

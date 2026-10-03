@@ -1,0 +1,113 @@
+{
+ "city": "Glasgow",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Gezicht op Glasgow, RP-P-2018-1932.jpg",
+   "y": 1700,
+   "lab": "about 1700",
+   "what": "View from the south across the Clyde, engraving (Rijksmuseum)",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.04,
+    0.08,
+    0.93,
+    0.89
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "titled ‘Glascow’; old bridge, cathedral and Tolbooth steeples on the skyline; museum ID note cut"
+  },
+  {
+   "n": 3,
+   "file": "Perspective view of the City of Glasgow, in the county of Clydesdale (NYPL Hades-268405-1253246).tiff",
+   "y": 1760,
+   "lab": "1760",
+   "what": "View from the south across the Clyde, engraving (New York Public Library)",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.072,
+    0.095,
+    0.93,
+    0.81
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "titled general view with the old bridge and the cathedral spire; title strip and mount cut"
+  },
+  {
+   "n": 13,
+   "file": "Cathedral, Glasgow, Scotland-LCCN2001706003.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The cathedral from the Necropolis, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.02,
+    0.985,
+    0.975
+   ],
+   "focal": [
+    0.52,
+    0.42
+   ],
+   "why": "color view of the city’s oldest landmark with the Bridge of Sighs and Royal Infirmary; white border cut"
+  },
+  {
+   "n": 15,
+   "file": "Stobcross Quay and the Finnieston Crane - geograph.org.uk - 2182047.jpg",
+   "y": 1957,
+   "lab": "1957",
+   "what": "Stobcross Quay and the Finnieston Crane, photograph",
+   "who": "Ben Brooksbank",
+   "lic": "CC BY-SA 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.52,
+    0.4
+   ],
+   "why": "the port city’s emblem, the giant crane, with ships on the quay; dated to the day"
+  },
+  {
+   "n": 20,
+   "file": "View of Glasgow from Queens Park.jpg",
+   "y": 2008,
+   "lab": "2008",
+   "what": "View over the city from Queen’s Park, photograph",
+   "who": "John Lindie",
+   "lic": "CC BY 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "color general view with the University tower, the Clyde Arc and tenement roofs"
+  }
+ ],
+ "gaps": "P0: no candidates; P1: nothing usable (#1 is a 19th-century David Roberts lithograph wrongly filed as 16th century)",
+ "notes": "#2 is dated only 1650–1749 by the Rijksmuseum; it copies Slezer’s 1693 prospect from the south and looks like a plate from van der Aa’s Délices de la Grande Bretagne (1707), so ‘about 1700’ — drop it if that is too loose. Skipped #4 Trongate lithograph (dated only 1815–75) and #5 Joseph Swan street scene (street view, no landmarks). #16 1965 color skyline is crossed by window bars, so used the 1957 crane photo instead.",
+ "_reviewed": true
+}

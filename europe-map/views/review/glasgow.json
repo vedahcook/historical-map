@@ -1,0 +1,46 @@
+{
+ "city": "Glasgow",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.04,
+     0.08,
+     0.93,
+     0.89
+    ]
+   },
+   "reason": "Titled Glascow, view fits; plate border lines at right edge fall inside the trim; 'about 1700' is a fair reading of 1650-1749"
+  },
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.072,
+     0.095,
+     0.93,
+     0.81
+    ]
+   },
+   "reason": "Titled view of Glasgow, 1760 per record; plate border lines show at all four edges of the trim"
+  },
+  {
+   "n": 13,
+   "verdict": "ok",
+   "reason": "Cathedral from the Necropolis, Detroit Publishing record, 1890s; border cut correctly; spire inside the crop"
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "Finnieston Crane, dated to the day, license and maker match; crop is fine"
+  },
+  {
+   "n": 20,
+   "verdict": "ok",
+   "reason": "Sharp general view with University tower and Clyde Arc; record details match; crop fine"
+  }
+ ]
+}
