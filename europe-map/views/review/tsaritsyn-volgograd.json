@@ -1,0 +1,15 @@
+{
+ "city": "Volgograd",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "date about 1910 is an estimate from the pre-1918 spelling and postcard style, acceptable"
+  },
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "good view, crop and fields agree with the record"
+  }
+ ]
+}

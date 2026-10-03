@@ -1,0 +1,38 @@
+{
+ "city": "Nancy",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "replace",
+   "replace_with": 5,
+   "fix": {
+    "y": 1640,
+    "lab": "about 1640",
+    "trim": [
+     0.02,
+     0.035,
+     0.97,
+     0.905
+    ],
+    "focal": [
+     0.5,
+     0.5
+    ],
+    "what": "View of the town with a hunting party, etching after Jacques Callot (National Gallery of Art, Washington)",
+    "who": "after Jacques Callot",
+    "lic": "CC0"
+   },
+   "reason": "#1 is a street plan (new town drawn as flat blocks) and any 16:9 crop includes the title text, the legend list and the sheet edge. #5 is a true skyline view; NGA dates it 'in or after 1635', so y 1640 is an estimate (fix fields describe #5)"
+  },
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "True profile of the walled town; crop clears the caption; date about 1650 reasonable"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "Place Stanislas per the printed caption; crop is inside the plate"
+  }
+ ]
+}

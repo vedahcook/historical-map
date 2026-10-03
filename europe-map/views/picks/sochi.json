@@ -1,0 +1,29 @@
+{
+ "city": "Sochi",
+ "picks": [
+  {
+   "n": 6,
+   "file": "View of Sochi from Akhun.JPG",
+   "y": 2015,
+   "lab": "2015",
+   "what": "The central district from Mount Akhun, photograph",
+   "who": "SKas",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.1,
+    1,
+    0.92
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "only true general view: city spread along the Black Sea coast below the mountains"
+  }
+ ],
+ "gaps": "P0–P5: nothing",
+ "notes": "#1 and #2 carry a camera-default date (1899-11-30) but are modern snapshots of a park and a street; not period views. #3 is Lazarevskoye, a distant resort district, seen from the sea; #4 is a night photo from space; #5 is a closer, less telling view of the Svetlana district.",
+ "_reviewed": true
+}

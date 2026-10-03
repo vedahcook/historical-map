@@ -1,0 +1,92 @@
+{
+ "city": "Saint-Malo",
+ "picks": [
+  {
+   "n": 1,
+   "file": "John Sewell - View of St Malo in Britanny - B1998.14.631 - Yale Center for British Art.jpg",
+   "y": 1794,
+   "lab": "1794",
+   "what": "Engraving in the European Magazine (Yale Center for British Art)",
+   "who": "W. Thomas, published by John Sewell",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.04,
+    0.07,
+    0.955,
+    0.9
+   ],
+   "focal": [
+    0.42,
+    0.6
+   ],
+   "why": "the walled island town and its castle seen whole; header and caption trimmed"
+  },
+  {
+   "n": 7,
+   "file": "General view from the fort, St. Malo, France-LCCN2001698701.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "General view from the fort, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.24,
+    0.25,
+    0.97,
+    0.81
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "color view of the walled town and cathedral spire across the water; caption trimmed"
+  },
+  {
+   "n": 10,
+   "file": "Eugène Bejot - Saint-Malo Viewed from Dinard (Saint-Malo vu de Dinard) - 2016.97 - Cleveland Museum of Art.tif",
+   "y": 1914,
+   "lab": "1914",
+   "what": "Saint-Malo seen from Dinard, etching (Cleveland Museum of Art)",
+   "who": "Eugène Béjot",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.05,
+    0.08,
+    0.948,
+    0.92
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "only usable view for P5; skyline with the spire across the estuary; paper margin trimmed"
+  },
+  {
+   "n": 16,
+   "file": "Vue de saint malo depuis dinard - panoramio (1).jpg",
+   "y": 2015,
+   "lab": "2015",
+   "what": "The walled town seen from Dinard, photograph",
+   "who": "chisloup",
+   "lic": "CC BY 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "the classic silhouette of the ramparts and cathedral spire"
+  }
+ ],
+ "gaps": "P0, P1, P2: no candidates.",
+ "notes": "#3 (Ozanne, 1776) is a good print but the town is a thin strip on the horizon and #1 covers P3. #2 (1838) shows mostly beach and forts. #5 and #9 show Saint-Servan, then a separate town; the Paramé photochroms (#4, #6, #8) show the seaside resort, not the old town. The 1944 photos are a road, a ruined house and a train wreck outside the town. #14 (2013) is a sharper modern alternative but framed by blurred rampart stones and shows only the cathedral quarter.",
+ "_reviewed": true
+}

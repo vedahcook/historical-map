@@ -1,0 +1,37 @@
+{
+ "city": "Perpignan",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.04,
+     0.28,
+     0.965,
+     0.655
+    ],
+    "focal": [
+     0.22,
+     0.5
+    ]
+   },
+   "reason": "crop included the drawing's black bottom frame line and the key box with its list of names; new trim and focal show the left half of the skyline (tall tower, spires) without them (fold creases remain, unavoidable)"
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 12,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

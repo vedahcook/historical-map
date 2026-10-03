@@ -1,0 +1,49 @@
+{
+ "city": "Vicenza",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.113,
+     0.17,
+     0.98,
+     0.99
+    ],
+    "focal": [
+     0.5,
+     0.4
+    ]
+   },
+   "reason": "Current crop includes the legend box at top left and the numbered legend column on the left; new trim removes them and keeps the whole walled town"
+  },
+  {
+   "n": 10,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.07,
+     0.29,
+     0.93,
+     0.8
+    ],
+    "focal": [
+     0.3,
+     0.5
+    ]
+   },
+   "reason": "Top of the crop includes the lower ornaments of the title cartouche; raised the top trim to clear them"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "General view with Basilica and tower; crop clean"
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "Color view over the town from Monte Berico; crop fine"
+  }
+ ]
+}

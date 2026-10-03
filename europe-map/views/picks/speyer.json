@@ -1,0 +1,113 @@
+{
+ "city": "Speyer",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Speyer braun hogenberg.jpeg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.13,
+    0.118,
+    0.9,
+    0.905
+   ],
+   "focal": [
+    0.56,
+    0.5
+   ],
+   "why": "colored panorama with the cathedral’s four towers at the center; text block cut away"
+  },
+  {
+   "n": 7,
+   "file": "CH-NB - Speyer, von Nordosten - Collection Gugelmann - GS-GUGE-BLEULER-2b-46.tif",
+   "y": 1835,
+   "lab": "1830s",
+   "what": "View across the Rhine from the northeast, colored aquatint (Swiss National Library)",
+   "who": "Johann Ludwig Bleuler",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.02,
+    0.978,
+    0.83
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "color view of the river front with the cathedral and a Rhine steamer"
+  },
+  {
+   "n": 9,
+   "file": "Speyer, general view, the Rhine, Germany-LCCN2002720500.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.018,
+    0.022,
+    0.978,
+    0.94
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "color general view with the cathedral and the Altpörtel gate tower"
+  },
+  {
+   "n": 16,
+   "file": "Joseph Knippenberg, Rheinisches Bildarchiv, rba 225531 kni.jpg",
+   "y": 1937,
+   "lab": "1931–43",
+   "what": "The town and cathedral from across the Rhine, photograph (Rheinisches Bildarchiv)",
+   "who": "Joseph Knippenberg",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0.15,
+    0.95,
+    0.92
+   ],
+   "focal": [
+    0.75,
+    0.5
+   ],
+   "why": "only usable view for the period: river front, ferry and cathedral towers"
+  },
+  {
+   "n": 21,
+   "file": "Speyer - Altstadt - Altpörtel - Blick auf Gedächtniskirche und St. Joseph mit Sonnenuntergang.jpg",
+   "y": 2018,
+   "lab": "2018",
+   "what": "The old town from the Altpörtel at sunset, photograph",
+   "who": "Roman Eisele",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "high-resolution view over the old town roofs to the Memorial Church and St. Joseph’s"
+  }
+ ],
+ "gaps": "P0: none; P2: none",
+ "notes": "#7: the Swiss National Library dates it only ‘before 1840’; it sits in Commons’ Speyer in the 1830s category and shows a Rhine steamer, so labeled 1830s. #16: the archive dates Knippenberg’s photos only to 1931–43, hence the range label. #9 is credited to Photoglob Zürich (print no. 8351, the ‘P.Z.’ prefix); #14 and #19 are copies of the same photochrom. #2–#6 are other copies of the same Braun and Hogenberg plate (Heidelberg, Speyer, Worms); #4 is a larger colored copy (strip about 5,500 px wide) if more resolution is wanted. #15 (Mittelholzer) skipped: its film is noted as misfiled, so the date is unsure. P6 alternative showing the cathedral itself: #22 (2023, sunset, but museum roofs in the foreground). #12 (1854) and #13 (1872) are good engravings of the cathedral alone, too close in date to the chosen views.",
+ "_reviewed": true
+}

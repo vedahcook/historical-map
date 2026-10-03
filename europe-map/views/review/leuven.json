@@ -1,0 +1,43 @@
+{
+ "city": "Leuven",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.016,
+     0.047,
+     0.98,
+     0.945
+    ],
+    "focal": [
+     0.5,
+     0.45
+    ]
+   },
+   "reason": "Crop included the plate frame lines at top and bottom of the strip"
+  },
+  {
+   "n": 9,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.45,
+     0.48
+    ]
+   },
+   "reason": "Spire of St. Peter's touches the top edge of the crop"
+  },
+  {
+   "n": 12,
+   "verdict": "ok",
+   "reason": "Photochrom general view with St. Gertrude's spire, border trimmed"
+  },
+  {
+   "n": 23,
+   "verdict": "ok",
+   "reason": "Town hall at night, 2024, clean"
+  }
+ ]
+}

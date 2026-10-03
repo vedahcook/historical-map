@@ -1,0 +1,7 @@
+{"city": "San Sebastián", "checks": [
+ {"n": 4, "verdict": "fix", "fix": {"trim": [0.03, 0.065, 0.975, 0.945], "focal": [0.53, 0.5]}, "reason": "red plate frame still inside the crop at top and bottom; moving focal left keeps the city and drops the title cartouche"},
+ {"n": 7, "verdict": "ok", "reason": "true view, stamp and frame excluded"},
+ {"n": 11, "verdict": "ok", "reason": "La Concha photochrom, border and caption trimmed"},
+ {"n": 16, "verdict": "ok", "reason": "1962 aerial of the bay, no margins"},
+ {"n": 20, "verdict": "ok", "reason": "good modern panorama, crop shows Urgull, island and city"}
+]}

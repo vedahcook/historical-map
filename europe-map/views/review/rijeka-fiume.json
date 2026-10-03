@@ -1,0 +1,37 @@
+{
+ "city": "Rijeka (Fiume)",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.036,
+     0.056,
+     0.968,
+     0.955
+    ],
+    "focal": [
+     0.45,
+     0.4
+    ]
+   },
+   "reason": "trim included white paper margin and the black plate frame on all sides"
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "harbor with Adria Palace, date per record"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "1915 view over city and bay, crop clear of negative edge"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "view from Trsat castle"
+  }
+ ]
+}

@@ -1,0 +1,113 @@
+{
+ "city": "La Rochelle",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Braun et Hogenberg - La Rochelle.jpg",
+   "y": 1575,
+   "lab": "1575",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 2",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.225,
+    0.03,
+    0.965,
+    0.965
+   ],
+   "focal": [
+    0.5,
+    0.35
+   ],
+   "why": "clean colored copy of the plate with the walls, harbor towers and streets drawn; Commons date “16th century” corrected to the vol. 2 year"
+  },
+  {
+   "n": 10,
+   "file": "Vue du Port de La Rochelle, prise de la petite Rive (1762).jpg",
+   "y": 1762,
+   "lab": "1762",
+   "what": "The harbor from the Petite Rive, painting (Musée national de la Marine, Paris)",
+   "who": "Joseph Vernet",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.6
+   ],
+   "why": "color view of the port and town front with the harbor towers, from Vernet’s Ports of France series"
+  },
+  {
+   "n": 14,
+   "file": "The Harbor of La Rochelle by Jean-Baptiste-Camille Corot.jpeg",
+   "y": 1851,
+   "lab": "1851",
+   "what": "The harbor entrance with the Lantern and Chain towers, painting (Yale University Art Gallery)",
+   "who": "Jean-Baptiste Camille Corot",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "color view of the old port, its towers and the spire of Saint-Sauveur; high resolution"
+  },
+  {
+   "n": 13,
+   "file": "La Rochelle - Vue générale du port avant 1906.jpg",
+   "y": 1905,
+   "lab": "about 1905",
+   "what": "General view of the port, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.004,
+    0.075,
+    0.998,
+    0.996
+   ],
+   "focal": [
+    0.5,
+    0.35
+   ],
+   "why": "the inner harbor full of fishing boats with the towers and spires behind; mailed 1906, so made shortly before; printed title trimmed"
+  },
+  {
+   "n": 18,
+   "file": "Photographie aérienne du veux port de La Rochelle.jpg",
+   "y": 1975,
+   "lab": "1970s",
+   "what": "Aerial photograph of the old port",
+   "who": "Jacques Dassié",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    0.996,
+    1
+   ],
+   "focal": [
+    0.58,
+    0.5
+   ],
+   "why": "color aerial of the old port with the Lantern, Chain and Saint-Nicolas towers and the old town"
+  }
+ ],
+ "gaps": "P0: nothing; P2: nothing usable; P5: nothing",
+ "notes": "#3, #4, #6, #7 are other copies of the same Braun and Hogenberg plate (open-book photos or the 1612/1645 reprints); #8 is the text verso. #9 (about 1650) is an allegory of Louis XIII with only a small background view of the town. #11 is a smaller copy of #10. #1, #2 are John Everett paintings dated only late 19th to mid 20th century (the 1394/1406 in the title are museum numbers). #13’s Commons artist “AM Jhot” looks like the uploader, so credited as unknown photographer. #17 (Signac) is dated only 1911–1922. #12 photochrom shows just the Hôtel de Ville. P6 uses a 1970s aerial; #19 (2006 night panorama of the towers) is the alternative if a more recent view is preferred, but it is very wide and dark.",
+ "_reviewed": true
+}

@@ -1,0 +1,37 @@
+{
+ "city": "Halle (Saale)",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "Hall in Sachsen plate in Civitates vol. 5 (first edition 1596-98); 1598 per rule"
+  },
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.025,
+     0.515,
+     0.965,
+     0.96
+    ],
+    "focal": [
+     0.58,
+     0.5
+    ]
+   },
+   "reason": "top trim includes the plate's double frame line; focal moved right so the key list (A-Z legend) in the sky stays out of the crop"
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "labeled Halle; crop is about 45% of width but only 18th-century view; spire tip within 1 px of top"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "Altes Rathaus and Stadthaus per categories; crop clean"
+  }
+ ]
+}

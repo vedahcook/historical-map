@@ -1,0 +1,71 @@
+{
+ "city": "Alicante",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Joaquín Agrasot - Vista del puerto de Alicante (1875).jpg",
+   "y": 1875,
+   "lab": "1875",
+   "what": "The harbor, painting",
+   "who": "Joaquín Agrasot",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.42,
+    0.5
+   ],
+   "why": "color view of the quay and harbor with steamers and sailing ships, the Benacantil castle rock at left; only about 1360 px wide"
+  },
+  {
+   "n": 8,
+   "file": "ETH-BIB-Alicante-Nordafrikaflug 1932-LBS MH02-13-0590.tif",
+   "y": 1932,
+   "lab": "1932",
+   "what": "The town, harbor and bay from above, photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "sharp general view over the old town to the harbor moles and the curve of the bay"
+  },
+  {
+   "n": 13,
+   "file": "Vista de Alicante, España, 2014-07-04, DD 49.JPG",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The city and harbor from the Santa Bárbara castle, photograph",
+   "who": "Diego Delso",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "bright color view from the castle sentry box over the marina, harbor and city"
+  }
+ ],
+ "gaps": "P0–P3: no candidates.",
+ "notes": "P4 alternatives: albumen photos about 1885–92 (Rijksmuseum) — #2 Monte Benacantil with the castle over the town (black and white, sharper, very recognizable) and #1 a general view toward the inland hills. Rejected: #3 is an AI-generated ‘reconstruction’, #4 shows the huerta farmland rather than the city, #6 is a harbor chart. P5 alternatives from the same 1932 series: #10 (the harbor and the palm-lined waterfront), #7, #9. P6 alternative: #14 (2014, northward from the castle walls).",
+ "_reviewed": true
+}

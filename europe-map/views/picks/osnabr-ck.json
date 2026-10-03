@@ -1,0 +1,71 @@
+{
+ "city": "Osnabrück",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Monasterium urbs in media Westphalia celeberrimi nominis... ; Osnabrugum elegans Saxoniae opp. ; Wesalia inferior - btv1b531789052 (1 of 2).jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.07,
+    0.42,
+    0.929,
+    0.632
+   ],
+   "focal": [
+    0.56,
+    0.5
+   ],
+   "why": "colored walled-town panorama; middle strip of the Münster/Osnabrück/Wesel plate, highest-resolution copy"
+  },
+  {
+   "n": 9,
+   "file": "Schuch-Osnabrück.jpeg",
+   "y": 1872,
+   "lab": "1872",
+   "what": "General view of the town, steel engraving in Das malerische und romantische Westphalen",
+   "who": "Werner Schuch",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.005,
+    0.995,
+    0.995
+   ],
+   "focal": [
+    0.52,
+    0.45
+   ],
+   "why": "general view of the town and its church towers over the trees"
+  },
+  {
+   "n": 12,
+   "file": "Osnabrück, Niedersachsen - Stadtansicht (Zeno Ansichtskarten).jpg",
+   "y": 1915,
+   "lab": "1915",
+   "what": "View over the rooftops to St. Mary’s Church, postcard",
+   "who": "F. Eyfriedt, Düsseldorf",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.3,
+    0.03,
+    0.975,
+    0.965
+   ],
+   "focal": [
+    0.42,
+    0.3
+   ],
+   "why": "old-town roofs with St. Mary’s and the town hall; left third cut to remove ink stains"
+  }
+ ],
+ "gaps": "P0: none; P2–P3: none; P6: nothing usable (2008 street snapshots of a cinema, a department store, a single house)",
+ "notes": "#2 is the 1645 French-edition copy of the 1572 plate, dated by first publication; #4 (UBHD) is the same strip in color but only 2029 px wide. #9: Commons says “by 1872”; it is from the 1872 second edition, whose new plates were after Schuch (born 1843), so 1872 is the year made. #11 is Amsterdam, miscategorized. #12 publisher per Commons category; the upper left of the card has ink blots, hence the narrow trim (68% of width).",
+ "_reviewed": true
+}

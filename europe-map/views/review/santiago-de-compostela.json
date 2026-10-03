@@ -1,0 +1,10 @@
+{
+ "city": "Santiago de Compostela",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "Only usable candidate; cathedral spires over roofs, crop fine"
+  }
+ ]
+}

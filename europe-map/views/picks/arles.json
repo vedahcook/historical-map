@@ -1,0 +1,50 @@
+{
+ "city": "Arles",
+ "picks": [
+  {
+   "n": 2,
+   "file": "The Arena, Arles, Provence, France-LCCN2001698592.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Roman arena, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.02,
+    0.975,
+    0.9
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "color view of the amphitheater, the landmark that says Arles"
+  },
+  {
+   "n": 8,
+   "file": "Bombardement du pont aux Lions, Arles, août 1944.jpg",
+   "y": 1944,
+   "lab": "1944",
+   "what": "Aerial photograph during the bombing of the Pont aux Lions",
+   "who": "US Army Air Forces",
+   "lic": "PD",
+   "event": true,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.78
+   ],
+   "why": "vertical aerial of the old town with the arena; only 20th-century view"
+  }
+ ],
+ "gaps": "P0–P3: none (#1 is a portrait of King Hugh of Arles, not a view); P6: no modern photo of the town (#9–#12 are photos of a Van Gogh painting)",
+ "notes": "Van Gogh’s views of Arles (#7 1888 with irises, #4/#6 1889 orchards) are real views but show the town only as a thin strip on the horizon; #7 could replace the photochrom if a general view is preferred over the arena. #8 is low resolution (911 px wide) and shows bomb smoke on the river; the focal point puts the intact old town and arena in the 16:9 crop. Drop it if a wartime photo is unwanted as the only 20th-century image.",
+ "_reviewed": true
+}

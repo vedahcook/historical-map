@@ -1,0 +1,22 @@
+{
+ "city": "Ostrava",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0.33,
+     1,
+     0.7
+    ],
+    "focal": [
+     0.6,
+     0.5
+    ]
+   },
+   "reason": "the current crop is nearly half bare treetops with the city a thin strip; the tighter trim makes the city the main subject while keeping about half the width. Still the best Ostrava candidate (#1 is a hazy industrial skyline)"
+  }
+ ]
+}

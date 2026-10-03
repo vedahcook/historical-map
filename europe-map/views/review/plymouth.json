@@ -1,0 +1,37 @@
+{
+ "city": "Plymouth",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 15,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.22,
+     0.03,
+     0.72,
+     0.75
+    ],
+    "focal": [
+     0.495,
+     0.5
+    ]
+   },
+   "reason": "crop cut Smeaton's Tower in half at the left edge; wider window keeps the tower and the whole Citadel"
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "city": "Gijón",
+ "picks": [
+  {
+   "n": 1,
+   "file": "View of Gijón 02.jpg",
+   "y": 2022,
+   "lab": "2022",
+   "what": "Cimadevilla, the old town, across San Lorenzo beach, photograph",
+   "who": "Superchilum",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.5,
+    1,
+    0.92
+   ],
+   "focal": [
+    0.48,
+    0.5
+   ],
+   "why": "historic center on its headland with San Pedro’s tower and Santa Catalina hill; sky trimmed"
+  }
+ ],
+ "gaps": "P0–P5: no candidates",
+ "notes": "Only four candidates, all from 2022; #2–#4 show the modern beachfront apartment blocks only.",
+ "_reviewed": true
+}

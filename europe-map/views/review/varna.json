@@ -1,0 +1,32 @@
+{
+ "city": "Varna",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0.02,
+     1,
+     0.815
+    ],
+    "focal": [
+     0.6,
+     0.5
+    ]
+   },
+   "reason": "Engraving ends at about 0.82 of the height; the printed title and legend lines sit below it on blank paper and the old crop (to 0.842) touches the title. Cut at 0.815."
+  },
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "Postcard-era view over Varna roofs; label trimmed off; plain but genuine and dated 1904."
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "City is a thin strip, but it is the only modern general view; crop is the full trimmed height (a 4:1 panorama cannot be cropped wider)."
+  }
+ ]
+}

@@ -1,0 +1,92 @@
+{
+ "city": "Schwerin",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Schwerin (Merian).jpg",
+   "y": 1653,
+   "lab": "1653",
+   "what": "Engraving in Merian’s Topographia Saxoniae Inferioris",
+   "who": "Caspar Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.03,
+    0.975,
+    0.9
+   ],
+   "focal": [
+    0.5,
+    0.46
+   ],
+   "why": "labeled prospect; cathedral, town walls and the castle on its island"
+  },
+  {
+   "n": 5,
+   "file": "Johann Alexander Thiele - Ansicht von Schwerin über den Burgsee (1750).jpg",
+   "y": 1750,
+   "lab": "1750",
+   "what": "View across the Burgsee, painting",
+   "who": "Johann Alexander Thiele",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.52
+   ],
+   "why": "color; the old castle on the lake with the town beyond"
+  },
+  {
+   "n": 6,
+   "file": "Blick auf Schwerin c1840.jpg",
+   "y": 1842,
+   "lab": "1840–45",
+   "what": "View from the Franzosenweg, oil painting",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.55
+   ],
+   "why": "the castle before its rebuilding, the cathedral and the lakeshore"
+  },
+  {
+   "n": 8,
+   "file": "General view, Schwerin, Mecklenburg-Schwerin, Germany-LCCN2002713948.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "General view over the Pfaffenteich, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.02,
+    0.985,
+    0.93
+   ],
+   "focal": [
+    0.55,
+    0.35
+   ],
+   "why": "color view of the cathedral above the old town, castle on the skyline"
+  }
+ ],
+ "gaps": "P0–P1: none; P5: none (the 1917 Malchin painting shows the city only as a faint line on the horizon); P6: none (only close-ups of castle details)",
+ "notes": "#1 (‘Merian 1640’) is a cropped detail of the 1653 plate with a modern typed label, so skipped. #2–#4 are the same 1653 plate; #3 is the cleanest full copy (#2 is a book page photo). The plate is signed by Caspar Merian. Two P3 views kept because they are about 90 years apart and both show the castle and town clearly. #9–#11 are Rostock; #7 is a Winterhalter family portrait.",
+ "_reviewed": true
+}

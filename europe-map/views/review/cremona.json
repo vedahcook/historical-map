@@ -1,0 +1,27 @@
+{
+ "city": "Cremona",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0.005,
+     1,
+     1
+    ],
+    "focal": [
+     0.55,
+     0.35
+    ]
+   },
+   "reason": "old centered window cut the top of the Torrazzo spire; moving the window up keeps the whole tower and the cathedral"
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "sharp general view from the Torrazzo"
+  }
+ ]
+}

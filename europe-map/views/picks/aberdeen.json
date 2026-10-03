@@ -1,0 +1,71 @@
+{
+ "city": "Aberdeen",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Aberdeen - New Aberdene from the Block house.png",
+   "y": 1693,
+   "lab": "1693",
+   "what": "New Aberdeen from the blockhouse on the Dee, engraving in John Slezer’s Theatrum Scotiae",
+   "who": "John Slezer",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0.034,
+    0.035,
+    0.978,
+    0.89
+   ],
+   "focal": [
+    0.28,
+    0.47
+   ],
+   "why": "general view across the Dee; St Nicholas’ spire and town on the skyline; caption trimmed"
+  },
+  {
+   "n": 3,
+   "file": "Castle Street and municipal buildings, Aberdeen, Scotland-LCCN2001703569.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Castle Street and the municipal buildings, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.015,
+    0.98,
+    0.935
+   ],
+   "focal": [
+    0.55,
+    0.38
+   ],
+   "why": "the city’s signature square: Town House tower, Mercat Cross, Union Street beyond; color"
+  },
+  {
+   "n": 14,
+   "file": "Aberdeen Harbour Panorama.jpg",
+   "y": 2023,
+   "lab": "2023",
+   "what": "The harbor seen from the south, photograph",
+   "who": "Kognos",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.25,
+    0,
+    0.75,
+    1
+   ],
+   "focal": [
+    0.62,
+    0.6
+   ],
+   "why": "recent high-resolution color view of the harbor and Footdee; trimmed to the middle of a very wide panorama"
+  }
+ ],
+ "gaps": "P0, P1: no candidates. P3: only the Cassie painting, whose ‘1819’ is the painter’s birth year (date unknown). P5: only Luftwaffe target-dossier pages (small photo with red target overlay) and Aberdeen, South Dakota postcards.",
+ "notes": "#8 is a duplicate scan of the #3 photochrom. Several hits are other Aberdeens (South Dakota #6, #9, #12; Washington #7; Hong Kong #15) and were excluded. P6 is modest: no skyline or historic-center photo among the candidates; the harbor panorama is the best of a weak set (the aerials #13 and #16 show mostly suburbs or are too distant).",
+ "_reviewed": true
+}

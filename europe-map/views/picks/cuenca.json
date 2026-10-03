@@ -1,0 +1,50 @@
+{
+ "city": "Cuenca",
+ "picks": [
+  {
+   "n": 3,
+   "file": "1853, Recuerdos y bellezas de España, Castilla la Nueva, tomo II, Cuenca, desde el cerro de San Cristoval, jpg.jpg",
+   "y": 1853,
+   "lab": "1853",
+   "what": "View from the Cerro de San Cristóbal, tinted lithograph in Recuerdos y bellezas de España",
+   "who": "Francisco Javier Parcerisa",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.14,
+    0.085,
+    0.87,
+    0.865
+   ],
+   "focal": [
+    0.4,
+    0.4
+   ],
+   "why": "general view of the town on its ridge between the gorges, with the old San Pablo bridge; margins and caption trimmed"
+  },
+  {
+   "n": 8,
+   "file": "Cuenca al anochecer.jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The hanging houses and the San Pablo bridge at dusk, photograph",
+   "who": "Manuems",
+   "lic": "CC BY-SA 3.0 es",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "the old town on its cliff with the Casas Colgadas and the lit bridge; high resolution"
+  }
+ ],
+ "gaps": "P0, P1, P2, P3, P5: no candidates",
+ "notes": "Only Cuenca, Spain used; #9 and #10 are Cuenca, Ecuador, and #1 is the Uclés monastery elsewhere in the province. #5 is a crop of the same Parcerisa plate. #4 (Doré, 1874, cliffs and bridge) is a good alternative P4 view if a later date is wanted. #7 (2009, Huécar gorge) is a daylight alternative for P6, but the town is a thin strip under a blank sky.",
+ "_reviewed": true
+}

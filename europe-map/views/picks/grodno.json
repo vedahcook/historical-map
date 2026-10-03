@@ -1,0 +1,92 @@
+{
+ "city": "Grodno",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Horadnia. Горадня (1575).jpg",
+   "y": 1575,
+   "lab": "1575",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 2",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.04,
+    0.97,
+    0.8
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "rich color copy of the famous view across the Neman with the castle and bridge; full plate, no gutter"
+  },
+  {
+   "n": 13,
+   "file": "Гродна. Краявід цэнтральнай часткі горада.jpg",
+   "y": 1897,
+   "lab": "1897",
+   "what": "The city center, illustration in K. K. Sluchevsky, Po Severo-Zapadu Rossii",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "rooftop view with the Bernardine, Jesuit and other church towers"
+  },
+  {
+   "n": 10,
+   "file": "Grodno - panorama miasta z dzielnicy Łosośna NAC 1-U-1396-2.jpg",
+   "y": 1931,
+   "lab": "1931",
+   "what": "View across the Neman from Łosośna, photograph (National Digital Archives, Poland)",
+   "who": "Zygmunt Charlewski",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.97
+   ],
+   "focal": [
+    0.6,
+    0.4
+   ],
+   "why": "general view over the river with the Fara of Vytautas (demolished 1961) and other churches"
+  },
+  {
+   "n": 15,
+   "file": "Grodno sightseeing fc01.jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The riverfront on the Neman, photograph",
+   "who": "Fczarnowski",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.55
+   ],
+   "why": "historic center above the Neman with churches and the bridge"
+  }
+ ],
+ "gaps": "P0: nothing; P2: only a 1709 Bodenehr copy of the 1575 view, skipped; P3: nothing",
+ "notes": "#13’s Commons date (2013) is the upload; the book was published in St. Petersburg in 1897. #7 (Bodenehr, 1709) re-engraves the 1575 view and shows the 16th-century city, so it was skipped. #9 (1920) is a good alternative to #10. #12 is a 2016 photo of an old map in a museum.",
+ "_reviewed": true
+}

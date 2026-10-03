@@ -1,0 +1,21 @@
+{
+ "city": "Douai",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.55,
+     0.4
+    ]
+   },
+   "reason": "crop cut the coat of arms in half; moving focal up keeps it whole"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "matches record; tower top intact"
+  }
+ ]
+}

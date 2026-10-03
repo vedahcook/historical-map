@@ -1,0 +1,13 @@
+{
+ "city": "Simferopol",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "what": "A city street and square, photograph"
+   },
+   "reason": "the record says only 'View of Simferopol'; nothing says this is the railway station square or shows a clock tower, so the caption should not claim a landmark (it is a downtown street scene). Weak as a city view, but it is the only usable modern picture; the other three are fields and a playground"
+  }
+ ]
+}

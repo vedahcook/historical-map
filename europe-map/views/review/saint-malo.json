@@ -1,0 +1,37 @@
+{
+ "city": "Saint-Malo",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "plate lettering and frame excluded; date from plate (Feb 1794)"
+  },
+  {
+   "n": 7,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.24,
+     0.25,
+     0.97,
+     0.81
+    ],
+    "focal": [
+     0.5,
+     0.5
+    ]
+   },
+   "reason": "town is a thin strip with half the old crop empty sky; tighter 16:9 window around the spire and ramparts, still 73% of picture width"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "genuine view with the spire, weak but acceptable and the only P5 option"
+  },
+  {
+   "n": 16,
+   "verdict": "ok",
+   "reason": "classic silhouette, fine"
+  }
+ ]
+}

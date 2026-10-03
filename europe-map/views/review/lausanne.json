@@ -1,0 +1,30 @@
+{
+ "city": "Lausanne",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "Merian bird’s-eye with buildings in perspective; year 1642 is the first publication; key and arms are part of the engraving"
+  },
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "Lory colored view; crop good"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "photochrom of the old town; crop avoids caption"
+  },
+  {
+   "n": 16,
+   "verdict": "ok",
+   "reason": "weak (no clear landmark) but a genuine general aerial labeled Lausanne; #14 is similar"
+  },
+  {
+   "n": 19,
+   "verdict": "ok",
+   "reason": "Grand-Pont arches with the cathedral lit behind; crop keeps spire"
+  }
+ ]
+}

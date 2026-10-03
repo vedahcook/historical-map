@@ -1,0 +1,26 @@
+{
+ "city": "Portsmouth",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "Portsmouth Harbour, 1747, correctly marked as event"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "harbor entrance with Old Portsmouth, caption trimmed"
+  },
+  {
+   "n": 17,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.62,
+     0.62
+    ]
+   },
+   "reason": "crop's right edge clips the end of the Round Tower; shift right"
+  }
+ ]
+}

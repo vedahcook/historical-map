@@ -1,0 +1,37 @@
+{
+ "city": "Perugia",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.168,
+     0.31,
+     0.852,
+     0.862
+    ],
+    "focal": [
+     0.5,
+     0.5
+    ]
+   },
+   "reason": "old crop showed the lower edge of the title cartouche at top left, the key text and ribbons at top right, and a strip of page margin at right; new trim is inside the plate frame below the cartouches"
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "Hessemer pencil view of Perugia dated 18 July 1828, matches record; faint but the skyline reads and the inscription and blank paper are trimmed"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "Warren watercolor labeled Perugia, signed '88; more of a hill-town edge than a general view but the best P4 option"
+  },
+  {
+   "n": 16,
+   "verdict": "ok",
+   "reason": "Porta Sole sunset panorama of the old-town rooftops; crop is just under half the width and has no landmark, but acceptable for the modern view"
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+{
+ "city": "Bochum",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Bochum im Jahr 1801 von Dr Kortum.jpg",
+   "y": 1801,
+   "lab": "1801",
+   "what": "View of the town with its three churches, watercolor",
+   "who": "Carl Arnold Kortum",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.01,
+    0.995,
+    0.99
+   ],
+   "focal": [
+    0.465,
+    0.45
+   ],
+   "why": "true view of the small town; Johanneskirche, Pauluskirche and St. Peter und Paul identified in the record"
+  },
+  {
+   "n": 2,
+   "file": "Bochum HBf Luftbild.jpg",
+   "y": 1958,
+   "lab": "about 1958",
+   "what": "The main station and the city from the air, postcard photograph",
+   "who": "unknown photographer",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0.085,
+    0.03,
+    0.925,
+    0.9
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "general view over the city behind the new main station; low resolution, glare at top; trim cuts the caption"
+  },
+  {
+   "n": 6,
+   "file": "Aerial Deutsches Bergbau-Museum Bochum Germany.jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The German Mining Museum and its headframe from the air, photograph",
+   "who": "ChristianSchd",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "the city’s best-known landmark; sharp color aerial"
+  }
+ ],
+ "gaps": "P0, P1, P2, P4: nothing",
+ "notes": "#2 is only 1106 px wide and is a photo of a postcard; Commons says ‘presumably late 1950s’ (the station building opened in 1957), hence ‘about 1958’. Drop it if the resolution is too low. #3–#5 are 2008 street snapshots and a side view of one church.",
+ "_reviewed": true
+}

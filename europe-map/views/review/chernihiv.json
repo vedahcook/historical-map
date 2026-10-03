@@ -1,0 +1,10 @@
+{
+ "city": "Chernihiv",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "Chernihiv church in a city panorama category; 2014 date matches; trim and focal give a clean 16:9 crop"
+  }
+ ]
+}

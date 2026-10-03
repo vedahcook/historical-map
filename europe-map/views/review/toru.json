@@ -1,0 +1,37 @@
+{
+ "city": "Toruń (Thorn)",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.16,
+     0.02,
+     0.99,
+     0.985
+    ],
+    "focal": [
+     0.5,
+     0.52
+    ]
+   },
+   "reason": "Merian’s Thorunium view with buildings drawn, 1652 is right; but the numbered key (text block) at the left sits inside the 16:9 crop. Trimming the left 16% removes it and still leaves the walled town and bridge"
+  },
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "museum painting detail showing the Vistula bridge, wall and St. John’s tower; the range label '1750–1800' matches the museum’s 'second half of the 18th century'"
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "postcard view across the Vistula, 'about 1897' matches the record; titles and greeting trimmed out, the steamer in the foreground is acceptable"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "2025 photo from the Town Hall tower; parapet and printed text excluded, St. John’s fully in the crop; artist and license match"
+  }
+ ]
+}

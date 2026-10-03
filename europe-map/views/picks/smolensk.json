@@ -1,0 +1,92 @@
+{
+ "city": "Smolensk",
+ "picks": [
+  {
+   "n": 1,
+   "file": "JAMES(1817) p2.306 VIEW OF SMOLENSK.jpg",
+   "y": 1817,
+   "lab": "1817",
+   "what": "View across the Dnieper, aquatint in John Thomas James’s Journal of a Tour in Germany, Sweden, Russia, Poland",
+   "who": "John Thomas James",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.04,
+    0.065,
+    0.955,
+    0.93
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "general view with the Dormition Cathedral above the town and the fortress walls; plate margins trimmed"
+  },
+  {
+   "n": 5,
+   "file": "Smolensk 1912.jpg",
+   "y": 1912,
+   "lab": "1911–12",
+   "what": "View from Cathedral Hill, early color photograph",
+   "who": "Sergey Prokudin-Gorsky",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "color view over the town with churches, the fortress wall and the Dnieper bridge"
+  },
+  {
+   "n": 7,
+   "file": "Smolensk 1942.jpg",
+   "y": 1942,
+   "lab": "1942",
+   "what": "The city seen from a war-ruined suburb, photograph",
+   "who": "Alfred Löhr",
+   "lic": "CC BY-SA 4.0",
+   "event": true,
+   "trim": [
+    0.02,
+    0.016,
+    0.965,
+    0.95
+   ],
+   "focal": [
+    0.4,
+    0.55
+   ],
+   "why": "general view with the cathedral on the skyline; foreground in ruins, so marked as event"
+  },
+  {
+   "n": 10,
+   "file": "Russia 3760 - Kremlin Walls (large is good) (4175015140).jpg",
+   "y": 2009,
+   "lab": "2009",
+   "what": "The fortress wall and towers above the old town, photograph",
+   "who": "Dennis G. Jarvis",
+   "lic": "CC BY-SA 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0.12,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.3
+   ],
+   "why": "the city’s signature fortress wall with the Thunder Tower, in color"
+  }
+ ],
+ "gaps": "P0–P2: nothing",
+ "notes": "#1: James made the drawing on his 1813–14 tour; the scan is from the 1817 edition (a first edition appeared in 1816, possibly with the same plate). #2 is a view of Vyazma, not Smolensk. #3/#4 (Albrecht Adam) show the 1812 battle and are the same period as #1. #6, #8, #9 are postcards dated only “before 1917”. #12 (2010) also shows the cathedral but is small and dull.",
+ "_reviewed": true
+}

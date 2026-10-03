@@ -1,0 +1,50 @@
+{
+ "city": "Modena",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Veduta della Torre Maggiore sulla Strada maestra di Modena.jpg",
+   "y": 1845,
+   "lab": "1845",
+   "what": "The Ghirlandina tower from the main street, engraving",
+   "who": "Vittorio Angeli",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0.04,
+    0.062,
+    0.96,
+    0.838
+   ],
+   "focal": [
+    0.48,
+    0.3
+   ],
+   "why": "the city’s landmark bell tower and cathedral seen down the Via Emilia; trim cuts number and caption"
+  },
+  {
+   "n": 9,
+   "file": "Panorama modena 05.jpg",
+   "y": 2018,
+   "lab": "2018",
+   "what": "View over the old town’s roofs, photograph",
+   "who": "SIG SG 510",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.6
+   ],
+   "why": "sharp color view over the historic center; cathedral pinnacles at lower left"
+  }
+ ],
+ "gaps": "P0–P2: no candidates; P4, P5: nothing usable",
+ "notes": "#4 (Guardi) is Venice’s San Giorgio, a painting held in Modena. #5 is a single monument. #2 and #3 are companion 1845 street views, less recognizable than the Ghirlandina. #6 is nearly the same view as #9 with more sky.",
+ "_reviewed": true
+}

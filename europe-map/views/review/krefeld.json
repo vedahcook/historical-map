@@ -1,0 +1,10 @@
+{
+ "city": "Krefeld",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "Burg Linn is in Krefeld (categories confirm); recognizable landmark, sharp 2023 aerial"
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "city": "Bryansk",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Bryansk. View of Bryansk on the Synagogue.jpg",
+   "y": 1908,
+   "lab": "1906–10",
+   "what": "Hillside quarter near the synagogue, postcard",
+   "who": "O. M. Vasyukov (publisher)",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.03,
+    0.995,
+    0.855
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "only historical view; old wooden town on the ravine slopes, captioned Bryansk, Oryol Governorate"
+  },
+  {
+   "n": 4,
+   "file": "Sovetskiy rayon, Bryansk, Bryanskaya oblast', Russia - panoramio (516).jpg",
+   "y": 2015,
+   "lab": "2015",
+   "what": "View over the Desna valley, photograph",
+   "who": "Anatoly Tarantsov",
+   "lic": "CC BY 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "general view from a height with the Desna and the churches on Pokrovskaya Hill"
+  }
+ ],
+ "gaps": "P0–P3: no candidates; P5: no candidates",
+ "notes": "Postcard shows an ordinary quarter, not landmarks; Commons credits I. E. Makovsky, the card itself names publisher O. M. Vasyukov. The 2015 photo is overcast and the landmarks are small.",
+ "_reviewed": true
+}

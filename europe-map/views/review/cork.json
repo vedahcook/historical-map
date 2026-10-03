@@ -1,0 +1,20 @@
+{
+ "city": "Cork",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "Grand Parade with the George II statue; date is only the album range (statue removed 1862) but acceptable as the only early view"
+  },
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "photochrom 1890s; border and caption trimmed correctly"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "Shandon tower and hillside visible; processed look but fine; record matches"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "city": "Malatya",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "Clear general view of the city, 2011 correct, no edges in crop."
+  }
+ ]
+}

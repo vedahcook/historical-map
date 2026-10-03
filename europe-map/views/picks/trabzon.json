@@ -1,0 +1,50 @@
+{
+ "city": "Trabzon",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Stadtansicht von Trapezunt.jpg",
+   "y": 1880,
+   "lab": "about 1880",
+   "what": "Houses on the waterfront, wood engraving",
+   "who": "Jules Huyot",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.03,
+    0.975,
+    0.915
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "waterfront quarter of Trebizond with wooden houses and the hill behind; caption trimmed"
+  },
+  {
+   "n": 2,
+   "file": "Trabzon City walls and Aquaduct.JPG",
+   "y": 2013,
+   "lab": "2013",
+   "what": "The city walls and aqueduct in the Zağnos valley, photograph",
+   "who": "İhsan Deniz Kılıçoğlu",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.4
+   ],
+   "why": "the medieval walls of the citadel, the city’s defining landmark; sharp"
+  }
+ ],
+ "gaps": "P0–P3, P5: nothing",
+ "notes": "#1: Commons date 1880 (German caption, French engraver), likely a magazine reprint, so labeled ‘about 1880’. No general view of the modern city among the candidates; #3 is a space-station photo, #4 and #5 show a park.",
+ "_reviewed": true
+}

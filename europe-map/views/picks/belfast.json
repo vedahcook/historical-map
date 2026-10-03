@@ -1,0 +1,71 @@
+{
+ "city": "Belfast",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Unknown artist - View of Belfast from Cave Hill - BELUM.P157.1973 - Ulster Museum.jpg",
+   "y": 1835,
+   "lab": "1835",
+   "what": "View of Belfast from Cave Hill, painting (Ulster Museum)",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "color general view of the town on the lough with the hills behind"
+  },
+  {
+   "n": 7,
+   "file": "Albert Memorial. Belfast. County Antrim, Ireland-LCCN2002717365.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Albert Memorial Clock, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.035,
+    0.975,
+    0.925
+   ],
+   "focal": [
+    0.55,
+    0.42
+   ],
+   "why": "best-known landmark with street life; caption and white border trimmed"
+  },
+  {
+   "n": 14,
+   "file": "BELFAST CITY HALL NIGHT VIEW.JPG",
+   "y": 2013,
+   "lab": "2013",
+   "what": "Belfast City Hall at night, photograph",
+   "who": "Aerovinoth3040",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "the city’s main landmark; clearer than the overcast Divis Mountain view (#16)"
+  }
+ ],
+ "gaps": "P0–P2: no candidates; P5: only postcards of Belfast, Maine",
+ "notes": "#3 is only 1200 px wide but is the only color general view; #1 (1823, from the lough) is a black-and-white alternative. Royal Avenue photochroms (#4–#6, #9) are good second choices for P4. #10–#12 and #15 are Belfast, Maine. Photographer of #14 is credited only by username.",
+ "_reviewed": true
+}

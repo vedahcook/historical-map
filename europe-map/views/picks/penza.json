@@ -1,0 +1,29 @@
+{
+ "city": "Penza",
+ "picks": [
+  {
+   "n": 1,
+   "file": "View of the Church of the Merciful Saviour, Penza.jpg",
+   "y": 2022,
+   "lab": "2022",
+   "what": "Kirova Street and the Church of the Merciful Saviour, aerial photograph",
+   "who": "Informavtodor",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.45
+   ],
+   "why": "color aerial view over the center with the church and the city beyond"
+  }
+ ],
+ "gaps": "P0–P5: no candidates",
+ "notes": "Artist field is the Russian federal agency ФГБУ «Информавтодор». Other candidates: ISS photo, a street view, a TV tower at sunset.",
+ "_reviewed": true
+}

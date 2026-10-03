@@ -1,0 +1,21 @@
+{
+ "city": "Vologda",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "what": "The Vologda River in the first snow, oil painting"
+   },
+   "reason": "record does not name the Vologda Regional Art Gallery (only 'Vologda. First Snow. 1916. Oil on cardboard'); everything else fine, crop is clean"
+  },
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "what": "Kremlin Square, the river and the old town from above, photograph"
+   },
+   "reason": "record says only 'Panoramic view of Vologda'; the St. Sophia bell tower viewpoint is not stated. Crop is good; the faint dark streak in the sky cannot be avoided in a 16:9 crop"
+  }
+ ]
+}

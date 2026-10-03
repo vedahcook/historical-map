@@ -1,0 +1,41 @@
+{
+ "city": "Innsbruck",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "Dürer watercolor; crop good"
+  },
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "colored B&H plate; trim inside the frame; crop good"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "steel engraving of Innsbruck; crop clean"
+  },
+  {
+   "n": 14,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.53,
+     0.39
+    ]
+   },
+   "reason": "portrait photochrom: current 16:9 crop cuts off the top of the gilded roof; move up to include the roof apex and the oriel"
+  },
+  {
+   "n": 20,
+   "verdict": "ok",
+   "reason": "Mittelholzer 1934 aerial; city in the Inn valley recognizable only loosely but acceptable; date correct"
+  },
+  {
+   "n": 26,
+   "verdict": "ok",
+   "reason": "sharp color panorama; watermark trimmed; crop good"
+  }
+ ]
+}

@@ -1,0 +1,113 @@
+{
+ "city": "Heidelberg",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Heidelberger Ansicht (Merian).png",
+   "y": 1645,
+   "lab": "1645",
+   "what": "View across the Neckar, engraving in Merian’s Topographia Palatinatus Rheni",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.015,
+    0.99,
+    0.985
+   ],
+   "focal": [
+    0.38,
+    0.5
+   ],
+   "why": "classic general view; castle, Church of the Holy Spirit and bridge recognizable"
+  },
+  {
+   "n": 11,
+   "file": "Ernst Fries - Six Views of Heidelberg Castle- Eastward - 2010.280.3 - Cleveland Museum of Art.jpg",
+   "y": 1820,
+   "lab": "1820",
+   "what": "The castle from the northeast, lithograph (Cleveland Museum of Art)",
+   "who": "Ernst Fries",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.04,
+    0.04,
+    0.957,
+    0.81
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "the castle ruin, the city’s landmark; caption trimmed off; only usable P3 view"
+  },
+  {
+   "n": 18,
+   "file": "Heidelberg, seen from the Terrace, Baden, Germany-LCCN2002713584.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "General view with the castle, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.016,
+    0.02,
+    0.984,
+    0.935
+   ],
+   "focal": [
+    0.5,
+    0.38
+   ],
+   "why": "color general view with the castle, old town and Old Bridge"
+  },
+  {
+   "n": 21,
+   "file": "Emil Orlik Blick auf Heidelberg.jpg",
+   "y": 1930,
+   "lab": "about 1930",
+   "what": "View of Heidelberg, painting",
+   "who": "Emil Orlik",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "color general view with castle, old town, Old Bridge and Neckar"
+  },
+  {
+   "n": 28,
+   "file": "Blick vom Königstuhl nach Heidelberg.jpg",
+   "y": 2023,
+   "lab": "2023",
+   "what": "View from the Königstuhl, photograph",
+   "who": "David Ress",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.28,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "color general view of the city along the Neckar"
+  }
+ ],
+ "gaps": "P0: no candidates; P2: only crude copies of Merian’s view (#7–#9); P4 has only one strong 1890s view",
+ "notes": "Merian #2 preferred over the color Braun and Hogenberg strip #3 (small, very narrow); #5 has the gutter through Worms and Speyer, #4 is tiny. #7–#9 (Les Forces de l’Europe, 1693–1726) are coarse reworkings of Merian’s plate with the great wine barrel added; #9 (1693–96) could fill P2 if wanted (trim about [0.128, 0.168, 0.693, 0.82]). #15 (castle from the Hirschgasse) is an alternative photochrom. #28 is a little hazy and the castle is not in view; #25 is a posterized black-and-white panorama, #27 is Heidelberg West in Australia.",
+ "_reviewed": true
+}

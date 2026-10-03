@@ -1,0 +1,22 @@
+{
+ "city": "Jerez de la Frontera",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.497,
+     0.559,
+     0.979,
+     0.968
+    ],
+    "focal": [
+     0.5,
+     0.2
+    ]
+   },
+   "reason": "old crop included the plate's double frame lines at the top, the engraved title and a vertical crease at about 0.49 width; new trim starts right of the crease and below the title, ends above the bottom frame line, and keeps the tall tower and the Alcázar"
+  }
+ ]
+}

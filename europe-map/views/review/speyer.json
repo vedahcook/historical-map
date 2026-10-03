@@ -1,0 +1,58 @@
+{
+ "city": "Speyer",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.13,
+     0.118,
+     0.9,
+     0.905
+    ],
+    "focal": [
+     0.56,
+     0.5
+    ]
+   },
+   "reason": "Crop included the red border lines at top and bottom and the 'SPIRA' title. Tighter trim removes them and keeps the cathedral towers whole; crop is narrow only because the strip is 3.9:1."
+  },
+  {
+   "n": 7,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.02,
+     0.02,
+     0.978,
+     0.83
+    ]
+   },
+   "reason": "Right edge of trim catches the dark plate frame line; tightened."
+  },
+  {
+   "n": 9,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.018,
+     0.022,
+     0.978,
+     0.94
+    ]
+   },
+   "reason": "Right edge of trim includes a white sliver outside the print; tightened."
+  },
+  {
+   "n": 16,
+   "verdict": "ok",
+   "reason": "Rhine front with ferry and cathedral towers; dating as a range is fine."
+  },
+  {
+   "n": 21,
+   "verdict": "ok",
+   "reason": "Clean high-resolution view of the old town and two churches."
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "city": "Aalborg",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Anton Thorenfeld - Udsigt over Aalborg - 1886.png",
+   "y": 1886,
+   "lab": "1886",
+   "what": "View over Aalborg and the Limfjord from the hills, painting",
+   "who": "Anton Thorenfeld",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.55
+   ],
+   "why": "color general view, the town’s church towers on the fjord shore; no frame to trim"
+  }
+ ],
+ "gaps": "P0–P3 and P5: no candidates. P6: only 2026 airliner shots dominated by the cement works and suburbs (#4–#6) and a railway-yard photo (#3); none shows the center.",
+ "notes": "#2 is a county map. #6 shows the city only in the far middle distance behind suburbs; skipped as weak.",
+ "_reviewed": true
+}

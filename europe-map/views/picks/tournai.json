@@ -1,0 +1,113 @@
+{
+ "city": "Tournai",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Plattegrond van Doornik Tornacum (titel op object), RP-P-OB-46.212.jpg",
+   "y": 1588,
+   "lab": "1588",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 4",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.1,
+    0.138,
+    0.923,
+    0.69
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "colored, unbound copy; walled town on the Scheldt with buildings drawn"
+  },
+  {
+   "n": 3,
+   "file": "Gezicht op Doornik, Caspar Merian, naar Jan Peeters (1624-1678), 1654 - ca. 1700 (cropped).jpg",
+   "y": 1654,
+   "lab": "1654",
+   "what": "Profile view, engraving",
+   "who": "Caspar Merian after Jan Peeters",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.03,
+    0.988,
+    0.97
+   ],
+   "focal": [
+    0.54,
+    0.55
+   ],
+   "why": "only true view of the skyline before 1850; five-towered cathedral visible"
+  },
+  {
+   "n": 10,
+   "file": "Gent und Tournai 1902 (143146914).jpg",
+   "y": 1902,
+   "lab": "1902",
+   "what": "General view, photograph in Henri Hymans, Gent und Tournai",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.07,
+    0.092,
+    0.78,
+    0.423
+   ],
+   "focal": [
+    0.25,
+    0.4
+   ],
+   "why": "rooftop view with the cathedral; page text and caption trimmed"
+  },
+  {
+   "n": 11,
+   "file": "Vue de Tournai - btv1b6931552f.jpg",
+   "y": 1914,
+   "lab": "1914",
+   "what": "The cathedral above the old town, press photograph (Bibliothèque nationale de France)",
+   "who": "Agence Rol",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.04,
+    0.115,
+    0.955,
+    0.85
+   ],
+   "focal": [
+    0.53,
+    0.4
+   ],
+   "why": "clear general view dominated by the five-towered cathedral; plate edges and numbers trimmed"
+  },
+  {
+   "n": 14,
+   "file": "Tournai. Grand-Place vue depuis le campanile du beffroi (1).jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The Grand-Place seen from the belfry, photograph",
+   "who": "Pierre André Leclercq",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.62
+   ],
+   "why": "sharp view over the main square and old town roofs"
+  }
+ ],
+ "gaps": "P0: nothing. P3: only Bozière’s 1860 reconstructions (#7, #8) of the city ‘as it was in 1750’, which show neither 1750 as seen nor 1860, so skipped.",
+ "notes": "Commons dates #3 by Jan Peeters’s birth year (1624); the plate is Caspar Merian’s, first issued 1654 (Rijksmuseum: 1654–ca. 1700), presumably in the Topographia Circuli Burgundici. The B&H plate is a perspective plan rather than a true view, kept because nothing else covers P1. #10 (1902) and #11 (1914) are similar rooftop views but fall in different periods.",
+ "_reviewed": true
+}

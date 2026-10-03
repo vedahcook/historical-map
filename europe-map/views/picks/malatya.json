@@ -1,0 +1,29 @@
+{
+ "city": "Malatya",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Malatya genel camlibel - panoramio.jpg",
+   "y": 2011,
+   "lab": "2011",
+   "what": "General view from Çamlıbel, photograph",
+   "who": "Fatih alataş",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.62
+   ],
+   "why": "the whole city spread across the plain, sunny and clear"
+  }
+ ],
+ "gaps": "P0–P5: no candidates",
+ "notes": "Shows the modern city (founded on this site in the 1830s; old Malatya is today’s Battalgazi) before the 2023 earthquake. #2–#4 (2005) are hazy close views of apartment blocks.",
+ "_reviewed": true
+}

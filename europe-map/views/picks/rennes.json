@@ -1,0 +1,50 @@
+{
+ "city": "Rennes",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Vue perspective de la nouvelle Place du Palais de Rennes.jpg",
+   "y": 1789,
+   "lab": "1789",
+   "what": "The Place du Palais and the Parliament of Brittany, hand-colored vue d’optique",
+   "who": "Jacques Chéreau (publisher)",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.955
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "color; the Parliament of Brittany, the city’s best-known landmark"
+  },
+  {
+   "n": 4,
+   "file": "Guesdon - Rennes vue au-dessus de l'Arsenal (2016.0000.3601).jpg",
+   "y": 1850,
+   "lab": "1850",
+   "what": "Bird’s-eye view from above the Arsenal, lithograph (Voyage aérien en France)",
+   "who": "Alfred Guesdon",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.09,
+    0.112,
+    0.914,
+    0.825
+   ],
+   "focal": [
+    0.38,
+    0.45
+   ],
+   "why": "color bird’s-eye view of the whole city; cathedral and Vilaine visible"
+  }
+ ],
+ "gaps": "P0–P2: no candidates; P4 second view: none; P5: only postcards of barracks, hospitals and streets (1918 hospital panorama is weak, handwriting across top)",
+ "notes": "#5, #6, #16 are the Rue de Rennes in Paris; #1 is a horse painting; #13 single building; #14 airport. P6 pick is distant, landmarks not recognizable — drop if a better modern photo turns up.",
+ "_reviewed": true
+}

@@ -1,0 +1,50 @@
+{
+ "city": "Eindhoven",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Eindhoven Hogenberg (cropped).jpg",
+   "y": 1587,
+   "lab": "1585–90",
+   "what": "Bird’s-eye view during the siege of 1583, colored etching",
+   "who": "Frans Hogenberg",
+   "lic": "PD",
+   "event": true,
+   "trim": [
+    0,
+    0.07,
+    1,
+    1
+   ],
+   "focal": [
+    0.42,
+    0.5
+   ],
+   "why": "only historical view; walled town with church and castle drawn, besiegers’ camps outside; title cut off"
+  },
+  {
+   "n": 9,
+   "file": "Eindhoven panorama.jpg",
+   "y": 2022,
+   "lab": "2022",
+   "what": "The city center at dusk from a height, photograph",
+   "who": "Aruminska",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.014,
+    0.014,
+    0.986,
+    0.495
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "skyline with the Catharinakerk spires and towers; trim keeps the top photo of a two-photo composite"
+  }
+ ],
+ "gaps": "P0, P2, P3, P4, P5: nothing usable",
+ "notes": "#2 is the cropped copy of #1 (same plate, margins and verse caption already removed). The verse caption on #1 suggests this is one of Hogenberg’s news prints of the Dutch Revolt rather than a Civitates plate, so the event flag is set. NIMH aerials #3–#6 are dated only 1920–40; #3 shows a barracks in woods and #4–#6 are vertical survey photos with no landmarks. #9 is two stacked photos; trim keeps the upper one. #10 (Stadhuisplein) and #7 (station) are weaker alternatives for P6.",
+ "_reviewed": true
+}

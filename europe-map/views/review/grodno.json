@@ -1,0 +1,6 @@
+{"city": "Grodno", "checks": [
+ {"n": 4, "verdict": "fix", "fix": {"trim": [0.03, 0.04, 0.97, 0.8], "focal": [0.5, 0.4]}, "reason": "orange plate frame inside the crop on top, left and right, and the lower-left title cartouche shows at the bottom; tighter trim removes both"},
+ {"n": 13, "verdict": "ok", "reason": "Sluchevsky 1897 illustration, correct date, clean crop"},
+ {"n": 10, "verdict": "ok", "reason": "1931 NAC photo of Grodno, good crop"},
+ {"n": 15, "verdict": "ok", "reason": "modern riverfront view, good crop"}
+]}

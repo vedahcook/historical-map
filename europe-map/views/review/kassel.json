@@ -1,0 +1,63 @@
+{
+ "city": "Kassel",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0.09,
+     0.795,
+     1
+    ],
+    "focal": [
+     0.7,
+     0.5
+    ]
+   },
+   "reason": "16:9 crop at focal 0.54 includes the plate’s “CASSEL” title lettering and a corner of the right-hand cartouche; trim top and right to drop them"
+  },
+  {
+   "n": 11,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.145,
+     0.185,
+     0.85,
+     0.78
+    ]
+   },
+   "reason": "top of crop sits on the plate’s top frame line; move trim top below it"
+  },
+  {
+   "n": 13,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.028,
+     0.035,
+     0.966,
+     0.965
+    ]
+   },
+   "reason": "right edge of crop catches the sheet edge and a dark border line"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "photochrom general view with Martinskirche towers"
+  },
+  {
+   "n": 22,
+   "verdict": "ok",
+   "reason": "Matthei painting titled as Kassel, 1919; railing and flowers in foreground but acceptable"
+  },
+  {
+   "n": 25,
+   "verdict": "ok",
+   "reason": "hazy but Martinskirche towers and spire recognizable; title and date match"
+  }
+ ]
+}

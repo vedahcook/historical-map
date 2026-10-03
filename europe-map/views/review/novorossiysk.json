@@ -1,0 +1,15 @@
+{
+ "city": "Novorossiysk",
+ "checks": [
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "ruined town on Tsemes Bay, correctly marked as event; chimney top not cut"
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "good bay and port view; crop keeps piers and far-shore city"
+  }
+ ]
+}

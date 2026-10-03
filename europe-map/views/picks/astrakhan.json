@@ -1,0 +1,71 @@
+{
+ "city": "Astrakhan",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Gezicht op Astrakhan, 1726 Astrakan, Ville capitale du Royaume du même nom, en Moscovie (titel op object) Les Forces de l'Europe, Asie, Afrique et Amerique Comme aussi les Cartes des Côtes de France, RP-P-OB-83.036-214.jpg",
+   "y": 1726,
+   "lab": "1726",
+   "what": "View from the Volga, engraving in Les Forces de l’Europe, Asie, Afrique et Amerique (Rijksmuseum)",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.065,
+    0.22,
+    0.825,
+    0.965
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "general view of the walled kremlin and town from the river; book binding, title cartouche and legend trimmed"
+  },
+  {
+   "n": 2,
+   "file": "View of Astrakhan - Ainsworth William Francis - 1870.jpg",
+   "y": 1865,
+   "lab": "1860s",
+   "what": "The kremlin seen across the harbor, wood engraving",
+   "who": "Jean-Pierre Moynet",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.015,
+    0.985,
+    0.955
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "kremlin bell tower and Assumption Cathedral behind the river boats"
+  },
+  {
+   "n": 8,
+   "file": "Panarama astrakhan 2009.jpg",
+   "y": 2009,
+   "lab": "2009",
+   "what": "The kremlin and the Volga embankment from the new bridge, photograph",
+   "who": "Madyudya Denis",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    0.55,
+    1
+   ],
+   "focal": [
+    0.15,
+    0.4
+   ],
+   "why": "only modern skyline view; kremlin cathedral and bell tower at left"
+  }
+ ],
+ "gaps": "P0, P1: nothing; P3: nothing; P5: nothing",
+ "notes": "#2 is signed Moynet (J.-P. Moynet drew the Volga on his 1858 trip, published in Le Tour du monde); the record only gives Ainsworth’s 1870 reprint, so use 1870 if the 1860s estimate is not wanted. #8 is low resolution (427 px tall). #3–#5 are nature scenes, not the city.",
+ "_reviewed": true
+}

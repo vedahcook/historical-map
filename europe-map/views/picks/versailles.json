@@ -1,0 +1,50 @@
+{
+ "city": "Versailles",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Gezicht op Versailles met fonteinen, RP-P-1951-518-58.jpg",
+   "y": 1681,
+   "lab": "1681",
+   "what": "The palace from the gardens, engraving",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.097,
+    0.172,
+    0.77,
+    0.712
+   ],
+   "focal": [
+    0.5,
+    0.35
+   ],
+   "why": "the palace front with the parterres, firmly dated"
+  },
+  {
+   "n": 14,
+   "file": "Versailles. Panorama du Château et du parc - Charles Rivière del. et lith. LCCN2016652466.jpg",
+   "y": 1860,
+   "lab": "1860",
+   "what": "Panorama of the palace and park, tinted lithograph (Library of Congress)",
+   "who": "Charles Rivière",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.12,
+    0.15,
+    0.886,
+    0.845
+   ],
+   "focal": [
+    0.5,
+    0.35
+   ],
+   "why": "color bird’s-eye view up the park axis to the palace"
+  }
+ ],
+ "gaps": "P0, P1, P3, P6: none; no candidate shows the town itself",
+ "notes": "All usable candidates show the palace and park, not the town. #1’s maker isn’t named in the truncated record (the neighboring plate #2 is signed Perelle). #14 is only 1024 px wide, so the card will be soft. #15 is weak (a garden vase fills the left half); drop it if a blank plate is preferred. Rejected: #3 (old château, dated only 1654–1711), #4 (optical print dated only 1700–99), #7 (Vollon drawing, undated), #19 and #20 (museum snapshots of a Rigaud print behind glass, print date not given), the photochrom interiors #9–#12 and the Grand Trianon #13, the chapel interior #17, the Orpen 1919 treaty painting #16, paintings of other places held in the palace museum (#5 Lodi, #6 Port Mahon), the 1745 ball interior #8, and #18 (a house named Versailles in Virginia).",
+ "_reviewed": true
+}

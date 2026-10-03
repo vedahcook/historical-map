@@ -1,0 +1,134 @@
+{
+ "city": "Delft",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Delft by Braun Hogenberg (34063608).jpg",
+   "y": 1581,
+   "lab": "1581",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 3",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.16,
+    0.14,
+    0.97,
+    0.76
+   ],
+   "focal": [
+    0.4,
+    0.5
+   ],
+   "why": "colored bird’s-eye view with houses drawn; Nieuwe Kerk and Oude Kerk inside the moat; sharpest copy (1616 printing of the 1581 plate)"
+  },
+  {
+   "n": 9,
+   "file": "View of Delft, by Johannes Vermeer.jpg",
+   "y": 1660,
+   "lab": "1660–61",
+   "what": "View of Delft, painting (Mauritshuis, The Hague)",
+   "who": "Johannes Vermeer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.66
+   ],
+   "why": "the classic general view across the Schie; Nieuwe Kerk tower and the Schiedam and Rotterdam gates"
+  },
+  {
+   "n": 27,
+   "file": "Barberini August 2023-Johan Barthold Jongkind - Ansicht von Delft, 1844 - Kunstmuseum Den Haag.jpg",
+   "y": 1844,
+   "lab": "1844",
+   "what": "View toward the town along the canal, painting (Kunstmuseum Den Haag)",
+   "who": "Johan Barthold Jongkind",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.165,
+    0.205,
+    0.838,
+    0.805
+   ],
+   "focal": [
+    0.6,
+    0.68
+   ],
+   "why": "dated 1844; distant skyline with the Nieuwe Kerk tower; gilt frame trimmed away"
+  },
+  {
+   "n": 15,
+   "file": "Flickr - …trialsanderrors - Town hall, Delft, South Holland, the Netherlands, ca. 1899.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The town hall on the Markt, photochrom print",
+   "who": "Photoglob Zürich",
+   "lic": "CC BY 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.95
+   ],
+   "focal": [
+    0.48,
+    0.4
+   ],
+   "why": "color view of the Markt with Hendrick de Keyser’s town hall; caption strip trimmed"
+  },
+  {
+   "n": 21,
+   "file": "NIMH - 2011 - 5075 - Aerial photograph of Delft, The Netherlands.jpg",
+   "y": 1930,
+   "lab": "1920–40",
+   "what": "Aerial photograph of the Markt and the Nieuwe Kerk (NIMH)",
+   "who": "unknown photographer",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.01,
+    0.01,
+    0.99,
+    0.99
+   ],
+   "focal": [
+    0.5,
+    0.52
+   ],
+   "why": "Nieuwe Kerk, the Markt and the town hall from the air, with the canals around"
+  },
+  {
+   "n": 25,
+   "file": "Panorama of Delft - panoramio.jpg",
+   "y": 2008,
+   "lab": "about 2008",
+   "what": "Rooftop panorama of the old town, photograph",
+   "who": "StevenL",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0.05,
+    0,
+    0.72,
+    1
+   ],
+   "focal": [
+    0.3,
+    0.6
+   ],
+   "why": "center rooftops with church spires; hazy right end trimmed"
+  }
+ ],
+ "gaps": "P0: nothing",
+ "notes": "Braun and Hogenberg Delft is in vol. 3 (1581); #1–#6 are copies of the same plate, #4 chosen for resolution and clean margins. #11 and #26 are the same Vermeer painting as #9. P3 alternatives: #13 and #14 (‘Gezichten op Nederlandsche Steden’, Rijksmuseum dates them only 1820–95, though #13 shows the Rotterdam Gate, demolished in the 1830s); #12 shows only a mill and sheds outside Delft. #18 is the Morspoort in Leiden, not Delft. #16 (Oostpoort photochrom, PD) is a good alternative for P4. Modern panoramas are only fair (hazy); #28 shows outer suburbs.",
+ "_reviewed": true
+}

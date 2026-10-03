@@ -1,0 +1,15 @@
+{
+ "city": "Arles",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "Arena photochrom, 1890–1900; crop clears the caption and border"
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "Crop shows the old town and arena, smoke excluded; event flag fine"
+  }
+ ]
+}

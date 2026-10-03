@@ -1,0 +1,113 @@
+{
+ "city": "Maastricht",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Atlas Beudeker-C9E10 040 12X-TRAIECTUM ad Mosam, urbs et natura loci, munitionibusq. et populi frequetia, et edificijs, et Ampliss- ....jpeg",
+   "y": 1575,
+   "lab": "1575",
+   "what": "Panorama across the Maas, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 2 (British Library)",
+   "who": "Georg Braun and Frans Hogenberg, after Simon de Bellomonte",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.3,
+    0.985,
+    0.76
+   ],
+   "focal": [
+    0.42,
+    0.35
+   ],
+   "why": "true panorama of the walled town beyond the river with St. Servatius and the other church towers; coat-of-arms cartouche and text panels trimmed"
+  },
+  {
+   "n": 11,
+   "file": "Gezicht op Maastricht, RP-P-AO-16-92.jpg",
+   "y": 1715,
+   "lab": "1715",
+   "what": "View from the Aachen side, engraving (Rijksmuseum)",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.08,
+    0.175,
+    0.905,
+    0.895
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "general view of the skyline with St. John’s tower over the fields; margins and caption trimmed"
+  },
+  {
+   "n": 15,
+   "file": "Panorama Maastricht vanaf Fort St Pieter, ca 1804.jpg",
+   "y": 1804,
+   "lab": "about 1804",
+   "what": "Panorama from Fort Sint Pieter, colored drawing",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.03,
+    0.985,
+    0.96
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "color general view from the fortress hill with St. Servatius and St. John’s towers; paper edges trimmed"
+  },
+  {
+   "n": 13,
+   "file": "Maastricht, panorama vanuit het westen (Ph v Gulpen, ca 1845).jpg",
+   "y": 1845,
+   "lab": "about 1845",
+   "what": "Panorama from the western city wall, colored drawing (Historisch Centrum Limburg)",
+   "who": "Philippe van Gulpen",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.04,
+    0.02,
+    0.995,
+    0.98
+   ],
+   "focal": [
+    0.65,
+    0.5
+   ],
+   "why": "color panorama over roofs and gardens to the towers of St. Servatius and St. John’s; legend strip at left trimmed; 41 years after #15"
+  },
+  {
+   "n": 22,
+   "file": "NIMH - 2011 - 0321 - Aerial photograph of Maastricht, The Netherlands - 1920 - 1940.jpg",
+   "y": 1931,
+   "lab": "about 1931",
+   "what": "Aerial photograph (Netherlands Institute of Military History)",
+   "who": "unknown photographer",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.025,
+    0.12,
+    0.96,
+    0.925
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "the Maas with the old St. Servatius Bridge and the Wilhelmina Bridge between the center and Wyck; negative edges and scratches trimmed"
+  }
+ ],
+ "gaps": "P0: nothing (#1 is a Nuremberg Chronicle bridge-collapse scene, not a town view); P4: nothing strong; P6: only close-up street photos, no skyline or center view",
+ "notes": "#4 is dated to vol. 2 (1575), as the BnF copy (#5) is described; the British Library record gives 1572. #5 is the same panorama with modern white highlighting. #2, #3, #6, #7 and #8 are town plans. P4 alternatives: #17 (Schaepkens, the western wall in snow, about 1865, color) and #21 (1890 etching of the Maas at night, very dark). #18–20 are 1900s photos of van der Meulen’s 1672 siege drawings. #10 (pen drawing, dated only “ca. 1740?”) left out for the uncertain date.",
+ "_reviewed": true
+}

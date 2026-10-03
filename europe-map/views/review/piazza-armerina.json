@@ -1,0 +1,10 @@
+{
+ "city": "Piazza Armerina",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "Cathedral dome with Etna behind; graded dark but recognizable, crop excludes the logo at the bottom."
+  }
+ ]
+}

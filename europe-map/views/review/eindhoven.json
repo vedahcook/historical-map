@@ -1,0 +1,13 @@
+{
+ "city": "Eindhoven",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok"
+  },
+  {
+   "n": 9,
+   "verdict": "ok"
+  }
+ ]
+}

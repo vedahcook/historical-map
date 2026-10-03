@@ -1,0 +1,64 @@
+{
+ "city": "Bonn",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.06,
+     0.372,
+     0.405,
+     0.595
+    ],
+    "focal": [
+     0.65,
+     0.5
+    ]
+   },
+   "reason": "B&H vol. 2, cartouche dated 1575; old crop includes the panel frame lines and half of the title cartouche, and the window was only 37% of the trimmed width. New trim is the skyline with the church spires, left of the title text"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "Jan van Call, 1694–97 per Rijksmuseum; weak because the town is small at the right edge, but correctly Bonn and honestly captioned"
+  },
+  {
+   "n": 13,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.045,
+     0.42,
+     0.955,
+     0.925
+    ],
+    "focal": [
+     0.335,
+     0.5
+    ]
+   },
+   "reason": "old crop was 60% empty sky and included the bottom frame line; new trim brings palace and minster spire to the middle of the 16:9 crop"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "Bonn from the Venusberg (file name and categories); the Vevey description is a record error"
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "photochrom, border excluded"
+  },
+  {
+   "n": 21,
+   "verdict": "ok",
+   "reason": "Van de Poll 1 April 1955; bridge-heavy but shows the Bonn riverfront"
+  },
+  {
+   "n": 25,
+   "verdict": "ok",
+   "reason": "taken 31 March 2024; foreground town is Königswinter, Bonn in the distance, caption says so"
+  }
+ ]
+}

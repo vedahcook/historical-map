@@ -1,0 +1,40 @@
+{
+ "city": "Metz",
+ "checks": [
+  {
+   "n": 6,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.07,
+     0.135,
+     0.86,
+     0.665
+    ],
+    "focal": [
+     0.5,
+     0.5
+    ]
+   },
+   "reason": "old crop included the METS title bar at the top center and the corner of the key box and the pair of figures at the bottom; new trim is the walled city only"
+  },
+  {
+   "n": 15,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.03,
+     0.03,
+     0.975,
+     0.93
+    ]
+   },
+   "reason": "right edge of old trim sat on the photochrom's dark border line; pulled in a little so no border shows"
+  },
+  {
+   "n": 20,
+   "verdict": "ok",
+   "reason": "Metz-Ville station with its tower, a real local landmark and the only usable modern view; record matches"
+  }
+ ]
+}

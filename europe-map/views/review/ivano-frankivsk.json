@@ -1,0 +1,15 @@
+{
+ "city": "Ivano-Frankivsk",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "captioned Stanislau square with church towers; caption strip and borders trimmed, towers kept"
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "hazy high-altitude aerial but clearly the city and its airport; 16:9 crop fine"
+  }
+ ]
+}

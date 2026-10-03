@@ -1,0 +1,30 @@
+{
+ "city": "Trondheim",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 13,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 17,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

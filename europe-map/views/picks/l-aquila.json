@@ -1,0 +1,29 @@
+{
+ "city": "L’Aquila",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Panorama di L’Aquila (xilografia).jpg",
+   "y": 1890,
+   "lab": "about 1890",
+   "what": "Panorama, wood engraving in Le Cento Città d’Italia",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.005,
+    0.995,
+    0.995
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "whole walled town on its ridge below the Gran Sasso range"
+  }
+ ],
+ "gaps": "P0–P3: no candidates; P5: none; P6: nothing usable (#2 and #3 show modern blocks through trees, #4 and #5 are distant mountain views from the Corno Grande)",
+ "notes": "Le Cento Città d’Italia was issued 1887–1902; Commons gives 1890 for this issue, so labeled about 1890. A new search for a modern photo of the historic center (Piazza del Duomo, Santa Maria di Collemaggio, the Spanish fort) would fill P6.",
+ "_reviewed": true
+}

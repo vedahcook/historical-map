@@ -1,0 +1,20 @@
+{
+ "city": "Bielefeld",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "Schlickum view with the Sparrenburg; crop good"
+  },
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "photochrom general view; crop good"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "postcard captioned “Bielefeld mit Sparrenburg und Johannisberg”; caption and border trimmed; ‘about 1920’ fine"
+  }
+ ]
+}

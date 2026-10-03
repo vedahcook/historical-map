@@ -1,0 +1,29 @@
+{
+ "city": "Odesa",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Odessa-L'escalier Richelieu LCCN91705299.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Richelieu (Potemkin) Stairs, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.025,
+    0.98,
+    0.925
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "the city’s signature landmark; highest-resolution copy of this photochrom (#3, #4 are the same view)"
+  }
+ ],
+ "gaps": "P0–P2: no candidates; P3: old bazaar print (#1) dated only to the 19th century; P5: only 1942 postcards of single buildings at low resolution; P6: crowd on the stairs, a university building and the port plant, nothing usable",
+ "notes": "Photochrom label year not specific in the record, so 1890s/1895 per the rule. Bottom trim removes the printed caption.",
+ "_reviewed": true
+}

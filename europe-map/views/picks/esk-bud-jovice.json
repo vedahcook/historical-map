@@ -1,0 +1,50 @@
+{
+ "city": "České Budějovice",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Krumlovský rybník u Českých Budějovic.jpg",
+   "y": 1711,
+   "lab": "1711",
+   "what": "The walled town, detail of a painted map of the Schwarzenberg estates",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.8
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "bird’s-eye drawing of the walled town with the Black Tower and St. Nicholas; only pre-1800 view"
+  },
+  {
+   "n": 3,
+   "file": "Gruss aus Budweis (01).jpg",
+   "y": 1899,
+   "lab": "1899",
+   "what": "Panorama of the town, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.035,
+    0.988,
+    0.715
+   ],
+   "focal": [
+    0.29,
+    0.5
+   ],
+   "why": "general view with the Black Tower, cathedral and synagogue; caption trimmed off"
+  }
+ ],
+ "gaps": "P0, P1: no candidates; P3: only a distant landscape (#2); P5: only vertical 1945 reconnaissance photos; P6: no view of the historic center (only distant views from surrounding villages)",
+ "notes": "#1 is low resolution (1100 px) and a map detail, but drawn as a view with the buildings. #3 is a folding postcard with a faint crease near the middle. #2 (Eduard Gurk, 1840) shows Budweis only as a thin silhouette on the horizon behind the Rudolfov church, so I left it out; it could fill P3 with focal about [0.7, 0.5] if a distant view is acceptable. #4 (Erwin Spindler, color postcard of the main square with the Black Tower) is better looking than #3, but its date is only the artist’s lifespan (1860–1926); it is probably about 1900.",
+ "_reviewed": true
+}

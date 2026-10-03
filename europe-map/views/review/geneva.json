@@ -1,0 +1,42 @@
+{
+ "city": "Geneva",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.026,
+     0.036,
+     0.972,
+     0.675
+    ],
+    "focal": [
+     0.6,
+     0.4
+    ]
+   },
+   "reason": "Merian plate; current trim sits on the plate’s frame lines at left and right and on the margin above the cartouche; tighten to the plate interior"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "Sauvage engraving from La Suisse pittoresque (1835; this sheet a later printing), small pale vignette on a card mount but the crop stays inside it; cathedral is tiny yet the view is of Geneva"
+  },
+  {
+   "n": 13,
+   "verdict": "ok",
+   "reason": "Loppé/Arnout lithograph of Geneva from the Quai des Bergues with Île Rousseau; record gives 1835–61, so 1850s is an estimate; pale but legitimate"
+  },
+  {
+   "n": 22,
+   "verdict": "ok",
+   "reason": "Mittelholzer aerial of the Mont-Blanc bridge and Île Rousseau, 1930; white film edge trimmed"
+  },
+  {
+   "n": 26,
+   "verdict": "ok",
+   "reason": "cathedral spire over the old town across the lake; sharp color photograph"
+  }
+ ]
+}

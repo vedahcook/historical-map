@@ -1,0 +1,15 @@
+{
+ "city": "Gdynia",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "1942 reconnaissance photo (record: 20 Aug 1942) of the port and center; only P5 view, trim removes the film caption"
+  },
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "2013 panorama of the city and harbor; license and photographer match. Sea Towers fall just outside the 16:9 window, which does no harm"
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "city": "Osnabrück",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.07,
+     0.42,
+     0.929,
+     0.632
+    ]
+   },
+   "reason": "bottom frame lines of the strip (rows at about 0.634-0.640 of the plate) are inside the crop; top frame is also tight"
+  },
+  {
+   "n": 9,
+   "verdict": "fix",
+   "fix": {
+    "what": "General view of the town, steel engraving in Das malerische und romantische Westphalen"
+   },
+   "reason": "“from the Westerberg” is not in the record; viewpoint unverified"
+  },
+  {
+   "n": 12,
+   "verdict": "ok",
+   "reason": "true old-town view with St. Mary’s; ink blots trimmed; crop good"
+  }
+ ]
+}

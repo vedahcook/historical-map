@@ -1,0 +1,50 @@
+{
+ "city": "Duisburg",
+ "picks": [
+  {
+   "n": 8,
+   "file": "Hafen Duisburg-Ruhrort 1930 - 1932 HB02496.jpg",
+   "y": 1931,
+   "lab": "1930–32",
+   "what": "The Ruhrort harbor, aerial photograph (postcard)",
+   "who": "unknown photographer",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "the inland port that defines the city, seen from the air"
+  },
+  {
+   "n": 13,
+   "file": "Duisburger Innenhafen Five Boats Abend 2014.jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The Inner Harbor at dusk, photograph",
+   "who": "Tuxyso",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "best modern city view on offer; Five Boats offices and old warehouse"
+  }
+ ],
+ "gaps": "P0, P2, P3, P4: nothing",
+ "notes": "Braun and Hogenberg plate holds four towns; the Duisburg panel (top right, right-hand page, away from the gutter) is only about 40% of the sheet width, but the source is 8322 px wide. This German edition was printed 1582; plate first published 1575. Wedau rail-yard aerials (#7, #9, #10) skipped as not recognizable.",
+ "_reviewed": true
+}

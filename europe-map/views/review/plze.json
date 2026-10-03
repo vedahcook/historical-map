@@ -1,0 +1,15 @@
+{
+ "city": "Plzeň",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "Merian siege plate of 1618 from Theatrum Europaeum vol. 1 (1635), marked event; title line and most of the key excluded by the 16:9 crop; only a thin top border line of the key at lower right"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "Spindler color postcard titled Plzeň; spire and Radbuza weir clear; crop excludes inset and handwriting; about 1900 is reasonable for a card written 1905"
+  }
+ ]
+}

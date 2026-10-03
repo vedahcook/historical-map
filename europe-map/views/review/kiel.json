@@ -1,0 +1,28 @@
+{
+ "city": "Kiel",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0.195,
+     1,
+     0.78
+    ]
+   },
+   "reason": "crop included the engraved title banners, coat of arms and the figures along the bottom; trimmed to the town and river, spire tip kept"
+  },
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "clean crop inside the frame; crop is about 0.48 of picture width, acceptable"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "good view, crop and fields agree with the record"
+  }
+ ]
+}

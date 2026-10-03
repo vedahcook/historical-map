@@ -1,0 +1,29 @@
+{
+ "city": "Białystok",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Biełastok. Беласток (1915-18).jpg",
+   "y": 1916,
+   "lab": "1915–18",
+   "what": "Aerial photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.035,
+    0.04,
+    0.935,
+    0.94
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "World War I bird’s-eye view of the whole town with Lipowa Street running to the market square; torn print edges trimmed"
+  }
+ ],
+ "gaps": "P0–P4: no candidates. P6: only a palace facade (#5), a housing estate (#6), a night traffic shot (#7) and a low-quality overcast rooftop view toward St. Roch’s Church (#8); none shows the center well.",
+ "notes": "#3 is only 1434 px wide. #1 is a 2020 photo of an exhibition banner reproducing a 1917 aerial (shows the Great Synagogue dome more clearly, but with banner sheen and stand poles); #2 (1940, view down Lipowa Street from a tower, 1280 px) is the other P5 alternative, but its church tower is cut off at the top edge.",
+ "_reviewed": true
+}

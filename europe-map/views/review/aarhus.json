@@ -1,0 +1,20 @@
+{
+ "city": "Aarhus",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "titled view of Aarhus with the cathedral across the bay; town small but identifiable; dated 1836"
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "clear general view with cathedral and harbor; 1861 correct"
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "cathedral spire, harbor and Aarhus Ø; trim and focal good"
+  }
+ ]
+}

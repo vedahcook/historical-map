@@ -1,0 +1,30 @@
+{
+ "city": "Coimbra",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "good; faint center fold only"
+  },
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "south-bank convents across the old bridge; genuine Coimbra view, low resolution but acceptable"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "good; date 1855 from description is right"
+  },
+  {
+   "n": 7,
+   "verdict": "drop",
+   "reason": "1913 is the book’s date, not the photograph’s (halftone of unknown earlier date), low resolution; P4 is already covered by the 1855 photograph"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "good"
+  }
+ ]
+}

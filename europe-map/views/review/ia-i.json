@@ -1,0 +1,15 @@
+{
+ "city": "Iași",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "1943 view from tower, Palace of Culture visible"
+  },
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "2019 drone view of Palace of Culture and center"
+  }
+ ]
+}

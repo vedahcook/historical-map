@@ -1,0 +1,37 @@
+{
+ "city": "Worms",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.02,
+     0.69,
+     0.982,
+     0.97
+    ],
+    "focal": [
+     0.45,
+     0.5
+    ]
+   },
+   "reason": "Old crop includes the dark frame lines at top and bottom of the Worms strip; trim inside them. Plate fold remains but is faint; cathedral and churches centered."
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "Clean Merian river-front view; year 1655 as in the record (second edition of Topographia Hassiae); if the plate first appeared in an earlier volume the year would be 1645/46."
+  },
+  {
+   "n": 13,
+   "verdict": "ok",
+   "reason": "Berkhout 1853 oil, color view with the cathedral; crop clean."
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "Photochrom 1890s, cathedral dominant; printed label below the crop; 42 years after #13."
+  }
+ ]
+}

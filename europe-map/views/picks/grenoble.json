@@ -1,0 +1,92 @@
+{
+ "city": "Grenoble",
+ "picks": [
+  {
+   "n": 11,
+   "file": "Perspective d'une partie de Grenoble - btv1b10663600g.jpg",
+   "y": 1660,
+   "lab": "about 1660",
+   "what": "Part of the town on the Isère, engraving from Merian’s Topographia Galliae",
+   "who": "Matthäus Merian the Younger",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.055,
+    0.945,
+    0.87
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "clear view of the riverfront, bridge and Bastille hill; library stamps trimmed"
+  },
+  {
+   "n": 13,
+   "file": "Vue de Grenoble prise du Quai de la Graille.jpg",
+   "y": 1837,
+   "lab": "1837",
+   "what": "View from the Quai de la Graille, painting (Musée de Grenoble)",
+   "who": "Jean Achard",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.6
+   ],
+   "why": "color general view; Bastille, river, bridge and mountains"
+  },
+  {
+   "n": 21,
+   "file": "31-7-13, Grenoble, vue générale - btv1b69266522.jpg",
+   "y": 1913,
+   "lab": "1913",
+   "what": "General view from the Bastille, press photograph (Agence Rol)",
+   "who": "Agence Rol",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.024,
+    0.047,
+    0.945,
+    0.93
+   ],
+   "focal": [
+    0.6,
+    0.62
+   ],
+   "why": "dated photo (31 July 1913) over the Isère quays and old town with the Belledonne range; plate border and numbers trimmed"
+  },
+  {
+   "n": 29,
+   "file": "View of Grenoble from the Bastille @ Grenoble (7976249440).jpg",
+   "y": 2012,
+   "lab": "2012",
+   "what": "View from the Bastille over the old town",
+   "who": "Guilhem Vellut",
+   "lic": "CC BY 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.78
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "color general view of the center with the Bastille cable car; foreground path trimmed"
+  }
+ ],
+ "gaps": "P0: only a bishop portrait (#1); P5: only hazy high-altitude Mittelholzer aerials (1930–31) where the city is a gray blur",
+ "notes": "Braun and Hogenberg plate (vol. 3, 1581; #2–#5) not used: Grenoble fills only 38% of the plate width (shared with Romans) and is a perspective plan. #11 is from Topographia Galliae (issued 1655–61), so ‘about 1660’; the BnF record only says 17th century. #8 is Canaletto’s Venice and #20 Detaille’s Champigny panorama fragment (Grenoble museum). #18 Jongkind 1884 is inscribed as a copy after Dagnan’s 1830 painting. #16 lithograph by Charles Motte (died 1836) is misdated 1850.",
+ "_reviewed": true
+}

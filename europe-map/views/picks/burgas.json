@@ -1,0 +1,50 @@
+{
+ "city": "Burgas",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Burgas-centre, 1960.jpg",
+   "y": 1960,
+   "lab": "1960",
+   "what": "May Day Street in the center, photograph",
+   "who": "Cyborian",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "only pre-modern candidate; a main street of the center with its turn-of-the-century buildings"
+  },
+  {
+   "n": 4,
+   "file": "Panorama of Burgas.jpg",
+   "y": 2008,
+   "lab": "2008",
+   "what": "The city and port across Lake Mandra, photograph",
+   "who": "Nasomatrix",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.47
+   ],
+   "why": "color general view of the skyline between the lake and the sea; a little hazy"
+  }
+ ],
+ "gaps": "P0–P4: no candidates. P5 is a street scene rather than a general view.",
+ "notes": "#2 is a night view of housing blocks, #3 is mostly Lake Mandra, #5 is the airport from the air; all skipped. #4 is the best of a weak modern set (distant, hazy skyline).",
+ "_reviewed": true
+}

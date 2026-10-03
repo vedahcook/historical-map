@@ -1,0 +1,15 @@
+{
+ "city": "Bryansk",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "Captioned Bryansk postcard, 1906-10; trim clears margins and caption; publisher credit comes from the card itself."
+  },
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "Overcast but a real general view with the Desna and hill churches; no better candidate (#5 is similar and weaker)."
+  }
+ ]
+}

@@ -1,0 +1,134 @@
+{
+ "city": "Toledo",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Gezicht op de stad Toledo, BI-1956-1074-109.jpg",
+   "y": 1598,
+   "lab": "1598",
+   "what": "Engraving after Joris Hoefnagel in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 5",
+   "who": "Georg Braun and Frans Hogenberg, after Joris Hoefnagel",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.05,
+    0.115,
+    0.95,
+    0.585
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "colored bird’s-eye view in the Tagus bend; cathedral and Alcázar recognizable"
+  },
+  {
+   "n": 7,
+   "file": "Gezicht op de stad Toledo, BI-1956-1074-111-1.jpg",
+   "y": 1694,
+   "lab": "1694",
+   "what": "The city above the Tagus, colored etching in Theatrum Hispaniae",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.09,
+    0.125,
+    0.915,
+    0.79
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "colored general view; cathedral and Alcázar on the skyline"
+  },
+  {
+   "n": 9,
+   "file": "Jenaro Pérez Villaamil - General View of Toledo from the Cross of the Canons - Google Art Project.jpg",
+   "y": 1836,
+   "lab": "1836",
+   "what": "General view from the Cruz de los Canónigos, painting",
+   "who": "Genaro Pérez Villaamil",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.66,
+    0.4
+   ],
+   "why": "color view of the hill town with the Alcázar and cathedral tower"
+  },
+  {
+   "n": 17,
+   "file": "Gezicht op Toledo, RP-F-F01215-AP.jpg",
+   "y": 1857,
+   "lab": "about 1857",
+   "what": "The Alcázar above the Tagus gorge, albumen print (Rijksmuseum)",
+   "who": "Charles Clifford",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.045,
+    0.05,
+    0.955,
+    0.895
+   ],
+   "focal": [
+    0.35,
+    0.4
+   ],
+   "why": "classic view of the Alcázar and the town over the river gorge"
+  },
+  {
+   "n": 20,
+   "file": "ETH-BIB-Toledo, Rückblick rechts, von unterhalb Puerta del Sol-Dia 247-15897.tif",
+   "y": 1950,
+   "lab": "1950",
+   "what": "The old town from below the Puerta del Sol, hand-colored slide (ETH Library, Zurich)",
+   "who": "Leo Wehrli",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.07,
+    0.065,
+    0.93,
+    0.78
+   ],
+   "focal": [
+    0.6,
+    0.3
+   ],
+   "why": "color skyline with the cathedral spire"
+  },
+  {
+   "n": 26,
+   "file": "1 toledo spain evening sunset 2014 DXR edit.jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "Panorama at dusk from the Parador, photograph",
+   "who": "Chensiyuan",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "the whole old town in the river bend, cathedral and Alcázar lit"
+  }
+ ],
+ "gaps": "P0: none",
+ "notes": "#1: Rijksmuseum dates it 1566, the year of Hoefnagel’s drawing (inscribed on the plate); the plate was published in vol. 5 (1598), so 1598 is used. #23 is El Greco’s View of Toledo (about 1599–1600, Metropolitan Museum), misdated 2015 by the photo date; it would also fit P1 if a painting is preferred over the engraving. #7: Rijksmuseum dates it 1694; the trilingual caption suggests Pieter van den Berge’s Theatrum Hispaniae, but the maker isn’t named in the record, so left as unknown. #17: Rijksmuseum gives only about 1850–63 (Clifford’s years in Spain); ‘about 1857’ is the middle of that range. #20: the Alcázar is still a ruin from the 1936 siege. #6 is the vol. 1 plate (1572) shared with Valladolid, a fine alternative to #1. #2’s identity is unclear (single Toledo plate with a big sky, possibly a later copy). Rejected: #15, #16 are Via Toledo in Naples; #19 is Toledo, Ohio; #13 and #14 are a cathedral interior and facade; #8 has only a 1700–99 date.",
+ "_reviewed": true
+}

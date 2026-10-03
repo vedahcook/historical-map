@@ -1,0 +1,49 @@
+{
+ "city": "Mantua",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.19,
+     0.185,
+     0.89,
+     0.725
+    ],
+    "focal": [
+     0.5,
+     0.5
+    ]
+   },
+   "reason": "old window included the Latin cartouche at lower left; new window keeps the whole island city and lakes, excludes title and cartouche (castle at bottom right is cut). Faint centre fold in this book copy; #2 is a crease-free copy of the same plate if wanted"
+  },
+  {
+   "n": 8,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.036,
+     0.145,
+     0.964,
+     0.895
+    ],
+    "focal": [
+     0.32,
+     0.6
+    ]
+   },
+   "reason": "old trim included the plate frame lines at left and right; trimmed inside them"
+  },
+  {
+   "n": 12,
+   "verdict": "ok",
+   "reason": "good wood-engraved skyline across the lake"
+  },
+  {
+   "n": 17,
+   "verdict": "ok",
+   "reason": "classic skyline, tower tips inside"
+  }
+ ]
+}

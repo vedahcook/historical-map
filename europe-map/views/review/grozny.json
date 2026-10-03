@@ -1,0 +1,16 @@
+{
+ "city": "Grozny",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.5,
+     0.42
+    ]
+   },
+   "reason": "dome of the tower has only a thin sky margin in the centered crop; focal 0.42 gives room above it and still keeps the mosque and avenue; city, year (2017) and credits are right"
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "city": "A Coruña",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "colored Baldi sheet showing the Tower of Hercules and the walled town; page margins trimmed, crop covers the tower and town"
+  },
+  {
+   "n": 5,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.006,
+     0.11,
+     0.996,
+     1
+    ],
+    "focal": [
+     0.4,
+     0.5
+    ]
+   },
+   "reason": "the engraving's top left corner is cut off and shows cream paper, with a stripe of paper along the top; new trim removes both. The record credits only Fulgosio (the book's author), so 'unknown artist' for the engraver is acceptable"
+  },
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "city skyline across the bay from the Tower of Hercules, hazy but a reasonable general view; #8 is the sharper landmark alternative if wanted"
+  }
+ ]
+}

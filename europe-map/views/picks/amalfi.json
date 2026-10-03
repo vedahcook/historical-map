@@ -1,0 +1,71 @@
+{
+ "city": "Amalfi",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Veduta di Amalfi nel Principato Citeriore, presa dalla Grotta dei Cappuccini.jpg",
+   "y": 1845,
+   "lab": "1845",
+   "what": "View from the Capuchin grotto, engraving (Geografia dell’Italia, Regno delle Due Sicilie)",
+   "who": "Francesco Corsi",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.052,
+    0.092,
+    0.95,
+    0.838
+   ],
+   "focal": [
+    0.62,
+    0.6
+   ],
+   "why": "classic view of the town and coast framed by the grotto; finished print rather than a sketch"
+  },
+  {
+   "n": 8,
+   "file": "Veduta di Amalfi. Napoli. N.°175 - btv1b53261394m (1 of 2).jpg",
+   "y": 1867,
+   "lab": "1865–70",
+   "what": "General view from the sea front, photograph (Bibliothèque nationale de France)",
+   "who": "Roberto Rive",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.035,
+    0.045,
+    0.97,
+    0.935
+   ],
+   "focal": [
+    0.62,
+    0.6
+   ],
+   "why": "whole town below the cliffs, beach and boats; sharp albumen print"
+  },
+  {
+   "n": 16,
+   "file": "Amalfi vista dal porto.jpg",
+   "y": 2021,
+   "lab": "2021",
+   "what": "The town from the harbor, photograph",
+   "who": "Wolfgang Moroder",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "colorful town front with the cathedral bell tower; very high resolution"
+  }
+ ],
+ "gaps": "P0–P2: none (#1 is a portrait of Ottavio Piccolomini, Duke of Amalfi); P5: none (Mittelholzer aerials show the coast toward Vietri, not the town)",
+ "notes": "P3 alternative: #3, Carl Wagner’s pencil drawing of 1823 from near the Capuchin convent (only 22 years from #2, so not both). P4 alternative: #6, photochrom of the 1890s in color, but the town is small behind a woman on a pergola terrace; #8 is the clearer general view. #9 is the reverse of #8.",
+ "_reviewed": true
+}

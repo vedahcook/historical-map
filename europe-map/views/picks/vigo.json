@@ -1,0 +1,50 @@
+{
+ "city": "Vigo",
+ "picks": [
+  {
+   "n": 1,
+   "file": "1877-08-15, La Ilustración Española y Americana, Viaje de S. M. el rey a las provincias del noroeste (cropped) Vigo, Vista general de la ciudad y del puerto, visitados por S. M. el 2 del actual.jpg",
+   "y": 1877,
+   "lab": "1877",
+   "what": "The city and harbor, wood engraving in La Ilustración Española y Americana",
+   "who": "Manuel Nao and Bernardo Rico, after a photograph by Patricio Bocconi",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.04,
+    1,
+    0.98
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "general view of the town on its hill above the harbor"
+  },
+  {
+   "n": 6,
+   "file": "Vista de Vigo dende o Monte Alba.JPG",
+   "y": 2015,
+   "lab": "2015",
+   "what": "View from Monte Alba, photograph",
+   "who": "Lobios123",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.38,
+    1,
+    0.85
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "the whole city spread along the Ría de Vigo; empty sky and dark foreground trimmed"
+  }
+ ],
+ "gaps": "P0–P3: no candidates; P5: no candidates",
+ "notes": "#2 (photo from the sea, dated only 1880–1912, faded glass plate) skipped in favor of #1. #3 and #4 are Vigo di Fassa in the Italian Alps, not Vigo. #5 (2014 panorama) is a usable alternative to #6 but less recognizable.",
+ "_reviewed": true
+}

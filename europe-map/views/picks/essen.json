@@ -1,0 +1,92 @@
+{
+ "city": "Essen",
+ "picks": [
+  {
+   "n": 6,
+   "file": "Essen Braun-Hogenberg.jpg",
+   "y": 1581,
+   "lab": "1581",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 3",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.006,
+    0.017,
+    0.994,
+    0.985
+   ],
+   "focal": [
+    0.685,
+    0.5
+   ],
+   "why": "colored view of the walled town with the Minster; Essen half of the Werden/Essen plate"
+  },
+  {
+   "n": 9,
+   "file": "Essen a54 v Stadtpanorama-1890.jpg",
+   "y": 1890,
+   "lab": "about 1890",
+   "what": "View west from the town hall tower toward the Krupp works, photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "rooftops and smoking Krupp chimneys, the defining picture of industrial Essen"
+  },
+  {
+   "n": 14,
+   "file": "Essen. Steeler Straße mit Synagoge.jpg",
+   "y": 1917,
+   "lab": "1913–22",
+   "what": "Steeler Straße with the new synagogue, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.072,
+    0.05,
+    0.972,
+    0.92
+   ],
+   "focal": [
+    0.6,
+    0.4
+   ],
+   "why": "landmark scene; postcard margin and caption trimmed"
+  },
+  {
+   "n": 18,
+   "file": "Essen Panorama.jpg",
+   "y": 2016,
+   "lab": "2016",
+   "what": "Skyline, photograph",
+   "who": "Zairon",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "modern skyline with the high-rise center over parkland"
+  }
+ ],
+ "gaps": "P0: none; P2: only Jan van Essen’s view of Naples (#7, wrong city); P3: none",
+ "notes": "#13: Commons dates it 1910–20, but the synagogue was finished in 1913, so labeled 1913–20; drop it if a single-building postcard is too weak. #4 is a higher-resolution 1645 printing of the same plate (trim to lower half, library stamp near the right edge). #10 (Leimkühler, 1865) is an alternative for P4. #2 is Werden, a separate town until 1929.",
+ "_reviewed": true
+}

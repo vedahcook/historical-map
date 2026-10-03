@@ -1,0 +1,20 @@
+{
+ "city": "Alicante",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "good"
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "good"
+  },
+  {
+   "n": 13,
+   "verdict": "ok",
+   "reason": "good"
+  }
+ ]
+}

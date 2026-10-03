@@ -1,0 +1,29 @@
+{
+ "city": "Timișoara",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Ottendorf - Timisoara otomana veduta.jpg",
+   "y": 1663,
+   "lab": "1663",
+   "what": "Ottoman Temesvár with its minarets, colored drawing",
+   "who": "Henrik Ottendorf",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.29,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "only early view; Ottoman town skyline; title banner trimmed. Low resolution (1401 px)"
+  }
+ ],
+ "gaps": "P0–P1: no candidates; P3–P5: no candidates",
+ "notes": "#1’s description dates the drawing to Ottendorf’s 1663 journey; the Commons date field says 1667 (probably the finished manuscript). #2 has annotation markers drawn over the sky; #3 and #4 are distant views from rail bridges and yards. P6 pick is weak (mostly trees and suburbs); replace if a photo of the Piața Victoriei or Union Square turns up.",
+ "_reviewed": true
+}

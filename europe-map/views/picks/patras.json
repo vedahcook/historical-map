@@ -1,0 +1,92 @@
+{
+ "city": "Patras",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Gezicht op Patras, RP-P-1957-608-148-1.jpg",
+   "y": 1679,
+   "lab": "1679",
+   "what": "Castle and town from the gulf, hand-colored etching (Rijksmuseum)",
+   "who": "Willem Swidde (attributed), published by Nicolaes Visscher II",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.206,
+    0.247,
+    0.782,
+    0.716
+   ],
+   "focal": [
+    0.45,
+    0.6
+   ],
+   "why": "color view of the castle above the town; trim drops the album sheet and caption"
+  },
+  {
+   "n": 7,
+   "file": "Château de Patras (carte postale ancienne - début XXe siècle).jpg",
+   "y": 1911,
+   "lab": "1907–15",
+   "what": "View from the castle, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.14,
+    0.99,
+    0.985
+   ],
+   "focal": [
+    0.6,
+    0.4
+   ],
+   "why": "color general view over the roofs to the harbor and gulf; trim drops the caption"
+  },
+  {
+   "n": 9,
+   "file": "Vulcania view of Patras.jpg",
+   "y": 1960,
+   "lab": "1960",
+   "what": "The harbor and town from the liner Vulcania, color slide",
+   "who": "Anidaat",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.01,
+    0.03,
+    0.99,
+    0.99
+   ],
+   "focal": [
+    0.5,
+    0.68
+   ],
+   "why": "only mid-century view; hazy but shows the waterfront under the mountain"
+  },
+  {
+   "n": 12,
+   "file": "Patras from Ferry 2003.jpg",
+   "y": 2003,
+   "lab": "2003",
+   "what": "The seafront from a ferry, photograph",
+   "who": "AlekH",
+   "lic": "CC BY 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.39,
+    0.6
+   ],
+   "why": "color seafront with the large domed church (St. Andrew’s) and the mountains"
+  }
+ ],
+ "gaps": "P0, P1, P3: nothing usable.",
+ "notes": "#1 (Coronelli 1686) is a two-page spread with the gutter through the view and shows siege camps; skipped. #3 and #4 are portraits of Archbishop Germanos. The 1890s photochroms (#5 harbor, #6 King George Square) are good alternatives for P4 but less than 40 years from #7. #2’s Rijksmuseum date is 1679; the Swidde attribution and Visscher II imprint fit 1679–97, so the year may be a few years early. #9 sits only in a ship category but the uploader labels it Patras; layout fits. #11 (2008 rooftops) and #13 (2013 from the fortress) are P6 alternatives.",
+ "_reviewed": true
+}

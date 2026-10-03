@@ -1,0 +1,33 @@
+{
+ "city": "Tartu (Dorpat)",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.025,
+     0.01,
+     0.975,
+     0.99
+    ]
+   },
+   "reason": "crop catches the pale paper margin at left and right; view is right (University main building)"
+  },
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 12,
+   "verdict": "drop",
+   "reason": "cavalry parade with no recognizable landmark (not a city view), and the negative number “7936” sits inside the crop"
+  },
+  {
+   "n": 13,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

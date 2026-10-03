@@ -1,0 +1,15 @@
+{
+ "city": "Vladikavkaz",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "print is titled Wladikawkaz with Kazbek; trim sits inside the album mount, clear of tape corners and caption; ca. 1890-1900 gives 1890s/1895"
+  },
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "modest sunset view of the town below the mountains, but the crop is clean and shows buildings, sky and peaks; fields match the record"
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "city": "Bourges",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.082,
+     0.505,
+     0.913,
+     0.93
+    ]
+   },
+   "reason": "frame lines and the olive divider band between the two views were inside the crop edges"
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "Bourges cathedral view; about 1845 is an estimate inside the record's 1800-60"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "best modern view available"
+  }
+ ]
+}

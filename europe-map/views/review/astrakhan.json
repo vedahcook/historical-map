@@ -1,0 +1,20 @@
+{
+ "city": "Astrakhan",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "plate titled “Astrakan, ville capitale du Royaume du même nom”; 1726 is the Rijksmuseum date for this edition; page, gutter and cartouche are outside the crop"
+  },
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "wood engraving signed Moynet; record only gives the 1870 book, so 1860s is an estimate from the artist’s Volga work; keep the label loose"
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "low resolution but the kremlin cathedral and bell tower are clear in the left part of the panorama"
+  }
+ ]
+}

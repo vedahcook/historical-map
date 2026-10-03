@@ -1,0 +1,50 @@
+{
+ "city": "Constantine",
+ "picks": [
+  {
+   "n": 10,
+   "file": "General view, Constantine, Algeria-LCCN2001697860.jpg",
+   "y": 1899,
+   "lab": "1899",
+   "what": "General view, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.02,
+    0.98,
+    0.98
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "the town on its rock above the Rhumel gorge, in color"
+  },
+  {
+   "n": 18,
+   "file": "Vue de Constantine 01.jpg",
+   "y": 2025,
+   "lab": "2025",
+   "what": "The town above the Rhumel gorge, photograph",
+   "who": "Bernard Gagnon",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "recent view showing the gorge and the town on the cliff"
+  }
+ ],
+ "gaps": "P0–P3: nothing; P5: nothing",
+ "notes": "Most candidates are other places (Rome’s Arch and Basilica of Constantine, Constantinople, Skopje) or portraits. #12 (1899, El Kantara bridge) is a strong P4 alternative.",
+ "_reviewed": true
+}

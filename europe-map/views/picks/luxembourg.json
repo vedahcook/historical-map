@@ -1,0 +1,113 @@
+{
+ "city": "Luxembourg City",
+ "picks": [
+  {
+   "n": 6,
+   "file": "Blaeu View of Luxembourg 1649.jpg",
+   "y": 1598,
+   "lab": "1598",
+   "what": "Bird’s-eye view in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 5",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.13,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.32
+   ],
+   "why": "colored true view of the upper town on its cliffs above the Alzette"
+  },
+  {
+   "n": 10,
+   "file": "Gezicht op Luxemburg, RP-P-AO-19-56K-2.jpg",
+   "y": 1654,
+   "lab": "1654",
+   "what": "Engraving in Merian’s Topographia Circuli Burgundici (Rijksmuseum)",
+   "who": "Caspar Merian",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.035,
+    0.145,
+    0.97,
+    0.75
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "labeled prospect of the town with church towers and walls"
+  },
+  {
+   "n": 15,
+   "file": "Callot-Vue-Luxembourg-1753-Albertina-3-3.jpg",
+   "y": 1753,
+   "lab": "1753",
+   "what": "The fortress from the Obergrünewald, pen-and-ink drawing (Albertina, Vienna)",
+   "who": "Wenzel Callot",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.025,
+    0.985,
+    0.975
+   ],
+   "focal": [
+    0.5,
+    0.42
+   ],
+   "why": "detailed view over the fortress walls into the town"
+  },
+  {
+   "n": 22,
+   "file": "The town, Luxembourg-LCCN2001699407.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The upper town above the Passerelle viaduct, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.02,
+    0.985,
+    0.93
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "color general view, cathedral spires and the viaduct"
+  },
+  {
+   "n": 28,
+   "file": "Luxembourg City Night Wikimedia Commons.jpg",
+   "y": 2010,
+   "lab": "2010",
+   "what": "The Grund and the fortifications at dusk, photograph",
+   "who": "Benh Lieu Song",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.5
+   ],
+   "why": "the classic view of the lower town, Neumünster Abbey and the casemate cliffs"
+  }
+ ],
+ "gaps": "P0: none (Nuremberg Chronicle items are portraits and family trees); P5: none (the 1945 and 1964 aerials show Mertert, Grevenmacher and Wasserbillig, not the city)",
+ "notes": "#6’s file name says Blaeu 1649, but it is the Braun and Hogenberg vol. 5 view (the same plate appears in #8, a 1617 edition of vol. 5, with the gutter through it). #6 is only 1024 px wide; if that is too soft, #5 (vol. 3 bird’s-eye plan, first published 1581, 3405 px, colored) is the fallback, with y 1581. #11–#13, #19–#21 and #31 show the Palais and Jardin du Luxembourg in Paris. #15 is the right-hand third of Callot’s long panorama; #17 (the whole panorama) is only 1600×310.",
+ "_reviewed": true
+}

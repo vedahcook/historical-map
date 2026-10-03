@@ -1,0 +1,113 @@
+{
+ "city": "Segovia",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Vista de Segovia, desde El Terminillo.jpg",
+   "y": 1562,
+   "lab": "1562",
+   "what": "View from El Terminillo to the north, pen drawing",
+   "who": "Anton van den Wyngaerde",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.34,
+    0.5
+   ],
+   "why": "drawn from life; the whole walled town on its ridge with the aqueduct at left; clean but only 1127 px wide"
+  },
+  {
+   "n": 5,
+   "file": "1806-1820, Voyage pittoresque et historique de l'Espagne, tomo II, Vista del alcázar de Segovia (cropped).jpg",
+   "y": 1813,
+   "lab": "1806–20",
+   "what": "The Alcázar above the Eresma, engraving in Alexandre de Laborde’s Voyage pittoresque et historique de l’Espagne",
+   "who": "François Liger",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.38,
+    0.45
+   ],
+   "why": "the Alcázar on its rock before the 1862 fire; already cropped to the image, high resolution"
+  },
+  {
+   "n": 9,
+   "file": "Ansicht von Segovia mit der großen römischen Wasserleitung (SM 6780z).png",
+   "y": 1857,
+   "lab": "1857",
+   "what": "General view with the Roman aqueduct, pencil drawing (Städel Museum)",
+   "who": "Fritz Bamberger",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.02,
+    0.99,
+    0.98
+   ],
+   "focal": [
+    0.55,
+    0.35
+   ],
+   "why": "dated 28 August 1857; aqueduct, cathedral and old town all recognizable; very high resolution"
+  },
+  {
+   "n": 13,
+   "file": "Ernest Lawson - View of Segovia.jpg",
+   "y": 1916,
+   "lab": "about 1916",
+   "what": "View of Segovia, painting",
+   "who": "Ernest Lawson",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    0.985,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.35
+   ],
+   "why": "color; cathedral tower above the town, the Alcázar at right and the Vera Cruz church below"
+  },
+  {
+   "n": 19,
+   "file": "Segovia - 02.jpg",
+   "y": 2012,
+   "lab": "2012",
+   "what": "View from the Alcázar, photograph",
+   "who": "Carlos Delgado",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.62,
+    0.45
+   ],
+   "why": "old town and cathedral with the snowy Guadarrama behind; high resolution"
+  }
+ ],
+ "gaps": "P0, P2: nothing",
+ "notes": "#3 (Joli) is Madrid’s Puente de Segovia, not Segovia. #1 is a larger photo of a Wyngaerde 1562 view from the north but badly stained and tinted; #2 was preferred for clarity. #5 date: Laborde’s plates appeared 1806–20 (the Cádiz pick used 1812 for tomo II; harmonize if wanted). P4: the 1890s photochrom of the Alcázar (#7) is a strong color alternative to the 1857 drawing but is under 40 years later, so only one was used. Salvany’s 1915 stereo plates (#14–#16) are low-resolution pairs.",
+ "_reviewed": true
+}

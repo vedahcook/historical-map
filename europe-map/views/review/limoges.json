@@ -1,0 +1,31 @@
+{
+ "city": "Limoges",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.11,
+     0.25,
+     0.9,
+     0.77
+    ]
+   },
+   "reason": "Clerget lithograph (Rijksmuseum record names him, 1840); old crop includes his signature at the lower right corner"
+  },
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.025,
+     0.045,
+     0.972,
+     0.915
+    ]
+   },
+   "reason": "good general view, 1867 per record; old trim includes the paper margin strip at left and right"
+  }
+ ]
+}

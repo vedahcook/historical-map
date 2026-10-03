@@ -1,0 +1,92 @@
+{
+ "city": "Halle (Saale)",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Halle-Saale-1576.jpg",
+   "y": 1598,
+   "lab": "1598",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 5",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.02,
+    0.995,
+    0.985
+   ],
+   "focal": [
+    0.53,
+    0.45
+   ],
+   "why": "single clean copy of the ‘Hall in Sachsen’ view; Marktkirche towers and Red Tower at center"
+  },
+  {
+   "n": 4,
+   "file": "Saxoniae Inferioris (Merian) b 015.jpg",
+   "y": 1653,
+   "lab": "1653",
+   "what": "View from the south, engraving in Merian’s Topographia Saxoniae Inferioris",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.515,
+    0.965,
+    0.96
+   ],
+   "focal": [
+    0.58,
+    0.5
+   ],
+   "why": "lower of the two views on the plate; Marktkirche and Red Tower clear, no gutter (unlike #6)"
+  },
+  {
+   "n": 7,
+   "file": "Eckarth 1782 00 Halle.jpg",
+   "y": 1782,
+   "lab": "1782",
+   "what": "View of the town in the frontispiece of the Eckarth Tagebuch, engraving",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.12,
+    0.09,
+    0.88,
+    0.305
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "labeled ‘Halle’ with the town arms; Red Tower and Marktkirche spires recognizable; trimmed to the view only"
+  },
+  {
+   "n": 14,
+   "file": "The market place and side of Hotel de Ville, Halle, German Saxony, Germany-LCCN2002720633.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The market square with the old town hall and the Stadthaus, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.016,
+    0.022,
+    0.986,
+    0.935
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "color landmark scene of the main square; border and caption trimmed"
+  }
+ ],
+ "gaps": "P0: nothing; P5: nothing of Halle (#16 is Basel, #17 an aircraft hangar); P6: no view of the historic center",
+ "notes": "#2’s file name says 1576, but the plate (‘Hall in Sachsen’, paired with Hildesheim on the sheet, see #1) is in Civitates vol. 5, so dated 1598 per the rules. #7 is a small vignette (about 1,400 px wide after trimming) but the only 18th-century view. #9 (Battle of Halle, painted 1821) skipped: event scene, low resolution, church in background not clearly Halle’s. #8 is Paris, #10 Berlin, #12 Bad Suderode. #21 (2025, Halle-Neustadt high-rises with the city far behind) is a possible P6 fallback but shows no landmarks.",
+ "_reviewed": true
+}

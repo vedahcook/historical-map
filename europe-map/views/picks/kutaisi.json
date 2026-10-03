@@ -1,0 +1,29 @@
+{
+ "city": "Kutaisi",
+ "picks": [
+  {
+   "n": 2,
+   "file": "2025-06-21 View of Kutaisi 2.jpg",
+   "y": 2025,
+   "lab": "2025",
+   "what": "View over the city, photograph",
+   "who": "Alexkom000",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.88
+   ],
+   "focal": [
+    0.4,
+    0.55
+   ],
+   "why": "sharp general view over the old town’s red roofs with a domed church in front; trimmed foreground foliage"
+  }
+ ],
+ "gaps": "P0–P5: no candidates",
+ "notes": "All four candidates are 2025 views from the same spot; none shows Bagrati Cathedral.",
+ "_reviewed": true
+}

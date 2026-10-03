@@ -1,0 +1,26 @@
+{
+ "city": "Clermont-Ferrand",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.45,
+     0.28
+    ]
+   },
+   "reason": "portrait print: focal y 0.42 cuts both spire tops; 0.28 keeps spires and roofline in the 16:9 crop"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "real, if hazy, general view; trim clean"
+  },
+  {
+   "n": 13,
+   "verdict": "ok",
+   "reason": "good"
+  }
+ ]
+}

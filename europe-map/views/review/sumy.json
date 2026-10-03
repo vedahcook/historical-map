@@ -1,0 +1,15 @@
+{
+ "city": "Sumy",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "card is captioned Sumy station; weak single-building scene but the only pre-1970 view; trim removes caption and border"
+  },
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "aerial view of the center with cathedral, 2016 correct; whole frame is already 16:9"
+  }
+ ]
+}

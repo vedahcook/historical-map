@@ -1,0 +1,50 @@
+{
+ "city": "Oviedo",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Oviedo amb la catedral al fons.jpeg",
+   "y": 1899,
+   "lab": "1895–1903",
+   "what": "The cathedral above the rooftops, photograph (Centre Excursionista de Catalunya)",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.24,
+    0.045,
+    0.945,
+    0.96
+   ],
+   "focal": [
+    0.36,
+    0.45
+   ],
+   "why": "the cathedral’s Gothic tower, Oviedo’s landmark, over the old town; stone jamb and black edges trimmed"
+  },
+  {
+   "n": 2,
+   "file": "Vistageneraldeoviedo.JPG",
+   "y": 2011,
+   "lab": "2011",
+   "what": "View from Mount Naranco, photograph",
+   "who": "Frobles",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.1,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "general view of the whole city; a little hazy"
+  }
+ ],
+ "gaps": "P0–P3, P5: no candidates",
+ "notes": "#1 is low resolution (1024 px wide). #4 is a dark winter view, #5 an over-processed HDR shot of a modern district, #3 a suburban street.",
+ "_reviewed": true
+}

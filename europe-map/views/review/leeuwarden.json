@@ -1,0 +1,46 @@
+{
+ "city": "Leeuwarden",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "drop",
+   "reason": "title cartouches, the plate join and the left text panel cannot be kept out of a crop that still shows both the Oldehove and the church spire; a clean crop would be under half the width with a tiny skyline over empty fields"
+  },
+  {
+   "n": 7,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.022,
+     0.075,
+     0.976,
+     0.95
+    ]
+   },
+   "reason": "plate’s top frame line is inside the crop"
+  },
+  {
+   "n": 14,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.03,
+     0.045,
+     0.96,
+     0.92
+    ]
+   },
+   "reason": "plate’s right frame line is inside the crop"
+  },
+  {
+   "n": 20,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 24,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

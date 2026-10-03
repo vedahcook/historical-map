@@ -1,0 +1,28 @@
+{
+ "city": "Katowice",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.012,
+     0.012,
+     0.515,
+     1.0
+    ],
+    "focal": [
+     0.5,
+     0.23
+    ],
+    "what": "The Gymnasium and the Great Synagogue, postcard"
+   },
+   "reason": "printed caption “Kattowitz / Am Thiele-Winklerplatz” sits in the sky inside the crop; narrower crop on the left half keeps the tower and synagogue dome and drops it"
+  },
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

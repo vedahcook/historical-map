@@ -1,0 +1,134 @@
+{
+ "city": "Ypres",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Upload 2021-07-29 7.jpg",
+   "y": 1575,
+   "lab": "1575",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 2",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.22,
+    0.125,
+    0.795,
+    0.94
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "colored single-page copy of the 1575 plate; walled town with Cloth Hall square drawn in"
+  },
+  {
+   "n": 7,
+   "file": "Gezicht op Ieper, RP-P-AO-18-200.jpg",
+   "y": 1654,
+   "lab": "1654",
+   "what": "View from the south, engraving in Merian’s Topographia (Rijksmuseum)",
+   "who": "Caspar Merian",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.14,
+    0.07,
+    0.885,
+    0.515
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "true profile view with keyed towers, St. Martin’s and the belfry"
+  },
+  {
+   "n": 10,
+   "file": "Les Halles d'Ypres – De Markthallen van Ieper.png",
+   "y": 1813,
+   "lab": "1813",
+   "what": "The Cloth Hall and market square, lithograph",
+   "who": "Séraphin Vermote and Jan Baptiste de Jonghe",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.078,
+    0.09,
+    0.92,
+    0.82
+   ],
+   "focal": [
+    0.4,
+    0.5
+   ],
+   "why": "Cloth Hall, belfry and cathedral clearly shown"
+  },
+  {
+   "n": 11,
+   "file": "Ipres. Hôtel de Ville LCCN2017659139.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Cloth Hall, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.028,
+    0.025,
+    0.98,
+    0.97
+   ],
+   "focal": [
+    0.4,
+    0.55
+   ],
+   "why": "color view of the Cloth Hall before its destruction"
+  },
+  {
+   "n": 20,
+   "file": "Ypres Belgium NGM-v31-p337-B.jpg",
+   "y": 1916,
+   "lab": "1915–17",
+   "what": "The ruined town from the air, photograph (Imperial War Museum, published in National Geographic, 1917)",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": true,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "aerial view of the ruins; Cloth Hall and St. Martin’s recognizable"
+  },
+  {
+   "n": 21,
+   "file": "Ypres Cloth Hall (DSCF9459-DSCF9469).jpg",
+   "y": 2018,
+   "lab": "2018",
+   "what": "The rebuilt Cloth Hall, photograph",
+   "who": "Benoit Brummer",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "sharp recent photo of the town’s main landmark"
+  }
+ ],
+ "gaps": "P0: nothing",
+ "notes": "#10: the plate reads ‘Vermote del. 1813’ (drawing date); the lithograph by Dewasme & Cie, Tournai, was probably published in the 1820s. #19 is a smaller duplicate of #10. #20: Commons date 2005 is the scan date; the photo appeared in National Geographic vol. 31 (1917), so it was taken 1915–17. #11: LOC photochroms are usually dated ca. 1890–1900, so 1890s used. #9 (siege of 1678, about 1690) is an alternative P2 event view.",
+ "_reviewed": true
+}

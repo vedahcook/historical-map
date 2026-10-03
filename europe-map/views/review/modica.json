@@ -1,0 +1,15 @@
+{
+ "city": "Modica",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "Parboni 1845 view of castle rock and town; plate number and caption excluded."
+  },
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "Sharp 2014 view of the hillside town; full frame crop is fine."
+  }
+ ]
+}

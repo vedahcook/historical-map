@@ -1,0 +1,15 @@
+{
+ "city": "Cuenca",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "Cuenca, Spain; Parcerisa plate 1853; trim clears margins, caption and frame"
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "Casas Colgadas and San Pablo bridge at dusk; credit and license match"
+  }
+ ]
+}

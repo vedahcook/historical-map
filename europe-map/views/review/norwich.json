@@ -1,0 +1,48 @@
+{
+ "city": "Norwich",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.12,
+     0.14,
+     0.88,
+     0.66
+    ],
+    "focal": [
+     0.5,
+     0.5
+    ]
+   },
+   "reason": "crop cut the title cartouche in half and included the key list at lower left; new crop shows the whole cartouche and city, key and figures dropped; plate is map-like but acceptable as a B&H bird’s-eye view"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "good view, crop and fields agree with the record"
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "good view, crop and fields agree with the record"
+  },
+  {
+   "n": 20,
+   "verdict": "ok",
+   "reason": "good view, crop and fields agree with the record"
+  },
+  {
+   "n": 21,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.55,
+     0.34
+    ]
+   },
+   "reason": "spire tip was cut off at the top of the crop"
+  }
+ ]
+}

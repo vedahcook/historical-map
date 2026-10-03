@@ -1,0 +1,42 @@
+{
+ "city": "Dordrecht",
+ "checks": [
+  {
+   "n": 6,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.135,
+     0.335,
+     0.875,
+     0.705
+    ],
+    "focal": [
+     0.75,
+     0.5
+    ]
+   },
+   "reason": "Crop included coat of arms, medallion, title cartouche and cut legend; trim to the skyline and river with the Grote Kerk"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "Ruysdael view with the Grote Kerk, about 1660"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "Schotel view; date is the painter's working range, acceptable"
+  },
+  {
+   "n": 21,
+   "verdict": "ok",
+   "reason": "Grote Kerk over the harbor, border trimmed"
+  },
+  {
+   "n": 27,
+   "verdict": "ok",
+   "reason": "Aerial of the old town and Grote Kerk, border trimmed"
+  }
+ ]
+}

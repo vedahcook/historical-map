@@ -1,0 +1,113 @@
+{
+ "city": "Lausanne",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Topographia Helvetiae, Rhaetiae et Valesiae 1654 (1126749).jpg",
+   "y": 1642,
+   "lab": "1642",
+   "what": "Bird’s-eye view, engraving in Merian’s Topographia Helvetiae",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.012,
+    0.99,
+    0.985
+   ],
+   "focal": [
+    0.55,
+    0.4
+   ],
+   "why": "buildings drawn in perspective; cathedral on the Cité hill at the top; plate first published 1642"
+  },
+  {
+   "n": 5,
+   "file": "CH-NB - Lausanne, von Nordosten - Collection Gugelmann - GS-GUGE-LORY-A-8.tif",
+   "y": 1806,
+   "lab": "1806",
+   "what": "View from the northeast toward the lake, colored etching (Swiss National Library)",
+   "who": "Gabriel Lory",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.02,
+    0.988,
+    0.982
+   ],
+   "focal": [
+    0.3,
+    0.55
+   ],
+   "why": "color general view; cathedral and castle above Lake Geneva"
+  },
+  {
+   "n": 11,
+   "file": "View of Lausanne (Switzerland).tiff",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The cathedral and the Grand-Pont, photochrom print",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.022,
+    0.025,
+    0.974,
+    0.93
+   ],
+   "focal": [
+    0.42,
+    0.4
+   ],
+   "why": "color; old town rising to the cathedral, Grand-Pont arches in front; trim cuts caption"
+  },
+  {
+   "n": 16,
+   "file": "ETH-BIB-Lausanne v. N. W. aus 1000 m-Inlandflüge-LBS MH01-006084.tif",
+   "y": 1930,
+   "lab": "1930",
+   "what": "Aerial photograph from the northwest (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.03,
+    0.99,
+    0.99
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "oblique general view of the city toward the lake; landmarks small"
+  },
+  {
+   "n": 19,
+   "file": "Lausanne by Night.jpg",
+   "y": 2016,
+   "lab": "2016",
+   "what": "The Grand-Pont and the cathedral at night, photograph",
+   "who": "Philippe Moret",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.35
+   ],
+   "why": "sharp color view; cathedral above the Grand-Pont arches"
+  }
+ ],
+ "gaps": "P0, P2: nothing usable",
+ "notes": "#3 is from the 1654 edition of Topographia Helvetiae; the Lausanne plate first appeared in 1642 (see #1’s description), and #3 is the clean original print (#1 is a 1906 reproduction, #2 has a color chart). Rijksmuseum #6 and #7 skipped: dated only within broad ranges (1829–1911, 1817–1882). Adolphe Braun photo #8 (1860s–70s) is a B&W alternative for P4, too close in date to pair with #11. Mittelholzer 1919 vertical view #14 is the other P5 option; landmarks are hard to pick out in both.",
+ "_reviewed": true
+}

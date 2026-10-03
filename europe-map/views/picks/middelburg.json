@@ -1,0 +1,92 @@
+{
+ "city": "Middelburg",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Beleg van Middelburg, 1574, RP-P-OB-79.547.jpg",
+   "y": 1575,
+   "lab": "1574–76",
+   "what": "Bird’s-eye view during the siege of 1574, etching (Rijksmuseum)",
+   "who": "Frans Hogenberg",
+   "lic": "CC0",
+   "event": true,
+   "trim": [
+    0.035,
+    0.03,
+    0.975,
+    0.885
+   ],
+   "focal": [
+    0.42,
+    0.3
+   ],
+   "why": "true bird’s-eye view of the walled town and its harbor channel; loose sheet, no gutter"
+  },
+  {
+   "n": 7,
+   "file": "Gezicht op Middelburg Middelburg (titel op object), RP-P-AO-15-42D-1.jpg",
+   "y": 1654,
+   "lab": "1654",
+   "what": "View from the harbor, etching in Merian’s Topographia Circuli Burgundici (Rijksmuseum)",
+   "who": "Caspar Merian",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.05,
+    0.15,
+    0.975,
+    0.785
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "skyline profile with the Lange Jan tower and the abbey"
+  },
+  {
+   "n": 14,
+   "file": "Gezicht op Middelburg, gezien vanaf het zuidoosten, 1744 De Stad Middelburg, aan de zuidzyde te zien (titel op object), RP-P-1905-629.jpg",
+   "y": 1755,
+   "lab": "1751–60",
+   "what": "View from the southeast, engraving (Rijksmuseum)",
+   "who": "Jan Caspar Philips",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.045,
+    0.09,
+    0.955,
+    0.855
+   ],
+   "focal": [
+    0.45,
+    0.55
+   ],
+   "why": "clear skyline profile; Lange Jan tower in the center"
+  },
+  {
+   "n": 13,
+   "file": "Gezicht op Middelburg, RP-P-1944-3035.jpg",
+   "y": 1831,
+   "lab": "1831",
+   "what": "View across the water, lithograph in Vues pittoresques du Royaume des Pays-Bas (Rijksmuseum)",
+   "who": "Barend Cornelis Koekkoek",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.145,
+    0.16,
+    0.83,
+    0.785
+   ],
+   "focal": [
+    0.5,
+    0.65
+   ],
+   "why": "Lange Jan and the Oostkerk dome visible across the water"
+  }
+ ],
+ "gaps": "P0: none; P4–P6: none usable (modern photos are all close-ups of doorways and statues)",
+ "notes": "#1 and #4 (Braun and Hogenberg vol. 2, 1575, colored) are bound-book spreads with the fold running through the town, so I used Hogenberg’s loose 1574 siege sheet (#3) instead, marked as an event; swap in #4 if the fold is acceptable. #14’s title dates the view itself to 1744; the Rijksmuseum dates the print 1751–60, so I used that. #13 (1831) is faint and the town is small in the frame, but it is the only 19th-century view; #11 and #12 are other impressions of the same lithograph. #8 and #9 are reconstructions of the town as it was around 1400.",
+ "_reviewed": true
+}

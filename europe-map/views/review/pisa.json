@@ -1,0 +1,47 @@
+{
+ "city": "Pisa",
+ "checks": [
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "Hackert's painted view of Pisa along the Arno with the cathedral group at left; record date 1800 matches; clean full-picture crop"
+  },
+  {
+   "n": 12,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.03,
+     0.03,
+     0.96,
+     0.94
+    ],
+    "focal": [
+     0.5,
+     0.4
+    ]
+   },
+   "reason": "old focal y 0.55 cut the top off the Baptistery dome and the pinnacle; new focal keeps it, and the slightly larger trim removes a light line along the top of the print"
+  },
+  {
+   "n": 17,
+   "verdict": "fix",
+   "fix": {
+    "y": 1918,
+    "lab": "about 1918",
+    "trim": [
+     0.115,
+     0.17,
+     0.905,
+     0.815
+    ]
+   },
+   "reason": "the mount only says the original was received July 1920 and the series dates 1917-64, so '1910s' overstates certainty; 'about 1918' is honest. Right trim pulled in 2 px so none of the white mount shows"
+  },
+  {
+   "n": 18,
+   "verdict": "ok",
+   "reason": "sharp 2019 view of the cathedral and Baptistery from the Leaning Tower; record matches, tower parapet trimmed out"
+  }
+ ]
+}

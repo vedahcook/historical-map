@@ -1,0 +1,10 @@
+{
+ "city": "Dundee",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "Old Steeple of Dundee per title; 1852 print; crop clean"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "city": "Mosul",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "Riverfront view of Mosul, 1861 print; crop clean, fields match record"
+  }
+ ]
+}

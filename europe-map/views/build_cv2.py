@@ -7,9 +7,10 @@ from pilot_events import E, POP, DAY
 from pilot_event_images import EI
 cd = json.load(open('city_data.json')); fl = json.load(open('flags_data.json')); sizes = json.load(open('full_sizes.json'))
 NEW = {}
-for vf in ['/home/claude/cv/work/views.json', '/home/claude/cv2/work/views.json']:
+for vf in ['/home/claude/cv/work/views.json', '/home/claude/cv2/work/views.json', '/home/claude/cv3/work/views.json']:
     if os.path.exists(vf): NEW.update(json.load(open(vf)))
 B2 = [l.strip() for l in open('/home/claude/cv/batch2.txt') if l.strip()]
+B3 = [l.strip() for l in open('/home/claude/cv/batch3.txt') if l.strip()]
 slug = lambda t: re.sub(r'[^a-z]+', '-', t.lower().replace('ó', 'o')).strip('-')
 PILOT = {'cologne': 'Cologne', 'vienna': 'Vienna', 'paris': 'Paris', 'istanbul': 'Istanbul'}
 MAPNAME = {'saint-petersburg': 'St. Petersburg', 'krakow': 'Kraków'}
@@ -49,8 +50,8 @@ def pilot_evt(city, y, k, n, x):
     if f and vid in sizes: w, h = sizes[vid]; e['img'] = {'id': vid, 'who': who, 'lab': lab, 'what': what, 'lic': lic, 'f': f, 'w': w, 'h': h}
     return e
 cities = {}
-KEYS = ORDER + [slug(n) for n in B2 if slug(n) in NEW]
-for n in B2: MAPNAME[slug(n)] = n
+KEYS = ORDER + [slug(n) for n in B2 + B3 if slug(n) in NEW]
+for n in B2 + B3: MAPNAME[slug(n)] = n
 for key in KEYS:
     n = PILOT.get(key) or MAPNAME.get(key) or key.capitalize()
     c = cd['res'][n]

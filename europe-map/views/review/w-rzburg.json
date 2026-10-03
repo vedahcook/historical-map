@@ -1,0 +1,54 @@
+{
+ "city": "Würzburg",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.025,
+     0.04,
+     0.5,
+     0.93
+    ],
+    "focal": [
+     0.5,
+     0.0
+    ]
+   },
+   "reason": "trim top sat inside the dark plate border and the crop cut off the fortress towers; with trim top at 0.04 and crop aligned to the top, the whole fortress and a sliver of town show"
+  },
+  {
+   "n": 7,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.026,
+     0.035,
+     0.968,
+     0.98
+    ],
+    "focal": [
+     0.55,
+     0.38
+    ]
+   },
+   "reason": "trim included the plate frame line along left, top and right"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "bridge and fortress photochrom, crop clean"
+  },
+  {
+   "n": 23,
+   "verdict": "ok",
+   "reason": "postcard dated 16.4.1916 per record; this is a posting date, so true date is earlier; about 1916 reads acceptably"
+  },
+  {
+   "n": 24,
+   "verdict": "ok",
+   "reason": "wide panorama so crop is necessarily narrow; shows old town, river and bridge"
+  }
+ ]
+}

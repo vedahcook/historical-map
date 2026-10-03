@@ -1,0 +1,50 @@
+{
+ "city": "Lucca",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Civitates orbis terrarum. Urbium praecipuarum totius mundi. Liber quartus (page 104).jpg",
+   "y": 1588,
+   "lab": "1588",
+   "what": "Bird’s-eye plan, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 4",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.1,
+    0.14,
+    0.915,
+    0.79
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "colored copy (1594 printing) of the 1588 plate; walled town with buildings drawn, Roman amphitheater oval recognizable; book margins trimmed"
+  },
+  {
+   "n": 9,
+   "file": "Vista di Lucca dal campanile di Santi Giovanni e Reparata 02.jpg",
+   "y": 2018,
+   "lab": "2018",
+   "what": "The cathedral of San Martino, photograph from the bell tower of Santi Giovanni e Reparata",
+   "who": "Syrio",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "sharp color view of the cathedral and its square, the city’s main landmark"
+  }
+ ],
+ "gaps": "P0: none. P2: none. P3: only the 1845 Nottolini aqueduct print (#7), which shows the countryside, not the city. P4: none. P5: none.",
+ "notes": "The B&H plate is a perspective plan with buildings drawn in elevation rather than a true bird’s-eye view; #4 (BnF loose plate) has a strong center fold and #2 is an uncolored open book, so #1 is the best copy. #3 is Linz, #5 and #6 are Luca Bertelli prints of saints, #8 is a Goya portrait. P6 alternative: #10 (rooftop view toward San Frediano and the Torre delle Ore) is a more general view but the landmarks are small; #11 and #12 are hazy.",
+ "_reviewed": true
+}

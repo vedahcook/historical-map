@@ -1,0 +1,57 @@
+{
+ "city": "Freiburg im Breisgau",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.14,
+     0.03,
+     0.67,
+     0.7
+    ],
+    "focal": [
+     0.5,
+     0.42
+    ]
+   },
+   "reason": "Merian 1644 view; old trim includes the paper margin and plate line at the top, and the 16:9 window cuts the title cartouche at the right and the coat of arms at left. New trim keeps the minster, castle hill and walls between them, window about 55% of the picture width"
+  },
+  {
+   "n": 8,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.017,
+     0.03,
+     0.975,
+     0.94
+    ]
+   },
+   "reason": "photochrom; old right trim includes the white mount strip"
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "Gerd Beck slide, year written on the slide; minster tip inside the crop"
+  },
+  {
+   "n": 18,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.36,
+     0,
+     0.8,
+     0.88
+    ],
+    "focal": [
+     0.5,
+     0.5
+    ]
+   },
+   "reason": "11,726 px wide panorama: old trim left the 16:9 window at 27% of the picture width; the same view (minster at the center) cut from a narrower trim keeps the window at about 60% of the trimmed width"
+  }
+ ]
+}

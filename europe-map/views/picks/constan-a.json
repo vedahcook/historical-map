@@ -1,0 +1,50 @@
+{
+ "city": "Constanța",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Constanţa Generala 1909.jpg",
+   "y": 1909,
+   "lab": "1909",
+   "what": "View east from the mosque minaret, color postcard",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0,
+    0.995,
+    0.93
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "general view over the old town to the cathedral and the sea; caption trimmed"
+  },
+  {
+   "n": 8,
+   "file": "Constanta, view from mosque 1.jpg",
+   "y": 2009,
+   "lab": "2009",
+   "what": "The old town and the Black Sea from the mosque minaret, photograph",
+   "who": "Krzysztof Dudzik-Górnicki",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0.07,
+    1,
+    0.63
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "color view of the old town on its peninsula with the harbor, from the same viewpoint as the 1909 card; foreground roof trimmed"
+  }
+ ],
+ "gaps": "P0–P3: nothing (#1–#3 are Konstanz in Germany). P5: no candidates.",
+ "notes": "#1–#3 are Braun and Hogenberg and Karlsruhe views of Konstanz (Lake Constance), wrongly in this city’s search results. #7 (2006) is a more distant skyline view of the old town; #5 is the port; #6 is a NASA satellite image.",
+ "_reviewed": true
+}

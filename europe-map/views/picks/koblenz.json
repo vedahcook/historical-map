@@ -1,0 +1,92 @@
+{
+ "city": "Koblenz",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Treveris ; Cobolentz ; Rotenburg - btv1b53178869z (1 of 2).jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Panorama of the town, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.086,
+    0.505,
+    0.914,
+    0.715
+   ],
+   "focal": [
+    0.55,
+    0.55
+   ],
+   "why": "colored loose sheet; trimmed to the middle panel (Koblenz) of the three-city plate (Trier above, Rothenburg below); town front on the river with the Moselle bridge"
+  },
+  {
+   "n": 9,
+   "file": "Gezicht op Koblenz, RP-P-2018-1492.jpg",
+   "y": 1695,
+   "lab": "about 1695",
+   "what": "View from downstream with Ehrenbreitstein, engraving after Jan van Call (Rijksmuseum)",
+   "who": "Pieter Schenk",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.158,
+    0.15,
+    0.84,
+    0.745
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "true view of the town at the confluence with the Ehrenbreitstein fortress rock opposite; trimmed mount and caption"
+  },
+  {
+   "n": 13,
+   "file": "Schifffahrt auf Rhein und Mosel - Mittelrhein-Museum in Koblenz - M952.tif",
+   "y": 1818,
+   "lab": "1818",
+   "what": "View from the heights near Ehrenbreitstein, painting (Mittelrhein-Museum, Koblenz)",
+   "who": "Johann Jakob Diezler",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.005,
+    0.15,
+    0.995,
+    0.985
+   ],
+   "focal": [
+    0.65,
+    0.55
+   ],
+   "why": "color general view of the town across the Rhine with its church towers and the Moselle bridge; trimmed the color chart and backdrop"
+  },
+  {
+   "n": 18,
+   "file": "Coblenz and Ehrenbreitstein, the Rhine, Germany-LCCN2002714076.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Koblenz and the Ehrenbreitstein fortress, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.022,
+    0.028,
+    0.982,
+    0.95
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "view over the Rhine to the city with the fortress on its cliff; color, landscape"
+  }
+ ],
+ "gaps": "P0: none. P5: none (all Mittelholzer aerials #20–#23 are Koblenz in Aargau, Switzerland). P6: no good view of the center — #24 is a dusk HDR panorama from Metternich in which nothing is recognizable; #25 (Neuendorf) and #26 (Stolzenfels) are outlying districts; #27 is the Rhine gorge near Niederheimbach.",
+ "notes": "#3 date: the Trier–Koblenz–Rothenburg plate is taken as vol. 1 (1572); Commons says ‘about 1570’ and the plate sits among vol. 1 German cities in the 1582 German edition (#4) — change to 1575 if it proves to be vol. 2. #1 is a colored crop of the same panel but has a fold through the middle. P1/P2 alternative: Merian’s bird’s-eye view (#7, Topographia of Mainz, Trier and Cologne, 1646; #5 is a crop of it) shows the Swedish siege of 1632 and would need event: true. P2 alternative: Jacobus Storck’s painting (#8, 1680–99, color), but it looks at Ehrenbreitstein and the Philippsburg palace from the Koblenz shore, with a possibly invented foreground. P3 alternative: Wittoff’s painting (#12, 1836) of the Electoral Palace and Ehrenbreitstein, color, wide. P4: the 1860s stereo cards (#14–#16) are by Adolphe Braun, not Braun and Hogenberg; #17 is Stolzenfels castle and #19 is Kobern on the Moselle, not Koblenz.",
+ "_reviewed": true
+}

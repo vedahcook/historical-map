@@ -1,0 +1,10 @@
+{
+ "city": "Gaziantep",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "Castle clearly shown, 2019 correct, crop clean; tree branches cross it but it is the only usable view (others are night airplane shots)."
+  }
+ ]
+}

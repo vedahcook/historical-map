@@ -1,0 +1,50 @@
+{
+ "city": "Cremona",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Panorama della città di Cremona (xilografia).jpg",
+   "y": 1888,
+   "lab": "1888",
+   "what": "Panorama of the city, wood engraving in Le Cento Città d’Italia",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.005,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.35
+   ],
+   "why": "the Torrazzo, cathedral and baptistery rising over the rooftops"
+  },
+  {
+   "n": 7,
+   "file": "20110725 Cremona 5808.jpg",
+   "y": 2011,
+   "lab": "2011",
+   "what": "The old town seen from the Torrazzo, photograph",
+   "who": "Jakub Hałun",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "wide, sharp view over the medieval center and its brick towers"
+  }
+ ],
+ "gaps": "P0–P3: no candidates. P5: the only hit (#3, Mittelholzer 1928) shows the mouth of the Adda west of the city, not Cremona.",
+ "notes": "#1 (Karl Kaufmann, cathedral square, color) is attractive but dated only ‘by 1901’, so skipped; it would be a P4 alternative if a firm date turns up. #5 shows the baptistery from the Torrazzo but is portrait format; #7 is the wider general view.",
+ "_reviewed": true
+}

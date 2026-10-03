@@ -1,0 +1,71 @@
+{
+ "city": "Bielefeld",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Bielefeld Ansicht 1840.jpg",
+   "y": 1840,
+   "lab": "about 1840",
+   "what": "General view with the Sparrenburg, steel engraving",
+   "who": "Carl Schlickum",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.55
+   ],
+   "why": "town with church towers and the Sparrenburg ruin on its hill"
+  },
+  {
+   "n": 2,
+   "file": "Bielefield (i.e., Bielefeld), from the Northeast, Westphalia, Germany-LCCN2002720809.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "View from the northeast, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.02,
+    0.98,
+    0.94
+   ],
+   "focal": [
+    0.35,
+    0.4
+   ],
+   "why": "color; town with the Sparrenburg tower and the Nicolaikirche on the skyline"
+  },
+  {
+   "n": 9,
+   "file": "Bielefeld mit Sparrenburg und Johannisberg.jpg",
+   "y": 1921,
+   "lab": "about 1920",
+   "what": "The town with the Sparrenburg and Johannisberg, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.036,
+    0.04,
+    0.968,
+    0.92
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "general view over the roofs toward the castle hill; trim cuts caption and card border"
+  }
+ ],
+ "gaps": "P0–P2: no candidates; P6: only street and station shots, nothing usable",
+ "notes": "#1 is described as ‘um 1840’. #9’s 1921 is the postcard’s date, so the photo may be a few years older; labeled ‘about 1920’. #3 (and its copy #6) is the other strong P4 photochrom, a general view over the old town from the castle hill. 1945 aerial #8 is a vertical bomb-damage survey, unrecognizable. Modern #10 shows the main station; #11–#13 are street-level shots.",
+ "_reviewed": true
+}

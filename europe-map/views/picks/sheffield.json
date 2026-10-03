@@ -1,0 +1,71 @@
+{
+ "city": "Sheffield",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Sheffield from the Attercliffe Road 1819.jpg",
+   "y": 1819,
+   "lab": "1819",
+   "what": "Sheffield from the Attercliffe Road, engraving",
+   "who": "Edward Blore and George Cooke",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0,
+    0.995,
+    0.875
+   ],
+   "focal": [
+    0.47,
+    0.6
+   ],
+   "why": "general view across the river with the parish church spire and smoking chimneys"
+  },
+  {
+   "n": 4,
+   "file": "'Owd Shevvield'.jpg",
+   "y": 1874,
+   "lab": "1874",
+   "what": "General view from the east, wood engraving in The Graphic",
+   "who": "J. R. Brown",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "panorama of the industrial town from St John’s Church; larger copy than the cropped #5"
+  },
+  {
+   "n": 7,
+   "file": "Another view of Sheffield - geograph.org.uk - 6393979.jpg",
+   "y": 2020,
+   "lab": "2020",
+   "what": "Photograph",
+   "who": "Neil Theasby",
+   "lic": "CC BY-SA 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.33
+   ],
+   "why": "city-center skyline with towers and an old works chimney"
+  }
+ ],
+ "gaps": "P0–P2: no candidates; P5: nothing",
+ "notes": "#2/#3 show only the General Cemetery; #9 is Sheffield House in East Sussex. #7 is a portrait photo, so the 16:9 crop keeps the skyline band.",
+ "_reviewed": true
+}

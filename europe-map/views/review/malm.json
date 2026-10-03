@@ -1,0 +1,28 @@
+{
+ "city": "Malmö",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.005,
+     0.012,
+     0.995,
+     1
+    ]
+   },
+   "reason": "thin dark rim at the scan edge inside the crop"
+  },
+  {
+   "n": 8,
+   "verdict": "drop",
+   "reason": "park and canal scene at dusk with a windmill, not a view of the city or a recognizable landmark; no better P4 candidate, leave the period blank"
+  },
+  {
+   "n": 20,
+   "verdict": "ok",
+   "reason": "good view, crop and fields agree with the record"
+  }
+ ]
+}

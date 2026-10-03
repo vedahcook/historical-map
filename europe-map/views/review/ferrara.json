@@ -1,0 +1,15 @@
+{
+ "city": "Ferrara",
+ "checks": [
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "Este Castle view, date and credit match"
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "good castle view, crop clean"
+  }
+ ]
+}

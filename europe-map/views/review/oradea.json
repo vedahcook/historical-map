@@ -1,0 +1,60 @@
+{
+ "city": "Oradea",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.2,
+     0.14,
+     0.836,
+     0.66
+    ],
+    "focal": [
+     0.5,
+     0.5
+    ]
+   },
+   "reason": "current crop cuts the VARADINUM title in half at the top and shows the cartouche and caption at lower left; this trim keeps town, fortress and river only"
+  },
+  {
+   "n": 7,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.04,
+     0.06,
+     0.965,
+     0.867
+    ],
+    "focal": [
+     0.5,
+     0.5
+    ]
+   },
+   "reason": "current trim includes the plate's double border lines at the edges and a rule along the bottom; pulled in to the engraved scene"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "photochrom of Grosswardein, caption and mount excluded; Detroit Publishing Co. is not named in the record but is standard for these Library of Congress prints"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "Fortepan 1941 aerial of the center on the Criș; wing excluded by the crop"
+  },
+  {
+   "n": 14,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.72,
+     0.55
+    ]
+   },
+   "reason": "the church's twin towers are cut at the right edge of the crop; shifting focal right shows both towers with the school building"
+  }
+ ]
+}

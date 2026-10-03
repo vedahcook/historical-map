@@ -1,0 +1,15 @@
+{
+ "city": "Rostov-on-Don",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "Hammond slide; record’s description identifies it as the port and cathedral of Rostov-on-Don and moves the date to 1964; cathedral dome is small at the left edge but the Don waterfront is clear"
+  },
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "sharp 2013 view of the cathedral and bell tower over the Don; crop clean"
+  }
+ ]
+}

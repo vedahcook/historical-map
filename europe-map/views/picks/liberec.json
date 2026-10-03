@@ -1,0 +1,50 @@
+{
+ "city": "Liberec",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Reichenberg, general view, Bohemia, Austro-Hungary-LCCN2002708491.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.15,
+    0.982,
+    0.95
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "color general view over the rooftops to the church towers"
+  },
+  {
+   "n": 7,
+   "file": "Side view of Liberec city hall in Liberec, Liberec District.jpg",
+   "y": 2011,
+   "lab": "2011",
+   "what": "The town hall, photograph",
+   "who": "Jiří Sedláček",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0.03,
+    0,
+    0.9,
+    1
+   ],
+   "focal": [
+    0.52,
+    0.4
+   ],
+   "why": "the city’s best-known landmark; the views from Ještěd are hazy and distant"
+  }
+ ],
+ "gaps": "P0–P3: nothing usable; P5: no candidates",
+ "notes": "#4 is an 1863 steel engraving that reproduces a panorama of about 1700; skipped because it is unclear which date it stands for (it could fill P2 as ‘about 1700’ if the reviewer accepts that). #2 duplicates the photochrom #1. #5 (Kasimir, 1906) is a strong color painting, but it shows the 1906 exhibition grounds and falls in the same period as #1. The Ještěd views (#6, #8, #9) are distant or cluttered with railings and antennas; #6 has a date stamp burned in.",
+ "_reviewed": true
+}

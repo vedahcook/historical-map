@@ -1,0 +1,42 @@
+{
+ "city": "Tournai",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.1,
+     0.138,
+     0.923,
+     0.69
+    ],
+    "focal": [
+     0.5,
+     0.5
+    ]
+   },
+   "reason": "old window cut through the coats of arms at the top and caught the legend list at lower left; new window is clean town only. Perspective plan with houses drawn, borderline but only P1 option"
+  },
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "true profile view, five-tower cathedral, signature and title outside or harmless; Peeters/Merian 1654 acceptable"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "photo trimmed cleanly from book page, caption excluded"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "clean crop, tower tops inside"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "fine modern rooftop view"
+  }
+ ]
+}

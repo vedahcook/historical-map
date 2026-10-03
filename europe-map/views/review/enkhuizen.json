@@ -1,0 +1,54 @@
+{
+ "city": "Enkhuizen",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.012,
+     0.01,
+     0.82,
+     0.985
+    ],
+    "focal": [
+     0.55,
+     0.36
+    ]
+   },
+   "reason": "Paper margin at left inside the crop, and crop cut off the north end of the town; move up to show the whole walled town"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "Dated 1772 by inscription; faint but a true view from the sea"
+  },
+  {
+   "n": 17,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.2,
+     0.158,
+     0.784,
+     0.764
+    ],
+    "focal": [
+     0.4,
+     0.5
+    ]
+   },
+   "reason": "Crop included a sliver of paper margin at left; shift trim in slightly"
+  },
+  {
+   "n": 20,
+   "verdict": "ok",
+   "reason": "Aerial of the old town, 1920-40"
+  },
+  {
+   "n": 22,
+   "verdict": "ok",
+   "reason": "Waterfront panorama with church towers, 2009"
+  }
+ ]
+}

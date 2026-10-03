@@ -1,0 +1,45 @@
+{
+ "city": "Wiesbaden",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "Merian Topographia Hassiae view, 1655 per Commons category and #3; banner “Wißbaden” is part of the plate; crop clean"
+  },
+  {
+   "n": 6,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.04,
+     0.12,
+     0.958,
+     0.838
+    ],
+    "focal": [
+     0.5,
+     0.55
+    ]
+   },
+   "reason": "trim includes a white band between the engraving and its frame at left, right and bottom; tighten to the engraved area. Town is small and distant but #5 and #7 are worse (century-wide date, pond view)"
+  },
+  {
+   "n": 9,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.023,
+     0.02,
+     0.985,
+     0.95
+    ]
+   },
+   "reason": "left edge of crop keeps a 3 px lighter border strip; view is fine"
+  },
+  {
+   "n": 19,
+   "verdict": "ok",
+   "reason": "2013 Neroberg panorama; crop at the Marktkirche is sharp"
+  }
+ ]
+}

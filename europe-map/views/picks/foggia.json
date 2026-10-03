@@ -1,0 +1,71 @@
+{
+ "city": "Foggia",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Veduta della città di Foggia, capoluogo di Capitanata nel Regno di Napoli.jpg",
+   "y": 1845,
+   "lab": "1845",
+   "what": "View from the countryside, engraving",
+   "who": "Antonio Verico",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.05,
+    0.07,
+    0.94,
+    0.81
+   ],
+   "focal": [
+    0.62,
+    0.55
+   ],
+   "why": "only early general view; skyline with cathedral and domes across the plain; caption and margins trimmed"
+  },
+  {
+   "n": 2,
+   "file": "Foggia – Veduta generale della città (xilografia).jpg",
+   "y": 1894,
+   "lab": "1894",
+   "what": "General view, wood engraving in Le Cento Città d’Italia",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "bird’s-eye view over the public gardens and rooftops to the cathedral tower; high resolution"
+  },
+  {
+   "n": 3,
+   "file": "Photo View of Piazza Cavour in Foggia 1936 - Touring Club Italiano s.05909-01.jpg",
+   "y": 1936,
+   "lab": "1936",
+   "what": "Piazza Cavour, photograph (Touring Club Italiano)",
+   "who": "unknown photographer",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.03,
+    0.04,
+    0.94,
+    0.92
+   ],
+   "focal": [
+    0.62,
+    0.45
+   ],
+   "why": "the city’s main square with the fountain and the colonnade of the public gardens; card border trimmed"
+  }
+ ],
+ "gaps": "P0–P2: nothing; P6: nothing (no modern photo among the candidates)",
+ "notes": "#1 and #2 are 49 years apart in different periods. Other 1936 Touring Club photos (#4 gardens, #5 cathedral front, #6 Chiesa delle Croci) are single sites; #3 chosen as the most recognizable city scene.",
+ "_reviewed": true
+}

@@ -1,0 +1,43 @@
+{
+ "city": "Basel",
+ "checks": [
+  {
+   "n": 11,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.048,
+     0.124,
+     0.874,
+     0.487
+    ],
+    "focal": [
+     0.4,
+     0.4
+    ]
+   },
+   "reason": "current crop starts mid-cartouche and cuts its caption line, and the trim sits on the plate’s frame lines at left, top and right; tighten the trim and anchor the crop at the top so the cartouche is whole"
+  },
+  {
+   "n": 21,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.55,
+     0.39
+    ]
+   },
+   "reason": "focal y 0.5 cuts off the spire of the Rathaus tower; 0.39 keeps the whole tower"
+  },
+  {
+   "n": 27,
+   "verdict": "ok",
+   "reason": "Mittelholzer aerial of the old town with the Minster at the Rhine; record matches"
+  },
+  {
+   "n": 31,
+   "verdict": "ok",
+   "reason": "Minster spires just inside the top of the crop; Rhine ferry; record matches"
+  }
+ ]
+}

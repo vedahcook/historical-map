@@ -1,0 +1,50 @@
+{
+ "city": "Leeds",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Joseph Rhodes - Leeds from the Meadows.jpg",
+   "y": 1825,
+   "lab": "about 1825",
+   "what": "Leeds from the Meadows, painting",
+   "who": "Joseph Rhodes",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.52
+   ],
+   "why": "color general view across the river meadows; skyline with church towers and bridge"
+  },
+  {
+   "n": 11,
+   "file": "View of Leeds from the air in 1933.jpg",
+   "y": 1933,
+   "lab": "1933",
+   "what": "Aerial photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "city center from the air; new Civic Hall and the Town Hall on the Headrow"
+  }
+ ],
+ "gaps": "P0–P2: no candidates; P4: only Leeds Castle (Kent) and Leeds, Massachusetts items; P5 covered by 1933 only; P6: only airport panoramas",
+ "notes": "#2 (Turner/Harding lithograph, 1823) is a good black-and-white alternative for P3; picked the color painting instead. #3, #5, #6 are Leeds Castle near Maidstone; #7–#10 are Leeds, Massachusetts (Mill River flood).",
+ "_reviewed": true
+}

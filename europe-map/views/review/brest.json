@@ -1,0 +1,42 @@
+{
+ "city": "Brest",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.026,
+     0.58,
+     0.69,
+     0.828
+    ],
+    "who": "Christophe Tassin, published by Caspar Merian"
+   },
+   "reason": "record credits Tassin as artist and Merian as publisher; old trim includes the painted yellow border at left and bottom"
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "Guesdon bird's-eye view of Brest; date is the archive's 1820–55 range, midpoint used"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "photochrom swing bridge and port, border excluded"
+  },
+  {
+   "n": 19,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.05,
+     0.055,
+     0.96,
+     0.94
+    ]
+   },
+   "reason": "old trim includes the light mount band at left and right and the print edge line; new trim stays inside the photograph"
+  }
+ ]
+}

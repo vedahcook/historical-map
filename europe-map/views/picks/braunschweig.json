@@ -1,0 +1,92 @@
+{
+ "city": "Braunschweig",
+ "picks": [
+  {
+   "n": 6,
+   "file": "Brunopolis vulgo Brunsvicum... ; Luneburgum, nobilis Saxoniae urbs... ; Brema - btv1b53178918t (1 of 2).jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.07,
+    0.1,
+    0.925,
+    0.375
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "colored profile view of the walled city with its many church towers; trimmed to the top panel (Lüneburg, Bremen and Oldenburg below)"
+  },
+  {
+   "n": 11,
+   "file": "Gezicht op Braunschweig, RP-P-2018-1315.jpg",
+   "y": 1720,
+   "lab": "about 1720",
+   "what": "View of Braunschweig, engraving (Rijksmuseum)",
+   "who": "heirs of Johann Peter Wolff, Nuremberg",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.152,
+    0.175,
+    0.857,
+    0.772
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "general view over the fortifications to the skyline; mount and numbered legend trimmed"
+  },
+  {
+   "n": 15,
+   "file": "Fallersleber Straße um 1840.jpg",
+   "y": 1840,
+   "lab": "about 1840",
+   "what": "Fallersleber Straße and St. Catherine’s Church, colored steel engraving",
+   "who": "Johann Poppel after Wilhelm Pätz",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.62,
+    0.45
+   ],
+   "why": "color street scene with the twin-spired Katharinenkirche and Hagenmarkt"
+  },
+  {
+   "n": 20,
+   "file": "General view, Brunswick (i.e., Braunschweig), Germany-LCCN2002713780.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.02,
+    0.985,
+    0.95
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "general view over the Oker park ring to the old-town towers; color"
+  }
+ ],
+ "gaps": "P0: only manuscripts and documents. P5, P6: no candidates.",
+ "notes": "#11 date: Rijksmuseum gives only ‘after 1711’ (published by Johann Peter Wolff’s heirs, Nuremberg); ‘about 1720’ is an estimate for that firm’s city-view series — drop it if a firmer date is required. The view itself likely copies Merian’s 1654 plate. P3 alternative: #17 (about 1840) is a true general view from the southwest but small (1125 px) and gray; the color Poppel engraving was preferred. Many candidates are tagged ‘Braun & Hogenberg’ by mistake (documents, photochroms).",
+ "_reviewed": true
+}

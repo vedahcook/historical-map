@@ -1,0 +1,92 @@
+{
+ "city": "Brest",
+ "picks": [
+  {
+   "n": 2,
+   "file": "RP-P-1956-158 Brest.jpg",
+   "y": 1661,
+   "lab": "1661",
+   "what": "Colored engraving (Rijksmuseum)",
+   "who": "Christophe Tassin, published by Caspar Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.026,
+    0.58,
+    0.69,
+    0.828
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "the château and harbor across the Penfeld; trimmed to the view, cutting the tall empty sky and page margins"
+  },
+  {
+   "n": 7,
+   "file": "4FI00020 Vue d'ensemble depuis la rade restored.jpg",
+   "y": 1837,
+   "lab": "1820–55",
+   "what": "Bird’s-eye view from the roadstead, pencil drawing",
+   "who": "Alfred Guesdon",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.12,
+    1,
+    1
+   ],
+   "focal": [
+    0.62,
+    0.55
+   ],
+   "why": "the Penfeld, château, arsenal and town all clearly shown"
+  },
+  {
+   "n": 11,
+   "file": "The Port Militaire and swing bridge, Brest, France-LCCN2001697596.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The naval port and the swing bridge, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.028,
+    0.045,
+    0.952,
+    0.94
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "the Penfeld with the swing bridge and the town above; color"
+  },
+  {
+   "n": 19,
+   "file": "2Fi04876 Photographie aérienne de Brest.jpg",
+   "y": 1930,
+   "lab": "1930",
+   "what": "Aerial photograph of the Penfeld and the château",
+   "who": "Compagnie Aérienne Française",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.05,
+    0.055,
+    0.96,
+    0.94
+   ],
+   "focal": [
+    0.48,
+    0.6
+   ],
+   "why": "the whole city on both banks of the Penfeld before the 1944 destruction"
+  }
+ ],
+ "gaps": "P0–P1: nothing usable; P6: every modern candidate shows a different place named Brest",
+ "notes": "#3 is Brześć Kujawski (Poland); #20–#23 are Brest in North Macedonia and Brest pri Igu in Slovenia. #1 (Merian, dated ‘1630–40’) is the same view as #2 and is described as engraved by Peeters, so its date is doubtful. #4/#5 (Antoine Aveline, ‘about 1700’) skipped: Aveline was born in 1691, so the date is doubtful. #7 is dated only 1820–55 by the archive (it shows a paddle steamer and no bridge over the Penfeld, so probably the 1840s–50s); #8 (Skelton, 1838, view from the roadstead) is a firmly dated but weaker alternative for P3. #13 (the château from the swing bridge) is an alternative P4 photochrom.",
+ "_reviewed": true
+}

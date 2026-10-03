@@ -1,0 +1,16 @@
+{
+ "city": "Alcázar de San Juan",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.42,
+     0.57
+    ]
+   },
+   "reason": "Record agrees. Current crop starts with a band of blank white sky (about 10% of the height); moving focal down starts at the hills and keeps the church tower."
+  }
+ ]
+}

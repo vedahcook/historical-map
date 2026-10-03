@@ -1,0 +1,75 @@
+{
+ "city": "Heraklion",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.012,
+     0.12,
+     0.99,
+     0.965
+    ],
+    "focal": [
+     0.5,
+     0.55
+    ]
+   },
+   "reason": "Title CANDIA in the sky and dark plate edges at top/bottom/left fall inside the crop; trim top to 0.12 to cut them (peaks stay in)."
+  },
+  {
+   "n": 8,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.02,
+     0.06,
+     0.98,
+     0.86
+    ]
+   },
+   "reason": "Plate frame line at top (row ~8 of 218) is inside the crop; trim top to 0.06."
+  },
+  {
+   "n": 9,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.025,
+     0.04,
+     0.975,
+     1
+    ],
+    "focal": [
+     0.8,
+     0.5
+    ]
+   },
+   "reason": "Caption fragment 'VIEW FROM E' and scraps at top fall in the crop at focal 0.62, and left/right paper margins are inside the trim; move focal onto the arsenal arches and ships."
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "Koules fort view, date from record, clean edges."
+  },
+  {
+   "n": 13,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.04,
+     0.025,
+     0.955,
+     0.968
+    ]
+   },
+   "reason": "Bright autochrome edge strip (x 480-486 of 500) and bottom border line are inside the trim; right to 0.955, bottom to 0.968."
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "Sharp modern view; palm is large but cathedral and sea show."
+  }
+ ]
+}

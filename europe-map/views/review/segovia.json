@@ -1,0 +1,36 @@
+{
+ "city": "Segovia",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.34,
+     0.5
+    ]
+   },
+   "reason": "the window at 0.45 loses the Roman aqueduct, Segovia’s most recognizable feature; 0.34 keeps the aqueduct at left and the cathedral at right"
+  },
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "Alcázar from the Eresma valley; Laborde plate, range label fine"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "dated drawing with aqueduct and old town; crop clean"
+  },
+  {
+   "n": 13,
+   "verdict": "ok",
+   "reason": "Lawson painting of Segovia, about 1916; crop fine"
+  },
+  {
+   "n": 19,
+   "verdict": "ok",
+   "reason": "clear view with cathedral and snowy sierra; credit and license match"
+  }
+ ]
+}

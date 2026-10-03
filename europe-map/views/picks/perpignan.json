@@ -1,0 +1,92 @@
+{
+ "city": "Perpignan",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Vue de Perpignan 1642.jpg",
+   "y": 1642,
+   "lab": "1642",
+   "what": "Profile view of the city and citadel, pen drawing",
+   "who": "La Brière",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.04,
+    0.28,
+    0.965,
+    0.655
+   ],
+   "focal": [
+    0.22,
+    0.5
+   ],
+   "why": "detailed profile of the walled town and the citadel on its hill; album margins trimmed (fold creases remain)"
+  },
+  {
+   "n": 8,
+   "file": "Gezicht op Perpignan, RP-F-F01167-AK.jpg",
+   "y": 1895,
+   "lab": "1880–1910",
+   "what": "View over the rooftops, albumen print (Rijksmuseum)",
+   "who": "unknown photographer",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.172,
+    0.072,
+    0.872,
+    0.535
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "only P4 view, labeled Perpignan on the album page; trimmed to the print, color chart removed"
+  },
+  {
+   "n": 10,
+   "file": "ETH-BIB-Luftbild von Perpignan-Tschadseeflug 1930-31-LBS MH02-08-0101.tif",
+   "y": 1930,
+   "lab": "1930–31",
+   "what": "Aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "oblique aerial of the dense old town with its ramparts in the foreground; clearest of the three"
+  },
+  {
+   "n": 12,
+   "file": "Perpignan Castillet view.jpg",
+   "y": 2022,
+   "lab": "2022",
+   "what": "The old town seen from the Castillet, photograph",
+   "who": "Palauenc05",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.35
+   ],
+   "why": "sharp color view over the old town roofs to the cathedral bell tower"
+  }
+ ],
+ "gaps": "P0: no candidates. P2: only #6, a copy of the 1642 La Brière profile with an unreliable 1742 date. P3: only an organ-case drawing (#7).",
+ "notes": "#3 and #5 are the same Beaulieu/Collignon 1642 siege plate (#3 on a two-page spread, #5 with an ornamental border); the city is a distant speck behind siege troops, so the La Brière drawing was preferred for P1. #2 and #4 are blank pages. #8 is small (about 1150 px wide after trimming) and dated only 1880–1910. #13 is a Fantin-Latour painting in the city museum, not a view.",
+ "_reviewed": true
+}

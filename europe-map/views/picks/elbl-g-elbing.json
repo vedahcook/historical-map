@@ -1,0 +1,50 @@
+{
+ "city": "Elbląg (Elbing)",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Wahre Contrafactur der Statt Elbing wie dieselbe von Königl. May zu Schweden etc. befestigt worden. Anno 1626 - M. Merian fecit - btv1b53235801w (1 of 2).jpg",
+   "y": 1630,
+   "lab": "about 1630",
+   "what": "Bird’s-eye view with the Swedish fortifications of 1626, etching",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.185,
+    0.98,
+    0.875
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "sharp first state of the plate; old town, St. Nicholas tower and the Elbing river clear; title and key trimmed"
+  },
+  {
+   "n": 5,
+   "file": "Panorama Elblaga 1648 Christian Daniel Pietsch.jpg",
+   "y": 1684,
+   "lab": "1684",
+   "what": "View of the city, engraving in Christoph Hartknoch, Alt und Neues Preussen",
+   "who": "Christian Daniel Pietsch",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.045,
+    0.968,
+    0.795
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "true prospect with St. Nicholas and the other church towers labeled; key at the bottom trimmed"
+  }
+ ],
+ "gaps": "P0, P3–P6: no candidates.",
+ "notes": "#1: the title gives 1626, the year the Swedes fortified the town; BnF dates this print 1635 and Merian published it in the early 1630s, hence ‘about 1630’. It shows the town’s state, not a siege, so not marked as an event. #3 is another copy of the same state with library stamps; #4 and #6 are a later state with a second title line about Charles XII taking the town in 1703; #2 is the blank reverse. #5: Commons says ‘published in Christoph Hartknoch’s monograph of 1648’, but Hartknoch was born in 1644; his Alt und Neues Preussen appeared in 1684, so 1648 looks like swapped digits — please confirm the year.",
+ "_reviewed": true
+}

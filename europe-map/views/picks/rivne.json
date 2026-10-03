@@ -1,0 +1,29 @@
+{
+ "city": "Rivne",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Центральна частина - panoramio.jpg",
+   "y": 2016,
+   "lab": "2016",
+   "what": "View over the city center from a height, photograph",
+   "who": "любком",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.32
+   ],
+   "why": "only general view; evening skyline of the center over red roofs, dark foreground falls outside the 16:9 crop"
+  }
+ ],
+ "gaps": "P0–P5: no candidates. Only P6 covered.",
+ "notes": "#2 is mostly reeds with distant apartment blocks; #3 and #4 are roadside snapshots. #1 is modest but is a real skyline view of the center.",
+ "_reviewed": true
+}

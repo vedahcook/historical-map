@@ -1,0 +1,92 @@
+{
+ "city": "Leeuwarden",
+ "picks": [
+  {
+   "n": 7,
+   "file": "Gezicht op Leeuwarden, RP-P-1911-4055.jpg",
+   "y": 1655,
+   "lab": "1640–70",
+   "what": "Panorama, etching (Rijksmuseum)",
+   "who": "probably Caspar Merian",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.022,
+    0.075,
+    0.976,
+    0.95
+   ],
+   "focal": [
+    0.58,
+    0.6
+   ],
+   "why": "clean skyline from outside the walls, Oldehove labeled at left; gray mount trimmed"
+  },
+  {
+   "n": 14,
+   "file": "Gezicht op Leeuwarden 't Stadthuis. 't Hof van zyn Genade en Weeshuis te Leeuwaarden (titel op object), RP-P-1905-5958.jpg",
+   "y": 1754,
+   "lab": "1754",
+   "what": "The town hall square with the Hof and the orphanage, etching (Rijksmuseum)",
+   "who": "after Cornelis Pronk",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.03,
+    0.045,
+    0.96,
+    0.92
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "the town hall and Stadhouderlijk Hof, the city’s best-known square; title line trimmed"
+  },
+  {
+   "n": 20,
+   "file": "Gezicht op Leeuwarden, RP-P-1905-6081.jpg",
+   "y": 1858,
+   "lab": "1858",
+   "what": "View from the Verlaat with the Oldehove, steel engraving (Rijksmuseum)",
+   "who": "Johann Poppel after Ludwig Rohbock",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.188,
+    0.175,
+    0.78,
+    0.775
+   ],
+   "focal": [
+    0.47,
+    0.45
+   ],
+   "why": "Oldehove tower over the harbor; margins and caption trimmed"
+  },
+  {
+   "n": 24,
+   "file": "NIMH - 2011 - 0299 - Aerial photograph of Leeuwarden, The Netherlands - 1920 - 1940.jpg",
+   "y": 1930,
+   "lab": "1920–40",
+   "what": "Aerial photograph of the old center with the Oldehove (NIMH)",
+   "who": "unknown photographer",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.025,
+    0.055,
+    0.975,
+    0.925
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "Oldehove, the Prinsentuin and the canals; film border and number trimmed"
+  }
+ ],
+ "gaps": "P0: no candidates. P6: only statues, a shop facade and a spire close-up, no skyline or center view.",
+ "notes": "#5 was printed from two plates; a faint vertical join runs just right of the center cartouche (not a book gutter). The Braun and Hogenberg Leeuwarden plates (#1–#4, #6) are bird’s-eye plans, mostly shared with Franeker; #5 is the better P1 view. #12 (1849 colored lithograph from the northwest) is a good alternative but sits nine years from #20, so #14 (1754) was used to fill the 18th century. #22/#23 are the same gasholder aerial; #21 is farmland.",
+ "_reviewed": true
+}

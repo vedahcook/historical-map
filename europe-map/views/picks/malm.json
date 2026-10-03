@@ -1,0 +1,50 @@
+{
+ "city": "Malmö",
+ "picks": [
+  {
+   "n": 2,
+   "file": "1594 map of Elbogen.jpg",
+   "y": 1588,
+   "lab": "1588",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 4",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.012,
+    0.995,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.38
+   ],
+   "why": "colored view of Malmö (“Elbogen”) cut from the four-town plate; St. Peter’s church and Malmöhus castle"
+  },
+  {
+   "n": 20,
+   "file": "Aerial view of Malmö towards south taken from Malmö Live 20131023.jpg",
+   "y": 2013,
+   "lab": "2013",
+   "what": "View south from the Malmö Live tower toward the Øresund Bridge, photograph",
+   "who": "Johan Wessman, News Øresund",
+   "lic": "CC BY 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0.12,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "sharp color view over the city with the Øresund Bridge"
+  }
+ ],
+ "gaps": "P0, P2, P3: nothing; P5: only aerials of the airport and suburbs (skipped)",
+ "notes": "#2 is a pre-cropped colored copy (1830 px) of the Malmö quarter of the vol. 4 plate; the 1612 BnF copy (#4) is larger but uncolored and would need a quarter-plate crop. P4 photochrom is a park view, not a city view; drop it if a general view is required. Commons license for #20 reads CC BY 2.0 though the description mentions CC BY 3.0.",
+ "_reviewed": true
+}

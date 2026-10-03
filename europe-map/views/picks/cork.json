@@ -1,0 +1,71 @@
+{
+ "city": "Cork",
+ "picks": [
+  {
+   "n": 2,
+   "file": "DV405 no.277 Cork.png",
+   "y": 1850,
+   "lab": "1830–69",
+   "what": "Riverside street with an equestrian statue, print in Alphonse Dousseau’s album (National Library of Wales)",
+   "who": "Alphonse Dousseau",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.55
+   ],
+   "why": "only pre-1890 view; titled Cork by the National Library of Wales; dated only to the album’s range"
+  },
+  {
+   "n": 5,
+   "file": "Patrick Street (i.e., St. Patrick Street), Cork. County Cork, Ireland-LCCN2002717373.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "St. Patrick’s Street, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.026,
+    0.032,
+    0.984,
+    0.938
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "color; the city’s main street with trams; border and caption trimmed"
+  },
+  {
+   "n": 10,
+   "file": "View of Cork City from Bell's Field, September 2025 01.jpg",
+   "y": 2025,
+   "lab": "2025",
+   "what": "View over the city from Bell’s Field, photograph",
+   "who": "William Murphy",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.3,
+    1,
+    0.86
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "general view with the Shandon bell tower; sky and lawn trimmed"
+  }
+ ],
+ "gaps": "P0–P2: nothing usable (the 1667 hit is Hooke’s cork tissue); P5: no candidates",
+ "notes": "#2: the equestrian statue is probably George II on the Grand Parade (removed 1862), which would put the view before 1862, but I did not name it in the label; the print may copy an earlier engraving. #3 is the same photochrom as #5. #4, #6–8 are Glengarriff, not Cork city. #10 is strongly processed and backlit; #12 (2011 aerial, gray sky) is the fallback.",
+ "_reviewed": true
+}

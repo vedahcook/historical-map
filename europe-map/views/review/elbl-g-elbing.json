@@ -1,0 +1,41 @@
+{
+ "city": "Elbląg (Elbing)",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.025,
+     0.185,
+     0.98,
+     0.875
+    ],
+    "focal": [
+     0.55,
+     0.5
+    ]
+   },
+   "reason": "old crop let the lower edge of the coat of arms into the top center and cut the bottom bastion; new trim is the picture only, between the title and the key. 'About 1630' is a fair reading of the title year 1626 against BnF 1635"
+  },
+  {
+   "n": 5,
+   "verdict": "fix",
+   "fix": {
+    "y": 1684,
+    "lab": "1684",
+    "trim": [
+     0.03,
+     0.045,
+     0.968,
+     0.795
+    ],
+    "focal": [
+     0.55,
+     0.5
+    ]
+   },
+   "reason": "the Commons date '1648' is a typo: the engraving is from Christoph Hartknoch's Alt- und Neues Preussen, which appeared in 1684 (Hartknoch was born in 1644 and Pietsch worked in the 1680s), so use 1684, as the picker had. The picture itself carries no year; checked from knowledge of the book, not online. Trim: old top edge sat on the plate's frame line; moved down. The title ribbon and arms are part of the drawing"
+  }
+ ]
+}

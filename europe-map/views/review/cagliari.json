@@ -1,0 +1,54 @@
+{
+ "city": "Cagliari",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.045,
+     0.1,
+     0.958,
+     0.735
+    ],
+    "focal": [
+     0.5,
+     0.5
+    ]
+   },
+   "reason": "old crop showed the bottoms of the CALARIS title letters at the top and the Latin caption block at lower left; new trim is the city and harbor only"
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "Stanghi 1845 view of Cagliari from outside the walls, title on the plate says so; trim sits inside the plate frame, city is a thin strip but legible"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "Barberis wood engraving of Castello with the cathedral dome and bell tower, 1891; clean full-picture crop"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "1927 magazine photograph of the Castello hill from the sea; crop is 55% of the width because the picture is very wide, and the printed frame is trimmed; only P5 view"
+  },
+  {
+   "n": 17,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0,
+     1,
+     0.585
+    ],
+    "focal": [
+     0.4,
+     0.5
+    ]
+   },
+   "reason": "a black beam and a rusty pipe cross the lower part of the old crop; trimming the picture at 58% removes them and keeps the church domes and the cityscape"
+  }
+ ]
+}

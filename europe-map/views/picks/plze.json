@@ -1,0 +1,50 @@
+{
+ "city": "Plzeň",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Siege of Pilsen.jpg",
+   "y": 1635,
+   "lab": "1635",
+   "what": "The siege of 1618, bird’s-eye view, engraving in Theatrum Europaeum, vol. 1",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": true,
+   "trim": [
+    0.01,
+    0.045,
+    0.99,
+    0.99
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "walled town with St. Bartholomew’s Church drawn building by building; the only early view; title line trimmed"
+  },
+  {
+   "n": 9,
+   "file": "Erwin Spindler Ansichtskarte Pilsen-Panorama.jpg",
+   "y": 1900,
+   "lab": "about 1900",
+   "what": "Panorama across the Radbuza, color postcard",
+   "who": "Erwin Spindler",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.02,
+    0.99,
+    0.5
+   ],
+   "focal": [
+    0.43,
+    0.5
+   ],
+   "why": "color general view with St. Bartholomew’s spire; trimmed to the upper panorama, cutting the inset and handwriting"
+  }
+ ],
+ "gaps": "P0, P2, P3: nothing usable. P5: only 1945 aerials of the Škoda works and prison and 1950s orthophotos. P6: only night photos from the ISS.",
+ "notes": "#1 is a smaller copy of the same Merian plate as #2. #2’s Commons date (1650) is generic; the plate is from Theatrum Europaeum vol. 1 (1635, per #1). A thin fold crease runs down the middle of the plate in both copies, but the picture is continuous. #9’s Commons date range is the artist’s lifetime; the card is postmarked or written 1905, and Spindler’s postcards date from around 1900. #3 is a detail crop (Litice Gate) of Merian’s 1650 Topographia view, not a general view. #4 is an illustration of the brewery inside an 1892 booklet; #6 and #8 are brewery postcards; #7 (Šafařík promenade, about 1900) is the alternative for P4.",
+ "_reviewed": true
+}

@@ -1,0 +1,60 @@
+{
+ "city": "Burgos",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.066,
+     0.124,
+     0.94,
+     0.478
+    ]
+   },
+   "reason": "engraved frame lines at the top (about 0.117) and bottom (about 0.487) of the Burgos panel fall inside the crop; trim moved inside them"
+  },
+  {
+   "n": 7,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.137,
+     0.174,
+     0.847,
+     0.78
+    ]
+   },
+   "reason": "frame lines on all four sides (left 0.130, right 0.854, top 0.165, bottom 0.79) sit on the edges of the crop; trim moved inside the frame"
+  },
+  {
+   "n": 8,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.5,
+     0.42
+    ]
+   },
+   "reason": "tip of the tallest spire touches the top edge of the 16:9 crop; moving the window up leaves room and still keeps the Santa María gate"
+  },
+  {
+   "n": 12,
+   "verdict": "ok",
+   "reason": "Burgos Plaza Mayor with cathedral spires; date, credit and crop fine"
+  },
+  {
+   "n": 19,
+   "verdict": "fix",
+   "fix": {
+    "what": "View of the city with the cathedral towers, pencil and watercolor"
+   },
+   "reason": "record only says Gezicht op Burgos; naming the church as San Esteban is not supported. Weak but acceptable P5; #20 (1921 La Esfera panorama) is a stronger view if its faint centerfold seam at about 0.5 width is tolerated"
+  },
+  {
+   "n": 22,
+   "verdict": "ok",
+   "reason": "clear general view from the castle; credit and license match"
+  }
+ ]
+}

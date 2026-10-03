@@ -1,0 +1,35 @@
+{
+ "city": "Chemnitz",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.35,
+     0.6
+    ]
+   },
+   "reason": "at focal 0.42 the 38%-wide crop cuts the leftmost spire at its edge; 0.35 keeps all spires of the town and still excludes the legend"
+  },
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "what": "View of Chemnitz from the Hüttenberg"
+   },
+   "reason": "record gives no medium; 'colored print' is a guess"
+  },
+  {
+   "n": 7,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.45,
+     0.39
+    ]
+   },
+   "reason": "at focal y 0.45 the crop starts below the top of the town hall tower (finial cut); 0.39 keeps the whole tower"
+  }
+ ]
+}

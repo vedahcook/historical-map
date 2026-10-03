@@ -1,0 +1,71 @@
+{
+ "city": "Sousse",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Flickr - …trialsanderrors - Sousse, Tunisia, ca. 1899.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The harbor and the medina, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "CC BY 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0.1,
+    1,
+    0.965
+   ],
+   "focal": [
+    0.55,
+    0.35
+   ],
+   "why": "color view of the walled medina climbing to the kasbah tower above the harbor; trimmed caption number and some sky"
+  },
+  {
+   "n": 9,
+   "file": "ETH-BIB-Sousse, Panorama von der Kasba, rechts (nach Osten)-Dia 247-04739.tif",
+   "y": 1928,
+   "lab": "1928",
+   "what": "Panorama from the kasbah looking east, hand-colored lantern slide (ETH Library, Zurich)",
+   "who": "Leo Wehrli",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.03,
+    0.045,
+    0.97,
+    0.91
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "white medina rooftops running down to the sea and harbor; trimmed black frame and caption strip"
+  },
+  {
+   "n": 14,
+   "file": "Tunezja,panorama Sousse - panoramio.jpg",
+   "y": 2013,
+   "lab": "about 2013",
+   "what": "The medina and kasbah across the harbor, photograph",
+   "who": "Mietek Ł",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0.2,
+    1,
+    0.88
+   ],
+   "focal": [
+    0.35,
+    0.5
+   ],
+   "why": "kasbah tower and medina walls at left with the modern town and port; best of the modern candidates, somewhat oversharpened"
+  }
+ ],
+ "gaps": "P0–P2: no candidates; P3: only a coastal-profile chart with an uncertain 18th-century date, skipped",
+ "notes": "#2 is the Flickr copy of the LoC photochrom; Commons lists it as CC BY 2.0 although the print itself is public domain. #3 is the same print from the World Digital Library, PD but lower resolution (1394 px), if a PD license is preferred. Photochrom catalog date is ca. 1899; labeled 1890s per the rule.",
+ "_reviewed": true
+}

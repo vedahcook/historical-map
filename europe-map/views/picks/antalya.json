@@ -1,0 +1,92 @@
+{
+ "city": "Antalya",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Sattalia (FL33122157 2369968).jpg",
+   "y": 1698,
+   "lab": "1698",
+   "what": "View from the sea, engraving in Cornelis de Bruijn’s travels in the Levant",
+   "who": "Cornelis de Bruijn",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.036,
+    0.13,
+    0.956,
+    0.893
+   ],
+   "focal": [
+    0.3,
+    0.5
+   ],
+   "why": "walled town above the harbor with towers and the fluted minaret; high resolution; title and frame trimmed"
+  },
+  {
+   "n": 1,
+   "file": "View of the city of Attaleia - Beaufort Francis F - 1817.jpg",
+   "y": 1817,
+   "lab": "1817",
+   "what": "View from the sea, engraving in Francis Beaufort’s Karamania",
+   "who": "Francis Beaufort",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.035,
+    0.2,
+    0.97,
+    0.915
+   ],
+   "focal": [
+    0.5,
+    0.65
+   ],
+   "why": "harbor front and walls seen from the bay; caption trimmed; some foxing in the sky"
+  },
+  {
+   "n": 3,
+   "file": "Wilson - Voyage autour du monde, 1923 (page 450 crop).jpg",
+   "y": 1920,
+   "lab": "about 1920",
+   "what": "The harbor, photograph",
+   "who": "Charles A. Wilson",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.03,
+    0.985,
+    0.975
+   ],
+   "focal": [
+    0.45,
+    0.55
+   ],
+   "why": "old harbor and walled town with the fluted minaret"
+  },
+  {
+   "n": 8,
+   "file": "Antalya View across the bay in 2011 90.jpg",
+   "y": 2011,
+   "lab": "2011",
+   "what": "View across the bay to the Bey Mountains, photograph",
+   "who": "Dosseman",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "Antalya’s signature view: the bay and shoreline city under the snowy Bey Mountains"
+  }
+ ],
+ "gaps": "P0, P1, P4: nothing",
+ "notes": "#2: Commons gives only ‘18th century’; the plate comes from de Bruijn’s travels, first published 1698 (he visited in the 1680s), so dated by first publication. #1: drawn during Beaufort’s 1811–12 survey, published 1817. #3: from a book published 1923; the photo’s exact date isn’t given, hence ‘about 1920’. #7 (2019 city view) is hazy with sun glare.",
+ "_reviewed": true
+}

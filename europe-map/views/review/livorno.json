@@ -1,0 +1,59 @@
+{
+ "city": "Livorno",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "strip crop is tight but sharp enough and shows the walled port"
+  },
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.046,
+     0.22,
+     0.948,
+     0.795
+    ]
+   },
+   "reason": "black surround sliver at the right edge of the crop"
+  },
+  {
+   "n": 7,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.105,
+     0.15,
+     0.875,
+     0.79
+    ]
+   },
+   "reason": "frame lines at the left and right edges of the crop"
+  },
+  {
+   "n": 8,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.052,
+     0.08,
+     0.952,
+     0.81
+    ]
+   },
+   "reason": "frame line at left and paper strip at right inside the crop"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "good view, crop and fields agree with the record"
+  },
+  {
+   "n": 20,
+   "verdict": "ok",
+   "reason": "good view, crop and fields agree with the record"
+  }
+ ]
+}

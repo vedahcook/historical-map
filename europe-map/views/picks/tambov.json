@@ -1,0 +1,29 @@
+{
+ "city": "Tambov",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Tambov TransgfigurationCathedral 101 0477.jpg",
+   "y": 2021,
+   "lab": "2021",
+   "what": "The Transfiguration Cathedral and the city center, aerial photograph",
+   "who": "Ludvig14",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.1,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.55
+   ],
+   "why": "cathedral and bell tower over the center, Kazan Monastery bell tower visible at right"
+  }
+ ],
+ "gaps": "P0–P5: nothing",
+ "notes": "All candidates are modern. #2 (Kazan Monastery) is an equally good alternative; #4 is fields at the city edge.",
+ "_reviewed": true
+}

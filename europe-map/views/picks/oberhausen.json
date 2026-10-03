@@ -1,0 +1,29 @@
+{
+ "city": "Oberhausen",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Schloss-Oberhausen-Innenhof-Pano-2015.jpg",
+   "y": 2015,
+   "lab": "2015",
+   "what": "Courtyard of Oberhausen Castle, panoramic photograph",
+   "who": "Tuxyso",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0.22,
+    0,
+    0.78,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "sharp color photo of the castle the city is named after; trimmed to the center of the 180° panorama to limit distortion"
+  }
+ ],
+ "gaps": "P0–P5: no candidates at all; P6 has no general view of the city",
+ "notes": "Only four modern candidates. #3 (Gasometer seen from a Ferris wheel, 2010) is the alternative: it shows the city’s best-known landmark, but small, hazy and with the gondola frame at the right edge. #2 shows a waste incinerator, #4 the Walsum power station in Duisburg.",
+ "_reviewed": true
+}

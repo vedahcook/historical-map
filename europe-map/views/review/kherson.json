@@ -1,0 +1,15 @@
+{
+ "city": "Kherson",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "1918 Austrian aerial photograph of Kherson from 600 m, matches the record; low-resolution and no single landmark, but it is a genuine period view and the squares are visible"
+  },
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "2006 balloon photograph of the Dnieper and the Antonivskyi Bridge, public domain per the record; shows the Antonivka end of the city rather than the center, but it is the bridge landmark and the best sharp view; #6 (TV tower, 2019) is the alternative"
+  }
+ ]
+}

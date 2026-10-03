@@ -1,0 +1,92 @@
+{
+ "city": "Wiesbaden",
+ "picks": [
+  {
+   "n": 2,
+   "file": "De Merian Hassiae 215.jpg",
+   "y": 1655,
+   "lab": "1655",
+   "what": "Engraving in Matthäus Merian’s Topographia Hassiae",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.02,
+    0.988,
+    0.895
+   ],
+   "focal": [
+    0.45,
+    0.55
+   ],
+   "why": "general view of the small walled town and castle; legend trimmed; larger copy of the plate in #3"
+  },
+  {
+   "n": 6,
+   "file": "Lange Städte in Deutschland Band 2 Nr. 02.jpg",
+   "y": 1840,
+   "lab": "1840",
+   "what": "View from the hills, steel engraving in Lange’s Städte in Deutschland",
+   "who": "Edouard Willmann",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.04,
+    0.12,
+    0.958,
+    0.838
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "general view of the spa town in its valley; frame and caption trimmed"
+  },
+  {
+   "n": 9,
+   "file": "General view, Wiesbaden, Hesse-Nassau, Germany-LCCN2002713907.tif",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "View from the Neroberg, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.023,
+    0.02,
+    0.985,
+    0.95
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "color general view with the Neroberg temple in front and the Marktkirche spires over the city"
+  },
+  {
+   "n": 19,
+   "file": "BD-Wiesbaden-20130620-Panoramabild.jpg",
+   "y": 2013,
+   "lab": "2013",
+   "what": "Panorama from the Neroberg, photograph",
+   "who": "Benjamin Dahlhoff",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.3,
+    0.5
+   ],
+   "why": "high-resolution panorama over the city with the Marktkirche at left"
+  }
+ ],
+ "gaps": "P0, P1: nothing; P5: only a 1919 interior news photo and a 1944 airfield reconnaissance image",
+ "notes": "Merian dated 1655 per the record (second, enlarged edition of Topographia Hassiae). #10 is an equally good 1890s photochrom from the Neroberg; #8/#11 are the same view as each other. #5 is dated only to the 19th century. #17 (Silvretta) and #18 (Mainz) are other places.",
+ "_reviewed": true
+}

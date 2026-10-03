@@ -1,0 +1,113 @@
+{
+ "city": "Würzburg",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Nuremberg chronicles - HERBIPOLIS.png",
+   "y": 1493,
+   "lab": "1493",
+   "what": "Woodcut in Hartmann Schedel’s Nuremberg Chronicle",
+   "who": "Michael Wolgemut and Wilhelm Pleydenwurff",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.04,
+    0.5,
+    0.93
+   ],
+   "focal": [
+    0.5,
+    0.0
+   ],
+   "why": "colored true view; Marienberg fortress above the town and cathedral towers. Trimmed to the left half to drop the blank text block at upper right"
+  },
+  {
+   "n": 7,
+   "file": "Dankaerts-Historis-9309.tif",
+   "y": 1642,
+   "lab": "1642",
+   "what": "View across the Main to the Marienberg fortress, engraving",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.026,
+    0.035,
+    0.968,
+    0.98
+   ],
+   "focal": [
+    0.55,
+    0.38
+   ],
+   "why": "strong general view; fortress, Old Main Bridge and cathedral all recognizable"
+  },
+  {
+   "n": 14,
+   "file": "Fort and old bridge, Wurzburg, Bavaria, Germany-LCCN2002696196.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Old Main Bridge and the Marienberg fortress, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.027,
+    0.976,
+    0.933
+   ],
+   "focal": [
+    0.55,
+    0.4
+   ],
+   "why": "color; the city’s signature scene; white border and printed caption trimmed"
+  },
+  {
+   "n": 23,
+   "file": "Würzburg - Altstadt.jpg",
+   "y": 1916,
+   "lab": "about 1916",
+   "what": "The Old Main Bridge and the old town, colored postcard",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.14,
+    0.995,
+    0.99
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "color; cathedral, Neumünster and Marienkapelle across the bridge; postcard dated 1916; low resolution (1099 px)"
+  },
+  {
+   "n": 24,
+   "file": "Würzburg.jpg",
+   "y": 2009,
+   "lab": "2009",
+   "what": "Panorama from the Marienberg fortress",
+   "who": "Matthieu Riegler",
+   "lic": "CC BY 3.0",
+   "event": false,
+   "trim": [
+    0.1,
+    0,
+    0.9,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.6
+   ],
+   "why": "high-resolution panorama of the old town, river and bridge"
+  }
+ ],
+ "gaps": "P2: nothing usable; P3: nothing usable",
+ "notes": "#9 is Merian’s Topographia Franconiae panorama (volume year 1648, so P1, not the 1650 in its title); kept #7 for P1 instead. #13 is an undated 18th-century copy of the #7 composition, skipped. #20 painting’s file name says ‘o.J.’ (no year), so the 1960 date is doubtful. #21/#22 NARA aerials only ‘likely around 1920’. #2 is a two-page spread with the gutter through the view.",
+ "_reviewed": true
+}

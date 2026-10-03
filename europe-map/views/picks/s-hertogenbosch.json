@@ -1,0 +1,71 @@
+{
+ "city": "’s-Hertogenbosch",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Hertogenbosch Braun Hogenberg.png",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Panorama, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.085,
+    0.988,
+    0.885
+   ],
+   "focal": [
+    0.49,
+    0.5
+   ],
+   "why": "colored profile view of the whole town with St. John’s; the ’s-Hertogenbosch strip of the vol. 1 three-city plate (with Leuven and Mechelen); yellow frame trimmed, the text cartouche at lower right stays outside a 16:9 crop"
+  },
+  {
+   "n": 12,
+   "file": "Gezicht op 's-Hertogenbosch, RP-P-OB-27.542.jpg",
+   "y": 1828,
+   "lab": "1808–48",
+   "what": "St. John’s Cathedral above the rooftops, lithograph (Rijksmuseum)",
+   "who": "Pieter Barbiers",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.175,
+    0.155,
+    0.815,
+    0.775
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "St. John’s tower and dome rising over trees and roofs; Rijksmuseum dates it only to the printmaker’s working years; margins trimmed"
+  },
+  {
+   "n": 20,
+   "file": "NIMH - 2011 - 3616 - Aerial photograph of 's-Hertogenbosch, The Netherlands.jpg",
+   "y": 1930,
+   "lab": "1920–40",
+   "what": "Aerial photograph of St. John’s Cathedral (NIMH)",
+   "who": "unknown photographer",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.012,
+    0.01,
+    0.985,
+    0.94
+   ],
+   "focal": [
+    0.48,
+    0.45
+   ],
+   "why": "the cathedral and surrounding streets from the air; cleaner copy than #19, which has a scratch across it; black border trimmed"
+  }
+ ],
+ "gaps": "P0: nothing; P2: nothing usable; P4: nothing firmly dated; P6: no good modern view",
+ "notes": "#2 is the colored top strip of the Braun and Hogenberg vol. 1 plate that also shows Leuven and Mechelen, so dated 1572 rather than the 1575–84 on Commons; #4 (Beudeker atlas) pairs the vol. 4 plan with the same strip. The vol. 4 plan (#1), Blaeu’s plans (#3, #5, #8, #9), Merian’s fortification plan (#10) and de Wit’s plan (#7) are plans rather than views. P2: #14 is a 1900–03 photograph of Adam Frans van der Meulen’s 1672 panorama drawing, a true view but badly stained; usable as a last resort with y 1672. #11 is another impression of #12, with a blank sky. P4: Vertin’s painting of the Markt and town hall (#16) is dated only ‘by 1893’ (his death year), and the ‘Nederland in Beeld’ collotype of St. John’s (#15) only 1875–1930; both good pictures if a date can be confirmed. #13 and #18 are cathedral interiors. Modern: 2006 balloon photos show suburbs, a golf-course castle (#23) or the town too hazy to make out (#24).",
+ "_reviewed": true
+}

@@ -1,0 +1,113 @@
+{
+ "city": "Enkhuizen",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Die Stadt Enchuijsen - btv1b531789359 (1 of 2).jpg",
+   "y": 1581,
+   "lab": "1581",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 3",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.01,
+    0.82,
+    0.985
+   ],
+   "focal": [
+    0.55,
+    0.36
+   ],
+   "why": "colored bird’s-eye view of the walled harbor town on the Zuiderzee; flat single-sheet copy; legend block at right trimmed"
+  },
+  {
+   "n": 9,
+   "file": "Gezicht op Enkhuizen van zee, RP-T-1888-A-1783.jpg",
+   "y": 1772,
+   "lab": "1772",
+   "what": "View from the Zuiderzee with the stone beacon, drawing (Rijksmuseum)",
+   "who": "Aert Schouman",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.02,
+    0.03,
+    0.985,
+    0.975
+   ],
+   "focal": [
+    0.45,
+    0.7
+   ],
+   "why": "dated true view of the town from the water, church spire and beacon visible; light gray wash, so the town is a thin strip"
+  },
+  {
+   "n": 17,
+   "file": "Gezicht op Enkhuizen, RP-P-1905-6090.jpg",
+   "y": 1858,
+   "lab": "1858",
+   "what": "The Drommedaris and the outer harbor, steel engraving (Rijksmuseum)",
+   "who": "Johann Gabriel Friedrich Poppel after Ludwig Rohbock",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.2,
+    0.158,
+    0.784,
+    0.764
+   ],
+   "focal": [
+    0.4,
+    0.5
+   ],
+   "why": "the town’s best-known landmark, the Drommedaris gate tower, with the harbor and a church spire; margins and caption trimmed"
+  },
+  {
+   "n": 20,
+   "file": "NIMH - 2011 - 9902-15-01 - Aerial photograph of Enkhuizen, The Netherlands.jpg",
+   "y": 1930,
+   "lab": "1920–40",
+   "what": "Aerial photograph of the old town (NIMH)",
+   "who": "unknown photographer",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.01,
+    0.01,
+    0.99,
+    0.99
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "the walled old town with its churches and harbors from the air"
+  },
+  {
+   "n": 22,
+   "file": "Enkhuizen aanzicht.JPG",
+   "y": 2009,
+   "lab": "2009",
+   "what": "The town from the water, photograph",
+   "who": "Arch",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.6
+   ],
+   "why": "color waterfront panorama with the Drommedaris and church towers"
+  }
+ ],
+ "gaps": "P0: nothing; P2: nothing usable",
+ "notes": "Braun and Hogenberg Enkhuizen is in vol. 3 (1581); #1 and #3 are bound spreads with the gutter through the town, #4 is a flat sheet. Kieser’s Sciographia Cosmica profile view (#6, 1637–38) is a good small alternative for P1. P2: Pompe (#8) is a ship painting with the town as a speck, dated only ‘17th century’; Merian (#7) is a street plan. #9 is faint; keep it only if a weak 18th-century view is better than none. #10 is labeled on the plate as Medemblik although the Rijksmuseum titles it Enkhuizen, so skipped. #5’s ‘1515’ is a shelf mark (Eversen, 19th century). P4: Nieuwenkamp’s 1912 etching of the Drommedaris (#15) is a possible second P4. #23 is the Krabbersgat naviduct, #24 a single shed, #25 a crop of #22.",
+ "_reviewed": true
+}

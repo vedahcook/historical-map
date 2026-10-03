@@ -1,0 +1,71 @@
+{
+ "city": "Nottingham",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Jan Siberechts (1627-c.1703) (attributed to) - View of Nottingham from the East - NCM 1977-515 - Nottingham Castle Ducal Mansion.jpg",
+   "y": 1695,
+   "lab": "1695",
+   "what": "View from the east over the Trent valley, painting (Nottingham Castle Museum)",
+   "who": "attributed to Jan Siberechts",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.75,
+    0.6
+   ],
+   "why": "color panorama with the castle on its rock and St Mary’s at right, the Trent at left"
+  },
+  {
+   "n": 4,
+   "file": "View of Nottingham 1842.jpg",
+   "y": 1842,
+   "lab": "1842",
+   "what": "The castle and the town, wood engraving in the Illustrated London News",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.04,
+    0.06,
+    0.97,
+    0.93
+   ],
+   "focal": [
+    0.4,
+    0.45
+   ],
+   "why": "clear general view with the castle on the rock and St Mary’s tower"
+  },
+  {
+   "n": 8,
+   "file": "Nottingham Castle LCCN2017659731.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The castle, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.025,
+    0.98,
+    0.94
+   ],
+   "focal": [
+    0.5,
+    0.3
+   ],
+   "why": "color, high resolution; the castle above the trees is the city’s landmark; border and caption trimmed"
+  }
+ ],
+ "gaps": "P0–P1: nothing; P5: nothing; P6: only railway-station and event photos, no view of the center",
+ "notes": "#8’s Commons date is a bare ‘1890’; labeled 1890s per the photochrom rule. #9 (1888 Illustrated London News general view, black and white) is the alternative for P4. #1 and #2 (Sandby) skipped: 1731 in the file names is the painter’s birth year and the paintings are undated (#2 shows the canal, so after 1796). #5 is Venice.",
+ "_reviewed": true
+}

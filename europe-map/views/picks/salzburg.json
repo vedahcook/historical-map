@@ -1,0 +1,113 @@
+{
+ "city": "Salzburg",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Nuremberg chronicles - SALZBURGA.png",
+   "y": 1493,
+   "lab": "1493",
+   "what": "Woodcut in Hartmann Schedel’s Nuremberg Chronicle",
+   "who": "Michael Wolgemut and Wilhelm Pleydenwurff",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.5,
+    0.035,
+    0.984,
+    0.955
+   ],
+   "focal": [
+    0.45,
+    0.33
+   ],
+   "why": "colored true view (the Romanesque cathedral is shown); two-page spread, so trimmed to the right-hand page — the town core with the cathedral, the river and the castle on its hill — to avoid the gutter"
+  },
+  {
+   "n": 8,
+   "file": "Saltzburgk - btv1b53178862t (1 of 2).jpg",
+   "y": 1581,
+   "lab": "1581",
+   "what": "View from the Kapuzinerberg, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 3",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.025,
+    0.98,
+    0.71
+   ],
+   "focal": [
+    0.42,
+    0.4
+   ],
+   "why": "colored loose sheet, high resolution: the fortress above the town and the Salzach; trimmed off the legend cartouches and figures at the bottom"
+  },
+  {
+   "n": 13,
+   "file": "Rudolf von Alt - Ansicht von Salzburg - 1831-32.jpeg",
+   "y": 1831,
+   "lab": "1831–32",
+   "what": "View over the cathedral from the Mönchsberg, painting",
+   "who": "Rudolf von Alt",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.58
+   ],
+   "why": "color view over the cathedral domes and towers, the Kollegienkirche and the Salzach valley"
+  },
+  {
+   "n": 20,
+   "file": "Salzburg, from the Kapuzinerberg, Austro-Hungary-LCCN2002710948.tif",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "View from the Kapuzinerberg, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.02,
+    0.978,
+    0.925
+   ],
+   "focal": [
+    0.5,
+    0.42
+   ],
+   "why": "the classic view: Hohensalzburg fortress over the old town, cathedral and Salzach, with snow-capped mountains; color"
+  },
+  {
+   "n": 26,
+   "file": "ETH-BIB-Salzburg-Weitere-LBS MH02-18-0009.tif",
+   "y": 1933,
+   "lab": "1933",
+   "what": "The old town and the fortress, aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.15,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.55
+   ],
+   "why": "sharp oblique aerial of the old town between the Salzach and the fortress hill, cathedral and Kollegienkirche clear, Untersberg behind; portrait format"
+  }
+ ],
+ "gaps": "P2: nothing usable (#9 is a lake scene in Salzburg province, #12 a mountain pass, #10/#11 are the two halves of Merian’s 1644 plan). P6: no modern photographs — #27–#30 are low-resolution copies of 1890s photochroms with a 2007 upload date.",
+ "notes": "#1: the Salzburg woodcut is treated as a true view (Commons files it under the Romanesque cathedral); the left page shows outlying buildings. #8: BnF dates its copy 1645; the plate first appeared in vol. 3 (1581) — #3 and #6 are vol. 3 editions, and #4 is another colored copy (its description’s ‘Bd. II, 1581’ must mean vol. 3). P1 alternative: the older Setznagel view (#5, only 1000 px), which is the Salzburg panel of the vol. 1 four-city plate of 1572 (Commons says ‘about 1575’; a high-resolution colored sheet is Ulm’s candidate #5). P3 alternatives: Jakob Alt 1844 (#15, distant view from Itzling), Sattler panorama detail of St. Peter (#14, 1829). P4 alternatives: photochrom from the fortress (#21), Adolphe Braun stereo cards 1860s (#17–#19, labeled Braun and Hogenberg by mistake).",
+ "_reviewed": true
+}

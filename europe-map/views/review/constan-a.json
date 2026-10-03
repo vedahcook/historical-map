@@ -1,0 +1,27 @@
+{
+ "city": "Constanța",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "1909 card, caption excluded; Konstanz hits correctly skipped"
+  },
+  {
+   "n": 8,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0.07,
+     1,
+     0.63
+    ],
+    "focal": [
+     0.5,
+     0.5
+    ]
+   },
+   "reason": "current trim still leaves the foreground rooftop filling the lower left; stopping at 63% removes it and keeps sea, cathedral dome, bell tower and port"
+  }
+ ]
+}

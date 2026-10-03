@@ -1,0 +1,34 @@
+{
+ "city": "Middelburg",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "True bird's-eye view, loose sheet; event flag correct; crop clear of text lines"
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "Skyline view; crop clears the frame and the legend"
+  },
+  {
+   "n": 14,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.045,
+     0.09,
+     0.955,
+     0.855
+    ],
+    "who": "Jan Caspar Philips"
+   },
+   "reason": "Top of the crop includes the plate's frame line (frame sits at about 7.5% from the top, 86.7% from the bottom); record's printmaker category is Jan Caspar Philips, not unknown"
+  },
+  {
+   "n": 13,
+   "verdict": "ok",
+   "reason": "Faint but Lange Jan and the Oostkerk dome are identifiable; crop stays inside the plate"
+  }
+ ]
+}

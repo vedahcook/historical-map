@@ -1,0 +1,71 @@
+{
+ "city": "A Coruña",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Debuxo da Crunha por Pier Maria Baldi (1669) (1).jpg",
+   "y": 1669,
+   "lab": "1669",
+   "what": "The city and the Tower of Hercules, colored drawing from Cosimo III de’ Medici’s journey through Spain",
+   "who": "Pier Maria Baldi",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.07,
+    0.978,
+    0.92
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "color general view with the Roman lighthouse and the walled town on its peninsula; page margins trimmed"
+  },
+  {
+   "n": 5,
+   "file": "Vista da Crunha (1866).jpg",
+   "y": 1866,
+   "lab": "1866",
+   "what": "View of the harbor, wood engraving in Fernando Fulgosio, Crónica de la provincia de La Coruña",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.006,
+    0.11,
+    0.996,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.5
+   ],
+   "why": "the town with the Tower of Hercules on its hill and San Antón castle in the bay"
+  },
+  {
+   "n": 6,
+   "file": "View of A Coruña from lighthouse.jpg",
+   "y": 2010,
+   "lab": "2010",
+   "what": "The city across the Orzán bay from the Tower of Hercules, photograph",
+   "who": "slideshow bob",
+   "lic": "CC BY-SA 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.38
+   ],
+   "why": "general view of the city on its bay from the landmark lighthouse"
+  }
+ ],
+ "gaps": "P0, P1, P3, P5: no candidates. P4 has only the 1866 engraving.",
+ "notes": "#2 is the companion Baldi sheet (city from the bay, with a coat of arms over the foreground); #1 is a black-and-white copy of both sheets joined. #4 is a modern photo of the Marina galleries with a wrong 1899 date, so skipped. #6 is somewhat hazy; #8 (Diego Delso’s sharp 2015 panorama of the Tower of Hercules) is the landmark alternative for P6.",
+ "_reviewed": true
+}

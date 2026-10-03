@@ -1,0 +1,33 @@
+{
+ "city": "České Budějovice",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0,
+     1,
+     0.8
+    ],
+    "focal": [
+     0.5,
+     0.4
+    ]
+   },
+   "reason": "with the current trim the 16:9 crop cuts off the Black Tower and spire tops and the bottom of the walls; wider trim keeps the whole walled town"
+  },
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.29,
+     0.5
+    ]
+   },
+   "reason": "the postcard’s center fold (at 0.50 of the picture) runs through the current crop; shifting left keeps the Black Tower and avoids the fold"
+  }
+ ]
+}

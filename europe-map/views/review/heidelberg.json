@@ -1,0 +1,33 @@
+{
+ "city": "Heidelberg",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "good"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "good"
+  },
+  {
+   "n": 18,
+   "verdict": "fix",
+   "fix": {
+    "what": "General view with the castle, photochrom print (Library of Congress)"
+   },
+   "reason": "the castle is seen from a distance, so it cannot be a view from the castle terrace; the record only says ‘seen from the Terrace’"
+  },
+  {
+   "n": 21,
+   "verdict": "ok",
+   "reason": "good"
+  },
+  {
+   "n": 28,
+   "verdict": "ok",
+   "reason": "hazy and castle not shown, but a genuine general view of the city along the Neckar; no better modern candidate"
+  }
+ ]
+}

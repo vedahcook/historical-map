@@ -1,0 +1,20 @@
+{
+ "city": "Tula",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "plate titled Tula; 1810 is the first-edition year; crop clean"
+  },
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "general view of Tula; 1891 per record; crop clean"
+  },
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "aerial view of the center and the Upa; 1919 per record; crop clean"
+  }
+ ]
+}

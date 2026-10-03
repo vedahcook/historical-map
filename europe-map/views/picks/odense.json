@@ -1,0 +1,29 @@
+{
+ "city": "Odense",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Civitatis episcopalis Othenarum... - btv1b53235836c (2 of 3).jpg",
+   "y": 1598,
+   "lab": "1598",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 5 (Bibliothèque nationale de France)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.135,
+    0.985,
+    0.885
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "bird’s-eye view of the walled town with its churches and streets drawn; flat single-sheet scan; title text trimmed"
+  }
+ ],
+ "gaps": "P0, P2, P3, P4, P5: nothing; P6: only views of hospital blocks and suburbs from the OUH tower, no historic center or skyline",
+ "notes": "The plate’s title says the view was drawn in 1593, so it belongs to vol. 5 (first published 1598); the BnF copy is a 1640 printing and #1 is the same plate in a 1617 edition, photographed as an open book with the gutter through the view. #3 (Købke, a backyard in Odense with a church tower, dated only 1825–48) was left out as a single courtyard with an uncertain date.",
+ "_reviewed": true
+}

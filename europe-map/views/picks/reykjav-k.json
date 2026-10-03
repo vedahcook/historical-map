@@ -1,0 +1,71 @@
+{
+ "city": "Reykjavík",
+ "picks": [
+  {
+   "n": 1,
+   "file": "(Baumg1889) Reykjavik (Ansicht mit Orientierungsangaben).jpg",
+   "y": 1889,
+   "lab": "1889",
+   "what": "Panorama of the town, wood engraving in Alexander Baumgartner’s Island und die Färöer",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.103,
+    0.982,
+    0.88
+   ],
+   "focal": [
+    0.76,
+    0.55
+   ],
+   "why": "general view of the town between the bay and the Tjörn pond; landmark labels and caption trimmed"
+  },
+  {
+   "n": 6,
+   "file": "View of Reykjavik, Iceland (8202673108).jpg",
+   "y": 1930,
+   "lab": "1930",
+   "what": "View over the town and harbor from the Catholic cathedral, photograph (Swedish National Heritage Board)",
+   "who": "Berit Wallenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "dated (July 1, 1930) general view with the harbor; modest resolution"
+  },
+  {
+   "n": 9,
+   "file": "A view of Reykjavík Harbour, Thor in the middle.jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The harbor with Harpa concert hall and Hallgrímskirkja, photograph",
+   "who": "Szilas",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "Harpa and Hallgrímskirkja both visible; the wide panoramas show the city only as a thin strip"
+  }
+ ],
+ "gaps": "P0–P2: no candidates; P3: only a Gaimard expedition landscape (1835) with no town visible",
+ "notes": "#2 (main street, ‘1881’) skipped: the date is likely the book’s, not the photo’s, and P4 is already covered by 1889. #9 is gray-skied; the Diego Delso sunset panorama (#10) is sharper but the city is a sliver at 16:9.",
+ "_reviewed": true
+}

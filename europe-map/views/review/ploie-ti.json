@@ -1,0 +1,10 @@
+{
+ "city": "Ploiești",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "2024 aerial photograph of Ploiești by Joe Mabel; only usable candidate; crop clean"
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "city": "Palma de Mallorca",
+ "picks": [
+  {
+   "n": 6,
+   "file": "Palma. Consolat de Mar. Vista de Mallorca.jpg",
+   "y": 1628,
+   "lab": "1623–33",
+   "what": "View of the city and harbor, painting (Consolat de Mar, Palma)",
+   "who": "Miquel Bestard",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.35
+   ],
+   "why": "the cathedral, the Almudaina and the walls over a harbor full of ships"
+  },
+  {
+   "n": 20,
+   "file": "View of Palma de Mallorca from Vellver. - panoramio.jpg",
+   "y": 2009,
+   "lab": "2009",
+   "what": "The cathedral and the harbor from Bellver Castle, photograph",
+   "who": "Ivan Curra",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.47,
+    0.45
+   ],
+   "why": "La Seu above the marina"
+  }
+ ],
+ "gaps": "P0: none; P2: only an undated 17th-century version of the Bestard view; P3: only 1840 engravings of single gates and squares; P4, P5: nothing usable",
+ "notes": "#6: Commons dates it 1623–33 (Bestard’s working years); #5 is a related version dated 1630–33 if a tighter date is wanted. Many hits are other places: #1–2 Palmanova, #3–4 Palma il Giovane, #8 Resaca de la Palma, #14 Palma Rosa (Australia). #12 (Muñoz Degrain) shows a mountain coast, not the city. #9–11 (Muntaner engravings in Furió’s Panorama, 1840) are correct but show minor street scenes.",
+ "_reviewed": true
+}

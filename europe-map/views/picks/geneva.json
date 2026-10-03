@@ -1,0 +1,113 @@
+{
+ "city": "Geneva",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Zentralbibliothek Zürich - Geneue - 991011184589705501.jpg",
+   "y": 1642,
+   "lab": "1642",
+   "what": "Engraving in Matthäus Merian’s Topographia Helvetiae, Rhaetiae et Valesiae",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.026,
+    0.036,
+    0.972,
+    0.675
+   ],
+   "focal": [
+    0.6,
+    0.4
+   ],
+   "why": "bird’s-eye view from the south; St. Pierre cathedral, the Rhône bridges and lake recognizable; crisper copy of the plate in #6"
+  },
+  {
+   "n": 10,
+   "file": "CH-NB - Grafiken Orts- und Landschaftsansichten - GS-GRAF-ANSI-GE-137.tif",
+   "y": 1835,
+   "lab": "about 1835",
+   "what": "View across the Rhône from Saint-Jean, steel engraving from La Suisse pittoresque",
+   "who": "Sauvage",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.27,
+    0.24,
+    0.75,
+    0.65
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "general view with the old town and cathedral on its hill"
+  },
+  {
+   "n": 13,
+   "file": "CH-NB - Grafiken Orts- und Landschaftsansichten - GS-GRAF-ANSI-GE-157.tif",
+   "y": 1855,
+   "lab": "1850s",
+   "what": "Geneva seen from the Quai des Bergues, colored lithograph",
+   "who": "Gabriel Loppé and Jules Arnout",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.135,
+    0.235,
+    0.86,
+    0.625
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "color panorama of the lakefront with Île Rousseau and the Pont des Bergues"
+  },
+  {
+   "n": 22,
+   "file": "ETH-BIB-Genf = Genève, Pont du Mont Blanc, Ile Rousseau, Seeausflug v. N. O. aus 200 m-Inlandflüge-LBS MH01-006066.tif",
+   "y": 1930,
+   "lab": "1930",
+   "what": "Aerial photograph of the Pont du Mont-Blanc and Île Rousseau (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.07,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.65,
+    0.45
+   ],
+   "why": "the bridges, Île Rousseau and the old town from the air; white film edge at left trimmed"
+  },
+  {
+   "n": 26,
+   "file": "Switzerland-02552 - Geneva on the opposite shore (22729826963).jpg",
+   "y": 2015,
+   "lab": "2015",
+   "what": "The old town and St. Pierre cathedral across the lake, photograph",
+   "who": "Dennis G. Jarvis",
+   "lic": "CC BY-SA 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0.2,
+    1,
+    1
+   ],
+   "focal": [
+    0.35,
+    0.45
+   ],
+   "why": "sharp lakefront view with the cathedral above the old town"
+  }
+ ],
+ "gaps": "P0: nothing; P2: only plans, a duplicate of the Merian plate (#9) and a view of Vevey (#7)",
+ "notes": "Merian plate dated 1642 (first edition of Topographia Helvetiae) rather than the 1654 edition in #6’s title; ZB Zürich dates its copy ‘after 1638’. Münster’s 1550 woodcut (#4) is a usable alternative for P1 if an earlier view is wanted. #13 is cataloged 1835–61; Loppé was born in 1825 and the Pont du Mont-Blanc (1862) is absent, hence 1850s. #2 Nyon, #7 Vevey, #15–19 Montreux/Ouchy are other towns on the lake.",
+ "_reviewed": true
+}

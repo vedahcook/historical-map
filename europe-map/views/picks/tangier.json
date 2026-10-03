@@ -1,0 +1,113 @@
+{
+ "city": "Tangier",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Tingis, Lusitanis, Tangiara ; Tzaffin ; Septa ; Arzilla ; Sala - (Georg Braun) ; (Franz Hogenberg) - btv1b53143253x.jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.046,
+    0.058,
+    0.482,
+    0.505
+   ],
+   "focal": [
+    0.5,
+    0.35
+   ],
+   "why": "colored copy; trimmed to the Tangier panel (top left) of the five-view plate; walled town and castle on the bay"
+  },
+  {
+   "n": 10,
+   "file": "Gezicht op Tanger vanuit het westen Prospect of ye lower part of Tangier, from the hill West of White-hall (titel op object) Divers Prospects in and about Tangier (serietitel) Gezichten op Tanger (serietitel), RP-P-1907-2852.jpg",
+   "y": 1673,
+   "lab": "1673",
+   "what": "The lower town from the hill west of Whitehall, etching from Divers Prospects in and about Tangier (Rijksmuseum)",
+   "who": "Wenceslaus Hollar",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.01,
+    0.02,
+    0.99,
+    0.9
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "general view of the walled town and bay during English rule; Hollar’s series is the classic record; caption trimmed"
+  },
+  {
+   "n": 12,
+   "file": "Tangier - view from Constantine Hotel, showing the old Moorish harbor defenses LCCN2004707263.jpg",
+   "y": 1894,
+   "lab": "1894",
+   "what": "View over the old town and harbor defenses, photograph (Library of Congress)",
+   "who": "William Henry Jackson",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.025,
+    0.985,
+    0.975
+   ],
+   "focal": [
+    0.45,
+    0.42
+   ],
+   "why": "rooftop general view of the medina with mosque minaret; black and white but a true city view (the 1890 photochrom is a single street scene)"
+  },
+  {
+   "n": 20,
+   "file": "ETH-BIB-Tanger-Nordafrikaflug 1932-LBS MH02-13-0475.tif",
+   "y": 1932,
+   "lab": "1932",
+   "what": "Aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.04,
+    0.9,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "city spread along the bay; dark vignette on the right edge trimmed"
+  },
+  {
+   "n": 23,
+   "file": "Tangier - 44699733295.jpg",
+   "y": 2015,
+   "lab": "2015",
+   "what": "The old town above the harbor, photograph",
+   "who": "Mike McBey",
+   "lic": "CC BY 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "sharp color view of the town rising from the port"
+  }
+ ],
+ "gaps": "P0: none; P3: nothing",
+ "notes": "P2 alternatives: Dapper view from the sea (#8, dated 1686 but the plate may first date from Dapper’s 1668 Dutch edition, so skipped for date doubt). P4: Delacroix paintings (#13, #14) are coastal or figure scenes painted in Paris from memory; Jackson photo preferred.",
+ "_reviewed": true
+}

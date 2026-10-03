@@ -1,0 +1,29 @@
+{
+ "city": "Limerick",
+ "picks": [
+  {
+   "n": 4,
+   "file": "KING JOHN'S CASTLE - IMAGES FROM THE STREETS OF LIMERICK (14477824003).jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "King John’s Castle and Thomond Bridge across the Shannon, photograph",
+   "who": "William Murphy",
+   "lic": "CC BY-SA 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.6
+   ],
+   "focal": [
+    0.53,
+    0.4
+   ],
+   "why": "the classic Limerick view: castle on the river, St. Mary’s Cathedral tower behind"
+  }
+ ],
+ "gaps": "P0–P5: nothing usable (the only old item, #1, is rapids on the Shannon outside the city)",
+ "notes": "Only modern photos among the candidates; #3 and #5 show the modern riverfront towers, less characteristic.",
+ "_reviewed": true
+}

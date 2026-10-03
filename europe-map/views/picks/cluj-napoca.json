@@ -1,0 +1,92 @@
+{
+ "city": "Cluj-Napoca",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Theatri praecipvarvm totivs mvndi vrbivm - liber sextvs 1618 (97693430).jpg",
+   "y": 1617,
+   "lab": "1617",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 6",
+   "who": "Georg Braun and Frans Hogenberg, after Egidius van der Rye",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.3,
+    0.215,
+    0.9,
+    0.776
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "hand-colored copy, very high resolution; walled town with St. Michael’s Church; book page and orange frame trimmed"
+  },
+  {
+   "n": 7,
+   "file": "Cluj panoramic c1840.jpg",
+   "y": 1860,
+   "lab": "about 1860",
+   "what": "View from the hills, hand-colored steel engraving",
+   "who": "Joseph Maximilian Kolb",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "color general view with St. Michael’s tower and the twin-towered Piarist church"
+  },
+  {
+   "n": 9,
+   "file": "Kolozsvár 1941, látkép a Fellegvárból. Fortepan 73884.jpg",
+   "y": 1941,
+   "lab": "1941",
+   "what": "View from the Citadel hill, photograph (Fortepan)",
+   "who": "unknown photographer",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    0.88,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "sharp general view over the old town to St. Michael’s Church; tree at right edge trimmed"
+  },
+  {
+   "n": 12,
+   "file": "Cluj panorama 2026.jpg",
+   "y": 2026,
+   "lab": "2026",
+   "what": "Panorama from the Citadel hill, photograph",
+   "who": "Yerpo",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.46,
+    0.45
+   ],
+   "why": "recent, sharp color panorama with St. Michael’s spire at center"
+  }
+ ],
+ "gaps": "P0, P2: no candidates. P3: none (#7 is dated about 1860, so P4). P4 has only #7.",
+ "notes": "#1–#6 are copies of the same Braun and Hogenberg vol. 6 plate (1617); #5 is the authentic hand-colored 1618-edition copy from Polona, with no visible gutter; #2 and #3 are brighter colored copies at about 1500 px if a cleaner look is preferred. #7: Commons says about 1840, but it shows St. Michael’s neo-Gothic tower, built 1837–1862, and Kolb engraved Ludwig Rohbock’s views for Hunfalvy’s Ungarn und Siebenbürgen (1856–64), so I dated it about 1860; reviewer may want to confirm. #8 (1940) has soldiers and onlookers in the foreground; #10 and #11 (1961) are weaker than #9.",
+ "_reviewed": true
+}

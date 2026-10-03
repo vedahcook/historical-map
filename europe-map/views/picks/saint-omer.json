@@ -1,0 +1,71 @@
+{
+ "city": "Saint-Omer",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Civitates orbis terrarum. Urbium praecipuarum totius mundi. Liber quartus (page 20).jpg",
+   "y": 1588,
+   "lab": "1588",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 4",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.265,
+    0.235,
+    0.785,
+    0.655
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "colored copy; walled town with churches and houses drawn; book page trimmed away"
+  },
+  {
+   "n": 6,
+   "file": "Gezicht op Sint-Omaars Vue Générale de Saint-Omer (titel op object), RP-F-2001-7-1219B-29.jpg",
+   "y": 1880,
+   "lab": "1878–83",
+   "what": "General view, photomechanical print in Le Nord Contemporain (Rijksmuseum)",
+   "who": "unknown photographer",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.2,
+    0.141,
+    0.786,
+    0.692
+   ],
+   "focal": [
+    0.42,
+    0.3
+   ],
+   "why": "skyline across the fields with the cathedral tower; album page and caption trimmed"
+  },
+  {
+   "n": 9,
+   "file": "ETH-BIB-Saint-Omer, Frankreich-Inlandflüge-LBS MH01-007488.tif",
+   "y": 1933,
+   "lab": "1933",
+   "what": "Aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.05,
+    0.04,
+    0.955,
+    1.0
+   ],
+   "focal": [
+    0.58,
+    0.4
+   ],
+   "why": "whole town from the air, with the ruins of Saint-Bertin abbey in front; plate numbers trimmed"
+  }
+ ],
+ "gaps": "P0: nothing. P2: only an uncolored loose copy of the same Braun and Hogenberg plate (#3), dated only 17th–18th century. P3: Bonington’s 1824 painting (#4) shows the town as a few specks on the horizon, and #5 is a social satire in a street. P6: the only hit (#12) is Saint-Omer in Calvados, a different village.",
+ "notes": "The Braun and Hogenberg plate is a perspective plan rather than a true view, kept because nothing else covers P1. #8 (Corot) shows the Saint-Bertin tower but is dated only ‘19th century’; #7 is the Saint-Bertin ruins alone.",
+ "_reviewed": true
+}

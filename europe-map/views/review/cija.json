@@ -1,0 +1,27 @@
+{
+ "city": "Écija",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.02,
+     0.1,
+     0.488,
+     0.97
+    ],
+    "focal": [
+     0.5,
+     0.5
+    ]
+   },
+   "reason": "vertical sheet crease at the middle of the plate (about 0.5 width) runs through the old crop, through the title and the sheep pen; the left half avoids it and still shows the walled town on the river. Old trim also took in frame lines at top and bottom"
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "skyline of church towers; credit and license match"
+  }
+ ]
+}

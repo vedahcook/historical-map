@@ -1,0 +1,54 @@
+{
+ "city": "Dortmund",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.4,
+     0.43
+    ]
+   },
+   "reason": "focal y 0.6 starts the crop below the tip of the St. Reinoldi spire; 0.43 keeps the whole spire"
+  },
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.012,
+     0.022,
+     0.988,
+     0.975
+    ],
+    "focal": [
+     0.47,
+     0.5
+    ]
+   },
+   "reason": "trim runs through the plate's thin orange frame at top and bottom; at focal 0.4 the tall right-hand spire is cut at the crop edge, 0.47 includes it and still shows the whole title cartouche"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 15,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.45,
+     0.375
+    ]
+   },
+   "reason": "focal y 0.45 drops the strip of city at the top of the picture, which is what makes it a view of Dortmund; 0.375 keeps it. Date is the uploader's estimate, label 'about 1920' accepted"
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "city": "Écija",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Braun Ecija UBHD.jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.1,
+    0.488,
+    0.97
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "colored, clean copy of the Écija view alone (no gutter, no stains); walled town on the Genil with its bridge"
+  },
+  {
+   "n": 7,
+   "file": "Iglesia de San Gil - panoramio.jpg",
+   "y": 2016,
+   "lab": "2016",
+   "what": "Rooftops and church towers with San Gil, photograph",
+   "who": "Рустам Абдрахимов",
+   "lic": "CC BY 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.47,
+    0.5
+   ],
+   "why": "the “city of towers” skyline, baroque bell towers over the old town"
+  }
+ ],
+ "gaps": "P0, P2, P3, P4, P5: no candidates",
+ "notes": "The Écija plate shares a sheet with Barcelona (vol. 1, 1572). #1, #3 and #4 are bound copies with the book gutter through the view; #2 (BnF) is larger but water-stained across the town, so the UBHD copy #5 was used (2072 px wide). #9 and #10 (2021 aerials) show the whole town but are dominated by an industrial estate in the foreground.",
+ "_reviewed": true
+}

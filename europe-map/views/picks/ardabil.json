@@ -1,0 +1,29 @@
+{
+ "city": "Ardabil",
+ "picks": [
+  {
+   "n": 1,
+   "file": "View of Ardabil, 1719.jpg",
+   "y": 1683,
+   "lab": "1683",
+   "what": "View of the town, colored engraving in Mallet, Description de l’Univers",
+   "who": "Alain Manesson Mallet",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.155,
+    0.32,
+    0.695,
+    0.855
+   ],
+   "focal": [
+    0.5,
+    0.66
+   ],
+   "why": "only candidate; plate labeled “Ardeuil ou Ardebil”, town on the plain with its streams and the mountains behind"
+  }
+ ],
+ "gaps": "P0–P1, P3–P6: nothing",
+ "notes": "This print is from a German edition (caption “Die Stadt Ardeuil oder Ardebil”), but the banner on the plate is the French original, so it takes the year of the first French edition, 1683. Weak points: the view is small (about 460 px wide after trimming, so it will be enlarged on the card) and schematic, likely reduced from an earlier traveler’s view; drop it if that is too soft. Trim removes the page, the German caption and the banner in the sky.",
+ "_reviewed": true
+}

@@ -1,0 +1,10 @@
+{
+ "city": "Zhytomyr",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "drop",
+   "reason": "14336x3038 panorama: any 16:9 crop is only about a third of the width (well under half); date is the Panoramio upload date, not when the photo was taken; bleak winter view, no other candidate"
+  }
+ ]
+}

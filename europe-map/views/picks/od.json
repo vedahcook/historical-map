@@ -1,0 +1,29 @@
+{
+ "city": "Łódź",
+ "picks": [
+  {
+   "n": 3,
+   "file": "20190730 161646 View of Lodz 30-07-2019 Piotrkowska street.jpg",
+   "y": 2019,
+   "lab": "2019",
+   "what": "Aerial photograph",
+   "who": "Rakoon",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "city center around Piotrkowska Street with the cathedral tower"
+  }
+ ],
+ "gaps": "P0–P5: no candidates",
+ "notes": "#1 (skyline with a factory chimney, 2018) is an alternative for P6.",
+ "_reviewed": true
+}

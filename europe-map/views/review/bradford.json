@@ -1,0 +1,15 @@
+{
+ "city": "Bradford",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "Cowen painting of Bradford, 1849 per record"
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "city center with City Hall tower, crop fine"
+  }
+ ]
+}

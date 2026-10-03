@@ -1,0 +1,92 @@
+{
+ "city": "Poitiers",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Monspessulanus, Montpellier ; Turo, Tours ; Pictavis, sive Pictavia, vernaculo idiomate Poitiers... - btv1b531788420 (1 of 2).jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.082,
+    0.5,
+    0.916,
+    0.775
+   ],
+   "focal": [
+    0.47,
+    0.5
+   ],
+   "why": "colored single sheet trimmed to the lower (Poitiers) view; town on its hill above the Clain, churches labeled"
+  },
+  {
+   "n": 8,
+   "file": "Veüe de la Ville Chasteau et Université de Poictiers Capitalle du Poictou, dessiné de dessus les Roches Vis a Vis le Seminaire - 1699 - Louis Boudan - btv1b6902612r.jpg",
+   "y": 1699,
+   "lab": "1699",
+   "what": "View from the rocks across the Clain, watercolor drawing for the Gaignières collection (BnF)",
+   "who": "Louis Boudan",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.05,
+    0.3,
+    0.948,
+    0.925
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "color; the town on its promontory inside the loop of the river, churches labeled"
+  },
+  {
+   "n": 21,
+   "file": "Panorama de la ville - A8547.jpg",
+   "y": 1916,
+   "lab": "1916",
+   "what": "Roofs of the old town with Notre-Dame-la-Grande, autochrome (Albert Kahn Museum)",
+   "who": "Auguste Léon",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.04,
+    0.025,
+    0.975,
+    0.97
+   ],
+   "focal": [
+    0.4,
+    0.35
+   ],
+   "why": "early color photograph from a height; the bell tower of Notre-Dame-la-Grande"
+  },
+  {
+   "n": 25,
+   "file": "Poitiers centre ville.jpg",
+   "y": 2007,
+   "lab": "2007",
+   "what": "The town across the Clain with the cathedral and Sainte-Radegonde, photograph",
+   "who": "Alexandre Mauric",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.55
+   ],
+   "why": "general view of the historic center with its main landmarks"
+  }
+ ],
+ "gaps": "P0: none; P3: nothing with a firm date; P4: only faint stereo photos dated 1890–1922",
+ "notes": "#3 is the 1645 French issue of the 1572 plate (Gallica single sheet; #5 has a page fold through the view, #6 is a smaller crop of the same plate). #7 and #9 are the two other 1699 Boudan views, equally good. #10/#11 (Daniël Veelwaard etchings) are a fine general view but the Rijksmuseum dates them only 1776–1851. #14–#18 (Olivier Bourbeau stereo photos, 1890–1922) are faint and loosely dated. #12 is a battle painting, #13 a house in Orléans.",
+ "_reviewed": true
+}

@@ -1,0 +1,92 @@
+{
+ "city": "Rijeka (Fiume)",
+ "picks": [
+  {
+   "n": 1,
+   "file": "S. Veit am Flaum (BM 1898,0725.8.1626).jpg",
+   "y": 1649,
+   "lab": "1649",
+   "what": "Bird’s-eye view, engraving in Merian’s Topographia Provinciarum Austriacarum",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.036,
+    0.056,
+    0.968,
+    0.955
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "walled town with its castle, the Rječina river and Trsat castle on the hill, buildings drawn"
+  },
+  {
+   "n": 7,
+   "file": "Fiume, the Harbor, Croatia, Austro-Hungary WDL327.png",
+   "y": 1898,
+   "lab": "1897–99",
+   "what": "The harbor with the Adria Palace, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.016,
+    0.015,
+    0.99,
+    0.93
+   ],
+   "focal": [
+    0.4,
+    0.4
+   ],
+   "why": "color view across the harbor to the waterfront and hills; mount and caption trimmed"
+  },
+  {
+   "n": 9,
+   "file": "Fiume LCCN2014709764.jpg",
+   "y": 1915,
+   "lab": "1915",
+   "what": "General view over the city and harbor, photograph (Library of Congress)",
+   "who": "Bain News Service",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.04,
+    0.09,
+    0.935,
+    0.955
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "view from a height over the town, port and Kvarner Bay; handwritten title and plate number trimmed"
+  },
+  {
+   "n": 14,
+   "file": "View of Rijeka from the castle.jpg",
+   "y": 2022,
+   "lab": "2022",
+   "what": "View from Trsat Castle over the city and the Kvarner Bay, photograph",
+   "who": "Elizabeth Bradshaw",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.5
+   ],
+   "why": "recent color view; Rječina canal, center and harbor"
+  }
+ ],
+ "gaps": "P0: nothing. P2, P3: nothing usable (#2, ‘Veduta di fiume al chiaro di luna’, is a Dutch moonlit river scene by Jacob Abels — ‘fiume’ just means ‘river’).",
+ "notes": "#3, #4 and #13 are Rijeka Crnojevića in Montenegro, not this city. #7 dates to 1897–99 per the record (the Adria Palace was new then); #5, the Corso with the City Tower, is a strong alternative for P4. #8 is an 1883 port map. Bain’s 1915 date for #9 is the record’s date for the negative.",
+ "_reviewed": true
+}

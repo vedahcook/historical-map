@@ -1,0 +1,29 @@
+{
+ "city": "Dundee",
+ "picks": [
+  {
+   "n": 1,
+   "file": "The Old Tower, Dundee (BM 1863,0214.1525).jpg",
+   "y": 1852,
+   "lab": "1852",
+   "what": "The Old Tower (St Mary’s Steeple), tinted lithograph (British Museum)",
+   "who": "Lowes Cato Dickinson after Clarkson Stanfield",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.05,
+    0.045,
+    0.945,
+    0.925
+   ],
+   "focal": [
+    0.38,
+    0.45
+   ],
+   "why": "the city’s medieval steeple above old houses; only candidate of Dundee, Scotland; margins and imprint trimmed"
+  }
+ ],
+ "gaps": "P0, P1, P2, P3, P5, P6: nothing (no general view at all)",
+ "notes": "#2–#5 are Dundee Canal and the Dundee Textile Mill in Passaic, New Jersey, not Dundee. #1 is a landmark scene, not a general view; it shows a cleared building site around the steeple.",
+ "_reviewed": true
+}

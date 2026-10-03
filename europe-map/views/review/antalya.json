@@ -1,0 +1,57 @@
+{
+ "city": "Antalya",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.036,
+     0.13,
+     0.956,
+     0.893
+    ],
+    "focal": [
+     0.3,
+     0.5
+    ]
+   },
+   "reason": "Plate frame lines at left (x 14), right (x 481), top (y ~23) and bottom (y ~180) are inside the trim; focal 0.35 also cuts the left tower in half."
+  },
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.035,
+     0.2,
+     0.97,
+     0.915
+    ],
+    "focal": [
+     0.5,
+     0.65
+    ]
+   },
+   "reason": "Frame rules at top (y ~12) and left (x 10-14) inside the trim; trimming off the upper sky also enlarges the thin town strip and drops most foxing."
+  },
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.02,
+     0.03,
+     0.985,
+     0.975
+    ]
+   },
+   "reason": "Halftone frame lines at top (y 3), left (x 2) and bottom (y 285) fall inside the trim. Date ‘about 1920’ is a guess; book is 1923, acceptable."
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "Clear bay view of the Konyaalti shore under the Bey Mountains, 2011 correct, crop fine."
+  }
+ ]
+}

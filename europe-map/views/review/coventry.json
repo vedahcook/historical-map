@@ -1,0 +1,20 @@
+{
+ "city": "Coventry",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "watercolor with St Michael's and Holy Trinity spires; 1820 per record"
+  },
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "ruined cathedral and Holy Trinity; event flag fits; original photo already cuts the spire top"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "2011 panorama over cathedral ruins; record, license and crop agree"
+  }
+ ]
+}

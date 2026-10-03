@@ -1,0 +1,50 @@
+{
+ "city": "Tétouan",
+ "picks": [
+  {
+   "n": 4,
+   "file": "1865-06-18, El Museo Universal, Vista de Tetuán desde la alcazaba.jpg",
+   "y": 1865,
+   "lab": "1865",
+   "what": "View from the Kasbah, wood engraving in El Museo Universal",
+   "who": "Federico Ruiz and Bernardo Rico",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.08,
+    0.97,
+    0.92
+   ],
+   "focal": [
+    0.55,
+    0.55
+   ],
+   "why": "general view over the whole town to the mountains; rounded top corners and caption trimmed; only 1317 px wide"
+  },
+  {
+   "n": 7,
+   "file": "ETH-BIB-Tetuan von Norden-Mittelmeerflug 1928-LBS MH02-04-0184.tif",
+   "y": 1928,
+   "lab": "1928",
+   "what": "View from the north, photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.42
+   ],
+   "why": "white town with minaret below the mountains; clear general view"
+  }
+ ],
+ "gaps": "P0–P3: nothing; P6: only a weak street scene (#9), skipped",
+ "notes": "#2 (photogravure, ca. 1883–93, view over rooftops to the Kasbah) is a usable alternative for P4 if a photo is preferred, but its date is loose. #3 shows the Spanish army camp in the countryside, not the town.",
+ "_reviewed": true
+}

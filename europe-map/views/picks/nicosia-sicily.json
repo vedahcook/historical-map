@@ -1,0 +1,50 @@
+{
+ "city": "Nicosia",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Veduta di Nicosia, presa dal colle San Giovanni (xilografia).jpg",
+   "y": 1894,
+   "lab": "1894",
+   "what": "View from the San Giovanni hill, wood engraving in Le Cento Città d’Italia",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "detailed general view of the town below the castle rock, with San Salvatore on its ridge"
+  },
+  {
+   "n": 7,
+   "file": "NicosiaView 009 4668.jpg",
+   "y": 2020,
+   "lab": "2020",
+   "what": "General view of the town and the castle rock, photograph",
+   "who": "Ludvig14",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "high-resolution color view of the hill town with its rocks and churches"
+  }
+ ],
+ "gaps": "P0–P3: nothing usable. P5: none.",
+ "notes": "#1 is Braun and Hogenberg’s Trapani; #4, #5 and #6 are Nicosia, Cyprus. #3 is a BnF photographic panorama of Nicosia, Sicily, made of two joined prints, but it is dated only ‘19th century’, so it was skipped.",
+ "_reviewed": true
+}

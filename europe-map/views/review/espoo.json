@@ -1,0 +1,15 @@
+{
+ "city": "Espoo",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "dated 1965 aerial of Tapiola center; crop keeps the pool and buildings"
+  },
+  {
+   "n": 6,
+   "verdict": "drop",
+   "reason": "16:9 crop of full-height 360-degree panorama is only about 23% of the picture's width (rule: at least about half), so it would be blurry and warped; anonymous apartment blocks, no landmark"
+  }
+ ]
+}

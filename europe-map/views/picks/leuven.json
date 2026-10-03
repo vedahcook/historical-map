@@ -1,0 +1,92 @@
+{
+ "city": "Leuven",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Panorama van Leuven, RP-P-2019-2596.jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Panorama, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1 (Rijksmuseum)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.016,
+    0.047,
+    0.98,
+    0.945
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "true profile view of the whole town inside its walls with St. Peter’s and the other churches labeled; the Leuven strip of the vol. 1 three-city plate; text block at lower left stays outside a 16:9 crop"
+  },
+  {
+   "n": 9,
+   "file": "View of the Great Market in Leuven, by Wolfgang de Smet, 1650-1700 - Museum M - Leuven, Belgium - DSC05617.JPG",
+   "y": 1666,
+   "lab": "1665–67",
+   "what": "The Grote Markt with St. Peter’s Church and the town hall, painting (M Leuven)",
+   "who": "Wolfgang de Smet",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.005,
+    0.995,
+    0.995
+   ],
+   "focal": [
+    0.45,
+    0.48
+   ],
+   "why": "color bird’s-eye view of the market square, St. Peter’s, the town hall and the University Hall, with the town beyond"
+  },
+  {
+   "n": 12,
+   "file": "Leuven, Belgium (ca. 1890-1900).jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "View over the rooftops to St. Gertrude’s Church, photochrom print",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.028,
+    0.03,
+    0.972,
+    0.965
+   ],
+   "focal": [
+    0.58,
+    0.45
+   ],
+   "why": "color general view of the town with St. Gertrude’s openwork spire and St. Peter’s behind; dark border trimmed"
+  },
+  {
+   "n": 23,
+   "file": "1011 Leuven Town Hall Photo by Giles Laurent.jpg",
+   "y": 2024,
+   "lab": "2024",
+   "what": "The town hall on the Grote Markt at night, aerial photograph",
+   "who": "Giles Laurent",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.48,
+    0.45
+   ],
+   "why": "the town’s landmark Gothic town hall lit up, with the square and surrounding streets; sharp and recent"
+  }
+ ],
+ "gaps": "P0: nothing; P3: nothing; P5: nothing better than the 1890s photochrom",
+ "notes": "P1: #3 is the Leuven strip cut from the Braun and Hogenberg vol. 1 plate that also shows ’s-Hertogenbosch and Mechelen; the Rijksmuseum dates this impression 1588 (a later Kempen/Brachel printing), so the plate year 1572 is used. The vol. 3 (1581) plan (#1, #2, #4–#6) is a flat street plan. P2: Merian’s 1654 panorama (#7) is a good black-and-white alternative to de Smet; #10 is a detail of #9. #8 (Strada, 1727 edition) shows a skirmish and a hanged man in the foreground, so it would need the event flag and its plate may predate 1727. #13 is the same photochrom as #12. #17 and #18 are lions (German ‘Löwen’), not Leuven. Agence Rol’s 1914 photo of St. Peter’s (#19) shows the church before the August 1914 fire; it is a single building, and the date is that of the agency record, so it was not used. #20 is a scratched 1914 print. #21/#22 are dull rooftop views, #24 the M Leuven museum courtyard.",
+ "_reviewed": true
+}

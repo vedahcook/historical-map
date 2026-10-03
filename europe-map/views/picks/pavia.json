@@ -1,0 +1,50 @@
+{
+ "city": "Pavia",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Arazzi Battaglia di Pavia - Veduta di Pavia.png",
+   "y": 1530,
+   "lab": "1528–31",
+   "what": "The city during the 1525 battle, detail of the Battle of Pavia tapestries (Capodimonte, Naples)",
+   "who": "Bernard van Orley, woven by Willem Dermoyen",
+   "lic": "PD",
+   "event": true,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "only early view; walled city of towers behind the siege lines; low resolution (421 px high)"
+  },
+  {
+   "n": 8,
+   "file": "Veduta generale di Pavia, presa dalla via dei Mille, già Borgo Ticino (xilografia).jpg",
+   "y": 1888,
+   "lab": "1888",
+   "what": "General view from the Borgo Ticino, wood engraving in Le Cento Città d’Italia",
+   "who": "Barberis",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.42,
+    0.5
+   ],
+   "why": "wide general view with the cathedral dome over the rooftops"
+  }
+ ],
+ "gaps": "P0, P3, P6: no candidates. P2: nothing. P1 has only the tapestry: the 1617 bird’s-eye plan (#2) is photographed as an open two-page spread with the gutter through the city. P5: Acerbi’s color view from the Ticino (#9) is dated only ‘before 1920’.",
+ "notes": "The tapestry detail is marked as an event (the 1525 battle and siege). The Brogi photos and the photochrom (#3–#7) all show the Certosa di Pavia, a monastery about 8 km north of the city, so skipped. #9 (Acerbi) would be an excellent view if a firm date turns up.",
+ "_reviewed": true
+}

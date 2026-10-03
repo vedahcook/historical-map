@@ -1,0 +1,113 @@
+{
+ "city": "Haarlem",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Harlemeum, sive ut Ha Barlan Herlemum, Urbs Hollandiae famosa, Inventarisnummer NL-HlmNHA 1100 KNA006000017.JPG",
+   "y": 1575,
+   "lab": "1575",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 2 (Noord-Hollands Archief)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.3,
+    0.03,
+    0.98,
+    0.955
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "colored loose sheet, no gutter; walled town with the Great Church at its center"
+  },
+  {
+   "n": 7,
+   "file": "Gezicht op Haarlem uit het noordwesten, met de blekerijen op de voorgrond, SK-A-351.jpg",
+   "y": 1670,
+   "lab": "about 1670",
+   "what": "View of Haarlem with bleaching fields, painting (Rijksmuseum)",
+   "who": "Jacob van Ruisdael",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.72
+   ],
+   "why": "the famous skyline with the Great Church over the bleaching fields"
+  },
+  {
+   "n": 12,
+   "file": "WLANL - artanonymous - Gezicht op Haarlem.jpg",
+   "y": 1846,
+   "lab": "1845–48",
+   "what": "View of Haarlem, painting (Kunstmuseum Den Haag)",
+   "who": "Jan Hendrik Weissenbruch",
+   "lic": "CC BY-SA 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.7,
+    0.5
+   ],
+   "why": "the Great Church across the dunes and meadows; unframed copy"
+  },
+  {
+   "n": 16,
+   "file": "Peat Market and Great Church, Haarlem, Holland-LCCN2001699505.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Spaarne and the Great Church, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.022,
+    0.03,
+    0.978,
+    0.935
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "color view along the Spaarne to the Great Church"
+  },
+  {
+   "n": 26,
+   "file": "Aerial photograph of Haarlem APR 2018.jpg",
+   "y": 2018,
+   "lab": "2018",
+   "what": "Aerial photograph",
+   "who": "Milliped",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "the whole center inside the canal ring with the bends of the Spaarne"
+  }
+ ],
+ "gaps": "P0: none; P5: the 1920s–30s aerials are either undated within 20 years or show only suburbs and the new cathedral",
+ "notes": "#5 is dated 1570 by the archive, but the Haarlem plate is in Civitates vol. 2, so 1575. #7: Commons gives ca. 1650–82; the Rijksmuseum dates the painting about 1670–75. #26 is a high aerial; landmarks are small but the city plan is clear.",
+ "_reviewed": true
+}

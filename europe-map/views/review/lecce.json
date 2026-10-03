@@ -1,0 +1,32 @@
+{
+ "city": "Lecce",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.04,
+     0.08,
+     0.962,
+     0.79
+    ],
+    "focal": [
+     0.6,
+     0.4
+    ]
+   },
+   "reason": "old centered window cut off the upper part of the Sant’Oronzo statue on the column; moved the window up so the whole column shows"
+  },
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "general view with the bell tower and domes; window is 53% of width"
+  },
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "best-known landmark, straight enough crop from the 360 degree panorama; window about 46% of picture width, acceptable"
+  }
+ ]
+}

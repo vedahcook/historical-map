@@ -1,0 +1,29 @@
+{
+ "city": "Lipetsk",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Липецк Соборная пл.jpg",
+   "y": 2022,
+   "lab": "2022",
+   "what": "Sobornaya Square with the Nativity Cathedral, aerial photograph",
+   "who": "Andre Percon",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "the city’s main square in winter; cathedral bell tower and regional government building"
+  }
+ ],
+ "gaps": "P0–P5: no candidates",
+ "notes": "Other candidates are a gray industrial skyline, a rainy rooftop panorama and a staircase.",
+ "_reviewed": true
+}

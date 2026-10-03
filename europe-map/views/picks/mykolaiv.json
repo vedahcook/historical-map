@@ -1,0 +1,50 @@
+{
+ "city": "Mykolaiv, Ukraine",
+ "picks": [
+  {
+   "n": 1,
+   "file": "View of Mykolaiv, Great Synagogue.jpg",
+   "y": 1908,
+   "lab": "1906–10",
+   "what": "View over the city with the Great Synagogue, postcard photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "only period view; rooftop view with the Great (Choral) Synagogue at right"
+  },
+  {
+   "n": 4,
+   "file": "Николаев, мост через р. Ингул и яхт-клуб - panoramio.jpg",
+   "y": 2010,
+   "lab": "about 2010",
+   "what": "The Inhul bridge and the yacht club, photograph",
+   "who": "mramorn",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "river view of the city; best of a thin modern set"
+  }
+ ],
+ "gaps": "P0–P3: none; P5: none; P6 is only a modest panoramio shot",
+ "notes": "#1 is a grainy enlargement of a postcard (halftone noise visible); keep only if a blank plate seems worse. #2 and #3 show Buzk’s Gard park in the oblast, not the city; #5 is a supermarket.",
+ "_reviewed": true
+}

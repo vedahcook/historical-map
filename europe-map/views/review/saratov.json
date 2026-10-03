@@ -1,0 +1,15 @@
+{
+ "city": "Saratov",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "postcard titled “Виды Волги. Саратовъ”, pre-1917 (old spelling); about 1910 is an estimate within that range; lower half of crop is river but acceptable"
+  },
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "sharp 2025 view with the bridge and church; record matches"
+  }
+ ]
+}

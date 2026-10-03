@@ -1,0 +1,6 @@
+{"city": "Schwerin", "checks": [
+ {"n": 3, "verdict": "fix", "fix": {"trim": [0.025, 0.03, 0.975, 0.9], "focal": [0.5, 0.46]}, "reason": "right plate frame lines (x about 0.978 and 0.984) and a faint left frame line fall inside the crop edges; tighter sides remove them"},
+ {"n": 5, "verdict": "ok", "reason": "Thiele painting of the castle on the lake with the town, clean crop"},
+ {"n": 6, "verdict": "ok", "reason": "town is small in the distance but clearly Schwerin per the record; clean crop, 1840–45 correct"},
+ {"n": 8, "verdict": "ok", "reason": "photochrom general view with cathedral over the Pfaffenteich; caption and border trimmed"}
+]}

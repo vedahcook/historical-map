@@ -1,0 +1,71 @@
+{
+ "city": "Leicester",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Matthias Read (1669-1747) - View of Leicester from the South - 5159 - Government Art Collection.jpg",
+   "y": 1743,
+   "lab": "about 1743",
+   "what": "View from the south, painting (Government Art Collection)",
+   "who": "Matthias Read",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "color general view with the church spires and the Charnwood hills behind; dated by the collection to about 1743 (1669 in the file name is the painter’s birth year)"
+  },
+  {
+   "n": 6,
+   "file": "South Gate Street Leicester with the Confrators House (BM 1873,1213.745).jpg",
+   "y": 1830,
+   "lab": "about 1830",
+   "what": "South Gate Street, lithograph (British Museum)",
+   "who": "John Flower",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.08,
+    0.11,
+    0.92,
+    0.87
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "only true Leicester view of the period; old street scene by the local artist; margins and caption trimmed"
+  },
+  {
+   "n": 12,
+   "file": "LeicesterAttenboroughPanorama.jpg",
+   "y": 2008,
+   "lab": "2008",
+   "what": "View west and north from the Attenborough Tower, photograph",
+   "who": "Ncadc2004",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0.4,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "only general view of the modern city; empty sky trimmed"
+  }
+ ],
+ "gaps": "P0–P1: nothing; P4–P5: nothing of Leicester (the photochroms #8–#9 are Leicester Square, London)",
+ "notes": "Many hits are other places: #1 Venice, #4/#8/#9/#14 Leicester Square in London, #5/#7 Leicester’s Buildings at Kenilworth Castle, #3 Dugdale’s prospects of Coventry (its legend names Coventry’s gates and churches). #12 is modest: landmarks are small and far off. #11/#13 (Leicester Abbey ruins) are low walls in grass.",
+ "_reviewed": true
+}

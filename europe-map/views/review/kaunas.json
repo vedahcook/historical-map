@@ -1,0 +1,50 @@
+{
+ "city": "Kaunas",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.024,
+     0.037,
+     0.986,
+     0.95
+    ]
+   },
+   "reason": "trim left sat on the plate’s double frame line; bottom edge touched the frame line"
+  },
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.06,
+     0.13,
+     0.636,
+     0.765
+    ],
+    "focal": [
+     0.45,
+     0.4
+    ]
+   },
+   "reason": "left frame line inside crop and the KAUNA banner was cut off at the top"
+  },
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "Oleszczynski view, crop clean"
+  },
+  {
+   "n": 12,
+   "verdict": "ok",
+   "reason": "photo of riverfront, crop clean; about 1915 per record"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "weak, hazy, but Jesuit church and old town identifiable; nothing better"
+  }
+ ]
+}

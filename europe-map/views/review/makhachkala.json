@@ -1,0 +1,10 @@
+{
+ "city": "Makhachkala",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

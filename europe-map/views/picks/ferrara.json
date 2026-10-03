@@ -1,0 +1,50 @@
+{
+ "city": "Ferrara",
+ "picks": [
+  {
+   "n": 6,
+   "file": "Veduta del Palazzo de' Duchi in Ferrara.jpg",
+   "y": 1845,
+   "lab": "1845",
+   "what": "The Este Castle, engraving in the Corografia dell’Italia",
+   "who": "Vincenzo Stanghi",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.036,
+    0.092,
+    0.956,
+    0.884
+   ],
+   "focal": [
+    0.62,
+    0.55
+   ],
+   "why": "Este Castle seen along the canal; caption and header trimmed"
+  },
+  {
+   "n": 8,
+   "file": "Castello di Ferrara - Château de Ferrare (BM 1982,U.635).jpg",
+   "y": 1850,
+   "lab": "1850",
+   "what": "The Este Castle, lithograph (British Museum)",
+   "who": "Terzaghi after Giuseppe Coen",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.09,
+    0.11,
+    0.915,
+    0.865
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "strongest view of the city’s main landmark; margins and caption trimmed"
+  }
+ ],
+ "gaps": "P0: only a Nuremberg Chronicle council scene, not a view. P1: the 1617 bird’s-eye view (#4) is photographed as an open two-page spread with the gutter through the city; the 1520 ‘Veduta di città’ panels are ideal-city paintings, not Ferrara. P2: the 17th-century etching (#5) is plan-like and only dated ‘17th century’. P5: the only hit is the Swiss Val Ferrera (wrong place). P6: only casual snapshots of the castle moat and a cannon.",
+ "notes": "#6 (1845) and #8 (1850) show the same castle but fall in different periods; #7 and #9 are flat architectural elevations of the cathedral, not views. #4 would be a good P1 view if an unbound scan of the same plate turns up.",
+ "_reviewed": true
+}

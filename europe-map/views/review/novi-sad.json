@@ -1,0 +1,20 @@
+{
+ "city": "Novi Sad",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "ultra-wide panorama, so the crop is a third of its width; CC BY 3.0 credit still needs the uploader’s real name from the file page"
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "city": "Ancona",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.08,
+     0.125,
+     0.918,
+     0.645
+    ],
+    "focal": [
+     0.52,
+     0.5
+    ]
+   },
+   "reason": "old trim sat inside the plate's double frame at left, right and top and let the top of the title cartouche ornament into the bottom of the crop"
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "Arch of Trajan, harbor and cathedral hill, matches the record (about 1690); clean full-picture crop"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "Hackert 1784 harbor with the Arch of Trajan; clean"
+  },
+  {
+   "n": 14,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0.15,
+     1,
+     1
+    ],
+    "focal": [
+     0.5,
+     0.5
+    ],
+    "what": "View of the town from the harbor"
+   },
+   "reason": "top 40% of the old crop was empty stained sky; trimming it centers the town and harbor; the record does not say it is a colored lithograph, so the description should not claim a medium"
+  },
+  {
+   "n": 16,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.45,
+     0.3
+    ]
+   },
+   "reason": "old focal cut off the houses at the top left of the engraving; higher focal keeps the whole town edge"
+  },
+  {
+   "n": 22,
+   "verdict": "ok",
+   "reason": "sharp CC0 view of the old town above the port, matches the record"
+  }
+ ]
+}

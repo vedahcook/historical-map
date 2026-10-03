@@ -1,0 +1,22 @@
+{
+ "city": "Oryol",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0.1,
+     1,
+     0.575
+    ],
+    "focal": [
+     0.49,
+     0.5
+    ]
+   },
+   "reason": "real view of Oryol (Oka, bridge, church) but weak, tree-heavy; new trim removes the green pavilion roof that showed at the bottom-left edge of the crop while keeping church and bridge. Keep only if a modest P6 is acceptable"
+  }
+ ]
+}

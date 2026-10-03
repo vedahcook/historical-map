@@ -1,0 +1,19 @@
+{
+ "city": "Galați",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "labeled vignette of Galați on the Danube, 1853 map; full-picture crop is clean"
+  },
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "y": 2010,
+    "lab": "about 2010"
+   },
+   "reason": "the record date (10 Nov 2010) is explicitly the original Panoramio upload date, not the shooting date, so the label should be 'about 2010'; the picture itself is a fair rooftop view of the old town"
+  }
+ ]
+}

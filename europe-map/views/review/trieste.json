@@ -1,0 +1,28 @@
+{
+ "city": "Trieste",
+ "checks": [
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 10,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.01,
+     0.08,
+     0.995,
+     0.985
+    ]
+   },
+   "reason": "trim leaves a light strip of the album-print margin at the left and bottom edge"
+  },
+  {
+   "n": 16,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

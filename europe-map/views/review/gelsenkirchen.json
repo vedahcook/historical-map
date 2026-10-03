@@ -1,0 +1,13 @@
+{
+ "city": "Gelsenkirchen",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "what": "The Buer district seen from a height, photograph"
+   },
+   "reason": "record has no description; the church name (St. Urbanus) is not supported by it. Photo is of Buer, part of Gelsenkirchen since 1928, so keep it"
+  }
+ ]
+}

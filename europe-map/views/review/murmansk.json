@@ -1,0 +1,18 @@
+{
+ "city": "Murmansk",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 6,
+   "verdict": "fix",
+   "fix": {
+    "lic": "CC BY-SA 2.5 ca"
+   },
+   "reason": "Commons short name is lower-case ca, as in the record"
+  }
+ ]
+}

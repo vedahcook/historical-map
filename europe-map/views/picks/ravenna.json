@@ -1,0 +1,29 @@
+{
+ "city": "Ravenna",
+ "picks": [
+  {
+   "n": 6,
+   "file": "Panorama di Ravenna (xilografia).jpg",
+   "y": 1888,
+   "lab": "1888",
+   "what": "View over the roofs, wood engraving in Le Cento Città d’Italia",
+   "who": "Giuseppe Barberis",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "general view across the town to a round bell tower and the domed churches on the skyline"
+  }
+ ],
+ "gaps": "P0, P2, P3, P5: no candidates; P1 and P6: nothing usable",
+ "notes": "#1 (Bertelli’s bird’s-eye view in the 1649 edition of Schott’s Itinerario) skipped: printed across the book’s fold, which runs through the middle of the town, and the plate likely first appeared earlier in Bertelli’s Teatro delle città d’Italia, so its true date is unclear. #2–#4 are the Ravenna gorge in the Black Forest; #7/#8 are Ravenna in Seattle. #9 (ISS) and #10 (hazy airliner view) show the coast with the city too small. #5 is a single monument corner.",
+ "_reviewed": true
+}

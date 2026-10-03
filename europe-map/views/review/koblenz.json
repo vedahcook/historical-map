@@ -1,0 +1,41 @@
+{
+ "city": "Koblenz",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.086,
+     0.505,
+     0.914,
+     0.715
+    ]
+   },
+   "reason": "trim top 0.473 leaves the COBOLENTZ plate label cut off inside the crop; raise top to 0.505"
+  },
+  {
+   "n": 9,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.158,
+     0.15,
+     0.84,
+     0.745
+    ]
+   },
+   "reason": "plate frame line still inside the crop at right (and top/bottom edge); tighten trim"
+  },
+  {
+   "n": 13,
+   "verdict": "ok",
+   "reason": "good"
+  },
+  {
+   "n": 18,
+   "verdict": "ok",
+   "reason": "good"
+  }
+ ]
+}

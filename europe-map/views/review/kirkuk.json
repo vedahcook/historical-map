@@ -1,0 +1,10 @@
+{
+ "city": "Kirkuk",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "Sharp 2026 drone view of citadel with city behind; already 16:9, fields match record"
+  }
+ ]
+}

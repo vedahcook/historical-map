@@ -1,0 +1,71 @@
+{
+ "city": "Ternopil",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Tarnopol, widok.jpg",
+   "y": 1899,
+   "lab": "1899",
+   "what": "The town seen across the pond, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.01,
+    0.99,
+    0.5
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "general view over the pond with the Dominican church and synagogue; blank lower half of the card trimmed"
+  },
+  {
+   "n": 3,
+   "file": "Henryk Poddębski - Tarnopol, ogólny widok miasta.jpg",
+   "y": 1930,
+   "lab": "about 1930",
+   "what": "General view, colored postcard",
+   "who": "Henryk Poddębski",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.12,
+    0.975,
+    0.965
+   ],
+   "focal": [
+    0.52,
+    0.4
+   ],
+   "why": "colored general view; Dominican church and neo-Gothic parish church recognizable; caption and card border trimmed"
+  },
+  {
+   "n": 7,
+   "file": "Ternopilcity.jpg",
+   "y": 2021,
+   "lab": "2021",
+   "what": "Ternopil Pond and the waterfront, photograph",
+   "who": "Vadym Logosh",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "the city’s pond with the far shore and Hotel Ternopil; best of a weak modern set"
+  }
+ ],
+ "gaps": "P0–P3: no candidates",
+ "notes": "#1 is dated only “between 1900 and 1926”, too loose to use, and #2/#3 already cover that time. #4 is an ISS photo of the whole region. #5 and #6 are wide panoramas of a square and of trees above the pond. #7 is a pleasant view but the skyline is a thin strip; replace if a better modern view turns up.",
+ "_reviewed": true
+}

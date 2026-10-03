@@ -1,0 +1,71 @@
+{
+ "city": "Angers",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Angers Merian 1657.jpg",
+   "y": 1657,
+   "lab": "about 1657",
+   "what": "Engraving in Merian’s Topographia Galliae",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.16,
+    0.98,
+    0.905
+   ],
+   "focal": [
+    0.6,
+    0.6
+   ],
+   "why": "skyline across the Maine with the castle and cathedral"
+  },
+  {
+   "n": 6,
+   "file": "Vue d'Angers (Thomas Drake).jpg",
+   "y": 1860,
+   "lab": "1860",
+   "what": "View along the Maine with the cathedral, engraving",
+   "who": "Thomas Drake",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.06,
+    0.97,
+    0.94
+   ],
+   "focal": [
+    0.4,
+    0.6
+   ],
+   "why": "general view; cathedral towers and the old bridge recognizable"
+  },
+  {
+   "n": 11,
+   "file": "Panoramic view of Angers, as seen from the Château 20170611 1.jpg",
+   "y": 2017,
+   "lab": "2017",
+   "what": "View from the castle ramparts toward the cathedral, photograph",
+   "who": "DXR",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "sharp recent view with the cathedral’s twin spires"
+  }
+ ],
+ "gaps": "P0, P3, P5: no candidates; P1: only a book spread with the gutter through the view",
+ "notes": "#1 (Braun and Hogenberg) is a two-page spread with the gutter running through both views. #3 (Place du Ralliement, 1890) and #4 (castle and King René statue) are good color photochroms, but they fall in the same period as #6 and less than 40 years after it; #5 duplicates #4. #7 and #8 are small postcards.",
+ "_reviewed": true
+}

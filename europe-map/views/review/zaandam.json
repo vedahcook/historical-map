@@ -1,0 +1,20 @@
+{
+ "city": "Zaandam",
+ "checks": [
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "Town front on the Zaan, margins and caption excluded"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "1913 photo of Zaandam harbor, border trimmed"
+  },
+  {
+   "n": 19,
+   "verdict": "ok",
+   "reason": "Zaanse Schans windmills (Zaandam address); acceptable icon of the town"
+  }
+ ]
+}

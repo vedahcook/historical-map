@@ -1,0 +1,21 @@
+{
+ "city": "Modena",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.48,
+     0.3
+    ]
+   },
+   "reason": "current crop starts below the spire tip and cuts off the cross and top of the Ghirlandina; the tip touches the plate frame, so trim top is already as high as it can go"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "sharp color view over the roofs; crop good"
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+{
+ "city": "Varna",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Die Gartenlaube (1854) b 427.jpg",
+   "y": 1854,
+   "lab": "1854",
+   "what": "Bird’s-eye view over the bay, wood engraving in Die Gartenlaube",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.02,
+    1,
+    0.815
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "only early general view: walled town on the bay, harbor and ships"
+  },
+  {
+   "n": 2,
+   "file": "BASA-711K-1-7-1-Varna.jpg",
+   "y": 1904,
+   "lab": "1904",
+   "what": "Downtown from a height, photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.258,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "general view over the roofs of the center toward the sea"
+  },
+  {
+   "n": 8,
+   "file": "Varna Panorama.jpg",
+   "y": 2015,
+   "lab": "2015",
+   "what": "The city across the Bay of Varna, panoramic photograph",
+   "who": "Sborisova",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.15,
+    0.3,
+    0.85,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.56
+   ],
+   "why": "whole city and port seen across the bay; distant but the only usable modern view"
+  }
+ ],
+ "gaps": "P0–P3: none; P5: none (#5 is a 1910s postcard dominated by a warship, date straddles 1914)",
+ "notes": "#4: the Gartenlaube title reads ‘Varna nebst dem Kriegsschauplatz zwischen der Donau und dem Schwarzen Meere’; the allied camps of 1854 appear as tents at left, but the town itself is shown normally, so not marked as an event. The title lettering sits in the water and can’t be trimmed away. #2: the postcard’s printed label ‘Лозята Евксиноград’ in the sky is trimmed off. #3 (1877 view from the sea, Spanish illustrated weekly) is a good alternative but too close in date to #4 to be a second P4 view. #8 is weak: the city is a thin strip between water and sky; drop it if a blank plate is preferred. Rejected: #6 is a Varna Hotel in Surabaya, Indonesia; #7 an airport aerial; #1 a nautical chart; #9 shows the resort coast north of the city, not the center.",
+ "_reviewed": true
+}

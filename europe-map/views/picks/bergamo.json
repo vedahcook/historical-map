@@ -1,0 +1,71 @@
+{
+ "city": "Bergamo",
+ "picks": [
+  {
+   "n": 6,
+   "file": "Giuseppe Berlendis, Veduta della Porta Sant'Agostino in Bergamo.jpg",
+   "y": 1840,
+   "lab": "about 1840",
+   "what": "Porta Sant’Agostino and the upper town, colored print",
+   "who": "Giuseppe Berlendis",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.04,
+    0.03,
+    0.96,
+    0.83
+   ],
+   "focal": [
+    0.58,
+    0.45
+   ],
+   "why": "color view of the Venetian walls, the gate and the upper town with San Vigilio castle; caption trimmed"
+  },
+  {
+   "n": 11,
+   "file": "Panorama di Bergamo (xilografia).jpg",
+   "y": 1889,
+   "lab": "1889",
+   "what": "Porta Nuova and the upper town, wood engraving in Le Cento Città d’Italia",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.42
+   ],
+   "why": "classic view of the Porta Nuova tollhouses with the walled upper town above; high resolution"
+  },
+  {
+   "n": 18,
+   "file": "2015-06-02 - Bergamo da San Vigilio.jpg",
+   "y": 2015,
+   "lab": "2015",
+   "what": "The upper town and the plain from San Vigilio, photograph",
+   "who": "Xstg",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    0.5,
+    1
+   ],
+   "focal": [
+    0.3,
+    0.45
+   ],
+   "why": "upper town towers seen from San Vigilio with the lower city beyond; very wide panorama trimmed to its left half"
+  }
+ ],
+ "gaps": "P0–P2: nothing of Bergamo; P5: nothing",
+ "notes": "#1–#4 and #8 are not Bergamo (a Nuremberg Chronicle portrait of Alexander of Bergamo and Venetian/capriccio paintings held in the Accademia Carrara). #5 (Berlendis, Lazzaretto view) is dated only “before 1833”. #12 (about 1870 photo from San Vigilio) is a good alternative for P4 but low resolution (1024 px) and too close in date to #11 for a second P4 view.",
+ "_reviewed": true
+}

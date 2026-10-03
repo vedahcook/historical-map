@@ -1,0 +1,29 @@
+{
+ "city": "Debrecen",
+ "picks": [
+  {
+   "n": 2,
+   "file": "The Hauptstrazze and market, Debreczin (i.e., Debrecen), Hungary, Austro-Hungary-LCCN2002710868.tif",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The main street and market, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.015,
+    0.98,
+    0.955
+   ],
+   "focal": [
+    0.5,
+    0.34
+   ],
+   "why": "market day on the main street with the city’s churches; portrait format, focal keeps churches and crowd"
+  }
+ ],
+ "gaps": "P0–P3: none; P5: only a 1944 bombing reconnaissance photo (smoke over the station); P6: only suburban aerials, a lake and a shopping center",
+ "notes": "#1/#3 (the Great Forest park) are the same photochrom in two scans; skipped in favor of the street scene.",
+ "_reviewed": true
+}

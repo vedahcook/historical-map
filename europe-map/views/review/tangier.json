@@ -1,0 +1,50 @@
+{
+ "city": "Tangier",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.046,
+     0.058,
+     0.482,
+     0.505
+    ],
+    "focal": [
+     0.5,
+     0.35
+    ]
+   },
+   "reason": "Trim includes the orange plate frame on the left, top and right edges; tightened to the panel interior. Date 1572 and caption correct."
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "True view of the walled town and bay; Hollar series dated 1673; caption and legend excluded."
+  },
+  {
+   "n": 12,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.02,
+     0.025,
+     0.985,
+     0.975
+    ]
+   },
+   "reason": "Trim leaves a white print margin sliver on the left, right and bottom edges; tightened. Rooftop view of the medina is fine."
+  },
+  {
+   "n": 20,
+   "verdict": "ok",
+   "reason": "General aerial view along the bay, 1932; right-edge vignette cut."
+  },
+  {
+   "n": 23,
+   "verdict": "ok",
+   "reason": "Sharp color view of the old town above the port; date, artist and license match."
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "city": "Ruse",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.03,
+     0.2,
+     0.53,
+     0.71
+    ],
+    "focal": [
+     0.5,
+     0.5
+    ]
+   },
+   "reason": "weak but the only old view; full frame is mostly Giurgevo huts and white page edge, so zoom to the far shore with Rustchuk (half the width)"
+  },
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "clear view of the city and the Danube; record matches"
+  }
+ ]
+}

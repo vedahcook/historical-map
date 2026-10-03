@@ -1,0 +1,23 @@
+{
+ "city": "Sousse",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 14,
+   "verdict": "fix",
+   "fix": {
+    "lab": "about 2013"
+   },
+   "reason": "Commons date is the Panoramio upload date (4 Sept 2013), not the date taken; label should say about"
+  }
+ ]
+}

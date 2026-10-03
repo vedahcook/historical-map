@@ -1,0 +1,16 @@
+{
+ "city": "Limerick",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.53,
+     0.4
+    ]
+   },
+   "reason": "current crop cuts the iconic right-hand drum tower of the castle in half; shift right to include it"
+  }
+ ]
+}

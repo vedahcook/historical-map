@@ -1,0 +1,29 @@
+{
+ "city": "Gelsenkirchen",
+ "picks": [
+  {
+   "n": 3,
+   "file": "BuerNorden1955 2.jpg",
+   "y": 1955,
+   "lab": "1955",
+   "what": "The Buer district seen from a height, photograph",
+   "who": "unknown photographer",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0.08,
+    1,
+    0.82
+   ],
+   "focal": [
+    0.5,
+    0.3
+   ],
+   "why": "view over central Buer (part of Gelsenkirchen since 1928) with its main church; trams and cars fit the date"
+  }
+ ],
+ "gaps": "P0–P4: nothing; P6: no usable view of the center or skyline",
+ "notes": "All historical candidates (#1–#4) show Buer, the northern district merged into Gelsenkirchen in 1928, not the old center; the date comes only from the file names and there is no author or source. #3 chosen for the church landmark; drop it if Buer is too far from the map point. #3 is only 914 px wide. P6: #5 is a 7:1 panorama of Buer’s green outskirts with railings in the foreground; #6 is the Scholven refinery, #7 the canal, #8 the prison.",
+ "_reviewed": true
+}

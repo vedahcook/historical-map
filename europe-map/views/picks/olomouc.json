@@ -1,0 +1,92 @@
+{
+ "city": "Olomouc",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Olomouc 1731-1732 Anonym Veduta.jpg",
+   "y": 1732,
+   "lab": "1731–32",
+   "what": "View of the city, drawing",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.145,
+    0.995,
+    0.84
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "only early true view; St. Michael’s domes and the church towers recognizable; blank lower margin trimmed"
+  },
+  {
+   "n": 4,
+   "file": "Beschreibende Darstellung 01 Olmütz.jpg",
+   "y": 1845,
+   "lab": "1845",
+   "what": "Lithograph in Beschreibende und malerische Darstellung der k.k. österreichischen Staatseisenbahn von Olmütz bis Prag",
+   "who": "Ludwig Förster and Amédée Demarteau",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.42
+   ],
+   "why": "clear general view with the town hall tower and St. Michael’s domes"
+  },
+  {
+   "n": 5,
+   "file": "Historical view of Olomouc.jpg",
+   "y": 1900,
+   "lab": "about 1900",
+   "what": "View from the southwest, colored postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.135,
+    0.995,
+    0.815
+   ],
+   "focal": [
+    0.45,
+    0.3
+   ],
+   "why": "color general view with town hall, St. Michael’s and St. Wenceslas Cathedral; handwriting and caption trimmed"
+  },
+  {
+   "n": 12,
+   "file": "Historical view of Olomouc 02.jpg",
+   "y": 1929,
+   "lab": "1929",
+   "what": "View from the southwest, postcard photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.25
+   ],
+   "why": "same classic view with the main towers and domes along the skyline"
+  }
+ ],
+ "gaps": "P0: no candidates. P1: nothing usable. P6: nothing usable.",
+ "notes": "#2 is only 1600×408 px, so it will be soft on the card; it is the only 18th-century view. #5’s date is between 1892 and its 1904 postmark. #8 (‘View of Olomouc in 1590’, dated 1887) is a 19th-century copy or reconstruction of an early view, date unclear, so skipped. #1 and #3 are Merian’s siege plan, not a view. P6: #14 is a very thin panorama dominated by housing estates and fields; #15 is a heavily processed street scene; #16 and #17 show suburbs.",
+ "_reviewed": true
+}

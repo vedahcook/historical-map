@@ -1,0 +1,19 @@
+{
+ "city": "Elche",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "y": 1900,
+    "lab": "about 1900"
+   },
+   "reason": "record dates the photochrom 'circa 1900', a specific year, so the generic 1890s does not apply"
+  },
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

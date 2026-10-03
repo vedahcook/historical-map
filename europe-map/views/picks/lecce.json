@@ -1,0 +1,71 @@
+{
+ "city": "Lecce",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Veduta della piazza di Lecce nella provincia di Terra d'Otranto.jpg",
+   "y": 1845,
+   "lab": "1845",
+   "what": "Piazza Sant’Oronzo, engraving in the Corografia dell’Italia",
+   "who": "Pietro Giarrè",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.04,
+    0.08,
+    0.962,
+    0.79
+   ],
+   "focal": [
+    0.6,
+    0.4
+   ],
+   "why": "the main square with the Sant’Oronzo column and the Sedile; header and caption trimmed"
+  },
+  {
+   "n": 3,
+   "file": "Lecce – Panorama (xilografia).jpg",
+   "y": 1892,
+   "lab": "1892",
+   "what": "Panorama of the city, wood engraving in Le Cento Città d’Italia",
+   "who": "Barberis",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "wide general view with the cathedral bell tower and domes"
+  },
+  {
+   "n": 5,
+   "file": "Italien 360° Panorama 2022 Palazzo dei Celestini (Provincia di Lecce).jpg",
+   "y": 2022,
+   "lab": "2022",
+   "what": "The Basilica of Santa Croce and the Palazzo dei Celestini, photograph (from a 360° panorama)",
+   "who": "DrTrumpet",
+   "lic": "CC BY 3.0",
+   "event": false,
+   "trim": [
+    0.25,
+    0.08,
+    0.75,
+    0.6
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "the city’s best-known Baroque façade; trimmed to the central, least-distorted half of the panorama"
+  }
+ ],
+ "gaps": "P0, P1, P2, P5: no candidates.",
+ "notes": "#1 (1845) is a general view, but the town is a small strip seen through a cloister with monks in front; #2 is the stronger P3 pick. #4 is Lecce nei Marsi in Abruzzo (wrong place); #7 is a church interior. #5 is the only modern photo of the city; a straight photograph of Santa Croce or Piazza Sant’Oronzo would be better if one is added.",
+ "_reviewed": true
+}

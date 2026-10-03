@@ -1,0 +1,20 @@
+{
+ "city": "Dijon",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "Dijon skyline etching; date is the Rijksmuseum estimate range"
+  },
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "photochrom with P.Z. mark, crop clean"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "weak (single façade) but real Place du Théâtre scene and no better modern candidate"
+  }
+ ]
+}

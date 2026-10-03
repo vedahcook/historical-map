@@ -1,0 +1,29 @@
+{
+ "city": "Mosul",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Le Tour du monde-04-p065.jpg",
+   "y": 1861,
+   "lab": "1861",
+   "what": "The city across the Tigris, wood engraving in Le Tour du monde",
+   "who": "Eugène Flandin",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.01,
+    0.99,
+    0.99
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "detailed riverfront skyline with domes and minarets, including the tall minaret of the Great Mosque"
+  }
+ ],
+ "gaps": "P0–P3, P5: nothing; P6: no usable photo of the city",
+ "notes": "#2 is engraved after Flandin’s 1840s drawing; dated 1861, its first publication. #1 (Badger, The Nestorians and their Rituals, 1852, drawn 1842–43) is a wider but faint panorama with the boat bridge; a fair P4 alternative, but too close to 1861 for a second P4 slot. P6: #3 is the Mosul Dam reservoir, not the city; #4 a hazy view of the Mar Gorgis monastery in a suburb; #5 a collage.",
+ "_reviewed": true
+}

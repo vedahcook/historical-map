@@ -1,0 +1,50 @@
+{
+ "city": "Volgograd",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Tsaritsyn 003.jpeg",
+   "y": 1910,
+   "lab": "about 1910",
+   "what": "View from the Volga, colored postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.13,
+    1,
+    0.85
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "general view of Tsaritsyn’s riverfront with churches; printed captions trimmed"
+  },
+  {
+   "n": 6,
+   "file": "Volgograd arena aerial view 1.jpg",
+   "y": 2018,
+   "lab": "2018",
+   "what": "Aerial view with the Volgograd Arena and the Volga, photograph",
+   "who": "Arne Müseler",
+   "lic": "CC BY-SA 3.0 de",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "sharp recent aerial of the city along the Volga"
+  }
+ ],
+ "gaps": "P0–P3: no candidates; P5: no Stalingrad-era views",
+ "notes": "The postcards are dated only 'before 1917'; their pre-1918 spelling (Царицынъ) and style place them about 1900–1914, so #3 is labeled about 1910. #5 (2015 center panorama) is distorted and washed out by sun glare.",
+ "_reviewed": true
+}

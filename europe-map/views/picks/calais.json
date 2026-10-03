@@ -1,0 +1,92 @@
+{
+ "city": "Calais",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Gezicht op Calais, RP-P-2018-2953.jpg",
+   "y": 1740,
+   "lab": "1727–54",
+   "what": "View across the harbor, engraving (Rijksmuseum)",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.248,
+    0.222,
+    0.828,
+    0.668
+   ],
+   "focal": [
+    0.45,
+    0.38
+   ],
+   "why": "walled town seen over the harbor, Notre-Dame and the watchtower keyed in the legend"
+  },
+  {
+   "n": 13,
+   "file": "La Place d'Armes, Calais, France-LCCN2001697610.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Place d’Armes with the old town hall and the watchtower, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.05,
+    0.05,
+    0.95,
+    0.91
+   ],
+   "focal": [
+    0.45,
+    0.36
+   ],
+   "why": "color; the medieval Tour du Guet and the old town hall (destroyed 1940)"
+  },
+  {
+   "n": 17,
+   "file": "ETH-BIB-Calais-Weitere-LBS MH02-51-0008.tif",
+   "y": 1934,
+   "lab": "1933–36",
+   "what": "Aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.06,
+    1,
+    1
+   ],
+   "focal": [
+    0.42,
+    0.48
+   ],
+   "why": "oblique view over the old town to the harbor, Notre-Dame and the lighthouse visible"
+  },
+  {
+   "n": 21,
+   "file": "View of Calais from the Ferry Boat - panoramio.jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The town from the harbor, photograph",
+   "who": "Johannes Philipp",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0.08,
+    1,
+    0.45
+   ],
+   "focal": [
+    0.35,
+    0.5
+   ],
+   "why": "only modern view; belfry, Notre-Dame and the lighthouse on the skyline"
+  }
+ ],
+ "gaps": "P0–P1: none (#1 is Béthune); P3: nothing usable (#6/#7 are Abbeville, #8 a single church, #9 the 1844 royal landing with little of the town)",
+ "notes": "#5: Rijksmuseum dates it only 1727–54. #4 (Jan Peeters view) is a facsimile with handwritten notes and a vague 17th–18th century date, so not used; #3 (Manesson Mallet 1696) is a small view under a fortification diagram, a possible P2 alternative. #13 credited to Photoglob Zürich from the plate mark (1088 P.Z.). #21 is weak: port parking and ferries fill the lower half, trimmed to the skyline strip.",
+ "_reviewed": true
+}

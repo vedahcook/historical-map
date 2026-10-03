@@ -1,0 +1,29 @@
+{
+ "city": "Saarbrücken",
+ "picks": [
+  {
+   "n": 6,
+   "file": "Palatinatus Rheni (Merian) 158.jpg",
+   "y": 1645,
+   "lab": "1645",
+   "what": "Saarbrücken Castle, engraving in Merian’s Topographia Palatinatus Rheni",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.078,
+    0.126,
+    0.752,
+    0.455
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "only genuine period view; bird’s-eye view of the castle above the Saar, trimmed from a book page that also shows Philippsborn"
+  }
+ ],
+ "gaps": "P0, P2–P6: nothing usable (most candidates are other places held in the Saarland archive: Nancy, Münstermaifeld, Cochem, Luxembourg, Mulhouse; modern ones are aerials of the airport, prison and an industrial park)",
+ "notes": "Castle view, not the whole town; drop it if a town view is required. One catalog record suggests this copy of the Topographia may be the 1672 reissue; 1645 is the first edition year.",
+ "_reviewed": true
+}

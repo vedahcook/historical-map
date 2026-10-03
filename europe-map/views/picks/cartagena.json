@@ -1,0 +1,71 @@
+{
+ "city": "Cartagena",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Manuel de la cruz vazquez-vista de cartagena.jpg",
+   "y": 1786,
+   "lab": "1786",
+   "what": "View of the city and harbor, painting (Palacio de la Moncloa, Madrid)",
+   "who": "Manuel de la Cruz",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.42,
+    0.42
+   ],
+   "why": "color general view of the town, harbor and arsenal under the hills"
+  },
+  {
+   "n": 3,
+   "file": "1844 Cartagena.jpg",
+   "y": 1844,
+   "lab": "1844",
+   "what": "View with the Castillo de la Concepción, colored lithograph",
+   "who": "Nicolas Chapuy",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.83
+   ],
+   "focal": [
+    0.6,
+    0.4
+   ],
+   "why": "color view over the white town to the castle hill"
+  },
+  {
+   "n": 13,
+   "file": "View of Cartagena from the fortification East of the city - 2016 a.jpg",
+   "y": 2016,
+   "lab": "2016",
+   "what": "The harbor from the fortifications east of the city, photograph",
+   "who": "Øyvind Holmstad",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.76
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "best of the modern views; harbor, marina and hills"
+  }
+ ],
+ "gaps": "P0–P2: none (#1 is Cartagena de Indias, Colombia); P4: none usable; P5: only Mittelholzer refueling shots at the airfield",
+ "notes": "#1 (1741) and #12 (2008) show Cartagena, Colombia, and are excluded. #6 was published in 1872 but depicts the city as it was in the 18th century, so its date is not the date of the view; skipped. #4 (1792) and #2 (1824) are alternatives for P3. #8–#11 are airplane close-ups at Los Alcázares, not city views. #13 is a modest photo; the historic center is mostly off frame.",
+ "_reviewed": true
+}

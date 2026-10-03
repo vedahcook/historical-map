@@ -1,0 +1,134 @@
+{
+ "city": "Groningen",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Braun & Hogenberg - Panorama over Groningen vanuit het zuiden in spiegelbeeld.jpg",
+   "y": 1575,
+   "lab": "1575",
+   "what": "Panorama from the south, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 2",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.024,
+    0.83,
+    0.97
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "colored panorama, Martinitoren central; title cartouche at right trimmed off"
+  },
+  {
+   "n": 9,
+   "file": "Gezicht op de stad Groningen, RP-T-1897-A-3400.jpg",
+   "y": 1665,
+   "lab": "1646–84",
+   "what": "View along a canal toward the Martinitoren, gouache (Rijksmuseum)",
+   "who": "Gerrit van Battem",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.014,
+    0.022,
+    0.982,
+    0.963
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "color general view of the skyline; date is the artist’s working span"
+  },
+  {
+   "n": 11,
+   "file": "Jacobus Versteegen - gezicht op Groningen buiten de Kranepoort.jpg",
+   "y": 1780,
+   "lab": "1780",
+   "what": "View from outside the Kraanpoort, drawing",
+   "who": "Jacobus Versteegen",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.19,
+    1,
+    0.945
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "skyline with Martinitoren and A-kerk beyond the windmill; inscriptions trimmed"
+  },
+  {
+   "n": 15,
+   "file": "Gezicht op Groningen vanuit de Noorderhaven, RP-P-1905-71.jpg",
+   "y": 1863,
+   "lab": "1857–69",
+   "what": "View from the Noorderhaven, colored lithograph (Rijksmuseum)",
+   "who": "Carel Christiaan Antony Last",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.208,
+    0.215,
+    0.796,
+    0.84
+   ],
+   "focal": [
+    0.56,
+    0.5
+   ],
+   "why": "color; Martinitoren and Broerkerk over the harbor; margins and caption trimmed"
+  },
+  {
+   "n": 23,
+   "file": "NIMH - 2011 - 0184 - Aerial photograph of Groningen, The Netherlands - 1920 - 1940.jpg",
+   "y": 1930,
+   "lab": "1920–40",
+   "what": "Aerial photograph of the Martinikerk and Grote Markt (NIMH)",
+   "who": "unknown photographer",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.014,
+    0.04,
+    0.975,
+    0.9
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "the prewar Grote Markt, Martinitoren and town hall, before the 1945 damage"
+  },
+  {
+   "n": 28,
+   "file": "Groningen skyline.jpg",
+   "y": 2021,
+   "lab": "2021",
+   "what": "Skyline with the Martinitoren, St. Joseph’s Cathedral and the Forum",
+   "who": "Laurensvanheerde",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "recent color skyline of the old center"
+  }
+ ],
+ "gaps": "P0: no candidates",
+ "notes": "#1’s Commons title says ‘in spiegelbeeld’ but its cartouche is at upper right like the 1575 vol. 2 plate (#2, #5); the mirrored 1572 vol. 1 plate (#4) has it at upper left, so dated 1575. #9’s 1646–84 is the Rijksmuseum’s range for Gerrit van Battem. #7 is a ground plan; #10 (1726) photographed in the open book, kept #9 for P2.",
+ "_reviewed": true
+}

@@ -1,0 +1,71 @@
+{
+ "city": "Portsmouth",
+ "picks": [
+  {
+   "n": 1,
+   "file": "British (English) School - View of Portsmouth Harbour with Admiral Anson Returning with the Captured French Fleet - 1271110 - National Trust.jpg",
+   "y": 1747,
+   "lab": "1747",
+   "what": "Portsmouth Harbour with Admiral Anson returning with the captured French fleet, painting (National Trust)",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": true,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.52
+   ],
+   "why": "color view from the hills over the harbor to the walled town, Gosport and the Solent; marked as an event (Anson’s 1747 return); only 1200 px"
+  },
+  {
+   "n": 9,
+   "file": "Harbor, Portsmouth, England-LCCN2002708061.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The harbor entrance from Gosport, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.022,
+    0.98,
+    0.93
+   ],
+   "focal": [
+    0.55,
+    0.42
+   ],
+   "why": "color view across the harbor to Old Portsmouth with the cathedral and Round Tower, warships at anchor; border and caption trimmed"
+  },
+  {
+   "n": 17,
+   "file": "Old Portsmouth from Wightlink Wight Ryder I.JPG",
+   "y": 2011,
+   "lab": "2011",
+   "what": "Old Portsmouth from the harbor entrance, photograph",
+   "who": "Editor5807",
+   "lic": "CC BY 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0.2,
+    1,
+    0.86
+   ],
+   "focal": [
+    0.62,
+    0.62
+   ],
+   "why": "the Old Portsmouth waterfront with the cathedral and Round Tower; ferry railing and empty sky trimmed"
+  }
+ ],
+ "gaps": "P0–P1: nothing; P3: nothing usable; P5: nothing",
+ "notes": "Several hits are Portsmouth, New Hampshire: #4, #7, #12, #13, #14. #2 (Danckerts) is dated only 1645–80, is 1000 px, and shows the town as a faint smudge on the far horizon. #3 (1662) is the Thames reception of Catherine of Braganza, not Portsmouth. #5 (Thomas Taylor’s perspective view from St Helens) is a map-like view dedicated to Queen Anne, so 1702–14, but Commons gives no year; it could stand in for #1 if an event picture is unwanted. #6 (Thomas Elliott, harbor with men-of-war) is dated only “18th century” and the town is a thin strip behind the ships, so P3 left blank. #10/#11 are the same Guildhall photochrom. #16 (2023, HMS Warrior and the dockyard from the Gosport ferry) is a P6 alternative.",
+ "_reviewed": true
+}

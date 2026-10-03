@@ -1,0 +1,52 @@
+{
+ "city": "Trapani",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.015,
+     0.22,
+     0.975,
+     0.91
+    ],
+    "focal": [
+     0.67,
+     0.5
+    ]
+   },
+   "reason": "Right plate (1572, colored) but the 4.9:1 strip crops to 30% of its width and the current crop shows letters of 'DREPANVM' in the sky plus the center fold. This trim drops the lettering and fold and shows the spit's tip with ships; narrow zoom is unavoidable for this strip."
+  },
+  {
+   "n": 10,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.005,
+     0.17,
+     0.99,
+     0.965
+    ],
+    "focal": [
+     0.5,
+     0.5
+    ]
+   },
+   "reason": "Good picture, but the current crop (left end) shows only fortress wall, dome cut at the edge and a sheet seam. Centered crop shows domed church, Monte San Giuliano with its plume and the harbor, between the two seams."
+  },
+  {
+   "n": 12,
+   "verdict": "ok",
+   "reason": "Mount labeled Trapani; 1890 photograph with cathedral dome below the mountain, crop clean."
+  },
+  {
+   "n": 17,
+   "verdict": "fix",
+   "fix": {
+    "what": "The city on its peninsula seen from above, with the Egadi Islands, photograph"
+   },
+   "reason": "Record says only 'Blick auf Trapani'; 'from Erice' is not in the record. View and crop are good."
+  }
+ ]
+}

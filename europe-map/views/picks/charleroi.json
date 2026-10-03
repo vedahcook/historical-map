@@ -1,0 +1,71 @@
+{
+ "city": "Charleroi",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Charleroi - vue vers le pont de Sambre - vers 1900.jpg",
+   "y": 1900,
+   "lab": "about 1900",
+   "what": "Houses along the Sambre toward the Sambre bridge, postcard photograph",
+   "who": "Édition Surin",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.11,
+    0.988,
+    0.86
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "city scene on the old Sambre, very high resolution; trim cuts the caption and a handwritten number in the sky"
+  },
+  {
+   "n": 5,
+   "file": "Charleroi - photo aérienne de la ville basse et la Sambre - 1919.jpg",
+   "y": 1919,
+   "lab": "1919",
+   "what": "Aerial photograph of the lower town and the Sambre",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "true general view of the lower town with the river; exact date"
+  },
+  {
+   "n": 8,
+   "file": "Charleroi-industrie-terril-paysage-Christophe-Vandercam.jpg",
+   "y": 2012,
+   "lab": "2012",
+   "what": "Slag heap and steelworks seen from the Dampremy slag heap, photograph",
+   "who": "Christophe Vandercam",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "characteristic industrial landscape of Charleroi; no good modern view of the center among the candidates"
+  }
+ ],
+ "gaps": "P0, P1, P3: nothing; P2: only a castle in Monceau-sur-Sambre",
+ "notes": "#1 (1690) shows the château of Monceau-sur-Sambre, then outside the town; #3 (Luce, 1895) shows the village of Couillet. #2 is dated only ‘début du 20e siècle’ on Commons; the handwriting on the front suggests an early, undivided-back card, so ‘about 1900’. Publisher Édition Surin is printed on the card. #4 (glassworks panorama, postmarked 1910) is an alternative for P4; #6 (about 1930, view from the Maison des Corporations) is an alternative for P5. #10 and #11 are aerials of wooded outer districts.",
+ "_reviewed": true
+}

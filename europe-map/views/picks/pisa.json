@@ -1,0 +1,92 @@
+{
+ "city": "Pisa",
+ "picks": [
+  {
+   "n": 9,
+   "file": "1800 Hackert Ansicht von Pisa anagoria.jpg",
+   "y": 1800,
+   "lab": "1800",
+   "what": "The city on the Arno, painting (Wallraf-Richartz-Museum, Cologne)",
+   "who": "Jacob Philipp Hackert",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.005,
+    0.995,
+    0.995
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "color general view along the Arno, with the cathedral, Leaning Tower and a bridge"
+  },
+  {
+   "n": 12,
+   "file": "Cathedral Square, Pisa, Italy-LCCN2001700920.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Baptistery, cathedral and Leaning Tower, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.03,
+    0.96,
+    0.94
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "the city’s signature square in color; dark border trimmed"
+  },
+  {
+   "n": 17,
+   "file": "Italy - NARA - 68155323.jpg",
+   "y": 1918,
+   "lab": "about 1918",
+   "what": "Aerial photograph of the Piazza dei Miracoli (US National Archives)",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.115,
+    0.17,
+    0.905,
+    0.815
+   ],
+   "focal": [
+    0.42,
+    0.55
+   ],
+   "why": "aerial view of the cathedral group and the walls; card mount and typed labels trimmed"
+  },
+  {
+   "n": 18,
+   "file": "Pisa Cathedral and Bapistery from Leaning Tower 01.jpg",
+   "y": 2019,
+   "lab": "2019",
+   "what": "The cathedral and Baptistery from the Leaning Tower, photograph",
+   "who": "Spike",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.12,
+    0.92,
+    0.72
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "sharp recent view of the cathedral group and the city beyond; tower parapet mostly trimmed"
+  }
+ ],
+ "gaps": "P0: only a generic Nuremberg Chronicle stock woodcut (Rijksmuseum says it is a city view ‘here used as’ Pisa); P1: only a town plan across a book gutter (#3) and Vasari’s ceiling, whose view is of Siena (#4); P2: only a map (#5)",
+ "notes": "#17: the mount says the original was received from the Military Intelligence Division and returned in July 1920, so the photo dates from the 1910s (World War I era); drop it if that is too loose. #20 is a 2025 photo of the same Hackert painting as #9. #7 (1834) and #8 (1801) show the Piazza dei Cavalieri. #13/#14 (1913, from the tower) are faded red-toned prints. #19 (2012) is shot through a streaked window.",
+ "_reviewed": true
+}

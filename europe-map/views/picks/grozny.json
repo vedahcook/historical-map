@@ -1,0 +1,29 @@
+{
+ "city": "Grozny",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Grozny, Russia, Panoramic view of Grozny.jpg",
+   "y": 2017,
+   "lab": "2017",
+   "what": "The Akhmad Kadyrov Mosque and a Grozny-City tower from a height, photograph",
+   "who": "Vyacheslav Argenberg",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.42
+   ],
+   "why": "daytime view over the center; mosque, Grozny-City tower and the Sunzha recognizable"
+  }
+ ],
+ "gaps": "P0–P5: nothing",
+ "notes": "#2 is the same view at night; daytime version preferred.",
+ "_reviewed": true
+}

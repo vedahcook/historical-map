@@ -1,0 +1,92 @@
+{
+ "city": "Besançon",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Vesontio Sequanorum Gallis Besanson Germanis Bysantz - btv1b531789878 (1 of 2).jpg",
+   "y": 1575,
+   "lab": "1575",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 2",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.062,
+    0.106,
+    0.94,
+    0.925
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "colored, flat loose sheet (no gutter): the town in the loop of the Doubs under the citadel hill; trimmed sheet margins and library stamp"
+  },
+  {
+   "n": 10,
+   "file": "Vue générale de Besançon, prise de la route de Vesoul (BM 1862,1108.413).jpg",
+   "y": 1825,
+   "lab": "1825",
+   "what": "General view from the Vesoul road, lithograph (British Museum)",
+   "who": "Isidore Laurent Deroy and Victor Adam",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.076,
+    0.093,
+    0.932,
+    0.87
+   ],
+   "focal": [
+    0.52,
+    0.47
+   ],
+   "why": "whole town in its valley with the Doubs, a bridge and the citadel on its height; trimmed mount, plate number and caption"
+  },
+  {
+   "n": 14,
+   "file": "The swing bridge and Madeleine church, Besançon, France-LCCN2001697579.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Battant bridge and the Madeleine church, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.045,
+    0.05,
+    0.948,
+    0.9
+   ],
+   "focal": [
+    0.55,
+    0.42
+   ],
+   "why": "the old bridge over the Doubs and the twin-towered Madeleine, a classic Besançon scene; color, landscape"
+  },
+  {
+   "n": 22,
+   "file": "Besançon from Fort de Chaudanne.JPG",
+   "y": 2012,
+   "lab": "2012",
+   "what": "The old town from the Fort de Chaudanne, photograph",
+   "who": "Erkethan",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "broad sunny view over the red roofs of the old town inside the river loop"
+  }
+ ],
+ "gaps": "P0, P2: no candidates. P5: none (the Mittelholzer aerials #17–#20 are of a factory on the Rue de Besançon in Pontarlier, not Besançon).",
+ "notes": "#4: BnF dates its copy 1645 (a later printing); the plate is from vol. 2, first published 1575. Other copies of the same plate are bound-book photos with the gutter through the view (#1, #2, #3 in black and white) or show the center fold (#6). P3 alternative: #9 (Bichebois, 1827), the citadel above the Tour de la Pelote from the ramparts — same lithograph series, closer view. P4: #11/#15 (‘General view, with the Doubs’) is a wide view but shows neither the citadel nor the cathedral; #12 is a Flickr copy of #14. Not Besançon: #8 (Saint-Wandrille abbey, Normandy, painting in the Besançon museum), #16 (portrait).",
+ "_reviewed": true
+}

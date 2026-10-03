@@ -1,0 +1,23 @@
+{
+ "city": "Wuppertal (Elberfeld)",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 7,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.03,
+     0.06,
+     0.97,
+     0.9
+    ]
+   },
+   "reason": "top trim of 0.04 leaves a cream card margin band above the photograph; 0.06 removes it"
+  }
+ ]
+}

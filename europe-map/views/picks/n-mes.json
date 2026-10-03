@@ -1,0 +1,113 @@
+{
+ "city": "Nîmes",
+ "picks": [
+  {
+   "n": 6,
+   "file": "Nemausus, Nismes, Civitas Narbonensis Galliae vetustissima - btv1b10102077n.jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.018,
+    0.03,
+    0.978,
+    0.965
+   ],
+   "focal": [
+    0.47,
+    0.0
+   ],
+   "why": "colored single-view copy of the vol. 1 plate; walled town, arena and Tour Magne recognizable"
+  },
+  {
+   "n": 9,
+   "file": "Gezicht op Nîmes, RP-P-2018-3060.jpg",
+   "y": 1825,
+   "lab": "1800–50",
+   "what": "View over the town, colored lithograph (Rijksmuseum)",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.155,
+    0.2,
+    0.828,
+    0.815
+   ],
+   "focal": [
+    0.62,
+    0.62
+   ],
+   "why": "general view with the arena and cathedral tower; mount and caption trimmed"
+  },
+  {
+   "n": 15,
+   "file": "The esplanade, Nîmes, France-LCCN2001698494.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Esplanade with the arena and the Palace of Justice, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.032,
+    0.036,
+    0.968,
+    0.955
+   ],
+   "focal": [
+    0.5,
+    0.33
+   ],
+   "why": "broader city scene than the single-building arena prints; arena, Palace of Justice and fountain all visible"
+  },
+  {
+   "n": 19,
+   "file": "Voyage présidentiel de M. Doumergue à Nimes - vue des arènes de Nimes (façade) - btv1b90246287.jpg",
+   "y": 1924,
+   "lab": "1924",
+   "what": "The arena, press photograph",
+   "who": "Agence de presse Meurisse",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.1,
+    0.98,
+    0.98
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "ordinary street view of the arena; plate numbers at top trimmed"
+  },
+  {
+   "n": 21,
+   "file": "L'amphithéâtre de Nîmes..jpg",
+   "y": 2023,
+   "lab": "2023",
+   "what": "The arena and the old town, aerial photograph",
+   "who": "NEOMAES",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.52,
+    0.5
+   ],
+   "why": "recent color drone view; arena in the middle of the old town"
+  }
+ ],
+ "gaps": "P0: nothing. P2: only the Merian/Zeiller fortification plans (#7, #8), which are nearly empty outlines with no buildings drawn.",
+ "notes": "P1: #6 is the Nîmes view alone from the B&H vol. 1 plate shared with Rouen and Bordeaux (#1 is the full plate, usable as a fallback trimmed to about [0.1, 0.485, 0.505, 0.83]). P3: #9 is dated only ‘between 1800 and 1850’ by the Rijksmuseum; the label shows that range. P4: maker for #15 is not in the record; its sibling print #13 carries the ‘P.Z.’ (Photoglob Zürich) mark. #11 and #13 are stronger single-building shots of the arena if a landmark close-up is preferred. #19 was taken on the day of President Doumergue’s visit (flags visible) but shows only the arena and street, so it is not marked as an event.",
+ "_reviewed": true
+}

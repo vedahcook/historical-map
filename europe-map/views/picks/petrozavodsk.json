@@ -1,0 +1,29 @@
+{
+ "city": "Petrozavodsk",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Aerial view of Petrozavodsk 0001.jpg",
+   "y": 2022,
+   "lab": "2022",
+   "what": "The city toward Lake Onega, aerial photograph",
+   "who": "Keltainen sukellusven",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.65
+   ],
+   "focal": [
+    0.4,
+    0.4
+   ],
+   "why": "best general view: city blocks running down to Lake Onega; railway yard in the foreground trimmed"
+  }
+ ],
+ "gaps": "P0–P4: nothing; P5: only a single building",
+ "notes": "#1 (1941, Finnish wartime archive SA-kuva) is a sharp, correctly identified photo but shows only a plain theater building on Karl Marx Avenue, so I skipped it; it could fill P5 if a single-building view is acceptable. #3 (from the lake) shows mostly trees and the Karelia Hotel; #2 is a fisheye view of a new housing district.",
+ "_reviewed": true
+}

@@ -1,0 +1,37 @@
+{
+ "city": "Olomouc",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.01,
+     0.145,
+     0.995,
+     0.84
+    ],
+    "focal": [
+     0.5,
+     0.5
+    ]
+   },
+   "reason": "the title ribbon with its scalloped ends crosses the sky at the top of the old crop; trimming above the spires removes it. Only 31% of the width fits a 16:9 crop and the source is just 1600 px, so it is soft, but it is the only 18th-century view and shows the real skyline"
+  },
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "1845 Förster and Demarteau lithograph of Olomouc, makers and date match the record; clean full-picture crop"
+  },
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "colored postcard of Olomouc from the southwest; record gives 1892 to the postmark of 7 March 1904, so 'about 1900' is fair; handwriting, postmark and caption are trimmed out"
+  },
+  {
+   "n": 12,
+   "verdict": "ok",
+   "reason": "1929 postcard photograph of the same view with town hall tower and St. Michael's domes; clean"
+  }
+ ]
+}

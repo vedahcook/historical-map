@@ -1,0 +1,50 @@
+{
+ "city": "Braga",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Vista da cidade de Braga c1849-1873.jpg",
+   "y": 1861,
+   "lab": "1849–73",
+   "what": "View from the tower of São Vicente, photograph",
+   "who": "Vigé & Plessix",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "panorama over the roofs to the cathedral towers and churches on the skyline"
+  },
+  {
+   "n": 7,
+   "file": "Panoramic view of Braga.jpg",
+   "y": 2020,
+   "lab": "2020",
+   "what": "The city from Bom Jesus, photograph",
+   "who": "Krzysztof Golik",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.2,
+    0,
+    0.7,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "recent daytime general view of the whole city; trimmed to the middle of a very wide panorama"
+  }
+ ],
+ "gaps": "P0: no candidates. P2, P3: none. P5: only #5, a Cávado valley landscape without the city.",
+ "notes": "The Braun and Hogenberg plate is dated 1594 on Commons (the plan’s own date); it was first published in vol. 5 (1598). #2 (two-page spread in a 1617 edition) and #3 (1640 BnF copy) are the same plate. #4 is dated only ‘about 1849–1873’. P6 alternatives: #6 (Bom Jesus terrace with the city behind), #8/#9 (sunset panoramas from Sameiro, hazier).",
+ "_reviewed": true
+}

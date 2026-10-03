@@ -1,0 +1,50 @@
+{
+ "city": "Dnipro (Yekaterinoslav)",
+ "picks": [
+  {
+   "n": 8,
+   "file": "Aerial photograph, Ukrainian city of Yekaterinoslav, now called Dnipropetrovs'k 2.jpg",
+   "y": 1918,
+   "lab": "1918",
+   "what": "Aerial photograph of the city center (SMU Central University Libraries)",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.035,
+    0.04,
+    0.85,
+    0.96
+   ],
+   "focal": [
+    0.53,
+    0.55
+   ],
+   "why": "only period view of the city itself; street grid and a large domed church from the air; mount and wing shadow trimmed"
+  },
+  {
+   "n": 10,
+   "file": "Panorama of Dnipro-city(7872757156).jpg",
+   "y": 2012,
+   "lab": "2012",
+   "what": "Panorama over the city center toward the Dnieper, photograph",
+   "who": "Giorgio Tomassetti",
+   "lic": "CC BY-SA 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.45
+   ],
+   "why": "general rooftop view with the twin towers and a gilded church"
+  }
+ ],
+ "gaps": "P0–P4: nothing of this city (#1–#6 are Kyiv); P5 view is low resolution (1000 px)",
+ "notes": "#1–#6 are views of Kyiv filed under the Dnieper. #7 (1918) is an industrial district in snow, less legible than #8. #11 is a factory engraving photographed in a book; #9 a satellite image; #12–#13 apartment blocks and chimneys.",
+ "_reviewed": true
+}

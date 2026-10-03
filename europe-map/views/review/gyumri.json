@@ -1,0 +1,10 @@
+{
+ "city": "Gyumri",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

@@ -1,0 +1,92 @@
+{
+ "city": "Toruń (Thorn)",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Thorunium - btv1b53235792p (1 of 2).jpg",
+   "y": 1652,
+   "lab": "1652",
+   "what": "Bird’s-eye view, engraving in Merian’s Topographia Prussiae et Pomerelliae",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.16,
+    0.02,
+    0.99,
+    0.985
+   ],
+   "focal": [
+    0.5,
+    0.52
+   ],
+   "why": "walled old and new towns drawn building by building inside the bastions, with the Vistula bridge; cleanest high-resolution copy (BnF Gallica)"
+  },
+  {
+   "n": 6,
+   "file": "Anonymous View of Toruń from south (detail) 02.jpg",
+   "y": 1775,
+   "lab": "1750–1800",
+   "what": "The riverfront and the Vistula bridge, painting, detail (District Museum, Toruń)",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.68
+   ],
+   "focal": [
+    0.6,
+    0.4
+   ],
+   "why": "color view from across the river: city wall, the long bridge and the great square tower of St. John’s; trimmed the dark foreground bank"
+  },
+  {
+   "n": 7,
+   "file": "Torun panorama 1897.jpg",
+   "y": 1897,
+   "lab": "about 1897",
+   "what": "View across the Vistula, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.2,
+    0.8,
+    0.92
+   ],
+   "focal": [
+    0.45,
+    0.3
+   ],
+   "why": "the classic riverfront with St. John’s and the town walls; the Holy Ghost church tower under construction dates it to 1893–99; trimmed the printed greetings"
+  },
+  {
+   "n": 10,
+   "file": "Torun panorama z wiezy ratusza 2025 07 30 184225.jpg",
+   "y": 2025,
+   "lab": "2025",
+   "what": "The Old Town and St. John’s Cathedral, photograph from the Old Town Hall tower",
+   "who": "Pko",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.15,
+    1,
+    0.86
+   ],
+   "focal": [
+    0.62,
+    0.6
+   ],
+   "why": "sharp daylight view over the medieval rooftops to the cathedral and the Vistula; trimmed sky and the tower parapet"
+  }
+ ],
+ "gaps": "P0, P1: no candidates. P5: no candidates.",
+ "notes": "#6: the museum dates the painting only to the second half of the 18th century, hence the range label; drop it if that is too loose. It is a detail photographed in the gallery (#5 is another detail of the same painting, western part with ships). #2 is Merian’s bird’s-eye plan (‘Thorunium / Thoren’), first published 1652; #1 and #3 are other copies of the same plate. P4 alternative: #8, the Vistula flood of 1879 (colored wood engraving after H. Penner, an event view, town small in the distance). P6 alternatives: #11 (the riverfront at night, very attractive), #9 (riverfront panorama, too wide at 9:1), #12 (sign in the foreground).",
+ "_reviewed": true
+}

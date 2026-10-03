@@ -1,0 +1,92 @@
+{
+ "city": "Mantua",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Civitates orbis terrarum. De praecipuis totius universi urbibus. Liber secundus (page 110).jpg",
+   "y": 1575,
+   "lab": "1575",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 2",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.19,
+    0.185,
+    0.89,
+    0.725
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "colored true view of the island city in its lakes; highest-resolution copy; book page trimmed"
+  },
+  {
+   "n": 8,
+   "file": "Gezicht op Mantua, ca. 1701-1713, RP-P-OB-83.037-21.jpg",
+   "y": 1707,
+   "lab": "1701–13",
+   "what": "Bird’s-eye view, etching (Rijksmuseum)",
+   "who": "Carel Allard",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.036,
+    0.145,
+    0.964,
+    0.895
+   ],
+   "focal": [
+    0.32,
+    0.6
+   ],
+   "why": "only usable view between 1650 and 1850; Dutch and French captions trimmed"
+  },
+  {
+   "n": 12,
+   "file": "Veduta di Mantova dall’Anconetta (xilografia).jpg",
+   "y": 1890,
+   "lab": "1890",
+   "what": "View from the Anconetta, wood engraving in Le Cento Città d’Italia",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.45
+   ],
+   "why": "skyline across the lake with the dome of Sant’Andrea"
+  },
+  {
+   "n": 17,
+   "file": "Mantova riflessa nel Lago Superiore. - panoramio.jpg",
+   "y": 2009,
+   "lab": "2009",
+   "what": "The skyline reflected in the Lago Superiore, photograph",
+   "who": "Carlo Pelagalli",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.35
+   ],
+   "why": "the classic skyline: Sant’Andrea’s dome, the cathedral bell tower and medieval towers"
+  }
+ ],
+ "gaps": "P0: nothing. P3: only #11, an etching dated just ‘early 18th century’. P5: Mittelholzer’s 1928 aerial (#15) shows the city as a small gray patch among fields from 2,000 m, too weak; the 1941–47 item is a photomap.",
+ "notes": "#8 is Allard’s re-engraving of the Braun and Hogenberg composition, so it shows the city much as in 1575; drop it if derivative copies are unwanted (#7 and #9 are the same plate, #9 bound small in a book). #2 is a cleaner single-sheet color copy of the 1575 plate at lower resolution (2953 px). #15 could serve as a P5 fallback with a tight trim around the city.",
+ "_reviewed": true
+}

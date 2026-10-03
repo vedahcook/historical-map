@@ -1,0 +1,37 @@
+{
+ "city": "Newcastle upon Tyne",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "dated 1801 plate, true view of the town and old bridge; crop clean"
+  },
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.018,
+     0.025,
+     0.976,
+     0.945
+    ],
+    "focal": [
+     0.58,
+     0.4
+    ]
+   },
+   "reason": "focal y 0.45 clips the top of the lantern tower; 0.4 keeps it. Right trim leaves a 2 px dark print edge, left trim touches the edge line"
+  },
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "Black Gate and keep, pre-war postcard; trim and date reasonable"
+  },
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "recognizable Tyne bridges skyline; crop clean"
+  }
+ ]
+}

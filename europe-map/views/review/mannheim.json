@@ -1,0 +1,45 @@
+{
+ "city": "Mannheim",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.4,
+     0.42
+    ]
+   },
+   "reason": "at focal 0.5 the church towers named in 'why' fall outside the crop; 0.40 keeps towers and the whole palace front"
+  },
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 12,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.123,
+     0.17,
+     0.88,
+     0.85
+    ]
+   },
+   "reason": "left and right trim leave a strip of the ornamental border (about 1% of width on each side)"
+  },
+  {
+   "n": 19,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.45,
+     0.47
+    ]
+   },
+   "reason": "focal y 0.55 cuts off the top of the TV tower; 0.47 includes it and keeps water tower and Friedrichsplatz"
+  }
+ ]
+}

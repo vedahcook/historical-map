@@ -1,0 +1,50 @@
+{
+ "city": "Limoges",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Zicht op Limoges aan de Vienne Vue de Limoges (titel op object) Fragmenten van landschappen (serietitel) Fragments de paysages (serietitel), RP-P-1906-536.jpg",
+   "y": 1840,
+   "lab": "1840",
+   "what": "The Vienne and an old bridge, tinted lithograph (Rijksmuseum)",
+   "who": "Hubert Clerget",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.11,
+    0.25,
+    0.9,
+    0.77
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "medieval bridge and riverside houses below the upper town"
+  },
+  {
+   "n": 3,
+   "file": "Dictionnaire Décembre Alonnier-II-160.jpg",
+   "y": 1867,
+   "lab": "1867",
+   "what": "Engraving in Décembre and Alonnier’s Dictionnaire populaire illustré",
+   "who": "Auguste Trichon",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.045,
+    0.972,
+    0.915
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "general view across the Vienne; cathedral and Saint-Michel towers recognizable"
+  }
+ ],
+ "gaps": "P0–P2: no candidates; P5: only a painting with a doubtful license; P6: nothing good",
+ "notes": "#7 (Jean Margerit, 1935–38) is a good general view, but Margerit died in 1974, so the Commons public-domain tag looks wrong; left out for that reason. #4 (1893, view from the Pont Saint-Étienne) is a good alternative for P4. #8 (2006 panorama) shows stitching seams and is only 958 px tall; #9 is a suburban rooftop view with no landmarks.",
+ "_reviewed": true
+}

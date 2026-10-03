@@ -1,0 +1,92 @@
+{
+ "city": "Mulhouse",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Mulhusium ca. 1618.jpg",
+   "y": 1617,
+   "lab": "1617",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 6",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.004,
+    0.005,
+    0.992,
+    0.99
+   ],
+   "focal": [
+    0.45,
+    0.47
+   ],
+   "why": "colored true view of the walled town before the Vosges, St. Stephen’s tower visible"
+  },
+  {
+   "n": 10,
+   "file": "Zentralbibliothek Zürich - Prospect der Stadt Müllhausen Von der Abend Seite - 991011279809705501.jpg",
+   "y": 1774,
+   "lab": "1774",
+   "what": "View from the west, engraving in David Herrliberger’s Topographie der Eidgenossenschaft",
+   "who": "David Herrliberger",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.047,
+    0.05,
+    0.953,
+    0.635
+   ],
+   "focal": [
+    0.6,
+    0.55
+   ],
+   "why": "general view with the churches and gate towers keyed in the caption"
+  },
+  {
+   "n": 12,
+   "file": "Mulhouse - btv1b10216424q.jpg",
+   "y": 1842,
+   "lab": "1842",
+   "what": "General view, steel engraving",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.01,
+    0.99,
+    0.99
+   ],
+   "focal": [
+    0.62,
+    0.62
+   ],
+   "why": "the early industrial town with smoking mill chimneys, 68 years after the 1774 view"
+  },
+  {
+   "n": 17,
+   "file": "View from south, Mulhausen, Alsace Lorraine, Germany-LCCN2002695080.tif",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "View from the south, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.03,
+    0.98,
+    0.92
+   ],
+   "focal": [
+    0.35,
+    0.5
+   ],
+   "why": "panorama over the city with St. Stephen’s spire"
+  }
+ ],
+ "gaps": "P0: none; P2: only later printings of the 1642 Merian plan (and an undated Merian profile view, #9); P5: none (the 1939 item reproduces an 1839 print); P6: only night street scenes",
+ "notes": "#3 is the Mulhouse panel cropped from the 1618 printing of vol. 6 (first edition 1617). #12 was published by Creuzbauer and Nöldecke, Karlsruhe. #13 (dated 1800) skipped: the lithograph with factory chimneys looks decades later. #10 carries Herrliberger’s publisher line; Commons also links it to Johann Kaspar Ziegler.",
+ "_reviewed": true
+}

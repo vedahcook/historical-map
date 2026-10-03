@@ -1,0 +1,33 @@
+{
+ "city": "Arkhangelsk",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.13,
+     0.165,
+     0.88,
+     0.79
+    ]
+   },
+   "reason": "trim includes the inner frame rule at left and right and the engraver's signature at bottom left"
+  },
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 16,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

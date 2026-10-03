@@ -1,0 +1,113 @@
+{
+ "city": "Cádiz",
+ "picks": [
+  {
+   "n": 7,
+   "file": "Gezicht op Cádiz, BI-1956-1074-35-1.jpg",
+   "y": 1715,
+   "lab": "1694–1737",
+   "what": "View from the bay, colored etching in Pieter van den Berge’s Theatrum Hispaniae (Rijksmuseum)",
+   "who": "Pieter van den Berge",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.09,
+    0.36,
+    0.905,
+    0.785
+   ],
+   "focal": [
+    0.68,
+    0.5
+   ],
+   "why": "sea walls, towers and domes from the bay; inset map and caption trimmed"
+  },
+  {
+   "n": 10,
+   "file": "1806-1820, Voyage pittoresque et historique de l'Espagne, tomo II, Vista general de Cádiz (cropped).jpg",
+   "y": 1812,
+   "lab": "1812",
+   "what": "General view, engraving in Alexandre de Laborde’s Voyage pittoresque et historique de l’Espagne",
+   "who": "Noël (drawing) and Daudet (engraving)",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.62
+   ],
+   "why": "the whole walled city across the bay, high resolution"
+  },
+  {
+   "n": 17,
+   "file": "Gezicht op de kathedraal en de pier van Cadiz No. 288 (serietitel), RP-F-00-349.jpg",
+   "y": 1870,
+   "lab": "1860–80",
+   "what": "The cathedral and the sea wall, photograph (Rijksmuseum)",
+   "who": "J. E. Puig",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.04,
+    0.035,
+    0.96,
+    0.885
+   ],
+   "focal": [
+    0.4,
+    0.5
+   ],
+   "why": "flat roofs and cathedral domes; left half of the stereo card"
+  },
+  {
+   "n": 21,
+   "file": "ETH-BIB-Cadiz aus 200 m Höhe-Mittelmeerflug 1928-LBS MH02-05-0030-A.tif",
+   "y": 1928,
+   "lab": "1928",
+   "what": "Aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.035,
+    0.04,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "the old town on its peninsula from 200 m; film edge trimmed"
+  },
+  {
+   "n": 25,
+   "file": "Vista de Cádiz, España, 2015-12-08, DD 77.JPG",
+   "y": 2015,
+   "lab": "2015",
+   "what": "The cathedral bell tower and the old town, photograph",
+   "who": "Diego Delso",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.55
+   ],
+   "why": "cathedral tower over the white roofs and towers of the old town"
+  }
+ ],
+ "gaps": "P0: none; P1: the Braun and Hogenberg plates are either an album sheet with the fold through a small, distant city (1572) or composite scenes of the isthmus and the tuna fishery with the city far off (vol. 5); no second P3 or P4 40 years apart",
+ "notes": "#7: the imprint reads P. v. d. Berge; his Theatrum Hispaniae is usually dated about 1700 (Rijksmuseum gives 1694–1737), drop it if that is too loose. #17 (cathedral and sea wall by J. E. Puig) is a strong P4 alternative, but the Rijksmuseum date ca. 1860–80 does not fit Esplugas Puig (born 1852), so it is probably later. #13 (photochrom of the Puerta de Tierra, 1890s) is a color P4 option. #22 is Vejer de la Frontera, not Cádiz.",
+ "_reviewed": true
+}

@@ -1,0 +1,92 @@
+{
+ "city": "Amiens",
+ "picks": [
+  {
+   "n": 10,
+   "file": "Cathédrale d'Amiens (BM 1982,U.374).jpg",
+   "y": 1840,
+   "lab": "about 1840",
+   "what": "The cathedral above the Saint-Leu canals, lithograph in Le Moyen Âge pittoresque (British Museum)",
+   "who": "Alexandre-Jules Monthelier after Joseph-Philibert Girault de Prangey",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.087,
+    0.1,
+    0.92,
+    0.9
+   ],
+   "focal": [
+    0.55,
+    0.41
+   ],
+   "why": "the cathedral over the old water quarter, a view that says Amiens"
+  },
+  {
+   "n": 5,
+   "file": "From the belfrey, Amiens, France-LCCN2001697551.tif",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The cathedral from the belfry, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.03,
+    0.975,
+    0.94
+   ],
+   "focal": [
+    0.55,
+    0.4
+   ],
+   "why": "color view over the roofs to the cathedral"
+  },
+  {
+   "n": 15,
+   "file": "Amiens opération Michael mai 1918 première guerre mondiale.jpg",
+   "y": 1918,
+   "lab": "1918",
+   "what": "Aerial photograph",
+   "who": "John McGrew",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.01,
+    0.07,
+    0.99,
+    0.99
+   ],
+   "focal": [
+    0.3,
+    0.41
+   ],
+   "why": "oblique aerial view centered on the cathedral; city shown intact"
+  },
+  {
+   "n": 14,
+   "file": "Amiens-panorama-view.jpg",
+   "y": 2007,
+   "lab": "2007",
+   "what": "View over the city center from a height, photograph",
+   "who": "Acediscovery",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.15,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "only usable modern view; brick roofs of the center, cathedral not in frame"
+  }
+ ],
+ "gaps": "P0–P2: none (the Merian 1661 item is a flat fortification plan); P3 only the lithograph of about 1840",
+ "notes": "#10: the British Museum dates it only 1830–83; the sheet is headed Le Moyen Âge pittoresque (Veith et Hauser, published 1837–40) and printed by Lemercier, so about 1840. #15 was taken in May 1918 during the German spring offensive, but it shows no damage, so not marked as an event. #1 and #2 are 1918 vertical aerials misdated 1648–49 by their archive numbers. #14 is weak (no cathedral); drop it if a blank plate is preferred.",
+ "_reviewed": true
+}

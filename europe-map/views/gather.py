@@ -179,7 +179,7 @@ def select(city, found, meta):
     keep = []
     for pi in range(len(PERIODS)):
         xs = sorted((c for c in out if c['period'] == pi), key=lambda c: -c['score'])
-        keep += xs[:8 if pi in (1, 4) else 6]
+        keep += xs[:(6 if pi in (1, 4) else 4) if os.environ.get('SMALL') else (8 if pi in (1, 4) else 6)]
     for i, c in enumerate(keep, 1): c['n'] = i
     os.makedirs(os.path.join(HERE, 'cand'), exist_ok=True)
     json.dump({'city': city, 'qid': info['qid'], 'commonscat': cc, 'periods': [p[2] for p in PERIODS], 'n_files': len(found), 'n_ok': len(out), 'cand': keep},

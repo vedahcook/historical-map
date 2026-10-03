@@ -1,0 +1,29 @@
+{
+ "city": "Krefeld",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Aerial image of Burg Linn (view from the southwest).jpg",
+   "y": 2023,
+   "lab": "2023",
+   "what": "Linn Castle and its moat, aerial photograph",
+   "who": "Carsten Steger",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.53,
+    0.42
+   ],
+   "why": "sharp aerial view of the city’s best-known historic landmark"
+  }
+ ],
+ "gaps": "P0–P5: no candidates at all; P6 has no view of the city center",
+ "notes": "Only four modern candidates; #1 is a suburban church, #2 an airfield, #4 the racetrack. #3 shows Linn Castle (in the Linn district) during a fair, not the center; drop it if a landmark outside the center isn’t wanted.",
+ "_reviewed": true
+}

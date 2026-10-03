@@ -1,0 +1,134 @@
+{
+ "city": "Ancona",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Ancona civitas Piceni celeberrima, ad mare Adriaticum posita... - btv1b53178909v (1 of 2).jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.08,
+    0.125,
+    0.918,
+    0.645
+   ],
+   "focal": [
+    0.52,
+    0.5
+   ],
+   "why": "colored copy of the plate; walled town, harbor and citadel; margins, title cartouche and key trimmed"
+  },
+  {
+   "n": 8,
+   "file": "Antonio Balestra - Veduta di Ancona - 1690 circa - collezione privata.JPG",
+   "y": 1690,
+   "lab": "about 1690",
+   "what": "The Arch of Trajan and the harbor, painting (private collection)",
+   "who": "Antonio Balestra",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.45
+   ],
+   "why": "color view of the port with the Arch of Trajan and the cathedral hill"
+  },
+  {
+   "n": 11,
+   "file": "Jakob Philipp Hackert (1784) Veduta del porto di Ancona.jpg",
+   "y": 1784,
+   "lab": "1784",
+   "what": "The harbor with the Arch of Trajan, painting",
+   "who": "Jacob Philipp Hackert",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "fine color harbor scene with the Arch of Trajan"
+  },
+  {
+   "n": 14,
+   "file": "Théodose du Moncel - Vue d'Ancône (1850).jpg",
+   "y": 1850,
+   "lab": "1850",
+   "what": "View of the town from the harbor",
+   "who": "Théodose du Moncel",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.15,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "color view of the town climbing to the San Ciriaco cathedral"
+  },
+  {
+   "n": 16,
+   "file": "Ancona veduta del porto xilografia.jpg",
+   "y": 1898,
+   "lab": "1898",
+   "what": "View over the harbor, wood engraving",
+   "who": "Giuseppe Barberis",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.3
+   ],
+   "why": "detailed harbor view from the hill with the town at left; 48 years after the 1850 view"
+  },
+  {
+   "n": 22,
+   "file": "Port of Ancona with ships Marko Polo and Aurelia docked, taken from a larger ship (2017).jpg",
+   "y": 2017,
+   "lab": "2017",
+   "what": "The old town above the port, photograph",
+   "who": "Ekaterina Valinakova",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "sharp recent color view of the historic center on its hill"
+  }
+ ],
+ "gaps": "P0: nothing usable. P5: no candidates.",
+ "notes": "#1 is a Nuremberg Chronicle portrait of Augustine of Ancona, not a town view. P1 alternatives: #7 (Andrea Lilli’s 1597 painted view, dim and a narrow strip) and #20 (photo of Danti’s Gallery of Maps fresco). #5 has the book gutter through the plate. #9, #10 and #12 have unclear dates (#12 is credited to Leonardo De Vegni, who died in 1801, yet dated 1845). #13 is dated only ‘after 1861’; #17 is a low-resolution detail. #15 (1889 woodcut panorama from Porta Pia) is a better general view than #16 but only 39 years after #14; swap it in for #16 if preferred. #18 is the 1860 siege.",
+ "_reviewed": true
+}

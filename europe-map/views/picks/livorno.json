@@ -1,0 +1,134 @@
+{
+ "city": "Livorno",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Giorgio Vasari - Allegory of Prato; to the bottom, view of Livorno - Google Art Project.jpg",
+   "y": 1557,
+   "lab": "1557–58",
+   "what": "The fortified port, detail of a ceiling painting",
+   "who": "Giorgio Vasari",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.15,
+    0.815,
+    0.87,
+    0.962
+   ],
+   "focal": [
+    0.62,
+    0.5
+   ],
+   "why": "only early view; the labeled strip ('MVN LIBVRNI') below the allegory, with walls, harbor and lighthouses"
+  },
+  {
+   "n": 3,
+   "file": "Veduta del porto e della città di Livorno, about 1720 - Archivio Accademia delle Scienze Torino, Millon 49 19 084.jpg",
+   "y": 1720,
+   "lab": "about 1720",
+   "what": "The port and city, painting",
+   "who": "Lorenzo Fratellini",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.046,
+    0.22,
+    0.948,
+    0.795
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "color general view of the walled city and port; black surround trimmed"
+  },
+  {
+   "n": 7,
+   "file": "Raccolta delle piu belle vedute della citta e porto di Livorno - btv1b85950967 (20 of 32).jpg",
+   "y": 1783,
+   "lab": "1783",
+   "what": "The Fortezza Vecchia, engraving in Raccolta delle più belle vedute della città e porto di Livorno",
+   "who": "Ferdinando Fambrini",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.105,
+    0.15,
+    0.875,
+    0.79
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "city’s landmark fortress at the harbor mouth; margins and caption trimmed"
+  },
+  {
+   "n": 8,
+   "file": "Veduta della Piazza Grande di Livorno.jpg",
+   "y": 1845,
+   "lab": "1845",
+   "what": "Piazza Grande with the cathedral, engraving",
+   "who": "A. De Vegni",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0.052,
+    0.08,
+    0.952,
+    0.81
+   ],
+   "focal": [
+    0.4,
+    0.6
+   ],
+   "why": "main square and cathedral; 62 years after #7; margins and caption trimmed"
+  },
+  {
+   "n": 11,
+   "file": "Panorama di Livorno veduto dal porto (xilografia).jpg",
+   "y": 1887,
+   "lab": "1887",
+   "what": "Panorama from the harbor, wood engraving in Le Cento Città d’Italia",
+   "who": "Barberis",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.9
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "general view of the waterfront with the cathedral dome"
+  },
+  {
+   "n": 20,
+   "file": "Livorno panorama 02 @chesi.JPG",
+   "y": 2015,
+   "lab": "2015",
+   "what": "View from Montenero, photograph",
+   "who": "Piergiuliano Chesi",
+   "lic": "CC BY 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0.25,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "recent general view of the city, port and lighthouse"
+  }
+ ],
+ "gaps": "P0: no candidates; P5: only a 1917–18 Red Cross workshop photo, not a view",
+ "notes": "#1: the card crop is tight (strip about 3.7:1); drop it if it looks too soft. #6 (1783 Piazza Grande) is a folded plate with creases through the view, so #7 used for 1783. #13 (1850) is a generic harbor landscape.",
+ "_reviewed": true
+}

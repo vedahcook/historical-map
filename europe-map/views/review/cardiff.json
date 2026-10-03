@@ -1,0 +1,23 @@
+{
+ "city": "Cardiff",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 6,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.018,
+     0.018,
+     0.983,
+     0.95
+    ]
+   },
+   "reason": "trim leaves a white strip of the print margin at the right (about 3 px of 500) and a thin one at top and left"
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "city": "Brest-Litovsk",
+ "picks": [
+  {
+   "n": 13,
+   "file": "Брест. Новостройки. - panoramio.jpg",
+   "y": 2012,
+   "lab": "2012",
+   "what": "View over the rooftops toward new apartment blocks, photograph",
+   "who": "Natalia Semenova",
+   "lic": "CC BY 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0.1,
+    1,
+    1
+   ],
+   "focal": [
+    0.56,
+    0.5
+   ],
+   "why": "only usable view of Brest, Belarus; roofs of the center with a white church tower"
+  }
+ ],
+ "gaps": "P0–P5: none (every older candidate is Brest in France)",
+ "notes": "#1–#12 and #15–#16 are all Brest, Brittany (Merian, the roadstead paintings, 1858 photos, 1944 ruins, Brest 2008 festival) and must not be used. #14 is a high-altitude airliner shot where nothing is recognizable. #13 is modest (cranes in the sky, no fortress), so drop it if a blank plate is preferred.",
+ "_reviewed": true
+}

@@ -1,0 +1,29 @@
+{
+ "city": "Gyumri",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Gyumri 8 July 2017 (6).jpg",
+   "y": 2017,
+   "lab": "2017",
+   "what": "View over the old town, photograph",
+   "who": "Preacher lad",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.18,
+    1,
+    1
+   ],
+   "focal": [
+    0.52,
+    0.42
+   ],
+   "why": "bright general view over the rooftops of the historic center with church domes and the mountains behind; trimmed some sky"
+  }
+ ],
+ "gaps": "P0–P5: no candidates",
+ "notes": "Only modern photos among the candidates. #3 (2018 panorama with the Yot Verk church and Mount Aragats) is a good alternative.",
+ "_reviewed": true
+}

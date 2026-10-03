@@ -1,0 +1,71 @@
+{
+ "city": "Tampere",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Tammerfors (fabrikerna) - Lennart Forstén - Finland framställdt i teckningar - 31.jpg",
+   "y": 1848,
+   "lab": "1845–52",
+   "what": "The factories at the Tammerkoski rapids, lithograph in Finland framställdt i teckningar",
+   "who": "Lennart Forstén",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.05,
+    0.08,
+    0.95,
+    0.78
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "labeled Tammerfors; the Finlayson mills at the rapids, the town’s defining scene"
+  },
+  {
+   "n": 4,
+   "file": "SU020 Tampere 1961 (51181816541).jpg",
+   "y": 1961,
+   "lab": "1961",
+   "what": "View over the city toward Lake Näsijärvi, photograph",
+   "who": "Wilford Peloquin",
+   "lic": "CC BY 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0.22,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "color general view from Pyynikki ridge, factory chimneys and lake"
+  },
+  {
+   "n": 8,
+   "file": "Tampere aerial 3.jpg",
+   "y": 2021,
+   "lab": "2021",
+   "what": "Aerial photograph",
+   "who": "kallerna",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.08,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "the center on its isthmus between the two lakes"
+  }
+ ],
+ "gaps": "P0–P2: none; P4: none",
+ "notes": "#1 (Kügelgen, 1818) skipped: its description says it comes from an album of Narva, Ivangorod and Rakvere views, low resolution photo of a print; it is only 30 years from #2, which is clearly labeled. #2 is dated to the album’s publication run (1845–52). #5 (2017 panorama from Pyynikki tower, with Näsinneula) is a good alternative for P6.",
+ "_reviewed": true
+}

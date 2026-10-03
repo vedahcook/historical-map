@@ -1,0 +1,134 @@
+{
+ "city": "Burgos",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Burgos celebris et antiqua Hispaniaecivitas quae Auea, Braumm, Masburgi, Licontinitiurgis, nomina habet ; Sanct. Sebastianum vulgo Donostien ad mare Oceanum insigne regni Guipuzcoa oppidum - btv1b53178868h (1 of 2).jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.066,
+    0.124,
+    0.94,
+    0.478
+   ],
+   "focal": [
+    0.4,
+    0.5
+   ],
+   "why": "colored single-sheet copy (no book gutter); castle hill and cathedral spires recognizable; trimmed to the Burgos view, San Sebastián view below cut away"
+  },
+  {
+   "n": 7,
+   "file": "Theatrum hispaniae exhibens regni urbes villas ac viridaria magis illustria... Material gráfico 119.jpg",
+   "y": 1700,
+   "lab": "about 1700",
+   "what": "General view, etching in Pieter van den Berge’s Theatrum Hispaniae (National Library of Spain)",
+   "who": "Pieter van den Berge",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.137,
+    0.174,
+    0.847,
+    0.78
+   ],
+   "focal": [
+    0.42,
+    0.5
+   ],
+   "why": "general view with castle and cathedral; margins and caption trimmed"
+  },
+  {
+   "n": 8,
+   "file": "Meyers Universum Band 05 13.jpg",
+   "y": 1838,
+   "lab": "1838",
+   "what": "The cathedral and the Arch of Santa María, steel engraving in Meyer’s Universum",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.035,
+    0.975,
+    0.795
+   ],
+   "focal": [
+    0.5,
+    0.42
+   ],
+   "why": "cathedral spires and the Arco de Santa María, the city’s signature scene; caption trimmed"
+  },
+  {
+   "n": 12,
+   "file": "Burgos. Plaza Mayor LCCN2017660385.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Plaza Mayor with the cathedral behind, photochrom print (Library of Congress)",
+   "who": "Photoglob Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.015,
+    0.985,
+    0.975
+   ],
+   "focal": [
+    0.6,
+    0.4
+   ],
+   "why": "color; arcaded square with the cathedral spires rising behind; high resolution"
+  },
+  {
+   "n": 19,
+   "file": "Gezicht op Burgos Lucie van Dam van Isselt.jpg",
+   "y": 1935,
+   "lab": "1935",
+   "what": "View of the city with the cathedral towers, pencil and watercolor",
+   "who": "Lucie van Dam van Isselt",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.62,
+    0.5
+   ],
+   "why": "dated sketch (13 August 1935) from the castle hill, cathedral towers at right; modest and only 1000 px wide"
+  },
+  {
+   "n": 22,
+   "file": "Burgos city view facing south east.jpg",
+   "y": 2011,
+   "lab": "2011",
+   "what": "View from the castle, photograph",
+   "who": "Jardoz",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.68
+   ],
+   "why": "cathedral above the old town’s red roofs; sharp and colorful"
+  }
+ ],
+ "gaps": "P0: nothing",
+ "notes": "#2 is the BnF copy of the 1572 plate (Commons date 1645 is that edition); its faint sheet fold is not a book gutter, unlike #1 and #3. #6 (Wyngaerde drawing, 1565) is only a black-and-white detail around the Casa del Cordón. #15 (J. Laurent, view from the castle) is a strong general view but its date is unclear (Commons 1860; Laurent’s Burgos views are 1860s–1880s), so the color photochrom was preferred for P4. The 1921 La Esfera panorama (#18, #20) has the magazine gutter running through the cathedral, so P5 uses the 1935 sketch; drop it if too weak.",
+ "_reviewed": true
+}

@@ -1,0 +1,29 @@
+{
+ "city": "Santiago de Compostela",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Santiago dende Bonaval.jpg",
+   "y": 2016,
+   "lab": "2016",
+   "what": "The cathedral towers above the old town from Bonaval park, photograph",
+   "who": "Bene Riobó",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.05,
+    1,
+    0.92
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "cathedral spires recognizable over the roofs"
+  }
+ ],
+ "gaps": "P0–P5: no candidates at all",
+ "notes": "Only four modern photos were offered. #1 is heavily contrast-processed and one cathedral tower is under scaffolding, but it is the only one where the cathedral reads clearly. #2 and #3 show mostly park lawn; #4 is a dark snowy panorama.",
+ "_reviewed": true
+}

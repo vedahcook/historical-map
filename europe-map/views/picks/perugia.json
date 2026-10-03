@@ -1,0 +1,71 @@
+{
+ "city": "Perugia",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Civitates orbis terrarum. Urbium praecipuarum totius mundi. Liber quartus (page 106).jpg",
+   "y": 1588,
+   "lab": "1588",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 4",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.168,
+    0.31,
+    0.852,
+    0.862
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "colored copy (1594 edition) of the 1588 plate; city on its ridge between the hills; book margins trimmed"
+  },
+  {
+   "n": 14,
+   "file": "Warren Perugia 2006.426.jpg",
+   "y": 1888,
+   "lab": "1888",
+   "what": "The town walls and a church, watercolor (Eskenazi Museum of Art)",
+   "who": "Harold Broadfield Warren",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.01,
+    0.99,
+    0.99
+   ],
+   "focal": [
+    0.55,
+    0.32
+   ],
+   "why": "color view of the hill town’s edge with a bell tower; signed and dated ’88"
+  },
+  {
+   "n": 16,
+   "file": "Perugia from Porta Sole.jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "View from Porta Sole at sunset, photograph",
+   "who": "Xstg",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0.08,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.35,
+    0.65
+   ],
+   "why": "medieval rooftops of the old town and the hills beyond; wall at left trimmed"
+  }
+ ],
+ "gaps": "P0: only a Nuremberg Chronicle woodcut, unlabeled in the scan and of generic stock type; P2: no candidates; P5: no candidates",
+ "notes": "#2 is photographed in a bound atlas but lies flat; a faint center fold is visible only in the margins. If that is judged a gutter, use #5 (same plate, flat BnF scan, black and white; trim about [0.02, 0.02, 0.98, 0.98], stamp lower right). #8 is Città della Pieve, not Perugia. #9 and #10 (Ramboux drawings) are dated only 1818–43. #13 (1889, from the gardens) is dominated by a foreground balustrade; #11 (1876, Rocca Paolina ruins) is small. #7 (1828) dropped at visual check: the drawing is too faint to read.",
+ "_reviewed": true
+}

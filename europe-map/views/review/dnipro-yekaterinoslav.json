@@ -1,0 +1,15 @@
+{
+ "city": "Dnipro (Yekaterinoslav)",
+ "checks": [
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "SMU record titles it Yekaterinoslav, spring 1918 (German flier unit); hazy but shows the grid and a domed cathedral; mount and wing shadow outside crop"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "2012 panorama; crop shows the twin towers and avenue (the gilded church noted in ‘why’ is outside the crop, which is fine)"
+  }
+ ]
+}

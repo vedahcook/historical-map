@@ -1,0 +1,10 @@
+{
+ "city": "Zaporizhzhia",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "Khortytsia is the city's landmark and the caption is accurate, though it is more a river scene than a city view; the only other candidate (#3, winter rooftop view) is weaker."
+  }
+ ]
+}

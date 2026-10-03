@@ -1,0 +1,44 @@
+{
+ "city": "Amalfi",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.052,
+     0.092,
+     0.95,
+     0.838
+    ],
+    "focal": [
+     0.62,
+     0.6
+    ]
+   },
+   "reason": "Trim sits outside the plate edge, so a light paper/platemark sliver shows at left, right and bottom; tightened."
+  },
+  {
+   "n": 8,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.035,
+     0.045,
+     0.97,
+     0.935
+    ],
+    "focal": [
+     0.62,
+     0.6
+    ]
+   },
+   "reason": "The printed caption 'Veduta di Amalfi. Napoli. N.175' and the print edge fall inside the 16:9 crop at the bottom; trimmed above the caption."
+  },
+  {
+   "n": 16,
+   "verdict": "ok",
+   "reason": "Clear view of the town front and cathedral tower; data agree with record."
+  }
+ ]
+}

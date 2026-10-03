@@ -1,0 +1,113 @@
+{
+ "city": "Ulm",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Nuremberg chronicles - ULMA.png",
+   "y": 1493,
+   "lab": "1493",
+   "what": "Woodcut in Hartmann Schedel’s Nuremberg Chronicle",
+   "who": "Michael Wolgemut and Wilhelm Pleydenwurff",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.016,
+    0.035,
+    0.494,
+    0.95
+   ],
+   "focal": [
+    0.75,
+    0.45
+   ],
+   "why": "colored true view with the Minster (tower still unfinished) behind the walls on the Danube; two-page spread, so trimmed to the left-hand page, which holds the title and the Minster, to avoid the gutter"
+  },
+  {
+   "n": 5,
+   "file": "Nurnberg ; Ulm ; Saltzburg - btv1b531789107 (1 of 2).jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Panorama, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.088,
+    0.429,
+    0.914,
+    0.657
+   ],
+   "focal": [
+    0.56,
+    0.45
+   ],
+   "why": "colored loose sheet, no fold; trimmed to the Ulm panel of the four-city plate (Nuremberg above, Salzburg and Lindau below): walled town with the Minster at its center"
+  },
+  {
+   "n": 13,
+   "file": "Lange Städte in Deutschland Band 2 Nr. 24.jpg",
+   "y": 1840,
+   "lab": "1840",
+   "what": "View from the southeast across the Danube, steel engraving",
+   "who": "Eduard Mauch and Johann Poppel",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.046,
+    0.06,
+    0.962,
+    0.862
+   ],
+   "focal": [
+    0.55,
+    0.55
+   ],
+   "why": "river front with the Metzgerturm and the Minster with its unfinished tower; trimmed margins and caption"
+  },
+  {
+   "n": 15,
+   "file": "Ulm, Wurtemburg, Germany-LCCN2002720824.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Minster and the Danube, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.018,
+    0.02,
+    0.98,
+    0.935
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "the newly completed Minster spire (1890) over the old town and the Danube bridge; color"
+  },
+  {
+   "n": 26,
+   "file": "Ulm Panorama 02.jpg",
+   "y": 2018,
+   "lab": "2018",
+   "what": "The old town across the Danube, photograph",
+   "who": "Uoaei1",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "the classic view from Neu-Ulm: Minster, city wall, Metzgerturm and Danube; sharp, wide"
+  }
+ ],
+ "gaps": "P2: only plans (Merian 1643 #7, #10 1657). P5: only vertical military aerials (1920, #22–#24, map-like) and an undated etching of a single street (#21).",
+ "notes": "#2: colored copy chosen over the sharper black-and-white #1 (also with a visible join in the middle); #3 is another colored copy with the gutter. #5: BnF dates its copy 1645; the Nuremberg–Ulm–Salzburg–Lindau plate is from vol. 1 (1572), as the Heidelberg copy (#8, a 2052 px colored strip of the same panel) is dated. P3 alternatives: #14 (1840, Minster from the Ziegellände), #11 (1818, Minster from the southeast, single building). P4: #16 is a copy of #15; #20 (‘about 1850’, wood engraving with the federal fortress) could be a second P4 view but its date is loose; #19 is an 1890 albumen photo. Not Ulm: #17 is New Ulm, Minnesota; #18 is Neu-Ulm (Bavaria). P6: modern ‘who’ is the Commons username, the only artist given; #27/#28 are drone shots of the railway station.",
+ "_reviewed": true
+}

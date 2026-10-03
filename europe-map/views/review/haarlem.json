@@ -1,0 +1,50 @@
+{
+ "city": "Haarlem",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.3,
+     0.03,
+     0.98,
+     0.955
+    ],
+    "focal": [
+     0.5,
+     0.5
+    ]
+   },
+   "reason": "crop included the title cartouche text block bottom-left and sliced the coats of arms; narrower trim shows the whole walled town only"
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "Ruisdael view; about 1670 matches Rijksmuseum dating of the same painting (#9)"
+  },
+  {
+   "n": 12,
+   "verdict": "ok",
+   "reason": "Weissenbruch view with Great Church, date per record"
+  },
+  {
+   "n": 16,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.022,
+     0.03,
+     0.978,
+     0.935
+    ]
+   },
+   "reason": "trim edges sat on the dark mount edge on left and right"
+  },
+  {
+   "n": 26,
+   "verdict": "ok",
+   "reason": "aerial of center inside canal ring"
+  }
+ ]
+}

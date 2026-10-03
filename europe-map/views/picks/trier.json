@@ -1,0 +1,134 @@
+{
+ "city": "Trier",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Treveris ; Cobolentz ; Rotenburg - btv1b53178869z (1 of 2).jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.085,
+    0.105,
+    0.915,
+    0.435
+   ],
+   "focal": [
+    0.47,
+    0.5
+   ],
+   "why": "colored bird’s-eye view of the walled town in the Moselle bend with the Roman bridge; top strip of the three-city plate, no fold"
+  },
+  {
+   "n": 10,
+   "file": "Gezicht op Trier, 1726 Treves, Capitale de l'Archévêché du même nom (titel op object) Les Forces de l'Europe, Asie, Afrique et Amerique Comme aussi les Cartes des Côtes de France et d'Espagne (serie, RP-P-OB-83.035-190.jpg",
+   "y": 1726,
+   "lab": "1726",
+   "what": "View across the Moselle, etching in Les Forces de l’Europe (Rijksmuseum)",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.185,
+    0.32,
+    0.72,
+    0.795
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "only view for the period; skyline with the cathedral and the bridge, foreground travelers"
+  },
+  {
+   "n": 11,
+   "file": "Gezicht op Trier, RP-P-1905-2317.jpg",
+   "y": 1832,
+   "lab": "1831–33",
+   "what": "General view, aquatint (Rijksmuseum)",
+   "who": "Rudolf Bodmer after Karl Bodmer",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.21,
+    0.215,
+    0.772,
+    0.705
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "clear view of the town with the cathedral towers below the hills"
+  },
+  {
+   "n": 17,
+   "file": "Trier (Treves), Moselle, valley of, Germany-LCCN2002713960.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "View across the Moselle, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.016,
+    0.022,
+    0.986,
+    0.935
+   ],
+   "focal": [
+    0.35,
+    0.5
+   ],
+   "why": "color general view of the town beyond the river, cathedral at left"
+  },
+  {
+   "n": 21,
+   "file": "Trier R RW 0261 01808 R cropped.webp",
+   "y": 1930,
+   "lab": "1930",
+   "what": "Aerial photograph (Landesarchiv NRW)",
+   "who": "Richard J. Kern",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.02,
+    0,
+    0.994,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "oblique view over the old town with the cathedral and the Roman basilica"
+  },
+  {
+   "n": 25,
+   "file": "Germany-5498 - Goodbye Trier as we head for Belgium (12968897573).jpg",
+   "y": 2013,
+   "lab": "2013",
+   "what": "View over the city from a height, photograph",
+   "who": "Dennis G. Jarvis",
+   "lic": "CC BY-SA 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.58,
+    0.55
+   ],
+   "why": "color view with the cathedral, Church of Our Lady and the basilica"
+  }
+ ],
+ "gaps": "P0: none (the 1497 Nuremberg Chronicle woodcut #1 is an imaginary city with a dome and a statue column, not a true view of Trier)",
+ "notes": "P1 alternative: #7, Merian’s view from Topographia Archiepiscopatuum Moguntinensis, Trevirensis et Coloniensis (1646; the file says 1648), a sharp black-and-white view; the colored Braun and Hogenberg was preferred and both fall in P1. #10 is catalogued as a copy (Hollstein Dutch 33-copy), apparently after Merian’s view; the city is a thin band, so it is on the weak side. P4 alternative: #18, Bain News Service photo from the Petrisberg about 1910 (very high resolution, cathedral prominent), but its date carries a doubt in the record. #15 is an Adolphe Braun stereo card, not Braun and Hogenberg; #19 is the blank back of a card; #20 is a painting of the cathedral and Church of Our Lady (Metz museum), not a general view.",
+ "_reviewed": true
+}

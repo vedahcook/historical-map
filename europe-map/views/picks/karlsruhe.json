@@ -1,0 +1,92 @@
+{
+ "city": "Karlsruhe",
+ "picks": [
+  {
+   "n": 11,
+   "file": "Steidlin Karlsruhe 1739.jpg",
+   "y": 1739,
+   "lab": "1739",
+   "what": "Bird’s-eye view of the palace and town, engraving",
+   "who": "Johann Matthias Steidlin after Christian Thran",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.095,
+    0.075,
+    0.905,
+    0.72
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "detailed view of the fan-shaped town and palace; key and text trimmed"
+  },
+  {
+   "n": 12,
+   "file": "Ansicht des Marktplatzes in Carlsruhe - Vue du marché à Carlsrouh - LABW - Generallandesarchiv Karlsruhe S Thomas Kellner Nr. 3, 1 (2).jpg",
+   "y": 1827,
+   "lab": "1827",
+   "what": "The market square with the pyramid, engraving",
+   "who": "Wilhelm Noack after C. Küntzle",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0.112,
+    0.141,
+    0.892,
+    0.836
+   ],
+   "focal": [
+    0.45,
+    0.6
+   ],
+   "why": "Weinbrenner’s market square, pyramid and town church; margins and caption trimmed"
+  },
+  {
+   "n": 16,
+   "file": "Karlsruhe, general view, Baden, Germany-LCCN2002713591.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "View from the palace tower, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.02,
+    0.985,
+    0.94
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "color general view down the main axis to the market square; border and caption trimmed"
+  },
+  {
+   "n": 28,
+   "file": "Karlsruhe, Dezember 2019 (1).jpg",
+   "y": 2019,
+   "lab": "2019",
+   "what": "View from the palace tower, photograph",
+   "who": "Edelseider",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.12,
+    1,
+    0.8
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "same axis as the 1890s view; palace square and city"
+  }
+ ],
+ "gaps": "P0, P1: none (city founded 1715; those hits are other towns held in the Karlsruhe archive); P5: only 1964 vertical aerial map sheets of suburbs",
+ "notes": "#9/#10 (Bodenehr 1721) are a schematic alternative for P2. #13 is a duplicate of #12.",
+ "_reviewed": true
+}

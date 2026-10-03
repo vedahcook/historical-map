@@ -1,0 +1,29 @@
+{
+ "city": "Cheboksary",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Kalininskiy rayon, Cheboksary, Chuvashia, Russia - panoramio (2).jpg",
+   "y": 2010,
+   "lab": "about 2010",
+   "what": "The old town across the Cheboksary Bay, photograph",
+   "who": "karel291",
+   "lic": "CC BY 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0.3,
+    1,
+    0.97
+   ],
+   "focal": [
+    0.4,
+    0.5
+   ],
+   "why": "historic center with the Vvedensky Cathedral and Holy Trinity Monastery; overcast sky trimmed"
+  }
+ ],
+ "gaps": "P0–P5: nothing",
+ "notes": "Only four candidates, all dull overcast Panoramio shots. The record says 11 January 2010 but the trees are in full leaf, so the exact date is wrong; hence “about 2010”. #2 shows the Mother Patroness monument with a building under construction; #1 and #3 are weaker bay views.",
+ "_reviewed": true
+}

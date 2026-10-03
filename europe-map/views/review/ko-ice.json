@@ -1,0 +1,6 @@
+{"city": "Košice", "checks": [
+ {"n": 5, "verdict": "fix", "fix": {"trim": [0.022, 0.045, 0.962, 0.935], "focal": [0.55, 0.33]}, "reason": "orange plate frame is inside the crop at top and bottom, and a white paper gap shows at the lower right edge; tighter trim removes them"},
+ {"n": 8, "verdict": "fix", "fix": {"trim": [0.01, 0.02, 0.99, 0.69], "focal": [0.47, 0.5]}, "reason": "the German caption box in the lower-right corner sits inside the crop; cutting the bottom at 0.69 drops it and still shows the whole walled town"},
+ {"n": 12, "verdict": "ok", "reason": "photochrom of the cathedral and St. Urban’s Tower, margins trimmed"},
+ {"n": 17, "verdict": "ok", "reason": "only modern view of the center; cathedral visible at right, crop is as good as the panorama allows"}
+]}

@@ -1,0 +1,71 @@
+{
+ "city": "Reggio Calabria",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Edward Lear (1812-1888) - View of Reggio and the Straits of Messina - T00630 - Tate.jpg",
+   "y": 1852,
+   "lab": "1852",
+   "what": "Reggio and the Strait of Messina, painting (Tate, London)",
+   "who": "Edward Lear",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.42
+   ],
+   "why": "color view of the castle and town with Etna across the strait; low resolution (1132 px) but strong"
+  },
+  {
+   "n": 2,
+   "file": "Reggio Calabria veduta dal mare (xilografia).jpg",
+   "y": 1898,
+   "lab": "1898",
+   "what": "The waterfront seen from the sea, wood engraving in Le Cento Città d’Italia",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.45
+   ],
+   "why": "the seafront before the 1908 earthquake; 46 years after the Lear painting"
+  },
+  {
+   "n": 6,
+   "file": "Reggio Calabria dalla collina di Pentimele.jpg",
+   "y": 2010,
+   "lab": "2010",
+   "what": "The city and the strait from the hill of Pentimele, photograph",
+   "who": "Franc rc",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "general view of the city along the coast; hazy but the best modern option"
+  }
+ ],
+ "gaps": "P0, P2, P3: no candidates. P5: only a dark, damaged 1924 stereo negative (#5).",
+ "notes": "#1: the Commons date field says ‘1500’, which is impossible for Bruegel; the date comes from his 1552 journey through southern Italy, when the drawing is generally linked to the Turkish burning of Reggio. Drop it if a firm museum date can’t be confirmed. #3 is a smaller, cropped scan of the same waterfront view as #2. P6 is hazy; replace if a better modern photo is found.",
+ "_reviewed": true
+}

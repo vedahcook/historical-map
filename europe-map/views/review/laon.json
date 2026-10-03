@@ -1,0 +1,37 @@
+{
+ "city": "Laon",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.19,
+     0.305,
+     0.81,
+     0.752
+    ],
+    "focal": [
+     0.6,
+     0.6
+    ]
+   },
+   "reason": "The engraved title 'LAON' touches the top edge of the crop; trim top moved below it. Towers stay whole."
+  },
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "Cathedral and town clearly shown; crop is inside the photo, no mount or caption."
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "Weak (cathedral not recognizable) but still a clean general aerial of the hill town; acceptable."
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "Cathedral on the hill, clean crop."
+  }
+ ]
+}

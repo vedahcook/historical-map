@@ -1,0 +1,113 @@
+{
+ "city": "Ljubljana",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Valvasorjeva veduta Ljubljane 1681.jpg",
+   "y": 1685,
+   "lab": "1681–89",
+   "what": "The town under Castle Hill, engraving after Johann Weikhard von Valvasor",
+   "who": "Johann Weikhard von Valvasor",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.1,
+    1,
+    1
+   ],
+   "focal": [
+    0.62,
+    0.5
+   ],
+   "why": "the castle on its wooded hill above the roofs of the town; the castle makes it unmistakable"
+  },
+  {
+   "n": 5,
+   "file": "Carl Waage - Veduta Ljubljane.jpg",
+   "y": 1845,
+   "lab": "1840s",
+   "what": "View from Tivoli Park, oil painting",
+   "who": "Carl Waage",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.15,
+    0.995,
+    0.995
+   ],
+   "focal": [
+    0.6,
+    0.6
+   ],
+   "why": "color general view across the park to the town, the cathedral towers and the castle; empty sky trimmed"
+  },
+  {
+   "n": 8,
+   "file": "Ljubljana from the Tivoli Castle in the 1890s.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "View from Tivoli, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.015,
+    0.99,
+    0.94
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "color general view of the city with Castle Hill in the middle; border and print number trimmed"
+  },
+  {
+   "n": 15,
+   "file": "Panoramski posnetek Ljubljane 1961 (4).jpg",
+   "y": 1961,
+   "lab": "1961",
+   "what": "Rooftops of the center and Castle Hill, photograph",
+   "who": "Dragiša Modrinjak",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "the castle over the roofs of the old center, clearly Ljubljana"
+  },
+  {
+   "n": 18,
+   "file": "Panorama of Ljubljana.jpeg",
+   "y": 2012,
+   "lab": "2012",
+   "what": "The city center from the castle, photograph",
+   "who": "Micryb",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0.2,
+    1,
+    0.95
+   ],
+   "focal": [
+    0.52,
+    0.55
+   ],
+   "why": "color view over the center with the pink Franciscan church; sky and treetops trimmed"
+  }
+ ],
+ "gaps": "P0, P1: nothing",
+ "notes": "#3’s date field reads “1681, 1689”: Valvasor’s Ljubljana view carries a 1681 dedication and was printed in Die Ehre dess Hertzogthums Crain (1689), hence the range. #1 and #2 are details of Valvasor views without the castle. #5 is a colored copy of the same composition as #7 (Sandmann, dated 1849, very high resolution but foxed); if the reviewer wants that firmer date, #7 can replace #5 with y 1849. #6 (Fish Square in winter, Künl 1847, color) is a fine landmark alternative but portrait. #10 (Chapuy 1856) and #8 are 39 years apart, just short of the two-view rule. #16 (1967, color) is a brochure spread with the fold through the middle. #4 shows a Sava bridge outside the town.",
+ "_reviewed": true
+}

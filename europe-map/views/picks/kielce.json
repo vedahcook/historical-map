@@ -1,0 +1,50 @@
+{
+ "city": "Kielce",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Kielce, ogolny widok. post 1906 (1020458).jpg",
+   "y": 1910,
+   "lab": "about 1910",
+   "what": "General view, postcard (collotype)",
+   "who": "Stanisław Sanecki",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.022,
+    0.18,
+    0.982,
+    0.96
+   ],
+   "focal": [
+    0.6,
+    0.35
+   ],
+   "why": "the only real general view: the town across open ground with the cathedral’s towers on the hill; trimmed the printed titles and card edges"
+  },
+  {
+   "n": 8,
+   "file": "Widok na Kielce ze Stadionu - Góra Pierścienica - 1.JPG",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The city from Pierścienica hill, photograph",
+   "who": "Wojciech Domagała",
+   "lic": "CC BY-SA 3.0 pl",
+   "event": false,
+   "trim": [
+    0,
+    0.12,
+    1,
+    0.6
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "best of a weak modern set: the city spread along the horizon beyond the forest; trimmed the ski slope in front"
+  }
+ ],
+ "gaps": "P0–P3: no candidates. P5: only a 1918 reprint of the same Sanecki photograph (#4). P6 has no view of the historic center.",
+ "notes": "#3: the card was printed after 1906 (catalog ‘post 1906’) and the same photograph reappears on a card dated 1918 (#4), hence ‘about 1910’. #1 (a house in a garden) and #2 (a distant field with barracks, about 1885) are too weak to use. P6: #8 shows housing estates, not landmarks; drop it if a center view is required. #7 is similar (scrub in front); #5/#6 are a 17,500 × 600 px strip panorama, unusable at card size.",
+ "_reviewed": true
+}

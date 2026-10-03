@@ -1,0 +1,15 @@
+{
+ "city": "Pristina",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "torn edges excluded; credit follows the record"
+  },
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "center with recognizable landmarks; crop fine"
+  }
+ ]
+}

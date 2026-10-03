@@ -1,0 +1,29 @@
+{
+ "city": "Vladimir",
+ "picks": [
+  {
+   "n": 8,
+   "file": "View of Vladimir.jpg",
+   "y": 1911,
+   "lab": "1911",
+   "what": "General view with the Dormition Cathedral, early color photograph (Library of Congress)",
+   "who": "Sergei Prokudin-Gorskii",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.62,
+    0.45
+   ],
+   "why": "the town on its hill above the river, Dormition Cathedral clearly visible"
+  }
+ ],
+ "gaps": "P0–P3: nothing; P5–P6: nothing",
+ "notes": "All other candidates show other places: Moscow’s Vladimir Gate, Kyiv (St. Vladimir monument, university, cathedral), St. Petersburg, Volodymyr-Volynskyi in Ukraine (#11, #12), or portraits.",
+ "_reviewed": true
+}

@@ -1,0 +1,50 @@
+{
+ "city": "Ruse",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Sketch on the Danube at Giurgevo, opposite Rustchuk.jpg",
+   "y": 1853,
+   "lab": "1853",
+   "what": "Rustchuk seen across the Danube from Giurgevo, wood engraving (Illustrated London News)",
+   "who": "Illustrated London News",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.2,
+    0.53,
+    0.71
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "only historic view; the town lines the far bank of the Danube"
+  },
+  {
+   "n": 2,
+   "file": "Luftbild Rousse.jpg",
+   "y": 2011,
+   "lab": "2011",
+   "what": "View over the city toward the Danube, photograph",
+   "who": "Gonzosft",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "general view of the whole city and the river"
+  }
+ ],
+ "gaps": "P0–P3: nothing; P5: nothing",
+ "notes": "#1 is a distant view; the town is a strip on the far shore, with soldiers’ huts at Giurgevo in front. It is the only pre-modern candidate.",
+ "_reviewed": true
+}

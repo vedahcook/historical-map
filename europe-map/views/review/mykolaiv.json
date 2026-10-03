@@ -1,0 +1,28 @@
+{
+ "city": "Mykolaiv, Ukraine",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "Mykolaiv with the Great Synagogue per record; grainy and not a skyline, but the only period view and correct"
+  },
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "lab": "about 2010",
+    "trim": [
+     0,
+     0,
+     1,
+     1
+    ],
+    "focal": [
+     0.5,
+     0.55
+    ]
+   },
+   "reason": "record date is the panoramio upload date, photo year uncertain (spring scene); old trim zoomed to 38% of the width and framed only the bridge, not the yacht club"
+  }
+ ]
+}

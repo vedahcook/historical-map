@@ -1,0 +1,20 @@
+{
+ "city": "Nottingham",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "1695 view from the east with castle and St Mary's; crop clean"
+  },
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "ILN 23 July 1842 woodcut of castle and town; crop acceptable for a vignette"
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "photochrom of the castle; border and caption trimmed; 1890s label fine for a bare 1890 date"
+  }
+ ]
+}

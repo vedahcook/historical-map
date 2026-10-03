@@ -1,0 +1,134 @@
+{
+ "city": "Innsbruck",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Albrecht Dürer - View of Innsbruck - WGA7356.jpg",
+   "y": 1495,
+   "lab": "about 1495",
+   "what": "Innsbruck from the north across the Inn, watercolor (Albertina, Vienna)",
+   "who": "Albrecht Dürer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.6
+   ],
+   "why": "colored true view; walled town, towers and Hofburg mirrored in the Inn"
+  },
+  {
+   "n": 5,
+   "file": "Civitates orbis terrarum. De praecipuis totius universi urbibus. Liber secundus (page 94).jpg",
+   "y": 1575,
+   "lab": "1575",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 2",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.168,
+    0.143,
+    0.848,
+    0.872
+   ],
+   "focal": [
+    0.47,
+    0.62
+   ],
+   "why": "colored general view of the town on the Inn below the mountains; plate on one page, no gutter"
+  },
+  {
+   "n": 10,
+   "file": "Lange Städte in Deutschland Band 2 Nr. 50.jpg",
+   "y": 1840,
+   "lab": "1840",
+   "what": "View across the Inn, steel engraving",
+   "who": "Jakob Meinrad Bayrer and Henry Winkles",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.038,
+    0.055,
+    0.952,
+    0.868
+   ],
+   "focal": [
+    0.5,
+    0.58
+   ],
+   "why": "general view; domes and towers of the old town across the river, mountains behind"
+  },
+  {
+   "n": 14,
+   "file": "Innsbruck das Goldene Dachl LCCN2017659101.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Golden Roof, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.026,
+    0.022,
+    0.968,
+    0.978
+   ],
+   "focal": [
+    0.53,
+    0.39
+   ],
+   "why": "color; the city’s best-known landmark; larger copy of the same print as #15"
+  },
+  {
+   "n": 20,
+   "file": "Innsbruck Kalkkögel 1932.jpg",
+   "y": 1934,
+   "lab": "1934",
+   "what": "Aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    0.98,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.47
+   ],
+   "why": "the city in the Inn valley with the river and mountains; cleaned copy of #23"
+  },
+  {
+   "n": 26,
+   "file": "Innsbruck Panorama 2017.jpg",
+   "y": 2017,
+   "lab": "2017",
+   "what": "Panorama at dusk, photograph",
+   "who": "Janick Entremont",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.95
+   ],
+   "focal": [
+    0.45,
+    0.65
+   ],
+   "why": "sharp color panorama of the whole city along the Inn below the Nordkette; trim cuts watermark"
+  }
+ ],
+ "gaps": "P2: nothing usable",
+ "notes": "File name of #20 says 1932, but the date field and the ETH negative (9.9.34) give 9 September 1934. Merian’s plate (#9) is from Topographia Provinciarum Austriacarum, 1649, so it falls in P1 with the colored Braun and Hogenberg plate preferred; it also has the book gutter through the view. Jakob Alt’s 1845 watercolor of the Golden Roof and town tower (#11) is a strong color alternative for P3. Brennerbahn album photo #19 skipped: album undated. #3/#4 (vol. 5) show the Inn valley and a text page, not the town.",
+ "_reviewed": true
+}

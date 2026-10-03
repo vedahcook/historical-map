@@ -1,0 +1,27 @@
+{
+ "city": "Waterford",
+ "checks": [
+  {
+   "n": 6,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.025,
+     0.022,
+     0.975,
+     0.935
+    ],
+    "focal": [
+     0.55,
+     0.62
+    ]
+   },
+   "reason": "16:9 crop is about 40% empty sky; right trim left a sliver of the cream border"
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "genuine Waterford street, 2003 per description; plain but acceptable"
+  }
+ ]
+}

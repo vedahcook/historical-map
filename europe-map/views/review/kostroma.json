@@ -1,0 +1,27 @@
+{
+ "city": "Kostroma",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.02,
+     0.14,
+     0.98,
+     0.8
+    ],
+    "focal": [
+     0.62,
+     0.5
+    ]
+   },
+   "reason": "current crop is about 40% empty water and includes the print crease at top right and tree branches at left; tighter trim keeps the kremlin skyline. Date 1928–34 rests on the statue ID (caption uses old spelling) but is acceptable"
+  },
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "Susanin Square with fire tower; crop keeps tower and guardhouse, no edges or cut towers"
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "city": "Gdynia",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Gdynia 1942 cropped rotated RG373 445221326 F5895 ON024530 1PRU C 0256 1 46 01.jpg",
+   "y": 1942,
+   "lab": "1942",
+   "what": "The port and city center, vertical aerial reconnaissance photograph (U.S. National Archives)",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.065,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "only view of the interwar new town and port: harbor basins, rail yards, the center’s street grid and Kamienna Góra hill by the shore; trimmed the upside-down film caption"
+  },
+  {
+   "n": 3,
+   "file": "Gdynia skyline july 2013.jpg",
+   "y": 2013,
+   "lab": "2013",
+   "what": "Panorama over the city and port, photograph from the Student Seamen’s Hostel",
+   "who": "Artnowo",
+   "lic": "CC BY 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "widest modern view: the center, the harbor and the Sea Towers on the bay"
+  }
+ ],
+ "gaps": "P0–P3: no candidates (Gdynia was a village until the 1920s). P4: only a manor house in Mały Kack (#1), not the town. P6 has no Quality image.",
+ "notes": "#2 is a black-and-white vertical air photo (wartime, when the city was German-occupied ‘Gotenhafen’), so it reads somewhat like a map; drop it if a plain photograph is wanted. ‘1PRU’ in the file name suggests an RAF No. 1 Photographic Reconnaissance Unit sortie. P6 alternatives: #6 (CC0, Sea Towers behind a cargo ship that dominates the frame), #4/#5 (Redłowo district only).",
+ "_reviewed": true
+}

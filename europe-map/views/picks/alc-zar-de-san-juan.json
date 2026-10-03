@@ -1,0 +1,29 @@
+{
+ "city": "Alcázar de San Juan",
+ "picks": [
+  {
+   "n": 3,
+   "file": "View of Alcázar de San Juan.JPG",
+   "y": 2026,
+   "lab": "2026",
+   "what": "General view from the windmill hill (Cerro de los Molinos), photograph",
+   "who": "Asqueladd",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.42,
+    0.57
+   ],
+   "why": "clear view over the town with the tower of Santa María in the center"
+  }
+ ],
+ "gaps": "P0–P5: no candidates.",
+ "notes": "#1 and #2 (2025, from the San Isidro hill) are flatter views with a power substation or open field in the foreground and no clear landmark.",
+ "_reviewed": true
+}

@@ -1,0 +1,92 @@
+{
+ "city": "Poznań",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Poznan Braun Hohenberg.jpg",
+   "y": 1617,
+   "lab": "1617",
+   "what": "Bird’s-eye view from the north, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 6",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.01,
+    0.98,
+    0.985
+   ],
+   "focal": [
+    0.64,
+    0.5
+   ],
+   "why": "colored view of the walled town on the Warta with the cathedral island at left"
+  },
+  {
+   "n": 8,
+   "file": "Widok Poznania z kosciolem Bernardynow, kolegium Jezuitow i klasztorem Benedyktynek 1833 (79917527) (cropped).jpg",
+   "y": 1833,
+   "lab": "1833",
+   "what": "The Jesuit college and the Benedictine convent, lithograph",
+   "who": "Julius von Minutoli",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "detailed old-town square scene with the Jesuit college and the cathedral spires behind"
+  },
+  {
+   "n": 9,
+   "file": "View of Old City, Posen, Germany (i.e., Poznań Poland)-LCCN2002714010.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The old town across the Warta, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.15,
+    0.98,
+    0.72
+   ],
+   "focal": [
+    0.6,
+    0.4
+   ],
+   "why": "color general view of the skyline with the town hall tower at right; flooded meadows and caption trimmed"
+  },
+  {
+   "n": 19,
+   "file": "Posen Juli 2020 - 001.jpg",
+   "y": 2020,
+   "lab": "2020",
+   "what": "The old town and the town hall from the Royal Castle tower, photograph",
+   "who": "Edelseider",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.7
+   ],
+   "focal": [
+    0.4,
+    0.4
+   ],
+   "why": "rooftop view over the old town to the town hall tower; foreground trees trimmed"
+  }
+ ],
+ "gaps": "P0: nothing; P2: nothing; P5: only 1929 exhibition postcards (event), a Nazi-era postcard dated only ‘before 1945’ and a bridge sketch",
+ "notes": "B&H vol. 6 dated 1617 (the record says Köln 1618). The 1890s town hall photochrom (#10/#12) is the stronger landmark but portrait format; #9 chosen as the general view. #3/#4 are full atlas spreads with Krosno below.",
+ "_reviewed": true
+}

@@ -1,0 +1,71 @@
+{
+ "city": "Split",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Houghton Typ 815.02.2616 - Cassas, Vue générale de Spalatro.jpg",
+   "y": 1802,
+   "lab": "1802",
+   "what": "General view from the sea, engraving in Cassas’s Voyage pittoresque de l’Istrie et Dalmatie (Houghton Library)",
+   "who": "Louis-François Cassas",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.045,
+    0.055,
+    0.945,
+    0.835
+   ],
+   "focal": [
+    0.58,
+    0.5
+   ],
+   "why": "whole waterfront with Diocletian’s Palace and the cathedral bell tower"
+  },
+  {
+   "n": 10,
+   "file": "Spalato, general view, Dalmatia, Austro-Hungary-LCCN2002710813.tif",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "General view, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.016,
+    0.012,
+    0.982,
+    0.94
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "color view over the old town and harbor, bell tower visible"
+  },
+  {
+   "n": 14,
+   "file": "View of Split harbour 01.jpg",
+   "y": 2019,
+   "lab": "2019",
+   "what": "The harbor and the cathedral bell tower, photograph",
+   "who": "Bernard Gagnon",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "sharp recent waterfront view with the palace bell tower"
+  }
+ ],
+ "gaps": "P0–P2: nothing; P5: nothing",
+ "notes": "#1 (Jakob Alt, 1841, color watercolor from the west) is a strong P3 alternative but only 39 years after Cassas, so not taken as a second P3 view; the town is small in it. #10 is a Detroit Publishing Co. print of a Photoglob photochrom (P.Z. no. 9901).",
+ "_reviewed": true
+}

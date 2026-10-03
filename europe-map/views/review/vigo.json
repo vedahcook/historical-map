@@ -1,0 +1,15 @@
+{
+ "city": "Vigo",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "1877 engraving of Vigo and its harbor, makers match the record; crop clean"
+  },
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "Monte Alba view of Vigo and the ría; the old trim leaves a clean wide crop with a little pine at the lower left"
+  }
+ ]
+}

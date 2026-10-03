@@ -1,0 +1,92 @@
+{
+ "city": "Tours",
+ "picks": [
+  {
+   "n": 6,
+   "file": "Braun Tours UBHD.jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.036,
+    0.115,
+    0.954,
+    0.85
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "colored; trimmed to the Tours view (top right of a three-city plate), cathedral and Saint-Martin visible"
+  },
+  {
+   "n": 8,
+   "file": "Demachy - vue panoramique de Tours.jpg",
+   "y": 1787,
+   "lab": "1787",
+   "what": "View across the Loire, painting (Musée des Beaux-Arts, Tours)",
+   "who": "Pierre-Antoine Demachy",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.07,
+    0.108,
+    0.935,
+    0.893
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "the whole riverfront with the cathedral and the new stone bridge; frame trimmed"
+  },
+  {
+   "n": 14,
+   "file": "Tours (OAW).png",
+   "y": 1862,
+   "lab": "about 1862",
+   "what": "View across the Loire, wood engraving in Once a Week",
+   "who": "Percival Skelton",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.04,
+    0.11,
+    0.975,
+    0.975
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "bridge and cathedral towers across the river"
+  },
+  {
+   "n": 23,
+   "file": "Vue de Tours, Romain Wisniewski.jpg",
+   "y": 2026,
+   "lab": "2026",
+   "what": "The Charlemagne Tower and the Saint-Martin Basilica over the old town roofs, photograph",
+   "who": "Romain Wisniewski",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.38
+   ],
+   "why": "the old town’s slate roofs with its best-known towers"
+  }
+ ],
+ "gaps": "P0: none (only portrait woodcuts); P2: none; P5: none (the 1931 aerials are of Amboise, Blois and Orléans)",
+ "notes": "#5 is the 1645 French edition of the 1572 plate. #14 was published 7 February 1863 and described as a view of about 1862. #24 (Bourgerie lithograph, Vue de Tours, printed by Clarey-Martineau) is probably about 1841 but its record gives no date; it would be a strong second P3. #11 (Rougeot, about 1785) is an alternative to #8. Not Tours: #12 Nantes, #13 Vannes, #15–16 Paris, #17 Villars-sur-Ollon, #18–20 Amboise, Blois, Orléans, #21 Tours-sur-Marne, #22 Montreal.",
+ "_reviewed": true
+}

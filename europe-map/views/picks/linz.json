@@ -1,0 +1,92 @@
+{
+ "city": "Linz",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Linsum Austriae vulgo Lintz.jpg",
+   "y": 1598,
+   "lab": "1598",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 5",
+   "who": "Joris Hoefnagel after Lucas van Valckenborch",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.21,
+    0.975,
+    0.965
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "colored general view from the Pöstlingberg; castle, town and Danube bridge; single sheet without gutter"
+  },
+  {
+   "n": 8,
+   "file": "Linz (Vischer).png",
+   "y": 1674,
+   "lab": "1674",
+   "what": "Bird’s-eye view, engraving in Vischer’s Topographia Austriae superioris modernae",
+   "who": "Georg Matthäus Vischer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.09,
+    0.97,
+    0.99
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "main square, churches and Danube bridge recognizable; title band trimmed"
+  },
+  {
+   "n": 15,
+   "file": "Lintz (i.e., Linz), general view, Upper Austria, Austro-Hungary-LCCN2002708440.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "View along the Danube, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.02,
+    0.985,
+    0.95
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "color view of the city on the Danube with the bridge; border and caption trimmed"
+  },
+  {
+   "n": 27,
+   "file": "Linz - Froschberg - Freinberg - Ausblick - 2025 01 22-2.jpg",
+   "y": 2025,
+   "lab": "2025",
+   "what": "View from the Freinberg, photograph",
+   "who": "Eweht",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.2,
+    1,
+    0.92
+   ],
+   "focal": [
+    0.4,
+    0.4
+   ],
+   "why": "recent general view with the New Cathedral; hazy winter day"
+  }
+ ],
+ "gaps": "P0: no candidates; P3: none (the P3 hits are Venice and Rome paintings from the 'Sonderauftrag Linz'); P5: 1932 Mittelholzer aerials too hazy to recognize",
+ "notes": "#5: plate inscribed 'Anno 1594' (year of Valckenborch’s drawing), first published in vol. 5, 1598. #2 has the center fold through the view. #19 is Linz am Rhein, #25 is Linz Berg in Hesse, excluded. P6 is weak; #24 (2010 panorama from the Pöstlingberg) is clearer but too wide and its landmarks too small for the card.",
+ "_reviewed": true
+}

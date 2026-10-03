@@ -1,0 +1,92 @@
+{
+ "city": "Yaroslavl",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Yaroslavl 1731.jpg",
+   "y": 1731,
+   "lab": "1731",
+   "what": "Panorama from the Volga, engraving",
+   "who": "Aleksei Rostovtsev",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.03,
+    0.99,
+    0.78
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "detailed riverfront panorama with the kremlin and churches; legend and inset plan trimmed"
+  },
+  {
+   "n": 6,
+   "file": "View of Yaroslavl in 1856.jpg",
+   "y": 1856,
+   "lab": "1856",
+   "what": "View from the Volga, painting",
+   "who": "Vasily Bashkov",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.005,
+    0.995,
+    0.995
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "color view of the whole riverfront with the old Dormition Cathedral"
+  },
+  {
+   "n": 9,
+   "file": "Hammond Slides Pereslavl Yaroslavl 03.jpg",
+   "y": 1964,
+   "lab": "about 1964",
+   "what": "Sovetskaya Street with the Church of Elijah the Prophet, color slide",
+   "who": "Thomas T. Hammond",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.48,
+    0.4
+   ],
+   "why": "only usable mid-century view; church domes at the end of the street"
+  },
+  {
+   "n": 13,
+   "file": "Ярославль (Россия) - вид из окна гостиницы \"Юбилейная\" - panoramio.jpg",
+   "y": 2010,
+   "lab": "2010",
+   "what": "The Epiphany Church and the old center from a height, photograph",
+   "who": "Sergei Alekseev",
+   "lic": "CC BY 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "Epiphany Church with the Transfiguration Monastery belfry behind"
+  }
+ ],
+ "gaps": "P0, P1: no candidates; P3: only an early-18th-century lubok of the Crucifixion dominated by text; no second P4 (the 1910 Prokudin-Gorskii photo is a flat, distant view)",
+ "notes": "#1 (Le Brun’s view, from the 1718 French edition; the plate first appeared in the 1711 Dutch edition) is a cleaner but less detailed alternative for P2. #9: the date field only says 20th century; it is filed under 1964 in Yaroslavl and shows the same winter as Hammond’s March 1964 slides, hence about 1964. #4 (Prokudin-Gorskii, 1910) could serve as a second P4 if wanted.",
+ "_reviewed": true
+}

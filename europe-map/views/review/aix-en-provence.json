@@ -1,0 +1,23 @@
+{
+ "city": "Aix-en-Provence",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.022,
+     0.02,
+     0.975,
+     0.97
+    ]
+   },
+   "reason": "thin white paper margin at right edge inside the crop; otherwise fine"
+  },
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "correct city; tall subject, 16:9 crop unavoidably trims the obelisk top, acceptable"
+  }
+ ]
+}

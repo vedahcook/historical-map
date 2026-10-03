@@ -1,0 +1,10 @@
+{
+ "city": "Tambov",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "cathedral, bell tower and center clearly Tambov; crop and record fields fine"
+  }
+ ]
+}

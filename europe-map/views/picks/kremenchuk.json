@@ -1,0 +1,29 @@
+{
+ "city": "Kremenchuk",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Dnieper River bridge and beach - Kremenchuk, Ukraine.jpg",
+   "y": 2012,
+   "lab": "2012",
+   "what": "The Dnieper bridge from the central beach, photograph",
+   "who": "Sergiy Tkachenko",
+   "lic": "CC BY 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "sharp color view of the city’s best-known landmark, the 1949 road and rail bridge"
+  }
+ ],
+ "gaps": "P0–P5: no candidates; only modern views",
+ "notes": "#1 shows only the river and far bank. #3 (Lenin statue) and #4 (Victory Square) are small panoramio copies, 1300 px wide.",
+ "_reviewed": true
+}

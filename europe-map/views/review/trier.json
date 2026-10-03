@@ -1,0 +1,67 @@
+{
+ "city": "Trier",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.085,
+     0.105,
+     0.915,
+     0.435
+    ],
+    "focal": [
+     0.47,
+     0.5
+    ]
+   },
+   "reason": "Tall cathedral spire is cut off at the top of the crop; trim top raised above its tip (below the 'TREVERIS' title)."
+  },
+  {
+   "n": 10,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.185,
+     0.32,
+     0.72,
+     0.795
+    ],
+    "focal": [
+     0.5,
+     0.4
+    ]
+   },
+   "reason": "Corner drapery of the plate border shows in the upper left and right of the crop; trimmed past it."
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "Clean general view; crop inside the plate."
+  },
+  {
+   "n": 17,
+   "verdict": "ok",
+   "reason": "Good photochrom general view; crop clean of borders and caption."
+  },
+  {
+   "n": 21,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.02,
+     0,
+     0.994,
+     1
+    ]
+   },
+   "reason": "Bright one-pixel edge column at the right of the scan is inside the crop; trimmed."
+  },
+  {
+   "n": 25,
+   "verdict": "ok",
+   "reason": "Cathedral, Church of Our Lady and basilica visible from a height."
+  }
+ ]
+}

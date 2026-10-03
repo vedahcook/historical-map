@@ -1,0 +1,50 @@
+{
+ "city": "Elche",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Palmentuin van Elche Elche-Grupo de Palmeras (titel op object), RP-F-F01176-S.jpg",
+   "y": 1900,
+   "lab": "about 1900",
+   "what": "The palm grove, photochrom print (Rijksmuseum)",
+   "who": "unknown photographer",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.95
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "the city’s signature palm grove (the Palmeral), in color; caption strip trimmed"
+  },
+  {
+   "n": 2,
+   "file": "Vista de Elche desde la torre de la Basílica de Santa María, España, 2014-07-05, DD 13.JPG",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The city from the tower of the Basilica of Santa María, photograph",
+   "who": "Diego Delso",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "sharp, recent general view over the city roofs"
+  }
+ ],
+ "gaps": "P0–P3: no candidates. P5: none.",
+ "notes": "Only five candidates. The photochrom is a landmark scene (palm grove) rather than a townscape; the record dates it ‘circa 1900’ and names no publisher. #3–#5 (2011 rooftop views) are weaker alternatives for P6.",
+ "_reviewed": true
+}

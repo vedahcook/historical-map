@@ -1,0 +1,29 @@
+{
+ "city": "Sfax",
+ "picks": [
+  {
+   "n": 1,
+   "file": "ETH-BIB-Sfax, vom Hôtel de Ville, rechts-Dia 247-04721.tif",
+   "y": 1928,
+   "lab": "1928",
+   "what": "View from the town hall, hand-colored lantern slide (ETH Library, Zurich)",
+   "who": "Leo Wehrli",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.045,
+    0.04,
+    0.955,
+    0.915
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "colored view over the rooftops of the colonial town and a tree-lined avenue; trimmed black frame and caption strip"
+  }
+ ],
+ "gaps": "P0–P4: no candidates; P6: only hazy airplane shots and a street view half blocked by a parapet, skipped",
+ "notes": "",
+ "_reviewed": true
+}

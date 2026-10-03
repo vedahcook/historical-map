@@ -1,0 +1,29 @@
+{
+ "city": "Annaba",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Bona, Algeria-LCCN2001697857.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The harbor and the town, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.03,
+    0.975,
+    0.8
+   ],
+   "focal": [
+    0.42,
+    0.45
+   ],
+   "why": "color view of Bône across the harbor with the old town on its hill; trimmed frame and railway foreground"
+  }
+ ],
+ "gaps": "P0–P3: no candidates; P5: no candidates; P6: only a view through trees with the city tiny in the distance, skipped",
+ "notes": "#1 is a market scene and #3 a harbor map, both skipped.",
+ "_reviewed": true
+}

@@ -1,0 +1,52 @@
+{
+ "city": "Tours",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "replace",
+   "replace_with": 6,
+   "fix": {
+    "y": 1572,
+    "lab": "1572",
+    "trim": [
+     0.036,
+     0.115,
+     0.954,
+     0.85
+    ],
+    "focal": [
+     0.5,
+     0.5
+    ],
+    "lic": "PD",
+    "file": "Braun Tours UBHD.jpg",
+    "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+    "who": "Georg Braun and Frans Hogenberg"
+   },
+   "reason": "crop of the three-city 1645 plate is murky with the title cut off and only 40% of the plate; #6 is the same 1572 Tours plate alone, clean and brighter, public domain (file Braun Tours UBHD.jpg)"
+  },
+  {
+   "n": 8,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.07,
+     0.108,
+     0.935,
+     0.893
+    ]
+   },
+   "reason": "trim top line included the dark painting-edge line"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "Once a Week engraving, about 1862 per record"
+  },
+  {
+   "n": 23,
+   "verdict": "ok",
+   "reason": "modern rooftop view with Saint-Martin dome and tower; record names no landmarks, weak but acceptable"
+  }
+ ]
+}

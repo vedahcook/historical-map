@@ -1,0 +1,155 @@
+{
+ "city": "Bonn",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Novesium, vulgo Neus, urbs urbiorum Rhenana qualis ante bellum... ; Verona, nunc Bonna, Communiter Bonn... ; Brula, vulgari idiomate Broell ante bellum - btv1b53178967f (1 of 2).jpg",
+   "y": 1575,
+   "lab": "1575",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 2",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.06,
+    0.372,
+    0.405,
+    0.595
+   ],
+   "focal": [
+    0.65,
+    0.5
+   ],
+   "why": "colored copy, single sheet; trimmed to the Bonn strip of a four-town plate, minster above the Rhine front"
+  },
+  {
+   "n": 9,
+   "file": "Gezicht op Bonn en het Zevengebergte Vermakelijke gezigten aan den Rhijnstroom (serietitel) Admirandorum quadruplex spectaculum (serietitel), RP-P-OB-15.238.jpg",
+   "y": 1695,
+   "lab": "1694–97",
+   "what": "Bonn and the Siebengebirge from the Rhine, etching (Rijksmuseum)",
+   "who": "Jan van Call, published by Pieter Schenk",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.285,
+    0.165,
+    0.812,
+    0.735
+   ],
+   "focal": [
+    0.6,
+    0.6
+   ],
+   "why": "firmly dated; town on the river at right, Godesberg and the Siebengebirge behind"
+  },
+  {
+   "n": 13,
+   "file": "Bonn, gezien vanaf de Rijn Bonn Bonne (titel op object) Gezichten langs den Rhyn (serietitel), RP-P-1904-2403.jpg",
+   "y": 1767,
+   "lab": "1767",
+   "what": "Bonn from the Rhine, etching (Rijksmuseum)",
+   "who": "Frederik Willem Greebe and Hendrik de Leth, after Cornelis Ploos van Amstel",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.045,
+    0.42,
+    0.955,
+    0.925
+   ],
+   "focal": [
+    0.335,
+    0.5
+   ],
+   "why": "the electoral palace and minster spire along the river"
+  },
+  {
+   "n": 14,
+   "file": "Johann Ludwig Bleuler Blick vom Venusberg auf Bonn und den Rhein 1840.jpg",
+   "y": 1833,
+   "lab": "1826–40",
+   "what": "Bonn from the Venusberg, gouache (Stadtmuseum Bonn)",
+   "who": "Johann Ludwig Bleuler",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.53,
+    0.6
+   ],
+   "why": "color general view; minster, Poppelsdorf palace and avenue, Siebengebirge"
+  },
+  {
+   "n": 15,
+   "file": "Bonn, the Rhine, Germany-LCCN2002714063.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.15,
+    0.98,
+    0.94
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "general view from the hills with the minster spires; color"
+  },
+  {
+   "n": 21,
+   "file": "Gezicht op Bonn, gezien varend onder de Rijnbrug, Bestanddeelnr 254-1039.jpg",
+   "y": 1955,
+   "lab": "1955",
+   "what": "The Rhine bridge and the riverfront, photograph (Nationaal Archief)",
+   "who": "Willem van de Poll",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.6
+   ],
+   "why": "the rebuilt Rhine bridge with the old town riverfront"
+  },
+  {
+   "n": 25,
+   "file": "Königswinter, Drachenfels, Blick auf Bonn -- 2024 -- 3940.jpg",
+   "y": 2024,
+   "lab": "2024",
+   "what": "View from the Drachenfels down the Rhine toward Bonn, photograph",
+   "who": "Dietmar Rabich",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.42
+   ],
+   "why": "sharp recent general view of the Rhine valley and the city"
+  }
+ ],
+ "gaps": "P0: no candidates",
+ "notes": "P3 has two views 59–73 years apart. #14: the date field says 1826 but the file name says 1840, so it is labeled 1826–40; its description wrongly names Vevey, but the picture is clearly Bonn and it is in the Stadtmuseum Bonn. #7/#8 (Werner and Ringlin, ‘about 1700’) skipped: both worked in the 1730s–50s, so the date is doubtful. #1, #2, #4 are book spreads of the same plate as #5. #10 (Constantijn Huygens, 1673) is a drawing made in the siege camp, with the town small in the distance.",
+ "_reviewed": true
+}

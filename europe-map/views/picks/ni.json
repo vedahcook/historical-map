@@ -1,0 +1,29 @@
+{
+ "city": "Niš",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Panorama Niša.jpg",
+   "y": 2017,
+   "lab": "2017",
+   "what": "Panorama of the center at dusk, photograph",
+   "who": "DjordjeMarkovic",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.86
+   ],
+   "focal": [
+    0.55,
+    0.55
+   ],
+   "why": "high-resolution view over the center from a height; trim drops a foreground roof"
+  }
+ ],
+ "gaps": "P0–P5: nothing usable (the only older candidate, #1, is a burning B-17 over the rail yards in 1944).",
+ "notes": "#3 (King Milan Square with the Liberators monument, 2011) is a good alternative landmark view for P6. #2 and #4 show mostly outer districts.",
+ "_reviewed": true
+}

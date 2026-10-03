@@ -1,0 +1,29 @@
+{
+ "city": "Ploiești",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Aerial photograph of Ploiești from the west 01.jpg",
+   "y": 2024,
+   "lab": "2024",
+   "what": "Aerial photograph from the west",
+   "who": "Joe Mabel",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.05,
+    0.86,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.53
+   ],
+   "why": "whole city seen from a plane, with its ring plan clear; dark window edge at right trimmed"
+  }
+ ],
+ "gaps": "P0–P5: no candidates.",
+ "notes": "Taken through an airplane window, so colors are strong and slightly hazy, but it is the only usable picture. #2 and #3 are companion shots from the same flight; #4 (2009) shows countryside near the city, not the city.",
+ "_reviewed": true
+}

@@ -1,0 +1,23 @@
+{
+ "city": "Belgorod",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.01,
+     0.175,
+     0.99,
+     0.975
+    ]
+   },
+   "reason": "top trim is only about 2 px below the printed caption; leave more margin"
+  },
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

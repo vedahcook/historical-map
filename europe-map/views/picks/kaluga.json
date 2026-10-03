@@ -1,0 +1,50 @@
+{
+ "city": "Kaluga",
+ "picks": [
+  {
+   "n": 1,
+   "file": "BLASIUS(1844) p2.412 Kaluga.jpg",
+   "y": 1844,
+   "lab": "1844",
+   "what": "General view across the Oka, engraving in Johann Heinrich Blasius’s Reise im europäischen Russland",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.08,
+    0.98,
+    0.92
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "true general view of the town on its bluff with its many churches and the river; page margins trimmed"
+  },
+  {
+   "n": 4,
+   "file": "Калуга с высоты птичьего полета.JPG",
+   "y": 2006,
+   "lab": "2006",
+   "what": "Bird’s-eye view over the Oka bridge to the city, photograph",
+   "who": "Denis Bunkov",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.3
+   ],
+   "why": "best modern overview; city center and river from the air"
+  }
+ ],
+ "gaps": "P0–P2: nothing; P4, P5: nothing",
+ "notes": "#2 is a night shot from an airliner and #3 a distant airliner view; #5 is an embankment path with no city in sight.",
+ "_reviewed": true
+}

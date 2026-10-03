@@ -1,0 +1,92 @@
+{
+ "city": "Le Havre",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Archive-ND-1840.JPG",
+   "y": 1839,
+   "lab": "1839",
+   "what": "Notre-Dame church, south portal, lithograph",
+   "who": "André Durand",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.03,
+    0.99,
+    0.885
+   ],
+   "focal": [
+    0.45,
+    0.42
+   ],
+   "why": "the city’s main old church, which survived 1944; dated 1 June 1839 on the plate; caption trimmed"
+  },
+  {
+   "n": 10,
+   "file": "The Place Gambetta and docks, Havre, France-LCCN2001698147.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Place Gambetta and the Bassin du Commerce, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.045,
+    0.05,
+    0.952,
+    0.9
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "the heart of the old port city — theater, square and sailing ships in the dock, all lost in 1944; color"
+  },
+  {
+   "n": 13,
+   "file": "Entrée du paquebot Normandie dans le port du Havre, vue depuis une fenêtre d'un immeuble du Grand-quai - Mullot Pht - btv1b10480197g.jpg",
+   "y": 1937,
+   "lab": "late 1930s",
+   "what": "The liner Normandie entering the harbor, seen from the Grand Quai, photograph",
+   "who": "L. Mullot",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.045,
+    0.05,
+    0.875,
+    0.94
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "harbor mouth and jetty with crowds before the 1944 destruction; glass-plate border trimmed"
+  },
+  {
+   "n": 18,
+   "file": "Panorama of Le Havre, September 2019.jpg",
+   "y": 2019,
+   "lab": "2019",
+   "what": "Auguste Perret’s rebuilt center from the harbor, photograph",
+   "who": "Martin Falbisoner",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "UNESCO-listed Perret city with the St. Joseph tower; sharp and recent"
+  }
+ ],
+ "gaps": "P0, P1: no candidates. P2: only Merian’s 1657 ground plan (#1). No Perret-reconstruction view (1945–64) among candidates.",
+ "notes": "Skipped #3 (peep-show print, mirror-reversed with a mirror-written title, dated only 1828–1850) and #4 (1759 bombardment vue d’optique, ‘before 1788’, low resolution). P3 alternative: #2 (1820 lithograph of the harbor entrance jetty), less recognizable. P4 alternative: #6 (general view over Sainte-Adresse toward the city and the Seine mouth) — a true general view, but the city itself is distant. #13 shows the Normandie, which used Le Havre as its home port, so it is not marked as an event.",
+ "_reviewed": true
+}

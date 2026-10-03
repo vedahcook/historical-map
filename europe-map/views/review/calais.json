@@ -1,0 +1,31 @@
+{
+ "city": "Calais",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "true view of walled town; crop clean"
+  },
+  {
+   "n": 13,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.45,
+     0.36
+    ]
+   },
+   "reason": "current focal cuts the finial off the town-hall tower; lower crop keeps the tip"
+  },
+  {
+   "n": 17,
+   "verdict": "ok",
+   "reason": "hazy but the old town with the church spire, harbor and lighthouse is visible"
+  },
+  {
+   "n": 21,
+   "verdict": "ok",
+   "reason": "weak (ferry deck and parking in lower part) but skyline with belfry, church and lighthouse is clear; crop about half width"
+  }
+ ]
+}

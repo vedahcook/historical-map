@@ -1,0 +1,92 @@
+{
+ "city": "Newcastle upon Tyne",
+ "picks": [
+  {
+   "n": 1,
+   "file": "A View of Newcastle Upon Tyne.jpg",
+   "y": 1801,
+   "lab": "1801",
+   "what": "View across the River Tyne with keelboats, colored aquatint",
+   "who": "Charles Muss, engraved by Joseph Constantine Stadler",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    0.996,
+    0.965
+   ],
+   "focal": [
+    0.42,
+    0.55
+   ],
+   "why": "general view of the riverside town with church spires and the old Tyne Bridge; dated plate"
+  },
+  {
+   "n": 2,
+   "file": "St. Nicholas Cathedral. Newcastle-on-Tyne LCCN2017659728.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "St. Nicholas Cathedral, photochrom print (Library of Congress)",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.018,
+    0.025,
+    0.976,
+    0.945
+   ],
+   "focal": [
+    0.58,
+    0.4
+   ],
+   "why": "color; the cathedral’s lantern tower with the castle keep behind; no general view for P4"
+  },
+  {
+   "n": 4,
+   "file": "Newcastle Black gate and castle.jpg",
+   "y": 1937,
+   "lab": "late 1930s",
+   "what": "The Black Gate and the castle keep, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.012,
+    0.99,
+    0.965
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "the city’s namesake castle; trolleybus wires (from 1935) and ‘pre-WWII’ date fix it to the late 1930s"
+  },
+  {
+   "n": 6,
+   "file": "Newcastle-upon-Tyne-bridges-and-skyline.jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The Tyne bridges and the quayside, photograph",
+   "who": "JimmyGuano",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "Millennium Bridge, Tyne Bridge and skyline together; the city’s signature view"
+  }
+ ],
+ "gaps": "P0–P2: no candidates",
+ "notes": "#2 caption strip and gray border trimmed; #4 postcard caption trimmed. #4 date is inferred from the trolleybus wires and the ‘Pre WW II’ date field.",
+ "_reviewed": true
+}

@@ -1,0 +1,43 @@
+{
+ "city": "Avignon",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.082,
+     0.148,
+     0.916,
+     0.868
+    ]
+   },
+   "reason": "plate frame lines at all four edges were inside the crop"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "Musee Calvet painting dated 1700 by its title; crop fine"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "date from museum notice; crop fine"
+  },
+  {
+   "n": 19,
+   "verdict": "ok",
+   "reason": "lic CC BY 2.0 matches the Flickr-copy record"
+  },
+  {
+   "n": 23,
+   "verdict": "ok",
+   "reason": "view from the ramparts toward the Rhone; acceptable"
+  },
+  {
+   "n": 27,
+   "verdict": "ok",
+   "reason": "matches record; towers intact"
+  }
+ ]
+}

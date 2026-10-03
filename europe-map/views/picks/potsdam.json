@@ -1,0 +1,92 @@
+{
+ "city": "Potsdam",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Busch, Feldmann - Prospect Der Stadt Potsdam Wie solche nach der von Sr. König Maj in Preußen Friedrich Wilhelm I Anno 1733 geschehenen Erweiterung Von der Mittags und MorgenSeite.jpg",
+   "y": 1733,
+   "lab": "1733",
+   "what": "View from the Brauhausberg, engraving",
+   "who": "Georg Paul Busch",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.065,
+    0.12,
+    0.925,
+    0.76
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "true general view after the 1733 extension; palace and Garrison Church; title and key trimmed"
+  },
+  {
+   "n": 8,
+   "file": "Johann Friedrich Meyer - Potsdam, Ansicht vom Brauhausberg aus.jpg",
+   "y": 1772,
+   "lab": "1772",
+   "what": "View from the Brauhausberg, painting",
+   "who": "Johann Friedrich Meyer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.62,
+    0.55
+   ],
+   "why": "color general view across the Havel; City Palace, Garrison Church and St. Nicholas recognizable"
+  },
+  {
+   "n": 12,
+   "file": "Potsdam, general view, Berlin, Germany-LCCN2002713632.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.03,
+    0.98,
+    0.94
+   ],
+   "focal": [
+    0.6,
+    0.6
+   ],
+   "why": "color general view across the Havel; St. Nicholas dome and palace; border and caption trimmed"
+  },
+  {
+   "n": 21,
+   "file": "2025-08-24, Blick über Potsdam von der Garnisonkirche 02.jpg",
+   "y": 2025,
+   "lab": "2025",
+   "what": "View from the Garrison Church tower, photograph",
+   "who": "Edelseider",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.85
+   ],
+   "focal": [
+    0.75,
+    0.35
+   ],
+   "why": "recent view over the center to St. Nicholas Church; foreground roof trimmed"
+  }
+ ],
+ "gaps": "P0, P1: no candidates; P5: only hazy, vignetted 1933 Mittelholzer aerials with no recognizable landmarks",
+ "notes": "#9 is Potsdamer Platz in Berlin and #19 is Potsdam, New York, both excluded. #2 is another Busch view (dated only 'after 1733'); #3 preferred as the finer original print. #5 (1825) considered as a second P3 view but the city is tiny in the distance.",
+ "_reviewed": true
+}

@@ -1,0 +1,71 @@
+{
+ "city": "Novi Sad",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Donau-Ansichten- Ungarn. Stadt Neusatz.jpg",
+   "y": 1826,
+   "lab": "1826",
+   "what": "View from Petrovaradin Fortress across the Danube and the pontoon bridge, lithograph in Donau-Ansichten (Wien Museum)",
+   "who": "Jakob Alt and Adolph Friedrich Kunike",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.12,
+    0.08,
+    0.912,
+    0.865
+   ],
+   "focal": [
+    0.4,
+    0.4
+   ],
+   "why": "general view of the town’s church towers beyond the pontoon bridge; margins, caption and fortress-wall foreground trimmed"
+  },
+  {
+   "n": 6,
+   "file": "Petrovaradin Fortress - 1920s.jpg",
+   "y": 1920,
+   "lab": "about 1920",
+   "what": "Aerial photograph of Petrovaradin Fortress, the bridge and Novi Sad (Historical City Archive Novi Sad)",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    0.84,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "the city spread out across the Danube from the fortress; aircraft rigging at right trimmed"
+  },
+  {
+   "n": 10,
+   "file": "Novi Sad, Petrovaradin, pohled z pevnosti.jpg",
+   "y": 2011,
+   "lab": "2011",
+   "what": "View from Petrovaradin Fortress across the Danube to Novi Sad, photograph",
+   "who": "unknown photographer",
+   "lic": "CC BY 3.0",
+   "event": false,
+   "trim": [
+    0.03,
+    0.08,
+    0.6,
+    0.97
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "the classic view of the city and bridges from the fortress, over the old roofs of Petrovaradin; right half (Petrovaradin only) trimmed"
+  }
+ ],
+ "gaps": "P0–P2: no candidates. P4: only #5, a vaguely dated (‘beginning of the 19th century’) second version of the Alt view. P5 has only the low-resolution #6 besides the 1944 bombing photos.",
+ "notes": "#6 is only 1024 px wide; Commons dates it 1920 and its bridge is the Potiorek Bridge (built 1915), so ‘about 1920’. #10’s Commons artist field holds only a notice text with no name; the CC BY 3.0 credit needs the uploader’s name from the file page. #11 (Bjoertvedt, 2012, hazy aerial of the whole city) is the alternative if a named author is required. #1/#4 show Sremska Kamenica, not Novi Sad; #3 is a crop of #2.",
+ "_reviewed": true
+}

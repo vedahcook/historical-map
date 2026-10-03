@@ -1,0 +1,15 @@
+{
+ "city": "Bath",
+ "checks": [
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "photochrom from Beechen Cliff, border and caption trimmed"
+  },
+  {
+   "n": 18,
+   "verdict": "ok",
+   "reason": "Bath Abbey, 2011, record agrees"
+  }
+ ]
+}

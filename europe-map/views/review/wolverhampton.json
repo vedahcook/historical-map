@@ -1,0 +1,10 @@
+{
+ "city": "Wolverhampton",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "only usable view; St. Peter's tower recognizable; crop clean, record matches"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "city": "Ganja",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "Views of Gəncə; 16:9 crop of a 3.8:1 panorama is about 47% of the width, unavoidable and still high resolution"
+  }
+ ]
+}

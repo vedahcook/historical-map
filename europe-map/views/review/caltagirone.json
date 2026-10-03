@@ -1,0 +1,15 @@
+{
+ "city": "Caltagirone",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "Parboni 1845 view of the town on its ridge; header and caption trimmed, crop clean."
+  },
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "1895 panorama, left half of the spread; gutter excluded, crop shows the domed church."
+  }
+ ]
+}

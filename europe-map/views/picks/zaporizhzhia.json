@@ -1,0 +1,29 @@
+{
+ "city": "Zaporizhzhia",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Khortytsia 2021 G7.jpg",
+   "y": 2021,
+   "lab": "2021",
+   "what": "The Dnieper at the rocky northern tip of Khortytsia Island, photograph",
+   "who": "George Chernilevsky",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.42
+   ],
+   "why": "Khortytsia is the city’s signature landmark; apartment blocks and power lines of the city on the far bank"
+  }
+ ],
+ "gaps": "P0–P5: no candidates",
+ "notes": "Landmark scene rather than a city view; the other candidates (pond, fisheye roof view, small river-bank photo) are weaker. Drop if a true city view is required.",
+ "_reviewed": true
+}

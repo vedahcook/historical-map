@@ -1,0 +1,71 @@
+{
+ "city": "Nancy",
+ "picks": [
+  {
+   "n": 5,
+   "file": "After Jacques Callot, View of Nancy, in or after 1635, NGA 51155.jpg",
+   "y": 1640,
+   "lab": "about 1640",
+   "what": "View of the town with a hunting party, etching after Jacques Callot (National Gallery of Art, Washington)",
+   "who": "after Jacques Callot",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.02,
+    0.035,
+    0.97,
+    0.905
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "the 1617 plate with buildings drawn; old town and ducal palace, new town, bastions; loose sheet, no gutter"
+  },
+  {
+   "n": 4,
+   "file": "Gezicht op Nancy Gezichten op opmerkelijke plaatsen in Italië en Frankrijk (serietitel) Diverses vues d'endroits remarquables d'Italie et de France (serietitel), RP-P-OB-35.133.jpg",
+   "y": 1650,
+   "lab": "about 1650",
+   "what": "Profile of the town, etching (Rijksmuseum)",
+   "who": "Israël Silvestre and Stefano della Bella",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.005,
+    0.54,
+    0.995,
+    0.885
+   ],
+   "focal": [
+    0.57,
+    0.5
+   ],
+   "why": "true general view of the walled town and its spires, under a cartouche held by putti"
+  },
+  {
+   "n": 11,
+   "file": "Gezicht op Nancy, RP-F-2001-7-1627-45.jpg",
+   "y": 1894,
+   "lab": "1891–96",
+   "what": "Place Stanislas and Saint-Epvre from the town hall, photomechanical print (Rijksmuseum)",
+   "who": "unknown photographer",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.192,
+    0.165,
+    0.798,
+    0.818
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "Place Stanislas with the statue, the landmark that says Nancy"
+  }
+ ],
+ "gaps": "P0: none; P3: none; P5–P6: none usable (#13 is the airfield, #17 a garden wall, #14–#16 other places)",
+ "notes": "#4 carries the title of Silvestre’s series “Profil de la ville de Nancy, auquel sont jointes les veuës et perspectives des portes…”; the Rijksmuseum dates another plate of the same series (#6) to 1650, so I dated it about 1650 instead of its loose 1620–64 range. #1 is a perspective plan rather than a view (houses drawn in the old town, blocks in the new town); #2 and #3 are bound copies of the same plate and #7 an 1880s reproduction. #5 (Callot copy, “in or after 1635”) is a nice skyline view but its date is too loose. #10 (1891–96, panorama from Saint-Epvre with the cathedral) is a good alternative to #11. #8 is a whaling boat named Nancy Grey, #15–#16 a Dieppe painting in Nancy’s museum.",
+ "_reviewed": true
+}

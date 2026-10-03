@@ -1,0 +1,20 @@
+{
+ "city": "Rennes",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "Place du Palais and Parliament of Brittany, date per record"
+  },
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "Guesdon bird’s-eye view, crop clean of title and margins"
+  },
+  {
+   "n": 15,
+   "verdict": "drop",
+   "reason": "city is a thin hazy strip at the horizon; no landmark recognizable, weak even at best crop"
+  }
+ ]
+}

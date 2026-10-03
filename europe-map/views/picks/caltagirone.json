@@ -1,0 +1,50 @@
+{
+ "city": "Caltagirone",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Veduta di Caltagirone in Sicilia.jpg",
+   "y": 1845,
+   "lab": "1845",
+   "what": "View of the town on its ridge, engraving in Orografia dell’Italia",
+   "who": "Achille Parboni",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.05,
+    0.11,
+    0.965,
+    0.85
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "general view of the hill town with its churches; header text and caption trimmed"
+  },
+  {
+   "n": 2,
+   "file": "Panorama di Caltagirone (xilografia). a.jpg",
+   "y": 1895,
+   "lab": "1895",
+   "what": "Panorama, wood engraving in Le Cento Città d’Italia",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    0.93,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "detailed panorama over the rooftops to the domed church and Santa Maria del Monte; book gutter at right trimmed; 50 years after the 1845 view"
+  }
+ ],
+ "gaps": "P0–P2: no candidates. P5: none. P6: only close-up rooftop and street shots (#4–#7), no general view.",
+ "notes": "#2 and #3 are the two halves of one panorama across a book spread; #2 (left half) holds the main churches. The ‘Studio Coop inc.’ artist field on #2 is an uploader credit, so the engraver is given as unknown.",
+ "_reviewed": true
+}

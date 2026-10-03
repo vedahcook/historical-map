@@ -1,0 +1,33 @@
+{
+ "city": "Ljubljana",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 5,
+   "verdict": "fix",
+   "fix": {
+    "what": "View from Tivoli Park, oil painting"
+   },
+   "reason": "record calls it an oil painting (Commons categories), not a lithograph, and gives conflicting museum names, so the museum is left out"
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 18,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

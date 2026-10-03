@@ -1,0 +1,10 @@
+{
+ "city": "Rivne",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "Only real skyline view among the four; categorized Views of Rivne; crop is nearly the full picture, so trim is fine; date, author and license match the record."
+  }
+ ]
+}

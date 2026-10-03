@@ -1,0 +1,113 @@
+{
+ "city": "Caen",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Vue de Caen capitale de la Basse Normandie . Vue exécutée par les soins de Philippe Buache, sur les desseins de Mr. de La Londe - btv1b531816318 (1 of 2).jpg",
+   "y": 1747,
+   "lab": "1747",
+   "what": "View of the city from the south, engraving (Bibliothèque nationale de France)",
+   "who": "Philippe Buache after drawings by de La Londe",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.02,
+    0.99,
+    0.82
+   ],
+   "focal": [
+    0.5,
+    0.58
+   ],
+   "why": "full skyline with the abbey and church spires; dated January 1747"
+  },
+  {
+   "n": 8,
+   "file": "William Fowler - Vue de l eglise Saint-Pierre et de l Odon - Caen MBA inv. 395.jpg",
+   "y": 1841,
+   "lab": "1841",
+   "what": "The church of Saint-Pierre and the Odon, painting (Musée des Beaux-Arts de Caen)",
+   "who": "William Fowler",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.47,
+    0.42
+   ],
+   "why": "color; Saint-Pierre’s spire over the river, now covered over"
+  },
+  {
+   "n": 11,
+   "file": "General view, Caen, France-LCCN2001697602.tif",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "General view from the Abbaye aux Dames, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.04,
+    0.955,
+    0.9
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "color view over the roofs, Saint-Gilles in front, Saint-Pierre and Saint-Étienne spires beyond"
+  },
+  {
+   "n": 16,
+   "file": "The British Army in Normandy 1944 B6714.jpg",
+   "y": 1944,
+   "lab": "1944",
+   "what": "The bombed city center, photograph (Imperial War Museum)",
+   "who": "No 5 Army Film and Photographic Unit",
+   "lic": "PD",
+   "event": true,
+   "trim": [
+    0,
+    0.08,
+    0.9,
+    0.96
+   ],
+   "focal": [
+    0.62,
+    0.38
+   ],
+   "why": "only P5 view with a firm date; the ruined center on 9 July 1944"
+  },
+  {
+   "n": 20,
+   "file": "Caen 101009 01.jpg",
+   "y": 2009,
+   "lab": "2009",
+   "what": "The castle and the church of Saint-Pierre, photograph",
+   "who": "Vassil",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.04,
+    1,
+    0.95
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "two landmarks that say Caen in one frame"
+  }
+ ],
+ "gaps": "P0–P1: none; P2 only 1747 (the 1657 Merian item is a flat street plan)",
+ "notes": "#2 is the same 1747 plate with a wider paper margin; #4 is its blank back. #11 and #12 are the same photochrom; #11 is the Library of Congress copy. #15 (station postcard) skipped: dated only ‘before 1914’. #16 is low resolution (1215 px) and marked as an event; the Isabey lithograph of 1832 (#5–#7, the same print in three museums) is a fallback for P3 if the Fowler painting is not wanted.",
+ "_reviewed": true
+}

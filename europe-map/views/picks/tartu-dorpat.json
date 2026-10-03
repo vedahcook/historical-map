@@ -1,0 +1,71 @@
+{
+ "city": "Tartu (Dorpat)",
+ "picks": [
+  {
+   "n": 3,
+   "file": "TKM 4538G,Tartu Ülikooli peahoone, Georg Friedrich Schlater.jpg",
+   "y": 1845,
+   "lab": "1845",
+   "what": "The University main building, lithograph (Tartu Art Museum)",
+   "who": "Georg Friedrich Schlater",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.01,
+    0.975,
+    0.99
+   ],
+   "focal": [
+    0.42,
+    0.5
+   ],
+   "why": "the university’s columned main building, Tartu’s best-known landmark, with St. John’s tower behind; sharp, high resolution"
+  },
+  {
+   "n": 6,
+   "file": "Dorpat vom Dome aus 1860 Höflinger.jpg",
+   "y": 1860,
+   "lab": "1860",
+   "what": "View from the Cathedral Hill, colored lithograph (Tartu University Library)",
+   "who": "Louis Höflinger",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.136,
+    0.19,
+    0.848,
+    0.815
+   ],
+   "focal": [
+    0.53,
+    0.6
+   ],
+   "why": "color general view over the town from Toome Hill; margins, color bar and caption trimmed"
+  },
+  {
+   "n": 13,
+   "file": "The view of Tartu Town Hall from Kaarsild bridge.jpg",
+   "y": 2024,
+   "lab": "2024",
+   "what": "The Town Hall seen from the Kaarsild bridge, photograph",
+   "who": "Wiki Asmah",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.3,
+    1,
+    0.95
+   ],
+   "focal": [
+    0.57,
+    0.5
+   ],
+   "why": "the Town Hall lit at night across the footbridge; portrait photo trimmed to the middle band"
+  }
+ ],
+ "gaps": "P0, P1, P2: nothing; P6 has no skyline or Quality image, only the Town Hall night shot",
+ "notes": "#2 (“Dorpat”, dated 1800) is a modest general view but the round date looks like a guess and the print is weak, so it was not added as a second P3. #1 (1830 river view, ship dominates) and #8 (stone bridge, Karl Anton Schulz, dated only “19th century”) are alternatives. #11 is a worse scan of the same photo as #12. #12 can be dropped if a troop parade is not wanted as the 20th-century view.",
+ "_reviewed": true
+}

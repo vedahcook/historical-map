@@ -1,0 +1,44 @@
+{
+ "city": "Salamanca",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.126,
+     0.05,
+     0.868,
+     0.875
+    ],
+    "focal": [
+     0.55,
+     0.25
+    ]
+   },
+   "reason": "old trim took in a strip of paper margin at the left and right edges; the right tower finial touched the top of the crop, so the window is moved up"
+  },
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.024,
+     0.025,
+     0.978,
+     0.975
+    ],
+    "focal": [
+     0.5,
+     0.3
+    ]
+   },
+   "reason": "old trim took in the photochrom border at left and right, and the focal point cut off the top of the bell tower and its finial; window moved up"
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "view over the old town with the Clerecía towers; credit and license match"
+  }
+ ]
+}

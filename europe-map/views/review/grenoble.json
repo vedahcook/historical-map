@@ -1,0 +1,42 @@
+{
+ "city": "Grenoble",
+ "checks": [
+  {
+   "n": 7,
+   "verdict": "drop",
+   "reason": "1641 is impossible: record names Louis XIV’s privilege (king from 1643) and publisher Pierre Mariette II, so the print is after about 1650 (P2, same period as #11); town is also tiny against the hill"
+  },
+  {
+   "n": 11,
+   "verdict": "fix",
+   "reason": "trim edges sat on the plate frame lines at left and top; title is part of the engraving and stays",
+   "fix": {
+    "trim": [
+     0.03,
+     0.055,
+     0.945,
+     0.87
+    ],
+    "focal": [
+     0.55,
+     0.5
+    ]
+   }
+  },
+  {
+   "n": 13,
+   "verdict": "ok",
+   "reason": "Achard painting 1837, full frame"
+  },
+  {
+   "n": 21,
+   "verdict": "ok",
+   "reason": "dated Rol photo 31 July 1913, crop clean"
+  },
+  {
+   "n": 29,
+   "verdict": "ok",
+   "reason": "general view from the Bastille, hazy but fine"
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "city": "Lutsk",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Luts'k Kafedral'na 6 Kostel Petra i Pavla 11 (YDS 7171).JPG",
+   "y": 2014,
+   "lab": "2014",
+   "what": "Lubart’s Castle towers and the Cathedral of Sts. Peter and Paul over the old town, photograph",
+   "who": "Nataliya Shestakova",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.6
+   ],
+   "why": "old town with the castle towers and the former Jesuit cathedral, both recognizable; sharp, color"
+  }
+ ],
+ "gaps": "P0–P5: no candidates. Only P6 covered.",
+ "notes": "#4 (old town from a height with the Intercession church) is a fair alternate; #1 and #2 are winter panoramas of residential districts.",
+ "_reviewed": true
+}

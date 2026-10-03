@@ -1,0 +1,49 @@
+{
+ "city": "Mechelen",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.07,
+     0.68,
+     0.925,
+     0.93
+    ],
+    "focal": [
+     0.54,
+     0.5
+    ]
+   },
+   "reason": "Crop included the plate frame lines and paper margins above and below the Mechelen strip"
+  },
+  {
+   "n": 7,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.05,
+     0.19,
+     0.968,
+     0.765
+    ],
+    "focal": [
+     0.6,
+     0.5
+    ]
+   },
+   "reason": "Crop included the plate frame line at the top"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "Hanswijk church watercolor, signed 1831"
+  },
+  {
+   "n": 12,
+   "verdict": "ok",
+   "reason": "Labeled Malines, dated 1879; no landmark but acceptable"
+  }
+ ]
+}

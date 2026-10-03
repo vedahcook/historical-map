@@ -1,0 +1,71 @@
+{
+ "city": "Uppsala",
+ "picks": [
+  {
+   "n": 8,
+   "file": "Elias Martin, View of Uppsala Cathedral (1784).jpg",
+   "y": 1784,
+   "lab": "1784",
+   "what": "The cathedral above the Fyris River, painting (Uppsala University collections)",
+   "who": "Elias Martin",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.13,
+    0.21,
+    0.87,
+    0.79
+   ],
+   "focal": [
+    0.62,
+    0.45
+   ],
+   "why": "color view of the cathedral, Gustavianum dome and river bridge; trimmed inside the oval frame"
+  },
+  {
+   "n": 4,
+   "file": "Uppsala aerial view 1940 Cathedral University old town photo.jpg",
+   "y": 1937,
+   "lab": "1934–40",
+   "what": "The cathedral and old town, aerial photograph",
+   "who": "Oscar Bladh",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.4
+   ],
+   "why": "the cathedral’s twin spires over the old town; record gives both 1934 and August 1940"
+  },
+  {
+   "n": 5,
+   "file": "Panorama of Uppsala Slott spring 2009.jpg",
+   "y": 2009,
+   "lab": "2009",
+   "what": "Uppsala Castle, photograph",
+   "who": "Per Enström",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.12,
+    0.05,
+    0.92,
+    0.85
+   ],
+   "focal": [
+    0.51,
+    0.5
+   ],
+   "why": "the castle, the city’s other signature landmark; sharp color; wide-angle sides trimmed"
+  }
+ ],
+ "gaps": "P0, P1: no candidates. P2: the only candidate (#1, Dahlbergh’s Suecia Antiqua) is a partly folded album plate with a fold overlapping the view. P4: nothing with a reliable date.",
+ "notes": "#3 (Auguste Mayer lithograph of the cathedral) is dated only ‘before 1886’; it likely comes from the 1838–40 La Recherche expedition plates (would be a second P3 about 1840), but the record doesn’t say, so it was skipped. #2 (Fahlcrantz, 1820, moonlight) is a darker alternative for P3. #4 is small (1045 px wide). P6 has no general view of the center; #6 (from the Gamla Uppsala mounds) shows the city only as a speck on the horizon.",
+ "_reviewed": true
+}

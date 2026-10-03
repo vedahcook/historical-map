@@ -1,0 +1,113 @@
+{
+ "city": "Oradea",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Theatri praecipvarvm totivs mvndi vrbivm - liber sextvs 1618 (97693279).jpg",
+   "y": 1617,
+   "lab": "1617",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 6",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.2,
+    0.14,
+    0.836,
+    0.66
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "hand-colored, very high resolution; star fortress, town and the Criș river; book page trimmed"
+  },
+  {
+   "n": 7,
+   "file": "Gesamtansicht aus halber Vogelschau 'Gros - Wardein'.jpg",
+   "y": 1687,
+   "lab": "1687",
+   "what": "General view, engraving in Wagner, Christlich- und Türkischer Geschichtsspiegel",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.04,
+    0.06,
+    0.965,
+    0.867
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "fortress with the cathedral towers, the town and the river; numbered key trimmed"
+  },
+  {
+   "n": 11,
+   "file": "Panoramic view Grosswardein Hungary Austro-Hungary.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Photochrom print",
+   "who": "Detroit Publishing Co.",
+   "lic": "CC BY-SA 2.0",
+   "event": false,
+   "trim": [
+    0.09,
+    0.11,
+    0.91,
+    0.85
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "color panorama over the city’s towers; white mount and printed caption trimmed"
+  },
+  {
+   "n": 10,
+   "file": "Nagyvárad 1941, légifotó. Fortepan 31238.jpg",
+   "y": 1941,
+   "lab": "1941",
+   "what": "Aerial photograph (Fortepan)",
+   "who": "unknown photographer",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0.12,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.49,
+    0.5
+   ],
+   "why": "sharp view of the center on the Criș, with Union Square and the bridge; plane wing at lower left trimmed"
+  },
+  {
+   "n": 14,
+   "file": "\"Mihai Eminescu\" High School (rear view from afar) - Oradea.JPG",
+   "y": 2012,
+   "lab": "2012",
+   "what": "Old town roofs with the Mihai Eminescu High School and its church, photograph",
+   "who": "ArnoldPlaton",
+   "lic": "CC BY-SA 3.0 ro",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.72,
+    0.55
+   ],
+   "why": "sharp color view of a historic landmark among the red roofs; the general panoramas are distant and hazy"
+  }
+ ],
+ "gaps": "P0: no candidates. P3: none.",
+ "notes": "#2–#5 are copies of the same Braun and Hogenberg plate (#3 is a bright modern-looking colored copy; #4’s 1550 date is wrong). #7 has two thin vertical fold creases near the middle (a folded book plate, not a two-page gutter); the picture is continuous. #6 (1702 dealer date) shows the fortress on an invented hill, so skipped. #8 (1894) is a stereo pair with a man in the foreground and the city far off. #9 is a Tibor painting dated only ‘before 1945’. #11 is only about 1070 px wide; its Commons date is the 2007 upload, so dated as a photochrom, 1890s. For P6, #12 and #13 are general panoramas from Ciuperca Hill but distant, hazy and without landmarks.",
+ "_reviewed": true
+}

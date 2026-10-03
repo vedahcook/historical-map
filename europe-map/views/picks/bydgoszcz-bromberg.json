@@ -1,0 +1,71 @@
+{
+ "city": "Bydgoszcz (Bromberg)",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Bydgoszcz panorama 1838.jpg",
+   "y": 1838,
+   "lab": "1838",
+   "what": "General view from the hills, colored print",
+   "who": "J. C. Cederholm",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.62,
+    0.55
+   ],
+   "why": "the only early general view; the twin-towered Jesuit church and the Gothic parish church (now the cathedral) are recognizable; low resolution (1031 px)"
+  },
+  {
+   "n": 5,
+   "file": "Pfarr Church, Bromberg, Germany (i.e., Bydgoszcz, Poland)-LCCN2002720698.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Catholic parish church (now the cathedral) on the Brda, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.025,
+    0.975,
+    0.935
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "the town’s oldest landmark, the Gothic Fara church above the Brda rapids; color, landscape format"
+  },
+  {
+   "n": 9,
+   "file": "Panorama of Bydgoszcz from water tower (2).jpg",
+   "y": 2018,
+   "lab": "2018",
+   "what": "The city center with the Opera Nova, photograph from the water tower",
+   "who": "MOs810",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.82
+   ],
+   "focal": [
+    0.45,
+    0.35
+   ],
+   "why": "widest of the modern views: Opera Nova on the Brda and the cathedral’s gable over the center; trimmed the parking lot at the bottom"
+  }
+ ],
+ "gaps": "P0, P1, P2, P5: no candidates.",
+ "notes": "#5 credit: the LOC record names no publisher; the print’s own caption carries the ‘P.Z.’ (Photoglob Zürich) mark. #1 medium not stated on Commons (probably a lithograph). P4 alternatives: St. Paul’s Church on Weltzin Place (#6), Christ Church (#3, #7, portrait), garrison church (#4), the lock on the Bromberg Canal (#2, just trees and water). P6: the four 2018 water-tower shots are hazy telephoto views and not Quality images; #8 (with the university cable-stayed bridge) is the alternative. Modern ‘who’ is the Commons username, the only artist given.",
+ "_reviewed": true
+}

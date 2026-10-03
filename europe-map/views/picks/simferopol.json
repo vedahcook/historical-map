@@ -1,0 +1,29 @@
+{
+ "city": "Simferopol",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Simferopol panorama.jpg",
+   "y": 2013,
+   "lab": "2013",
+   "what": "A city street and square, photograph",
+   "who": "Tiia Monto",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.72,
+    0.5
+   ],
+   "why": "only usable view; the station with its clock tower, the city’s best-known building"
+  }
+ ],
+ "gaps": "P0–P5: no candidates",
+ "notes": "#2 and #3 are fields in the surrounding district; #4 is a playground. #1 is a street scene, not a skyline; drop it if a better modern view turns up.",
+ "_reviewed": true
+}

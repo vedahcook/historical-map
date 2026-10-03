@@ -1,0 +1,15 @@
+{
+ "city": "Burgas",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "street scene of the center, only P5 candidate; date, credit and license match"
+  },
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "general view across Lake Mandra; Commons date is an upload date but photo is from about then"
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "city": "Kherson",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Kherson aerial view 1918 (01).jpg",
+   "y": 1918,
+   "lab": "1918",
+   "what": "The city center from 600 m, aerial photograph taken by the Austrian army",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.47,
+    0.35
+   ],
+   "why": "only usable period view; oblique air view of the gridded center with its squares"
+  },
+  {
+   "n": 4,
+   "file": "View of Kherson and Antonovskiy bridge, 2006.jpg",
+   "y": 2006,
+   "lab": "2006",
+   "what": "The Dnieper and the Antonivskyi Bridge with the city’s eastern edge, aerial photograph from a balloon",
+   "who": "Uaquantum",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "clear color view of the city on the Dnieper with its road bridge"
+  }
+ ],
+ "gaps": "P0–P4: no candidates. P5 has only the 1918 air photo.",
+ "notes": "#2 is low resolution (1187 px wide) and no single landmark stands out. #1 is the same 1918 survey as a pasted mosaic covered with handwritten labels. #4 shows the Antonivka end of the city, not the historic center; the bridge was destroyed in 2022. #6 (2019 drone view of the TV tower) is the alternative for P6.",
+ "_reviewed": true
+}

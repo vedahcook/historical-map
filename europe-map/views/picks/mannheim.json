@@ -1,0 +1,92 @@
+{
+ "city": "Mannheim",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Ansicht von Mannheim-Rhein von 1735 1735 HB15057.jpg",
+   "y": 1735,
+   "lab": "1735",
+   "what": "View across the Rhine, print",
+   "who": "unknown artist",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0.01,
+    0.02,
+    0.99,
+    0.98
+   ],
+   "focal": [
+    0.4,
+    0.42
+   ],
+   "why": "riverfront with the new Baroque palace and church towers"
+  },
+  {
+   "n": 6,
+   "file": "(Mannheim- Die Rheinbrücke - Le Pont du Rhin) - LABW - Generallandesarchiv Karlsruhe J-B Mannheim 47.jpg",
+   "y": 1830,
+   "lab": "about 1830",
+   "what": "The Rhine bridge, engraving (Generallandesarchiv Karlsruhe)",
+   "who": "Ernst Fries and Ludwig Schnell",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0.12,
+    0.195,
+    0.865,
+    0.655
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "view of the town over the pontoon bridge, Jesuit church dome; high resolution"
+  },
+  {
+   "n": 12,
+   "file": "Gesamtansicht aus der Vogelperspektive - LABW - Generallandesarchiv Karlsruhe J-B Mannheim 18.jpg",
+   "y": 1899,
+   "lab": "1899",
+   "what": "Bird’s-eye view, color print (Generallandesarchiv Karlsruhe)",
+   "who": "Carl Grote",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0.123,
+    0.17,
+    0.88,
+    0.85
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "colored bird’s-eye view of the grid city between Rhine and Neckar"
+  },
+  {
+   "n": 19,
+   "file": "MannheimWasserturm2018-09-01-15-32-59.jpg",
+   "y": 2018,
+   "lab": "2018",
+   "what": "The city center around the water tower, aerial photograph",
+   "who": "Rolf Kickuth",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.47
+   ],
+   "why": "water tower, Friedrichsplatz and TV tower recognizable"
+  }
+ ],
+ "gaps": "P0: nothing; P1: only Merian fortress ground plans; P5: Mittelholzer aerials flagged as misfiled, nothing else usable",
+ "notes": "Trim on #12 cuts the decorative border; some corner ornament may remain at the edges.",
+ "_reviewed": true
+}

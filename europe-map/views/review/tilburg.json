@@ -1,0 +1,9 @@
+{
+ "city": "Tilburg",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "ok"
+  }
+ ]
+}

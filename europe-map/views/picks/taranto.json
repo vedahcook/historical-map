@@ -1,0 +1,113 @@
+{
+ "city": "Taranto",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Gezicht op de vestingwerken van Tarente Vue de la citadelle de Tarente Voyage en Italie, en Sicile et à Malte - 1778 (serietitel), RP-T-00-492-86.jpg",
+   "y": 1778,
+   "lab": "1778",
+   "what": "The old town and its walls from the shore, watercolor (Rijksmuseum)",
+   "who": "Louis Ducros",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.025,
+    0.115,
+    0.975,
+    0.9
+   ],
+   "focal": [
+    0.36,
+    0.55
+   ],
+   "why": "color view of the walled old town with tower, domes and moored boats; sheet margins trimmed"
+  },
+  {
+   "n": 1,
+   "file": "Veduta della città di Taranto, nella provincia di Otranto.jpg",
+   "y": 1845,
+   "lab": "1845",
+   "what": "View of the city, engraving in the Atlante illustrativo (Milan)",
+   "who": "A. De Vegni",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.032,
+    0.062,
+    0.954,
+    0.882
+   ],
+   "focal": [
+    0.68,
+    0.55
+   ],
+   "why": "general view of the old town island across the water with the bridge and towers; caption trimmed"
+  },
+  {
+   "n": 6,
+   "file": "Taranto – Veduta presa da Porta Napoli (xilografia).jpg",
+   "y": 1899,
+   "lab": "1899",
+   "what": "The old town from Porta Napoli, wood engraving in Le cento città d’Italia",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.62,
+    0.35
+   ],
+   "why": "panorama of the old town waterfront on the Mar Piccolo, cathedral dome on the skyline"
+  },
+  {
+   "n": 11,
+   "file": "View of Taranto (Italy) c1968.jpg",
+   "y": 1968,
+   "lab": "about 1968",
+   "what": "Aerial photograph of the old town and the canal (U.S. Navy)",
+   "who": "U.S. Navy",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "old town island with the castle, the navigable canal and the new town"
+  },
+  {
+   "n": 15,
+   "file": "Taranto - View from Porto Mercantile.jpg",
+   "y": 2025,
+   "lab": "2025",
+   "what": "The old town from the harbor, photograph",
+   "who": "Benjamin Smith",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.08,
+    1,
+    0.52
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "recent color view of the old town waterfront; trimmed to cut most of the foreground boats"
+  }
+ ],
+ "gaps": "P0, P1, P2: no candidates.",
+ "notes": "Two P3 views (1778 and 1845, 67 years apart). P4 alternatives: #9 (1898, castle and swing bridge, Barberis) and #8. P5 alternative: #13 (1930 Touring Club postcard of the castle and swing bridge, small). P6 is modest: no skyline or Quality photo; #14 is the city as a thin strip seen from a warship, #16 a high-altitude airliner shot.",
+ "_reviewed": true
+}

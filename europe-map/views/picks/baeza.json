@@ -1,0 +1,29 @@
+{
+ "city": "Baeza",
+ "picks": [
+  {
+   "n": 2,
+   "file": "View over Baeza - 27651987925.jpg",
+   "y": 2015,
+   "lab": "2015",
+   "what": "View over the old town’s roofs, photograph",
+   "who": "Falling Outside The Normal Moral Constraints",
+   "lic": "CC BY 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0.3,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "stone roofs of the historic center from a tower; sun glare trimmed off"
+  }
+ ],
+ "gaps": "P0–P5: no candidates",
+ "notes": "Only four candidates, all 2015 photos from one Flickr user. #1 is shot through a window grille; #3 shows mainly newer whitewashed houses; #4 is the olive-grove landscape outside town. No landmark (cathedral, Plaza del Pópulo) is prominent in any of them.",
+ "_reviewed": true
+}

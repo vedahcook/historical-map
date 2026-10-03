@@ -1,0 +1,50 @@
+{
+ "city": "Waterford",
+ "picks": [
+  {
+   "n": 6,
+   "file": "From northwest, Waterford. County Waterford, Ireland-LCCN2002717445.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The city across the River Suir from the northwest, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.022,
+    0.975,
+    0.935
+   ],
+   "focal": [
+    0.55,
+    0.62
+   ],
+   "why": "color general view of the quays, the old bridge and the town’s spires across the Suir; border and caption trimmed"
+  },
+  {
+   "n": 8,
+   "file": "Waterford Ireland 2003.JPG",
+   "y": 2003,
+   "lab": "2003",
+   "what": "Street in the city center, photograph",
+   "who": "Kotivalo",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "only modern photograph of the city itself; Georgian shopfronts and a domed tower, taken June 2003 (date field is the upload)"
+  }
+ ],
+ "gaps": "P0–P3: nothing; P5: nothing",
+ "notes": "#5 (from the east, 1890s) is an equally good photochrom alternative to #6; #3 and #4 are quay scenes. #1, #2 are Cappoquin and Dunmore in County Waterford, not the city. #7 is Waterford, Pennsylvania. #9 is countryside from the Comeragh Mountains. #8 is a plain street scene with parked cars; drop it if a stronger modern view is wanted.",
+ "_reviewed": true
+}

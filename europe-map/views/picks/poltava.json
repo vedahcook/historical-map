@@ -1,0 +1,71 @@
+{
+ "city": "Poltava",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Вигляд Олександрівського майдану в Полтаві.jpg",
+   "y": 1808,
+   "lab": "1808",
+   "what": "Alexander Square (the Round Square) with the Glory Monument, colored engraving",
+   "who": "Fyodor Alekseyev and Kuzma Chesky",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.82
+   ],
+   "focal": [
+    0.53,
+    0.6
+   ],
+   "why": "the city’s planned main square and its column, Poltava’s landmark; caption trimmed off"
+  },
+  {
+   "n": 7,
+   "file": "Poltava. Great Synagogue & Misnagdim Synagogue (02).jpg",
+   "y": 1901,
+   "lab": "1901",
+   "what": "Rooftop view with the Great Synagogue, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.2,
+    0.99,
+    0.98
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "general view over the town center; printed title trimmed off"
+  },
+  {
+   "n": 10,
+   "file": "Aerial view on the Local history museum in Poltava, Ukraine - 4.jpg",
+   "y": 2016,
+   "lab": "2016",
+   "what": "Aerial view of the center with the former zemstvo building (local history museum), photograph",
+   "who": "Maksim Bondarevsky",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.55
+   ],
+   "why": "color general view of the city center"
+  }
+ ],
+ "gaps": "P0–P2, P5: no candidates",
+ "notes": "#1–#4 are two impressions of the same Alekseyev view (1808 and 1809) plus cropped copies; #2 has the brightest color. All are small (about 1300 px wide). The engraving shows the Glory Monument, which was only unveiled in 1811. #6 (1899) is a similar rooftop view to #7; #5 is a postcard with a wrong caption. #9 (Holy Cross Monastery, 2013) is an alternative P6 landmark view but hazy.",
+ "_reviewed": true
+}

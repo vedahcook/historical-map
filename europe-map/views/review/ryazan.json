@@ -1,0 +1,16 @@
+{
+ "city": "Ryazan",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.66,
+     0.5
+    ]
+   },
+   "reason": "focal 0.36 puts the 16:9 crop (about a quarter of the banner width) across the bell tower's right half and cuts the cathedral's right dome; 0.66 frames the Dormition Cathedral and the Church of the Holy Spirit. Cross tips touch the top edge in the source itself and cannot be fixed; #2-#4 are not better"
+  }
+ ]
+}

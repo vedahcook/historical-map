@@ -1,0 +1,10 @@
+{
+ "city": "Khmelnytskyi",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "Best available; #1 is Zinkiv, #3 and #4 show nothing recognizable. Very wide strip, so a 16:9 crop is about 39% of the width, but the building sits fully inside it. The tower tip touches the top edge of the original photo (cannot be fixed by cropping)."
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "city": "Braunschweig",
+ "checks": [
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "B&H vol. 1 plate (1572), top panel only; narrow strip so crop is tight but legible; plate title letters in sky are part of the engraving"
+  },
+  {
+   "n": 11,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.152,
+     0.175,
+     0.857,
+     0.772
+    ]
+   },
+   "reason": "left edge of crop catches a white strip and a dark frame line; view, cartouche and about-1720 estimate (record: after 1711) are acceptable"
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "Poppel steel engraving about 1840 of Fallersleber Straße and the Katharinenkirche; record matches"
+  },
+  {
+   "n": 20,
+   "verdict": "ok",
+   "reason": "photochrom general view, crop clean"
+  }
+ ]
+}

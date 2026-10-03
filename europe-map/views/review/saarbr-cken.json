@@ -1,0 +1,22 @@
+{
+ "city": "Saarbrücken",
+ "checks": [
+  {
+   "n": 6,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.078,
+     0.126,
+     0.752,
+     0.455
+    ],
+    "focal": [
+     0.5,
+     0.4
+    ]
+   },
+   "reason": "crop cut off the tower top, showed half of the engraved title and both frame lines; new crop keeps the tower and the whole title, only the foot of the castle is cut"
+  }
+ ]
+}

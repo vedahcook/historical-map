@@ -1,0 +1,50 @@
+{
+ "city": "Novorossiysk",
+ "picks": [
+  {
+   "n": 6,
+   "file": "Новороссийск после освобождения.jpg",
+   "y": 1943,
+   "lab": "1943",
+   "what": "The city in ruins after its liberation, photograph",
+   "who": "Vladimir Nikolayevich Ivanov",
+   "lic": "PD",
+   "event": true,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "only general view before modern times; ruined town along Tsemes Bay, September 1943"
+  },
+  {
+   "n": 8,
+   "file": "Вид на Новороссийск,Россия.jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The city and port across Tsemes Bay, photograph",
+   "who": "Nadiaa1995",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0.08,
+    0.9,
+    1
+   ],
+   "focal": [
+    0.48,
+    0.45
+   ],
+   "why": "general view from the hills: harbor piers in front, city along the far shore"
+  }
+ ],
+ "gaps": "P0–P4: nothing; P5: only the 1943 ruins (event)",
+ "notes": "#1 (1839) and #2 (1855) by Edmund Spencer show the empty bay of Sudzhuk-Kale before the town was founded in 1838 (Spencer traveled there in 1836), so they are not views of the city. #3–#5 are warships in the harbor with no town in view. #9 is a crop of #7; #7 is an embankment panorama, weaker than #8.",
+ "_reviewed": true
+}

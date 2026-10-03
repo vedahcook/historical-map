@@ -1,0 +1,29 @@
+{
+ "city": "Piazza Armerina",
+ "picks": [
+  {
+   "n": 4,
+   "file": "L'Etna vista da Monte Mangone con vista sul centro storico di Piazza Armerina.jpg",
+   "y": 2022,
+   "lab": "2022",
+   "what": "The old town and cathedral with Mount Etna behind, photograph from Monte Mangone",
+   "who": "Shark94015",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "the domed cathedral rising over the historic center, sharp and recognizable"
+  }
+ ],
+ "gaps": "P0–P5: no candidates.",
+ "notes": "#4 is heavily color-graded and dark; #3 (2014, the town’s skyline with the cathedral dome seen across the valley) is a plainer alternative. #1 and #2 are close street-level views of houses.",
+ "_reviewed": true
+}

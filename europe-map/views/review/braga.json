@@ -1,0 +1,20 @@
+{
+ "city": "Braga",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "drop",
+   "reason": "a plan, not a view: Commons calls it a map; blocks are drawn flat from above with only the walls and a few buildings in elevation, and the crop is full of key boxes, cartouche and title text (also, first publication was vol. 5, 1598, not 1594)"
+  },
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

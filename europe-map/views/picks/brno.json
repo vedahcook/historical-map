@@ -1,0 +1,113 @@
+{
+ "city": "Brno (Brünn)",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Brunn vulgo Brinn marchionatus Moraviae civitas insignis - Ex depicto aliorum communicat Georgius Houfnaglius 1617 - btv1b532385976 (2 of 3).jpg",
+   "y": 1617,
+   "lab": "1617",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 6",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.052,
+    0.982,
+    0.72
+   ],
+   "focal": [
+    0.48,
+    0.42
+   ],
+   "why": "true view after Georg Hoefnagel: Špilberk castle on its hill, the walled town and the tall church spires; high resolution (BnF copy of the 1635 printing); trimmed frame and the key box"
+  },
+  {
+   "n": 10,
+   "file": "View of Brno in the year 1700.jpg",
+   "y": 1700,
+   "lab": "about 1700",
+   "what": "Bird’s-eye view of the fortified town, engraving",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.28,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.35
+   ],
+   "why": "the baroque fortress town under the Špilberk citadel with the cathedral and St. James’s spires; trimmed the cartouches and clouds above"
+  },
+  {
+   "n": 12,
+   "file": "Brno in 1850 by Franz Xaver Sandmann.jpg",
+   "y": 1850,
+   "lab": "about 1850",
+   "what": "General view across the Svratka, colored lithograph",
+   "who": "Franz Xaver Sandmann",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.2,
+    1,
+    1
+   ],
+   "focal": [
+    0.38,
+    0.4
+   ],
+   "why": "color panorama with Špilberk, the cathedral’s towers and the river bridge; trimmed some empty sky"
+  },
+  {
+   "n": 17,
+   "file": "Látkép, háttérben a Spilberk vár. Fortepan 7761.jpg",
+   "y": 1958,
+   "lab": "1958",
+   "what": "Staré Brno and Špilberk Castle, photograph (Fortepan)",
+   "who": "Fortepan / Gyöngyi",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0.05,
+    1,
+    0.85
+   ],
+   "focal": [
+    0.5,
+    0.3
+   ],
+   "why": "the castle on its wooded hill above the houses of Old Brno; trimmed the foliage in front"
+  },
+  {
+   "n": 20,
+   "file": "Brno (panorama).jpeg",
+   "y": 2009,
+   "lab": "2009",
+   "what": "Panorama over the center from a rooftop, photograph",
+   "who": "DaBler",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    0.55,
+    1
+   ],
+   "focal": [
+    0.73,
+    0.45
+   ],
+   "why": "the twin spires of the Cathedral of Sts. Peter and Paul and Špilberk castle over the old-town roofs; kept the half of the panorama with the landmarks"
+  }
+ ],
+ "gaps": "P0: no candidates. P3: nothing usable (the Sandmann lithograph is about 1850, counted in P4).",
+ "notes": "#1 is the 1617 plate (vol. 6), here in a 1635 printing; #4 is a lower-quality cropped copy. #10: Commons gives only ‘circa 1700’ and no maker; its style (title banner held by angels, numbered key lists in the upper corners) suggests an Augsburg print of about 1700–1720, still within P2. P1 alternative: the painted veduta of the Swedish siege of 1645 (#3, colored, an event view; #2 full canvas; #5/#6 details). P2 others: Merian plans (#7, #8) are maps; #9 is the Carthusian monastery in Královo Pole only. #11 is Veveří Castle outside the city. #13 is a black-and-white copy of the same Sandmann view. P5 alternatives: #16 (1959, roofs from the Old Town Hall tower, sharp but few landmarks), #14 (1968, hazy). P6: #18, #19, #21 show outer districts.",
+ "_reviewed": true
+}

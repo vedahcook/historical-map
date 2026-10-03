@@ -1,0 +1,43 @@
+{
+ "city": "Rostock",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "colored B&H vol. 5 panorama; 1598 per volume rule; crop good"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "clean Merian prospect; faint fold line in the sky at the center is inside the crop but only slightly visible, and removing it would zoom below half width"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "Kersting painting of Rostock; crop good"
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "photochrom skyline, correct city; crop good"
+  },
+  {
+   "n": 23,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.012,
+     0.035,
+     0.95,
+     1
+    ]
+   },
+   "reason": "dark negative edge strip at the left (first ~1% of width) is inside the crop; scratch line across the negative remains but acceptable"
+  },
+  {
+   "n": 27,
+   "verdict": "ok",
+   "reason": "sharp color aerial of the old town and harbor; crop good"
+  }
+ ]
+}

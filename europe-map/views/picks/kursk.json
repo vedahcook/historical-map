@@ -1,0 +1,29 @@
+{
+ "city": "Kursk",
+ "picks": [
+  {
+   "n": 1,
+   "file": "City center of Kursk.jpg",
+   "y": 2020,
+   "lab": "2020",
+   "what": "Aerial photograph of the city center",
+   "who": "BKDRF",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "clear drone view over the center; the only usable candidate"
+  }
+ ],
+ "gaps": "P0–P5: no candidates",
+ "notes": "#3 is the nuclear power plant in Kurchatov, not Kursk; #2 is a small view of a river valley on the outskirts; #4 is a high-altitude aerial.",
+ "_reviewed": true
+}

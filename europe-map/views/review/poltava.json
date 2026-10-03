@@ -1,0 +1,20 @@
+{
+ "city": "Poltava",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "good"
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "good"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "good"
+  }
+ ]
+}

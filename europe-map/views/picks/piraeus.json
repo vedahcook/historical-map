@@ -1,0 +1,50 @@
+{
+ "city": "Piraeus",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Grèce. Port du Piree. Passa Limani LCCN2017658133.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The town over Pasalimani harbor, photochrom print (Library of Congress)",
+   "who": "Photoglob Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.016,
+    0.02,
+    0.984,
+    0.975
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "color general view from the hill, both harbors and the town"
+  },
+  {
+   "n": 6,
+   "file": "ETH-BIB-Luftbild von Piräus-Abessinienflug 1934-LBS MH02-22-0010.tif",
+   "y": 1934,
+   "lab": "1934",
+   "what": "Aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.06,
+    0.03,
+    0.86,
+    0.72
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "the whole town with Pasalimani and the main harbor; trim drops the dark edge and the plane’s fuselage"
+  }
+ ],
+ "gaps": "P0–P3: nothing usable. P6: nothing usable.",
+ "notes": "#1 (Rørbye 1844) is a Parthenon scene with Piraeus only on the horizon. #4 is an albumen print dated 1850 by the library, which looks like a placeholder date, so skipped. #3 is the second 1890s photochrom (harbor and town hall). P6 candidates (#10–#12, from Philopappos Hill) mostly show Athens with Piraeus far on the horizon; #9 is a ferry deck. #11 could serve as a weak fallback.",
+ "_reviewed": true
+}

@@ -1,0 +1,92 @@
+{
+ "city": "Trapani",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Braun Trapani UBHD.jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "View from the sea, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.22,
+    0.975,
+    0.91
+   ],
+   "focal": [
+    0.67,
+    0.5
+   ],
+   "why": "colored, clean copy of the Drepanum strip; walled town on its sickle-shaped spit; frame trimmed"
+  },
+  {
+   "n": 10,
+   "file": "Gezicht op Trapani vanaf de grote haven Vue de la ville de Trapani, prise du Grand Port (titel op object) Voyage en Italie, en Sicile et à Malte - 1778 (serietitel), RP-T-00-494-64B.jpg",
+   "y": 1778,
+   "lab": "1778",
+   "what": "View from the Grand Port, watercolor (Rijksmuseum)",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.005,
+    0.17,
+    0.99,
+    0.965
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "color panorama of the walled sea front and domes with Monte San Giuliano behind; pencil inscription in the sky trimmed"
+  },
+  {
+   "n": 12,
+   "file": "BAAG-StAAG Trapani-1890 F.MG-0869.tif",
+   "y": 1890,
+   "lab": "1890",
+   "what": "The town and Monte San Giuliano across the water, photograph (Staatsarchiv Aargau)",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.12,
+    0.13,
+    0.69,
+    0.727
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "early photograph of the skyline with the cathedral dome below the mountain; mount, labels and color card trimmed"
+  },
+  {
+   "n": 17,
+   "file": "TrapaniIsoleEgadi.jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The city on its peninsula seen from above, with the Egadi Islands, photograph",
+   "who": "Ziegler175",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.65
+   ],
+   "why": "classic view from above of the whole city, harbor and the Egadi Islands"
+  }
+ ],
+ "gaps": "P0: none. P2: none. P5: none.",
+ "notes": "The 1778 watercolor is from the album ‘Voyage en Italie, en Sicile et à Malte’ (Niemeijer and De Booy 351); the album is mostly credited to Louis Ducros, but the record names no artist for this sheet, so it is given as unknown. It is drawn on three joined sheets with faint seams. B&H alternatives: #1 (1645 colored loose plate, higher resolution but torn through the Trapani strip), #3 (1582 German edition, book gutter through the view), #2 and #4 (uncolored; #4 is Palermo only). #7 (Parboni, 1845) shows the town only as a speck far off on the plain. #8 and #9 show the castle at Erice, not Trapani. #11 (1882) is a page of small vignettes. #13 (1891 wood engraving) copies the 1890 photograph. #14 (De Maria Bergler painting) is dated only ‘before 1900’. #16 and #18 are aerials of San Vito Lo Capo and Favignana; #15 is a wide 2023 seafront panorama, a possible P6 alternative.",
+ "_reviewed": true
+}

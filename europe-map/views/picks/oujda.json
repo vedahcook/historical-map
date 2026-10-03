@@ -1,0 +1,29 @@
+{
+ "city": "Oujda",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Oujda vue générale 004.JPG",
+   "y": 2010,
+   "lab": "2010",
+   "what": "General view from the N6 road, photograph",
+   "who": "Moonik",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.62
+   ],
+   "why": "wide view of the city with minaret and mountains in warm evening light"
+  }
+ ],
+ "gaps": "P0–P5: no candidates",
+ "notes": "",
+ "_reviewed": true
+}

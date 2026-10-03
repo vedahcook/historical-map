@@ -1,0 +1,50 @@
+{
+ "city": "Aix-en-Provence",
+ "picks": [
+  {
+   "n": 2,
+   "file": "View of Aix-en-Provence MET DP319101.jpg",
+   "y": 1782,
+   "lab": "1773–92",
+   "what": "View from the countryside, wash drawing (Metropolitan Museum of Art)",
+   "who": "Jean-Antoine Constantin",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.022,
+    0.02,
+    0.975,
+    0.97
+   ],
+   "focal": [
+    0.45,
+    0.55
+   ],
+   "why": "true general view; the town walls and the spire of Saint-Sauveur on the skyline"
+  },
+  {
+   "n": 4,
+   "file": "Gezicht op het Place des Prêcheurs te Aix-en-Provence, RP-F-F06336.jpg",
+   "y": 1869,
+   "lab": "1862–76",
+   "what": "The Place des Prêcheurs with the obelisk fountain and the Madeleine church, stereo photograph (Rijksmuseum)",
+   "who": "probably Jean Andrieu",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.085,
+    0.1,
+    0.49,
+    0.88
+   ],
+   "focal": [
+    0.65,
+    0.55
+   ],
+   "why": "left half of the stereo pair; a central square with its fountain, clearly labeled Aix"
+  }
+ ],
+ "gaps": "P0–P2: none; P5: none; P6: only astronaut photos from orbit",
+ "notes": "#1 and #2 are two photographs of the same Constantin drawing (MET dates it about 1773–92); #2 is the larger, cleaner copy. #3 (photochrom of the Saint-Sauveur cloister) is a color alternative for P4 but low resolution and only a cloister walk. #5 is Cézanne’s Jas de Bouffan, a country house outside town. #6–#9 are ISS photos where the city is a smudge.",
+ "_reviewed": true
+}

@@ -1,0 +1,41 @@
+{
+ "city": "Mulhouse",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.004,
+     0.005,
+     0.992,
+     0.99
+    ]
+   },
+   "reason": "true B&H view (vol. 6, 1617); scan edge lines show on right and bottom edges"
+  },
+  {
+   "n": 10,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.047,
+     0.05,
+     0.953,
+     0.635
+    ]
+   },
+   "reason": "right view, but old trim includes paper margin and the plate frame line at top and left"
+  },
+  {
+   "n": 12,
+   "verdict": "ok",
+   "reason": "Mulhouse general view, 1842 per record; clean edges"
+  },
+  {
+   "n": 17,
+   "verdict": "ok",
+   "reason": "photochrom view from the south; trim clears border and caption"
+  }
+ ]
+}

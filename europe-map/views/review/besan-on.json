@@ -1,0 +1,25 @@
+{
+ "city": "Besançon",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "good"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "good"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "good"
+  },
+  {
+   "n": 22,
+   "verdict": "ok",
+   "reason": "good"
+  }
+ ]
+}

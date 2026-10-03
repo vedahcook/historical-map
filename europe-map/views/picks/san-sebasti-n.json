@@ -1,0 +1,113 @@
+{
+ "city": "San Sebastián",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Braun Donostia-San Sebastián UBHD.jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.065,
+    0.975,
+    0.945
+   ],
+   "focal": [
+    0.53,
+    0.5
+   ],
+   "why": "colored view of the walled town below Monte Urgull with the bay and Santa Clara island; single strip, no gutter"
+  },
+  {
+   "n": 7,
+   "file": "San Sebastian-galeria.jpg",
+   "y": 1846,
+   "lab": "1846",
+   "what": "View from the Loyola side, lithograph in Galería Militar Contemporánea",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.085,
+    0.13,
+    0.765,
+    0.845
+   ],
+   "focal": [
+    0.67,
+    0.5
+   ],
+   "why": "the rebuilt town under Monte Urgull with the bay and Igueldo; right edge trimmed to remove a red library stamp"
+  },
+  {
+   "n": 11,
+   "file": "The beach, San Sebastián, Spain-LCCN2001699364.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "La Concha beach, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.02,
+    0.98,
+    0.93
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "color view of La Concha beach and its promenade; the LOC public-domain copy of the same print as #9"
+  },
+  {
+   "n": 16,
+   "file": "Vista de San Sebastián (15855170640).jpg",
+   "y": 1962,
+   "lab": "1962",
+   "what": "Aerial photograph of La Concha Bay from Monte Igueldo (Dirección General de Turismo archive)",
+   "who": "Fotografías Aéreas",
+   "lic": "CC BY-SA 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.35
+   ],
+   "why": "the whole bay with Santa Clara island, the beach and the city behind"
+  },
+  {
+   "n": 20,
+   "file": "San Sebastian Panorama Igeldo 001.jpg",
+   "y": 2016,
+   "lab": "2016",
+   "what": "Panorama from Monte Igueldo, photograph",
+   "who": "Spike",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.05,
+    0,
+    0.72,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "classic view of the bay with Santa Clara island, Monte Urgull and the city; very high resolution"
+  }
+ ],
+ "gaps": "P0: nothing; P2: nothing",
+ "notes": "#1 (Rijksmuseum copy of the 1572 view) is an album sheet with a large hand-painted sky added above the view; the Heidelberg copy #4 chosen instead. #2, #3 and #6 are full plates or text pages shared with Burgos. #13 is Cádiz (seen from its San Sebastián lighthouse) and #19 is San Sebastián de La Gomera, both excluded. #18 is a duplicate photochrom. #7 is low resolution (1200 px) but the only view between 1572 and the 1890s.",
+ "_reviewed": true
+}

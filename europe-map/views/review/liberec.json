@@ -1,0 +1,29 @@
+{
+ "city": "Liberec",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.012,
+     0.15,
+     0.982,
+     0.95
+    ]
+   },
+   "reason": "photochrom border: white margin and dark edge line at left and right sides are inside the old trim"
+  },
+  {
+   "n": 7,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.52,
+     0.4
+    ]
+   },
+   "reason": "tip of the green town hall spire touches the top edge of the 16:9 window at focal y 0.45"
+  }
+ ]
+}

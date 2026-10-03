@@ -1,0 +1,113 @@
+{
+ "city": "Dunkirk",
+ "picks": [
+  {
+   "n": 3,
+   "file": "View of Dunkerque in 1575.jpg",
+   "y": 1575,
+   "lab": "1575",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 2",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.52,
+    0.4
+   ],
+   "why": "colored view across the harbor, the Saint-Éloi tower and town walls; already cut from the plate"
+  },
+  {
+   "n": 10,
+   "file": "Planche 54 du volume VI comprenant une vue de Dunkerque et un plan d'Ostende - btv1b532115723 (2 of 4).jpg",
+   "y": 1650,
+   "lab": "about 1650",
+   "what": "View from the dunes, engraving",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.035,
+    0.105,
+    0.962,
+    0.902
+   ],
+   "focal": [
+    0.3,
+    0.5
+   ],
+   "why": "only 17th-century view; skyline with the tower and windmills seen from the dunes"
+  },
+  {
+   "n": 15,
+   "file": "General view, Dunkirk, France-LCCN2001698117.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The quays with the belfry, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.04,
+    0.05,
+    0.955,
+    0.94
+   ],
+   "focal": [
+    0.4,
+    0.5
+   ],
+   "why": "color; broad view of the harbor square and fishing fleet, belfry on the skyline"
+  },
+  {
+   "n": 20,
+   "file": "Panoramic view of Dunkirk Harbour by Paul Nydegger.jpg",
+   "y": 1914,
+   "lab": "1914",
+   "what": "View over the harbor to the town, photograph (Le Miroir)",
+   "who": "Paul Nydegger",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.35
+   ],
+   "why": "general view from a height, docks in front, belfry and town hall tower on the skyline"
+  },
+  {
+   "n": 24,
+   "file": "Panorama Dunkerque 7601-07.jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The town center and harbor from a height, photograph",
+   "who": "Raimond Spekking",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.2,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.54,
+    0.5
+   ],
+   "why": "high-resolution panorama with the town hall tower and the belfry"
+  }
+ ],
+ "gaps": "P0: none; P3: nothing with a firm date",
+ "notes": "#10: Merian workshop plate pasted into Gaston d’Orléans’s collection (assembled before 1660); BnF dates it only 17th century, so labeled about 1650. #11/#12 (Royer/Duflos ‘Vue de Dunkerque du côté de la mer’, dedicated to the duc de Penthièvre) and #13 (British School painting, low resolution) are 18th-century views with no firm date; a reviewer who can date #11 could use it for P2/P3. #16 (Place Jean Bart photochrom) is a good alternative to #15. #21 postcard dated only ‘before 1914’. #22/#23 are Dunkirk, New York (generating plant on Lake Erie), not this city.",
+ "_reviewed": true
+}

@@ -1,0 +1,33 @@
+{
+ "city": "Oran",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.01,
+     0.05,
+     0.99,
+     0.88
+    ]
+   },
+   "reason": "top frame line of the plate was inside the crop"
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "good view, crop and fields agree with the record"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "good view, crop and fields agree with the record"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "night view with a lot of dark sky but the best recent general view"
+  }
+ ]
+}

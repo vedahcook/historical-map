@@ -1,0 +1,29 @@
+{
+ "city": "Voronezh",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Voronezh city view.jpg",
+   "y": 2015,
+   "lab": "2015",
+   "what": "View across the Voronezh Reservoir, photograph",
+   "who": "Sergey Zolotykh",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.62,
+    0.38
+   ],
+   "why": "color view across the water; Annunciation Cathedral and Chernavsky Bridge recognizable"
+  }
+ ],
+ "gaps": "P0–P5: no candidates",
+ "notes": "Other candidates are a quarry panorama and park scenes, not city views.",
+ "_reviewed": true
+}

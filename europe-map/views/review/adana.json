@@ -1,0 +1,10 @@
+{
+ "city": "Adana",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "only period view; skyline with minarets is small but identifiable"
+  }
+ ]
+}

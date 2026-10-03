@@ -1,0 +1,113 @@
+{
+ "city": "Norwich",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Nordovicum, Angliae civitas - btv1b53178992f (1 of 2).jpg",
+   "y": 1581,
+   "lab": "1581",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 3",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.12,
+    0.14,
+    0.88,
+    0.66
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "colored bird’s-eye view with buildings drawn; castle and cathedral; margins trimmed"
+  },
+  {
+   "n": 9,
+   "file": "Dutch School - View of Norwich - NWHCM , 1967.341 , F - Norfolk Museums Collections.jpg",
+   "y": 1707,
+   "lab": "1707",
+   "what": "View with the castle and cathedral, painting (Norfolk Museums)",
+   "who": "unknown Dutch artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.62
+   ],
+   "why": "color general view; castle keep and cathedral spire clearly recognizable"
+  },
+  {
+   "n": 15,
+   "file": "Norwich. Castle & Cattle Market LCCN2017659730.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The castle and cattle market, photochrom print (Library of Congress)",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.02,
+    0.98,
+    0.93
+   ],
+   "focal": [
+    0.55,
+    0.3
+   ],
+   "why": "color landmark scene with the castle keep; border and caption trimmed"
+  },
+  {
+   "n": 20,
+   "file": "A Literary Pilgrim in England - NORWICH FROM MOUSEHOLD HEATH.jpg",
+   "y": 1917,
+   "lab": "1917",
+   "what": "View from Mousehold Heath, painting in Edward Thomas’s A Literary Pilgrim in England",
+   "who": "Walter Dexter",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.94
+   ],
+   "focal": [
+    0.42,
+    0.38
+   ],
+   "why": "color general view with the cathedral spire; signature trimmed"
+  },
+  {
+   "n": 21,
+   "file": "Norwich Cathedral from Cloisters 2, Norfolk, UK - Diliff.jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The cathedral from the cloisters, photograph",
+   "who": "David Iliff",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.34
+   ],
+   "why": "high-quality recent photo of the city’s main landmark"
+  }
+ ],
+ "gaps": "P0: only a Nuremberg Chronicle scene of William of Norwich, not a view; P3: nothing usable",
+ "notes": "#10 and #11 (Fitz Henry Lane, 1849) show Norwich, Connecticut; #23 is also Norwich, Connecticut, all excluded. #15: LOC dates it 1890, shown as 1890s. #24 (2022 night skyline) is an alternative for P6.",
+ "_reviewed": true
+}

@@ -1,0 +1,41 @@
+{
+ "city": "Turku",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.07,
+     0.085,
+     0.935,
+     0.82
+    ]
+   },
+   "reason": "crop bottom edge touches the plate’s frame line and paper margin"
+  },
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 11,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.01,
+     0.1,
+     0.95,
+     0.93
+    ]
+   },
+   "reason": "dark scan edge at the left of the crop"
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

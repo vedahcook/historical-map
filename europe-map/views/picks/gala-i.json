@@ -1,0 +1,50 @@
+{
+ "city": "Galați",
+ "picks": [
+  {
+   "n": 1,
+   "file": "View of Galați (Gadola's Carte de l'Empire Ottoman et des pays limitrophes pour suivre les opérations de la guerre en Orient, 1853).png",
+   "y": 1853,
+   "lab": "1853",
+   "what": "The Danube port, lithographed vignette on Gadola’s map of the Ottoman Empire",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "general view of the town and its churches, with the Măcin hills across the Danube"
+  },
+  {
+   "n": 3,
+   "file": "Old Town, Galati - PANORAMA 12 photos - Orasul vechi, Galati - panoramio.jpg",
+   "y": 2010,
+   "lab": "about 2010",
+   "what": "The old town from a height, photograph",
+   "who": "Ioan Cepaliga",
+   "lic": "CC BY 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "general view over the old town’s rooftops"
+  }
+ ],
+ "gaps": "P0–P3: no candidates; P5: no candidates",
+ "notes": "#2, #4, #5 show apartment blocks (one with lightning), less characteristic than #3.",
+ "_reviewed": true
+}

@@ -1,0 +1,62 @@
+{
+ "city": "Delft",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.16,
+     0.14,
+     0.97,
+     0.76
+    ],
+    "focal": [
+     0.4,
+     0.5
+    ]
+   },
+   "reason": "Crop took in the legend cartouche, plate border and bottom figures; trim to the city with both churches"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "Vermeer View of Delft, dated 1660-61, clean crop"
+  },
+  {
+   "n": 27,
+   "verdict": "ok",
+   "reason": "Dated 1844 (title), frame trimmed; town is small but a true view of Delft"
+  },
+  {
+   "n": 15,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.48,
+     0.4
+    ]
+   },
+   "reason": "Crop cuts off the tower's weathervane at the top; move the crop up"
+  },
+  {
+   "n": 21,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.5,
+     0.52
+    ]
+   },
+   "reason": "Church spire tip touches the top edge of the crop"
+  },
+  {
+   "n": 25,
+   "verdict": "fix",
+   "fix": {
+    "lab": "about 2008"
+   },
+   "reason": "Record's 2008 is the Panoramio upload date, not the shooting date"
+  }
+ ]
+}

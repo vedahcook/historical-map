@@ -1,0 +1,23 @@
+{
+ "city": "Tétouan",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.03,
+     0.08,
+     0.97,
+     0.92
+    ]
+   },
+   "reason": "Bottom trim at 0.94 leaves a white strip below the engraving; cut to 0.92. View and 1865 date are right."
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "Clear view of the town from the north, ca. 1928; no edges or text in the crop."
+  }
+ ]
+}

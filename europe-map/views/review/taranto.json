@@ -1,0 +1,42 @@
+{
+ "city": "Taranto",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.025,
+     0.115,
+     0.975,
+     0.9
+    ],
+    "focal": [
+     0.36,
+     0.55
+    ]
+   },
+   "reason": "crop cut the left tower in half and the bottom of the trim included the dark frame line of the drawing; new trim excludes the line and the focal point keeps the tower and cathedral dome"
+  },
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

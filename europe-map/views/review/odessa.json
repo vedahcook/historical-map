@@ -1,0 +1,10 @@
+{
+ "city": "Odesa",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

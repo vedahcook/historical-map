@@ -1,0 +1,25 @@
+{
+ "city": "Reggio di Calabria",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "drop",
+   "reason": "record gives no real date (field says 1500, no description); 1552 is the picker’s own estimate"
+  },
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "Lear painting of Reggio, date per record"
+  },
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "waterfront wood engraving, crop fine"
+  },
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "hazy but best modern general view of the city"
+  }
+ ]
+}

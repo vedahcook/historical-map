@@ -1,0 +1,50 @@
+{
+ "city": "Durrës",
+ "picks": [
+  {
+   "n": 4,
+   "file": "View of Durrës from the Adriatic Sea (postcard)(AK092 074).jpg",
+   "y": 1914,
+   "lab": "about 1914",
+   "what": "View from the sea, postcard (Austrian National Library)",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.1,
+    0.988,
+    0.985
+   ],
+   "focal": [
+    0.65,
+    0.42
+   ],
+   "why": "color general view of the town on its hill from the sea; trim drops the card edge and caption"
+  },
+  {
+   "n": 5,
+   "file": "Panoramic view of Durrës.jpg",
+   "y": 2018,
+   "lab": "2018",
+   "what": "Panorama from the castle tower, photograph",
+   "who": "Besara1",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.62,
+    0.55
+   ],
+   "why": "recent color view over the center to the sea, with the domed mosque and towers"
+  }
+ ],
+ "gaps": "P0–P4: no candidates. P5 has four candidates but only one may be used.",
+ "notes": "P5 alternatives: #2 (Haeckel, 1910s, sharp B&W view over the walled old town toward the harbor) is the best black-and-white option; #3 (1916, from the sea) and #1 (Hasluck 1928, mostly the plain and lagoon) are weaker. The postcard’s 1914 date may be its posting date, hence “about 1914”.",
+ "_reviewed": true
+}

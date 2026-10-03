@@ -1,0 +1,50 @@
+{
+ "city": "Ivano-Frankivsk",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Stanisławów - Stanislau. Plac Franciszka.jpg",
+   "y": 1904,
+   "lab": "1904",
+   "what": "Franz Joseph Square (now Sheptytsky Square), colored postcard",
+   "who": "Jakób Löw, publisher",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.01,
+    0.99,
+    0.78
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "main square with the church towers; caption strip trimmed"
+  },
+  {
+   "n": 8,
+   "file": "Франківськ згори.jpg",
+   "y": 2017,
+   "lab": "2017",
+   "what": "The city from an airplane, aerial photograph",
+   "who": "Losth.",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.35,
+    0.5
+   ],
+   "why": "only modern general view; whole city and river valley, airport in the foreground"
+  }
+ ],
+ "gaps": "P0–P3: no candidates; P5: nothing usable",
+ "notes": "#4 (Mickiewicz monument and Tempel synagogue, 1904) is a good alternative for P4. #5 and #6 are 1939 Luftwaffe reconnaissance photos of fields and a railway bridge outside the city. #7 is the Carpathians, #9 a suburb, #10 a sunset. #8 is taken from high altitude, so no landmarks can be picked out.",
+ "_reviewed": true
+}

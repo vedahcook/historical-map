@@ -1,0 +1,92 @@
+{
+ "city": "Laon",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Laon. (to accompany) Topographia Galliae ... Het tweede deel. Amsterdam - By de Weduw van Ioost Broersz en Casper Meriaen, 1661. (IA dr laon-to-accompany-topographia-galliae-het-tweede-deel-amsterdam-b-13088144).jpg",
+   "y": 1660,
+   "lab": "about 1660",
+   "what": "Engraving in Merian’s Topographia Galliae",
+   "who": "Caspar Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.19,
+    0.305,
+    0.81,
+    0.752
+   ],
+   "focal": [
+    0.6,
+    0.6
+   ],
+   "why": "the town along its hilltop with the cathedral towers; clean copy with no gutter or crease"
+  },
+  {
+   "n": 4,
+   "file": "Gezicht op Laon met de kathedraal Vue Générale (titel op object) Laon (serietitel op object), RP-F-F19821.jpg",
+   "y": 1895,
+   "lab": "1895",
+   "what": "General view with the cathedral, cabinet photograph (Rijksmuseum)",
+   "who": "unknown photographer",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.085,
+    0.115,
+    0.915,
+    0.885
+   ],
+   "focal": [
+    0.62,
+    0.3
+   ],
+   "why": "cathedral towering over the roofs and the terraced slope below"
+  },
+  {
+   "n": 9,
+   "file": "ETH-BIB-Laon-Weitere-LBS MH02-43-0015.tif",
+   "y": 1935,
+   "lab": "1935",
+   "what": "Aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.4
+   ],
+   "why": "whole hilltop town and the lower town from the air; clearest of the four aerials"
+  },
+  {
+   "n": 14,
+   "file": "View of Laon cathedral, 2007-05-06-02.jpg",
+   "y": 2007,
+   "lab": "2007",
+   "what": "The hilltop town and cathedral, photograph",
+   "who": "Szilas",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.12,
+    0.2,
+    0.88,
+    0.95
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "classic view of the cathedral crowning the hill above the green slopes"
+  }
+ ],
+ "gaps": "P0–P1: none; P3: none",
+ "notes": "#1 and #2 are the same Merian plate; #1 (Dutch edition, vol. 2, 1661) is the cleaner copy (#2 has a fold crease through the sky). The plate was first issued in the German Topographia Galliae (1655–61), so labeled about 1660. #9 is weak: taken from high up, the cathedral is small; drop it if a blank plate is preferred. #5 is Compiègne, not Laon. #3 (Cuve Saint-Vincent, early 1890s) is a smaller second choice for P4.",
+ "_reviewed": true
+}

@@ -1,0 +1,29 @@
+{
+ "city": "Tilburg",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Sunrise in Tilburg.jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The skyline at sunrise from a height, photograph",
+   "who": "Red Junasun",
+   "lic": "CC BY 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.4
+   ],
+   "why": "general skyline view with twin church spires and the center’s towers; backlit, mostly silhouette"
+  }
+ ],
+ "gaps": "P0–P4: nothing; P5: only aerials dated 1920–40",
+ "notes": "NIMH aerials #1–#4 are dated only to 1920–40; #1 is heathland under cloud and #2–#4 show a racetrack and streets with no recognizable landmark. #6 (2025 drone shot at night) is mostly dark; #7 and #8 are statues.",
+ "_reviewed": true
+}

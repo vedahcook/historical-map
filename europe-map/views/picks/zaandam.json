@@ -1,0 +1,71 @@
+{
+ "city": "Zaandam",
+ "picks": [
+  {
+   "n": 7,
+   "file": "Gezicht op Zaandam, RP-P-1905-804.jpg",
+   "y": 1776,
+   "lab": "1753–1800",
+   "what": "The Dam seen from the Zaan, etching (Rijksmuseum)",
+   "who": "Antoine Radigues after Jan de Beijer",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.05,
+    0.085,
+    0.935,
+    0.83
+   ],
+   "focal": [
+    0.45,
+    0.72
+   ],
+   "why": "general view of the town front on the Zaan with the Oostzijderkerk tower; published by Pierre Fouquet; Rijksmuseum dates it only 1753–1800; margins and caption trimmed"
+  },
+  {
+   "n": 10,
+   "file": "Port of Zaandam - DPLA - 288d6c7fa07395d3bc190860d66adaf3.jpg",
+   "y": 1913,
+   "lab": "1913",
+   "what": "The town from the harbor, photograph",
+   "who": "Edmund F. Arras",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.055,
+    0.06,
+    0.96,
+    0.94
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "exactly dated tourist photo of the waterfront with towers and church spire; sepia; curled dark print edges trimmed"
+  },
+  {
+   "n": 19,
+   "file": "Zaanse Schans, Windmühlen -- 2015 -- 7271.jpg",
+   "y": 2015,
+   "lab": "2015",
+   "what": "Windmills of the Zaanse Schans on the Zaan, photograph",
+   "who": "Dietmar Rabich",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.55
+   ],
+   "why": "the town’s best-known sight, the mills De Kat, De Zoeker and Het Jonge Schaap across the river"
+  }
+ ],
+ "gaps": "P0, P1: nothing; P2: nothing firmly dated; P5: nothing usable",
+ "notes": "18th-century prints all carry Rijksmuseum date ranges only: Hendrik de Leth’s large panorama (#1, 1713–66, with a center fold) is the alternative to #7; #2/#6 (Radigues, ‘’t Inkomen van Zaandam’) and #3/#5 (other impressions of #7’s plate) are dated 1731–1809 or 1753–1800 on the same plates. #4 is a single church elevation, #8 a single house. P4 etchings of 1875–83 (#9, #11, #12, #13) show only mills and boats; #14 is a windmill sketch. P5: Mittelholzer’s 1931–32 aerial (#15) is mostly polder with the town far off; #16 is Zaandijk. P6: if a view of the town itself is preferred over the Zaanse Schans, #17 (2019 aerial from a plane, hazy) shows the whole city along the Zaan.",
+ "_reviewed": true
+}

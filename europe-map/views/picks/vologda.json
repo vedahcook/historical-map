@@ -1,0 +1,50 @@
+{
+ "city": "Vologda",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Marten Vologda First snow.JPG",
+   "y": 1916,
+   "lab": "1916",
+   "what": "The Vologda River in the first snow, oil painting",
+   "who": "Dmitry Marten",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.01,
+    0.995,
+    0.99
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "color view across the river to the churches of the town"
+  },
+  {
+   "n": 2,
+   "file": "Panoramic view of Vologda 2009.jpg",
+   "y": 2009,
+   "lab": "2009",
+   "what": "Kremlin Square, the river and the old town from above, photograph",
+   "who": "Enotovidnii",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    0.86,
+    1
+   ],
+   "focal": [
+    0.42,
+    0.6
+   ],
+   "why": "panorama of the historic center; Alexander Nevsky Church, the bishop’s palace and the river"
+  }
+ ],
+ "gaps": "P0–P4: nothing",
+ "notes": "#2: right edge trimmed to cut a roof in the foreground; a small dark streak (bird or sensor dust) in the sky near the middle. #3–#5 (2010) are wide panoramas dominated by trees.",
+ "_reviewed": true
+}

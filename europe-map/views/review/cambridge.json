@@ -1,0 +1,46 @@
+{
+ "city": "Cambridge",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "drop",
+   "reason": "an almost top-down street plan, not a view; the title cartouche text and the key panel cannot be kept out of a 16:9 crop"
+  },
+  {
+   "n": 9,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.02,
+     0.115,
+     0.985,
+     0.69
+    ]
+   },
+   "reason": "the plate’s top frame line is inside the crop"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 17,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.025,
+     0.025,
+     0.972,
+     0.94
+    ]
+   },
+   "reason": "thin dark line at left edge and white strip at right edge of the crop"
+  },
+  {
+   "n": 27,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "city": "Nîmes",
+ "checks": [
+  {
+   "n": 6,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.018,
+     0.03,
+     0.978,
+     0.965
+    ],
+    "focal": [
+     0.47,
+     0.0
+    ]
+   },
+   "reason": "orange hand-colored border in trim; crop sliced the title cartouche through the lettering, now whole"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "Nîmes view with arena; date is a 50-year range per record"
+  },
+  {
+   "n": 15,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.032,
+     0.036,
+     0.968,
+     0.955
+    ]
+   },
+   "reason": "trim included dark mount edge at top and right"
+  },
+  {
+   "n": 19,
+   "verdict": "ok",
+   "reason": "arena street view, crop clean"
+  },
+  {
+   "n": 21,
+   "verdict": "ok",
+   "reason": "drone view of arena and old town"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "city": "Duisburg",
+ "checks": [
+  {
+   "n": 6,
+   "verdict": "drop",
+   "reason": "the Duisburg panel is a flat ground plan (street grid, only the church drawn in elevation) and the trim includes its title cartouche; all other P1 candidates are the same plate, so no replacement"
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 13,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

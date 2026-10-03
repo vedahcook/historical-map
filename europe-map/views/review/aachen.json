@@ -1,0 +1,50 @@
+{
+ "city": "Aachen",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "1572 vol. 1 bird's-eye view of Aachen; crop clean"
+  },
+  {
+   "n": 10,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.012,
+     0.165,
+     0.99,
+     0.965
+    ],
+    "focal": [
+     0.46,
+     0.5
+    ]
+   },
+   "reason": "the ACHEN title sits inside the current crop; trim top below it and drop the bottom frame line (a dark fold streak in the sky above the center cannot be trimmed away)"
+  },
+  {
+   "n": 11,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.222,
+     0.228,
+     0.775,
+     0.705
+    ]
+   },
+   "reason": "right trim includes a light strip of paper between the picture and its frame line"
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "photochrom general view; caption excluded; P.Z. print mark confirms Photoglob"
+  },
+  {
+   "n": 23,
+   "verdict": "ok",
+   "reason": "Aachen street with cathedral and town hall towers; Commons date 1917 is from the card and category says 1900s, so photo may be older but record supports the label"
+  }
+ ]
+}

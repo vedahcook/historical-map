@@ -1,0 +1,50 @@
+{
+ "city": "Sumy",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Сумы. Станция железной дороги. Почтовая открытка.jpg",
+   "y": 1910,
+   "lab": "about 1910",
+   "what": "The railway station, colored postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.11,
+    0.99,
+    0.985
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "only period view; labeled Sumy station, card border and caption trimmed"
+  },
+  {
+   "n": 2,
+   "file": "Sumy Transfiguration Cathedral - Aerial View - 5.jpg",
+   "y": 2016,
+   "lab": "2016",
+   "what": "The city center and Transfiguration Cathedral, aerial photograph",
+   "who": "Maksim Bondarevsky",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.35
+   ],
+   "why": "general view of the center with the cathedral and the Psel River; best of four near-identical frames"
+  }
+ ],
+ "gaps": "P0–P3: no candidates; P5: no candidates",
+ "notes": "#1 is a single-building scene, kept only because it is the sole pre-1970 picture; drop it if that is too weak. #3–#5 are near duplicates of #2.",
+ "_reviewed": true
+}

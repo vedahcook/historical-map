@@ -1,0 +1,41 @@
+{
+ "city": "Troyes",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.02,
+     0.088,
+     0.975,
+     0.62
+    ]
+   },
+   "reason": "plate's top frame line touched the crop; crop is soft (only 500 px of source) but it is the only early view, keep"
+  },
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.016,
+     0.03,
+     0.98,
+     0.87
+    ]
+   },
+   "reason": "white paper strips at left and right edges inside the crop"
+  },
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "1900 Lancelot photo; landmarks match categories"
+  },
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "matches record; tower intact"
+  }
+ ]
+}

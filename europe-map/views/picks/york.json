@@ -1,0 +1,71 @@
+{
+ "city": "York",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Distant view of York.jpg",
+   "y": 1639,
+   "lab": "1639",
+   "what": "Distant view of York, painting (Tate Britain)",
+   "who": "Alexander Keirincx",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.12,
+    0.38,
+    0.9,
+    0.99
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "the walled city on the horizon with the Minster standing out; the town is small in the frame"
+  },
+  {
+   "n": 16,
+   "file": "From railway bridge, York, England-LCCN2002708295.tif",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Ouse and the Minster from the railway bridge, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.018,
+    0.026,
+    0.976,
+    0.925
+   ],
+   "focal": [
+    0.25,
+    0.4
+   ],
+   "why": "color river view with the Minster towers and Lendal Bridge"
+  },
+  {
+   "n": 25,
+   "file": "York Bird's Eye View.jpg",
+   "y": 2009,
+   "lab": "2009",
+   "what": "Aerial photograph",
+   "who": "Peter Czerwinski",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "the Minster, the Ouse and Clifford’s Tower in one color view"
+  }
+ ],
+ "gaps": "P0: none; P2: none (only flat street plans); P3: none; P5: none",
+ "notes": "Most hits are other places named York (New York, York Mills in Toronto, the York River in Virginia, York Gate in Broadstairs, Canaletto’s York Water Gate in London) or Kirkstall Abbey near Leeds; all skipped. #3 is a smaller copy of #2. #1 (Braun and Hogenberg vol. 6) shows York only as a small street plan on a four-subject sheet. #25 was uploaded in 2015 but is categorized as taken in January 2009, so dated 2009. #15 (Micklegate Bar photochrom) is a single-gate alternative for P4.",
+ "_reviewed": true
+}

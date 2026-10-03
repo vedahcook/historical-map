@@ -1,0 +1,20 @@
+{
+ "city": "Jaén",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "Wyngaerde 1567 view of Jaén below the castle hill; crop clear of paper edge and key."
+  },
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "Clifford 1862 view with the cathedral; record names Clifford and CC BY-SA 2.0; crop clean."
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "Cathedral and Santa Catalina castle both in the crop; 2015 photo date matches."
+  }
+ ]
+}

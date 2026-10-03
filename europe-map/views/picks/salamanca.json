@@ -1,0 +1,71 @@
+{
+ "city": "Salamanca",
+ "picks": [
+  {
+   "n": 1,
+   "file": "1844, España artística y monumental, vistas y descripción de los sitios y monumentos más notables de españa, vol 2, Palacio del Conde de Monterrey en Salamanca.jpg",
+   "y": 1844,
+   "lab": "1844",
+   "what": "The Monterrey Palace, lithograph in España artística y monumental",
+   "who": "Genaro Pérez Villaamil",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.126,
+    0.05,
+    0.868,
+    0.875
+   ],
+   "focal": [
+    0.55,
+    0.25
+   ],
+   "why": "only P3 candidate; well-known Renaissance palace with street life; margins and caption trimmed"
+  },
+  {
+   "n": 4,
+   "file": "Salamanca. La Catedral LCCN2017660777.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The New Cathedral, photochrom print (Library of Congress)",
+   "who": "Photoglob Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.024,
+    0.025,
+    0.978,
+    0.975
+   ],
+   "focal": [
+    0.5,
+    0.3
+   ],
+   "why": "color; the whole cathedral with its dome and bell tower, the city’s main landmark; high resolution"
+  },
+  {
+   "n": 8,
+   "file": "La Clerecía, la Rúa Mayor y la Plaza de Anaya desde la Catedral Nueva (Salamanca).jpg",
+   "y": 2012,
+   "lab": "2012",
+   "what": "The Clerecía, Rúa Mayor and Plaza de Anaya from the New Cathedral, photograph",
+   "who": "Alurín",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "view over the historic center with the Clerecía towers and domes"
+  }
+ ],
+ "gaps": "P0, P1, P2, P5: no candidates",
+ "notes": "No general view of the city among the candidates, so landmark scenes were used. #10 and #11 are Salamanca, New York. #2 (Plaza Mayor photochrom, then laid out as a garden) is a good alternative for P4. #1 shows a single palace; drop it if a single building is too weak for P3.",
+ "_reviewed": true
+}

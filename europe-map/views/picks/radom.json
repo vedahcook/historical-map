@@ -1,0 +1,50 @@
+{
+ "city": "Radom",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Widok Radomia 1885 (79920375).jpg",
+   "y": 1885,
+   "lab": "1885",
+   "what": "General view, wood engraving in the weekly Tygodnik Powszechny",
+   "who": "Władysław Bojarski",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.17,
+    0.13,
+    0.86,
+    0.745
+   ],
+   "focal": [
+    0.47,
+    0.35
+   ],
+   "why": "the only general view before 1900: roofs of the old town under its church towers, seen over gardens; very high resolution; trimmed the mount and caption"
+  },
+  {
+   "n": 3,
+   "file": "Radom aerial view 1917.jpg",
+   "y": 1917,
+   "lab": "about 1917",
+   "what": "View over the town from a height, colored postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.1,
+    0.995,
+    0.99
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "color bird’s-eye view of the 19th-century center with the domed church on the right; trimmed the printed title in the sky"
+  }
+ ],
+ "gaps": "P0–P3: nothing usable (#1 is a costume plate, not a view). P6: no candidates.",
+ "notes": "#3: Commons dates the postcard 1917 (probably a postmark), so the label says ‘about 1917’; despite the file name it is a view from a tower, not an aerial photograph. #2 is a clipping from Tygodnik Powszechny, 1885 (caption ‘Widok ogólny Radomia’).",
+ "_reviewed": true
+}

@@ -1,0 +1,20 @@
+{
+ "city": "Leicester",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "Government Art Collection text dates it to about the time of the 1743 Buck prospect; supports about 1743"
+  },
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "titled Leicester street scene (New Inn Leicester sign), c.1830 per British Museum; crop clean"
+  },
+  {
+   "n": 12,
+   "verdict": "ok",
+   "reason": "modest but genuine Leicester panorama; record agrees"
+  }
+ ]
+}

@@ -1,0 +1,92 @@
+{
+ "city": "Arkhangelsk",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Gezicht op Arkhangelsk Archangel (titel op object), RP-P-2018-1818.jpg",
+   "y": 1847,
+   "lab": "1847",
+   "what": "The harbor on the Northern Dvina, wood engraving in a Dutch book (Rijksmuseum)",
+   "who": "Tollenaar (engraver)",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.13,
+    0.165,
+    0.88,
+    0.79
+   ],
+   "focal": [
+    0.45,
+    0.55
+   ],
+   "why": "river front with churches, bell tower and ships; title, frame and margins trimmed"
+  },
+  {
+   "n": 4,
+   "file": "General view, Archangel, Kola Peninsula, Russia-LCCN2001697444.jpg",
+   "y": 1896,
+   "lab": "1896",
+   "what": "View across the Northern Dvina, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.045,
+    0.96,
+    0.925
+   ],
+   "focal": [
+    0.37,
+    0.42
+   ],
+   "why": "color general view of the river front with the Trinity Cathedral and the merchant yard; border and printed captions trimmed"
+  },
+  {
+   "n": 9,
+   "file": "Troitsky Prospect, Archangel LCCN2014708470.jpg",
+   "y": 1915,
+   "lab": "1915",
+   "what": "Church gate on Troitsky Prospect, photograph (Library of Congress)",
+   "who": "Bain News Service",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.075,
+    0.06,
+    0.92,
+    0.86
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "only usable view for the period; winter street scene on the main avenue; caption and margins trimmed"
+  },
+  {
+   "n": 16,
+   "file": "Вид с моста на город - panoramio.jpg",
+   "y": 2011,
+   "lab": "2011",
+   "what": "The port and city center from the Northern Dvina bridge, photograph",
+   "who": "Sergey Sotin",
+   "lic": "CC BY 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0.2,
+    1,
+    0.8
+   ],
+   "focal": [
+    0.6,
+    0.55
+   ],
+   "why": "only modern skyline view; burned-in date stamp trimmed off"
+  }
+ ],
+ "gaps": "P0–P2: nothing",
+ "notes": "#1 (Leizel, about 1790) is a good early prospect showing the merchant yard (Gostiny Dvor), but it is four thin panorama strips separated by text with a fold down the middle; one strip is too narrow for the card, so it was left out. #2 is a small book wood engraving with some text showing through; the engraver’s signature reads Tollenaar. #7 is the same photochrom as #4 in a lower-resolution crop. LoC’s title for #4 wrongly says Kola Peninsula. #9 is a single street scene, picked only because nothing else covers P5 (#10–#12 are military record cards). #16 is a plain Panoramio snapshot.",
+ "_reviewed": true
+}

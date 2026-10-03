@@ -1,0 +1,10 @@
+{
+ "city": "Oujda",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "General view of the city with minaret and mountains; date, photographer and license match."
+  }
+ ]
+}

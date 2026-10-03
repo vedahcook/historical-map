@@ -1,0 +1,20 @@
+{
+ "city": "Versailles",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "Palace and parterres, Rijksmuseum date 1681; mount, page number and caption excluded."
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "Tinted lithograph of palace and park, 1860; no text in crop; low resolution only."
+  },
+  {
+   "n": 15,
+   "verdict": "drop",
+   "reason": "Not a recognizable view: a stone vase fills the left half and the palace is cut off at the right edge; a blank plate is better (the 1860 view still covers the period)."
+  }
+ ]
+}

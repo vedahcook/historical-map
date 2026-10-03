@@ -1,0 +1,71 @@
+{
+ "city": "Bourges",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Orléans ; Bourges - btv1b53178981k (1 of 2).jpg",
+   "y": 1575,
+   "lab": "1575",
+   "what": "Engraving after Joris Hoefnagel in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 2",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.082,
+    0.505,
+    0.913,
+    0.93
+   ],
+   "focal": [
+    0.6,
+    0.35
+   ],
+   "why": "colored single sheet trimmed to the lower (Bourges) view; cathedral dominates the skyline"
+  },
+  {
+   "n": 7,
+   "file": "Gezicht op Bourges, RP-P-2018-2947.jpg",
+   "y": 1845,
+   "lab": "about 1845",
+   "what": "View from the river with the cathedral, steel engraving (Rijksmuseum)",
+   "who": "Rouargue frères",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.205,
+    0.168,
+    0.795,
+    0.775
+   ],
+   "focal": [
+    0.5,
+    0.42
+   ],
+   "why": "cathedral towering over the town, seen across the water meadows"
+  },
+  {
+   "n": 10,
+   "file": "Bourges depuis la cathédrale (1).jpg",
+   "y": 2013,
+   "lab": "2013",
+   "what": "The old town from the cathedral tower, photograph",
+   "who": "Ji-Elle",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "best of the modern views: roofs of the historic center from above"
+  }
+ ],
+ "gaps": "P0: none; P2: none; P4: only two close-ups (Hôtel Lallemant courtyard, an arcade); P5: none",
+ "notes": "#5 has a faint red library stamp in the sky at right. #7: Rijksmuseum dates it only 1800–60, but it is by Rouargue frères and printed by Pierre-Nicolas Dien, whose joint work is from about the 1830s–1860s (probably a plate from Guilbert’s Histoire des villes de France, 1844–48), so labeled about 1845; drop it if that is too loose. No modern photo shows the cathedral itself; #10–#13 are all taken from it.",
+ "_reviewed": true
+}

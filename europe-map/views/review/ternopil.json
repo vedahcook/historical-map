@@ -1,0 +1,32 @@
+{
+ "city": "Ternopil",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.01,
+     0.01,
+     0.99,
+     0.5
+    ],
+    "focal": [
+     0.5,
+     0.45
+    ]
+   },
+   "reason": "bottom trim 0.53 includes the light fade into the blank card (image ends about 0.50); focal 0.5 keeps both the synagogue and the twin towers in the 16:9 crop"
+  },
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "colored general view; caption, borders and sky edge trimmed cleanly; spire kept"
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "pond and waterfront in Ternopil; weak skyline but better than the wide panoramas"
+  }
+ ]
+}

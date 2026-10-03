@@ -1,0 +1,10 @@
+{
+ "city": "Vladimir",
+ "checks": [
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "Vladimir (Q2684) with Dormition Cathedral; 1911 Prokudin-Gorskii; crop clean"
+  }
+ ]
+}

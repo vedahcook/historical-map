@@ -1,0 +1,20 @@
+{
+ "city": "Pécs",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "1913 colored postcard of Indóház Street with the cathedral towers and the Mecsek; caption in the sky trimmed; the Reformed church spire touches the top edge but that is how the card is printed"
+  },
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "1965 Fortepan color view over the rooftops with the mosque church dome and the Mecsek behind; record and credit match"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "2020 panorama with the cathedral at the center; the crop is only 40% of the picture's width because the picture is 4.4:1, which cannot be avoided, and the source is wide enough (about 780 px) for the card"
+  }
+ ]
+}

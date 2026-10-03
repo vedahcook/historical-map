@@ -1,0 +1,33 @@
+{
+ "city": "Bochum",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.465,
+     0.45
+    ]
+   },
+   "reason": "focal 0.5 cuts off the left church (Johanneskirche); 0.465 keeps all three churches in the 16:9 crop"
+  },
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.085,
+     0.03,
+     0.925,
+     0.9
+    ]
+   },
+   "reason": "two dark blue dots on the print at the left and right edges and a dark strip at the far left sit inside the current crop; re-trim removes them and the top glare"
+  },
+  {
+   "n": 6,
+   "verdict": "ok"
+  }
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "city": "Essen",
+ "checks": [
+  {
+   "n": 6,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.685,
+     0.5
+    ]
+   },
+   "reason": "at focal 0.52 the crop includes the right half of the title cartouche, cut mid-text; 0.685 starts just right of it and keeps the three spires, gate and right wall"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 13,
+   "verdict": "replace",
+   "replace_with": 14,
+   "fix": {
+    "y": 1917,
+    "lab": "1913–22",
+    "trim": [
+     0.072,
+     0.05,
+     0.972,
+     0.92
+    ],
+    "focal": [
+     0.6,
+     0.4
+    ],
+    "what": "Steeler Straße with the new synagogue, postcard",
+    "who": "unknown photographer"
+   },
+   "reason": "in #13 the synagogue dome pokes above the picture area into the card margin, so the 16:9 crop cuts the dome or includes margin; #14 (Steeler Straße with the new synagogue, same city landmark, clean frame, 1910–22, synagogue opened 1913) crops cleanly. The 'fix' fields describe the replacement #14; lic PD"
+  },
+  {
+   "n": 18,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

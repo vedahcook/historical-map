@@ -1,0 +1,45 @@
+{
+ "city": "Karlsruhe",
+ "checks": [
+  {
+   "n": 11,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.095,
+     0.075,
+     0.905,
+     0.72
+    ],
+    "focal": [
+     0.5,
+     0.6
+    ]
+   },
+   "reason": "frame lines and paper margin at left and right edges of the crop"
+  },
+  {
+   "n": 12,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.112,
+     0.141,
+     0.892,
+     0.836
+    ]
+   },
+   "reason": "light paper strip along the bottom edge and vignette at left"
+  },
+  {
+   "n": 16,
+   "verdict": "ok",
+   "reason": "good view, crop and fields agree with the record"
+  },
+  {
+   "n": 28,
+   "verdict": "ok",
+   "reason": "good view, crop and fields agree with the record"
+  }
+ ]
+}

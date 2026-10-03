@@ -1,0 +1,23 @@
+{
+ "city": "Timișoara",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0.29,
+     1,
+     1
+    ]
+   },
+   "reason": "trim top at 0.25 left the tail of the Temeswar banner in the crop; 1663 per description (field says 1667)"
+  },
+  {
+   "n": 5,
+   "verdict": "drop",
+   "reason": "city is a thin hazy strip behind trees and suburbs, cathedral barely visible, crop only a third of the panorama’s width"
+  }
+ ]
+}

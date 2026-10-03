@@ -1,0 +1,7 @@
+{
+ "city": "Marsala",
+ "picks": [],
+ "gaps": "P0–P6: nothing usable",
+ "notes": "Only three modern candidates. #1 (2013) is genuinely Marsala but shows the town as a thin strip on the horizon across open water, too small to read on the card; if a fallback is wanted, use it with trim [0, 0.3, 1, 0.8] and focal [0.55, 0.5]. #2 is a view from Erice over the Trapani plain, not clearly Marsala. #3 is a cloud-covered aerial with no landmarks; can’t confirm it is Marsala.",
+ "_reviewed": true
+}

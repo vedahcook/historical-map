@@ -1,0 +1,22 @@
+{
+ "city": "Klaipėda",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.4,
+     0.5
+    ],
+    "what": "Painted panorama of Memel with the castle"
+   },
+   "reason": "Trim of the red border is right. At focal 0.45 the castle's left end is cut off in the 16:9 crop (about 43% of the width); 0.4 keeps the whole castle. The record does not say it comes from a map, so that wording is dropped."
+  },
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "Trim measured against the preview: photo edges and the “Memel” caption strip are excluded; 1930s from the record (XX a. 4 deš.); publisher, CC0 match."
+  }
+ ]
+}

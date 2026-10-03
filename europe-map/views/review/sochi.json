@@ -1,0 +1,10 @@
+{
+ "city": "Sochi",
+ "checks": [
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "true general view of the city along the coast; date, credit, license match record"
+  }
+ ]
+}

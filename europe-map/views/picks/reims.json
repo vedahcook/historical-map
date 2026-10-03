@@ -1,0 +1,92 @@
+{
+ "city": "Reims",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Reins ville tresantienne et magnifique lune des principalles de la Gaulle Belgique - par C. Chastillon Châalonnois ; M. Merian Scülç(it) - btv1b53144129b (2 of 3).jpg",
+   "y": 1615,
+   "lab": "about 1615",
+   "what": "Bird’s-eye view, engraving in Claude Chastillon’s Topographie françoise",
+   "who": "Claude Chastillon and Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.168,
+    0.315,
+    0.845,
+    0.685
+   ],
+   "focal": [
+    0.32,
+    0.45
+   ],
+   "why": "whole walled city with the cathedral and Saint-Remi recognizable; album margins, title line and library stamp trimmed"
+  },
+  {
+   "n": 8,
+   "file": "Gillis Neyts - View of the cathedral of Reims.jpg",
+   "y": 1665,
+   "lab": "1643–87",
+   "what": "Reims Cathedral, painting",
+   "who": "Gillis Neyts",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.01,
+    0.99,
+    0.99
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "color view of the cathedral front and its square; the city’s defining landmark"
+  },
+  {
+   "n": 15,
+   "file": "Gezicht op Reims met de Kathedraal La Cathédrale (titel op object) Reims (serietitel op object), RP-F-F19894.jpg",
+   "y": 1885,
+   "lab": "1870–1900",
+   "what": "The cathedral above the rooftops, cabinet photograph (Rijksmuseum)",
+   "who": "Étienne Neurdein (probably)",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.09,
+    0.1,
+    0.922,
+    0.87
+   ],
+   "focal": [
+    0.58,
+    0.4
+   ],
+   "why": "general view over the city with the cathedral dominating; card mount and caption trimmed"
+  },
+  {
+   "n": 22,
+   "file": "2022-05-14 15-11-58 Frankreich Ville-en-Tardenois Ville-en-Tardenois 10037.0.jpg",
+   "y": 2022,
+   "lab": "2022",
+   "what": "Aerial photograph",
+   "who": "Hansueli Krapf",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.05,
+    0.25,
+    0.95,
+    0.95
+   ],
+   "focal": [
+    0.56,
+    0.46
+   ],
+   "why": "sharp view of the whole city from high above; no closer modern view of the center available"
+  }
+ ],
+ "gaps": "P0: nothing (#1 is a saint, not a view); P3: nothing (#10–#11 are Brascassat landscapes of Italy); P5: Mittelholzer aerials show mostly fields and the airfield",
+ "notes": "#5: Chastillon died about 1616; 1641 is the Topographie françoise edition date in the BnF record; faint center fold, not a book gutter. #8 is dated only to Neyts’s working life (1643–87); drop it if that range is too loose. #6 (Duviert 1610) is a poor microfilm-like scan with a gutter. #2–#4 are London, Metz and Nîmes; #12 is Châlons. #13 (1890s town hall photochrom) and #16 (Barau 1894) are alternatives for P4. #22 is the only usable modern photo; the others are street scenes.",
+ "_reviewed": true
+}

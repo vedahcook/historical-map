@@ -1,0 +1,20 @@
+{
+ "city": "Belfast",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

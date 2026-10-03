@@ -1,0 +1,15 @@
+{
+ "city": "Pavia",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "event view, stylized but a real depiction of the walled city; window is only 39% of the very wide picture (unavoidable, full height used) and resolution is low but adequate"
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "general view with the dome from Borgo Ticino; crop fine"
+  }
+ ]
+}

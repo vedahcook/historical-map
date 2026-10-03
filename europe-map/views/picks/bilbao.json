@@ -1,0 +1,113 @@
+{
+ "city": "Bilbao",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Bilvao - btv1b531788744 (1 of 2).jpg",
+   "y": 1575,
+   "lab": "1575",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 2",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.24,
+    0.99,
+    0.92
+   ],
+   "focal": [
+    0.62,
+    0.42
+   ],
+   "why": "colored single-sheet copy (no gutter); walled town on the Nervión with its bridge; trimmed below the engraved Latin text"
+  },
+  {
+   "n": 7,
+   "file": "Bilboko bista, c. 1700.jpg",
+   "y": 1700,
+   "lab": "about 1700",
+   "what": "View of Bilbao, painting (Bilbao Fine Arts Museum)",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.23,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.55
+   ],
+   "why": "bird’s-eye view of the old town in the river bend with San Antón bridge; very high resolution"
+  },
+  {
+   "n": 11,
+   "file": "Vista de El Arenal de Bilbao - Luis Paret.jpg",
+   "y": 1783,
+   "lab": "1783–84",
+   "what": "El Arenal on the river, painting (Bilbao Fine Arts Museum)",
+   "who": "Luis Paret y Alcázar",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "famous color view of the Arenal promenade and riverfront"
+  },
+  {
+   "n": 16,
+   "file": "View of Bilbao from the railway station.jpg",
+   "y": 1862,
+   "lab": "1862",
+   "what": "View from the railway station, wood engraving",
+   "who": "P. Skelton",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.035,
+    0.11,
+    0.965,
+    0.92
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "general view along the river to San Antón bridge and church; caption trimmed"
+  },
+  {
+   "n": 25,
+   "file": "Bilbao Panorama Artxanda 001.jpg",
+   "y": 2018,
+   "lab": "2018",
+   "what": "Panorama from Mount Artxanda, photograph",
+   "who": "Spike",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.15,
+    0,
+    0.85,
+    1
+   ],
+   "focal": [
+    0.68,
+    0.55
+   ],
+   "why": "whole city in its valley with the Iberdrola Tower; very high resolution"
+  }
+ ],
+ "gaps": "P0: nothing; P5: only a 1919 stereo view from the Vizcaya transporter bridge (Getxo, not Bilbao), skipped",
+ "notes": "#4 is the BnF copy of the 1575 plate (Commons date 1645 is that edition). #11 and #12 are the same Paret painting; #11 chosen for its Bilbao Fine Arts Museum source. #15 (Teatro Arriaga photochrom, 1890s) is a good color alternative for P4 but too close in date to #16 for a second P4 view. #25 is a 6:1 panorama, trimmed to the central 70%.",
+ "_reviewed": true
+}

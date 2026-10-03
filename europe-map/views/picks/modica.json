@@ -1,0 +1,50 @@
+{
+ "city": "Modica",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Veduta del Castello di Modica in Sicilia.jpg",
+   "y": 1845,
+   "lab": "1845",
+   "what": "The castle rock and the town, engraving in Orografia dell’Italia",
+   "who": "Achille Parboni",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.055,
+    0.07,
+    0.95,
+    0.88
+   ],
+   "focal": [
+    0.4,
+    0.4
+   ],
+   "why": "the castle on its crag above the town in the valley; number and caption trimmed"
+  },
+  {
+   "n": 5,
+   "file": "97015 Modica, Province of Ragusa, Italy - panoramio (11).jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "Modica Alta on its hillside, photograph",
+   "who": "trolvag",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.55
+   ],
+   "why": "sharp color view of the terraced old town climbing the slope"
+  }
+ ],
+ "gaps": "P0–P2: no candidates. P4: none. P5: none.",
+ "notes": "#2 is a photo of a modern ceramic panel, not the town. #3 is a very wide 2011 panorama (about 4.3:1) of the same hillside; #4 is a similar 2014 view with more sky and foreground roofs.",
+ "_reviewed": true
+}

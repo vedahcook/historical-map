@@ -1,0 +1,46 @@
+{
+ "city": "Bern",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.016,
+     0.03,
+     0.984,
+     0.92
+    ]
+   },
+   "reason": "Merian/Plepp plate dated Anno 1638; old trim includes paper margin and frame lines at left and right and the legend line at the bottom"
+  },
+  {
+   "n": 14,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.108,
+     0.133,
+     0.9,
+     0.825
+    ]
+   },
+   "reason": "old trim sits on the drawn frame line at left, top and right"
+  },
+  {
+   "n": 19,
+   "verdict": "ok",
+   "reason": "Kirchenfeld Bridge, Minster and Alps; clean trim"
+  },
+  {
+   "n": 22,
+   "verdict": "ok",
+   "reason": "Mittelholzer 1919 aerial, Minster and Aare recognizable"
+  },
+  {
+   "n": 25,
+   "verdict": "ok",
+   "reason": "2007 per original text 29.09.2007; crop good"
+  }
+ ]
+}

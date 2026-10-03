@@ -1,0 +1,40 @@
+{
+ "city": "Split",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.045,
+     0.055,
+     0.945,
+     0.835
+    ],
+    "focal": [
+     0.58,
+     0.5
+    ]
+   },
+   "reason": "paper and plate border line were inside the trim at top and left; palace and bell tower stay centered"
+  },
+  {
+   "n": 10,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.016,
+     0.012,
+     0.982,
+     0.94
+    ]
+   },
+   "reason": "white print edge was inside the trim at the right"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "Riva with the cathedral bell tower; record matches"
+  }
+ ]
+}

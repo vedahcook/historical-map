@@ -1,0 +1,29 @@
+{
+ "city": "Vitebsk",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Панарама - panoramio.jpg",
+   "y": 2010,
+   "lab": "2010",
+   "what": "The Western Dvina and the Assumption Cathedral on its hill, photograph",
+   "who": "Альгерд Чарняўскі",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0.2,
+    0,
+    0.97,
+    1
+   ],
+   "focal": [
+    0.72,
+    0.45
+   ],
+   "why": "color river view to the cathedral hill, the city’s signature landmark"
+  }
+ ],
+ "gaps": "P0–P5: nothing at all among the candidates",
+ "notes": "Only modern photos were found (the category is Viciebsk); the other three are thin strip panoramas or a night shot.",
+ "_reviewed": true
+}

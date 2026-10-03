@@ -1,0 +1,35 @@
+{
+ "city": "Arnhem",
+ "checks": [
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "Cuyp drawing; trim stops before the join; city is small at right but the Eusebiuskerk is visible"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "van der Vinne drawing; trim stops before the added strip; crop good"
+  },
+  {
+   "n": 12,
+   "verdict": "ok",
+   "reason": "etching of the Rhine and town; plate edge excluded; crop good"
+  },
+  {
+   "n": 16,
+   "verdict": "ok",
+   "reason": "photochrom river-front; caption trimmed; crop good"
+  },
+  {
+   "n": 21,
+   "verdict": "ok",
+   "reason": "1963 slide, only usable P5 view; suburban foreground but the Eusebius tower shows; date from the record"
+  },
+  {
+   "n": 28,
+   "verdict": "ok",
+   "reason": "good modern river-front view with the Eusebius tower"
+  }
+ ]
+}

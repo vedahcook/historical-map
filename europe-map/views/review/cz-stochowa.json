@@ -1,0 +1,15 @@
+{
+ "city": "Częstochowa",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "photochrom of the Jasna Góra tower and monastery; black border cleanly trimmed, tower top inside the crop. Photoglob credit is supported by the 'P.Z.' mark on companion #1"
+  },
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "2008 view from the Jasna Góra tower along the Avenue of the Virgin Mary; record, license and artist match"
+  }
+ ]
+}

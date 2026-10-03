@@ -1,0 +1,20 @@
+{
+ "city": "Cartagena",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "Cartagena, Spain (category Cartagena (Spain) in art); color general view; crop fine"
+  },
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "Chapuy view of the town and castle hill; crop clears the caption"
+  },
+  {
+   "n": 13,
+   "verdict": "ok",
+   "reason": "Best modern option (#14 close-up, #15 container port); crop fine"
+  }
+ ]
+}

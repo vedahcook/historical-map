@@ -1,0 +1,50 @@
+{
+ "city": "Sevastopol",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Sebastopol from the rear of Fort Nicholas, looking south LCCN2002713030.jpg",
+   "y": 1855,
+   "lab": "1855",
+   "what": "The city and the South Bay from Fort Nicholas after the siege, tinted lithograph (Library of Congress)",
+   "who": "William Simpson",
+   "lic": "PD",
+   "event": true,
+   "trim": [
+    0.14,
+    0.265,
+    0.834,
+    0.755
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "general view of the town across the South Bay, debris of the siege in front; mount, caption and color bar trimmed off"
+  },
+  {
+   "n": 9,
+   "file": "Unnamed1 - panoramio (1163).jpg",
+   "y": 2013,
+   "lab": "2013",
+   "what": "The Hero City Obelisk on Cape Khrustalny across the bay, photograph",
+   "who": "Dmitry Sklyarenko",
+   "lic": "CC BY 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0.3,
+    1,
+    0.82
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "recognizable landmark on the waterfront; only usable modern view"
+  }
+ ],
+ "gaps": "P0–P3: no candidates; P5: only a 1916 ship scene with the Romanov family (#7) and a single building (#8)",
+ "notes": "All P4 candidates are Crimean War prints, so #2 is marked as an event view. #1 (the docks with the ruined Fort St. Paul, 1856) is the same series but shows the docks rather than the town; #3–#6 are distant siege-line and battle scenes. #9 is a dull, overcast snapshot; drop it if a blank P6 plate is preferred. #10 and #12 are dominated by Russian flags; #11 is a single waterfront building.",
+ "_reviewed": true
+}

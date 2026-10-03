@@ -1,0 +1,71 @@
+{
+ "city": "Kiel",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Kiel by Braun Hogenberg (109097477).jpg",
+   "y": 1588,
+   "lab": "1588",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 4",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.195,
+    1,
+    0.78
+   ],
+   "focal": [
+    0.55,
+    0.42
+   ],
+   "why": "colored bird’s-eye view; St. Nicholas church and castle on the peninsula; clean high-res copy without book margins"
+  },
+  {
+   "n": 6,
+   "file": "Gezicht op Kiel, RP-P-2004-69-1.jpg",
+   "y": 1847,
+   "lab": "1847",
+   "what": "View across the fjord, steel engraving (Rijksmuseum)",
+   "who": "Georg Michael Kurz",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.26,
+    0.23,
+    0.74,
+    0.7
+   ],
+   "focal": [
+    0.42,
+    0.42
+   ],
+   "why": "general view of the old town with St. Nicholas spire; trimmed to inside the ornamental frame"
+  },
+  {
+   "n": 11,
+   "file": "General view, Kiel, Schleswig-Holstein, Germany-LCCN2002720651.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.02,
+    0.985,
+    0.94
+   ],
+   "focal": [
+    0.38,
+    0.36
+   ],
+   "why": "color view across the harbor to the old town and St. Nicholas church"
+  }
+ ],
+ "gaps": "P0, P2: nothing; P5: only a vertical 1945 reconnaissance photo of the bombed city (skipped); P6: no modern city view among candidates",
+ "notes": "#3 dated to the vol. 4 first edition (1588) although the Commons copy is dated 1617. #22 (1902 postcard panorama) skipped because the seam between the two cards runs through the view; #14 (about 1875 photo) too close to the photochrom for a second P4 view.",
+ "_reviewed": true
+}

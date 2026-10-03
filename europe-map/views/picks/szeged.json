@@ -1,0 +1,71 @@
+{
+ "city": "Szeged",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Széchenyi tér a Városháza tornyából nézve, balra a Törvényszéki Palota. A felvétel 1894-ben készült. Fortepan 93353.jpg",
+   "y": 1894,
+   "lab": "1894",
+   "what": "Széchenyi Square and the Palace of Justice from the city hall tower, stereo photograph (Fortepan)",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.05,
+    0.44,
+    0.97
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "rebuilt city after the 1879 flood seen from a height, Tisza behind; trimmed to the left half of the stereo pair"
+  },
+  {
+   "n": 5,
+   "file": "Kilátás a Fogadalmi templom tornyából északkelet felé, előtérben a szerb templom és a Palánk. Fortepan 22807.jpg",
+   "y": 1929,
+   "lab": "1929",
+   "what": "View northeast from the Votive Church tower over the Serbian church and the Palánk quarter, photograph (Fortepan)",
+   "who": "unknown photographer",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.47,
+    0.45
+   ],
+   "why": "general view from a height with the Tisza and its bridge"
+  },
+  {
+   "n": 6,
+   "file": "Segedin, Foto-tura, 004.JPG",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The Votive Church seen across the Tisza, photograph",
+   "who": "Mickey Mystique",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.12,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "the city’s signature twin towers from the river"
+  }
+ ],
+ "gaps": "P0–P3: no candidates; P4 has only the 1894 tower views",
+ "notes": "#1 is one frame of a stereo pair, so the trim keeps about 44% of the file width (still about 3,100 px). #2 is the companion stereo view of the market side of the square, also 1894.",
+ "_reviewed": true
+}

@@ -1,0 +1,22 @@
+{
+ "city": "Ulyanovsk",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.02,
+     0.025,
+     0.983,
+     0.91
+    ],
+    "focal": [
+     0.55,
+     0.55
+    ]
+   },
+   "reason": "Bottom of the trim includes the engraving's double frame line (rows ~339-343 of 370); trim at 0.91 to stay inside the picture."
+  }
+ ]
+}

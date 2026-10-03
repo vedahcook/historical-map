@@ -1,0 +1,15 @@
+{
+ "city": "Durrës",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "caption and card edge excluded; about 1914 label fits an uncertain postcard date"
+  },
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "crop includes domed mosque and towers"
+  }
+ ]
+}

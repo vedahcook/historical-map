@@ -1,0 +1,10 @@
+{
+ "city": "Podgorica",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "sharp aerial view of the center with mountains"
+  }
+ ]
+}

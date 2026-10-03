@@ -1,0 +1,29 @@
+{
+ "city": "Wolverhampton",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Wolverhampton.jpg",
+   "y": 2008,
+   "lab": "2008",
+   "what": "The skyline with St. Peter’s Church tower, photograph",
+   "who": "Statsfan",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0.12,
+    1,
+    0.82
+   ],
+   "focal": [
+    0.48,
+    0.45
+   ],
+   "why": "only general view; St. Peter’s Collegiate Church tower recognizable; road foreground trimmed"
+  }
+ ],
+ "gaps": "P0–P5: no candidates",
+ "notes": "Only two candidates, both the same 2008 photo (one a crop). Modest resolution (1280 px wide); a better modern view would be welcome.",
+ "_reviewed": true
+}

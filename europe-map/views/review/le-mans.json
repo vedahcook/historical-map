@@ -1,0 +1,18 @@
+{
+ "city": "Le Mans",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "what": "General view of the town with the cathedral, lithograph"
+   },
+   "reason": "“from the northwest” misreads the record (it says the northwest of the city, after the railway came); lithograph/library not in record. Low resolution but the only P4 view and crop is fine"
+  },
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "best of the modern views; crop good"
+  }
+ ]
+}

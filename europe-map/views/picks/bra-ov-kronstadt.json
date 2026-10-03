@@ -1,0 +1,71 @@
+{
+ "city": "Brașov (Kronstadt)",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Kronstadt vom Schlossberg 1900.jpg",
+   "y": 1900,
+   "lab": "about 1900",
+   "what": "View from the Castle Hill, photochrom print",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.955
+   ],
+   "focal": [
+    0.58,
+    0.55
+   ],
+   "why": "color general view of the old town with the Black Church under Mount Tâmpa and the mountains; print number trimmed"
+  },
+  {
+   "n": 7,
+   "file": "Brassó, látkép a Cenk hegyről. - Fortepan 13752.jpg",
+   "y": 1961,
+   "lab": "1961",
+   "what": "View from Mount Tâmpa, photograph (Fortepan)",
+   "who": "Fortepan / Pálfi Balázs",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "the old town and the Black Church seen down through the trees from Tâmpa; two tree trunks cross the view"
+  },
+  {
+   "n": 12,
+   "file": "Panorama of Brașov old town with the Black Church and Mount Tâmpa (2025).jpg",
+   "y": 2025,
+   "lab": "2025",
+   "what": "The old town with the Black Church and Mount Tâmpa, photograph",
+   "who": "Paul Colin Hennig",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.58
+   ],
+   "why": "color view over the red roofs to the Black Church with Tâmpa behind"
+  }
+ ],
+ "gaps": "P0, P1, P2, P3: nothing (#1 is an ornamental putti vignette, not Brașov)",
+ "notes": "#3’s record dates it 1890–1905 and describes it as “Kronstadt um 1900”, so it is labeled about 1900; the print code P.Z. is Photoglob Zürich. #2 (from the Rattenberg, same series) and #4 (Muschalek photo, about 1890) are alternative P4 views. #5, #6, #8 are 1944 bombing photos with the city hidden under smoke. #7 is kept as the only 20th-century view that shows the town; drop it if the tree trunks are too intrusive.",
+ "_reviewed": true
+}

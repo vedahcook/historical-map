@@ -1,0 +1,92 @@
+{
+ "city": "Worms",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Heidelberga. Spira. Wormatia - btv1b53238722t (2 of 3).jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.69,
+    0.982,
+    0.97
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "the Worms strip of the three-city plate; cathedral and churches labeled"
+  },
+  {
+   "n": 9,
+   "file": "Worms De Merian Hassiae.jpg",
+   "y": 1655,
+   "lab": "1655",
+   "what": "View across the Rhine, engraving in Merian’s Topographia Hassiae",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.915
+   ],
+   "focal": [
+    0.42,
+    0.45
+   ],
+   "why": "clear river-front view; cathedral and Liebfrauenkirche recognizable"
+  },
+  {
+   "n": 13,
+   "file": "Nicolaus Berkhout Panorama von Worms.jpg",
+   "y": 1853,
+   "lab": "1853",
+   "what": "Panorama of the city, painting",
+   "who": "Nicolaus Berkhout",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.25,
+    0.995,
+    0.99
+   ],
+   "focal": [
+    0.62,
+    0.4
+   ],
+   "why": "color view across the fields to the cathedral and the town’s towers"
+  },
+  {
+   "n": 11,
+   "file": "General view, Worms, the Rhine, Germany-LCCN2002714132.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The cathedral above the roofs, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.18,
+    0.98,
+    0.935
+   ],
+   "focal": [
+    0.45,
+    0.35
+   ],
+   "why": "color general view dominated by the cathedral"
+  }
+ ],
+ "gaps": "P0, P3, P5, P6: none",
+ "notes": "#5 is a 1635 printing of the vol. 1 plate (1572), uncolored; the colored copies are unusable (#3 has a hole over the town, #4 and #6 have a book gutter through the view, #1 is only 1024 px). The plate’s Latin text box overlaps the sky at right and can’t be trimmed without losing that end of the town. #9: the record and file name give Topographia Hassiae, 1655; if this plate first appeared in Topographia Palatinatus Rheni (1645), its year should be 1645 and it would clash with #5 in P1. #13 and #11 are 42 years apart. #15 is the same photochrom as #11. #8 is a detail of a Merian plate; #7 is Pfeddersheim, #10 another Palatinate town.",
+ "_reviewed": true
+}

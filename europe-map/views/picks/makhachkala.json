@@ -1,0 +1,29 @@
+{
+ "city": "Makhachkala",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Самая южная столица в России.jpg",
+   "y": 2015,
+   "lab": "2015",
+   "what": "Aerial view of the city and harbor on the Caspian Sea, photograph",
+   "who": "Shamil Magomedov",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.15,
+    1,
+    0.8
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "general view of the whole city between the Caspian shore and the mountains; empty sea trimmed"
+  }
+ ],
+ "gaps": "P0–P5: no candidates",
+ "notes": "#2/#3 (2022, from Tarki) are good rooftop views with the Central Mosque but show only part of the city.",
+ "_reviewed": true
+}

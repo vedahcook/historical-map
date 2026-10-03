@@ -1,0 +1,113 @@
+{
+ "city": "Aachen",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Aachen-Braun-Hogenberg-1572.jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view from the east, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.04,
+    0.05,
+    0.93,
+    0.95
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "true bird’s-eye view of the first edition; cathedral and town hall recognizable (later editions replaced it with the 1576 plan)"
+  },
+  {
+   "n": 10,
+   "file": "Rhein-Strom 0184a Achen.jpg",
+   "y": 1690,
+   "lab": "1690",
+   "what": "View of the walled city, engraving after Matthäus Merian in Martialischer Schau-Platz des Rhein-Strohms",
+   "who": "after Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.165,
+    0.99,
+    0.965
+   ],
+   "focal": [
+    0.46,
+    0.5
+   ],
+   "why": "clear profile view with the cathedral at center; title and fold crease at top trimmed off"
+  },
+  {
+   "n": 11,
+   "file": "Gezicht op Aken Vue générale d'Aix-la-Chapelle (titel op object), RP-P-2018-924.jpg",
+   "y": 1829,
+   "lab": "1829",
+   "what": "General view, print (Rijksmuseum, Amsterdam)",
+   "who": "Hilaire Antoine Kreins and Jean Baptiste Madou after Jean Nicolas Ponsart",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.222,
+    0.228,
+    0.775,
+    0.705
+   ],
+   "focal": [
+    0.5,
+    0.62
+   ],
+   "why": "titled general view; city with its towers in the middle distance, high resolution"
+  },
+  {
+   "n": 15,
+   "file": "General view, Aachen, the Rhine, Germany-LCCN2002714133.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.025,
+    0.98,
+    0.94
+   ],
+   "focal": [
+    0.42,
+    0.57
+   ],
+   "why": "color panorama from a height with the cathedral and town hall; border and caption trimmed"
+  },
+  {
+   "n": 23,
+   "file": "Aachen, Nordrhein-Westfalen - Theaterstraße (Zeno Ansichtskarten).jpg",
+   "y": 1917,
+   "lab": "about 1917",
+   "what": "Theaterstraße with the cathedral and town hall towers, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.138,
+    0.968,
+    0.95
+   ],
+   "focal": [
+    0.4,
+    0.35
+   ],
+   "why": "street view down to the cathedral and town hall skyline; handwriting and printed caption trimmed"
+  }
+ ],
+ "gaps": "P0: nothing; P6: only details and interiors of the cathedral, no general view",
+ "notes": "#23 is dated from the postcard (likely its postmark), so the photo may be a few years older; #21 (1931 aerial, hazy and marked in red pencil) is the alternative for P5. #8 (Coumont engraving) skipped because it is only dated ‘17th century’. #7 is a 1652 reissue of the 1576 plan, a plan rather than a view.",
+ "_reviewed": true
+}

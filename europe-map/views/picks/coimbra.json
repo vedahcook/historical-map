@@ -1,0 +1,92 @@
+{
+ "city": "Coimbra",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Gezicht op de stad Coimbra, BI-1956-1074-39.jpg",
+   "y": 1598,
+   "lab": "1598",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 5 (Rijksmuseum)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.045,
+    0.22,
+    0.975,
+    0.795
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "colored bird’s-eye view; hilltop old town, aqueduct and Mondego bridge; arms, title and text cartouche trimmed off"
+  },
+  {
+   "n": 6,
+   "file": "Vista do Rio Mondego e dos Conventos de S. Francisco e de Santa Clara de Coimbra, A. C. Lemos, c. 1830 - Image 206639.jpg",
+   "y": 1830,
+   "lab": "about 1830",
+   "what": "The Mondego, the old bridge and the convents of Santa Clara and São Francisco, colored lithograph",
+   "who": "A. C. Lemos",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.015,
+    0.988,
+    0.975
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "only P3 view; the south bank across the old bridge, not the upper town"
+  },
+  {
+   "n": 9,
+   "file": "Coimbra1855.jpg",
+   "y": 1855,
+   "lab": "1855",
+   "what": "View from Santa Clara-a-Nova, photograph (National Library of Brazil)",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.28,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.35
+   ],
+   "why": "early general view with the university tower; date from the description (Commons date is the upload)"
+  },
+  {
+   "n": 11,
+   "file": "Vista de Coímbra desde la Universidad, Portugal, 2012-05-10, DD 03.JPG",
+   "y": 2012,
+   "lab": "2012",
+   "what": "View from the university, photograph",
+   "who": "Diego Delso",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "sharp color view over the city"
+  }
+ ],
+ "gaps": "P0: no candidates; P2: only a tiny copy plate on a book page (#5); P5: only a faded, distant 1967 slide (#8)",
+ "notes": "#1 is the vol. 5 (1598) plate; Rijksmuseum dates it 1596. It has a faint center fold, not a gutter. #2 is a brighter colored copy but small and watermarked; #4 is the same plate uncolored (1640 edition); #3 is a book spread. #7 is low resolution (1463 px), a halftone from a 1913 book, so the photo may be a few years older. The P6 views (#10–#12) all look from the university over residential hills; none shows the university hill itself. #8 (1967) could fill P5 with trim [0, 0.45, 1, 1] and focal [0.55, 0.4] if a weak view is acceptable.",
+ "_reviewed": true
+}

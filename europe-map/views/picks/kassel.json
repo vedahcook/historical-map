@@ -1,0 +1,134 @@
+{
+ "city": "Kassel",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Ansicht Kassel (Braun Hogenberg) 1572.jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.09,
+    0.795,
+    1
+   ],
+   "focal": [
+    0.7,
+    0.5
+   ],
+   "why": "colored view with the landgrave’s castle and the town on the Fulda; already cropped to the Kassel view"
+  },
+  {
+   "n": 11,
+   "file": "Gezicht op Kassel, RP-P-2019-3084.jpg",
+   "y": 1770,
+   "lab": "1770",
+   "what": "View of Kassel, etching (Rijksmuseum)",
+   "who": "Johannes Carl Wiederhold",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.145,
+    0.185,
+    0.85,
+    0.78
+   ],
+   "focal": [
+    0.42,
+    0.4
+   ],
+   "why": "general view with the church towers and the Karlsberg hills behind; book page and caption trimmed"
+  },
+  {
+   "n": 13,
+   "file": "Fuldabruecke Altstadt Kassel 1847.jpg",
+   "y": 1847,
+   "lab": "1847",
+   "what": "The Fulda bridge and the old town, drawing",
+   "who": "Adolph Menzel",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.028,
+    0.035,
+    0.966,
+    0.965
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "the old-town riverfront (Schlagd) and bridge, lost in 1943; 77 years after the 1770 view"
+  },
+  {
+   "n": 14,
+   "file": "General view, Cassel (i.e, Kassel), Hesse-Nassau, Germany-LCCN2002713878.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.02,
+    0.985,
+    0.94
+   ],
+   "focal": [
+    0.7,
+    0.5
+   ],
+   "why": "general view over the old-town roofs to the Martinskirche towers; color"
+  },
+  {
+   "n": 22,
+   "file": "Theodor Matthei Blick von der Höhe auf Kassel.jpg",
+   "y": 1919,
+   "lab": "1919",
+   "what": "View from the heights over old Kassel and the Fulda, painting",
+   "who": "Theodor Matthei",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.6
+   ],
+   "why": "color view of the old town before its destruction; modest resolution (1015 px)"
+  },
+  {
+   "n": 25,
+   "file": "Lohfelden, Germany - panoramio (3).jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The city center seen from the A44 near Bergshausen, photograph",
+   "who": "Foto Fitti",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "skyline with the Martinskirche towers; gray, hazy day but recognizable"
+  }
+ ],
+ "gaps": "P0: none. P2: nothing usable (the 1652 Blaeu bird’s-eye #8 is Cassel in French Flanders — ‘Castellum Morinorum’ on its hilltop — not Kassel; #9 is a ground plan).",
+ "notes": "Merian’s Topographia Hassiae view (#2, 1646) is also P1; the colored 1572 Braun and Hogenberg was preferred. #2 would be a fine swap if a later P1 date is wanted (trim its caption: [0, 0, 1, 0.88]). Hans Meyer-Kassel lithographs (#20, #21) show Rothenburg and Starnberg. P6 is weak (hazy telephoto); no better modern skyline among candidates.",
+ "_reviewed": true
+}

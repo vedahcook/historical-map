@@ -1,0 +1,50 @@
+{
+ "city": "La Rochelle",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.225,
+     0.03,
+     0.965,
+     0.965
+    ],
+    "focal": [
+     0.5,
+     0.35
+    ]
+   },
+   "reason": "crop included the legend box, title cartouche and the plate's patterned frame at right; tighter trim removes them and keeps the spire tops"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "Vernet 1762, clean crop"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "Corot 1851 per record, clean crop"
+  },
+  {
+   "n": 13,
+   "verdict": "ok",
+   "reason": "postcard before 1906, title trimmed"
+  },
+  {
+   "n": 18,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0,
+     0.996,
+     1
+    ]
+   },
+   "reason": "dark scan edge in the last pixel column at right; otherwise fine"
+  }
+ ]
+}

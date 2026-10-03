@@ -1,0 +1,50 @@
+{
+ "city": "Douai",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Gezicht op Douai, RP-P-2018-3268.jpg",
+   "y": 1617,
+   "lab": "1617",
+   "what": "View of the walled town, book engraving (Rijksmuseum)",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.05,
+    0.06,
+    0.945,
+    0.89
+   ],
+   "focal": [
+    0.55,
+    0.4
+   ],
+   "why": "true profile view with walls and church spires; titled Douay"
+  },
+  {
+   "n": 11,
+   "file": "Douai - Vue à partir du Beffroi (04).JPG",
+   "y": 2008,
+   "lab": "2008",
+   "what": "The town and the collegiate church of Saint-Pierre from the belfry, photograph",
+   "who": "Jérémy Jännick",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.35
+   ],
+   "why": "historic center from above with Saint-Pierre’s tower and dome"
+  }
+ ],
+ "gaps": "P0: none; P2–P5: nothing usable",
+ "notes": "#4 was published by Johannes Janssonius and Abraham van Herwijck (Amsterdam). #1–#3 (Braun and Hogenberg vol. 3, 1581) are a near-flat street plan, so the 1617 true view was preferred for P1. #6 is a Corot etching of trees (1913,1213.12 is the British Museum number, not a date). #7 is a good tram-era postcard panorama with Saint-Pierre, but it is dated only by a 1915 postmark; usable as about 1910 if a looser date is acceptable. #8 is a distant countryside panorama where the town is barely visible.",
+ "_reviewed": true
+}

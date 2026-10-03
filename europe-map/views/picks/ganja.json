@@ -1,0 +1,29 @@
+{
+ "city": "Ganja",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Gəncənin görünüşü View the city of Ganja Azerbaijan.jpg",
+   "y": 2018,
+   "lab": "2018",
+   "what": "View over the city toward the Caucasus, photograph",
+   "who": "Ilkin M-zade",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.03,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.6
+   ],
+   "why": "clear general view of the city with the mountains behind"
+  }
+ ],
+ "gaps": "P0–P5: nothing",
+ "notes": "#1 shows the Ganja Gate in Shusha, not Ganja. #3 (2018, hazy, mosque dome in front of the mountains) is an alternative P6 view.",
+ "_reviewed": true
+}

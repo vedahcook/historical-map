@@ -1,0 +1,15 @@
+{
+ "city": "Piraeus",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "photochrom edges excluded"
+  },
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "fuselage excluded; only mild dark vignette at left"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "city": "Sfax",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

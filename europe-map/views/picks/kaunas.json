@@ -1,0 +1,113 @@
+{
+ "city": "Kaunas",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Panorama of Kaunas by Tomasz Makowski, 1600.jpg",
+   "y": 1600,
+   "lab": "about 1600",
+   "what": "Panorama across the Neman, engraving",
+   "who": "Tomasz Makowski",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.024,
+    0.037,
+    0.986,
+    0.95
+   ],
+   "focal": [
+    0.4,
+    0.5
+   ],
+   "why": "true view of the walled town with labeled churches and castle on the river"
+  },
+  {
+   "n": 2,
+   "file": "Kauno graviūra, 1686.jpg",
+   "y": 1686,
+   "lab": "1686",
+   "what": "Engraving in Jacob Koppmayer’s Theatrum cosmographico-historicum",
+   "who": "Jacob Koppmayer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.06,
+    0.13,
+    0.636,
+    0.765
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "only P2 view; town across the river; text column and key trimmed. Low resolution (about 580 px after trim)"
+  },
+  {
+   "n": 6,
+   "file": "Kowno dzisiejsza stolica Żmudzi (A. Oleszczyński, A. Czapski, 1850).jpg",
+   "y": 1850,
+   "lab": "1850",
+   "what": "View from the hills above the town, engraving",
+   "who": "Antoni Oleszczyński",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.212,
+    0.196,
+    0.782,
+    0.676
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "highest-resolution copy of this view; Jesuit church towers and the river; decorative frame and verses trimmed"
+  },
+  {
+   "n": 12,
+   "file": "Kowno ca 1915 (118737593).jpg",
+   "y": 1915,
+   "lab": "about 1915",
+   "what": "The old town riverfront and the wartime pontoon bridge, photograph (Polona)",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.05,
+    0.07,
+    0.95,
+    0.93
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "high resolution; Jesuit church, town hall tower and Vytautas church; same bridge as the 1915 Kriegs-Echo photo (#9)"
+  },
+  {
+   "n": 14,
+   "file": "View of Kaunas from Church of Christ's Resurrection 03.JPG",
+   "y": 2013,
+   "lab": "2013",
+   "what": "The old town seen from the Church of Christ’s Resurrection",
+   "who": "Хомелка",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0.03,
+    0.25,
+    0.65,
+    0.9
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "only modern view showing the old town; distant, gray sky"
+  }
+ ],
+ "gaps": "P0: no candidates; P3: only Raffet’s 1839 painting of Marshal Ney in 1812 (event scene, no city)",
+ "notes": "#4 (about 1873) is a strong riverfront panorama but low resolution with a page fold through the middle, and too close to 1850 for a second P4 view; swap for #6 if preferred. #5, #7, #8 are other copies of the 1850 Oleszczyński view. #2 is derived from the Makowski composition. P6 pick is weak; replace if a better old-town or skyline photo turns up.",
+ "_reviewed": true
+}

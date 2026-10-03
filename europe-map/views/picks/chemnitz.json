@@ -1,0 +1,71 @@
+{
+ "city": "Chemnitz",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Chemnitz-1650-Merian.jpg",
+   "y": 1650,
+   "lab": "1650",
+   "what": "Engraving in Matthäus Merian’s Topographia Superioris Saxoniae",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.05,
+    0.994,
+    0.83
+   ],
+   "focal": [
+    0.35,
+    0.6
+   ],
+   "why": "wide panorama of the walled town and its churches; legend strip trimmed"
+  },
+  {
+   "n": 2,
+   "file": "Blick nach Chemnitz um 1840.jpg",
+   "y": 1840,
+   "lab": "about 1840",
+   "what": "View of Chemnitz from the Hüttenberg",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "color general view of the town and church towers"
+  },
+  {
+   "n": 7,
+   "file": "Chemnitz Altes Rathaus 1900.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Old Town Hall and market, photochrom print",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.39
+   ],
+   "why": "main landmark scene; same Photoglob photochrom as #4 (LOC, P.Z.) at five times the resolution"
+  }
+ ],
+ "gaps": "P0–P1: no candidates; P5: nothing; P6: only distant field panoramas and a rooftop view with no recognizable landmarks",
+ "notes": "#3 (Richter, 1820) is a black-and-white alternative for P3. Medium of #2 is not recorded; it looks like a colored print or gouache.",
+ "_reviewed": true
+}

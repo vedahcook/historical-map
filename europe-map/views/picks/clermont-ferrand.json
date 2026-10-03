@@ -1,0 +1,71 @@
+{
+ "city": "Clermont-Ferrand",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Clermont-Ferrand. La Cathedrale LCCN2017657467.tif",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The cathedral, photochrom print (Library of Congress)",
+   "who": "Photoglob Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.02,
+    0.975,
+    0.955
+   ],
+   "focal": [
+    0.45,
+    0.28
+   ],
+   "why": "the black lava-stone cathedral with its new spires (finished 1884), the city’s emblem; color, high resolution"
+  },
+  {
+   "n": 11,
+   "file": "ETH-BIB-Clermont-Ferrand, Usines Michelin-Dia 247-05533.tif",
+   "y": 1931,
+   "lab": "1931",
+   "what": "View over the rooftops to the Michelin works, photograph (ETH Library, Zurich)",
+   "who": "Leo Wehrli",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.075,
+    0.055,
+    0.935,
+    0.905
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "general view of the town with the Michelin factory chimneys that defined it in the 20th century; trimmed black frame and caption strip"
+  },
+  {
+   "n": 13,
+   "file": "OverClermontFerrand.jpg",
+   "y": 2020,
+   "lab": "2020",
+   "what": "The old town and the cathedral, photograph",
+   "who": "Ruben Holthuijsen",
+   "lic": "CC BY 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.47,
+    0.5
+   ],
+   "why": "general view from a height with the black cathedral towering over the old town and the hills behind"
+  }
+ ],
+ "gaps": "P0, P1, P2: no candidates. P3: only #1 (Delécluze, 1821), a wash drawing of the Monts Dôme in which the city is a faint speck — not recognizable, skipped.",
+ "notes": "#2 date: LOC gives 1890 for this Photoglob series, used as ‘1890s’. P4 alternative: Notre-Dame-du-Port photochrom (#3), also portrait format. #4–#7 are the Puy de Dôme, its temple ruins and Tournoël castle, not the city. #8–#10 Mittelholzer aerials show countryside and the volcano, not the town. P6 alternative: #15 (2023, from the Ferris wheel over Place de Jaude, cathedral and Puy de Dôme, sharper light but foreground buildings dominate).",
+ "_reviewed": true
+}

@@ -1,0 +1,50 @@
+{
+ "city": "Vladikavkaz",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Gezicht op Vladikavkaz en de Kaukasus Woenno-Groezinskaja doroga. Wladikawkaz, gora Kazbjok i Chrjobjot Kawkazskich gor (titel op object), RP-F-F01126-AZ.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "View of the town and the Caucasus range, albumen print (Rijksmuseum Amsterdam)",
+   "who": "unknown photographer",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.15,
+    0.205,
+    0.825,
+    0.73
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "general view over the rooftops with the mountains and Kazbek behind; titled Vladikawkaz on the print"
+  },
+  {
+   "n": 2,
+   "file": "Qariu-xox.jpg",
+   "y": 2009,
+   "lab": "2009",
+   "what": "The city at sunset with the mountains to the southwest, photograph",
+   "who": "Iosif Korotkij",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0.05,
+    0.18,
+    1,
+    0.72
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "only modern city view; mountains behind the town"
+  }
+ ],
+ "gaps": "P0–P3, P5: nothing",
+ "notes": "#1: trim set inside the album mount so the four tape corners and the printed caption are cut away; photographer not named in the record (numbered Russian caption, possibly Dmitri Ermakov). #2 is modest: low resolution, soft, silhouetted buildings; drop it if a stricter P6 standard is wanted.",
+ "_reviewed": true
+}

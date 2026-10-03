@@ -1,0 +1,40 @@
+{
+ "city": "York",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.12,
+     0.38,
+     0.9,
+     0.99
+    ],
+    "focal": [
+     0.45,
+     0.4
+    ]
+   },
+   "reason": "Real view of York, but in the full-frame crop the city is a thin strip under a large sky; tighter crop (78% of width) makes the Minster and skyline readable."
+  },
+  {
+   "n": 16,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.018,
+     0.026,
+     0.976,
+     0.925
+    ]
+   },
+   "reason": "Right edge of trim includes white paper beyond the print; tightened."
+  },
+  {
+   "n": 25,
+   "verdict": "ok",
+   "reason": "Minster, Ouse and Clifford’s Tower; record date field says 2015 but category says January 2009, either is P6."
+  }
+ ]
+}

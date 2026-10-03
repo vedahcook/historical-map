@@ -1,0 +1,19 @@
+{
+ "city": "Palma",
+ "checks": [
+  {
+   "n": 6,
+   "verdict": "fix",
+   "fix": {
+    "y": 1628,
+    "lab": "1623–33"
+   },
+   "reason": "record gives 1623–33; about 1630 is the picker’s own rounding"
+  },
+  {
+   "n": 20,
+   "verdict": "ok",
+   "reason": "hazy but La Seu and the harbor are recognizable; best modern general view"
+  }
+ ]
+}

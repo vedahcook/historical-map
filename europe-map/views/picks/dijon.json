@@ -1,0 +1,71 @@
+{
+ "city": "Dijon",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Gezicht op Dijon Dijon (titel op object), RP-P-OB-73.848.jpg",
+   "y": 1806,
+   "lab": "1786–1826",
+   "what": "View from the woods outside the city, etching (Rijksmuseum)",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.174,
+    0.209,
+    0.824,
+    0.712
+   ],
+   "focal": [
+    0.42,
+    0.45
+   ],
+   "why": "general view of the skyline with its spires; margins and title trimmed"
+  },
+  {
+   "n": 6,
+   "file": "General view, Dijon, France-LCCN2001698104.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "View over the rooftops, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.042,
+    0.048,
+    0.96,
+    0.91
+   ],
+   "focal": [
+    0.6,
+    0.42
+   ],
+   "why": "color general view; Tour Philippe le Bon and church spires; border and printed caption trimmed"
+  },
+  {
+   "n": 14,
+   "file": "20151104 dijon127.jpg",
+   "y": 2015,
+   "lab": "2015",
+   "what": "The former Saint-Étienne church on the Place du Théâtre",
+   "who": "Jean Housen",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "only usable modern photo of the historic center; no skyline view among candidates"
+  }
+ ],
+ "gaps": "P0–P1: no candidates; P2: only a low-resolution Merian plate (#1) with a fold through a faint distant skyline, skipped; P5: only a 1915-postmarked postcard dominated by the station yard (#12, picture date unknown) and a 1965 flood aerial",
+ "notes": "#4’s 1786–1826 is the Rijksmuseum’s estimate (y is the midpoint); #5 is another state of the same plate. #2/#3 are Guardi’s Prato della Valle (Padua) in the Dijon museum; #10/#11 are Lyon (Place Bellecour, Croix-Rousse). Photochrom #6 is marked ‘P.Z.’ (Photoglob Zürich). P6 pick is a single building; replace if a skyline or Palais des Ducs photo turns up.",
+ "_reviewed": true
+}

@@ -1,0 +1,92 @@
+{
+ "city": "Oran",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Gezicht op Oran, Algerije, RP-P-1971-312.jpg",
+   "y": 1683,
+   "lab": "1683–85",
+   "what": "Oran and Mers el-Kébir, etching (Rijksmuseum)",
+   "who": "Jacob Peeters",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.01,
+    0.05,
+    0.99,
+    0.88
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "labeled view 'Oran e Marsaguiur'; fortress on the rock; caption trimmed"
+  },
+  {
+   "n": 7,
+   "file": "L'Algérie à travers les âges. 33, Vue prise du Fort Santa Cruz à Oran - (mission) Boutroue ; (photogr. prise par) ND phot. (reprod. par) Molteni (pour la conférence donnée par) Boutroue - btv1b53249662r.jpg",
+   "y": 1890,
+   "lab": "about 1890",
+   "what": "View from Fort Santa Cruz, lantern slide (BnF)",
+   "who": "Neurdein frères",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.04,
+    0.2,
+    0.97,
+    0.93
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "general view of the port and city from above; slide border and caption trimmed"
+  },
+  {
+   "n": 11,
+   "file": "ETH-BIB-Blick auf Oran-Nordafrikaflug 1932-LBS MH02-13-0166.tif",
+   "y": 1932,
+   "lab": "1932",
+   "what": "Aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.85
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "clear oblique view over the whole city; dark foreground trimmed"
+  },
+  {
+   "n": 14,
+   "file": "GlobalViewOfOran.jpg",
+   "y": 2016,
+   "lab": "2016",
+   "what": "Night view from the mountain, photograph",
+   "who": "Mohamed-Bachir Belaid",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.15,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.55
+   ],
+   "why": "whole city and port from Murdjadjo; best recent general view"
+  }
+ ],
+ "gaps": "P0, P1: no candidates; P3: only #3, a copy of the Peeters view dated just to the 18th century, skipped",
+ "notes": "#7: the lantern slide was made in 1892 from a Neurdein photograph, so dated about 1890. #2 shows the castle of Mers el-Kébir, not Oran. #8 (Reclus engraving, 1891 English edition) is a good alternative for P4.",
+ "_reviewed": true
+}

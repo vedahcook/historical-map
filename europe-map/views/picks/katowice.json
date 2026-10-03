@@ -1,0 +1,50 @@
+{
+ "city": "Katowice",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Kattowitz. Gymnasium, Synagoge.jpg",
+   "y": 1910,
+   "lab": "1910",
+   "what": "The Gymnasium and the Great Synagogue, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.012,
+    0.515,
+    1.0
+   ],
+   "focal": [
+    0.5,
+    0.23
+   ],
+   "why": "tinted view of the domed Great Synagogue (destroyed 1939), the town’s best-known landmark of the period"
+  },
+  {
+   "n": 4,
+   "file": "Katowice - ogolny widok. 1935-1939 (69617552).jpg",
+   "y": 1937,
+   "lab": "1935–39",
+   "what": "General view with a new high-rise, postcard (Ruch)",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.024,
+    0.035,
+    0.976,
+    0.895
+   ],
+   "focal": [
+    0.58,
+    0.4
+   ],
+   "why": "sharp general view over the center to the industrial horizon, 1930s high-rise at center; caption and borders trimmed"
+  }
+ ],
+ "gaps": "P0–P3: no candidates. P6: only flowerbed-dominated shots of the Chorzowska office towers (#7, #9), a street scene (#8) and a housing-estate aerial (#6); none shows the center well.",
+ "notes": "#1’s printed caption sits in the sky above the synagogue and cannot be trimmed without cutting off the dome; drop #1 if captions are unacceptable. #2 (1934, its catalog note about a Matejko painting is a cataloging error; it is a photo) and #3/#5 (1936, St. Andrew’s Square) are good P5 alternatives.",
+ "_reviewed": true
+}

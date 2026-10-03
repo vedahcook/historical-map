@@ -1,0 +1,37 @@
+{
+ "city": "Amiens",
+ "checks": [
+  {
+   "n": 10,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.087,
+     0.1,
+     0.92,
+     0.9
+    ],
+    "focal": [
+     0.55,
+     0.41
+    ]
+   },
+   "reason": "old trim includes the plate frame lines at left, top and right, cut the bottom of the picture early, and the 16:9 window clipped the spire tip; new focal keeps the whole spire"
+  },
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "cathedral from the belfry; border excluded, spire inside the crop"
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "McGrew aerial May 1918, caption excluded, cathedral inside the crop"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "weak (no cathedral) but a real view of the center from a height, 2007 EXIF matches description"
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+{
+ "city": "Orléans",
+ "picks": [
+  {
+   "n": 4,
+   "file": "De praecipvis totivs Vniversi vrbibvs, liber secvndvs 1575 (110198654).jpg",
+   "y": 1575,
+   "lab": "1575",
+   "what": "View across the Loire, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 2",
+   "who": "Georg Braun and Frans Hogenberg, after Joris Hoefnagel",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.16,
+    0.105,
+    0.868,
+    0.458
+   ],
+   "focal": [
+    0.55,
+    0.4
+   ],
+   "why": "colored panorama with the bridge and cathedral; trimmed to the Orléans view above Bourges"
+  },
+  {
+   "n": 9,
+   "file": "Lambert Doomer - View of Orléans from the Loire - 1966.4 - Cleveland Museum of Art.tif",
+   "y": 1665,
+   "lab": "about 1665",
+   "what": "View from the Loire, drawing (Cleveland Museum of Art)",
+   "who": "Lambert Doomer",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.01,
+    0.02,
+    0.99,
+    0.98
+   ],
+   "focal": [
+    0.68,
+    0.7
+   ],
+   "why": "riverfront with the old bridge, towers and the cathedral under rebuilding"
+  },
+  {
+   "n": 15,
+   "file": "General view, Orléans, France-LCCN2001698498.tif",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "View across the Loire, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.025,
+    0.97,
+    0.9
+   ],
+   "focal": [
+    0.7,
+    0.5
+   ],
+   "why": "the Loire bridge and Sainte-Croix cathedral; caption trimmed"
+  }
+ ],
+ "gaps": "P0: none; P3 and P5: nothing (most hits in those periods are New Orleans); no second P4",
+ "notes": "#4 is a photo of the bound book but the plate lies flat; only a faint fold line crosses the view. #9: Cleveland’s date is given as 1665; Doomer drew the Loire in 1646 and made finished sheets later, so about 1665. #25 is a tall portrait; the 16:9 crop will show only the middle of the facade, drop it if a blank plate is preferred. Not usable here but worth knowing: tours/#20 is a 1931 aerial of Orléans (Meurisse, Gallica) filed under Tours. #11–14 and #17–24 are New Orleans; #7 is a Paris garden; #10 is “near Orléans”; #26–28 are museum photos of paintings with uncertain dates.",
+ "_reviewed": true
+}

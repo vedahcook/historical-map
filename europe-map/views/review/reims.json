@@ -1,0 +1,38 @@
+{
+ "city": "Reims",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "fix",
+   "fix": {
+    "y": 1615,
+    "lab": "about 1615",
+    "trim": [
+     0.168,
+     0.315,
+     0.845,
+     0.685
+    ]
+   },
+   "reason": "1641 is the Boisseau edition date of the Topographie françoise in the BnF record, not when the plate was made: Chastillon died about 1616 and the plate is signed by the young Merian (Paris, 1610s), so use an estimate near 1615; left edge of crop also catches the plate frame"
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "Neyts painting of the cathedral front and its square; date is only his working span 1643–87, so the label is a loose range; keep only if that is acceptable"
+  },
+  {
+   "n": 15,
+   "verdict": "fix",
+   "fix": {
+    "who": "Étienne Neurdein (probably)"
+   },
+   "reason": "Rijksmuseum names Étienne Neurdein as probable photographer (“mogelijk”) and Commons categorizes it under him; “unknown photographer” is not what the record says"
+  },
+  {
+   "n": 22,
+   "verdict": "ok",
+   "reason": "high-altitude aerial of Reims (record: Aerial view of Reims; file name carries the commune where it was taken); hazy with no landmark visible, but correct and the only usable modern image (#23–25 are street scenes)"
+  }
+ ]
+}

@@ -1,0 +1,134 @@
+{
+ "city": "Rostock",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Panorama Rostock Franz Hogenberg 1597.jpg",
+   "y": 1598,
+   "lab": "1598",
+   "what": "View from the Gehlsdorf shore, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 5",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.01,
+    0.99,
+    0.99
+   ],
+   "focal": [
+    0.5,
+    0.35
+   ],
+   "why": "colored panorama across the Warnow, St. Mary’s and the other churches labeled; townsfolk in the foreground"
+  },
+  {
+   "n": 10,
+   "file": "Rostock-1653-Merian.jpg",
+   "y": 1653,
+   "lab": "1653",
+   "what": "Panorama, engraving in Merian’s Topographia Saxoniae Inferioris",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.01,
+    0.995,
+    0.99
+   ],
+   "focal": [
+    0.45,
+    0.55
+   ],
+   "why": "clean scan of the full prospect across the Warnow"
+  },
+  {
+   "n": 11,
+   "file": "Kersting - Ansicht Rostocks vom Gertrudenplatz aus 1809.jpg",
+   "y": 1809,
+   "lab": "1809",
+   "what": "View from the Gertrudenplatz, painting (Rostock Museum of Cultural History)",
+   "who": "Georg Friedrich Kersting",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.35,
+    0.55
+   ],
+   "why": "color; the Kröpelin Gate and church spires over the suburb"
+  },
+  {
+   "n": 15,
+   "file": "General view, Rostock, Mecklenburg-Schwern, Germany-LCCN2002713944.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "View across the Warnow, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.02,
+    0.98,
+    0.935
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "color skyline with St. Mary’s, St. Nicholas and St. Peter’s over the harbor"
+  },
+  {
+   "n": 23,
+   "file": "Rostock (RW 0229 15186).jpg",
+   "y": 1924,
+   "lab": "1924",
+   "what": "Aerial photograph",
+   "who": "Hansa Luftbild",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.012,
+    0.035,
+    0.95,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.58
+   ],
+   "why": "oblique view over the old town to the Warnow and Gehlsdorf"
+  },
+  {
+   "n": 27,
+   "file": "Rostock Ostsee (49833374777).jpg",
+   "y": 2019,
+   "lab": "2019",
+   "what": "Aerial photograph",
+   "who": "Federal Waterways Engineering and Research Institute",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "color view of the old town and city harbor on the Warnow during Hanse Sail"
+  }
+ ],
+ "gaps": "P0: none",
+ "notes": "#1: Commons dates the plate 1597 (vol. 5); dated 1598 per the volume’s first publication, change to 1597 if that date is on the plate. #2, titled Rostochium (1572), actually shows Wismar (Braun and Hogenberg swapped the names); #3, titled Wismaria, is Rostock but only 1010 px wide, so not used. #4 is the same vol. 5 plate as #1 in a bound book with the gutter through it. #14 is the same Kersting painting as #11, lower resolution. P3 could also take Tischbein 1843 (#13) instead, but it is only 34 years after 1809. #22 (Erich Möller) is dated only “before 1942”. #23 has a thin dark line across the negative and some haze. #19–#21 show Warnemünde, not the city.",
+ "_reviewed": true
+}

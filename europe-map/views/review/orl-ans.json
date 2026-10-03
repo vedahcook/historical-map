@@ -1,0 +1,25 @@
+{
+ "city": "Orléans",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "1575 vol. 2 colored panorama; faint page crease through the sky is unavoidable at this crop"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "Doomer drawing, date per record"
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "photochrom with P.Z. mark, crop clean"
+  },
+  {
+   "n": 25,
+   "verdict": "drop",
+   "reason": "portrait photo of the façade: a 16:9 crop cuts off both tower tops (or shows only sky and tower tops if moved up); not a city view"
+  }
+ ]
+}

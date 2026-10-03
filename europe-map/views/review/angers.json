@@ -1,0 +1,28 @@
+{
+ "city": "Angers",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.01,
+     0.16,
+     0.98,
+     0.905
+    ]
+   },
+   "reason": "Merian Topographia Galliae view of Angers, about 1657 per record; old trim includes the plate edge line at right and the bottom scroll ornament"
+  },
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "Drake view of the Maine with the cathedral towers, 1860 per record; clean crop"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "taken 11 June 2017; cathedral spires inside the crop"
+  }
+ ]
+}

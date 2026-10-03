@@ -1,0 +1,71 @@
+{
+ "city": "Tula",
+ "picks": [
+  {
+   "n": 1,
+   "file": "View of Tula, the Sheffield of Russia, in the approach of Moscow - Clarke Edward Daniel - 1810.jpg",
+   "y": 1810,
+   "lab": "1810",
+   "what": "View on the approach from Moscow, engraving in Edward Daniel Clarke’s Travels",
+   "who": "Edward Daniel Clarke and Joseph Skelton",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.02,
+    0.985,
+    0.88
+   ],
+   "focal": [
+    0.65,
+    0.5
+   ],
+   "why": "only pre-photo view; labeled Tula, churches and bell tower visible"
+  },
+  {
+   "n": 3,
+   "file": "View of Tula from the Church of Florus and Laurus bell tower.jpg",
+   "y": 1891,
+   "lab": "1891",
+   "what": "View from the bell tower of the Church of Florus and Laurus, photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "general view over the town toward its churches"
+  },
+  {
+   "n": 4,
+   "file": "View of Tula in 1919.jpg",
+   "y": 1919,
+   "lab": "1919",
+   "what": "Aerial photograph of the center and the Upa River",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "whole center and river from the air"
+  }
+ ],
+ "gaps": "P0–P2: nothing; P6: only night aerials, a hotel, and Tula in Mexico (#5) — none usable",
+ "notes": "#1: Clarke’s Russia volume was first published 1810 (Commons date 1813 refers to Part 2); the hills behind the town are exaggerated, as often in his plates. #2 (1900, Trinity church from the frozen Upa) is a weaker P4 alternative.",
+ "_reviewed": true
+}

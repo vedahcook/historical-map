@@ -1,0 +1,50 @@
+{
+ "city": "Cardiff",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Caerdyf (1133635).jpg",
+   "y": 1806,
+   "lab": "about 1806",
+   "what": "Cardiff Castle, engraving",
+   "who": "Richard Colt Hoare and William Byrne",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.01,
+    0.01,
+    0.99,
+    0.865
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "the castle, the town’s landmark; sharp, high resolution"
+  },
+  {
+   "n": 6,
+   "file": "From the southeast, Cardiff Castle, Wales-LCCN2001703450.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Cardiff Castle from the southeast, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.018,
+    0.018,
+    0.983,
+    0.95
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "color; castle walls and clock tower with street life"
+  }
+ ],
+ "gaps": "P0–P2: nothing (#1 is Canaletto’s Venice in the National Museum Cardiff); P5: only railway and office-garden shots; P6: Cardiff Bay panoramas are mostly water, skipped",
+ "notes": "#11 (‘North West View of Cardiff’, in an 1896 handbook) looks like a reproduction of a much older print with no date of its own, so skipped. #19 is a late-1970s aerial of Cathays Park (date only in the title) if a P6 fallback is wanted.",
+ "_reviewed": true
+}

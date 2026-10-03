@@ -1,0 +1,37 @@
+{
+ "city": "Bergen",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.225,
+     0.315,
+     0.898,
+     0.87
+    ],
+    "focal": [
+     0.5,
+     0.0
+    ]
+   },
+   "reason": "crop included the key list and caption at upper left and the right frame line; new crop drops them and shows the town, harbor and mountains"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "town is small but it is a genuine color view of Bergen from the water"
+  },
+  {
+   "n": 19,
+   "verdict": "ok",
+   "reason": "good view, crop and fields agree with the record"
+  },
+  {
+   "n": 28,
+   "verdict": "ok",
+   "reason": "crop is about 0.41 of panorama width, acceptable at this resolution"
+  }
+ ]
+}

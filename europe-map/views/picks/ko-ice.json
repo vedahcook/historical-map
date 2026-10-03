@@ -1,0 +1,92 @@
+{
+ "city": "Košice",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Kosice by Braun Hogenberg (97692526).jpg",
+   "y": 1617,
+   "lab": "1617",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 6",
+   "who": "Georg Braun and Frans Hogenberg after Egidius van der Rye",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.022,
+    0.045,
+    0.962,
+    0.935
+   ],
+   "focal": [
+    0.55,
+    0.33
+   ],
+   "why": "colored general view, the cathedral rising over the walled town"
+  },
+  {
+   "n": 8,
+   "file": "View of Kosice 1685-1700, East Slovak Museum, 2018-05-24.jpg",
+   "y": 1692,
+   "lab": "1685–1700",
+   "what": "Bird’s-eye view, colored engraving (East Slovak Museum)",
+   "who": "Gabriel Bodenehr the Elder",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.02,
+    0.99,
+    0.69
+   ],
+   "focal": [
+    0.47,
+    0.5
+   ],
+   "why": "colored view of the fortified town with the cathedral; caption mentions the 1685 capture, so made after it"
+  },
+  {
+   "n": 12,
+   "file": "The cathedral, Kaschau, Hungary, Austro-Hungary-LCCN2002710878.tif",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "St. Elisabeth Cathedral and St. Urban’s Tower, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.015,
+    0.985,
+    0.94
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "color; the cathedral is the city’s emblem"
+  },
+  {
+   "n": 17,
+   "file": "Sckeskova panoráma Košíc.jpg",
+   "y": 2009,
+   "lab": "2009",
+   "what": "Panorama over the city center, photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.82,
+    0.5
+   ],
+   "why": "only modern view of the center; cathedral tower and old-town roofs at the right"
+  }
+ ],
+ "gaps": "P0: none; P3: none usable; P5: none",
+ "notes": "#5, #6, #3 and #2 are the same vol. 6 plate (inscribed 1617); #5 is the largest clean colored copy. #8’s museum date is 1685–1700; its caption records the imperial capture of 1685. #9 (Koppmayer) is dated only ‘17th century’. #11 (1786) is a council list with a small, blurry skyline photographed through glass — skipped. For P4, #13 is a general photochrom view from the vineyards, but the cathedral is tiny in it; #12 and #15 are the same cathedral photochrom. #17 artist field reads only ‘Of’; the left part of the panorama is a modern office block, so center the crop on the old town.",
+ "_reviewed": true
+}

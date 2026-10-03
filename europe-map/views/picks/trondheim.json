@@ -1,0 +1,113 @@
+{
+ "city": "Trondheim",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Maschius Trondhjemsprospekt m seteritak.jpg",
+   "y": 1674,
+   "lab": "1674",
+   "what": "Prospect of the city from the east, copper engraving",
+   "who": "Jacob Maschius",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.785
+   ],
+   "focal": [
+    0.35,
+    0.55
+   ],
+   "why": "earliest general view; cathedral and waterfront with boats; Latin caption trimmed"
+  },
+  {
+   "n": 5,
+   "file": "Prospect af Staden Tronhiem i Norge Dalager.jpg",
+   "y": 1813,
+   "lab": "1813",
+   "what": "Prospect of the city from the west, colored drawing",
+   "who": "Mathias F. Dalager",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.02,
+    0.975,
+    0.86
+   ],
+   "focal": [
+    0.65,
+    0.72
+   ],
+   "why": "color general view over the town, fjord and Munkholmen; cathedral at right; title cartouche trimmed"
+  },
+  {
+   "n": 10,
+   "file": "Gezicht op Trondheim en de Nidelva, RP-F-F18171.jpg",
+   "y": 1892,
+   "lab": "1892",
+   "what": "View across the Nidelva, albumen print (Rijksmuseum)",
+   "who": "unknown photographer",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.272,
+    0.272,
+    0.74,
+    0.735
+   ],
+   "focal": [
+    0.55,
+    0.42
+   ],
+   "why": "general view of the town across the river; trimmed to the print, mount removed"
+  },
+  {
+   "n": 13,
+   "file": "Dovrebanen km551 Trondhjem 1930 UBT-TO-084798.jpg",
+   "y": 1930,
+   "lab": "1930",
+   "what": "Aerial photograph during the Trøndelag exhibition",
+   "who": "Schrøder Fotograf",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.65,
+    0.5
+   ],
+   "why": "sharp oblique aerial of the harbor, Nidelva mouth and the town grid"
+  },
+  {
+   "n": 17,
+   "file": "Trondheim - panorama 01.jpg",
+   "y": 2012,
+   "lab": "2012",
+   "what": "Panorama of the city with Nidaros Cathedral, photograph",
+   "who": "Paweł Szubert",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0.2,
+    0,
+    0.7,
+    1
+   ],
+   "focal": [
+    0.49,
+    0.55
+   ],
+   "why": "only modern view showing the cathedral; trimmed to the middle of a very wide panorama"
+  }
+ ],
+ "gaps": "P0, P1: no candidates. P2 has only the 1674 Maschius prospect (#2, #3 are portraits). P3: only one strong general view (the 1815 Torvet watercolor #4 is two years later). P4: the photochroms (#7–#9) show the Leirfoss waterfalls outside town.",
+ "notes": "#14/#16 (1955–60 aerials, snow) are an alternative for P5. P6 alternatives: #18 (Brattørkaia waterfront with the Powerhouse building, sharper but no historic landmarks), #20 (2023 aerial in snow and cloud). The 1892 print’s photographer is not named in the record.",
+ "_reviewed": true
+}

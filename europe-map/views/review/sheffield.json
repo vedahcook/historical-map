@@ -1,0 +1,20 @@
+{
+ "city": "Sheffield",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

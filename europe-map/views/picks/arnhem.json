@@ -1,0 +1,134 @@
+{
+ "city": "Arnhem",
+ "picks": [
+  {
+   "n": 6,
+   "file": "Aelbert Cuyp - View of Arnhem from the South, c. 1642-1646 - Google Art Project.jpg",
+   "y": 1644,
+   "lab": "1642–46",
+   "what": "View from the south, drawing",
+   "who": "Aelbert Cuyp",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.02,
+    0.584,
+    0.985
+   ],
+   "focal": [
+    0.8,
+    0.5
+   ],
+   "why": "true skyline view with the Eusebiuskerk; trim stops at the join between the two sheets"
+  },
+  {
+   "n": 10,
+   "file": "Gezicht op Arnhem, RP-T-1895-A-3114.jpg",
+   "y": 1690,
+   "lab": "1690",
+   "what": "View over the Rhine from the hills, drawing (Rijksmuseum)",
+   "who": "Laurens Vincentsz. van der Vinne",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.03,
+    0.1,
+    0.758,
+    0.97
+   ],
+   "focal": [
+    0.41,
+    0.52
+   ],
+   "why": "general view; town and Eusebiuskerk on the Rhine with the boat bridge; added paper strip at right trimmed off"
+  },
+  {
+   "n": 12,
+   "file": "Gezicht op de Rijn bij Arnhem Aarnhem (titel op object) Gezichten langs den Rhyn (serietitel), RP-P-1904-2400.jpg",
+   "y": 1767,
+   "lab": "1767",
+   "what": "The Rhine and the town, etching from a series of views along the Rhine (Rijksmuseum)",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.036,
+    0.047,
+    0.966,
+    0.925
+   ],
+   "focal": [
+    0.3,
+    0.57
+   ],
+   "why": "general view along the river; Eusebiuskerk tower clear"
+  },
+  {
+   "n": 16,
+   "file": "The town and Rhine, Arnhem, Holland-LCCN2001698768.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The town across the Rhine, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.025,
+    0.98,
+    0.9
+   ],
+   "focal": [
+    0.55,
+    0.55
+   ],
+   "why": "color river-front view with the Eusebiuskerk tower; trim cuts caption"
+  },
+  {
+   "n": 21,
+   "file": "View on Arnhem A.jpg",
+   "y": 1963,
+   "lab": "1963",
+   "what": "View over the city toward the south, photograph",
+   "who": "Wouter Hagens",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.3
+   ],
+   "why": "color skyline with the rebuilt Eusebius tower; foreground is suburban"
+  },
+  {
+   "n": 28,
+   "file": "Panoramic view of Arnhem at the Rhine river, from the South East - panoramio.jpg",
+   "y": 2015,
+   "lab": "2015",
+   "what": "The city on the Rhine from the southeast, photograph",
+   "who": "Henk Monster",
+   "lic": "CC BY 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "river front with the Eusebius tower; best of the modern views"
+  }
+ ],
+ "gaps": "P0: nothing",
+ "notes": "P1 Braun and Hogenberg plate (#1–#4, vol. 3, 1581) shows Arnhem as a small bird’s-eye town plan in one quarter of a four-town plate; passed over for Cuyp’s true view. Cuyp (#6) and van der Vinne (#10) are drawn on joined sheets; both trims stop at the join. Cornelis Pronk’s dated drawing of 26 June 1729 (#8) is a close, well-labeled alternative for P2. Rademaker #9 (1727–33) reconstructs the town ‘about 1630’, so skipped. Roth #13 is an imaginary view. NIMH aerials #22–#24 dated only 1920–40, and #22/#24 are not the city. #12’s engraver is not named in the record.",
+ "_reviewed": true
+}

@@ -1,0 +1,29 @@
+{
+ "city": "Chernihiv",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Chernihiv 2014 Церква Михайла та Федора Panorama.jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The Church of Saints Michael and Theodore across a pond, photograph",
+   "who": "Nomad0212",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.2,
+    0,
+    0.8,
+    1
+   ],
+   "focal": [
+    0.48,
+    0.5
+   ],
+   "why": "only usable modern city view; yellow church reflected in the water, trimmed to the middle of the wide panorama"
+  }
+ ],
+ "gaps": "P0–P5: no candidates",
+ "notes": "#1 is the Desna in Koropskyi district, not the city. #3 is a distorted 360° panorama of Red Square, too narrow to crop. #4 is a riverbank with no city in view. #2 does not show the city’s best-known landmarks (the Val, Transfiguration Cathedral); replace if a better modern view turns up.",
+ "_reviewed": true
+}

@@ -1,0 +1,50 @@
+{
+ "city": "Bath",
+ "picks": [
+  {
+   "n": 7,
+   "file": "From Beechen Cliff, Bath, England-LCCN2002696364.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The city from Beechen Cliff, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.026,
+    0.032,
+    0.972,
+    0.91
+   ],
+   "focal": [
+    0.45,
+    0.55
+   ],
+   "why": "color general view over the city and its hills from the south, with the station in front; border and caption trimmed"
+  },
+  {
+   "n": 18,
+   "file": "View of Bath Abbey from Cheap Street - geograph.org.uk - 2546723.jpg",
+   "y": 2011,
+   "lab": "2011",
+   "what": "Bath Abbey from Cheap Street, photograph",
+   "who": "Robert Lamb",
+   "lic": "CC BY-SA 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "the whole abbey, the city’s main landmark, framed by Georgian stone buildings"
+  }
+ ],
+ "gaps": "P0–P3: nothing usable; P5: nothing usable",
+ "notes": "#1–#6 are not Bath: an imaginary Roman bath by Joli, Canaletto’s Knights of the Bath at Westminster, Fort Bath on the Scheldt, and Boulogne-sur-Mer bathing machines. #16 is Bath Row in Stamford. #14 (1966 panorama from Southdown) is genuine but faded, only 1280 px, and shows mostly suburbs with no clear landmarks; #13 is a vertical crop of the same scene. #8–#12 are photochroms of the Roman Baths and Abbey, all from the same decade as #7. #17 (Abbey from North Parade) and #15 (west front at dusk, higher resolution) are P6 alternatives.",
+ "_reviewed": true
+}

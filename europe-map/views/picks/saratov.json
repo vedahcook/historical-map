@@ -1,0 +1,50 @@
+{
+ "city": "Saratov",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Саратов, вид с Волги.jpg",
+   "y": 1910,
+   "lab": "about 1910",
+   "what": "The city seen from the Volga, color postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.07,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.4
+   ],
+   "why": "river front with paddle steamers and the cathedral domes; printed title trimmed"
+  },
+  {
+   "n": 5,
+   "file": "Views of Saratov from the top of Sokolovaya Mountain (July 2025) - 0 2.jpg",
+   "y": 2025,
+   "lab": "2025",
+   "what": "View from Sokolovaya Hill over the city and the Volga bridge, photograph",
+   "who": "Vyacheslav Bukharov",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.58,
+    0.6
+   ],
+   "why": "sharp color view with the Saratov bridge, a domed church and the Volga"
+  }
+ ],
+ "gaps": "P0–P3: no candidates. P5: none (the postcard is pre-1917, placed in P4).",
+ "notes": "#1 is dated only ‘before 1917’ on Commons; the pre-reform spelling (Саратовъ) and color-postcard style put it between about 1900 and 1917, so ‘about 1910’ is an estimate — drop it if that is too loose. #4 (same photographer, wider) is a good alternative for P6.",
+ "_reviewed": true
+}

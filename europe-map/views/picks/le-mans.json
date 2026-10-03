@@ -1,0 +1,50 @@
+{
+ "city": "Le Mans",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Vue du Mans en 1860.jpg",
+   "y": 1860,
+   "lab": "about 1860",
+   "what": "General view of the town with the cathedral, lithograph",
+   "who": "Jacotet et fils",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.3,
+    0.35
+   ],
+   "why": "general view of the hill town crowned by the cathedral, just after the railway arrived"
+  },
+  {
+   "n": 5,
+   "file": "Vue Vieille Ville - Le Mans (FR72) - 2026-07-31 - 1.jpg",
+   "y": 2026,
+   "lab": "2026",
+   "what": "The old town above the Sarthe, photograph",
+   "who": "Chabe01",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.1,
+    1,
+    0.82
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "color view of the old town’s roofs and towers across the river"
+  }
+ ],
+ "gaps": "P0–P3: nothing among the candidates; P5: none",
+ "notes": "#1 is low resolution (1137 px wide) and already cropped from a larger print. #2 and #3 (2010) are a snowy bridge and a parking lot panorama; #4 shows the modern République quarter.",
+ "_reviewed": true
+}

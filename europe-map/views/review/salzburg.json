@@ -1,0 +1,36 @@
+{
+ "city": "Salzburg",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.45,
+     0.33
+    ]
+   },
+   "reason": "focal y 0.42 cuts the top of the Hohensalzburg castle; 0.33 keeps the castle, cathedral towers and roofs in the 16:9 crop"
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "good"
+  },
+  {
+   "n": 13,
+   "verdict": "ok",
+   "reason": "good"
+  },
+  {
+   "n": 20,
+   "verdict": "ok",
+   "reason": "good; edges and caption clear"
+  },
+  {
+   "n": 26,
+   "verdict": "ok",
+   "reason": "good"
+  }
+ ]
+}

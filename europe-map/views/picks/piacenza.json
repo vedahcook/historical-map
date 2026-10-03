@@ -1,0 +1,50 @@
+{
+ "city": "Piacenza",
+ "picks": [
+  {
+   "n": 4,
+   "file": "View of the Palazzo Pubblico (Palazzo Comunale), Piacenza MET DP-16021-001.jpg",
+   "y": 1825,
+   "lab": "1820s",
+   "what": "The Palazzo Comunale (Il Gotico) and the Farnese statues, drawing (Metropolitan Museum of Art)",
+   "who": "Giulio Aluisetti",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.03,
+    0.09,
+    0.97,
+    0.885
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "the town’s best-known landmark, crisply drawn"
+  },
+  {
+   "n": 6,
+   "file": "ETH-BIB-Piacenza von S. aus 1800 m Höhe-Weitere-LBS MH02-06-0020.tif",
+   "y": 1928,
+   "lab": "1928",
+   "what": "Aerial photograph from the south (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "whole walled town and the Po in one frame"
+  }
+ ],
+ "gaps": "P0–P2: none usable; P4: none; P6: no modern photo offered",
+ "notes": "#1 is a colored bird’s-eye plan in a bound atlas that the Rijksmuseum dates 1600, but its style is that of a later Dutch atlas (Blaeu or Mortier, 1660s–1700s), so the date is doubtful; skipped. #2 is a flat fortification plan. #3 (Hessemer, 1827) is a true general view of the skyline but a very faint pencil drawing; it could replace #4 if a general view is preferred. #5 is the tram station, date range 1881–1933.",
+ "_reviewed": true
+}

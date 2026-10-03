@@ -1,0 +1,50 @@
+{
+ "city": "Pristina",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Priština, 30. léta.jpg",
+   "y": 1933,
+   "lab": "early 1930s",
+   "what": "General view, photograph",
+   "who": "Markéta Čcheidzeová (family archive)",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.01,
+    0.04,
+    0.97,
+    0.97
+   ],
+   "focal": [
+    0.6,
+    0.7
+   ],
+   "why": "general view of the low Ottoman-era town with its minarets; trim drops torn edges"
+  },
+  {
+   "n": 3,
+   "file": "Panorama of Prishtina.JPG",
+   "y": 2013,
+   "lab": "2013",
+   "what": "Panorama of the city center, photograph",
+   "who": "Ardianlumi",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.35,
+    0.6
+   ],
+   "why": "center with recognizable modern landmarks (sports palace at left, tower block); colors somewhat oversaturated"
+  }
+ ],
+ "gaps": "P0–P4: no candidates.",
+ "notes": "#1 is dated “first half of the 1930s” and credited “family archive”; the Commons author field names the uploader’s family (Markéta Čcheidzeová), so the actual photographer is unknown. #5 (Arild Vågen, 2013) is a technically better but less recognizable view of central rooftops and could replace #3.",
+ "_reviewed": true
+}

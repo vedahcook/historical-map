@@ -1,0 +1,10 @@
+{
+ "city": "Białystok",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

@@ -1,0 +1,92 @@
+{
+ "city": "Basel",
+ "picks": [
+  {
+   "n": 11,
+   "file": "Prospectus Templi Cathedralis quod est Basileae, nec non Pontis Rhenum transeuntis, admodum delectabilis ; Campus Divi Petri qui est Basileae - M. Merian fecit - btv1b53238827f (1 of 2).jpg",
+   "y": 1642,
+   "lab": "1642",
+   "what": "The Minster and the Rhine bridge, engraving in Merian’s Topographia Helvetiae",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.048,
+    0.124,
+    0.874,
+    0.487
+   ],
+   "focal": [
+    0.4,
+    0.4
+   ],
+   "why": "classic view from the Minster terrace up the Rhine to the Middle Bridge and Kleinbasel; trimmed to the top plate (St. Peter’s Square below)"
+  },
+  {
+   "n": 21,
+   "file": "Basel. Das Rathaus LCCN2017660908.jpg",
+   "y": 1905,
+   "lab": "about 1905",
+   "what": "The town hall on the Marktplatz, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.018,
+    0.024,
+    0.982,
+    0.976
+   ],
+   "focal": [
+    0.55,
+    0.39
+   ],
+   "why": "the red Rathaus, the city’s best-known building; color, high resolution, landscape format"
+  },
+  {
+   "n": 27,
+   "file": "ETH-BIB-Basel, Altstadt, Zentrum, Münster aus 300 m-Inlandflüge-LBS MH01-001422.tif",
+   "y": 1919,
+   "lab": "1919",
+   "what": "The old town and the Minster from 300 m, aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.35
+   ],
+   "why": "sharp oblique aerial of the old town with the Minster and the Middle Bridge on the Rhine"
+  },
+  {
+   "n": 31,
+   "file": "Basel-Muenster-08-gje.jpg",
+   "y": 2010,
+   "lab": "2010",
+   "what": "The Minster above the Rhine with the Münster ferry, photograph",
+   "who": "Gerd Eichmann",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "the signature Basel view: Minster on its terrace, Rhine and reaction ferry; color, wide format"
+  }
+ ],
+ "gaps": "P0: the Nuremberg Chronicle woodcut exists only as two-page spreads with the gutter through the view (#1–#3). P2, P3: no views (the many ‘Merian’ hits #12–#17 are portraits of Basel’s Merian family).",
+ "notes": "#11 date: BnF gives only ‘17th century’; the plate is Merian’s (died 1650) and matches the Basel plates of Topographia Helvetiae, 1642 — change if a different edition is confirmed. #21 date: LOC’s ‘1890’ is impossible, because the Rathaus tower shown was built 1900–1904, so ‘about 1905’ is used. P1 alternatives are perspective plans: Braun and Hogenberg vol. 2 (#5 is a book photo with the gutter through the plan; #9 black and white) and Merian’s 1642 plan (#6). P4 alternative: Spalentor (#20, 1890s), portrait format.",
+ "_reviewed": true
+}

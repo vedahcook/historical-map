@@ -1,0 +1,15 @@
+{
+ "city": "Sevastopol",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "good; event flag correct, W. Simpson del. in record"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "dull but genuine landmark view; best of the modern candidates"
+  }
+ ]
+}

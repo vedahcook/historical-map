@@ -1,0 +1,50 @@
+{
+ "city": "Częstochowa",
+ "picks": [
+  {
+   "n": 2,
+   "file": "The church, Czenstochow, Russia (i.e., Czestochowa, Poland)-LCCN2001697413.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Jasna Góra monastery, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.02,
+    0.978,
+    0.968
+   ],
+   "focal": [
+    0.47,
+    0.38
+   ],
+   "why": "the city’s defining landmark, the monastery and its tall tower, in color"
+  },
+  {
+   "n": 5,
+   "file": "Widok z wiezy jasnogorskiej - srodmiescie.jpg",
+   "y": 2008,
+   "lab": "2008",
+   "what": "The city center along the Avenue of the Virgin Mary, photograph from the Jasna Góra tower",
+   "who": "Jceel",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0.1,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "clear general view: the avenue running from Jasna Góra into the center, with the Holy Family Cathedral on the right"
+  }
+ ],
+ "gaps": "P0–P3: no candidates. P5: no candidates.",
+ "notes": "#2 credit: the LOC record names no publisher; the companion print #1 (adjacent LOC number) carries the ‘P.Z.’ (Photoglob Zürich) mark in its caption. P4 alternative: #1, the Tsar Alexander II monument on the steps below the monastery tower (Russian-era, monument dominates). P6 alternatives: #4 and #3 (very wide panoramas from the same tower), #6 (skyline across a wheat field).",
+ "_reviewed": true
+}

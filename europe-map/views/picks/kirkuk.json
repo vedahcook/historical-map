@@ -1,0 +1,29 @@
+{
+ "city": "Kirkuk",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Aerial view of Kirkuk Citadel, Kirkuk, Iraq.jpg",
+   "y": 2026,
+   "lab": "2026",
+   "what": "The citadel above the city center, aerial photograph",
+   "who": "Enasiqph",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.42
+   ],
+   "why": "recent sharp drone view; citadel ruins and its domed mosque with minaret, the city spreading behind"
+  }
+ ],
+ "gaps": "P0–P5: nothing",
+ "notes": "All candidates are January 2026 drone photos of the citadel (Kirkuk Heritage Documentation Project). #4 chosen because it shows the citadel together with the surrounding city; #1 and #3 look straight down on the mound, #2 is a close-up of one facade. The artist field gives only the username Enasiqph.",
+ "_reviewed": true
+}

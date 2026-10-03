@@ -1,0 +1,50 @@
+{
+ "city": "Belgorod",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Общий вид старого Белгорода.jpg",
+   "y": 1912,
+   "lab": "1912",
+   "what": "General view of the town, postcard",
+   "who": "A. S. Suvorin & Co. (publisher); Scherer, Nabholz & Co. (printer)",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.175,
+    0.99,
+    0.975
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "rooftop view over the prewar town with its monastery churches on the skyline; printed caption trimmed"
+  },
+  {
+   "n": 2,
+   "file": "View to Belgorod State University - panoramio.jpg",
+   "y": 2008,
+   "lab": "2008",
+   "what": "The city center with Belgorod State University, photograph",
+   "who": "roadmap",
+   "lic": "CC BY 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0.22,
+    1,
+    0.98
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "only real city view among the modern photos; skyline with the university’s gold dome"
+  }
+ ],
+ "gaps": "P0–P3: nothing; P5: nothing",
+ "notes": "#2 is an ordinary Panoramio snapshot (2816 px), not a Quality image; the photographer is known only by the username roadmap. #3–#5 are outskirts, a park and a pond.",
+ "_reviewed": true
+}

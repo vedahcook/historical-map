@@ -1,0 +1,50 @@
+{
+ "city": "Iași",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Jassy- Fernblick vom Turm über die Stadt - LABW - Staatsarchiv Freiburg W 134 Nr. 035881.jpeg",
+   "y": 1943,
+   "lab": "1943",
+   "what": "View from a tower over the city to the Palace of Culture, photograph (Staatsarchiv Freiburg)",
+   "who": "Willy Pragher",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.42
+   ],
+   "why": "general view from a height; Palace of Culture and church towers recognizable"
+  },
+  {
+   "n": 3,
+   "file": "Aerial view of the Palace of Culture in Iași, Romania DJI 0260.jpg",
+   "y": 2019,
+   "lab": "2019",
+   "what": "The Palace of Culture and the city center, aerial photograph",
+   "who": "Alexhertug",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.52,
+    0.55
+   ],
+   "why": "recent color drone view of the city’s main landmark with the center behind"
+  }
+ ],
+ "gaps": "P0–P4: no candidates at all.",
+ "notes": "#1 (same day, same tower) shows a street with no landmark; #4 is a usable 2024 alternative for P6 (St. Nicholas church and a boulevard), #5–#6 are dark snapshots with date stamps.",
+ "_reviewed": true
+}

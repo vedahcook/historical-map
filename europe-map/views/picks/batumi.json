@@ -1,0 +1,71 @@
+{
+ "city": "Batumi",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Batoum, - Frontier of Georgia (BM 1880,0911.476).jpg",
+   "y": 1853,
+   "lab": "about 1853",
+   "what": "The town and bay, colored lithograph (British Museum)",
+   "who": "William Hyde Parker (published by John Dickinson)",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.05,
+    0.97,
+    0.76
+   ],
+   "focal": [
+    0.55,
+    0.6
+   ],
+   "why": "colored view of the small Ottoman port along the bay with ships and the Caucasus behind; trimmed margin, caption and color bar"
+  },
+  {
+   "n": 1,
+   "file": "General view of bay from Fort II, Batum.JPG",
+   "y": 1910,
+   "lab": "1905–15",
+   "what": "General view of the bay from Fort II, photograph",
+   "who": "Sergei Prokudin-Gorskii",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.25,
+    0.975,
+    0.965
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "town, harbor and ships seen from the hill; more than 50 years after the lithograph; trimmed mount and empty sky"
+  },
+  {
+   "n": 5,
+   "file": "View of Batumi skyline from the Botanical Garden (cropped).jpg",
+   "y": 2016,
+   "lab": "2016",
+   "what": "The city across the bay from the Botanical Garden, photograph",
+   "who": "Krzysztof Ziarnek",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.1,
+    0.1,
+    1,
+    0.9
+   ],
+   "focal": [
+    0.72,
+    0.43
+   ],
+   "why": "classic view of the modern skyline across the bay"
+  }
+ ],
+ "gaps": "P0–P3: no candidates; P5: no candidates",
+ "notes": "P4 has two views 57 years apart. Prokudin-Gorskii date is the record’s 1905–15 range (y set to 1910). #3 (view from the east, same series) is lower resolution and less telling than #1.",
+ "_reviewed": true
+}

@@ -1,0 +1,59 @@
+{
+ "city": "Cádiz",
+ "checks": [
+  {
+   "n": 7,
+   "verdict": "fix",
+   "fix": {
+    "y": 1715,
+    "lab": "1694–1737",
+    "trim": [
+     0.09,
+     0.36,
+     0.905,
+     0.785
+    ]
+   },
+   "reason": "record gives 1694–1737, not about 1700; trim reached the plate frame at right and the caption at bottom"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "Laborde general view, 1812 per record"
+  },
+  {
+   "n": 15,
+   "verdict": "replace",
+   "replace_with": 17,
+   "fix": {
+    "y": 1870,
+    "lab": "1860–80",
+    "trim": [
+     0.04,
+     0.035,
+     0.96,
+     0.885
+    ],
+    "focal": [
+     0.4,
+     0.5
+    ],
+    "what": "The cathedral and the sea wall, photograph (Rijksmuseum)",
+    "who": "J. E. Puig",
+    "lic": "CC0",
+    "file": "Gezicht op de kathedraal en de pier van Cadiz No. 288 (serietitel), RP-F-00-349.jpg"
+   },
+   "reason": "pick is one blurry half of a stereo card (crop only 36% of the card) showing rooftops; #17 is a sharp, recognizable cathedral and sea-wall view in the same period; date per Rijksmuseum ca. 1860–80, license CC0"
+  },
+  {
+   "n": 21,
+   "verdict": "ok",
+   "reason": "Mittelholzer aerial of the old town, crop clear of sprocket edge"
+  },
+  {
+   "n": 25,
+   "verdict": "ok",
+   "reason": "cathedral tower over old town"
+  }
+ ]
+}

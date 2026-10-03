@@ -1,0 +1,10 @@
+{
+ "city": "Gijón",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "good; Cimadevilla with San Pedro tower, crop uses 56% of width"
+  }
+ ]
+}

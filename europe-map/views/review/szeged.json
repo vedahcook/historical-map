@@ -1,0 +1,20 @@
+{
+ "city": "Szeged",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "Szeged, Széchenyi tér from the city hall tower, 1894 (description); left frame of stereo pair trimmed clear of the gutter"
+  },
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "Fortepan 22807, 1929, view from the Votive Church tower with the Tisza and bridge"
+  },
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "Votive Church across the Tisza; towers kept inside the crop; good resolution"
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "city": "Toledo",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.05,
+     0.115,
+     0.95,
+     0.585
+    ],
+    "focal": [
+     0.5,
+     0.45
+    ]
+   },
+   "reason": "Crop top includes the TOLETUM cartouche scroll and oval frame; cut top to 0.115. Year 1598 (vol. 5 plate, Hoefnagel) is right; vol. 1 plate is the Toledo/Valladolid pair (#6)."
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "Colored 1694 view; crop clean."
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "Villaamil 1836 painting; crop shows Alcázar and cathedral tower."
+  },
+  {
+   "n": 17,
+   "verdict": "ok",
+   "reason": "Clifford albumen print (attributed); mount border excluded; 'about 1857' within the record's 1850–63."
+  },
+  {
+   "n": 20,
+   "verdict": "ok",
+   "reason": "1950 colored slide; black slide mask and caption strip trimmed off."
+  },
+  {
+   "n": 26,
+   "verdict": "ok",
+   "reason": "Good dusk panorama; cathedral and Alcázar in crop."
+  }
+ ]
+}

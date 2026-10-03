@@ -1,0 +1,134 @@
+{
+ "city": "Heraklion",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Heraklion - Candia, Corphu (cropped).jpg",
+   "y": 1638,
+   "lab": "1638",
+   "what": "View from the sea, colored engraving",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.12,
+    0.99,
+    0.965
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "colored, high-resolution profile of Candia with walls, harbor fort and Mount Juktas; already cropped to Candia"
+  },
+  {
+   "n": 8,
+   "file": "La Citta di Candia (BM F,1.119).jpg",
+   "y": 1665,
+   "lab": "about 1665",
+   "what": "View from the sea, etching (British Museum)",
+   "who": "Coenraed Lauwers after Jan Peeters the Elder",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.06,
+    0.98,
+    0.86
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "independent view of the walled harbor front with the mountain behind; caption trimmed"
+  },
+  {
+   "n": 9,
+   "file": "View of Heraklion harbour from Admiralty Chart No 1904, published 1897.jpg",
+   "y": 1843,
+   "lab": "1843",
+   "what": "The harbor, view from a British Admiralty chart",
+   "who": "Thomas Graves",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.04,
+    0.975,
+    1
+   ],
+   "focal": [
+    0.8,
+    0.5
+   ],
+   "why": "harbor with the Venetian arsenals and fortifications, drawn in Graves’s 1843 survey"
+  },
+  {
+   "n": 10,
+   "file": "Veduta di Candia.jpg",
+   "y": 1897,
+   "lab": "1897",
+   "what": "The Venetian sea fort (Koules), wood engraving",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.38,
+    0.55
+   ],
+   "why": "the harbor fort with its Ottoman minaret and the town behind; the city’s best-known landmark"
+  },
+  {
+   "n": 13,
+   "file": "Panorama sur la ville depuis les remparts vénitiens. A droite, la cathédrale Agios Minas - A51879S.jpg",
+   "y": 1927,
+   "lab": "1927",
+   "what": "Panorama from the Venetian walls, autochrome (Albert Kahn Museum)",
+   "who": "Georges Chevalier",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.04,
+    0.025,
+    0.955,
+    0.968
+   ],
+   "focal": [
+    0.7,
+    0.42
+   ],
+   "why": "color panorama over the rooftops to the sea with Agios Minas cathedral; better color than the near-duplicate #14"
+  },
+  {
+   "n": 15,
+   "file": "Ηράκλειο 4795.JPG",
+   "y": 2014,
+   "lab": "2014",
+   "what": "View from the Kommeno bastion of the city walls, photograph",
+   "who": "C messier",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.62,
+    0.45
+   ],
+   "why": "sharp modern view over the city to the sea"
+  }
+ ],
+ "gaps": "P0: nothing",
+ "notes": "P1: chose Merian’s 1638 copy (#5) over the 1575 Braun and Hogenberg original, whose copies are two-page spreads with the gutter through the view (#1, #2, #6) or low resolution (#3); the 1638 date is from Commons (probably Merian’s Archontologia Cosmica). #7 (1669) is a black-and-white copy of the same plate. #8 dates from the Ottoman siege (1648–69) but shows no siege action. #9: the chart edition is 1897, the view comes from the 1843 survey. #10: date 1897 from Commons, likely Italian illustrated press during the Cretan crisis. #18 (1970, Agios Minas) is a fallback for P6.",
+ "_reviewed": true
+}

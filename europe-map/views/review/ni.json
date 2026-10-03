@@ -1,0 +1,10 @@
+{
+ "city": "Niš",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "trim and focal give a clean 16:9 crop"
+  }
+ ]
+}

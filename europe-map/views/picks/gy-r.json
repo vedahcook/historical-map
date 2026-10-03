@@ -1,0 +1,92 @@
+{
+ "city": "Győr",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Rab-1594.jpg",
+   "y": 1597,
+   "lab": "1597",
+   "what": "Bird’s-eye view in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 5",
+   "who": "Joris Hoefnagel after Nicolò Angielini",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.036,
+    0.075,
+    0.966,
+    0.895
+   ],
+   "focal": [
+    0.53,
+    0.42
+   ],
+   "why": "colored; the walled town at the meeting of the Rába and the Danube"
+  },
+  {
+   "n": 5,
+   "file": "Raab - Peeters Jacob - 1686.jpg",
+   "y": 1686,
+   "lab": "1686",
+   "what": "View of the fortress, engraving",
+   "who": "Jacob Peeters",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.065,
+    0.99,
+    0.88
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "labeled view of Raab with the cathedral and gates keyed"
+  },
+  {
+   "n": 9,
+   "file": "Győr, látkép a városháza tornyából nyugat felé fényképezve. - Fortepan 28068.jpg",
+   "y": 1943,
+   "lab": "1943",
+   "what": "View west from the town hall tower, photograph (Fortepan)",
+   "who": "unknown photographer",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0.12,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "general view over the roofs, the city intact"
+  },
+  {
+   "n": 15,
+   "file": "Győr, kilátás, 10.jpg",
+   "y": 2023,
+   "lab": "2023",
+   "what": "View over the city center, photograph",
+   "who": "Random photos 1989",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.3
+   ],
+   "why": "red roofs of the old town with baroque church towers"
+  }
+ ],
+ "gaps": "P0: none; P3: none (the Karácson painting is undated and copies the 1686 Peeters view); P4: none",
+ "notes": "#1’s plate is inscribed MDXCVII (1597); #2–#4 are uncolored copies of the same plate (#3 a book spread with the gutter through it). #5 is small (1500 px) and schematic, with invented mountains behind the town, but it is labeled and keyed; drop it if too weak. #6/#7 (Karácson series, dated only ‘18th century’) repeat the Peeters composition, so skipped. #9 and #11 (1950) are the same view from the town hall tower; neither shows the cathedral hill. #10 (1955, the Rába with the Carmelite church) is an alternative for P5.",
+ "_reviewed": true
+}

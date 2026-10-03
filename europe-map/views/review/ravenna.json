@@ -1,0 +1,10 @@
+{
+ "city": "Ravenna",
+ "checks": [
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "woodcut titled Panorama di Ravenna with the round campanile and domes; crop good"
+  }
+ ]
+}

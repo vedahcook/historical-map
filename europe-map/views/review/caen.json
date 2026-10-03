@@ -1,0 +1,7 @@
+{"city": "Caen", "checks": [
+ {"n": 3, "verdict": "fix", "fix": {"trim": [0.01, 0.02, 0.99, 0.82]}, "reason": "the crowned shield of the dedication panel pokes into the bottom edge of the crop; trimming the bottom to 0.82 removes it"},
+ {"n": 8, "verdict": "ok", "reason": "Saint-Pierre spire and Odon, dated 1841 in the record, clean crop"},
+ {"n": 11, "verdict": "ok", "reason": "photochrom general view, black border and caption trimmed"},
+ {"n": 16, "verdict": "ok", "reason": "ruined Caen 9 July 1944, event flag correct, dark edge on right trimmed"},
+ {"n": 20, "verdict": "ok", "reason": "castle and Saint-Pierre spire, good crop"}
+]}

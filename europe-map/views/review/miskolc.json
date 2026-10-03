@@ -1,0 +1,20 @@
+{
+ "city": "Miskolc",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "photochrom with Miskolc mark, crop clean"
+  },
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "1964 Fortepan view from Avas"
+  },
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "2015 view from Avas tower"
+  }
+ ]
+}

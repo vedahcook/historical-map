@@ -1,0 +1,81 @@
+{
+ "city": "Ypres",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.22,
+     0.125,
+     0.795,
+     0.94
+    ],
+    "focal": [
+     0.5,
+     0.4
+    ]
+   },
+   "reason": "page margin and plate border line were inside the trim; bird's-eye plan with drawn buildings is acceptable, 1575 correct (vol. 2)"
+  },
+  {
+   "n": 7,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.14,
+     0.07,
+     0.885,
+     0.515
+    ],
+    "focal": [
+     0.5,
+     0.5
+    ]
+   },
+   "reason": "top and bottom plate frame lines were inside the trim; key legend stays outside the 16:9 crop"
+  },
+  {
+   "n": 10,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.078,
+     0.09,
+     0.92,
+     0.82
+    ]
+   },
+   "reason": "paper edge and print border inside trim; 1813 is the drawing date printed on the plate, accepted"
+  },
+  {
+   "n": 11,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.028,
+     0.025,
+     0.98,
+     0.97
+    ]
+   },
+   "reason": "dark border line at the left edge was inside the trim"
+  },
+  {
+   "n": 20,
+   "verdict": "ok",
+   "reason": "true view of Ypres (Cloth Hall, St. Martin's); event flag and 1915-17 label fine"
+  },
+  {
+   "n": 21,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.5,
+     0.4
+    ]
+   },
+   "reason": "tower tops were cut off in the 16:9 crop"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "city": "Uppsala",
+ "checks": [
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

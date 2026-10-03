@@ -1,0 +1,29 @@
+{
+ "city": "Ostrava",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Ostrava, pohled z haldy Ema.jpg",
+   "y": 2020,
+   "lab": "2020",
+   "what": "The city from the Ema spoil heap, photograph",
+   "who": "Kamil Czaiński",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.33,
+    1,
+    0.7
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "the only general view: the city spread out below the well-known Ema heap lookout; trimmed sky and the bare trees in front"
+  }
+ ],
+ "gaps": "P0–P5: no candidates. P6 is weak (distant, no clear landmark).",
+ "notes": "#2 is a modest phone photo; drop it if a stronger modern view turns up. #1 is a distant industrial skyline seen across fields from Horní Nový Dvůr; #3 and #4 are street scenes of apartment blocks.",
+ "_reviewed": true
+}

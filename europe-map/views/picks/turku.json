@@ -1,0 +1,92 @@
+{
+ "city": "Turku",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Åbo Domkyrka - Johan Knutson - Finland framställdt i teckningar - 2.jpg",
+   "y": 1848,
+   "lab": "1845–52",
+   "what": "The town and cathedral from the outskirts, lithograph in Finland framställdt i teckningar",
+   "who": "Johan Knutson",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.07,
+    0.085,
+    0.935,
+    0.82
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "the cathedral tower over the low town and the observatory hill; border and caption trimmed"
+  },
+  {
+   "n": 5,
+   "file": "MECHELIN(1894) p041 View of Turku (sv Åbo) and Cathedral.jpg",
+   "y": 1894,
+   "lab": "1894",
+   "what": "The Aura bridge and the cathedral, book illustration in Finland in the Nineteenth Century",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.04,
+    0.975,
+    0.88
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "river, bridge and cathedral together, clearly Turku; caption trimmed"
+  },
+  {
+   "n": 11,
+   "file": "Aerial view of Turku 1929 (1039; JOKAHBL3A C01-2).tif",
+   "y": 1929,
+   "lab": "1929",
+   "what": "Aerial photograph",
+   "who": "Hugo Sundström",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0.01,
+    0.1,
+    0.95,
+    0.93
+   ],
+   "focal": [
+    0.47,
+    0.55
+   ],
+   "why": "the cathedral from the air with the city spreading behind; very high resolution; plane strut and sky trimmed"
+  },
+  {
+   "n": 15,
+   "file": "Aurajoki, Turku 5.jpg",
+   "y": 2020,
+   "lab": "2020",
+   "what": "The Aura river and the city center, aerial photograph",
+   "who": "kallerna",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.42
+   ],
+   "why": "color view up the Aura river with its moored ships to the cathedral tower"
+  }
+ ],
+ "gaps": "P0, P1, P2: nothing",
+ "notes": "#2 is dated to the run of Finland framställdt i teckningar (1845–52); the plate’s own issue year is not given. #6 (Reinberg, Aura harbor in winter, about 1880, color) is a good alternative P4 but shows no landmark. #3 (Reinberg panorama from the cathedral tower) is the best old general view but is two photos joined with a visible seam down the middle and dated only 1860–96. #8 (1910, from the cathedral tower) is blocked by the window bars. #10 and #12 are other frames of the same 1929 flight.",
+ "_reviewed": true
+}

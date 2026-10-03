@@ -1,0 +1,71 @@
+{
+ "city": "Miskolc",
+ "picks": [
+  {
+   "n": 1,
+   "file": "General view Miskolez Hungary Austro-Hungary.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "General view from a height, photochrom print",
+   "who": "Photoglob Zürich",
+   "lic": "CC BY-SA 2.0",
+   "event": false,
+   "trim": [
+    0.082,
+    0.105,
+    0.915,
+    0.845
+   ],
+   "focal": [
+    0.55,
+    0.55
+   ],
+   "why": "color general view with the church towers; mount and caption strip trimmed"
+  },
+  {
+   "n": 4,
+   "file": "Kilátás az Avasról. előtérben az Avasi református templom és harangtorony. Fortepan 16639.jpg",
+   "y": 1964,
+   "lab": "1964",
+   "what": "View from Avas hill with the Avas Reformed church and bell tower, photograph (Fortepan)",
+   "who": "Fortepan / Szánthó Zoltán",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.65
+   ],
+   "why": "general view over the center from the city’s landmark hill"
+  },
+  {
+   "n": 6,
+   "file": "Miskolc from Avas tower.JPG",
+   "y": 2015,
+   "lab": "2015",
+   "what": "View from the Avas TV tower, photograph",
+   "who": "Jan Pešula",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "recent color general view of the center"
+  }
+ ],
+ "gaps": "P0–P3: no candidates.",
+ "notes": "#1 carries the ‘P.Z. Miskolcz madártávlatból’ mark (Photoglob Zürich); its Commons license is CC BY-SA 2.0 from the Flickr uploader. #4 is credited in Fortepan style (archive / donor); no photographer is named. #3 (1928) shows the Szinva valley at Lillafüred, not the town; #2 is a housing estate under construction; #8 is a very thin panorama strip.",
+ "_reviewed": true
+}

@@ -1,0 +1,50 @@
+{
+ "city": "Kostroma",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Central Kostroma from behind Volga river.jpg",
+   "y": 1931,
+   "lab": "1928–34",
+   "what": "The city center and the kremlin seen across the Volga, photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.14,
+    0.98,
+    0.8
+   ],
+   "focal": [
+    0.62,
+    0.5
+   ],
+   "why": "general view from across the river with the kremlin cathedrals and bell tower (demolished 1934); printed caption trimmed"
+  },
+  {
+   "n": 4,
+   "file": "Pano-susanin-square-kostroma.jpg",
+   "y": 2009,
+   "lab": "2009",
+   "what": "Susanin Square with the fire tower, photograph",
+   "who": "A.Savin",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    0.62,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "the city’s best-known square: trading arcades, fire lookout tower and guardhouse"
+  }
+ ],
+ "gaps": "P0–P4: nothing",
+ "notes": "#2’s caption is in pre-1918 spelling, but the 1928–34 dating holds up: a statue on a tall pedestal is visible left of center, matching the Lenin monument set on the unfinished Romanov pedestal in 1928, and the kremlin cathedrals still stand (demolished 1934). #1 (Petrovichev painting) is dated only by the artist’s death in 1947 and its category points to the Ipatiev Monastery, so skipped. #5 (23,500 px Volga panorama) is too thin to read; #3 is mostly dark water.",
+ "_reviewed": true
+}

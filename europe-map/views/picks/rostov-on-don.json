@@ -1,0 +1,50 @@
+{
+ "city": "Rostov-on-Don",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Hammond Slides Port of Rostov-on-Don.jpg",
+   "y": 1964,
+   "lab": "1964",
+   "what": "The port and the cathedral seen from the railroad bridge, color slide",
+   "who": "Thomas Taylor Hammond",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.08,
+    1,
+    1
+   ],
+   "focal": [
+    0.35,
+    0.55
+   ],
+   "why": "color view of the Don waterfront with the cathedral dome at left"
+  },
+  {
+   "n": 5,
+   "file": "Rostov-on-Don, Iconic view, Russia.jpg",
+   "y": 2013,
+   "lab": "2013",
+   "what": "The Cathedral of the Nativity above the Don embankment, photograph",
+   "who": "Vyacheslav Argenberg",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.45
+   ],
+   "why": "the cathedral and bell tower over the river front; sharp, recent"
+  }
+ ],
+ "gaps": "P0–P4: no candidates; nothing before 1964",
+ "notes": "Only five candidates, all P5–P6. #2 shows the cathedral too but bare trees fill the lower half.",
+ "_reviewed": true
+}

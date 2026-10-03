@@ -1,0 +1,16 @@
+{
+ "city": "Voronezh",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.62,
+     0.38
+    ]
+   },
+   "reason": "Current focal puts the crop top below the cathedral cross tips; moving it up keeps the crosses and spire intact."
+  }
+ ]
+}

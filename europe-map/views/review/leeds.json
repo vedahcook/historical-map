@@ -1,0 +1,15 @@
+{
+ "city": "Leeds",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

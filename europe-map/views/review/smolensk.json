@@ -1,0 +1,33 @@
+{
+ "city": "Smolensk",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.04,
+     0.065,
+     0.955,
+     0.93
+    ]
+   },
+   "reason": "top trim touches the inner plate rule; leave more margin"
+  },
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "city": "’s-Hertogenbosch",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.012,
+     0.085,
+     0.988,
+     0.885
+    ],
+    "focal": [
+     0.49,
+     0.5
+    ]
+   },
+   "reason": "Crop included the yellow plate frame at top and bottom of the strip"
+  },
+  {
+   "n": 12,
+   "verdict": "ok",
+   "reason": "St. John's above the rooftops; date is a range from the Rijksmuseum"
+  },
+  {
+   "n": 20,
+   "verdict": "ok",
+   "reason": "Aerial of St. John's, clean copy"
+  }
+ ]
+}

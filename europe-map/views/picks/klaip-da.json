@@ -1,0 +1,50 @@
+{
+ "city": "Klaipėda",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Panorama of Klaipėda by Juozas Narūnavičius, 1674.jpg",
+   "y": 1674,
+   "lab": "1674",
+   "what": "Painted panorama of Memel with the castle",
+   "who": "Juozas Narūnavičius (Józef Naronowicz-Naroński)",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.016,
+    0.05,
+    0.984,
+    0.94
+   ],
+   "focal": [
+    0.4,
+    0.5
+   ],
+   "why": "color panorama: castle at left, walled town and fortifications at right; red border trimmed"
+  },
+  {
+   "n": 5,
+   "file": "Vitė XX a. 4 deš.jpg",
+   "y": 1935,
+   "lab": "1930s",
+   "what": "View over the rooftops and church spires, postcard",
+   "who": "Fritz Krauskopf, Königsberg (publisher)",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.014,
+    0.02,
+    0.984,
+    0.925
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "general view with three church spires; white card border and “Memel” caption trimmed"
+  }
+ ],
+ "gaps": "P0, P1, P3: no candidates. P4: only #2, dated just “before World War II, likely before 1923”, too uncertain. P6: nothing showing the old town or skyline.",
+ "notes": "P5 alternates: #4 (1938 view from the Lietūkis warehouse, firm date, one spire) and #3 (Dangė harbor, 1928, lively but a street-level port scene). #2 is a fine pre-war view (Reformed church and St. Jacob’s) if a firm date can be found. P6 candidates are the bare castle-site mounds (#6), aerials of the university (#7, #8) and a river bend outside town (#9).",
+ "_reviewed": true
+}

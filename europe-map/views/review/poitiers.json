@@ -1,0 +1,49 @@
+{
+ "city": "Poitiers",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.082,
+     0.5,
+     0.916,
+     0.775
+    ],
+    "focal": [
+     0.47,
+     0.5
+    ]
+   },
+   "reason": "red caption cartouche and frame lines were inside the crop; trimmed above the caption, crop now shows the town core"
+  },
+  {
+   "n": 8,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.05,
+     0.3,
+     0.948,
+     0.925
+    ],
+    "focal": [
+     0.5,
+     0.6
+    ]
+   },
+   "reason": "title scroll and laurel wreath tips were inside the crop and a third of it was sky; new trim shows whole city and river loop"
+  },
+  {
+   "n": 21,
+   "verdict": "ok",
+   "reason": "Albert Kahn autochrome, 1 June 1916; crop fine"
+  },
+  {
+   "n": 25,
+   "verdict": "ok",
+   "reason": "matches record"
+  }
+ ]
+}

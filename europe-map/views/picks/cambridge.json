@@ -1,0 +1,92 @@
+{
+ "city": "Cambridge",
+ "picks": [
+  {
+   "n": 9,
+   "file": "Cambridge Castle 1730, Buck brothers.jpg",
+   "y": 1730,
+   "lab": "1730",
+   "what": "The castle mound and King’s College Chapel from the northeast, engraving",
+   "who": "Samuel and Nathaniel Buck",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.115,
+    0.985,
+    0.69
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "the castle gatehouse and mound with King’s College Chapel rising over the town behind; title and dedication text trimmed; modest resolution"
+  },
+  {
+   "n": 11,
+   "file": "Joseph Mallord William Turner - Clare Hall and King’s College Chapel, Cambridge, from the Banks of the River Cam - Google Art Project.jpg",
+   "y": 1793,
+   "lab": "1793",
+   "what": "Clare Hall and King’s College Chapel from the River Cam, watercolor (Yale Center for British Art)",
+   "who": "J. M. W. Turner",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.35,
+    0.45
+   ],
+   "why": "color view of the most famous Cambridge scene, chapel and Clare bridge; high resolution"
+  },
+  {
+   "n": 17,
+   "file": "King's College, Cambridge, England-LCCN2002696457.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "King’s College Chapel and King’s Parade, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.025,
+    0.972,
+    0.94
+   ],
+   "focal": [
+    0.5,
+    0.52
+   ],
+   "why": "color view of King’s College Chapel with carriages on King’s Parade; border and caption trimmed"
+  },
+  {
+   "n": 27,
+   "file": "View from Great St Mary's Cambridge - 07.jpg",
+   "y": 2016,
+   "lab": "2016",
+   "what": "The Senate House and King’s College Chapel from Great St Mary’s, photograph",
+   "who": "The wub",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "color view over the Senate House, Old Schools and King’s College Chapel"
+  }
+ ],
+ "gaps": "P0: nothing; P5: nothing (all 20th-century hits are Cambridge, Massachusetts)",
+ "notes": "Many hits are other Cambridges: #10, #20–23, #25, #26 are Cambridge, Massachusetts; #24 is Cambridge, Ontario; #7 is Canaletto’s Piazza San Marco in the Fogg Art Museum. #1 is closer to a perspective plan than a view, but the buildings are drawn; #4 is the same plate in a flat 1645 BnF copy if the open-book photo of #1 is a problem. #8 (Kip prospect, 1724) is a harsh black-and-white scan with a tiny skyline. #12/#13 (1838 coronation feast on Parker’s Piece) are event prints.",
+ "_reviewed": true
+}

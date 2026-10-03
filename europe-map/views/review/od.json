@@ -1,0 +1,10 @@
+{
+ "city": "Łódź",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "ok; cathedral tower is cut at the top by the original frame, not fixable by trim"
+  }
+ ]
+}

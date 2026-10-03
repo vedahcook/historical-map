@@ -1,0 +1,15 @@
+{
+ "city": "Radom",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "1885 wood engraving captioned 'Widok ogólny Radomia'; trim sits just inside the print’s frame line on all sides"
+  },
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "colored postcard titled 'RADOM z lotu ptaka'; printed title trimmed, 'about 1917' is a fair label for the Commons date. A tiny publisher stamp remains at the bottom edge, which is acceptable"
+  }
+ ]
+}

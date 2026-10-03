@@ -1,0 +1,29 @@
+{
+ "city": "Adana",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Le Tour du monde-05-p332.jpg",
+   "y": 1862,
+   "lab": "1862",
+   "what": "View of Adana by moonlight, wood engraving in Le Tour du monde",
+   "who": "Pierre Eugène Grandsire",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.01,
+    0.99,
+    0.99
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "only period view; town skyline with minarets seen from the bridge approach"
+  }
+ ],
+ "gaps": "P0–P3, P5: nothing; P6: only a hazy distant skyline of generic apartment towers (#3) and road photos, skipped as weak",
+ "notes": "Very thin candidate pool for Adana; a better modern photo (Sabancı Mosque, Stone Bridge) would need a fresh search.",
+ "_reviewed": true
+}

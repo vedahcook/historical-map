@@ -1,0 +1,92 @@
+{
+ "city": "Graz",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Graz im 17.Jahrhundert.png",
+   "y": 1649,
+   "lab": "1649",
+   "what": "Bird’s-eye view, engraving in Merian’s Topographia Provinciarum Austriacarum",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.4
+   ],
+   "why": "walled town below the fortified Schlossberg, clearly Graz"
+  },
+  {
+   "n": 5,
+   "file": "Jakob Alt Ansicht von Graz (crop).jpg",
+   "y": 1833,
+   "lab": "1833",
+   "what": "The Mur and the Schlossberg, watercolor",
+   "who": "Jakob Alt",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.53,
+    0.5
+   ],
+   "why": "colored general view; Schlossberg fortress and clock tower, Mur bridge"
+  },
+  {
+   "n": 10,
+   "file": "Graz, market place, Styria, Austro-Hungary-LCCN2002710969.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The main square and the Schlossberg, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.015,
+    0.985,
+    0.94
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "color; Hauptplatz with the clock tower on the Schlossberg above"
+  },
+  {
+   "n": 18,
+   "file": "Graz Austria pano from Schlossberg.jpg",
+   "y": 2008,
+   "lab": "2008",
+   "what": "Panorama from the Schlossberg, photograph",
+   "who": "Matthew Field",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "sharp panorama over the red roofs of the old town"
+  }
+ ],
+ "gaps": "P0, P2, P5: nothing usable",
+ "notes": "Merian’s date field says ‘by 1650’; the Graz plate is in Topographia Provinciarum Austriacarum, first published 1649. #2 (van de Sype/Hollar) skipped: date given only as 1626–1657 and odd modern coloring. #3 (Runk) dated only ‘late 18th century’. #15 (Damianos) undated. #9 (photochrom from the Schlossberg) is the alternative general view for P4.",
+ "_reviewed": true
+}

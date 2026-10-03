@@ -1,0 +1,45 @@
+{
+ "city": "Linz",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.02,
+     0.21,
+     0.975,
+     0.965
+    ],
+    "focal": [
+     0.5,
+     0.5
+    ]
+   },
+   "reason": "key text at upper right and paper border at left and right were inside the crop"
+  },
+  {
+   "n": 8,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.03,
+     0.09,
+     0.97,
+     0.99
+    ]
+   },
+   "reason": "white paper and frame lines at left and right edges of the crop"
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "good view, crop and fields agree with the record"
+  },
+  {
+   "n": 27,
+   "verdict": "ok",
+   "reason": "hazy but the best clear-enough recent view; #24 panorama too wide"
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "city": "Bilbao",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.01,
+     0.24,
+     0.99,
+     0.92
+    ]
+   },
+   "reason": "bottom of the crop included the paper margin below the engraving"
+  },
+  {
+   "n": 7,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0.23,
+     1,
+     1
+    ]
+   },
+   "reason": "top of the crop showed the lower part of the angel and the shield"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "good view, crop and fields agree with the record"
+  },
+  {
+   "n": 16,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.035,
+     0.11,
+     0.965,
+     0.92
+    ]
+   },
+   "reason": "rounded corners of the engraving left white wedges at the top corners"
+  },
+  {
+   "n": 25,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.68,
+     0.55
+    ]
+   },
+   "reason": "Iberdrola Tower was cut at the right edge of the crop; crop is only about 0.29 of the panorama width, unavoidable for a 6:1 picture"
+  }
+ ]
+}

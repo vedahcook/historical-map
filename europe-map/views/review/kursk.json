@@ -1,0 +1,10 @@
+{
+ "city": "Kursk",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "drone view of the center of Kursk, 2020 per record; no borders; window covers 94% of the width"
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "city": "Münster, Germany",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Monasterium urbs in media Westphalia celeberrimi nominis... ; Osnabrugum elegans Saxoniae opp. ; Wesalia inferior - btv1b531789052 (1 of 2).jpg",
+   "y": 1575,
+   "lab": "1575",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 2",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.34,
+    0.128,
+    0.68,
+    0.292
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "colored skyline of Münster with the cathedral, Lamberti and Überwasser churches; trimmed to the top panel of the three-city plate"
+  },
+  {
+   "n": 8,
+   "file": "Muenster-1654-Merian.jpg",
+   "y": 1662,
+   "lab": "1662–63",
+   "what": "View of the city before the siege of 1657, engraving",
+   "who": "Caspar Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.31,
+    0.087,
+    0.64,
+    0.32
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "ordinary skyline view from the upper panel; the siege panel below is trimmed away"
+  }
+ ],
+ "gaps": "P0: none; P3–P6: no candidates of Münster itself (hits are Ulm, Freiburg, Strasbourg, Bern and Basel minsters, Bad Münster am Stein, Lucerne); P6 street snapshots too weak",
+ "notes": "#4 is a 1645 printing of the plate; the Münster view goes back to Remigius Hogenberg’s 1570 drawing (#2) and appeared in vol. 2 (1575) — please confirm the volume. #8 is the same Caspar Merian plate misdated 1654 (it shows the 1657 siege). The upper panel of #7 is a very wide strip (about 7:1), so the 16:9 crop shows only its center around the cathedral. #10 (Dancker Danckerts, dated only 1648–66) is a usable alternative for P2.",
+ "_reviewed": true
+}

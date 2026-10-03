@@ -1,0 +1,29 @@
+{
+ "city": "Podgorica",
+ "picks": [
+  {
+   "n": 1,
+   "file": "P064720-426794 - Panoramic view of Podgorica.jpg",
+   "y": 2024,
+   "lab": "2024",
+   "what": "View over the city from the air, photograph (European Commission)",
+   "who": "Savo Prelevic",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.42
+   ],
+   "why": "sharp recent general view of the center with the mountains behind"
+  }
+ ],
+ "gaps": "P0–P5: no candidates.",
+ "notes": "#2 (2012 aerial) is hazy and orange-tinted; #3 and #4 are sunglasses snapshots, not city views.",
+ "_reviewed": true
+}

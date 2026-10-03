@@ -1,0 +1,50 @@
+{
+ "city": "Murmansk",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Панорама центральной части Мурманска 1934.JPG",
+   "y": 1934,
+   "lab": "1934",
+   "what": "Panorama of the city center and Kola Bay, photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.01,
+    0.995,
+    0.985
+   ],
+   "focal": [
+    0.45,
+    0.6
+   ],
+   "why": "general view over the wooden and early Soviet town to the bay"
+  },
+  {
+   "n": 6,
+   "file": "Вид на Мурманск с горы Горелой.jpg",
+   "y": 2024,
+   "lab": "2024",
+   "what": "The city along Kola Bay from Gorelaya Hill, photograph",
+   "who": "The Cosmonaut",
+   "lic": "CC BY-SA 2.5 ca",
+   "event": false,
+   "trim": [
+    0.05,
+    0.12,
+    0.93,
+    0.92
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "sharp, very high-resolution color panorama of the whole city and the bay"
+  }
+ ],
+ "gaps": "P0–P4: nothing (city founded 1916)",
+ "notes": "#1 (1916, founding year) shows the bay and the Cape Zelyony building site with hardly any town; #2 is the better P5 view. #5 (2015, port from the Alyosha memorial) is a good alternative for P6.",
+ "_reviewed": true
+}

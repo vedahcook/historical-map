@@ -1,0 +1,92 @@
+{
+ "city": "Coventry",
+ "picks": [
+  {
+   "n": 11,
+   "file": "The antiquities of Warwickshire illustrated; From Records Fleuron T127054-30.png",
+   "y": 1656,
+   "lab": "1656",
+   "what": "Prospect of the city from the north, engraving in William Dugdale’s Antiquities of Warwickshire",
+   "who": "Wenceslaus Hollar",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.0,
+    0.57,
+    0.79,
+    0.95
+   ],
+   "focal": [
+    0.3,
+    0.5
+   ],
+   "why": "three spires recognizable; Hollar’s 1656 plate, reprinted 1730"
+  },
+  {
+   "n": 2,
+   "file": "Walker - A Panoramic View of the Town of Coventry - 1820 - UK CJP BI 2607277X.webp",
+   "y": 1820,
+   "lab": "1820",
+   "what": "Panoramic view of the town, watercolor",
+   "who": "Walker",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.55
+   ],
+   "why": "color general view with the spires of St Michael’s and Holy Trinity; small (1000 px) but clear"
+  },
+  {
+   "n": 4,
+   "file": "Coventry Cathedral, 1957, view from ruined nave to Holy Trinity spire - geograph.org.uk - 4601206.jpg",
+   "y": 1957,
+   "lab": "1957",
+   "what": "The ruined cathedral and the spire of Holy Trinity, photograph",
+   "who": "Ben Brooksbank",
+   "lic": "CC BY-SA 2.0",
+   "event": true,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.4
+   ],
+   "why": "the city’s defining landmark scene; marked as an event because the cathedral was bombed in 1940"
+  },
+  {
+   "n": 10,
+   "file": "Coventry Cathedral Tower East Panorama.jpg",
+   "y": 2011,
+   "lab": "2011",
+   "what": "View east from the cathedral tower over the ruined old cathedral, photograph",
+   "who": "Si",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.53,
+    0.65
+   ],
+   "why": "high, sharp panorama of the center with the cathedral ruins in front"
+  }
+ ],
+ "gaps": "P0–P2: nothing; P4: nothing; P3 has only one view (#1 is a single building, St Mary’s Hall)",
+ "notes": "#4 is marked event so the bombed cathedral is not shown for years before 1957; if that is too strict, #6 (1967 general view from Priory Hall, no landmarks) is the alternative for P5. #9 (2010 aerial) has heavily oversaturated color. Leicester’s candidate #3 (‘The antiquities of Warwickshire illustrated…’ fleuron, 1730 second edition of Dugdale) is actually two prospects of Coventry; it could fill P2 here if it is added to Coventry’s candidates.",
+ "_reviewed": true
+}

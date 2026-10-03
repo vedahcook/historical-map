@@ -1,0 +1,71 @@
+{
+ "city": "Jaén",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Vista de Jaén, Anton Vanden Wyngaerde, 1567.jpg",
+   "y": 1567,
+   "lab": "1567",
+   "what": "Panoramic view, pen drawing",
+   "who": "Anton van den Wyngaerde",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.05,
+    0.06,
+    0.98,
+    0.85
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "true view of the town spread below the Santa Catalina castle hill"
+  },
+  {
+   "n": 2,
+   "file": "Vista panorámica (Jaén, 1862).jpg",
+   "y": 1862,
+   "lab": "1862",
+   "what": "The cathedral above the roofs, photograph",
+   "who": "Charles Clifford",
+   "lic": "CC BY-SA 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.32,
+    0.4
+   ],
+   "why": "cathedral towers and the Santa Catalina hill clearly recognizable"
+  },
+  {
+   "n": 7,
+   "file": "Xauen 1.jpg",
+   "y": 2015,
+   "lab": "2015",
+   "what": "The city below the Santa Catalina castle, photograph",
+   "who": "Alphacosmos",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.3,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.62
+   ],
+   "why": "cathedral and castle on its hill both in frame"
+  }
+ ],
+ "gaps": "P0, P2, P3, P5: none",
+ "notes": "#1 is only 1600 px wide, so the card will be a little soft. #2 is credited on Commons to the uploader (Recuerdos de Pandora); the description names Charles Clifford as photographer. The 1885 Pascó engravings (#3, #4) are good but only 23 years after #2, so not a second P4 view. #5, #6 and #8 are weaker modern views (mostly hillside, olive groves or haze).",
+ "_reviewed": true
+}

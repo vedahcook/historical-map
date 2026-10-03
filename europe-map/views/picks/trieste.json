@@ -1,0 +1,71 @@
+{
+ "city": "Trieste",
+ "picks": [
+  {
+   "n": 8,
+   "file": "Trieste veduta dal mare (xilografia).jpg",
+   "y": 1893,
+   "lab": "1893",
+   "what": "View from the sea, wood engraving in Le Cento Città d’Italia",
+   "who": "Barberis",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.4
+   ],
+   "why": "general view of the waterfront and hillside city with ships in the harbor"
+  },
+  {
+   "n": 10,
+   "file": "Ansicht von Triest (BildID 15606180).jpg",
+   "y": 1916,
+   "lab": "1914–18",
+   "what": "View over the city and harbor, photograph (Austrian National Library)",
+   "who": "K.u.k. Kriegspressequartier",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.08,
+    0.995,
+    0.985
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "general view from the hill with the port and moles"
+  },
+  {
+   "n": 16,
+   "file": "Trieste by night.JPG",
+   "y": 2009,
+   "lab": "2009",
+   "what": "Piazza Unità d’Italia from the Molo Audace at night, photograph",
+   "who": "Adiel lo",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0.2,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "the city’s main square on the sea, lit up"
+  }
+ ],
+ "gaps": "P0–P3: nothing (#1–#2 show Predjama castle, #3 is a painting of Rome held in Trieste)",
+ "notes": "#7 (Carlo Canella, 1862 watercolor of San Nicolò dei Greci and the harbor, color) is a strong alternative for P4 but is a street scene in portrait format; I chose the 1893 general view. Miramare photochroms (#4, #6) skipped as the castle outside town, not the city.",
+ "_reviewed": true
+}

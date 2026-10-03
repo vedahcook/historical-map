@@ -1,0 +1,50 @@
+{
+ "city": "Bradford",
+ "picks": [
+  {
+   "n": 3,
+   "file": "William Cowen (1791-1864) - View of Bradford - 188-1920 - Cartwright Hall Art Gallery.jpg",
+   "y": 1849,
+   "lab": "1849",
+   "what": "View of Bradford, painting (Cartwright Hall Art Gallery, Bradford)",
+   "who": "William Cowen",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "color general view of the mill town with its chimneys; firm date"
+  },
+  {
+   "n": 8,
+   "file": "BradfordCityCentre.jpg",
+   "y": 2011,
+   "lab": "2011",
+   "what": "The city center with the City Hall clock tower, photograph",
+   "who": "Jon Farman",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.6
+   ],
+   "why": "rooftop view over the center; City Hall tower recognizable"
+  }
+ ],
+ "gaps": "P0–P2: no candidates. P4: no real candidates (the ‘Bradford’ hits are prints by the American lithographers Tappan & Bradford and a Country Press book page). P5: nothing.",
+ "notes": "P3 alternative: John Wilson Anderson’s ‘View of Bradford’ (about 1825–33; #1 and #2 are two photos of the same painting, #1 the better one) shows the parish church tower more clearly; only 20 years from Cowen, so one was kept. #11 is Ilkley Town Hall, not Bradford.",
+ "_reviewed": true
+}

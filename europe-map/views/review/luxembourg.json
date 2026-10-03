@@ -1,0 +1,7 @@
+{"city": "Luxembourg City", "checks": [
+ {"n": 6, "verdict": "fix", "fix": {"trim": [0.13, 0, 1, 1], "focal": [0.45, 0.32]}, "reason": "Latin caption cartouche in the lower-left corner shows inside the 16:9 crop; trimming the left 13% removes it and keeps the whole upper town"},
+ {"n": 10, "verdict": "fix", "fix": {"trim": [0.035, 0.145, 0.97, 0.75], "focal": [0.55, 0.5]}, "reason": "double plate frame lines still inside the crop at top and bottom (frame ends at about 0.138 and starts at about 0.755); right edge also on the frame"},
+ {"n": 15, "verdict": "fix", "fix": {"trim": [0.01, 0.025, 0.985, 0.975]}, "reason": "black frame lines of the drawing sit inside the trim at top, bottom and right edge"},
+ {"n": 22, "verdict": "ok", "reason": "photochrom view of the upper town and viaduct, border and caption trimmed"},
+ {"n": 28, "verdict": "ok", "reason": "good modern view of the Grund, correct credit and license"}
+]}

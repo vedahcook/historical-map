@@ -1,0 +1,15 @@
+{
+ "city": "Constantine",
+ "checks": [
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "town above the Rhumel gorge; 1899 per record; border excluded"
+  },
+  {
+   "n": 18,
+   "verdict": "ok",
+   "reason": "town and gorge; best of the recent photos; record matches"
+  }
+ ]
+}

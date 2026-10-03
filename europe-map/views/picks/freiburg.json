@@ -1,0 +1,92 @@
+{
+ "city": "Freiburg im Breisgau",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Merian Freiburg im Breisgau.jpg",
+   "y": 1644,
+   "lab": "1644",
+   "what": "Bird’s-eye view, engraving in Merian’s Topographia Alsatiae",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.14,
+    0.03,
+    0.67,
+    0.7
+   ],
+   "focal": [
+    0.5,
+    0.42
+   ],
+   "why": "walled town with the minster spire; legend boxes trimmed off"
+  },
+  {
+   "n": 8,
+   "file": "Freiburg, general view, Baden, Germany-LCCN2002713574.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.017,
+    0.03,
+    0.975,
+    0.94
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "general view with the minster tower; color"
+  },
+  {
+   "n": 15,
+   "file": "Freiburg im Breisgau City view with minster 1956.jpg",
+   "y": 1956,
+   "lab": "1956",
+   "what": "View from the Schlossberg with the minster, color slide",
+   "who": "Gerd Beck",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.4
+   ],
+   "why": "color view of the old town and minster"
+  },
+  {
+   "n": 18,
+   "file": "Panorama Schlossbergturm Freiburg im Breisgau.jpg",
+   "y": 2010,
+   "lab": "2010",
+   "what": "Panorama from the Schlossberg tower, photograph",
+   "who": "Dr. med. Mabuse",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.36,
+    0,
+    0.8,
+    0.88
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "whole city with the minster below the Schlossberg; the only modern general view"
+  }
+ ],
+ "gaps": "P0, P2, P3: nothing usable (the P3 hits are a portrait and a village plan)",
+ "notes": "#2 (Sickinger, 1589) is the famous bird’s-eye view, but the scan is small and faded and it shares P1 with #1; #3 is a small copy of #1. #9 (from the Sonnenberg vineyard) is an alternative photochrom. #18 is a little hazy; the 2012 aerials (#19–#21) show suburbs only, and #17 is Berlin.",
+ "_reviewed": true
+}

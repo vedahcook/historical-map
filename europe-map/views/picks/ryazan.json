@@ -1,0 +1,29 @@
+{
+ "city": "Ryazan",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Banner Ryazan 0987.jpg",
+   "y": 2021,
+   "lab": "2021",
+   "what": "The Ryazan Kremlin from above, photograph",
+   "who": "Ludvig14",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.28,
+    0,
+    0.86,
+    1
+   ],
+   "focal": [
+    0.66,
+    0.5
+   ],
+   "why": "the Kremlin bell tower and Dormition Cathedral in evening light"
+  }
+ ],
+ "gaps": "P0–P5: nothing",
+ "notes": "Very wide banner (7:1); trimmed to the bell tower, cathedral and Church of the Holy Spirit so the card crop keeps enough resolution. The bell tower’s cross touches the top edge.",
+ "_reviewed": true
+}

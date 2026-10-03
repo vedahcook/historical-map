@@ -1,0 +1,46 @@
+{
+ "city": "Aberdeen",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.034,
+     0.035,
+     0.978,
+     0.89
+    ]
+   },
+   "reason": "crop edge catches the plate’s left frame line and a strip of paper below the plate; view itself is fine (Slezer, 1693)"
+  },
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.012,
+     0.015,
+     0.98,
+     0.935
+    ],
+    "focal": [
+     0.55,
+     0.38
+    ]
+   },
+   "reason": "focal y 0.45 cuts the needle tip of the Town House spire (0.38 keeps the whole tower); right edge has a 3 px white border strip"
+  },
+  {
+   "n": 14,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.62,
+     0.6
+    ]
+   },
+   "reason": "crop at 0.45 takes in a foreground bush; shift right to the pier and Footdee houses. Weak view (mostly sky, low-rise) but it is Aberdeen harbor and the only sound P6 option"
+  }
+ ]
+}

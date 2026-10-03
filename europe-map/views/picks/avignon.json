@@ -1,0 +1,134 @@
+{
+ "city": "Avignon",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Avignon - btv1b53178985c (1 of 2).jpg",
+   "y": 1575,
+   "lab": "1575",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 2",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.082,
+    0.148,
+    0.916,
+    0.868
+   ],
+   "focal": [
+    0.55,
+    0.4
+   ],
+   "why": "colored single sheet; walled city with the Palace of the Popes, the Rhône and the bridge"
+  },
+  {
+   "n": 10,
+   "file": "Robert Bonnart 1700 Avignon crop.jpg",
+   "y": 1700,
+   "lab": "1700",
+   "what": "The Rhône, the Saint-Bénézet bridge and the Palace of the Popes, painting (Musée Calvet), detail",
+   "who": "Robert Bonnart",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "color; palace, Rocher des Doms and the broken bridge all recognizable"
+  },
+  {
+   "n": 14,
+   "file": "DAGNAN Vue d’Avignon et du Pont saint Bénezet.jpg",
+   "y": 1833,
+   "lab": "1833",
+   "what": "The Saint-Bénézet bridge and the Palace of the Popes, painting (Musée Calvet)",
+   "who": "Isidore Dagnan",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "color; the bridge with the palace towers behind"
+  },
+  {
+   "n": 19,
+   "file": "Flickr - …trialsanderrors - Pont Saint-Bénezet, Avignon, Provence, France, ca. 1898 (1).jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Saint-Bénézet bridge and the Palace of the Popes, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "CC BY 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.94
+   ],
+   "focal": [
+    0.55,
+    0.38
+   ],
+   "why": "color; bridge, cathedral and palace in one view across the Rhône"
+  },
+  {
+   "n": 23,
+   "file": "Gezicht op Avignon, Bestanddeelnr 255-9953.jpg",
+   "y": 1960,
+   "lab": "1960",
+   "what": "View from the ramparts over the town and the Rhône, photograph (Nationaal Archief)",
+   "who": "Willem van de Poll",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "color view from a height; roofs, walls and the river toward Villeneuve"
+  },
+  {
+   "n": 27,
+   "file": "00 0791 Avignon Frankreich.jpg",
+   "y": 2018,
+   "lab": "2018",
+   "what": "The old town roofs from a viewing platform, photograph",
+   "who": "W. Bulach",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.05,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "historic center with the towers of the Carmes and Augustins churches"
+  }
+ ],
+ "gaps": "P0: none",
+ "notes": "#10 is a 1248 px crop of Bonnart’s 1700 painting, slightly under 1280 px; #8 (Israël Silvestre, about 1654, palace seen from the river, high resolution) is a strong black-and-white alternative for P2. #19 is the Flickr copy of a Library of Congress photochrom (the uploader states it is public domain; file page says CC BY 2.0). #15 (photochrom panorama from the Île de la Barthelasse) is an alternative for P4. #12 (Marlow) shows Villeneuve-lès-Avignon, #21/#22/#25 are a 17th-century Fouquier landscape (1945-I is the museum number, not a date), #26 is a photo of an undated Paul Huet painting. P6 is weak: no good modern photo of the Palace of the Popes among the candidates; #28 shows mainly Villeneuve across the river.",
+ "_reviewed": true
+}

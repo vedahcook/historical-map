@@ -1,0 +1,25 @@
+{
+ "city": "Graz",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 18,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

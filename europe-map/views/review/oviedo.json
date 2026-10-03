@@ -1,0 +1,23 @@
+{
+ "city": "Oviedo",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.24,
+     0.045,
+     0.945,
+     0.96
+    ]
+   },
+   "reason": "black slide frame still inside the crop at the right edge (frame starts at 0.951) and at the top edge; tighten trim"
+  },
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "good"
+  }
+ ]
+}

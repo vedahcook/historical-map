@@ -1,0 +1,43 @@
+{
+ "city": "Patras",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.206,
+     0.247,
+     0.782,
+     0.716
+    ],
+    "focal": [
+     0.45,
+     0.6
+    ]
+   },
+   "reason": "the current crop cuts off the ship hulls at the bottom and keeps a dark print-edge line at left; move the crop down and trim left slightly"
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "general view over the roofs to the gulf; two posed soldiers in the foreground but the town reads clearly"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "weak and hazy but shows the waterfront under the mountain; slide border excluded"
+  },
+  {
+   "n": 12,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.39,
+     0.6
+    ]
+   },
+   "reason": "the crop includes a brown ferry fragment in the bottom-left corner; shift right so the church stays in the frame without it (16:9 crop of a 5:1 panorama is unavoidably narrow)"
+  }
+ ]
+}

@@ -1,0 +1,92 @@
+{
+ "city": "Plymouth",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Hendrick Danckerts (1625-1680) (attributed to) - View of Plymouth - PLYMG.1954.25 - The Box.jpg",
+   "y": 1675,
+   "lab": "1675",
+   "what": "View of the town and the Sound, painting (The Box, Plymouth)",
+   "who": "attributed to Hendrick Danckerts",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.02,
+    0.99,
+    0.98
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "general view over the town and harbor to the Sound and the new citadel; color"
+  },
+  {
+   "n": 4,
+   "file": "Joseph Mallord William Turner - Distant View of Plymouth - 2007.8.103 - Clark Art Institute.tiff",
+   "y": 1813,
+   "lab": "1813",
+   "what": "Distant view of the town and the Sound, painting (Clark Art Institute)",
+   "who": "J. M. W. Turner",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.078,
+    0.035,
+    0.8,
+    0.75
+   ],
+   "focal": [
+    0.35,
+    0.55
+   ],
+   "why": "town on the shore of the Sound with Mount Edgcumbe beyond; color target and foreground trees trimmed to bring the town forward"
+  },
+  {
+   "n": 9,
+   "file": "The Pier, with Drake's Island, Plymouth, England-LCCN2002708047.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The pier on the Hoe with Drake’s Island, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.015,
+    0.985,
+    0.935
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "classic Plymouth Hoe scene in color; caption and border trimmed"
+  },
+  {
+   "n": 15,
+   "file": "Panoramic View of Plymouth Waterfront.jpg",
+   "y": 2020,
+   "lab": "2020",
+   "what": "The Royal Citadel and the Hoe from Mountbatten Breakwater, photograph",
+   "who": "Partonez",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.22,
+    0.03,
+    0.72,
+    0.75
+   ],
+   "focal": [
+    0.495,
+    0.5
+   ],
+   "why": "recent view of the citadel and Smeaton’s Tower across the water; trimmed from a very wide panorama"
+  }
+ ],
+ "gaps": "P0, P1: no candidates. P5: no candidates of this Plymouth (#14 is Allentown, Pennsylvania).",
+ "notes": "Several hits are other Plymouths or other towns: #5 North Bridgewater, Massachusetts; #10/#13 Ivybridge; #11 New Plymouth, New Zealand; #12 New York; #14 Allentown; #17 Plymouth Meeting, Pennsylvania. Undated paintings skipped: #1 Hannan, #3 Reynell, #7 Johns and #18 Payne (their ‘dates’ are birth years or accession numbers). #6 (Dupré lithograph of the port, 1836) is an alternative for P3. #2 is small (1200 px wide). P6 is overcast and the city is distant.",
+ "_reviewed": true
+}

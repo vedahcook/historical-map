@@ -1,0 +1,71 @@
+{
+ "city": "Pécs",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Indóház utca, Pécs (Fürst Lipót kiadása).jpg",
+   "y": 1913,
+   "lab": "1913",
+   "what": "View along Indóház Street (today Szabadság Street) toward the cathedral and the Mecsek hills, colored postcard",
+   "who": "Lipót Fürst (publisher)",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.07,
+    0.99,
+    0.98
+   ],
+   "focal": [
+    0.5,
+    0.42
+   ],
+   "why": "color general view over the town with the four-towered cathedral against the Mecsek; caption in the sky trimmed"
+  },
+  {
+   "n": 5,
+   "file": "Látkép a Jókai Mór utcától a Széchenyi tér felé nézve. Fortepan 21189.jpg",
+   "y": 1965,
+   "lab": "1965",
+   "what": "View over the rooftops toward Széchenyi Square and the mosque church, photograph (Fortepan)",
+   "who": "Fortepan / Lechner Nonprofit Kft. Dokumentációs Központ",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.42,
+    0.5
+   ],
+   "why": "color view from a height with the green dome of the former Pasha Qasim mosque and the Mecsek behind"
+  },
+  {
+   "n": 10,
+   "file": "Pécs Panorama.jpg",
+   "y": 2020,
+   "lab": "2020",
+   "what": "Panorama of the city from the Mecsek hillside",
+   "who": "Hansencharly",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.1,
+    0,
+    0.95,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "recent wide panorama with the cathedral near the center"
+  }
+ ],
+ "gaps": "P0–P3: no candidates. P4 has only the 1913 postcard (1888 view skipped).",
+ "notes": "#1 (1888, Cserna) is a two-page book spread with the gutter through the view, so skipped. #3 (1946) is captioned ‘Pécs?’ in its own description. #4 is a single school building from the air. #6 (1965) is a good alternative to #5 but has no clear landmark. #10’s cathedral is small in the wide panorama; #9 (from the cathedral tower) is the fallback.",
+ "_reviewed": true
+}

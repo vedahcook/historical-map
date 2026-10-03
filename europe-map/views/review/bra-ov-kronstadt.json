@@ -1,0 +1,20 @@
+{
+ "city": "Brașov (Kronstadt)",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "ok"
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "trunks cross the view but town and Black Church are clear; only 20th-century view"
+  },
+  {
+   "n": 12,
+   "verdict": "ok",
+   "reason": "ok"
+  }
+ ]
+}

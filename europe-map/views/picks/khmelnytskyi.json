@@ -1,0 +1,29 @@
+{
+ "city": "Khmelnytskyi",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Площа - panoramio.jpg",
+   "y": 2011,
+   "lab": "2011",
+   "what": "The main square with the regional administration building, panoramic photograph",
+   "who": "VeTaLeK",
+   "lic": "CC BY 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "the city’s central square and its best-known building; winter light, some lens flare left of center"
+  }
+ ],
+ "gaps": "P0–P5: no candidates. Only P6 covered.",
+ "notes": "#1 is the Holy Trinity Church in Zinkiv, a different town in the oblast — not this city. #3 (night view) and #4 (apartment blocks) show nothing recognizable.",
+ "_reviewed": true
+}

@@ -1,0 +1,29 @@
+{
+ "city": "Ulyanovsk",
+ "picks": [
+  {
+   "n": 1,
+   "file": "View of Sinbirsk.jpg",
+   "y": 1775,
+   "lab": "1750–1800",
+   "what": "Simbirsk seen from the northwest road, engraving",
+   "who": "attributed to Mikhail Makhaev",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.025,
+    0.983,
+    0.91
+   ],
+   "focal": [
+    0.55,
+    0.55
+   ],
+   "why": "true view of Simbirsk, named in the engraved caption; churches and kremlin skyline on the Volga heights"
+  }
+ ],
+ "gaps": "P0–P2: no candidates; P4–P5: no candidates; P6: only hazy airplane-window shots of outlying districts, skipped",
+ "notes": "Commons dates the engraving only to the second half of the 18th century; the Makhaev attribution (he died in 1770) would narrow it to 1750–70 but is unconfirmed, so the label uses the wider range.",
+ "_reviewed": true
+}

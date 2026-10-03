@@ -1,0 +1,71 @@
+{
+ "city": "Aarhus",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Emmerik Høegh-Guldberg, Udsigt over Aarhus fra en i nærheden liggende Klint, 1836, ARoS Aarhus Kunstmuseum.tif",
+   "y": 1836,
+   "lab": "1836",
+   "what": "View of the town across the bay from a nearby cliff, painting (ARoS Aarhus Art Museum)",
+   "who": "Emmerik Høegh-Guldberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.6
+   ],
+   "why": "dated; the cathedral and the small town on the bay; better resolution than Holm’s similar view of about 1847"
+  },
+  {
+   "n": 7,
+   "file": "Peter Holm - Sommerlandskab med udsigt over Aarhus Bugt set fra Moesgård - 1861.png",
+   "y": 1861,
+   "lab": "1861",
+   "what": "The town and the bay seen from the south, painting",
+   "who": "Peter Holm",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.55
+   ],
+   "why": "clearest general view: cathedral tower, rooftops and harbor with ships"
+  },
+  {
+   "n": 15,
+   "file": "Domkirke cathedral spire and view of Aarhus seen from Salling rooftop 03.jpg",
+   "y": 2025,
+   "lab": "2025",
+   "what": "The cathedral, the rooftops and the harbor from the Salling rooftop, photograph",
+   "who": "Ciara Ní Riain",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.1,
+    1,
+    0.8
+   ],
+   "focal": [
+    0.35,
+    0.55
+   ],
+   "why": "color; cathedral spire with Aarhus Ø and the bay; rooftop planter mostly trimmed"
+  }
+ ],
+ "gaps": "P0–P2: no candidates; P5: only a 1914 sea view from the harbor with no town",
+ "notes": "#2 (Holm, 1816–75) too loosely dated; #3 (Holm, about 1847) is a fine alternative for P3. P4 others (#5, #6, #9, #10) show the town only as a faint strip; #8 is Marselisborg Palace. #4 is a cathedral interior. #12/#14 (2012 panorama) is the fallback for P6.",
+ "_reviewed": true
+}

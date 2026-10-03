@@ -1,0 +1,113 @@
+{
+ "city": "Cagliari",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Calaris - btv1b53170405d (1 of 2).jpg",
+   "y": 1574,
+   "lab": "1570s",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.045,
+    0.1,
+    0.958,
+    0.735
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "single-city plate after Sigismondo Arquer’s view: walled Castello on its hill above the harbor; clean scan, stamp is outside the plate"
+  },
+  {
+   "n": 8,
+   "file": "Veduta esterna della città di Cagliari nell'isola di Sardegna.jpg",
+   "y": 1845,
+   "lab": "1845",
+   "what": "View from outside the city, engraving in Zuccagni-Orlandini’s Corografia dell’Italia",
+   "who": "Vincenzo Stanghi",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0.04,
+    0.3,
+    0.958,
+    0.872
+   ],
+   "focal": [
+    0.35,
+    0.35
+   ],
+   "why": "general view of the city on its ridge; upper sky, plate heading and caption trimmed"
+  },
+  {
+   "n": 11,
+   "file": "Cagliari – Panorama dal colle Buonaria (xilografia).jpg",
+   "y": 1891,
+   "lab": "1891",
+   "what": "Panorama from the Bonaria hill, wood engraving in Le Cento Città d’Italia",
+   "who": "Giuseppe Barberis",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.62,
+    0.35
+   ],
+   "why": "Castello quarter with the cathedral dome and bell tower above the lower town"
+  },
+  {
+   "n": 14,
+   "file": "Vista de Cagliari, 1927.png",
+   "y": 1927,
+   "lab": "about 1927",
+   "what": "View from the sea, photograph in the magazine Plus Ultra",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.04,
+    0.09,
+    0.962,
+    0.91
+   ],
+   "focal": [
+    0.6,
+    0.4
+   ],
+   "why": "the hill of Castello rising above the waterfront; printed frame trimmed"
+  },
+  {
+   "n": 17,
+   "file": "View of Cagliari 1996.jpg",
+   "y": 1996,
+   "lab": "1996",
+   "what": "The old quarters of Stampace and Castello, photograph",
+   "who": "JopkeB",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.585
+   ],
+   "focal": [
+    0.4,
+    0.5
+   ],
+   "why": "historic center with the domes and towers of Sant’Anna; foreground roofs trimmed"
+  }
+ ],
+ "gaps": "P0: no candidates; P2: nothing usable (#7 is an 18th-century reprint of the 1572 four-city plate)",
+ "notes": "#5 and #3 are the same Braun and Hogenberg plate (#5 a 1635 reissue, cleaner scan; #3 has a library stamp and ink number in the sea). The plate’s first volume is uncertain to me (1572 per BnF, about 1574 per a dealer), hence label “1570s”; the four-city plate #1/#2 (Cagliari, Malta, Rhodes, Famagusta) is vol. 1, 1572, but Cagliari is only a quarter of it. #14 was published April 1927; the photo may be a few years older. #9 (1845 street view under the Castello bastion) is an alternative to #8. #15 (2016) shows mostly modern blocks; #18 (2012) is a hazy aerial.",
+ "_reviewed": true
+}

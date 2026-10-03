@@ -1,0 +1,71 @@
+{
+ "city": "Plovdiv",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Vue de Philippopoli - Beauregard J - 1896.jpg",
+   "y": 1896,
+   "lab": "1896",
+   "what": "The old town on its hill, wood engraving",
+   "who": "O’Netty",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.04,
+    0.98,
+    0.9
+   ],
+   "focal": [
+    0.4,
+    0.4
+   ],
+   "why": "old town houses on the rocky Nebet Tepe hill; book caption trimmed"
+  },
+  {
+   "n": 3,
+   "file": "Tobacco district in Plovdiv 1932.jpg",
+   "y": 1932,
+   "lab": "1932",
+   "what": "Aerial view over the tobacco district, photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.07,
+    0.89,
+    0.92
+   ],
+   "focal": [
+    0.47,
+    0.4
+   ],
+   "why": "wide aerial view across the city toward one of its hills; border, number, handwriting and edge smudges trimmed"
+  },
+  {
+   "n": 6,
+   "file": "Panorama of Plovdiv - panoramio (2).jpg",
+   "y": 2012,
+   "lab": "2012",
+   "what": "View toward Bunardzhik Hill, photograph",
+   "who": "Mister No",
+   "lic": "CC BY 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.42
+   ],
+   "why": "rooftops with the Liberators’ Hill and its monument; most recognizable of the modern shots"
+  }
+ ],
+ "gaps": "P0–P3: nothing",
+ "notes": "#2 (postcard from Sahat Tepe) is dated only “before 1940”, skipped in favor of the dated 1932 aerial. #7 is a single building (the fair entrance).",
+ "_reviewed": true
+}

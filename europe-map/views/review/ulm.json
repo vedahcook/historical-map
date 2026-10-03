@@ -1,0 +1,30 @@
+{
+ "city": "Ulm",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "good"
+  },
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "strip panel gives a narrow 16:9 crop but resolution is ample; acceptable"
+  },
+  {
+   "n": 13,
+   "verdict": "ok",
+   "reason": "good"
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "good"
+  },
+  {
+   "n": 26,
+   "verdict": "ok",
+   "reason": "good"
+  }
+ ]
+}

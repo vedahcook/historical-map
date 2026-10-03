@@ -1,0 +1,92 @@
+{
+ "city": "Bergen",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Hieronymus Scholeus - View of Bergen - NMK.2022.0090 - National Museum of Art, Architecture and Design.jpg",
+   "y": 1588,
+   "lab": "1588",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 4 (National Museum, Oslo)",
+   "who": "Georg Braun and Frans Hogenberg, after Hieronymus Scholeus",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.225,
+    0.315,
+    0.898,
+    0.87
+   ],
+   "focal": [
+    0.5,
+    0.0
+   ],
+   "why": "colored bird’s-eye view of the Vågen harbor, Bryggen and the town under the mountains; very high resolution; margins trimmed"
+  },
+  {
+   "n": 14,
+   "file": "Johan Christian Dahl - Bergen seen from the northern Inlet - NG.M.01624 - National Museum of Art, Architecture and Design.jpg",
+   "y": 1836,
+   "lab": "1836",
+   "what": "Bergen seen from the northern inlet, painting (National Museum, Oslo)",
+   "who": "Johan Christian Dahl",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.015,
+    0.99,
+    0.985
+   ],
+   "focal": [
+    0.55,
+    0.6
+   ],
+   "why": "color view of the town from the water below Mount Fløyen"
+  },
+  {
+   "n": 19,
+   "file": "Panoramic view, II, Bergen, Norway-LCCN2001699456.tif",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.016,
+    0.02,
+    0.984,
+    0.945
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "color general view from the hillside over the city and the Vågen harbor; border and caption trimmed"
+  },
+  {
+   "n": 28,
+   "file": "Vista de Bergen desde la montaña Fløyen, Noruega, 2019-09-08, DD 27-31 PAN.jpg",
+   "y": 2019,
+   "lab": "2019",
+   "what": "Panorama from Mount Fløyen, photograph",
+   "who": "Diego Delso",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.15,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.65,
+    0.55
+   ],
+   "why": "sharp panorama of the whole city, harbor and lake; trimmed off the wooded left edge"
+  }
+ ],
+ "gaps": "P0, P2: nothing (the P2 hits are Mons, Bergen op Zoom and Kloster Bergen on Rügen); P5: nothing (#21 shows a rural valley, the 1930s hits are Mittelholzer photos of Austria and Sudan)",
+ "notes": "#4 dated to the vol. 4 first edition (1588); the museum dates this impression 1590. #20 is another scan of the same photochrom as #19. #17 (Bryggen from the Rosenkrantz Tower) is a good alternative P4 landmark view.",
+ "_reviewed": true
+}

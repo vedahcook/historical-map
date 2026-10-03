@@ -1,0 +1,29 @@
+{
+ "city": "Gaziantep",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Gaziantep Kalesi (Gaziantep Castle).jpg",
+   "y": 2019,
+   "lab": "2019",
+   "what": "Gaziantep Castle, photograph",
+   "who": "Boubacar Amadou Cisse",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.12,
+    0.3,
+    1,
+    1
+   ],
+   "focal": [
+    0.65,
+    0.55
+   ],
+   "why": "the city’s main landmark (before the 2023 earthquake damage); trimmed to reduce the foreground tree"
+  }
+ ],
+ "gaps": "P0–P5: no candidates",
+ "notes": "Weak pick: a tree partly covers the castle and there is no general view of the city; the only other candidates are dark night shots from an airplane. Drop if a better modern view turns up.",
+ "_reviewed": true
+}

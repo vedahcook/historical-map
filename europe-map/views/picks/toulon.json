@@ -1,0 +1,113 @@
+{
+ "city": "Toulon",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Vue de Toulon du côté de la Terre - peinture - btv1b550041064 (1 of 2).jpg",
+   "y": 1756,
+   "lab": "about 1756",
+   "what": "View of Toulon from the land side, watercolor (Bibliothèque nationale de France)",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.35,
+    0.975,
+    0.92
+   ],
+   "focal": [
+    0.42,
+    0.55
+   ],
+   "why": "colored bird’s-eye view of the walled town, the arsenal basins and the fleet in the roadstead; title cartouche and margins trimmed"
+  },
+  {
+   "n": 7,
+   "file": "Toulon 1850.jpg",
+   "y": 1850,
+   "lab": "1850",
+   "what": "Bird’s-eye view, wood engraving",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.02,
+    0.98,
+    0.94
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "general view over the fortified town, arsenal and harbor; caption trimmed"
+  },
+  {
+   "n": 6,
+   "file": "Vue du port de Toulon.jpg",
+   "y": 1897,
+   "lab": "1897",
+   "what": "The harbor front below Mont Faron, pencil drawing",
+   "who": "Aspirant Le Mée",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.035,
+    0.99,
+    0.8
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "dated sketch (18 June 1897) of the quay with Mont Faron behind; 47 years after the 1850 view; handwritten caption trimmed"
+  },
+  {
+   "n": 10,
+   "file": "Aerial view of Toulon, France, and its harbour, 29 August 1944 (NH 64855).jpg",
+   "y": 1944,
+   "lab": "1944",
+   "what": "Aerial view of the harbor after the liberation, photograph (U.S. Navy)",
+   "who": "U.S. Navy photographer",
+   "lic": "PD",
+   "event": true,
+   "trim": [
+    0,
+    0,
+    1,
+    0.72
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "oblique aerial of the city under Mont Faron, with the destroyers scuttled in 1942 in the foreground; legend box trimmed"
+  },
+  {
+   "n": 14,
+   "file": "RadeToulon.JPG",
+   "y": 2010,
+   "lab": "2010",
+   "what": "View from Mont Faron over the city and the roadstead, photograph",
+   "who": "Marina Mercklé",
+   "lic": "CC BY 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0.15,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "whole city and harbor with the Faron cable car; slightly hazy"
+  }
+ ],
+ "gaps": "P0, P1, P2: nothing",
+ "notes": "#3 is dated only “18th century” by the BnF; its companion piece (#1) shows the arrival of Marshal Richelieu, which fits his March 1756 departure for Minorca from Toulon (he was made marshal in 1748), so “about 1756”; drop it if that inference is too loose. #10 is marked event because it shows the scuttled fleet; Commons date field says September but the description gives 29 August 1944. #15 (2017, sharper but partial view toward the naval base) is a fallback for P6.",
+ "_reviewed": true
+}

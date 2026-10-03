@@ -1,0 +1,92 @@
+{
+ "city": "Lublin",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Tipus civitatis Lubline(n)sis in regno Poloniae (...) - btv1b53235785m (2 of 3).jpg",
+   "y": 1617,
+   "lab": "1617",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 6",
+   "who": "Georg Braun and Abraham Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.32,
+    0.995,
+    0.81
+   ],
+   "focal": [
+    0.52,
+    0.5
+   ],
+   "why": "true profile view with the castle, churches and town gates labeled; clean scan with no fold; legend panel trimmed"
+  },
+  {
+   "n": 7,
+   "file": "Widok Lublina od strony południowej J. Maszewski 1774.jpg",
+   "y": 1774,
+   "lab": "1774",
+   "what": "View of the town from the south",
+   "who": "J. Maszewski",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.035,
+    0.12,
+    0.935,
+    0.72
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "detailed view of the walled Old Town and its churches; ornamental frame, sun rays and lower figures trimmed"
+  },
+  {
+   "n": 12,
+   "file": "Lublin, Widok ogolny ante 1930 (48601440).jpg",
+   "y": 1925,
+   "lab": "1920s",
+   "what": "View from the castle over the Old Town, photograph (National Library of Poland)",
+   "who": "Jan Bułhak",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.015,
+    0.984,
+    0.985
+   ],
+   "focal": [
+    0.5,
+    0.35
+   ],
+   "why": "Dominican church, Trinitarian Tower and cathedral towers above the castle hill; black border trimmed"
+  },
+  {
+   "n": 15,
+   "file": "Panorama of Lublin from the observation deck.jpg",
+   "y": 2019,
+   "lab": "2019",
+   "what": "View from the castle keep over the Old Town",
+   "who": "Vi Ko",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.115,
+    0.22,
+    0.86,
+    0.575
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "same landmarks as the Bułhak view, in color; shutter, railing and deck trimmed off"
+  }
+ ],
+ "gaps": "P0: no candidates. P2: only #5 (1677, a schematic town under a large empty cartouche, doubtful as a true view) and #4 (small undated copy of the Braun and Hogenberg view, 1650–1749). P4: #9 (‘after 1850’, magazine woodcut) and #10 (‘19th century’ lithograph) have no usable date.",
+ "notes": "#2 is the Braun and Hogenberg vol. 6 plate (BnF copy dated 1635), dated to first publication 1617; #3 is the same plate colored but with a dark fold line through the cathedral, and #1 is photographed in the open book. #12’s record says only ‘before 1930’ (printed 1934); Commons files it under Lublin in the 1920s, hence ‘1920s’. #16 (2025 night view of an Old Town street with the Trinitarian Tower, Krzysztof Popławski) is a strong P6 alternative if the trimmed #15 strip is too narrow.",
+ "_reviewed": true
+}

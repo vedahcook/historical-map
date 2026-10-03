@@ -1,0 +1,92 @@
+{
+ "city": "Vicenza",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Vicenza amplissima map 1588.jpg",
+   "y": 1588,
+   "lab": "1588",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 4 (Biblioteca Bertoliana, Vicenza)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.113,
+    0.17,
+    0.98,
+    0.99
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "colored bird’s-eye view of the walled town; flat scan with no gutter"
+  },
+  {
+   "n": 10,
+   "file": "Piazza del Duomo in Vicenza Veduta in Vicenza della Piazza del Domo (titel op object) Vedute vicentine (serietitel), RP-P-OB-38.910.jpg",
+   "y": 1765,
+   "lab": "1744–87",
+   "what": "Piazza del Duomo with the cathedral, etching in Vedute vicentine (Rijksmuseum)",
+   "who": "Cristoforo Dall’Acqua",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.07,
+    0.29,
+    0.93,
+    0.8
+   ],
+   "focal": [
+    0.3,
+    0.5
+   ],
+   "why": "the cathedral and its dome on the square; ornamental border trimmed"
+  },
+  {
+   "n": 14,
+   "file": "Panorama di Vicenza dal Monte Berico (xilografia).jpg",
+   "y": 1890,
+   "lab": "1890",
+   "what": "View from Monte Berico, wood engraving in Le cento città d’Italia",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.05,
+    1,
+    0.88
+   ],
+   "focal": [
+    0.62,
+    0.35
+   ],
+   "why": "general view with the Basilica Palladiana, Torre Bissara and cathedral dome"
+  },
+  {
+   "n": 15,
+   "file": "View of Vicenza from Santuario della Madonna di Monte Berico. Italy.jpg",
+   "y": 2016,
+   "lab": "2016",
+   "what": "View from Monte Berico, photograph",
+   "who": "Volodymyr Vlasenko",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.35,
+    0.35
+   ],
+   "why": "color view over the town to the Alps; Basilica roof and tower visible"
+  }
+ ],
+ "gaps": "P0: none; P2: none usable (#7 is a capriccio with ruins, #8 shows the Monte Berico hills, not the town); P5: none",
+ "notes": "#5 is low resolution (1040 px) and has a small paper loss at the right, but it is a flat scan of the 1588 plate; #1 (1594 edition, 5000 px) is the same plate in a bound book with the fold through the town, so swap it in only if the fold is acceptable. #10 is undated beyond the Rijksmuseum’s 1744–87 range (Dall’Acqua’s working life); #11 and #9/#12 are other plates of the same series. #3, #4 and #6 are other 16th–17th-century bird’s-eye views (#4 Valesio 1640, #6 Bertelli 1599) if a different P1 plate is preferred.",
+ "_reviewed": true
+}

@@ -1,0 +1,25 @@
+{
+ "city": "Yaroslavl",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "1731 panorama, legend trimmed, crop clean"
+  },
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "Bashkov 1856 per title"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "date field only says 20th century but categories file it under 1964; Elijah church street view"
+  },
+  {
+   "n": 13,
+   "verdict": "ok",
+   "reason": "Epiphany Church and old center, 2010 per record"
+  }
+ ]
+}

@@ -1,0 +1,92 @@
+{
+ "city": "Troyes",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Troyes en Champagne Joachin Duviert Joachim 52380.jpeg",
+   "y": 1610,
+   "lab": "about 1610",
+   "what": "View of the walled town, engraving (BnF)",
+   "who": "Joachim Duviert",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.088,
+    0.975,
+    0.62
+   ],
+   "focal": [
+    0.33,
+    0.45
+   ],
+   "why": "only early true view; walls, cathedral and church spires, trimmed above the legend"
+  },
+  {
+   "n": 3,
+   "file": "Préfecture, Halle aux Blés, Saint-Urbain and Port - Troyes 1860.JPG",
+   "y": 1860,
+   "lab": "1860",
+   "what": "The canal port with the Préfecture, the grain hall and Saint-Urbain, engraving in Aufauvre, Troyes et ses environs",
+   "who": "Charles Fichot",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.016,
+    0.03,
+    0.98,
+    0.87
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "lively town scene with the basilica of Saint-Urbain and the grain hall (demolished)"
+  },
+  {
+   "n": 5,
+   "file": "Revue régionale illustrée septembre 100317 (troyes).jpg",
+   "y": 1900,
+   "lab": "1900",
+   "what": "The town roofs with the cathedral and Saint-Rémy, photograph (Revue régionale illustrée)",
+   "who": "Lancelot",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.03,
+    0.03,
+    0.98,
+    0.955
+   ],
+   "focal": [
+    0.4,
+    0.35
+   ],
+   "why": "general view from a height; cathedral tower and the spire of Saint-Rémy"
+  },
+  {
+   "n": 6,
+   "file": "General View of Troyes and its Cathedral 20140509 3.jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "A square in the center with the cathedral tower, photograph",
+   "who": "DXR",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "sharp modern view with the cathedral’s west tower"
+  }
+ ],
+ "gaps": "P0: none; P2–P3: nothing usable (#2 is a street plan); P5: none",
+ "notes": "#1 is only 1537 px wide and very long, so a 16:9 card crop will be soft; the date is from Duviert’s series of town views (about 1609–14). P4 has two views exactly 40 years apart (1860 and 1900). #3 has a small library stamp in the caption strip, trimmed away; #4 is a smaller postcard copy of the same Fichot print. #5 is credited ‘Cliché Lancelot’ on the page; the Commons file is a scan licensed CC BY-SA 4.0. #7 is a close view of the cathedral alone; #8/#9 are a minor chapel.",
+ "_reviewed": true
+}

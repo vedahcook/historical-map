@@ -1,0 +1,44 @@
+{
+ "city": "Brno (Brünn)",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.012,
+     0.052,
+     0.982,
+     0.72
+    ]
+   },
+   "reason": "1617 (vol. 6) is right and the view is excellent; the double plate-frame lines along the top edge are still inside the crop. The title in the sky cannot be avoided without cutting the castle and spires"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "circa-1700 bird’s-eye view of the fortified town under Špilberk; banners trimmed, only a sliver of cloud and cartouche remains at the top edge"
+  },
+  {
+   "n": 12,
+   "verdict": "ok",
+   "reason": "Sandmann’s colored lithograph, about 1850; Špilberk, spires and the bridge are all in the crop, no frame visible"
+  },
+  {
+   "n": 17,
+   "verdict": "ok",
+   "reason": "1958 Fortepan view of Špilberk over Old Brno, foliage on the right but the best P5 view (#14 and #16 are hazy or roofs only); record and credit match"
+  },
+  {
+   "n": 20,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.73,
+     0.45
+    ]
+   },
+   "reason": "with the current focal point the castle is cut at the right edge of the 16:9 window; moving it right shows the twin spires and the whole castle hill together"
+  }
+ ]
+}

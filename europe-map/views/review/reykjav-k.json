@@ -1,0 +1,26 @@
+{
+ "city": "Reykjavík",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.76,
+     0.55
+    ]
+   },
+   "reason": "crop at 0.55 crosses a visible vertical seam in the sky at mid-picture; centering on the right half drops it and shows more of the town and pond, less empty bay"
+  },
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "dated 1 July 1930 general view; sky cut off by the crop; record matches"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "weak (coast guard ship dominates, gray sky) but Harpa is recognizable and no better P6 meets the width rule"
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "city": "Kielce",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "Sanecki postcard 'Kielce, ogólny widok' (post 1906), titles and card edges trimmed cleanly; cathedral towers inside the crop; 'about 1910' is a fair label"
+  },
+  {
+   "n": 8,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0.12,
+     1,
+     0.6
+    ],
+    "focal": [
+     0.5,
+     0.5
+    ]
+   },
+   "reason": "the ski hut and lift pylon at the lower right are still inside the current crop and half the frame is forest; the tighter trim keeps the skyline and drops them. It remains a modest view but the best of the modern set"
+  }
+ ]
+}

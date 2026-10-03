@@ -1,0 +1,92 @@
+{
+ "city": "Mechelen",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Tshertogenbosch, Loeven, Machelen.jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Panorama, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.07,
+    0.68,
+    0.925,
+    0.93
+   ],
+   "focal": [
+    0.54,
+    0.5
+   ],
+   "why": "colored profile view of the whole town with St. Rumbold’s tower; trimmed to the Mechelen strip, the lowest of three city views on the plate; flat single sheet"
+  },
+  {
+   "n": 7,
+   "file": "Gezicht op Mechelen Mechelen (titel op object), RP-P-AO-17-52.jpg",
+   "y": 1654,
+   "lab": "1654",
+   "what": "View of the town, etching in Merian’s Topographia (Rijksmuseum)",
+   "who": "Caspar Merian",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.05,
+    0.19,
+    0.968,
+    0.765
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "general view with St. Rumbold’s, the old St. Peter’s and a windmill, landmarks labeled; a thin sheet join runs just right of the cathedral; margins trimmed"
+  },
+  {
+   "n": 11,
+   "file": "Thomas Shotter Boys (British - A View of the Church of Our Lady of Hanswijk, Mechelen (Malines), Belgium - Google Art Project.jpg",
+   "y": 1831,
+   "lab": "1831",
+   "what": "The Church of Our Lady of Hanswijk on the Dyle, watercolor",
+   "who": "Thomas Shotter Boys",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "color view of the domed Hanswijk basilica over the river; signed and dated 1831"
+  },
+  {
+   "n": 12,
+   "file": "Joseph Ignace van Hoey Malines Vue des canaux.jpg",
+   "y": 1879,
+   "lab": "1879",
+   "what": "A canal lined with old houses, painting",
+   "who": "Joseph Ignace van Hoey",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "signed and dated town scene on one of the canals; no major landmark, but the only firmly dated later view"
+  }
+ ],
+ "gaps": "P0: nothing; P5: nothing usable; P6: no usable modern view",
+ "notes": "The Braun and Hogenberg vol. 1 plate holds three panoramas (’s-Hertogenbosch, Leuven, Mechelen); #3 and #6 are bound spreads with the gutter through the views, #4 is a flat sheet. Vol. 3 (1581) plans (#1, #2, #5) are flat street plans. #10 (1682) is the same Braun and Hogenberg Mechelen strip reissued by Janssonius van Waesberge, so not a new view. #8 and #9 (van der Aa / ‘Les Forces de l’Europe’, about 1715–28) are a smaller, generic alternative for P2. #13 is dated only ‘early 19th century’; #14 (De Cauwer) only ‘before 1873’. #15 (Louis Titz, 1916) shows an unidentified church and is low-resolution. The 2021 photos (#16–#19) are a street, a car park meter and a snack bar.",
+ "_reviewed": true
+}

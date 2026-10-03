@@ -1,0 +1,44 @@
+{
+ "city": "Münster, Germany",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.34,
+     0.128,
+     0.68,
+     0.292
+    ],
+    "focal": [
+     0.5,
+     0.5
+    ]
+   },
+   "reason": "B&H vol. 2 (1575) confirmed by the Gallica series 'liber secundus'; old crop put the title cartouche across the lower third and clipped it, and included the frame line at top. New trim keeps the skyline above the cartouche, narrowed so the 16:9 window is about 70% of the trimmed width"
+  },
+  {
+   "n": 7,
+   "verdict": "replace",
+   "replace_with": 8,
+   "fix": {
+    "y": 1662,
+    "lab": "1662–63",
+    "trim": [
+     0.31,
+     0.087,
+     0.64,
+     0.32
+    ],
+    "focal": [
+     0.5,
+     0.5
+    ],
+    "what": "View of the city before the siege of 1657, engraving",
+    "who": "Caspar Merian"
+   },
+   "reason": "#7 has a vertical sheet seam at 50% of the width, running right beside the cathedral towers, which any crop on the cathedral includes. #8 is the same Caspar Merian plate in a seam-free scan (its 1654 date is wrong, so keep 1662–63 from #7's record); the crop skips the engraved title and keeps the cathedral and neighboring spires (file: Muenster-1654-Merian.jpg)"
+  }
+ ]
+}

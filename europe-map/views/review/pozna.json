@@ -1,0 +1,37 @@
+{
+ "city": "Poznań",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.005,
+     0.01,
+     0.98,
+     0.985
+    ],
+    "focal": [
+     0.64,
+     0.5
+    ]
+   },
+   "reason": "B&H vol. 6 (1617) is right; crop at focal 0.55 includes a fragment of the title cartouche at its top-left corner (shift focal right) and the right edge has a white margin strip"
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "Minutoli lithograph, [1833], of the Jesuit college and Fara tower scene; record matches; crop clean"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "photochrom skyline across the Warta; lower half of the crop is meadow but acceptable"
+  },
+  {
+   "n": 19,
+   "verdict": "ok",
+   "reason": "2020 rooftop view with the town hall tower; record matches"
+  }
+ ]
+}
