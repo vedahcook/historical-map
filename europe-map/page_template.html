@@ -6,7 +6,7 @@
   --bg: #f2f4f1; --surface: #ffffff; --sunk: #e9ece7; --ink: #18201c; --muted: #56605a; --faint: #7d867f; --line: #d6dbd4;
   --accent: #1f5f6b; --accent-ink: #ffffff; --focus: #1f5f6b;
   --water: #bfd1da; --outside: #e7ebe8; --grat: rgba(42,48,44,0.12); --none: #e6e4dc; --border: rgba(42,48,44,0.38); --vborder: rgba(42,48,44,0.28); --dim: rgba(242,244,241,0.5); --dimtext: 0.26; --river: #86adc0; --halo: rgba(255,255,255,0.88); --river-ink: #2f6c86; --mtn-ink: #7a5534; --plain-ink: #85784f; --relief: 0.5;
-  --alt: #1f5f6b; --alt-fill: rgba(31,95,107,0.16); --sel: #18201c;
+  --alt: #1f5f6b; --alt-fill: rgba(31,95,107,0.16); --sel: #18201c; --edge-ink: #000 34%;
   /*FILLS_LIGHT*/
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
   --sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -18,14 +18,14 @@
   --bg: #111513; --surface: #1a201d; --sunk: #151a18; --ink: #e6ece8; --muted: #a3aea7; --faint: #7f8a83; --line: #2e3632;
   --accent: #7fc4cf; --accent-ink: #0e1412; --focus: #7fc4cf;
   --water: #14232a; --outside: #161b19; --grat: rgba(223,230,225,0.12); --none: #2a2e2b; --border: rgba(223,230,225,0.34); --vborder: rgba(223,230,225,0.24); --dim: rgba(17,21,19,0.48); --dimtext: 0.3; --river: #2c4b57; --halo: rgba(17,21,19,0.85); --river-ink: #8cbcd0; --mtn-ink: #d2b08c; --plain-ink: #bdb08a; --relief: 0.42;
-  --alt: #7fc4cf; --alt-fill: rgba(127,196,207,0.2); --sel: #ffffff;
+  --alt: #7fc4cf; --alt-fill: rgba(127,196,207,0.2); --sel: #ffffff; --edge-ink: #fff 18%;
   /*FILLS_DARK*/
   color-scheme: dark; } }
 :root[data-theme="dark"] {
   --bg: #111513; --surface: #1a201d; --sunk: #151a18; --ink: #e6ece8; --muted: #a3aea7; --faint: #7f8a83; --line: #2e3632;
   --accent: #7fc4cf; --accent-ink: #0e1412; --focus: #7fc4cf;
   --water: #14232a; --outside: #161b19; --grat: rgba(223,230,225,0.12); --none: #2a2e2b; --border: rgba(223,230,225,0.34); --vborder: rgba(223,230,225,0.24); --dim: rgba(17,21,19,0.48); --dimtext: 0.3; --river: #2c4b57; --halo: rgba(17,21,19,0.85); --river-ink: #8cbcd0; --mtn-ink: #d2b08c; --plain-ink: #bdb08a; --relief: 0.42;
-  --alt: #7fc4cf; --alt-fill: rgba(127,196,207,0.2); --sel: #ffffff;
+  --alt: #7fc4cf; --alt-fill: rgba(127,196,207,0.2); --sel: #ffffff; --edge-ink: #fff 18%;
   /*FILLS_DARK*/
   color-scheme: dark;
 }
@@ -84,6 +84,7 @@ button, select, input { font: inherit; color: inherit; }
 .lbl.big { font-weight: 450; }
 .lbl.off { opacity: var(--dimtext); }      /* names outside the highlighted country fade more than the map does */
 .dim { fill: var(--dim); fill-rule: evenodd; pointer-events: none; }
+.focusedge { fill: none; stroke-width: 2.2px; stroke-linejoin: round; vector-effect: non-scaling-stroke; pointer-events: none; }   /* the highlighted country's outline, in its own color */
 .pin circle { fill: none; stroke: var(--accent); stroke-width: 2px; vector-effect: non-scaling-stroke; pointer-events: none; }
 .city circle { fill: var(--ink); stroke: var(--halo); cursor: pointer; }
 .city.nofig circle { fill: var(--surface); stroke: var(--ink); }
@@ -288,6 +289,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
           <g id="badges"></g>
           <g id="tlabels"></g>
           <path id="dim" class="dim"></path>
+          <path id="focusedge" class="focusedge"></path>
           <g id="labels"></g>
           <g id="pin" class="pin"></g>
           <g id="cities"></g>
@@ -583,7 +585,7 @@ function draw() {
   const fg = $('fills'); fg.textContent = '';
   for (const f of G ? G.fills : []) {
     const p = el('path', { d: f.d, class: 'fill', 'data-u': f.u }, fg); p.setAttribute('style', `fill: ${fillVar(f.u)}`);
-    if (isVassal(f.u)) { const h = el('path', { d: f.d, class: 'fill', 'data-u': f.u }, fg); h.setAttribute('style', `fill: url(#${hatchFor(U[f.u].ov, isOcc(f.u))})`); }
+    if (isVassal(f.u)) { const h = el('path', { d: f.d, class: 'fill hatch', 'data-u': f.u }, fg); h.setAttribute('style', `fill: url(#${hatchFor(U[f.u].ov, isOcc(f.u))})`); }
   }
   $('borders').setAttribute('d', G ? G.borders : ''); $('vborders').setAttribute('d', G ? G.vb : '');
   drawAlts(); drawDim(); applyView();
@@ -734,12 +736,56 @@ function placeUnit(y) {
 }
 const focusUnit = () => placeUnit(year);
 function drawDim() {
-  const p = $('dim'); const u = focusUnit();
-  if (u < 0) { p.setAttribute('d', ''); return; }
+  const p = $('dim'), edge = $('focusedge'); const u = focusUnit();
+  const cols = u >= 0 ? dimColors(U[u].c) : null;
+  for (const e of $('fills').children) { const v = +e.dataset.u; if (!e.classList.contains('hatch')) e.style.fill = cols && v !== u ? cols[U[v].c] : fillVar(v); }
+  if (u < 0) { p.setAttribute('d', ''); edge.setAttribute('d', ''); return; }
   const f = yearGeo(year).fills.find(g => g.u === u);
   const [x, y, w, h] = VB0, pad = Math.max(w, h);
   p.setAttribute('d', `M${x - pad},${y - pad}H${x + w + pad}V${y + h + pad}H${x - pad}Z` + (f ? f.d : ''));
+  edge.setAttribute('d', f ? f.d : ''); edge.style.stroke = `color-mix(in oklab, ${hueVar(u)}, var(--edge-ink))`;
 }
+// Colors of the countries outside the highlighted one. The pale veil (--dim) over them would on its own turn a
+// country's stronger shade into the paler shade of the same color (the Ottoman Empire's darker green came out exactly
+// as Hungary's lighter green), so their fills are also grayed (keeping DIM_KEEP of their color), and any that would
+// still come close to the highlighted country's color are made lighter or darker until they differ by at least
+// DIM_APART (in OKLab, about the difference between a color's two shades on the map). Worked out in the theme in use.
+const DIM_KEEP = 0.4, DIM_APART = 0.05;
+const toLin = v => (v /= 255) <= 0.04045 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
+const fromLin = v => 255 * (v <= 0.0031308 ? 12.92 * v : 1.055 * Math.pow(v, 1 / 2.4) - 0.055);
+function okLab(c) {
+  const [r, g, b] = c.map(toLin);
+  const l = Math.cbrt(0.4122214708 * r + 0.5363325363 * g + 0.0514459929 * b), m = Math.cbrt(0.2119034982 * r + 0.6806995451 * g + 0.1073969566 * b), s = Math.cbrt(0.0883024619 * r + 0.2817188376 * g + 0.6299787005 * b);
+  return [0.2104542553 * l + 0.7936177850 * m - 0.0040720468 * s, 1.9779984951 * l - 2.4285922050 * m + 0.4505937099 * s, 0.0259040371 * l + 0.7827717662 * m - 0.8086757660 * s];
+}
+function okRgb([L, a, b]) {
+  const l = (L + 0.3963377774 * a + 0.2158037573 * b) ** 3, m = (L - 0.1055613458 * a - 0.0638541728 * b) ** 3, s = (L - 0.0894841775 * a - 1.2914855480 * b) ** 3;
+  return [4.0767416621 * l - 3.3077115913 * m + 0.2309699292 * s, -1.2684380046 * l + 2.6097574011 * m - 0.3413193965 * s, -0.0041960863 * l - 0.7034186147 * m + 1.7076147010 * s].map(v => fromLin(Math.max(0, Math.min(1, v))));
+}
+const rgbOf = h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16));
+const hexOf = c => '#' + c.map(v => Math.round(Math.max(0, Math.min(255, v))).toString(16).padStart(2, '0')).join('');
+let dimKey = '', dimCols = null;
+function dimColors(fc) {
+  const cs = getComputedStyle(document.documentElement), pal = [];
+  for (let i = 0; ; i++) { const v = cs.getPropertyValue('--f' + i).trim(); if (!/^#[0-9a-f]{6}$/i.test(v)) break; pal.push(v); }
+  const veil = (cs.getPropertyValue('--dim').match(/[\d.]+/g) || [255, 255, 255, 0.5]).map(Number), O = veil.slice(0, 3), a = veil[3];
+  const key = pal.join() + veil.join() + '|' + fc; if (key === dimKey) return dimCols;
+  const under = c => c.map((v, i) => v * (1 - a) + O[i] * a);              // a color as it shows through the veil
+  const F = okLab(rgbOf(pal[fc]));
+  const Lmax = okLab(under([255, 255, 255]))[0] - 0.005, Lmin = okLab(under([0, 0, 0]))[0] + 0.005;
+  dimCols = pal.map(h => {
+    let [L, A, B] = okLab(under(rgbOf(h))); A *= DIM_KEEP; B *= DIM_KEEP;
+    const dab = Math.hypot(A - F[1], B - F[2]);
+    if (dab < DIM_APART) {
+      const m = Math.sqrt(DIM_APART * DIM_APART - dab * dab), up = F[0] + m, dn = F[0] - m;
+      if (Math.abs(L - F[0]) < m) L = (L >= F[0] && up <= Lmax) || dn < Lmin ? Math.min(up, Lmax) : dn;
+    }
+    return hexOf(okRgb([L, A, B]).map((v, i) => (v - O[i] * a) / (1 - a)));   // the fill under the veil that shows as that
+  });
+  dimKey = key; return dimCols;
+}
+// a change of light or dark theme changes the colors
+try { matchMedia('(prefers-color-scheme: dark)').addEventListener('change', drawDim); new MutationObserver(drawDim).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] }); } catch (e) {}
 // a ring around each detached part of the highlighted country (up to 80 px across on screen), so a territory far
 // from the rest is easy to spot; also around the main part when the whole country is tiny. The popup keeps off them.
 let ringBoxes = [];

@@ -13,7 +13,7 @@ The page is `europe-borders.html`, published as a Claude artifact. It holds the 
 
 ## Using the map
 
-- **Tap a country** to highlight it and dim the rest. The map zooms so the whole country is on screen, and a popup describes it for that year: its flag (tap it to see it larger; tap anywhere to close), when the state began and ended, how, and where the border at that spot comes from. Rings mark detached parts. Tap it again, or the sea, to clear it.
+- **Tap a country** to highlight it and dim the rest. It keeps its color and gets an outline in a deeper shade of it; the rest of the map is washed out and grayed, and any dimmed country that would still come close to the highlighted country's color is made lighter or darker until it is clearly different (otherwise a country in the stronger shade of a color could fade into exactly the paler shade, as the Ottoman Empire did next to Hungary). The map zooms so the whole country is on screen, and a popup describes it for that year: its flag (tap it to see it larger; tap anywhere to close), when the state began and ended, how, and where the border at that spot comes from. Rings mark detached parts. Tap it again, or the sea, to clear it.
 - **The highlight follows the country across 1500 and 1800,** where the page switches between its three maps.
 - **The timeline** shows key events, or only the highlighted country's events: when it began or ended, name changes, and gains or losses over 1,500 km². The row of events scrolls sideways.
 - **Cities** appear inside the highlighted country: the ten largest of its cities on screen that year. Zooming in or panning brings in smaller towns, so a view about 200 km across still shows ten in most of Europe from the 1800s on. Tap a city for its population that year, a chart of all its figures, and who held it over the years. The list of holders uses each state's full name, as in its own popup, and for a dependent territory names the power that controlled it ("under the Ottoman Empire", "occupied by Germany") unless the name already says so; a renamed state (Russian Empire, Soviet Union, Russia) gets a line for each name. Tap a dot in the chart, a spot on the strip, or a line in the list to go to that year; the popup stays put.
@@ -147,7 +147,8 @@ To change only the page's code (`page_template.html`), the map data can be taken
 The map is plain files, so any web host can serve it.
 
 - `python3 make_site.py` writes `../_site/`: `index.html` (the page with the standard page header, which Claude artifacts otherwise add) and the files it loads. Upload that folder to any host, or embed its `index.html` in another site with an iframe.
-- `./deploy_site.sh` builds the folder and pushes it to the `gh-pages` branch, replacing what was there. GitHub Pages serves it at https://vedahcook.github.io/historical-map/ (Settings → Pages → Source: "Deploy from a branch", branch `gh-pages`). Run it after each rebuild.
+- `./deploy_site.sh` builds the folder and pushes it to the `gh-pages` branch as a single commit, replacing what was there. GitHub Pages serves it at https://vedahcook.github.io/historical-map/ (Settings → Pages → Source: "Deploy from a branch", branch `gh-pages`).
+- **Test copy first:** `./deploy_site.sh test` publishes the rebuilt page at https://vedahcook.github.io/historical-map/test/ (marked "Test version", kept out of search engines) and leaves the live map alone; once it looks right, `./deploy_site.sh` puts it live (the test copy stays until the next test). Only changed files are uploaded.
 - The page loads fonts from Google Fonts and the topojson-client library from jsDelivr.
 - CShapes-Europe's license is non-commercial, so the map can't be hosted on a commercial site.
 
