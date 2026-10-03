@@ -1,0 +1,47 @@
+{
+ "city": "Warsaw",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "Braun & Hogenberg vol. 6 Varsovia, 1617 (BnF copy 41:1.6 confirms vol. 6); crop fine"
+  },
+  {
+   "n": 6,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0,
+     1,
+     0.82
+    ],
+    "focal": [
+     0.6,
+     0.4
+    ]
+   },
+   "reason": "Detail with Arx Regia, dated by the 1696 book per rules. Crop started 25 px down and cut the tower crown; bottom trim 0.91 still includes the plate’s border lines and paper, 0.82 stops in the engraving"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "Bellotto 1770 per record; crop fine"
+  },
+  {
+   "n": 22,
+   "verdict": "ok",
+   "reason": "Photochrom of Castle Square, 1890s; caption trimmed; Photoglob Zürich per printed mark"
+  },
+  {
+   "n": 26,
+   "verdict": "ok",
+   "reason": "Aerial of Saxon Square before the cathedral was pulled down (early 1920s per description); y 1922 fine"
+  },
+  {
+   "n": 31,
+   "verdict": "ok",
+   "reason": "Night panorama CC BY-SA 3.0, Bosyantek; crop shows the riverfront and lit bridge"
+  }
+ ]
+}

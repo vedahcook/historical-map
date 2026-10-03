@@ -1,0 +1,39 @@
+{
+ "city": "Copenhagen",
+ "checks": [
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "city, date, view type, crop and credits agree with the record"
+  },
+  {
+   "n": 10,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.022,
+     0.04,
+     0.97,
+     0.975
+    ],
+    "who": "Rombout van den Hoeye"
+   },
+   "reason": "trim left paper slivers and frame lines inside crop; maker per Commons category is Rombout van den Hoeye"
+  },
+  {
+   "n": 19,
+   "verdict": "ok",
+   "reason": "city, date, view type, crop and credits agree with the record"
+  },
+  {
+   "n": 20,
+   "verdict": "ok",
+   "reason": "city, date, view type, crop and credits agree with the record"
+  },
+  {
+   "n": 36,
+   "verdict": "ok",
+   "reason": "city, date, view type, crop and credits agree with the record"
+  }
+ ]
+}

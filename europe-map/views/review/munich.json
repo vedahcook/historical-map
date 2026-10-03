@@ -1,0 +1,51 @@
+{
+ "city": "Munich",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.02,
+     0.076,
+     0.995,
+     0.98
+    ]
+   },
+   "reason": "top margin/text edge inside crop"
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "city, date, view type, crop and credits agree with the record"
+  },
+  {
+   "n": 22,
+   "verdict": "ok",
+   "reason": "city, date, view type, crop and credits agree with the record"
+  },
+  {
+   "n": 24,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.032,
+     0.03,
+     0.978,
+     0.97
+    ]
+   },
+   "reason": "photochrom border/paper edge inside crop"
+  },
+  {
+   "n": 36,
+   "verdict": "ok",
+   "reason": "city, date, view type, crop and credits agree with the record"
+  },
+  {
+   "n": 42,
+   "verdict": "ok",
+   "reason": "city, date, view type, crop and credits agree with the record"
+  }
+ ]
+}

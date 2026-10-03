@@ -1,0 +1,112 @@
+{
+ "city": "Berlin",
+ "picks": [
+  {
+   "n": 9,
+   "file": "Ansicht Berlins von Nordwesten (um 1650).jpg",
+   "y": 1655,
+   "lab": "1650s",
+   "what": "Berlin from the northwest with the palace, painting",
+   "who": "Jan Ruyscher",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.01,
+    0.995,
+    0.99
+   ],
+   "focal": [
+    0.55,
+    0.55
+   ],
+   "why": "oldest painted view of Berlin; palace and cathedral towers in color"
+  },
+  {
+   "n": 10,
+   "file": "Panorama von Berlin vom Dach der Friedrichswerderschen Kirche aus 1.jpg",
+   "y": 1834,
+   "lab": "1834",
+   "what": "View from the roof of the Friedrichswerder Church, painting (part of a panorama)",
+   "who": "Eduard Gaertner",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.35,
+    0.55
+   ],
+   "why": "color; St. Hedwig’s Cathedral, the opera square and Unter den Linden"
+  },
+  {
+   "n": 22,
+   "file": "Schiller Square, Berlin, Germany-LCCN2002713622.tif",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Gendarmenmarkt, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.025,
+    0.98,
+    0.94
+   ],
+   "focal": [
+    0.5,
+    0.36
+   ],
+   "why": "theater and French Cathedral, a well-known Berlin square in color"
+  },
+  {
+   "n": 25,
+   "file": "Joseph Pennell, View on the Spree, Berlin, 1921, NGA 10103.jpg",
+   "y": 1921,
+   "lab": "1921",
+   "what": "View on the Spree, lithograph (National Gallery of Art, Washington)",
+   "who": "Joseph Pennell",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.02,
+    0.03,
+    0.98,
+    0.9
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "old-town skyline over the river with the Nikolaikirche spires and town hall tower"
+  },
+  {
+   "n": 34,
+   "file": "Berlin-vom Franzoesischen Dom-06-Gendarmenmarkt-Deutscher Dom-Konzerthaus-2017-gje.jpg",
+   "y": 2017,
+   "lab": "2017",
+   "what": "The Gendarmenmarkt and city center from the French Cathedral, photograph",
+   "who": "Gerd Eichmann",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "historic center from above; pairs with the 1890s view of the same square"
+  }
+ ],
+ "gaps": "P0: none (#1 is an Italian ideal city); P1: only Spandau, then a separate town; P3 has one view only",
+ "notes": "#4 bird’s-eye view rejected: file name says 1652, date field says 1699 (Broebes), and it shows the Dorotheenstadt grid, so the date is unclear. #5 Merian 1652 is a good B&W alternative for P2 if the Ruyscher painting’s 1650–60 date is a concern. #8 (1726) copies the Merian view. #28 (1915) has airplanes pasted in. #24 is a Kreuzberg gasworks, no landmarks."
+}

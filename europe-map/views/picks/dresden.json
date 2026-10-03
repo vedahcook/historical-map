@@ -1,0 +1,112 @@
+{
+ "city": "Dresden",
+ "picks": [
+  {
+   "n": 1,
+   "file": "View of Dresden 1572.jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Colored engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.045,
+    0.13,
+    0.955,
+    0.875
+   ],
+   "focal": [
+    0.47,
+    0.55
+   ],
+   "why": "colored true view, Dresden half only; the old Elbe bridge and the castle along the river"
+  },
+  {
+   "n": 9,
+   "file": "Dresden1-1650-Merian.jpg",
+   "y": 1650,
+   "lab": "1650",
+   "what": "View across the Elbe and the bridge, engraving in Merian’s Topographia Superioris Saxoniae",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.036,
+    1,
+    0.958
+   ],
+   "focal": [
+    0.58,
+    0.5
+   ],
+   "why": "clean full panorama of the pre-baroque city; bridge, castle and Kreuzkirche"
+  },
+  {
+   "n": 17,
+   "file": "Bellotto View of Dresden.jpg",
+   "y": 1750,
+   "lab": "about 1750",
+   "what": "The Frauenkirche, the Augustus Bridge and the Hofkirche from across the Elbe, painting",
+   "who": "Bernardo Bellotto",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.5
+   ],
+   "why": "color general view of baroque Dresden with its main landmarks; only 1200 px wide"
+  },
+  {
+   "n": 22,
+   "file": "Gezicht op Dresden 1668 P.Z. -Dresden Altstadt (titel op object), RP-F-2010-172-1.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Augustus Bridge and the Old Town, photochrom print (Rijksmuseum)",
+   "who": "Photoglob Zürich",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.35
+   ],
+   "why": "high-resolution color view; Frauenkirche, Hofkirche and castle tower across the bridge"
+  },
+  {
+   "n": 30,
+   "file": "Rudolf Poeschmann Dresden Blick vom Waldschlößchen 1924.jpg",
+   "y": 1924,
+   "lab": "1924",
+   "what": "The Old Town seen from the Waldschlößchen, painting",
+   "who": "Rudolf Poeschmann",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.1,
+    0.31,
+    0.58,
+    0.64
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "only usable 20th-century view; skyline small but Frauenkirche dome and towers readable, dated and signed"
+  }
+ ],
+ "gaps": "P0: no candidates. P6: no photograph of the center or skyline (only suburbs Laubegast, Loschwitz, Gompitz and satellite images). No views of the 1945 ruins among the candidates.",
+ "notes": "P2/P3 choice: #14 (Bellotto, Dresden from the right bank below the Augustus Bridge, 1748, 6175 px) is the strongest Dresden picture overall but is dated 1748, so it competes with Merian for P2; Merian was kept so 17th-century maps show the pre-baroque city, and #17 (about 1750) covers the 18th century. Swap #14 in for #9 if a stronger image matters more than the spread. #17’s date is the Commons field (about 1750–55); any Bellotto Dresden view falls within 1747–66. #22 is a Photoglob (P.Z.) print; #27 (Terrassenufer from the Carola Bridge) is an equally good alternative. #30: Poeschmann died 1954; Commons marks it public domain."
+}

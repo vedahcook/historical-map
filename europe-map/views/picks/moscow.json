@@ -1,0 +1,112 @@
+{
+ "city": "Moscow",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Moscow 1556.jpg",
+   "y": 1575,
+   "lab": "1575",
+   "what": "Bird’s-eye view of the Kremlin, colored engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 2",
+   "who": "Georg Braun and Frans Hogenberg, after Sigismund von Herberstein",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.03,
+    0.97,
+    0.69
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "colored Moscauw plate, the standard early view; stylized but correctly identified; figures and caption trimmed"
+  },
+  {
+   "n": 13,
+   "file": "G.Quarenghi - Views of Moscow and its Environs - Pokrovsky Cathedral and Spasskaya Tower - 1797.jpg",
+   "y": 1797,
+   "lab": "1797",
+   "what": "St. Basil’s Cathedral and the Spasskaya Tower, watercolor (Hermitage)",
+   "who": "Giacomo Quarenghi",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.37
+   ],
+   "why": "Red Square’s two great landmarks in color"
+  },
+  {
+   "n": 16,
+   "file": "Bolshoy Teatr.jpg",
+   "y": 1841,
+   "lab": "about 1840",
+   "what": "The Bolshoi Theater in winter, colored lithograph",
+   "who": "Jean-Baptiste Arnout, after Vivien",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "color; the Bolshoi before the 1853 fire; 44 years after the Quarenghi"
+  },
+  {
+   "n": 22,
+   "file": "General view from St. Saviour's, Moscow, Russia-LCCN2001697455.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Kremlin and the Moskva from the Cathedral of Christ the Savior, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.035,
+    0.965,
+    0.9
+   ],
+   "focal": [
+    0.35,
+    0.45
+   ],
+   "why": "color general view; Kremlin palace and bell tower, river and Kamenny Bridge"
+  },
+  {
+   "n": 34,
+   "file": "Night view of Moscow Kremlin 2017 -3.jpg",
+   "y": 2017,
+   "lab": "2017",
+   "what": "The Kremlin at night from the Sofiyskaya Embankment, photograph",
+   "who": "Sergey Korovkin",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.045,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "iconic river front; top trim removes the photographer’s watermark"
+  }
+ ],
+ "gaps": "P0: none; P2: only a map (#9) and a 1726 reissue of an older skyline view (#10, after Witsen); P5: nothing usable (outskirts aerials, a window view, street paintings)",
+ "notes": "#3: Commons titles it 1556 after Herberstein’s source map, but it is the Braun and Hogenberg vol. 2 plate, so 1575. #34: the watermark sits in the top-left corner; trimming it clips the tip of the bell tower’s cross. If a watermarked source is unacceptable, #37 (Moscow State University, 2024) is the fallback. #12 (1848 Kremlin square) is another option for P3."
+}

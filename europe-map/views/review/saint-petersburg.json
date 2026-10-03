@@ -1,0 +1,20 @@
+{
+ "city": "Saint Petersburg",
+ "checks": [
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "Makhayev album etching, 1753; title and captions support the Neva view; trim stops just above the caption strip; left half shows Admiralty spire"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "Photochrom of St. Isaac’s and the Nicholas I monument, 1890s; caption trimmed; Photoglob Zürich is the printed mark"
+  },
+  {
+   "n": 24,
+   "verdict": "ok",
+   "reason": "View from St. Isaac’s, 2019, CC BY-SA 4.0, kallerna; crop fine"
+  }
+ ]
+}

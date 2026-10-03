@@ -1,0 +1,41 @@
+{
+ "city": "Lisbon",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "fix",
+   "reason": "At focal x 0.5 the 16:9 crop takes in the left edge of the plate’s text box at lower right; shift the focal left",
+   "fix": {
+    "focal": [
+     0.39,
+     0.42
+    ]
+   }
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "Colored bird’s-eye view of Lisbon on the Tagus, Rijksmuseum 1694; copy of the 1598 design but dated as made; trim removes the caption strip"
+  },
+  {
+   "n": 19,
+   "verdict": "ok",
+   "reason": "BM lithograph from the Tagus, range 1796–1850 kept as label; castle hill and cathedral visible"
+  },
+  {
+   "n": 21,
+   "verdict": "ok",
+   "reason": "Fanshawe panorama dated 3 Dec 1856, color; city is a thin band but firmly dated and the only strong P4 view (#25 is only ‘19th century’)"
+  },
+  {
+   "n": 33,
+   "verdict": "ok",
+   "reason": "1919 aerial of the Rossio, Serra Ribeiro; what/who/lic agree"
+  },
+  {
+   "n": 37,
+   "verdict": "ok",
+   "reason": "2011 panorama of the Baixa and castle hill, CC BY-SA 3.0 by Alvesgaspar"
+  }
+ ]
+}

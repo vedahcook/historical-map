@@ -1,0 +1,80 @@
+{
+ "city": "Florence",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.01,
+     0.022,
+     0.99,
+     0.972
+    ]
+   },
+   "reason": "woodcut frame/margin inside crop; adjust trim"
+  },
+  {
+   "n": 9,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.05,
+     0.538,
+     0.944,
+     0.92
+    ],
+    "focal": [
+     0.52,
+     0.5
+    ]
+   },
+   "reason": "frame lines and plate text inside crop; trim to the view"
+  },
+  {
+   "n": 15,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.01,
+     0.085,
+     0.99,
+     0.835
+    ]
+   },
+   "reason": "title band and paper margin inside crop"
+  },
+  {
+   "n": 26,
+   "verdict": "ok",
+   "reason": "city, date, view type, crop and credits agree with the record"
+  },
+  {
+   "n": 28,
+   "verdict": "ok",
+   "reason": "city, date, view type, crop and credits agree with the record"
+  },
+  {
+   "n": 39,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.12,
+     0,
+     0.74,
+     1
+    ],
+    "focal": [
+     0.69,
+     0.4
+    ]
+   },
+   "reason": "dark margin and side strip inside crop; Duomo/Palazzo Vecchio centered"
+  },
+  {
+   "n": 45,
+   "verdict": "ok",
+   "reason": "city, date, view type, crop and credits agree with the record"
+  }
+ ]
+}

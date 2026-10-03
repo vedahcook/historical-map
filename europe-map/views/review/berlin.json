@@ -1,0 +1,30 @@
+{
+ "city": "Berlin",
+ "checks": [
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "Ruyscher painting of the palace area, record 1650–60; 1650s and 1655 fine"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "Gaertner panorama part (1834), color; shows St. Hedwig’s and the opera square; crop keeps them"
+  },
+  {
+   "n": 22,
+   "verdict": "ok",
+   "reason": "Gendarmenmarkt (Schillerplatz) photochrom, Detroit Publishing record; caption excluded by crop"
+  },
+  {
+   "n": 25,
+   "verdict": "ok",
+   "reason": "Pennell 1921 lithograph titled Berlin; skyline over the Spree; signature trimmed"
+  },
+  {
+   "n": 34,
+   "verdict": "ok",
+   "reason": "2017 view over the Gendarmenmarkt by Gerd Eichmann, CC BY-SA 4.0"
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "city": "Athens",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "city, date, view type, crop and credits agree with the record"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "city, date, view type, crop and credits agree with the record"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "city, date, view type, crop and credits agree with the record"
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "city, date, view type, crop and credits agree with the record"
+  },
+  {
+   "n": 27,
+   "verdict": "ok",
+   "reason": "city, date, view type, crop and credits agree with the record"
+  },
+  {
+   "n": 34,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.2,
+     0.3,
+     1,
+     0.78
+    ],
+    "focal": [
+     0.8,
+     0.5
+    ]
+   },
+   "reason": "Acropolis and Lycabettus are small in the frame; tighten trim to enlarge them"
+  }
+ ]
+}

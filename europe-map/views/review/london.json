@@ -1,0 +1,35 @@
+{
+ "city": "London",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "B&H vol. 1 map-view (1572 by the volume rule; Commons 1574 is a later state); only P1 option, labeled plate with Thames and the Bridge"
+  },
+  {
+   "n": 13,
+   "verdict": "ok",
+   "reason": "Canaletto from Richmond House, Goodwood House, 1747; St. Paul’s in the crop; low resolution but acceptable"
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "Müller engraving after Canaletto, Rijksmuseum, 1750; trim sits on the plate frame"
+  },
+  {
+   "n": 27,
+   "verdict": "ok",
+   "reason": "Houses of Parliament photochrom, Detroit Publishing; caption cropped"
+  },
+  {
+   "n": 30,
+   "verdict": "ok",
+   "reason": "Victoria Tower view, Svensk världsatlas 1930; low resolution but a true view of Westminster and the Thames"
+  },
+  {
+   "n": 39,
+   "verdict": "ok",
+   "reason": "Greenwich and Canary Wharf, 2022, CC BY-SA 4.0 by The wub; crop keeps the Queen’s House and towers"
+  }
+ ]
+}

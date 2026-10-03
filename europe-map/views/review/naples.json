@@ -1,0 +1,67 @@
+{
+ "city": "Naples",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.05,
+     0.073,
+     0.947,
+     0.858
+    ]
+   },
+   "reason": "paper and orange frame at top, left and right inside crop"
+  },
+  {
+   "n": 9,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.228,
+     0.195,
+     0.696,
+     0.715
+    ],
+    "who": "unknown artist, after Johann Wilhelm Baur and Melchior Küsel"
+   },
+   "reason": "trim to the view only; maker per record is unknown artist after Baur and Küsel"
+  },
+  {
+   "n": 19,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.052,
+     0.055,
+     0.96,
+     0.84
+    ]
+   },
+   "reason": "paper edge/frame inside crop"
+  },
+  {
+   "n": 24,
+   "verdict": "ok",
+   "reason": "city, date, view type, crop and credits agree with the record"
+  },
+  {
+   "n": 34,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0,
+     1,
+     0.62
+    ],
+    "focal": [
+     0.62,
+     0.4
+    ]
+   },
+   "reason": "foreground railings fill the lower crop; trim them and keep the bay and Vesuvius"
+  }
+ ]
+}

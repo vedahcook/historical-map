@@ -1,0 +1,133 @@
+{
+ "city": "Amsterdam",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Amstelredamum, nobile Inferioris Germaniae oppidum... - btv1b53178866m (1 of 2).jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.075,
+    0.105,
+    0.955,
+    0.91
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "hand-colored bird’s-eye view of the medieval city on the IJ, Oude and Nieuwe Kerk visible; later printing of the 1572 plate"
+  },
+  {
+   "n": 9,
+   "file": "The two Synagogues in Amsterdam (SM 259).png",
+   "y": 1682,
+   "lab": "1680–85",
+   "what": "The Portuguese and High German synagogues, painting (Städel Museum, Frankfurt)",
+   "who": "Gerrit Berckheyde",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.005,
+    0.995,
+    0.995
+   ],
+   "focal": [
+    0.6,
+    0.6
+   ],
+   "why": "Golden Age canal scene with the synagogues and the Zuiderkerk tower; best P2 view"
+  },
+  {
+   "n": 19,
+   "file": "Gezicht op Amsterdam met de Beurs van Zocher, RP-P-OB-27.555.jpg",
+   "y": 1845,
+   "lab": "about 1845",
+   "what": "The Dam with the palace, the Nieuwe Kerk and the new exchange, lithograph",
+   "who": "Willem Hekking",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.115,
+    0.155,
+    0.885,
+    0.77
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "general view of the Dam; printed title says ‘after the completion of the new exchange’ (1845)"
+  },
+  {
+   "n": 23,
+   "file": "Amsterdam (Nederland) Een Photochrom ((door middel van steendruk (lithografie) ingekleurde, SFA008002688.jpg",
+   "y": 1900,
+   "lab": "about 1900",
+   "what": "The Singel and the Munttoren, photochrom print",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "color canal scene with barges and the Mint Tower; record dates it about 1900"
+  },
+  {
+   "n": 34,
+   "file": "ETH-BIB-Amsterdam, Heerengracht-Inlandflüge-LBS MH01-006264.tif",
+   "y": 1931,
+   "lab": "1931",
+   "what": "Aerial photograph of the canal ring (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.045,
+    0.985,
+    0.985
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "the ring canals running up to the IJ and Central Station, Round Lutheran Church dome; black frame trimmed"
+  },
+  {
+   "n": 39,
+   "file": "Amsterdam Nieuwe Kerk 1697.jpg",
+   "y": 2016,
+   "lab": "2016",
+   "what": "The Nieuwe Kerk and the Royal Palace on the Dam, photograph",
+   "who": "C messier",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.38
+   ],
+   "why": "sharp color view of the Dam’s landmarks; the skyline candidates are grey or show only modern high-rises"
+  }
+ ],
+ "gaps": "P0: no candidates",
+ "notes": "#19: Rijksmuseum gives 1835–1904, but its title and description place it just after the exchange was finished (1845). P4 alternatives: Gaston Braun’s 1864 rooftop panoramas from the palace dome (#21, #22, #26); not added as a second P4 view, being only 36 years before the photochrom. #10 is a flat fortification plan; #11–#18 are skull prints and a Piranesi of Rome."
+}

@@ -1,0 +1,70 @@
+{
+ "city": "Saint Petersburg",
+ "picks": [
+  {
+   "n": 6,
+   "file": "Makhayev, Kachalov - View of Neva Downstream between Winter Palace and Academy of Sciences 1753.jpg",
+   "y": 1753,
+   "lab": "1753",
+   "what": "The Neva between the Winter Palace and the Academy of Sciences, colored etching (Hermitage)",
+   "who": "Grigory Kachalov and Yefim Vinogradov after Mikhail Makhayev",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.84
+   ],
+   "focal": [
+    0.3,
+    0.55
+   ],
+   "why": "colored river panorama from the 1753 jubilee album; Admiralty spire, Winter Palace, Kunstkamera"
+  },
+  {
+   "n": 14,
+   "file": "The monument to Nicholas I on St Isaac's Square 1890-1900.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "St. Isaac’s Cathedral and the monument to Nicholas I, photochrom print",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.955
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "color; the city’s best-known landmark, gold dome clear"
+  },
+  {
+   "n": 24,
+   "file": "St. Petersburg panorama 2019.jpg",
+   "y": 2019,
+   "lab": "2019",
+   "what": "View over the center from St. Isaac’s Cathedral, photograph",
+   "who": "kallerna",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.38,
+    0.5
+   ],
+   "why": "high view over the historic center; belfry, Admiralty spire and Neva"
+  }
+ ],
+ "gaps": "P0, P1: before the city’s founding (1703). P2: nothing usable (#1 is Canaletto’s Venice, held in the Hermitage). P5: only a dark 1958 dusk shot (#17), a street crowd (#16) and wartime aerial photos of outskirts (#18–21).",
+ "notes": "#2 is dated ‘about 1802’ on Commons but shows Montferrand’s St. Isaac’s Cathedral (built 1818–58), so the date is wrong; skipped. #4 (Rijksmuseum chromolithograph, same view) is dated only ‘1800–1899’ and shows the finished cathedral; skipped as undated. #14 carries the printed mark ‘8808 P.Z.’ (Photoglob Zürich); the Commons record names no author."
+}

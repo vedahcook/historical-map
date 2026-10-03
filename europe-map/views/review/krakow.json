@@ -1,0 +1,46 @@
+{
+ "city": "Kraków",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "Colored Nuremberg Chronicle spread labeled Cracovia, Casimirus, Clepardia; color preferred over the larger black and white #1"
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "Vol. 6 panorama, 1617 by the volume rule; crop keeps St. Mary’s and Wawel"
+  },
+  {
+   "n": 17,
+   "verdict": "ok",
+   "reason": "Libalt painting dated 1652 by Commons categories; city is a thin skyline but identifiable; Merian #15 is only loosely dated"
+  },
+  {
+   "n": 25,
+   "verdict": "ok",
+   "reason": "Głowacki painting of Wawel, circa 1847 per record"
+  },
+  {
+   "n": 29,
+   "verdict": "fix",
+   "reason": "Crop at y 0.35 cuts the tip of the tall St. Mary’s spire; move the focal up",
+   "fix": {
+    "focal": [
+     0.45,
+     0.27
+    ]
+   }
+  },
+  {
+   "n": 34,
+   "verdict": "ok",
+   "reason": "1923 aerial of Wawel and the Old Town, hazy but a true general view; right-hand strip trimmed"
+  },
+  {
+   "n": 45,
+   "verdict": "ok",
+   "reason": "Wawel from the Vistula, 2019, CC BY-SA 4.0 by Ingo Mehling; crop keeps the castle"
+  }
+ ]
+}

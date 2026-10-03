@@ -1,0 +1,91 @@
+{
+ "city": "Brussels",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Frans Hogenberg en Joris Bruin, Bruxella, 1572 (Civitates Orbis Terrarum I 14).png",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.015,
+    0.988,
+    0.985
+   ],
+   "focal": [
+    0.47,
+    0.47
+   ],
+   "why": "hand-colored bird’s-eye view of the walled city, KBR copy, high resolution"
+  },
+  {
+   "n": 11,
+   "file": "Jan Baptist Bonnecroy - Vue de Bruxelles.jpg",
+   "y": 1665,
+   "lab": "1664–65",
+   "what": "Panorama of the city, painting (Royal Museums of Fine Arts of Belgium)",
+   "who": "Jan Baptist Bonnecroy",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "the great color panorama of Brussels inside its walls, every tower recognizable"
+  },
+  {
+   "n": 17,
+   "file": "Hôtel de Ville de Bruxelles (BM 1955,0425.20).jpg",
+   "y": 1820,
+   "lab": "about 1820",
+   "what": "The Grand-Place and the town hall, lithograph (British Museum)",
+   "who": "Daems",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.07,
+    0.085,
+    0.935,
+    0.835
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "the city’s signature square and town hall tower; caption trimmed"
+  },
+  {
+   "n": 22,
+   "file": "Royal Theatre, Brussels, Belgium-LCCN2001697911.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Théâtre Royal de la Monnaie, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.025,
+    0.975,
+    0.92
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "color view of La Monnaie and its square; no photochrom of the Grand-Place among candidates"
+  }
+ ],
+ "gaps": "P0: no candidates. P5: only a blurry 1920s stereo view through a window (#28). P6: every candidate (#29–#34) is a modern photo of details of Bonnecroy’s 1665 painting, not of today’s city.",
+ "notes": "P2 alternatives: #13 Rombouts panorama from Saint-Gilles (about 1655–60, shown in its frame) and #9 Merian’s 1654 profile. P4 alternatives: Palace of the Nation (#21) and Royal Palace (#23) photochroms. #19 (Shotter Boys, 1843, park) skipped in favor of the Grand-Place."
+}

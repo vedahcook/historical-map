@@ -1,0 +1,133 @@
+{
+ "city": "Edinburgh",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Edenburgum Scotiae Metropolis (BM Y,5.161).jpg",
+   "y": 1581,
+   "lab": "1581",
+   "what": "Bird’s-eye view, colored engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 3 (British Museum)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.032,
+    0.05,
+    0.962,
+    0.948
+   ],
+   "focal": [
+    0.4,
+    0.4
+   ],
+   "why": "bright period coloring; castle on its rock and the walled town along the Royal Mile"
+  },
+  {
+   "n": 15,
+   "file": "Gezicht op Edinburgh Castle East view of Edinburgh Castle (titel op object) Schotland (serietitel), RP-P-1932-484.jpg",
+   "y": 1753,
+   "lab": "1753",
+   "what": "Edinburgh Castle from the east, colored print (Rijksmuseum)",
+   "who": "Paul Sandby",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.157,
+    0.165,
+    0.848,
+    0.785
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "color, high resolution; the castle rock unmistakable; trimmed to the picture, cutting margins and captions"
+  },
+  {
+   "n": 13,
+   "file": "Alexander Nasmyth - A View of Edinburgh from the West - Google Art Project.jpg",
+   "y": 1824,
+   "lab": "1822–26",
+   "what": "Edinburgh from the west, painting",
+   "who": "Alexander Nasmyth",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.25,
+    0.3,
+    0.85,
+    0.8
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "color general view; castle, Old Town skyline and Arthur’s Seat"
+  },
+  {
+   "n": 18,
+   "file": "Edinburgh. Princess (i.e. Princes) Street. The Castle & Scott Monument LCCN2017660362.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Princes Street with the castle and the Scott Monument, photochrom print (Library of Congress)",
+   "who": "Photoglob Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.016,
+    0.016,
+    0.984,
+    0.975
+   ],
+   "focal": [
+    0.42,
+    0.38
+   ],
+   "why": "the two best-known landmarks in one high-resolution color view"
+  },
+  {
+   "n": 25,
+   "file": "A Literary Pilgrim in England - EDINBURGH, VIEW FROM CALTON HILL.jpg",
+   "y": 1917,
+   "lab": "1917",
+   "what": "The Old Town from Calton Hill, watercolor in Edward Thomas’s A Literary Pilgrim in England",
+   "who": "Walter Dexter",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "color; castle, Balmoral clock tower and Dugald Stewart Monument in the mist"
+  },
+  {
+   "n": 29,
+   "file": "Edinburghfromcastlepano09.jpg",
+   "y": 2009,
+   "lab": "2009",
+   "what": "The New Town and Princes Street from the castle, photograph",
+   "who": "Nicolai Schäfer",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.79,
+    0.5
+   ],
+   "why": "sharp panorama of the center; 16:9 crop centered on the Scott Monument and Calton Hill"
+  }
+ ],
+ "gaps": "P0: no candidates. P2: only a small dark painting of the castle (#10, about 1700, 1000 px) and a tiny 1726 book print (#9); both too weak. The 1581 and 1753 views are each within 100 years of the late 17th century.",
+ "notes": "#3: dated 1581 as B&H vol. 3 (BM gives 1574–94). #7 (1645 issue, 6502 px, paler coloring) is a higher-resolution alternative. #15: Sandby’s print published by Sayer and Overton; Rijksmuseum dates it 1753. #18 is the same print as #17; #20/#24 (Edinburgh from the castle, a general view without the castle itself) are the alternative for P4. #12 is Guardi’s Piazza San Marco, Venice (excluded); #11 is the 1824 fire (event, not used). #14 (Barker’s 1789–90 panorama from Calton Hill) is an uncolored partial set. P6: no single-frame photograph of the center among the candidates; #29 is a very wide panorama, so the popup shows about a quarter of it."
+}

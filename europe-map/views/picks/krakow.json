@@ -1,0 +1,154 @@
+{
+ "city": "Kraków",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Nuremberg chronicles - CRACOVIA.png",
+   "y": 1493,
+   "lab": "1493",
+   "what": "Colored woodcut in Hartmann Schedel’s Nuremberg Chronicle",
+   "who": "Michael Wolgemut and Wilhelm Pleydenwurff",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.015,
+    0.985,
+    0.985
+   ],
+   "focal": [
+    0.55,
+    0.4
+   ],
+   "why": "labeled Cracovia, Casimirus and Clepardia; a true view with Wawel on its hill"
+  },
+  {
+   "n": 8,
+   "file": "Cracovia Metropolis Regni Poloniae. 1618 (middle size) (55759065).jpg",
+   "y": 1617,
+   "lab": "1617",
+   "what": "Panorama, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 6",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.012,
+    0.995,
+    0.995
+   ],
+   "focal": [
+    0.52,
+    0.45
+   ],
+   "why": "colored panorama; St. Mary’s towers, Wawel and the Vistula bend"
+  },
+  {
+   "n": 17,
+   "file": "Liebalt, Gottfried - View of Krakow - MNK XII-A-622 - National Museum Kraków.jpg",
+   "y": 1652,
+   "lab": "1652",
+   "what": "View of Kraków from the northwest, painting (National Museum, Kraków)",
+   "who": "Gottfried Libalt",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.3,
+    0.52
+   ],
+   "why": "independent dated view; skyline with St. Mary’s towers; not a copy of the 1617 plate"
+  },
+  {
+   "n": 25,
+   "file": "GlowackiJanNepomucen.WidokNaWawel.jpg",
+   "y": 1847,
+   "lab": "about 1847",
+   "what": "Wawel from the northwest, painting",
+   "who": "Jan Nepomucen Głowacki",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.35,
+    0.4
+   ],
+   "why": "color; Wawel castle and cathedral above the Vistula"
+  },
+  {
+   "n": 29,
+   "file": "Klejnoty miasta Krakowa - dwadziescia cztery widokow w chromolitografiach podlug oryginalnych akwarel Juliusza Kossaka i Stanislawa Tondosa 1886-1887 (310167).jpg",
+   "y": 1886,
+   "lab": "1886–87",
+   "what": "St. Mary’s Church on the Main Market Square, chromolithograph from the portfolio Klejnoty miasta Krakowa",
+   "who": "Juliusz Kossak and Stanisław Tondos",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.235,
+    0.175,
+    0.775,
+    0.755
+   ],
+   "focal": [
+    0.45,
+    0.27
+   ],
+   "why": "color; the city’s best-known church; no general view of the period available"
+  },
+  {
+   "n": 34,
+   "file": "Kraków aerial photo (1923)a.jpg",
+   "y": 1923,
+   "lab": "1923",
+   "what": "Wawel Hill and the Old Town from the air, aerial photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    0.98,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "general view; cathedral, castle courtyard and walls above the river; somewhat hazy"
+  },
+  {
+   "n": 45,
+   "file": "Krakow - Wawel from Vistula - 4.jpg",
+   "y": 2019,
+   "lab": "2019",
+   "what": "Wawel Castle from the Vistula, photograph",
+   "who": "Ingo Mehling",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "crisp color view of the city’s main landmark"
+  }
+ ],
+ "gaps": "None; one view in every period.",
+ "notes": "P1 alternatives: #9 and #13 are other colorings of the same 1617 panorama; #10–12 are the second vol. 6 view (after van der Rye). P2: #6 (Janssonius/Van der Hagen) and #15 (Merian) copy the 1617 panorama and are only loosely dated, #16 (1726) is a book plate of uncertain origin; Libalt’s painting chosen instead. #22 is catalogued as a 1793–98 painting but is a colored engraving published by Johann Peter Wolff, copying the older view; skipped. #21 (Alt, ‘about 1820–50’) is too loosely dated. #28 (1876) shows no recognizable part of the city; #26 is a painting of Paris. #36 is dated only ‘before 1947’. P6: #41 is a true general view (from Krak Mound) but apartment blocks fill the foreground; #45 preferred."
+}

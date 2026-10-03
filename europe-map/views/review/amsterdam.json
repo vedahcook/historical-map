@@ -1,0 +1,35 @@
+{
+ "city": "Amsterdam",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "vol. 1 Civitates plate (1572), colored bird’s-eye view; trim sits inside the frame, crop keeps the city"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "Berckheyde canal scene with the synagogues, Städel record; 1680–85 and PD match; only usable P2 view"
+  },
+  {
+   "n": 19,
+   "verdict": "ok",
+   "reason": "Dam lithograph; title says after completion of the exchange, about 1845 fits; crop clips only a sliver at the sides"
+  },
+  {
+   "n": 23,
+   "verdict": "ok",
+   "reason": "Singel and Munttoren photochrom, record says about 1900; what/who/lic agree"
+  },
+  {
+   "n": 34,
+   "verdict": "ok",
+   "reason": "1931 aerial of the canal ring, black frame trimmed; what/who/lic agree"
+  },
+  {
+   "n": 39,
+   "verdict": "ok",
+   "reason": "Nieuwe Kerk on the Dam, 2016, CC BY-SA 4.0 by C messier; sharp and clearly Amsterdam"
+  }
+ ]
+}

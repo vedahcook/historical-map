@@ -1,0 +1,25 @@
+{
+ "city": "Milan",
+ "checks": [
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "city, date, view type, crop and credits agree with the record"
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "city, date, view type, crop and credits agree with the record"
+  },
+  {
+   "n": 23,
+   "verdict": "ok",
+   "reason": "city, date, view type, crop and credits agree with the record"
+  },
+  {
+   "n": 33,
+   "verdict": "ok",
+   "reason": "city, date, view type, crop and credits agree with the record"
+  }
+ ]
+}

@@ -1,0 +1,175 @@
+{
+ "city": "Rome",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Nuremberg chronicles - ROMA.png",
+   "y": 1493,
+   "lab": "1493",
+   "what": "Woodcut in Hartmann Schedel’s Nuremberg Chronicle",
+   "who": "Michael Wolgemut and Wilhelm Pleydenwurff",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.01,
+    0.995,
+    0.99
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "colored true view labeled Roma; Pantheon and Castel Sant’Angelo identifiable"
+  },
+  {
+   "n": 9,
+   "file": "Braun & Hogenberg - Roma.jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, colored engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.05,
+    0.065,
+    0.955,
+    0.78
+   ],
+   "focal": [
+    0.52,
+    0.55
+   ],
+   "why": "colored bird’s-eye view of the whole city within the walls; legend and frame trimmed off"
+  },
+  {
+   "n": 18,
+   "file": "Rome, a view of the Tiber, Castel Sant'Angelo, Ponte Sant'Angleo, Saint Peter's Basilica (by Hendrik Frans van Lint).jpg",
+   "y": 1734,
+   "lab": "1734",
+   "what": "The Tiber with Castel Sant’Angelo and St. Peter’s, painting",
+   "who": "Hendrik Frans van Lint",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "color; Castel Sant’Angelo, the bridge and St. Peter’s dome"
+  },
+  {
+   "n": 24,
+   "file": "Rome, a view of the Piazza del Popolo (by Hendrik Frans van Lint).jpg",
+   "y": 1750,
+   "lab": "1750",
+   "what": "The Piazza del Popolo, painting",
+   "who": "Hendrik Frans van Lint",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "color; obelisk and twin churches, a classic Rome scene"
+  },
+  {
+   "n": 32,
+   "file": "Veduta di San Pietro, by David Roberts, 1853 (\"Looking Back on Rome\", Saint-St. Peter's Basilica, Rome, Italy).png",
+   "y": 1853,
+   "lab": "1853",
+   "what": "St. Peter’s from the Villa Doria Pamphilj, painting",
+   "who": "David Roberts",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.42,
+    0.5
+   ],
+   "why": "color; St. Peter’s dome dominates; 42 years before the photochrom"
+  },
+  {
+   "n": 27,
+   "file": "View from the Palace of the Caesars, Rome, Italy-LCCN2001700955.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "View over the city from the Palatine, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.025,
+    0.975,
+    0.91
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "color general view with St. Peter’s dome on the skyline"
+  },
+  {
+   "n": 35,
+   "file": "ETH-BIB-Rom (Tiberquartier) aus 600 m Höhe-Kilimanjaroflug 1929-30-LBS MH02-07-0003.tif",
+   "y": 1929,
+   "lab": "1929",
+   "what": "Aerial photograph of the Tiber bend and the Palace of Justice (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "only real Rome aerial in the set (the others are Nemi and Albano); river and bridges clear"
+  },
+  {
+   "n": 45,
+   "file": "Panorama of Rome view from Via San Lucio.jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "Panorama with St. Peter’s, photograph",
+   "who": "Livioandronico2013",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.14,
+    0.45
+   ],
+   "why": "sharp high-resolution panorama; St. Peter’s dome at left"
+  }
+ ],
+ "gaps": "none",
+ "notes": "#41 is a 1909 photograph wrongly dated 2014, not used. P3 has only the 1750 painting; the 1816 book plates and 1832 sketch were too weak for a second P3 view. #27: credited to Detroit Publishing Co. as in the LoC photochrom collection; the record itself names no publisher."
+}

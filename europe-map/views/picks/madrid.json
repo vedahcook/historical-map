@@ -1,0 +1,154 @@
+{
+ "city": "Madrid",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Madrid alcazar Antón van der Wyngaerde prep.jpg",
+   "y": 1562,
+   "lab": "1562",
+   "what": "The Alcázar above the Manzanares, pen drawing (detail of a view of Madrid, Austrian National Library)",
+   "who": "Anton van den Wyngaerde",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.35
+   ],
+   "why": "drawn on the spot; the old royal Alcázar and town walls"
+  },
+  {
+   "n": 1,
+   "file": "Atlas Van der Hagen-KW1049B12 004-Aangezicht op- MADRID.jpeg",
+   "y": 1688,
+   "lab": "1675–1700",
+   "what": "Panorama across the Manzanares with the Segovia Bridge, colored engraving (Van der Hagen Atlas)",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.04,
+    0.04,
+    0.96,
+    0.965
+   ],
+   "focal": [
+    0.45,
+    0.55
+   ],
+   "why": "colored general view; Alcázar and skyline above the river"
+  },
+  {
+   "n": 7,
+   "file": "Antonio Joli P. Real Madrid ca.1753.jpg",
+   "y": 1753,
+   "lab": "about 1753",
+   "what": "View from the south across the Segovia Bridge, painting",
+   "who": "Antonio Joli",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.42,
+    0.55
+   ],
+   "why": "general view with the new Royal Palace, bridge and church domes"
+  },
+  {
+   "n": 10,
+   "file": "1806-1820, Voyage pittoresque et historique de l'Espagne, tomo II, Vista de la Florida en Madrid (cropped).jpg",
+   "y": 1813,
+   "lab": "1806–20",
+   "what": "The Royal Palace from the Paseo de la Florida, engraving in Alexandre de Laborde’s Voyage pittoresque et historique de l’Espagne",
+   "who": "after François Liger",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.55
+   ],
+   "why": "Royal Palace clear in the middle distance; 60 years after Joli"
+  },
+  {
+   "n": 12,
+   "file": "Madrid. Plaza de Armas LCCN2017660760.jpg",
+   "y": 1890,
+   "lab": "about 1890",
+   "what": "The Royal Palace from the Plaza de Armas, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.016,
+    0.02,
+    0.984,
+    0.98
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "color; the palace façade with the guard"
+  },
+  {
+   "n": 23,
+   "file": "ETH-BIB-Madrid (Königlicher Palast) aus 300 m Höhe-Mittelmeerflug 1928-LBS MH02-05-0061.jpg",
+   "y": 1928,
+   "lab": "1928",
+   "what": "The Royal Palace and the old center, aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.04,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "palace, Plaza de Oriente and the old town in one frame"
+  },
+  {
+   "n": 30,
+   "file": "Madrid cathedral 2020 - view from the dome.jpg",
+   "y": 2020,
+   "lab": "2020",
+   "what": "View from the dome of Almudena Cathedral toward the Royal Palace, photograph",
+   "who": "Fernando Pascullo",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "color, high resolution; cathedral towers framing the palace"
+  }
+ ],
+ "gaps": "P0: nothing.",
+ "notes": "#1 is binned P0 in candidates.md because of its atlas number; the record dates it to the last quarter of the 17th century, so y is a midpoint. #10 (cropped copy of #9): Laborde’s Voyage appeared in parts 1806–20 and the plate’s exact year is not given; y is a midpoint. #12: the LoC record gives 1890 for this Photoglob print. #3 shows the Château de Madrid near Paris, not Madrid. #8 (1760 vue d’optique) is a loose, mirror-image copy; Joli preferred. #4 (about 1680) is only 1000 px wide; #5 is an animal piece with a distant city."
+}

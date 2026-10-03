@@ -1,0 +1,38 @@
+{
+ "city": "Moscow",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.03,
+     0.03,
+     0.97,
+     0.69
+    ]
+   },
+   "reason": "Correct plate (Braun & Hogenberg vol. 2, same as #1), 1575 right. Bottom trim at 0.72 still takes in caption lines and the animals' heads; 0.69 stops at the wall base."
+  },
+  {
+   "n": 13,
+   "verdict": "ok",
+   "reason": "Spasskaya Tower and St. Basil’s, Hermitage watercolor of 1797; record, date, crop all fine"
+  },
+  {
+   "n": 16,
+   "verdict": "ok",
+   "reason": "Bolshoi Theater lithograph, record 1839–43 so about 1840 is fair; crop fine"
+  },
+  {
+   "n": 22,
+   "verdict": "ok",
+   "reason": "True general view (Kremlin, Moskva, Kamenny Bridge); trim removes border and printed caption. Printed mark reads P.Z., so Photoglob Zürich would also be defensible for who"
+  },
+  {
+   "n": 34,
+   "verdict": "ok",
+   "reason": "Kremlin from the embankment, CC BY-SA 4.0, Sergey Korovkin; top trim clears the watermark"
+  }
+ ]
+}

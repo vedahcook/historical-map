@@ -1,0 +1,133 @@
+{
+ "city": "London",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Londinum Feracissimi Angliae Regni Metropolis.jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, colored engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.045,
+    0.09,
+    0.955,
+    0.77
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "earliest printed view of the city; buildings drawn in profile, Thames and London Bridge; text panels trimmed"
+  },
+  {
+   "n": 13,
+   "file": "Canaletto london.jpg",
+   "y": 1747,
+   "lab": "1747",
+   "what": "The Thames and the City from Richmond House, painting (Goodwood House)",
+   "who": "Canaletto",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.58,
+    0.5
+   ],
+   "why": "color; river front with St. Paul’s and the City spires; modest resolution"
+  },
+  {
+   "n": 15,
+   "file": "Gezicht van Somerset Gardens op de Westminster brug te Londen, RP-P-1951-759.jpg",
+   "y": 1750,
+   "lab": "1750",
+   "what": "View from Somerset Gardens to Westminster Bridge, engraving after Canaletto (Rijksmuseum)",
+   "who": "Johann Sebastian Müller, after Canaletto",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.105,
+    0.145,
+    0.9,
+    0.78
+   ],
+   "focal": [
+    0.55,
+    0.6
+   ],
+   "why": "new Westminster Bridge and the Abbey; high resolution; margins and caption trimmed"
+  },
+  {
+   "n": 27,
+   "file": "Houses of Parliament from the river, London, England-LCCN2002696921.tif",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Houses of Parliament from the river, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.02,
+    0.98,
+    0.93
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "iconic landmark in color; Big Ben and Victoria Tower"
+  },
+  {
+   "n": 30,
+   "file": "London Thames (1930).jpg",
+   "y": 1930,
+   "lab": "about 1930",
+   "what": "The Thames from the Victoria Tower, photograph (Svensk världsatlas)",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.35
+   ],
+   "why": "Big Ben, Westminster Bridge, County Hall and the river; low resolution"
+  },
+  {
+   "n": 39,
+   "file": "Greenwich and Canary Wharf panorama - 2022-04-24.jpg",
+   "y": 2022,
+   "lab": "2022",
+   "what": "Greenwich and the Canary Wharf skyline, photograph",
+   "who": "The wub",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "sharp recent skyline view over the Queen’s House and Naval College"
+  }
+ ],
+ "gaps": "P0: no candidates; P3 has only the 1750 engraving (nothing usable from 1760–1849)",
+ "notes": "#1 is a later state (Commons says 1574) of the vol. 1 plate, so 1572. #10 is a Canaletto of Westminster Bridge dated 1722 on Commons, impossible (bridge built 1739–50), not used. #31–34 are London, Ontario and New London, Connecticut; #20 is a fort in India. P6 alternative: #36 (Tower of London and the Shard, 2011) if a central view is preferred."
+}

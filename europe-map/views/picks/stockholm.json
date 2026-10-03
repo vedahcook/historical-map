@@ -1,0 +1,133 @@
+{
+ "city": "Stockholm",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Stockholm-1570 Braun-Hogenberg Civitates-orbis-terrarum.jpg",
+   "y": 1588,
+   "lab": "1588",
+   "what": "Stockholm from the north, colored engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 4",
+   "who": "Georg Braun and Frans Hogenberg, after Hieronymus Scholeus",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.05,
+    0.058,
+    0.953,
+    0.481
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "colored true view, trimmed to the upper view; Tre Kronor castle and the Great Church clear"
+  },
+  {
+   "n": 11,
+   "file": "Suecia 1-013 ; Stockholm från öster.jpg",
+   "y": 1693,
+   "lab": "1693",
+   "what": "Stockholm from the east, engraving in Erik Dahlbergh’s Suecia antiqua et hodierna",
+   "who": "Erik Dahlbergh and Willem Swidde",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.032,
+    1,
+    0.965
+   ],
+   "focal": [
+    0.58,
+    0.5
+   ],
+   "why": "large panorama with the castle, church spires and harbor; print date stated"
+  },
+  {
+   "n": 18,
+   "file": "Vüe de Stockholm du coté de l'Ouest ou vers le Lac de Malaren.jpg",
+   "y": 1810,
+   "lab": "about 1810",
+   "what": "Stockholm from the west across Lake Mälaren, watercolor (National Library of Poland)",
+   "who": "Johan Fredrik Martin",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "color general view, high resolution; Riddarholm Church and Great Church spires on the skyline"
+  },
+  {
+   "n": 23,
+   "file": "06230u unprocessed.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Kungsträdgården, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.014,
+    0.016,
+    0.988,
+    0.94
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "only ordinary-city photochrom; park toward St. James’s Church and the Royal Palace"
+  },
+  {
+   "n": 35,
+   "file": "Slussen panorama 1956.jpg",
+   "y": 1956,
+   "lab": "1956",
+   "what": "Slussen and the Old Town from the Katarina Elevator, color photograph",
+   "who": "Inez Bergman",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.322,
+    0,
+    0.636,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.36
+   ],
+   "why": "trimmed to the middle frame of a three-photo montage (white seams cut off); Riddarholm and German Church spires"
+  },
+  {
+   "n": 41,
+   "file": "Panorama of Stockholm - August 2020.jpg",
+   "y": 2020,
+   "lab": "2020",
+   "what": "Blasieholmen with the Grand Hôtel and the Nationalmuseum, photograph",
+   "who": "Martin Falbisoner",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.6
+   ],
+   "why": "sharp recent waterfront view of the center"
+  }
+ ],
+ "gaps": "P0: none (#1 is the 1697 Tre Kronor fire, misread as 1024; #2 is an undated later lithograph of 17th-century Stockholm).",
+ "notes": "#4: Commons says about 1570 (drawing date); dated 1588 as B&H vol. 4. #12 (Dahlbergh, from the west) carries 1669, likely the drawing date, so the firmly dated #11 was used. #39/#40 (Thomas Fearnley, Stockholm from Klaravikstranden) are listed as 2018, the date of the museum photo; the painting is from Fearnley’s lifetime (1802–42) but no date is given, so skipped. Worth adding with a real date if one can be found: it would fill the 1830s. #23 is the ‘unprocessed’ LoC scan, colors a bit faded. #24–#29 are the 1897 exhibition (event views, not used). #31 (aerial before 1935) is an alternative for P5 but its date is loose."
+}

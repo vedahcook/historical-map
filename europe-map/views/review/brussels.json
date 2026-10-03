@@ -1,0 +1,25 @@
+{
+ "city": "Brussels",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "KBR copy of the 1572 vol. 1 plate (plate 14); trim clean"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "Bonnecroy panorama 1664–65, color; the right choice for P2"
+  },
+  {
+   "n": 17,
+   "verdict": "ok",
+   "reason": "Grand-Place and town hall lithograph, BM about 1820; caption trimmed"
+  },
+  {
+   "n": 22,
+   "verdict": "ok",
+   "reason": "La Monnaie photochrom; P.Z. print number supports Photoglob Zürich; landmark scene acceptable"
+  }
+ ]
+}

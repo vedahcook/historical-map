@@ -1,0 +1,91 @@
+{
+ "city": "Milan",
+ "picks": [
+  {
+   "n": 6,
+   "file": "Mediolanum - btv1b53178871s (1 of 2).jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, colored engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.075,
+    0.12,
+    0.93,
+    0.885
+   ],
+   "focal": [
+    0.48,
+    0.45
+   ],
+   "why": "colored, highest resolution of the B&H copies; walled city and castle drawn as buildings, not a flat plan"
+  },
+  {
+   "n": 15,
+   "file": "Veduta della piazza del Duomo dal coperto dei Figini.jpg",
+   "y": 1842,
+   "lab": "1842",
+   "what": "The Piazza del Duomo seen from the Coperto dei Figini, painting",
+   "who": "Angelo Inganni",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.4
+   ],
+   "why": "color; cathedral front and square framed by the arcade; only reliable P3 view, low resolution (1024 px)"
+  },
+  {
+   "n": 23,
+   "file": "Piazza del Duomo, -Milan, Italy--LCCN2001700886.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Piazza del Duomo, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.118,
+    0.145,
+    0.885,
+    0.835
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "cathedral and the Galleria entrance; highest-resolution copy; color bars and mount trimmed"
+  },
+  {
+   "n": 33,
+   "file": "Close view of Milan Cathedral , Italy.jpg",
+   "y": 2016,
+   "lab": "2016",
+   "what": "The cathedral roof and the Madonnina spire, photograph",
+   "who": "Harvinder Chandigarh",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "sharp, recognizable cathedral pinnacles; no good skyline photo among the candidates (#35 is fog-bound)"
+  }
+ ],
+ "gaps": "P0: none; P2: none (the Bellotto paintings #9–#11 show Gazzada near Varese, only held in Milan); P5: none (all Mittelholzer 1933 frames show the Alps, not Milan); no second P3 or P4",
+ "notes": "#16 (1759 optical print of the cathedral) skipped: it shows a two-tower design with the main spire, which was not built until 1762–74, so it is not a view of the real building. #12 (Vue de Milan, 1812–14) is a minor square in an optical print. #15: record date 1842, but the file also sits in the category 1834 in Milan; Inganni painted several versions of this view. #24 is a map of ancient Mediolanum, not a period view."
+}

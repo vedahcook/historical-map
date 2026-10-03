@@ -1,0 +1,154 @@
+{
+ "city": "Seville",
+ "picks": [
+  {
+   "n": 9,
+   "file": "Gezicht op de stad Sevilla, BI-1956-1074-103.jpg",
+   "y": 1588,
+   "lab": "1588",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 4",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.9
+   ],
+   "focal": [
+    0.58,
+    0.47
+   ],
+   "why": "hand-colored bird’s-eye view of the walled city on the Guadalquivir, cathedral at center; legend trimmed"
+  },
+  {
+   "n": 13,
+   "file": "Vista de Sevilla 1660.jpeg",
+   "y": 1660,
+   "lab": "about 1660",
+   "what": "View across the Guadalquivir, painting",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.42
+   ],
+   "why": "color panorama with the Giralda, Torre del Oro, bridge of boats and the American trade ships"
+  },
+  {
+   "n": 17,
+   "file": "1806-1820, Voyage pittoresque et historique de l'Espagne, tomo II, Vista de Sevilla tomada desde San Juan de Alfarache (cropped).jpg",
+   "y": 1812,
+   "lab": "1812",
+   "what": "View from San Juan de Aznalfarache, etching in Alexandre de Laborde, Voyage pittoresque et historique de l’Espagne",
+   "who": "Vauxelle, De Saulx and Duparc",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.5
+   ],
+   "why": "general view of the skyline across the river plain, Giralda clearly visible"
+  },
+  {
+   "n": 29,
+   "file": "Seville, vue prise au-dessus de San-Salvador LCCN2003688889.jpg",
+   "y": 1854,
+   "lab": "about 1854",
+   "what": "Bird’s-eye view from above San Salvador, lithograph (L’Espagne à vol d’oiseau)",
+   "who": "Alfred Guesdon",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.15,
+    0.14,
+    0.885,
+    0.8
+   ],
+   "focal": [
+    0.42,
+    0.48
+   ],
+   "why": "detailed bird’s-eye view; Giralda, cathedral and river all recognizable; mount and caption trimmed"
+  },
+  {
+   "n": 22,
+   "file": "Sevilla. La Catedral LCCN2017660791.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The cathedral and the Giralda, photochrom print (Library of Congress)",
+   "who": "Photoglob Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.025,
+    0.98,
+    0.975
+   ],
+   "focal": [
+    0.6,
+    0.47
+   ],
+   "why": "color view of the city’s two signature landmarks together"
+  },
+  {
+   "n": 34,
+   "file": "ETH-BIB-Sevilla aus 400 m Höhe-Mittelmeerflug 1928-LBS MH02-05-0022.tif",
+   "y": 1928,
+   "lab": "1928",
+   "what": "Aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0,
+    0.95,
+    1
+   ],
+   "focal": [
+    0.43,
+    0.55
+   ],
+   "why": "old town from 400 m: cathedral and Giralda, Alcázar gardens, bullring and Torre del Oro on the river"
+  },
+  {
+   "n": 39,
+   "file": "View of Seville from Giralda, June 2015 (1).jpg",
+   "y": 2015,
+   "lab": "2015",
+   "what": "View from the Giralda over the cathedral roof, photograph",
+   "who": "Sunnya343",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "cathedral roof and Patio de los Naranjos with the old town and Torre Sevilla beyond"
+  }
+ ],
+ "gaps": "P0: only a Nuremberg Chronicle portrait of St. Leander, no city view",
+ "notes": "P4 has two views, 1854 and 1890s (41 years apart). P2 alternative: #12, anonymous 1726 panorama in the Ayuntamiento (higher resolution, 4500 px, but has a legend box). P1 alternative: #3, Hoefnagel’s B&H view from the hills, dated 1593. #4 is a 1726 copy of the B&H plate, not used. Photochrom dated 1890s per convention (Commons gives 1890)."
+}

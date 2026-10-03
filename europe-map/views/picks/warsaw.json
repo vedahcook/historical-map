@@ -1,0 +1,133 @@
+{
+ "city": "Warsaw",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Hogenberg View of Warsaw.jpg",
+   "y": 1617,
+   "lab": "1617",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 6",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.35
+   ],
+   "why": "colored general view across the Vistula; castle, St. John’s spire and the old wooden bridge"
+  },
+  {
+   "n": 6,
+   "file": "Pérelle View of Warsaw (detail) 01.jpg",
+   "y": 1696,
+   "lab": "1696",
+   "what": "The Royal Castle, engraving after Erik Dahlbergh’s panorama (detail), in Pufendorf’s history of Charles X Gustav",
+   "who": "Pérelle, after Erik Dahlbergh",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.82
+   ],
+   "focal": [
+    0.6,
+    0.4
+   ],
+   "why": "only true view for the period; labeled Arx Regia, castle tower clear"
+  },
+  {
+   "n": 11,
+   "file": "Bellotto View of Warsaw from Praga.jpg",
+   "y": 1770,
+   "lab": "1770",
+   "what": "View of Warsaw from Praga, painting (Royal Castle, Warsaw)",
+   "who": "Bernardo Bellotto",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.62,
+    0.5
+   ],
+   "why": "the classic general view across the river; castle and Old Town riverfront"
+  },
+  {
+   "n": 22,
+   "file": "King Sigismund's monument, Warsaw, Russia (i.e. Warsaw, Poland)-LCCN2001697525.tif",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Castle Square with Sigismund’s Column, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.04,
+    0.975,
+    0.895
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "color; the city’s best-known monument"
+  },
+  {
+   "n": 26,
+   "file": "A. Nevsky Cathedral in Warsaw (Aerial).jpg",
+   "y": 1922,
+   "lab": "early 1920s",
+   "what": "Saxon Square with the Alexander Nevsky Cathedral, aerial photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.53,
+    0.45
+   ],
+   "why": "ordinary general aerial view of the center before the cathedral was pulled down (1924–26)"
+  },
+  {
+   "n": 31,
+   "file": "Panorama of Warsaw by night.jpg",
+   "y": 2012,
+   "lab": "2012",
+   "what": "Panorama across the Vistula at night, photograph",
+   "who": "Bosyantek",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.78,
+    0.5
+   ],
+   "why": "Royal Castle, St. Anne’s and the lit bridge, the same riverfront Bellotto painted; Palace of Culture at far left"
+  }
+ ],
+ "gaps": "P0: nothing.",
+ "notes": "#1 is the vol. 6 (1617) plate; #3 is a later uncolored printing of the same plate. #4 (Melich, about 1620) is a detail centered on the painter at work; skipped in favor of #1. #6 is a detail of Dahlbergh’s panorama drawn about 1656 and published as an engraving in 1696; dated by the book per the rules. #30 (1946 aerial of the ruined Old Town) is a strong event alternative for P5 if wanted. #22 bears the printed mark ‘8882 P.Z.’ (Photoglob Zürich); the Commons record names no maker."
+}

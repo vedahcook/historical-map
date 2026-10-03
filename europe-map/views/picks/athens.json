@@ -1,0 +1,133 @@
+{
+ "city": "Athens",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Veduta d'Atene da Mezzo Giorno - Coronelli Vincenzo - 1686.jpg",
+   "y": 1688,
+   "lab": "1688",
+   "what": "Athens from the south, engraving in Coronelli’s Repubblica di Venezia",
+   "who": "Vincenzo Coronelli",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "labeled view; Acropolis with the Parthenon as a mosque, Areopagus and the Olympieion columns"
+  },
+  {
+   "n": 14,
+   "file": "A panoramic view of the Acropolis from west in 1751.jpg",
+   "y": 1787,
+   "lab": "1787",
+   "what": "The Acropolis from the west, colored engraving in Stuart and Revett, The Antiquities of Athens, vol. 2",
+   "who": "James Stuart and Nicholas Revett",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "color, high resolution; Acropolis with the Frankish tower, Lycabettus behind"
+  },
+  {
+   "n": 10,
+   "file": "View of Athens from the river Ilissos - J. M. Wittmer (1833).jpg",
+   "y": 1833,
+   "lab": "1833",
+   "what": "Athens from the Ilissos, with the Olympieion, Hadrian’s Arch and the Acropolis, painting (Benaki Museum)",
+   "who": "Johann Michael Wittmer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.99
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "color general view of the town at independence, main monuments all recognizable"
+  },
+  {
+   "n": 15,
+   "file": "Athens LCCN2017656991.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Panorama with the Acropolis, Lycabettus and the Observatory, photochrom print (Library of Congress)",
+   "who": "Photoglob Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.025,
+    0.992,
+    0.97
+   ],
+   "focal": [
+    0.68,
+    0.5
+   ],
+   "why": "whole-city panorama at very high resolution; faint stain in the sky at left"
+  },
+  {
+   "n": 27,
+   "file": "ETH-BIB-Akropolis, Athen-Kilimanjaroflug 1929-30-LBS MH02-07-0138.tif",
+   "y": 1930,
+   "lab": "1930",
+   "what": "Aerial photograph of the Acropolis and the city (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.21,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.5
+   ],
+   "why": "oblique aerial, Parthenon and Panathenaic Stadium clear; trimmed to remove the wing shadow at lower left"
+  },
+  {
+   "n": 34,
+   "file": "Panorama of Athens from the area of the National Observatory of Athens. In the distance the Acropolis of Athens and Mount Lycabettus.jpg",
+   "y": 2018,
+   "lab": "2018",
+   "what": "The Acropolis and Lycabettus from the Observatory hill, photograph",
+   "who": "George E. Koronaios",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.2,
+    0.3,
+    1,
+    0.78
+   ],
+   "focal": [
+    0.8,
+    0.5
+   ],
+   "why": "recent general view, same viewpoint as the 1890s photochrom; Acropolis small at right"
+  }
+ ],
+ "gaps": "P0 and P1: no usable candidates (#1 is a Nuremberg Chronicle portrait of Aristides, #2 a 20th-century photo misdated 1206).",
+ "notes": "#14: Commons dates it 1751, when Stuart drew it; the plate was first published in vol. 2 of The Antiquities of Athens (title page 1787, issued about 1790), so dated 1787. #11 is the uncolored engraving of the same plate, misdated 1762. #12 (Tower of the Winds, vol. 1, 1762) is an alternative for P3. #5 and #4 (Coronelli) show the 1687 bombardment of the Acropolis, and #8 (Fanelli 1695) is the bombardment too; not used. #7 (Gaignières drawing, Athens from the southeast) is a fine panorama but dated only ‘17th century’. #17 (Athens over the rooftops to the Acropolis, 1890s) has the better composition for P4 but is only 1024 px. #27: Commons category says 1934 but the file is from the 1929–30 Kilimanjaro flight; date field 1930. #33 is Athens, Georgia (excluded)."
+}

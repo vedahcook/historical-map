@@ -1,0 +1,63 @@
+{
+ "city": "Nuremberg",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "city, date, view type, crop and credits agree with the record"
+  },
+  {
+   "n": 17,
+   "verdict": "ok",
+   "reason": "city, date, view type, crop and credits agree with the record"
+  },
+  {
+   "n": 23,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.03,
+     0.041,
+     0.964,
+     0.795
+    ]
+   },
+   "reason": "frame line inside crop; adjust trim"
+  },
+  {
+   "n": 34,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.03,
+     0.025,
+     0.98,
+     0.975
+    ]
+   },
+   "reason": "border/paper edge inside crop"
+  },
+  {
+   "n": 38,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.2,
+     0.04,
+     0.88,
+     1
+    ],
+    "focal": [
+     0.55,
+     0.46
+    ]
+   },
+   "reason": "dark left vignette and top margin inside crop; recentre on the old town"
+  },
+  {
+   "n": 42,
+   "verdict": "ok",
+   "reason": "city, date, view type, crop and credits agree with the record"
+  }
+ ]
+}

@@ -1,0 +1,116 @@
+# A sample of events for the four pilot cities, for the mockup: (year, type, title, one-sentence note).
+# Types: war, revolt, politics (treaty, charter or change of rule), fire, quake (earthquake or collapse), epidemic,
+# building, learning, faith.
+E = {
+ 'cologne': [
+  (1164, 'faith', 'Relics of the Three Kings arrive', 'Archbishop Rainald of Dassel brings them from Milan, and Cologne becomes one of Europe’s great pilgrimage cities.'),
+  (1248, 'building', 'Cathedral begun', 'Work starts on the Gothic cathedral.'),
+  (1288, 'war', 'Battle of Worringen', 'The townspeople and their allies defeat the archbishop, who no longer rules the city.'),
+  (1349, 'epidemic', 'Black Death', 'Plague reaches the city, and the Jewish quarter is attacked and destroyed.'),
+  (1388, 'learning', 'University founded', 'The city council founds one of the first universities in the Empire.'),
+  (1475, 'politics', 'Free Imperial City', 'Emperor Frederick III confirms that Cologne answers only to the emperor.'),
+  (1794, 'war', 'French occupation', 'Revolutionary France takes the city, and later annexes it.'),
+  (1815, 'politics', 'Given to Prussia', 'The Congress of Vienna gives the Rhineland, with Cologne, to Prussia.'),
+  (1880, 'building', 'Cathedral finished', 'The cathedral is completed, 632 years after it was begun.'),
+  (1918, 'war', 'British occupation', 'After the First World War, British troops occupy the city until 1926.'),
+  (1942, 'war', 'Thousand-bomber raid', 'The first British air raid with more than 1,000 bombers.'),
+  (1945, 'war', 'Taken by US troops', 'The city falls on March 6; most of the old town lies in ruins.'),
+  (2009, 'quake', 'City archive collapses', 'The Historical Archive building collapses into a subway construction site.'),
+ ],
+ 'vienna': [
+  (1221, 'politics', 'City charter', 'Duke Leopold VI grants Vienna its city rights.'),
+  (1278, 'war', 'Battle on the Marchfeld', 'Rudolf of Habsburg defeats Ottokar II of Bohemia, and Vienna passes to the Habsburgs.'),
+  (1349, 'epidemic', 'Black Death', 'Plague reaches the city.'),
+  (1365, 'learning', 'University founded', 'Duke Rudolf IV founds the University of Vienna.'),
+  (1485, 'war', 'Taken by Hungary', 'King Matthias Corvinus captures Vienna and rules from it until his death in 1490.'),
+  (1529, 'war', 'First Ottoman siege', 'Suleiman the Magnificent besieges the city for three weeks, then withdraws.'),
+  (1679, 'epidemic', 'Great Plague', 'Plague kills a large share of the city’s people.'),
+  (1683, 'war', 'Second Ottoman siege', 'A relief army under John III Sobieski defeats the Ottomans at the Kahlenberg.'),
+  (1805, 'war', 'Napoleon takes Vienna', 'French troops occupy the city, and again in 1809.'),
+  (1814, 'politics', 'Congress of Vienna', 'Europe’s powers meet in Vienna to redraw the map after Napoleon.'),
+  (1848, 'revolt', 'Revolution', 'Uprisings in March and October; the October revolt is crushed.'),
+  (1857, 'building', 'City walls come down', 'Franz Joseph orders the walls razed; the Ringstrasse is built in their place.'),
+  (1938, 'politics', 'Anschluss', 'Germany annexes Austria, and Hitler speaks to crowds on the Heldenplatz.'),
+  (1945, 'war', 'Battle of Vienna', 'The Soviet army takes the city in April; it is then divided among four occupying powers.'),
+  (1955, 'politics', 'State Treaty', 'Signed at the Belvedere; the occupation ends and Austria is independent again.'),
+ ],
+ 'paris': [
+  (1163, 'building', 'Notre-Dame begun', 'Work starts on the cathedral of Notre-Dame.'),
+  (1200, 'learning', 'University chartered', 'King Philip II grants the university’s scholars their own privileges.'),
+  (1348, 'epidemic', 'Black Death', 'Plague reaches the city.'),
+  (1358, 'revolt', 'Revolt of Étienne Marcel', 'The merchants of Paris rise against the Dauphin.'),
+  (1420, 'war', 'English rule', 'English and Burgundian forces hold Paris until 1436.'),
+  (1572, 'war', 'St. Bartholomew’s Day massacre', 'Thousands of Protestants are killed in the city.'),
+  (1682, 'politics', 'Court moves to Versailles', 'Louis XIV moves the court and government out of Paris.'),
+  (1789, 'revolt', 'Storming of the Bastille', 'The French Revolution begins.'),
+  (1832, 'epidemic', 'Cholera', 'About 18,000 Parisians die in a few months.'),
+  (1853, 'building', 'Haussmann’s rebuilding', 'Wide boulevards are cut through the old city.'),
+  (1870, 'war', 'Siege of Paris', 'Prussian and German armies besiege the city through the winter.'),
+  (1871, 'revolt', 'Paris Commune', 'A revolutionary government holds the city until it is crushed in May.'),
+  (1889, 'building', 'Eiffel Tower', 'Built for the World’s Fair.'),
+  (1940, 'war', 'German occupation', 'German troops enter the city on June 14.'),
+  (1944, 'war', 'Liberation', 'The city is freed on August 25.'),
+  (1968, 'revolt', 'May 1968', 'Student protests and a general strike.'),
+  (2019, 'fire', 'Notre-Dame fire', 'Fire destroys the cathedral’s roof and spire.'),
+ ],
+ 'istanbul': [
+  (1054, 'faith', 'East–West Schism', 'The pope’s legates and the patriarch excommunicate each other, splitting the church.'),
+  (1204, 'war', 'Sacked by the Fourth Crusade', 'Crusaders take and plunder the city and set up a Latin Empire.'),
+  (1261, 'war', 'Byzantines return', 'Michael VIII’s forces retake the city.'),
+  (1347, 'epidemic', 'Black Death', 'Plague reaches the city.'),
+  (1453, 'war', 'Ottoman conquest', 'Mehmed II takes the city on May 29; it becomes the Ottoman capital.'),
+  (1509, 'quake', 'Great earthquake', 'An earthquake and tsunami destroy thousands of buildings.'),
+  (1557, 'building', 'Süleymaniye Mosque', 'Sinan’s great mosque for Suleiman the Magnificent is completed.'),
+  (1660, 'fire', 'Great fire', 'Fire burns much of the city.'),
+  (1730, 'revolt', 'Patrona Halil revolt', 'An uprising deposes Sultan Ahmed III.'),
+  (1826, 'revolt', 'Janissaries destroyed', 'Mahmud II crushes the Janissary corps when it revolts.'),
+  (1894, 'quake', 'Earthquake', 'A strong earthquake damages the city, including the Grand Bazaar.'),
+  (1908, 'revolt', 'Young Turk Revolution', 'The sultan is forced to restore the constitution.'),
+  (1918, 'war', 'Allied occupation', 'Allied troops occupy the city until 1923.'),
+  (1923, 'politics', 'Capital moves to Ankara', 'The Republic of Turkey is founded, with Ankara as its capital.'),
+  (1973, 'building', 'Bosphorus Bridge', 'The first bridge between Europe and Asia opens.'),
+  (1999, 'quake', 'İzmit earthquake', 'An earthquake to the east kills about 17,000 people and damages parts of Istanbul.'),
+ ],
+}
+
+# Sudden changes in the population figures that events in those years help explain: (from year, to year, the year
+# to jump to, what happened). Both years must be years with a figure; the build works out the change.
+POP = {
+ 'cologne': [
+  (1333, 1400, 1349, 'The Black Death (1349).'),
+  (1880, 1901, 1888, 'The city takes in its suburbs in 1888, among them Ehrenfeld, Nippes and Deutz.'),
+  (1909, 1910, 1910, 'Kalk and Vingst join the city (1910).'),
+  (1940, 1950, 1942, 'The Second World War: air raids from 1942, and the city’s fall in 1945.'),
+ ],
+ 'vienna': [
+  (1850, 1857, 1850, 'Vienna takes in its inner suburbs (1850).'),
+  (1910, 1923, 1914, 'The First World War and the end of Austria-Hungary.'),
+  (1923, 1939, 1938, 'Fewer births, and from 1938 the Anschluss: many Viennese, most of them Jewish, were forced to flee or were deported.'),
+  (1939, 1951, 1945, 'The Second World War and the Battle of Vienna (1945).'),
+ ],
+ 'paris': [
+  (1328, 1422, 1348, 'The Black Death (1348), war and revolt, and English rule from 1420.'),
+  (1851, 1861, 1860, 'Paris annexes its suburbs in 1860 and grows from 12 to 20 arrondissements.'),
+  (1931, 1946, 1940, 'The Second World War and the German occupation (1940–44).'),
+ ],
+ 'istanbul': [
+  (1200, 1250, 1204, 'Sacked by the Fourth Crusade (1204); Latin rule until 1261.'),
+  (1300, 1350, 1347, 'The Black Death (1347).'),
+  (1400, 1450, 1422, 'Ottoman blockades and sieges.'),
+  (1450, 1500, 1453, 'The Ottoman conquest (1453): Mehmed II resettles the city as his capital.'),
+  (1925, 1935, 1923, 'The capital moves to Ankara (1923).'),
+ ],
+}
+
+# The day of events that happened on one day (or over a few days), checked against Wikipedia: (month, day).
+# Events that ran for weeks or years (sieges, occupations, epidemics, building works) have none and show the year only.
+DAY = {
+ ('cologne', 1164): (7, '23'), ('cologne', 1248): (8, '15'), ('cologne', 1288): (6, '5'), ('cologne', 1880): (10, '15'),
+ ('cologne', 1942): (5, '30–31'), ('cologne', 1945): (3, '6'), ('cologne', 2009): (3, '3'),
+ ('vienna', 1278): (8, '26'), ('vienna', 1365): (3, '12'), ('vienna', 1485): (6, '1'), ('vienna', 1938): (3, '12'), ('vienna', 1955): (5, '15'),
+ ('paris', 1572): (8, '24'), ('paris', 1682): (5, '6'), ('paris', 1789): (7, '14'), ('paris', 1889): (3, '31'), ('paris', 1944): (8, '25'),
+ ('paris', 2019): (4, '15'),
+ ('istanbul', 1054): (7, '16'), ('istanbul', 1204): (4, '12–15'), ('istanbul', 1261): (7, '25'), ('istanbul', 1453): (5, '29'),
+ ('istanbul', 1509): (9, '10'), ('istanbul', 1660): (7, '24'), ('istanbul', 1826): (6, '15'), ('istanbul', 1894): (7, '10'),
+ ('istanbul', 1923): (10, '13'), ('istanbul', 1973): (10, '30'), ('istanbul', 1999): (8, '17'),
+}

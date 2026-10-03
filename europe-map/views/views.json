@@ -1,0 +1,1658 @@
+{
+ "amsterdam": [
+  {
+   "id": "amsterdam-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Amstelredamum, nobile Inferioris Germaniae oppidum... - btv1b53178866m (1 of 2).jpg",
+   "w": 1126,
+   "h": 776
+  },
+  {
+   "id": "amsterdam-1682",
+   "y": 1682,
+   "lab": "1680–85",
+   "what": "The Portuguese and High German synagogues, painting (Städel Museum, Frankfurt)",
+   "who": "Gerrit Berckheyde",
+   "lic": "PD",
+   "f": "The two Synagogues in Amsterdam (SM 259).png",
+   "w": 1268,
+   "h": 904
+  },
+  {
+   "id": "amsterdam-1845",
+   "y": 1845,
+   "lab": "about 1845",
+   "what": "The Dam with the palace, the Nieuwe Kerk and the new exchange, lithograph",
+   "who": "Willem Hekking",
+   "lic": "CC0",
+   "f": "Gezicht op Amsterdam met de Beurs van Zocher, RP-P-OB-27.555.jpg",
+   "w": 986,
+   "h": 507
+  },
+  {
+   "id": "amsterdam-1900",
+   "y": 1900,
+   "lab": "about 1900",
+   "what": "The Singel and the Munttoren, photochrom print",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "f": "Amsterdam (Nederland) Een Photochrom ((door middel van steendruk (lithografie) ingekleurde, SFA008002688.jpg",
+   "w": 1280,
+   "h": 935
+  },
+  {
+   "id": "amsterdam-1931",
+   "y": 1931,
+   "lab": "1931",
+   "what": "Aerial photograph of the canal ring (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "f": "ETH-BIB-Amsterdam, Heerengracht-Inlandflüge-LBS MH01-006264.tif",
+   "w": 1242,
+   "h": 799
+  },
+  {
+   "id": "amsterdam-2016",
+   "y": 2016,
+   "lab": "2016",
+   "what": "The Nieuwe Kerk and the Royal Palace on the Dam, photograph",
+   "who": "C messier",
+   "lic": "CC BY-SA 4.0",
+   "f": "Amsterdam Nieuwe Kerk 1697.jpg",
+   "w": 1280,
+   "h": 998
+  }
+ ],
+ "athens": [
+  {
+   "id": "athens-1688",
+   "y": 1688,
+   "lab": "1688",
+   "what": "Athens from the south, engraving in Coronelli’s Repubblica di Venezia",
+   "who": "Vincenzo Coronelli",
+   "lic": "PD",
+   "f": "Veduta d'Atene da Mezzo Giorno - Coronelli Vincenzo - 1686.jpg",
+   "w": 1280,
+   "h": 957
+  },
+  {
+   "id": "athens-1787",
+   "y": 1787,
+   "lab": "1787",
+   "what": "The Acropolis from the west, colored engraving in Stuart and Revett, The Antiquities of Athens, vol. 2",
+   "who": "James Stuart and Nicholas Revett",
+   "lic": "PD",
+   "f": "A panoramic view of the Acropolis from west in 1751.jpg",
+   "w": 1600,
+   "h": 691
+  },
+  {
+   "id": "athens-1833",
+   "y": 1833,
+   "lab": "1833",
+   "what": "Athens from the Ilissos, with the Olympieion, Hadrian’s Arch and the Acropolis, painting (Benaki Museum)",
+   "who": "Johann Michael Wittmer",
+   "lic": "PD",
+   "f": "View of Athens from the river Ilissos - J. M. Wittmer (1833).jpg",
+   "w": 1280,
+   "h": 756
+  },
+  {
+   "id": "athens-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Panorama with the Acropolis, Lycabettus and the Observatory, photochrom print (Library of Congress)",
+   "who": "Photoglob Co.",
+   "lic": "PD",
+   "f": "Athens LCCN2017656991.jpg",
+   "w": 1600,
+   "h": 607
+  },
+  {
+   "id": "athens-1930",
+   "y": 1930,
+   "lab": "1930",
+   "what": "Aerial photograph of the Acropolis and the city (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "f": "ETH-BIB-Akropolis, Athen-Kilimanjaroflug 1929-30-LBS MH02-07-0138.tif",
+   "w": 1011,
+   "h": 833
+  },
+  {
+   "id": "athens-2018",
+   "y": 2018,
+   "lab": "2018",
+   "what": "The Acropolis and Lycabettus from the Observatory hill, photograph",
+   "who": "George E. Koronaios",
+   "lic": "CC BY-SA 4.0",
+   "f": "Panorama of Athens from the area of the National Observatory of Athens. In the distance the Acropolis of Athens and Mount Lycabettus.jpg",
+   "w": 1024,
+   "h": 409
+  }
+ ],
+ "berlin": [
+  {
+   "id": "berlin-1655",
+   "y": 1655,
+   "lab": "1650s",
+   "what": "Berlin from the northwest with the palace, painting",
+   "who": "Jan Ruyscher",
+   "lic": "PD",
+   "f": "Ansicht Berlins von Nordwesten (um 1650).jpg",
+   "w": 1600,
+   "h": 789
+  },
+  {
+   "id": "berlin-1834",
+   "y": 1834,
+   "lab": "1834",
+   "what": "View from the roof of the Friedrichswerder Church, painting (part of a panorama)",
+   "who": "Eduard Gaertner",
+   "lic": "PD",
+   "f": "Panorama von Berlin vom Dach der Friedrichswerderschen Kirche aus 1.jpg",
+   "w": 1280,
+   "h": 1048
+  },
+  {
+   "id": "berlin-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Gendarmenmarkt, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "f": "Schiller Square, Berlin, Germany-LCCN2002713622.tif",
+   "w": 1228,
+   "h": 873
+  },
+  {
+   "id": "berlin-1921",
+   "y": 1921,
+   "lab": "1921",
+   "what": "View on the Spree, lithograph (National Gallery of Art, Washington)",
+   "who": "Joseph Pennell",
+   "lic": "CC0",
+   "f": "Joseph Pennell, View on the Spree, Berlin, 1921, NGA 10103.jpg",
+   "w": 1228,
+   "h": 877
+  },
+  {
+   "id": "berlin-2017",
+   "y": 2017,
+   "lab": "2017",
+   "what": "The Gendarmenmarkt and city center from the French Cathedral, photograph",
+   "who": "Gerd Eichmann",
+   "lic": "CC BY-SA 4.0",
+   "f": "Berlin-vom Franzoesischen Dom-06-Gendarmenmarkt-Deutscher Dom-Konzerthaus-2017-gje.jpg",
+   "w": 1280,
+   "h": 750
+  }
+ ],
+ "brussels": [
+  {
+   "id": "brussels-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Frans Hogenberg en Joris Bruin, Bruxella, 1572 (Civitates Orbis Terrarum I 14).png",
+   "w": 1250,
+   "h": 873
+  },
+  {
+   "id": "brussels-1665",
+   "y": 1665,
+   "lab": "1664–65",
+   "what": "Panorama of the city, painting (Royal Museums of Fine Arts of Belgium)",
+   "who": "Jan Baptist Bonnecroy",
+   "lic": "PD",
+   "f": "Jan Baptist Bonnecroy - Vue de Bruxelles.jpg",
+   "w": 1280,
+   "h": 678
+  },
+  {
+   "id": "brussels-1820",
+   "y": 1820,
+   "lab": "about 1820",
+   "what": "The Grand-Place and the town hall, lithograph (British Museum)",
+   "who": "Daems",
+   "lic": "PD",
+   "f": "Hôtel de Ville de Bruxelles (BM 1955,0425.20).jpg",
+   "w": 1107,
+   "h": 779
+  },
+  {
+   "id": "brussels-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Théâtre Royal de la Monnaie, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "Royal Theatre, Brussels, Belgium-LCCN2001697911.jpg",
+   "w": 1216,
+   "h": 840
+  }
+ ],
+ "budapest": [
+  {
+   "id": "budapest-1493",
+   "y": 1493,
+   "lab": "1493",
+   "what": "Buda, colored woodcut in Hartmann Schedel’s Nuremberg Chronicle",
+   "who": "Michael Wolgemut and Wilhelm Pleydenwurff",
+   "lic": "PD",
+   "f": "Nuremberg chronicles - BVJA.png",
+   "w": 1600,
+   "h": 738
+  },
+  {
+   "id": "budapest-1617",
+   "y": 1617,
+   "lab": "1617",
+   "what": "Buda with Pest across the Danube, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 6",
+   "who": "Georg Braun and Frans Hogenberg, after Joris Hoefnagel",
+   "lic": "PD",
+   "f": "Braun & Hogenberg Buda in the 16. century.jpg",
+   "w": 1204,
+   "h": 691
+  },
+  {
+   "id": "budapest-1834",
+   "y": 1834,
+   "lab": "1834",
+   "what": "Pest and Buda joined by the pontoon bridge, seen from the north, painting",
+   "who": "Wicksteed",
+   "lic": "PD",
+   "f": "View of Pest-Buda from north.jpg",
+   "w": 1280,
+   "h": 1068
+  },
+  {
+   "id": "budapest-1898",
+   "y": 1898,
+   "lab": "late 1890s",
+   "what": "The Danube and the Franz Joseph (Liberty) Bridge from Castle Hill, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "f": "Franz Joseph's Bridge, looking towards the bridge, Budapest, Hungary, Austro-Hungary-LCCN2002710863.jpg",
+   "w": 1228,
+   "h": 885
+  },
+  {
+   "id": "budapest-1932",
+   "y": 1932,
+   "lab": "1932",
+   "what": "Elisabeth Bridge and Gellért Hill, aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "f": "ETH-BIB-Flug über Zugspitze, Wien, Oetztal nach Budapest mit der Lockheed Orion (CH-168)-Weitere-LBS MH02-12-0020.tif",
+   "w": 1242,
+   "h": 845
+  },
+  {
+   "id": "budapest-2019",
+   "y": 2019,
+   "lab": "2019",
+   "what": "View from Gellért Hill, photograph",
+   "who": "Jakub Hałun",
+   "lic": "CC BY-SA 4.0",
+   "f": "20190502 Budapeszt 1651 2148 DxO.jpg",
+   "w": 1280,
+   "h": 851
+  }
+ ],
+ "copenhagen": [
+  {
+   "id": "copenhagen-1588",
+   "y": 1588,
+   "lab": "1588",
+   "what": "Copenhagen from Valby Hill, colored engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 4",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "København set fra Valby Bakke i 1587.jpg",
+   "w": 1600,
+   "h": 729
+  },
+  {
+   "id": "copenhagen-1659",
+   "y": 1659,
+   "lab": "1659",
+   "what": "Bird’s-eye view from the harbor, etching (Rijksmuseum)",
+   "who": "Rombout van den Hoeye",
+   "lic": "CC0",
+   "f": "Gezicht op Kopenhagen, 1659 Coppen-hagen (titel op object), RP-P-OB-81.868.jpg",
+   "w": 1214,
+   "h": 761
+  },
+  {
+   "id": "copenhagen-1840",
+   "y": 1840,
+   "lab": "about 1840",
+   "what": "The Round Tower and Trinity Church over the rooftops, watercolor",
+   "who": "Heinrich Gustav Ferdinand Holm",
+   "lic": "PD",
+   "f": "H.G.F. Holm - Udsigt over Gammel Avlsgaard mod Rundetårn.png",
+   "w": 1280,
+   "h": 944
+  },
+  {
+   "id": "copenhagen-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "View over the Slotsholmen canal toward St. Nicholas’ tower, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "f": "General view, Copenhagen, Denmark-LCCN2001697981.jpg",
+   "w": 1224,
+   "h": 893
+  },
+  {
+   "id": "copenhagen-2022",
+   "y": 2022,
+   "lab": "2022",
+   "what": "The old center from the Round Tower, photograph",
+   "who": "Jakub Hałun",
+   "lic": "CC BY-SA 4.0",
+   "f": "Copenhagen, view from Rundetårn, 20220617 1006 6721.jpg",
+   "w": 1280,
+   "h": 854
+  }
+ ],
+ "dresden": [
+  {
+   "id": "dresden-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Colored engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "View of Dresden 1572.jpg",
+   "w": 1600,
+   "h": 491
+  },
+  {
+   "id": "dresden-1650",
+   "y": 1650,
+   "lab": "1650",
+   "what": "View across the Elbe and the bridge, engraving in Merian’s Topographia Superioris Saxoniae",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "f": "Dresden1-1650-Merian.jpg",
+   "w": 1600,
+   "h": 456
+  },
+  {
+   "id": "dresden-1750",
+   "y": 1750,
+   "lab": "about 1750",
+   "what": "The Frauenkirche, the Augustus Bridge and the Hofkirche from across the Elbe, painting",
+   "who": "Bernardo Bellotto",
+   "lic": "PD",
+   "f": "Bellotto View of Dresden.jpg",
+   "w": 1200,
+   "h": 741
+  },
+  {
+   "id": "dresden-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Augustus Bridge and the Old Town, photochrom print (Rijksmuseum)",
+   "who": "Photoglob Zürich",
+   "lic": "CC0",
+   "f": "Gezicht op Dresden 1668 P.Z. -Dresden Altstadt (titel op object), RP-F-2010-172-1.jpg",
+   "w": 1280,
+   "h": 928
+  },
+  {
+   "id": "dresden-1924",
+   "y": 1924,
+   "lab": "1924",
+   "what": "The Old Town seen from the Waldschlößchen, painting",
+   "who": "Rudolf Poeschmann",
+   "lic": "PD",
+   "f": "Rudolf Poeschmann Dresden Blick vom Waldschlößchen 1924.jpg",
+   "w": 614,
+   "h": 313
+  }
+ ],
+ "edinburgh": [
+  {
+   "id": "edinburgh-1581",
+   "y": 1581,
+   "lab": "1581",
+   "what": "Bird’s-eye view, colored engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 3 (British Museum)",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Edenburgum Scotiae Metropolis (BM Y,5.161).jpg",
+   "w": 1190,
+   "h": 882
+  },
+  {
+   "id": "edinburgh-1753",
+   "y": 1753,
+   "lab": "1753",
+   "what": "Edinburgh Castle from the east, colored print (Rijksmuseum)",
+   "who": "Paul Sandby",
+   "lic": "CC0",
+   "f": "Gezicht op Edinburgh Castle East view of Edinburgh Castle (titel op object) Schotland (serietitel), RP-P-1932-484.jpg",
+   "w": 884,
+   "h": 530
+  },
+  {
+   "id": "edinburgh-1824",
+   "y": 1824,
+   "lab": "1822–26",
+   "what": "Edinburgh from the west, painting",
+   "who": "Alexander Nasmyth",
+   "lic": "PD",
+   "f": "Alexander Nasmyth - A View of Edinburgh from the West - Google Art Project.jpg",
+   "w": 768,
+   "h": 426
+  },
+  {
+   "id": "edinburgh-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Princes Street with the castle and the Scott Monument, photochrom print (Library of Congress)",
+   "who": "Photoglob Co.",
+   "lic": "PD",
+   "f": "Edinburgh. Princess (i.e. Princes) Street. The Castle & Scott Monument LCCN2017660362.jpg",
+   "w": 1240,
+   "h": 916
+  },
+  {
+   "id": "edinburgh-1917",
+   "y": 1917,
+   "lab": "1917",
+   "what": "The Old Town from Calton Hill, watercolor in Edward Thomas’s A Literary Pilgrim in England",
+   "who": "Walter Dexter",
+   "lic": "PD",
+   "f": "A Literary Pilgrim in England - EDINBURGH, VIEW FROM CALTON HILL.jpg",
+   "w": 1280,
+   "h": 737
+  },
+  {
+   "id": "edinburgh-2009",
+   "y": 2009,
+   "lab": "2009",
+   "what": "The New Town and Princes Street from the castle, photograph",
+   "who": "Nicolai Schäfer",
+   "lic": "CC BY-SA 3.0",
+   "f": "Edinburghfromcastlepano09.jpg",
+   "w": 1600,
+   "h": 227
+  }
+ ],
+ "florence": [
+  {
+   "id": "florence-1493",
+   "y": 1493,
+   "lab": "1493",
+   "what": "Woodcut in Hartmann Schedel’s Nuremberg Chronicle",
+   "who": "Michael Wolgemut and Wilhelm Pleydenwurff",
+   "lic": "PD",
+   "f": "Nuremberg chronicles - FLORENCIA.png",
+   "w": 1254,
+   "h": 619
+  },
+  {
+   "id": "florence-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Colored engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Genua Ligurum domina - Florentia urbs est Insignis Hetruariae, olim Fluentia dicta.jpg",
+   "w": 1144,
+   "h": 351
+  },
+  {
+   "id": "florence-1650",
+   "y": 1650,
+   "lab": "about 1650",
+   "what": "View from San Francesco al Monte, etching (Rijksmuseum)",
+   "who": "Valerio Spada",
+   "lic": "CC0",
+   "f": "Gezicht op Florence Veduta della città di Firenze dal muricciolo del prato de’ padri di S.Francesco al Monte (titel op object), RP-P-1985-344.jpg",
+   "w": 1600,
+   "h": 431
+  },
+  {
+   "id": "florence-1837",
+   "y": 1837,
+   "lab": "1837",
+   "what": "View from San Miniato, painting (Cleveland Museum of Art)",
+   "who": "Thomas Cole",
+   "lic": "PD",
+   "f": "Cole Thomas View of Florence from San Miniato 1837.jpg",
+   "w": 1280,
+   "h": 790
+  },
+  {
+   "id": "florence-1897",
+   "y": 1897,
+   "lab": "about 1897",
+   "what": "View from Piazzale Michelangelo, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co., under license from Photoglob Zürich",
+   "lic": "PD",
+   "f": "8569 P.Z. Florence, Tuscany, Italy, ca. 1897.jpg",
+   "w": 1280,
+   "h": 938
+  },
+  {
+   "id": "florence-1932",
+   "y": 1932,
+   "lab": "1932",
+   "what": "Aerial photograph of the cathedral and center (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "f": "ETH-BIB-Florenz-Nordafrikaflug 1932-LBS MH02-13-0010.tif",
+   "w": 793,
+   "h": 852
+  },
+  {
+   "id": "florence-2020",
+   "y": 2020,
+   "lab": "2020",
+   "what": "The center from Piazzale Michelangelo, photograph",
+   "who": "PROPOLI87",
+   "lic": "CC BY-SA 4.0",
+   "f": "Panorama di Firenze centro visto dal Piazzale Michelangelo.jpg",
+   "w": 1280,
+   "h": 960
+  }
+ ],
+ "krakow": [
+  {
+   "id": "krakow-1493",
+   "y": 1493,
+   "lab": "1493",
+   "what": "Colored woodcut in Hartmann Schedel’s Nuremberg Chronicle",
+   "who": "Michael Wolgemut and Wilhelm Pleydenwurff",
+   "lic": "PD",
+   "f": "Nuremberg chronicles - CRACOVIA.png",
+   "w": 1242,
+   "h": 625
+  },
+  {
+   "id": "krakow-1617",
+   "y": 1617,
+   "lab": "1617",
+   "what": "Panorama, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 6",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Cracovia Metropolis Regni Poloniae. 1618 (middle size) (55759065).jpg",
+   "w": 1600,
+   "h": 541
+  },
+  {
+   "id": "krakow-1652",
+   "y": 1652,
+   "lab": "1652",
+   "what": "View of Kraków from the northwest, painting (National Museum, Kraków)",
+   "who": "Gottfried Libalt",
+   "lic": "PD",
+   "f": "Liebalt, Gottfried - View of Krakow - MNK XII-A-622 - National Museum Kraków.jpg",
+   "w": 1280,
+   "h": 914
+  },
+  {
+   "id": "krakow-1847",
+   "y": 1847,
+   "lab": "about 1847",
+   "what": "Wawel from the northwest, painting",
+   "who": "Jan Nepomucen Głowacki",
+   "lic": "PD",
+   "f": "GlowackiJanNepomucen.WidokNaWawel.jpg",
+   "w": 1280,
+   "h": 862
+  },
+  {
+   "id": "krakow-1886",
+   "y": 1886,
+   "lab": "1886–87",
+   "what": "St. Mary’s Church on the Main Market Square, chromolithograph from the portfolio Klejnoty miasta Krakowa",
+   "who": "Juliusz Kossak and Stanisław Tondos",
+   "lic": "PD",
+   "f": "Klejnoty miasta Krakowa - dwadziescia cztery widokow w chromolitografiach podlug oryginalnych akwarel Juliusza Kossaka i Stanislawa Tondosa 1886-1887 (310167).jpg",
+   "w": 691,
+   "h": 922
+  },
+  {
+   "id": "krakow-1923",
+   "y": 1923,
+   "lab": "1923",
+   "what": "Wawel Hill and the Old Town from the air, aerial photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "f": "Kraków aerial photo (1923)a.jpg",
+   "w": 1254,
+   "h": 899
+  },
+  {
+   "id": "krakow-2019",
+   "y": 2019,
+   "lab": "2019",
+   "what": "Wawel Castle from the Vistula, photograph",
+   "who": "Ingo Mehling",
+   "lic": "CC BY-SA 4.0",
+   "f": "Krakow - Wawel from Vistula - 4.jpg",
+   "w": 1600,
+   "h": 481
+  }
+ ],
+ "lisbon": [
+  {
+   "id": "lisbon-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "View from the Tagus, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Lisbona. Olisipo ... vulgo Lisbona Florentissimum Portugalliae Emporiu.jpg",
+   "w": 1146,
+   "h": 471
+  },
+  {
+   "id": "lisbon-1694",
+   "y": 1694,
+   "lab": "1694",
+   "what": "Bird’s-eye view, colored etching in Theatrum Hispaniae",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "f": "Gezicht op de stad Lissabon, BI-1956-1074-61-1.jpg",
+   "w": 1075,
+   "h": 597
+  },
+  {
+   "id": "lisbon-1825",
+   "y": 1825,
+   "lab": "1796–1850",
+   "what": "View from the Tagus, lithograph (British Museum)",
+   "who": "unknown artist",
+   "lic": "PD",
+   "f": "Lisbon (BM 1977,0611.88).jpg",
+   "w": 1190,
+   "h": 699
+  },
+  {
+   "id": "lisbon-1856",
+   "y": 1856,
+   "lab": "1856",
+   "what": "Panorama from the Tagus, drawing (Royal Museums Greenwich)",
+   "who": "Edward Gennys Fanshawe",
+   "lic": "PD",
+   "f": "Panorama of Lisbon, Portugal, 1856 RMG PZ4681.tiff",
+   "w": 1600,
+   "h": 268
+  },
+  {
+   "id": "lisbon-1919",
+   "y": 1919,
+   "lab": "1919",
+   "what": "Aerial photograph of the Rossio (Ilustração Portuguesa)",
+   "who": "Serra Ribeiro",
+   "lic": "PD",
+   "f": "Vista de Lisboa - foto de Serra Ribeiro (Ilustração Portuguesa 22 Set 1919).jpg",
+   "w": 1280,
+   "h": 768
+  },
+  {
+   "id": "lisbon-2011",
+   "y": 2011,
+   "lab": "2011",
+   "what": "The Rossio, the Baixa and the castle hill, photograph",
+   "who": "Alvesgaspar",
+   "lic": "CC BY-SA 3.0",
+   "f": "Lisboa November 2011-7.jpg",
+   "w": 1600,
+   "h": 619
+  }
+ ],
+ "london": [
+  {
+   "id": "london-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, colored engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Londinum Feracissimi Angliae Regni Metropolis.jpg",
+   "w": 1164,
+   "h": 660
+  },
+  {
+   "id": "london-1747",
+   "y": 1747,
+   "lab": "1747",
+   "what": "The Thames and the City from Richmond House, painting (Goodwood House)",
+   "who": "Canaletto",
+   "lic": "PD",
+   "f": "Canaletto london.jpg",
+   "w": 1030,
+   "h": 941
+  },
+  {
+   "id": "london-1750",
+   "y": 1750,
+   "lab": "1750",
+   "what": "View from Somerset Gardens to Westminster Bridge, engraving after Canaletto (Rijksmuseum)",
+   "who": "Johann Sebastian Müller, after Canaletto",
+   "lic": "CC0",
+   "f": "Gezicht van Somerset Gardens op de Westminster brug te Londen, RP-P-1951-759.jpg",
+   "w": 1018,
+   "h": 576
+  },
+  {
+   "id": "london-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Houses of Parliament from the river, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "f": "Houses of Parliament from the river, London, England-LCCN2002696921.tif",
+   "w": 1228,
+   "h": 875
+  },
+  {
+   "id": "london-1930",
+   "y": 1930,
+   "lab": "about 1930",
+   "what": "The Thames from the Victoria Tower, photograph (Svensk världsatlas)",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "f": "London Thames (1930).jpg",
+   "w": 1280,
+   "h": 880
+  },
+  {
+   "id": "london-2022",
+   "y": 2022,
+   "lab": "2022",
+   "what": "Greenwich and the Canary Wharf skyline, photograph",
+   "who": "The wub",
+   "lic": "CC BY-SA 4.0",
+   "f": "Greenwich and Canary Wharf panorama - 2022-04-24.jpg",
+   "w": 1600,
+   "h": 468
+  }
+ ],
+ "madrid": [
+  {
+   "id": "madrid-1562",
+   "y": 1562,
+   "lab": "1562",
+   "what": "The Alcázar above the Manzanares, pen drawing (detail of a view of Madrid, Austrian National Library)",
+   "who": "Anton van den Wyngaerde",
+   "lic": "PD",
+   "f": "Madrid alcazar Antón van der Wyngaerde prep.jpg",
+   "w": 1209,
+   "h": 774
+  },
+  {
+   "id": "madrid-1688",
+   "y": 1688,
+   "lab": "1675–1700",
+   "what": "Panorama across the Manzanares with the Segovia Bridge, colored engraving (Van der Hagen Atlas)",
+   "who": "unknown artist",
+   "lic": "PD",
+   "f": "Atlas Van der Hagen-KW1049B12 004-Aangezicht op- MADRID.jpeg",
+   "w": 1178,
+   "h": 794
+  },
+  {
+   "id": "madrid-1753",
+   "y": 1753,
+   "lab": "about 1753",
+   "what": "View from the south across the Segovia Bridge, painting",
+   "who": "Antonio Joli",
+   "lic": "PD",
+   "f": "Antonio Joli P. Real Madrid ca.1753.jpg",
+   "w": 1600,
+   "h": 755
+  },
+  {
+   "id": "madrid-1813",
+   "y": 1813,
+   "lab": "1806–20",
+   "what": "The Royal Palace from the Paseo de la Florida, engraving in Alexandre de Laborde’s Voyage pittoresque et historique de l’Espagne",
+   "who": "after François Liger",
+   "lic": "PD",
+   "f": "1806-1820, Voyage pittoresque et historique de l'Espagne, tomo II, Vista de la Florida en Madrid (cropped).jpg",
+   "w": 1280,
+   "h": 875
+  },
+  {
+   "id": "madrid-1890",
+   "y": 1890,
+   "lab": "about 1890",
+   "what": "The Royal Palace from the Plaza de Armas, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "Madrid. Plaza de Armas LCCN2017660760.jpg",
+   "w": 1240,
+   "h": 916
+  },
+  {
+   "id": "madrid-1928",
+   "y": 1928,
+   "lab": "1928",
+   "what": "The Royal Palace and the old center, aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "f": "ETH-BIB-Madrid (Königlicher Palast) aus 300 m Höhe-Mittelmeerflug 1928-LBS MH02-05-0061.jpg",
+   "w": 1229,
+   "h": 883
+  },
+  {
+   "id": "madrid-2020",
+   "y": 2020,
+   "lab": "2020",
+   "what": "View from the dome of Almudena Cathedral toward the Royal Palace, photograph",
+   "who": "Fernando Pascullo",
+   "lic": "CC BY-SA 4.0",
+   "f": "Madrid cathedral 2020 - view from the dome.jpg",
+   "w": 1600,
+   "h": 533
+  }
+ ],
+ "milan": [
+  {
+   "id": "milan-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, colored engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Mediolanum - btv1b53178871s (1 of 2).jpg",
+   "w": 1094,
+   "h": 747
+  },
+  {
+   "id": "milan-1842",
+   "y": 1842,
+   "lab": "1842",
+   "what": "The Piazza del Duomo seen from the Coperto dei Figini, painting",
+   "who": "Angelo Inganni",
+   "lic": "PD",
+   "f": "Veduta della piazza del Duomo dal coperto dei Figini.jpg",
+   "w": 1024,
+   "h": 816
+  },
+  {
+   "id": "milan-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Piazza del Duomo, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "Piazza del Duomo, -Milan, Italy--LCCN2001700886.jpg",
+   "w": 982,
+   "h": 709
+  },
+  {
+   "id": "milan-2016",
+   "y": 2016,
+   "lab": "2016",
+   "what": "The cathedral roof and the Madonnina spire, photograph",
+   "who": "Harvinder Chandigarh",
+   "lic": "CC BY-SA 4.0",
+   "f": "Close view of Milan Cathedral , Italy.jpg",
+   "w": 1280,
+   "h": 960
+  }
+ ],
+ "moscow": [
+  {
+   "id": "moscow-1575",
+   "y": 1575,
+   "lab": "1575",
+   "what": "Bird’s-eye view of the Kremlin, colored engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 2",
+   "who": "Georg Braun and Frans Hogenberg, after Sigismund von Herberstein",
+   "lic": "PD",
+   "f": "Moscow 1556.jpg",
+   "w": 1204,
+   "h": 604
+  },
+  {
+   "id": "moscow-1797",
+   "y": 1797,
+   "lab": "1797",
+   "what": "St. Basil’s Cathedral and the Spasskaya Tower, watercolor (Hermitage)",
+   "who": "Giacomo Quarenghi",
+   "lic": "PD",
+   "f": "G.Quarenghi - Views of Moscow and its Environs - Pokrovsky Cathedral and Spasskaya Tower - 1797.jpg",
+   "w": 1280,
+   "h": 965
+  },
+  {
+   "id": "moscow-1841",
+   "y": 1841,
+   "lab": "about 1840",
+   "what": "The Bolshoi Theater in winter, colored lithograph",
+   "who": "Jean-Baptiste Arnout, after Vivien",
+   "lic": "PD",
+   "f": "Bolshoy Teatr.jpg",
+   "w": 1280,
+   "h": 966
+  },
+  {
+   "id": "moscow-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Kremlin and the Moskva from the Cathedral of Christ the Savior, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "f": "General view from St. Saviour's, Moscow, Russia-LCCN2001697455.jpg",
+   "w": 1197,
+   "h": 825
+  },
+  {
+   "id": "moscow-2017",
+   "y": 2017,
+   "lab": "2017",
+   "what": "The Kremlin at night from the Sofiyskaya Embankment, photograph",
+   "who": "Sergey Korovkin",
+   "lic": "CC BY-SA 4.0",
+   "f": "Night view of Moscow Kremlin 2017 -3.jpg",
+   "w": 1280,
+   "h": 811
+  }
+ ],
+ "munich": [
+  {
+   "id": "munich-1493",
+   "y": 1493,
+   "lab": "1493",
+   "what": "Woodcut in Hartmann Schedel’s Nuremberg Chronicle",
+   "who": "Michael Wolgemut and Wilhelm Pleydenwurff",
+   "lic": "PD",
+   "f": "Nuremberg chronicles - MONACUM.png",
+   "w": 1600,
+   "h": 618
+  },
+  {
+   "id": "munich-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Colored engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Beschreibung der Städt der Welt - Braun & Hogenberg - btv1b52512111k (131 of 378).jpg",
+   "w": 538,
+   "h": 224
+  },
+  {
+   "id": "munich-1761",
+   "y": 1761,
+   "lab": "about 1761",
+   "what": "View across the Isar from the east, painting",
+   "who": "Bernardo Bellotto",
+   "lic": "PD",
+   "f": "Canaletto (I) 017.jpg",
+   "w": 1280,
+   "h": 706
+  },
+  {
+   "id": "munich-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "View from the Maximilianeum over the Isar, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "f": "Munich from the Maximilianeum, Bavaria, Germany-LCCN2002696130.jpg",
+   "w": 1211,
+   "h": 906
+  },
+  {
+   "id": "munich-1933",
+   "y": 1933,
+   "lab": "1933",
+   "what": "Aerial photograph of the old town and the Frauenkirche (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "f": "ETH-BIB-München-Weitere-LBS MH02-20-0029.tif",
+   "w": 1280,
+   "h": 848
+  },
+  {
+   "id": "munich-2019",
+   "y": 2019,
+   "lab": "2019",
+   "what": "The old town towers and the Frauenkirche, photograph",
+   "who": "Amrei-Marie",
+   "lic": "CC BY-SA 4.0",
+   "f": "Blick auf Münchner Türme - Richtung Frauenkirche - 02.jpg",
+   "w": 1280,
+   "h": 853
+  }
+ ],
+ "naples": [
+  {
+   "id": "naples-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, colored engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Haec est nobilis florens illa Neapolis, Campaniae civitas.jpg",
+   "w": 1148,
+   "h": 726
+  },
+  {
+   "id": "naples-1705",
+   "y": 1705,
+   "lab": "about 1705",
+   "what": "The harbor mole, lighthouse and Castel Nuovo, etching (Rijksmuseum)",
+   "who": "unknown artist, after Johann Wilhelm Baur and Melchior Küsel",
+   "lic": "CC0",
+   "f": "Gezicht op de haven met een vuurtoren en een paleis te Napels Le Mole, le Cinosura, et le Castell Novo, à Naples (titel op object) Paleizen en monumenten in Venetië, Livorno, Napels en Rome (serietitel), BI-1962-1072-61.jpg",
+   "w": 599,
+   "h": 476
+  },
+  {
+   "id": "naples-1845",
+   "y": 1845,
+   "lab": "1845",
+   "what": "View from Villa Ruffo at Capodimonte, engraving",
+   "who": "Saverio Corsi",
+   "lic": "CC BY-SA 4.0",
+   "f": "Veduta di Napoli dalla Villa Ruffo a Capodimonte.jpg",
+   "w": 1162,
+   "h": 771
+  },
+  {
+   "id": "naples-1865",
+   "y": 1865,
+   "lab": "1865",
+   "what": "The city and the bay with Vesuvius, photograph (Bibliothèque nationale de France)",
+   "who": "Robert Rive",
+   "lic": "PD",
+   "f": "N°14. Veduta di Napoli - btv1b53264245n (1 of 2).jpg",
+   "w": 944,
+   "h": 760
+  },
+  {
+   "id": "naples-1932",
+   "y": 1932,
+   "lab": "1932",
+   "what": "The harbor and Castel Sant’Elmo, photograph",
+   "who": "Berit Wallenberg",
+   "lic": "PD",
+   "f": "View of Naples, Italy (8049749431).jpg",
+   "w": 1024,
+   "h": 409
+  }
+ ],
+ "nuremberg": [
+  {
+   "id": "nuremberg-1493",
+   "y": 1493,
+   "lab": "1493",
+   "what": "Woodcut in Hartmann Schedel’s Nuremberg Chronicle",
+   "who": "Michael Wolgemut and Wilhelm Pleydenwurff",
+   "lic": "PD",
+   "f": "Nuremberg chronicles - Nuremberga.png",
+   "w": 1250,
+   "h": 832
+  },
+  {
+   "id": "nuremberg-1648",
+   "y": 1648,
+   "lab": "1648",
+   "what": "Panorama, engraving in Merian’s Topographia Franconiae",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "f": "De Merian Frankoniae 092.jpg",
+   "w": 1600,
+   "h": 440
+  },
+  {
+   "id": "nuremberg-1840",
+   "y": 1840,
+   "lab": "about 1840",
+   "what": "The castle seen from St. John’s Cemetery, steel engraving",
+   "who": "Ernst Rauch, after Ludwig Lange",
+   "lic": "PD",
+   "f": "Ansicht der Burg von Nürnberg vom St. Johannes Kirchhof.jpg",
+   "w": 1196,
+   "h": 786
+  },
+  {
+   "id": "nuremberg-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Hospital of the Holy Spirit on the Pegnitz, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "f": "Hospital of the Holy Spirit, Nuremberg, Bavaria, Germany-LCCN2002696164.jpg",
+   "w": 1216,
+   "h": 924
+  },
+  {
+   "id": "nuremberg-1933",
+   "y": 1933,
+   "lab": "1933",
+   "what": "Aerial photograph of the old town and St. Lorenz (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "f": "ETH-BIB-Nürnberg-Inlandflüge-LBS MH01-007445.tif",
+   "w": 870,
+   "h": 955
+  },
+  {
+   "id": "nuremberg-2014",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The old town from the castle hill, photograph",
+   "who": "Philipp Guttmann",
+   "lic": "CC BY-SA 4.0",
+   "f": "Nuernberg Panorama Nuremberg.jpg",
+   "w": 1280,
+   "h": 853
+  }
+ ],
+ "prague": [
+  {
+   "id": "prague-1493",
+   "y": 1493,
+   "lab": "1493",
+   "what": "Woodcut in Hartmann Schedel’s Nuremberg Chronicle",
+   "who": "Michael Wolgemut and Wilhelm Pleydenwurff",
+   "lic": "PD",
+   "f": "Nuremberg chronicles - praha.png",
+   "w": 1600,
+   "h": 629
+  },
+  {
+   "id": "prague-1588",
+   "y": 1588,
+   "lab": "1588",
+   "what": "Prague Castle and the city, colored engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 4",
+   "who": "Georg Braun and Frans Hogenberg, after Joris Hoefnagel",
+   "lic": "PD",
+   "f": "Prága.jpg",
+   "w": 1204,
+   "h": 485
+  },
+  {
+   "id": "prague-1770",
+   "y": 1770,
+   "lab": "about 1770",
+   "what": "View over the Vltava to the castle, drawing (Städel Museum, Frankfurt)",
+   "who": "Johann Baptist Reiser",
+   "lic": "PD",
+   "f": "Ansicht von Prag mit der Moldau (SM 5783z).png",
+   "w": 1208,
+   "h": 679
+  },
+  {
+   "id": "prague-1834",
+   "y": 1834,
+   "lab": "1834",
+   "what": "The Charles Bridge and the castle, painting",
+   "who": "Adam August Müller",
+   "lic": "PD",
+   "f": "Adam August Müller - Udsigt over Prag med Karlsbroen krydser Moldau-floden.jpg",
+   "w": 1280,
+   "h": 862
+  },
+  {
+   "id": "prague-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Týn Church on Old Town Square, photochrom print (Library of Congress)",
+   "who": "Photoglob Co.",
+   "lic": "PD",
+   "f": "Prag. Teinkirche LCCN2017659160.jpg",
+   "w": 930,
+   "h": 1280
+  },
+  {
+   "id": "prague-1931",
+   "y": 1931,
+   "lab": "1931",
+   "what": "Aerial photograph of the castle and St. Vitus Cathedral (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "f": "ETH-BIB-Prag, Dom St. Veit, Moldau-Inlandflüge-LBS MH01-006306.tif",
+   "w": 1252,
+   "h": 824
+  },
+  {
+   "id": "prague-2019",
+   "y": 2019,
+   "lab": "2019",
+   "what": "Prague Castle and Malá Strana from Petřín, photograph",
+   "who": "Jakub Hałun",
+   "lic": "CC BY-SA 4.0",
+   "f": "20190817 View of Prague Castle from Petřín 1353 5555 DxO.jpg",
+   "w": 1280,
+   "h": 843
+  }
+ ],
+ "rome": [
+  {
+   "id": "rome-1493",
+   "y": 1493,
+   "lab": "1493",
+   "what": "Woodcut in Hartmann Schedel’s Nuremberg Chronicle",
+   "who": "Michael Wolgemut and Wilhelm Pleydenwurff",
+   "lic": "PD",
+   "f": "Nuremberg chronicles - ROMA.png",
+   "w": 1600,
+   "h": 697
+  },
+  {
+   "id": "rome-1572",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, colored engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Braun & Hogenberg - Roma.jpg",
+   "w": 1158,
+   "h": 658
+  },
+  {
+   "id": "rome-1734",
+   "y": 1734,
+   "lab": "1734",
+   "what": "The Tiber with Castel Sant’Angelo and St. Peter’s, painting",
+   "who": "Hendrik Frans van Lint",
+   "lic": "PD",
+   "f": "Rome, a view of the Tiber, Castel Sant'Angelo, Ponte Sant'Angleo, Saint Peter's Basilica (by Hendrik Frans van Lint).jpg",
+   "w": 1280,
+   "h": 819
+  },
+  {
+   "id": "rome-1750",
+   "y": 1750,
+   "lab": "1750",
+   "what": "The Piazza del Popolo, painting",
+   "who": "Hendrik Frans van Lint",
+   "lic": "PD",
+   "f": "Rome, a view of the Piazza del Popolo (by Hendrik Frans van Lint).jpg",
+   "w": 1280,
+   "h": 833
+  },
+  {
+   "id": "rome-1853",
+   "y": 1853,
+   "lab": "1853",
+   "what": "St. Peter’s from the Villa Doria Pamphilj, painting",
+   "who": "David Roberts",
+   "lic": "PD",
+   "f": "Veduta di San Pietro, by David Roberts, 1853 (\"Looking Back on Rome\", Saint-St. Peter's Basilica, Rome, Italy).png",
+   "w": 1600,
+   "h": 652
+  },
+  {
+   "id": "rome-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "View over the city from the Palatine, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "f": "View from the Palace of the Caesars, Rome, Italy-LCCN2001700955.jpg",
+   "w": 1216,
+   "h": 849
+  },
+  {
+   "id": "rome-1929",
+   "y": 1929,
+   "lab": "1929",
+   "what": "Aerial photograph of the Tiber bend and the Palace of Justice (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "f": "ETH-BIB-Rom (Tiberquartier) aus 600 m Höhe-Kilimanjaroflug 1929-30-LBS MH02-07-0003.tif",
+   "w": 1280,
+   "h": 922
+  },
+  {
+   "id": "rome-2014",
+   "y": 2014,
+   "lab": "2014",
+   "what": "Panorama with St. Peter’s, photograph",
+   "who": "Livioandronico2013",
+   "lic": "CC BY-SA 4.0",
+   "f": "Panorama of Rome view from Via San Lucio.jpg",
+   "w": 1600,
+   "h": 253
+  }
+ ],
+ "saint-petersburg": [
+  {
+   "id": "saint-petersburg-1753",
+   "y": 1753,
+   "lab": "1753",
+   "what": "The Neva between the Winter Palace and the Academy of Sciences, colored etching (Hermitage)",
+   "who": "Grigory Kachalov and Yefim Vinogradov after Mikhail Makhayev",
+   "lic": "PD",
+   "f": "Makhayev, Kachalov - View of Neva Downstream between Winter Palace and Academy of Sciences 1753.jpg",
+   "w": 1600,
+   "h": 478
+  },
+  {
+   "id": "saint-petersburg-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "St. Isaac’s Cathedral and the monument to Nicholas I, photochrom print",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "The monument to Nicholas I on St Isaac's Square 1890-1900.jpg",
+   "w": 1280,
+   "h": 892
+  },
+  {
+   "id": "saint-petersburg-2019",
+   "y": 2019,
+   "lab": "2019",
+   "what": "View over the center from St. Isaac’s Cathedral, photograph",
+   "who": "kallerna",
+   "lic": "CC BY-SA 4.0",
+   "f": "St. Petersburg panorama 2019.jpg",
+   "w": 1600,
+   "h": 602
+  }
+ ],
+ "seville": [
+  {
+   "id": "seville-1588",
+   "y": 1588,
+   "lab": "1588",
+   "what": "Bird’s-eye view, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 4",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "CC0",
+   "f": "Gezicht op de stad Sevilla, BI-1956-1074-103.jpg",
+   "w": 1280,
+   "h": 865
+  },
+  {
+   "id": "seville-1660",
+   "y": 1660,
+   "lab": "about 1660",
+   "what": "View across the Guadalquivir, painting",
+   "who": "unknown artist",
+   "lic": "PD",
+   "f": "Vista de Sevilla 1660.jpeg",
+   "w": 1280,
+   "h": 768
+  },
+  {
+   "id": "seville-1812",
+   "y": 1812,
+   "lab": "1812",
+   "what": "View from San Juan de Aznalfarache, etching in Alexandre de Laborde, Voyage pittoresque et historique de l’Espagne",
+   "who": "Vauxelle, De Saulx and Duparc",
+   "lic": "PD",
+   "f": "1806-1820, Voyage pittoresque et historique de l'Espagne, tomo II, Vista de Sevilla tomada desde San Juan de Alfarache (cropped).jpg",
+   "w": 1280,
+   "h": 852
+  },
+  {
+   "id": "seville-1854",
+   "y": 1854,
+   "lab": "about 1854",
+   "what": "Bird’s-eye view from above San Salvador, lithograph (L’Espagne à vol d’oiseau)",
+   "who": "Alfred Guesdon",
+   "lic": "PD",
+   "f": "Seville, vue prise au-dessus de San-Salvador LCCN2003688889.jpg",
+   "w": 941,
+   "h": 605
+  },
+  {
+   "id": "seville-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The cathedral and the Giralda, photochrom print (Library of Congress)",
+   "who": "Photoglob Co.",
+   "lic": "PD",
+   "f": "Sevilla. La Catedral LCCN2017660791.jpg",
+   "w": 1228,
+   "h": 899
+  },
+  {
+   "id": "seville-1928",
+   "y": 1928,
+   "lab": "1928",
+   "what": "Aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "f": "ETH-BIB-Sevilla aus 400 m Höhe-Mittelmeerflug 1928-LBS MH02-05-0022.tif",
+   "w": 1184,
+   "h": 855
+  },
+  {
+   "id": "seville-2015",
+   "y": 2015,
+   "lab": "2015",
+   "what": "View from the Giralda over the cathedral roof, photograph",
+   "who": "Sunnya343",
+   "lic": "CC BY-SA 4.0",
+   "f": "View of Seville from Giralda, June 2015 (1).jpg",
+   "w": 1280,
+   "h": 960
+  }
+ ],
+ "stockholm": [
+  {
+   "id": "stockholm-1588",
+   "y": 1588,
+   "lab": "1588",
+   "what": "Stockholm from the north, colored engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 4",
+   "who": "Georg Braun and Frans Hogenberg, after Hieronymus Scholeus",
+   "lic": "PD",
+   "f": "Stockholm-1570 Braun-Hogenberg Civitates-orbis-terrarum.jpg",
+   "w": 1156,
+   "h": 385
+  },
+  {
+   "id": "stockholm-1693",
+   "y": 1693,
+   "lab": "1693",
+   "what": "Stockholm from the east, engraving in Erik Dahlbergh’s Suecia antiqua et hodierna",
+   "who": "Erik Dahlbergh and Willem Swidde",
+   "lic": "PD",
+   "f": "Suecia 1-013 ; Stockholm från öster.jpg",
+   "w": 1600,
+   "h": 463
+  },
+  {
+   "id": "stockholm-1810",
+   "y": 1810,
+   "lab": "about 1810",
+   "what": "Stockholm from the west across Lake Mälaren, watercolor (National Library of Poland)",
+   "who": "Johan Fredrik Martin",
+   "lic": "PD",
+   "f": "Vüe de Stockholm du coté de l'Ouest ou vers le Lac de Malaren.jpg",
+   "w": 1280,
+   "h": 876
+  },
+  {
+   "id": "stockholm-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Kungsträdgården, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "f": "06230u unprocessed.jpg",
+   "w": 1247,
+   "h": 872
+  },
+  {
+   "id": "stockholm-1956",
+   "y": 1956,
+   "lab": "1956",
+   "what": "Slussen and the Old Town from the Katarina Elevator, color photograph",
+   "who": "Inez Bergman",
+   "lic": "PD",
+   "f": "Slussen panorama 1956.jpg",
+   "w": 603,
+   "h": 471
+  },
+  {
+   "id": "stockholm-2020",
+   "y": 2020,
+   "lab": "2020",
+   "what": "Blasieholmen with the Grand Hôtel and the Nationalmuseum, photograph",
+   "who": "Martin Falbisoner",
+   "lic": "CC BY-SA 4.0",
+   "f": "Panorama of Stockholm - August 2020.jpg",
+   "w": 1280,
+   "h": 664
+  }
+ ],
+ "venice": [
+  {
+   "id": "venice-1486",
+   "y": 1486,
+   "lab": "1486",
+   "what": "Woodcut panorama in Bernhard von Breydenbach, Peregrinatio in terram sanctam",
+   "who": "Erhard Reuwich",
+   "lic": "CC BY 4.0",
+   "f": "Venedig, Vedute Erhard Reuwichs in Peregrinationes in terram sanctam, Mainz 1486.jpg",
+   "w": 1600,
+   "h": 270
+  },
+  {
+   "id": "venice-1636",
+   "y": 1636,
+   "lab": "1636",
+   "what": "Bird’s-eye view, colored engraving",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "f": "1636 bird's eye view of Venice by Matthäus Merian.jpg",
+   "w": 1600,
+   "h": 695
+  },
+  {
+   "id": "venice-1688",
+   "y": 1688,
+   "lab": "1688",
+   "what": "The Piazza San Marco, engraving in Merian’s Topographia Italiae",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "f": "L'Altea Parte della Piazza S. Marco Di Venetia.jpg",
+   "w": 1114,
+   "h": 751
+  },
+  {
+   "id": "venice-1840",
+   "y": 1840,
+   "lab": "about 1840",
+   "what": "The Piazzetta with the Doge’s Palace and the Campanile, painting",
+   "who": "Giuseppe Bernardino Bison",
+   "lic": "PD",
+   "f": "Giuseppe Bernardino Bison Piazza San Marco.jpg",
+   "w": 1280,
+   "h": 1009
+  },
+  {
+   "id": "venice-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Grand Canal, photochrom print",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "f": "Grand Canal photochrom 2c.jpg",
+   "w": 1280,
+   "h": 946
+  },
+  {
+   "id": "venice-1953",
+   "y": 1953,
+   "lab": "1953",
+   "what": "Santa Maria della Salute and the Campanile from the water, photograph (Nationaal Archief)",
+   "who": "Willem van de Poll",
+   "lic": "CC0",
+   "f": "Gezicht op Venetië vanaf het schip Esperia met links de kerk S Maria della Salu, Bestanddeelnr 254-2014.jpg",
+   "w": 1280,
+   "h": 1251
+  },
+  {
+   "id": "venice-2017",
+   "y": 2017,
+   "lab": "2017",
+   "what": "The Doge’s Palace and the Riva degli Schiavoni at dawn, photograph",
+   "who": "Greg Zaal and Rico Cilliers",
+   "lic": "CC0",
+   "f": "Backplate – Venice Dawn 2 (Greg Zaal and Rico Cilliers via Poly Haven) DSC07252.jpg",
+   "w": 1280,
+   "h": 615
+  }
+ ],
+ "warsaw": [
+  {
+   "id": "warsaw-1617",
+   "y": 1617,
+   "lab": "1617",
+   "what": "Engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 6",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "f": "Hogenberg View of Warsaw.jpg",
+   "w": 1280,
+   "h": 864
+  },
+  {
+   "id": "warsaw-1696",
+   "y": 1696,
+   "lab": "1696",
+   "what": "The Royal Castle, engraving after Erik Dahlbergh’s panorama (detail), in Pufendorf’s history of Charles X Gustav",
+   "who": "Pérelle, after Erik Dahlbergh",
+   "lic": "PD",
+   "f": "Pérelle View of Warsaw (detail) 01.jpg",
+   "w": 1280,
+   "h": 851
+  },
+  {
+   "id": "warsaw-1770",
+   "y": 1770,
+   "lab": "1770",
+   "what": "View of Warsaw from Praga, painting (Royal Castle, Warsaw)",
+   "who": "Bernardo Bellotto",
+   "lic": "PD",
+   "f": "Bellotto View of Warsaw from Praga.jpg",
+   "w": 1280,
+   "h": 836
+  },
+  {
+   "id": "warsaw-1895",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "Castle Square with Sigismund’s Column, photochrom print (Library of Congress)",
+   "who": "Photoglob Zürich",
+   "lic": "PD",
+   "f": "King Sigismund's monument, Warsaw, Russia (i.e. Warsaw, Poland)-LCCN2001697525.tif",
+   "w": 1216,
+   "h": 826
+  },
+  {
+   "id": "warsaw-1922",
+   "y": 1922,
+   "lab": "early 1920s",
+   "what": "Saxon Square with the Alexander Nevsky Cathedral, aerial photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "f": "A. Nevsky Cathedral in Warsaw (Aerial).jpg",
+   "w": 1280,
+   "h": 890
+  },
+  {
+   "id": "warsaw-2012",
+   "y": 2012,
+   "lab": "2012",
+   "what": "Panorama across the Vistula at night, photograph",
+   "who": "Bosyantek",
+   "lic": "CC BY-SA 3.0",
+   "f": "Panorama of Warsaw by night.jpg",
+   "w": 1600,
+   "h": 340
+  }
+ ]
+}

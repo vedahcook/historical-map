@@ -1,0 +1,133 @@
+{
+ "city": "Nuremberg",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Nuremberg chronicles - Nuremberga.png",
+   "y": 1493,
+   "lab": "1493",
+   "what": "Woodcut in Hartmann Schedel’s Nuremberg Chronicle",
+   "who": "Michael Wolgemut and Wilhelm Pleydenwurff",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.012,
+    0.988,
+    0.99
+   ],
+   "focal": [
+    0.55,
+    0.35
+   ],
+   "why": "colored true view labeled Nuremberga; castle, St. Sebald and St. Lorenz labeled and recognizable"
+  },
+  {
+   "n": 17,
+   "file": "De Merian Frankoniae 092.jpg",
+   "y": 1648,
+   "lab": "1648",
+   "what": "Panorama, engraving in Merian’s Topographia Franconiae",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.03,
+    0.99,
+    0.84
+   ],
+   "focal": [
+    0.56,
+    0.52
+   ],
+   "why": "full panorama with the castle, St. Lorenz and St. Sebald; legend strip trimmed"
+  },
+  {
+   "n": 23,
+   "file": "Ansicht der Burg von Nürnberg vom St. Johannes Kirchhof.jpg",
+   "y": 1840,
+   "lab": "about 1840",
+   "what": "The castle seen from St. John’s Cemetery, steel engraving",
+   "who": "Ernst Rauch, after Ludwig Lange",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.041,
+    0.964,
+    0.795
+   ],
+   "focal": [
+    0.5,
+    0.42
+   ],
+   "why": "the castle, the city’s main landmark, clearly drawn; caption trimmed"
+  },
+  {
+   "n": 34,
+   "file": "Hospital of the Holy Spirit, Nuremberg, Bavaria, Germany-LCCN2002696164.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Hospital of the Holy Spirit on the Pegnitz, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.025,
+    0.98,
+    0.975
+   ],
+   "focal": [
+    0.4,
+    0.42
+   ],
+   "why": "the best-known river scene of the old town, in color; no general view among the P4 candidates"
+  },
+  {
+   "n": 38,
+   "file": "ETH-BIB-Nürnberg-Inlandflüge-LBS MH01-007445.tif",
+   "y": 1933,
+   "lab": "1933",
+   "what": "Aerial photograph of the old town and St. Lorenz (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.2,
+    0.04,
+    0.88,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.46
+   ],
+   "why": "sharp oblique view of the medieval old town before its wartime destruction; St. Lorenz at center"
+  },
+  {
+   "n": 42,
+   "file": "Nuernberg Panorama Nuremberg.jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The old town from the castle hill, photograph",
+   "who": "Philipp Guttmann",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "rooftops of the old town with St. Sebald’s towers"
+  }
+ ],
+ "gaps": "P2: nothing (Merian’s Topographia Franconiae plates are dated by the 1648 volume, so they fall in P1); no second P3 or P4",
+ "notes": "#17: the file is from the second edition of Topographia Franconiae, dated by its first appearance in 1648 per the rules; chosen over Braun and Hogenberg’s 1575 view (#7/#11/#14), where the city is a thin strip behind large costume figures. #18 is a cropped half of the same Merian panorama. #26 (optical print of the town hall) is dated only 1742–1801 and was skipped. #22 is a later reproduction of an 1842 watercolor. #1, #3, #4, #6 are other cities or scenes from the Chronicle."
+}

@@ -1,0 +1,35 @@
+{
+ "city": "Budapest",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "Labeled BVDA, Buda block of the Nuremberg Chronicle; true view"
+  },
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "Vol. 6 plate (1617) of Buda with Pest across the Danube; crop keeps the whole oval view"
+  },
+  {
+   "n": 19,
+   "verdict": "ok",
+   "reason": "Painting of Pest and Buda with the bridge of boats, 1834 per record"
+  },
+  {
+   "n": 22,
+   "verdict": "ok",
+   "reason": "Franz Joseph Bridge photochrom, Detroit Publishing; bridge opened 1896 so late 1890s fits"
+  },
+  {
+   "n": 32,
+   "verdict": "ok",
+   "reason": "1932 Mittelholzer aerial; the long suspension bridge under Gellért Hill is the Elisabeth Bridge; vignette trimmed on the right"
+  },
+  {
+   "n": 40,
+   "verdict": "ok",
+   "reason": "View from Gellért Hill, 2019, CC BY-SA 4.0; Castle, Chain Bridge and river in one frame"
+  }
+ ]
+}

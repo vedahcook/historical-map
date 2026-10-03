@@ -1,0 +1,154 @@
+{
+ "city": "Venice",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Venedig, Vedute Erhard Reuwichs in Peregrinationes in terram sanctam, Mainz 1486.jpg",
+   "y": 1486,
+   "lab": "1486",
+   "what": "Woodcut panorama in Bernhard von Breydenbach, Peregrinatio in terram sanctam",
+   "who": "Erhard Reuwich",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0.012,
+    0.08,
+    0.965,
+    0.9
+   ],
+   "focal": [
+    0.45,
+    0.55
+   ],
+   "why": "original first printed view of Venice (the model for the Nuremberg Chronicle view); focal on the Civitas Venetiarum banner, Campanile and Doge’s Palace"
+  },
+  {
+   "n": 9,
+   "file": "1636 bird's eye view of Venice by Matthäus Merian.jpg",
+   "y": 1636,
+   "lab": "1636",
+   "what": "Bird’s-eye view, colored engraving",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.006,
+    0.01,
+    0.994,
+    0.99
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "high-resolution colored bird’s-eye view, San Marco and the Grand Canal clear"
+  },
+  {
+   "n": 18,
+   "file": "L'Altea Parte della Piazza S. Marco Di Venetia.jpg",
+   "y": 1688,
+   "lab": "1688",
+   "what": "The Piazza San Marco, engraving in Merian’s Topographia Italiae",
+   "who": "Matthäus Merian",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.065,
+    0.1,
+    0.935,
+    0.9
+   ],
+   "focal": [
+    0.5,
+    0.42
+   ],
+   "why": "hand-colored view of the basilica, Campanile and Procuratie; margins trimmed"
+  },
+  {
+   "n": 26,
+   "file": "Giuseppe Bernardino Bison Piazza San Marco.jpg",
+   "y": 1840,
+   "lab": "about 1840",
+   "what": "The Piazzetta with the Doge’s Palace and the Campanile, painting",
+   "who": "Giuseppe Bernardino Bison",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "color view of the Piazzetta: St. Mark’s column, Campanile, clock tower and Doge’s Palace"
+  },
+  {
+   "n": 27,
+   "file": "Grand Canal photochrom 2c.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Grand Canal, photochrom print",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "color Grand Canal scene with palazzi and a gondola"
+  },
+  {
+   "n": 39,
+   "file": "Gezicht op Venetië vanaf het schip Esperia met links de kerk S Maria della Salu, Bestanddeelnr 254-2014.jpg",
+   "y": 1953,
+   "lab": "1953",
+   "what": "Santa Maria della Salute and the Campanile from the water, photograph (Nationaal Archief)",
+   "who": "Willem van de Poll",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "the Salute dome, Dogana and Campanile across the Giudecca Canal"
+  },
+  {
+   "n": 44,
+   "file": "Backplate – Venice Dawn 2 (Greg Zaal and Rico Cilliers via Poly Haven) DSC07252.jpg",
+   "y": 2017,
+   "lab": "2017",
+   "what": "The Doge’s Palace and the Riva degli Schiavoni at dawn, photograph",
+   "who": "Greg Zaal and Rico Cilliers",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.72
+   ],
+   "focal": [
+    0.4,
+    0.4
+   ],
+   "why": "sharp modern view of the Doge’s Palace; no skyline photo among candidates"
+  }
+ ],
+ "gaps": "none (P0–P6 all covered)",
+ "notes": "P0: chose Reuwich’s original 1486 print over the Nuremberg Chronicle view, since #1–#3 are scans of a 1930 facsimile reprint. Merian’s Venice plate is dated 1636 on Commons (sources vary 1635–40). Skipped: #16 (Canaletto attribution and date only presumptive, photo of framed painting), #15 (1704 reissue of the Merian bird’s-eye design), #21 (Guardi drawing includes the unbuilt Teatro Manin project), #31 (poster of the London ‘Venice’ show), #37 (costume genre scene), #42 (a painting of Tivoli). P4 alternative: Melan’s 1854 Doge’s Palace painting (#28), close to Bison’s 1844 subject."
+}

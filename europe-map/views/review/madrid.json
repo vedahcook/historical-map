@@ -1,0 +1,40 @@
+{
+ "city": "Madrid",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "Wyngaerde 1562 drawing detail of the Alcázar; Vienna library record; faded but the earliest true view"
+  },
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "Van der Hagen atlas panorama labeled Madrid, late 17th century (1690s category); midpoint 1688 and range label fine"
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "Joli painting from the south, about 1753; palace, bridge and domes in the crop"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "Laborde engraving of the Paseo de la Florida with the Royal Palace; 1806–20 range honest (Commons credit gives 1820); palace small but visible"
+  },
+  {
+   "n": 12,
+   "verdict": "ok",
+   "reason": "Photoglob photochrom of the Royal Palace; LoC gives 1890; what/who/lic agree"
+  },
+  {
+   "n": 23,
+   "verdict": "ok",
+   "reason": "1928 Mittelholzer aerial of the Royal Palace and old center; dark edge trimmed on the left"
+  },
+  {
+   "n": 30,
+   "verdict": "ok",
+   "reason": "2020 view from the Almudena dome, CC BY-SA 4.0 by Fernando Pascullo; best of the modern candidates"
+  }
+ ]
+}

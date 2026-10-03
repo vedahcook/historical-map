@@ -1,0 +1,133 @@
+{
+ "city": "Budapest",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Nuremberg chronicles - BVJA.png",
+   "y": 1493,
+   "lab": "1493",
+   "what": "Buda, colored woodcut in Hartmann Schedel’s Nuremberg Chronicle",
+   "who": "Michael Wolgemut and Wilhelm Pleydenwurff",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.5
+   ],
+   "why": "labeled BUDA; the book’s own Buda block, a true view with the royal castle and churches"
+  },
+  {
+   "n": 6,
+   "file": "Braun & Hogenberg Buda in the 16. century.jpg",
+   "y": 1617,
+   "lab": "1617",
+   "what": "Buda with Pest across the Danube, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 6",
+   "who": "Georg Braun and Frans Hogenberg, after Joris Hoefnagel",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.04,
+    0.97,
+    0.85
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "colored bird’s-eye view; castle hill, river and walled Pest; no page gutter"
+  },
+  {
+   "n": 19,
+   "file": "View of Pest-Buda from north.jpg",
+   "y": 1834,
+   "lab": "1834",
+   "what": "Pest and Buda joined by the pontoon bridge, seen from the north, painting",
+   "who": "Wicksteed",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.58
+   ],
+   "why": "general river view with the bridge of boats and the Pest skyline, before the Chain Bridge"
+  },
+  {
+   "n": 22,
+   "file": "Franz Joseph's Bridge, looking towards the bridge, Budapest, Hungary, Austro-Hungary-LCCN2002710863.jpg",
+   "y": 1898,
+   "lab": "late 1890s",
+   "what": "The Danube and the Franz Joseph (Liberty) Bridge from Castle Hill, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.02,
+    0.98,
+    0.95
+   ],
+   "focal": [
+    0.4,
+    0.45
+   ],
+   "why": "color general view over the river to Pest"
+  },
+  {
+   "n": 32,
+   "file": "ETH-BIB-Flug über Zugspitze, Wien, Oetztal nach Budapest mit der Lockheed Orion (CH-168)-Weitere-LBS MH02-12-0020.tif",
+   "y": 1932,
+   "lab": "1932",
+   "what": "Elisabeth Bridge and Gellért Hill, aerial photograph (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    0.97,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "clearest of the 1932 set; bridge, Gellért Hill with the Citadel, Pest embankment"
+  },
+  {
+   "n": 40,
+   "file": "20190502 Budapeszt 1651 2148 DxO.jpg",
+   "y": 2019,
+   "lab": "2019",
+   "what": "View from Gellért Hill, photograph",
+   "who": "Jakub Hałun",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "Buda Castle, Chain Bridge and Parliament in one frame"
+  }
+ ],
+ "gaps": "P2: nothing usable.",
+ "notes": "P2: #14 is labeled Merian on Commons but carries an Italian dedication (to a theologian of Cardinal Orsini) and is dated only ‘17th century’; skipped as doubtful. #15 is a cropped, glare-lit detail of Geffels’s 1686 siege painting with no recognizable landmarks; skipped. #18 (Belvedere, dated 1820) shows the Chain Bridge towers (built 1839–49), so its date is wrong; skipped. #22 shows the finished Franz Joseph Bridge (opened 1896), so dated late 1890s rather than the default 1895. #1 is the Nuremberg Chronicle’s distinct Buda view, not a reused stock block."
+}

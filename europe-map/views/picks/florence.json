@@ -1,0 +1,154 @@
+{
+ "city": "Florence",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Nuremberg chronicles - FLORENCIA.png",
+   "y": 1493,
+   "lab": "1493",
+   "what": "Woodcut in Hartmann Schedel’s Nuremberg Chronicle",
+   "who": "Michael Wolgemut and Wilhelm Pleydenwurff",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.022,
+    0.99,
+    0.972
+   ],
+   "focal": [
+    0.53,
+    0.35
+   ],
+   "why": "colored true view labeled Florencia; cathedral dome, Palazzo Vecchio and the Arno recognizable"
+  },
+  {
+   "n": 9,
+   "file": "Genua Ligurum domina - Florentia urbs est Insignis Hetruariae, olim Fluentia dicta.jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Colored engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.05,
+    0.538,
+    0.944,
+    0.92
+   ],
+   "focal": [
+    0.52,
+    0.5
+   ],
+   "why": "highest-resolution colored copy; trimmed to the Florence half (Genoa above)"
+  },
+  {
+   "n": 15,
+   "file": "Gezicht op Florence Veduta della città di Firenze dal muricciolo del prato de’ padri di S.Francesco al Monte (titel op object), RP-P-1985-344.jpg",
+   "y": 1650,
+   "lab": "about 1650",
+   "what": "View from San Francesco al Monte, etching (Rijksmuseum)",
+   "who": "Valerio Spada",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.01,
+    0.085,
+    0.99,
+    0.835
+   ],
+   "focal": [
+    0.53,
+    0.6
+   ],
+   "why": "wide general view with the cathedral and Palazzo Vecchio; legend strip trimmed off"
+  },
+  {
+   "n": 26,
+   "file": "Cole Thomas View of Florence from San Miniato 1837.jpg",
+   "y": 1837,
+   "lab": "1837",
+   "what": "View from San Miniato, painting (Cleveland Museum of Art)",
+   "who": "Thomas Cole",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.62,
+    0.45
+   ],
+   "why": "color, high resolution; cathedral, Palazzo Vecchio, Ponte Vecchio and the Arno"
+  },
+  {
+   "n": 28,
+   "file": "8569 P.Z. Florence, Tuscany, Italy, ca. 1897.jpg",
+   "y": 1897,
+   "lab": "about 1897",
+   "what": "View from Piazzale Michelangelo, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co., under license from Photoglob Zürich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.57,
+    0.4
+   ],
+   "why": "general view across the Arno; cathedral, Palazzo Vecchio and Santa Croce"
+  },
+  {
+   "n": 39,
+   "file": "ETH-BIB-Florenz-Nordafrikaflug 1932-LBS MH02-13-0010.tif",
+   "y": 1932,
+   "lab": "1932",
+   "what": "Aerial photograph of the cathedral and center (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.12,
+    0,
+    0.74,
+    1
+   ],
+   "focal": [
+    0.69,
+    0.4
+   ],
+   "why": "only frame of the series with the cathedral sharp and central; dark window edges trimmed"
+  },
+  {
+   "n": 45,
+   "file": "Panorama di Firenze centro visto dal Piazzale Michelangelo.jpg",
+   "y": 2020,
+   "lab": "2020",
+   "what": "The center from Piazzale Michelangelo, photograph",
+   "who": "PROPOLI87",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.58
+   ],
+   "why": "clear recent view; cathedral dome and Palazzo Vecchio tower"
+  }
+ ],
+ "gaps": "no second P3 or P4 view: Zocchi (#23), Patch (#19) and Marlow (#20) paintings have no reliable date (#19 is dated 17th century but Patch worked in Florence 1755–82; #20’s 1740 is the painter’s birth year)",
+ "notes": "#28 and #29 are the same photochrom plate; #28 kept for its fuller record. #16 (Zocchi’s Piazza della Signoria, likely from his 1744 Scelta di XXIV vedute) is a good landmark scene if a reviewer prefers it over Spada for P2. #41/#42 are photochroms misdated 2007 by the uploader."
+}

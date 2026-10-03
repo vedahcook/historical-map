@@ -1,0 +1,133 @@
+{
+ "city": "Munich",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Nuremberg chronicles - MONACUM.png",
+   "y": 1493,
+   "lab": "1493",
+   "what": "Woodcut in Hartmann Schedel’s Nuremberg Chronicle",
+   "who": "Michael Wolgemut and Wilhelm Pleydenwurff",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.076,
+    0.995,
+    0.98
+   ],
+   "focal": [
+    0.53,
+    0.35
+   ],
+   "why": "colored true view labeled Monacum, the earliest view of Munich; Frauenkirche towers recognizable"
+  },
+  {
+   "n": 8,
+   "file": "Beschreibung der Städt der Welt - Braun & Hogenberg - btv1b52512111k (131 of 378).jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Colored engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.072,
+    0.13,
+    0.492,
+    0.356
+   ],
+   "focal": [
+    0.48,
+    0.4
+   ],
+   "why": "view across the Isar with the Frauenkirche; trimmed to the Munich panel of the six-town plate (1582 German edition, highest resolution)"
+  },
+  {
+   "n": 22,
+   "file": "Canaletto (I) 017.jpg",
+   "y": 1761,
+   "lab": "about 1761",
+   "what": "View across the Isar from the east, painting",
+   "who": "Bernardo Bellotto",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "color, high resolution; Frauenkirche and the city skyline over the river"
+  },
+  {
+   "n": 24,
+   "file": "Munich from the Maximilianeum, Bavaria, Germany-LCCN2002696130.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "View from the Maximilianeum over the Isar, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.032,
+    0.03,
+    0.978,
+    0.97
+   ],
+   "focal": [
+    0.6,
+    0.35
+   ],
+   "why": "general view; Maximilian Bridge, St. Luke’s and the Frauenkirche towers on the skyline"
+  },
+  {
+   "n": 36,
+   "file": "ETH-BIB-München-Weitere-LBS MH02-20-0029.tif",
+   "y": 1933,
+   "lab": "1933",
+   "what": "Aerial photograph of the old town and the Frauenkirche (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.52,
+    0.32
+   ],
+   "why": "sharpest frame of the series with the Frauenkirche near the center"
+  },
+  {
+   "n": 42,
+   "file": "Blick auf Münchner Türme - Richtung Frauenkirche - 02.jpg",
+   "y": 2019,
+   "lab": "2019",
+   "what": "The old town towers and the Frauenkirche, photograph",
+   "who": "Amrei-Marie",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "sharp recent view; Frauenkirche, Old Peter and the town hall towers"
+  }
+ ],
+ "gaps": "P2: nothing usable (#16, credited to Kraus 1687, is a copy of Merian’s 1644 view with a doubtful date and low resolution; #12/#17 are single buildings); no second P3 or P4",
+ "notes": "#4 (colored woodcut view with verses, dated 1572, maker unknown) is a vivid alternative for P1 but its source is unrecorded. #3 is a higher-resolution colored copy of the same Chronicle woodcut as #1, without the title. #11/#13 (Merian’s Marktplatz, colored copy dated 1656) come from Topographia Bavariae, 1644, so they fall in P1, not P2. #25 (New Town Hall photochrom) is a strong landmark alternative to #24. #14 is Venice (a Canaletto in the Alte Pinakothek)."
+}

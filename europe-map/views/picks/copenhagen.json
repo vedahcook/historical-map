@@ -1,0 +1,112 @@
+{
+ "city": "Copenhagen",
+ "picks": [
+  {
+   "n": 7,
+   "file": "København set fra Valby Bakke i 1587.jpg",
+   "y": 1588,
+   "lab": "1588",
+   "what": "Copenhagen from Valby Hill, colored engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 4",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.48,
+    0.4
+   ],
+   "why": "colored land-side view, the oldest view of the city; Our Lady’s spire and the castle on the shore"
+  },
+  {
+   "n": 10,
+   "file": "Gezicht op Kopenhagen, 1659 Coppen-hagen (titel op object), RP-P-OB-81.868.jpg",
+   "y": 1659,
+   "lab": "1659",
+   "what": "Bird’s-eye view from the harbor, etching (Rijksmuseum)",
+   "who": "Rombout van den Hoeye",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.022,
+    0.04,
+    0.97,
+    0.975
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "detailed bird’s-eye view with the castle, the Stock Exchange and the church spires labeled; no fighting shown"
+  },
+  {
+   "n": 19,
+   "file": "H.G.F. Holm - Udsigt over Gammel Avlsgaard mod Rundetårn.png",
+   "y": 1840,
+   "lab": "about 1840",
+   "what": "The Round Tower and Trinity Church over the rooftops, watercolor",
+   "who": "Heinrich Gustav Ferdinand Holm",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.42
+   ],
+   "why": "color; Round Tower clearly recognizable; no general view among the P3 candidates"
+  },
+  {
+   "n": 20,
+   "file": "General view, Copenhagen, Denmark-LCCN2001697981.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "View over the Slotsholmen canal toward St. Nicholas’ tower, photochrom print (Library of Congress)",
+   "who": "Detroit Publishing Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.022,
+    0.02,
+    0.978,
+    0.975
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "color general view over the old center; largest of the four copies of this print"
+  },
+  {
+   "n": 36,
+   "file": "Copenhagen, view from Rundetårn, 20220617 1006 6721.jpg",
+   "y": 2022,
+   "lab": "2022",
+   "what": "The old center from the Round Tower, photograph",
+   "who": "Jakub Hałun",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.42
+   ],
+   "why": "sharp recent view over the historic rooftops; City Hall tower and the cathedral"
+  }
+ ],
+ "gaps": "P0: no candidates. P5: only Isaac Israels pencil sketches (about 1919), an album page of small snapshots and aerials of the airport and harbor, all too weak.",
+ "notes": "#7: plate inscribed ‘Anno Salutis 1587’ (Commons date 1587); dated 1588 here as B&H vol. 4. #10: Rijksmuseum says probably made in connection with the Dutch help during the Swedish siege of February 1659, but it shows an ordinary view, so not marked as an event. #12 (La Rocque, Copenhagen from Christianshavn, 1747) is a good alternative for P2. #14 (Rørbye 1847) is mostly sky and a parapet wall. #20 is the same print as #22–#24 and #34; ‘6394 P.Z.’ on the print (Photoglob Zürich)."
+}

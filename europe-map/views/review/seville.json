@@ -1,0 +1,40 @@
+{
+ "city": "Seville",
+ "checks": [
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "Braun & Hogenberg vol. 4 Sevilla (same plate as #2, page 8 of Liber quartus), 1588; CC0 Rijksmuseum; legend trimmed"
+  },
+  {
+   "n": 13,
+   "verdict": "ok",
+   "reason": "Anonymous panorama, circa 1660 per record; Giralda, Torre del Oro, bridge of boats; crop fine"
+  },
+  {
+   "n": 17,
+   "verdict": "ok",
+   "reason": "Laborde etching, 1812 per record; city is small but Giralda is visible; acceptable as the only true P3 general view"
+  },
+  {
+   "n": 29,
+   "verdict": "ok",
+   "reason": "Guesdon lithograph, about 1854; trim sits on the picture edge"
+  },
+  {
+   "n": 22,
+   "verdict": "ok",
+   "reason": "Photochrom cathedral and Giralda, 1890s; 16:9 crop excludes the small caption"
+  },
+  {
+   "n": 34,
+   "verdict": "ok",
+   "reason": "Mittelholzer aerial, May 1928; trim clears the film-edge marks"
+  },
+  {
+   "n": 39,
+   "verdict": "ok",
+   "reason": "View from the Giralda, 2015, CC BY-SA 4.0, Sunnya343; crop fine"
+  }
+ ]
+}

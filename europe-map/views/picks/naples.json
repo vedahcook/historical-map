@@ -1,0 +1,112 @@
+{
+ "city": "Naples",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Haec est nobilis florens illa Neapolis, Campaniae civitas.jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "Bird’s-eye view, colored engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.05,
+    0.073,
+    0.947,
+    0.858
+   ],
+   "focal": [
+    0.6,
+    0.55
+   ],
+   "why": "highest-resolution colored copy; harbor, Castel Nuovo and the street grid drawn in detail; legend strip trimmed"
+  },
+  {
+   "n": 9,
+   "file": "Gezicht op de haven met een vuurtoren en een paleis te Napels Le Mole, le Cinosura, et le Castell Novo, à Naples (titel op object) Paleizen en monumenten in Venetië, Livorno, Napels en Rome (serietitel), BI-1962-1072-61.jpg",
+   "y": 1705,
+   "lab": "about 1705",
+   "what": "The harbor mole, lighthouse and Castel Nuovo, etching (Rijksmuseum)",
+   "who": "unknown artist, after Johann Wilhelm Baur and Melchior Küsel",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.228,
+    0.195,
+    0.696,
+    0.715
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "only usable P2 view; titled harbor scene with the lighthouse and Castel Nuovo; trimmed to the plate"
+  },
+  {
+   "n": 19,
+   "file": "Veduta di Napoli dalla Villa Ruffo a Capodimonte.jpg",
+   "y": 1845,
+   "lab": "1845",
+   "what": "View from Villa Ruffo at Capodimonte, engraving",
+   "who": "Saverio Corsi",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.052,
+    0.055,
+    0.96,
+    0.84
+   ],
+   "focal": [
+    0.67,
+    0.49
+   ],
+   "why": "general view over the rooftops to Castel Sant’Elmo and the bay; caption trimmed"
+  },
+  {
+   "n": 24,
+   "file": "N°14. Veduta di Napoli - btv1b53264245n (1 of 2).jpg",
+   "y": 1865,
+   "lab": "1865",
+   "what": "The city and the bay with Vesuvius, photograph (Bibliothèque nationale de France)",
+   "who": "Robert Rive",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.134,
+    0.16,
+    0.872,
+    0.86
+   ],
+   "focal": [
+    0.4,
+    0.42
+   ],
+   "why": "classic view with Vesuvius over the bay and city; firm date; mount trimmed"
+  },
+  {
+   "n": 34,
+   "file": "View of Naples, Italy (8049749431).jpg",
+   "y": 1932,
+   "lab": "1932",
+   "what": "The harbor and Castel Sant’Elmo, photograph",
+   "who": "Berit Wallenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.62
+   ],
+   "focal": [
+    0.62,
+    0.4
+   ],
+   "why": "general view across the harbor to the hill with Castel Sant’Elmo; low resolution (1024 px)"
+  }
+ ],
+ "gaps": "P0: none; P6: no modern photograph among the candidates (#35–#40 are photochroms and a Bruegel painting misdated by their uploaders)",
+ "notes": "#28 (color photochrom of the harbor with Castel Sant’Elmo, 1890s) is a good alternative to Rive’s 1865 photograph if color is preferred; the two are too close in date to use both. #39 (Bruegel, Bay of Naples, about 1563) is a fine color alternative for P1 but shows a naval scene. #15 (Drayton engraving) carries a doubtful date of 1800 and was skipped. #12/#13 (optical views) are only dated 1700–1799."
+}

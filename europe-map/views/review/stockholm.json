@@ -1,0 +1,57 @@
+{
+ "city": "Stockholm",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.05,
+     0.058,
+     0.953,
+     0.481
+    ]
+   },
+   "reason": "frame lines at edges of trim; nudge"
+  },
+  {
+   "n": 11,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0.032,
+     1,
+     0.965
+    ]
+   },
+   "reason": "thin paper/frame strip at top and bottom"
+  },
+  {
+   "n": 18,
+   "verdict": "ok",
+   "reason": "city, date, view type, crop and credits agree with the record"
+  },
+  {
+   "n": 23,
+   "verdict": "ok",
+   "reason": "city, date, view type, crop and credits agree with the record"
+  },
+  {
+   "n": 35,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.5,
+     0.36
+    ]
+   },
+   "reason": "original focal cuts off the spire tip; raise focal"
+  },
+  {
+   "n": 41,
+   "verdict": "ok",
+   "reason": "city, date, view type, crop and credits agree with the record"
+  }
+ ]
+}

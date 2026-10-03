@@ -1,0 +1,66 @@
+{
+ "city": "Venice",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "Reuwich woodcut 1486, CC BY 4.0 per record; trim removes the page fold; crop on the center"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "Merian bird’s-eye view labeled VENETIA; 1636 as on Commons"
+  },
+  {
+   "n": 18,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.5,
+     0.42
+    ]
+   },
+   "reason": "With focal y 0.6 the 16:9 crop cuts the upper fifth of the Campanile (spire and angel); 0.42 keeps it whole and only trims foreground figures"
+  },
+  {
+   "n": 26,
+   "verdict": "fix",
+   "fix": {
+    "y": 1830,
+    "lab": "before 1844",
+    "focal": [
+     0.45,
+     0.4
+    ]
+   },
+   "reason": "Commons date 1844 is the year Bison died, and the Hampel auction credit gives no date, so the painting is undated: label it before 1844. Also focal y 0.5 cuts the Campanile tip and the palace pinnacles; 0.4 keeps them"
+  },
+  {
+   "n": 27,
+   "verdict": "ok",
+   "reason": "Grand Canal palazzi with gondola, Detroit Publishing Co. per record, 1890s; crop fine"
+  },
+  {
+   "n": 39,
+   "verdict": "ok",
+   "reason": "Van de Poll photograph, May 1953, CC0; Salute, Dogana, Campanile in the crop"
+  },
+  {
+   "n": 44,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0,
+     1,
+     0.72
+    ],
+    "focal": [
+     0.4,
+     0.4
+    ]
+   },
+   "reason": "Best of the weak modern candidates (Doge’s Palace corner at dawn), but the 16:9 crop was nearly half empty paving; trimming the bottom to 0.72 gives palace arcade plus Riva"
+  }
+ ]
+}

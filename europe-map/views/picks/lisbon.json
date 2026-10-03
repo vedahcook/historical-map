@@ -1,0 +1,133 @@
+{
+ "city": "Lisbon",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Lisbona. Olisipo ... vulgo Lisbona Florentissimum Portugalliae Emporiu.jpg",
+   "y": 1572,
+   "lab": "1572",
+   "what": "View from the Tagus, engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 1",
+   "who": "Georg Braun and Frans Hogenberg",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.05,
+    0.065,
+    0.945,
+    0.555
+   ],
+   "focal": [
+    0.39,
+    0.42
+   ],
+   "why": "hand-colored river view with the castle hill, royal palace and carracks; trimmed to the Lisbon panel (Cascais below cut)"
+  },
+  {
+   "n": 11,
+   "file": "Gezicht op de stad Lissabon, BI-1956-1074-61-1.jpg",
+   "y": 1694,
+   "lab": "1694",
+   "what": "Bird’s-eye view, colored etching in Theatrum Hispaniae",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.085,
+    0.105,
+    0.925,
+    0.755
+   ],
+   "focal": [
+    0.55,
+    0.4
+   ],
+   "why": "colored bird’s-eye view of pre-earthquake Lisbon, castle and riverfront clear; four-language title strip trimmed"
+  },
+  {
+   "n": 19,
+   "file": "Lisbon (BM 1977,0611.88).jpg",
+   "y": 1825,
+   "lab": "1796–1850",
+   "what": "View from the Tagus, lithograph (British Museum)",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.035,
+    0.04,
+    0.965,
+    0.95
+   ],
+   "focal": [
+    0.55,
+    0.62
+   ],
+   "why": "post-earthquake riverfront with the castle above; only post-1755 general view"
+  },
+  {
+   "n": 21,
+   "file": "Panorama of Lisbon, Portugal, 1856 RMG PZ4681.tiff",
+   "y": 1856,
+   "lab": "1856",
+   "what": "Panorama from the Tagus, drawing (Royal Museums Greenwich)",
+   "who": "Edward Gennys Fanshawe",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.03,
+    1,
+    0.86
+   ],
+   "focal": [
+    0.58,
+    0.55
+   ],
+   "why": "dated color panorama of the whole waterfront; album page and caption trimmed"
+  },
+  {
+   "n": 33,
+   "file": "Vista de Lisboa - foto de Serra Ribeiro (Ilustração Portuguesa 22 Set 1919).jpg",
+   "y": 1919,
+   "lab": "1919",
+   "what": "Aerial photograph of the Rossio (Ilustração Portuguesa)",
+   "who": "Serra Ribeiro",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.48,
+    0.55
+   ],
+   "why": "the Rossio with its column, the national theater and Rossio station from the air"
+  },
+  {
+   "n": 37,
+   "file": "Lisboa November 2011-7.jpg",
+   "y": 2011,
+   "lab": "2011",
+   "what": "The Rossio, the Baixa and the castle hill, photograph",
+   "who": "Alvesgaspar",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.52,
+    0.5
+   ],
+   "why": "sharp panorama of the Pombaline center rising to São Jorge castle"
+  }
+ ],
+ "gaps": "P0: no candidates. No 1755 earthquake or ruins view among the candidates.",
+ "notes": "#11 (1694) is a reduced copy of Braun and Hogenberg’s 1598 bird’s-eye plan, so it shows the city of the 1590s; kept as the only P2 option of quality (#14, a 1726 river view, is small and also a copy). #19’s date is the British Museum’s range (lithography era); it shows the rebuilt post-earthquake riverfront, castle and cathedral towers. #17 (an English view of pre-earthquake Lisbon) skipped: date only ‘18th century’. #28 is the Rue de Lisbonne in Paris and #29 is Lisbon, Ohio; #31 shows the Ajuda palace, not São Vicente. P4 1895 panorama photos (#23, #24) are too narrow and only 39 years after 1856."
+}

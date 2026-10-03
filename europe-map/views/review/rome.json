@@ -1,0 +1,45 @@
+{
+ "city": "Rome",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "Schedel Roma woodcut labeled ROMA, a true view; crop keeps Pantheon and center"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "Braun & Hogenberg vol. 1 Roma, 1572; legend and frame trimmed"
+  },
+  {
+   "n": 18,
+   "verdict": "ok",
+   "reason": "Van Lint, Castel Sant’Angelo, 1734 per record; crop fine"
+  },
+  {
+   "n": 24,
+   "verdict": "ok",
+   "reason": "Van Lint, Piazza del Popolo, 1750 per record; crop fine"
+  },
+  {
+   "n": 32,
+   "verdict": "ok",
+   "reason": "Roberts 1853 painting of St. Peter’s from the hills; Commons date 1853-12-31 is just the year; crop keeps the dome"
+  },
+  {
+   "n": 27,
+   "verdict": "ok",
+   "reason": "Photochrom from the Palatine, 1890s; trim removes border and caption; Detroit Publishing Co. is the LoC credit"
+  },
+  {
+   "n": 35,
+   "verdict": "ok",
+   "reason": "Mittelholzer Tiber bend with Palazzo di Giustizia, 15 Dec 1929; only real Rome aerial"
+  },
+  {
+   "n": 45,
+   "verdict": "ok",
+   "reason": "Panorama CC BY-SA 4.0, Livioandronico2013; 16:9 crop at left shows St. Peter’s dome with the roofline"
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "city": "Prague",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "Woodcut labeled PRAGI, true view; crop keeps the castle"
+  },
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "Hoefnagel double view (castle above, city below) in Braun & Hogenberg; Commons files of the same plate (#5, #7) are categorized as 1588 engravings, so 1588 stands (1598 not ruled out). 16:9 crop shows the castle view plus the city skyline"
+  },
+  {
+   "n": 23,
+   "verdict": "replace",
+   "replace_with": 22,
+   "fix": {
+    "y": 1770,
+    "lab": "about 1770",
+    "trim": [
+     0.028,
+     0.042,
+     0.972,
+     0.955
+    ],
+    "focal": [
+     0.5,
+     0.55
+    ]
+   },
+   "reason": "Same artist and date, same Städel series, but #22 is darker and clearer (castle, bridge and Vyšehrad legible) and almost exactly 16:9, so no crop through the title banner as with #23. Record says circa 1770. what, who and lic unchanged (PDM-owner = PD)"
+  },
+  {
+   "n": 20,
+   "verdict": "ok",
+   "reason": "Charles Bridge and castle, Müller 1834; crop fine"
+  },
+  {
+   "n": 26,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.42,
+     0.29
+    ]
+   },
+   "reason": "Portrait photochrom: with focal y 0.33 the 16:9 band starts below the spire tips and cuts them off; 0.29 keeps both spires whole"
+  },
+  {
+   "n": 35,
+   "verdict": "ok",
+   "reason": "Mittelholzer aerial, 1931 (record 1931–32) fine; castle and river clear"
+  },
+  {
+   "n": 41,
+   "verdict": "ok",
+   "reason": "Castle from Petřín, CC BY-SA 4.0, Jakub Hałun; crop fine"
+  }
+ ]
+}

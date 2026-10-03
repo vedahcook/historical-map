@@ -1,0 +1,154 @@
+{
+ "city": "Prague",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Nuremberg chronicles - praha.png",
+   "y": 1493,
+   "lab": "1493",
+   "what": "Woodcut in Hartmann Schedel’s Nuremberg Chronicle",
+   "who": "Michael Wolgemut and Wilhelm Pleydenwurff",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.008,
+    0.02,
+    0.985,
+    0.97
+   ],
+   "focal": [
+    0.4,
+    0.4
+   ],
+   "why": "colored true view labeled Praga; castle on the hill and bridge recognizable"
+  },
+  {
+   "n": 6,
+   "file": "Prága.jpg",
+   "y": 1588,
+   "lab": "1588",
+   "what": "Prague Castle and the city, colored engraving in Braun and Hogenberg, Civitates Orbis Terrarum, vol. 4",
+   "who": "Georg Braun and Frans Hogenberg, after Joris Hoefnagel",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.445,
+    0.97,
+    0.95
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "colored copy of the Hoefnagel double view; castle and St. Vitus above, city and river below"
+  },
+  {
+   "n": 22,
+   "file": "Ansicht von Prag mit der Moldau (SM 5783z).png",
+   "y": 1770,
+   "lab": "about 1770",
+   "what": "View over the Vltava to the castle, drawing (Städel Museum, Frankfurt)",
+   "who": "Johann Baptist Reiser",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.028,
+    0.042,
+    0.972,
+    0.955
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "only 18th-century general view; castle, bridge and river clear though the drawing is pale"
+  },
+  {
+   "n": 20,
+   "file": "Adam August Müller - Udsigt over Prag med Karlsbroen krydser Moldau-floden.jpg",
+   "y": 1834,
+   "lab": "1834",
+   "what": "The Charles Bridge and the castle, painting",
+   "who": "Adam August Müller",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "color; bridge tower, St. Nicholas and the castle skyline across the river"
+  },
+  {
+   "n": 26,
+   "file": "Prag. Teinkirche LCCN2017659160.jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Týn Church on Old Town Square, photochrom print (Library of Congress)",
+   "who": "Photoglob Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.02,
+    0.975,
+    0.98
+   ],
+   "focal": [
+    0.42,
+    0.29
+   ],
+   "why": "iconic landmark, high resolution; no general view among the P4 candidates"
+  },
+  {
+   "n": 35,
+   "file": "ETH-BIB-Prag, Dom St. Veit, Moldau-Inlandflüge-LBS MH01-006306.tif",
+   "y": 1931,
+   "lab": "1931",
+   "what": "Aerial photograph of the castle and St. Vitus Cathedral (ETH Library, Zurich)",
+   "who": "Walter Mittelholzer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.03,
+    0.99,
+    0.985
+   ],
+   "focal": [
+    0.53,
+    0.4
+   ],
+   "why": "oblique aerial; cathedral and river clearly recognizable"
+  },
+  {
+   "n": 41,
+   "file": "20190817 View of Prague Castle from Petřín 1353 5555 DxO.jpg",
+   "y": 2019,
+   "lab": "2019",
+   "what": "Prague Castle and Malá Strana from Petřín, photograph",
+   "who": "Jakub Hałun",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.52,
+    0.34
+   ],
+   "why": "sharp recent view with the castle and cathedral at center"
+  }
+ ],
+ "gaps": "P2: only candidate is half of Merian’s 1650 fold-out panorama with the castle cut off (too weak); the Canaletto at #14 is London",
+ "notes": "#6: Commons dates this Hoefnagel plate 1588 (vol. 4); some sources place it in vol. 5 (1598), worth a check. #26: record says 1890, treated as a rough photochrom date (1890s). #35: date field says 1931–32, same 1931 flight series as the neighboring frames."
+}
