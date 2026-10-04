@@ -303,7 +303,10 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
 .citycard .detail .ico { width: 18px; height: 18px; margin-top: 1px; color: var(--muted); }
 .citycard .detail.on .ico { color: var(--now); }
 .citycard .detail .t { display: flex; gap: 6px; white-space: nowrap; min-width: 0; }
-.citycard .detail .t b { overflow: hidden; text-overflow: ellipsis; font-weight: 600; min-width: 0; }
+.citycard .detail .t b { display: flex; gap: 6px; overflow: hidden; font-weight: 600; min-width: 0; }
+.citycard .detail .t .enm { overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.citycard .detail .t .cdt { flex: none; font-weight: 500; color: var(--muted); font-variant-numeric: tabular-nums; }
+.citycard .detail.on .t .cdt { color: var(--now); }
 .citycard .detail .t a { margin-left: auto; flex: none; align-self: center; font-size: 0.74rem; font-weight: 400; color: var(--muted); text-decoration: underline; text-decoration-color: var(--faint); text-underline-offset: 2px; }
 .citycard .detail .t a:hover { color: var(--accent); }
 .citycard .detail .xt { color: var(--muted); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
@@ -319,12 +322,15 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
 /* the tab's list, then the credit; they scroll together */
 .citycard .scroll { position: relative; flex: 1; min-height: 0; overflow-y: auto; margin-top: 10px; display: flex; flex-direction: column; }
 .citycard .tlist { flex: none; list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px; font-size: 0.8rem; line-height: 1.3; color: var(--muted); }
-.citycard .tlist li { display: grid; grid-template-columns: 18px 84px minmax(0, 1fr); gap: 6px; align-items: start; padding: 2px 2px; cursor: pointer; border-radius: 4px; }
+.citycard .tlist li { display: grid; grid-template-columns: 18px 94px minmax(0, 1fr); gap: 6px; align-items: start; padding: 2px 2px; cursor: pointer; border-radius: 4px; }
 .citycard .tlist li:hover { background: var(--sunk); }
-.citycard .tlist li.on { color: var(--ink); font-weight: 600; }
+.citycard .tlist li.on, .citycard .tlist li.on:hover { color: var(--ink); font-weight: 600; background: color-mix(in srgb, var(--now) 11%, var(--surface)); }
 .citycard .tlist li.on .ico { color: var(--now); }
 .citycard .tlist li > span:nth-child(2) { padding-left: 10px; font-variant-numeric: tabular-nums; }
-.citycard .tlist li.on > span:nth-child(2) { color: var(--now); }
+.citycard .tlist .d { display: inline-block; white-space: nowrap; margin-left: -5px; padding: 0 5px; border-radius: 3px; font-variant-numeric: tabular-nums; }
+.citycard .tlist.ev li { grid-template-columns: 18px minmax(0, 1fr); }
+.citycard .tlist.ev .d { margin-left: 0; padding: 0 4px; color: var(--faint); }
+.citycard .tlist li.on .d, .citycard .tlist li.on .rng { background: var(--now); color: var(--now-ink); }
 .citycard .tlist .ico { width: 16px; height: 16px; color: var(--muted); }
 .citycard .tlist .sw { width: 12px; height: 12px; border-radius: 2px; margin: 2px 0 0 2px; }
 .citycard .tlist .by { display: block; font-weight: 400; color: var(--faint); }
@@ -337,10 +343,9 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
 .citycard .tlist .arrow { stroke-width: 1.8; margin-top: 1px; }
 .citycard .tlist .rise { color: var(--rise); } .citycard .tlist .fall { color: var(--fall); }
 .citycard .tlist li.chg b { font-weight: 700; }
-.citycard .tlist.pop li { grid-template-columns: 18px 92px minmax(0, 1fr); }
 .citycard .tlist .rng { white-space: nowrap; display: inline-block; margin-left: -5px; padding: 0 5px; border-radius: 3px; background: var(--shade); }
-.citycard .tlist li.on .rng, .citycard .tlist li.hov .rng, .citycard .tlist li:hover .rng { background: var(--shade-on); }
-.citycard .tlist li.hov { background: var(--sunk); }
+.citycard .tlist li.hov:not(.on) .rng, .citycard .tlist li:not(.on):hover .rng { background: var(--shade-on); }
+.citycard .tlist li.hov:not(.on) { background: var(--sunk); }
 .citycard .tlist .evs { display: block; margin-top: 1px; font-weight: 400; color: var(--muted); }
 .citycard .tlist li.on .evs { color: var(--ink); }
 .citycard .credit { flex: none; margin-top: auto; padding: 16px 2px 0; font-size: 0.74rem; line-height: 1.35; color: var(--faint); }
@@ -1738,13 +1743,13 @@ function eventsPanel(c) {
     let r = rowEnd.findIndex(y => e.y - y >= GAP); if (r < 0) r = rowEnd.length < 4 ? rowEnd.length : rowEnd.indexOf(Math.min(...rowEnd));
     rowEnd[r] = e.y; rows = Math.max(rows, r + 1);
     const i = E.all.indexOf(e);
-    return `<button type="button" class="ev${e === cardSel ? ' sel' : e.y === year ? ' on' : ''}" data-e="${i}" aria-pressed="${e === cardSel}" style="left:${cpct(e.y)};top:${r * 21}px" title="${evWhen(e)}: ${esc(e.n)}" aria-label="${evWhen(e)}: ${esc(e.n)} (${KIND[evKind(e)]})">${cico(evKind(e))}</button>`;
+    return `<button type="button" class="ev${e === cardSel ? ' sel' : e.y === year ? ' on' : ''}" data-e="${i}" aria-pressed="${e === cardSel}" style="left:${cpct(e.y)};top:${r * 21}px" title="${esc(e.n)}, ${evWhen(e)}" aria-label="${esc(e.n)}, ${evWhen(e)} (${KIND[evKind(e)]})">${cico(evKind(e))}</button>`;
   }).join('');
   const past = E.all.filter(e => e.y <= year), last = cardSel || past[past.length - 1] || null;
-  const detail = last ? `<div class="detail ev${last.y === year ? ' on' : ''}" role="button" tabindex="0" data-e="${E.all.indexOf(last)}">${cico(evKind(last))}<div><div class="t"><b data-dates="${esc([evWhen(last), evWhen(last, 1), String(last.y)].filter((v, i, a) => a.indexOf(v) === i).join('|'))}"><span class="cdt">${evWhen(last)}</span> · ${esc(last.n)}</b>${wikiLink(last.n, last.t, last.q)}</div>` +
+  const detail = last ? `<div class="detail ev${last.y === year ? ' on' : ''}" role="button" tabindex="0" data-e="${E.all.indexOf(last)}">${cico(evKind(last))}<div><div class="t"><b data-dates="${esc([evWhen(last), evWhen(last, 1), String(last.y)].filter((v, i, a) => a.indexOf(v) === i).join('|'))}"><span class="enm">${esc(last.n)}</span><span class="cdt">${evWhen(last)}</span></b>${wikiLink(last.n, last.t, last.q)}</div>` +
       `<div class="xt">${last.y === year || cardSel === last ? '' : `<span class="ago">${yrs(year - last.y)} earlier.</span>`}</div></div></div>`
     : `<div class="detail evx empty">No events listed before ${E.all[0].y}.</div>`;
-  const list = E.all.map((e, i) => `<li role="button" tabindex="0" data-e="${i}"${e === last ? ' class="on"' : ''}>${cico(evKind(e))}<span>${evSpan(e)}</span><span>${esc(e.n)}</span></li>`).join('');
+  const list = E.all.map((e, i) => `<li role="button" tabindex="0" data-e="${i}"${e === last ? ' class="on"' : ''}>${cico(evKind(e))}<span>${esc(e.n)} <span class="d">${evSpan(e)}</span></span></li>`).join('');
   const m = eimgOf(last);
   return { band, detail, list, h: rows * 21 + 3, last, foot: m ? eimgCredit(m) : '' };
 }
@@ -1767,7 +1772,7 @@ function heldTab(c) {
   const cur = runs.find(r => r.a <= year && year <= r.b), u = cityUnit(c, year), fi = u >= 0 ? flagOf(u, year) : -1;
   const detail = cur ? `<div class="detail held">${fi >= 0 ? cardFlag(fi, 38) : `<span class="swb" style="background:${cur.bg}"></span>`}<div><div class="hold">${esc(cur.t)}</div><div class="xt">${cardSpan(cur)}${cur.by ? ` · ${esc(cur.by)}` : ''}${cur.b > cur.a ? ` · ${yrs(cur.b - cur.a + 1)}` : ''}</div></div></div>`
     : `<div class="detail held empty">Loading the maps of earlier years…</div>`;
-  const list = runs.map(r => `<li role="button" tabindex="0" data-y="${r.a}"${r === cur ? ' class="on"' : ''}><span class="sw" style="background:${r.bg}"></span><span>${r.a}${r.b > r.a ? '–' + (r.b === Y1 ? '' : r.b) : ''}</span><span>${esc(r.t)}${r.by ? `<span class="by">${esc(r.by)}</span>` : ''}</span></li>`).join('');
+  const list = runs.map(r => `<li role="button" tabindex="0" data-y="${r.a}"${r === cur ? ' class="on"' : ''}><span class="sw" style="background:${r.bg}"></span><span><span class="d">${r.a}${r.b > r.a ? '–' + (r.b === Y1 ? '' : r.b) : ''}</span></span><span>${esc(r.t)}${r.by ? `<span class="by">${esc(r.by)}</span>` : ''}</span></li>`).join('');
   return { band, detail, list, foot: cur && fi >= 0 ? cardFlagCredit(fi) : '' };
 }
 // sudden rises and falls, from the figures themselves: between two figures, a fall of 15% or more, or a rise of
@@ -1835,7 +1840,7 @@ function popPanel(c, p) {
       `<span class="evs">${!CEV ? '' : q.ev.length ? 'In these years: ' + q.ev.map(e => `${esc(e.n)} (${evSpan(e)})`).join('; ') : 'No events listed in these years.'}</span></span></li>`).join('')
     : `<li class="none">No sudden rises or falls between the figures.</li>`;
   const on = [...c.P].reverse().find(q => q[0] <= year);
-  const figs = c.P.map((q, j) => `<li role="button" tabindex="0" class="fig${q === on ? ' on' : ''}" data-y="${q[0]}"><span></span><span>${q[0]}</span><span>${fmt(q[1])}${!j || c.P[j - 1][2] !== q[2] ? `<span class="by">${esc(CSRC[q[2]])}</span>` : ''}</span></li>`).join('');      // the source when it changes
+  const figs = c.P.map((q, j) => `<li role="button" tabindex="0" class="fig${q === on ? ' on' : ''}" data-y="${q[0]}"><span></span><span><span class="d">${q[0]}</span></span><span>${fmt(q[1])}${!j || c.P[j - 1][2] !== q[2] ? `<span class="by">${esc(CSRC[q[2]])}</span>` : ''}</span></li>`).join('');      // the source when it changes
   const list = `<li class="lsub">Sudden rises and falls</li>${changes}<li class="lsub">Every figure</li>${figs}`;
   const foot = `Sources: ${[...new Set(c.P.map(q => q[2]))].map(i => esc(CSRC[i])).join('; ')}. Open dots: estimates for the wider city.`;
   return { band, detail: `<div class="detail popd">${popDetail(c, p)}</div>`, list, foot };
@@ -1938,9 +1943,9 @@ function renderCityCard(d) {
   pop.dataset.city = c.i; pop.dataset.tab = cardOverlay || 'card';
   pop.setAttribute('aria-label', `${c.n} in ${year}`);
   wireCard(d);
-  const fitDates = () => {      // the event's full date if it fits on the line, else the short month, else the year
-    const tb = pop.querySelector('.detail .t b[data-dates]');
-    if (tb && tb.clientWidth) for (const s of tb.dataset.dates.split('|')) { tb.querySelector('.cdt').textContent = s; if (tb.scrollWidth <= tb.clientWidth) break; }
+  const fitDates = () => {      // the event's full date if the name still fits on the line, else the short month, else the year
+    const tb = pop.querySelector('.detail .t b[data-dates]'), nm = tb && tb.querySelector('.enm');
+    if (nm && tb.clientWidth) for (const s of tb.dataset.dates.split('|')) { tb.querySelector('.cdt').textContent = s; if (nm.scrollWidth <= nm.clientWidth) break; }
   };
   const scrollLists = () => pop.querySelectorAll('.scroll[data-tab]').forEach(list => {      // where it was; the year's row in view (not every figure's)
     const on = list.querySelector('li.on:not(.fig)'); list.scrollTop = cardScroll[list.dataset.tab] || 0;
