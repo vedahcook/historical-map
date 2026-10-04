@@ -178,11 +178,7 @@ button, select, input { font: inherit; color: inherit; }
 .yearstamp { position: absolute; left: 14px; top: 8px; font-family: var(--serif); font-weight: 600; font-variant-numeric: lining-nums tabular-nums; font-size: 2.5rem; line-height: 1; color: var(--ink); opacity: 0.8; pointer-events: none; }
 
 /* time bar */
-.timebar { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 6px 12px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 10px 14px; }
-.tctl { display: flex; align-items: center; gap: 4px; }
-.tctl button { width: 38px; height: 38px; border-radius: 9px; border: 1px solid var(--line); background: var(--surface); cursor: pointer; display: grid; place-items: center; }
-.tctl button.play { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
-.tctl svg { width: 16px; height: 16px; fill: currentColor; }
+.timebar { display: grid; grid-template-columns: minmax(0, 1fr); gap: 6px 12px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 10px 14px; }
 .track { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
 .spark { height: 26px; display: block; width: 100%; }
 .spark rect { fill: var(--faint); }
@@ -190,32 +186,8 @@ button, select, input { font: inherit; color: inherit; }
 #year { width: 100%; accent-color: var(--accent); margin: 0; }
 .ticks { position: relative; height: 16px; font-size: 0.72rem; color: var(--faint); }
 .ticks span { position: absolute; transform: translateX(-50%); }
-/* the zoomed timeline: a lane of event icons over the slider, arrows to move along, and an "All years" button to zoom out */
-.tlane { position: relative; height: 0; transition: height .15s; }
-.timebar.zoomed .tlane { height: 20px; }
-.tlane button { position: absolute; top: 1px; width: 18px; height: 18px; margin-left: -9px; padding: 0; border: 0; background: none; cursor: pointer; border-radius: 50%; }
-.tlane button svg { display: block; width: 18px; height: 18px; }
-.tlane button.on .ki circle, .events button[aria-pressed="true"] .ki circle { fill: var(--accent); }
 .track { position: relative; }
-.timebar.zoomed .spark, .timebar.zoomed .tlane { cursor: grab; touch-action: pan-y; }
-.tctl .tz { display: none; width: auto; padding: 0 11px 0 8px; gap: 5px; font-size: 0.8rem; font-weight: 600; color: var(--accent); border-color: var(--accent); white-space: nowrap; }
-.tctl .tz svg { width: 15px; height: 15px; }
-.timebar.zoomed .tctl .tz { display: flex; align-items: center; }
 /* zoomed in: a bar of all the years above, with the stretch shown marked and joined to the timeline below it */
-.tov { display: none; align-items: center; gap: 6px; height: 18px; font-size: 0.68rem; color: var(--faint); font-variant-numeric: tabular-nums; }
-.timebar.zoomed .tov { display: flex; }
-.tovbar { position: relative; flex: 1; height: 18px; cursor: pointer; touch-action: none; }
-.tovbar::before { content: ""; position: absolute; left: 0; right: 0; top: 7px; height: 4px; border-radius: 2px; background: var(--line); }
-.tovwin { position: absolute; top: 3px; height: 12px; min-width: 7px; border: 1.5px solid var(--accent); border-radius: 3px; background: color-mix(in srgb, var(--accent) 22%, var(--surface)); box-sizing: border-box; pointer-events: none; }
-.tovbar:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 3px; }
-.tfun { display: none; width: 100%; height: 12px; overflow: visible; }
-.timebar.zoomed .tfun { display: block; }
-.tfun path { fill: color-mix(in srgb, var(--accent) 7%, transparent); stroke: var(--accent); stroke-opacity: 0.4; stroke-width: 1; }
-.tpan { position: absolute; top: 48px; display: none; width: 24px; height: 24px; border: 1px solid var(--line); border-radius: 50%; background: var(--surface); color: var(--muted); cursor: pointer; font-size: 0.9rem; line-height: 1; padding: 0; z-index: 1; }
-.timebar.zoomed .tpan { display: grid; place-items: center; }
-.tpan.l { left: -12px; } .tpan.r { right: -12px; }
-.timebar.nolane .tlane { display: none; }
-.timebar.nolane .tpan { top: 35px; }
 .events button .ki { width: 15px; height: 15px; vertical-align: -3px; margin-right: 4px; }
 .events { grid-column: 1 / -1; position: relative; display: flex; flex-wrap: nowrap; gap: 6px; overflow-x: auto; scrollbar-width: thin; padding-bottom: 4px; }
 .events > * { flex: none; }
@@ -377,8 +349,6 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
 }
 @media (max-width: 520px) {
   /* on a phone the year controls sit above the slider, so the slider has the full width */
-  .timebar { grid-template-columns: minmax(0, 1fr); }
-  .tctl { justify-content: center; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
@@ -428,19 +398,8 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
         <div class="loading" id="loading" role="status" hidden></div>
       </div>
       <div class="timebar" id="timebar">
-        <div class="tctl">
-          <button type="button" id="prev" aria-label="Previous year"><svg viewBox="0 0 16 16"><path d="M10.5 3 5 8l5.5 5z"/></svg></button>
-          <button type="button" id="play" class="play" aria-label="Play through the years"><svg viewBox="0 0 16 16" id="playicon"><path d="M4 2.5v11L13 8z"/></svg></button>
-          <button type="button" id="next" aria-label="Next year"><svg viewBox="0 0 16 16"><path d="M5.5 3 11 8l-5.5 5z"/></svg></button>
-          <button type="button" id="tzout" class="tz" aria-label="Zoom the timeline out to all years" title="Zoom out to all years"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="4.6" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M4.6 6.8h4.4M10.3 10.3 14 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>All years</button>
-        </div>
         <div class="track" id="track">
-          <div class="tov" id="tov"><span>1000</span><div class="tovbar" id="tovbar" role="slider" tabindex="0" aria-label="All years: drag to move quickly through time" aria-valuemin="1000" aria-valuemax="2026"><div class="tovwin" id="tovwin"></div></div><span>2026</span></div>
-          <svg class="tfun" id="tfun" aria-hidden="true"><path/></svg>
-          <div class="tlane" id="tlane" aria-label="Events in these years"></div>
           <svg class="spark" id="spark" preserveAspectRatio="none" aria-hidden="true"></svg>
-          <button type="button" class="tpan l" id="tpl" aria-label="Earlier years">‹</button>
-          <button type="button" class="tpan r" id="tpr" aria-label="Later years">›</button>
           <input type="range" id="year" min="1000" max="2026" step="1" value="1815" aria-label="Year">
           <div class="ticks" id="ticks"></div>
         </div>
@@ -650,7 +609,7 @@ function applyView() {
     p.setAttribute('width', w); p.setAttribute('height', w); p.firstChild.setAttribute('width', w * t); p.firstChild.setAttribute('height', w);
     if (p.lastChild !== p.firstChild) { p.lastChild.setAttribute('width', w); p.lastChild.setAttribute('height', w * t); }
   }
-  drawTerrain(); drawLabels(); drawBadges(); drawPin(); drawCities(); scopeChanged();
+  drawTerrain(); drawLabels(); drawBadges(); drawPin(); drawCities();
 }
 function zoomAt(f, cx, cy) {
   const [x, y, w, h] = view; const nw = Math.min(Math.max(w / f, 40), VB0[2] * 1.3), k = nw / w;
@@ -2059,24 +2018,16 @@ function setYear(y) {
   const pu = focusUnit(); year = y; const G = yearGeo(year);
   if (pu >= 0 && G && !G.fills.some(g => g.u === pu) && !(place && place.city != null)) { place = null; selCity = null; }   // (a city's popup instead follows whoever holds the city)   // the highlighted country no longer exists: highlight nothing
   if (selAlt != null && !altsNow().some(a => a.i === selAlt)) selAlt = null;
-  if (tz && (year < tz.a || year > tz.b)) { const sp = tz.b - tz.a; tz = { a: Math.max(Y0, Math.min(Y1 - sp, year - Math.round(sp / 3))), b: 0 }; tz.b = tz.a + sp; applyTimeline(); }
   draw();
 }
 let pendingYear = null;
 $('year').addEventListener('input', e => { const first = pendingYear == null; pendingYear = +e.target.value; if (first) requestAnimationFrame(() => { const y = pendingYear; pendingYear = null; setYear(y); }); });
-$('prev').onclick = () => setYear(year - 1); $('next').onclick = () => setYear(year + 1);
 let timer = null;
-function stop() { clearInterval(timer); timer = null; $('playicon').innerHTML = '<path d="M4 2.5v11L13 8z"/>'; $('play').setAttribute('aria-label', 'Play through the years'); }
-$('play').onclick = () => {
-  if (timer) return stop();
-  if (year >= Y1) setYear(Y0);
-  $('playicon').innerHTML = '<path d="M3.5 2.5h3v11h-3zM9.5 2.5h3v11h-3z"/>'; $('play').setAttribute('aria-label', 'Pause');
-  timer = setInterval(() => { if (year >= Y1) return stop(); setYear(year + 1); }, 650);
-};
+function stop() { clearInterval(timer); timer = null; }          // (nothing plays through the years now; kept for the calls that stop it)
 document.addEventListener('keydown', e => { if (!flagBig.hidden || e.target.closest('input, button, a, summary, [role=button]')) return; if (e.key === 'ArrowLeft') setYear(year - 1); if (e.key === 'ArrowRight') setYear(year + 1); });
 
 // ---------- timeline: change per year and key events; filtered to the highlighted country ----------
-[1000, 1200, 1400, 1600, 1800, 2000].forEach(y => { const s = document.createElement('span'); s.textContent = y; s.style.left = ((y - Y0 + 0.5) / NY * 100) + '%'; $('ticks').appendChild(s); });   // (applyTimeline redraws these when zoomed)
+[1000, 1200, 1400, 1600, 1800, 2000].forEach(y => { const s = document.createElement('span'); s.textContent = y; s.style.left = ((y - Y0 + 0.5) / NY * 100) + '%'; $('ticks').appendChild(s); });
 const EVENTS = [[1017, 'Cnut rules England'], [1032, 'Caliphate of Córdoba ends'], [1067, 'Norman Conquest'], [1072, 'Battle of Manzikert'],
   [1085, 'Castile takes Toledo'], [1099, 'First Crusade'], [1131, 'Kingdom of Sicily'], [1155, 'Angevin Empire'], [1204, 'Fourth Crusade'],
   [1213, 'Las Navas de Tolosa'], [1241, 'Mongols take Kiev'], [1262, 'Byzantium restored'], [1282, 'Sicilian Vespers'], [1346, 'Serbian Empire'],
@@ -2109,45 +2060,7 @@ function unitEvents(u) {
   const top = (a, n) => a.sort((p, q) => q.w - p.w).slice(0, n), ev = Object.values(by);
   return [...top(ev.filter(e => e.y < 1800), 10), ...top(ev.filter(e => e.y >= 1800), 12)].sort((a, b) => a.y - b.y).map(e => ({ y: e.y, t: e.t.join('; ') }));
 }
-// ---------- the timeline, zoomed in ----------
-// Letting go of the slider zooms the timeline in around the year: from a few years to a few centuries, as many as it
-// takes to hold about ten events in the part of the map on screen (or in the highlighted country). It then shows those
-// events as icons at their dates, and lists them below. The arrows (or dragging the bar) move along at that scale.
-// Above it, a thin bar of all the years marks the stretch shown, joined to the timeline below by two lines; dragging
-// along that bar moves quickly through all the years, and letting go zooms in again where it stops. The "All years"
-// button by the year controls zooms back out.
-let tz = null;                                          // {a, b}: the first and last year shown, when zoomed in
-const evT = e => e.y + (e.md ? (Math.floor(e.md / 100) - 1 + (e.md % 100 ? (e.md % 100 - 0.5) / 31 : 0.5)) / 12 : 0.5);   // its date as a fraction of years
-function scopedEvents() {
-  if (!ALLEV) return [];
-  const fu = focusUnit(), k = pxPerKm(), r = svg.getBoundingClientRect(); if (!k) return [];
-  const x0 = shown[0], y0 = shown[1], x1 = x0 + r.width / k, y1 = y0 + r.height / k;
-  return ALLEV.filter(e => { const c = CITIES[e.ci]; return fu >= 0 ? cityUnit(c, e.y) === fu : c.x >= x0 && c.x <= x1 && c.y >= y0 && c.y <= y1; });
-}
-const SPANS = [6, 12, 24, 50, 100, 200, 400];
-function zoomTimeline(y) {
-  const evs = scopedEvents(); let span = SPANS[SPANS.length - 1];
-  for (const sp of SPANS) { const a = y - sp / 2, b = y + sp / 2 + 1; if (evs.filter(e => evT(e) >= a && evT(e) <= b).length >= 10) { span = sp; break; } }
-  setWindow(Math.round(y - span / 2), span);
-}
-function setWindow(a, span) {
-  span = Math.min(span, Y1 - Y0); a = Math.max(Y0, Math.min(Y1 - span, a));
-  tz = { a, b: a + span }; applyTimeline();
-}
-function applyTimeline() {
-  const yr = $('year'), a = tz ? tz.a : Y0, b = tz ? tz.b : Y1, n = b - a + 1;
-  $('timebar').classList.toggle('zoomed', !!tz);
-  yr.min = a; yr.max = b; yr.value = year;
-  $('spark').setAttribute('viewBox', `${a - Y0} 0 ${n} 26`);
-  // year labels at a step that suits the span
-  // year labels about 44 px apart at least
-  const room = Math.max(3, Math.floor(($('ticks').clientWidth || 600) / 44));
-  const step = [1, 2, 5, 10, 20, 25, 50, 100, 200, 250].find(st => n / st <= room) || 500;
-  const tk = $('ticks'); tk.textContent = '';
-  for (let y = Math.ceil(a / step) * step; y <= b; y += step) { const s = document.createElement('span'); s.textContent = y; s.style.left = ((y - a + 0.5) / n * 100) + '%'; tk.appendChild(s); }
-  $('tpl').disabled = a <= Y0; $('tpr').disabled = b >= Y1;
-  timelineFor = undefined; renderTimeline();
-}
+// ---------- the timeline: all the years, 1000 to 2026, on one even scale ----------
 // a city event picked on the timeline: go to its year and open its city (the map moves to the city if it is off screen)
 function openTimelineEvent(e) {
   stop(); const c = CITIES[e.ci];
@@ -2156,53 +2069,12 @@ function openTimelineEvent(e) {
   if (sx < 30 || sy < 30 || sx > r.width - 30 || sy > r.height - 30) { view = [c.x - view[2] / 2, c.y - view[3] / 2, view[2], view[3]]; applyView(); }
   openEvent({ e, c });
 }
-$('year').addEventListener('change', () => {
-  if (!tz) return zoomTimeline(year);
-  const sp = tz.b - tz.a; if (year - tz.a < sp * 0.1 || tz.b - year < sp * 0.1) setWindow(Math.round(year - sp / 2), sp);   // near an end: center it
-});
-$('tzout').onclick = () => { tz = null; applyTimeline(); };
-// the bar of all the years: where the stretch shown sits, and the lines from it to the ends of the zoomed timeline
-function updTov() {
-  if (!tz) return;
-  const bar = $('tovbar'), w = $('tovwin'), Wb = bar.clientWidth; if (!Wb) return;
-  const l = (tz.a - Y0) / NY * Wb, r = (tz.b + 1 - Y0) / NY * Wb, ww = Math.max(7, r - l), wl = Math.min(Wb - ww, Math.max(0, (l + r) / 2 - ww / 2));
-  w.style.left = wl + 'px'; w.style.width = ww + 'px';
-  bar.setAttribute('aria-valuenow', year); bar.setAttribute('aria-valuetext', `${year}; showing ${tz.a} to ${tz.b}`);
-  const tr = $('track').getBoundingClientRect(), br = bar.getBoundingClientRect(), f = $('tfun'), H = 12, x0 = br.left - tr.left + wl, x1 = x0 + ww;
-  f.setAttribute('viewBox', `0 0 ${tr.width} ${H}`);
-  f.querySelector('path').setAttribute('d', `M${x0} 0L0 ${H}H${tr.width}L${x1} 0Z`);
-}
-new ResizeObserver(() => updTov()).observe($('timebar'));
-$('timebar').classList.toggle('nolane', !EVENT_ICONS);                    // (the lane of event icons)
-{
-  const bar = $('tovbar'); let on = false;
-  const at = ev => { const r = bar.getBoundingClientRect(); return Math.round(Y0 + Math.max(0, Math.min(1, (ev.clientX - r.left) / r.width)) * (NY - 1)); };
-  bar.addEventListener('pointerdown', ev => { if (!tz) return; on = true; bar.setPointerCapture(ev.pointerId); stop(); setYear(at(ev)); });
-  bar.addEventListener('pointermove', ev => { if (on) setYear(at(ev)); });
-  const end = () => { if (!on) return; on = false; zoomTimeline(year); };
-  bar.addEventListener('pointerup', end); bar.addEventListener('pointercancel', end);
-  bar.addEventListener('keydown', ev => { const d = { ArrowLeft: -10, ArrowRight: 10, PageDown: -50, PageUp: 50 }[ev.key]; if (!d) return; ev.preventDefault(); setYear(year + d); clearTimeout(bar.t); bar.t = setTimeout(() => zoomTimeline(year), 600); });
-}
-$('tpl').onclick = () => tz && setWindow(tz.a - Math.ceil((tz.b - tz.a) / 2), tz.b - tz.a);
-$('tpr').onclick = () => tz && setWindow(tz.a + Math.ceil((tz.b - tz.a) / 2), tz.b - tz.a);
-// dragging the bar (or the lane of icons) sideways moves along the years
-{
-  let d0 = null;
-  const start = ev => { if (!tz || ev.target.closest('button')) return; d0 = { x: ev.clientX, a: tz.a, w: $('spark').getBoundingClientRect().width, moved: false }; ev.currentTarget.setPointerCapture(ev.pointerId); };
-  const move = ev => { if (!d0) return; const dy = Math.round((ev.clientX - d0.x) / d0.w * (tz.b - tz.a + 1)); if (dy) d0.moved = true; if (d0.a - dy !== tz.a) setWindow(d0.a - dy, tz.b - tz.a); };
-  const end = () => { d0 = null; };
-  for (const id of ['spark', 'tlane']) { const e = $(id); e.addEventListener('pointerdown', start); e.addEventListener('pointermove', move); e.addEventListener('pointerup', end); e.addEventListener('pointercancel', end); }
-}
-// the scope (what is on screen, or the highlighted country) changed: the zoomed timeline's events follow, a moment later
-let scopeTimer = 0;
-function scopeChanged() { if (!tz) return; clearTimeout(scopeTimer); scopeTimer = setTimeout(() => { timelineFor = undefined; renderTimeline(); }, 250); }
 let timelineFor = undefined;
 function renderTimeline() {
-  updTov();
   const u = focusUnit(), key = u >= 0 ? u : null;
   if (key !== timelineFor) {
     timelineFor = key;
-    const sp = $('spark'); sp.textContent = ''; sp.setAttribute('viewBox', tz ? `${tz.a - Y0} 0 ${tz.b - tz.a + 1} 26` : `0 0 ${NY} 26`);
+    const sp = $('spark'); sp.textContent = ''; sp.setAttribute('viewBox', `0 0 ${NY} 26`);
     const vals = [];
     for (let y = Y0; y <= Y1; y++) {
       if (!AREA[y] || !AREA[y - 1]) { vals.push(0); continue; }
@@ -2212,28 +2084,11 @@ function renderTimeline() {
     const mx = Math.max(1, ...vals.map(v => Math.sqrt(v)));
     vals.forEach((v, i) => { if (!v) return; const h = Math.max(1.5, Math.sqrt(v) / mx * 24); const r = el('rect', { x: i + 0.15, y: 26 - h, width: 0.7, height: h, 'data-y': Y0 + i }, sp); const t = el('title', {}, r); t.textContent = key != null ? `${Y0 + i}: ${nameOf(key, Y0 + i)} changed by about ${fmt(v)} km²` : `${Y0 + i}: about ${fmt(v)} km² changed hands`; });
     let list = key != null ? unitEvents(key) : EVENTS.map(([y, t]) => ({ y, t }));
-    const lane = $('tlane'); lane.textContent = '';
-    if (tz) {
-      // zoomed in: the events in these years in the scope, with the border changes or key events that fall in them
-      const evs = scopedEvents().filter(e => e.y >= tz.a && e.y <= tz.b).sort((p, q) => evT(p) - evT(q));
-      const n = tz.b - tz.a + 1;
-      // icons at their dates; where they would overlap, the more written-about one stays
-      const placed = [];
-      for (const e of evs.slice().sort((p, q) => q.sl - p.sl)) {
-        const x = (evT(e) - tz.a) / n; if (placed.some(p => Math.abs(p.x - x) * lane.clientWidth < 14)) continue; placed.push({ e, x });
-        if (placed.length >= 60) break;
-      }
-      if (EVENT_ICONS) lane.innerHTML = placed.map(({ e, x }, i) => `<button type="button" data-i="${ALLEV.indexOf(e)}" style="left:${(x * 100).toFixed(2)}%" title="${e.y} ${esc(e.n)}, ${esc(CITIES[e.ci].n)}">${kindIcon(e.k)}</button>`).join('');
-      list = list.filter(e => e.y >= tz.a && e.y <= tz.b).map(e => ({ ...e, t0: e.y + 0.5 }))
-        .concat(evs.map(e => ({ y: e.y, t: e.n, ev: e, t0: evT(e) }))).sort((p, q) => p.t0 - q.t0);
-    }
-    $('events').innerHTML = (key != null ? `<span class="evhead">Events for ${esc(nameOf(key, year))}</span>` : tz ? `<span class="evhead">Events on screen</span>` : '') +
+    $('events').innerHTML = (key != null ? `<span class="evhead">Events for ${esc(nameOf(key, year))}</span>` : '') +
       list.map(e => `<button type="button" data-y="${e.y}"${e.ev ? ` data-i="${ALLEV.indexOf(e.ev)}"` : ''} aria-pressed="false">${e.ev ? kindIcon(e.ev.k) : ''}<b class="num">${e.y}</b>${esc(e.t)}${e.ev ? ` <span class="muted">· ${esc(CITIES[e.ev.ci].n)}</span>` : ''}</button>`).join('') +
-      (!list.length ? `<span class="evhead">${tz ? 'No events recorded on screen in these years' : 'No border changes over 1,500 km²'}</span>` : '');
+      (!list.length ? `<span class="evhead">No border changes over 1,500 km²</span>` : '');
     $('events').querySelectorAll('button').forEach(b => b.onclick = () => { if (b.dataset.i) return openTimelineEvent(ALLEV[+b.dataset.i]); stop(); setYear(+b.dataset.y); });
-    lane.querySelectorAll('button').forEach(b => b.onclick = () => openTimelineEvent(ALLEV[+b.dataset.i]));
   }
-  $('tlane').querySelectorAll('button').forEach(b => { const e = ALLEV[+b.dataset.i]; b.classList.toggle('on', e.y <= year && year <= (e.end && e.end - e.y <= 10 ? e.end : e.y)); });
   document.querySelectorAll('.events button').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.y === year)));
   // keep the events around this year in view: the row scrolls sideways
   const row = $('events'), bs = [...row.querySelectorAll('button')], near = bs.filter(b => +b.dataset.y <= year).pop() || bs[0];
