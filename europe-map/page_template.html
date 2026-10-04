@@ -275,7 +275,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
 .citycard .vph .yr { font-family: var(--serif); font-weight: 600; font-size: 2.7rem; line-height: 1.05; color: var(--plate-ink); font-variant-numeric: lining-nums; }
 .citycard .vph button { position: relative; z-index: 1; border: 0; background: none; padding: 0; color: var(--accent); font-weight: 600; cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
 .citycard .era-a { --era: var(--era-a); } .citycard .era-b { --era: var(--era-b); } .citycard .era-c { --era: var(--era-c); } .citycard .era-d { --era: var(--era-d); }
-/* tabs: events (first), who held the city, population, people */
+/* tabs: events (first), who held the city, population */
 .citycard .ctabs { flex: none; display: flex; gap: 2px; margin-top: 6px; border-bottom: 1px solid var(--line); }
 .citycard .ctabs button { flex: 1; border: 0; background: none; padding: 6px 2px 7px; font-weight: 600; font-size: 0.82rem; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; white-space: nowrap; }
 .citycard .ctabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
@@ -308,10 +308,6 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
 .citycard .band .ph { position: absolute; width: 14px; height: 14px; margin: -7px 0 0 -7px; padding: 0; border: 0; border-radius: 50%; background: transparent; cursor: pointer; z-index: 3; }
 .citycard .band .ph:hover { background: color-mix(in srgb, var(--ink) 12%, transparent); }
 .citycard .band .gl { position: absolute; left: 0; transform: translateY(-50%); font-size: 0.62rem; line-height: 1; color: var(--faint); background: var(--surface); padding: 0 2px 0 0; pointer-events: none; font-variant-numeric: tabular-nums; }
-/* people: each life as a thin bar */
-.citycard .band .pl { position: absolute; height: 4px; min-width: 3px; padding: 0; border: 0; border-radius: 2px; background: var(--faint); opacity: 0.55; cursor: pointer; }
-.citycard .band .pl:hover { opacity: 1; background: var(--ink); }
-.citycard .band .pl.on { opacity: 1; background: var(--ink); }
 /* the details box under the band */
 .citycard .detail { flex: none; height: calc(3 * 1.38em + 16px); margin-top: 14px; padding: 8px 10px; border-radius: 8px; background: var(--sunk); line-height: 1.38; overflow: hidden; }
 .citycard .detail.ev { display: grid; grid-template-columns: 18px minmax(0, 1fr); gap: 8px; cursor: pointer; }
@@ -344,7 +340,6 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
 .citycard .tlist .by { display: block; font-weight: 400; color: var(--faint); }
 .citycard .tlist a { color: inherit; text-decoration: none; }
 .citycard .tlist a:hover { text-decoration: underline; }
-.citycard .tlist.ppl li { grid-template-columns: 0 92px minmax(0, 1fr); }
 .citycard .tlist .none { display: block; cursor: default; color: var(--faint); }
 .citycard .credit { flex: none; margin-top: auto; padding: 16px 2px 0; font-size: 0.74rem; line-height: 1.35; color: var(--faint); }
 .citycard .credit b { font-weight: 600; color: var(--muted); }
@@ -1477,61 +1472,6 @@ function heldBy(u, y) {
   const d = descOf(u, y), t = d ? d.t : nameOf(u, y);
   return { t, by: isVassal(u) && !/\bunder\b|occup|annex|held by|backed/i.test(t) ? ctlText(u, y) : '', bg: swatchBg(u) };
 }
-function cityHtml(d) {
-  const c = d.c, p = d.p;
-  const big = p.k === 'fig' ? fmt(p.v) : p.k === 'none' || p.k === 'gap' ? '—' : 'about ' + fmt(round3(p.v));
-  const src = `Source: ${[...new Set(p.k === 'est' || p.k === 'gap' ? [p.a[2], p.b[2]] : [p.a[2]])].map(i => CSRC[i]).join('; ')}.`;
-  const note = p.k === 'fig' ? `Figure for ${year}. ${src}`
-    : p.k === 'est' ? `Estimated: no figure for ${year}. Assumes steady growth between ${p.a[0]} (${fmt(p.a[1])}) and ${p.b[0]} (${fmt(p.b[1])}). ${src}`
-    : p.k === 'gap' ? `No figure within ${NEAR(year) === 10 ? 'ten' : NEAR(year)} years of ${year}. The nearest are ${fmt(p.a[1])} in ${p.a[0]} and ${fmt(p.b[1])} in ${p.b[0]}. ${src}`
-    : p.k === 'near' ? `No figure for ${year}. Shown: the nearest, from ${p.a[0]}. ${src}`
-    : `No figure near ${year}. The nearest is ${fmt(p.a[1])} in ${p.a[0]}. ${src}`;
-  // chart of all the figures, from the first one (or 1800, or the year shown, if earlier) to the end of the map, with
-  // this year marked; under it, who held the city
-  const W = 300, H = 50, vmax = Math.max(...c.P.map(q => q[1])) * 1.08;
-  const C0 = Math.floor(Math.min(c.P[0][0], year, 1800) / 50) * 50, step = Y1 - C0 > 600 ? 200 : Y1 - C0 > 300 ? 100 : 50;
-  const X = v => 4 + (v - C0) / (Y1 - C0) * (W - 8), Y = v => H - 12 - v / vmax * (H - 16);
-  const line = c.P.map((q, j) => (j ? 'L' : 'M') + X(q[0]).toFixed(1) + ',' + Y(q[1]).toFixed(1)).join('');
-  const ticks = []; for (let t = Math.ceil(C0 / step) * step; t <= Y1; t += step) ticks.push(t);
-  const chart = `<svg class="pchart" viewBox="0 0 ${W} ${H}" aria-hidden="true"><line class="now" x1="${X(year)}" x2="${X(year)}" y1="2" y2="${H - 11}"/><path class="ln" d="${line}"/>` +
-    c.P.map(q => `<circle class="pt${q[2] === 3 || q[2] === 6 ? ' c' : ''}${q[0] === year ? ' on' : ''}" cx="${X(q[0]).toFixed(1)}" cy="${Y(q[1]).toFixed(1)}" r="${q[0] === year ? 3.6 : 2.2}"/>`).join('') +
-    c.P.map(q => `<circle class="hit" data-y="${q[0]}" cx="${X(q[0]).toFixed(1)}" cy="${Y(q[1]).toFixed(1)}" r="6"><title>${q[0]}: ${fmt(q[1])}</title></circle>`).join('') +
-    (p.k === 'est' ? `<circle class="cur" cx="${X(year)}" cy="${Y(p.v).toFixed(1)}" r="3"/>` : '') +
-    ticks.map(t => `<text class="ax" x="${X(t).toFixed(1)}" y="${H - 1}" text-anchor="${t === ticks[0] && X(t) < 16 ? 'start' : 'middle'}">${t}</text>`).join('') + `</svg>`;
-  ERAS.forEach(E => { if (E.y1 >= C0 && !E.ready) loadEra(E); });      // the strip needs every era the chart covers; it redraws when they arrive
-  // A row for each stretch of years with the same holder: the state's full name, as in its own popup, and for a
-  // dependent territory the power that controlled it (unless the name already says so). A new row starts when
-  // either changes, so a state that was renamed (Russian Empire, Soviet Union, Russia) gets a row for each name.
-  const runs = [];
-  for (let y = C0; y <= Y1; y++) {
-    const u = cityUnit(c, y), last = runs[runs.length - 1]; if (u === -2) continue;      // years whose map is still loading
-    const h = heldBy(u, y);
-    if (last && last.b === y - 1 && last.t === h.t && last.by === h.by && last.bg === h.bg) last.b = y; else runs.push({ ...h, a: y, b: y });
-  }
-  const nm = r => r.t + (r.by ? ` (${r.by})` : '');
-  const strip = `<div class="hstrip" role="group" aria-label="Who held ${esc(c.n)}" data-c0="${C0}" data-w="${W}">` + runs.map(r => {
-      const l = (X(r.a - 0.5) / W * 100).toFixed(2), w = ((X(r.b + 0.5) - X(r.a - 0.5)) / W * 100).toFixed(2);
-      return `<button type="button" data-y="${r.a}" title="${esc(nm(r))}, ${r.a === r.b ? r.a : r.a + '–' + r.b}" style="left:${l}%;width:${w}%;background:${r.bg}"></button>`; }).join('') +
-    `<span class="now" style="left:${(X(year) / W * 100).toFixed(2)}%"></span></div>`;
-  const changes = runs.map(r => `<li role="button" tabindex="0" data-y="${r.a}"${r.a <= year && year <= r.b ? ' class="on"' : ''}><span class="sw" style="background:${r.bg}"></span><span>${r.a}${r.b > r.a ? '–' + (r.b === Y1 ? '' : r.b) : ''}</span><span>${esc(r.t)}${r.by ? `<span class="by">${esc(r.by)}</span>` : ''}</span></li>`).join('');
-  // events in the city, oldest first; this year's are marked
-  const evs = CEV ? CEV[c.i] || [] : null, pps = CPP ? CPP[c.i] || [] : null;
-  const evList = evs == null ? `<p class="hint">Loading the events…</p>` : !evs.length ? `<p class="hint">Wikidata records no events here from 1000 on, of the kinds this map shows.</p>`
-    : `<ul class="hlist elist${EVENT_ICONS ? '' : ' noicon'}">${evs.map(e => { const on = e.y <= year && year <= (e.end && e.end - e.y <= 10 ? e.end : e.y);
-        return `<li role="button" tabindex="0" data-y="${e.y}"${on ? ' class="on"' : ''}><span class="ei">${kindIcon(e.k)}</span><span>${e.y}${e.end && e.end > e.y ? '–' + e.end : ''}</span><span>${wikiA(e.n, e.t, e.q)}</span></li>`; }).join('')}</ul>`;
-  // people born or died here, by year of birth; those alive this year are marked. A row goes to the year they were
-  // born here (or died here)
-  const where = w => w === 'bd' ? 'born and died here' : w === 'b' ? 'born here' : 'died here';
-  const pplList = pps == null ? `<p class="hint">Loading the people…</p>` : !pps.length ? `<p class="hint">No one Wikidata records as born or died here is written about in many languages.</p>`
-    : `<ul class="hlist plist">${pps.map(q => { const on = q.b != null && q.b <= year && year <= (q.d != null ? q.d : q.b + 100);
-        return `<li role="button" tabindex="0" data-y="${q.w.includes('b') && q.b != null ? q.b : q.d != null ? q.d : q.b}" data-b="${q.b != null ? q.b : q.d}"${on ? ' class="on"' : ''}><span>${q.b != null ? q.b : '?'}–${q.d != null ? q.d : ''}</span><span>${wikiA(q.n, q.t, q.q)}<span class="by">${q.role ? esc(q.role) + ' · ' : ''}${where(q.w)}</span></span></li>`; }).join('')}</ul>`;
-  const n = a => a && a.length ? ` <small>${a.length}</small>` : '';
-  const tabs = [['pop', 'Population'], ['held', 'Held by'], ['ev', 'Events' + n(evs)], ['ppl', 'People' + n(pps)]];
-  const body = popTab === 'held' ? `${strip}<ul class="hlist">${changes}</ul>` : popTab === 'ev' ? evList : popTab === 'ppl' ? pplList : `<p>${esc(note)}</p>${chart}`;
-  return `<button type="button" class="x" aria-label="Close">×</button><div class="nm city">${esc(c.n)}</div><div class="pop city">${big} <small>people in ${year}</small></div>` +
-    `<div class="ptabs" role="tablist" aria-label="${esc(c.n)}">${tabs.map(([k, t]) => `<button type="button" role="tab" data-t="${k}" aria-selected="${k === popTab}">${t}</button>`).join('')}</div>` +
-    `<div class="tabp" role="tabpanel">${body}</div>`;
-}
 // the state's flag that year (chosen through Wikidata, images from Wikimedia Commons): its index in the flag sheet
 function flagOf(u, y) {
   const F = D.flags; if (!F) return -1;
@@ -1654,7 +1594,7 @@ function gridSpots(w, h, step) {
   return out;
 }
 // ---------- the city card: the popup for a city. A period view of the city (the one made closest to the map's
-// year), then four tabs (Events, Held by, Population, People), each with a band on the years 1000–2026, a box with
+// year), then three tabs (Events, Held by, Population), each with a band on the years 1000–2026, a box with
 // details for the map's year, and a list; the picture's credit comes last. It keeps its size, so nothing in it
 // moves as the year changes. On narrow screens it is a sheet from the bottom. ----------
 // event icons: thin line drawings on a 16 x 16 grid (stroke only), shown without frames
@@ -1819,40 +1759,15 @@ function popTabC(c, p) {
   const list = c.P.map(q => `<li role="button" tabindex="0" data-y="${q[0]}"${q === on ? ' class="on"' : ''}><span></span><span>${q[0]}</span><span>${fmt(q[1])}<span class="by">${esc(CSRC[q[2]])}</span></span></li>`).join('');
   return { band, detail: '', list, foot: popNote(c, p) };
 }
-// people born or died here: each life as a thin bar; the most written-about person alive in the map's year; everyone
-const WHERE = { bd: 'born and died here', b: 'born here', d: 'died here' };
-function peopleTab(c) {
-  const pps = CPP ? CPP[c.i] || [] : null;
-  if (pps == null) return { band: '', h: 24, detail: `<div class="detail empty">Loading the people…</div>`, list: '' };
-  if (!pps.length) return { band: '', h: 24, detail: `<div class="detail empty">No one Wikidata records as born or died here is written about in many languages.</div>`, list: '' };
-  const life = q => [q.b != null ? q.b : q.d - 60, q.d != null ? q.d : Math.min(Y1, q.b + 80)];
-  const alive = q => { const [a, z] = life(q); return a <= year && year <= z; };
-  const rowEnd = [], RH = 7; let rows = 1;
-  const bars = pps.map((q, i) => [q, i]).sort((x, y) => life(x[0])[0] - life(y[0])[0]).map(([q, i]) => {
-    const [a, z] = life(q); let r = rowEnd.findIndex(e => a > e + 8); if (r < 0) r = rowEnd.length < 11 ? rowEnd.length : rowEnd.indexOf(Math.min(...rowEnd));
-    rowEnd[r] = z; rows = Math.max(rows, r + 1);
-    const a1 = Math.max(Y0, a), w = Math.max(0.8, (cX(Math.min(Y1, z)) - cX(a1)) / CW * 100);
-    return `<button type="button" class="pl${alive(q) ? ' on' : ''}" data-y="${q.w.includes('b') && q.b != null ? q.b : q.d != null ? q.d : q.b}" style="left:${cpct(a1)};width:${w.toFixed(2)}%;top:${r * RH + 4}px" title="${esc(q.n)}, ${q.b != null ? q.b : '?'}–${q.d != null ? q.d : ''}" aria-label="${esc(q.n)}"></button>`;
-  }).join('');
-  const now = pps.filter(alive).sort((a, b) => b.sl - a.sl), top = now[0];
-  const detail = top ? `<div class="detail"><div class="t"><b>${esc(top.n)}</b>${wikiLink(top.n, top.t, top.q)}</div><div class="xt">${top.b != null ? top.b : '?'}–${top.d != null ? top.d : ''}${top.role ? ` · ${esc(top.role)}` : ''} · ${WHERE[top.w]}${now.length > 1 ? `<br><span class="ago">${now.length - 1} more alive in ${year}</span>` : ''}</div></div>`
-    : `<div class="detail empty">No one listed here was alive in ${year}.</div>`;
-  const list = pps.map(q => `<li role="button" tabindex="0" data-y="${q.w.includes('b') && q.b != null ? q.b : q.d != null ? q.d : q.b}"${alive(q) ? ' class="on"' : ''}><span></span><span>${q.b != null ? q.b : '?'}–${q.d != null ? q.d : ''}</span><span>${wikiLink(q.n, q.t, q.q, esc(q.n))}<span class="by">${q.role ? esc(q.role) + ' · ' : ''}${WHERE[q.w]}</span></span></li>`).join('');
-  return { band: bars, detail, list, h: Math.max(30, rows * RH + 10) };
-}
 function cardHtml(d, phone) {
   const c = d.c, p = d.p, views = CVIEWS ? CVIEWS[c.i] || [] : null, v = views ? pickView(views, year) : null;
   const big = p.k === 'fig' ? fmt(p.v) : p.k === 'none' || p.k === 'gap' ? '—' : 'about ' + fmt(round3(p.v));
-  const head = phone
-    ? `<div class="chead"><div><div class="cnm">${esc(c.n)} in</div><div class="cpop">${big} <small>people</small></div></div>` +
-      `<span class="stepper"><button type="button" data-step="-1" aria-label="Previous year">‹</button><b>${year}</b><button type="button" data-step="1" aria-label="Next year">›</button></span>` +
-      `<button type="button" class="x" aria-label="Close">×</button></div>`
-    : `<div class="chead"><div><div class="cnm">${esc(c.n)} in <span class="yr">${year}</span></div><div class="cpop">${big} <small>people</small></div></div><button type="button" class="x" aria-label="Close">×</button></div>`;
-  const tabs = `<div class="ctabs" role="tablist" aria-label="${esc(c.n)}">` + [['ev', 'Events'], ['held', 'Held by'], ['pop', 'Population'], ['ppl', 'People']].map(([k, t]) =>
+  const head = `<div class="chead"><div><div class="cnm">${esc(c.n)} in <span class="yr">${year}</span></div><div class="cpop">${big} <small>people</small></div></div><button type="button" class="x" aria-label="Close">×</button></div>`;
+  const tabs = `<div class="ctabs" role="tablist" aria-label="${esc(c.n)}">` + [['ev', 'Events'], ['held', 'Held by'], ['pop', 'Population']].map(([k, t]) =>
     `<button type="button" role="tab" data-t="${k}" aria-selected="${cardTab === k}">${t}</button>`).join('') + `</div>`;
   const ticks = []; for (let t = 1000; t <= Y1; t += 200) ticks.push(t);
   const axis = `<div class="axis" aria-hidden="true">` + ticks.map((t, i) => `<span${i ? '' : ' class="first"'} style="left:${cpct(t)}">${t}</span>`).join('') + `</div>`;
-  const body = cardTab === 'ev' ? eventsTab(c) : cardTab === 'held' ? heldTab(c) : cardTab === 'ppl' ? peopleTab(c) : popTabC(c, p);
+  const body = cardTab === 'ev' ? eventsTab(c) : cardTab === 'held' ? heldTab(c) : popTabC(c, p);
   cardShown = v;
   const f = cX(year) / CW;
   return `<div class="ccard">${head}${picHtml(c, views, v)}${tabs}<div class="tl"><div class="band" style="height:${body.h || CHB}px">${body.band}</div>${axis}` +
@@ -1868,7 +1783,7 @@ function cardJump(d, y, e) {
 }
 function wireCard(d) {
   const root = pop, c = d.c;
-  root.querySelectorAll('.band .ph, .band .pl, .cstrip button, .tlist li[data-y], .vph button[data-y]').forEach(b => {
+  root.querySelectorAll('.band .ph, .cstrip button, .tlist li[data-y], .vph button[data-y]').forEach(b => {
     b.onclick = ev => { if (ev.target.closest('a')) return; ev.stopPropagation(); cardJump(d, +b.dataset.y); };
     b.onkeydown = ev => { if (ev.target.closest('a')) return; if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); cardJump(d, +b.dataset.y); } };
   });
@@ -1879,7 +1794,7 @@ function wireCard(d) {
   });
   root.querySelectorAll('.ctabs button').forEach(b => {
     b.onclick = ev => {
-      ev.stopPropagation(); cardTab = b.dataset.t; if (cardTab === 'ppl') loadPeople();
+      ev.stopPropagation(); cardTab = b.dataset.t;
       keepPop = [pop.offsetLeft, pop.offsetTop]; renderPop(); keepPop = null;
       const t = pop.querySelector(`.ctabs button[data-t="${cardTab}"]`); if (t) t.focus();
     };
@@ -1896,7 +1811,7 @@ function closeCard() { selCity = null; cardSel = null; drawCities(); renderPop()
 // the city's popup: build the card, then place it (on a phone, the sheet) without moving it while the year changes
 function renderCityCard(d) {
   const c = d.c, sr = svg.getBoundingClientRect(), mb = $('mapbox').getBoundingClientRect();
-  loadViews(); loadEvents(); if (cardTab === 'ppl') loadPeople();
+  loadViews(); loadEvents(); if (!['ev', 'held', 'pop'].includes(cardTab)) cardTab = 'ev';
   if (cardCity !== c.i) { cardCity = c.i; cardSel = null; for (const k in cardScroll) delete cardScroll[k]; cardDetent = 'full'; delete pop.dataset.anchor; }
   if (cardSel && cardSel.y !== year) cardSel = null;
   const phone = innerWidth <= 600;
@@ -2008,8 +1923,7 @@ function renderPop() {
   if (pop.classList.contains('citycard')) { pop.classList.remove('citycard', 'citysheet'); pop.style.height = ''; delete pop.dataset.anchor; }
   const sr = svg.getBoundingClientRect(), mb = $('mapbox').getBoundingClientRect();
   const same = d && pop.dataset.city === String(d.c.i) && pop.dataset.tab === popTab && !pop.hidden, hl0 = pop.querySelector('.hlist'), scroll = same && hl0 ? hl0.scrollTop : 0;
-  if (d) loadPeople();                  // the people file (larger) is fetched the first time a city is opened
-  pop.innerHTML = d ? cityHtml(d) : countryHtml(fu); pop.dataset.city = d ? d.c.i : ''; pop.dataset.tab = popTab;
+  pop.innerHTML = countryHtml(fu); pop.dataset.city = d ? d.c.i : ''; pop.dataset.tab = popTab;
   pop.setAttribute('aria-label', d ? `${d.c.n}: population` : nameOf(fu, year));
   if (d) {
     // a dot in the chart, a band of the strip (the year tapped) or a row of the list (its first year) moves the whole
