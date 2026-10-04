@@ -225,9 +225,9 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
 .hint { font-size: 0.88rem; color: var(--muted); }
 
 /* ---------- the city card: the map's popup for a city (a sheet from the bottom on narrow screens). It keeps its
-   size, so nothing in it moves as the year changes: header, the period view, who held the city (a band on the
-   years 1000–2026, a details box for the map's year, then the list and the credit, which scroll together).
-   The Population and Events panels open over it, the same size. ---------- */
+   size, so nothing in it moves as the year changes: header, the period view, the tabs, then the open tab (a band on
+   the years 1000–2026, a details box for the map's year, the list and the credit, which scroll together). The tabs
+   and the open tab can be raised over the picture. ---------- */
 .mappop.citycard { display: flex; flex-direction: column; padding: 14px 13px 13px; }
 .citycard .ccard { flex: 1; min-height: 0; display: flex; flex-direction: column; font-size: 0.86rem; line-height: 1.4; }
 .citycard svg { margin: 0; width: auto; height: auto; }
@@ -235,20 +235,25 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
 .citycard .chead > div { flex: 1; min-width: 0; }
 .citycard .cnm { font-family: var(--serif); font-weight: 600; font-size: 1.35rem; line-height: 1.15; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .citycard .cnm .yr { color: var(--now); font-variant-numeric: tabular-nums; }
-.citycard .crow { display: flex; align-items: center; gap: 8px; margin-top: 3px; min-width: 0; }
-.citycard .cpop { display: inline-flex; align-items: center; gap: 5px; min-width: 0; margin: 0 0 0 -6px; padding: 2px 6px; border: 0; border-radius: 6px; background: none; color: var(--ink); font: inherit; font-size: 1.05rem; font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; cursor: pointer; }
+.citycard .cpop { margin-top: 2px; font-size: 1.05rem; font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .citycard .cpop small { font-size: 0.8rem; font-weight: 500; color: var(--muted); }
-.citycard .cpop:hover, .citycard .cevb:hover { background: var(--sunk); }
-.citycard .cpop .pico { flex: none; width: 18px; height: 18px; margin-left: 1px; fill: none; stroke: var(--accent); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
-.citycard .cevb { flex: none; margin-left: auto; display: inline-flex; align-items: center; gap: 5px; padding: 4px 7px 4px 11px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--ink); font: inherit; font-size: 0.82rem; font-weight: 600; cursor: pointer; white-space: nowrap; }
-.citycard .cevb .n { color: var(--muted); font-weight: 500; font-variant-numeric: tabular-nums; }
-.citycard .chev { flex: none; width: 12px; height: 12px; fill: none; stroke: var(--accent); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
-.citycard .csub { margin-top: 2px; font-size: 1.05rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.citycard .csub small { margin-left: 4px; font-size: 0.86rem; font-weight: 500; color: var(--muted); font-variant-numeric: tabular-nums; }
-.citycard .csec { flex: none; margin-top: 10px; font-size: 0.82rem; font-weight: 600; }
-.citycard .csec + .detail { margin-top: 6px; }
-.citycard .chead + .detail { margin-top: 12px; }
+/* the tabs and the open tab: they slide up over the picture when raised (tap the open tab, or anything on its band) */
+.citycard .cpane { position: relative; z-index: 1; flex: 1; min-height: 0; display: flex; flex-direction: column; background: var(--surface); }
+.citycard .cpane { margin-left: -13px; margin-right: -13px; padding: 0 13px; }      /* (edge to edge, to cover the picture) */
+.citysheet .cpane { margin-left: -14px; margin-right: -14px; padding: 0 14px; }
+.citycard .tl { touch-action: pan-y; }
+.citycard .tl.fresh .band, .citycard .tl.fresh .axis { animation: tlIn .22s ease-out; }
+@keyframes tlIn { from { opacity: 0.2; } }
+.citycard .ccard.up .cpane { margin-top: calc(-1 * var(--lift, 240px)); }
+.citycard .ccard.anim .cpane { transition: margin-top .28s ease; }
+.citycard .ctabs { flex: none; display: flex; gap: 2px; margin-top: 6px; border-bottom: 1px solid var(--line); }
+.citycard .ctabs button { flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 4px; border: 0; background: none; padding: 6px 2px 7px; font-weight: 600; font-size: 0.82rem; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; white-space: nowrap; }
+.citycard .ctabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+.citycard .ctabs .tchev { flex: none; width: 11px; height: 11px; fill: none; stroke: var(--accent); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.citycard .ctabs + .detail { margin-top: 10px; }
 .citycard .detail + .tl { margin-top: 12px; }
+/* the event's picture shows only when the tab is raised; the credits follow what shows */
+.citycard .ccard:not(.up) .epic, .citycard .ccard:not(.up) .credit .cre, .citycard .ccard.up .credit .crc { display: none; }
 .citycard .chead .x { position: static; flex: none; width: 30px; height: 30px; margin: -5px -6px 0 0; border: 0; border-radius: 7px; background: transparent; color: var(--muted); font-size: 1.15rem; line-height: 1; cursor: pointer; }
 /* the picture (16:9 crop; tap for the whole view), labeled with when it was made */
 .citycard .pic { flex: none; margin: 12px -13px 0; position: relative; aspect-ratio: 16 / 9; background: var(--sunk); overflow: hidden; }
@@ -274,6 +279,8 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
 .citycard .axis { position: relative; height: 15px; margin-top: 4px; font-size: 0.68rem; line-height: 15px; color: var(--faint); font-variant-numeric: tabular-nums; border-top: 1px solid var(--line); padding-top: 1px; box-sizing: content-box; }
 .citycard .axis span { position: absolute; top: 0; transform: translateX(-50%); }
 .citycard .axis span.first { transform: none; }
+.citycard .axis span.last { transform: translateX(-100%); }
+.citycard .nowtag.out { opacity: 0.85; }
 .citycard .band { position: relative; height: 84px; }
 .citycard .nowline { position: absolute; top: 0; bottom: 16px; width: 2px; margin-left: -1px; background: var(--now); box-shadow: 0 0 0 1px var(--surface); pointer-events: none; z-index: 1; }
 .citycard .nowtag { position: absolute; top: 0; height: 15px; padding: 0 5px; border-radius: 3px; background: var(--now); color: var(--now-ink); font-size: 0.68rem; font-weight: 700; line-height: 15px; font-variant-numeric: tabular-nums; transform: translateX(-50%); pointer-events: none; z-index: 2; }
@@ -356,13 +363,6 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
 .citycard .credit { flex: none; margin-top: auto; padding: 16px 2px 0; font-size: 0.74rem; line-height: 1.35; color: var(--faint); }
 .citycard .credit b { font-weight: 600; color: var(--muted); }
 .citycard .credit a { color: inherit; text-decoration: underline; text-decoration-color: var(--faint); text-underline-offset: 2px; }
-/* a panel over the card (Population or Events): the same size; it fades in (on phones, slides up) */
-.citycard .cover { position: absolute; inset: 0; z-index: 5; display: flex; flex-direction: column; padding: 14px 13px 13px; border-radius: inherit; background: var(--surface); }
-.citycard .cbody { flex: 1; min-height: 0; display: flex; flex-direction: column; }
-.citycard .cover .tl { margin-top: 8px; }
-.citycard .cover.enter { animation: covIn .16s ease-out; }
-.citycard .cover.leave { opacity: 0; pointer-events: none; transition: opacity .14s ease-in; }
-@keyframes covIn { from { opacity: 0; transform: translateY(8px); } }
 /* narrow screens: a full-width sheet from the bottom with three sizes (full, the picture only, closed) */
 .mappop.citysheet { position: fixed; left: 0; right: 0; top: auto; bottom: 0; width: auto !important; z-index: 40; padding: 0; border: 0; border-radius: 16px 16px 0 0; box-shadow: 0 -6px 24px rgba(0,0,0,0.22); transition: height .25s ease; touch-action: none; }
 .mappop.citysheet.drag { transition: none; }
@@ -373,12 +373,6 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
 .citysheet .pic { margin: 12px -14px 0; }
 .citysheet .chead .x { width: 34px; height: 34px; margin: 0; background: var(--sunk); }
 .citysheet .epic { margin: 10px -14px 0; }
-.citysheet .cover { padding: 0; box-shadow: 0 -6px 24px rgba(0,0,0,0.22); touch-action: none; }
-.citysheet .cover .cbody { padding: 3px 14px 13px; overflow: hidden; }
-.citysheet .cover.enter { animation: covUp .24s ease-out; }
-.citysheet .cover.leave { opacity: 1; transform: translateY(100%); transition: transform .22s ease-in; }
-.citysheet .cover.drag { transition: none; }
-@keyframes covUp { from { transform: translateY(100%); } }
 /* the whole picture, over the page; any tap (other than on a link) or Escape closes it */
 .bigview { position: fixed; inset: 0; z-index: 60; display: grid; place-items: center; padding: 16px; background: var(--scrim); cursor: zoom-out; }
 .bigview[hidden] { display: none; }
@@ -1231,7 +1225,7 @@ function markAt(ev) {
 }
 // tapping an icon highlights whoever held the city and opens the city's popup on its events
 function openEvent(m) {
-  stop(); popTab = 'ev'; popEv = m.e; cardPending = { ov: 'ev', e: m.e };      // the city card opens on its Events panel, with this event
+  stop(); popTab = 'ev'; popEv = m.e; cardPending = { tab: 'ev', e: m.e, up: true };      // the city card opens on Events, raised, with this event and its picture
   place = { x: m.c.x, y: m.c.y, city: m.c.i }; selCity = m.c.i; popClosed = false;
   drawPin(); drawDim(); drawLabels(); drawBadges(); drawCities(); renderTimeline(); renderPop();
 }
@@ -1602,12 +1596,11 @@ function gridSpots(w, h, step) {
   for (let x = PAD; x <= X1 + step - 1; x += step) for (let y = PAD; y <= Y1 + step - 1; y += step) out.push([Math.min(x, X1), Math.min(y, Y1)]);
   return out;
 }
-// ---------- the city card: the popup for a city. The header (the city in the map's year, its population, an
-// Events button), a period view of the city (the one made closest to the map's year), then who held the city: a
-// band on the years 1000–2026, a box for the map's year, every holder in turn, and the credits. Tapping the
-// population or Events opens a panel of the same size over the card (on phones it slides up): Population (a
-// taller chart with the sudden rises and falls shaded, the figure for the year, the rises and falls with the
-// events of those years, every figure) or Events (the band of events, a box for one, its picture, the list).
+// ---------- the city card: the popup for a city. The header (the city in the map's year, its population), a
+// period view of the city (the one made closest to the map's year), then three tabs: Events, Held by, Population.
+// Each has a band on the years 1000–2026, a box for the map's year, and a list; Population also shows the sudden
+// rises and falls with the events of those years. Tapping the open tab, or anything on its band, raises the tabs
+// over the picture for more room (and, on Events, the event's picture); tapping the open tab again lowers them.
 // Nothing moves as the year changes. On narrow screens the card is a sheet from the bottom. ----------
 // event icons: thin line drawings on a 16 x 16 grid (stroke only), shown without frames
 const ICON = {
@@ -1633,11 +1626,23 @@ function loadViews() {
     refreshCityPop();
   }).catch(() => { loadViews.busy = false; });
 }
-// cardOverlay: the panel open over the card ('pop', 'ev' or none); cardSel: the event picked in the Events panel
-let cardSel = null, cardCity = null, cardDetent = 'full', cardShown = null, cardOverlay = null, coverEnter = false, cardPending = null;
-const cardScroll = {};                     // the card's list and each panel's list keep their scroll positions (until another city opens)
-const CW = 300, PH = 128;                  // the bands' drawing width (stretched to the card's width); the population chart's height
-const cX = v => 4 + (v - Y0) / (Y1 - Y0) * (CW - 8), cpct = v => (cX(v) / CW * 100).toFixed(2) + '%';
+// cardTab: the open tab; cardUp: whether it is raised over the picture (cardUpShown: as last drawn); cardSel: the event picked
+let cardTab = 'ev', cardUp = false, cardUpShown = null, cardSel = null, cardCity = null, cardDetent = 'full', cardShown = null, cardPending = null;
+const cardScroll = {};                     // each tab's list keeps its scroll position (until another city opens)
+const CW = 300, PH = 96;                  // the bands' drawing width (stretched to the card's width); the population chart's height
+// each tab's band opens zoomed to the years its data covers (events, holders, population figures; at least 40
+// years); sliding the band sideways toward years it leaves out shows the whole 1000–2026 (cardZoom[tab] = 'full')
+let TL0 = Y0, TL1 = Y1, TLS = 200;
+const cX = v => 4 + (v - TL0) / (TL1 - TL0) * (CW - 8), cpct = v => (cX(v) / CW * 100).toFixed(2) + '%';
+const ZFULL = [Y0, Y1, 200];
+function zoomRange(lo, hi) {
+  if (!(hi >= lo)) return ZFULL;
+  if (hi - lo < 40) { const m = (lo + hi) / 2; lo = m - 20; hi = m + 20; }
+  const pad = (hi - lo) * 0.03; lo = Math.max(Y0, lo - pad); hi = Math.min(Y1, hi + pad);
+  return [lo, hi, [10, 20, 25, 50, 100, 200].find(s => (hi - lo) / s <= 6) || 200];
+}
+const cardZoom = {};
+const zoomSet = (tab, z) => { [TL0, TL1, TLS] = cardZoom[tab] === 'full' ? ZFULL : z; };
 const yrs = n => `${n} year${n === 1 ? '' : 's'}`;
 // which picture: the one made closest to the year, none if more than 100 years away; a view of an event (a city
 // in ruins) is never shown for years before it; on a tie, the earlier one
@@ -1694,10 +1699,16 @@ function cardEvents(c) {
   if (!CEV) return null;
   if (evCache[c.i]) return evCache[c.i];
   const all = (CEV[c.i] || []).filter(e => e.y >= Y0 && e.y <= Y1).sort((a, b) => a.y - b.y || b.sl - a.sl);
-  const GAP = 21 / 350 * (Y1 - Y0), band = [];
+  const z = all.length ? zoomRange(all[0].y, Math.max(...all.map(e => e.end || e.y))) : ZFULL;
+  return evCache[c.i] = { all, z, bands: {} };
+}
+// the events drawn on the band at its present zoom: the most written-about ones that fit in four rows
+function evBand(E) {
+  const key = TL0 + '-' + TL1; if (E.bands[key]) return E.bands[key];
+  const GAP = 21 / 350 * (TL1 - TL0), band = [], inR = E.all.filter(e => e.y >= TL0 && e.y <= TL1);
   const fits = evs => { const rowEnd = []; for (const e of [...evs].sort((a, b) => a.y - b.y)) { const r = rowEnd.findIndex(y => e.y - y >= GAP); if (r < 0) { if (rowEnd.length >= 4) return false; rowEnd.push(e.y); } else rowEnd[r] = e.y; } return true; };
-  for (const e of [...all].sort((a, b) => b.sl - a.sl)) { if (fits([...band, e])) band.push(e); if (band.length >= 16) break; }
-  return evCache[c.i] = { all, band: band.sort((a, b) => a.y - b.y) };
+  for (const e of [...inR].sort((a, b) => b.sl - a.sl)) { if (fits([...band, e])) band.push(e); if (band.length >= 16) break; }
+  return E.bands[key] = band.sort((a, b) => a.y - b.y);
 }
 const MON = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const MAB = ['Jan.', 'Feb.', 'March', 'April', 'May', 'June', 'July', 'Aug.', 'Sept.', 'Oct.', 'Nov.', 'Dec.'];
@@ -1705,12 +1716,15 @@ const MAB = ['Jan.', 'Feb.', 'March', 'April', 'May', 'June', 'July', 'Aug.', 'S
 const evWhen = (e, ab) => { const m = Math.floor((e.md || 0) / 100), d = (e.md || 0) % 100; return !m || (e.end && e.end > e.y) ? `${e.y}` : d ? `${(ab ? MAB : MON)[m - 1]} ${d}, ${e.y}` : `${MON[m - 1]} ${e.y}`; };
 const evSpan = e => `${e.y}${e.end && e.end > e.y ? '–' + e.end : ''}`;
 // the band's frame: the map's year in a red tag on top, the band, then the years
+// (when the map's year is outside the band's years, its tag waits at that end, pointing the way: "‹ 1350")
+let tlFresh = false;
 function tlHtml(band, h) {
-  const ticks = []; for (let t = 1000; t <= Y1; t += 200) ticks.push(t);
-  const f = cX(year) / CW;
-  return `<div class="tl"><div class="band" style="height:${h}px">${band}</div><div class="axis" aria-hidden="true">` +
-    ticks.map((t, i) => `<span${i ? '' : ' class="first"'} style="left:${cpct(t)}">${t}</span>`).join('') + `</div>` +
-    `<span class="nowline" style="left:${cpct(year)}"></span><span class="nowtag${f < 0.06 ? ' l' : f > 0.94 ? ' r' : ''}" style="left:${cpct(year)}">${year}</span></div>`;
+  const ticks = []; for (let t = Math.ceil(TL0 / TLS) * TLS; t <= TL1; t += TLS) ticks.push(t);
+  const f = cX(year) / CW, out = year < TL0 ? -1 : year > TL1 ? 1 : 0;
+  const tick = t => { const x = cX(t) / CW; return `<span${x < 0.05 ? ' class="first"' : x > 0.95 ? ' class="last"' : ''} style="left:${cpct(t)}">${t}</span>`; };
+  return `<div class="tl${tlFresh ? ' fresh' : ''}" data-z0="${TL0}" data-z1="${TL1}"><div class="band" style="height:${h}px">${band}</div><div class="axis" aria-hidden="true">${ticks.map(tick).join('')}</div>` +
+    (out ? `<span class="nowtag out ${out < 0 ? 'l' : 'r'}" style="left:${out < 0 ? '0' : '100%'}">${out < 0 ? `‹ ${year}` : `${year} ›`}</span>`
+      : `<span class="nowline" style="left:${cpct(year)}"></span><span class="nowtag${f < 0.06 ? ' l' : f > 0.94 ? ' r' : ''}" style="left:${cpct(year)}">${year}</span>`) + `</div>`;
 }
 // event pictures (event-images.json): the picture Wikidata gives for an event, shown straight from Wikimedia Commons.
 // Each row: file, width, height, author, license, and the file's folder there (the first two characters of its md5)
@@ -1734,17 +1748,18 @@ function evPicHtml(e, failed) {
   const era = year < 1500 ? 'a' : year < 1800 ? 'b' : year < 1900 ? 'c' : 'd', m = failed ? null : eimgOf(e);
   if (!m) return `<div class="pic epic"><div class="vph era-${era}">${e ? cico(evKind(e), 'ico big') : `<span class="yr">${year}</span>`}<span>${!e ? 'No event yet' : failed ? 'The picture did not load' : !EIMG ? 'Loading the picture…' : 'No picture of this event'}</span></div></div>`;
   const tall = m[2] / m[1] > 0.7, a = eimgUrl(m, 500), b = eimgUrl(m, 960);
-  const img = `<img${tall ? ' class="fit"' : ''} src="${a}"${b !== a ? ` srcset="${a} ${Math.min(500, m[1])}w, ${b} ${Math.min(960, m[1])}w" sizes="(max-width: 600px) 100vw, 380px"` : ''} alt="${esc(e.n)}">`;
-  return `<div class="pic epic"><button type="button" class="vimg eimg" aria-label="Show the whole picture">${tall ? `<img class="blur" src="${eimgUrl(m, 250)}" alt="" aria-hidden="true">` : ''}${img}</button></div>`;
+  const img = `<img loading="lazy"${tall ? ' class="fit"' : ''} src="${a}"${b !== a ? ` srcset="${a} ${Math.min(500, m[1])}w, ${b} ${Math.min(960, m[1])}w" sizes="(max-width: 600px) 100vw, 380px"` : ''} alt="${esc(e.n)}">`;
+  return `<div class="pic epic"><button type="button" class="vimg eimg" aria-label="Show the whole picture">${tall ? `<img class="blur" loading="lazy" src="${eimgUrl(m, 250)}" alt="" aria-hidden="true">` : ''}${img}</button></div>`;
 }
 // the Events panel: the band (icons at their years; icons that would touch drop a row), a box for the event picked
 // (or the latest), its picture, every event
 function eventsPanel(c) {
   const E = cardEvents(c);
+  zoomSet('ev', E ? E.z : ZFULL);
   if (!E) return { band: '', h: 24, detail: `<div class="detail evx empty">Loading the events…</div>`, list: '', last: null };
   if (!E.all.length) return { band: '', h: 24, detail: `<div class="detail evx empty">Wikidata records no events here from 1000 on, of the kinds this map shows.</div>`, list: '', last: null };
-  const GAP = 21 / 350 * (Y1 - Y0), rowEnd = []; let rows = 1;
-  const band = E.band.map(e => {
+  const GAP = 21 / 350 * (TL1 - TL0), rowEnd = []; let rows = 1;
+  const band = evBand(E).map(e => {
     let r = rowEnd.findIndex(y => e.y - y >= GAP); if (r < 0) r = rowEnd.length < 4 ? rowEnd.length : rowEnd.indexOf(Math.min(...rowEnd));
     rowEnd[r] = e.y; rows = Math.max(rows, r + 1);
     const i = E.all.indexOf(e);
@@ -1769,9 +1784,10 @@ function cardFlagCredit(i) {
   return `Flag: <a href="${esc(url)}" target="_blank" rel="noopener">Wikimedia Commons</a>${by && !isPD(lic) ? ', ' + esc(by) : ''}, ${isPD(lic) ? 'public domain' : lu ? `<a href="${esc(lu)}" target="_blank" rel="noopener">${esc(lic)}</a>` : esc(lic)}.`;
 }
 function heldTab(c) {
-  const runs = cityRuns(c);
-  const band = `<div class="cstrip" role="group" aria-label="Who held ${esc(c.n)}">` + runs.map(r => {
-    const l = cX(r.a - 0.5) / CW * 100, w = (cX(r.b + 0.5) - cX(r.a - 0.5)) / CW * 100, fits = w * 3.5 > r.t.length * 5.6 + 10;
+  const runs = cityRuns(c), held = runs.filter(r => r.t !== 'no country');
+  zoomSet('held', held.length ? zoomRange(held[0].a, held[held.length - 1].b) : ZFULL);
+  const band = `<div class="cstrip" role="group" aria-label="Who held ${esc(c.n)}">` + runs.filter(r => r.b >= TL0 && r.a <= TL1).map(r => {
+    const l = Math.max(0, cX(r.a - 0.5) / CW * 100), w = Math.min(100, cX(r.b + 0.5) / CW * 100) - l, fits = w * 3.5 > r.t.length * 5.6 + 10;
     return `<button type="button" data-y="${r.a}" title="${esc(r.t + (r.by ? ` (${r.by})` : ''))}, ${cardSpan(r)}" style="left:${l.toFixed(2)}%;width:${w.toFixed(2)}%;background:${r.bg}">${fits ? esc(r.t) : ''}</button>`;
   }).join('') + `</div>`;
   const cur = runs.find(r => r.a <= year && year <= r.b), u = cityUnit(c, year), fi = u >= 0 ? flagOf(u, year) : -1;
@@ -1823,6 +1839,7 @@ const figDetail = q => `<div class="t"><b>Population in ${q[0]}: ${fmt(q[1])}</b
 // the Population panel: the chart (on a log scale, so small medieval towns show their rises and falls too) with the
 // sudden changes shaded; the box; the sudden changes, then every figure
 function popPanel(c, p) {
+  zoomSet('pop', zoomRange(c.P[0][0], c.P[c.P.length - 1][0]));
   const lo = Math.log10(Math.min(...c.P.map(q => q[1])) * 0.8), hi = Math.log10(Math.max(...c.P.map(q => q[1])) * 1.15);
   const Yp = v => PH - 5 - (Math.log10(v) - lo) / Math.max(1e-9, hi - lo) * (PH - 10);
   const inR = v => Math.log10(v) >= lo && Math.log10(v) <= hi, grid = [];
@@ -1850,49 +1867,42 @@ function popPanel(c, p) {
   const foot = `Sources: ${[...new Set(c.P.map(q => q[2]))].map(i => esc(CSRC[i])).join('; ')}. Open dots: estimates for the wider city.`;
   return { band, detail: `<div class="detail popd">${popDetail(c, p)}</div>`, list, foot };
 }
-const PICO = '<svg class="pico" viewBox="0 0 16 16" aria-hidden="true"><path d="M1.5 13.5h13M2.5 11l3.6-4 2.8 2.4 4.6-5.4M10.4 4h3.2v3.2"/></svg>';
-const CHEV = '<svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M4.5 2.5L8 6l-3.5 3.5"/></svg>';
 const popBig = p => p.k === 'fig' ? fmt(p.v) : p.k === 'none' || p.k === 'gap' ? '—' : 'about ' + fmt(round3(p.v));
-// the card: header (the population and Events open the panels), the period view, who held the city (the box for
-// the year above the band)
+const TABS = [['ev', 'Events'], ['held', 'Held by'], ['pop', 'Population']];
+const TCHEV = up => `<svg class="tchev" viewBox="0 0 12 12" aria-hidden="true"><path d="${up ? 'M2.5 7.5L6 4l3.5 3.5' : 'M2.5 4.5L6 8l3.5-3.5'}"/></svg>`;
+// the card: header, the period view, then the tabs and the open tab (the part from the tabs down slides up over the
+// picture when raised). Events: the band, the box, the event's picture (only when raised), the list. Held by and
+// Population: the box, the band, the list. The credits come last: the period view's, or when raised, the event
+// picture's
 function cardHtml(d) {
   const c = d.c, p = d.p, views = CVIEWS ? CVIEWS[c.i] || [] : null, v = views ? pickView(views, year) : null;
-  const E = cardEvents(c), big = popBig(p);
-  const head = `<div class="chead"><div><div class="cnm">${esc(c.n)} in <span class="yr">${year}</span></div><div class="crow">` +
-    `<button type="button" class="cpop" data-ov="pop" aria-label="${big} people. Show the population over time">${big} <small>people</small>${PICO}</button>` +
-    `<button type="button" class="cevb" data-ov="ev">Events${E && E.all.length ? ` <span class="n">${E.all.length}</span>` : ''}${CHEV}</button></div></div>` +
-    `<button type="button" class="x xcard" aria-label="Close">×</button></div>`;
-  const H = heldTab(c);
+  const head = `<div class="chead"><div><div class="cnm">${esc(c.n)} in <span class="yr">${year}</span></div><div class="cpop">${popBig(p)} <small>people</small></div></div><button type="button" class="x" aria-label="Close">×</button></div>`;
+  const tabs = `<div class="ctabs" role="tablist" aria-label="${esc(c.n)}">` + TABS.map(([k, t]) => cardTab === k
+    ? `<button type="button" role="tab" data-t="${k}" aria-selected="true" aria-expanded="${cardUp}" title="${cardUp ? 'Show the picture again' : 'More room (covers the picture)'}">${t}${TCHEV(!cardUp)}</button>`
+    : `<button type="button" role="tab" data-t="${k}" aria-selected="false">${t}</button>`).join('') + `</div>`;
+  const cityCredit = creditInner(v);
+  let body, foot;
+  if (cardTab === 'ev') {
+    const B = eventsPanel(c); cardShownEv = B.last;
+    body = `${tlHtml(B.band, B.h)}${B.detail}${evPicHtml(B.last)}`;
+    foot = [cityCredit && `<span class="crc">${cityCredit}</span>`, B.foot && `<span class="cre">${B.foot}</span>`];
+    body += `<div class="scroll" data-tab="ev"><ul class="tlist ev">${B.list}</ul>`;
+  } else {
+    const B = cardTab === 'held' ? heldTab(c) : popPanel(c, p); cardShownEv = null;
+    body = `${B.detail}${tlHtml(B.band, cardTab === 'held' ? 32 : PH)}<div class="scroll" data-tab="${cardTab}"><ul class="tlist ${cardTab}">${B.list}</ul>`;
+    foot = [B.foot, cityCredit && `<span class="crc">${cityCredit}</span>`];
+  }
   cardShown = v;
-  return `<div class="ccard">${head}${picHtml(c, views, v)}<div class="csec">Held by</div>${H.detail}${tlHtml(H.band, 32)}` +
-    `<div class="scroll" data-tab="card"><ul class="tlist held">${H.list}</ul><div class="credit">${[H.foot, creditInner(v)].filter(Boolean).join(' ')}</div></div></div>`;
-}
-// a panel over the card, the same size: Population or Events. × (or Escape) closes it; on a phone, so does dragging
-// it down
-function coverHtml(d, phone) {
-  const c = d.c, p = d.p, pp = cardOverlay === 'pop', B = pp ? popPanel(c, p) : eventsPanel(c), E = cardEvents(c);
-  const sub = pp ? `Population <small>${popBig(p)}</small>` : `Events${E && E.all.length ? ` <small>${E.all.length}</small>` : ''}`;
-  const head = `<div class="chead"><div><div class="cnm">${esc(c.n)} in <span class="yr">${year}</span></div><div class="csub">${sub}</div></div>` +
-    `<button type="button" class="x xov" aria-label="Back to ${esc(c.n)}">×</button></div>`;
-  const body = pp ? `${head}${B.detail}${tlHtml(B.band, PH)}` : `${head}${tlHtml(B.band, B.h)}${B.detail}${evPicHtml(B.last)}`;
-  cardShownEv = pp ? null : B.last;
-  return `<div class="cover${coverEnter ? ' enter' : ''}" data-panel="${cardOverlay}" role="dialog" aria-label="${esc(c.n)}: ${pp ? 'population' : 'events'}">` +
-    (phone ? `<button type="button" class="grab" aria-label="Back to ${esc(c.n)}"><span></span></button>` : '') +
-    `<div class="cbody"><div class="ccard">${body}<div class="scroll" data-tab="${cardOverlay}"><ul class="tlist ${cardOverlay}">${B.list}</ul><div class="credit">${B.foot || ''}</div></div></div></div></div>`;
+  return `<div class="ccard${cardUp ? ' up' : ''}">${head}${picHtml(c, views, v)}<div class="cpane">${tabs}${body}<div class="credit">${foot.filter(Boolean).join(' ')}</div></div></div></div>`;
 }
 let cardShownEv = null;
-function openOverlay(which) {
-  cardOverlay = which; cardSel = null; coverEnter = true; if (which === 'ev') loadEventImages();
-  keepPop = [pop.offsetLeft, pop.offsetTop]; renderPop(); keepPop = null; coverEnter = false;
-  const x = pop.querySelector('.cover .xov'); if (x) x.focus({ preventScroll: true });
-}
-function closeOverlay() {
-  const cv = pop.querySelector('.cover'), from = cardOverlay; cardOverlay = null; cardSel = null;
-  if (!cv) return;
-  const b = pop.querySelector(`button[data-ov="${from}"]`); if (b) b.focus({ preventScroll: true });
-  cv.classList.remove('enter', 'drag'); cv.style.transform = ''; cv.classList.add('leave');
-  const done = () => { if (cv.isConnected) cv.remove(); };
-  cv.addEventListener('transitionend', done); setTimeout(done, 320);
+// raising the open tab over the picture, or lowering it again (it slides; see renderCityCard)
+function cardRefresh() { keepPop = [pop.offsetLeft, pop.offsetTop]; renderPop(); keepPop = null; }
+function setCardUp(up) {
+  if (up === cardUp) return;
+  cardUp = up; if (up && cardTab === 'ev') loadEventImages();
+  if (up && cardDetent === 'peek') cardDetent = 'full';
+  cardRefresh();
 }
 // moving the map to a year from inside the card: the card stays where it is, and follows whoever held the city
 function cardJump(d, y, e) {
@@ -1901,19 +1911,32 @@ function cardJump(d, y, e) {
   keepPop = [pop.offsetLeft, pop.offsetTop]; setYear(y); keepPop = null;
   if (y === year) renderPop();
 }
+// a tap on the band (an event, a holder, a figure or a sudden change) also raises the tab
+const raiseFor = b => { if (b.closest('.band') && !cardUp) { cardUp = true; if (cardTab === 'ev') loadEventImages(); if (cardDetent === 'peek') cardDetent = 'full'; } };
 function wireCard(d) {
   const root = pop, c = d.c;
   root.querySelectorAll('.band .ph, .band .chgb, .cstrip button, .tlist li[data-y], .vph button[data-y]').forEach(b => {
-    b.onclick = ev => { if (ev.target.closest('a')) return; ev.stopPropagation(); cardJump(d, +b.dataset.y); };
-    b.onkeydown = ev => { if (ev.target.closest('a')) return; if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); cardJump(d, +b.dataset.y); } };
+    const go = () => { raiseFor(b); cardJump(d, +b.dataset.y); };
+    b.onclick = ev => { if (ev.target.closest('a')) return; ev.stopPropagation(); go(); };
+    b.onkeydown = ev => { if (ev.target.closest('a')) return; if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); go(); } };
   });
   root.querySelectorAll('[data-e]').forEach(b => {
-    const go = () => { const E = cardEvents(c), e = E && E.all[+b.dataset.e]; if (!e) return; if (b.classList.contains('ev') && cardSel === e) { cardSel = null; renderPop(); } else cardJump(d, e.y, e); };
+    const go = () => {
+      const E = cardEvents(c), e = E && E.all[+b.dataset.e]; if (!e) return;
+      if (b.classList.contains('ev') && cardSel === e && cardUp) { cardSel = null; renderPop(); } else { raiseFor(b); cardJump(d, e.y, e); }
+    };
     b.onclick = ev => { if (ev.target.closest('a')) return; ev.stopPropagation(); go(); };
     b.onkeydown = ev => { if ((ev.key === 'Enter' || ev.key === ' ') && !ev.target.closest('a')) { ev.preventDefault(); go(); } };
   });
-  root.querySelectorAll('button[data-ov]').forEach(b => { b.onclick = ev => { ev.stopPropagation(); openOverlay(b.dataset.ov); }; });
-  const pd = root.querySelector('.cover .detail.popd'), keep = pd ? pd.innerHTML : '';
+  root.querySelectorAll('.ctabs button').forEach(b => {
+    b.onclick = ev => {
+      ev.stopPropagation();
+      if (b.dataset.t === cardTab) setCardUp(!cardUp);      // the open tab again: raise it over the picture, or lower it
+      else { cardTab = b.dataset.t; delete cardZoom[cardTab]; if (cardUp && cardTab === 'ev') loadEventImages(); cardRefresh(); }      // entering a tab: zoomed to its data
+      const t = pop.querySelector(`.ctabs button[data-t="${cardTab}"]`); if (t) t.focus({ preventScroll: true });
+    };
+  });
+  const pd = root.querySelector('.detail.popd'), keep = pd ? pd.innerHTML : '';
   root.querySelectorAll('.band .ph').forEach(h => {
     h.onmouseenter = () => { const q = c.P.find(q => q[0] === +h.dataset.y); if (q && pd) pd.innerHTML = figDetail(q); };
     h.onmouseleave = () => { if (pd) pd.innerHTML = keep; };
@@ -1926,29 +1949,59 @@ function wireCard(d) {
   const eb = root.querySelector('.eimg'); if (eb) eb.onclick = ev => { ev.stopPropagation(); openEventBig(cardShownEv); };
   const ei = root.querySelector('.eimg img:not(.blur)'), shownEv = cardShownEv;      // a picture that fails to load: the plate instead
   if (ei) ei.onerror = () => { const pic = ei.closest('.epic'); if (pic) pic.outerHTML = evPicHtml(shownEv, true); };
-  const x = root.querySelector('.xcard'); if (x) x.onclick = ev => { ev.stopPropagation(); closeCard(); };
-  const xo = root.querySelector('.xov'); if (xo) xo.onclick = ev => { ev.stopPropagation(); closeOverlay(); };
+  const x = root.querySelector('.chead .x'); if (x) x.onclick = ev => { ev.stopPropagation(); closeCard(); };
+  // sliding the band sideways (a drag, or a sideways swipe on a trackpad) toward years it leaves out: the whole 1000–2026
+  const tl = root.querySelector('.tl');
+  if (tl) {
+    const z0 = +tl.dataset.z0, z1 = +tl.dataset.z1;
+    const widen = dir => { if (cardZoom[cardTab] === 'full' || !(dir < 0 ? z0 > Y0 : z1 < Y1)) return false; cardZoom[cardTab] = 'full'; bandPanAt = Date.now(); tlFresh = true; cardRefresh(); tlFresh = false; return true; };
+    let p0 = null, acc = 0;
+    tl.addEventListener('pointerdown', ev => { p0 = [ev.clientX, ev.clientY]; });
+    tl.addEventListener('pointermove', ev => {
+      if (!p0) return; const dx = ev.clientX - p0[0], dy = ev.clientY - p0[1];
+      if (Math.abs(dx) > 24 && Math.abs(dx) > Math.abs(dy) * 1.5) { p0 = null; widen(dx > 0 ? -1 : 1); }      // dragged right: the earlier years, on the left
+    });
+    tl.addEventListener('pointerup', () => { p0 = null; }); tl.addEventListener('pointercancel', () => { p0 = null; });
+    tl.addEventListener('wheel', ev => {
+      if (Math.abs(ev.deltaX) <= Math.abs(ev.deltaY)) return;
+      ev.preventDefault(); acc += ev.deltaX;      // (also keeps the browser from going back a page)
+      if (Math.abs(acc) > 30) { const d = acc; acc = 0; widen(d < 0 ? -1 : 1); }
+    }, { passive: false });
+    tl.addEventListener('click', ev => { if (Date.now() - bandPanAt < 500) { ev.stopPropagation(); ev.preventDefault(); } }, true);
+  }
 }
-function closeCard() { selCity = null; cardSel = null; cardOverlay = null; drawCities(); renderPop(); }
-// the city's popup: build the card (and the panel over it, if one is open), then place it (on a phone, the sheet)
-// without moving it while the year changes
+let bandPanAt = 0;
+function closeCard() { selCity = null; cardSel = null; cardUp = false; drawCities(); renderPop(); }
+// the city's popup: build the card, then place it (on a phone, the sheet) without moving it while the year changes.
+// When the tab has just been raised or lowered, the card is drawn as it was and then slides to its new state
 function renderCityCard(d) {
   const c = d.c, sr = svg.getBoundingClientRect(), mb = $('mapbox').getBoundingClientRect();
-  loadViews(); loadEvents();
-  if (cardCity !== c.i) { cardCity = c.i; cardSel = null; cardOverlay = null; for (const k in cardScroll) delete cardScroll[k]; cardDetent = 'full'; delete pop.dataset.anchor; }
-  if (cardPending) { cardOverlay = cardPending.ov; cardSel = cardPending.e || null; cardPending = null; }      // an event opened from the map or the timeline
-  if (cardOverlay === 'ev') loadEventImages();
+  loadViews(); loadEvents(); if (!['ev', 'held', 'pop'].includes(cardTab)) cardTab = 'ev';
+  if (cardCity !== c.i) { cardCity = c.i; cardSel = null; cardUp = false; cardUpShown = null; for (const k in cardScroll) delete cardScroll[k]; for (const k in cardZoom) delete cardZoom[k]; cardDetent = 'full'; delete pop.dataset.anchor; }
+  if (cardPending) { cardTab = cardPending.tab; cardSel = cardPending.e || null; cardUp = !!cardPending.up; cardUpShown = cardUp; cardPending = null; }      // an event opened from the map or the timeline
+  if (cardUp && cardTab === 'ev') loadEventImages();
   if (cardSel && (year < cardSel.y || year > Math.max(cardSel.y, cardSel.end || 0))) cardSel = null;
   const phone = innerWidth <= 600;
-  if (phone && cardOverlay) cardDetent = 'full';
+  if (phone && cardUp) cardDetent = 'full';
   if (pop.classList.contains('citycard') && pop.dataset.city === String(c.i)) pop.querySelectorAll('.scroll[data-tab]').forEach(s => { cardScroll[s.dataset.tab] = s.scrollTop; });
   if (!pop.classList.contains('citycard')) { pop.style.left = '-9999px'; delete pop.dataset.anchor; }
   pop.classList.add('citycard'); pop.classList.toggle('citysheet', phone);
-  const main = cardHtml(d), cover = cardOverlay ? coverHtml(d, phone) : '';
-  pop.innerHTML = (phone ? `<button type="button" class="grab" aria-label="${cardDetent === 'full' ? 'Show the map' : 'Show more'}"><span></span></button><div class="sbody">${main}</div>` : main) + cover;
-  pop.dataset.city = c.i; pop.dataset.tab = cardOverlay || 'card';
+  const w = Math.min(380, sr.width - 2 * PAD), h = Math.min(750, mb.height - 2 * PAD);
+  if (phone) pop.style.left = pop.style.top = pop.style.width = ''; else { pop.style.width = w + 'px'; pop.style.height = h + 'px'; }
+  const from = cardUpShown == null ? cardUp : cardUpShown;
+  pop.innerHTML = phone ? `<button type="button" class="grab" aria-label="${cardDetent === 'full' ? 'Show the map' : 'Show more'}"><span></span></button><div class="sbody">${cardHtml(d)}</div>` : cardHtml(d);
+  pop.dataset.city = c.i; pop.dataset.tab = cardTab;
   pop.setAttribute('aria-label', `${c.n} in ${year}`);
   wireCard(d);
+  if (phone) { pop.hidden = false; pop.dataset.anchor = 'sheet'; sizeSheet(); }
+  const card = pop.querySelector('.ccard'), pic = card.querySelector('.pic');
+  card.classList.toggle('up', from);
+  card.style.setProperty('--lift', (pic ? pic.offsetHeight + 8 : 0) + 'px');      // how far the tabs rise: over the picture, to just under the header
+  if (from !== cardUp) {
+    card.classList.add('anim'); void card.offsetHeight; card.classList.toggle('up', cardUp);
+    const done = () => card.classList.remove('anim'); card.addEventListener('transitionend', done, { once: true }); setTimeout(done, 400);
+  }
+  cardUpShown = cardUp;
   const fitDates = () => {      // the event's full date if the name still fits on the line, else the short month, else the year
     const tb = pop.querySelector('.detail .t b[data-dates]'), nm = tb && tb.querySelector('.enm');
     if (nm && tb.clientWidth) for (const s of tb.dataset.dates.split('|')) { tb.querySelector('.cdt').textContent = s; if (nm.scrollWidth <= nm.clientWidth) break; }
@@ -1957,12 +2010,7 @@ function renderCityCard(d) {
     const on = list.querySelector('li.on:not(.fig)'); list.scrollTop = cardScroll[list.dataset.tab] || 0;
     if (on && (on.offsetTop < list.scrollTop || on.offsetTop + on.offsetHeight > list.scrollTop + list.clientHeight)) list.scrollTop = on.offsetTop - list.clientHeight / 2;
   });
-  if (phone) {
-    pop.style.left = pop.style.top = pop.style.width = ''; pop.hidden = false; pop.dataset.anchor = 'sheet';
-    sizeSheet(); scrollLists(); fitDates(); return;
-  }
-  const w = Math.min(380, sr.width - 2 * PAD), h = Math.min(750, mb.height - 2 * PAD);
-  pop.style.width = w + 'px'; pop.style.height = h + 'px';
+  if (phone) { scrollLists(); fitDates(); return; }
   const anchor = [c.i, Math.round((d.db[0] + d.db[2]) / 2), Math.round((d.db[1] + d.db[3]) / 2), Math.round(sr.width), Math.round(sr.height)].join(',');      // the dot's center (its size changes with the population)
   if (!pop.hidden && (pop.dataset.anchor === anchor || keepPop)) {      // the same city in the same place, or a year chosen from inside the card: stay put
     pop.style.left = Math.max(PAD, Math.min(pop.offsetLeft, mb.width - w - PAD)) + 'px'; pop.style.top = Math.max(PAD, Math.min(pop.offsetTop, mb.height - h - PAD)) + 'px';
@@ -1980,8 +2028,8 @@ function renderCityCard(d) {
   pop.style.left = Math.round(spot[0] + sr.left - mb.left) + 'px'; pop.style.top = Math.round(spot[1] + sr.top - mb.top) + 'px';
   pop.dataset.anchor = anchor; scrollLists(); fitDates();
 }
-// the phone's sheet: full (where it opens), the picture only (so the map shows), closed. Drag the bar or the
-// header, or tap the bar. A panel over it goes back down the same way
+// the phone's sheet: full (where it opens), the picture only (so the map shows; the tab comes down off the picture),
+// closed. Drag the bar or the header, or tap the bar
 function sizeSheet() {
   if (!pop.classList.contains('citysheet')) return;
   const H = innerHeight, pic = pop.querySelector('.sbody .pic');
@@ -1989,16 +2037,14 @@ function sizeSheet() {
   pop.style.height = (cardDetent === 'peek' ? Math.min(H * 0.92, peek) : Math.round(H * 0.92)) + 'px';
   const g = pop.querySelector(':scope > .grab'); if (g) g.setAttribute('aria-label', cardDetent === 'full' ? 'Show the map' : 'Show more');
 }
-function setDetent(dt) { if (dt === 'closed') return closeCard(); cardDetent = dt; sizeSheet(); }
+function setDetent(dt) {
+  if (dt === 'closed') return closeCard();
+  cardDetent = dt; if (dt === 'peek' && cardUp) { cardUp = false; return cardRefresh(); }
+  sizeSheet();
+}
 let sdrag = null;
 pop.addEventListener('pointerdown', ev => {
   if (!pop.classList.contains('citysheet')) return;
-  const cv = ev.target.closest('.cover');
-  if (cv) {
-    if (!ev.target.closest('.grab, .chead') || ev.target.closest('button:not(.grab), a')) return;
-    sdrag = { y: ev.clientY, moved: false, cover: cv, grab: !!ev.target.closest('.grab') };
-    pop.setPointerCapture(ev.pointerId); cv.classList.add('drag'); return;
-  }
   if (ev.target.closest('button:not(.grab), a, .band, .scroll, .detail')) return;
   if (cardDetent === 'full' && !ev.target.closest('.grab, .chead')) return;
   sdrag = { y: ev.clientY, h: pop.offsetHeight, moved: false, grab: !!ev.target.closest('.grab') };
@@ -2007,20 +2053,17 @@ pop.addEventListener('pointerdown', ev => {
 pop.addEventListener('pointermove', ev => {
   if (!sdrag) return;
   const dy = ev.clientY - sdrag.y; if (Math.abs(dy) > 5) sdrag.moved = true;
-  if (sdrag.cover) sdrag.cover.style.transform = `translateY(${Math.max(0, dy)}px)`;
-  else pop.style.height = Math.max(60, Math.min(innerHeight * 0.92, sdrag.h - dy)) + 'px';
+  pop.style.height = Math.max(60, Math.min(innerHeight * 0.92, sdrag.h - dy)) + 'px';
 });
 const endSheetDrag = ev => {
   if (!sdrag) return;
-  const dy = ev.clientY - sdrag.y, tap = !sdrag.moved, grab = sdrag.grab, cv = sdrag.cover; sdrag = null; pop.classList.remove('drag');
-  if (cv) { if ((tap && grab) || dy > 70) closeOverlay(); else { cv.classList.remove('drag'); cv.style.transform = ''; } return; }
+  const dy = ev.clientY - sdrag.y, tap = !sdrag.moved, grab = sdrag.grab; sdrag = null; pop.classList.remove('drag');
   if (tap) return setDetent(grab ? (cardDetent === 'full' ? 'peek' : 'full') : cardDetent === 'peek' ? 'full' : cardDetent);
   setDetent(dy > 70 ? (cardDetent === 'full' ? 'peek' : 'closed') : dy < -70 ? 'full' : cardDetent);
 };
 pop.addEventListener('pointerup', endSheetDrag); pop.addEventListener('pointercancel', endSheetDrag);
-pop.addEventListener('click', ev => {      // the bars from the keyboard
-  const g = ev.target.closest('.grab'); if (!g || ev.detail !== 0) return;
-  if (g.closest('.cover')) closeOverlay(); else setDetent(cardDetent === 'full' ? 'peek' : 'full');
+pop.addEventListener('click', ev => {      // the bar from the keyboard
+  const g = ev.target.closest('.grab'); if (g && ev.detail === 0) setDetent(cardDetent === 'full' ? 'peek' : 'full');
 });
 addEventListener('resize', sizeSheet);
 // the whole picture, with its full credit
@@ -2042,13 +2085,13 @@ function openEventBig(e) {
 }
 function closeBigView() { if (bigv.hidden) return; bigv.hidden = true; bigv.textContent = ''; if (bigFrom && document.contains(bigFrom)) bigFrom.focus(); }
 bigv.addEventListener('click', ev => { if (!ev.target.closest('a')) closeBigView(); });
-// Escape: the whole picture first, then a panel, then (the map's own handler) the city
+// Escape: the whole picture first, then a raised tab comes down, then (the map's own handler) the city closes
 document.addEventListener('keydown', ev => { if (ev.key === 'Escape' && !bigv.hidden) { ev.stopImmediatePropagation(); closeBigView(); } }, true);
-document.addEventListener('keydown', ev => { if (ev.key === 'Escape' && cardOverlay && pop.querySelector('.cover')) { ev.stopImmediatePropagation(); closeOverlay(); } }, true);
+document.addEventListener('keydown', ev => { if (ev.key === 'Escape' && cardUp && selCity != null && !pop.hidden && pop.classList.contains('citycard')) { ev.stopImmediatePropagation(); setCardUp(false); } }, true);
 function renderPop() {
   clearTimeout(popTimer); popTimer = 0;
   const fu = focusUnit(), d = cityDots.find(d => d.c.i === selCity);
-  if (!d) { cardOverlay = null; cardCity = null; }      // the city closed: it opens fresh next time
+  if (!d) { cardUp = false; cardUpShown = null; cardCity = null; }      // the city closed: it opens fresh next time
   if (animating || fu < 0 || (!d && popClosed)) { pop.hidden = true; return; }
   if (d) return renderCityCard(d);
   if (pop.classList.contains('citycard')) { pop.classList.remove('citycard', 'citysheet'); pop.style.height = ''; delete pop.dataset.anchor; }
