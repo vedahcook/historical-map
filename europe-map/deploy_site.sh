@@ -1,35 +1,29 @@
 #!/bin/sh
-# Publish the map with GitHub Pages. Run in europe-map/ after the page is rebuilt.
-#   ./deploy_site.sh              the live map, https://vedahcook.github.io/historical-map/ (the staging copy is kept)
-#   ./deploy_site.sh staging      a test copy at https://vedahcook.github.io/historical-map/staging/, marked "Staging" and
-#                                 hidden from search engines (the live map is kept)
-#   ... DIR SUBPATH               (either target) also publish the folder DIR at SUBPATH inside it, for example
-#                                 ./deploy_site.sh staging ../_cityviews city-views  ->  .../staging/city-views/
-# The gh-pages branch is replaced by a single commit each time, so it never grows. Pages update a minute or two later.
+# Publish the map with GitHub Pages (the gh-pages branch). Run in europe-map/ after the page is rebuilt.
+#   sh deploy_site.sh test   a test copy at https://vedahcook.github.io/historical-map/test/ (the live map stays as it is)
+#   sh deploy_site.sh        the live map at https://vedahcook.github.io/historical-map/ (a test copy there is kept)
+# The branch holds a single commit, replaced each time, so it never grows; files that are already published (the
+# earlier eras' maps, flags, terrain) are not uploaded again. The pages change a minute or two later.
 set -e
-TARGET=${1:-live}; [ $# -gt 0 ] && shift
-case "$TARGET" in live|staging) ;; *) echo "usage: $0 [live|staging] [DIR SUBPATH]..."; exit 1;; esac
-REMOTE=$(git -C .. remote get-url origin)
-ROOT=$(cd .. && pwd)
-rm -rf "$ROOT/_build" "$ROOT/_old" "$ROOT/_site"
-if [ "$TARGET" = staging ]; then python3 make_site.py "$ROOT/_build" --staging; else python3 make_site.py "$ROOT/_build"; fi
-while [ $# -ge 2 ]; do mkdir -p "$ROOT/_build/$2"; cp -R "$1"/. "$ROOT/_build/$2/"; shift 2; done
-git clone -q --depth 1 --branch gh-pages "$REMOTE" "$ROOT/_old" 2>/dev/null || mkdir -p "$ROOT/_old"
-rm -rf "$ROOT/_old/.git"
-mkdir -p "$ROOT/_site"
-if [ "$TARGET" = live ]; then
-  cp -R "$ROOT/_build"/. "$ROOT/_site/"
-  [ -d "$ROOT/_old/staging" ] && cp -R "$ROOT/_old/staging" "$ROOT/_site/staging"
+REMOTE=$(git remote get-url origin)
+NAME=$(git config user.name); EMAIL=$(git config user.email); REV=$(git rev-parse --short HEAD)
+rm -rf ../_site ../_site_test ../_site_git
+git clone -q --depth 1 --branch gh-pages "$REMOTE" ../_site        # what is published now
+if [ "$1" = test ]; then
+  python3 make_site.py ../_site/test --test
+  MSG="Test copy of Europe's borders map, built from main $REV"
 else
-  cp -R "$ROOT/_old"/. "$ROOT/_site/"; rm -rf "$ROOT/_site/staging"
-  cp -R "$ROOT/_build" "$ROOT/_site/staging"
+  if [ -d ../_site/test ]; then mv ../_site/test ../_site_test; fi
+  mv ../_site/.git ../_site_git
+  python3 make_site.py ../_site
+  mv ../_site_git ../_site/.git
+  if [ -d ../_site_test ]; then mv ../_site_test ../_site/test; fi
+  MSG="Europe's borders map, built from main $REV"
 fi
-touch "$ROOT/_site/.nojekyll"
-cd "$ROOT/_site"
-git init -q -b gh-pages
+cd ../_site
+git checkout -q --orphan next
 git add -A
-git -c user.name="$(git -C .. config user.name)" -c user.email="$(git -C .. config user.email)" \
-  commit -q -m "Europe's borders map ($TARGET updated), built from $(git -C .. rev-parse --abbrev-ref HEAD) $(git -C .. rev-parse --short HEAD)"
-git push -q -f "$REMOTE" gh-pages
-rm -rf .git "$ROOT/_build" "$ROOT/_old"
-echo "pushed to gh-pages ($TARGET)"
+git -c user.name="$NAME" -c user.email="$EMAIL" commit -q -m "$MSG"
+git push -q -f origin next:gh-pages
+cd .. && rm -rf _site
+echo "pushed to gh-pages"

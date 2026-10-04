@@ -6,7 +6,7 @@
   --bg: #f2f4f1; --surface: #ffffff; --sunk: #e9ece7; --ink: #18201c; --muted: #56605a; --faint: #7d867f; --line: #d6dbd4;
   --accent: #1f5f6b; --accent-ink: #ffffff; --focus: #1f5f6b;
   --water: #bfd1da; --outside: #e7ebe8; --grat: rgba(42,48,44,0.12); --none: #e6e4dc; --border: rgba(42,48,44,0.38); --vborder: rgba(42,48,44,0.28); --dim: rgba(242,244,241,0.5); --dimtext: 0.26; --river: #86adc0; --halo: rgba(255,255,255,0.88); --river-ink: #2f6c86; --mtn-ink: #7a5534; --plain-ink: #85784f; --relief: 0.5;
-  --alt: #1f5f6b; --alt-fill: rgba(31,95,107,0.16); --sel: #18201c;
+  --alt: #1f5f6b; --alt-fill: rgba(31,95,107,0.16); --sel: #18201c; --edge-ink: #000 34%;
   /*FILLS_LIGHT*/
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
   --sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -18,14 +18,14 @@
   --bg: #111513; --surface: #1a201d; --sunk: #151a18; --ink: #e6ece8; --muted: #a3aea7; --faint: #7f8a83; --line: #2e3632;
   --accent: #7fc4cf; --accent-ink: #0e1412; --focus: #7fc4cf;
   --water: #14232a; --outside: #161b19; --grat: rgba(223,230,225,0.12); --none: #2a2e2b; --border: rgba(223,230,225,0.34); --vborder: rgba(223,230,225,0.24); --dim: rgba(17,21,19,0.48); --dimtext: 0.3; --river: #2c4b57; --halo: rgba(17,21,19,0.85); --river-ink: #8cbcd0; --mtn-ink: #d2b08c; --plain-ink: #bdb08a; --relief: 0.42;
-  --alt: #7fc4cf; --alt-fill: rgba(127,196,207,0.2); --sel: #ffffff;
+  --alt: #7fc4cf; --alt-fill: rgba(127,196,207,0.2); --sel: #ffffff; --edge-ink: #fff 18%;
   /*FILLS_DARK*/
   color-scheme: dark; } }
 :root[data-theme="dark"] {
   --bg: #111513; --surface: #1a201d; --sunk: #151a18; --ink: #e6ece8; --muted: #a3aea7; --faint: #7f8a83; --line: #2e3632;
   --accent: #7fc4cf; --accent-ink: #0e1412; --focus: #7fc4cf;
   --water: #14232a; --outside: #161b19; --grat: rgba(223,230,225,0.12); --none: #2a2e2b; --border: rgba(223,230,225,0.34); --vborder: rgba(223,230,225,0.24); --dim: rgba(17,21,19,0.48); --dimtext: 0.3; --river: #2c4b57; --halo: rgba(17,21,19,0.85); --river-ink: #8cbcd0; --mtn-ink: #d2b08c; --plain-ink: #bdb08a; --relief: 0.42;
-  --alt: #7fc4cf; --alt-fill: rgba(127,196,207,0.2); --sel: #ffffff;
+  --alt: #7fc4cf; --alt-fill: rgba(127,196,207,0.2); --sel: #ffffff; --edge-ink: #fff 18%;
   /*FILLS_DARK*/
   color-scheme: dark;
 }
@@ -85,6 +85,7 @@ button, select, input { font: inherit; color: inherit; }
 .lbl.big { font-weight: 450; }
 .lbl.off { opacity: var(--dimtext); }      /* names outside the highlighted country fade more than the map does */
 .dim { fill: var(--dim); fill-rule: evenodd; pointer-events: none; }
+.focusedge { fill: none; stroke-width: 1.25px; stroke-linejoin: round; vector-effect: non-scaling-stroke; pointer-events: none; }   /* the highlighted country's outline, in its own color */
 .pin circle { fill: none; stroke: var(--accent); stroke-width: 2px; vector-effect: non-scaling-stroke; pointer-events: none; }
 .city circle { fill: var(--ink); stroke: var(--halo); cursor: pointer; }
 .city.nofig circle { fill: var(--surface); stroke: var(--ink); }
@@ -289,6 +290,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
           <g id="badges"></g>
           <g id="tlabels"></g>
           <path id="dim" class="dim"></path>
+          <path id="focusedge" class="focusedge"></path>
           <g id="labels"></g>
           <g id="pin" class="pin"></g>
           <g id="cities"></g>
@@ -584,7 +586,7 @@ function draw() {
   const fg = $('fills'); fg.textContent = '';
   for (const f of G ? G.fills : []) {
     const p = el('path', { d: f.d, class: 'fill', 'data-u': f.u }, fg); p.setAttribute('style', `fill: ${fillVar(f.u)}`);
-    if (isVassal(f.u)) { const h = el('path', { d: f.d, class: 'fill', 'data-u': f.u }, fg); h.setAttribute('style', `fill: url(#${hatchFor(U[f.u].ov, isOcc(f.u))})`); }
+    if (isVassal(f.u)) { const h = el('path', { d: f.d, class: 'fill hatch', 'data-u': f.u }, fg); h.setAttribute('style', `fill: url(#${hatchFor(U[f.u].ov, isOcc(f.u))})`); }
   }
   $('borders').setAttribute('d', G ? G.borders : ''); $('vborders').setAttribute('d', G ? G.vb : '');
   drawAlts(); drawDim(); applyView();
@@ -597,20 +599,31 @@ function draw() {
 if (document.fonts) document.fonts.ready.then(() => { drawLabels(); drawCities(); });
 
 // ---------- labels ----------
-let labelBoxes = [], focusBox = null;
+let labelBoxes = [], focusBox = null, focusParts = [];
 function drawLabels() {
-  const g = $('labels'); g.textContent = ''; const fl = $('focuslabel'); fl.textContent = ''; focusBox = null;
+  const g = $('labels'); g.textContent = ''; const fl = $('focuslabel'); fl.textContent = ''; focusBox = null; focusParts = [];
   const fu = focusUnit();
   const rows = (LABELS[year] || []).slice().sort((a, b) => (b[0] === fu) - (a[0] === fu) || b[4] - a[4]);
   const k = pxPerKm(); if (!k) return;
   const r = svg.getBoundingClientRect(); const placed = []; labelBoxes = placed;
   for (const [u, x, y, area, varea, ni] of rows) {
-    const sx = (x - shown[0]) * k, sy = (y - shown[1]) * k;
-    if (sx < 0 || sy < 0 || sx > r.width || sy > r.height) continue;
     const name = NM[ni]; const big = varea > 180000;
     const focused = u === fu;
     // the highlighted country's name stays well above city-name size (12px) at any zoom
     const fs = Math.max(focused ? 19 : 0, big ? Math.min(20, 15 + Math.log10(varea / 180000) * 6) : varea > 40000 ? 14 : 13);
+    if (focused) {          // inside its borders, near the middle of the part on screen (focusNamePlace)
+      const P = focusNamePlace(u, name, fs);
+      if (P) {
+        const mx = shown[0] + P.sx / k, t = el('text', { x: mx.toFixed(1), class: 'lbl' + (big ? ' big' : '') }, fl);
+        t.setAttribute('style', `font-size:${(P.fs / k).toFixed(2)}px`);
+        P.lines.forEach((ln, i) => { const ts = el('tspan', { x: mx.toFixed(1), y: (shown[1] + (P.sy + P.dy[i]) / k).toFixed(1) }, t); ts.textContent = ln; });
+        focusParts = P.lines.map((ln, i) => [P.sx - P.lw[i] / 2, P.sy + P.dy[i] - P.lh / 2, P.sx + P.lw[i] / 2, P.sy + P.dy[i] + P.lh / 2]);
+        focusBox = boxAround(focusParts); placed.push(...focusParts);
+        continue;
+      }
+    }
+    const sx = (x - shown[0]) * k, sy = (y - shown[1]) * k;
+    if (sx < 0 || sy < 0 || sx > r.width || sy > r.height) continue;
     const w = name.length * fs * 0.5 + 6, h = fs * 1.3;
     const room = Math.sqrt(varea) * k * 1.7;
     if (!focused && w > room * 1.6 && !(w < 70 && varea * k * k > 900)) continue;
@@ -624,11 +637,108 @@ function drawLabels() {
     }
     const box = [cx - w / 2, cy - h / 2, cx + w / 2, cy + h / 2];
     if (!focused && placed.some(b => box[0] < b[2] && box[2] > b[0] && box[1] < b[3] && box[3] > b[1])) continue;
-    placed.push(box); if (focused) focusBox = box;
+    placed.push(box); if (focused) { focusBox = box; focusParts = [box]; }
     const t = el('text', { x: (shown[0] + cx / k).toFixed(1), y: (shown[1] + cy / k).toFixed(1), class: 'lbl' + (big ? ' big' : '') + (fu >= 0 && !focused ? ' off' : '') }, focused ? fl : g);
     t.setAttribute('style', `font-size:${(fs / k).toFixed(2)}px`);
     t.textContent = name;
   }
+}
+
+// The highlighted country's name, level, inside its borders and as near the middle of the part on screen as it fits.
+// The country on screen is drawn at a third of screen size; a running total of its cells tells at once how much of
+// any box lies inside it. The name is tried on one line, then on two (split where the lines come out most even), at
+// its usual size and then smaller (down to 14px); the first that fits wholly inside wins, at the spot nearest the
+// middle of the country on screen, keeping off city dots and names and the map's buttons. If nothing fits, it goes
+// on one line at its usual size where most of it lies inside, near the middle. While the map is panned, the name stays
+// put as long as it stays on screen.
+let nameCanvas = null, nameCache = null;
+const boxAround = bs => [Math.min(...bs.map(b => b[0])), Math.min(...bs.map(b => b[1])), Math.max(...bs.map(b => b[2])), Math.max(...bs.map(b => b[3]))];
+function focusNamePlace(u, name, fs0) {
+  const G = yearGeo(year), f = G && G.fills.find(g => g.u === u), k = pxPerKm(), sr = svg.getBoundingClientRect();
+  if (!f || !k || !sr.width) return null;
+  const cv = nameCanvas || (nameCanvas = document.createElement('canvas')), cx = cv.getContext('2d', { willReadFrequently: true });
+  const font = getComputedStyle(svg).getPropertyValue('--mapfont') || 'sans-serif';
+  const measure = (t, fs) => { cx.setTransform(1, 0, 0, 1, 0, 0); cx.font = `450 ${fs}px ${font}`; return cx.measureText(t).width; };
+  const cities = focusCities().filter(d => d.vis), ctrl = controlBoxes();
+  const key = [u, year, name, fs0, Math.round(measure(name, fs0)), cities.map(d => d.c.i).join('.'), sr.width | 0, sr.height | 0].join('|');
+  const free = b => b[0] >= 2 && b[1] >= 2 && b[2] <= sr.width - 2 && b[3] <= sr.height - 2 && !ctrl.some(c => b[0] < c[2] && b[2] > c[0] && b[1] < c[3] && b[3] > c[1]);
+  if (nameCache && nameCache.key === key && k / nameCache.k > 0.95 && k / nameCache.k < 1.6) {
+    const P = nameCache.P, sx = (P.x - shown[0]) * k, sy = (P.y - shown[1]) * k, b = [sx - P.w / 2, sy - P.h / 2, sx + P.w / 2, sy + P.h / 2];
+    if (free(b) && !cities.some(d => d.sx + d.r + 3 > b[0] && d.sx - d.r - 3 < b[2] && d.sy + d.r + 3 > b[1] && d.sy - d.r - 3 < b[3])) return { ...P, sx, sy };
+  }
+  // the country on screen, in cells of S px, and a running total of its cells
+  const S = 3, W = Math.ceil(sr.width / S), H = Math.ceil(sr.height / S);
+  cv.width = W; cv.height = H;
+  cx.setTransform(k / S, 0, 0, k / S, -shown[0] * k / S, -shown[1] * k / S); cx.fill(new Path2D(f.d));
+  const px = cx.getImageData(0, 0, W, H).data, I = new Int32Array((W + 1) * (H + 1));
+  const inC = new Uint8Array(W * H);
+  for (let y = 0; y < H; y++) { let row = 0; for (let x = 0; x < W; x++) { const v = px[(y * W + x) * 4 + 3] > 127 ? 1 : 0; inC[y * W + x] = v; row += v; I[(y + 1) * (W + 1) + x + 1] = I[y * (W + 1) + x + 1] + row; } }
+  // the middle: of the largest piece on screen, so an island or an outlying territory doesn't pull the name off the mainland
+  let m0 = 0, mx = 0, my = 0; const seen = new Uint8Array(W * H), stack = [];
+  for (let i0 = 0; i0 < W * H; i0++) {
+    if (!inC[i0] || seen[i0]) continue;
+    let c = 0, sx_ = 0, sy_ = 0; seen[i0] = 1; stack.push(i0);
+    while (stack.length) { const i = stack.pop(), x = i % W, y = (i / W) | 0; c++; sx_ += x; sy_ += y;
+      if (x > 0 && inC[i - 1] && !seen[i - 1]) { seen[i - 1] = 1; stack.push(i - 1); }
+      if (x < W - 1 && inC[i + 1] && !seen[i + 1]) { seen[i + 1] = 1; stack.push(i + 1); }
+      if (y > 0 && inC[i - W] && !seen[i - W]) { seen[i - W] = 1; stack.push(i - W); }
+      if (y < H - 1 && inC[i + W] && !seen[i + W]) { seen[i + W] = 1; stack.push(i + W); } }
+    if (c > m0) { m0 = c; mx = sx_; my = sy_; }
+  }
+  if (m0 < 20) return null;
+  const at = (x, y) => I[y * (W + 1) + x], cl = (v, m) => Math.max(0, Math.min(m, v));
+  // the share of a box (screen px) inside the country; off screen counts as outside
+  const inside = b => { const x0 = Math.floor(b[0] / S), y0 = Math.floor(b[1] / S), x1 = Math.ceil(b[2] / S), y1 = Math.ceil(b[3] / S), area = (x1 - x0) * (y1 - y0);
+    const X0 = cl(x0, W), Y0 = cl(y0, H), X1 = cl(x1, W), Y1 = cl(y1, H); return area > 0 ? (at(X1, Y1) - at(X0, Y1) - at(X1, Y0) + at(X0, Y0)) / area : 0; };
+  const midX = (mx / m0 + 0.5) * S, midY = (my / m0 + 0.5) * S, Rm = Math.sqrt(m0 * S * S / Math.PI);
+  const dots = cities.map(d => [d.sx - d.r - 3, d.sy - d.r - 3, d.sx + d.r + 3, d.sy + d.r + 3]), names = cities.map(d => [d.sx + d.r, d.sy - 8, d.sx + d.r + 6 + d.c.n.length * 6.2, d.sy + 8]);
+  const hit = (a, b) => a[0] < b[2] && a[2] > b[0] && a[1] < b[3] && a[3] > b[1];
+  const cost = b => { let c = 0; for (const d of dots) if (hit(b, d)) c += 2; for (const n of names) if (hit(b, n)) c += 0.3; for (const q of ctrl) if (hit(b, q)) c += 3; return c; };
+  // the ways to set the name: one line, or two split where the lines come out most even
+  const words = name.split(' '), layouts = [];
+  for (const fs of [fs0, Math.max(14, Math.round(fs0 * 0.85)), Math.max(14, Math.round(fs0 * 0.74))]) {
+    layouts.push({ fs, lines: [name] });
+    if (words.length > 1) {
+      let bestSplit = null;
+      for (let i = 1; i < words.length; i++) { const a = words.slice(0, i).join(' '), b = words.slice(i).join(' '), m = Math.max(measure(a, fs), measure(b, fs)); if (!bestSplit || m < bestSplit.m) bestSplit = { m, lines: [a, b] }; }
+      layouts.push({ fs, lines: bestSplit.lines });
+    }
+  }
+  const shape = L => { const lw = L.lines.map(t => measure(t, L.fs) + 6), lh = L.fs * 1.15, gap = L.fs * 1.1, n = L.lines.length;
+    return { ...L, lw, lh, w: Math.max(...lw), h: lh + gap * (n - 1), dy: L.lines.map((t, i) => (i - (n - 1) / 2) * gap) }; };
+  const boxesAt = (L, sx, sy) => L.lw.map((w, i) => [sx - w / 2, sy + L.dy[i] - L.lh / 2, sx + w / 2, sy + L.dy[i] + L.lh / 2]);
+  // centers to try: every few cells, nearest the middle of the country on screen first
+  const stride = Math.max(1, Math.round(Math.sqrt(W * H / 12000)));
+  const spots = [];
+  for (let gy = 0; gy < H; gy += stride) for (let gx = 0; gx < W; gx += stride) { const sx = (gx + 0.5) * S, sy = (gy + 0.5) * S; spots.push([Math.hypot(sx - midX, sy - midY) / Rm, sx, sy]); }
+  spots.sort((p, q) => p[0] - q[0]);
+  let pick = null;
+  for (const L0 of layouts) {
+    const L = shape(L0); let best = null;
+    for (const [dm, sx, sy] of spots) {
+      if (best && dm > best.s) break;                     // no spot further out can beat the best so far
+      const bs = boxesAt(L, sx, sy);
+      if (!bs.every(b => inside([b[0] - 2, b[1] - 1, b[2] + 2, b[3] + 1]) >= 0.995)) continue;
+      const s = dm + bs.reduce((t, b) => t + cost(b), 0);
+      if (!best || s < best.s) best = { s, sx, sy };
+    }
+    if (best) { pick = { L, ...best }; break; }
+  }
+  if (!pick) {                                             // nothing fits: the setting and spot with most of the name inside, near the middle
+    for (const L0 of layouts) {
+      const L = shape(L0), shrink = 1 - L.fs / fs0;
+      for (const [dm, sx, sy] of spots) {
+        const bs = boxesAt(L, sx, sy), area = bs.reduce((t, b) => t + (b[2] - b[0]) * (b[3] - b[1]), 0);
+        if (bs.some(b => b[0] < 0 || b[1] < 0 || b[2] > sr.width || b[3] > sr.height)) continue;
+        const inn = bs.reduce((t, b) => t + inside(b) * (b[2] - b[0]) * (b[3] - b[1]), 0) / area;
+        const s = -2 * inn + 0.15 * dm + 0.3 * bs.reduce((t, b) => t + cost(b), 0) + shrink + (L.lines.length - 1) * 0.1;
+        if (!pick || s < pick.s) pick = { L, s, sx, sy };
+      }
+    }
+    if (!pick) { nameCache = null; return null; }
+  }
+  const { L } = pick, P = { x: shown[0] + pick.sx / k, y: shown[1] + pick.sy / k, fs: L.fs, lines: L.lines, lw: L.lw, lh: L.lh, dy: L.dy, w: L.w, h: L.h };
+  nameCache = { key, k, P }; return { ...P, sx: pick.sx, sy: pick.sy };
 }
 
 // ---------- alternative borders ----------
@@ -735,12 +845,56 @@ function placeUnit(y) {
 }
 const focusUnit = () => placeUnit(year);
 function drawDim() {
-  const p = $('dim'); const u = focusUnit();
-  if (u < 0) { p.setAttribute('d', ''); return; }
+  const p = $('dim'), edge = $('focusedge'); const u = focusUnit();
+  const cols = u >= 0 ? dimColors(U[u].c) : null;
+  for (const e of $('fills').children) { const v = +e.dataset.u; if (!e.classList.contains('hatch')) e.style.fill = cols && v !== u ? cols[U[v].c] : fillVar(v); }
+  if (u < 0) { p.setAttribute('d', ''); edge.setAttribute('d', ''); return; }
   const f = yearGeo(year).fills.find(g => g.u === u);
   const [x, y, w, h] = VB0, pad = Math.max(w, h);
   p.setAttribute('d', `M${x - pad},${y - pad}H${x + w + pad}V${y + h + pad}H${x - pad}Z` + (f ? f.d : ''));
+  edge.setAttribute('d', f ? f.d : ''); edge.style.stroke = `color-mix(in oklab, ${hueVar(u)}, var(--edge-ink))`;
 }
+// Colors of the countries outside the highlighted one. The pale veil (--dim) over them would on its own turn a
+// country's stronger shade into the paler shade of the same color (the Ottoman Empire's darker green came out exactly
+// as Hungary's lighter green), so their fills are also grayed (keeping DIM_KEEP of their color), and any that would
+// still come close to the highlighted country's color are made lighter or darker until they differ by at least
+// DIM_APART (in OKLab, about the difference between a color's two shades on the map). Worked out in the theme in use.
+const DIM_KEEP = 0.4, DIM_APART = 0.05;
+const toLin = v => (v /= 255) <= 0.04045 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
+const fromLin = v => 255 * (v <= 0.0031308 ? 12.92 * v : 1.055 * Math.pow(v, 1 / 2.4) - 0.055);
+function okLab(c) {
+  const [r, g, b] = c.map(toLin);
+  const l = Math.cbrt(0.4122214708 * r + 0.5363325363 * g + 0.0514459929 * b), m = Math.cbrt(0.2119034982 * r + 0.6806995451 * g + 0.1073969566 * b), s = Math.cbrt(0.0883024619 * r + 0.2817188376 * g + 0.6299787005 * b);
+  return [0.2104542553 * l + 0.7936177850 * m - 0.0040720468 * s, 1.9779984951 * l - 2.4285922050 * m + 0.4505937099 * s, 0.0259040371 * l + 0.7827717662 * m - 0.8086757660 * s];
+}
+function okRgb([L, a, b]) {
+  const l = (L + 0.3963377774 * a + 0.2158037573 * b) ** 3, m = (L - 0.1055613458 * a - 0.0638541728 * b) ** 3, s = (L - 0.0894841775 * a - 1.2914855480 * b) ** 3;
+  return [4.0767416621 * l - 3.3077115913 * m + 0.2309699292 * s, -1.2684380046 * l + 2.6097574011 * m - 0.3413193965 * s, -0.0041960863 * l - 0.7034186147 * m + 1.7076147010 * s].map(v => fromLin(Math.max(0, Math.min(1, v))));
+}
+const rgbOf = h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16));
+const hexOf = c => '#' + c.map(v => Math.round(Math.max(0, Math.min(255, v))).toString(16).padStart(2, '0')).join('');
+let dimKey = '', dimCols = null;
+function dimColors(fc) {
+  const cs = getComputedStyle(document.documentElement), pal = [];
+  for (let i = 0; ; i++) { const v = cs.getPropertyValue('--f' + i).trim(); if (!/^#[0-9a-f]{6}$/i.test(v)) break; pal.push(v); }
+  const veil = (cs.getPropertyValue('--dim').match(/[\d.]+/g) || [255, 255, 255, 0.5]).map(Number), O = veil.slice(0, 3), a = veil[3];
+  const key = pal.join() + veil.join() + '|' + fc; if (key === dimKey) return dimCols;
+  const under = c => c.map((v, i) => v * (1 - a) + O[i] * a);              // a color as it shows through the veil
+  const F = okLab(rgbOf(pal[fc]));
+  const Lmax = okLab(under([255, 255, 255]))[0] - 0.005, Lmin = okLab(under([0, 0, 0]))[0] + 0.005;
+  dimCols = pal.map(h => {
+    let [L, A, B] = okLab(under(rgbOf(h))); A *= DIM_KEEP; B *= DIM_KEEP;
+    const dab = Math.hypot(A - F[1], B - F[2]);
+    if (dab < DIM_APART) {
+      const m = Math.sqrt(DIM_APART * DIM_APART - dab * dab), up = F[0] + m, dn = F[0] - m;
+      if (Math.abs(L - F[0]) < m) L = (L >= F[0] && up <= Lmax) || dn < Lmin ? Math.min(up, Lmax) : dn;
+    }
+    return hexOf(okRgb([L, A, B]).map((v, i) => (v - O[i] * a) / (1 - a)));   // the fill under the veil that shows as that
+  });
+  dimKey = key; return dimCols;
+}
+// a change of light or dark theme changes the colors
+try { matchMedia('(prefers-color-scheme: dark)').addEventListener('change', drawDim); new MutationObserver(drawDim).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] }); } catch (e) {}
 // a ring around each detached part of the highlighted country (up to 80 px across on screen), so a territory far
 // from the rest is easy to spot; also around the main part when the whole country is tiny. The popup keeps off them.
 let ringBoxes = [];
@@ -810,7 +964,7 @@ function drawCities() {
   // only the country's larger cities on screen: at most 10 (focusCities)
   const inside = focusCities();
   if (selCity != null && !inside.some(d => d.c.i === selCity)) selCity = null;
-  const taken = focusBox ? [focusBox.slice()] : [], fs = 12, wf = 0.5;
+  const taken = focusParts.map(b => b.slice()), fs = 12, wf = 0.5;
   // dots first (biggest last so they sit on top), then names where they fit
   for (const d of inside) {
     const sx = (d.c.x - shown[0]) * k, sy = (d.c.y - shown[1]) * k;
@@ -845,7 +999,7 @@ function drawCities() {
 }
 // what goes over the map after the countries and cities are placed, keeping clear of their names
 function drawOverlays() {
-  const boxes = labelBoxes.concat(cityDots.flatMap(d => d.lb ? [d.db, d.lb] : [d.db]), evDots.flatMap(m => m.lb ? [m.db, m.lb] : [m.db]), controlBoxes(), focusBox ? [focusBox] : []);
+  const boxes = labelBoxes.concat(cityDots.flatMap(d => d.lb ? [d.db, d.lb] : [d.db]), evDots.flatMap(m => m.lb ? [m.db, m.lb] : [m.db]), controlBoxes(), focusParts);
   drawTerrainLabels(boxes);
 }
 // ---------- events in cities, and people born or died there (city-events.json, city-people.json, from Wikidata) ----------
@@ -1414,7 +1568,7 @@ function renderPop() {
   if (flagBtn) flagBtn.onclick = ev => { ev.stopPropagation(); openFlag(+flagBtn.dataset.i, pop.querySelector('.nm span').textContent); };
   const w = d ? Math.min(330, sr.width - 2 * PAD) : sr.width < 600 ? sr.width - 2 * PAD : 300; pop.style.width = w + 'px';
   pop.style.left = '-9999px'; pop.style.top = '0px'; pop.hidden = false;
-  const h = pop.offsetHeight, ctrl = controlBoxes(), fb = focusBox ? [focusBox] : [];
+  const h = pop.offsetHeight, ctrl = controlBoxes(), fb = focusParts;
   if (d && keepPop) {      // moved in time from inside the popup: stay put, just kept inside the map
     pop.style.left = Math.max(PAD, Math.min(keepPop[0], mb.width - w - PAD)) + 'px'; pop.style.top = Math.max(PAD, Math.min(keepPop[1], mb.height - h - PAD)) + 'px';
     return;

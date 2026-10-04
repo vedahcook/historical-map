@@ -1,31 +1,28 @@
 """Make a copy of the map that any website can host: a folder with index.html and the files it loads.
 
-Usage (in europe-map/): python3 make_site.py [OUT] [--staging]      (OUT defaults to ../_site)
---staging marks the copy "Staging" (a small label and the page title) and asks search engines not to list it.
+Usage (in europe-map/): python3 make_site.py [OUT] [--test]      (OUT defaults to ../_site)
+--test marks the page as a test copy (a "Test version" tag by the title, kept out of search engines).
 europe-borders.html is written for Claude artifacts, which add the page's header (document type, character set,
 phone-screen setting) when it is published. index.html is the same page with that header, so it works on its own.
 Upload the whole folder to any web host, or run deploy_site.sh to publish it with GitHub Pages."""
 import glob, os, shutil, sys
 
-args = [a for a in sys.argv[1:] if not a.startswith('--')]
-STAGING = '--staging' in sys.argv
+args = [a for a in sys.argv[1:] if a != '--test']; TEST = '--test' in sys.argv[1:]
 OUT = args[0] if args else '../_site'
 src = open('europe-borders.html', encoding='utf-8').read()
+if TEST:
+    h1 = "<h1>Europe's Borders, 1000–2026</h1>"; assert h1 in src
+    src = src.replace(h1, h1[:-5] + ' <span style="font: 600 0.72rem var(--sans); vertical-align: middle; background: var(--accent); color: var(--accent-ink); border-radius: 999px; padding: 2px 9px; margin-left: 6px">Test version</span></h1>', 1)
+    src = src.replace('<title>', '<title>Test: ', 1)
 cut = src.index('</style>') + len('</style>')          # the title, font link and styles go in the head
 head, body = src[:cut], src[cut:]
-extra_head = ''
-if STAGING:
-    head = head.replace('<title>', '<title>Staging · ', 1)
-    extra_head = '<meta name="robots" content="noindex, nofollow">\n'
-    body = ('<div style="position:fixed;left:8px;bottom:8px;z-index:9999;background:#d4361f;color:#fff;font:600 12px/1.6 system-ui,sans-serif;'
-            'padding:2px 8px;border-radius:4px;pointer-events:none">Staging</div>') + body
 page = f'''<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Europe's country borders on July 1 of every year from 1000 to 2026, from OpenHistoricalMap checked against other datasets.">
-{extra_head}<style>[hidden] {{ display: none !important; }}</style>
+<meta name="description" content="Europe's country borders on July 1 of every year from 1000 to 2026, from OpenHistoricalMap checked against other datasets.">{'<meta name="robots" content="noindex">' if TEST else ''}
+<style>[hidden] {{ display: none !important; }}</style>
 {head}
 </head>
 <body>{body}</body>
