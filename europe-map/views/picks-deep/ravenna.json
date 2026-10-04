@@ -1,0 +1,50 @@
+{
+ "city": "Ravenna",
+ "picks": [
+  {
+   "n": 8,
+   "file": "Ponte vicino alla città di Ravenna sotto di cui passano i fiumi Ronco e Montone uniti e allontanati dalla detta città by Giovanni Domenico Campiglia (1739).png",
+   "y": 1739,
+   "lab": "1739",
+   "what": "The bridge over the Ronco and Montone with the city beyond, etching",
+   "who": "Giovanni Domenico Campiglia",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.04,
+    0.974,
+    0.9
+   ],
+   "focal": [
+    0.45,
+    0.59
+   ],
+   "why": "view across the river to the city’s towers and bell towers; caption trimmed"
+  },
+  {
+   "n": 17,
+   "file": "Ravenna Basilica e vecchio Ippodromo.jpg",
+   "y": 1925,
+   "lab": "1920s",
+   "what": "Santa Maria in Porto and the old racecourse, aerial photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.38,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.55
+   ],
+   "why": "aerial view of a part of the city with the basilica and its monastery; top trimmed to drop a dark object in the frame"
+  }
+ ],
+ "gaps": "P0: nothing (#1 is a later photo of San Vitale with an inventory number read as a date); P1: battle scenes and a Coronelli map with a small street plan; P3: only sarcophagus drawings; P6: nothing (#20 is a distant haze from Montefiore Conca, #21–22 a suburban road, #23 a mosaic interior)",
+ "notes": "In #8 the city is small in the background, but it is a true view labeled with Ravenna. #19 (Edward Bawden, 1945, Piazza Garibaldi during a military ceremony) is a color alternative for P5 if an event view is preferred. P6 is still needed: a modern photo of San Vitale or the old center should be sought separately.",
+ "_reviewed": true
+}

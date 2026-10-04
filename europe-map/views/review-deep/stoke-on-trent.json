@@ -1,0 +1,10 @@
+{
+ "city": "Stoke-on-Trent",
+ "checks": [
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "general view over the city from a height; unremarkable but a true general view"
+  }
+ ]
+}

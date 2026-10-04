@@ -1,0 +1,10 @@
+{
+ "city": "Dundee",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "Slezer 1693 true view from the east with the Old Steeple; trim clean, caption and frame excluded"
+  }
+ ]
+}

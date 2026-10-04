@@ -1,0 +1,27 @@
+{
+ "city": "Edirne",
+ "checks": [
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "true view with the Selimiye; border and caption cut cleanly"
+  },
+  {
+   "n": 17,
+   "verdict": "fix",
+   "fix": {
+    "y": 1912,
+    "lab": "1912–13"
+   },
+   "reason": "source is Cirilli’s book on the 1912–13 siege (Gallica), so the photograph is from the siege period; a range reads better than 'about 1912'. Crop is fine"
+  },
+  {
+   "n": 19,
+   "verdict": "fix",
+   "fix": {
+    "what": "View over the town with the Old Mosque (Eski Camii), autochrome (Albert Kahn Museum)"
+   },
+   "reason": "the record names only the Eski Camii; the Bedesten is not mentioned. Trim and focal are good"
+  }
+ ]
+}

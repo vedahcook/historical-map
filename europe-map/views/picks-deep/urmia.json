@@ -1,0 +1,29 @@
+{
+ "city": "Urmia",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Emarat Chahar Borj, Urmieh, Qajar period.png",
+   "y": 1883,
+   "lab": "about 1883",
+   "what": "View over the town’s rooftops to the walled Chahar Borj (Four Towers) building, photograph",
+   "who": "Ali Khan Vali",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.42
+   ],
+   "why": "only true town view; flat roofs, walls and corner towers of the Chahar Borj; date field 1300 is the Hijri year (1882–83), and a sibling photo from the same Ali Khan Vali album is filed under 1883 in Iran"
+  }
+ ],
+ "gaps": "P0–P3: nothing (the P0/P3 hits are Hijri-dated photos and portraits); P5: only crowds, refugees, the lake and a mission building; P6: only satellite photos of Lake Urmia",
+ "notes": "The 1904 city-gate photo (#10) is a faded funeral-procession scene; the 1911 Bain photos are crowd scenes.",
+ "_reviewed": true
+}

@@ -1,0 +1,71 @@
+{
+ "city": "Simferopol",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Афанасий де Палдо. Симферополь.jpg",
+   "y": 1803,
+   "lab": "1803",
+   "what": "View of Simferopol (Ak-Mechet), engraving in Pavel Sumarokov’s account of his Crimean travels",
+   "who": "Afanasy de Paldo and Aleksey Kolpashnikov",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.03,
+    0.99,
+    0.89
+   ],
+   "focal": [
+    0.6,
+    0.58
+   ],
+   "why": "early general view of the new town over the Salgir valley; caption and auction-site watermark trimmed"
+  },
+  {
+   "n": 8,
+   "file": "Карло Боссоли. Симферополь.jpg",
+   "y": 1856,
+   "lab": "1856",
+   "what": "Colored lithograph in Carlo Bossoli’s album of Crimean views",
+   "who": "Carlo Bossoli",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.2,
+    0.978,
+    0.92
+   ],
+   "focal": [
+    0.55,
+    0.65
+   ],
+   "why": "color bird’s-eye view of the town with its churches and mosques, Chatyr-Dag behind; margins, captions and some sky trimmed"
+  },
+  {
+   "n": 10,
+   "file": "Aerial photograph of Simferopol 1918.jpg",
+   "y": 1918,
+   "lab": "1918",
+   "what": "Aerial photograph of the center around Salgirnaya Street and the Feodosia Bridge",
+   "who": "unknown German army pilot",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.015,
+    0.015,
+    0.985,
+    0.985
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "sharp oblique aerial of the town center; photo border trimmed"
+  }
+ ],
+ "gaps": "P0–P2: nothing; P6: kept the 2013 street photo (only other candidate is a statue in snow)",
+ "notes": "#3: from P. I. Sumarokov, Досуги крымского судьи (St. Petersburg 1803), engraved by Kolpashnikov after de Paldo. Skipped #15 (Alexander Nevsky Cathedral ‘in 1910’): a modern colorized version with a watermark, uploaded as own work. Second P3/P4 options (#4 Ak-Mechet 1783, #7 Catherine II monument postcard) were weaker or too close in date.",
+ "_reviewed": true
+}

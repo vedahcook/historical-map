@@ -1,0 +1,71 @@
+{
+ "city": "Veliky Novgorod",
+ "picks": [
+  {
+   "n": 10,
+   "file": "Novgorod (1883211).jpg",
+   "y": 1656,
+   "lab": "1656",
+   "what": "Bird’s-eye view, engraving in Adam Olearius’s account of his travels to Muscovy and Persia",
+   "who": "Adam Olearius",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.18,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "sharp general view of the walled town on the Volkhov with the kremlin’s towers and domes in front"
+  },
+  {
+   "n": 18,
+   "file": "View of Novgorod.jpeg",
+   "y": 1909,
+   "lab": "1909",
+   "what": "The kremlin and St. Sophia Cathedral from the southwest, colored postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.1,
+    1,
+    1
+   ],
+   "focal": [
+    0.35,
+    0.4
+   ],
+   "why": "color general view over the kremlin walls to St. Sophia Cathedral; printed caption trimmed"
+  },
+  {
+   "n": 24,
+   "file": "Взорванный мост через Волхов в освобожденном Новгороде.jpg",
+   "y": 1944,
+   "lab": "1944",
+   "what": "The blown-up bridge over the Volkhov after the city’s liberation, photograph",
+   "who": "Georgy Konovalov",
+   "lic": "PD",
+   "event": true,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "only usable 20th-century view: wrecked Volkhov bridge with the kremlin skyline behind; war event, so marked"
+  }
+ ],
+ "gaps": "P0–P1: only icons and a reconstruction of the Hanseatic Peterhof, no town view; P3: only icons; P6: existing aerial view kept",
+ "notes": "#10: dated by Commons to the 1656 enlarged edition of Olearius; the plate may already appear in the 1647 first edition. Other P2 options: #9 (Mayerberg’s 1661 panorama, a very narrow strip over a text block), #11 (Palmquist 1674, two thin panoramas on one sheet), #12 (Witsen 1665, a book spread with a gutter). #20 (bird’s-eye postcard over the kremlin wall, about 1900) is a good P4 alternative but black and white. #19 (1883 panorama) is too narrow (14:1). #17 is dated 1860, before the Millennium monument it shows was unveiled (1862), so skipped.",
+ "_reviewed": true
+}

@@ -1,0 +1,21 @@
+{
+ "city": "Daugavpils",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.4,
+     0.33
+    ]
+   },
+   "reason": "spire tip touches the top edge of the 16:9 crop"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "sharp aerial general view; no better modern general view"
+  }
+ ]
+}

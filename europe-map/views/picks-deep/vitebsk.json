@@ -1,0 +1,92 @@
+{
+ "city": "Vitebsk",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Viciebsk, Dunaj. Віцебск, Дунай (1790-99).jpg",
+   "y": 1795,
+   "lab": "1790s",
+   "what": "The town from the Dunaj stream, colored drawing",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "wide color panorama of the hilltop town with the Assumption, Jesuit and other churches"
+  },
+  {
+   "n": 6,
+   "file": "Viciebsk, Dźvina-Nižni Zamak. Віцебск, Дзьвіна-Ніжні Замак (1862-66).jpg",
+   "y": 1864,
+   "lab": "1860s",
+   "what": "The Lower Castle quarter across the Western Dvina, photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.42
+   ],
+   "why": "early photograph of the river front with the churches and town hall area"
+  },
+  {
+   "n": 9,
+   "file": "Viciebsk, Dźvina-Zadźvińnie, Nabiarežnaja-Bohajaŭlenskaja. Віцебск, Дзьвіна-Задзьвіньне, Набярэжная-Богаяўленская (1911) (3).jpg",
+   "y": 1911,
+   "lab": "about 1911",
+   "what": "Steamboats on the Western Dvina below the Epiphany Church, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.09,
+    0.135,
+    0.905,
+    0.835
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "labeled Vitebsk river-front postcard with the bridge and Epiphany Church; card margins, caption and handwriting trimmed"
+  },
+  {
+   "n": 13,
+   "file": "Panorama Witebska (2-1898).jpg",
+   "y": 1943,
+   "lab": "1943",
+   "what": "The war-damaged town from the Western Dvina, photograph (National Digital Archives, Poland)",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": true,
+   "trim": [
+    0,
+    0.05,
+    1,
+    0.72
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "general view of the river front under German occupation; many buildings are gutted shells, so marked as an event; bollard and wide foreground trimmed"
+  }
+ ],
+ "gaps": "P0–P2: nothing; P6: kept the 2010 view of the Dvina and the Assumption Cathedral",
+ "notes": "#2 date: date field says 18th century, file name 1790–99; #4 is a Peszka fragment of a similar view (about 1800), less of the town. #9 date: file name 1911, record ‘before 26 March 1912’ (this copy has a handwritten 1914). #6 and #9 are 47 years apart, both in P4. #5 is Polotsk, not Vitebsk. The 1941 aerials (#10, #12) show the burned city.",
+ "_reviewed": true
+}

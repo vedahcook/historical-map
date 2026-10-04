@@ -1,0 +1,10 @@
+{
+ "city": "Makiivka",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "postcard captioned Makeevka; trim clean, date range from record"
+  }
+ ]
+}

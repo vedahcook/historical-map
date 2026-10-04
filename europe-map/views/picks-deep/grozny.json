@@ -1,0 +1,50 @@
+{
+ "city": "Grozny",
+ "picks": [
+  {
+   "n": 12,
+   "file": "Грозный. Река Синона и синагога. Почтовая открытка.jpg",
+   "y": 1910,
+   "lab": "1910",
+   "what": "The synagogue above the Sunzha River, postcard",
+   "who": "Pechatnik publishers, Grozny",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.03,
+    0.695,
+    0.98
+   ],
+   "focal": [
+    0.5,
+    0.33
+   ],
+   "why": "only pre-1914 view of the town itself: the synagogue and riverside houses on the Sunzha"
+  },
+  {
+   "n": 15,
+   "file": "Grozny, Synagogue and Mosque (01).jpg",
+   "y": 1916,
+   "lab": "1916",
+   "what": "The mosque and the synagogue on the Sunzha River, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.085,
+    0.99,
+    0.99
+   ],
+   "focal": [
+    0.42,
+    0.4
+   ],
+   "why": "the town’s two best-known prewar landmarks side by side across the river; caption trimmed off"
+  }
+ ],
+ "gaps": "P0–P3: nothing usable (fleurons, Ivan the Terrible portraits and paintings, a steamship named Grozny, Ljubljana views); P6: kept the existing 2017 view",
+ "notes": "The two postcards show the same riverbank six years apart; the reviewer may drop #12 if that feels redundant. #16 (same scene, sharper) is dated only “before 1917” and #17 shows the oil fields 15 versts outside town. The 2018 panorama (#19) is shot into the sun with a person in the frame, so the 2017 P6 view stays.",
+ "_reviewed": true
+}

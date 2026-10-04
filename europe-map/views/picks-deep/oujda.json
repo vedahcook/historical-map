@@ -1,0 +1,50 @@
+{
+ "city": "Oujda",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Oudjda - btv1b532065015.jpg",
+   "y": 1906,
+   "lab": "1905–07",
+   "what": "The medina and its walls from a height, photograph (Agence Rol)",
+   "who": "Jean du Taillis",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.035,
+    0.955,
+    0.955
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "general view over the walled medina, rooftops and a domed shrine, with the plain and mountains behind; plate edges trimmed"
+  },
+  {
+   "n": 6,
+   "file": "Vue d'Oujda - btv1b53213135z.jpg",
+   "y": 1921,
+   "lab": "1921",
+   "what": "The town with a minaret, photograph (Agence Rol)",
+   "who": "Jean du Taillis",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.11,
+    0.05,
+    0.955,
+    0.84
+   ],
+   "focal": [
+    0.4,
+    0.4
+   ],
+   "why": "view across the town to the minaret and domes; trimmed the light streak on the left and the plate number"
+  }
+ ],
+ "gaps": "P0–P3: nothing",
+ "notes": "Chose the panorama with the walls and shrine over its rooftop-only twin (#2). The 1907 troops-in-the-square print and the 1913 military camp views were skipped; the 1921 plate has a dark foreground and some haze but the minaret is clear.",
+ "_reviewed": true
+}

@@ -1,0 +1,71 @@
+{
+ "city": "Edirne",
+ "picks": [
+  {
+   "n": 8,
+   "file": "Vue d'Andrinople - Sayger C - 1834.jpg",
+   "y": 1834,
+   "lab": "1834",
+   "what": "General view, lithograph in the Album d’un voyage en Turquie",
+   "who": "C. Sayger",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.05,
+    0.075,
+    0.955,
+    0.885
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "true general view across gardens to the skyline with the Selimiye Mosque and its minarets at center; plate border and caption cut off"
+  },
+  {
+   "n": 17,
+   "file": "İstanbul Yolundan Edirne Manzarası.jpg",
+   "y": 1912,
+   "lab": "1912–13",
+   "what": "The town from the Kırklareli road, photograph",
+   "who": "Gustave Cirilli",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.4
+   ],
+   "why": "only period view for P4: roofs of the town with a minaret in front and the Selimiye on the skyline"
+  },
+  {
+   "n": 19,
+   "file": "Panorama sur la ville. A gauche, l'Eski Camii (la Vieille Mosquée, 1403-1414) - A36454.jpg",
+   "y": 1922,
+   "lab": "1922",
+   "what": "View over the town with the Old Mosque (Eski Camii), autochrome (Albert Kahn Museum)",
+   "who": "Frédéric Gadmer",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.065,
+    0.1,
+    0.925,
+    0.93
+   ],
+   "focal": [
+    0.35,
+    0.4
+   ],
+   "why": "color view from a height: domes of the Eski Camii and the Bedesten, town roofs; plate edges and stains cut off"
+  }
+ ],
+ "gaps": "P0–P1: only manuscript miniatures with court scenes; P2: a single caravanserai, Thelot’s event prints (people, no town) and an imaginary wedding scene, all skipped",
+ "notes": "#17 comes from Gustave Cirilli’s book on the siege of Adrianople (Gallica); Commons dates it only “before 1914”, but Cirilli was in the city as a correspondent during the 1912–13 siege, so “about 1912” is used. The view shows no visible war damage, so it is not marked as an event; drop it if the reviewer finds the date too loose. #18 (Gadmer 1922, Selimiye at center, nearly the same viewpoint as #17) and #20 (the Meriç bridge in flood, 1922) are good alternatives for P5. #7 (1817 almanac page) is a small vignette probably copied from a 17th-century print, skipped. #9 is Burgas, not Edirne. #11–#15 are Balkan War scenes (burials, guns, troops) with no town view. #21 is the Selimiye interior and #22 a mosque in Istanbul.",
+ "_reviewed": true
+}

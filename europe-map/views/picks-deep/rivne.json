@@ -1,0 +1,29 @@
+{
+ "city": "Rivne",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Jewish refugees at Rowno LCCN2014713490.jpg",
+   "y": 1920,
+   "lab": "1920s",
+   "what": "A street from a height, photograph (Bain News Service, Library of Congress)",
+   "who": "Bain News Service",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.1,
+    0.07,
+    0.9,
+    0.905
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "sharp elevated view down a busy street of wooden and brick houses; negative border and caption trimmed"
+  }
+ ],
+ "gaps": "P0–P3: nothing; P4: only a close-up of the synagogue front (#3) and a small Orda drawing of a manor house (#4); P6: existing 2016 view kept",
+ "notes": "#5 is a street scene, not a general view, though taken from a height; despite its title it shows the street, not a group of refugees. Commons dates it only to the 1920s; the refugee subject suggests about 1920. #7 (a street, October 1941, sharp) is an alternate for P5 but the location is unidentified. #1 is the same postcard as #3 with a wrong 1815 date. #6 (garrison church) and #9 (railway station) are single buildings; #8 is a map; #10 a satellite photo; #11 a night street scene, not better than the existing view.",
+ "_reviewed": true
+}

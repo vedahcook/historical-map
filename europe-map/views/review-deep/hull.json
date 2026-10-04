@@ -1,0 +1,18 @@
+{
+ "city": "Kingston upon Hull",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "what": "The South Blockhouse and harbor defenses, etching (detail of Hollar’s map of Hull)"
+   },
+   "reason": "record calls it a detail of a map, not a view; the cropped detail itself reads as a true perspective view of Hull’s defenses"
+  },
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "Hull view, clean trim, crop keeps masts"
+  }
+ ]
+}

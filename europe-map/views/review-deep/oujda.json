@@ -1,0 +1,18 @@
+{
+ "city": "Oujda",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "walled medina from a height, plate edge and number trimmed; date range 1905-07 matches the record"
+  },
+  {
+   "n": 6,
+   "verdict": "fix",
+   "fix": {
+    "what": "The town with a minaret, photograph (Agence Rol)"
+   },
+   "reason": "good view and crop (streak, plate number cut); record does not say the minaret is the Great Mosque's, so drop that claim"
+  }
+ ]
+}

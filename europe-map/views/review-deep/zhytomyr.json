@@ -1,0 +1,5 @@
+{"city": "Zhytomyr", "checks": [
+ {"n": 6, "verdict": "ok", "reason": "Tygodnik Ilustrowany panorama published 24 Aug 1861; caption line trimmed; crop shows the middle half of a very wide panorama"},
+ {"n": 12, "verdict": "fix", "fix": {"what": "Ruined buildings with a church in the distance, photograph (Fortepan)"}, "reason": "record does not say the ruins are in the center; event flag is right"},
+ {"n": 17, "verdict": "fix", "fix": {"lab": "about 2016"}, "reason": "record date is only the Panoramio upload date (16 March 2016), not the date taken; only P6 candidate of this city"}
+]}

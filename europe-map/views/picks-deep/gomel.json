@@ -1,0 +1,50 @@
+{
+ "city": "Gomel",
+ "picks": [
+  {
+   "n": 9,
+   "file": "Homiel, Rumiancaŭ-Paskievič. Гомель, Румянцаў-Паскевіч (N. Orda, 1877).jpg",
+   "y": 1877,
+   "lab": "1877",
+   "what": "The Rumyantsev-Paskevich Palace, watercolor",
+   "who": "Napoleon Orda",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    0.97,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "color view of the palace, Gomel’s defining landmark; signature strip at right trimmed"
+  },
+  {
+   "n": 16,
+   "file": "DJI 0137 Edit (51152843462).jpg",
+   "y": 2021,
+   "lab": "2021",
+   "what": "Aerial photograph of Gomel and the Sozh River",
+   "who": "Andrey Kukharenko",
+   "lic": "CC BY 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.45
+   ],
+   "why": "drone view along the Sozh with the city spreading behind; sharp and in color"
+  }
+ ],
+ "gaps": "P0–P2: nothing (icons only); P3: only architectural drawings of the palace and a town plan; P5: posters and a soldier’s photo album",
+ "notes": "#16 foreground is the Manastyrok district of private houses, with the city center in the background; no better modern view of the center among the candidates.",
+ "_reviewed": true
+}

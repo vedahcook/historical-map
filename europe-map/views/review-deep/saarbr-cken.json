@@ -1,0 +1,20 @@
+{
+ "city": "Saarbrücken",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "watercolor of Saar bridge, crane, castle and church; crop keeps tower"
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "1898 color postcard bird's-eye view; crop avoids insets, handwriting and lettering"
+  },
+  {
+   "n": 20,
+   "verdict": "ok",
+   "reason": "sharp 2011 panorama of St. Johanner Markt; clean crop"
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "city": "Ardabil",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Gezicht op Ardabil, RP-P-OB-47.375.jpg",
+   "y": 1674,
+   "lab": "about 1674",
+   "what": "Bird’s-eye view, colored engraving (Rijksmuseum)",
+   "who": "Gaspar Bouttats",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.045,
+    0.31,
+    0.945,
+    0.915
+   ],
+   "focal": [
+    0.5,
+    0.42
+   ],
+   "replaces": 1683,
+   "why": "replaces the 1683 Mallet plate: a wide, high-resolution colored general view of the whole town (4760 px) instead of Mallet’s small upright plate; trimmed below the legend text in the sky"
+  }
+ ],
+ "gaps": "P0, P1: nothing usable (firman, Ardabil carpet); P3: only a 15-panel Homann sheet, too small per view; P4: nothing; P5: only a close-up of the Sheikh Safi shrine tower from Sarre’s 1924 book, photo date doubtful (likely taken around 1900); P6: only a fisheye shrine-courtyard panorama and mountain landscapes",
+ "notes": "The Bouttats print is dated about 1674 by the Rijksmuseum.",
+ "_reviewed": true
+}

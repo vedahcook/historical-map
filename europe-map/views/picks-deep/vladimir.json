@@ -1,0 +1,29 @@
+{
+ "city": "Vladimir",
+ "picks": [
+  {
+   "n": 13,
+   "file": "Владимир, вид на Успенский собор.JPG",
+   "y": 2010,
+   "lab": "2010",
+   "what": "The Dormition Cathedral above the Klyazma valley and the city, aerial photograph",
+   "who": "Vladimir-city",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.52
+   ],
+   "why": "sharp color aerial of the historic center with the cathedral on its hill"
+  }
+ ],
+ "gaps": "P0–P3 and P5: nothing (other hits are Sanok, Moscow, Suzdal, Sergiev Posad, Łódź and portraits of people named Vladimir)",
+ "notes": "Kept the 1911 Prokudin-Gorskii view for P4.",
+ "_reviewed": true
+}

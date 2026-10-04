@@ -1,0 +1,29 @@
+{
+ "city": "Mersin",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Mersina. Mersina from the sea LOC matpc.02199.jpg",
+   "y": 1900,
+   "lab": "about 1900",
+   "what": "The town from the sea, photograph (Matson Collection, Library of Congress)",
+   "who": "Matson Collection",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.05,
+    0.1,
+    0.49,
+    0.94
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "only true view of the old port town: waterfront with boats; trimmed to the left half of the stereo pair"
+  }
+ ],
+ "gaps": "P0–P3: nothing usable (a fish book page and a sea chart); P5: only undated copies of the same sea view and a 1919 troop parade; P6: only churches and a castle elsewhere in the province",
+ "notes": "#3 is modest: the town is a low band on the horizon, no landmarks, but it is clearly labeled Mersina and is the only real general view. #8 is a wider, larger shot of the same view but LOC dates it only 1898–1946, so not used. #9 (Gadmer autochrome, 10 December 1919, troops lined up for General Gouraud’s arrival) is a color street scene but dominated by soldiers; skipped, could serve as a P5 event view if the reviewer wants one.",
+ "_reviewed": true
+}

@@ -1,0 +1,29 @@
+{
+ "city": "Cherepovets",
+ "picks": [
+  {
+   "n": 10,
+   "file": "Череповец, вид на юг города(открытка).jpg",
+   "y": 1910,
+   "lab": "about 1910",
+   "what": "View over the southern part of the town, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.09,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "colored view from a height over the town toward its churches; printed caption trimmed"
+  }
+ ],
+ "gaps": "P0–P3: nothing of the town (unrelated Calvary hits, an icon, a coat of arms); P5: nothing; P6: only plaques and a single building",
+ "notes": "Record dates #10 only as before October 1917 (prerevolutionary spelling); ‘about 1910’ is an estimate from the postcard style. #12 (view from the harbor) is a weaker alternative from the same series.",
+ "_reviewed": true
+}

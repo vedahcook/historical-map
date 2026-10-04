@@ -1,0 +1,25 @@
+{
+ "city": "Craiova",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "St. Demetrius church sketch of 1847; crop avoids the monogram at the bottom"
+  },
+  {
+   "n": 5,
+   "verdict": "drop",
+   "reason": "very soft and grainy, the foreground theater roof fills the lower half and the town is unreadable at card size; not strong enough to be a second P4 view, #6 covers P4"
+  },
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "colored street scene with the theater; stamp trimmed, caption outside the 16:9 crop"
+  },
+  {
+   "n": 16,
+   "verdict": "ok",
+   "reason": "sharp color view of the old town; license and artist match"
+  }
+ ]
+}

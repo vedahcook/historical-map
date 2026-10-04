@@ -1,0 +1,27 @@
+{
+ "city": "Ravenna",
+ "checks": [
+  {
+   "n": 8,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.02,
+     0.04,
+     0.974,
+     0.9
+    ],
+    "focal": [
+     0.45,
+     0.59
+    ]
+   },
+   "reason": "Labeled view of Ravenna (only P2 option; city small beyond the bridge but acceptable). Current trim includes the plate border lines and paper margin on left and right."
+  },
+  {
+   "n": 17,
+   "verdict": "ok",
+   "reason": "1920s aerial of Santa Maria in Porto area; crop avoids the dark object."
+  }
+ ]
+}

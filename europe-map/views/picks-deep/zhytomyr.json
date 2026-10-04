@@ -1,0 +1,71 @@
+{
+ "city": "Zhytomyr",
+ "picks": [
+  {
+   "n": 6,
+   "file": "Panorama Żytomierza 1860.jpg",
+   "y": 1861,
+   "lab": "1861",
+   "what": "Panorama of the town, wood engraving in Tygodnik Ilustrowany",
+   "who": "unknown artist",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0.015,
+    0,
+    0.985,
+    0.9
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "general view of the whole town with its churches, published 24 August 1861; caption line trimmed"
+  },
+  {
+   "n": 12,
+   "file": "Ukrajna, Zsitomir 1942, a távolban a Preobrazsenszkij-székesegyház. Fortepan 28041.jpg",
+   "y": 1942,
+   "lab": "1942",
+   "what": "Ruined buildings with a church in the distance, photograph (Fortepan)",
+   "who": "unknown photographer",
+   "lic": "CC BY-SA 3.0",
+   "event": true,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.57,
+    0.45
+   ],
+   "why": "sharp view of the bombed center with a large church behind; marked as an event because the city is in ruins"
+  },
+  {
+   "n": 17,
+   "file": "Соборная площадь в Житомире - panoramio (cropped).jpg",
+   "y": 2016,
+   "lab": "about 2016",
+   "what": "Soborna Square, panoramic photograph",
+   "who": "Sergei Martsynyuk",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0.5,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.42,
+    0.55
+   ],
+   "why": "the city’s main square; trimmed to the better half of a very wide panorama, with the colonnaded building and the hotel"
+  }
+ ],
+ "gaps": "P0: only Kyiv graffiti that mention the area; P1–P2: nothing; P3: only an 1839 town plan",
+ "notes": "#8 (a square with a church, 1910) is 49 years after #6 but not strong enough for a second P4 view. Fortepan names the church in #12 as the Transfiguration Cathedral, but its two baroque towers suggest another church, so the card leaves it unnamed. #17 is a modest gray winter view of Soviet-era buildings, kept only because no better modern view was offered; #16 is Berdychiv and #18–#19 are villages.",
+ "_reviewed": true
+}

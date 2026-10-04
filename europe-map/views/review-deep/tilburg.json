@@ -1,0 +1,15 @@
+{
+ "city": "Tilburg",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "colored drawing of Tilburg castle labeled in the atlas; trim sits inside the drawing frame, clear of arms and text"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "color postcard of Tilburg station, 1920-25; caption and borders outside crop"
+  }
+ ]
+}

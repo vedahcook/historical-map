@@ -1,0 +1,71 @@
+{
+ "city": "Marsala",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Marsala - Allan John H - 1843.jpg",
+   "y": 1843,
+   "lab": "1843",
+   "what": "View from the sea, wood engraving in John Harrison Allan’s Pictorial Tour in the Mediterranean",
+   "who": "John Harrison Allan",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.1,
+    0.97,
+    0.88
+   ],
+   "focal": [
+    0.42,
+    0.6
+   ],
+   "why": "general view of the town from the sea with its domes; caption trimmed"
+  },
+  {
+   "n": 7,
+   "file": "Marsala. Porta per cui entrò Garibaldi vittorioso coi Mille.jpg",
+   "y": 1882,
+   "lab": "1882",
+   "what": "Porta Garibaldi, the gate where Garibaldi entered with the Thousand, wood engraving",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.18,
+    0.14,
+    0.82,
+    0.85
+   ],
+   "focal": [
+    0.5,
+    0.35
+   ],
+   "why": "the town’s best-known landmark; trimmed to a rectangle inside the oval vignette"
+  },
+  {
+   "n": 16,
+   "file": "91025 Marsala, Province of Trapani, Italy - panoramio (4).jpg",
+   "y": 2013,
+   "lab": "2013",
+   "what": "A street in the historic center, photograph",
+   "who": "trolvag",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "sharp color view of the old center with a church dome; no skyline view offered"
+  }
+ ],
+ "gaps": "P0–P2: nothing (the about-1727 print is an imagined reconstruction of ancient Lilybaeum); P5: only a 1943 map and unrelated New York and Sarajevo photos",
+ "notes": "P6 is a street scene, the best of three similar 2013 photos; replace if a skyline or seafront view turns up.",
+ "_reviewed": true
+}

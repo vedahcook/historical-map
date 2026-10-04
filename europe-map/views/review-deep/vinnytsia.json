@@ -1,0 +1,4 @@
+{"city": "Vinnytsia", "checks": [
+ {"n": 7, "verdict": "ok", "reason": "Orda drawing of the Jesuit walls, labeled Winnica; postcard caption and border trimmed; 1870s is an inferred date (record gives only the 1910–30 reprint) but reasonable for Orda"},
+ {"n": 9, "verdict": "fix", "fix": {"focal": [0.55, 0.25]}, "reason": "current crop cuts off the flagpole and flag at the tower top; moving the focal point up keeps the whole top of the tower"}
+]}

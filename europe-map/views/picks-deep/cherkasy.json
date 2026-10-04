@@ -1,0 +1,50 @@
+{
+ "city": "Cherkasy",
+ "picks": [
+  {
+   "n": 6,
+   "file": "Соборна площа.jpg",
+   "y": 1910,
+   "lab": "about 1910",
+   "what": "Cathedral Square, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.15,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.4
+   ],
+   "why": "elevated general view over the market square to the cathedral; caption trimmed"
+  },
+  {
+   "n": 15,
+   "file": "Tsentral'nyi, Cherkasy, Cherkas'ka oblast, Ukraine - panoramio (3).jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The Hill of Glory memorial, photograph",
+   "who": "Yura Zapechenko",
+   "lic": "CC BY 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.88
+   ],
+   "focal": [
+    0.4,
+    0.45
+   ],
+   "why": "the city’s best-known monument; no good skyline photo among the candidates"
+  }
+ ],
+ "gaps": "P0–P3: nothing usable; P5: nothing from the city itself (hits are Shpola, Ladyzhynka and a Zaporizhzhia card)",
+ "notes": "#1 and #2 (Facial Chronicle, 1568) are about Circassia (‘Cherkasy’ with Prince Temryuk of Kabarda), not this city. #3 ‘Circassi’ (Koppmayer, 1700) shows a rocky seaport with sailing ships, which does not fit Cherkasy on the Dnieper; skipped as doubtful. #5 (Khreshchatyk with the Blue Palace) is an alternate for P4. #16 shows the city behind the Hill of Glory but is heavily HDR-processed.",
+ "_reviewed": true
+}

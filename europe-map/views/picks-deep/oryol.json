@@ -1,0 +1,29 @@
+{
+ "city": "Oryol",
+ "picks": [
+  {
+   "n": 4,
+   "file": "View of Nikola Ribniy and central Oryol.jpg",
+   "y": 1905,
+   "lab": "1900s",
+   "what": "The city center with St. Nicholas (Nikola Rybny) Church, photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "sharp general view over central Oryol; Nikola Rybny and Epiphany churches and the Peter and Paul Cathedral on the skyline"
+  }
+ ],
+ "gaps": "P0–P3: nothing (only a 16th-century chronicle miniature and an 1822 province map); P5: nothing (Smolensk postcards, a Polish submarine named Orzeł, a Polish Christmas card); P6: kept the 2003 view",
+ "notes": "Alternatives for P4: #7 busy Bolkhovskaya Street and #5 the Oka with the Pokhvalinsky tower, both weaker. #4 source: the photo album “Oryol Yesterday and Today”.",
+ "_reviewed": true
+}

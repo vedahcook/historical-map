@@ -1,0 +1,50 @@
+{
+ "city": "L’Aquila",
+ "picks": [
+  {
+   "n": 10,
+   "file": "Paolo Monti - Servizio fotografico (L'Aquila, 1969) - BEIC 6361457.jpg",
+   "y": 1969,
+   "lab": "1969",
+   "what": "Santa Maria di Collemaggio, photograph (BEIC, Milan)",
+   "who": "Paolo Monti",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.04,
+    0.01,
+    0.978,
+    0.94
+   ],
+   "focal": [
+    0.42,
+    0.5
+   ],
+   "why": "sharp view of the city’s best-known landmark, the patterned facade of Collemaggio; film edges trimmed"
+  },
+  {
+   "n": 14,
+   "file": "L'Aquila - view upstairs - panoramio.jpg",
+   "y": 2016,
+   "lab": "2016",
+   "what": "San Bernardino from its great staircase, photograph",
+   "who": "globalquiz.org",
+   "lic": "CC BY 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.8
+   ],
+   "focal": [
+    0.47,
+    0.45
+   ],
+   "why": "color photo of the basilica of San Bernardino, a main landmark; foreground paving trimmed"
+  }
+ ],
+ "gaps": "P0, P2, P3: nothing (#5 is Porta Sant’Agostino in Bergamo, not L’Aquila); P1: only a flat street plan (1575), a banner and a fresco; P4 already covered, single-building engravings #6, #7 not better",
+ "notes": "#14 is only adequate for P6 (a post-earthquake phone photo with a construction crane beside the facade); a better modern view of the old center would be welcome. #11 (San Bernardino, Paolo Monti, 1969) is an equally good alternative to #10. #10’s Commons description mentions Fabriano, but the title, categories and picture are of Collemaggio in L’Aquila.",
+ "_reviewed": true
+}

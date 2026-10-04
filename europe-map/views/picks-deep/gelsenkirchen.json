@@ -1,0 +1,50 @@
+{
+ "city": "Gelsenkirchen",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Schloss Horst Hoeninghaus 1842.jpg",
+   "y": 1842,
+   "lab": "1842",
+   "what": "Schloss Horst, painting",
+   "who": "Adolf Höninghaus",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.42,
+    0.5
+   ],
+   "why": "the city’s best-known historic building, in color; no town view exists for this period"
+  },
+  {
+   "n": 7,
+   "file": "Gelsenkirchen, Nordrhein-Westfalen - Postamt (Zeno Ansichtskarten).jpg",
+   "y": 1910,
+   "lab": "1910",
+   "what": "The new main post office, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.01,
+    0.63,
+    0.99
+   ],
+   "focal": [
+    0.5,
+    0.28
+   ],
+   "why": "clear, labeled postcard of a prominent public building; the only usable view before 1955"
+  }
+ ],
+ "gaps": "P0–P2: nothing; P6: only the Nordsternpark (#10) and views from Bottrop of the Scholven power plant and the stadium (#11–#13), skipped",
+ "notes": "#1 was painted in 1842 but shows the castle’s north side as it was before 1828, and Horst was a separate village until 1928; drop it if a contemporary town view is required. #2 (Haus Lüttinghof lithograph, 1837–40) is a minor manor house. #4 (Schloss Berge, Buer, about 1900) is mostly pond and trees. #3 is Capri, #8 a Dutch army postcard, #9 an envelope. The 1955 view already covers modern years, so the weak #10 Nordsternpark panorama was not added. #7 keeps the printed caption ‘Gelsenkirchen. – Neue Post.’ in the sky at upper right; cutting it would cut off the tower.",
+ "_reviewed": true
+}

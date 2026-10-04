@@ -1,0 +1,29 @@
+{
+ "city": "Ganja",
+ "picks": [
+  {
+   "n": 16,
+   "file": "Caucase. 23, Elisabethpol. Entrée de la mosquée - (mission) de Baye ; (photogr.) de Baye ; (photogr. reprod. par) Molteni (pour la conférence donnée par) de Baye - btv1b53258847w.jpg",
+   "y": 1900,
+   "lab": "about 1900",
+   "what": "The twin minarets of the Shah Abbas (Juma) Mosque above the bazaar stalls, lantern-slide photograph (BnF)",
+   "who": "Joseph de Baye",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.05,
+    0.03,
+    0.96,
+    0.955
+   ],
+   "focal": [
+    0.5,
+    0.25
+   ],
+   "why": "the city’s best-known landmark, sharp and high resolution, with street life at its base; chosen over the plainer view of the mosque’s dome (#14)"
+  }
+ ],
+ "gaps": "P0–P3: nothing usable (manuscript scenes set in Erzurum and Istanbul, portraits by the painter Gence, a carpet, a map); P5: only crowds, group portraits and an unrelated Swedish church",
+ "notes": "Kept the 2018 P6 view; the other 2018 photo by the same author shows only the mountains, and the 2017 Philharmonic Hall panorama is a single building. The picture is upright, so the focal point is set high to keep both minaret tops in a 16:9 crop.",
+ "_reviewed": true
+}

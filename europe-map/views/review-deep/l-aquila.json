@@ -1,0 +1,23 @@
+{
+ "city": "L’Aquila",
+ "checks": [
+  {
+   "n": 10,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.04,
+     0.01,
+     0.978,
+     0.94
+    ]
+   },
+   "reason": "Genuinely Collemaggio, 1969. Trim leaves a few pixels of black film edge on the right and left; tightened."
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "San Bernardino, 2016; crane visible but no better P6 candidate."
+  }
+ ]
+}

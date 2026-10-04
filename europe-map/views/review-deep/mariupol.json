@@ -1,0 +1,18 @@
+{
+ "city": "Mariupol",
+ "checks": [
+  {
+   "n": 8,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.002,
+     0.15,
+     0.998,
+     0.955
+    ]
+   },
+   "reason": "descender of the printed caption still shows at the top edge of the crop; 1 px white card edge at the sides"
+  }
+ ]
+}

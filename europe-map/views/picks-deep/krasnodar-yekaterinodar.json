@@ -1,0 +1,29 @@
+{
+ "city": "Krasnodar (Yekaterinodar)",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Yekaterinodar-from-south.jpg",
+   "y": 1905,
+   "lab": "1900s",
+   "what": "General view from the south with the Alexander Nevsky Cathedral, postcard",
+   "who": "Granbergs Konstindustri",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.15,
+    0.992,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.35
+   ],
+   "why": "general view over the rooftops of Yekaterinodar to its five-domed cathedral (demolished in the 1930s); caption in the sky trimmed"
+  }
+ ],
+ "gaps": "P0–P3: nothing; P5: nothing (the 1944 hits are Armavir; the 1917 Kuban riverbank postcard is only dated ‘before 1917’)",
+ "notes": "Kept the 2020 P6 skyline; the 2010/2015 hits are a village and mountains elsewhere in the region. The colored Kuban riverbank postcard with Holy Trinity Church (#8) is a genuine Yekaterinodar view, probably 1900s–1910s, but too vaguely dated and small.",
+ "_reviewed": true
+}

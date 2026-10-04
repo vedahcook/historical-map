@@ -1,0 +1,10 @@
+{
+ "city": "Aalborg",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "Labeled Aalborg Østerågade color postcard, c. 1950; street scene of historic houses but acceptable as the only P5 view; crop clean"
+  }
+ ]
+}

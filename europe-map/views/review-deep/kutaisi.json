@@ -1,0 +1,15 @@
+{
+ "city": "Kutaisi",
+ "checks": [
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "true view of the Rioni and city per caption; about 1900 fits the 1900 book date"
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "central square and theater, color, record agrees"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "city": "Khmelnytskyi",
+ "checks": [
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "Proskurov street postcard, caption trimmed cleanly; only usable old view of the city itself"
+  }
+ ]
+}

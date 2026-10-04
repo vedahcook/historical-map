@@ -1,0 +1,29 @@
+{
+ "city": "Ivanovo",
+ "picks": [
+  {
+   "n": 9,
+   "file": "Общий вид ИВ в Альбоме видов русских городов.png",
+   "y": 1886,
+   "lab": "1886",
+   "what": "General view, engraving in the Album of Views of Russian Towns (Moscow)",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.01,
+    0.99,
+    0.87
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "skyline of churches and factory chimneys of Ivanovo-Voznesensk; caption trimmed"
+  }
+ ],
+ "gaps": "P0–P3: nothing of the city (manuscript and portraits held in the region); P5: posters only; P6: all modern photos are of Plyos, a different town",
+ "notes": "#11 (1910 postcard, general view from a height) is also good but only 24 years after #9, so only one P4 view was taken; the engraving is sharper and shows the landmarks.",
+ "_reviewed": true
+}

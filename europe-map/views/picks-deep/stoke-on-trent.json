@@ -1,0 +1,29 @@
+{
+ "city": "Stoke-on-Trent",
+ "picks": [
+  {
+   "n": 7,
+   "file": "View from Penkhull New Road, Stoke-on-Trent.jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "View from Penkhull toward Fenton, photograph",
+   "who": "Rept0n1x",
+   "lic": "CC BY-SA 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.4
+   ],
+   "why": "general view over the city from a height"
+  }
+ ],
+ "gaps": "P0–P4: nothing; P5: only locomotive and railway-yard photos",
+ "notes": "Alternate for P6: Middleport Pottery from the canal, 2023 (#9), sharper and very characteristic of the Potteries but a single building.",
+ "_reviewed": true
+}

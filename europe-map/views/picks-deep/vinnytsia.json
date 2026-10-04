@@ -1,0 +1,50 @@
+{
+ "city": "Vinnytsia",
+ "picks": [
+  {
+   "n": 7,
+   "file": "Winnica - ruiny murow pojezuickich 1910-1930 (83837046).jpg",
+   "y": 1875,
+   "lab": "1870s",
+   "what": "The ruined walls of the former Jesuit monastery, after a drawing by Napoleon Orda (postcard)",
+   "who": "Napoleon Orda",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.04,
+    0.975,
+    0.825
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "the Jesuit “Mury”, the city’s main historic landmark, with church towers beside it; postcard caption and border trimmed"
+  },
+  {
+   "n": 9,
+   "file": "Old Tower night winter 2011 G1.jpg",
+   "y": 2011,
+   "lab": "2011",
+   "what": "The old water tower in the city center at dusk, photograph",
+   "who": "George Chernilevsky",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0.12,
+    1,
+    0.92
+   ],
+   "focal": [
+    0.55,
+    0.25
+   ],
+   "why": "the city’s best-known symbol; a Commons Valued Image"
+  }
+ ],
+ "gaps": "P0–P3: nothing; P5: only a mid-1910s street with the Savoy Hotel, a 1941 pontoon bridge and a single building",
+ "notes": "#7 is a 1910–30 postcard reprint; the picture itself is Napoleon Orda’s drawing from his 1870s album of historic sites, so labeled “1870s” (check if a more exact year is wanted). #2 is dated only “before 1910” and is small; #3 (Nikolayevsky Avenue, mid-1910s, portrait format) is a possible P5 alternate. #1 is Koziatyn, not Vinnytsia.",
+ "_reviewed": true
+}

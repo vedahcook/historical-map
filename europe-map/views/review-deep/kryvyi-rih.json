@@ -1,0 +1,15 @@
+{
+ "city": "Kryvyi Rih (Krivoy Rog)",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "street and synagogue postcard; caption trimmed, crop clean; 1900s is a fair label given the numbered series"
+  },
+  {
+   "n": 13,
+   "verdict": "ok",
+   "reason": "sharp color panorama of the Inhulets bend with the town; date and license match"
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "city": "Jerez de la Frontera",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Meyers Universum Band 06 09.jpg",
+   "y": 1839,
+   "lab": "1839",
+   "what": "View over the town, steel engraving in Meyer’s Universum, vol. 6",
+   "who": "Bibliographisches Institut, Hildburghausen (Joseph Meyer)",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.035,
+    0.975,
+    0.81
+   ],
+   "focal": [
+    0.48,
+    0.38
+   ],
+   "why": "rooftop view across the town to the domed collegiate church (now the cathedral) and church towers; monks in the foreground; plate border and caption cut off"
+  }
+ ],
+ "gaps": "P0: only a sheet of music (Cantiga 371); P2: nothing; P4: only portraits and an 1892 execution scene; P5: nothing; P6: #11 (2012) is an over-processed HDR rooftop panorama with a watermark and a supermarket sign, #12–#13 suburbs seen from the hospital, all skipped",
+ "notes": "#4 is a photo of the same Meyer’s plate in the bound book; #5 is the clean scan. The plate may be copied from David Roberts’s view of Xeres (1830s), so a reviewer may prefer an earlier date if that is confirmed. #3 (Anton van den Wyngaerde’s panorama, 1567, colored, 5141 px wide) is a fine true view, but P1 already has the 1575 Braun and Hogenberg plate, which reads more clearly at card size; not replaced, though it is a reasonable swap if the reviewer prefers the detailed drawn-on-site panorama.",
+ "_reviewed": true
+}

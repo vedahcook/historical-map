@@ -1,0 +1,18 @@
+{
+ "city": "Limerick",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.01,
+     0.01,
+     0.99,
+     0.94
+    ]
+   },
+   "reason": "Genuine view of Limerick (caption in the print). Thin white paper margin on left, right and top would show in the crop; caption already excluded."
+  }
+ ]
+}

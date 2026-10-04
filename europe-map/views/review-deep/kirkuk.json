@@ -1,0 +1,10 @@
+{
+ "city": "Kirkuk",
+ "checks": [
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "town is small but visible; only general view available, Matson street scene is weaker"
+  }
+ ]
+}

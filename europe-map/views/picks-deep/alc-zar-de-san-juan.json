@@ -1,0 +1,50 @@
+{
+ "city": "Alcázar de San Juan",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Villa de Alcázar de San Juan.jpg",
+   "y": 1769,
+   "lab": "1769",
+   "what": "General view of the town, drawing",
+   "who": "Domingo de Aguirre",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.05,
+    0.085,
+    0.95,
+    0.73
+   ],
+   "focal": [
+    0.45,
+    0.55
+   ],
+   "why": "true general view with lettered landmarks (castle and Palace Tower, Santa María, Trinitarian convent, town hall); frame and key cut off"
+  },
+  {
+   "n": 6,
+   "file": "1901, Au pays de Don Quichotte, Alcazar de San Juan, L'aspitamento, Vierge.jpg",
+   "y": 1901,
+   "lab": "1901",
+   "what": "The town square with its clock tower, pen drawing from “Au pays de Don Quichotte”",
+   "who": "Daniel Vierge",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.15,
+    0.12,
+    0.89,
+    0.77
+   ],
+   "focal": [
+    0.4,
+    0.27
+   ],
+   "why": "only town scene for P4: church tower dominating the square, labeled Alcázar de San Juan; caption cut off"
+  }
+ ],
+ "gaps": "P0–P2: nothing; P5: only Leo Wehrli train views of other places on the Alcázar–Cádiz railway (Sierra Morena), not this town",
+ "notes": "#6 is modest (a market-day square with a few figures, church not named), but it is labeled with the town and the church dominates. #4/#7 (windmills of Alcázar, 1900) are dominated by two people watching an eclipse; skipped. #3, #13 (railway bridges in Jaén) and #8–#12 (train views) are elsewhere on the railway line. #2’s medium is uncertain (looks like a pen drawing with a lettered key; could be an engraving).",
+ "_reviewed": true
+}

@@ -1,0 +1,29 @@
+{
+ "city": "Białystok",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Belostok' - Institut' Imperatora Nikolaa I-go. 1900-1905 (69117184).jpg",
+   "y": 1903,
+   "lab": "1900–05",
+   "what": "The Institute of Emperor Nicholas I, housed in the Branicki Palace, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.05,
+    0.97,
+    0.75
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "labeled Białystok postcard of the palace grounds and park, the town’s chief landmark; the other P4 candidates are plain street scenes; caption and border trimmed"
+  }
+ ],
+ "gaps": "P0–P2: nothing; P3: only an 1849 ground plan of the Orthodox church; P6: only a view over a university car park and 2020 construction sites",
+ "notes": "The building shown may be a wing of the palace complex rather than its main front; the card names the institute, as the postcard does. #8 (commercial school seen from a height) is dated only “before 1918”, so not used next to the existing 1915–18 aerial view.",
+ "_reviewed": true
+}

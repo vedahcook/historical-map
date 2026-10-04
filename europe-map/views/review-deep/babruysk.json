@@ -1,0 +1,5 @@
+{"city": "Babruysk", "checks": [
+ {"n": 1, "verdict": "ok", "reason": "labeled Bobroysk 1649 drawing, event flag correct, caption text trimmed"},
+ {"n": 3, "verdict": "ok", "reason": "general view of town and churches; date from record"},
+ {"n": 8, "verdict": "ok", "reason": "labeled postcard of Babruysk, caption strip trimmed; weak but acceptable landmark"}
+]}

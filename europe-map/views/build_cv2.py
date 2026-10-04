@@ -7,7 +7,7 @@ from pilot_events import E, POP, DAY
 from pilot_event_images import EI
 cd = json.load(open('city_data.json')); fl = json.load(open('flags_data.json')); sizes = json.load(open('full_sizes.json'))
 NEW = {}
-for vf in ['/home/claude/cv/work/views.json', '/home/claude/cv2/work/views.json', '/home/claude/cv3/work/views.json']:
+for vf in ['/home/claude/cv/work/views.json', '/home/claude/cv2/work/views.json', '/home/claude/cv3/work/views.json', '/home/claude/cv4/work/views.json']:
     if os.path.exists(vf): NEW.update(json.load(open(vf)))
 B2 = [l.strip() for l in open('/home/claude/cv/batch2.txt') if l.strip()]
 B3 = [l.strip() for l in open('/home/claude/cv/batch3.txt') if l.strip()]

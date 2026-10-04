@@ -1,0 +1,29 @@
+{
+ "city": "Niš",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Veduta di Nissa (xilografia).jpg",
+   "y": 1876,
+   "lab": "1876",
+   "what": "General view of the town, wood engraving",
+   "who": "Bonamore",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.23,
+    0.47,
+    0.77,
+    0.9
+   ],
+   "focal": [
+    0.62,
+    0.46
+   ],
+   "why": "true general view after a correspondent’s photograph; cathedral recognizable; trimmed to the town inside the oval, cutting the portraits, costume figures and caption"
+  }
+ ],
+ "gaps": "P0: only a homage scene and a battle miniature; P1–P3: only Thelot’s 1689 siege print and a 1737 surrender print with a generic town, skipped; P5: the 1915 panoramas are of Prokuplje, the rest are troops and people",
+ "notes": "The 1878 photo with the minaret is a phone snapshot of a cracked, glazed print, too damaged. The 2018 King Milan Square panoramas are not better than the existing 2017 view.",
+ "_reviewed": true
+}

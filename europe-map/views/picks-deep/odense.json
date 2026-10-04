@@ -1,0 +1,50 @@
+{
+ "city": "Odense",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Alexia de Lode - Prospekt af Odense.png",
+   "y": 1767,
+   "lab": "1767",
+   "what": "View of the city, engraving in Den danske Atlas, vol. 3",
+   "who": "Alexia de Lode",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.037,
+    0.975,
+    0.945
+   ],
+   "focal": [
+    0.47,
+    0.4
+   ],
+   "why": "true general view across the fields; St Knud’s Cathedral and the town’s spires recognizable; plate border trimmed"
+  },
+  {
+   "n": 19,
+   "file": "Sankt Knud cathedral side view Odense Denmark.jpg",
+   "y": 2016,
+   "lab": "2016",
+   "what": "St Knud’s Cathedral, photograph",
+   "who": "Jebulon",
+   "lic": "CC0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "sharp color photo of the city’s main landmark"
+  }
+ ],
+ "gaps": "P0, P2: nothing; P4: only a stereo card of the railway station, a street stereo and a 1904 crowd at the town hall (royal visit), all weak; P5: the Odense Luftfoto aerials show village churches elsewhere in Denmark",
+ "notes": "Engraving drawn before de Lode’s death in 1765, published 1767. #10 (town hall, 1904) could fill P4 as an event view if a reviewer accepts a crowd scene; #5 (Munkemølle, about 1844) is a pleasant painting but not a recognizable city view.",
+ "_reviewed": true
+}

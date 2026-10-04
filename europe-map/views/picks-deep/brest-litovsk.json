@@ -1,0 +1,29 @@
+{
+ "city": "Brest (Brest-Litovsk)",
+ "picks": [
+  {
+   "n": 6,
+   "file": "Bieraście Litoŭskaje. Берасьце Літоўскае (E. Dahlbergh, 1657) (3).jpg",
+   "y": 1657,
+   "lab": "1657",
+   "what": "The town during the Swedish siege of 1657, drawing",
+   "who": "Erik Dahlbergh",
+   "lic": "PD",
+   "event": true,
+   "trim": [
+    0.27,
+    0.3,
+    0.77,
+    0.88
+   ],
+   "focal": [
+    0.42,
+    0.55
+   ],
+   "why": "only early view of the town itself; titled “Briestie Litepski … belagert und erobert”; trimmed to the town skyline, cutting the wide smoke-filled foreground and the torn paper corner"
+  }
+ ],
+ "gaps": "P0: nothing; P1: only the title page of the 1563 Brest Bible; P3: only an elevation and plan of the Augustinian church (1830); P4: nothing (all hits are Brest, France); P5: only the 1918 peace conference table",
+ "notes": "#3 is a lower-resolution crop of the same Dahlbergh drawing; #5 is the later engraving with the siege in front. #4 is Brześć Kujawski, and #7–#9, #11–#15, #17–#20 are Brest in France or New York, so all excluded. Existing 2012 P6 view kept; #21 (night beach) and #22 (fortress path) are weaker.",
+ "_reviewed": true
+}

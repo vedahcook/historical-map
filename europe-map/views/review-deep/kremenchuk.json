@@ -1,0 +1,23 @@
+{
+ "city": "Kremenchuk",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.022,
+     0.075,
+     0.972,
+     0.935
+    ]
+   },
+   "reason": "light mount strip at bottom and inner frame line at top still inside the crop"
+  },
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "colored general view, caption clear of trim"
+  }
+ ]
+}

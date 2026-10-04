@@ -1,0 +1,35 @@
+{
+ "city": "Santiago de Compostela",
+ "checks": [
+  {
+   "n": 9,
+   "verdict": "fix",
+   "fix": {
+    "what": "View of the city, drawing made on Cosimo de’ Medici’s journey"
+   },
+   "reason": "True view, trim and focal are good. Record says it is a drawing made in 1669, not a print after one."
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "Real view of Santiago cathedral; date is only an estimate (record says before 1906, painter lived 1868–1906) but bounded, so ‘about 1900’ is acceptable."
+  },
+  {
+   "n": 22,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.056,
+     0.045,
+     0.95,
+     0.955
+    ],
+    "focal": [
+     0.55,
+     0.1
+    ]
+   },
+   "reason": "Right tower top is cut off in the current crop (focal y 0.3) and the trim includes damaged plate edges; start the crop at the top of the photo so both tower tops show."
+  }
+ ]
+}

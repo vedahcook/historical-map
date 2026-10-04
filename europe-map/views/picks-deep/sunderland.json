@@ -1,0 +1,29 @@
+{
+ "city": "Sunderland",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Meyers Universum Band 13 23.jpg",
+   "y": 1848,
+   "lab": "1848",
+   "what": "The Wear and the iron bridge, steel engraving in Meyer’s Universum, vol. 13",
+   "who": "Joseph Meyer, Bibliographisches Institut",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.035,
+    0.045,
+    0.968,
+    0.772
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "“Sunderland, the coal town”: river Wear with ships and coal staithes under the Wearmouth Bridge; caption and margins cut"
+  }
+ ],
+ "gaps": "P0–P2, P4–P6: nothing usable",
+ "notes": "#2 is the same plate photographed in the open book. #1 (Wearmouth Bridge under construction, 1796) skipped: small (976 px), a construction event, crossed by the page fold, and 1848 already covers from 1748. #9 (1852) is a rough sketch of an emigrant ship. P6: only a marina, Penshaw Hill countryside and Sunderland Point (Lancashire). #10–#14 are by photographer Clyde Sunderland (San Francisco).",
+ "_reviewed": true
+}

@@ -1,0 +1,29 @@
+{
+ "city": "Ryazan",
+ "picks": [
+  {
+   "n": 7,
+   "file": "Prokudin-Gorsky. Sobornaya street.jpg",
+   "y": 1912,
+   "lab": "1912",
+   "what": "Central Ryazan seen from the Kremlin bell tower, color photograph",
+   "who": "Sergei Prokudin-Gorsky",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.15,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "color general view from the Kremlin bell tower along Sobornaya Street; some empty sky trimmed"
+  }
+ ],
+ "gaps": "P0–P3: nothing (an icon, gold regalia from Old Ryazan, a portrait); P5: only peasant costume photos and postcards of other towns; P6: kept the 2021 Kremlin view",
+ "notes": "#5 (Elatma), #6 (Pronsk), #10 (Ryazhsk) are other towns of the province. #8 Boris and Gleb Cathedral (1912) is a good single-building alternative.",
+ "_reviewed": true
+}

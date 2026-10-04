@@ -1,0 +1,50 @@
+{
+ "city": "Donetsk (Yuzovka, Stalino)",
+ "picks": [
+  {
+   "n": 5,
+   "file": "1901-1902. Юзовка. Базар.jpg",
+   "y": 1901,
+   "lab": "1901–02",
+   "what": "The bazaar in Yuzovka, photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.98
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "elevated general view of the market town with the steelworks chimneys behind; sharp"
+  },
+  {
+   "n": 12,
+   "file": "Вечерний Кальмиус - panoramio.jpg",
+   "y": 2013,
+   "lab": "about 2013",
+   "what": "The Kalmius River and the city center at night, photograph",
+   "who": "Valery Ded",
+   "lic": "CC BY 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.55
+   ],
+   "why": "wide night view of the city center along the river"
+  }
+ ],
+ "gaps": "P0–P3: nothing; P5: only steelworks interiors and a staff-housing postcard of uncertain date",
+ "notes": "#6 (general view from the spoil heap, with the church) is a good alternate for P4, but Commons dates it anywhere from 1890 to 1912. #1 is Hughes’s birthplace in Wales; #14 and #15 are Sviatohirsk and the Kleban-Byk reservoir, not the city. Photographer of #12 credited as ‘Валерий Дед’ on Panoramio.",
+ "_reviewed": true
+}

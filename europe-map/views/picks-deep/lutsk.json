@@ -1,0 +1,50 @@
+{
+ "city": "Lutsk",
+ "picks": [
+  {
+   "n": 6,
+   "file": "Synagoga w Łucku na Wołyniu.jpg",
+   "y": 1872,
+   "lab": "1872",
+   "what": "The Great Synagogue, wood engraving",
+   "who": "Piotr Dyamentowski",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.06,
+    0.03,
+    0.94,
+    0.745
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "the fortified Great Synagogue, a major Lutsk landmark; clean, sharp engraving"
+  },
+  {
+   "n": 11,
+   "file": "Czy mamy polska architekture 1916 (101888662).jpg",
+   "y": 1916,
+   "lab": "1916",
+   "what": "Lubart’s Castle, book illustration (Stefan Szyller, Czy mamy polską architekturę?)",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.236,
+    0.185,
+    0.806,
+    0.636
+   ],
+   "focal": [
+    0.65,
+    0.45
+   ],
+   "why": "the castle’s gate and Styr towers, the city’s defining landmark; book page and caption trimmed"
+  }
+ ],
+ "gaps": "P0: only pages of the Lutsk Gospel; P1–P3: nothing; P6: existing 2014 castle and cathedral view kept",
+ "notes": "#11 is dated by the book’s 1916 publication; the photo itself may be a few years older. The trim keeps 57% of the page width (about 2,500 px), which is the photo itself. #8 (colored postcard of the Bratskyi Bridge square with the Orthodox Brotherhood church, 1910s, German and Polish caption so probably 1915–18) is an alternate for P5 but is a busy market scene. #9 and #10 are small portrait-format cards of the castle tower. #4 (Bernardine church) has only a “19th century” date. #7 (synagogue photo, 1910) is 38 years after #6 and shows the same building.",
+ "_reviewed": true
+}

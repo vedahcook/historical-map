@@ -1,0 +1,5 @@
+{"city": "Simferopol", "checks": [
+ {"n": 3, "verdict": "ok", "reason": "Plate captioned Simferopol or Ak-Mechet, 1803; caption, watermark and margins excluded from the crop"},
+ {"n": 8, "verdict": "ok", "reason": "Bossoli color lithograph of Simferopol, 1856; clean crop (some blank sky but acceptable)"},
+ {"n": 10, "verdict": "ok", "reason": "Dated 10 May 1918 aerial of the center; sharp, border trimmed; the only general view in P5"}
+]}

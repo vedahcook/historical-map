@@ -1,0 +1,50 @@
+{
+ "city": "Łódź",
+ "picks": [
+  {
+   "n": 8,
+   "file": "Vidy iz\" gorodov\" Lodzi, ZgerZa i Pabianic\" - Ansichten aus den Stadten Lodz, Zgierz und Pabianice. 1889 (253705).jpg",
+   "y": 1889,
+   "lab": "1889",
+   "what": "General view, plate in the portfolio Views of the Towns of Łódź, Zgierz and Pabianice",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.15,
+    0.17,
+    0.86,
+    0.73
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "labeled general view of the factory town with its chimneys; trimmed to the picture inside the mount"
+  },
+  {
+   "n": 11,
+   "file": "Lodz, widok na dzielnice fabryczna Wolka - las kominow 1939 (67739260).jpg",
+   "y": 1939,
+   "lab": "1939",
+   "what": "The Wólka factory district, a “forest of chimneys”, photographic postcard",
+   "who": "Włodzimierz Pfeiffer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.04,
+    0.06,
+    0.955,
+    0.935
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "sharp view over the textile-mill district that defined the city"
+  }
+ ],
+ "gaps": "P0–P2: nothing (#1 is a seal); P3: only #2, a stylized bird’s-eye view of uncertain date and origin; P6: existing 2019 aerial kept",
+ "notes": "#2 ‘Rural Łódź 1812’ looks like a later artistic reconstruction (artist ‘F. Johnney’, no source), so it was skipped. #9–#10 are collages of several small views; #6–#7 portraits. #12–#13 are the Lodzia textile plant in Holon, Palestine. #15 (Geyer works, 1929) is a single factory on a text-heavy sheet. #16–#17 (2009, 2013 panoramas) are not better than the existing aerial.",
+ "_reviewed": true
+}

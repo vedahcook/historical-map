@@ -1,0 +1,18 @@
+{
+ "city": "Horlivka",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "what": "The miners’ settlement, photograph shown at the 1900 Paris World’s Fair"
+   },
+   "reason": "record says only miners’ settlement; ‘pitheads’ not in record and not clearly visible; trim and crop good"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "Lenin Avenue square with monument; matches categories"
+  }
+ ]
+}

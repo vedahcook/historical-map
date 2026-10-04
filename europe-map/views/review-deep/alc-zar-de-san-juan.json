@@ -1,0 +1,22 @@
+{
+ "city": "Alcázar de San Juan",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "ok",
+   "reason": "true lettered view of the town; frame and key cut; crop is 62% of width"
+  },
+  {
+   "n": 6,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.4,
+     0.27
+    ],
+    "what": "The town square with its clock tower, pen drawing from “Au pays de Don Quichotte”"
+   },
+   "reason": "focal y 0.35 puts the 16:9 window top below the tower tip and cuts off the spire; 0.27 keeps it. Caption reads 'L’aspitamento', so the building is not confirmed as a church"
+  }
+ ]
+}

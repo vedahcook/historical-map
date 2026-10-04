@@ -1,0 +1,71 @@
+{
+ "city": "Sfax",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Bombardamento di Sfax.jpg",
+   "y": 1785,
+   "lab": "1785",
+   "what": "The Venetian fleet bombarding the city, print",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": true,
+   "trim": [
+    0.02,
+    0.1,
+    0.98,
+    0.7
+   ],
+   "focal": [
+    0.5,
+    0.25
+   ],
+   "why": "the walled seafront with towers and minarets above the Venetian squadron; legend and margins trimmed"
+  },
+  {
+   "n": 3,
+   "file": "Tunisie. (Théâtre de Sfax) - (photogr. Eugène Gallois) ; (photogr. reprod. par Radiguet et Massiot pour la conférence donnée par) Gallois - btv1b532798595.jpg",
+   "y": 1908,
+   "lab": "about 1908",
+   "what": "The municipal theater, lantern slide",
+   "who": "Eugène Gallois",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.03,
+    0.97,
+    0.97
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "main landmark of the new French town; sharp, high resolution; only usable P4 picture"
+  },
+  {
+   "n": 9,
+   "file": "Vue panoramique du centre ville de Sfax.JPG",
+   "y": 2014,
+   "lab": "2014",
+   "what": "The city center from a tower of the kasbah, photograph",
+   "who": "Leaderzakzouk",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.47,
+    0.55
+   ],
+   "why": "the medina ramparts and kasbah tower with the modern center behind; fills the empty modern period"
+  }
+ ],
+ "gaps": "P0–P2: nothing",
+ "notes": "The 1785 print is dated from its caption (“anno 1785”), not the 1784 date field; marked as an event. The theater slide is dated 1905–11. Kept the 1928 Wehrli view for P5 (the 1931 Gadmer autochrome is mostly storm sky). The 1899 photochrom is of Sousse, not Sfax.",
+ "_reviewed": true
+}

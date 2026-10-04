@@ -1,0 +1,71 @@
+{
+ "city": "Cheboksary",
+ "picks": [
+  {
+   "n": 2,
+   "file": "CheboksaryKremlin.jpg",
+   "y": 1692,
+   "lab": "1692",
+   "what": "View of the town (“Sabaxar”), engraving in Nicolaes Witsen’s Noord en Oost Tartarye",
+   "who": "unknown engraver, after Nicolaes Witsen",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.045,
+    0.962,
+    0.935
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "earliest view of the town: wooden walls and churches above the Volga; caption line trimmed"
+  },
+  {
+   "n": 5,
+   "file": "Cheboksary 1760s.jpg",
+   "y": 1767,
+   "lab": "1766–69",
+   "what": "View from the Volga, engraving",
+   "who": "Ivan Bugreev, after drawings by Alexei Svechin and Mikhail Makhaev",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.42
+   ],
+   "why": "general view across the river, churches and bell towers along the skyline"
+  },
+  {
+   "n": 6,
+   "file": "Cheboksary (1883-05-29) 01.jpg",
+   "y": 1883,
+   "lab": "1883",
+   "what": "View of the old town and its churches, photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.035,
+    0.972,
+    0.945
+   ],
+   "focal": [
+    0.55,
+    0.4
+   ],
+   "why": "exactly dated photo; the old town’s cathedral and bell towers recognizable; mount trimmed"
+  }
+ ],
+ "gaps": "P0–P1: nothing; P5: only 1960 snapshots of a sign-lined road, a river station with a couple and a rotunda; P6: existing view kept (#17 is a modern-district view, not better)",
+ "notes": "#2: Commons gives only ‘17th century’; the description dates Witsen’s book to 1692 (its plates may have appeared only in the 1705 second edition). #1 (‘1733’) is the same composition as #5 in a poorer, uncertainly dated copy, so skipped. #10 (color painting from across the Volga, credited to Fyodor Vasilyev, 1870s) is a weaker P4 alternative: only 800 px and the town is small and distant.",
+ "_reviewed": true
+}

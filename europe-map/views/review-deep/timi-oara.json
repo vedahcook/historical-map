@@ -1,0 +1,25 @@
+{
+ "city": "Timișoara",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "town of Temesvár in a 1558 Arifi manuscript (Futuhat-i Jamila, H.1592); crop clean of frame and text. #5 is a tidier walled-town view but its manuscript and date are undocumented, so not clearly better"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "labeled Temeswar view; crop is a narrow slice (about half the width, above the coat of arms) with the outer towers slightly clipped, but acceptable"
+  },
+  {
+   "n": 12,
+   "verdict": "ok",
+   "reason": "theater postcard, sharp; caption and border trimmed; date range 1905-18 fits about 1910"
+  },
+  {
+   "n": 19,
+   "verdict": "ok",
+   "reason": "Union Square, best-framed of the four 1937 frames; no borders; towers and column fully in crop"
+  }
+ ]
+}

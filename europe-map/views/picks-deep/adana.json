@@ -1,0 +1,50 @@
+{
+ "city": "Adana",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Adana, Mount Taurus in the distance - Carne John - 1836.jpg",
+   "y": 1837,
+   "lab": "1836–38",
+   "what": "The town on the river with the Taurus Mountains beyond, steel engraving in John Carne’s Syria, the Holy Land, Asia Minor",
+   "who": "unknown artist (Fisher, Son & Co.)",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.855
+   ],
+   "focal": [
+    0.4,
+    0.55
+   ],
+   "why": "true general view: castle and minarets above the Seyhan with the Taurus range behind; engraved caption cut off"
+  },
+  {
+   "n": 8,
+   "file": "Adana - River Quarter.jpg",
+   "y": 1920,
+   "lab": "about 1920",
+   "what": "Houses along the Seyhan River, colored postcard",
+   "who": "Démétrius Mavrogenis, Mersina (publisher)",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.096,
+    0.04,
+    0.893,
+    0.87
+   ],
+   "focal": [
+    0.4,
+    0.5
+   ],
+   "why": "labeled Adana, river quarter: old houses lining the river wall; postcard margin and caption cut off"
+  }
+ ],
+ "gaps": "P0–P2: nothing; P6: only gray, hazy views from a shopping mall (#11, #12), a park in the museum grounds and the castle of Yılankale outside the city, skipped",
+ "notes": "#1’s artist line is too small to read in the copy (the series was drawn by W. H. Bartlett, William Purser and others); the Commons date is 1836, the series ran 1836–38. #8’s date (4 January 1921) comes from the Houshamadyan record and is probably when the card was written or mailed, so the photograph may be a few years older; labeled “about 1920”. #11 (2016) shows the snow-capped Taurus and a tower the file calls the clock tower, but it is gray and hazy with billboards in front; the reviewer could use it for P6 trimmed to [0, 0.22, 0.9, 0.66] if a weak modern view is preferred to a blank plate. #4 (General Gouraud’s arrival, 1920) is a station scene with troops, skipped.",
+ "_reviewed": true
+}

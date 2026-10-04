@@ -1,0 +1,29 @@
+{
+ "city": "Debrecen",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Debrecen, Piac utca a Református Nagytemplomból fotózva. Fortepan 26798.jpg",
+   "y": 1935,
+   "lab": "1935",
+   "what": "Piac utca from the tower of the Great Reformed Church, photograph (Fortepan)",
+   "who": "Fortepan / Ted Grauthoff",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.4
+   ],
+   "why": "view from a height down the main street, with St. Anne’s Church and the Small Reformed Church towers"
+  }
+ ],
+ "gaps": "P0–P3: no candidates; P6: nothing of the city center (a forest lookout tower, a ship named Debrecen in Budapest, the BMW plant)",
+ "notes": "Existing P4 photochrom kept; #2 (colored postcard of the Great Reformed Church, 1905–14) is a fine landmark view but not clearly better and too close in date for a second P4 view. Credit follows Fortepan’s usual form (archive / donor); the donor may not be the photographer.",
+ "_reviewed": true
+}

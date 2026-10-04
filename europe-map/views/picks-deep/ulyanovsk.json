@@ -1,0 +1,50 @@
+{
+ "city": "Ulyanovsk",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Симбирск. Московская ул. и хр. Вознесения, открытка 1910.jpg",
+   "y": 1910,
+   "lab": "1910",
+   "what": "Moskovskaya Street and the Ascension Cathedral, postcard",
+   "who": "Sotrudnik bookshop, Simbirsk (publisher)",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.125,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.45
+   ],
+   "why": "labeled Simbirsk postcard; the Ascension Cathedral, the city’s main church (demolished 1936), on its main street; caption trimmed"
+  },
+  {
+   "n": 12,
+   "file": "The city of Ulyanovsk, Russia.jpg",
+   "y": 2020,
+   "lab": "2020",
+   "what": "View over the city center toward the Volga, aerial photograph",
+   "who": "Krasnoyarsk National and Cultural Autonomy of the Chuvash People",
+   "lic": "CC BY 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "recent aerial view of the center along Radishchev Street with the frozen Volga behind"
+  }
+ ],
+ "gaps": "P0–P2: nothing (#1 is a late-19th-century illustration of the 1670 battle); P5: only single buildings (1917 zemstvo house, almshouse), a Volga pier view and 1921 posters; the 1910 view covers it",
+ "notes": "#4 shows the same cathedral closer and sharper but is dated only 1900–17; #5 is dated 1910. #8 (Volga opposite Simbirsk, 1917) skipped: mostly pier sheds, and only 7 years after #5. #12 date is the Flickr date; the ice on the Volga suggests early spring 2020.",
+ "_reviewed": true
+}

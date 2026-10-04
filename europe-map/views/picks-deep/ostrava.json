@@ -1,0 +1,71 @@
+{
+ "city": "Ostrava",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Pohled na Ostravu 1728.jpg",
+   "y": 1728,
+   "lab": "1728",
+   "what": "General view of Moravian Ostrava, colored drawing",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.25,
+    0.39,
+    0.76,
+    0.9
+   ],
+   "focal": [
+    0.42,
+    0.33
+   ],
+   "why": "oldest known view of the town, church tower and castle recognizable; trimmed away from the legend text and title"
+  },
+  {
+   "n": 7,
+   "file": "Mährisch Ostrau (CZ), Tschechien - Stadttheater und Zentralbad (Zeno Ansichtskarten).jpg",
+   "y": 1909,
+   "lab": "1909",
+   "what": "The city theater and the central baths, postcard",
+   "who": "M. Hanik",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.17,
+    1,
+    0.96
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "the city’s landmark theater (today the Antonín Dvořák Theater); caption cut"
+  },
+  {
+   "n": 11,
+   "file": "Morawska Ostrawa widok ogółny.jpg",
+   "y": 1935,
+   "lab": "1935",
+   "what": "General view from a height, photograph (National Digital Archive, Poland)",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.925
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "true general view over the center of Moravská Ostrava; archive caption bar cut"
+  }
+ ],
+ "gaps": "P0–P1: nothing; P3: only cadastral maps (#3–#4); P6: existing 2020 view kept",
+ "notes": "#9 is Lázně Libverda in northern Bohemia, not Ostrava. #2 is a map. #5 (Deutsches Haus, 1898) is a single building on a ‘Gruss aus’ card with handwriting. #13 (steel works at night) is dated only ‘before 1936’; #14 (coal market painting) is dated 1917–37. #15 (2009 aerial) is hazy and not better than the existing view.",
+ "_reviewed": true
+}

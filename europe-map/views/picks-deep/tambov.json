@@ -1,0 +1,50 @@
+{
+ "city": "Tambov",
+ "picks": [
+  {
+   "n": 9,
+   "file": "ТАМБОВ, ГИМНАЗИЧЕСКАЯ УЛИЦА открытка 1910-1918г.jpg",
+   "y": 1913,
+   "lab": "1910s",
+   "what": "Gimnazicheskaya Street, colored postcard",
+   "who": "M. Sheranosher, Tambov (publisher)",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.08,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "no general view among the candidates; the main shopping street in color, lined with signboards; caption trimmed"
+  },
+  {
+   "n": 10,
+   "file": "Tambov, Lenin square 1950-1960s.jpg",
+   "y": 1965,
+   "lab": "1960s",
+   "what": "Lenin Square, photograph",
+   "who": "Oblfototrest, Tambov",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "the central square with the Lenin monument and its large public building, trolleybuses in front"
+  }
+ ],
+ "gaps": "P0–P3: nothing; P6: kept the 2021 aerial view (new candidates are views from a train window)",
+ "notes": "#9 is dated 1910–18 on Commons; the card is in pre-1918 spelling, labeled 1910s with y 1913. #10 is dated 1950s–60s on Commons; Tambov trolleybuses began running in 1960, so labeled 1960s. Other options: #7 Excise office and Znamenskaya Church (1910–18), #3 the station (1913), both weaker; #2, #4, #5 show Kozlov (now Michurinsk).",
+ "_reviewed": true
+}

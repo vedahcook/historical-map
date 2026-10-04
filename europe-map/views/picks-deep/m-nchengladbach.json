@@ -1,0 +1,50 @@
+{
+ "city": "Mönchengladbach",
+ "picks": [
+  {
+   "n": 7,
+   "file": "Ansichten Deutschland Bokelmann 184.jpg",
+   "y": 1855,
+   "lab": "1850s",
+   "what": "View of the town with the Münster on its hill, steel engraving",
+   "who": "Ludwig Rohbock and Johann Poppel",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.06,
+    0.075,
+    0.948,
+    0.88
+   ],
+   "focal": [
+    0.35,
+    0.45
+   ],
+   "why": "true general view; abbey church and town on the hill recognizable; frame and caption trimmed"
+  },
+  {
+   "n": 14,
+   "file": "Mönchengladbach Münster St. Vitus (04)-retusche.jpg",
+   "y": 2020,
+   "lab": "2020",
+   "what": "The Münster St. Vitus, photograph",
+   "who": "Chris06 (retouched by Zinnmann)",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "sharp color photo of the city’s main landmark; no modern general view offered"
+  }
+ ],
+ "gaps": "P0, P2: nothing; P1 and P3: only maps; P5: only an undated park postcard and unrelated Kühlen postcards",
+ "notes": "Rohbock/Poppel date is from the Commons category (1850s); the factory chimneys fit. Quedenfeldt’s 1909 photo (#6) of a church tower over old houses was not added as a second P4 view: portrait format, and the spire looks like the Citykirche rather than the abbey church its caption names.",
+ "_reviewed": true
+}

@@ -1,0 +1,29 @@
+{
+ "city": "Oberhausen",
+ "picks": [
+  {
+   "n": 7,
+   "file": "Pudlingswerk und Alte Walz.jpg",
+   "y": 1860,
+   "lab": "about 1860",
+   "what": "The Gutehoffnungshütte ironworks and the Eisenheim workers’ settlement, colored lithograph",
+   "who": "Canelle (drawing), Simonau & Toovey (print)",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    0.985,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "color general view of the works around which the town was founded in 1862"
+  }
+ ],
+ "gaps": "P0–P3: nothing (#1–#3 are replicas of a Frankfurt painting shown in the Gasometer, #4 is a plan of Schloss Sinning in Upper Bavaria); P5: only a 1925 house in Sterkrade, posters and a Rostock shipyard; P6: existing castle courtyard panorama kept",
+ "notes": "#6 (colored postcard of the Gutehoffnungshütte blast furnaces, dated only ‘about 1900’) could be a second P4 view, but its date is loose and it is just 40 years from #7, so it was left out. #14 is the full version of the existing 2015 panorama; #13 is the Gasometer interior.",
+ "_reviewed": true
+}

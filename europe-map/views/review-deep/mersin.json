@@ -1,0 +1,13 @@
+{
+ "city": "Mersin",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "fix",
+   "fix": {
+    "who": "Matson Collection"
+   },
+   "reason": "Record credits Matson Collection, not American Colony Photo Department. Left pane of stereo pair is correctly trimmed (excludes divider, scratch band and negative number). The town is only a thin band on the horizon, but it is labeled and the only dated view."
+  }
+ ]
+}

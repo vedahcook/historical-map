@@ -1,0 +1,29 @@
+{
+ "city": "Ani",
+ "picks": [
+  {
+   "n": 7,
+   "file": "Ани. Городище. Вид с Вышгорода. Почтовая открытка.jpg",
+   "y": 1910,
+   "lab": "about 1910",
+   "what": "The ruined city seen from the citadel, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.04,
+    0.04,
+    0.958,
+    0.855
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "general view across the ruined city plateau from the citadel hill; Manuchihr mosque minaret at right; chosen over the city-walls postcard (#6) as the broader view"
+  }
+ ],
+ "gaps": "P0–P3: nothing usable (only inscriptions and colophons); P5: nothing usable (hits are other places)",
+ "notes": "Kept the 2006 P6 photograph; the 2011 candidates (mosque close-up, north walls panorama) are not clearly better. #6 (city walls with the Greek-cross tower, same series) is a good alternative for P4.",
+ "_reviewed": true
+}

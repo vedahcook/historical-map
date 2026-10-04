@@ -1,0 +1,50 @@
+{
+ "city": "Mosul",
+ "picks": [
+  {
+   "n": 6,
+   "file": "Mosul, Illustration for La Terre-Sainte et les lieux illustrés par les apôtres, by Adrien Egron, 1837 (30).jpg",
+   "y": 1837,
+   "lab": "1837",
+   "what": "The city across the Tigris from the Nineveh side, engraving in Adrien Egron, La Terre-Sainte",
+   "who": "Aubert",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.62
+   ],
+   "why": "general view of the walled city and its riverside castle across the water, labeled Mosul in the book"
+  },
+  {
+   "n": 12,
+   "file": "Iraq. Mosul. General view with tall minaret in center of picture LOC matpc.16200.jpg",
+   "y": 1932,
+   "lab": "1932",
+   "what": "The old city with the leaning al-Hadba minaret, photograph (Library of Congress, Matson Collection)",
+   "who": "Matson Photo Service",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.095,
+    0.05,
+    0.94,
+    0.945
+   ],
+   "focal": [
+    0.48,
+    0.38
+   ],
+   "why": "rooftop view across the old city to its best-known landmark, destroyed in 2017; negative border trimmed off"
+  }
+ ],
+ "gaps": "P0–P2: nothing usable (siege miniatures and a battle print with an imaginary city, a map, and a view of Hilla mislabeled as Mosul); P6: nothing (photos of Maqlub Mountain and of mosque doors in Istanbul)",
+ "notes": "The 1876 Newman engraving across the Tigris (#8) is attractive but only 15 years after the existing 1861 view, so it was not added. The 1837 engraving is somewhat idealized (the Tigris looks like a lake) but follows the usual view from the Nineveh mounds.",
+ "_reviewed": true
+}

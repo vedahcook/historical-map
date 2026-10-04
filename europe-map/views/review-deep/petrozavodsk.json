@@ -1,0 +1,5 @@
+{"city": "Petrozavodsk", "checks": [
+ {"n": 3, "verdict": "fix", "fix": {"trim": [0.075, 0.1, 1, 0.88]}, "reason": "Real view of the Alexander Works and town, 1803; a thin strip of the dark post still shows at the left edge, so trim a little more"},
+ {"n": 11, "verdict": "ok", "reason": "Genuine early 1870s view of the town and cathedral group; crop clean"},
+ {"n": 12, "verdict": "fix", "fix": {"trim": [0, 0.35, 1, 1]}, "reason": "Occupation-era view from a height is acceptable as the only P5 view, but text from the book page still shows through up to about 33% from the top; trim top to 0.35"}
+]}

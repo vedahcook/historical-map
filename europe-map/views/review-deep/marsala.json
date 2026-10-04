@@ -1,0 +1,32 @@
+{
+ "city": "Marsala",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "titled Marsala, view from the sea; caption trimmed; crop works"
+  },
+  {
+   "n": 7,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.18,
+     0.14,
+     0.82,
+     0.85
+    ],
+    "focal": [
+     0.5,
+     0.35
+    ]
+   },
+   "reason": "current crop cuts off the eagle on top of the gate; new trim keeps it and stays inside the oval"
+  },
+  {
+   "n": 16,
+   "verdict": "ok",
+   "reason": "historic-center street scene, natural 16:9; best of the P6 options"
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "city": "Mariupol",
+ "picks": [
+  {
+   "n": 8,
+   "file": "1910. Александровский сквер в Мариуполе.jpg",
+   "y": 1910,
+   "lab": "about 1910",
+   "what": "The Church of St. Mary Magdalene on Alexandrovsky Square, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.002,
+    0.15,
+    0.998,
+    0.955
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "the city’s main old cathedral (demolished in the 1930s) seen across the square; caption and website watermark trimmed"
+  }
+ ],
+ "gaps": "P0–P3: nothing (only postal covers and Pavlovsk items); P5: nothing datable after 1914; P6: existing 2021 aerial view kept",
+ "notes": "Trimming the caption clips the top of the central cross slightly. The file is only 1024 px wide. #11 is the same church on a black-and-white card but handwriting covers the sky. #10–#14 are dated only “before 1917” on Commons and look like 1900s cards (#14 is postmarked 1905), so they are not P5 views. #12 (harbor with a steamer) shows no town. #1, #6, #7 and #16 are Pavlovsk, not Mariupol. #15 (night aerial with the water tower, 2020) is not better than the existing view.",
+ "_reviewed": true
+}

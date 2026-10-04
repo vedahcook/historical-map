@@ -31,3 +31,12 @@ Picking agents followed `TASK_PICK.md` (which points to `PICKING.md`), checking 
 `review/`, processed views in `views-batch3.json` (872 views). Downloads on the Mac with `dl3.py` (6 threads; Wikimedia allows about
 70 files per 2 minutes before answering 429). `process_cv3.py` trims and crops; `build_cv2.py` now builds all 465 cities.
 37 cities have no usable view, mostly smaller eastern, Russian, Turkish and North African cities with few pictures on Commons.
+
+Second search (October 3, 2026): the 109 cities with no view or one view (`deep_targets.json` on the Mac). `gather_deep.py` searches in
+the city's other languages (Russian, Ukrainian, Turkish, Persian...) with words for view, panorama, postcard and old, walks the city's
+Commons category tree (history, views, postcards, decades), adds the city's Wikidata pictures, accepts old pictures from 800 px wide,
+and leaves out candidates offered in the first search; `round_deep.py` runs it and `sheets_deep.py` in rounds on the Mac.
+`prep_deep.py` writes the candidate lists with the views each city already has; pickers followed `TASK_PICK_deep.md` (new periods
+only, or a clearly better view in the same period); picks in `picks-deep/`, checks in `review-deep/`. `process_cv4.py` crops them and
+merges them with the existing views (`views-deep.json`, the full list for those 109 cities). Result: 172 new views; cities with no view
+went from 37 to 6, with one view from 72 to 25.

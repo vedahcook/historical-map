@@ -1,0 +1,4 @@
+{"city": "Taganrog", "checks": [
+  {"n": 3, "verdict": "fix", "fix": {"trim": [0.026, 0.035, 0.976, 0.81]}, "reason": "Plate labeled Taganrog, 1841 is right; the old trim lets 1-2 px of white paper show at the left and right edges (plate border is at about 0.021 and 0.979)."},
+  {"n": 4, "verdict": "ok", "reason": "Postcard captioned Taganrog general view, pre-1917 spelling, 1900-1917 per record; title text trimmed; no frame."}
+]}

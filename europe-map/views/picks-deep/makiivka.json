@@ -1,0 +1,29 @@
+{
+ "city": "Makiivka",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Поселок Дмитриевка.jpg",
+   "y": 1910,
+   "lab": "1905–17",
+   "what": "The Dmitrievka settlement, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.035,
+    0.25,
+    0.965,
+    0.83
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "general view of Dmitrievka, the town’s original core, captioned Makeevka; postcard border and caption trimmed"
+  }
+ ],
+ "gaps": "P0–P3: nothing; P5: only war-damaged institute buildings and group photos; P6: only reservoir panoramas and a dark backlit view, no recognizable city view",
+ "notes": "The 1912 mine photos (#2–#4, #6) show single pitheads, not the town.",
+ "_reviewed": true
+}

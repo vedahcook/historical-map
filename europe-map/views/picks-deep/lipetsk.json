@@ -1,0 +1,29 @@
+{
+ "city": "Lipetsk",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Lipetsk old 1860.jpg",
+   "y": 1865,
+   "lab": "1860s",
+   "what": "View over the town toward the Nativity Cathedral, photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.035,
+    0.03,
+    0.965,
+    0.955
+   ],
+   "focal": [
+    0.35,
+    0.5
+   ],
+   "why": "only view of Lipetsk itself; cathedral on the hill and the Peter I obelisk on the Petrovsky slope, wooden houses of Tserkovnaya Street in front; rounded print corners trimmed"
+  }
+ ],
+ "gaps": "P0–P3: nothing; P5: only 1926–27 airfield photos and a family portrait; P6: kept the 2022 aerial view",
+ "notes": "#5 date field says 1860, but the source is the Russia in Photo 1860–1869 search, so labeled 1860s. Only 800 px wide. Other candidates show Gryazi station, the village of Voronets and a landscape painting, not Lipetsk.",
+ "_reviewed": true
+}

@@ -1,0 +1,27 @@
+{
+ "city": "Odense",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.025,
+     0.037,
+     0.975,
+     0.945
+    ],
+    "focal": [
+     0.47,
+     0.4
+    ]
+   },
+   "reason": "Good true view of Odense. Current crop slices through the ODENSE ribbon at the top and leaves a blank margin strip at the bottom; this trim keeps the whole ribbon and stays inside the plate lines."
+  },
+  {
+   "n": 19,
+   "verdict": "ok",
+   "reason": "CC0 photo of St Knud’s Cathedral, 2016; crop fine."
+  }
+ ]
+}

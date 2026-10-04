@@ -1,0 +1,29 @@
+{
+ "city": "Khmelnytskyi",
+ "picks": [
+  {
+   "n": 6,
+   "file": "Płoskirów - Proskuriv. Ul.Aleksandrowska, sklep Weissberga.jpg",
+   "y": 1910,
+   "lab": "about 1910",
+   "what": "Aleksandrovska Street, the main street of Proskurov, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.14,
+    0.995,
+    0.985
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "colored view down the town’s main street; printed caption in the sky trimmed"
+  }
+ ],
+ "gaps": "P0–P3: nothing from the city itself; P5: only a crowd at a military concert (#9) and a war cemetery (#10); P6: existing 2011 main-square view kept",
+ "notes": "#6 is a street scene, not a general view, but it is the only usable old picture of Proskurov itself; drop it if a stricter standard is wanted. Most hits are other towns of the oblast: #3, #5, #8 Slavuta; #4 Zaslav (Iziaslav); #7 Sharivka; #11 Yarmolyntsi; #12 Horodok; #2 is a map. #9 (Austro-Hungarian band on the main square, 1914–18) is dominated by the crowd. #13/#14 are pond panoramas in Chekman Park, not better than the existing view.",
+ "_reviewed": true
+}

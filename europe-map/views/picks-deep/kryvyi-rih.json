@@ -1,0 +1,50 @@
+{
+ "city": "Kryvyi Rih (Krivoy Rog)",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Ст. Кривой Рогъ. № 8. Видъ на синагогу отъ Николаевской ул.jpg",
+   "y": 1906,
+   "lab": "1900s",
+   "what": "Nikolaevskaya Street and the Choral Synagogue, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.17,
+    1,
+    0.99
+   ],
+   "focal": [
+    0.4,
+    0.4
+   ],
+   "why": "the town’s main landmark of the time on its main street; caption trimmed"
+  },
+  {
+   "n": 13,
+   "file": "Вид на р. Інгулець зі Скель МОПРу.jpg",
+   "y": 2015,
+   "lab": "2015",
+   "what": "The Inhulets River from the MOPR Rocks, photograph",
+   "who": "Sergey Ryzhkov",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.35
+   ],
+   "why": "strong color panorama from the city’s best-known natural landmark, with the town across the river bend"
+  }
+ ],
+ "gaps": "P0–P3: nothing; P5: only a 1919 railroad map, a German howitzer crew in 1941, an ore cart and a station at Dolgintsevo",
+ "notes": "Commons dates #4 ‘between 1906 and 1918’, but #1 from the same numbered series (‘Ст. Кривой Рогъ. № 6’) is dated 1905, so labeled ‘1900s’. #5 is a lower-resolution copy of the same card; #1 (1905, synagogue far in the distance) is an alternate.",
+ "_reviewed": true
+}

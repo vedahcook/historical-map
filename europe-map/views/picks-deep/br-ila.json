@@ -1,0 +1,29 @@
+{
+ "city": "Brăila",
+ "picks": [
+  {
+   "n": 9,
+   "file": "ETH-BIB-Braila, Schiffs-Verkehr im Donau Hafen-Dia 247-09991.tif",
+   "y": 1936,
+   "lab": "1936",
+   "what": "Ships in the Danube harbor, photograph (ETH Library, Zurich)",
+   "who": "Leo Wehrli",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.05,
+    0.05,
+    0.955,
+    0.865
+   ],
+   "focal": [
+    0.4,
+    0.5
+   ],
+   "why": "broadest view of the grain port that made the city; black slide mask and caption strip trimmed"
+  }
+ ],
+ "gaps": "P0–P3: nothing; P4: only a city plan, a page of 1877 war sketches (mostly Buzău and Ploiești), a troop crossing with no town in sight, and Lacul Sărat resort postcards (outside the city); P6: only a riverside promenade and lake shots with no city in view",
+ "notes": "The other 1936 Wehrli slides (#7, #8, #10) are a steamer, ox carts and porters on the quay, weaker than #9.",
+ "_reviewed": true
+}

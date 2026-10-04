@@ -1,0 +1,29 @@
+{
+ "city": "Tolyatti",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Troicky sobor, Stavropol on Volga, Russia.jpg",
+   "y": 1875,
+   "lab": "1870s",
+   "what": "The Trinity Cathedral and the town of Stavropol (now Tolyatti), photograph",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.02,
+    1,
+    0.98
+   ],
+   "focal": [
+    0.42,
+    0.37
+   ],
+   "why": "the old town of Stavropol with its cathedral and bell tower, before the town was moved for the reservoir"
+  }
+ ],
+ "gaps": "P0–P3: nothing (only a costume print of a Kalmyk Cossack); P5: only 1921 famine photos of children; P6: only street memorial signs, no city view",
+ "notes": "#8 (prerevolutionary postcard with a small oval general view) is a weaker P4 alternative: the view is under half the card’s width and only 1300 px overall.",
+ "_reviewed": true
+}

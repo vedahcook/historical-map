@@ -1,0 +1,50 @@
+{
+ "city": "Kremenchuk",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Johann Heinrich Müntz Stadt und Hafen von Kremenczúk 1781.png",
+   "y": 1781,
+   "lab": "1781",
+   "what": "The town and harbor on the Dnieper, watercolor drawing",
+   "who": "Johann Heinrich Müntz",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.022,
+    0.075,
+    0.972,
+    0.935
+   ],
+   "focal": [
+    0.4,
+    0.65
+   ],
+   "why": "dated view drawn on the spot, in color; town and harbor across the water; mount trimmed"
+  },
+  {
+   "n": 5,
+   "file": "Kremenchuk (Kremenchug) view with Great Synagogue.jpg",
+   "y": 1910,
+   "lab": "about 1910",
+   "what": "The eastern part of the city from a height, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.1,
+    0.985,
+    0.98
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "colored general view over the rooftops, Great Synagogue at right; caption trimmed"
+  }
+ ],
+ "gaps": "P0–P2: nothing; P5: only 1941/1944 vertical aerial photos (map-like), topographic maps and a 1928 crowd scene; P6: existing 2012 bridge view kept",
+ "notes": "#3 (Hatfield engraving of the river front with Catherine II’s palace, about 1787) is more detailed but small (852 px) and its making date is uncertain; it is an alternate for P3. #7 (western part of the city from a height, black and white) is an alternate for P4. #5 is dated 1905–17 on Commons; postcards of this type are usually before 1914. #14 shows Sadky village, not the city; #15 is mostly river.",
+ "_reviewed": true
+}

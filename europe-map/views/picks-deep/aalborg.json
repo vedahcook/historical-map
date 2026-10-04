@@ -1,0 +1,29 @@
+{
+ "city": "Aalborg",
+ "picks": [
+  {
+   "n": 5,
+   "file": "01 Aalborg Østerågade, ca 1950 f+.jpg",
+   "y": 1950,
+   "lab": "about 1950",
+   "what": "Østerågade, the old main street, color postcard",
+   "who": "Stenders Forlag",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.9
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "only usable P5 view: color postcard of the historic main street with its old merchant houses; dark shadowed foreground cut"
+  }
+ ],
+ "gaps": "P0–P3: nothing (#1 is an execution in Viborg); P6: only single facades of Aalborg Kloster and a howitzer in a museum",
+ "notes": "#5 is a street scene, not a general view, but it is labeled Aalborg Østerågade and shows a row of historic houses; drop it if a stricter standard is wanted. #3 (1865 engraving of Østerågade with Jens Bangs Stenhus) is a good landmark scene but only 21 years from the existing 1886 general view, so not added. #6/#7 are aerial photos of Ribe Cathedral (by the firm Aalborg Luftfoto). #4 is a crowd at Budolfi Plads; #8 a harbor crane.",
+ "_reviewed": true
+}

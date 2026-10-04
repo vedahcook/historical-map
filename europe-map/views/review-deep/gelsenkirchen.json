@@ -1,0 +1,27 @@
+{
+ "city": "Gelsenkirchen",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "Schloss Horst is a Gelsenkirchen landmark; 1842 is the painting date; crop clean"
+  },
+  {
+   "n": 7,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.01,
+     0.01,
+     0.63,
+     0.99
+    ],
+    "focal": [
+     0.5,
+     0.28
+    ]
+   },
+   "reason": "printed caption 'Gelsenkirchen. - Neue Post.' sits in the sky inside the crop; trim right of it (tower and finial stay in, still 62% of width)"
+  }
+ ]
+}

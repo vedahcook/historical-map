@@ -1,0 +1,71 @@
+{
+ "city": "Latakia",
+ "picks": [
+  {
+   "n": 2,
+   "file": "A Triumphal Arch at Laodicea - Pococke Richard - 1745.jpg",
+   "y": 1745,
+   "lab": "1745",
+   "what": "The Roman four-way arch (tetrapylon), engraving in Richard Pococke, A Description of the East",
+   "who": "Richard Pococke",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.035,
+    0.045,
+    0.965,
+    0.61
+   ],
+   "focal": [
+    0.45,
+    0.47
+   ],
+   "why": "the city’s best-known ancient monument, still standing; ground plan below trimmed off"
+  },
+  {
+   "n": 6,
+   "file": "Port of Latachia - Mayer Luigi - 1810.jpg",
+   "y": 1810,
+   "lab": "1810",
+   "what": "The harbor and its sea castle, colored aquatint in Luigi Mayer, Views in the Ottoman Dominions",
+   "who": "Luigi Mayer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.035,
+    0.045,
+    0.97,
+    0.91
+   ],
+   "focal": [
+    0.62,
+    0.6
+   ],
+   "why": "color general view of the port with the castle, town walls, minaret and ships; caption and plate margins trimmed off"
+  },
+  {
+   "n": 8,
+   "file": "View of the Temple of Bacchus, Laodicea-Lattakia - Texier Charles - 1864.jpg",
+   "y": 1864,
+   "lab": "1864",
+   "what": "The Roman colonnade known as the Temple of Bacchus, lithograph in Charles Texier, Byzantine Architecture",
+   "who": "Charles Texier",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.02,
+    0.985,
+    0.93
+   ],
+   "focal": [
+    0.6,
+    0.5
+   ],
+   "why": "landmark scene: the Roman columns with the domed building behind; only usable view for 1850–1913"
+  }
+ ],
+ "gaps": "P0–P1: nothing usable (an Apocalypse miniature of Laodicea in Asia Minor); P5: kept the existing 1921 autochrome; P6: nothing (lake views elsewhere in the province, a space photo, fishing boats)",
+ "notes": "The 1866 photo (#9) was skipped: 1866 is the founding year of the Beirut studio printed on the mount, not the date of the picture. Borra’s 1750 “Valley of Laodicea” (#5) shows Laodicea on the Lycus in Turkey. The other 1921 Gadmer views (#11, #12) are not clearly better than the existing one. Pococke’s plates for Syria are in vol. 2, published 1745 (Commons gives 1743).",
+ "_reviewed": true
+}

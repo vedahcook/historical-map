@@ -1,0 +1,29 @@
+{
+ "city": "Gaziantep",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Ayntab in the 19th century, from F. R. Chesney, The Expedition for the Survey of the Rivers Euphrates and Tigris, London 1850.jpg",
+   "y": 1850,
+   "lab": "1850",
+   "what": "The town below its castle mound, engraving in F. R. Chesney’s Expedition for the Survey of the Rivers Euphrates and Tigris",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.42,
+    0.6
+   ],
+   "why": "only historical general view: the castle on its mound above the town, minarets on the skyline; no margins to cut"
+  }
+ ],
+ "gaps": "P0–P3: nothing; P5: only portraits; the 1909 tent-camp photographs (#1–#3) are skipped",
+ "notes": "#4 was probably drawn during Chesney’s expedition in the 1830s but is dated by its 1850 publication; the print is pale and low in contrast. #1–#3 (Bain News Service, 1909) show a refugee tent camp, not the town, and the identification is doubtful: #1 is captioned Aintab but #2, from the same set, is captioned “Refugee camp in Trans-Caucasus”. #8–#9 are museum interiors.",
+ "_reviewed": true
+}

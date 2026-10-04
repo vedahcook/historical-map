@@ -1,0 +1,18 @@
+{
+ "city": "İzmit",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "fix",
+   "fix": {
+    "who": "Jenny Bergensten"
+   },
+   "reason": "Record credits Jenny Bergensten; the Berggren attribution is not in the record. View, date, label and crop are fine."
+  },
+  {
+   "n": 17,
+   "verdict": "ok",
+   "reason": "Clock tower and hillside town, clearly İzmit; full-frame 16:9 is fine."
+  }
+ ]
+}

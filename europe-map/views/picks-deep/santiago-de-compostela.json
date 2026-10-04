@@ -1,0 +1,71 @@
+{
+ "city": "Santiago de Compostela",
+ "picks": [
+  {
+   "n": 9,
+   "file": "Debuxo de Compostela por Pier Maria Baldi (1669).jpg",
+   "y": 1669,
+   "lab": "1669",
+   "what": "View of the city, drawing made on Cosimo de’ Medici’s journey",
+   "who": "Pier Maria Baldi",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.18,
+    0.82,
+    0.815
+   ],
+   "focal": [
+    0.3,
+    0.5
+   ],
+   "why": "true general view with the cathedral towers rising over the town; decorative bands and empty fields trimmed"
+  },
+  {
+   "n": 15,
+   "file": "La Catedral de Santiago vista desde La Herradura. Urbano González Varela 1868-1906.jpg",
+   "y": 1900,
+   "lab": "about 1900",
+   "what": "The cathedral from La Herradura, painting",
+   "who": "Urbano González Varela",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "color view of the cathedral towers above the old town’s roofs"
+  },
+  {
+   "n": 22,
+   "file": "Espagne, Santiago de Compostela, Vue prise aussi du nord sur les 2 tours de la façade de la Cathédrale - A10776.jpg",
+   "y": 1917,
+   "lab": "1917",
+   "what": "The cathedral towers from the north, autochrome (Albert Kahn Museum)",
+   "who": "Georges Chevalier",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.056,
+    0.045,
+    0.95,
+    0.955
+   ],
+   "focal": [
+    0.55,
+    0.1
+   ],
+   "why": "early color photo of the two Obradoiro towers and the Azabachería dome; plate label and damaged edges trimmed"
+  }
+ ],
+ "gaps": "P0, P1: nothing (a 1595 street plan and generic manuscript miniatures); P3: only portraits and a pilgrim watercolor; P6 already covered, panoramas #24 and #25 not better",
+ "notes": "#15: Commons dates it only ‘before 1906’ (the painter lived 1868–1906), so ‘about 1900’ is an estimate within his working life; if that is too loose, #17 (Mariano Pedrero watercolor, published July 1906) is a firmly dated but weaker fallback — a street view from the Hospital Real with a pilgrim couple in front. #20 (A10775, Azabachería facade and clock tower, 1917) is an alternative autochrome with a stain in the middle. #7 (Obradoiro facade, Vega y Verdugo, 1657) is a landmark drawing passed over for the 1669 general view.",
+ "_reviewed": true
+}

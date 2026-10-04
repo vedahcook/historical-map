@@ -1,0 +1,15 @@
+{
+ "city": "Mönchengladbach",
+ "checks": [
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "captioned M.Gladbach general view; trim clean inside frame"
+  },
+  {
+   "n": 14,
+   "verdict": "ok",
+   "reason": "good color photo of the Münster; tower tops stay in crop"
+  }
+ ]
+}

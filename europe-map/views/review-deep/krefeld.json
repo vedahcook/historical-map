@@ -1,0 +1,15 @@
+{
+ "city": "Krefeld",
+ "checks": [
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "true general view of Crefeld, 1842 lithograph; clean crop"
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "1917 postcard of Bismarckplatz; caption and borders outside crop; no better P5 view"
+  }
+ ]
+}

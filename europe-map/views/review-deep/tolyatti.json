@@ -1,0 +1,1 @@
+{"city": "Tolyatti", "checks": [{"n": 3, "verdict": "fix", "fix": {"trim": [0, 0.02, 1, 0.98], "focal": [0.42, 0.37]}, "reason": "old trim and focal cut off the tip of the bell tower's spire"}]}

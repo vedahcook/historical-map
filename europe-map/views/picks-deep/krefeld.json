@@ -1,0 +1,50 @@
+{
+ "city": "Krefeld",
+ "picks": [
+  {
+   "n": 6,
+   "file": "Crefeld Teichgräber.jpg",
+   "y": 1842,
+   "lab": "1842",
+   "what": "General view, lithograph",
+   "who": "Heinrich Wilhelm Teichgräber",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.01,
+    0.99,
+    0.99
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "true general view of the town with its church towers, a windmill and factory chimneys"
+  },
+  {
+   "n": 15,
+   "file": "Krefeld, Nordrhein-Westfalen - Bismarckplatz (Zeno Ansichtskarten).jpg",
+   "y": 1917,
+   "lab": "1917",
+   "what": "The Bismarckplatz, postcard",
+   "who": "Stengel & Co.",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.025,
+    0.04,
+    0.975,
+    0.93
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "broad view down the landscaped square with its villas; better than the street and single-building cards"
+  }
+ ],
+ "gaps": "P0: nothing; P1–P2: only views of Uerdingen (#1–#3), a separate town until 1929, and a plan (#4); P4: only a street scene (#8) and a portrait-format town hall card (#10); P6: existing aerial of Linn Castle kept",
+ "notes": "#1 (Kieser, about 1600) and #2–#3 (Jan de Beijer, 1739, Rijksmuseum) are good views of Uerdingen, now part of Krefeld; skipped because Uerdingen was then a different town from Krefeld. Add #3 (general view of Uerdingen on the Rhine) if a district view is acceptable. #13 is Nijmegen, #14 a 1945 evacuation photo, #12 a 1923 photo of the town hall facade.",
+ "_reviewed": true
+}

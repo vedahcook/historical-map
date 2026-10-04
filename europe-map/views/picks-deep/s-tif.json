@@ -1,0 +1,29 @@
+{
+ "city": "Sétif",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Algérie.Sétif.Place de la Porte de Biskra.jpg",
+   "y": 1905,
+   "lab": "1900s",
+   "what": "Market day on the Place de la Porte de Biskra, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.02,
+    0.99,
+    0.88
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "best of the postcards: the main square by the Biskra gate with its arcaded building and market crowd; caption and handwriting trimmed"
+  }
+ ],
+ "gaps": "P0–P3: nothing (a shell plate only); P5: only street scenes, a hotel, domino players, an interior and RAF planes; P6: only mountain scenery outside the city and a portrait-format street seen from a hotel",
+ "notes": "No true general view of Sétif exists among the candidates. #5 is a square scene, not a panorama. Alternatives: #6 (Porte de Bougie, the gate half hidden by trees, 1900s) and #9 (Leo Wehrli, Avenue Georges Clémenceau, 1935, sharp but a plain avenue; could fill P5 if the reviewer accepts a street scene: trim [0.085, 0.055, 0.925, 0.86]). #2 shows the Ain El Fouara fountain, but only as one of four small photos on an album page, too small to trim to.",
+ "_reviewed": true
+}

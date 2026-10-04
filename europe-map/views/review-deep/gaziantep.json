@@ -1,0 +1,10 @@
+{
+ "city": "Gaziantep",
+ "checks": [
+  {
+   "n": 4,
+   "verdict": "ok",
+   "reason": "labeled Ayntab, castle mound and minarets; 1850 is the publication year; no margins"
+  }
+ ]
+}

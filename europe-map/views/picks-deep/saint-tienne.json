@@ -1,0 +1,29 @@
+{
+ "city": "Saint-Étienne",
+ "picks": [
+  {
+   "n": 22,
+   "file": "2018-02 saint-étienne snow drone 03.jpg",
+   "y": 2018,
+   "lab": "2018",
+   "what": "Aerial view of the city under snow, drone photograph",
+   "who": "Antoine Lamielle",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.6
+   ],
+   "why": "general aerial view over the whole city to the hills of the Pilat"
+  }
+ ],
+ "gaps": "P0–P5: nothing usable",
+ "notes": "Almost all hits are other places named for Saint Stephen: tapestries of the saint’s life (#1–#5), Saint-Étienne-du-Mont in Paris (#6), Toulouse cathedral (#7, #23–#25), Moudon (#14–#16), Court-Saint-Étienne in Belgium (#12/#13). #8–#11 are Revolutionary letters; #17–#21 mountain views from the Crêt de la Perdrix (Pilat), not the city.",
+ "_reviewed": true
+}

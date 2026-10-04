@@ -1,0 +1,50 @@
+{
+ "city": "Kutaisi",
+ "picks": [
+  {
+   "n": 7,
+   "file": "VUE DE KOUTAIS, ancienne capitale de l'Iméréthie, sur la rivière Rion.jpg",
+   "y": 1900,
+   "lab": "about 1900",
+   "what": "The city along the Rioni River, photograph in Gustave Schlumberger, L’Épopée byzantine",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.005,
+    0.995,
+    0.92
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "true general view: both banks of the Rioni, the bridge, and the Bagrati ruins on the hill at right; caption trimmed off"
+  },
+  {
+   "n": 8,
+   "file": "22 - Kutaisi.jpg",
+   "y": 1964,
+   "lab": "1964",
+   "what": "The Meskhishvili Drama Theater on the central square, photograph",
+   "who": "Jacques Dupakiers",
+   "lic": "CC BY 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.68,
+    0.5
+   ],
+   "why": "color view of the city’s main square and its landmark theater"
+  }
+ ],
+ "gaps": "P0–P3: nothing usable (a coin only); P6: kept the existing 2025 view",
+ "notes": "Date for #7: Commons says 1905–25, but the caption names Schlumberger’s L’Épopée byzantine, part 2 (Basile II), published in 1900, so the photo is from the 1890s at the latest; labeled “about 1900”. The 1888 Library of Congress photo (#2) shows Gelati Monastery, about 11 km outside the city, so it was skipped. The 1934–35 “Kutais” photos are of a ship.",
+ "_reviewed": true
+}

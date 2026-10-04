@@ -1,0 +1,50 @@
+{
+ "city": "Tilburg",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Atlas Schoemaker-NOORDBRABANT-2987-Noord-Brabant, Tilburg.jpeg",
+   "y": 1722,
+   "lab": "1710–35",
+   "what": "Tilburg Castle, drawing in the Schoemaker atlas",
+   "who": "Andries Schoemaker",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.045,
+    0.092,
+    0.905,
+    0.425
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "color drawing of the town’s castle (demolished 1858); trimmed to the picture, away from the arms and text"
+  },
+  {
+   "n": 9,
+   "file": "HUA-170145-Gezicht op het N.S.-station Tilburg te Tilburg.jpg",
+   "y": 1922,
+   "lab": "1920–25",
+   "what": "The railway station, colored postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.035,
+    0.98,
+    0.925
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "color, sharp view of the old station building, the clearest city scene among the candidates"
+  }
+ ],
+ "gaps": "P0–P1: nothing; P3: only a guardhouse hut (#2) and a map (#3); P4: only station and railway-crossing scenes, close in subject to the pick; P6: existing skyline view kept",
+ "notes": "#7 (black-and-white postcard of the same station, 1900–05) could serve P4 instead, but it repeats the subject of #9. #10 (aerial, 1920–40) shows an unidentified oval field with no landmarks. #4 is the church in Berkel, #11 is Naples, #12–#13 are portraits, #14–#15 interiors.",
+ "_reviewed": true
+}

@@ -1,0 +1,13 @@
+{
+ "city": "Niš",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "fix",
+   "fix": {
+    "what": "General view of the town, wood engraving"
+   },
+   "reason": "true view labeled Nissa, trim and focal good; the record does not say the building is the Orthodox cathedral, so drop that claim"
+  }
+ ]
+}

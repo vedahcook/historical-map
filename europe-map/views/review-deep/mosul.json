@@ -1,0 +1,15 @@
+{
+ "city": "Mosul",
+ "checks": [
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "labeled Mosul in the book; city is faint on the left horizon but crop includes it"
+  },
+  {
+   "n": 12,
+   "verdict": "ok",
+   "reason": "al-Hadba minaret view; negative border and handwriting trimmed"
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+{
+ "city": "Babruysk",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Babrujsk. Бабруйск (A. Westerveld, 1649).jpg",
+   "y": 1649,
+   "lab": "1649",
+   "what": "The capture of the town by Janusz Radziwiłł’s army, drawing",
+   "who": "Abraham van Westerveld",
+   "lic": "PD",
+   "event": true,
+   "trim": [
+    0.01,
+    0.01,
+    0.99,
+    0.96
+   ],
+   "focal": [
+    0.42,
+    0.42
+   ],
+   "why": "eyewitness drawing of the 1649 battle; town and castle across the Berezina burning, so marked as an event"
+  },
+  {
+   "n": 3,
+   "file": "Babrujsk, Biarezina. Бабруйск, Бярэзіна (1810).jpg",
+   "y": 1810,
+   "lab": "1810",
+   "what": "The town above the Berezina, drawing",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.65,
+    0.42
+   ],
+   "why": "general view of the town and its churches before the Russian fortress was built"
+  },
+  {
+   "n": 8,
+   "file": "Babrujsk, Biarezina, Čyhunačny most. Бабруйск, Бярэзіна, Чыгуначны мост (1908) (3).jpg",
+   "y": 1908,
+   "lab": "1908",
+   "what": "The railroad bridge over the Berezina, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.01,
+    0.99,
+    0.91
+   ],
+   "focal": [
+    0.45,
+    0.4
+   ],
+   "why": "labeled Babruysk postcard; the iron bridge is the town’s best-known landmark among the candidates; caption trimmed"
+  }
+ ],
+ "gaps": "P0 and P2: nothing; P5: only a troop parade at the fortress gate (1918), a 1930s log bridge and city plans; P6: only a single wooden house and a water tower half hidden by trees",
+ "notes": "#8 file name says 1908, date field says postmarked before April 1909; used 1908. #3 date 1810 is from the record (view before the fortress, begun 1810).",
+ "_reviewed": true
+}

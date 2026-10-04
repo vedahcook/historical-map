@@ -1,0 +1,71 @@
+{
+ "city": "Gijón",
+ "picks": [
+  {
+   "n": 1,
+   "file": "GijonsigloXVII.jpg",
+   "y": 1634,
+   "lab": "1634",
+   "what": "View of the port, drawing in Pedro Teixeira’s atlas of the coasts of Spain",
+   "who": "Pedro Teixeira",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.04,
+    0.12,
+    0.96,
+    0.975
+   ],
+   "focal": [
+    0.57,
+    0.37
+   ],
+   "why": "colored bird’s-eye view of the bay with the walled town “Xixon” on the Cimadevilla headland between its two beaches; title cartouche and frame cut"
+  },
+  {
+   "n": 2,
+   "file": "Sanchez-arenal de san Lorenzo.jpg",
+   "y": 1795,
+   "lab": "1793–96",
+   "what": "San Lorenzo beach and the Campo Valdés, painting (Museo Casa Natal de Jovellanos)",
+   "who": "Mariano Ramón Sánchez",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    0.985
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "color general view of the old town from the beach: Revillagigedo palace tower, walls and the old church of San Pedro"
+  },
+  {
+   "n": 11,
+   "file": "Calle Marques de San Esteban-Gijon-1917.jpg",
+   "y": 1917,
+   "lab": "1917",
+   "what": "The old harbor seen from the Jardín de la Reina, postcard",
+   "who": "Hauser y Menet",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.13,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "harbor-front view with sailing ships and the town behind; printed caption cut"
+  }
+ ],
+ "gaps": "P0, P2, P4: nothing usable",
+ "notes": "#1 is in Commons’ “Old maps of Gijón” but is a pictorial bird’s-eye landscape (mountains, town drawn as buildings), not a street plan; the town itself is small in the picture. #11 is only 1200 px wide. #9 (El Musel aerial, 1962) shows the outer port and hills rather than the town. #4 (market hall, 1884) and #5/#6 (royal bathing hut and coal arch, 1858) are single structures; #7 and #10 are maps; #15 (marina at sunset, 2018) is not better than the existing 2022 Cimadevilla view.",
+ "_reviewed": true
+}

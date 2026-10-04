@@ -1,0 +1,71 @@
+{
+ "city": "Annaba",
+ "picks": [
+  {
+   "n": 7,
+   "file": "Annaba 1837.jpg",
+   "y": 1837,
+   "lab": "1837",
+   "what": "The town across the plain as French troops leave for Constantine, colored view",
+   "who": "Alexandre Genet",
+   "lic": "PD",
+   "event": true,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.66,
+    0.6
+   ],
+   "why": "only early general view: Bône on its hill with the casbah above, the old bridge and a domed shrine in the foreground; troops are small"
+  },
+  {
+   "n": 10,
+   "file": "Annaba Bone le port.JPG",
+   "y": 1930,
+   "lab": "about 1930",
+   "what": "The harbor, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.18,
+    0.92,
+    0.97
+   ],
+   "focal": [
+    0.45,
+    0.5
+   ],
+   "why": "labeled Bône – Le Port; sailing ship in the harbor with the waterfront and town behind; postcard border and printed caption cut off"
+  },
+  {
+   "n": 16,
+   "file": "Panorama sur la ville de Annaba depuis la citadelle.jpg",
+   "y": 2012,
+   "lab": "2012",
+   "what": "View over the city from the citadel, photograph",
+   "who": "Abdelkrim Largueche",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.03,
+    0.04,
+    1,
+    0.86
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "color view over the old rooftops, tower blocks and the gulf; antenna and foreground trees trimmed"
+  }
+ ],
+ "gaps": "P0, P2: nothing; P1: only Jacques Callot’s battle prints (1614–20) dominated by soldiers; P4: the existing 1890s photochrom is kept (#9, an 1891 Reclus engraving, is not better)",
+ "notes": "#7 is marked as an event because Commons describes it as French soldiers leaving Bône for Constantine in 1837, but the troops are small and the town is unaffected, so the reviewer may set event to false. Its medium is not recorded (looks like a watercolor or colored lithograph). #6 (Horace Vernet, taking of Bône 1832) is a battle scene on the walls, skipped. #10 is dominated by a sailing ship but is the only clear town view for P5 (#11, a 1948 US Navy harbor photo, is small and dull). #16 is modest (no single landmark, trees below); #15 (2009 panorama, 16032 px) is a flat, hazy shoreline seen across the bay, kept as an alternative.",
+ "_reviewed": true
+}

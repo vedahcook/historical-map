@@ -1,0 +1,92 @@
+{
+ "city": "Timișoara",
+ "picks": [
+  {
+   "n": 4,
+   "file": "18b Siege of Temesvár, 1552.jpg",
+   "y": 1558,
+   "lab": "1558",
+   "what": "The Ottoman siege of 1552, miniature in an Ottoman manuscript",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": true,
+   "trim": [
+    0.04,
+    0.025,
+    0.96,
+    0.39
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "colored view of the walled town above its moat and marshes; trimmed to the town, cutting the battle scene and text panel"
+  },
+  {
+   "n": 9,
+   "file": "Eckarth 1809 02 Temeswar.jpg",
+   "y": 1809,
+   "lab": "1809",
+   "what": "Engraving in the Zittau Monthly Journal (Eckarthisches Tagebuch)",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.035,
+    0.02,
+    0.97,
+    0.24
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "labeled view of the town with its bastions, gate and baroque church towers; trimmed above the coat of arms and allegory"
+  },
+  {
+   "n": 12,
+   "file": "Temesvár Ferencz József szinház.jpg",
+   "y": 1910,
+   "lab": "about 1910",
+   "what": "The Franz Joseph Theater, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.05,
+    0.17,
+    0.93,
+    0.93
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "the city theater (today’s National Theater and Opera) before its 1920s rebuilding; sharp; postcard border and caption trimmed"
+  },
+  {
+   "n": 19,
+   "file": "Landesarchiv Baden-Wuerttemberg Staatsarchiv Freiburg W 134 Nr. 036854b Bild 1 (5-171404-1).jpg",
+   "y": 1937,
+   "lab": "1937",
+   "what": "Union Square with the Roman Catholic cathedral and the Holy Trinity column, photograph",
+   "who": "Willy Pragher",
+   "lic": "CC BY 3.0 de",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.48,
+    0.4
+   ],
+   "why": "the city’s best-known square and landmarks; best framed of four near-identical frames"
+  }
+ ],
+ "gaps": "P0: nothing; P6: only annotated panoramas (labels and pointer lines drawn across the skyline) and a mall roof, skipped",
+ "notes": "Kept the 1663 Ottendorf drawing for P2 (Bouttats 1686 and Bodenehr 1716 are good engravings but not clearly better than a colored view). The 1552 miniature is folio 18b of the same manuscript as the double page dated 1557–58 (#1), so dated 1558; it is a stylized Ottoman depiction, marked as an event. The 1809 view is crude and small but clearly labeled and matches the fortress town of the time. The postcard is dated between about 1905 and 1918 (Hungarian caption).",
+ "_reviewed": true
+}

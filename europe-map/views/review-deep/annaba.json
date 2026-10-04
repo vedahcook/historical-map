@@ -1,0 +1,33 @@
+{
+ "city": "Annaba",
+ "checks": [
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "true view of Bône and the casbah; event flag is right because the picture shows the army column leaving for Constantine"
+  },
+  {
+   "n": 10,
+   "verdict": "ok",
+   "reason": "labeled Bône harbor postcard, only clear P5 town view; caption and border trimmed (mast tops are cut, unavoidable without including the caption)"
+  },
+  {
+   "n": 16,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.03,
+     0.04,
+     1,
+     0.86
+    ],
+    "focal": [
+     0.55,
+     0.5
+    ],
+    "who": "Abdelkrim Largueche"
+   },
+   "reason": "trim to 0.72 height made the 16:9 window only 36% of the picture width; this keeps about 46% with sea, old rooftops and the tower blocks, still avoiding the antenna"
+  }
+ ]
+}

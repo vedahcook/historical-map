@@ -1,0 +1,19 @@
+{
+ "city": "Adana",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "fix",
+   "fix": {
+    "y": 1837,
+    "lab": "1836–38"
+   },
+   "reason": "Commons 1836 is only the start of Carne’s 1836–38 series, and the Asia Minor plates came late; a range is safer. Crop is fine"
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "labeled Adana river quarter postcard; margin and caption cut; date uncertain but about 1920 is a fair reading of the record"
+  }
+ ]
+}

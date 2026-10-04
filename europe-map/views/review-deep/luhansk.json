@@ -1,0 +1,13 @@
+{
+ "city": "Luhansk",
+ "checks": [
+  {
+   "n": 11,
+   "verdict": "fix",
+   "fix": {
+    "what": "Pushkinskaya Street, photochrom postcard"
+   },
+   "reason": "record gives the series as photochrom (Luhansk on photochrome prints), not hand-colored; crop and date are fine"
+  }
+ ]
+}

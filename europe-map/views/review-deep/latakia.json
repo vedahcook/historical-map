@@ -1,0 +1,26 @@
+{
+ "city": "Latakia",
+ "checks": [
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "focal": [
+     0.45,
+     0.47
+    ]
+   },
+   "reason": "arch is taller than a 16:9 window; current focal cuts off the cornice at the top, move up so the top stays whole and only the base is cropped"
+  },
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "harbor and castle, margins and caption trimmed"
+  },
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "Temple of Bacchus colonnade, caption in the print says Lattakia; crop clean"
+  }
+ ]
+}

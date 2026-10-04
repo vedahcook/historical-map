@@ -1,0 +1,20 @@
+{
+ "city": "Odessa",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "Meyer's Universum vol. 4 plate, 1837; margins and caption clear"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "Opera Theater on Richelieu St., clean cropped negative; date 1915–20 fine"
+  },
+  {
+   "n": 13,
+   "verdict": "ok",
+   "reason": "color aerial of the historic center with the Opera Theater; no P6 view existing"
+  }
+ ]
+}

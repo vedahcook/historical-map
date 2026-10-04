@@ -1,0 +1,29 @@
+{
+ "city": "Samsun",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Kale Mahallesi, Samsun.jpg",
+   "y": 1905,
+   "lab": "1900s",
+   "what": "The Kale quarter and the Black Sea, colored postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.13,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "color view over the old town to the sea, with the vanished Aya Triada church"
+  }
+ ],
+ "gaps": "P0–P3: nothing; P5: only Atatürk visits, a group of fighters and a building in Vezirköprü; P6: only close-ups of the Panorama 1919 Museum",
+ "notes": "Alternative P4: #2 (B&W postcard ‘Souvenir de Samsoun. Vue panoramique’), a better whole-city panorama along the bay, but its Commons date 1851 comes from a caption added by a modern publisher and is impossible for a picture postcard; it is really about 1900–1914, so not used. Source of #5 is small (908 px wide).",
+ "_reviewed": true
+}

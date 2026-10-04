@@ -1,0 +1,50 @@
+{
+ "city": "Chernihiv",
+ "picks": [
+  {
+   "n": 8,
+   "file": "BLASIUS(1844) p2.635 Christuskirche von Tschernigos.jpg",
+   "y": 1844,
+   "lab": "1844",
+   "what": "The Transfiguration Cathedral, engraving in Johann Heinrich Blasius’s Reise im europäischen Russland",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.04,
+    0.04,
+    0.96,
+    0.94
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "the city’s best-known landmark, with its two towers and domes, clearly drawn; page margins trimmed"
+  },
+  {
+   "n": 9,
+   "file": "View of Chernigov.PNG",
+   "y": 1908,
+   "lab": "1908",
+   "what": "View toward the Trade Square, drawing",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.06,
+    1,
+    0.83
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "view over the market arcades and rooftops, the nearest thing to a general view in P4; caption trimmed"
+  }
+ ],
+ "gaps": "P0: nothing; P1: only text pages of a 1646 book; P2: only the 1706 town plan; P5: only troop parades with an unclear date",
+ "notes": "#9 is small (1137 px wide). #12 is Cherkasy, not Chernihiv. #19 (St. Catherine’s Church at night, 2014) is a possible P6 alternate; the existing 2014 view was kept since it can’t be compared here.",
+ "_reviewed": true
+}

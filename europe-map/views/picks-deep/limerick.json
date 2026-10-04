@@ -1,0 +1,29 @@
+{
+ "city": "Limerick",
+ "picks": [
+  {
+   "n": 3,
+   "file": "City of Limerick, 1833 (IA jstor-30003841) (page 1 crop).jpg",
+   "y": 1833,
+   "lab": "1833",
+   "what": "The city from the Shannon, wood engraving in the Dublin Penny Journal",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.01,
+    0.99,
+    0.94
+   ],
+   "focal": [
+    0.5,
+    0.62
+   ],
+   "why": "general view across the river with quays, ships and St Mary’s Cathedral tower; caption trimmed"
+  }
+ ],
+ "gaps": "P0, P1, P2: nothing; P4, P5: only other Limericks (Maine, Pennsylvania), limerick-poem postcards and Castleconnell; P6 already covered, #15 not clearly better",
+ "notes": "#4 (St Mary’s Cathedral, 1787) is a single-building elevation, passed over for the 1833 general view; #1, #2 are street plans.",
+ "_reviewed": true
+}

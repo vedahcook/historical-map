@@ -1,0 +1,29 @@
+{
+ "city": "Kayseri",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Césarée et le mont Argée - Texier Charles Félix Marie - 1882.jpg",
+   "y": 1862,
+   "lab": "1862",
+   "what": "View from the citadel walls toward Mount Erciyes, engraving in Charles Texier’s Asie Mineure",
+   "who": "Charles Texier",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.046,
+    0.065,
+    0.958,
+    0.905
+   ],
+   "focal": [
+    0.55,
+    0.5
+   ],
+   "why": "true general view: citadel tower, the flat-roofed town and Mount Erciyes behind"
+  }
+ ],
+ "gaps": "P0–P3: nothing usable (a tile, a miniature of Sinan, a book binding); P5: only a map, a crowd and an aircraft hangar; P6: only a 360° panorama of a rebuilt square and a museum courtyard, both weak",
+ "notes": "#4: Commons gives 1882, the date of the reprint the scan comes from; Texier’s Asie Mineure (L’Univers pittoresque, Firmin-Didot) first appeared in 1862 with these plates, drawn by Texier on his 1830s travels. If the reviewer prefers the documented date, use 1882 (same period).",
+ "_reviewed": true
+}

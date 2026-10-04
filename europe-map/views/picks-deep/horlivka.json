@@ -1,0 +1,50 @@
+{
+ "city": "Horlivka",
+ "picks": [
+  {
+   "n": 3,
+   "file": "30 Gorlofka. Colonie de mineurs.jpg",
+   "y": 1900,
+   "lab": "about 1900",
+   "what": "The miners’ settlement, photograph shown at the 1900 Paris World’s Fair",
+   "who": "Alexei Ivanitsky",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.198,
+    0.155,
+    0.806,
+    0.797
+   ],
+   "focal": [
+    0.55,
+    0.55
+   ],
+   "why": "general view of the mining town with smoking pit chimneys; mount and captions trimmed"
+  },
+  {
+   "n": 11,
+   "file": "Здания Донбасской ЭС в Горловке - panoramio.jpg",
+   "y": 2006,
+   "lab": "2006",
+   "what": "Lenin Avenue with the Lenin monument, photograph",
+   "who": "Alexey Chernykh",
+   "lic": "CC BY 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.6
+   ],
+   "why": "the city’s central square; only usable modern view"
+  }
+ ],
+ "gaps": "P0–P3: nothing; P5: only a sculpture, an archive card and village houses from a 1934 book",
+ "notes": "The Ivanitsky album photos were taken for the 1900 Paris exhibition, so likely in the late 1890s; labeled ‘about 1900’. #2 (wider, flatter view of the miners’ village) is an alternate.",
+ "_reviewed": true
+}

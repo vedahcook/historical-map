@@ -1,0 +1,50 @@
+{
+ "city": "Voronezh",
+ "picks": [
+  {
+   "n": 1,
+   "file": "К de Bruin.JPG",
+   "y": 1711,
+   "lab": "1711",
+   "what": "View of the town on its hill above the river, engraving in Cornelis de Bruijn’s Travels into Muscovy",
+   "who": "Cornelis de Bruijn",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.012,
+    0.07,
+    0.482,
+    0.95
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "only early general view: the town on its hill with churches, the river and the shipyard; plate frame and title trimmed"
+  },
+  {
+   "n": 2,
+   "file": "Открытие мощей святого Митрофана.PNG",
+   "y": 1839,
+   "lab": "about 1839",
+   "what": "The Mitrofan Monastery at the opening of St. Mitrofan’s relics in 1832, engraving (reproduced on a postcard)",
+   "who": "Ivan Chesky",
+   "lic": "PD",
+   "event": true,
+   "trim": [
+    0.012,
+    0.012,
+    0.988,
+    0.915
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "the town’s chief landmark, the monastery’s cathedral and bell tower; crowd scene of the 1832 celebration, so marked as an event; postcard caption trimmed"
+  }
+ ],
+ "gaps": "P0–P1: nothing; P4: only railway stations of other towns (Usman, Kozlov, Putyvl, Dmitriev); P5: only group portraits and 1942 war scenes; P6: existing view kept (#15–#16 show the Don at Storozhevoe, not the city)",
+ "notes": "#1: drawn during de Bruijn’s 1703 visit, dated by the 1711 first edition of his book per the rules; only 1024 px wide, with the book’s center fold visible. #2: Commons dates the engraving 1839 without a source; it shows the 1832 event and Chesky died in 1848.",
+ "_reviewed": true
+}

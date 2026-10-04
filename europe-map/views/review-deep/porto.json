@@ -1,0 +1,20 @@
+{
+ "city": "Porto",
+ "checks": [
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "Real view of Porto (Ribeira, boat bridge, hill); 1817 per record; no margins."
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "Real view from Serra do Pilar with the 1843 suspension bridge; about 1850 per record; crop fine."
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "Dated by EXIF/record 28 July 1967; river view of Porto, weaker landmark but only usable P5; crop fine."
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+{
+ "city": "Minsk",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Miensk, Vysoki Rynak. Менск, Высокі Рынак (Lauvergne, 1840) (2).jpg",
+   "y": 1845,
+   "lab": "1840s",
+   "what": "The Upper Market with the cathedral and the town hall, lithograph",
+   "who": "Barthélemy Lauvergne and Léon Sabatier",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.3,
+    0.55
+   ],
+   "why": "the old main square in winter; the twin-towered cathedral (former Jesuit church) and town hall tower recognizable"
+  },
+  {
+   "n": 8,
+   "file": "Miensk. Менск (1882).jpg",
+   "y": 1882,
+   "lab": "1882",
+   "what": "General view, engraving",
+   "who": "unknown artist",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.02,
+    0.99,
+    0.98
+   ],
+   "focal": [
+    0.5,
+    0.4
+   ],
+   "why": "general view of the whole town with its church towers across the skyline"
+  },
+  {
+   "n": 15,
+   "file": "Miensk, Trajeckaja hara, Bazylanski. Менск, Траецкая гара, Базылянскі (J. Drazdovič, 1919).jpg",
+   "y": 1919,
+   "lab": "1919",
+   "what": "The Upper Town seen from the Trinity Hill, ink drawing",
+   "who": "Jazep Drazdovič",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.07,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.35
+   ],
+   "why": "the towers of the Upper Town churches, including the cathedral, above the old houses; archive number in the top corner trimmed"
+  }
+ ],
+ "gaps": "P0: only a carved bone cube; P1: nothing; P2: only a portrait; P6: existing 2019 view kept",
+ "notes": "#5 was drawn by Lauvergne in 1840 and published as a lithograph between 1842 and 1856, so labeled “1840s”. #15 is small (718 × 800) but the only usable P5 view; #17 is a small vertical aerial photo that reads like a map. #12 (Hasciny Dvor, 1911) is only 29 years after #8, so not added as a second P4 view. #18 (Holy Spirit Cathedral panorama, 2013) is a possible P6 alternate but not clearly better than the existing view.",
+ "_reviewed": true
+}

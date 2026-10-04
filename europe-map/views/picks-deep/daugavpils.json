@@ -1,0 +1,50 @@
+{
+ "city": "Daugavpils",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Dvinsk 1912.jpg",
+   "y": 1912,
+   "lab": "1912",
+   "what": "The Novoye Stroyeniye district with the Lutheran and Catholic churches, color photograph",
+   "who": "Sergei Prokudin-Gorsky",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.4,
+    0.33
+   ],
+   "why": "early color view over the town; Martin Luther church and the twin-towered Catholic church recognizable"
+  },
+  {
+   "n": 14,
+   "file": "Даугавпилс-панорамный вид с птичего полета - panoramio - BirdsEyeLV (5).jpg",
+   "y": 2016,
+   "lab": "2016",
+   "what": "Aerial panorama of the city",
+   "who": "BirdsEyeLV",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "sharp, wide bird’s-eye view of the city; best modern general view offered"
+  }
+ ],
+ "gaps": "P0–P2: nothing; P3: only a plan, a church elevation and an imagined 1578 scene (skipped); P5: only soldiers, groups and a station front",
+ "notes": "Napoleon Orda’s 1875 watercolor of the Jesuit church on the Daugava (#8) is a good alternate for P4 but only 37 years from 1912, so not added as a second P4 view. The 2016 panorama shows mostly Soviet-era housing rather than the old center; no better modern view was offered.",
+ "_reviewed": true
+}

@@ -1,0 +1,27 @@
+{
+ "city": "Grozny",
+ "checks": [
+  {
+   "n": 12,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.01,
+     0.03,
+     0.695,
+     0.98
+    ],
+    "focal": [
+     0.5,
+     0.33
+    ]
+   },
+   "reason": "printed caption (top right, in the sky) falls inside the crop; trim it off on the right, synagogue dome stays whole"
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "mosque and synagogue by the river; caption trimmed, crop clean"
+  }
+ ]
+}

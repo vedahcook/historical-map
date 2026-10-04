@@ -1,0 +1,10 @@
+{
+ "city": "Rivne",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "Rowno street from a window; negative border and numbers trimmed; only decent old view"
+  }
+ ]
+}

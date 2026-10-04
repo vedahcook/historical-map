@@ -1,0 +1,18 @@
+{
+ "city": "Sétif",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.01,
+     0.02,
+     0.99,
+     0.88
+    ]
+   },
+   "reason": "Cream postcard margin shows at the bottom of the current trim; trim bottom to 0.88. Otherwise acceptable for a street scene with no general view available."
+  }
+ ]
+}

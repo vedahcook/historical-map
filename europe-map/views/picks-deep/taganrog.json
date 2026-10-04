@@ -1,0 +1,50 @@
+{
+ "city": "Taganrog",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Meyers Universum Band 08 35.jpg",
+   "y": 1841,
+   "lab": "1841",
+   "what": "The town on its cliff seen from the bay, steel engraving in Meyer’s Universum, vol. 8",
+   "who": "Joseph Meyer (publisher)",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.026,
+    0.035,
+    0.976,
+    0.81
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "general view of Taganrog along the cliff with its churches, ships in the shallow bay; clean high-resolution scan, preferred over the book-page scan of the same plate (#2); caption trimmed"
+  },
+  {
+   "n": 4,
+   "file": "Panorama goroda Taganrog.jpg",
+   "y": 1908,
+   "lab": "1900–17",
+   "what": "General view of the town toward the bay, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.2,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.7
+   ],
+   "why": "the only general view after 1850: rooftops over a wide square out to the bay and port; title text in the sky trimmed; postcard dated only to 1900–1917"
+  }
+ ],
+ "gaps": "P0–P2: nothing; P5: nothing (the 1917 hits are pre-revolution postcards of single buildings and the stone staircase, dated only ‘before 1917’); P6: only an industrial seaport panorama, a single house and a satellite photo",
+ "notes": "The 1890 Vorontsov Descent postcard (#7) is a slope and street scene, and its 1890 date field is doubtful for a postcard.",
+ "_reviewed": true
+}

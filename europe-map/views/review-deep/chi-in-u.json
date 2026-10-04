@@ -1,0 +1,44 @@
+{
+ "city": "Chișinău (Kishinev)",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.005,
+     0.01,
+     0.74,
+     1
+    ],
+    "focal": [
+     0.5,
+     0.36
+    ]
+   },
+   "reason": "printed caption (Кишинев. Вокзал / Kischinew. Bahnhof) sits at top right and the current crop cuts through it and clips a spire tip; trimming the right side removes it, and this focal keeps all spire tips"
+  },
+  {
+   "n": 10,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0.005,
+     0.06,
+     0.995,
+     0.9
+    ],
+    "focal": [
+     0.52,
+     0.5
+    ]
+   },
+   "reason": "the captions Primăria Orașului and Chișinău at the top (and the photographer credit at the bottom) fall inside the current crop; the new trim removes them and keeps the clock tower finial"
+  },
+  {
+   "n": 12,
+   "verdict": "ok",
+   "reason": "elevated view of the city, EXIF date 2014; building edge trimmed"
+  }
+ ]
+}

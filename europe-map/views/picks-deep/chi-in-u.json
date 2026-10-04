@@ -1,0 +1,71 @@
+{
+ "city": "Chișinău (Kishinev)",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Кишинёв. Вокзал. Почтовая открытка.jpg",
+   "y": 1910,
+   "lab": "about 1910",
+   "what": "The railroad station, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.01,
+    0.74,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.36
+   ],
+   "why": "clear view of the turreted Kishinev station, a city landmark"
+  },
+  {
+   "n": 10,
+   "file": "IzvozChis.jpg",
+   "y": 1935,
+   "lab": "1930s",
+   "what": "The City Hall, photograph",
+   "who": "F. Zemsman",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.06,
+    0.995,
+    0.9
+   ],
+   "focal": [
+    0.52,
+    0.5
+   ],
+   "why": "the City Hall with its clock tower, the city’s best-known building; low-resolution"
+  },
+  {
+   "n": 12,
+   "file": "Kishinev morning (15151309345).jpg",
+   "y": 2014,
+   "lab": "2014",
+   "what": "View from the Cosmos Hotel, photograph",
+   "who": "Clay Gilliland",
+   "lic": "CC BY-SA 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    0.87,
+    1
+   ],
+   "focal": [
+    0.6,
+    0.4
+   ],
+   "why": "elevated view over the city in morning light; building edge at right trimmed"
+  }
+ ],
+ "gaps": "P0–P3: nothing; P5–P6 otherwise only single buildings, a 1939 architect’s drawing, a night panorama that is nearly black and outlying districts",
+ "notes": "#1 is an American cabin (wrong place); #2 and #9 are political cartoons about the 1903 pogrom. #4 (Alexander II monument postcard, 1901) is an alternate for P4.",
+ "_reviewed": true
+}

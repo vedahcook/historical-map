@@ -1,0 +1,71 @@
+{
+ "city": "Craiova",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Barbu Iscovescu - Biserica din Craiova.jpg",
+   "y": 1847,
+   "lab": "1847",
+   "what": "Saint Demetrius Church, drawing",
+   "who": "Barbu Iscovescu",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.42,
+    0.45
+   ],
+   "why": "the city’s chief church (today’s cathedral) before its 1889 rebuilding; clean sketch"
+  },
+  {
+   "n": 6,
+   "file": "Craiova Teatrul National (old).jpg",
+   "y": 1910,
+   "lab": "about 1910",
+   "what": "The National Theater on Justiției Street, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    0.82,
+    1
+   ],
+   "focal": [
+    0.58,
+    0.5
+   ],
+   "why": "colored street scene with the theater; stamp on the right trimmed off"
+  },
+  {
+   "n": 16,
+   "file": "Craiova - Old Town (28782890085).jpg",
+   "y": 2016,
+   "lab": "2016",
+   "what": "The Old Town, photograph",
+   "who": "Ștefan Jurcă",
+   "lic": "CC BY 2.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "sharp color view of the restored historic center"
+  }
+ ],
+ "gaps": "P0–P2: nothing; P5: no Craiova pictures (the 1929 hits are the Poznań exhibition)",
+ "notes": "Two P4 views, 57 years apart: #5 is the only general view but is grainy (970 px wide); drop it if it looks too soft and #6 alone covers P4. #3 and #4 (Iscovescu street sketches, 1847) are alternates for P3. #17 and #18 are in Poland.",
+ "_reviewed": true
+}

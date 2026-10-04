@@ -1,0 +1,18 @@
+{
+ "city": "Donetsk (Yuzovka, Stalino)",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "sharp elevated view of the Yuzovka bazaar and town; 1901–02 from the record"
+  },
+  {
+   "n": 12,
+   "verdict": "fix",
+   "fix": {
+    "lab": "about 2013"
+   },
+   "reason": "the only date in the record is the Panoramio upload date (19 Nov 2013), not a capture date, so the label should say about; crop is fine"
+  }
+ ]
+}

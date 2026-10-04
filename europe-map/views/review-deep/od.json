@@ -1,0 +1,15 @@
+{
+ "city": "Łódź",
+ "checks": [
+  {
+   "n": 8,
+   "verdict": "ok",
+   "reason": "labeled 1889 view of Łódź; trim inside the mount, caption excluded"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "1939 postcard of the Wólka chimney district; photo borders excluded"
+  }
+ ]
+}

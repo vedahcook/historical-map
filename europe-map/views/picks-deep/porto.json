@@ -1,0 +1,71 @@
+{
+ "city": "Porto",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Vue de la ville et du port de Porto 1817 Henry L'Eveque.jpg",
+   "y": 1817,
+   "lab": "1817",
+   "what": "The city and port from the Douro, colored aquatint",
+   "who": "Henri L’Evêque",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.68,
+    0.45
+   ],
+   "why": "color general view of the Ribeira waterfront with the cathedral and bishop’s palace on the hill"
+  },
+  {
+   "n": 7,
+   "file": "Vedutta della cittá presa dalla Serra do Pilar c1850.jpg",
+   "y": 1850,
+   "lab": "about 1850",
+   "what": "The city from the Serra do Pilar, with the suspension bridge, lithograph",
+   "who": "E. Gonin",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.01,
+    0.99,
+    0.99
+   ],
+   "focal": [
+    0.68,
+    0.45
+   ],
+   "why": "general view across the Douro; suspension bridge (1843), cathedral and bishop’s palace clear"
+  },
+  {
+   "n": 15,
+   "file": "Porto-Le Douro-1967 07 28.jpg",
+   "y": 1967,
+   "lab": "1967",
+   "what": "The Douro gorge and the Maria Pia bridge, photograph",
+   "who": "Daniel Villafruela",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.45
+   ],
+   "why": "color view up the Douro along the Porto bank, Eiffel’s Maria Pia bridge in the distance"
+  }
+ ],
+ "gaps": "P0, P1, P2: nothing (#1 is a 2006 photo dated 1496 by mistake); P6 already covered, not replaced",
+ "notes": "Also strong but unused: #4 (Frederick William Flower photograph, 1849, one of the earliest photos of the city) — same period as the 1817 aquatint and only months from the about-1850 lithograph; #2 (1833 view during the Siege of Porto, event); #9 (painting dated only ‘19th century’). For P5, #14 (Largo da Ribeira, 1920s postcard) is a landmark street scene but dominated by ox teams. P6: #16 (Ribeira from the Luís I bridge, 2011) and #17 (Diego Delso, 2012) are fine alternatives; I could not compare them with the existing 2013 photo.",
+ "_reviewed": true
+}

@@ -1,0 +1,71 @@
+{
+ "city": "Petrozavodsk",
+ "picks": [
+  {
+   "n": 3,
+   "file": "View of the Aleksandr Cannon Factory from the south in 1803.png",
+   "y": 1803,
+   "lab": "1803",
+   "what": "The Alexander Cannon Works and the town from the south, engraving in Benedikt Hermann’s account of the Petrozavodsk works",
+   "who": "unknown engraver",
+   "lic": "CC BY 4.0",
+   "event": false,
+   "trim": [
+    0.075,
+    0.1,
+    1,
+    0.88
+   ],
+   "focal": [
+    0.42,
+    0.6
+   ],
+   "why": "general view of the ironworks the town grew around, with its houses and the lake behind; dark post and plank at lower left trimmed"
+  },
+  {
+   "n": 11,
+   "file": "Зарека.png",
+   "y": 1872,
+   "lab": "early 1870s",
+   "what": "The town center seen from the Zareka district, photograph",
+   "who": "F. Ternros",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.33,
+    1,
+    0.98
+   ],
+   "focal": [
+    0.72,
+    0.45
+   ],
+   "why": "general view across the town to the cathedral group; empty sky trimmed"
+  },
+  {
+   "n": 12,
+   "file": "Vy från Äänislinna.jpg",
+   "y": 1942,
+   "lab": "1941–44",
+   "what": "View over the wooden town during the Finnish occupation, photograph",
+   "who": "L. Ludén",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.35,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "overview of the town from a height toward Lake Onega; top trimmed to cut text showing through from the book page"
+  }
+ ],
+ "gaps": "P0–P2: only icons and church objects; P6: kept the 2022 aerial (candidates are a construction site and an office building)",
+ "notes": "#3 is a scan of an engraving in I. F. Hermann (Benedikt Hermann), Описание Петрозаводского и Кончезерского заводов, St. Petersburg 1803; the engraving is public domain by age, though the uploader tagged the scan CC BY 4.0. #12: the Finnish name Äänislinna and ‘during the war’ date it to the 1941–44 occupation. Best postcard view (#13, Cathedral Square with the Gostiny Dvor and Holy Spirit Cathedral) was left out because it is dated only ‘before 1917’.",
+ "_reviewed": true
+}

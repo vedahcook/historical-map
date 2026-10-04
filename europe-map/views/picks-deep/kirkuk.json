@@ -1,0 +1,29 @@
+{
+ "city": "Kirkuk",
+ "picks": [
+  {
+   "n": 6,
+   "file": "Flying Above Kirkuk, Kurdistan, 1919 Art.IWMART4637.jpg",
+   "y": 1919,
+   "lab": "1919",
+   "what": "The town seen from an RAF biplane, painting (Imperial War Museum)",
+   "who": "Sydney Carline",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.38,
+    0.58
+   ],
+   "why": "only general view before modern times: the town, its fields and the river valley from the air, in color"
+  }
+ ],
+ "gaps": "P0–P4: nothing usable (district and ethnographic maps, an Ottoman yearbook page); P6: kept the existing 2026 aerial view of the citadel",
+ "notes": "The town is small in the painting, so the focal point sits on it below the left-hand biplane. Alternative for P5: Matson’s 1932 photo of the ramp up to the citadel (#9), a street scene with a light leak and a broken corner. Gröber’s mosque photo (#10) is dated only “before 1926”.",
+ "_reviewed": true
+}

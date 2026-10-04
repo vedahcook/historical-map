@@ -1,0 +1,50 @@
+{
+ "city": "İzmit",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Bild från familjen von Hallwyls resa genom Mindre Asien och Turkiet 27 April - 20 Juni 1901 - Hallwylska museet - 103229.tif",
+   "y": 1900,
+   "lab": "about 1900",
+   "what": "Hamidiye Street and the hillside town, photograph (Hallwyl Museum, Stockholm)",
+   "who": "Jenny Bergensten",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.03,
+    0.035,
+    0.975,
+    0.93
+   ],
+   "focal": [
+    0.62,
+    0.42
+   ],
+   "why": "sharp large print; main street with the town climbing the hill behind"
+  },
+  {
+   "n": 17,
+   "file": "Izmit saat kulesi.jpg",
+   "y": 2015,
+   "lab": "2015",
+   "what": "The clock tower and the town in snow, photograph",
+   "who": "Kocaeligönüllüsü",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.53,
+    0.5
+   ],
+   "why": "the city’s landmark clock tower with the hillside center behind; high resolution"
+  }
+ ],
+ "gaps": "P0–P3: nothing usable (saints’ martyrdom scenes and an imaginary palace fire only); P5: only maps, a portrait and a warship",
+ "notes": "#5 is a Berggren commercial print bought on the von Hallwyl family’s 1901 trip, so it was made by then, probably in the 1890s; labeled about 1900. Alternative P4: #8 (palace ruins with the town on the hill, from Barth’s 1913 book, lower resolution, photo date unknown). #9 (Texier street engraving) skipped: street scene, and 1882 is a reprint date.",
+ "_reviewed": true
+}

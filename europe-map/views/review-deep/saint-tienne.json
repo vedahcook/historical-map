@@ -1,0 +1,10 @@
+{
+ "city": "Saint-Étienne",
+ "checks": [
+  {
+   "n": 22,
+   "verdict": "ok",
+   "reason": "Aerial photo of Saint-Étienne, already 16:9, no crop issues"
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "city": "Ploiești",
+ "picks": [
+  {
+   "n": 6,
+   "file": "ETH-BIB-Ploesti, von Südost, Panorama, Osthälfte-Dia 247-08598.tif",
+   "y": 1935,
+   "lab": "1935",
+   "what": "The oil refineries from the southeast, lantern slide (ETH Library, Zurich)",
+   "who": "Leo Wehrli",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0.05,
+    0.05,
+    0.955,
+    0.78
+   ],
+   "focal": [
+    0.55,
+    0.45
+   ],
+   "why": "only true general view; refinery chimneys and smoke on the skyline, the city’s defining industry; trimmed slide frame, handwritten caption and some empty field"
+  }
+ ],
+ "gaps": "P0–P3: nothing; P4: only 1877 war illustrations (troops parading, a market by the Russian headquarters) and an 1882 street plan, skipped",
+ "notes": "The 1935 view is modest (mostly a field with the refinery skyline); drop it if a stronger P5 view turns up. The 1936 slide is a single oil fire seen from a train, and the 1943–44 pictures are bombing raids.",
+ "_reviewed": true
+}

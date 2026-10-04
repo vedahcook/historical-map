@@ -1,0 +1,15 @@
+{
+ "city": "Cherkasy",
+ "checks": [
+  {
+   "n": 6,
+   "verdict": "ok",
+   "reason": "elevated view of Cathedral Square with the cathedral; caption trimmed"
+  },
+  {
+   "n": 15,
+   "verdict": "ok",
+   "reason": "Hill of Glory, the city’s main landmark; taken date 2014 from the record; weak composition but best available"
+  }
+ ]
+}

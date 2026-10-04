@@ -1,0 +1,10 @@
+{
+ "city": "Jerez de la Frontera",
+ "checks": [
+  {
+   "n": 5,
+   "verdict": "ok",
+   "reason": "clean scan of the Meyer plate; border and caption trimmed; crop is clean"
+  }
+ ]
+}

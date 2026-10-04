@@ -1,0 +1,50 @@
+{
+ "city": "Kingston upon Hull",
+ "picks": [
+  {
+   "n": 1,
+   "file": "Wenceslas Hollar - Hull defences - closeup.jpg",
+   "y": 1640,
+   "lab": "about 1640",
+   "what": "The South Blockhouse and harbor defenses, etching (detail of Hollar’s map of Hull)",
+   "who": "Wenceslaus Hollar",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.45,
+    0.55
+   ],
+   "why": "Hollar’s accurate drawing of Hull’s blockhouse, town houses and shipping"
+  },
+  {
+   "n": 3,
+   "file": "William Daniell 1822 Hull Yorkshire.jpg",
+   "y": 1822,
+   "lab": "1822",
+   "what": "The pier and waterfront, aquatint in William Daniell’s Voyage Round Great Britain",
+   "who": "William Daniell",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.1,
+    0.13,
+    0.9,
+    0.86
+   ],
+   "focal": [
+    0.45,
+    0.6
+   ],
+   "why": "colored, high-resolution view of the Humber waterfront; mount and title trimmed"
+  }
+ ],
+ "gaps": "P0, P2: nothing; P4–P6: all candidates are of Hull, Massachusetts, Toledo, Bergen or Chicago (wrong place)",
+ "notes": "Hollar’s print is dated 1636–44 on Commons; labeled ‘about 1640’. Alternate for P3: Balmer/Finden 1840 (#4), a black-and-white view across the Humber showing more of the town front; Daniell chosen for color and resolution.",
+ "_reviewed": true
+}

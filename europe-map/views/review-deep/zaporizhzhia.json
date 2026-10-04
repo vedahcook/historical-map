@@ -1,0 +1,3 @@
+{"city": "Zaporizhzhia", "checks": [
+ {"n": 12, "verdict": "fix", "fix": {"trim": [0.01, 0.31, 0.985, 0.98], "focal": [0.5, 0.45]}, "reason": "Kichkas Bridge postcard of the Dniprelstan series, before 1928 so 1920s is fine; the stained cream sky above the bridge still fills the top of the crop, so trim top to 0.31"}
+]}

@@ -1,0 +1,71 @@
+{
+ "city": "Odessa",
+ "picks": [
+  {
+   "n": 5,
+   "file": "Meyers Universum Band 04 23.jpg",
+   "y": 1837,
+   "lab": "1837",
+   "what": "View from the shore, steel engraving in Meyer’s Universum, vol. 4",
+   "who": "Bibliographisches Institut, Hildburghausen (Joseph Meyer)",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.028,
+    0.042,
+    0.972,
+    0.875
+   ],
+   "focal": [
+    0.4,
+    0.5
+   ],
+   "why": "general view of the city on its cliff above the harbor; plate margins and caption trimmed"
+  },
+  {
+   "n": 9,
+   "file": "Odessa - Richelieu St. 1915-1920 - LCCN2014709799 (cropped).jpg",
+   "y": 1917,
+   "lab": "1915–20",
+   "what": "Rishelievska Street and the Opera Theater, photograph (Bain News Service, Library of Congress)",
+   "who": "Bain News Service",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.47,
+    0.45
+   ],
+   "why": "the Opera Theater, Odesa’s best-known building, closing the street view; sharp glass negative"
+  },
+  {
+   "n": 13,
+   "file": "Opera-Theater-aerial-2.jpg",
+   "y": 2016,
+   "lab": "2016",
+   "what": "The city center and the Opera Theater, aerial photograph",
+   "who": "Alexey M.",
+   "lic": "CC BY-SA 4.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.55,
+    0.6
+   ],
+   "why": "color aerial view over the historic center with the Opera Theater in front"
+  }
+ ],
+ "gaps": "P0–P2: nothing (only a map); P4: existing 1890s Richelieu Stairs photochrom kept",
+ "notes": "#9 is the cropped version of #8 (same negative, border and caption already removed). Commons gives 1915 in the date field but 1915–1920 in the file name, as the Library of Congress does, so labeled “1915–20”. #3 (lithograph, about 1837) and #4 (the same Meyer’s plate photographed in the bound book) duplicate the P3 view. #7 (Tiuremna Square photochrom, about 1895) is not better than the existing stairs view. #16 is a phone photo of a 1920s postcard; #10 and #11 are 1930s cards of a park and a street.",
+ "_reviewed": true
+}

@@ -1,0 +1,50 @@
+{
+ "city": "Kursk",
+ "picks": [
+  {
+   "n": 3,
+   "file": "Курск. Гравюра А. Ухтомского 1821 года по рисунку И. Рамбауэра. Фрагмент.tif",
+   "y": 1821,
+   "lab": "1821",
+   "what": "View of the city with the Cathedral of Our Lady of the Sign, engraving (detail)",
+   "who": "Andrei Ukhtomsky after a drawing by I. Rambauer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.045,
+    1,
+    1
+   ],
+   "focal": [
+    0.52,
+    0.55
+   ],
+   "why": "the only early general view; cathedral and the Noble Assembly building recognizable; dark frame line at top trimmed"
+  },
+  {
+   "n": 8,
+   "file": "Kursk, view, Red Synagogue and White Synagogue.jpg",
+   "y": 1913,
+   "lab": "1913",
+   "what": "General view, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.148,
+    0.995,
+    0.995
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "labeled “Kursk No. 9, general view”; town spread over the hill with the monastery cathedral on the skyline; caption trimmed"
+  }
+ ],
+ "gaps": "P0–P2: nothing; P5: only railroad station postcards (about 1915) and a 1921 poster; the 1913 view covers it; P6: kept the 2020 aerial view (new candidates are a snowy field panorama and a water tower)",
+ "notes": "#3 is the file’s own enlarged detail of the 1821 Ukhtomsky engraving; the cathedral was under construction 1816–26, so the engraving may show it as designed. #3 is only 1747 px wide and grayish but sharp enough. #4 (1782) is a town plan, #2 a single-building elevation, both skipped.",
+ "_reviewed": true
+}

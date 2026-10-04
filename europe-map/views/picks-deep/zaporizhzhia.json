@@ -1,0 +1,29 @@
+{
+ "city": "Zaporizhzhia",
+ "picks": [
+  {
+   "n": 12,
+   "file": "Дніпрельстан Кичкаський міст Листівка Серія 3 номер 34.jpg",
+   "y": 1925,
+   "lab": "1920s",
+   "what": "The Kichkas Bridge over the Dnieper, postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.01,
+    0.31,
+    0.985,
+    0.98
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "the town’s best-known landmark before the dam, the great arch railroad bridge at Kichkas; blank sky of the card trimmed"
+  }
+ ],
+ "gaps": "P0–P4: nothing usable (Norblin costume prints, a manor in Bilenke, single railroad-station buildings, a synagogue); P6: kept the 2021 Khortytsia photo",
+ "notes": "#12 is dated ‘before 1928’; it is from a Soviet Ukrainian postcard series (Ukrholovlit, 1922 or later) on the Dniprelstan project, so 1920s. #11 (Luftwaffe 1941–42) is a vertical map-like aerial of the damaged dam; skipped. #7 Aleksandrovsk station (1880) is a single building.",
+ "_reviewed": true
+}

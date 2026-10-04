@@ -1,0 +1,50 @@
+{
+ "city": "Gyumri",
+ "picks": [
+  {
+   "n": 2,
+   "file": "Russian Empire. Армения. Александрополь (Гюмри) - панорама 1876-1878 bigArtsAM e1.jpg",
+   "y": 1877,
+   "lab": "1876–78",
+   "what": "Panorama of Alexandropol with the Holy Saviour Church, photograph",
+   "who": "Dmitri Nikitin",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.04,
+    1,
+    0.905
+   ],
+   "focal": [
+    0.6,
+    0.4
+   ],
+   "why": "wide, sharp general view of the town (5530 px) with the Holy Saviour and other churches; caption strip trimmed; a faint join between the two sheets runs down the middle"
+  },
+  {
+   "n": 9,
+   "file": "No-nb bldsa 6d088.jpg",
+   "y": 1925,
+   "lab": "1925",
+   "what": "Street in Leninakan with church towers beyond, photograph (National Library of Norway)",
+   "who": "Fridtjof Nansen",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.1,
+    1,
+    0.86
+   ],
+   "focal": [
+    0.6,
+    0.45
+   ],
+   "why": "only usable 1914–1969 picture: the old stone town a year before the 1926 earthquake, with the domes and towers of its churches down the street; car-hood edge at the bottom trimmed"
+  }
+ ],
+ "gaps": "P0–P3: nothing (the 1845 hit is a Yermakov studio portrait with an uncertain 1845–1916 date range)",
+ "notes": "Kept the 2017 P6 view; the 2021 snow photo of the Holy Saviour Church is upright and a single building. #6 (1875–80 view of the Slobodka quarter and churches, same era) is a clean alternative to the 1876–78 panorama if the sheet join bothers. The 1925 pick is a street view rather than a general view; drop it if that is too weak.",
+ "_reviewed": true
+}

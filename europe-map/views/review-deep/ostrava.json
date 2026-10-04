@@ -1,0 +1,20 @@
+{
+ "city": "Ostrava",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "1728 view of Moravská Ostrava; crop clear of legend text, tower top just inside, about 51% of width"
+  },
+  {
+   "n": 7,
+   "verdict": "ok",
+   "reason": "1909 postcard of the theater; caption and plate number cut"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "1935 view from a height; archive bar excluded"
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "city": "Mogilev",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Mahiloŭ. Магілёў (V. Vaščanka, 1702) (3).jpg",
+   "y": 1702,
+   "lab": "1702–03",
+   "what": "The town with the Epiphany Monastery and the castle walls, woodcut",
+   "who": "Vasil Vashchanka",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.02,
+    0.05,
+    0.98,
+    0.98
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "earliest view of the town, labeled “Град Могилев”, from a book printed in 1702 or 1703; this copy shows the town larger than #3"
+  },
+  {
+   "n": 13,
+   "file": "Mogilev, Synagogue (01).jpg",
+   "y": 1895,
+   "lab": "1890s",
+   "what": "The Great Synagogue on Vilenskaya Street, magazine illustration from a photograph",
+   "who": "Ostankovich",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.035,
+    0.045,
+    0.97,
+    0.84
+   ],
+   "focal": [
+    0.42,
+    0.55
+   ],
+   "why": "only usable 19th-century picture of the town: a street with its best-known synagogue; caption trimmed"
+  }
+ ],
+ "gaps": "P0–P1: nothing; P3: only maps, a town plan and documents; P5: only 1941 vertical aerial photos (map-like, one marking a destroyed bridge) and a portrait of Nicholas II; P6: only road junctions and factory smokestacks",
+ "notes": "#13 is the weakest pick (a single building in a street, a halftone from the magazine Niva); drop it if a blank plate is preferred. #9 is Gomel, not Mogilev, and #11 is a 1912 painting of an 1812 battle near the town.",
+ "_reviewed": true
+}

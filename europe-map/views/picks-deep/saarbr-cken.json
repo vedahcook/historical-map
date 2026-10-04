@@ -1,0 +1,71 @@
+{
+ "city": "Saarbrücken",
+ "picks": [
+  {
+   "n": 4,
+   "file": "Saarbrücken 1775.jpg",
+   "y": 1775,
+   "lab": "about 1775",
+   "what": "The Saar crane, the Old Bridge and the castle, watercolor",
+   "who": "Caspar Zehender",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.005,
+    0.01,
+    0.995,
+    0.99
+   ],
+   "focal": [
+    0.7,
+    0.55
+   ],
+   "why": "color view across the Saar with the city’s landmarks"
+  },
+  {
+   "n": 7,
+   "file": "Saarbrücken, Saarland - Winterbergdenkmal; Bahnhof; Stadtansicht (Zeno Ansichtskarten).jpg",
+   "y": 1898,
+   "lab": "1898",
+   "what": "General view of St. Johann and Saarbrücken, color postcard",
+   "who": "Klingebeil & Proeller",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0.33,
+    0.07,
+    0.99,
+    0.575
+   ],
+   "focal": [
+    0.5,
+    0.45
+   ],
+   "why": "bird’s-eye view of the twin towns along the Saar; trimmed to the panorama, away from the inset pictures and handwriting"
+  },
+  {
+   "n": 20,
+   "file": "Saarbrücken St JohannerMarkt pano.jpg",
+   "y": 2011,
+   "lab": "2011",
+   "what": "The St. Johanner Markt, panoramic photograph",
+   "who": "LoKiLeCh",
+   "lic": "CC BY-SA 3.0",
+   "event": false,
+   "trim": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.55
+   ],
+   "why": "sharp color view of the historic market square in the old town"
+  }
+ ],
+ "gaps": "P0: only a later plan (#1); P2: only a plan of St. Johann (#2); P5: nothing strong; P1: existing Merian view kept",
+ "notes": "#9 (Ludwigskirche and St. Jakob over the rooftops) is a strong scene, but it comes from a Saar-Hilfswerk postcard series and its ‘about 1900’ date is doubtful (probably 1920s–30s), so it was skipped. #12 (1967) looks over the Saar from a height but its subject is a new office building; skipped as weak. #3 (1804) depicts the French before the city in 1793, painted afterward. #6 (about 1750) is a small, low-resolution prospect. #11 and #16 are street scenes; #19 (2011) is a hazy view with bare trees.",
+ "_reviewed": true
+}

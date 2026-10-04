@@ -1,0 +1,28 @@
+{
+ "city": "Gijón",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "Pictorial bird's-eye view labeled Xixon (Teixeira, 1634); frame and cartouche excluded"
+  },
+  {
+   "n": 2,
+   "verdict": "fix",
+   "fix": {
+    "trim": [
+     0,
+     0,
+     1,
+     0.985
+    ]
+   },
+   "reason": "thin light edge along the bottom of the painting; trim it"
+  },
+  {
+   "n": 11,
+   "verdict": "ok",
+   "reason": "Gijón harbor postcard; caption excluded by trim; date 1917 per record"
+  }
+ ]
+}

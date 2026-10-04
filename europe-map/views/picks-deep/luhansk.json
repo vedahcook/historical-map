@@ -1,0 +1,29 @@
+{
+ "city": "Luhansk",
+ "picks": [
+  {
+   "n": 11,
+   "file": "Луганск. Пушкинская улица (3).jpg",
+   "y": 1910,
+   "lab": "1900–17",
+   "what": "Pushkinskaya Street, photochrom postcard",
+   "who": "unknown photographer",
+   "lic": "PD",
+   "event": false,
+   "trim": [
+    0,
+    0.08,
+    1,
+    1
+   ],
+   "focal": [
+    0.5,
+    0.5
+   ],
+   "why": "clearest of the pre-revolution color postcards: a main street with the domed corner building; caption trimmed"
+  }
+ ],
+ "gaps": "P0–P3: nothing; P5: nothing beyond the same pre-1917 postcards; P6: only slag heaps and fields outside the city and ISS photos from orbit",
+ "notes": "Commons gives only ‘before 1917’ for this card; the matching card of the Azov-Don Bank (#2, same series) is dated 1900–17, used here. #7 (Uspensky Square, a wider view but soft, with a dark foreground) and #2/#10 (Azov-Don Bank) are alternates. #1 is an Aivazovsky seascape held in the Luhansk museum.",
+ "_reviewed": true
+}

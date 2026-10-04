@@ -1,0 +1,20 @@
+{
+ "city": "Sfax",
+ "checks": [
+  {
+   "n": 1,
+   "verdict": "ok",
+   "reason": "prospect of the walled city from the sea labeled Sfax, anno 1785; legend trimmed; event flag right"
+  },
+  {
+   "n": 3,
+   "verdict": "ok",
+   "reason": "theater slide, sharp, borders trimmed; Gallois named as photographer in the title; 1905-11 gives about 1908"
+  },
+  {
+   "n": 9,
+   "verdict": "ok",
+   "reason": "kasbah tower and center; wide panorama so crop at 38% of width is fine at 1920 px"
+  }
+ ]
+}
