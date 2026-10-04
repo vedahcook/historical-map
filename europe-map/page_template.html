@@ -188,14 +188,6 @@ button, select, input { font: inherit; color: inherit; }
 .ticks span { position: absolute; transform: translateX(-50%); }
 .track { position: relative; }
 /* zoomed in: a bar of all the years above, with the stretch shown marked and joined to the timeline below it */
-.events button .ki { width: 15px; height: 15px; vertical-align: -3px; margin-right: 4px; }
-.events { grid-column: 1 / -1; position: relative; display: flex; flex-wrap: nowrap; gap: 6px; overflow-x: auto; scrollbar-width: thin; padding-bottom: 4px; }
-.events > * { flex: none; }
-.events button { border: 1px solid var(--line); background: var(--sunk); border-radius: 999px; padding: 3px 10px; font-size: 0.8rem; cursor: pointer; color: var(--muted); }
-.events button b { color: var(--ink); font-weight: 600; margin-right: 4px; }
-.events button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
-.events button[aria-pressed="true"] b { color: var(--bg); }
-.evhead { font-size: 0.8rem; font-weight: 600; color: var(--muted); align-self: center; margin-right: 4px; }
 
 /* panel */
 .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
@@ -238,7 +230,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
 .citycard .cpane { position: relative; z-index: 1; flex: 1; min-height: 0; display: flex; flex-direction: column; background: var(--surface); }
 .citycard .cpane { margin-left: -13px; margin-right: -13px; padding: 0 13px; }      /* (edge to edge, to cover the picture) */
 .citysheet .cpane { margin-left: -14px; margin-right: -14px; padding: 0 14px; }
-.citycard .tl { touch-action: pan-y; }
+.citycard .tl { touch-action: pan-y; user-select: none; -webkit-user-select: none; }      /* (sliding it sideways selects no text) */
 .citycard .tl.fresh .band, .citycard .tl.fresh .axis { animation: tlIn .22s ease-out; }
 @keyframes tlIn { from { opacity: 0.2; } }
 .citycard .ccard.up .cpane { margin-top: calc(-1 * var(--lift, 240px)); }
@@ -444,7 +436,6 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
           <input type="range" id="year" min="1000" max="2026" step="1" value="1815" aria-label="Year">
           <div class="ticks" id="ticks"></div>
         </div>
-        <div class="events" id="events" aria-label="Jump to a year"></div>
       </div>
     </section>
     <aside class="panel" aria-label="Details">
@@ -461,7 +452,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
         <p>Alternative borders compare OHM with CShapes-Europe from 1816 and with Cliopatria before that. They count only when a source puts an area of at least 400 km² (5,000 km² for the coarser Cliopatria) in a different country for longer than a year. Territories that governed themselves under an overlord count as part of the overlord for this comparison, because the sources disagree on whether to show them.</p>
         <p>Cities appear when a country is highlighted: the ten largest of its cities on screen that year, so zooming in brings in smaller towns. They come from about 4,900 cities and towns (Europe's largest by 1900, those that grew large after, large towns of 1000–1800, and every town that reached about 20,000 people), placed in whichever country held them that year. Tap one for its population. Figures come from censuses where there is one for that year; between figures the map estimates, assuming steady growth, and says so. A hollow dot means there is no figure within ten years (25 years before 1800, 50 before 1500); the map then gives the nearest figures instead of an estimate. The smaller towns’ figures come from Wikidata and from population tables in Wikipedia articles (checked against Wikidata), so they are thinner in Britain, Portugal, Turkey and before the mid-1800s, and zoomed-in views there can show fewer than ten. Before 1800 the figures are mostly Jan de Vries’s estimates every 50 years for towns that reached 10,000 people, which cover western and central Europe but not the Ottoman lands or Russia. Before 1500 there are figures for only about 60 cities, mostly Tertius Chandler’s estimates, so many countries show few or none. Early figures are estimates, some for the wider city, so they are not always comparable with later census counts.</p>
         <p>Events and people come from Wikidata: battles, sieges and bombings; massacres, assassinations and attacks; uprisings, revolutions and protests; treaties, congresses and conferences; church councils and papal elections; coronations; great fires; earthquakes, floods and epidemics; world’s fairs and Olympic Games; and trials, crises, scandals and declarations. A city’s popup lists its most written-about events from 1000 on, up to 30 for a large city and 12 for a town, no more than about a third of them from any one century, and the people Wikidata records as born or died there who have articles in at least ten languages (up to 14 for a large city, 6 for a town). Wikidata sometimes records an event or a birth for a district or region rather than the city, so some are missing.</p>
-        <p>Letting go of the year slider zooms the timeline in around that year: from a few years to a few centuries, as many as it takes to hold about ten of the events on screen (or in the highlighted country), which are then listed below it. The arrows at its ends, or dragging it sideways, move along. The thin bar above it shows all the years, with the stretch on view marked: drag along it to move quickly through time (the timeline zooms in again where you let go), or press “All years” to zoom out. Borders still change once a year, on July 1.</p>
+        <p>The timeline runs from 1000 to 2026 on one even scale. The thin bars above it show how much land changed hands each year (in the highlighted country, when there is one). Borders change once a year, on July 1.</p>
         <p>Terrain: the shaded relief is drawn from NASA’s elevation data (about 2 km to the pixel) and lit from the northwest; rivers and lakes come from Natural Earth and add detail as you zoom in. Man-made reservoirs show only from the year they were filled (the Kakhovka Reservoir until its dam was destroyed in 2023). Names of physical features (seas and straits, lakes and lagoons, mountain ranges, plains, rivers, and passes and peaks that mattered in Europe’s history) are a layer of their own, set along each feature in a serif italic, and appear as the zoom allows. A few take the name of the time: the IJsselmeer is the Zuiderzee until it was dammed in 1932. The mountain button beside the zoom buttons turns the relief and these names on and off.</p>
         <details>
           <summary>Corrections to OHM (<span id="nfix"></span>)</summary>
@@ -1174,9 +1165,8 @@ const wikiA = (n, t, q) => {
     (m ? ` <span class="wlang">(${WIKI_LANG[lang] || lang} Wikipedia)</span>` : '');
 };
 const EV_MAX = 7, MR = 10;
-// Event icons are switched off for now (October 2, 2026): no icons on the map, in the key, on the zoomed timeline or in
-// the lists; the events themselves still show as text in the city popup and below the zoomed timeline. Set to true to
-// bring the icons back.
+// Event icons are switched off for now (October 2, 2026): no icons on the map or in the key; the events themselves
+// show in the city card. Set to true to bring the icons back.
 const EVENT_ICONS = false;
 // this year's events on screen, one per city, as icons: the highlighted country's first, then the most written about
 function eventMarks() {
@@ -1628,7 +1618,9 @@ let cardTab = 'ev', cardUp = false, cardUpShown = null, cardSel = null, cardCity
 const cardScroll = {};                     // each tab's list keeps its scroll position (until another city opens)
 const CW = 300, PH = 96;                  // the bands' drawing width (stretched to the card's width); the population chart's height
 // each tab's band opens zoomed to the years its data covers (events, holders, population figures; at least 40
-// years); sliding the band sideways toward years it leaves out shows the whole 1000–2026 (cardZoom[tab] = 'full')
+// years), but only if the map's year is among them; otherwise it shows the whole 1000–2026. The choice is made on
+// entering the tab and kept while the year moves. Sliding the band sideways toward years it leaves out also shows
+// the whole span (cardZoom[tab]: 'data' or 'full')
 let TL0 = Y0, TL1 = Y1, TLS = 200;
 const cX = v => 4 + (v - TL0) / (TL1 - TL0) * (CW - 8), cpct = v => (cX(v) / CW * 100).toFixed(2) + '%';
 const ZFULL = [Y0, Y1, 200];
@@ -1639,7 +1631,11 @@ function zoomRange(lo, hi) {
   return [lo, hi, [10, 20, 25, 50, 100, 200].find(s => (hi - lo) / s <= 6) || 200];
 }
 const cardZoom = {};
-const zoomSet = (tab, z) => { [TL0, TL1, TLS] = cardZoom[tab] === 'full' ? ZFULL : z; };
+function zoomSet(tab, z, ready = true) {
+  if (!ready) { [TL0, TL1, TLS] = ZFULL; return; }      // (data still loading: decide when it is in)
+  if (!cardZoom[tab]) cardZoom[tab] = year >= z[0] && year <= z[1] ? 'data' : 'full';
+  [TL0, TL1, TLS] = cardZoom[tab] === 'full' ? ZFULL : z;
+}
 const yrs = n => `${n} year${n === 1 ? '' : 's'}`;
 // which picture: the one made closest to the year, none if more than 100 years away; a view of an event (a city
 // in ruins) is never shown for years before it; on a tie, the earlier one
@@ -1752,7 +1748,7 @@ function evPicHtml(e, failed) {
 // (or the latest), its picture, every event
 function eventsPanel(c) {
   const E = cardEvents(c);
-  zoomSet('ev', E ? E.z : ZFULL);
+  zoomSet('ev', E ? E.z : ZFULL, !!E);
   if (!E) return { band: '', h: 24, detail: `<div class="detail evx empty">Loading the events…</div>`, list: '', last: null };
   if (!E.all.length) return { band: '', h: 24, detail: `<div class="detail evx empty">Wikidata records no events here from 1000 on, of the kinds this map shows.</div>`, list: '', last: null };
   const GAP = 21 / 350 * (TL1 - TL0), rowEnd = []; let rows = 1;
@@ -1782,7 +1778,7 @@ function cardFlagCredit(i) {
 }
 function heldTab(c) {
   const runs = cityRuns(c), held = runs.filter(r => r.t !== 'no country');
-  zoomSet('held', held.length ? zoomRange(held[0].a, held[held.length - 1].b) : ZFULL);
+  zoomSet('held', held.length ? zoomRange(held[0].a, held[held.length - 1].b) : ZFULL, ERAS.every(E => E.ready));
   const band = `<div class="cstrip" role="group" aria-label="Who held ${esc(c.n)}">` + runs.filter(r => r.b >= TL0 && r.a <= TL1).map(r => {
     const l = Math.max(0, cX(r.a - 0.5) / CW * 100), w = Math.min(100, cX(r.b + 0.5) / CW * 100) - l, fits = w * 3.5 > r.t.length * 5.6 + 10;
     return `<button type="button" data-y="${r.a}" title="${esc(r.t + (r.by ? ` (${r.by})` : ''))}, ${cardSpan(r)}" style="left:${l.toFixed(2)}%;width:${w.toFixed(2)}%;background:${r.bg}">${fits ? esc(r.t) : ''}</button>`;
@@ -2238,49 +2234,9 @@ let timer = null;
 function stop() { clearInterval(timer); timer = null; }          // (nothing plays through the years now; kept for the calls that stop it)
 document.addEventListener('keydown', e => { if (!flagBig.hidden || e.target.closest('input, button, a, summary, [role=button]')) return; if (e.key === 'ArrowLeft') setYear(year - 1); if (e.key === 'ArrowRight') setYear(year + 1); });
 
-// ---------- timeline: change per year and key events; filtered to the highlighted country ----------
+// ---------- timeline: change per year (filtered to the highlighted country) ----------
 [1000, 1200, 1400, 1600, 1800, 2000].forEach(y => { const s = document.createElement('span'); s.textContent = y; s.style.left = ((y - Y0 + 0.5) / NY * 100) + '%'; $('ticks').appendChild(s); });
-const EVENTS = [[1017, 'Cnut rules England'], [1032, 'Caliphate of Córdoba ends'], [1067, 'Norman Conquest'], [1072, 'Battle of Manzikert'],
-  [1085, 'Castile takes Toledo'], [1099, 'First Crusade'], [1131, 'Kingdom of Sicily'], [1155, 'Angevin Empire'], [1204, 'Fourth Crusade'],
-  [1213, 'Las Navas de Tolosa'], [1241, 'Mongols take Kiev'], [1262, 'Byzantium restored'], [1282, 'Sicilian Vespers'], [1346, 'Serbian Empire'],
-  [1386, 'Poland and Lithuania joined'], [1397, 'Kalmar Union'], [1403, 'Battle of Ankara'], [1411, 'Battle of Grunwald'],
-  [1453, 'Fall of Constantinople'], [1477, 'Burgundy divided'], [1481, 'Moscow free of the Horde'], [1492, 'Granada falls'],
-  [1527, 'Battle of Mohács'], [1553, 'Russia takes Kazan'], [1569, 'Union of Lublin'], [1579, 'Dutch Republic'], [1649, 'Peace of Westphalia'],
-  [1683, 'Ottomans at Vienna'], [1699, 'Treaty of Karlowitz'], [1714, 'Utrecht and Rastatt'], [1722, 'Russian Empire'], [1773, 'First partition of Poland'], [1796, 'Poland partitioned'],
-  [1806, 'Holy Roman Empire ends'], [1812, 'Napoleon at his height'], [1815, 'Congress of Vienna'], [1848, 'Revolutions'], [1861, 'Kingdom of Italy'], [1871, 'German Empire'], [1878, 'Congress of Berlin'],
-  [1916, 'First World War'], [1919, 'New states'], [1939, 'Munich and after'], [1942, 'Axis at its height'], [1946, 'Occupation zones'], [1949, 'Two Germanys'], [1992, 'Soviet Union gone'], [2014, 'Crimea'], [2023, 'War in Ukraine']];
-function unitEvents(u) {
-  const by = {}; let pa = 0, pn = null, prev = false;
-  let maxA = 0; for (let y = Y0; y <= Y1; y++) if (AREA[y]) maxA = Math.max(maxA, AREA[y][u] || 0);
-  const areaAt = y => { const a = AREA[y][u] || 0; return a < Math.max(20, maxA * 0.002) ? 0 : a; };   // ignore leftover slivers
-  const add = (y, t, w) => { (by[y] = by[y] || { y, t: [], w: 0 }).t.push(t); by[y].w = Math.max(by[y].w, w); };
-  for (let y = Y0; y <= Y1; y++) {
-    if (!AREA[y]) { prev = false; continue; }          // an era still loading
-    const a = areaAt(y), n = a ? nameOf(u, y) : null;
-    if (prev) {
-      if (a && !pa) add(y, `${n} begins`, 1e9);
-      else if (!a && pa) add(y, `${pn} ends`, 1e9);
-      else if (a && pa) {
-        if (n !== pn) add(y, `becomes ${n}`, 1e9);
-        const d = a - pa;
-        if (Math.abs(d) > Math.max(1500, pa * 0.01)) add(y, `${d > 0 ? 'gains' : 'loses'} ${fmt(Math.abs(d))} km²`, Math.abs(d));
-      }
-    }
-    pa = a; pn = n; prev = true;
-  }
-  // the biggest changes in each era, so the earlier centuries are not crowded out by the larger changes after 1800
-  const top = (a, n) => a.sort((p, q) => q.w - p.w).slice(0, n), ev = Object.values(by);
-  return [...top(ev.filter(e => e.y < 1800), 10), ...top(ev.filter(e => e.y >= 1800), 12)].sort((a, b) => a.y - b.y).map(e => ({ y: e.y, t: e.t.join('; ') }));
-}
 // ---------- the timeline: all the years, 1000 to 2026, on one even scale ----------
-// a city event picked on the timeline: go to its year and open its city (the map moves to the city if it is off screen)
-function openTimelineEvent(e) {
-  stop(); const c = CITIES[e.ci];
-  setYear(e.y);
-  const k = pxPerKm(), r = svg.getBoundingClientRect(), sx = (c.x - shown[0]) * k, sy = (c.y - shown[1]) * k;
-  if (sx < 30 || sy < 30 || sx > r.width - 30 || sy > r.height - 30) { view = [c.x - view[2] / 2, c.y - view[3] / 2, view[2], view[3]]; applyView(); }
-  openEvent({ e, c });
-}
 let timelineFor = undefined;
 function renderTimeline() {
   const u = focusUnit(), key = u >= 0 ? u : null;
@@ -2295,16 +2251,7 @@ function renderTimeline() {
     }
     const mx = Math.max(1, ...vals.map(v => Math.sqrt(v)));
     vals.forEach((v, i) => { if (!v) return; const h = Math.max(1.5, Math.sqrt(v) / mx * 24); const r = el('rect', { x: i + 0.15, y: 26 - h, width: 0.7, height: h, 'data-y': Y0 + i }, sp); const t = el('title', {}, r); t.textContent = key != null ? `${Y0 + i}: ${nameOf(key, Y0 + i)} changed by about ${fmt(v)} km²` : `${Y0 + i}: about ${fmt(v)} km² changed hands`; });
-    let list = key != null ? unitEvents(key) : EVENTS.map(([y, t]) => ({ y, t }));
-    $('events').innerHTML = (key != null ? `<span class="evhead">Events for ${esc(nameOf(key, year))}</span>` : '') +
-      list.map(e => `<button type="button" data-y="${e.y}"${e.ev ? ` data-i="${ALLEV.indexOf(e.ev)}"` : ''} aria-pressed="false">${e.ev ? kindIcon(e.ev.k) : ''}<b class="num">${e.y}</b>${esc(e.t)}${e.ev ? ` <span class="muted">· ${esc(CITIES[e.ev.ci].n)}</span>` : ''}</button>`).join('') +
-      (!list.length ? `<span class="evhead">No border changes over 1,500 km²</span>` : '');
-    $('events').querySelectorAll('button').forEach(b => b.onclick = () => { if (b.dataset.i) return openTimelineEvent(ALLEV[+b.dataset.i]); stop(); setYear(+b.dataset.y); });
   }
-  document.querySelectorAll('.events button').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.y === year)));
-  // keep the events around this year in view: the row scrolls sideways
-  const row = $('events'), bs = [...row.querySelectorAll('button')], near = bs.filter(b => +b.dataset.y <= year).pop() || bs[0];
-  if (near && (near.offsetLeft < row.scrollLeft || near.offsetLeft + near.offsetWidth > row.scrollLeft + row.clientWidth)) row.scrollLeft = near.offsetLeft - row.clientWidth / 2 + near.offsetWidth / 2;
   document.querySelectorAll('#spark rect').forEach(r => r.classList.toggle('cur', +r.dataset.y === year));
 }
 
