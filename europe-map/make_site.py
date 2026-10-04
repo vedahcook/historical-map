@@ -31,8 +31,14 @@ page = f'''<!doctype html>
 if os.path.exists(OUT): shutil.rmtree(OUT)
 os.makedirs(OUT)
 open(f'{OUT}/index.html', 'w', encoding='utf-8').write(page)
-for f in sorted(glob.glob('europe-borders-[0-9]*.json')) + ['flags.webp', 'relief.webp', 'terrain.json', 'city-events.json', 'city-people.json']: shutil.copy(f, OUT)   # the earlier eras' maps, terrain, events, people
+for f in sorted(glob.glob('europe-borders-[0-9]*.json')) + ['flags.webp', 'relief.webp', 'terrain.json', 'city-events.json', 'city-people.json', 'city-views.json']: shutil.copy(f, OUT)   # the earlier eras' maps, terrain, events, people, city views
 shutil.copytree('flag-images', f'{OUT}/flag-images')
+# the city views' pictures (about 3,300 files, 460 MB) are not in the repository: they stay on the published site, in
+# views/, and deploy_site.sh keeps them; a test copy (in test/) reads them from the live site's folder
+if TEST:
+    import json
+    cv = json.load(open(f'{OUT}/city-views.json')); cv['base'] = '../views/'
+    json.dump(cv, open(f'{OUT}/city-views.json', 'w'), ensure_ascii=False, separators=(',', ':'))
 open(f'{OUT}/.nojekyll', 'w').close()                  # GitHub Pages: serve the files as they are
 n = sum(len(fs) for _, _, fs in os.walk(OUT)); size = sum(os.path.getsize(os.path.join(d, f)) for d, _, fs in os.walk(OUT) for f in fs)
 print(f'{OUT}: {n} files, {size / 1e6:.1f} MB')

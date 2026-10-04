@@ -99,6 +99,7 @@ html = html.replace('.cities button[aria-pressed="true"]', '.cities select { fon
 html = html.replace('No events listed before ${c.events[0].y}.', "${c.events.length ? 'No events listed before ' + c.events[0].y + '.' : 'No events listed for this city yet.'}")
 html = html.replace('Pick a city and move the year', 'Pick a city (the number is how many views it has) and move the year')
 os.makedirs('site', exist_ok=True); open('site/city-views.html', 'w').write(html)
+json.dump({c['n']: c['views'] for c in cities.values()}, open('city_views_export.json', 'w'), ensure_ascii=False)
 used = {v['id'] for c in cities.values() for v in c['views']} | {e['img']['id'] for c in cities.values() for e in c['events'] if 'img' in e}
 json.dump(sorted(used), open('used.json', 'w'))
 print(len(cities), 'cities;', len(used), 'pictures;', sum(len(c['events']) for c in cities.values()), 'events;', len(html) // 1024, 'KB page')

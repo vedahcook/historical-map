@@ -9,6 +9,7 @@ The page is `europe-borders.html`, published as a Claude artifact. It holds the 
 - `flag-images/`: a larger copy of each flag, one file each, loaded only when a flag is tapped.
 - `terrain.json` also holds the names of physical features and the spines they are set along.
 - `city-events.json` and `city-people.json`: events in each city and people born or died there (from Wikidata), loaded a moment after the page opens. Each row ends with its Wikidata id; its link goes to the English Wikipedia article, or, where there is none, to the article in another language (marked "Spanish Wikipedia" and so on), or to the Wikidata entry.
+- `city-views.json`: for each city, its period views (engravings, paintings, early photographs, a modern photo) from Wikimedia Commons, shown in the city's popup: the one made closest to the map's year. The pictures themselves (a 720 × 405 card and a larger copy of each) are on the published site in `views/`, not in the repository; `views/README.md` says how they are chosen and made.
 - `wiki-titles.json` (not published yet): for each of those Wikidata ids, the article titles in English, French, German, Spanish and Italian, for pages in those languages later.
 - `terrain.json` and `relief.webp`: rivers, lakes and the names of mountain ranges in more detail, and the shaded relief (from Natural Earth), loaded a moment after the page opens.
 

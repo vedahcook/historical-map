@@ -7,6 +7,7 @@
   --accent: #1f5f6b; --accent-ink: #ffffff; --focus: #1f5f6b;
   --water: #bfd1da; --outside: #e7ebe8; --grat: rgba(42,48,44,0.12); --none: #e6e4dc; --border: rgba(42,48,44,0.38); --vborder: rgba(42,48,44,0.28); --dim: rgba(242,244,241,0.5); --dimtext: 0.26; --river: #86adc0; --halo: rgba(255,255,255,0.88); --river-ink: #2f6c86; --mtn-ink: #7a5534; --plain-ink: #85784f; --relief: 0.5;
   --alt: #1f5f6b; --alt-fill: rgba(31,95,107,0.16); --sel: #18201c; --edge-ink: #000 34%;
+  --now: #d4361f; --now-ink: #ffffff; --era-a: #eee4cc; --era-b: #ebe6d8; --era-c: #e8dcc6; --era-d: #e1e4e0; --plate: rgba(60,50,30,0.28); --plate-ink: rgba(40,34,22,0.32); --scrim: rgba(10,14,12,0.72);
   /*FILLS_LIGHT*/
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
   --sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -19,6 +20,7 @@
   --accent: #7fc4cf; --accent-ink: #0e1412; --focus: #7fc4cf;
   --water: #14232a; --outside: #161b19; --grat: rgba(223,230,225,0.12); --none: #2a2e2b; --border: rgba(223,230,225,0.34); --vborder: rgba(223,230,225,0.24); --dim: rgba(17,21,19,0.48); --dimtext: 0.3; --river: #2c4b57; --halo: rgba(17,21,19,0.85); --river-ink: #8cbcd0; --mtn-ink: #d2b08c; --plain-ink: #bdb08a; --relief: 0.42;
   --alt: #7fc4cf; --alt-fill: rgba(127,196,207,0.2); --sel: #ffffff; --edge-ink: #fff 18%;
+  --now: #ff6a4d; --now-ink: #1a0e0b; --era-a: #2b2619; --era-b: #27251e; --era-c: #2b251c; --era-d: #212523; --plate: rgba(230,220,190,0.22); --plate-ink: rgba(230,220,190,0.3); --scrim: rgba(10,14,12,0.72);
   /*FILLS_DARK*/
   color-scheme: dark; } }
 :root[data-theme="dark"] {
@@ -26,6 +28,7 @@
   --accent: #7fc4cf; --accent-ink: #0e1412; --focus: #7fc4cf;
   --water: #14232a; --outside: #161b19; --grat: rgba(223,230,225,0.12); --none: #2a2e2b; --border: rgba(223,230,225,0.34); --vborder: rgba(223,230,225,0.24); --dim: rgba(17,21,19,0.48); --dimtext: 0.3; --river: #2c4b57; --halo: rgba(17,21,19,0.85); --river-ink: #8cbcd0; --mtn-ink: #d2b08c; --plain-ink: #bdb08a; --relief: 0.42;
   --alt: #7fc4cf; --alt-fill: rgba(127,196,207,0.2); --sel: #ffffff; --edge-ink: #fff 18%;
+  --now: #ff6a4d; --now-ink: #1a0e0b; --era-a: #2b2619; --era-b: #27251e; --era-c: #2b251c; --era-d: #212523; --plate: rgba(230,220,190,0.22); --plate-ink: rgba(230,220,190,0.3); --scrim: rgba(10,14,12,0.72);
   /*FILLS_DARK*/
   color-scheme: dark;
 }
@@ -246,6 +249,128 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
 .about ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 4px; }
 .hint { font-size: 0.88rem; color: var(--muted); }
 
+/* ---------- the city card: the map's popup for a city (a sheet from the bottom on narrow screens). It keeps its
+   size, so nothing in it moves as the year changes: header, the period view, tabs, a band on the years 1000–2026,
+   a details box for the map's year, then the tab's list and the credit, which scroll together. ---------- */
+.mappop.citycard { display: flex; flex-direction: column; padding: 14px 13px 13px; }
+.citycard .ccard { flex: 1; min-height: 0; display: flex; flex-direction: column; font-size: 0.86rem; line-height: 1.4; }
+.citycard svg { margin: 0; width: auto; height: auto; }
+.citycard .chead { flex: none; display: flex; align-items: flex-start; gap: 8px; }
+.citycard .chead > div { flex: 1; min-width: 0; }
+.citycard .cnm { font-family: var(--serif); font-weight: 600; font-size: 1.35rem; line-height: 1.15; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.citycard .cnm .yr { color: var(--now); font-variant-numeric: tabular-nums; }
+.citycard .cpop { margin-top: 2px; font-size: 1.05rem; font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.citycard .cpop small { font-size: 0.8rem; font-weight: 500; color: var(--muted); }
+.citycard .chead .x { position: static; flex: none; width: 30px; height: 30px; margin: -5px -6px 0 0; border: 0; border-radius: 7px; background: transparent; color: var(--muted); font-size: 1.15rem; line-height: 1; cursor: pointer; }
+/* the picture (16:9 crop; tap for the whole view), labeled with when it was made */
+.citycard .pic { flex: none; margin: 12px -13px 0; position: relative; aspect-ratio: 16 / 9; background: var(--sunk); overflow: hidden; }
+.citycard .vimg { display: block; width: 100%; height: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
+.citycard .vimg img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.citycard .vlabel { position: absolute; left: 8px; bottom: 8px; max-width: calc(100% - 16px); background: rgba(12,16,14,0.66); color: #fff; font-size: 0.76rem; font-weight: 500; padding: 2px 8px; border-radius: 4px; pointer-events: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.citycard .vlabel b { font-weight: 700; font-variant-numeric: tabular-nums; }
+/* no picture near the year: an empty plate, tinted for its period, with the year and the nearest pictures */
+.citycard .vph { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; text-align: center; background: var(--era); color: var(--muted); font-size: 0.8rem; padding: 0 18px; }
+.citycard .vph::before { content: ""; position: absolute; inset: 10px; border: 1px solid var(--plate); pointer-events: none; }
+.citycard .vph::after { content: ""; position: absolute; inset: 14px; border: 1px solid var(--plate); opacity: 0.5; pointer-events: none; }
+.citycard .vph .yr { font-family: var(--serif); font-weight: 600; font-size: 2.7rem; line-height: 1.05; color: var(--plate-ink); font-variant-numeric: lining-nums; }
+.citycard .vph button { position: relative; z-index: 1; border: 0; background: none; padding: 0; color: var(--accent); font-weight: 600; cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
+.citycard .era-a { --era: var(--era-a); } .citycard .era-b { --era: var(--era-b); } .citycard .era-c { --era: var(--era-c); } .citycard .era-d { --era: var(--era-d); }
+/* tabs: events (first), who held the city, population, people */
+.citycard .ctabs { flex: none; display: flex; gap: 2px; margin-top: 6px; border-bottom: 1px solid var(--line); }
+.citycard .ctabs button { flex: 1; border: 0; background: none; padding: 6px 2px 7px; font-weight: 600; font-size: 0.82rem; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; white-space: nowrap; }
+.citycard .ctabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+/* the timeline: the map's year in a red tag on top, then the tab's picture of time, then the years */
+.citycard .tl { flex: none; position: relative; margin-top: 8px; padding-top: 19px; }
+.citycard .axis { position: relative; height: 15px; margin-top: 4px; font-size: 0.68rem; line-height: 15px; color: var(--faint); font-variant-numeric: tabular-nums; border-top: 1px solid var(--line); padding-top: 1px; box-sizing: content-box; }
+.citycard .axis span { position: absolute; top: 0; transform: translateX(-50%); }
+.citycard .axis span.first { transform: none; }
+.citycard .band { position: relative; height: 84px; }
+.citycard .nowline { position: absolute; top: 0; bottom: 16px; width: 2px; margin-left: -1px; background: var(--now); box-shadow: 0 0 0 1px var(--surface); pointer-events: none; z-index: 1; }
+.citycard .nowtag { position: absolute; top: 0; height: 15px; padding: 0 5px; border-radius: 3px; background: var(--now); color: var(--now-ink); font-size: 0.68rem; font-weight: 700; line-height: 15px; font-variant-numeric: tabular-nums; transform: translateX(-50%); pointer-events: none; z-index: 2; }
+.citycard .nowtag.l { transform: none; } .citycard .nowtag.r { transform: translateX(-100%); }
+/* events: thin line icons at their years; icons that would touch drop a row */
+.citycard .ico { display: block; fill: none; stroke: currentColor; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; }
+.citycard .band .ev { position: absolute; width: 20px; height: 20px; margin-left: -10px; padding: 1px; border: 0; border-radius: 4px; background: var(--surface); color: var(--ink); cursor: pointer; z-index: 2; }
+.citycard .band .ev .ico { width: 18px; height: 18px; }
+.citycard .band .ev:hover { background: var(--sunk); }
+.citycard .band .ev.on { color: var(--now); }
+.citycard .band .ev.sel { background: var(--now); color: var(--now-ink); border-radius: 50%; box-shadow: 0 0 0 2px var(--surface); }
+/* held by: the strip, with names where they fit */
+.citycard .cstrip { position: absolute; left: 0; right: 0; top: 28px; height: 26px; border-radius: 3px; background: var(--sunk); overflow: hidden; }
+.citycard .cstrip button { position: absolute; top: 0; height: 100%; border: 0; padding: 0 4px; border-right: 1px solid var(--surface); cursor: pointer; font-size: 0.7rem; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: clip; text-align: left; }
+/* population: the chart fills the band */
+.citycard .pchart { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.citycard .pchart .ln { fill: none; stroke: var(--muted); stroke-width: 1.4; vector-effect: non-scaling-stroke; }
+.citycard .pchart .grid { stroke: var(--line); stroke-width: 1; vector-effect: non-scaling-stroke; }
+.citycard .band .pd { position: absolute; width: 5px; height: 5px; margin: -2.5px 0 0 -2.5px; border-radius: 50%; background: var(--ink); pointer-events: none; z-index: 2; }
+.citycard .band .pd.c { background: var(--surface); box-shadow: inset 0 0 0 1.2px var(--ink); }
+.citycard .band .pd.on, .citycard .band .pd.cur { width: 8px; height: 8px; margin: -4px 0 0 -4px; background: var(--now); box-shadow: 0 0 0 1.5px var(--surface); }
+.citycard .band .ph { position: absolute; width: 14px; height: 14px; margin: -7px 0 0 -7px; padding: 0; border: 0; border-radius: 50%; background: transparent; cursor: pointer; z-index: 3; }
+.citycard .band .ph:hover { background: color-mix(in srgb, var(--ink) 12%, transparent); }
+.citycard .band .gl { position: absolute; left: 0; transform: translateY(-50%); font-size: 0.62rem; line-height: 1; color: var(--faint); background: var(--surface); padding: 0 2px 0 0; pointer-events: none; font-variant-numeric: tabular-nums; }
+/* people: each life as a thin bar */
+.citycard .band .pl { position: absolute; height: 4px; min-width: 3px; padding: 0; border: 0; border-radius: 2px; background: var(--faint); opacity: 0.55; cursor: pointer; }
+.citycard .band .pl:hover { opacity: 1; background: var(--ink); }
+.citycard .band .pl.on { opacity: 1; background: var(--ink); }
+/* the details box under the band */
+.citycard .detail { flex: none; height: calc(3 * 1.38em + 16px); margin-top: 14px; padding: 8px 10px; border-radius: 8px; background: var(--sunk); line-height: 1.38; overflow: hidden; }
+.citycard .detail.ev { display: grid; grid-template-columns: 18px minmax(0, 1fr); gap: 8px; cursor: pointer; }
+.citycard .detail .ico { width: 18px; height: 18px; margin-top: 1px; color: var(--muted); }
+.citycard .detail.on .ico { color: var(--now); }
+.citycard .detail .t { display: flex; gap: 6px; white-space: nowrap; min-width: 0; }
+.citycard .detail .t b { overflow: hidden; text-overflow: ellipsis; font-weight: 600; min-width: 0; }
+.citycard .detail .t a { margin-left: auto; flex: none; align-self: center; font-size: 0.74rem; font-weight: 400; color: var(--muted); text-decoration: underline; text-decoration-color: var(--faint); text-underline-offset: 2px; }
+.citycard .detail .t a:hover { color: var(--accent); }
+.citycard .detail .xt { color: var(--muted); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.citycard .detail .xt .ago { color: var(--faint); }
+.citycard .detail.held { height: calc(2 * 1.38em + 16px); display: flex; align-items: center; gap: 10px; }
+.citycard .detail.held > div { min-width: 0; }
+.citycard .detail .hold { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.citycard .detail.held .xt { -webkit-line-clamp: 1; }
+.citycard .detail.empty { color: var(--faint); display: flex; align-items: center; }
+.citycard .swb { flex: none; width: 57px; height: 38px; border-radius: 3px; box-shadow: 0 0 0 1px var(--line); }
+.citycard .cflag { flex: none; display: inline-block; border-radius: 2px; box-shadow: 0 0 0 1px var(--line); background-image: url(flags.webp); background-repeat: no-repeat; }
+/* the tab's list, then the credit; they scroll together */
+.citycard .scroll { position: relative; flex: 1; min-height: 0; overflow-y: auto; margin-top: 10px; display: flex; flex-direction: column; }
+.citycard .tlist { flex: none; list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px; font-size: 0.8rem; line-height: 1.3; color: var(--muted); }
+.citycard .tlist li { display: grid; grid-template-columns: 18px 84px minmax(0, 1fr); gap: 6px; align-items: start; padding: 2px 2px; cursor: pointer; border-radius: 4px; }
+.citycard .tlist li:hover { background: var(--sunk); }
+.citycard .tlist li.on { color: var(--ink); font-weight: 600; }
+.citycard .tlist li.on .ico { color: var(--now); }
+.citycard .tlist li > span:nth-child(2) { padding-left: 10px; font-variant-numeric: tabular-nums; }
+.citycard .tlist li.on > span:nth-child(2) { color: var(--now); }
+.citycard .tlist .ico { width: 16px; height: 16px; color: var(--muted); }
+.citycard .tlist .sw { width: 12px; height: 12px; border-radius: 2px; margin: 2px 0 0 2px; }
+.citycard .tlist .by { display: block; font-weight: 400; color: var(--faint); }
+.citycard .tlist a { color: inherit; text-decoration: none; }
+.citycard .tlist a:hover { text-decoration: underline; }
+.citycard .tlist.ppl li { grid-template-columns: 0 92px minmax(0, 1fr); }
+.citycard .tlist .none { display: block; cursor: default; color: var(--faint); }
+.citycard .credit { flex: none; margin-top: auto; padding: 16px 2px 0; font-size: 0.74rem; line-height: 1.35; color: var(--faint); }
+.citycard .credit b { font-weight: 600; color: var(--muted); }
+.citycard .credit a { color: inherit; text-decoration: underline; text-decoration-color: var(--faint); text-underline-offset: 2px; }
+/* narrow screens: a full-width sheet from the bottom with three sizes (full, the picture only, closed) */
+.mappop.citysheet { position: fixed; left: 0; right: 0; top: auto; bottom: 0; width: auto !important; z-index: 40; padding: 0; border: 0; border-radius: 16px 16px 0 0; box-shadow: 0 -6px 24px rgba(0,0,0,0.22); transition: height .25s ease; touch-action: none; }
+.mappop.citysheet.drag { transition: none; }
+.citysheet .grab { flex: none; height: 22px; border: 0; background: none; padding: 0; display: grid; place-items: center; cursor: grab; }
+.citysheet .grab span { width: 38px; height: 4px; border-radius: 2px; background: var(--line); }
+.citysheet .sbody { flex: 1; min-height: 0; overflow: hidden; padding: 3px 14px 13px; display: flex; flex-direction: column; }
+.citysheet .ccard { font-size: 0.88rem; }
+.citysheet .pic { margin: 12px -14px 0; }
+.citysheet .chead .x { width: 34px; height: 34px; margin: 0; background: var(--sunk); }
+.citycard .stepper { flex: none; margin-top: 2px; display: inline-flex; align-items: center; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.citycard .stepper button { width: 34px; height: 30px; border: 0; background: var(--surface); color: var(--accent); font-size: 1.15rem; line-height: 1; cursor: pointer; user-select: none; -webkit-user-select: none; touch-action: none; }
+.citycard .stepper b { color: var(--now); padding: 0 6px; font-variant-numeric: tabular-nums; min-width: 4ch; text-align: center; }
+/* the whole picture, over the page; any tap (other than on a link) or Escape closes it */
+.bigview { position: fixed; inset: 0; z-index: 60; display: grid; place-items: center; padding: 16px; background: var(--scrim); cursor: zoom-out; }
+.bigview[hidden] { display: none; }
+.bigview .bcard { background: var(--surface); color: var(--ink); border-radius: var(--r); padding: 14px 14px 12px; max-width: min(100%, 1000px); max-height: 100%; overflow: auto; box-shadow: 0 12px 40px rgba(0,0,0,0.35); display: flex; flex-direction: column; gap: 8px; }
+.bigview img { display: block; max-width: 100%; max-height: 70vh; width: auto; height: auto; margin: 0 auto; border-radius: 3px; background: var(--sunk); }
+.bigview .t { font-family: var(--serif); font-weight: 600; font-size: 1.15rem; line-height: 1.25; }
+.bigview p { margin: 0; color: var(--muted); font-size: 0.86rem; line-height: 1.45; max-width: 75ch; }
+.bigview a { color: inherit; text-decoration: underline; text-decoration-color: var(--faint); text-underline-offset: 2px; }
+.bigview .hint { color: var(--faint); font-size: 0.78rem; }
+
 @media (max-width: 920px) {
   html, body { height: auto; }
   .app { height: auto; display: block; }
@@ -371,6 +496,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
   </div>
 </div>
 <div class="flagbig" id="flagbig" role="dialog" aria-modal="true" aria-label="Flag" tabindex="-1" hidden></div>
+<div class="bigview" id="bigview" role="dialog" aria-modal="true" aria-label="Picture" tabindex="-1" hidden></div>
 
 <script type="application/json" id="topo">/*TOPO*/</script>
 <script type="application/json" id="data">/*DATA*/</script>
@@ -1101,7 +1227,7 @@ function markAt(ev) {
 }
 // tapping an icon highlights whoever held the city and opens the city's popup on its events
 function openEvent(m) {
-  stop(); popTab = 'ev'; popEv = m.e;
+  stop(); popTab = 'ev'; cardTab = 'ev'; popEv = m.e;
   place = { x: m.c.x, y: m.c.y, city: m.c.i }; selCity = m.c.i; popClosed = false;
   drawPin(); drawDim(); drawLabels(); drawBadges(); drawCities(); renderTimeline(); renderPop();
 }
@@ -1527,10 +1653,359 @@ function gridSpots(w, h, step) {
   for (let x = PAD; x <= X1 + step - 1; x += step) for (let y = PAD; y <= Y1 + step - 1; y += step) out.push([Math.min(x, X1), Math.min(y, Y1)]);
   return out;
 }
+// ---------- the city card: the popup for a city. A period view of the city (the one made closest to the map's
+// year), then four tabs (Events, Held by, Population, People), each with a band on the years 1000–2026, a box with
+// details for the map's year, and a list; the picture's credit comes last. It keeps its size, so nothing in it
+// moves as the year changes. On narrow screens it is a sheet from the bottom. ----------
+// event icons: thin line drawings on a 16 x 16 grid (stroke only), shown without frames
+const ICON = {
+  war: '<path d="M2.5 2.5L10.6 10.6M13.5 2.5L5.4 10.6M8.6 12.6L12.6 8.6M3.4 8.6L7.4 12.6M10.6 10.6L12.6 12.6M5.4 10.6L3.4 12.6"/><circle cx="13.3" cy="13.3" r="1"/><circle cx="2.7" cy="13.3" r="1"/>',
+  revolt: '<path d="M4.6 7.4V4.4a1.05 1.05 0 0 1 2.1 0v3M6.7 7.2V3.5a1.05 1.05 0 0 1 2.1 0v3.7M8.8 7.2V3.8a1.05 1.05 0 0 1 2.1 0v3.4M10.9 7.2V5a1.05 1.05 0 0 1 2.1 0v4.4c0 2-1.5 3.4-3.4 3.4H7.4c-2 0-3.4-1.4-3.4-3.4V8.6c0-.7.5-1.2 1.2-1.2h3.2a1.05 1.05 0 0 1 0 2.1H6.6M5.6 12.8v2.4M11.2 12.8v2.4"/>',
+  politics: '<path d="M10.6 9.6V5.2L7.6 2.2H3.6v11.6h4.6M7.6 2.2v3h3M5.6 7.4h3M5.6 9.8h2"/><circle cx="11.6" cy="12.2" r="2.4"/><path d="M10.6 14.4l-.6 1.4M12.6 14.4l.6 1.4"/>',
+  fire: '<path d="M8 14.8c-2.8 0-4.6-1.9-4.6-4.5 0-2.8 2.1-4 2.7-7.4 1.6 1 2.5 2.6 2.5 4.1.7-.6 1.2-1.6 1.2-2.7 1.8 1.4 3 3.5 3 6 0 2.6-1.9 4.5-4.8 4.5zM8 14.8c-1.2 0-2-.9-2-2.1 0-1.4 1.2-2 1.5-3.4 1.4.9 2.5 2 2.5 3.4 0 1.2-.8 2.1-2 2.1z"/>',
+  quake: '<path d="M2.2 7.6L8 2.8l5.8 4.8M3.6 6.6v7.8h8.8V6.6M8.8 4.4L6.8 8l2.4 1.6-1.8 4.8"/>',
+  epidemic: '<circle cx="8" cy="8" r="3.6"/><path d="M8 4.4V2.6M8 11.6v1.8M4.4 8H2.6M11.6 8h1.8M5.45 5.45L4.2 4.2M10.55 10.55l1.25 1.25M10.55 5.45L11.8 4.2M5.45 10.55L4.2 11.8"/><circle cx="8" cy="1.7" r=".9"/><circle cx="8" cy="14.3" r=".9"/><circle cx="1.7" cy="8" r=".9"/><circle cx="14.3" cy="8" r=".9"/><circle cx="3.55" cy="3.55" r=".9"/><circle cx="12.45" cy="12.45" r=".9"/><circle cx="12.45" cy="3.55" r=".9"/><circle cx="3.55" cy="12.45" r=".9"/>',
+  building: '<path d="M1.8 5.6L8 2.2l6.2 3.4zM2.6 7.4h10.8M3.8 7.4v5.4M6.6 7.4v5.4M9.4 7.4v5.4M12.2 7.4v5.4M2 14.2h12M2.6 12.8h10.8"/>',
+  learning: '<path d="M8 2.6L15 6 8 9.4 1 6zM4 7.9v3.2c0 1.1 1.8 2.1 4 2.1s4-1 4-2.1V7.9M13.4 6.6v4.6"/><circle cx="13.4" cy="11.9" r=".8"/>',
+  faith: '<path d="M8 .9v4.2M6.2 2.5h3.6M3.6 8.7L8 5.1l4.4 3.6M4.4 8v7h7.2V8M6.6 15v-2.6a1.4 1.4 0 0 1 2.8 0V15"/>',
+};
+const KIND = { war: 'War, siege or massacre', revolt: 'Revolt or revolution', politics: 'Treaty, charter or change of rule', fire: 'Fire', quake: 'Earthquake or collapse', epidemic: 'Epidemic', building: 'Building', learning: 'University or school', faith: 'Church' };
+const cico = (k, cls = 'ico') => `<svg class="${cls}" viewBox="0 0 16 16" aria-hidden="true">${ICON[k] || ICON.politics}</svg>`;
+// the city views (city-views.json): period pictures from Wikimedia Commons, a card (720 × 405) and a full copy of each
+let CVIEWS = null, VBASE = 'views/';
+function loadViews() {
+  if (CVIEWS || loadViews.busy) return; loadViews.busy = true;
+  fetch('city-views.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(d => {
+    VBASE = d.base || VBASE; CVIEWS = {};
+    for (const [ci, rows] of Object.entries(d.v)) CVIEWS[ci] = rows.map(([id, y, lab, what, who, lic, f, w, h, ev]) => ({ id, y, lab, what, who, lic, f, w, h, event: !!ev }));
+    refreshCityPop();
+  }).catch(() => { loadViews.busy = false; });
+}
+let cardTab = 'ev', cardSel = null, cardCity = null, cardDetent = 'full', cardShown = null;
+const cardScroll = {};                     // each tab's list keeps its scroll position (until another city opens)
+const CW = 300, CHB = 84;                  // the band's drawing size (stretched to the card's width)
+const cX = v => 4 + (v - Y0) / (Y1 - Y0) * (CW - 8), cpct = v => (cX(v) / CW * 100).toFixed(2) + '%';
+const yrs = n => `${n} year${n === 1 ? '' : 's'}`;
+// which picture: the one made closest to the year, none if more than 100 years away; a view of an event (a city
+// in ruins) is never shown for years before it; on a tie, the earlier one
+const MAXGAP = 100;
+function pickView(views, y) {
+  let best = null, bd = Infinity;
+  for (const v of views) { if (v.event && y < v.y) continue; const d = Math.abs(v.y - y); if (d < bd) { bd = d; best = v; } }
+  return bd <= MAXGAP ? best : null;
+}
+const commonsUrl = f => 'https://commons.wikimedia.org/wiki/File:' + encodeURIComponent(f.replace(/ /g, '_'));
+const licUrl = l => { if (l === 'CC0') return 'https://creativecommons.org/publicdomain/zero/1.0/'; const m = /^CC (BY(?:-SA)?) (\d\.\d)(?: (\w+))?$/.exec(l || ''); return m ? `https://creativecommons.org/licenses/${m[1].toLowerCase()}/${m[2]}/${m[3] ? m[3] + '/' : ''}deed.en` : ''; };
+const licHtml = v => v.lic === 'PD' ? 'Public domain' : licUrl(v.lic) ? `<a href="${licUrl(v.lic)}" target="_blank" rel="noopener">${esc(v.lic)}</a>` : esc(v.lic);
+function picHtml(c, views, v) {
+  if (!v) {
+    const era = year < 1500 ? 'a' : year < 1800 ? 'b' : year < 1900 ? 'c' : 'd';
+    if (!views) return `<div class="pic"><div class="vph era-${era}"><span class="yr">${year}</span><span>Loading the pictures…</span></div></div>`;
+    const before = views.filter(x => x.y < year && !(x.event && year < x.y)).pop(), after = views.find(x => x.y > year);
+    const near = [before, after].filter(Boolean).map(x => `<button type="button" data-y="${x.y}">${esc(x.lab)}</button>`).join(' or ');
+    return `<div class="pic"><div class="vph era-${era}"><span class="yr">${year}</span><span>${views.length ? `No picture from within ${MAXGAP} years` : 'No picture of this place yet'}</span>${near ? `<span>Nearest: ${near}</span>` : ''}</div></div>`;
+  }
+  const g = v.y - year, about = /^\d{4}$/.test(v.lab) ? '' : 'about ';
+  const when = `From <b>${esc(v.lab)}</b>${g ? `, ${about}${yrs(Math.abs(g))} ${g < 0 ? 'earlier' : 'later'}` : ''}`;
+  return `<div class="pic"><button type="button" class="vimg" aria-label="Show the whole picture"><img src="${VBASE}${v.id}-card.webp" width="720" height="405" alt="${esc(c.n)}, ${esc(v.lab)}: ${esc(v.what)}"></button><span class="vlabel">${when}</span></div>`;
+}
+const creditInner = v => v ? `Picture: ${esc(v.who)}, ${esc(v.lab)}. ${esc(v.what)}. ${licHtml(v)}, <a href="${commonsUrl(v.f)}" target="_blank" rel="noopener">Wikimedia Commons</a>.` : '';
+// a link to the article about an event or a person: "Wikipedia", "Wikipedia (Spanish)" when there is no English one,
+// or the Wikidata entry when there is no article at all
+function wikiLink(n, t, q, text) {
+  if (t == null || /^Q\d+$/.test(t)) { const id = t || q; return id ? `<a href="https://www.wikidata.org/wiki/${id}" target="_blank" rel="noopener">${text || 'Wikidata'}</a>` : ''; }
+  const m = /^([a-z][a-z-]*):(.+)$/.exec(t), lang = m ? m[1] : 'en', title = m ? m[2] : t || n;
+  return `<a href="https://${lang}.wikipedia.org/wiki/${encodeURIComponent(title.replace(/ /g, '_'))}" target="_blank" rel="noopener">${text || 'Wikipedia'}${m ? ` (${WIKI_LANG[lang] || lang})` : ''}</a>`;
+}
+// held by: a run of years for each holder, from the map itself (every era must be loaded; it redraws when they arrive)
+const runsCache = {};
+function cityRuns(c) {
+  const ready = ERAS.filter(E => E.ready).length, hit = runsCache[c.i];
+  if (hit && hit.ready === ready) return hit.runs;
+  ERAS.forEach(E => { if (!E.ready) loadEra(E); });
+  const runs = [];
+  for (let y = Y0; y <= Y1; y++) {
+    const u = cityUnit(c, y); if (u === -2) continue;                 // years whose map is still loading
+    const h = heldBy(u, y), last = runs[runs.length - 1];
+    if (last && last.b === y - 1 && last.t === h.t && last.by === h.by && last.bg === h.bg) last.b = y; else runs.push({ ...h, a: y, b: y });
+  }
+  runsCache[c.i] = { ready, runs }; return runs;
+}
+// events: the map's ten kinds drawn with the card's nine icons; the band shows the most written-about ones that fit
+// in four rows (the list has them all)
+const EPI = /plague|cholera|epidemic|pandemic|influenza|typhus|smallpox|black death|outbreak/i;
+const KMAP = { war: 'war', violence: 'war', uprising: 'revolt', treaty: 'politics', religion: 'faith', crown: 'politics', fire: 'fire', culture: 'building', other: 'politics' };
+const evKind = e => e.k === 'disaster' ? (EPI.test(e.n) ? 'epidemic' : 'quake') : KMAP[e.k] || 'politics';
+const evCache = {};
+function cardEvents(c) {
+  if (!CEV) return null;
+  if (evCache[c.i]) return evCache[c.i];
+  const all = (CEV[c.i] || []).filter(e => e.y >= Y0 && e.y <= Y1).sort((a, b) => a.y - b.y || b.sl - a.sl);
+  const GAP = 21 / 350 * (Y1 - Y0), band = [];
+  const fits = evs => { const rowEnd = []; for (const e of [...evs].sort((a, b) => a.y - b.y)) { const r = rowEnd.findIndex(y => e.y - y >= GAP); if (r < 0) { if (rowEnd.length >= 4) return false; rowEnd.push(e.y); } else rowEnd[r] = e.y; } return true; };
+  for (const e of [...all].sort((a, b) => b.sl - a.sl)) { if (fits([...band, e])) band.push(e); if (band.length >= 16) break; }
+  return evCache[c.i] = { all, band: band.sort((a, b) => a.y - b.y) };
+}
+const MON = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const MAB = ['Jan.', 'Feb.', 'March', 'April', 'May', 'June', 'July', 'Aug.', 'Sept.', 'Oct.', 'Nov.', 'Dec.'];
+// an event's date: the day when it happened on one day (or the month), else the year
+const evWhen = (e, ab) => { const m = Math.floor((e.md || 0) / 100), d = (e.md || 0) % 100; return !m || (e.end && e.end > e.y) ? `${e.y}` : d ? `${(ab ? MAB : MON)[m - 1]} ${d}, ${e.y}` : `${MON[m - 1]} ${e.y}`; };
+const evSpan = e => `${e.y}${e.end && e.end > e.y ? '–' + e.end : ''}`;
+function eventsTab(c) {
+  const E = cardEvents(c);
+  if (!E) return { band: '', h: 24, detail: `<div class="detail empty">Loading the events…</div>`, list: '' };
+  if (!E.all.length) return { band: '', h: 24, detail: `<div class="detail empty">Wikidata records no events here from 1000 on, of the kinds this map shows.</div>`, list: '' };
+  const GAP = 21 / 350 * (Y1 - Y0), rowEnd = []; let rows = 1;
+  const band = E.band.map(e => {
+    let r = rowEnd.findIndex(y => e.y - y >= GAP); if (r < 0) r = rowEnd.length < 4 ? rowEnd.length : rowEnd.indexOf(Math.min(...rowEnd));
+    rowEnd[r] = e.y; rows = Math.max(rows, r + 1);
+    const i = E.all.indexOf(e);
+    return `<button type="button" class="ev${e === cardSel ? ' sel' : e.y === year ? ' on' : ''}" data-e="${i}" aria-pressed="${e === cardSel}" style="left:${cpct(e.y)};top:${r * 21}px" title="${evWhen(e)}: ${esc(e.n)}" aria-label="${evWhen(e)}: ${esc(e.n)} (${KIND[evKind(e)]})">${cico(evKind(e))}</button>`;
+  }).join('');
+  const past = E.all.filter(e => e.y <= year), last = cardSel || past[past.length - 1];
+  const detail = last ? `<div class="detail ev${last.y === year ? ' on' : ''}" role="button" tabindex="0" data-e="${E.all.indexOf(last)}">${cico(evKind(last))}<div><div class="t"><b data-dates="${esc([evWhen(last), evWhen(last, 1), String(last.y)].filter((v, i, a) => a.indexOf(v) === i).join('|'))}"><span class="cdt">${evWhen(last)}</span> · ${esc(last.n)}</b>${wikiLink(last.n, last.t, last.q)}</div>` +
+      `<div class="xt">${last.y === year || cardSel === last ? '' : `<span class="ago">${yrs(year - last.y)} earlier.</span>`}</div></div></div>`
+    : `<div class="detail empty">No events listed before ${E.all[0].y}.</div>`;
+  const list = E.all.map((e, i) => `<li role="button" tabindex="0" data-e="${i}"${e === last ? ' class="on"' : ''}>${cico(evKind(e))}<span>${evSpan(e)}</span><span>${esc(e.n)}</span></li>`).join('');
+  return { band, detail, list, h: rows * 21 + 3 };
+}
+// held by: the strip (names where they fit); who held the city that year, with its flag; every holder in turn
+const cardSpan = r => r.a === r.b ? `${r.a}` : r.b === Y1 ? `since ${r.a}` : `${r.a}–${r.b}`;
+function cardFlag(i, ht) {
+  const F = D.flags, [x, y, w, h] = F.items[i], k = ht / h;
+  return `<span class="cflag" role="img" aria-label="Flag" style="width:${(w * k).toFixed(1)}px;height:${ht}px;background-size:${(F.sheet[0] * k).toFixed(1)}px ${(F.sheet[1] * k).toFixed(1)}px;background-position:${(-x * k).toFixed(1)}px ${(-y * k).toFixed(1)}px"></span>`;
+}
+function cardFlagCredit(i) {
+  const [file, by, lic, url, lu] = D.flags.credits[i];
+  return `Flag: <a href="${esc(url)}" target="_blank" rel="noopener">Wikimedia Commons</a>${by && !isPD(lic) ? ', ' + esc(by) : ''}, ${isPD(lic) ? 'public domain' : lu ? `<a href="${esc(lu)}" target="_blank" rel="noopener">${esc(lic)}</a>` : esc(lic)}.`;
+}
+function heldTab(c) {
+  const runs = cityRuns(c);
+  const band = `<div class="cstrip" role="group" aria-label="Who held ${esc(c.n)}">` + runs.map(r => {
+    const l = cX(r.a - 0.5) / CW * 100, w = (cX(r.b + 0.5) - cX(r.a - 0.5)) / CW * 100, fits = w * 3.5 > r.t.length * 5.6 + 10;
+    return `<button type="button" data-y="${r.a}" title="${esc(r.t + (r.by ? ` (${r.by})` : ''))}, ${cardSpan(r)}" style="left:${l.toFixed(2)}%;width:${w.toFixed(2)}%;background:${r.bg}">${fits ? esc(r.t) : ''}</button>`;
+  }).join('') + `</div>`;
+  const cur = runs.find(r => r.a <= year && year <= r.b), u = cityUnit(c, year), fi = u >= 0 ? flagOf(u, year) : -1;
+  const detail = cur ? `<div class="detail held">${fi >= 0 ? cardFlag(fi, 38) : `<span class="swb" style="background:${cur.bg}"></span>`}<div><div class="hold">${esc(cur.t)}</div><div class="xt">${cardSpan(cur)}${cur.by ? ` · ${esc(cur.by)}` : ''}${cur.b > cur.a ? ` · ${yrs(cur.b - cur.a + 1)}` : ''}</div></div></div>`
+    : `<div class="detail held empty">Loading the maps of earlier years…</div>`;
+  const list = runs.map(r => `<li role="button" tabindex="0" data-y="${r.a}"${r === cur ? ' class="on"' : ''}><span class="sw" style="background:${r.bg}"></span><span>${r.a}${r.b > r.a ? '–' + (r.b === Y1 ? '' : r.b) : ''}</span><span>${esc(r.t)}${r.by ? `<span class="by">${esc(r.by)}</span>` : ''}</span></li>`).join('');
+  return { band, detail, list, foot: cur && fi >= 0 ? cardFlagCredit(fi) : '' };
+}
+// population: the chart fills the band (on a log scale, so small medieval towns show their rises and falls too);
+// the list gives every figure; how this year's number was made goes at the bottom
+function popNote(c, p) {
+  const src = `Source: ${[...new Set(p.k === 'est' || p.k === 'gap' ? [p.a[2], p.b[2]] : [p.a[2]])].map(i => CSRC[i]).join('; ')}.`;
+  return p.k === 'fig' ? `Population in ${year}: <b>${fmt(p.v)}</b>. ${esc(src)}`
+    : p.k === 'est' ? `Estimated: no figure for ${year}. Assumes steady growth between ${p.a[0]} (${fmt(p.a[1])}) and ${p.b[0]} (${fmt(p.b[1])}). ${esc(src)}`
+    : p.k === 'gap' ? `No figure within ${NEAR(year) === 10 ? 'ten' : NEAR(year)} years of ${year}. The nearest are ${fmt(p.a[1])} in ${p.a[0]} and ${fmt(p.b[1])} in ${p.b[0]}. ${esc(src)}`
+    : p.k === 'near' ? `No figure for ${year}. Shown: the nearest, from ${p.a[0]}. ${esc(src)}`
+    : `No figure near ${year}. The nearest is ${fmt(p.a[1])} in ${p.a[0]}. ${esc(src)}`;
+}
+function popTabC(c, p) {
+  const lo = Math.log10(Math.min(...c.P.map(q => q[1])) * 0.8), hi = Math.log10(Math.max(...c.P.map(q => q[1])) * 1.15);
+  const Yp = v => CHB - 4 - (Math.log10(v) - lo) / Math.max(1e-9, hi - lo) * (CHB - 8);
+  const inR = v => Math.log10(v) >= lo && Math.log10(v) <= hi, grid = [];
+  for (let e = Math.floor(lo); e <= Math.ceil(hi); e++) for (const m of [1, 3]) { const v = m * 10 ** e; if (inR(v)) grid.push(v); }
+  const ones = grid.filter(v => /^1/.test(String(v))), lines = ones.length >= 2 ? ones : grid;
+  const short = v => v >= 1e6 ? v / 1e6 + 'M' : v >= 1e3 ? v / 1e3 + 'k' : String(v);
+  const line = c.P.map((q, j) => (j ? 'L' : 'M') + cX(q[0]).toFixed(1) + ',' + Yp(q[1]).toFixed(1)).join('');
+  const band = `<svg class="pchart" viewBox="0 0 ${CW} ${CHB}" preserveAspectRatio="none" aria-label="Population">` +
+    lines.map(v => `<line class="grid" x1="0" x2="${CW}" y1="${Yp(v).toFixed(1)}" y2="${Yp(v).toFixed(1)}"/>`).join('') + `<path class="ln" d="${line}"/></svg>` +
+    lines.map(v => `<span class="gl" style="top:${Yp(v).toFixed(1)}px">${short(v)}</span>`).join('') +
+    c.P.map(q => `<span class="pd${q[2] === 3 || q[2] === 6 ? ' c' : ''}${q[0] === year ? ' on' : ''}" style="left:${cpct(q[0])};top:${Yp(q[1]).toFixed(1)}px"></span>`).join('') +
+    (p.k === 'est' ? `<span class="pd cur" style="left:${cpct(year)};top:${Yp(p.v).toFixed(1)}px"></span>` : '') +
+    c.P.map(q => `<button type="button" class="ph" data-y="${q[0]}" style="left:${cpct(q[0])};top:${Yp(q[1]).toFixed(1)}px" title="${q[0]}: ${fmt(q[1])}" aria-label="${q[0]}: ${fmt(q[1])} people"></button>`).join('');
+  const on = [...c.P].reverse().find(q => q[0] <= year);
+  const list = c.P.map(q => `<li role="button" tabindex="0" data-y="${q[0]}"${q === on ? ' class="on"' : ''}><span></span><span>${q[0]}</span><span>${fmt(q[1])}<span class="by">${esc(CSRC[q[2]])}</span></span></li>`).join('');
+  return { band, detail: '', list, foot: popNote(c, p) };
+}
+// people born or died here: each life as a thin bar; the most written-about person alive in the map's year; everyone
+const WHERE = { bd: 'born and died here', b: 'born here', d: 'died here' };
+function peopleTab(c) {
+  const pps = CPP ? CPP[c.i] || [] : null;
+  if (pps == null) return { band: '', h: 24, detail: `<div class="detail empty">Loading the people…</div>`, list: '' };
+  if (!pps.length) return { band: '', h: 24, detail: `<div class="detail empty">No one Wikidata records as born or died here is written about in many languages.</div>`, list: '' };
+  const life = q => [q.b != null ? q.b : q.d - 60, q.d != null ? q.d : Math.min(Y1, q.b + 80)];
+  const alive = q => { const [a, z] = life(q); return a <= year && year <= z; };
+  const rowEnd = [], RH = 7; let rows = 1;
+  const bars = pps.map((q, i) => [q, i]).sort((x, y) => life(x[0])[0] - life(y[0])[0]).map(([q, i]) => {
+    const [a, z] = life(q); let r = rowEnd.findIndex(e => a > e + 8); if (r < 0) r = rowEnd.length < 11 ? rowEnd.length : rowEnd.indexOf(Math.min(...rowEnd));
+    rowEnd[r] = z; rows = Math.max(rows, r + 1);
+    const a1 = Math.max(Y0, a), w = Math.max(0.8, (cX(Math.min(Y1, z)) - cX(a1)) / CW * 100);
+    return `<button type="button" class="pl${alive(q) ? ' on' : ''}" data-y="${q.w.includes('b') && q.b != null ? q.b : q.d != null ? q.d : q.b}" style="left:${cpct(a1)};width:${w.toFixed(2)}%;top:${r * RH + 4}px" title="${esc(q.n)}, ${q.b != null ? q.b : '?'}–${q.d != null ? q.d : ''}" aria-label="${esc(q.n)}"></button>`;
+  }).join('');
+  const now = pps.filter(alive).sort((a, b) => b.sl - a.sl), top = now[0];
+  const detail = top ? `<div class="detail"><div class="t"><b>${esc(top.n)}</b>${wikiLink(top.n, top.t, top.q)}</div><div class="xt">${top.b != null ? top.b : '?'}–${top.d != null ? top.d : ''}${top.role ? ` · ${esc(top.role)}` : ''} · ${WHERE[top.w]}${now.length > 1 ? `<br><span class="ago">${now.length - 1} more alive in ${year}</span>` : ''}</div></div>`
+    : `<div class="detail empty">No one listed here was alive in ${year}.</div>`;
+  const list = pps.map(q => `<li role="button" tabindex="0" data-y="${q.w.includes('b') && q.b != null ? q.b : q.d != null ? q.d : q.b}"${alive(q) ? ' class="on"' : ''}><span></span><span>${q.b != null ? q.b : '?'}–${q.d != null ? q.d : ''}</span><span>${wikiLink(q.n, q.t, q.q, esc(q.n))}<span class="by">${q.role ? esc(q.role) + ' · ' : ''}${WHERE[q.w]}</span></span></li>`).join('');
+  return { band: bars, detail, list, h: Math.max(30, rows * RH + 10) };
+}
+function cardHtml(d, phone) {
+  const c = d.c, p = d.p, views = CVIEWS ? CVIEWS[c.i] || [] : null, v = views ? pickView(views, year) : null;
+  const big = p.k === 'fig' ? fmt(p.v) : p.k === 'none' || p.k === 'gap' ? '—' : 'about ' + fmt(round3(p.v));
+  const head = phone
+    ? `<div class="chead"><div><div class="cnm">${esc(c.n)} in</div><div class="cpop">${big} <small>people</small></div></div>` +
+      `<span class="stepper"><button type="button" data-step="-1" aria-label="Previous year">‹</button><b>${year}</b><button type="button" data-step="1" aria-label="Next year">›</button></span>` +
+      `<button type="button" class="x" aria-label="Close">×</button></div>`
+    : `<div class="chead"><div><div class="cnm">${esc(c.n)} in <span class="yr">${year}</span></div><div class="cpop">${big} <small>people</small></div></div><button type="button" class="x" aria-label="Close">×</button></div>`;
+  const tabs = `<div class="ctabs" role="tablist" aria-label="${esc(c.n)}">` + [['ev', 'Events'], ['held', 'Held by'], ['pop', 'Population'], ['ppl', 'People']].map(([k, t]) =>
+    `<button type="button" role="tab" data-t="${k}" aria-selected="${cardTab === k}">${t}</button>`).join('') + `</div>`;
+  const ticks = []; for (let t = 1000; t <= Y1; t += 200) ticks.push(t);
+  const axis = `<div class="axis" aria-hidden="true">` + ticks.map((t, i) => `<span${i ? '' : ' class="first"'} style="left:${cpct(t)}">${t}</span>`).join('') + `</div>`;
+  const body = cardTab === 'ev' ? eventsTab(c) : cardTab === 'held' ? heldTab(c) : cardTab === 'ppl' ? peopleTab(c) : popTabC(c, p);
+  cardShown = v;
+  const f = cX(year) / CW;
+  return `<div class="ccard">${head}${picHtml(c, views, v)}${tabs}<div class="tl"><div class="band" style="height:${body.h || CHB}px">${body.band}</div>${axis}` +
+    `<span class="nowline" style="left:${cpct(year)}"></span><span class="nowtag${f < 0.06 ? ' l' : f > 0.94 ? ' r' : ''}" style="left:${cpct(year)}">${year}</span></div>${body.detail}` +
+    `<div class="scroll" data-tab="${cardTab}"><ul class="tlist ${cardTab}">${body.list}</ul><div class="credit">${[body.foot, creditInner(v)].filter(Boolean).join(' ')}</div></div></div>`;
+}
+// moving the map to a year from inside the card: the card stays where it is, and follows whoever held the city
+function cardJump(d, y, e) {
+  y = Math.max(Y0, Math.min(Y1, y)); stop();
+  place = { x: d.c.x, y: d.c.y, city: d.c.i }; popClosed = false; cardSel = e || null;
+  keepPop = [pop.offsetLeft, pop.offsetTop]; setYear(y); keepPop = null;
+  if (y === year) renderPop();
+}
+function wireCard(d) {
+  const root = pop, c = d.c;
+  root.querySelectorAll('.band .ph, .band .pl, .cstrip button, .tlist li[data-y], .vph button[data-y]').forEach(b => {
+    b.onclick = ev => { if (ev.target.closest('a')) return; ev.stopPropagation(); cardJump(d, +b.dataset.y); };
+    b.onkeydown = ev => { if (ev.target.closest('a')) return; if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); cardJump(d, +b.dataset.y); } };
+  });
+  root.querySelectorAll('[data-e]').forEach(b => {
+    const go = () => { const E = cardEvents(c), e = E && E.all[+b.dataset.e]; if (!e) return; if (b.classList.contains('ev') && cardSel === e) { cardSel = null; renderPop(); } else cardJump(d, e.y, e); };
+    b.onclick = ev => { if (ev.target.closest('a')) return; ev.stopPropagation(); go(); };
+    b.onkeydown = ev => { if ((ev.key === 'Enter' || ev.key === ' ') && !ev.target.closest('a')) { ev.preventDefault(); go(); } };
+  });
+  root.querySelectorAll('.ctabs button').forEach(b => {
+    b.onclick = ev => {
+      ev.stopPropagation(); cardTab = b.dataset.t; if (cardTab === 'ppl') loadPeople();
+      keepPop = [pop.offsetLeft, pop.offsetTop]; renderPop(); keepPop = null;
+      const t = pop.querySelector(`.ctabs button[data-t="${cardTab}"]`); if (t) t.focus();
+    };
+  });
+  const foot = root.querySelector('.credit'), keep = foot ? foot.innerHTML : '';
+  root.querySelectorAll('.band .ph').forEach(h => {
+    h.onmouseenter = () => { const q = c.P.find(q => q[0] === +h.dataset.y); if (q && foot) foot.innerHTML = `Population in ${q[0]}: <b>${fmt(q[1])}</b>. Source: ${esc(CSRC[q[2]])}.`; };
+    h.onmouseleave = () => { if (foot) foot.innerHTML = keep; };
+  });
+  const vb = root.querySelector('.vimg'); if (vb) vb.onclick = ev => { ev.stopPropagation(); openBigView(c, cardShown); };
+  const x = root.querySelector('.chead .x'); if (x) x.onclick = ev => { ev.stopPropagation(); closeCard(); };
+}
+function closeCard() { selCity = null; cardSel = null; drawCities(); renderPop(); }
+// the city's popup: build the card, then place it (on a phone, the sheet) without moving it while the year changes
+function renderCityCard(d) {
+  const c = d.c, sr = svg.getBoundingClientRect(), mb = $('mapbox').getBoundingClientRect();
+  loadViews(); loadEvents(); if (cardTab === 'ppl') loadPeople();
+  if (cardCity !== c.i) { cardCity = c.i; cardSel = null; for (const k in cardScroll) delete cardScroll[k]; cardDetent = 'full'; delete pop.dataset.anchor; }
+  if (cardSel && cardSel.y !== year) cardSel = null;
+  const phone = innerWidth <= 600;
+  const old = pop.querySelector('.citycard .scroll, .scroll'); if (old && pop.classList.contains('citycard') && pop.dataset.city === String(c.i)) cardScroll[old.dataset.tab] = old.scrollTop;
+  const step = document.activeElement && pop.contains(document.activeElement) && document.activeElement.dataset ? document.activeElement.dataset.step : null;
+  if (!pop.classList.contains('citycard')) { pop.style.left = '-9999px'; delete pop.dataset.anchor; }
+  pop.classList.add('citycard'); pop.classList.toggle('citysheet', phone);
+  pop.innerHTML = phone ? `<button type="button" class="grab" aria-label="${cardDetent === 'full' ? 'Show the map' : 'Show more'}"><span></span></button><div class="sbody">${cardHtml(d, true)}</div>` : cardHtml(d, false);
+  pop.dataset.city = c.i; pop.dataset.tab = cardTab;
+  pop.setAttribute('aria-label', `${c.n} in ${year}`);
+  wireCard(d);
+  const fitDates = () => {      // the event's full date if it fits on the line, else the short month, else the year
+    const tb = pop.querySelector('.detail .t b[data-dates]');
+    if (tb && tb.clientWidth) for (const s of tb.dataset.dates.split('|')) { tb.querySelector('.cdt').textContent = s; if (tb.scrollWidth <= tb.clientWidth) break; }
+  };
+  const scrollList = () => {
+    const list = pop.querySelector('.scroll'); if (!list) return; const on = list.querySelector('li.on');
+    list.scrollTop = cardScroll[cardTab] || 0;
+    if (on && (on.offsetTop < list.scrollTop || on.offsetTop + on.offsetHeight > list.scrollTop + list.clientHeight)) list.scrollTop = on.offsetTop - list.clientHeight / 2;
+  };
+  if (step) { const b = pop.querySelector(`[data-step="${step}"]`); if (b) b.focus(); }
+  if (phone) {
+    pop.style.left = pop.style.top = pop.style.width = ''; pop.hidden = false; pop.dataset.anchor = 'sheet';
+    sizeSheet(); scrollList(); fitDates(); return;
+  }
+  const w = Math.min(380, sr.width - 2 * PAD), h = Math.min(750, mb.height - 2 * PAD);
+  pop.style.width = w + 'px'; pop.style.height = h + 'px';
+  const anchor = [c.i, Math.round((d.db[0] + d.db[2]) / 2), Math.round((d.db[1] + d.db[3]) / 2), Math.round(sr.width), Math.round(sr.height)].join(',');      // the dot's center (its size changes with the population)
+  if (!pop.hidden && (pop.dataset.anchor === anchor || keepPop)) {      // the same city in the same place, or a year chosen from inside the card: stay put
+    pop.style.left = Math.max(PAD, Math.min(pop.offsetLeft, mb.width - w - PAD)) + 'px'; pop.style.top = Math.max(PAD, Math.min(pop.offsetTop, mb.height - h - PAD)) + 'px';
+    pop.dataset.anchor = anchor; scrollList(); fitDates(); return;
+  }
+  pop.style.left = '-9999px'; pop.style.top = '0px'; pop.hidden = false;
+  const ctrl = controlBoxes(), fb = focusParts;
+  // never cover the city's dot or its name; stay close; avoid other cities and the country's name
+  const S = d.lb ? [Math.min(d.db[0], d.lb[0]) - 3, Math.min(d.db[1], d.lb[1]) - 3, Math.max(d.db[2], d.lb[2]) + 3, Math.max(d.db[3], d.lb[3]) + 3] : d.db;
+  const others = cityDots.filter(o => o !== d).flatMap(o => o.lb ? [o.db, o.lb] : [o.db]);
+  const G = 10, mx = (S[0] + S[2]) / 2, my = (S[1] + S[3]) / 2;
+  const cands = [[S[2] + G, my - h / 2], [S[2] + G, S[1] - 8], [S[2] + G, S[3] - h + 8], [S[0] - G - w, my - h / 2], [S[0] - G - w, S[1] - 8], [S[0] - G - w, S[3] - h + 8],
+    [mx - w / 2, S[1] - G - h], [mx - w / 2, S[3] + G], ...gridSpots(w, h, 16)];
+  const spot = bestSpot(w, h, cands, r => ovl(r, S) * 1000 + sumOvl(r, ctrl) * 50 + sumOvl(r, fb) * 4 + sumOvl(r, others) * 2 + sumOvl(r, ringBoxes) * 20 + gapTo(r, S) * 3);
+  pop.style.left = Math.round(spot[0] + sr.left - mb.left) + 'px'; pop.style.top = Math.round(spot[1] + sr.top - mb.top) + 'px';
+  pop.dataset.anchor = anchor; scrollList(); fitDates();
+}
+// the phone's sheet: full (where it opens), the picture only (so the map shows), closed. Drag the bar or the
+// header, or tap the bar
+function sizeSheet() {
+  if (!pop.classList.contains('citysheet')) return;
+  const H = innerHeight, pic = pop.querySelector('.pic');
+  const peek = pic ? pic.getBoundingClientRect().bottom - pop.getBoundingClientRect().top + 14 : 300;
+  pop.style.height = (cardDetent === 'peek' ? Math.min(H * 0.92, peek) : Math.round(H * 0.92)) + 'px';
+  const g = pop.querySelector('.grab'); if (g) g.setAttribute('aria-label', cardDetent === 'full' ? 'Show the map' : 'Show more');
+}
+function setDetent(dt) { if (dt === 'closed') return closeCard(); cardDetent = dt; sizeSheet(); }
+let sdrag = null, stepT = 0;
+pop.addEventListener('pointerdown', ev => {
+  const b = ev.target.closest('[data-step]');
+  if (b && pop.classList.contains('citycard')) {          // the year buttons: one year per tap; held down, they run (faster after a moment)
+    ev.preventDefault(); ev.stopPropagation();
+    const s = +b.dataset.step, d = cityDots.find(x => x.c.i === selCity); if (!d) return; let n = 0;
+    const tick = () => { const dd = cityDots.find(x => x.c.i === selCity); if (!dd) return; cardJump(dd, year + s); n++; stepT = setTimeout(tick, n < 6 ? 260 : n < 24 ? 90 : 35); };
+    cardJump(d, year + s); stepT = setTimeout(tick, 450); return;
+  }
+  if (!pop.classList.contains('citysheet')) return;
+  if (ev.target.closest('button:not(.grab), a, .band, .scroll, .detail, .ctabs')) return;
+  if (cardDetent === 'full' && !ev.target.closest('.grab, .chead')) return;
+  sdrag = { y: ev.clientY, h: pop.offsetHeight, moved: false, grab: !!ev.target.closest('.grab') };
+  pop.setPointerCapture(ev.pointerId); pop.classList.add('drag');
+});
+pop.addEventListener('pointermove', ev => {
+  if (!sdrag) return;
+  const dy = ev.clientY - sdrag.y; if (Math.abs(dy) > 5) sdrag.moved = true;
+  pop.style.height = Math.max(60, Math.min(innerHeight * 0.92, sdrag.h - dy)) + 'px';
+});
+const endSheetDrag = ev => {
+  if (!sdrag) return;
+  const dy = ev.clientY - sdrag.y, tap = !sdrag.moved, grab = sdrag.grab; sdrag = null; pop.classList.remove('drag');
+  if (tap) return setDetent(grab ? (cardDetent === 'full' ? 'peek' : 'full') : cardDetent === 'peek' ? 'full' : cardDetent);
+  setDetent(dy > 70 ? (cardDetent === 'full' ? 'peek' : 'closed') : dy < -70 ? 'full' : cardDetent);
+};
+pop.addEventListener('pointerup', endSheetDrag); pop.addEventListener('pointercancel', endSheetDrag);
+const stopStep = () => { clearTimeout(stepT); stepT = 0; };
+addEventListener('pointerup', stopStep); addEventListener('pointercancel', stopStep);
+pop.addEventListener('click', ev => {
+  const b = ev.target.closest('[data-step]'); const d = cityDots.find(x => x.c.i === selCity);
+  if (b && d && ev.detail === 0) cardJump(d, year + +b.dataset.step);
+  const g = ev.target.closest('.grab'); if (g && ev.detail === 0) setDetent(cardDetent === 'full' ? 'peek' : 'full');
+});
+addEventListener('resize', sizeSheet);
+// the whole picture, with its full credit
+const bigv = $('bigview'); let bigFrom = null;
+function openBigView(c, v) {
+  if (!v) return;
+  const title = `${c.n}, ${v.lab}`; bigFrom = document.activeElement;
+  bigv.innerHTML = `<div class="bcard"><img src="${VBASE}${v.id}.webp" width="${v.w}" height="${v.h}" alt="${esc(title)}: ${esc(v.what)}">` +
+    `<div class="t">${esc(title)}</div><p>${esc(v.what)}. By ${esc(v.who)}. ${licHtml(v)}. File: <a href="${commonsUrl(v.f)}" target="_blank" rel="noopener">${esc(v.f)}</a> on Wikimedia Commons.</p>` +
+    `<p class="hint">Tap anywhere to close.</p></div>`;
+  bigv.setAttribute('aria-label', title); bigv.hidden = false; bigv.focus();
+}
+function closeBigView() { if (bigv.hidden) return; bigv.hidden = true; bigv.textContent = ''; if (bigFrom && document.contains(bigFrom)) bigFrom.focus(); }
+bigv.addEventListener('click', ev => { if (!ev.target.closest('a')) closeBigView(); });
+document.addEventListener('keydown', ev => { if (ev.key === 'Escape' && !bigv.hidden) { ev.stopImmediatePropagation(); closeBigView(); } }, true);      // (before the map's own Escape, which closes the city)
+
 function renderPop() {
   clearTimeout(popTimer); popTimer = 0;
   const fu = focusUnit(), d = cityDots.find(d => d.c.i === selCity);
   if (animating || fu < 0 || (!d && popClosed)) { pop.hidden = true; return; }
+  if (d) return renderCityCard(d);
+  if (pop.classList.contains('citycard')) { pop.classList.remove('citycard', 'citysheet'); pop.style.height = ''; delete pop.dataset.anchor; }
   const sr = svg.getBoundingClientRect(), mb = $('mapbox').getBoundingClientRect();
   const same = d && pop.dataset.city === String(d.c.i) && pop.dataset.tab === popTab && !pop.hidden, hl0 = pop.querySelector('.hlist'), scroll = same && hl0 ? hl0.scrollTop : 0;
   if (d) loadPeople();                  // the people file (larger) is fetched the first time a city is opened

@@ -3,21 +3,24 @@
 #   sh deploy_site.sh test   a test copy at https://vedahcook.github.io/historical-map/test/ (the live map stays as it is)
 #   sh deploy_site.sh        the live map at https://vedahcook.github.io/historical-map/ (a test copy there is kept)
 # The branch holds a single commit, replaced each time, so it never grows; files that are already published (the
-# earlier eras' maps, flags, terrain) are not uploaded again. The pages change a minute or two later.
+# earlier eras' maps, flags, terrain) are not uploaded again. The city views' pictures (views/) are kept as they are:
+# they are not in the repository (see views/README.md for how they are made). The pages change a minute or two later.
 set -e
 REMOTE=$(git remote get-url origin)
 NAME=$(git config user.name); EMAIL=$(git config user.email); REV=$(git rev-parse --short HEAD)
-rm -rf ../_site ../_site_test ../_site_git
+rm -rf ../_site ../_site_test ../_site_git ../_site_views
 git clone -q --depth 1 --branch gh-pages "$REMOTE" ../_site        # what is published now
 if [ "$1" = test ]; then
   python3 make_site.py ../_site/test --test
   MSG="Test copy of Europe's borders map, built from main $REV"
 else
   if [ -d ../_site/test ]; then mv ../_site/test ../_site_test; fi
+  if [ -d ../_site/views ]; then mv ../_site/views ../_site_views; fi     # the city views' pictures (not in the repository)
   mv ../_site/.git ../_site_git
   python3 make_site.py ../_site
   mv ../_site_git ../_site/.git
   if [ -d ../_site_test ]; then mv ../_site_test ../_site/test; fi
+  if [ -d ../_site_views ]; then mv ../_site_views ../_site/views; fi
   MSG="Europe's borders map, built from main $REV"
 fi
 cd ../_site
