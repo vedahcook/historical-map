@@ -243,7 +243,9 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
 .citycard .csub { margin-top: 2px; font-size: 1.05rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .citycard .csub small { margin-left: 4px; font-size: 0.86rem; font-weight: 500; color: var(--muted); font-variant-numeric: tabular-nums; }
 .citycard .csec { flex: none; margin-top: 10px; font-size: 0.82rem; font-weight: 600; }
-.citycard .csec + .tl { margin-top: 2px; }
+.citycard .csec + .detail { margin-top: 6px; }
+.citycard .chead + .detail { margin-top: 12px; }
+.citycard .detail + .tl { margin-top: 12px; }
 .citycard .chead .x { position: static; flex: none; width: 30px; height: 30px; margin: -5px -6px 0 0; border: 0; border-radius: 7px; background: transparent; color: var(--muted); font-size: 1.15rem; line-height: 1; cursor: pointer; }
 /* the picture (16:9 crop; tap for the whole view), labeled with when it was made */
 .citycard .pic { flex: none; margin: 12px -13px 0; position: relative; aspect-ratio: 16 / 9; background: var(--sunk); overflow: hidden; }
@@ -1848,7 +1850,8 @@ function popPanel(c, p) {
 const PICO = '<svg class="pico" viewBox="0 0 16 16" aria-hidden="true"><path d="M1.5 13.5h13M2.5 11l3.6-4 2.8 2.4 4.6-5.4M10.4 4h3.2v3.2"/></svg>';
 const CHEV = '<svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M4.5 2.5L8 6l-3.5 3.5"/></svg>';
 const popBig = p => p.k === 'fig' ? fmt(p.v) : p.k === 'none' || p.k === 'gap' ? '—' : 'about ' + fmt(round3(p.v));
-// the card: header (the population and Events open the panels), the period view, who held the city
+// the card: header (the population and Events open the panels), the period view, who held the city (the box for
+// the year above the band)
 function cardHtml(d) {
   const c = d.c, p = d.p, views = CVIEWS ? CVIEWS[c.i] || [] : null, v = views ? pickView(views, year) : null;
   const E = cardEvents(c), big = popBig(p);
@@ -1858,7 +1861,7 @@ function cardHtml(d) {
     `<button type="button" class="x xcard" aria-label="Close">×</button></div>`;
   const H = heldTab(c);
   cardShown = v;
-  return `<div class="ccard">${head}${picHtml(c, views, v)}<div class="csec">Held by</div>${tlHtml(H.band, 32)}${H.detail}` +
+  return `<div class="ccard">${head}${picHtml(c, views, v)}<div class="csec">Held by</div>${H.detail}${tlHtml(H.band, 32)}` +
     `<div class="scroll" data-tab="card"><ul class="tlist held">${H.list}</ul><div class="credit">${[H.foot, creditInner(v)].filter(Boolean).join(' ')}</div></div></div>`;
 }
 // a panel over the card, the same size: Population or Events. × (or Escape) closes it; on a phone, so does dragging
@@ -1868,7 +1871,7 @@ function coverHtml(d, phone) {
   const sub = pp ? `Population <small>${popBig(p)}</small>` : `Events${E && E.all.length ? ` <small>${E.all.length}</small>` : ''}`;
   const head = `<div class="chead"><div><div class="cnm">${esc(c.n)} in <span class="yr">${year}</span></div><div class="csub">${sub}</div></div>` +
     `<button type="button" class="x xov" aria-label="Back to ${esc(c.n)}">×</button></div>`;
-  const body = pp ? `${head}${tlHtml(B.band, PH)}${B.detail}` : `${head}${tlHtml(B.band, B.h)}${B.detail}${evPicHtml(B.last)}`;
+  const body = pp ? `${head}${B.detail}${tlHtml(B.band, PH)}` : `${head}${tlHtml(B.band, B.h)}${B.detail}${evPicHtml(B.last)}`;
   cardShownEv = pp ? null : B.last;
   return `<div class="cover${coverEnter ? ' enter' : ''}" data-panel="${cardOverlay}" role="dialog" aria-label="${esc(c.n)}: ${pp ? 'population' : 'events'}">` +
     (phone ? `<button type="button" class="grab" aria-label="Back to ${esc(c.n)}"><span></span></button>` : '') +
