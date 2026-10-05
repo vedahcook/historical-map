@@ -1808,14 +1808,23 @@ function heldTab(c) {
   const list = runs.map((r, i) => `<li role="button" tabindex="0" data-p="h:${i}"${r === cur ? ` class="on${r === now ? ' now' : ''}"` : ''}><span class="sw" style="background:${r.bg}"></span><span><span class="d">${r.a}${r.b > r.a ? '–' + (r.b === Y1 ? '' : r.b) : ''}</span></span><span>${esc(r.t)}${r.by ? `<span class="by">${esc(r.by)}</span>` : ''}</span></li>`).join('');
   return { band, detail, list, foot: cur && fi >= 0 ? cardFlagCredit(fi) : '' };
 }
-// sudden rises and falls, from the figures themselves: between two figures, a fall of 15% or more, or a rise of
-// 25% or more at 5% a year or faster, at most 60 years apart (100 before 1500, when the figures are sparse;
-// neighbors going the same way join up). Two figures from different sources must differ more (a third less, or half
-// as many again), since part of that may be in how each counted. The eight
-// biggest. With each, the city's events of those years (wars, violence and disasters first; not fairs, church
-// councils or coronations). A tap goes to the
-// best-known of them (or to the change's first year)
-const chgCache = {}, HARD = { war: 1, violence: 1, disaster: 1, uprising: 1, fire: 1 }, SOFT = { culture: 1, religion: 1, crown: 1 };
+// notable rises and falls, from the figures themselves (Veda, October 5: only the notable ones, above all those tied to
+// events). First the candidates: between two figures at most 60 years apart (100 before 1500, when the figures are
+// sparse), a fall of 15% or more, or a rise of 25% or more at 5% a year or faster (from two different sources: a
+// third less, or half as many again); neighbors going the same way join up. Then the notable ones:
+// - a fall of 15% or more when the city had, in those years, an event that costs a city people: a battle, siege or
+//   bombing, a fire that burned much of the city (before 1950; not the Reichstag), a massacre, pogrom, ghetto or
+//   expulsion, an epidemic, famine, earthquake or flood (not treaties, riots, single attacks or accidents); between
+//   figures from two sources, a fall of 35% or more and such an event
+// - any other fall of 30% or more, over at least 5 years (a sharper drop with no event is most likely a change in
+//   what was counted), from one source
+// - a rise where the population at least doubled, at 5% a year or faster, over at least 5 years, from one source
+// At most six: those with events first, then the biggest. Each fall lists up to three of its events (the
+// best-known); a tap goes to the first of them (or to the change's first year)
+const chgCache = {};
+const COSTLY = e => e.k === 'war' || (e.k === 'fire' && e.y < 1950 && !/reichstag|palace|cinema|store/i.test(e.n)) || (e.k === 'violence' && /massacre|pogrom|ghetto|genocide|deport|expuls|killings|executions/i.test(e.n)) ||
+  (e.k === 'disaster' && /plague|epidemic|cholera|smallpox|fever|typhus|famine|earthquake|flood|eruption/i.test(e.n) && !/beer/i.test(e.n));
+const pctOf = q => Math.round((q.pb / q.pa - 1) * 100);
 function popChanges(c) {
   const hit = chgCache[c.i]; if (hit && hit.ev === !!CEV) return hit.out;
   let out = [];
@@ -1826,13 +1835,17 @@ function popChanges(c) {
     if (last && last.b === a && last.up === up && !last.mixed && !mixed) { last.b = b; last.pb = pb; }
     else out.push({ a, b, pa, pb, up, mixed });
   }
-  const size = q => Math.abs(Math.log(q.pb / q.pa));
-  out = out.sort((x, y) => size(y) - size(x)).slice(0, 8).sort((x, y) => x.a - y.a);
   const evs = CEV ? CEV[c.i] || [] : [];
-  for (const q of out) {
-    q.ev = evs.filter(e => e.y <= q.b && (e.end || e.y) >= q.a && !SOFT[e.k]).sort((x, y) => (HARD[y.k] || 0) - (HARD[x.k] || 0) || y.sl - x.sl).slice(0, 3);
+  out = out.filter(q => {
+    const pct = pctOf(q), dt = q.b - q.a;
+    q.ev = q.up ? [] : evs.filter(e => e.y <= q.b && (e.end || e.y) >= q.a && COSTLY(e)).sort((x, y) => y.sl - x.sl).slice(0, 3);
     q.j = q.ev.length ? q.ev[0].y : q.a;
-  }
+    if (q.up) return !q.mixed && q.pb >= 2 * q.pa && dt >= 5;
+    if (q.ev.length) return pct <= (q.mixed ? -35 : -15);
+    return !q.mixed && pct <= -30 && dt >= 5;
+  });
+  const size = q => Math.abs(Math.log(q.pb / q.pa)) + (q.ev.length ? 10 : 0);
+  out = out.sort((x, y) => size(y) - size(x)).slice(0, 6).sort((x, y) => x.a - y.a);
   chgCache[c.i] = { ev: !!CEV, out }; return out;
 }
 const chgPct = q => { const v = Math.round((q.pb / q.pa - 1) * 100); return (v > 0 ? '+' : '−') + Math.abs(v) + '%'; };
@@ -1848,9 +1861,10 @@ function popDetail(c, p) {
   return `<div class="t"><b>Population in ${year}: ${big}</b></div><div class="xt">${xt}</div>`;
 }
 const figDetail = q => `<div class="t"><b>Population in ${q[0]}: ${fmt(q[1])}</b></div><div class="xt">Source: ${esc(CSRC[q[2]])}.</div>`;
-const chgDetail = q => `<div class="t"><b>${q.a}–${q.b}: ${chgPct(q)}, ${fmt(q.pa)} → ${fmt(q.pb)}</b></div><div class="xt">${!CEV ? '' : q.ev.length ? 'In these years: ' + q.ev.map(e => `${esc(e.n)} (${evSpan(e)})`).join('; ') + '.' : 'No events listed in these years.'}</div>`;
+const chgEvs = q => q.ev.length ? 'In these years: ' + q.ev.map(e => `${esc(e.n)} (${evSpan(e)})`).join('; ') : '';
+const chgDetail = q => `<div class="t"><b>${q.a}–${q.b}: ${chgPct(q)}, ${fmt(q.pa)} → ${fmt(q.pb)}</b></div>` + (q.ev.length ? `<div class="xt">${chgEvs(q)}.</div>` : '');
 // the Population panel: the chart (on a log scale, so small medieval towns show their rises and falls too) with the
-// sudden changes shaded; the box; the sudden changes, then every figure
+// notable changes shaded; the box; the notable changes (no list of every figure: Veda, October 5)
 function popPanel(c, p) {
   zoomSet('pop', zoomRange(c.P[0][0], c.P[c.P.length - 1][0]));
   const lo = Math.log10(Math.min(...c.P.map(q => q[1])) * 0.8), hi = Math.log10(Math.max(...c.P.map(q => q[1])) * 1.15);
@@ -1867,20 +1881,18 @@ function popPanel(c, p) {
     lines.map(v => `<span class="gl" style="top:${Yp(v).toFixed(1)}px">${short(v)}</span>`).join('') +
     c.P.map((q, j) => `<span class="pd${q[2] === 3 || q[2] === 6 ? ' c' : ''}${q[0] === year ? ' on' : ''}${pk.f === j ? ' sel' : ''}" style="left:${cpct(q[0])};top:${Yp(q[1]).toFixed(1)}px"></span>`).join('') +
     (p.k === 'est' ? `<span class="pd cur" style="left:${cpct(year)};top:${Yp(p.v).toFixed(1)}px"></span>` : '') +
-    c.P.map((q, j) => `<button type="button" class="ph" data-p="f:${j}" style="left:${cpct(q[0])};top:${Yp(q[1]).toFixed(1)}px" title="${q[0]}: ${fmt(q[1])}" aria-label="${q[0]}: ${fmt(q[1])} people"></button>`).join('');
+    c.P.map((q, j) => `<button type="button" class="ph" data-p="f:${j}" data-y="${q[0]}" style="left:${cpct(q[0])};top:${Yp(q[1]).toFixed(1)}px" title="${q[0]}: ${fmt(q[1])}" aria-label="${q[0]}: ${fmt(q[1])} people"></button>`).join('');
   const inC = q => q.a <= year && year <= q.b;
   const changes = chg.length ? chg.map((q, i) => `<li role="button" tabindex="0" class="chg${pk.c === i ? ' on' + (inC(q) ? ' now' : '') : !picked && inC(q) ? ' on now' : ''}" data-p="c:${i}" data-i="${i}">` +
       `<svg class="ico arrow ${q.up ? 'rise' : 'fall'}" viewBox="0 0 16 16" aria-hidden="true"><path d="${ARROW[q.up ? 'up' : 'down']}"/></svg>` +
       `<span><span class="rng">${q.a}–${q.b}</span></span><span><b class="${q.up ? 'rise' : 'fall'}">${chgPct(q)}</b>&ensp;${fmt(q.pa)} → ${fmt(q.pb)}` +
       (q.mixed ? `<span class="by">The two figures come from different sources, so part of the change may be in how each counted.</span>` : '') +
-      `<span class="evs">${!CEV ? '' : q.ev.length ? 'In these years: ' + q.ev.map(e => `${esc(e.n)} (${evSpan(e)})`).join('; ') : 'No events listed in these years.'}</span></span></li>`).join('')
-    : `<li class="none">No sudden rises or falls between the figures.</li>`;
-  const on = [...c.P].reverse().find(q => q[0] <= year);
-  const srcs = [...new Set(c.P.map(q => q[2]))], note = i => srcs.indexOf(i) + 1;      // each figure's source as a numbered note
-  const figs = c.P.map((q, j) => `<li role="button" tabindex="0" class="fig${pk.f === j ? ' on' + (q === on ? ' now' : '') : !picked && q === on ? ' on now' : ''}" data-p="f:${j}"><span></span><span><span class="d">${q[0]}</span></span><span>${fmt(q[1])}<sup class="fn" title="${esc(CSRC[q[2]])}">${note(q[2])}</sup></span></li>`).join('');
-  const list = `<li class="lsub">Sudden rises and falls</li>${changes}<li class="lsub">Every figure</li>${figs}`;
-  const cap = t => t[0].toUpperCase() + t.slice(1);
-  const foot = `<ol class="notes">${srcs.map(i => `<li>${esc(cap(CSRC[i]))}</li>`).join('')}</ol>Open dots on the chart: estimates for the wider city.`;
+      (q.ev.length ? `<span class="evs">${chgEvs(q)}</span>` : '') + `</span></li>`).join('')
+    : `<li class="none">No notable rises or falls between the figures.</li>`;
+  const list = `<li class="lsub">Notable rises and falls</li>${changes}`;
+  const srcs = [...new Set(c.P.map(q => q[2]))], cap = t => t[0].toUpperCase() + t.slice(1);
+  const foot = `Shown: falls of 15% or more in years of war, massacre, epidemic or other disaster in the city; other falls of 30% or more; times the population doubled quickly.<br>` +
+    `Figures: ${srcs.map(i => esc(cap(CSRC[i]))).join('; ')}.` + (c.P.some(q => q[2] === 3 || q[2] === 6) ? ' Open dots on the chart: estimates for the wider city.' : '');
   const box = pk.f != null && c.P[pk.f] ? figDetail(c.P[pk.f]) : pk.c != null && chg[pk.c] ? chgDetail(chg[pk.c]) : popDetail(c, p);
   return { band, detail: `<div class="detail popd">${box}</div>`, list, foot };
 }

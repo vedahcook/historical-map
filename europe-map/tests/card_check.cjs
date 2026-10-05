@@ -16,8 +16,10 @@ let src = fs.readFileSync(path.join(root, 'europe-borders.html'), 'utf8');
 // a test hook inside the page's script (it is one function; the hook goes at its end)
 const end = src.lastIndexOf('})();');
 src = src.slice(0, end) + `window.__T = {
-  open(name, y, tab) { const c = CITIES.find(c => c.n === name); fitBox([c.x - 60, c.y - 40, c.x + 60, c.y + 40]);
-    setTimeout(() => { place = { x: c.x, y: c.y, city: c.i }; selCity = c.i; popClosed = false; cardPending = tab ? { tab } : null; setYear(y); drawCities(); renderPop(); }, 900); },
+  open(name, y, tab) { const c = CITIES.find(c => c.n === name); fitBox([c.x - 60, c.y - 40, c.x + 60, c.y + 40]); setYear(y);
+    const go = () => { if (!eraOf(y).ready) return setTimeout(go, 200);      // (before 1800: that era's map loads first)
+      place = { x: c.x, y: c.y, city: c.i }; selCity = c.i; popClosed = false; cardPending = tab ? { tab } : null; setYear(y); drawCities(); renderPop(); };
+    setTimeout(go, 900); },
   year(y) { setYear(y); } };
 ` + src.slice(end);
 fs.writeFileSync(path.join(root, '_t.html'), src);
