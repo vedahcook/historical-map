@@ -1613,8 +1613,7 @@ let cardTab = 'views', cardSel = null, cardCity = null, cardDetent = 'full', car
 const cardScroll = {};                     // each tab's list keeps its scroll position (until another city opens)
 const CW = 300, PH = 96;                  // the bands' drawing width (stretched to the card's width); the population chart's height
 // each tab's band is zoomed to the years its data covers (events, pictures, holders, population figures; at least 40
-// years), even when the map's year is outside them; sliding the band sideways toward years it leaves out shows the
-// whole 1000–2026 (cardZoom[tab]: 'full'), until the tab is entered again
+// years), even when the map's year is outside them
 let TL0 = Y0, TL1 = Y1, TLS = 200;
 const cX = v => 4 + (v - TL0) / (TL1 - TL0) * (CW - 8), cpct = v => (cX(v) / CW * 100).toFixed(2) + '%';
 const ZFULL = [Y0, Y1, 200];
@@ -1624,9 +1623,8 @@ function zoomRange(lo, hi) {
   const pad = (hi - lo) * 0.03; lo = Math.max(Y0, lo - pad); hi = Math.min(Y1, hi + pad);
   return [lo, hi, [10, 20, 25, 50, 100, 200].find(s => (hi - lo) / s <= 6) || 200];
 }
-const cardZoom = {};
 function zoomSet(tab, z, ready = true) {
-  [TL0, TL1, TLS] = !ready || cardZoom[tab] === 'full' ? ZFULL : z;      // (the whole span while the data loads)
+  [TL0, TL1, TLS] = ready ? z : ZFULL;      // (the whole span while the data loads)
 }
 const yrs = n => `${n} year${n === 1 ? '' : 's'}`;
 // which picture: the one made closest to the year, none if more than 100 years away; a view of an event (a city
@@ -1707,12 +1705,11 @@ const evSpan = e => `${e.y}${e.end && e.end > e.y ? '–' + e.end : ''}`;
 // the band's frame: the band, then the years, with the map's year in a red tag among them (the years it would cover
 // are left out) and a red line up through the band. When the year is outside the band's years, its tag waits at that
 // end, pointing the way ("‹ 1350")
-let tlFresh = false;
 function tlHtml(band, h) {
   const ticks = []; for (let t = Math.ceil(TL0 / TLS) * TLS; t <= TL1; t += TLS) ticks.push(t);
   const out = year < TL0 ? -1 : year > TL1 ? 1 : 0, f = out < 0 ? 0 : out > 0 ? 1 : cX(year) / CW;
   const tick = t => { const x = cX(t) / CW; return Math.abs(x - f) < 0.1 ? '' : `<span${x < 0.05 ? ' class="first"' : x > 0.95 ? ' class="last"' : ''} style="left:${cpct(t)}">${t}</span>`; };
-  return `<div class="tl${tlFresh ? ' fresh' : ''}" data-z0="${TL0}" data-z1="${TL1}"><div class="band" style="height:${h}px">${band}</div><div class="axis" aria-hidden="true">${ticks.map(tick).join('')}</div>` +
+  return `<div class="tl"><div class="band" style="height:${h}px">${band}</div><div class="axis" aria-hidden="true">${ticks.map(tick).join('')}</div>` +
     (out ? `<span class="nowtag out ${out < 0 ? 'l' : 'r'}" style="left:${out < 0 ? '0' : '100%'}">${out < 0 ? `‹ ${year}` : `${year} ›`}</span>`
       : `<span class="nowline" style="left:${cpct(year)}"></span><span class="nowtag${f < 0.06 ? ' l' : f > 0.94 ? ' r' : ''}" style="left:${cpct(year)}">${year}</span>`) + `</div>`;
 }
@@ -1919,7 +1916,7 @@ function wireCard(d) {
     b.onclick = ev => {
       ev.stopPropagation();
       if (b.dataset.t === cardTab) return;
-      cardTab = b.dataset.t; delete cardZoom[cardTab]; if (cardTab === 'ev') loadEventImages(); cardRefresh();      // entering a tab: zoomed to its data (if the year is in it)
+      cardTab = b.dataset.t; if (cardTab === 'ev') loadEventImages(); cardRefresh();
       const t = pop.querySelector(`.ctabs button[data-t="${cardTab}"]`); if (t) t.focus({ preventScroll: true });
     };
   });
@@ -1937,34 +1934,14 @@ function wireCard(d) {
   const ei = root.querySelector('.eimg img:not(.blur)');      // a picture that fails to load: taken out
   if (ei) ei.onerror = () => { const pic = ei.closest('.epic'); if (pic) pic.remove(); };
   const x = root.querySelector('.chead .x'); if (x) x.onclick = ev => { ev.stopPropagation(); closeCard(); };
-  // sliding the band sideways (a drag, or a sideways swipe on a trackpad) toward years it leaves out: the whole 1000–2026
-  const tl = root.querySelector('.tl');
-  if (tl) {
-    const z0 = +tl.dataset.z0, z1 = +tl.dataset.z1;
-    const widen = dir => { if (cardZoom[cardTab] === 'full' || !(dir < 0 ? z0 > Y0 : z1 < Y1)) return false; cardZoom[cardTab] = 'full'; bandPanAt = Date.now(); tlFresh = true; cardRefresh(); tlFresh = false; return true; };
-    let p0 = null, acc = 0;
-    tl.addEventListener('pointerdown', ev => { p0 = [ev.clientX, ev.clientY]; });
-    tl.addEventListener('pointermove', ev => {
-      if (!p0) return; const dx = ev.clientX - p0[0], dy = ev.clientY - p0[1];
-      if (Math.abs(dx) > 24 && Math.abs(dx) > Math.abs(dy) * 1.5) { p0 = null; widen(dx > 0 ? -1 : 1); }      // dragged right: the earlier years, on the left
-    });
-    tl.addEventListener('pointerup', () => { p0 = null; }); tl.addEventListener('pointercancel', () => { p0 = null; });
-    tl.addEventListener('wheel', ev => {
-      if (Math.abs(ev.deltaX) <= Math.abs(ev.deltaY)) return;
-      ev.preventDefault(); acc += ev.deltaX;      // (also keeps the browser from going back a page)
-      if (Math.abs(acc) > 30) { const d = acc; acc = 0; widen(d < 0 ? -1 : 1); }
-    }, { passive: false });
-    tl.addEventListener('click', ev => { if (Date.now() - bandPanAt < 500) { ev.stopPropagation(); ev.preventDefault(); } }, true);
-  }
 }
-let bandPanAt = 0;
 function closeCard() { selCity = null; cardSel = null; drawCities(); renderPop(); }
 // the city's popup: build the card, then place it (on a phone, the sheet) without moving it while the year changes
 function renderCityCard(d) {
   const c = d.c, sr = svg.getBoundingClientRect(), mb = $('mapbox').getBoundingClientRect();
   loadViews(); loadEvents(); if (!TABS.some(t => t[0] === cardTab)) cardTab = 'views';
-  if (cardCity !== c.i) { cardCity = c.i; cardSel = null; for (const k in cardScroll) delete cardScroll[k]; for (const k in cardZoom) delete cardZoom[k]; cardDetent = 'full'; delete pop.dataset.anchor; }
-  if (cardPending) { cardTab = cardPending.tab; cardSel = cardPending.e || null; delete cardZoom[cardTab]; cardPending = null; }      // an event opened from the map or the timeline
+  if (cardCity !== c.i) { cardCity = c.i; cardSel = null; for (const k in cardScroll) delete cardScroll[k]; cardDetent = 'full'; delete pop.dataset.anchor; }
+  if (cardPending) { cardTab = cardPending.tab; cardSel = cardPending.e || null; cardPending = null; }      // an event opened from the map or the timeline
   if (cardTab === 'ev') loadEventImages();
   if (cardSel && (year < cardSel.y || year > Math.max(cardSel.y, cardSel.end || 0))) cardSel = null;
   const phone = innerWidth <= 600;
