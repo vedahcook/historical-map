@@ -10,3 +10,5 @@ europe-map/cities/hm-candidates.json
 europe-map/cities/hm-series.json
 europe-map/cities/towns_qids.json
 europe-map/cities/towns_input.json
+europe-map/tests/shots/
+europe-map/_t.html
