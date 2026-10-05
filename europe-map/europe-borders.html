@@ -326,6 +326,10 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
 .citycard .tlist.ev li, .citycard .tlist.views li { grid-template-columns: 18px minmax(0, 1fr); }
 .citycard .tlist.ev .d, .citycard .tlist.views .d { margin-left: 0; padding: 0 4px; color: var(--faint); }
 .citycard .tlist li.on .d, .citycard .tlist li.on .rng { background: var(--now); color: var(--now-ink); }
+.citycard .tlist.views li.on .d { background: none; color: var(--faint); }      /* (a picture's date is not the map's year) */
+.citycard .tlist .fn { margin-left: 2px; font-size: 0.68rem; font-weight: 500; color: var(--faint); }
+.citycard .credit .notes { margin: 0 0 6px; padding-left: 18px; }
+.citycard .credit .notes li { margin: 1px 0; }
 .citycard .tlist .ico { width: 16px; height: 16px; color: var(--muted); }
 .citycard .tlist .sw { width: 12px; height: 12px; border-radius: 2px; margin: 2px 0 0 2px; }
 .citycard .tlist .by { display: block; font-weight: 400; color: var(--faint); }
@@ -1611,10 +1615,9 @@ function loadViews() {
 let cardTab = 'views', cardSel = null, cardCity = null, cardDetent = 'full', cardShown = null, cardPending = null;
 const cardScroll = {};                     // each tab's list keeps its scroll position (until another city opens)
 const CW = 300, PH = 96;                  // the bands' drawing width (stretched to the card's width); the population chart's height
-// each tab's band opens zoomed to the years its data covers (events, holders, population figures; at least 40
-// years), but only if the map's year is among them; otherwise it shows the whole 1000–2026. The choice is made on
-// entering the tab and kept while the year moves. Sliding the band sideways toward years it leaves out also shows
-// the whole span (cardZoom[tab]: 'data' or 'full')
+// each tab's band is zoomed to the years its data covers (events, pictures, holders, population figures; at least 40
+// years), even when the map's year is outside them; sliding the band sideways toward years it leaves out shows the
+// whole 1000–2026 (cardZoom[tab]: 'full'), until the tab is entered again
 let TL0 = Y0, TL1 = Y1, TLS = 200;
 const cX = v => 4 + (v - TL0) / (TL1 - TL0) * (CW - 8), cpct = v => (cX(v) / CW * 100).toFixed(2) + '%';
 const ZFULL = [Y0, Y1, 200];
@@ -1626,9 +1629,7 @@ function zoomRange(lo, hi) {
 }
 const cardZoom = {};
 function zoomSet(tab, z, ready = true) {
-  if (!ready) { [TL0, TL1, TLS] = ZFULL; return; }      // (data still loading: decide when it is in)
-  if (!cardZoom[tab]) cardZoom[tab] = year >= z[0] && year <= z[1] ? 'data' : 'full';
-  [TL0, TL1, TLS] = cardZoom[tab] === 'full' ? ZFULL : z;
+  [TL0, TL1, TLS] = !ready || cardZoom[tab] === 'full' ? ZFULL : z;      // (the whole span while the data loads)
 }
 const yrs = n => `${n} year${n === 1 ? '' : 's'}`;
 // which picture: the one made closest to the year, none if more than 100 years away; a view of an event (a city
@@ -1733,10 +1734,10 @@ function eimgUrl(m, w) {
 const eimgOf = e => e && e.q && EIMG ? EIMG[e.q] || null : null;
 const eimgWho = m => { const a = (m[3] || '').trim(); return !a || /^(anonymous\s*)?unknown( author| artist)?$/i.test(a) ? 'author unknown' : a.length > 80 ? a.slice(0, 78) + '…' : a; };
 const eimgCredit = m => `Picture: ${esc(eimgWho(m))}. ${licHtml({ lic: m[4] })}, <a href="${commonsUrl(m[0])}" target="_blank" rel="noopener">Wikimedia Commons</a>.`;
-// the event's picture, cropped to 16:9; a tall one is shown whole, on a blurred copy of itself
+// the event's picture, cropped to 16:9; a tall one is shown whole, on a blurred copy of itself. None if there is none
 function evPicHtml(e, failed) {
-  const era = year < 1500 ? 'a' : year < 1800 ? 'b' : year < 1900 ? 'c' : 'd', m = failed ? null : eimgOf(e);
-  if (!m) return `<div class="pic epic"><div class="vph era-${era}">${e ? cico(evKind(e), 'ico big') : `<span class="yr">${year}</span>`}<span>${!e ? 'No event yet' : failed ? 'The picture did not load' : !EIMG ? 'Loading the picture…' : 'No picture of this event'}</span></div></div>`;
+  const m = failed ? null : eimgOf(e);
+  if (!m) return '';      // no picture (or none yet, or it failed to load): nothing
   const tall = m[2] / m[1] > 0.7, a = eimgUrl(m, 500), b = eimgUrl(m, 960);
   const img = `<img loading="lazy"${tall ? ' class="fit"' : ''} src="${a}"${b !== a ? ` srcset="${a} ${Math.min(500, m[1])}w, ${b} ${Math.min(960, m[1])}w" sizes="(max-width: 600px) 100vw, 380px"` : ''} alt="${esc(e.n)}">`;
   return `<div class="pic epic"><button type="button" class="vimg eimg" aria-label="Show the whole picture">${tall ? `<img class="blur" loading="lazy" src="${eimgUrl(m, 250)}" alt="" aria-hidden="true">` : ''}${img}</button></div>`;
@@ -1852,9 +1853,11 @@ function popPanel(c, p) {
       `<span class="evs">${!CEV ? '' : q.ev.length ? 'In these years: ' + q.ev.map(e => `${esc(e.n)} (${evSpan(e)})`).join('; ') : 'No events listed in these years.'}</span></span></li>`).join('')
     : `<li class="none">No sudden rises or falls between the figures.</li>`;
   const on = [...c.P].reverse().find(q => q[0] <= year);
-  const figs = c.P.map((q, j) => `<li role="button" tabindex="0" class="fig${q === on ? ' on' : ''}" data-y="${q[0]}"><span></span><span><span class="d">${q[0]}</span></span><span>${fmt(q[1])}${!j || c.P[j - 1][2] !== q[2] ? `<span class="by">${esc(CSRC[q[2]])}</span>` : ''}</span></li>`).join('');      // the source when it changes
+  const srcs = [...new Set(c.P.map(q => q[2]))], note = i => srcs.indexOf(i) + 1;      // each figure's source as a numbered note
+  const figs = c.P.map(q => `<li role="button" tabindex="0" class="fig${q === on ? ' on' : ''}" data-y="${q[0]}"><span></span><span><span class="d">${q[0]}</span></span><span>${fmt(q[1])}<sup class="fn" title="${esc(CSRC[q[2]])}">${note(q[2])}</sup></span></li>`).join('');
   const list = `<li class="lsub">Sudden rises and falls</li>${changes}<li class="lsub">Every figure</li>${figs}`;
-  const foot = `Sources: ${[...new Set(c.P.map(q => q[2]))].map(i => esc(CSRC[i])).join('; ')}. Open dots: estimates for the wider city.`;
+  const cap = t => t[0].toUpperCase() + t.slice(1);
+  const foot = `<ol class="notes">${srcs.map(i => `<li>${esc(cap(CSRC[i]))}</li>`).join('')}</ol>Open dots on the chart: estimates for the wider city.`;
   return { band, detail: `<div class="detail popd">${popDetail(c, p)}</div>`, list, foot };
 }
 const popBig = p => p.k === 'fig' ? fmt(p.v) : p.k === 'none' || p.k === 'gap' ? '—' : 'about ' + fmt(round3(p.v));
@@ -1932,8 +1935,8 @@ function wireCard(d) {
   });
   const vb = root.querySelector('.vimg:not(.eimg)'); if (vb) vb.onclick = ev => { ev.stopPropagation(); openBigView(c, cardShown); };
   const eb = root.querySelector('.eimg'); if (eb) eb.onclick = ev => { ev.stopPropagation(); openEventBig(cardShownEv); };
-  const ei = root.querySelector('.eimg img:not(.blur)'), shownEv = cardShownEv;      // a picture that fails to load: the plate instead
-  if (ei) ei.onerror = () => { const pic = ei.closest('.epic'); if (pic) pic.outerHTML = evPicHtml(shownEv, true); };
+  const ei = root.querySelector('.eimg img:not(.blur)');      // a picture that fails to load: taken out
+  if (ei) ei.onerror = () => { const pic = ei.closest('.epic'); if (pic) pic.remove(); };
   const x = root.querySelector('.chead .x'); if (x) x.onclick = ev => { ev.stopPropagation(); closeCard(); };
   // sliding the band sideways (a drag, or a sideways swipe on a trackpad) toward years it leaves out: the whole 1000–2026
   const tl = root.querySelector('.tl');
