@@ -1629,7 +1629,7 @@ function loadViews() {
 // cardTab: the open tab; cardSel: the event picked (picking an event leaves the map's year alone); cardPick: what was
 // tapped in the other tabs (a picture, a holder, a population figure or change), which also moves the map to its year.
 // Moving the year from the map clears the picks
-const cardPick = {}; let cardPickYear = null;
+const cardPick = {}; let cardPickYear = null, cardAuto = false;      // cardAuto: the opening tab is still to be chosen
 let cardTab = 'views', cardSel = null, cardCity = null, cardDetent = 'full', cardShown = null, cardPending = null;
 const cardScroll = {};                     // each tab's list keeps its scroll position (until another city opens)
 const CW = 300, PH = 96;                  // the bands' drawing width (stretched to the card's width); the population chart's height
@@ -1950,7 +1950,7 @@ function wireCard(d) {
   root.querySelectorAll('.ctabs button').forEach(b => {
     b.onclick = ev => {
       ev.stopPropagation();
-      if (b.dataset.t === cardTab) return;
+      cardAuto = false; if (b.dataset.t === cardTab) return;
       cardTab = b.dataset.t; if (cardTab === 'ev') loadEventImages(); cardRefresh();
       const t = pop.querySelector(`.ctabs button[data-t="${cardTab}"]`); if (t) t.focus({ preventScroll: true });
     };
@@ -1976,8 +1976,19 @@ function renderCityCard(d) {
   const c = d.c, sr = svg.getBoundingClientRect(), mb = $('mapbox').getBoundingClientRect();
   loadViews(); loadEvents(); if (!TABS.some(t => t[0] === cardTab)) cardTab = 'views';
   if (cardPickYear !== year) { cardPickYear = year; cardSel = null; for (const k in cardPick) delete cardPick[k]; }      // the map's year moved: the card follows it again
-  if (cardCity !== c.i) { cardCity = c.i; cardSel = null; for (const k in cardPick) delete cardPick[k]; for (const k in cardScroll) delete cardScroll[k]; cardDetent = 'full'; delete pop.dataset.anchor; }
-  if (cardPending) { cardTab = cardPending.tab; cardSel = cardPending.e || null; cardPending = null; }      // an event opened from the map or the timeline
+  if (cardCity !== c.i) { cardCity = c.i; cardSel = null; cardAuto = true; for (const k in cardPick) delete cardPick[k]; for (const k in cardScroll) delete cardScroll[k]; cardDetent = 'full'; delete pop.dataset.anchor; }
+  if (cardPending) { cardTab = cardPending.tab; cardSel = cardPending.e || null; cardPending = null; cardAuto = false; }      // an event opened from the map or the timeline
+  if (cardAuto) {      // a city just opened: its picture for the year, else an event near it, else who held it
+    const views = CVIEWS ? CVIEWS[c.i] || [] : null;
+    if (views && pickView(views, year)) { cardTab = 'views'; cardAuto = false; }
+    else if (views && CEV) {
+      const dist = e => year < e.y ? e.y - year : year > (e.end || e.y) ? year - (e.end || e.y) : 0;
+      let best = null;
+      for (const e of CEV[c.i] || []) if (e.y >= Y0 && e.y <= Y1 && dist(e) <= MAXGAP && (!best || dist(e) < dist(best) || (dist(e) === dist(best) && e.y <= year && best.y > year))) best = e;
+      cardTab = best ? 'ev' : 'held'; if (best && best.y > year) cardSel = best;      // (an event before the year is the box's own choice)
+      cardAuto = false;
+    } else cardTab = 'views';      // (until the pictures and events are in)
+  }
   if (cardTab === 'ev') loadEventImages();
   const phone = innerWidth <= 600;
   if (pop.classList.contains('citycard') && pop.dataset.city === String(c.i)) pop.querySelectorAll('.scroll[data-tab]').forEach(s => { cardScroll[s.dataset.tab] = s.scrollTop; });
@@ -2283,6 +2294,6 @@ function preloadNear() {
   nearFor = E; [ERAS[E.i - 1], ERAS[E.i + 1]].forEach(e => e && loadEra(e));
 }
 draw();
-setTimeout(() => { loadEvents(); loadTerrain(); }, 300);
+setTimeout(() => { loadEvents(); loadViews(); loadTerrain(); }, 300);      // (the city views early too: a city card opens on them)
 })();
 </script>
