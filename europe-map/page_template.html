@@ -1623,8 +1623,9 @@ function loadViews() {
     refreshCityPop();
   }).catch(() => { loadViews.busy = false; });
 }
-// cardTab: the open tab; cardSel: the event picked; cardPick: what is picked in the other tabs (a picture, a holder, a
-// population figure or change). Picking in the card never moves the map's year; moving the year clears the picks
+// cardTab: the open tab; cardSel: the event picked (picking an event leaves the map's year alone); cardPick: what was
+// tapped in the other tabs (a picture, a holder, a population figure or change), which also moves the map to its year.
+// Moving the year from the map clears the picks
 const cardPick = {}; let cardPickYear = null;
 let cardTab = 'views', cardSel = null, cardCity = null, cardDetent = 'full', cardShown = null, cardPending = null;
 const cardScroll = {};                     // each tab's list keeps its scroll position (until another city opens)
@@ -1913,15 +1914,24 @@ function cardHtml(d) {
 let cardShownEv = null;
 // the card drawn again where it is
 function cardRefresh() { keepPop = [pop.offsetLeft, pop.offsetTop]; renderPop(); keepPop = null; }
+// going to a year from inside the card (Pictures, Held by, Population): the card stays where it is and follows whoever
+// held the city; pick() marks what was tapped (moving the year clears picks, so it is set for the new year)
+function cardJump(d, y, pick) {
+  y = Math.max(Y0, Math.min(Y1, y)); stop();
+  place = { x: d.c.x, y: d.c.y, city: d.c.i }; popClosed = false;
+  cardPickYear = y; for (const k in cardPick) delete cardPick[k]; cardSel = null; if (pick) pick();
+  keepPop = [pop.offsetLeft, pop.offsetTop]; setYear(y); keepPop = null;
+  if (y === year) renderPop();
+}
 function wireCard(d) {
   const root = pop, c = d.c;
-  root.querySelectorAll('[data-p]').forEach(b => {      // picking something in the card (tap it again to let go): the map's year stays
+  root.querySelectorAll('[data-p]').forEach(b => {      // a picture, a holder, a figure or a change: the map goes to its year, and it is picked
     const go = () => {
       const [k, s] = b.dataset.p.split(':'), n = +s;
-      if (k === 'v') { const x = (CVIEWS && CVIEWS[c.i] || [])[n]; cardPick.views = cardPick.views === x ? null : x; }
-      else if (k === 'h') cardPick.held = cardPick.held === n ? null : n;
-      else { const pk = cardPick.pop || {}; cardPick.pop = pk[k] === n ? null : { [k]: n }; }
-      cardRefresh();
+      if (k === 'v') { const x = (CVIEWS && CVIEWS[c.i] || [])[n]; if (x) cardJump(d, x.y, () => { cardPick.views = x; }); }
+      else if (k === 'h') { const r = cityRuns(c)[n]; if (r) cardJump(d, r.a < year && year <= r.b ? year : r.a, () => { cardPick.held = n; }); }
+      else if (k === 'f') { const q = c.P[n]; if (q) cardJump(d, q[0], () => { cardPick.pop = { f: n }; }); }
+      else { const q = popChanges(c)[n]; if (q) cardJump(d, q.j, () => { cardPick.pop = { c: n }; }); }
     };
     b.onclick = ev => { if (ev.target.closest('a')) return; ev.stopPropagation(); go(); };
     b.onkeydown = ev => { if (ev.target.closest('a')) return; if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); go(); } };
