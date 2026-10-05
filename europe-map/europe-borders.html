@@ -264,6 +264,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
 .citycard .detail.evc .xt { padding-left: 26px; -webkit-line-clamp: 1; }
 .citycard .detail .pic { margin: 0; border-radius: 6px; }
 .citycard .detail.evc .efig { margin-top: 10px; }
+.citycard .detail.evc .enote { margin: 5px 0 0 26px; color: var(--ink); line-height: 1.45; }
 .citycard .detail .cap { margin-top: 8px; font-size: 0.72rem; line-height: 1.35; color: var(--faint); }
 .citycard .detail .cap b, .citycard .detail .cap .cr { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .citycard .detail .cap b { margin-bottom: 2px; font-size: 0.84rem; font-weight: 600; line-height: 1.3; color: var(--ink); }
@@ -1764,6 +1765,14 @@ function eimgUrl(m, w) {
   return `${UPL}thumb/${dir}${f}/${tif ? 'lossy-page1-' : ''}${w}px-${f}${tif ? '.jpg' : ''}`;
 }
 const eimgOf = e => e && e.q && EIMG ? EIMG[e.q] || null : null;
+// short descriptions of the events (event-notes.json: one or two sentences each, written from the event's Wikipedia
+// article), shown in the event's box under its title
+let ENOTE = null;
+function loadEventNotes() {
+  if (ENOTE || loadEventNotes.busy) return; loadEventNotes.busy = true;
+  fetch('event-notes.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(d => { ENOTE = d.n; refreshCityPop(); }).catch(() => { loadEventNotes.busy = false; });
+}
+const enoteOf = e => e && e.q && ENOTE ? ENOTE[e.q] || '' : '';
 const eimgWho = m => { const a = (m[3] || '').trim(); return !a || /^(anonymous\s*)?unknown( author| artist)?$/i.test(a) ? 'author unknown' : a.length > 80 ? a.slice(0, 78) + '…' : a; };
 const eimgCredit = m => `Picture: ${esc(eimgWho(m))}. ${licHtml({ lic: m[4] })}, <a href="${commonsUrl(m[0])}" target="_blank" rel="noopener">Wikimedia Commons</a>.`;
 // the event's picture, cropped to 16:9 (a tall one is shown whole, on a blurred copy of itself), with its credit under
@@ -1794,7 +1803,7 @@ function eventsPanel(c) {
   const ago = !last || (last.y <= year && year <= (last.end || last.y)) ? '' : last.y < year ? `${yrs(year - last.y)} earlier.` : `${yrs(last.y - year)} later.`;
   const detail = last ? `<div class="detail evc${last.y === year ? ' on' : ''}" role="button" tabindex="0" data-e="${E.all.indexOf(last)}">` +
       `<div class="eh">${cico(evKind(last))}<div class="t"><b data-dates="${esc([evWhen(last), evWhen(last, 1), String(last.y)].filter((v, i, a) => a.indexOf(v) === i).join('|'))}"><span class="enm">${esc(last.n)}</span><span class="cdt">${evWhen(last)}</span></b>${wikiLink(last.n, last.t, last.q)}</div></div>` +
-      `${ago ? `<div class="xt">${ago}</div>` : ''}${evPicHtml(last)}</div>`
+      `${ago ? `<div class="xt">${ago}</div>` : ''}${enoteOf(last) ? `<p class="enote">${esc(enoteOf(last))}</p>` : ''}${evPicHtml(last)}</div>`
     : `<div class="detail evx empty">No events listed before ${E.all[0].y}.</div>`;
   const list = E.all.map((e, i) => `<li role="button" tabindex="0" data-e="${i}"${e === last ? ` class="on${e.y <= year && year <= (e.end || e.y) ? ' now' : ''}"` : ''}>${cico(evKind(e))}<span>${esc(e.n)} <span class="d">${evSpan(e)}</span></span></li>`).join('');
   return { band, detail, list, h: rows * 21 + 3, last, foot: '' };
@@ -1983,7 +1992,7 @@ function wireCard(d) {
     b.onclick = ev => {
       ev.stopPropagation();
       cardAuto = false; if (b.dataset.t === cardTab) return;
-      cardTab = b.dataset.t; if (cardTab === 'ev') loadEventImages(); cardRefresh();
+      cardTab = b.dataset.t; if (cardTab === 'ev') { loadEventImages(); loadEventNotes(); } cardRefresh();
       const t = pop.querySelector(`.ctabs button[data-t="${cardTab}"]`); if (t) t.focus({ preventScroll: true });
     };
   });
@@ -2021,7 +2030,7 @@ function renderCityCard(d) {
       cardAuto = false;
     } else cardTab = 'views';      // (until the pictures and events are in)
   }
-  if (cardTab === 'ev') loadEventImages();
+  if (cardTab === 'ev') { loadEventImages(); loadEventNotes(); }
   const phone = innerWidth <= 600;
   if (pop.classList.contains('citycard') && pop.dataset.city === String(c.i)) pop.querySelectorAll('.scroll[data-tab]').forEach(s => { cardScroll[s.dataset.tab] = s.scrollTop; });
   if (!pop.classList.contains('citycard')) { pop.style.left = '-9999px'; delete pop.dataset.anchor; }
