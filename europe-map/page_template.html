@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=Instrument+Sans:wght@400;500;600;700&family=Source+Sans+3:wght@300..700&display=swap">
 <style>
 /* Layout: an atlas plate. The map fills the left, a year slider runs under it, and a side panel explains the year, the place you clicked, and where sources disagree. */
-:root {
+:root { --plc: #7b4a2b;
   --bg: #f2f4f1; --surface: #ffffff; --sunk: #e9ece7; --ink: #18201c; --muted: #56605a; --faint: #7d867f; --line: #d6dbd4;
   --accent: #1f5f6b; --accent-ink: #ffffff; --focus: #1f5f6b;
   --water: #bfd1da; --outside: #e7ebe8; --grat: rgba(42,48,44,0.12); --none: #e6e4dc; --border: rgba(42,48,44,0.38); --vborder: rgba(42,48,44,0.28); --dim: rgba(242,244,241,0.5); --dimtext: 0.26; --river: #86adc0; --halo: rgba(255,255,255,0.88); --river-ink: #2f6c86; --mtn-ink: #7a5534; --plain-ink: #85784f; --relief: 0.5;
@@ -15,7 +15,7 @@
   --phys: "Source Serif 4", Georgia, "Times New Roman", serif;    /* names of physical features */
   --r: 12px;
 }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --plc: #d9a77c;
   --bg: #111513; --surface: #1a201d; --sunk: #151a18; --ink: #e6ece8; --muted: #a3aea7; --faint: #7f8a83; --line: #2e3632;
   --accent: #7fc4cf; --accent-ink: #0e1412; --focus: #7fc4cf;
   --water: #14232a; --outside: #161b19; --grat: rgba(223,230,225,0.12); --none: #2a2e2b; --border: rgba(223,230,225,0.34); --vborder: rgba(223,230,225,0.24); --dim: rgba(17,21,19,0.48); --dimtext: 0.3; --river: #2c4b57; --halo: rgba(17,21,19,0.85); --river-ink: #8cbcd0; --mtn-ink: #d2b08c; --plain-ink: #bdb08a; --relief: 0.42;
@@ -23,7 +23,7 @@
   --now: #ff6a4d; --now-ink: #1a0e0b; --era-a: #2b2619; --era-b: #27251e; --era-c: #2b251c; --era-d: #212523; --plate: rgba(230,220,190,0.22); --plate-ink: rgba(230,220,190,0.3); --scrim: rgba(10,14,12,0.72); --rise: #7cc79a; --fall: #e39a86; --shade: #232a26; --shade-on: #2f3833;
   /*FILLS_DARK*/
   color-scheme: dark; } }
-:root[data-theme="dark"] {
+:root[data-theme="dark"] { --plc: #d9a77c;
   --bg: #111513; --surface: #1a201d; --sunk: #151a18; --ink: #e6ece8; --muted: #a3aea7; --faint: #7f8a83; --line: #2e3632;
   --accent: #7fc4cf; --accent-ink: #0e1412; --focus: #7fc4cf;
   --water: #14232a; --outside: #161b19; --grat: rgba(223,230,225,0.12); --none: #2a2e2b; --border: rgba(223,230,225,0.34); --vborder: rgba(223,230,225,0.24); --dim: rgba(17,21,19,0.48); --dimtext: 0.3; --river: #2c4b57; --halo: rgba(17,21,19,0.85); --river-ink: #8cbcd0; --mtn-ink: #d2b08c; --plain-ink: #bdb08a; --relief: 0.42;
@@ -157,6 +157,44 @@ button, select, input { font: inherit; color: inherit; }
 .evm.on circle { fill: var(--accent); }
 .evm.off { opacity: 0.5; }
 .elbl { font-family: var(--mapfont); font-weight: 600; fill: var(--ink); dominant-baseline: central; pointer-events: none; }
+/* places: landmarks of the highlighted country's history (places.json) */
+.plm { cursor: pointer; }
+.plm circle { fill: var(--plc); stroke: var(--halo); }
+.plm .gl { fill: none; stroke: var(--bg); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.plm .gf { fill: var(--bg); stroke: none; }
+.plm.on circle { fill: var(--accent); }
+.plbl { font-family: var(--mapfont); font-style: italic; font-weight: 500; fill: var(--plc); dominant-baseline: central; pointer-events: none; paint-order: stroke; stroke: var(--halo); stroke-linejoin: round; }
+.plbl.on { fill: var(--accent); }
+.mappop.placepop { overflow-y: auto; overscroll-behavior: contain; }
+.mappop.placepop .nm { gap: 8px; }
+.mappop.placepop .nm svg { flex: none; width: 22px; height: 22px; }
+.mappop.placepop .nm svg circle { fill: var(--plc); }
+.mappop.placepop .nm svg .gl { fill: none; stroke: var(--surface); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.mappop.placepop .nm svg .gf { fill: var(--surface); }
+.mappop.placepop .dt { padding-left: 30px; }
+.mappop.placepop .efig { margin-top: 9px; }
+.mappop.placepop .pic { position: relative; aspect-ratio: 16 / 9; border-radius: 8px; overflow: hidden; background: var(--line); }
+.mappop.placepop .pic button { all: unset; display: block; width: 100%; height: 100%; cursor: zoom-in; }
+.mappop.placepop .pic img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.mappop.placepop .pic img.fit { object-fit: contain; position: relative; }
+.mappop.placepop .pic img.blur { position: absolute; inset: 0; filter: blur(14px) brightness(0.8); transform: scale(1.15); object-fit: cover; }
+.mappop.placepop .cap { font-size: 0.72rem; color: var(--muted); margin-top: 4px; line-height: 1.3; }
+.mappop.placepop .cap a { color: inherit; }
+.mappop.placepop p.pnote { color: var(--ink); margin-top: 8px; }
+.mappop.placepop .pact { display: flex; align-items: center; gap: 12px; margin-top: 9px; }
+.mappop.placepop .seey { font: inherit; font-size: 0.8rem; font-weight: 600; color: var(--accent); background: transparent; border: 1px solid var(--accent); border-radius: 999px; padding: 3px 10px; cursor: pointer; }
+.mappop.placepop .seey:hover { background: var(--accent); color: var(--surface); }
+.mappop.placepop .pact a { font-size: 0.8rem; color: var(--muted); }
+.mappop.placepop .pth { margin-top: 11px; border-top: 1px solid var(--line); padding-top: 8px; }
+.mappop.placepop .pth .h { font-weight: 600; font-size: 0.8rem; margin-bottom: 3px; }
+.mappop.placepop .pth ol { list-style: none; margin: 0; padding: 0; }
+.mappop.placepop .pth li { font-size: 0.8rem; line-height: 1.35; padding: 2px 0; display: flex; gap: 6px; }
+.mappop.placepop .pth li .d { flex: none; width: 3.1em; color: var(--muted); font-variant-numeric: tabular-nums; }
+.mappop.placepop .pth li button { all: unset; cursor: pointer; color: var(--ink); text-decoration: underline; text-decoration-color: var(--faint); text-underline-offset: 2px; }
+.mappop.placepop .pth li button:hover, .mappop.placepop .pth li button:focus-visible { color: var(--accent); }
+.mappop.placepop .pth li.me { font-weight: 600; }
+.mappop.placepop .pth li .in { color: var(--muted); }
+.mappop.placepop .pst { margin-top: 9px; font-size: 0.75rem; color: var(--muted); }
 .elbl.off { opacity: 0.5; }
 .legend .kinds { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 10px; }
 .legend .kinds span { display: flex; align-items: center; gap: 6px; font-size: 0.8rem; }
@@ -427,6 +465,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
           <g id="labels"></g>
           <g id="pin" class="pin"></g>
           <g id="cities"></g>
+          <g id="places"></g>
           <g id="evmarks"></g>
           <g id="focuslabel"></g>
         </svg>
@@ -939,12 +978,14 @@ function click(ev) {
   if (onBadge) { selectAlt(onBadge.i); return; }
   const mk = markAt(ev);                                  // an event's icon
   if (mk) { openEvent(mk); return; }
+  const pm = placeAt(ev);                                  // a place (its icon or its name)
+  if (pm) { if (selPlace === pm.p.id) { selPlace = null; drawCities(); renderPop(); } else openPlace(pm.p.id); return; }
   const c = cityAt(ev);                                   // a city (its dot or its name) comes next
-  if (c) { selCity = selCity === c.i ? null : c.i; popEv = null; drawCities(); renderPop(); return; }
+  if (c) { selPlace = null; selCity = selCity === c.i ? null : c.i; popEv = null; drawCities(); renderPop(); return; }
   const f = regionAt(x, y);
   const u = f ? uAt(f, year) : -1, cur = focusUnit();
-  if (selCity != null && f && u === cur) { selCity = null; drawCities(); renderPop(); return; }   // first tap inside the country just closes the city
-  selCity = null;
+  if ((selCity != null || selPlace != null) && f && u === cur) { selCity = null; selPlace = null; drawCities(); renderPop(); return; }   // first tap inside the country just closes the city or place
+  selCity = null; selPlace = null;
   if (!f || (place && u === cur)) place = null;          // tapping the highlighted country again, or the sea, clears it
   else { place = { x, y, s: f.properties.s, E: curEra() }; popClosed = false; }
   if (!f && selAlt != null) { selAlt = null; drawAlts(); renderAlts(); }   // the sea also clears a picked alternative border
@@ -956,6 +997,7 @@ function click(ev) {
 // After a jump in time from a city's popup, the place is that city (place.city), so the highlight follows whoever held it.
 function placeRegion(E) {
   if (place.city != null) return CITIES[place.city].ss[E.i];
+  if (place.pl != null && PLBY && PLBY.get(place.pl)) return PLBY.get(place.pl).ss[E.i];
   if (place.E !== E) { const f = regionAt(place.x, place.y, E); place.E = E; place.s = f ? f.properties.s : -1; }
   return place.s;
 }
@@ -1082,7 +1124,7 @@ function drawCities() {
   const g = $('cities'); g.textContent = ''; cityDots = [];
   const fu = focusUnit(), k = pxPerKm(), r = svg.getBoundingClientRect();
   const marks = eventMarks(), marked = new Set(marks.map(m => m.c.i));      // this year's events, as icons on their cities
-  if (fu < 0 || !k) { selCity = null; queuePop(); drawMarks(marks, labelBoxes.concat(marks.map(m => [m.sx - MR, m.sy - MR, m.sx + MR, m.sy + MR]))); drawOverlays(); return; }
+  if (fu < 0 || !k) { selCity = null; drawPlaces([], []); queuePop(); drawMarks(marks, labelBoxes.concat(marks.map(m => [m.sx - MR, m.sy - MR, m.sx + MR, m.sy + MR]))); drawOverlays(); return; }
   // only the country's larger cities on screen: at most 10 (focusCities)
   const inside = focusCities();
   if (selCity != null && !inside.some(d => d.c.i === selCity)) selCity = null;
@@ -1116,12 +1158,13 @@ function drawCities() {
     if (s) { taken.push([s[0], s[1], s[0] + w, s[1] + h]); put(d, s[0], s[1], w, h, s[2]); }
     else if (d.c.i === selCity) put(d, spots[0][0], spots[0][1], w, h, 'start');     // a selected city with no room still gets its name
   }
+  drawPlaces(placeMarks(), taken);
   drawMarks(marks, taken.concat(labelBoxes));
   queuePop(); drawOverlays();
 }
 // what goes over the map after the countries and cities are placed, keeping clear of their names
 function drawOverlays() {
-  const boxes = labelBoxes.concat(cityDots.flatMap(d => d.lb ? [d.db, d.lb] : [d.db]), evDots.flatMap(m => m.lb ? [m.db, m.lb] : [m.db]), controlBoxes(), focusParts);
+  const boxes = labelBoxes.concat(cityDots.flatMap(d => d.lb ? [d.db, d.lb] : [d.db]), evDots.flatMap(m => m.lb ? [m.db, m.lb] : [m.db]), plDots.flatMap(m => m.lb ? [m.db, m.lb] : [m.db]), controlBoxes(), focusParts);
   drawTerrainLabels(boxes);
 }
 // ---------- events in cities, and people born or died there (city-events.json, city-people.json, from Wikidata) ----------
@@ -1140,6 +1183,9 @@ const GLYPH = {
   disaster: ['s', 'M10 4.2 16.6 15.8H3.4zM10 8.9v3.1M10 14v.1'],
   culture: ['f', 'M10 3.6l1.9 4 4.4.6-3.2 3 .8 4.4L10 13.5l-3.9 2.1.8-4.4-3.2-3 4.4-.6z'],
   other: ['f', 'M10 7a3 3 0 1 0 0 6 3 3 0 1 0 0-6z'],
+  castle: ['s', 'M5.4 15.8V7.6h1.8v1.6h1.6V7.6h2.4v1.6h1.6V7.6h1.8v8.2zM8.8 15.8v-2.6a1.2 1.2 0 0 1 2.4 0v2.6'],
+  memorial: ['s', 'M7.2 15.6V8.4a2.8 2.8 0 0 1 5.6 0v7.2zM5.4 15.6h9.2'],
+  mine: ['s', 'M5 15.4l7.6-7.6M6.6 6.2c2.9-1.9 6.1-1.6 8.4.6'],
 };
 const glyph = k => { const [t, d] = GLYPH[k] || GLYPH.other; return `<path class="${t === 's' ? 'gl' : 'gf'}" d="${d}" transform="translate(-10 -10)"/>`; };
 const kindIcon = k => EVENT_ICONS ? `<svg class="ki" viewBox="-10 -10 20 20" aria-hidden="true"><circle r="10"/>${glyph(k)}</svg>` : '';
@@ -1241,6 +1287,141 @@ function openEvent(m) {
   stop(); popTab = 'ev'; popEv = m.e; cardPending = { tab: 'ev', e: m.e };      // the city card opens on Events, with this event and its picture
   place = { x: m.c.x, y: m.c.y, city: m.c.i }; selCity = m.c.i; popClosed = false;
   drawPin(); drawDim(); drawLabels(); drawBadges(); drawCities(); renderTimeline(); renderPop();
+}
+// ---------- places: landmarks of a country's history that are not cities on the map (places.json) ----------
+// Battlefields, abbeys, castles, camps… chosen as central to a country's story (places/build_places.py). A place
+// shows when the highlighted country belongs to one of its stories (France, Poland…) and holds the place in the
+// year on the map; its overlord's places count too (France's medieval fiefs). Shown in tiers, best known first, at
+// most PL_MAX on screen, so zooming in brings in more, the way cities do. Not tied to the year: a 1916 battle shows on
+// France in 1200 too. Tapping one opens its popup: picture, a short description, the map in its year, Wikipedia, and
+// the larger stories ("threads") it belongs to, with the other places and city events in them.
+let PLACES = null, PLBY = null, PLST = null, plDots = [], selPlace = null;
+const PL_MAX = 6, PR = 10;
+function loadPlaces() {
+  if (PLACES || loadPlaces.busy) return; loadPlaces.busy = true;
+  fetch('places.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(d => {
+    const idx = new Map(U.map((u, i) => [u.k, i]));
+    PLST = Object.entries(d.stories).map(([n, ks]) => ({ n, us: new Set(ks.map(k => idx.get(k)).filter(i => i != null)) }));
+    PLACES = d.p; PLBY = new Map(PLACES.map(p => [p.id, p])); PLACES.threads = d.threads;
+    drawCities();
+  }).catch(() => { loadPlaces.busy = false; });
+}
+// the stories a country belongs to: its own, or its overlord's
+const storiesOf = u => u < 0 || !PLST ? [] : PLST.filter(S => S.us.has(u) || (U[u].ov != null && S.us.has(U[u].ov))).map(S => S.n);
+// who held the place in year y (-2: that era's map has not loaded yet)
+const placeUnitAt = (p, y) => { const E = eraOf(y); if (!E.ready) return -2; const s = p.ss[E.i]; return s < 0 ? -1 : E.unitAt[s * E.ny + y - E.y0]; };
+function placeMarks() {
+  if (!PLACES) return [];
+  const fu = focusUnit(), k = pxPerKm(), r = svg.getBoundingClientRect(); if (!k) return [];
+  const st = storiesOf(fu), under = controlBoxes();
+  const vis = m => m.sx > PR && m.sy > PR && m.sx < r.width - PR && m.sy < r.height - PR && !under.some(b => m.sx > b[0] - PR && m.sx < b[2] + PR && m.sy > b[1] - PR && m.sy < b[3] + PR);
+  const at = p => ({ p, sx: (p.x - shown[0]) * k, sy: (p.yk - shown[1]) * k });
+  const mine = p => { if (!p.st.some(n => st.includes(n))) return false; const h = placeUnitAt(p, year); return h >= 0 && (h === fu || U[h].ov === fu); };
+  const list = fu < 0 ? [] : PLACES.filter(mine).map(at).filter(vis).sort((a, b) => a.p.t - b.p.t || b.p.sl - a.p.sl);
+  const out = [];
+  const sel = selPlace && PLBY.get(selPlace);      // the open place stays, wherever and whenever
+  if (sel) { const m = at(sel); if (vis(m)) out.push(m); }
+  const max = PL_MAX + out.length;
+  for (const m of list) {
+    if (out.length >= max) break;
+    if (out.some(o => o.p === m.p || Math.hypot(o.sx - m.sx, o.sy - m.sy) < 2 * PR + 4)) continue;
+    out.push(m);
+  }
+  return out;
+}
+// the icons, with names where they fit (taken: what is already on the map)
+function drawPlaces(marks, taken) {
+  const g = $('places'); g.textContent = ''; plDots = [];
+  const k = pxPerKm(); if (!k) return;
+  const fs = 11.5;
+  for (const m of marks) {
+    const on = m.p.id === selPlace;
+    const b = el('g', { class: 'plm' + (on ? ' on' : ''), transform: `translate(${m.p.x} ${m.p.yk}) scale(${(1 / k).toFixed(5)})` }, g);
+    b.innerHTML = `<circle r="${PR}" stroke-width="1.5"/>${glyph(m.p.k)}<title>${esc(m.p.n)}</title>`;
+    m.db = [m.sx - PR - 2, m.sy - PR - 2, m.sx + PR + 2, m.sy + PR + 2]; plDots.push(m); taken.push(m.db);
+  }
+  for (const m of plDots) {
+    const on = m.p.id === selPlace, w = m.p.n.length * fs * 0.5 + 2, h = fs * 1.25, gap = PR + 3;
+    const spots = [[m.sx + gap, m.sy - h / 2, 'start'], [m.sx - gap - w, m.sy - h / 2, 'end'], [m.sx - w / 2, m.sy - gap - h, 'middle'], [m.sx - w / 2, m.sy + gap, 'middle']];
+    const s = spots.find(([bx, by]) => !taken.some(t => t !== m.db && bx < t[2] && bx + w > t[0] && by < t[3] && by + h > t[1])) || (on ? spots[0] : null);
+    if (!s) continue;
+    m.lb = [s[0], s[1], s[0] + w, s[1] + h]; taken.push(m.lb);
+    const tx = s[2] === 'start' ? s[0] : s[2] === 'end' ? s[0] + w : s[0] + w / 2;
+    const t = el('text', { x: (shown[0] + tx / k).toFixed(2), y: (shown[1] + (s[1] + h / 2) / k).toFixed(2), class: 'plbl' + (on ? ' on' : ''), 'text-anchor': s[2] }, g);
+    t.setAttribute('style', `font-size:${(fs / k).toFixed(2)}px;stroke-width:${(3 / k).toFixed(2)}px`); t.textContent = m.p.n;
+  }
+}
+// the place (its icon or its name) under the pointer
+function placeAt(ev) {
+  const sr = svg.getBoundingClientRect(), px = ev.clientX - sr.left, py = ev.clientY - sr.top;
+  return plDots.find(m => Math.hypot(m.sx - px, m.sy - py) <= PR + 4 || (m.lb && px >= m.lb[0] - 3 && px <= m.lb[2] + 3 && py >= m.lb[1] - 3 && py <= m.lb[3] + 3)) || null;
+}
+// open a place's popup (from the map, or from another place's thread: the map then moves to show it)
+function openPlace(id, fromList) {
+  const p = PLBY && PLBY.get(id); if (!p) return;
+  selPlace = id; selCity = null; popClosed = false;
+  const k = pxPerKm(), r = svg.getBoundingClientRect(), sx = (p.x - shown[0]) * k, sy = (p.yk - shown[1]) * k;
+  if (fromList && (sx < 60 || sy < 60 || sx > r.width - 60 || sy > r.height - 60)) { drawCities(); animateTo([p.x - shown[2] / 2, p.yk - shown[3] / 2, shown[2], shown[3]]); return; }
+  drawCities(); renderPop();
+}
+// a city's event from a thread: the city's card opens on it (the map moves to the city, and follows whoever held it)
+function openCityEvent(ci, q) {
+  const c = CITIES[ci], e = CEV && (CEV[ci] || []).find(e => e.q === q); if (!c || !e) return;
+  stop(); selPlace = null; popTab = 'ev'; popEv = e; cardPending = { tab: 'ev', e };
+  place = { x: c.x, y: c.y, city: ci }; selCity = ci; popClosed = false;
+  drawPin(); drawDim(); drawLabels(); drawBadges(); drawCities(); renderTimeline();
+  const k = pxPerKm(), r = svg.getBoundingClientRect(), sx = (c.x - shown[0]) * k, sy = (c.y - shown[1]) * k;
+  if (sx < 40 || sy < 40 || sx > r.width - 40 || sy > r.height - 40) animateTo([c.x - shown[2] / 2, c.y - shown[3] / 2, shown[2], shown[3]]); else renderPop();
+}
+function placeHtml(p) {
+  const fig = p.pic ? (() => {
+    const m = p.pic, tall = m[2] / m[1] > 0.7, a = eimgUrl(m, 500), b = eimgUrl(m, 960);
+    const img = `<img loading="lazy"${tall ? ' class="fit"' : ''} src="${a}"${b !== a ? ` srcset="${a} ${Math.min(500, m[1])}w, ${b} ${Math.min(960, m[1])}w" sizes="(max-width: 600px) 100vw, 330px"` : ''} alt="${esc(p.n)}">`;
+    return `<div class="efig"><div class="pic"><button type="button" class="pbig" aria-label="Show the whole picture">${tall ? `<img class="blur" loading="lazy" src="${eimgUrl(m, 250)}" alt="" aria-hidden="true">` : ''}${img}</button></div><div class="cap">${eimgCredit(m)}</div></div>`;
+  })() : '';
+  const wk = wikiLink(p.n, p.w || '', p.q);
+  const ths = p.th.map(t => {
+    const [name, items] = PLACES.threads[t];
+    const rows = items.map(it => {      // in order of date
+      if (typeof it === 'string') { const o = PLBY.get(it); if (!o) return null;
+        return [o.ly, o === p ? `<li class="me"><span class="d">${o.ly}</span><span>${esc(o.n)}</span></li>` : `<li><span class="d">${o.ly}</span><span><button type="button" data-pl="${o.id}">${esc(o.n)}</button></span></li>`]; }
+      const [ci, q] = it, e = CEV && (CEV[ci] || []).find(e => e.q === q); if (!e) return null;
+      return [e.y, `<li><span class="d">${e.y}</span><span><button type="button" data-ce="${ci}:${q}">${esc(e.n)}</button> <span class="in">${esc(CITIES[ci].n)}</span></span></li>`];
+    }).filter(Boolean).sort((a, b) => a[0] - b[0]).map(r => r[1]).join('');
+    return `<div class="pth"><div class="h">${esc(name)}</div><ol>${rows}</ol></div>`;
+  }).join('');
+  return `<button type="button" class="x" aria-label="Close">×</button><div class="nm"><svg viewBox="-10 -10 20 20" aria-hidden="true"><circle r="10"/>${glyph(p.k)}</svg><span>${esc(p.n)}</span></div>` +
+    `<div class="dt">${esc(p.what)}${p.when ? ' · ' + esc(p.when) : ''}</div>${fig}<p class="pnote">${esc(p.note)}</p>` +
+    `<div class="pact"><button type="button" class="seey">See the map in ${p.y}</button>${wk}</div>${ths}` +
+    `<div class="pst">Part of the history of ${p.st.join(' and ')}.</div>`;
+}
+// the place's popup, beside its icon (on a phone, across the bottom of the map)
+function renderPlacePop(m) {
+  const sr = svg.getBoundingClientRect(), mb = $('mapbox').getBoundingClientRect(), p = m.p;
+  if (pop.classList.contains('citycard')) { pop.classList.remove('citycard', 'citysheet'); pop.style.height = ''; delete pop.dataset.anchor; }
+  pop.classList.add('placepop'); pop.style.maxHeight = (mb.height - 2 * PAD) + 'px'; pop.innerHTML = placeHtml(p); pop.dataset.city = ''; pop.setAttribute('aria-label', p.n);
+  pop.querySelector('.x').onclick = ev => { ev.stopPropagation(); selPlace = null; drawCities(); renderPop(); };
+  pop.querySelector('.seey').onclick = ev => {
+    ev.stopPropagation(); stop(); place = { x: p.x, y: p.yk, pl: p.id }; popClosed = false;
+    keepPop = [pop.offsetLeft, pop.offsetTop]; setYear(p.y); keepPop = null;
+    drawPin(); drawDim(); drawLabels(); drawBadges(); drawCities(); renderTimeline(); renderPop();
+  };
+  const pb = pop.querySelector('.pbig'); if (pb) pb.onclick = ev => { ev.stopPropagation(); const q = p.pic;
+    openBig(eimgUrl(q, 1280), q[1], q[2], p.n, p.n, `By ${esc(eimgWho(q))}. ${licHtml({ lic: q[4] })}. File: <a href="${commonsUrl(q[0])}" target="_blank" rel="noopener">${esc(q[0])}</a> on Wikimedia Commons.`); };
+  const pi = pop.querySelector('.pic img:not(.blur)'); if (pi) pi.onerror = () => { const f = pi.closest('.efig'); if (f) f.remove(); };
+  pop.querySelectorAll('[data-pl]').forEach(b => b.onclick = ev => { ev.stopPropagation(); openPlace(b.dataset.pl, true); });
+  pop.querySelectorAll('[data-ce]').forEach(b => b.onclick = ev => { ev.stopPropagation(); const [ci, q] = b.dataset.ce.split(':'); openCityEvent(+ci, q); });
+  const phone = sr.width < 600, w = phone ? sr.width - 2 * PAD : Math.min(330, sr.width - 2 * PAD); pop.style.width = w + 'px';
+  if (keepPop) { pop.hidden = false; const h = pop.offsetHeight; pop.style.left = Math.max(PAD, Math.min(keepPop[0], mb.width - w - PAD)) + 'px'; pop.style.top = Math.max(PAD, Math.min(keepPop[1], mb.height - h - PAD)) + 'px'; return; }
+  pop.style.left = '-9999px'; pop.style.top = '0px'; pop.hidden = false;
+  const h = Math.min(pop.offsetHeight, sr.height - 2 * PAD), ctrl = controlBoxes();
+  const S = m.lb ? [Math.min(m.db[0], m.lb[0]) - 3, Math.min(m.db[1], m.lb[1]) - 3, Math.max(m.db[2], m.lb[2]) + 3, Math.max(m.db[3], m.lb[3]) + 3] : m.db;
+  const others = cityDots.flatMap(o => o.lb ? [o.db, o.lb] : [o.db]).concat(plDots.filter(o => o !== m).map(o => o.db));
+  const G = 10, mx = (S[0] + S[2]) / 2, my = (S[1] + S[3]) / 2;
+  const cands = [[S[2] + G, my - h / 2], [S[2] + G, S[1] - 8], [S[2] + G, S[3] - h + 8], [S[0] - G - w, my - h / 2], [S[0] - G - w, S[1] - 8], [S[0] - G - w, S[3] - h + 8],
+    [mx - w / 2, S[1] - G - h], [mx - w / 2, S[3] + G], ...gridSpots(w, h, 16)];
+  const spot = bestSpot(w, h, cands, r => ovl(r, S) * 1000 + sumOvl(r, ctrl) * 50 + sumOvl(r, others) * 2 + gapTo(r, S) * 3);
+  pop.style.left = (spot[0] + sr.left - mb.left) + 'px'; pop.style.top = (spot[1] + sr.top - mb.top) + 'px';
 }
 // ---------- terrain: shaded relief, rivers and lakes in more detail, and names (terrain.json and relief.webp) ----------
 // Loaded a moment after the page opens. Rivers and lakes come from Natural Earth, which tags each with the zoom level of a
@@ -2127,8 +2308,11 @@ function renderPop() {
   clearTimeout(popTimer); popTimer = 0;
   const fu = focusUnit(), d = cityDots.find(d => d.c.i === selCity);
   if (!d) cardCity = null;      // the city closed: it opens fresh next time
-  if (animating || fu < 0 || (!d && popClosed)) { pop.hidden = true; return; }
-  if (d) return renderCityCard(d);
+  const pm = !d && selPlace != null && plDots.find(m => m.p.id === selPlace);
+  if (animating || (fu < 0 && !pm) || (!d && !pm && popClosed)) { pop.hidden = true; return; }
+  if (d) { if (pop.classList.contains('placepop')) { pop.classList.remove('placepop'); pop.style.maxHeight = ''; } return renderCityCard(d); }
+  if (pm) return renderPlacePop(pm);
+  pop.classList.remove('placepop'); pop.style.maxHeight = '';
   if (pop.classList.contains('citycard')) { pop.classList.remove('citycard', 'citysheet'); pop.style.height = ''; delete pop.dataset.anchor; }
   const sr = svg.getBoundingClientRect(), mb = $('mapbox').getBoundingClientRect();
   const same = d && pop.dataset.city === String(d.c.i) && pop.dataset.tab === popTab && !pop.hidden, hl0 = pop.querySelector('.hlist'), scroll = same && hl0 ? hl0.scrollTop : 0;
@@ -2193,7 +2377,7 @@ function renderPop() {
 }
 // after the view moves: a city popup follows its city at once; a country popup settles once the moving stops
 function queuePop() {
-  if (selCity != null) return renderPop();
+  if (selCity != null || selPlace != null) return renderPop();
   clearTimeout(popTimer); popTimer = setTimeout(renderPop, 90);
 }
 // zoom so the whole highlighted country is on screen, leaving room for its popup
@@ -2234,7 +2418,7 @@ function animateTo(t) {
 // the viewer pans or zooms: the popup has done its job, so it closes (tapping a country or city brings one back)
 function userMoved() {
   popReserve = null;
-  if (selCity != null) { selCity = null; drawCities(); }
+  if (selCity != null || selPlace != null) { selCity = null; selPlace = null; drawCities(); }
   if (focusUnit() >= 0) popClosed = true;
   clearTimeout(popTimer); pop.hidden = true;
 }
@@ -2242,7 +2426,7 @@ function stopAnim() { if (animating) { cancelAnimationFrame(anim); animating = f
 document.addEventListener('keydown', e => {
   if (e.key !== 'Escape') return;
   if (!flagBig.hidden) { closeFlag(); return; }
-  if (selCity != null) { selCity = null; drawCities(); renderPop(); } else if (focusUnit() >= 0 && !popClosed) { popClosed = true; renderPop(); }
+  if (selPlace != null) { selPlace = null; drawCities(); renderPop(); } else if (selCity != null) { selCity = null; drawCities(); renderPop(); } else if (focusUnit() >= 0 && !popClosed) { popClosed = true; renderPop(); }
 });
 // ---------- panel: alternatives ----------
 function renderAlts() {
@@ -2259,14 +2443,14 @@ function renderAlts() {
 let hoverRaf = 0;
 function hover(ev) {
   if (hoverRaf) return;
-  hoverRaf = requestAnimationFrame(() => { hoverRaf = 0; svg.style.cursor = cityAt(ev) || markAt(ev) ? 'pointer' : ''; });
+  hoverRaf = requestAnimationFrame(() => { hoverRaf = 0; svg.style.cursor = cityAt(ev) || markAt(ev) || placeAt(ev) ? 'pointer' : ''; });
 }
 
 // ---------- time controls ----------
 function setYear(y) {
   y = Math.max(Y0, Math.min(Y1, y)); if (y === year) return;
   const pu = focusUnit(); year = y; const G = yearGeo(year);
-  if (pu >= 0 && G && !G.fills.some(g => g.u === pu) && !(place && place.city != null)) { place = null; selCity = null; }   // (a city's popup instead follows whoever holds the city)   // the highlighted country no longer exists: highlight nothing
+  if (pu >= 0 && G && !G.fills.some(g => g.u === pu) && !(place && (place.city != null || place.pl != null))) { place = null; selCity = null; }   // (a city's popup instead follows whoever holds the city)   // the highlighted country no longer exists: highlight nothing
   if (selAlt != null && !altsNow().some(a => a.i === selAlt)) selAlt = null;
   draw();
 }
@@ -2332,6 +2516,6 @@ function preloadNear() {
   nearFor = E; [ERAS[E.i - 1], ERAS[E.i + 1]].forEach(e => e && loadEra(e));
 }
 draw();
-setTimeout(() => { loadEvents(); loadWider(); loadViews(); loadTerrain(); }, 300);      // (the city views early too: a city card opens on them)
+setTimeout(() => { loadEvents(); loadWider(); loadViews(); loadPlaces(); loadTerrain(); }, 300);      // (the city views early too: a city card opens on them)
 })();
 </script>
