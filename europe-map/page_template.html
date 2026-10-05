@@ -1478,7 +1478,7 @@ function flagOf(u, y) {
   const run = (F.desc[row[6]] || []).find(r => r[1] <= y && y <= r[2]);
   return run ? run[0] : -1;
 }
-// the flag, drawn at half the sheet's size
+// the flag, drawn at half the sheet's size (40 px high)
 // (a button that shows it larger, when there is a larger copy)
 function flagHtml(i) {
   if (i < 0) return '';

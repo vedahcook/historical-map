@@ -6,7 +6,7 @@ Inputs, in the current folder:
                      "e": end year or null, "r": rank}, ...]}                       (browser/fetch_flags.js)
   flags_files.json   Commons file -> {"png": base64 thumbnail, "lic": license, "by": author, "url": file page}
   flags_large.json  (optional) Commons file -> [width, height, base64 WebP], larger copies (browser/fetch_flags_large.js)
-Output: flags.webp (each flag 40 px high, at most 80 px wide, twice the size shown), flag-images/ (the larger
+Output: flags.webp (each flag 80 px high, at most 160 px wide, twice the size shown), flag-images/ (the larger
 copies, one file each) and flags_index.json:
   {"sheet": [w, h], "items": [[x, y, w, h], ...], "desc": {index: [[item, first year, last year], ...]},
    "credits": [[file, author, license, file page, license page], ...],   (one per item, in the same order)
@@ -71,7 +71,7 @@ if '--list' in sys.argv:        # just the files needed, for fetching their thum
     json.dump(sorted(used), open('flags_needed.json', 'w'), ensure_ascii=False)
     print(len(used), 'files for', len(desc), 'of', len(plan), 'descriptions'); sys.exit()
 
-H, WMAX, COLS = 40, 80, 24
+H, WMAX, COLS = 80, 160, 24      # (October 4, 2026: doubled from 40 and 80, so the popup's flag can be 40 px high)
 imgs = []
 for f in sorted(used, key=used.get):
     im = Image.open(io.BytesIO(base64.b64decode(files[f]['png']))).convert('RGBA')
