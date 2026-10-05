@@ -1722,12 +1722,12 @@ const evSpan = e => `${e.y}${e.end && e.end > e.y ? '–' + e.end : ''}`;
 // the band's frame: the band, then the years, with the map's year in a red tag among them (the years it would cover
 // are left out) and a red line up through the band. When the year is outside the band's years, its tag waits at that
 // end, pointing the way ("‹ 1350")
-function tlHtml(band, h) {
+function tlHtml(band, h, mark = true) {      // (mark: false leaves out the year's tag and line)
   const ticks = []; for (let t = Math.ceil(TL0 / TLS) * TLS; t <= TL1; t += TLS) ticks.push(t);
-  const out = year < TL0 ? -1 : year > TL1 ? 1 : 0, f = out < 0 ? 0 : out > 0 ? 1 : cX(year) / CW;
+  const out = year < TL0 ? -1 : year > TL1 ? 1 : 0, f = !mark ? -1 : out < 0 ? 0 : out > 0 ? 1 : cX(year) / CW;
   const tick = t => { const x = cX(t) / CW; return Math.abs(x - f) < 0.1 ? '' : `<span${x < 0.05 ? ' class="first"' : x > 0.95 ? ' class="last"' : ''} style="left:${cpct(t)}">${t}</span>`; };
   return `<div class="tl"><div class="band" style="height:${h}px">${band}</div><div class="axis" aria-hidden="true">${ticks.map(tick).join('')}</div>` +
-    (out ? `<span class="nowtag out ${out < 0 ? 'l' : 'r'}" style="left:${out < 0 ? '0' : '100%'}">${out < 0 ? `‹ ${year}` : `${year} ›`}</span>`
+    (!mark ? '' : out ? `<span class="nowtag out ${out < 0 ? 'l' : 'r'}" style="left:${out < 0 ? '0' : '100%'}">${out < 0 ? `‹ ${year}` : `${year} ›`}</span>`
       : `<span class="nowline" style="left:${cpct(year)}"></span><span class="nowtag${f < 0.06 ? ' l' : f > 0.94 ? ' r' : ''}" style="left:${cpct(year)}">${year}</span>`) + `</div>`;
 }
 // event pictures (event-images.json): the picture Wikidata gives for an event, shown straight from Wikimedia Commons.
@@ -1882,8 +1882,8 @@ function popPanel(c, p) {
 }
 const popBig = p => p.k === 'fig' ? fmt(p.v) : p.k === 'none' || p.k === 'gap' ? '—' : 'about ' + fmt(round3(p.v));
 const TABS = [['views', 'Pictures'], ['ev', 'Events'], ['held', 'Held by'], ['pop', 'Population']];
-// the Pictures tab: a band with the city's period views at their years (the one shown is marked), a box with the
-// picture and, under it, what it shows, who made it and its credit, then every picture in turn
+// the Pictures tab: a band with the city's period views at their years (the one shown is marked), and a box with the
+// picture and, under it, what it shows, who made it and its credit (no list: the band is the list)
 function picsTab(c) {
   const views = CVIEWS ? CVIEWS[c.i] || [] : null, pk = views && views.includes(cardPick.views) ? cardPick.views : null;
   const v = views ? pk || pickView(views, year) : null;
@@ -1896,10 +1896,9 @@ function picsTab(c) {
     return `<button type="button" class="ev pv${x === v ? ' sel' : ''}" data-p="v:${views.indexOf(x)}" style="left:${cpct(x.y)};top:${r * 21}px" title="${esc(x.what)}, ${esc(x.lab)}" aria-label="${esc(x.what)}, ${esc(x.lab)}">${cico('picture')}</button>`;
   }).join('');
   const detail = `<div class="detail vcard">${picHtml(c, views, v)}` + (v ? `<div class="cap"><b>${esc(v.what)}</b><span class="cr">${esc(v.who)}, ${esc(v.lab)}. ${licHtml(v)}, <a href="${commonsUrl(v.f)}" target="_blank" rel="noopener">Wikimedia Commons</a>.</span></div>` : '') + `</div>`;
-  const list = (views || []).map((x, i) => `<li role="button" tabindex="0" data-p="v:${i}"${x === v ? ' class="on"' : ''}>${cico('picture')}<span>${esc(x.what)} <span class="d">${esc(x.lab)}</span></span></li>`).join('');
-  return { band, h: rows * 21 + 3, detail, list, foot: '' };
+  return { band, h: rows * 21 + 3, detail, list: '', foot: '' };
 }
-// the card: header, the four tabs, the open tab. Pictures: band, the picture's box, list. Events: band, the event's box
+// the card: header, the four tabs, the open tab. Pictures: band, the picture's box. Events: band, the event's box
 // (with its picture), list. Held by and Population: box, band, list. The tab's credits come last
 function cardHtml(d) {
   const c = d.c, p = d.p;
@@ -1907,9 +1906,9 @@ function cardHtml(d) {
   const tabs = `<div class="ctabs" role="tablist" aria-label="${esc(c.n)}">` + TABS.map(([k, t]) => `<button type="button" role="tab" data-t="${k}" aria-selected="${cardTab === k}">${t}</button>`).join('') + `</div>`;
   let body, B; cardShownEv = null;
   if (cardTab === 'views') { B = picsTab(c); body = `${tlHtml(B.band, B.h)}${B.detail}`; }
-  else if (cardTab === 'ev') { B = eventsPanel(c); cardShownEv = B.last; body = `${tlHtml(B.band, B.h)}${B.detail}`; }
+  else if (cardTab === 'ev') { B = eventsPanel(c); cardShownEv = B.last; body = `${tlHtml(B.band, B.h, false)}${B.detail}`; }      // (no year marker on Events)
   else { B = cardTab === 'held' ? heldTab(c) : popPanel(c, p); body = `${B.detail}${tlHtml(B.band, cardTab === 'held' ? 32 : PH)}`; }
-  return `<div class="ccard">${head}${tabs}${body}<div class="scroll" data-tab="${cardTab}"><ul class="tlist ${cardTab}">${B.list}</ul><div class="credit">${B.foot || ''}</div></div></div>`;
+  return `<div class="ccard">${head}${tabs}${body}` + (B.list || B.foot ? `<div class="scroll" data-tab="${cardTab}"><ul class="tlist ${cardTab}">${B.list}</ul><div class="credit">${B.foot || ''}</div></div>` : '') + `</div>`;
 }
 let cardShownEv = null;
 // the card drawn again where it is
@@ -1982,8 +1981,8 @@ function renderCityCard(d) {
     const tb = pop.querySelector('.detail .t b[data-dates]'), nm = tb && tb.querySelector('.enm');
     if (nm && tb.clientWidth) for (const s of tb.dataset.dates.split('|')) { tb.querySelector('.cdt').textContent = s; if (nm.scrollWidth <= nm.clientWidth) break; }
   };
-  const scrollLists = () => pop.querySelectorAll('.scroll[data-tab]').forEach(list => {      // where it was; the year's row in view (not every figure's)
-    const on = list.querySelector('li.on:not(.fig)'); list.scrollTop = cardScroll[list.dataset.tab] || 0;
+  const scrollLists = () => pop.querySelectorAll('.scroll[data-tab]').forEach(list => {      // where it was; the picked row, or the year's, in view (a figure only when picked)
+    const on = list.querySelector(cardPick.pop ? 'li.on' : 'li.on:not(.fig)'); list.scrollTop = cardScroll[list.dataset.tab] || 0;
     if (on && (on.offsetTop < list.scrollTop || on.offsetTop + on.offsetHeight > list.scrollTop + list.clientHeight)) list.scrollTop = on.offsetTop - list.clientHeight / 2;
   });
   if (phone) { scrollLists(); fitDates(); return; }
