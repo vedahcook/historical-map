@@ -1691,12 +1691,14 @@ function cardEvents(c) {
   const z = all.length ? zoomRange(all[0].y, Math.max(...all.map(e => e.end || e.y))) : ZFULL;
   return evCache[c.i] = { all, z, bands: {} };
 }
-// the events drawn on the band at its present zoom: the most written-about ones that fit in four rows
+// the events drawn on the band at its present zoom: the first and the last (so the band spans them all, as its zoom
+// does), then the most written-about ones that fit in four rows
 function evBand(E) {
   const key = TL0 + '-' + TL1; if (E.bands[key]) return E.bands[key];
-  const GAP = 21 / 350 * (TL1 - TL0), band = [], inR = E.all.filter(e => e.y >= TL0 && e.y <= TL1);
+  const GAP = 21 / 350 * (TL1 - TL0), inR = E.all.filter(e => e.y >= TL0 && e.y <= TL1);
+  const band = inR.length > 1 ? [inR[0], inR[inR.length - 1]] : inR.slice();
   const fits = evs => { const rowEnd = []; for (const e of [...evs].sort((a, b) => a.y - b.y)) { const r = rowEnd.findIndex(y => e.y - y >= GAP); if (r < 0) { if (rowEnd.length >= 4) return false; rowEnd.push(e.y); } else rowEnd[r] = e.y; } return true; };
-  for (const e of [...inR].sort((a, b) => b.sl - a.sl)) { if (fits([...band, e])) band.push(e); if (band.length >= 16) break; }
+  for (const e of [...inR].sort((a, b) => b.sl - a.sl)) { if (band.includes(e)) continue; if (fits([...band, e])) band.push(e); if (band.length >= 16) break; }
   return E.bands[key] = band.sort((a, b) => a.y - b.y);
 }
 const MON = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
