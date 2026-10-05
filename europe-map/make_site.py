@@ -31,7 +31,7 @@ page = f'''<!doctype html>
 if os.path.exists(OUT): shutil.rmtree(OUT)
 os.makedirs(OUT)
 open(f'{OUT}/index.html', 'w', encoding='utf-8').write(page)
-for f in sorted(glob.glob('europe-borders-[0-9]*.json')) + ['flags.webp', 'relief.webp', 'terrain.json', 'city-events.json', 'city-people.json', 'city-views.json', 'event-images.json', 'wider-events.json', 'places.json']: shutil.copy(f, OUT)   # the earlier eras' maps, terrain, events, people, city views, event pictures
+for f in sorted(glob.glob('europe-borders-[0-9]*.json')) + ['flags.webp', 'relief.webp', 'terrain.json', 'city-events.json', 'city-people.json', 'city-views.json', 'event-images.json', 'wider-events.json'] + (['places.json'] if TEST else []): shutil.copy(f, OUT)   # the earlier eras' maps, terrain, events, people, city views, event pictures; the landmark places only in the test copy while they are a trial (without the file the live map shows none)
 shutil.copytree('flag-images', f'{OUT}/flag-images')
 # the city views' pictures (about 3,300 files, 460 MB) are not in the repository: they stay on the published site, in
 # views/, and deploy_site.sh keeps them; a test copy (in test/) reads them from the live site's folder
