@@ -198,6 +198,16 @@ button, select, input { font: inherit; color: inherit; }
 .mappop.placepop .pth li.me { font-weight: 600; }
 .mappop.placepop .pth li .in { color: var(--muted); }
 .mappop.placepop .pst { margin-top: 9px; font-size: 0.75rem; color: var(--muted); }
+.mappop.placepop .pth .h { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.mappop.placepop .pth .steps { display: flex; align-items: center; gap: 2px; font-weight: 400; color: var(--muted); font-size: 0.75rem; }
+.mappop.placepop .pth .step { font: inherit; font-size: 1rem; line-height: 1; width: 26px; height: 24px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 6px; cursor: pointer; }
+.mappop.placepop .pth .step:disabled { opacity: 0.35; cursor: default; }
+.mappop.placepop .pth .of { padding: 0 4px; font-variant-numeric: tabular-nums; }
+.plring { fill: none; stroke: var(--accent); pointer-events: none; }
+/* on a phone, a place's or a country's popup is a panel that slides up from the bottom, like the city card */
+.mappop.psheet { display: flex; flex-direction: column; max-height: none; overflow: hidden; }
+.mappop.psheet .sbody { flex: 0 1 auto; overflow-y: auto; overscroll-behavior: contain; display: block; touch-action: pan-y; padding: 3px 16px 18px; position: relative; }
+.mappop.psheet .x { top: 0; right: 8px; background: var(--sunk); width: 34px; height: 34px; }
 .elbl.off { opacity: 0.5; }
 .legend .kinds { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 10px; }
 .legend .kinds span { display: flex; align-items: center; gap: 6px; font-size: 0.8rem; }
@@ -982,13 +992,13 @@ function click(ev) {
   const mk = markAt(ev);                                  // an event's icon
   if (mk) { openEvent(mk); return; }
   const pm = placeAt(ev);                                  // a place (its icon or its name)
-  if (pm) { if (selPlace === pm.p.id) { selPlace = null; drawCities(); renderPop(); } else openPlace(pm.p.id); return; }
+  if (pm) { if (selPlace === pm.p.id && !plItem) closePlace(); else openPlace(pm.p.id); return; }
   const c = cityAt(ev);                                   // a city (its dot or its name) comes next
   if (c) { selPlace = null; selCity = selCity === c.i ? null : c.i; popEv = null; drawCities(); renderPop(); return; }
   const f = regionAt(x, y);
   const u = f ? uAt(f, year) : -1, cur = focusUnit();
-  if ((selCity != null || selPlace != null) && f && u === cur) { selCity = null; selPlace = null; drawCities(); renderPop(); return; }   // first tap inside the country just closes the city or place
-  selCity = null; selPlace = null;
+  if ((selCity != null || selPlace != null) && f && u === cur) { selCity = null; selPlace = null; plItem = null; drawCities(); renderPop(); return; }   // first tap inside the country just closes the city or place
+  selCity = null; selPlace = null; plItem = null;
   if (!f || (place && u === cur)) place = null;          // tapping the highlighted country again, or the sea, clears it
   else { place = { x, y, s: f.properties.s, E: curEra() }; popClosed = false; }
   if (!f && selAlt != null) { selAlt = null; drawAlts(); renderAlts(); }   // the sea also clears a picked alternative border
@@ -1353,68 +1363,84 @@ function drawPlaces(marks, taken) {
     const t = el('text', { x: (shown[0] + tx / k).toFixed(2), y: (shown[1] + (s[1] + h / 2) / k).toFixed(2), class: 'plbl' + (on ? ' on' : ''), 'text-anchor': s[2] }, g);
     t.setAttribute('style', `font-size:${(fs / k).toFixed(2)}px;stroke-width:${(3 / k).toFixed(2)}px`); t.textContent = m.p.n;
   }
+  if (selPlace != null) drawItemRing();
 }
 // the place (its icon or its name) under the pointer
 function placeAt(ev) {
   const sr = svg.getBoundingClientRect(), px = ev.clientX - sr.left, py = ev.clientY - sr.top;
   return plDots.find(m => Math.hypot(m.sx - px, m.sy - py) <= PR + 4 || (m.lb && px >= m.lb[0] - 3 && px <= m.lb[2] + 3 && py >= m.lb[1] - 3 && py <= m.lb[3] + 3)) || null;
 }
-// open a place's popup (from the map, or from another place's thread: the map then moves to show it)
-function openPlace(id, fromList) {
+// open a place's popup from the map (it starts on the place itself)
+function openPlace(id) {
   const p = PLBY && PLBY.get(id); if (!p) return;
-  selPlace = id; selCity = null; popClosed = false;
-  const k = pxPerKm(), r = svg.getBoundingClientRect(), sx = (p.x - shown[0]) * k, sy = (p.yk - shown[1]) * k;
-  if (fromList && (sx < 60 || sy < 60 || sx > r.width - 60 || sy > r.height - 60)) { drawCities(); animateTo([p.x - shown[2] / 2, p.yk - shown[3] / 2, shown[2], shown[3]]); return; }
+  selPlace = id; plItem = null; plThread = null; sheetDetent = 'full'; selCity = null; popClosed = false;
   drawCities(); renderPop();
 }
-// a city's event from a thread: the city's card opens on it (the map moves to the city, and follows whoever held it)
-function openCityEvent(ci, q) {
-  const c = CITIES[ci], e = CEV && (CEV[ci] || []).find(e => e.q === q); if (!c || !e) return;
-  stop(); selPlace = null; popTab = 'ev'; popEv = e; cardPending = { tab: 'ev', e };
-  place = { x: c.x, y: c.y, city: ci }; selCity = ci; popClosed = false;
-  drawPin(); drawDim(); drawLabels(); drawBadges(); drawCities(); renderTimeline();
-  const k = pxPerKm(), r = svg.getBoundingClientRect(), sx = (c.x - shown[0]) * k, sy = (c.y - shown[1]) * k;
-  if (sx < 40 || sy < 40 || sx > r.width - 40 || sy > r.height - 40) animateTo([c.x - shown[2] / 2, c.y - shown[3] / 2, shown[2], shown[3]]); else renderPop();
+// What the popup shows: the place it was opened on, or an item picked from one of its threads (another place, or a
+// city's event). Picking from a thread never leaves the popup or moves the map (Veda, October 5): the item's details
+// replace the top of the popup, the thread stays below it with the item marked, and a ring marks the item on the map.
+let plItem = null, plThread = null;      // {pl: place id} or {ci: city index, q: Wikidata id}; the thread it was picked from
+const itemKey = it => it.pl ? 'pl:' + it.pl : `ce:${it.ci}:${it.q}`;
+function itemInfo(it) {
+  if (it.pl) {
+    const o = PLBY.get(it.pl); if (!o) return null;
+    return { n: o.n, k: o.k, sub: esc(o.what) + (o.when ? ' · ' + esc(o.when) : ''), pic: o.pic, note: o.note, y: o.y, ly: o.ly, wk: wikiLink(o.n, o.w || '', o.q), x: o.x, yk: o.yk, th: o.th, st: o.st };
+  }
+  const e = CEV && (CEV[it.ci] || []).find(e => e.q === it.q), c = CITIES[it.ci]; if (!e || !c) return null;
+  return { n: e.n, k: e.k, sub: `${esc(c.n)} · ${e.end && e.end > e.y ? evSpan(e) : evWhen(e)}`, pic: eimgOf(e), note: enoteOf(e), y: e.y, ly: e.y, wk: wikiLink(e.n, e.t, e.q), x: c.x, yk: c.y, th: [], ci: it.ci };
 }
+// a thread's items in order of date: [{it, info}]
+const threadItems = t => PLACES.threads[t][1].map(x => typeof x === 'string' ? { pl: x } : { ci: x[0], q: x[1] }).map(it => ({ it, info: itemInfo(it) })).filter(r => r.info)
+  .sort((a, b) => a.info.ly - b.info.ly);
 function placeHtml(p) {
-  const fig = p.pic ? (() => {
-    const m = p.pic, tall = m[2] / m[1] > 0.7, a = eimgUrl(m, 500), b = eimgUrl(m, 960);
-    const img = `<img loading="lazy"${tall ? ' class="fit"' : ''} src="${a}"${b !== a ? ` srcset="${a} ${Math.min(500, m[1])}w, ${b} ${Math.min(960, m[1])}w" sizes="(max-width: 600px) 100vw, 330px"` : ''} alt="${esc(p.n)}">`;
+  const it = plItem || { pl: p.id }, I = itemInfo(it) || itemInfo({ pl: p.id }), key = itemKey(it);
+  const fig = I.pic ? (() => {
+    const m = I.pic, tall = m[2] / m[1] > 0.7, a = eimgUrl(m, 500), b = eimgUrl(m, 960);
+    const img = `<img loading="lazy"${tall ? ' class="fit"' : ''} src="${a}"${b !== a ? ` srcset="${a} ${Math.min(500, m[1])}w, ${b} ${Math.min(960, m[1])}w" sizes="(max-width: 600px) 100vw, 330px"` : ''} alt="${esc(I.n)}">`;
     return `<div class="efig"><div class="pic"><button type="button" class="pbig" aria-label="Show the whole picture">${tall ? `<img class="blur" loading="lazy" src="${eimgUrl(m, 250)}" alt="" aria-hidden="true">` : ''}${img}</button></div><div class="cap">${eimgCredit(m)}</div></div>`;
   })() : '';
-  const wk = wikiLink(p.n, p.w || '', p.q);
-  const ths = p.th.map(t => {
-    const [name, items] = PLACES.threads[t];
-    const rows = items.map(it => {      // in order of date
-      if (typeof it === 'string') { const o = PLBY.get(it); if (!o) return null;
-        return [o.ly, o === p ? `<li class="me"><span class="d">${o.ly}</span><span>${esc(o.n)}</span></li>` : `<li><span class="d">${o.ly}</span><span><button type="button" data-pl="${o.id}">${esc(o.n)}</button></span></li>`]; }
-      const [ci, q] = it, e = CEV && (CEV[ci] || []).find(e => e.q === q); if (!e) return null;
-      return [e.y, `<li><span class="d">${e.y}</span><span><button type="button" data-ce="${ci}:${q}">${esc(e.n)}</button> <span class="in">${esc(CITIES[ci].n)}</span></span></li>`];
-    }).filter(Boolean).sort((a, b) => a[0] - b[0]).map(r => r[1]).join('');
-    return `<div class="pth"><div class="h">${esc(name)}</div><ol>${rows}</ol></div>`;
+  const ths = [...new Set([plThread, ...(I.th || [])].filter(Boolean))].map(t => {
+    const rows = threadItems(t), at = rows.findIndex(r => itemKey(r.it) === key);
+    const step = (d, s) => `<button type="button" class="step" data-th="${t}" data-go="${at + d}"${at < 0 || !rows[at + d] ? ' disabled' : ''} aria-label="${d < 0 ? 'Earlier' : 'Later'}">${s}</button>`;
+    const li = rows.map(r => itemKey(r.it) === key ? `<li class="me"><span class="d">${r.info.ly}</span><span>${esc(r.info.n)}${r.it.ci != null ? ` <span class="in">${esc(CITIES[r.it.ci].n)}</span>` : ''}</span></li>`
+      : `<li><span class="d">${r.info.ly}</span><span><button type="button" data-th="${t}" data-it="${itemKey(r.it)}">${esc(r.info.n)}</button>${r.it.ci != null ? ` <span class="in">${esc(CITIES[r.it.ci].n)}</span>` : ''}</span></li>`).join('');
+    return `<div class="pth"><div class="h"><span>${esc(PLACES.threads[t][0])}</span>${at >= 0 ? `<span class="steps">${step(-1, '‹')}<span class="of">${at + 1} of ${rows.length}</span>${step(1, '›')}</span>` : ''}</div><ol>${li}</ol></div>`;
   }).join('');
-  return `<button type="button" class="x" aria-label="Close">×</button><div class="nm"><svg viewBox="-10 -10 20 20" aria-hidden="true"><circle r="10"/>${glyph(p.k)}</svg><span>${esc(p.n)}</span></div>` +
-    `<div class="dt">${esc(p.what)}${p.when ? ' · ' + esc(p.when) : ''}</div>${fig}<p class="pnote">${esc(p.note)}</p>` +
-    `<div class="pact"><button type="button" class="seey">See the map in ${p.y}</button>${wk}</div>${ths}` +
-    `<div class="pst">Part of the history of ${p.st.join(' and ')}.</div>`;
+  return `<button type="button" class="x" aria-label="Close">×</button><div class="nm"><svg viewBox="-10 -10 20 20" aria-hidden="true"><circle r="10"/>${glyph(I.k)}</svg><span>${esc(I.n)}</span></div>` +
+    `<div class="dt">${I.sub}</div>${fig}${I.note ? `<p class="pnote">${esc(I.note)}</p>` : ''}` +
+    `<div class="pact"><button type="button" class="seey">See the map in ${I.y}</button>${I.wk}</div>${ths}` +
+    (I.st ? `<div class="pst">Part of the history of ${I.st.join(' and ')}.</div>` : '');
 }
-// the place's popup, beside its icon (on a phone, across the bottom of the map)
+// the place's popup: beside its icon, or on a phone a panel that slides up from the bottom
 function renderPlacePop(m) {
-  const sr = svg.getBoundingClientRect(), mb = $('mapbox').getBoundingClientRect(), p = m.p;
-  if (pop.classList.contains('citycard')) { pop.classList.remove('citycard', 'citysheet'); pop.style.height = ''; delete pop.dataset.anchor; }
-  pop.classList.add('placepop'); pop.style.maxHeight = (mb.height - 2 * PAD) + 'px'; pop.innerHTML = placeHtml(p); pop.dataset.city = ''; pop.setAttribute('aria-label', p.n);
-  pop.querySelector('.x').onclick = ev => { ev.stopPropagation(); selPlace = null; drawCities(); renderPop(); };
-  pop.querySelector('.seey').onclick = ev => {
-    ev.stopPropagation(); stop(); place = { x: p.x, y: p.yk, pl: p.id }; popClosed = false;
-    keepPop = [pop.offsetLeft, pop.offsetTop]; setYear(p.y); keepPop = null;
+  const sr = svg.getBoundingClientRect(), mb = $('mapbox').getBoundingClientRect(), p = m.p, phone = innerWidth <= 600;
+  if (pop.classList.contains('citycard')) { pop.classList.remove('citycard'); pop.style.height = ''; delete pop.dataset.anchor; }
+  const it = plItem || { pl: p.id }, I = itemInfo(it);
+  if (I && it.ci != null) { loadEventImages(); loadEventNotes(); }
+  const subject = 'pl:' + p.id, keepScroll = pop.dataset.subject === subject && !pop.hidden;
+  pop.classList.add('placepop'); pop.classList.toggle('citysheet', phone); pop.classList.toggle('psheet', phone);
+  pop.dataset.subject = subject; pop.dataset.city = '';
+  pop.innerHTML = phone ? `<button type="button" class="grab" aria-label="${sheetDetent === 'full' ? 'Show the map' : 'Show more'}"><span></span></button><div class="sbody">${placeHtml(p)}</div>` : placeHtml(p);
+  pop.setAttribute('aria-label', I ? I.n : p.n);
+  const body = phone ? pop.querySelector('.sbody') : pop;
+  pop.querySelector('.x').onclick = ev => { ev.stopPropagation(); closePlace(); };
+  pop.querySelector('.seey').onclick = ev => {      // the map in the item's year, highlighting whoever held the item's spot
+    ev.stopPropagation(); if (!I) return; stop(); place = it.ci != null ? { x: I.x, y: I.yk, city: it.ci } : { x: I.x, y: I.yk, pl: it.pl }; popClosed = false;
+    keepPop = [pop.offsetLeft, pop.offsetTop]; setYear(I.y); keepPop = null;
     drawPin(); drawDim(); drawLabels(); drawBadges(); drawCities(); renderTimeline(); renderPop();
   };
-  const pb = pop.querySelector('.pbig'); if (pb) pb.onclick = ev => { ev.stopPropagation(); const q = p.pic;
-    openBig(eimgUrl(q, 1280), q[1], q[2], p.n, p.n, `By ${esc(eimgWho(q))}. ${licHtml({ lic: q[4] })}. File: <a href="${commonsUrl(q[0])}" target="_blank" rel="noopener">${esc(q[0])}</a> on Wikimedia Commons.`); };
+  const pb = pop.querySelector('.pbig'); if (pb && I && I.pic) pb.onclick = ev => { ev.stopPropagation(); const q = I.pic;
+    openBig(eimgUrl(q, 1280), q[1], q[2], I.n, I.n, `By ${esc(eimgWho(q))}. ${licHtml({ lic: q[4] })}. File: <a href="${commonsUrl(q[0])}" target="_blank" rel="noopener">${esc(q[0])}</a> on Wikimedia Commons.`); };
   const pi = pop.querySelector('.pic img:not(.blur)'); if (pi) pi.onerror = () => { const f = pi.closest('.efig'); if (f) f.remove(); };
-  pop.querySelectorAll('[data-pl]').forEach(b => b.onclick = ev => { ev.stopPropagation(); openPlace(b.dataset.pl, true); });
-  pop.querySelectorAll('[data-ce]').forEach(b => b.onclick = ev => { ev.stopPropagation(); const [ci, q] = b.dataset.ce.split(':'); openCityEvent(+ci, q); });
-  const phone = sr.width < 600, w = phone ? sr.width - 2 * PAD : Math.min(330, sr.width - 2 * PAD); pop.style.width = w + 'px';
+  const pick = (t, k) => {      // an item from a thread: shown here, the popup stays where it is
+    const [kind, a, b] = k.split(':'); plItem = kind === 'pl' ? (a === p.id ? null : { pl: a }) : { ci: +a, q: b }; plThread = t;
+    keepPop = [pop.offsetLeft, pop.offsetTop]; drawCities(); keepPop = null;
+    const nb = pop.classList.contains('psheet') ? pop.querySelector('.sbody') : pop; if (nb) nb.scrollTop = 0;
+  };
+  pop.querySelectorAll('[data-it]').forEach(b => b.onclick = ev => { ev.stopPropagation(); pick(b.dataset.th, b.dataset.it); });
+  pop.querySelectorAll('.step').forEach(b => b.onclick = ev => { ev.stopPropagation(); const r = threadItems(b.dataset.th)[+b.dataset.go]; if (r) pick(b.dataset.th, itemKey(r.it)); });
+  if (phone) { if (!keepScroll) body.scrollTop = 0; pop.style.left = pop.style.top = pop.style.width = pop.style.maxHeight = ''; pop.hidden = false; sizeSheet(); return; }
+  const w = Math.min(330, sr.width - 2 * PAD); pop.style.width = w + 'px'; pop.style.height = ''; pop.style.maxHeight = (mb.height - 2 * PAD) + 'px';
   if (keepPop) { pop.hidden = false; const h = pop.offsetHeight; pop.style.left = Math.max(PAD, Math.min(keepPop[0], mb.width - w - PAD)) + 'px'; pop.style.top = Math.max(PAD, Math.min(keepPop[1], mb.height - h - PAD)) + 'px'; return; }
   pop.style.left = '-9999px'; pop.style.top = '0px'; pop.hidden = false;
   const h = Math.min(pop.offsetHeight, sr.height - 2 * PAD), ctrl = controlBoxes();
@@ -1425,6 +1451,14 @@ function renderPlacePop(m) {
     [mx - w / 2, S[1] - G - h], [mx - w / 2, S[3] + G], ...gridSpots(w, h, 16)];
   const spot = bestSpot(w, h, cands, r => ovl(r, S) * 1000 + sumOvl(r, ctrl) * 50 + sumOvl(r, others) * 2 + gapTo(r, S) * 3);
   pop.style.left = (spot[0] + sr.left - mb.left) + 'px'; pop.style.top = (spot[1] + sr.top - mb.top) + 'px';
+}
+function closePlace() { selPlace = null; plItem = null; plThread = null; drawCities(); renderPop(); }
+// the item picked from a thread, ringed on the map (when it is on screen and not the place itself)
+function drawItemRing() {
+  const it = plItem, I = it && itemInfo(it), k = pxPerKm(); if (!I || !k) return;
+  const sx = (I.x - shown[0]) * k, sy = (I.yk - shown[1]) * k, r = svg.getBoundingClientRect();
+  if (sx < 0 || sy < 0 || sx > r.width || sy > r.height) return;
+  el('circle', { class: 'plring', cx: I.x, cy: I.yk, r: ((PR + 6) / k).toFixed(3), 'stroke-width': (2.5 / k).toFixed(3) }, $('places'));
 }
 // ---------- terrain: shaded relief, rivers and lakes in more detail, and names (terrain.json and relief.webp) ----------
 // Loaded a moment after the page opens. Rivers and lakes come from Natural Earth, which tags each with the zoom level of a
@@ -2215,6 +2249,7 @@ function renderCityCard(d) {
   const phone = innerWidth <= 600;
   if (pop.classList.contains('citycard') && pop.dataset.city === String(c.i)) pop.querySelectorAll('.scroll[data-tab]').forEach(s => { cardScroll[s.dataset.tab] = s.scrollTop; });
   if (!pop.classList.contains('citycard')) { pop.style.left = '-9999px'; delete pop.dataset.anchor; }
+  pop.classList.remove('placepop', 'psheet'); pop.style.maxHeight = ''; delete pop.dataset.subject;
   pop.classList.add('citycard'); pop.classList.toggle('citysheet', phone);
   const w = Math.min(380, sr.width - 2 * PAD), h = Math.min(750, mb.height - 2 * PAD);
   if (phone) pop.style.left = pop.style.top = pop.style.width = ''; else { pop.style.width = w + 'px'; pop.style.height = h + 'px'; }
@@ -2251,14 +2286,31 @@ function renderCityCard(d) {
 }
 // the phone's sheet: full (where it opens), the header and tabs only (so the map shows), closed. Drag the bar or the
 // header, or tap the bar
+// A place's or a country's panel (psheet) has its own sizes: as tall as what it holds (at most 92% of the screen), or
+// just its name; closing it closes the place, or the country's popup
+let sheetDetent = 'full';
+const isPsheet = () => pop.classList.contains('psheet');
 function sizeSheet() {
   if (!pop.classList.contains('citysheet')) return;
-  const H = innerHeight, tb = pop.querySelector('.sbody .ctabs');
-  const peek = tb ? tb.getBoundingClientRect().bottom - pop.getBoundingClientRect().top + 10 : 160;
-  pop.style.height = (cardDetent === 'peek' ? Math.min(H * 0.92, peek) : Math.round(H * 0.92)) + 'px';
-  const g = pop.querySelector(':scope > .grab'); if (g) g.setAttribute('aria-label', cardDetent === 'full' ? 'Show the map' : 'Show more');
+  const H = innerHeight, ps = isPsheet(), det = ps ? sheetDetent : cardDetent;
+  if (ps) {
+    const nm = pop.querySelector('.sbody .nm'), was = pop.style.height;
+    pop.classList.add('drag'); pop.style.height = 'auto'; const full = Math.min(H * 0.92, pop.offsetHeight);      // (measured at its natural height)
+    const peek = nm ? nm.getBoundingClientRect().bottom - pop.getBoundingClientRect().top + 14 : 90;
+    pop.style.height = was; void pop.offsetHeight; pop.classList.remove('drag');
+    pop.style.height = Math.round(det === 'peek' ? Math.min(full, peek) : full) + 'px';
+  } else {
+    const tb = pop.querySelector('.sbody .ctabs');
+    const peek = tb ? tb.getBoundingClientRect().bottom - pop.getBoundingClientRect().top + 10 : 160;
+    pop.style.height = (det === 'peek' ? Math.min(H * 0.92, peek) : Math.round(H * 0.92)) + 'px';
+  }
+  const g = pop.querySelector(':scope > .grab'); if (g) g.setAttribute('aria-label', det === 'full' ? 'Show the map' : 'Show more');
 }
 function setDetent(dt) {
+  if (isPsheet()) {
+    if (dt === 'closed') { if (selPlace != null) return closePlace(); popClosed = true; return renderPop(); }
+    sheetDetent = dt; return sizeSheet();
+  }
   if (dt === 'closed') return closeCard();
   cardDetent = dt; sizeSheet();
 }
@@ -2266,7 +2318,7 @@ let sdrag = null;
 pop.addEventListener('pointerdown', ev => {
   if (!pop.classList.contains('citysheet')) return;
   if (ev.target.closest('button:not(.grab), a, .band, .scroll, .detail')) return;
-  if (cardDetent === 'full' && !ev.target.closest('.grab, .chead')) return;
+  if ((isPsheet() ? sheetDetent : cardDetent) === 'full' && !ev.target.closest('.grab, .chead, .nm')) return;
   sdrag = { y: ev.clientY, h: pop.offsetHeight, moved: false, grab: !!ev.target.closest('.grab') };
   pop.setPointerCapture(ev.pointerId); pop.classList.add('drag');
 });
@@ -2278,12 +2330,13 @@ pop.addEventListener('pointermove', ev => {
 const endSheetDrag = ev => {
   if (!sdrag) return;
   const dy = ev.clientY - sdrag.y, tap = !sdrag.moved, grab = sdrag.grab; sdrag = null; pop.classList.remove('drag');
-  if (tap) return setDetent(grab ? (cardDetent === 'full' ? 'peek' : 'full') : cardDetent === 'peek' ? 'full' : cardDetent);
-  setDetent(dy > 70 ? (cardDetent === 'full' ? 'peek' : 'closed') : dy < -70 ? 'full' : cardDetent);
+  const det = isPsheet() ? sheetDetent : cardDetent;
+  if (tap) return setDetent(grab ? (det === 'full' ? 'peek' : 'full') : det === 'peek' ? 'full' : det);
+  setDetent(dy > 70 ? (det === 'full' ? 'peek' : 'closed') : dy < -70 ? 'full' : det);
 };
 pop.addEventListener('pointerup', endSheetDrag); pop.addEventListener('pointercancel', endSheetDrag);
 pop.addEventListener('click', ev => {      // the bar from the keyboard
-  const g = ev.target.closest('.grab'); if (g && ev.detail === 0) setDetent(cardDetent === 'full' ? 'peek' : 'full');
+  const g = ev.target.closest('.grab'); if (g && ev.detail === 0) { const det = isPsheet() ? sheetDetent : cardDetent; setDetent(det === 'full' ? 'peek' : 'full'); }
 });
 addEventListener('resize', sizeSheet);
 // the whole picture, with its full credit
@@ -2317,6 +2370,16 @@ function renderPop() {
   if (pm) return renderPlacePop(pm);
   pop.classList.remove('placepop'); pop.style.maxHeight = '';
   if (pop.classList.contains('citycard')) { pop.classList.remove('citycard', 'citysheet'); pop.style.height = ''; delete pop.dataset.anchor; }
+  if (innerWidth <= 600) {      // a phone: the country's popup slides up from the bottom
+    const subject = 'u:' + fu; if (pop.dataset.subject !== subject) sheetDetent = 'full';
+    pop.classList.add('citysheet', 'psheet'); pop.dataset.subject = subject; pop.dataset.city = '';
+    pop.innerHTML = `<button type="button" class="grab" aria-label="${sheetDetent === 'full' ? 'Show the map' : 'Show more'}"><span></span></button><div class="sbody">${countryHtml(fu)}</div>`;
+    pop.setAttribute('aria-label', nameOf(fu, year));
+    pop.querySelector('.x').onclick = ev => { ev.stopPropagation(); popClosed = true; renderPop(); };
+    const fb = pop.querySelector('button.flag'); if (fb) fb.onclick = ev => { ev.stopPropagation(); openFlag(+fb.dataset.i, pop.querySelector('.nm span').textContent); };
+    pop.style.left = pop.style.top = pop.style.width = ''; pop.hidden = false; sizeSheet(); return;
+  }
+  pop.classList.remove('citysheet', 'psheet'); pop.style.height = ''; delete pop.dataset.subject;
   const sr = svg.getBoundingClientRect(), mb = $('mapbox').getBoundingClientRect();
   const same = d && pop.dataset.city === String(d.c.i) && pop.dataset.tab === popTab && !pop.hidden, hl0 = pop.querySelector('.hlist'), scroll = same && hl0 ? hl0.scrollTop : 0;
   pop.innerHTML = countryHtml(fu); pop.dataset.city = d ? d.c.i : ''; pop.dataset.tab = popTab;
@@ -2390,6 +2453,7 @@ function fitUnit(u) {
   const W = sr.width, H = sr.height, pw = Math.min(300, W - 2 * PAD), M = 14;
   // measure the popup, then give the country the rest of the map: beside a column for the popup, or above a band for it,
   // whichever lets it be drawn bigger
+  pop.classList.remove('citysheet', 'psheet', 'placepop'); pop.style.height = pop.style.maxHeight = '';
   pop.innerHTML = countryHtml(u); pop.style.width = (W < 600 ? W - 2 * PAD : pw) + 'px'; pop.style.left = '-9999px'; pop.hidden = false;
   const ph = pop.offsetHeight, pwb = pop.offsetWidth; pop.hidden = true;
   const bw = Math.max(bb[2] - bb[0], 1), bh = Math.max(bb[3] - bb[1], 1);
@@ -2421,7 +2485,7 @@ function animateTo(t) {
 // the viewer pans or zooms: the popup has done its job, so it closes (tapping a country or city brings one back)
 function userMoved() {
   popReserve = null;
-  if (selCity != null || selPlace != null) { selCity = null; selPlace = null; drawCities(); }
+  if (selCity != null || selPlace != null) { selCity = null; selPlace = null; plItem = null; drawCities(); }
   if (focusUnit() >= 0) popClosed = true;
   clearTimeout(popTimer); pop.hidden = true;
 }
@@ -2429,7 +2493,7 @@ function stopAnim() { if (animating) { cancelAnimationFrame(anim); animating = f
 document.addEventListener('keydown', e => {
   if (e.key !== 'Escape') return;
   if (!flagBig.hidden) { closeFlag(); return; }
-  if (selPlace != null) { selPlace = null; drawCities(); renderPop(); } else if (selCity != null) { selCity = null; drawCities(); renderPop(); } else if (focusUnit() >= 0 && !popClosed) { popClosed = true; renderPop(); }
+  if (selPlace != null) closePlace(); else if (selCity != null) { selCity = null; drawCities(); renderPop(); } else if (focusUnit() >= 0 && !popClosed) { popClosed = true; renderPop(); }
 });
 // ---------- panel: alternatives ----------
 function renderAlts() {

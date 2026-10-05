@@ -1,7 +1,8 @@
 // Checks the places layer: highlights a country at a year (as if tapping a point inside it), takes a screenshot, then
 // opens a place's popup and takes another (desktop 1400 x 900 and phone 390 x 844). Screenshots go to tests/shots/.
-//   NODE_PATH=$(npm root -g) node tests/places_check.cjs '[["France",2.35,48.85,1450,"agincourt"],["Poland",21.0,52.2,1990,"grunwald"]]'
-// Each row: a label, a longitude and latitude inside the country, the year, and a place id to open (or null).
+//   NODE_PATH=$(npm root -g) node tests/places_check.cjs '[["France",2.35,48.85,1450,"agincourt","ce:178:Q392213"],["Poland",21.0,52.2,1990,"grunwald"]]'
+// Each row: a label, a longitude and latitude inside the country, the year, a place id to open (or null), and
+// optionally an item of its thread to pick in the popup ("pl:<place id>" or "ce:<city index>:<Wikidata id>").
 // Same setup as card_check.cjs (Playwright with Chromium; topojson-client from TOPOJSON or NODE_PATH).
 const { chromium } = require('playwright'); const http = require('http'), fs = require('fs'), path = require('path');
 const root = path.resolve(__dirname, '..'), shots = path.join(__dirname, 'shots'), PORT = 8791;
@@ -14,7 +15,8 @@ src = src.slice(0, end) + `window.__P = {
   focus(y, x, yk) { setYear(y); fitBox([x - 450, yk - 450, x + 450, yk + 450]);
     const go = () => { if (!eraOf(y).ready || animating) return setTimeout(go, 200); const f = regionAt(x, yk); place = { x, y: yk, s: f ? f.properties.s : -1, E: curEra() }; popClosed = false;
       drawPin(); drawDim(); drawLabels(); drawBadges(); drawCities(); renderTimeline(); renderPop(); }; setTimeout(go, 900); },
-  open(id) { openPlace(id, true); },
+  open(id) { openPlace(id); },
+  pick(k) { const b = [...document.querySelectorAll('#mappop [data-it]')].find(b => b.dataset.it === k); if (b) b.click(); return !!b; },
   marks() { return plDots.map(m => m.p.id); },
   dbg() { return { sel: selPlace, on: [...document.querySelectorAll('#places .plm.on')].length, all: document.querySelectorAll('#places .plm').length }; } };
 ` + src.slice(end);
@@ -42,12 +44,13 @@ function laea(lon, lat) {
     p.on('pageerror', e => errs.push(tag + ' ' + e.message));
     if (TOPO) await p.route('**/topojson-client.min.js', r => r.fulfill({ path: TOPO, contentType: 'application/javascript' }));
     await p.goto(`http://localhost:${PORT}/_p.html`, { waitUntil: 'load', timeout: 180000 }); await p.waitForTimeout(2500);
-    for (const [label, lon, lat, y, id] of JSON.parse(process.argv[2])) {
+    for (const [label, lon, lat, y, id, item] of JSON.parse(process.argv[2])) {
       const [x, yk] = laea(lon, lat);
       await p.evaluate(([y, x, yk]) => __P.focus(y, x, yk), [y, x, yk]); await p.waitForTimeout(3500);
       console.log(tag, label, y, '| places shown:', (await p.evaluate(() => __P.marks())).join(', '));
       await p.screenshot({ path: path.join(shots, `${tag}-${label}-${y}-map.png`) });
-      if (id) { await p.evaluate(id => __P.open(id), id); await p.waitForTimeout(1800); console.log(tag, 'after open', JSON.stringify(await p.evaluate(() => __P.dbg()))); await p.screenshot({ path: path.join(shots, `${tag}-${label}-${y}-${id}.png`) }); }
+      if (id) { await p.evaluate(id => __P.open(id), id); await p.waitForTimeout(1800); console.log(tag, 'after open', JSON.stringify(await p.evaluate(() => __P.dbg()))); await p.screenshot({ path: path.join(shots, `${tag}-${label}-${y}-${id}.png`) });
+        if (item) { console.log(tag, 'picked', item, await p.evaluate(k => __P.pick(k), item)); await p.waitForTimeout(1500); await p.screenshot({ path: path.join(shots, `${tag}-${label}-${y}-${id}-item.png`) }); } }
     }
     await p.close();
   }
