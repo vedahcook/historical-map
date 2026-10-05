@@ -1155,6 +1155,22 @@ function loadEvents() {
     renderLegend(); drawCities(); refreshCityPop();
   }).catch(() => { loadEvents.busy = false; });
 }
+// wider events (wider-events.json, cities/wider_events.py): wars, epidemics and disasters that struck a whole country or
+// region (the Black Death, the Thirty Years' War, the world wars…), each with the cities it touched. Only the
+// Population tab uses them, next to the city's own events, when its population fell in their years
+let WIDE = null;
+function loadWider() {
+  if (WIDE || loadWider.busy) return; loadWider.busy = true;
+  fetch('wider-events.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(d => {
+    const W = [], n = CITIES.length;
+    for (const [nm, t, q, a, b, cs] of d.ev) {
+      const e = { n: nm, t, q, y: a, end: b, wide: 1 }, skip = cs.not ? new Set(cs.not) : null;
+      const add = i => (W[i] = W[i] || []).push(e);
+      if (cs === 'all' || skip) { for (let i = 0; i < n; i++) if (!skip || !skip.has(i)) add(i); } else cs.forEach(add);
+    }
+    WIDE = W; refreshCityPop();
+  }).catch(() => { loadWider.busy = false; });
+}
 function loadPeople() {
   if (CPP || loadPeople.busy) return; loadPeople.busy = true;
   fetch('city-people.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(d => {
@@ -1516,8 +1532,7 @@ function countryHtml(u) {
   const d = descOf(u, year), fi = flagOf(u, year);
   return `<button type="button" class="x" aria-label="Close">×</button><div class="nm">${flagHtml(fi)}<span>${esc(d ? d.t : nameOf(u, year))}</span></div>` +
     (d && datesOf(d) ? `<div class="dt">${esc(datesOf(d))}</div>` : '') + (d ? `<p class="tx">${esc(d.x)}</p>` : '') +
-    (isVassal(u) ? `<p>${esc(depText(u))}.</p>` : '') + srcShort() + flagCredit(fi) +
-    (cityDots.length ? `<p class="hint">Tap a city for its population in ${year}, who held it, its events and its people.</p>` : '');
+    (isVassal(u) ? `<p>${esc(depText(u))}.</p>` : '') + srcShort() + flagCredit(fi);      // (no "Tap a city…" hint: Veda, October 5)
 }
 // where the border at the tapped spot comes from, in one line
 function srcShort() {
@@ -1809,21 +1824,23 @@ function heldTab(c) {
 // events). First the candidates: between two figures at most 60 years apart (100 before 1500, when the figures are
 // sparse), a fall of 15% or more, or a rise of 25% or more at 5% a year or faster (from two different sources: a
 // third less, or half as many again); neighbors going the same way join up. Then the notable ones:
-// - a fall of 15% or more when the city had, in those years, an event that costs a city people: a battle, siege or
+// - a fall of 15% or more when the city had, in those years, an event that costs a city people (its own, from
+//   Wikidata, or a wider one from wider-events.json: the Black Death, the Thirty Years' War, the world wars…): a battle, siege or
 //   bombing, a fire that burned much of the city (before 1950; not the Reichstag), a massacre, pogrom, ghetto or
 //   expulsion, an epidemic, famine, earthquake or flood (not treaties, riots, single attacks or accidents); between
 //   figures from two sources, a fall of 35% or more and such an event
 // - any other fall of 30% or more, over at least 5 years (a sharper drop with no event is most likely a change in
 //   what was counted), from one source
 // - a rise where the population at least doubled, at 5% a year or faster, over at least 5 years, from one source
-// At most six: those with events first, then the biggest. Each fall lists up to three of its events (the
-// best-known); a tap goes to the first of them (or to the change's first year)
+// At most six: those with events first, then the biggest. Each fall lists up to three of its events, in order of
+// date: the city's own (the best-known first), then wider ones (not one the city's own already names, like "World War
+// II" in "Bombing of Cologne in World War II"); a tap goes to the first chosen (or to the change's first year)
 const chgCache = {};
 const COSTLY = e => e.k === 'war' || (e.k === 'fire' && e.y < 1950 && !/reichstag|palace|cinema|store/i.test(e.n)) || (e.k === 'violence' && /massacre|pogrom|ghetto|genocide|deport|expuls|killings|executions/i.test(e.n)) ||
   (e.k === 'disaster' && /plague|epidemic|cholera|smallpox|fever|typhus|famine|earthquake|flood|eruption/i.test(e.n) && !/beer/i.test(e.n));
 const pctOf = q => Math.round((q.pb / q.pa - 1) * 100);
 function popChanges(c) {
-  const hit = chgCache[c.i]; if (hit && hit.ev === !!CEV) return hit.out;
+  const ready = `${!!CEV}${!!WIDE}`, hit = chgCache[c.i]; if (hit && hit.ev === ready) return hit.out;
   let out = [];
   for (let j = 1; j < c.P.length; j++) {
     const [a, pa, sa] = c.P[j - 1], [b, pb, sb] = c.P[j], r = pb / pa, dt = b - a, mixed = sa !== sb;
@@ -1832,18 +1849,21 @@ function popChanges(c) {
     if (last && last.b === a && last.up === up && !last.mixed && !mixed) { last.b = b; last.pb = pb; }
     else out.push({ a, b, pa, pb, up, mixed });
   }
-  const evs = CEV ? CEV[c.i] || [] : [];
+  const evs = CEV ? CEV[c.i] || [] : [], wide = WIDE ? WIDE[c.i] || [] : [];
   out = out.filter(q => {
-    const pct = pctOf(q), dt = q.b - q.a;
-    q.ev = q.up ? [] : evs.filter(e => e.y <= q.b && (e.end || e.y) >= q.a && COSTLY(e)).sort((x, y) => y.sl - x.sl).slice(0, 3);
+    const pct = pctOf(q), dt = q.b - q.a, inQ = e => e.y <= q.b && (e.end || e.y) >= q.a;
+    const own = q.up ? [] : evs.filter(e => inQ(e) && COSTLY(e)).sort((x, y) => y.sl - x.sl);
+    const wid = q.up || dt > (q.a < 1500 ? 100 : 60) ? [] : wide.filter(w => inQ(w) && w.y < q.b && !own.some(e => e.n.includes(w.n)));      // (a wider event: only within an ordinary span, and begun before the last figure)
+    q.ev = own.concat(wid).slice(0, 3);
     q.j = q.ev.length ? q.ev[0].y : q.a;
+    q.ev.sort((x, y) => x.y - y.y);
     if (q.up) return !q.mixed && q.pb >= 2 * q.pa && dt >= 5;
     if (q.ev.length) return pct <= (q.mixed ? -35 : -15);
     return !q.mixed && pct <= -30 && dt >= 5;
   });
   const size = q => Math.abs(Math.log(q.pb / q.pa)) + (q.ev.length ? 10 : 0);
   out = out.sort((x, y) => size(y) - size(x)).slice(0, 6).sort((x, y) => x.a - y.a);
-  chgCache[c.i] = { ev: !!CEV, out }; return out;
+  chgCache[c.i] = { ev: ready, out }; return out;
 }
 const chgPct = q => { const v = Math.round((q.pb / q.pa - 1) * 100); return (v > 0 ? '+' : '−') + Math.abs(v) + '%'; };
 const ARROW = { up: 'M3.5 12.5l9-9M6.5 3.5h6v6', down: 'M3.5 3.5l9 9M12.5 6.5v6h-6' };
@@ -1888,7 +1908,7 @@ function popPanel(c, p) {
     : `<li class="none">No notable rises or falls between the figures.</li>`;
   const list = `<li class="lsub">Notable rises and falls</li>${changes}`;
   const srcs = [...new Set(c.P.map(q => q[2]))], cap = t => t[0].toUpperCase() + t.slice(1);
-  const foot = `Shown: falls of 15% or more in years of war, massacre, epidemic or other disaster in the city; other falls of 30% or more; times the population doubled quickly.<br>` +
+  const foot = `Shown: falls of 15% or more in years of war, massacre, epidemic or other disaster in the city or its region; other falls of 30% or more; times the population doubled quickly.<br>` +
     `Figures: ${srcs.map(i => esc(cap(CSRC[i]))).join('; ')}.` + (c.P.some(q => q[2] === 3 || q[2] === 6) ? ' Open dots on the chart: estimates for the wider city.' : '');
   const box = pk.f != null && c.P[pk.f] ? figDetail(c.P[pk.f]) : pk.c != null && chg[pk.c] ? chgDetail(chg[pk.c]) : popDetail(c, p);
   return { band, detail: `<div class="detail popd">${box}</div>`, list, foot };
@@ -1983,7 +2003,7 @@ function closeCard() { selCity = null; cardSel = null; drawCities(); renderPop()
 // the city's popup: build the card, then place it (on a phone, the sheet) without moving it while the year changes
 function renderCityCard(d) {
   const c = d.c, sr = svg.getBoundingClientRect(), mb = $('mapbox').getBoundingClientRect();
-  loadViews(); loadEvents(); if (!TABS.some(t => t[0] === cardTab)) cardTab = 'views';
+  loadViews(); loadEvents(); loadWider(); if (!TABS.some(t => t[0] === cardTab)) cardTab = 'views';
   if (cardPickYear !== year) { cardPickYear = year; cardSel = null; for (const k in cardPick) delete cardPick[k]; }      // the map's year moved: the card follows it again
   if (cardCity !== c.i) { cardCity = c.i; cardSel = null; cardAuto = true; for (const k in cardPick) delete cardPick[k]; for (const k in cardScroll) delete cardScroll[k]; cardDetent = 'full'; delete pop.dataset.anchor; }
   if (cardPending) { cardTab = cardPending.tab; cardSel = cardPending.e || null; cardPending = null; cardAuto = false; }      // an event opened from the map or the timeline
@@ -2303,6 +2323,6 @@ function preloadNear() {
   nearFor = E; [ERAS[E.i - 1], ERAS[E.i + 1]].forEach(e => e && loadEra(e));
 }
 draw();
-setTimeout(() => { loadEvents(); loadViews(); loadTerrain(); }, 300);      // (the city views early too: a city card opens on them)
+setTimeout(() => { loadEvents(); loadWider(); loadViews(); loadTerrain(); }, 300);      // (the city views early too: a city card opens on them)
 })();
 </script>
