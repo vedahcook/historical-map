@@ -1,0 +1,8954 @@
+[
+{
+"test": "placed",
+"where": "London",
+"y": 2024,
+"q": "Q128281666",
+"text": "2024 United Kingdom riots (2024) is filed under London, but Wikidata places it 307 km away (53.645, -2.988).",
+"ci": 0,
+"at": [
+-2.9876,
+53.6453
+],
+"km": 307
+},
+{
+"test": "capture",
+"where": "Vienna",
+"y": 1485,
+"q": "Q7510505",
+"text": "Siege of Vienna (1485). Result: Hungarian victory. The map shows the winners holding Vienna from 1487, not from 1485.",
+"ci": 2,
+"map": [
+[
+1469,
+"Austria"
+],
+[
+1487,
+"Kingdom of Hungary"
+],
+[
+1492,
+"Austria"
+]
+],
+"winner": "Hungarian victory",
+"kind": "date"
+},
+{
+"test": "placed",
+"where": "St. Petersburg",
+"y": 1921,
+"q": "Q208300",
+"text": "Kronstadt rebellion (1921) is filed under St. Petersburg, but Wikidata places it 33 km away (60.013, 29.734).",
+"ci": 4,
+"at": [
+29.73361,
+60.0125
+],
+"km": 33
+},
+{
+"test": "placed",
+"where": "St. Petersburg",
+"y": 1941,
+"q": "Q820902",
+"text": "Oranienbaum Bridgehead (1941) is filed under St. Petersburg, but Wikidata places it 31 km away (59.917, 29.767).",
+"ci": 4,
+"at": [
+29.76667,
+59.91667
+],
+"km": 31
+},
+{
+"test": "placed",
+"where": "St. Petersburg",
+"y": 1943,
+"q": "Q233278",
+"text": "Operation Spark (1943) is filed under St. Petersburg, but Wikidata places it 42 km away (59.900, 31.067).",
+"ci": 4,
+"at": [
+31.0675,
+59.9
+],
+"km": 42
+},
+{
+"test": "capture",
+"where": "Moscow",
+"y": 1238,
+"q": "Q21641828",
+"text": "Siege of Moscow (1238). Result: Mongol victory. The map shows the winners holding Moscow from 1241, not from 1238.",
+"ci": 5,
+"map": [
+[
+1222,
+"Vladimir-Suzdal"
+],
+[
+1241,
+"Mongol Empire"
+],
+[
+1242,
+"Golden Horde"
+]
+],
+"winner": "Mongol victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Moscow",
+"y": 1382,
+"q": "Q2618099",
+"text": "Siege of Moscow (1382). Result: Golden Horde victory. The map never shows the winners holding Moscow in the 15 years around it (it shows Grand Principality of Moscow (Muscovy)).",
+"ci": 5,
+"map": [
+[
+1378,
+"Grand Principality of Moscow (Muscovy)"
+]
+],
+"winner": "Golden Horde victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Moscow",
+"y": 1812,
+"q": "Q1083718",
+"text": "Battle of Tarutino (1812) is filed under Moscow, but Wikidata places it 75 km away (55.177, 37.003).",
+"ci": 5,
+"at": [
+37.00278,
+55.17722
+],
+"km": 75
+},
+{
+"test": "placed",
+"where": "Moscow",
+"y": 1812,
+"q": "Q598090",
+"text": "Battle of Maloyaroslavets (1812) is filed under Moscow, but Wikidata places it 109 km away (55.022, 36.458).",
+"ci": 5,
+"at": [
+36.45833,
+55.02167
+],
+"km": 109
+},
+{
+"test": "placed",
+"where": "Moscow",
+"y": 2011,
+"q": "Q207513",
+"text": "Domodedovo International Airport bombing (2011) is filed under Moscow, but Wikidata places it 43 km away (55.409, 37.906).",
+"ci": 5,
+"at": [
+37.90611,
+55.40861
+],
+"km": 43
+},
+{
+"test": "placed",
+"where": "Moscow",
+"y": 2020,
+"q": "Q101429497",
+"text": "2020 Nagorno-Karabakh ceasefire agreement (2020) is filed under Moscow, but Wikidata places it 1931 km away (40.367, 49.835).",
+"ci": 5,
+"at": [
+49.83518,
+40.36666
+],
+"km": 1931
+},
+{
+"test": "placed",
+"where": "Istanbul",
+"y": 1509,
+"q": "Q1188930",
+"text": "İstanbul earthquake of 1509 (1509) is filed under Istanbul, but Wikidata places it 35 km away (40.900, 28.700).",
+"ci": 6,
+"at": [
+28.7,
+40.9
+],
+"km": 35
+},
+{
+"test": "placed",
+"where": "Istanbul",
+"y": 1766,
+"q": "Q6051642",
+"text": "1766 Istanbul earthquake (1766) is filed under Istanbul, but Wikidata places it 34 km away (40.800, 29.000).",
+"ci": 6,
+"at": [
+29,
+40.8
+],
+"km": 34
+},
+{
+"test": "held",
+"where": "Hamburg",
+"y": 1813,
+"q": "Q7510071",
+"text": "Siege of Hamburg (1813). Result: French victory, so the defenders kept Hamburg; but the map hands it to Free City of Hamburg in 1814.",
+"ci": 7,
+"map": [
+[
+1810,
+"First French Empire"
+],
+[
+1814,
+"Free City of Hamburg"
+]
+],
+"winner": "French victory"
+},
+{
+"test": "ruler",
+"where": "Hamburg",
+"y": 1943,
+"q": "Q316868",
+"text": "Bombing of Hamburg in World War II (1943): the sides were United Kingdom, United States; the map says Nazi Germany held Hamburg.",
+"ci": 7,
+"map": [
+[
+1941,
+"Nazi Germany"
+],
+[
+1945,
+"British occupation zone of Germany"
+]
+],
+"sides": [
+"United Kingdom",
+"United States"
+]
+},
+{
+"test": "capture",
+"where": "Budapest",
+"y": 1849,
+"q": "Q850778",
+"text": "Siege of Buda (1849). Result: Hungarian victory. The map never shows the winners holding Budapest in the 15 years around it (it shows Austrian Empire).",
+"ci": 8,
+"map": [
+[
+1845,
+"Austrian Empire"
+]
+],
+"winner": "Hungarian victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Budapest",
+"y": 1944,
+"q": "Q155103",
+"text": "Siege of Budapest (1944). Result: Soviet victory. The map never shows the winners holding Budapest in the 15 years around it (it shows German-occupied Hungary).",
+"ci": 8,
+"map": [
+[
+1940,
+"Kingdom of Hungary"
+],
+[
+1944,
+"German-occupied Hungary"
+],
+[
+1945,
+"Kingdom of Hungary"
+]
+],
+"winner": "Soviet victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Naples",
+"y": 1528,
+"q": "Q16529030",
+"text": "Siege of Naples (1528). Result: Habsburg victory. The map never shows the winners holding Naples in the 15 years around it (it shows Kingdom of Naples (under Spain)).",
+"ci": 13,
+"map": [
+[
+1524,
+"Kingdom of Naples (under Spain)"
+]
+],
+"winner": "Habsburg victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Madrid",
+"y": 1937,
+"q": "Q3956",
+"text": "Battle of Jarama (1937) is filed under Madrid, but Wikidata places it 26 km away (40.218, -3.504).",
+"ci": 14,
+"at": [
+-3.50403,
+40.2179
+],
+"km": 26
+},
+{
+"test": "placed",
+"where": "Munich",
+"y": 1800,
+"q": "Q705813",
+"text": "Battle of Hohenlinden (1800) is filed under Munich, but Wikidata places it 32 km away (48.160, 11.998).",
+"ci": 15,
+"at": [
+11.99794,
+48.15967
+],
+"km": 32
+},
+{
+"test": "placed",
+"where": "Leipzig",
+"y": 1806,
+"q": "Q2636580",
+"text": "Battle of Auerstädt (1806) is filed under Leipzig, but Wikidata places it 63 km away (51.099, 11.588).",
+"ci": 17,
+"at": [
+11.5875,
+51.09944
+],
+"km": 63
+},
+{
+"test": "capture",
+"where": "Dresden",
+"y": 1813,
+"q": "Q106623316",
+"text": "Siege of Dresden (1813). Result: Austro-Russian victory. The map never shows the winners holding Dresden in the 15 years around it (it shows Kingdom of Saxony).",
+"ci": 20,
+"map": [
+[
+1809,
+"Kingdom of Saxony"
+]
+],
+"winner": "Austro-Russian victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Birmingham",
+"y": 2011,
+"q": "Q29065",
+"text": "2011 England riots (2011) is filed under Birmingham, but Wikidata places it 160 km away (51.591, -0.070).",
+"ci": 23,
+"at": [
+-0.07,
+51.5909
+],
+"km": 160
+},
+{
+"test": "capture",
+"where": "Marseille",
+"y": 1524,
+"q": "Q3485951",
+"text": "Siege of Marseille (1524). Result: French victory. The map never shows the winners holding Marseille in the 15 years around it (it shows no country).",
+"ci": 24,
+"map": [
+[
+1520,
+"no country"
+]
+],
+"winner": "French victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Wrocław",
+"y": 1945,
+"q": "Q664581",
+"text": "Siege of Breslau (1945). Result: Soviet victory. The map never shows the winners holding Wrocław in the 15 years around it (it shows Communist Poland (People's Republic)).",
+"ci": 25,
+"map": [
+[
+1941,
+"Nazi Germany"
+],
+[
+1945,
+"Communist Poland (People's Republic)"
+]
+],
+"winner": "Soviet victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Lyon",
+"y": 1314,
+"q": "Q1516721",
+"text": "1314–16 papal conclave (1314) is filed under Lyon, but Wikidata places it 192 km away (44.054, 5.048).",
+"ci": 27,
+"at": [
+5.0478,
+44.0542
+],
+"km": 192
+},
+{
+"test": "capture",
+"where": "Kyiv",
+"y": 1658,
+"q": "Q4337386",
+"text": "Siege of Kyiv (1658). Result: Russian victory. The map never shows the winners holding Kyiv in the 15 years around it (it shows Polish–Lithuanian Commonwealth).",
+"ci": 29,
+"map": [
+[
+1654,
+"Polish–Lithuanian Commonwealth"
+]
+],
+"winner": "Russian victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Copenhagen",
+"y": 1658,
+"q": "Q18647190",
+"text": "Siege Of Copenhagen (1658). Result: Dano-Dutch victory. The map never shows the winners holding Copenhagen in the 15 years around it (it shows Denmark–Norway).",
+"ci": 30,
+"map": [
+[
+1654,
+"Denmark–Norway"
+]
+],
+"winner": "Dano-Dutch victory",
+"kind": "never"
+},
+{
+"test": "ruler",
+"where": "Copenhagen",
+"y": 1801,
+"q": "Q755955",
+"text": "Battle of Copenhagen (1801): the sides were United Kingdom of Great Britain and Ireland, Denmark–Norway; the map says Denmark–Norway held Copenhagen.",
+"ci": 30,
+"map": [
+[
+1799,
+"Denmark–Norway"
+]
+],
+"sides": [
+"United Kingdom of Great Britain and Ireland",
+"Denmark–Norway"
+]
+},
+{
+"test": "ruler",
+"where": "Copenhagen",
+"y": 1807,
+"q": "Q376154",
+"text": "Battle of Copenhagen (1807): the sides were United Kingdom of Great Britain and Ireland, Denmark–Norway; the map says Denmark–Norway held Copenhagen.",
+"ci": 30,
+"map": [
+[
+1805,
+"Denmark–Norway"
+]
+],
+"sides": [
+"United Kingdom of Great Britain and Ireland",
+"Denmark–Norway"
+]
+},
+{
+"test": "capture",
+"where": "Genoa",
+"y": 1522,
+"q": "Q9291683",
+"text": "Siege of Genoa (1522). Result: Imperial victory. The map never shows the winners holding Genoa in the 15 years around it (it shows Republic of Genoa).",
+"ci": 34,
+"map": [
+[
+1518,
+"Republic of Genoa"
+]
+],
+"winner": "Imperial victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Genoa",
+"y": 1746,
+"q": "Q7510044",
+"text": "Siege of Genoa (1746). Result: Austro-British-Sardinian victory. The map never shows the winners holding Genoa in the 15 years around it (it shows Republic of Genoa).",
+"ci": 34,
+"map": [
+[
+1742,
+"Republic of Genoa"
+]
+],
+"winner": "Austro-British-Sardinian victory",
+"kind": "never"
+},
+{
+"test": "ruler",
+"where": "Genoa",
+"y": 1793,
+"q": "Q19873489",
+"text": "Raid on Genoa (1793): the sides were Kingdom of Great Britain, French First Republic; the map says Republic of Genoa held Genoa.",
+"ci": 34,
+"map": [
+[
+1791,
+"Republic of Genoa"
+]
+],
+"sides": [
+"Kingdom of Great Britain",
+"French First Republic"
+]
+},
+{
+"test": "ruler",
+"where": "Genoa",
+"y": 1800,
+"q": "Q4872322",
+"text": "Battle of Sassello (1800): the sides were French Consulate, Habsburg monarchy; the map says Ligurian Republic held Genoa.",
+"ci": 34,
+"map": [
+[
+1798,
+"Ligurian Republic"
+]
+],
+"sides": [
+"French Consulate",
+"Habsburg monarchy"
+]
+},
+{
+"test": "capture",
+"where": "Genoa",
+"y": 1800,
+"q": "Q577441",
+"text": "Siege of Genoa (1800). Result: Anglo-Austrian victory. The map never shows the winners holding Genoa in the 15 years around it (it shows Ligurian Republic).",
+"ci": 34,
+"map": [
+[
+1796,
+"Republic of Genoa"
+],
+[
+1805,
+"First French Empire"
+]
+],
+"winner": "Anglo-Austrian victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Lisbon",
+"y": 1531,
+"q": "Q2877472",
+"text": "1531 Lisbon earthquake (1531) is filed under Lisbon, but Wikidata places it 104 km away (39.000, -8.000).",
+"ci": 35,
+"at": [
+-8,
+39
+],
+"km": 104
+},
+{
+"test": "placed",
+"where": "Lisbon",
+"y": 1587,
+"q": "Q957491",
+"text": "Singeing the King of Spain's Beard (1587) is filed under Lisbon, but Wikidata places it 350 km away (36.535, -6.298).",
+"ci": 35,
+"at": [
+-6.2975,
+36.535
+],
+"km": 350
+},
+{
+"test": "placed",
+"where": "Lisbon",
+"y": 1755,
+"q": "Q191055",
+"text": "1755 Lisbon earthquake (1755) is filed under Lisbon, but Wikidata places it 344 km away (36.000, -11.000).",
+"ci": 35,
+"at": [
+-11,
+36
+],
+"km": 344
+},
+{
+"test": "placed",
+"where": "Belfast",
+"y": 2021,
+"q": "Q106359325",
+"text": "2021 Northern Ireland riots (2021) is filed under Belfast, but Wikidata places it 96 km away (54.998, -7.293).",
+"ci": 36,
+"at": [
+-7.2931,
+54.9983
+],
+"km": 96
+},
+{
+"test": "placed",
+"where": "Belfast",
+"y": 2025,
+"q": "Q134880654",
+"text": "2025 Northern Ireland riots (2025) is filed under Belfast, but Wikidata places it 36 km away (54.863, -6.280).",
+"ci": 36,
+"at": [
+-6.27969,
+54.86341
+],
+"km": 36
+},
+{
+"test": "capture",
+"where": "Brussels",
+"y": 1746,
+"q": "Q1924575",
+"text": "Siege of Brussels (1746). Result: French victory. The map never shows the winners holding Brussels in the 15 years around it (it shows Austrian Netherlands).",
+"ci": 42,
+"map": [
+[
+1742,
+"Austrian Netherlands"
+]
+],
+"winner": "French victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Brussels",
+"y": 2014,
+"q": "Q12857637",
+"text": "40th G7 summit (2014) is filed under Brussels, but Wikidata places it 2761 km away (43.600, 39.717).",
+"ci": 42,
+"at": [
+39.717,
+43.6
+],
+"km": 2761
+},
+{
+"test": "ruler",
+"where": "Palermo",
+"y": 1036,
+"q": "Q111211173",
+"text": "Capture of Palermo (1036): the sides were Zirid Dynasty, Hammadid dynasty, Kalbids, Byzantine Empire; the map says Emirate of Sicily held Palermo.",
+"ci": 45,
+"map": [
+[
+1034,
+"Emirate of Sicily"
+]
+],
+"sides": [
+"Zirid Dynasty",
+"Hammadid dynasty",
+"Kalbids",
+"Byzantine Empire"
+]
+},
+{
+"test": "capture",
+"where": "Palermo",
+"y": 1071,
+"q": "Q136288506",
+"text": "Siege of Palermo (1071). Result: Norman victory. The map shows the winners holding Palermo from 1072, not from 1071.",
+"ci": 45,
+"map": [
+[
+1055,
+"Emirate of Sicily"
+],
+[
+1072,
+"Norman Italy"
+]
+],
+"winner": "Norman victory",
+"kind": "date"
+},
+{
+"test": "placed",
+"where": "Bucharest",
+"y": 1738,
+"q": "Q18149027",
+"text": "1738 Vrancea earthquake (1738) is filed under Bucharest, but Wikidata places it 146 km away (45.700, 26.600).",
+"ci": 49,
+"at": [
+26.6,
+45.7
+],
+"km": 146
+},
+{
+"test": "capture",
+"where": "Riga",
+"y": 1608,
+"q": "Q5037007",
+"text": "Capture of Daugavgrīva (1608). Result: Swedish victory. The map never shows the winners holding Riga in the 15 years around it (it shows Polish–Lithuanian Commonwealth).",
+"ci": 50,
+"map": [
+[
+1604,
+"Polish–Lithuanian Commonwealth"
+]
+],
+"winner": "Swedish victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Riga",
+"y": 1621,
+"q": "Q10428015",
+"text": "Siege of Riga (1621). Result: Swedish victory. The map shows the winners holding Riga from 1629, not from 1622.",
+"ci": 50,
+"map": [
+[
+1605,
+"Polish–Lithuanian Commonwealth"
+],
+[
+1629,
+"Swedish Empire"
+]
+],
+"winner": "Swedish victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Riga",
+"y": 1709,
+"q": "Q447901",
+"text": "Siege of Riga (1709). Result: Russian victory. The map shows the winners holding Riga from 1722, not from 1710.",
+"ci": 50,
+"map": [
+[
+1693,
+"Swedish Empire"
+],
+[
+1722,
+"Russian Empire"
+]
+],
+"winner": "Russian victory",
+"kind": "date"
+},
+{
+"test": "placed",
+"where": "Riga",
+"y": 1915,
+"q": "Q702255",
+"text": "Battle of the Gulf of Riga (1915) is filed under Riga, but Wikidata places it 96 km away (57.750, 23.500).",
+"ci": 50,
+"at": [
+23.5,
+57.75
+],
+"km": 96
+},
+{
+"test": "placed",
+"where": "Königsberg",
+"y": 1807,
+"q": "Q331347",
+"text": "Battle of Eylau (1807) is filed under Königsberg, but Wikidata places it 34 km away (54.400, 20.633).",
+"ci": 56,
+"at": [
+20.63333,
+54.4
+],
+"km": 34
+},
+{
+"test": "placed",
+"where": "Bristol",
+"y": 2011,
+"q": "Q29065",
+"text": "2011 England riots (2011) is filed under Bristol, but Wikidata places it 175 km away (51.591, -0.070).",
+"ci": 63,
+"at": [
+-0.07,
+51.5909
+],
+"km": 175
+},
+{
+"test": "capture",
+"where": "Florence",
+"y": 1529,
+"q": "Q981042",
+"text": "Siege of Florence (1529). Result: Habsburg-Papal victory. The map never shows the winners holding Florence in the 15 years around it (it shows Republic of Florence).",
+"ci": 64,
+"map": [
+[
+1525,
+"Republic of Florence"
+]
+],
+"winner": "Habsburg-Papal victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Florence",
+"y": 1530,
+"q": "Q633362",
+"text": "Battle of Gavinana (1530) is filed under Florence, but Wikidata places it 32 km away (43.933, 10.917).",
+"ci": 64,
+"at": [
+10.91667,
+43.93333
+],
+"km": 32
+},
+{
+"test": "placed",
+"where": "Kharkiv",
+"y": 1940,
+"q": "Q134301",
+"text": "Katyn massacre (1940) is filed under Kharkiv, but Wikidata places it 610 km away (54.773, 31.789).",
+"ci": 67,
+"at": [
+31.78889,
+54.77333
+],
+"km": 610
+},
+{
+"test": "placed",
+"where": "Kharkiv",
+"y": 1942,
+"q": "Q155620",
+"text": "Second Battle of Kharkov (1942) is filed under Kharkiv, but Wikidata places it 107 km away (49.230, 37.128).",
+"ci": 67,
+"at": [
+37.12812,
+49.22999
+],
+"km": 107
+},
+{
+"test": "held",
+"where": "Mannheim",
+"y": 1795,
+"q": "Q16894607",
+"text": "Siege of Mannheim (1795). Result: Austrian victory, so the defenders kept Mannheim; but the map hands it to French First Republic in 1796.",
+"ci": 71,
+"map": [
+[
+1792,
+"Holy Roman Empire"
+],
+[
+1796,
+"French First Republic"
+],
+[
+1797,
+"Holy Roman Empire"
+]
+],
+"winner": "Austrian victory"
+},
+{
+"test": "capture",
+"where": "Gdańsk",
+"y": 1734,
+"q": "Q2354105",
+"text": "Siege of Danzig (1734). Result: Russo-Saxon victory. The map never shows the winners holding Gdańsk in the 15 years around it (it shows Polish–Lithuanian Commonwealth).",
+"ci": 74,
+"map": [
+[
+1730,
+"Polish–Lithuanian Commonwealth"
+]
+],
+"winner": "Russo-Saxon victory",
+"kind": "never"
+},
+{
+"test": "held",
+"where": "Gdańsk",
+"y": 1807,
+"q": "Q901954",
+"text": "Siege of Danzig (1807). Result: French-allied victory, so the defenders kept Gdańsk; but the map hands it to Free City of Danzig in 1808.",
+"ci": 74,
+"map": [
+[
+1804,
+"Kingdom of Prussia"
+],
+[
+1808,
+"Free City of Danzig"
+]
+],
+"winner": "French-allied victory"
+},
+{
+"test": "capture",
+"where": "Porto",
+"y": 1580,
+"q": "Q3403844",
+"text": "Capture of Porto (1580). Result: Spanish victory. The map never shows the winners holding Porto in the 15 years around it (it shows Kingdom of Portugal).",
+"ci": 76,
+"map": [
+[
+1576,
+"Kingdom of Portugal"
+]
+],
+"winner": "Spanish victory",
+"kind": "never"
+},
+{
+"test": "ruler",
+"where": "Kazan",
+"y": 1487,
+"q": "Q4400941",
+"text": "Russo-Kazan War of 1487 (1487): the sides were Tsardom of Russia, Khanate of Qazan; the map says Khanate of Kazan held Kazan.",
+"ci": 77,
+"map": [
+[
+1485,
+"Khanate of Kazan"
+]
+],
+"sides": [
+"Tsardom of Russia",
+"Khanate of Qazan"
+]
+},
+{
+"test": "capture",
+"where": "Tbilisi",
+"y": 1121,
+"q": "Q25540862",
+"text": "Siege of Tbilisi (1121). Result: Georgian victory. The map shows the winners holding Tbilisi from 1126, not from 1121.",
+"ci": 79,
+"map": [
+[
+1105,
+"Great Seljuk Empire"
+],
+[
+1126,
+"Kingdom of Georgia"
+]
+],
+"winner": "Georgian victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Tbilisi",
+"y": 1386,
+"q": "Q21481366",
+"text": "Siege of Tbilisi (1386). Result: Timurid victory. The map shows the winners holding Tbilisi from 1395, not from 1387.",
+"ci": 79,
+"map": [
+[
+1370,
+"Kingdom of Georgia"
+],
+[
+1395,
+"Timurid Empire"
+]
+],
+"winner": "Timurid victory",
+"kind": "date"
+},
+{
+"test": "placed",
+"where": "Bologna",
+"y": 1797,
+"q": "Q2888482",
+"text": "Battle of Faenza (1797) is filed under Bologna, but Wikidata places it 42 km away (44.317, 11.800).",
+"ci": 82,
+"at": [
+11.8,
+44.31667
+],
+"km": 42
+},
+{
+"test": "capture",
+"where": "Kraków",
+"y": 1655,
+"q": "Q608163",
+"text": "Siege of Kraków (1655). Result: Swedish victory. The map never shows the winners holding Kraków in the 15 years around it (it shows Polish–Lithuanian Commonwealth).",
+"ci": 83,
+"map": [
+[
+1651,
+"Polish–Lithuanian Commonwealth"
+]
+],
+"winner": "Swedish victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Kassel",
+"y": 1761,
+"q": "Q3485856",
+"text": "Siege of Cassel (1761). Result: French victory. The map never shows the winners holding Kassel in the 15 years around it (it shows Landgraviate of Hesse-Kassel (Electorate of Hesse from 1803)).",
+"ci": 85,
+"map": [
+[
+1757,
+"Landgraviate of Hesse-Kassel (Electorate of Hesse from 1803)"
+]
+],
+"winner": "French victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Algiers",
+"y": 1975,
+"q": "Q321865",
+"text": "1975 Algiers Agreement (1975) is filed under Algiers, but Wikidata places it 4275 km away (29.865, 48.752).",
+"ci": 91,
+"at": [
+48.75194,
+29.865
+],
+"km": 4275
+},
+{
+"test": "capture",
+"where": "Nice",
+"y": 1543,
+"q": "Q815184",
+"text": "Siege of Nice (1543). Result: Imperial-Savoyard victory. The map never shows the winners holding Nice in the 15 years around it (it shows Duchy of Savoy).",
+"ci": 94,
+"map": [
+[
+1539,
+"Duchy of Savoy"
+]
+],
+"winner": "Imperial-Savoyard victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Nice",
+"y": 1705,
+"q": "Q3485974",
+"text": "Siege of Nice (1705). Result: French victory. The map shows the winners holding Nice from 1720, not from 1705.",
+"ci": 94,
+"map": [
+[
+1689,
+"Duchy of Savoy"
+],
+[
+1720,
+"Kingdom of Sardinia"
+]
+],
+"winner": "French victory",
+"kind": "date"
+},
+{
+"test": "placed",
+"where": "Lviv (Lemberg)",
+"y": 1941,
+"q": "Q667890",
+"text": "Lviv pogroms (1941) is filed under Lviv (Lemberg), but Wikidata places it 36 km away (49.510, 24.010).",
+"ci": 98,
+"at": [
+24.01,
+49.51
+],
+"km": 36
+},
+{
+"test": "capture",
+"where": "Antwerp",
+"y": 1584,
+"q": "Q697823",
+"text": "Fall of Antwerp (1584). Result: Spanish victory. The map already shows the winners holding Antwerp in 1569, before the event.",
+"ci": 99,
+"map": [
+[
+1568,
+"Spanish Netherlands"
+],
+[
+1579,
+"Dutch Republic (United Provinces)"
+],
+[
+1588,
+"Spanish Netherlands"
+]
+],
+"winner": "Spanish victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Thessaloniki",
+"y": 1383,
+"q": "Q60315800",
+"text": "Siege of Thessalonica (1383). Result: Ottoman victory. The map never shows the winners holding Thessaloniki in the 15 years around it (it shows Byzantine Empire).",
+"ci": 100,
+"map": [
+[
+1379,
+"Byzantine Empire"
+]
+],
+"winner": "Ottoman victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Thessaloniki",
+"y": 1422,
+"q": "Q2426040",
+"text": "Siege of Thessalonica (1422). Result: Ottoman victory. The map shows the winners holding Thessaloniki from 1431, not from 1422.",
+"ci": 100,
+"map": [
+[
+1406,
+"Ottoman Empire"
+],
+[
+1407,
+"Byzantine Empire"
+],
+[
+1431,
+"Ottoman Empire"
+]
+],
+"winner": "Ottoman victory",
+"kind": "date"
+},
+{
+"test": "ruler",
+"where": "Edirne",
+"y": 1205,
+"q": "Q1427630",
+"text": "Battle of Adrianople (1205): the sides were Latin Empire, Bulgarian Empire; the map says Byzantine Empire held Edirne.",
+"ci": 102,
+"map": [
+[
+1203,
+"Byzantine Empire"
+],
+[
+1206,
+"Latin Empire"
+]
+],
+"sides": [
+"Latin Empire",
+"Bulgarian Empire"
+]
+},
+{
+"test": "placed",
+"where": "Rostov-on-Don",
+"y": 1994,
+"q": "Q65158192",
+"text": "Wzięcie zakładników w Suchodilśku (1994) is filed under Rostov-on-Don, but Wikidata places it 124 km away (48.354, 39.722).",
+"ci": 104,
+"at": [
+39.72167,
+48.35361
+],
+"km": 124
+},
+{
+"test": "placed",
+"where": "Rostov-on-Don",
+"y": 2020,
+"q": "Q110254389",
+"text": "Prelude to the Russian invasion of Ukraine (2020) is filed under Rostov-on-Don, but Wikidata places it 787 km away (52.120, 31.780).",
+"ci": 104,
+"at": [
+31.78,
+52.12
+],
+"km": 787
+},
+{
+"test": "capture",
+"where": "Helsinki",
+"y": 1808,
+"q": "Q2600573",
+"text": "Siege of Sveaborg (1808). Result: Russian victory. The map shows the winners holding Helsinki from 1809, not from 1808.",
+"ci": 105,
+"map": [
+[
+1792,
+"Kingdom of Sweden"
+],
+[
+1809,
+"Grand Duchy of Finland"
+]
+],
+"winner": "Russian victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Rouen",
+"y": 1591,
+"q": "Q7510351",
+"text": "Siege of Rouen (1591). Result: Spanish-Catholic victory. The map never shows the winners holding Rouen in the 15 years around it (it shows Kingdom of France).",
+"ci": 106,
+"map": [
+[
+1587,
+"Kingdom of France"
+]
+],
+"winner": "Spanish-Catholic victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Reims",
+"y": 1917,
+"q": "Q1694094",
+"text": "Second Battle of the Aisne (1917) is filed under Reims, but Wikidata places it 35 km away (49.400, 3.600).",
+"ci": 113,
+"at": [
+3.6,
+49.4
+],
+"km": 35
+},
+{
+"test": "capture",
+"where": "Mainz",
+"y": 1792,
+"q": "Q18219624",
+"text": "Siege of Mainz (1792). Result: French victory. The map shows the winners holding Mainz from 1798, not from 1793.",
+"ci": 114,
+"map": [
+[
+1776,
+"Electorate of Mainz"
+],
+[
+1798,
+"French First Republic"
+]
+],
+"winner": "French victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Aleppo",
+"y": 1124,
+"q": "Q60791275",
+"text": "Siege of Aleppo (1124). Result: Artuqid-Bursuqid Victory. The map shows the winners holding Aleppo from 1126, not from 1124.",
+"ci": 119,
+"map": [
+[
+1108,
+"Emirates of Upper Mesopotamia"
+],
+[
+1126,
+"Great Seljuk Empire"
+],
+[
+1139,
+"Zengids"
+]
+],
+"winner": "Artuqid-Bursuqid Victory",
+"kind": "date"
+},
+{
+"test": "ruler",
+"where": "Bergen",
+"y": 1808,
+"q": "Q2887830",
+"text": "Battle of Alvøen (1808): the sides were Denmark–Norway, United Kingdom of Great Britain and Ireland; the map says Denmark–Norway held Bergen.",
+"ci": 125,
+"map": [
+[
+1806,
+"Denmark–Norway"
+]
+],
+"sides": [
+"Denmark–Norway",
+"United Kingdom of Great Britain and Ireland"
+]
+},
+{
+"test": "placed",
+"where": "Toulon",
+"y": 1744,
+"q": "Q677929",
+"text": "Battle of Toulon (1744) is filed under Toulon, but Wikidata places it 44 km away (42.779, 5.691).",
+"ci": 126,
+"at": [
+5.69092,
+42.77927
+],
+"km": 44
+},
+{
+"test": "placed",
+"where": "Verona",
+"y": 2026,
+"q": "Q4630399",
+"text": "2026 Winter Olympics (2026) is filed under Verona, but Wikidata places it 140 km away (45.464, 9.190).",
+"ci": 133,
+"at": [
+9.19034,
+45.46416
+],
+"km": 140
+},
+{
+"test": "ruler",
+"where": "Livorno",
+"y": 1653,
+"q": "Q2204664",
+"text": "Battle of Leghorn (1653): the sides were Commonwealth of England, Dutch Republic; the map says Grand Duchy of Tuscany held Livorno.",
+"ci": 137,
+"map": [
+[
+1651,
+"Grand Duchy of Tuscany"
+]
+],
+"sides": [
+"Commonwealth of England",
+"Dutch Republic"
+]
+},
+{
+"test": "capture",
+"where": "Bari",
+"y": 1068,
+"q": "Q815120",
+"text": "Siege of Bari (1068). Result: Norman victory. The map shows the winners holding Bari from 1072, not from 1068.",
+"ci": 140,
+"map": [
+[
+1052,
+"Byzantine Empire"
+],
+[
+1072,
+"Norman Italy"
+]
+],
+"winner": "Norman victory",
+"kind": "date"
+},
+{
+"test": "placed",
+"where": "Mykolaiv",
+"y": 2022,
+"q": "Q111427067",
+"text": "Mykolaiv government building airstrike (2022) is filed under Mykolaiv, but Wikidata places it 471 km away (48.557, 37.823).",
+"ci": 141,
+"at": [
+37.82323,
+48.55665
+],
+"km": 471
+},
+{
+"test": "placed",
+"where": "Amiens",
+"y": 1918,
+"q": "Q1130507",
+"text": "Hundred Days Offensive (1918) is filed under Amiens, but Wikidata places it 51 km away (50.000, 3.000).",
+"ci": 143,
+"at": [
+3,
+50
+],
+"km": 51
+},
+{
+"test": "capture",
+"where": "Liberec",
+"y": 1968,
+"q": "Q114257973",
+"text": "Occupation of Liberec (1968). Result: Soviet victory. The map never shows the winners holding Liberec in the 15 years around it (it shows Czechoslovakia (restored, then communist)).",
+"ci": 147,
+"map": [
+[
+1964,
+"Czechoslovakia (restored, then communist)"
+]
+],
+"winner": "Soviet victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Freiburg",
+"y": 1677,
+"q": "Q15713614",
+"text": "Siege of Freiburg (1677). Result: French victory. The map never shows the winners holding Freiburg in the 15 years around it (it shows Habsburg Monarchy).",
+"ci": 152,
+"map": [
+[
+1673,
+"Habsburg Monarchy"
+]
+],
+"winner": "French victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Freiburg",
+"y": 1702,
+"q": "Q552351",
+"text": "Battle of Friedlingen (1702) is filed under Freiburg, but Wikidata places it 47 km away (47.603, 7.639).",
+"ci": 152,
+"at": [
+7.63944,
+47.60306
+],
+"km": 47
+},
+{
+"test": "capture",
+"where": "Freiburg",
+"y": 1744,
+"q": "Q120483890",
+"text": "Siege of Freiburg 1744 (1744). Result: French victory. The map never shows the winners holding Freiburg in the 15 years around it (it shows Habsburg Monarchy).",
+"ci": 152,
+"map": [
+[
+1740,
+"Habsburg Monarchy"
+]
+],
+"winner": "French victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Belgrade",
+"y": 1440,
+"q": "Q12756567",
+"text": "Siege of Belgrade (1440) is filed under Belgrade, but Wikidata places it 806 km away (44.490, 10.280).",
+"ci": 153,
+"at": [
+10.28,
+44.49
+],
+"km": 806
+},
+{
+"test": "capture",
+"where": "Belgrade",
+"y": 1688,
+"q": "Q699902",
+"text": "Siege of Belgrade (1688). Result: Holy League victory. The map never shows the winners holding Belgrade in the 15 years around it (it shows Ottoman Empire).",
+"ci": 153,
+"map": [
+[
+1684,
+"Ottoman Empire"
+]
+],
+"winner": "Holy League victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Belgrade",
+"y": 1789,
+"q": "Q7509870",
+"text": "Siege of Belgrade (1789). Result: Austrian victory. The map never shows the winners holding Belgrade in the 15 years around it (it shows Ottoman Empire).",
+"ci": 153,
+"map": [
+[
+1785,
+"Ottoman Empire"
+]
+],
+"winner": "Austrian victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Belgrade",
+"y": 1806,
+"q": "Q12756563",
+"text": "Siege of Belgrade (1806). Result: Serbian victory. The map never shows the winners holding Belgrade in the 15 years around it (it shows Ottoman Empire).",
+"ci": 153,
+"map": [
+[
+1802,
+"Ottoman Empire"
+]
+],
+"winner": "Serbian victory",
+"kind": "never"
+},
+{
+"test": "ruler",
+"where": "Belgrade",
+"y": 1999,
+"q": "Q2418042",
+"text": "United States bombing of the Chinese embassy in Belgrade (1999): the sides were United States, People's Republic of China; the map says Federal Republic of Yugoslavia held Belgrade.",
+"ci": 153,
+"map": [
+[
+1997,
+"Federal Republic of Yugoslavia"
+]
+],
+"sides": [
+"United States",
+"People's Republic of China"
+]
+},
+{
+"test": "placed",
+"where": "Ferrara",
+"y": 1431,
+"q": "Q321032",
+"text": "Council of Florence (1431) is filed under Ferrara, but Wikidata places it 123 km away (43.771, 11.254).",
+"ci": 155,
+"at": [
+11.2542,
+43.7714
+],
+"km": 123
+},
+{
+"test": "ruler",
+"where": "Rijeka (Fiume)",
+"y": 1242,
+"q": "Q2893431",
+"text": "Battle of Grobnik field (1242): the sides were Croats, Tatars; the map says Kingdom of Hungary held Rijeka (Fiume).",
+"ci": 165,
+"map": [
+[
+1240,
+"Kingdom of Hungary"
+]
+],
+"sides": [
+"Croats",
+"Tatars"
+]
+},
+{
+"test": "capture",
+"where": "Dijon",
+"y": 1513,
+"q": "Q3485875",
+"text": "Siege of Dijon (1513). Result: Swiss victory. The map never shows the winners holding Dijon in the 15 years around it (it shows Kingdom of France).",
+"ci": 169,
+"map": [
+[
+1509,
+"Kingdom of France"
+]
+],
+"winner": "Swiss victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Timișoara",
+"y": 1716,
+"q": "Q31180913",
+"text": "Siege of Temeşvar (1716). Result: Habsburg victory. The map shows the winners holding Timișoara from 1718, not from 1717.",
+"ci": 172,
+"map": [
+[
+1700,
+"Ottoman Empire"
+],
+[
+1718,
+"Habsburg Monarchy"
+]
+],
+"winner": "Habsburg victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Kaunas",
+"y": 1362,
+"q": "Q12660036",
+"text": "Siege of Kaunas (1362). Result: Teutonic victory. The map never shows the winners holding Kaunas in the 15 years around it (it shows Grand Duchy of Lithuania).",
+"ci": 173,
+"map": [
+[
+1358,
+"Grand Duchy of Lithuania"
+]
+],
+"winner": "Teutonic victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Daugavpils",
+"y": 1656,
+"q": "Q4337377",
+"text": "Siege of Dyneburg (1656). Result: Russian victory. The map never shows the winners holding Daugavpils in the 15 years around it (it shows Polish–Lithuanian Commonwealth).",
+"ci": 176,
+"map": [
+[
+1652,
+"Polish–Lithuanian Commonwealth"
+]
+],
+"winner": "Russian victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Palma",
+"y": 1821,
+"q": "Q87720284",
+"text": "1821 Barcelona yellow fever epidemic (1821) is filed under Palma, but Wikidata places it 205 km away (41.383, 2.177).",
+"ci": 179,
+"at": [
+2.1769,
+41.3825
+],
+"km": 205
+},
+{
+"test": "capture",
+"where": "Calais",
+"y": 1346,
+"q": "Q676340",
+"text": "Siege of Calais (1346). Result: English victory. The map already shows the winners holding Calais in 1331, before the event.",
+"ci": 181,
+"map": [
+[
+1330,
+"Kingdom of France"
+],
+[
+1333,
+"Free County of Burgundy"
+],
+[
+1352,
+"Kingdom of England"
+]
+],
+"winner": "English victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Calais",
+"y": 1350,
+"q": "Q2701563",
+"text": "Siege of Calais (1350). Result: English victory. The map shows the winners holding Calais from 1352, not from 1350.",
+"ci": 181,
+"map": [
+[
+1334,
+"Free County of Burgundy"
+],
+[
+1352,
+"Kingdom of England"
+]
+],
+"winner": "English victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Calais",
+"y": 1596,
+"q": "Q2701400",
+"text": "Siege of Calais (1596). Result: Spanish victory. The map never shows the winners holding Calais in the 15 years around it (it shows Kingdom of France).",
+"ci": 181,
+"map": [
+[
+1592,
+"Kingdom of France"
+]
+],
+"winner": "Spanish victory",
+"kind": "never"
+},
+{
+"test": "ruler",
+"where": "Calais",
+"y": 1639,
+"q": "Q4677287",
+"text": "Fight in the Channel (1639): the sides were Hispanic Monarchy, Dutch Republic; the map says Kingdom of France held Calais.",
+"ci": 181,
+"map": [
+[
+1637,
+"Kingdom of France"
+]
+],
+"sides": [
+"Hispanic Monarchy",
+"Dutch Republic"
+]
+},
+{
+"test": "placed",
+"where": "Krasnodar (Yekaterinodar)",
+"y": 1971,
+"q": "Q4110386",
+"text": "Krasnodar bus bombing (1971) is filed under Krasnodar (Yekaterinodar), but Wikidata places it 404 km away (43.491, 43.601).",
+"ci": 186,
+"at": [
+43.60053,
+43.49121
+],
+"km": 404
+},
+{
+"test": "placed",
+"where": "Córdoba",
+"y": 1275,
+"q": "Q4118271",
+"text": "Battle of Écija (1275) is filed under Córdoba, but Wikidata places it 47 km away (37.533, -5.083).",
+"ci": 191,
+"at": [
+-5.08333,
+37.53333
+],
+"km": 47
+},
+{
+"test": "placed",
+"where": "Vigo",
+"y": 1589,
+"q": "Q145934",
+"text": "English Armada (1589) is filed under Vigo, but Wikidata places it 393 km away (38.700, -9.183).",
+"ci": 199,
+"at": [
+-9.18333,
+38.7
+],
+"km": 393
+},
+{
+"test": "placed",
+"where": "Perugia",
+"y": 1285,
+"q": "Q3722106",
+"text": "1285 papal election (1285) is filed under Perugia, but Wikidata places it 31 km away (42.956, 12.704).",
+"ci": 201,
+"at": [
+12.7037,
+42.9561
+],
+"km": 31
+},
+{
+"test": "capture",
+"where": "Pécs",
+"y": 1686,
+"q": "Q7483226",
+"text": "Siege of Pécs (1686). Result: Holy Roman Empire victory. The map shows the winners holding Pécs from 1699, not from 1687.",
+"ci": 204,
+"map": [
+[
+1670,
+"Ottoman Empire"
+],
+[
+1699,
+"Habsburg Monarchy"
+]
+],
+"winner": "Holy Roman Empire victory",
+"kind": "date"
+},
+{
+"test": "ruler",
+"where": "Olomouc",
+"y": 1241,
+"q": "Q3501395",
+"text": "Battle of Olomouc (1241): the sides were Jaroslav of Sternberg, Tatars; the map says Kingdom of Bohemia held Olomouc.",
+"ci": 206,
+"map": [
+[
+1239,
+"Kingdom of Bohemia"
+]
+],
+"sides": [
+"Jaroslav of Sternberg",
+"Tatars"
+]
+},
+{
+"test": "placed",
+"where": "A Coruña",
+"y": 1589,
+"q": "Q145934",
+"text": "English Armada (1589) is filed under A Coruña, but Wikidata places it 519 km away (38.700, -9.183).",
+"ci": 208,
+"at": [
+-9.18333,
+38.7
+],
+"km": 519
+},
+{
+"test": "ruler",
+"where": "Ancona",
+"y": 1815,
+"q": "Q3485810",
+"text": "Siege of Ancona (1815): the sides were Imperial Austrian Army, Neapolitan Army (1805-1815); the map says Papal States held Ancona.",
+"ci": 210,
+"map": [
+[
+1813,
+"Kingdom of Italy (Napoleonic)"
+],
+[
+1814,
+"no country"
+],
+[
+1815,
+"Papal States"
+]
+],
+"sides": [
+"Imperial Austrian Army",
+"Neapolitan Army (1805-1815)"
+]
+},
+{
+"test": "ruler",
+"where": "Ancona",
+"y": 1944,
+"q": "Q714192",
+"text": "Battle of Ancona (1944): the sides were 8th Army, Q3694034, Brigata Maiella, LI Mountain Corps (Wehrmacht); the map says Kingdom of Italy held Ancona.",
+"ci": 210,
+"map": [
+[
+1942,
+"Kingdom of Italy"
+]
+],
+"sides": [
+"8th Army",
+"Q3694034",
+"Brigata Maiella",
+"LI Mountain Corps (Wehrmacht)"
+]
+},
+{
+"test": "capture",
+"where": "Coimbra",
+"y": 1117,
+"q": "Q121065824",
+"text": "Siege of Coimbra (1117). Result: Portuguese victory. The map never shows the winners holding Coimbra in the 15 years around it (it shows Kingdom of León).",
+"ci": 222,
+"map": [
+[
+1113,
+"Kingdom of León"
+]
+],
+"winner": "Portuguese victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Sevastopol",
+"y": 1855,
+"q": "Q2342758",
+"text": "Battle of the Chernaya (1855) is filed under Sevastopol, but Wikidata places it 34 km away (44.467, 33.850).",
+"ci": 224,
+"at": [
+33.85,
+44.46667
+],
+"km": 34
+},
+{
+"test": "ruler",
+"where": "Sarajevo",
+"y": 1995,
+"q": "Q4872697",
+"text": "Battle of Vrbanja Bridge (1995): the sides were United Nations Protection Force, Republika Srpska, François Lecointre, Bruno Heluin; the map says Bosnia and Herzegovina held Sarajevo.",
+"ci": 228,
+"map": [
+[
+1993,
+"Bosnia and Herzegovina"
+]
+],
+"sides": [
+"United Nations Protection Force",
+"Republika Srpska",
+"François Lecointre",
+"Bruno Heluin"
+]
+},
+{
+"test": "capture",
+"where": "Luxembourg",
+"y": 1794,
+"q": "Q904495",
+"text": "Siege of Luxembourg (1794). Result: French victory. The map shows the winners holding Luxembourg from 1795, not from 1794.",
+"ci": 236,
+"map": [
+[
+1778,
+"Austrian Netherlands"
+],
+[
+1795,
+"French First Republic"
+]
+],
+"winner": "French victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Tartu (Dorpat)",
+"y": 1656,
+"q": "Q4337374",
+"text": "Siege of Dorpat (1656). Result: Russian victory. The map never shows the winners holding Tartu (Dorpat) in the 15 years around it (it shows Swedish Empire).",
+"ci": 240,
+"map": [
+[
+1652,
+"Swedish Empire"
+]
+],
+"winner": "Russian victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Athens",
+"y": 1821,
+"q": "Q7510534",
+"text": "Siege of the Acropolis (1821). Result: Greek victory. The map shows the winners holding Athens from 1831, not from 1821.",
+"ci": 243,
+"map": [
+[
+1805,
+"Ottoman Empire"
+],
+[
+1831,
+"Greece (before the kingdom)"
+]
+],
+"winner": "Greek victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Maastricht",
+"y": 1579,
+"q": "Q2758693",
+"text": "Siege of Maastricht (1579). Result: Spanish victory. The map never shows the winners holding Maastricht in the 15 years around it (it shows Holy Roman Empire).",
+"ci": 247,
+"map": [
+[
+1575,
+"Holy Roman Empire"
+]
+],
+"winner": "Spanish victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Maastricht",
+"y": 1632,
+"q": "Q2056637",
+"text": "Capture of Maastricht (1632). Result: Dutch victory. The map never shows the winners holding Maastricht in the 15 years around it (it shows Holy Roman Empire).",
+"ci": 247,
+"map": [
+[
+1628,
+"Holy Roman Empire"
+]
+],
+"winner": "Dutch victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Lublin",
+"y": 1792,
+"q": "Q2888467",
+"text": "Battle of Dubienka (1792) is filed under Lublin, but Wikidata places it 93 km away (51.078, 23.866).",
+"ci": 254,
+"at": [
+23.86615,
+51.07781
+],
+"km": 93
+},
+{
+"test": "placed",
+"where": "Białystok",
+"y": 1943,
+"q": "Q56685959",
+"text": "Transport and murder of Białystok children (1943) is filed under Białystok, but Wikidata places it 683 km away (50.513, 14.167).",
+"ci": 255,
+"at": [
+14.16694,
+50.51333
+],
+"km": 683
+},
+{
+"test": "capture",
+"where": "Toruń",
+"y": 1703,
+"q": "Q815214",
+"text": "Siege of Thorn (1703). Result: Swedish victory. The map never shows the winners holding Toruń in the 15 years around it (it shows Polish–Lithuanian Commonwealth).",
+"ci": 259,
+"map": [
+[
+1699,
+"Polish–Lithuanian Commonwealth"
+]
+],
+"winner": "Swedish victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Kielce",
+"y": 1702,
+"q": "Q704762",
+"text": "Battle of Klissow (1702) is filed under Kielce, but Wikidata places it 29 km away (50.617, 20.526).",
+"ci": 260,
+"at": [
+20.52583,
+50.61667
+],
+"km": 29
+},
+{
+"test": "placed",
+"where": "Tirana",
+"y": 2026,
+"q": "Q139998119",
+"text": "Flamingo Revolution (2026) is filed under Tirana, but Wikidata places it 96 km away (40.515, 19.417).",
+"ci": 277,
+"at": [
+19.41694,
+40.51528
+],
+"km": 96
+},
+{
+"test": "ruler",
+"where": "Durrës",
+"y": 1915,
+"q": "Q838704",
+"text": "Battle of Durazzo (1915): the sides were Kingdom of Italy, United Kingdom of Great Britain and Ireland, France, Austria–Hungary; the map says Albania held Durrës.",
+"ci": 278,
+"map": [
+[
+1913,
+"Albania"
+]
+],
+"sides": [
+"Kingdom of Italy",
+"United Kingdom of Great Britain and Ireland",
+"France",
+"Austria–Hungary"
+]
+},
+{
+"test": "capture",
+"where": "Patras",
+"y": 1821,
+"q": "Q12882037",
+"text": "Siege of Patras (1821). Result: Greek victory. The map shows the winners holding Patras from 1832, not from 1821.",
+"ci": 280,
+"map": [
+[
+1805,
+"Ottoman Empire"
+],
+[
+1832,
+"Kingdom of Greece"
+]
+],
+"winner": "Greek victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Heraklion",
+"y": 1648,
+"q": "Q701094",
+"text": "Siege of Candia (1648). Result: Ottoman victory. The map never shows the winners holding Heraklion in the 15 years around it (it shows Republic of Venice).",
+"ci": 281,
+"map": [
+[
+1644,
+"Republic of Venice"
+]
+],
+"winner": "Ottoman victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Ankara",
+"y": 1402,
+"q": "Q115802865",
+"text": "Siege of Ankara (1402). Result: Timurid victory. The map never shows the winners holding Ankara in the 15 years around it (it shows Germiyanids).",
+"ci": 282,
+"map": [
+[
+1398,
+"Germiyanids"
+]
+],
+"winner": "Timurid victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Ankara",
+"y": 1982,
+"q": "Q2042386",
+"text": "Esenboğa International Airport attack (1982) is filed under Ankara, but Wikidata places it 25 km away (40.128, 32.995).",
+"ci": 282,
+"at": [
+32.995,
+40.12806
+],
+"km": 25
+},
+{
+"test": "capture",
+"where": "Bursa",
+"y": 1317,
+"q": "Q1099263",
+"text": "Siege of Bursa (1317). Result: Ottoman victory. The map shows the winners holding Bursa from 1326, not from 1317.",
+"ci": 284,
+"map": [
+[
+1301,
+"Byzantine Empire"
+],
+[
+1326,
+"Ottoman Empire"
+]
+],
+"winner": "Ottoman victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Gaziantep",
+"y": 1920,
+"q": "Q4820796",
+"text": "Siege of Aintab (1920). Result: French victory. The map shows the winners holding Gaziantep from 1921, not from 1920.",
+"ci": 285,
+"map": [
+[
+1904,
+"Ottoman Empire"
+],
+[
+1921,
+"French mandate for Syria"
+],
+[
+1925,
+"Republic of Turkey"
+]
+],
+"winner": "French victory",
+"kind": "date"
+},
+{
+"test": "placed",
+"where": "Gaziantep",
+"y": 2023,
+"q": "Q116691303",
+"text": "2023 Turkey–Syria earthquakes (2023) is filed under Gaziantep, but Wikidata places it 33 km away (37.174, 37.032).",
+"ci": 285,
+"at": [
+37.032,
+37.174
+],
+"km": 33
+},
+{
+"test": "capture",
+"where": "Antalya",
+"y": 1207,
+"q": "Q3485813",
+"text": "Siege of Antalya (1207). Result: Seljuk victory. The map never shows the winners holding Antalya in the 15 years around it (it shows no country).",
+"ci": 286,
+"map": [
+[
+1203,
+"Byzantine Empire"
+],
+[
+1205,
+"no country"
+]
+],
+"winner": "Seljuk victory",
+"kind": "never"
+},
+{
+"test": "ruler",
+"where": "Samsun",
+"y": 1922,
+"q": "Q4940512",
+"text": "Bombardment of Samsun (1922): the sides were Kingdom of Greece, United States, Government of the Grand National Assembly; the map says Ottoman Empire held Samsun.",
+"ci": 288,
+"map": [
+[
+1920,
+"Ottoman Empire"
+],
+[
+1923,
+"Republic of Turkey"
+]
+],
+"sides": [
+"Kingdom of Greece",
+"United States",
+"Government of the Grand National Assembly"
+]
+},
+{
+"test": "capture",
+"where": "Trabzon",
+"y": 1460,
+"q": "Q9366875",
+"text": "Siege of Trebizond in 1461 (1460). Result: Ottoman victory. The map shows the winners holding Trabzon from 1463, not from 1461.",
+"ci": 289,
+"map": [
+[
+1444,
+"Empire of Trebizond"
+],
+[
+1463,
+"Ottoman Empire"
+]
+],
+"winner": "Ottoman victory",
+"kind": "date"
+},
+{
+"test": "placed",
+"where": "Malatya",
+"y": 1473,
+"q": "Q55703076",
+"text": "Battle of Malatya (1473) is filed under Malatya, but Wikidata places it 233 km away (39.974, 40.022).",
+"ci": 290,
+"at": [
+40.02222,
+39.97361
+],
+"km": 233
+},
+{
+"test": "capture",
+"where": "Şanlıurfa",
+"y": 1144,
+"q": "Q2083368",
+"text": "Siege of Edessa (1144). Result: Zengid victory. The map shows the winners holding Şanlıurfa from 1147, not from 1145.",
+"ci": 291,
+"map": [
+[
+1128,
+"County of Edessa"
+],
+[
+1147,
+"Zengids"
+]
+],
+"winner": "Zengid victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Latakia",
+"y": 1188,
+"q": "Q121090883",
+"text": "Siege of Laodicea (1188). Result: Ayyubid victory. The map never shows the winners holding Latakia in the 15 years around it (it shows Principality of Antioch).",
+"ci": 293,
+"map": [
+[
+1184,
+"Principality of Antioch"
+]
+],
+"winner": "Ayyubid victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Mosul",
+"y": 2015,
+"q": "Q20647259",
+"text": "Mosul offensive (2015) is filed under Mosul, but Wikidata places it 62 km away (35.800, 43.290).",
+"ci": 294,
+"at": [
+43.2897,
+35.8003
+],
+"km": 62
+},
+{
+"test": "capture",
+"where": "Tabriz",
+"y": 1514,
+"q": "Q118928943",
+"text": "Capture of Tabriz (1514). Result: Ottoman victory. The map never shows the winners holding Tabriz in the 15 years around it (it shows Safavid Iran).",
+"ci": 296,
+"map": [
+[
+1510,
+"Safavid Iran"
+]
+],
+"winner": "Ottoman victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Tabriz",
+"y": 1585,
+"q": "Q119167853",
+"text": "Capture of Tabriz (1585). Result: Ottoman victory. The map shows the winners holding Tabriz from 1588, not from 1586.",
+"ci": 296,
+"map": [
+[
+1569,
+"Safavid Iran"
+],
+[
+1588,
+"Ottoman Empire"
+]
+],
+"winner": "Ottoman victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Tabriz",
+"y": 1635,
+"q": "Q125784315",
+"text": "Capture of Tabriz (1635). Result: Ottoman victory. The map never shows the winners holding Tabriz in the 15 years around it (it shows Safavid Iran).",
+"ci": 296,
+"map": [
+[
+1631,
+"Safavid Iran"
+]
+],
+"winner": "Ottoman victory",
+"kind": "never"
+},
+{
+"test": "ruler",
+"where": "Yerevan",
+"y": 1751,
+"q": "Q16377676",
+"text": "Battle of Kirkhbulakh (1751): the sides were Kingdom of Kakheti, Kingdom of Kartli, Azad Khan Afghan; the map says Afsharid Iran held Yerevan.",
+"ci": 299,
+"map": [
+[
+1749,
+"Afsharid Iran"
+]
+],
+"sides": [
+"Kingdom of Kakheti",
+"Kingdom of Kartli",
+"Azad Khan Afghan"
+]
+},
+{
+"test": "placed",
+"where": "Yerevan",
+"y": 2020,
+"q": "Q101429497",
+"text": "2020 Nagorno-Karabakh ceasefire agreement (2020) is filed under Yerevan, but Wikidata places it 452 km away (40.367, 49.835).",
+"ci": 299,
+"at": [
+49.83518,
+40.36666
+],
+"km": 452
+},
+{
+"test": "placed",
+"where": "Ganja",
+"y": 1139,
+"q": "Q4191053",
+"text": "1139 Ganja earthquake (1139) is filed under Ganja, but Wikidata places it 43 km away (40.300, 46.300).",
+"ci": 301,
+"at": [
+46.3,
+40.3
+],
+"km": 43
+},
+{
+"test": "capture",
+"where": "Ganja",
+"y": 1606,
+"q": "Q20473264",
+"text": "Siege of Ganja (1606). Result: Safavid victory. The map shows the winners holding Ganja from 1612, not from 1607.",
+"ci": 301,
+"map": [
+[
+1590,
+"Ottoman Empire"
+],
+[
+1612,
+"Safavid Iran"
+]
+],
+"winner": "Safavid victory",
+"kind": "date"
+},
+{
+"test": "placed",
+"where": "Tunis",
+"y": 1424,
+"q": "Q11921389",
+"text": "Aragonese expedition to Tunisia of 1424 (1424) is filed under Tunis, but Wikidata places it 342 km away (33.783, 10.883).",
+"ci": 304,
+"at": [
+10.88333,
+33.78333
+],
+"km": 342
+},
+{
+"test": "capture",
+"where": "Tunis",
+"y": 1535,
+"q": "Q700893",
+"text": "Conquest of Tunis (1535). Result: Habsburg and allied victory. The map never shows the winners holding Tunis in the 15 years around it (it shows Ottoman Empire).",
+"ci": 304,
+"map": [
+[
+1531,
+"Ottoman Empire"
+]
+],
+"winner": "Habsburg and allied victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Tunis",
+"y": 1573,
+"q": "Q12251145",
+"text": "Conquest of Tunis (1573). Result: Spanish victory. The map never shows the winners holding Tunis in the 15 years around it (it shows Ottoman Empire).",
+"ci": 304,
+"map": [
+[
+1569,
+"Ottoman Empire"
+]
+],
+"winner": "Spanish victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Tunis",
+"y": 1694,
+"q": "Q86669109",
+"text": "Siege of Tunis (1694). Result: Algerian victory. The map never shows the winners holding Tunis in the 15 years around it (it shows Ottoman Empire).",
+"ci": 304,
+"map": [
+[
+1690,
+"Ottoman Empire"
+]
+],
+"winner": "Algerian victory",
+"kind": "never"
+},
+{
+"test": "ruler",
+"where": "Tunis",
+"y": 1735,
+"q": "Q86670059",
+"text": "Tunisian-Algerian War of 1735 (1735): the sides were Regency of Algiers, Beylik of Tunis; the map says Ottoman Empire held Tunis.",
+"ci": 304,
+"map": [
+[
+1733,
+"Ottoman Empire"
+]
+],
+"sides": [
+"Regency of Algiers",
+"Beylik of Tunis"
+]
+},
+{
+"test": "ruler",
+"where": "Tunis",
+"y": 1784,
+"q": "Q28001553",
+"text": "Venetian bombardments of the Beylik of Tunis (1784): the sides were Republic of Venice, Beylik of Tunis; the map says Ottoman Empire held Tunis.",
+"ci": 304,
+"map": [
+[
+1782,
+"Ottoman Empire"
+]
+],
+"sides": [
+"Republic of Venice",
+"Beylik of Tunis"
+]
+},
+{
+"test": "placed",
+"where": "Tunis",
+"y": 1943,
+"q": "Q3533209",
+"text": "Operation Flax (1943) is filed under Tunis, but Wikidata places it 118 km away (37.333, 11.333).",
+"ci": 304,
+"at": [
+11.3333,
+37.3333
+],
+"km": 118
+},
+{
+"test": "ruler",
+"where": "Annaba",
+"y": 1399,
+"q": "Q20640745",
+"text": "Bona crusade (1399): the sides were Crown of Aragon, Hafsid dynasty; the map says Hafsid Sultanate of Tunis held Annaba.",
+"ci": 308,
+"map": [
+[
+1397,
+"Hafsid Sultanate of Tunis"
+]
+],
+"sides": [
+"Crown of Aragon",
+"Hafsid dynasty"
+]
+},
+{
+"test": "ruler",
+"where": "Tangier",
+"y": 1437,
+"q": "Q4872500",
+"text": "Battle of Tangier (1437): the sides were Kingdom of Portugal, Marinid dynasty; the map says Morocco (Marinid and Wattasid sultans) held Tangier.",
+"ci": 310,
+"map": [
+[
+1435,
+"Morocco (Marinid and Wattasid sultans)"
+]
+],
+"sides": [
+"Kingdom of Portugal",
+"Marinid dynasty"
+]
+},
+{
+"test": "ruler",
+"where": "Tangier",
+"y": 1471,
+"q": "Q124474956",
+"text": "Portuguese conquest of Tangier (1471): the sides were Kingdom of Portugal, Wattasid dynasty; the map says Morocco (Marinid and Wattasid sultans) held Tangier.",
+"ci": 310,
+"map": [
+[
+1469,
+"Morocco (Marinid and Wattasid sultans)"
+]
+],
+"sides": [
+"Kingdom of Portugal",
+"Wattasid dynasty"
+]
+},
+{
+"test": "ruler",
+"where": "Tangier",
+"y": 1680,
+"q": "Q109256037",
+"text": "Great Siege of Tangier (1680): the sides were Kingdom of England, Sharifian Empire; the map says Sultanate of Morocco (Alawi dynasty) held Tangier.",
+"ci": 310,
+"map": [
+[
+1678,
+"Sultanate of Morocco (Alawi dynasty)"
+]
+],
+"sides": [
+"Kingdom of England",
+"Sharifian Empire"
+]
+},
+{
+"test": "ruler",
+"where": "Tétouan",
+"y": 1829,
+"q": "Q18604047",
+"text": "Austrian expedition against Morocco (1829): the sides were Austrian Empire, Sharifian Empire; the map says Sultanate of Morocco (Alawi dynasty) held Tétouan.",
+"ci": 311,
+"map": [
+[
+1827,
+"Sultanate of Morocco (Alawi dynasty)"
+]
+],
+"sides": [
+"Austrian Empire",
+"Sharifian Empire"
+]
+},
+{
+"test": "ruler",
+"where": "Tétouan",
+"y": 1860,
+"q": "Q4872623",
+"text": "Battle of Tétouan (1860): the sides were Kingdom of Spain, Sharifian Empire; the map says Sultanate of Morocco (Alawi dynasty) held Tétouan.",
+"ci": 311,
+"map": [
+[
+1858,
+"Sultanate of Morocco (Alawi dynasty)"
+]
+],
+"sides": [
+"Kingdom of Spain",
+"Sharifian Empire"
+]
+},
+{
+"test": "ruler",
+"where": "Oujda",
+"y": 1647,
+"q": "Q109312791",
+"text": "Capture of Oujda (1647): the sides were 'Alawi dynasty, Regency of Algiers; the map says Morocco (Wattasid and Saadi sultanates) held Oujda.",
+"ci": 312,
+"map": [
+[
+1645,
+"Morocco (Wattasid and Saadi sultanates)"
+]
+],
+"sides": [
+"'Alawi dynasty",
+"Regency of Algiers"
+]
+},
+{
+"test": "placed",
+"where": "Kryvyi Rih",
+"y": 1944,
+"q": "Q4321178",
+"text": "Nikopol–Krivoi Rog Offensive (1944) is filed under Kryvyi Rih, but Wikidata places it 50 km away (47.697, 33.980).",
+"ci": 314,
+"at": [
+33.98,
+47.697
+],
+"km": 50
+},
+{
+"test": "placed",
+"where": "Cherkasy",
+"y": 1944,
+"q": "Q509417",
+"text": "Battle of the Korsun–Cherkassy Pocket (1944) is filed under Cherkasy, but Wikidata places it 57 km away (49.419, 31.277).",
+"ci": 321,
+"at": [
+31.2772,
+49.4194
+],
+"km": 57
+},
+{
+"test": "placed",
+"where": "Ternopil",
+"y": 1944,
+"q": "Q691968",
+"text": "Kamenets-Podolsky Pocket (1944) is filed under Ternopil, but Wikidata places it 91 km away (49.000, 26.500).",
+"ci": 324,
+"at": [
+26.5,
+49
+],
+"km": 91
+},
+{
+"test": "placed",
+"where": "Tver",
+"y": 1940,
+"q": "Q134301",
+"text": "Katyn massacre (1940) is filed under Tver, but Wikidata places it 347 km away (54.773, 31.789).",
+"ci": 339,
+"at": [
+31.78889,
+54.77333
+],
+"km": 347
+},
+{
+"test": "capture",
+"where": "Vladimir",
+"y": 1238,
+"q": "Q51108186",
+"text": "Siege of Vladimir (1238). Result: Mongol victory. The map shows the winners holding Vladimir from 1241, not from 1238.",
+"ci": 342,
+"map": [
+[
+1222,
+"Vladimir-Suzdal"
+],
+[
+1241,
+"Mongol Empire"
+],
+[
+1242,
+"Golden Horde"
+]
+],
+"winner": "Mongol victory",
+"kind": "date"
+},
+{
+"test": "placed",
+"where": "Kaluga",
+"y": 1500,
+"q": "Q2034641",
+"text": "Battle of Vedrosha (1500) is filed under Kaluga, but Wikidata places it 182 km away (54.819, 33.477).",
+"ci": 343,
+"at": [
+33.47694,
+54.81861
+],
+"km": 182
+},
+{
+"test": "capture",
+"where": "Smolensk",
+"y": 1514,
+"q": "Q4337446",
+"text": "Siege of Smolensk (1514). Result: Russian victory. The map shows the winners holding Smolensk from 1516, not from 1515.",
+"ci": 344,
+"map": [
+[
+1498,
+"Grand Duchy of Lithuania"
+],
+[
+1516,
+"Grand Principality of Moscow (Muscovy)"
+]
+],
+"winner": "Russian victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Smolensk",
+"y": 1654,
+"q": "Q4337448",
+"text": "Siege of Smolensk (1654). Result: Russo-Cossack victory. The map shows the winners holding Smolensk from 1667, not from 1655.",
+"ci": 344,
+"map": [
+[
+1638,
+"Polish–Lithuanian Commonwealth"
+],
+[
+1667,
+"Tsardom of Russia"
+]
+],
+"winner": "Russo-Cossack victory",
+"kind": "date"
+},
+{
+"test": "placed",
+"where": "Sochi",
+"y": 2014,
+"q": "Q9678",
+"text": "2014 Winter Olympics (2014) is filed under Sochi, but Wikidata places it 28 km away (43.402, 39.956).",
+"ci": 354,
+"at": [
+39.95611,
+43.40227
+],
+"km": 28
+},
+{
+"test": "capture",
+"where": "Eindhoven",
+"y": 1583,
+"q": "Q2330922",
+"text": "Siege of Eindhoven (1583). Result: Spanish victory. The map already shows the winners holding Eindhoven in 1568, before the event.",
+"ci": 362,
+"map": [
+[
+1567,
+"Spanish Netherlands"
+],
+[
+1582,
+"Dutch Republic (United Provinces)"
+]
+],
+"winner": "Spanish victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Liège",
+"y": 1702,
+"q": "Q136361050",
+"text": "Capture of Liège (1702). Result: Anglo-Dutch victory. The map never shows the winners holding Liège in the 15 years around it (it shows Prince-Bishopric of Liège).",
+"ci": 364,
+"map": [
+[
+1698,
+"Prince-Bishopric of Liège"
+]
+],
+"winner": "Anglo-Dutch victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Ghent",
+"y": 1583,
+"q": "Q2202319",
+"text": "Siege of Ghent (1583). Result: Spanish victory. The map already shows the winners holding Ghent in 1568, before the event.",
+"ci": 365,
+"map": [
+[
+1567,
+"Spanish Netherlands"
+],
+[
+1582,
+"Dutch Republic (United Provinces)"
+],
+[
+1588,
+"Spanish Netherlands"
+]
+],
+"winner": "Spanish victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Ghent",
+"y": 1745,
+"q": "Q3485894",
+"text": "Fall of Ghent (1745). Result: French victory. The map never shows the winners holding Ghent in the 15 years around it (it shows Austrian Netherlands).",
+"ci": 365,
+"map": [
+[
+1741,
+"Austrian Netherlands"
+]
+],
+"winner": "French victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Ghent",
+"y": 1918,
+"q": "Q1095120",
+"text": "Battle of Courtrai (1918) is filed under Ghent, but Wikidata places it 40 km away (50.833, 3.267).",
+"ci": 365,
+"at": [
+3.26667,
+50.8333
+],
+"km": 40
+},
+{
+"test": "placed",
+"where": "Uppsala",
+"y": 1932,
+"q": "Q10716836",
+"text": "Von Sydow murders (1932) is filed under Uppsala, but Wikidata places it 62 km away (59.327, 18.045).",
+"ci": 385,
+"at": [
+18.04546,
+59.32702
+],
+"km": 62
+},
+{
+"test": "capture",
+"where": "Varna",
+"y": 1201,
+"q": "Q3622554",
+"text": "Siege of Varna (1201) (1201). Result: Bulgarian victory. The map shows the winners holding Varna from 1202, not from 1201.",
+"ci": 392,
+"map": [
+[
+1185,
+"Byzantine Empire"
+],
+[
+1202,
+"Second Bulgarian Empire"
+]
+],
+"winner": "Bulgarian victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Varna",
+"y": 1658,
+"q": "Q4337362",
+"text": "Siege of Varna (1658). Result: Russian victory. The map never shows the winners holding Varna in the 15 years around it (it shows Ottoman Empire).",
+"ci": 392,
+"map": [
+[
+1654,
+"Ottoman Empire"
+]
+],
+"winner": "Russian victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Varna",
+"y": 1828,
+"q": "Q2073130",
+"text": "Siege of Varna (1828) (1828). Result: Russian victory. The map never shows the winners holding Varna in the 15 years around it (it shows Ottoman Empire).",
+"ci": 392,
+"map": [
+[
+1824,
+"Ottoman Empire"
+]
+],
+"winner": "Russian victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Plymouth",
+"y": 1652,
+"q": "Q1438686",
+"text": "Battle of Plymouth (1652) is filed under Plymouth, but Wikidata places it 46 km away (49.964, -4.210).",
+"ci": 393,
+"at": [
+-4.21,
+49.964
+],
+"km": 46
+},
+{
+"test": "capture",
+"where": "'s-Hertogenbosch",
+"y": 1601,
+"q": "Q20638664",
+"text": "Siege of 's-Hertogenbosch (1601). Result: Spanish victory. The map never shows the winners holding 's-Hertogenbosch in the 15 years around it (it shows Dutch Republic (United Provinces)).",
+"ci": 397,
+"map": [
+[
+1597,
+"Dutch Republic (United Provinces)"
+]
+],
+"winner": "Spanish victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Tournai",
+"y": 1667,
+"q": "Q3486044",
+"text": "Siege of Tournai (1667). Result: French victory. The map shows the winners holding Tournai from 1668, not from 1667.",
+"ci": 403,
+"map": [
+[
+1651,
+"Spanish Netherlands"
+],
+[
+1668,
+"Kingdom of France"
+]
+],
+"winner": "French victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Tournai",
+"y": 1745,
+"q": "Q16677044",
+"text": "Siege of Tournai (1745). Result: French victory. The map never shows the winners holding Tournai in the 15 years around it (it shows Austrian Netherlands).",
+"ci": 403,
+"map": [
+[
+1741,
+"Austrian Netherlands"
+]
+],
+"winner": "French victory",
+"kind": "never"
+},
+{
+"test": "held",
+"where": "Mantua",
+"y": 1797,
+"q": "Q815175",
+"text": "Siege of Mantua (1797). Result: French victory, so the defenders kept Mantua; but the map hands it to Cisalpine Republic in 1797.",
+"ci": 407,
+"map": [
+[
+1794,
+"Habsburg Monarchy"
+],
+[
+1796,
+"French First Republic"
+],
+[
+1797,
+"Cisalpine Republic"
+]
+],
+"winner": "French victory"
+},
+{
+"test": "capture",
+"where": "Mantua",
+"y": 1799,
+"q": "Q3485946",
+"text": "Siege of Mantua (1799). Result: Austrian victory. The map already shows the winners holding Mantua in 1784, before the event.",
+"ci": 407,
+"map": [
+[
+1783,
+"Habsburg Monarchy"
+],
+[
+1787,
+"Duchy of Milan (under Austria)"
+],
+[
+1791,
+"Habsburg Monarchy"
+],
+[
+1796,
+"French First Republic"
+],
+[
+1797,
+"Cisalpine Republic"
+],
+[
+1814,
+"Austrian Empire"
+]
+],
+"winner": "Austrian victory",
+"kind": "date"
+},
+{
+"test": "ruler",
+"where": "Pavia",
+"y": 1525,
+"q": "Q63468",
+"text": "Battle of Pavia (1525): the sides were Empire of Charles V, Kingdom of France; the map says Duchy of Milan (Sforza) held Pavia.",
+"ci": 408,
+"map": [
+[
+1523,
+"Duchy of Milan (Sforza)"
+]
+],
+"sides": [
+"Empire of Charles V",
+"Kingdom of France"
+]
+},
+{
+"test": "placed",
+"where": "Cartagena",
+"y": 1758,
+"q": "Q66968495",
+"text": "Battle of Cape Palos (1758) is filed under Cartagena, but Wikidata places it 86 km away (36.919, -0.527).",
+"ci": 410,
+"at": [
+-0.52734,
+36.91861
+],
+"km": 86
+},
+{
+"test": "placed",
+"where": "Cartagena",
+"y": 1815,
+"q": "Q4873063",
+"text": "Battle of Cape Palos (1815) is filed under Cartagena, but Wikidata places it 29 km away (37.621, -0.656).",
+"ci": 410,
+"at": [
+-0.65639,
+37.62056
+],
+"km": 29
+},
+{
+"test": "placed",
+"where": "Cartagena",
+"y": 1938,
+"q": "Q1764042",
+"text": "Battle of Cape Palos (1938) is filed under Cartagena, but Wikidata places it 165 km away (37.872, 0.867).",
+"ci": 410,
+"at": [
+0.86667,
+37.87167
+],
+"km": 165
+},
+{
+"test": "ruler",
+"where": "Jerez de la Frontera",
+"y": 1231,
+"q": "Q2888869",
+"text": "Battle of Jerez (1231): the sides were Crown of Castile, Taifa of Murcia; the map says Almohad Caliphate held Jerez de la Frontera.",
+"ci": 429,
+"map": [
+[
+1229,
+"Almohad Caliphate"
+]
+],
+"sides": [
+"Crown of Castile",
+"Taifa of Murcia"
+]
+},
+{
+"test": "capture",
+"where": "Salamanca",
+"y": 1812,
+"q": "Q60524568",
+"text": "Siege of the Salamanca forts (1812). Result: Anglo-Portuguese victory. The map never shows the winners holding Salamanca in the 15 years around it (it shows Kingdom of Spain).",
+"ci": 430,
+"map": [
+[
+1808,
+"Kingdom of Spain"
+]
+],
+"winner": "Anglo-Portuguese victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "La Rochelle",
+"y": 1420,
+"q": "Q4871519",
+"text": "Battle of La Rochelle (1420) is filed under La Rochelle, but Wikidata places it 124 km away (47.267, -1.383).",
+"ci": 436,
+"at": [
+-1.38333,
+47.2667
+],
+"km": 124
+},
+{
+"test": "placed",
+"where": "Versailles",
+"y": 1762,
+"q": "Q2628377",
+"text": "Treaty of Fontainebleau (1762) is filed under Versailles, but Wikidata places it 60 km away (48.409, 2.702).",
+"ci": 440,
+"at": [
+2.7017,
+48.4089
+],
+"km": 60
+},
+{
+"test": "capture",
+"where": "Dunkirk",
+"y": 1646,
+"q": "Q3485880",
+"text": "Siege of Dunkirk (1646). Result: Franco-Dutch victory. The map never shows the winners holding Dunkirk in the 15 years around it (it shows Kingdom of Spain (Castile and Aragon)).",
+"ci": 443,
+"map": [
+[
+1642,
+"Kingdom of Spain (Castile and Aragon)"
+]
+],
+"winner": "Franco-Dutch victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Ani",
+"y": 1064,
+"q": "Q113380052",
+"text": "Siege of Ani (1064). Result: Seljuk victory. The map shows the winners holding Ani from 1072, not from 1065.",
+"ci": 452,
+"map": [
+[
+1048,
+"Byzantine Empire"
+],
+[
+1072,
+"Great Seljuk Empire"
+]
+],
+"winner": "Seljuk victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Ani",
+"y": 1124,
+"q": "Q4110437",
+"text": "Siege of Ani (1124). Result: Georgian victory. The map shows the winners holding Ani from 1126, not from 1125.",
+"ci": 452,
+"map": [
+[
+1108,
+"Great Seljuk Empire"
+],
+[
+1126,
+"Kingdom of Georgia"
+],
+[
+1139,
+"Great Seljuk Empire"
+]
+],
+"winner": "Georgian victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Antakya (Antioch)",
+"y": 1097,
+"q": "Q741098",
+"text": "Siege of Antioch (1097). Result: Crusader victory. The map shows the winners holding Antakya (Antioch) from 1098, not from 1097.",
+"ci": 453,
+"map": [
+[
+1081,
+"Byzantine Empire"
+],
+[
+1085,
+"Great Seljuk Empire"
+],
+[
+1098,
+"Principality of Antioch"
+]
+],
+"winner": "Crusader victory",
+"kind": "date"
+},
+{
+"test": "placed",
+"where": "Antakya (Antioch)",
+"y": 1872,
+"q": "Q110235937",
+"text": "Amik earthquake of 1872 (1872) is filed under Antakya (Antioch), but Wikidata places it 31 km away (36.400, 36.400).",
+"ci": 453,
+"at": [
+36.4,
+36.4
+],
+"km": 31
+},
+{
+"test": "capture",
+"where": "Şanlıurfa (Edessa)",
+"y": 1144,
+"q": "Q2083368",
+"text": "Siege of Edessa (1144). Result: Zengid victory. The map shows the winners holding Şanlıurfa (Edessa) from 1147, not from 1145.",
+"ci": 455,
+"map": [
+[
+1128,
+"County of Edessa"
+],
+[
+1147,
+"Zengids"
+]
+],
+"winner": "Zengid victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Veliky Novgorod",
+"y": 1611,
+"q": "Q10428012",
+"text": "Capture of Novgorod (1611). Result: Swedish victory. The map never shows the winners holding Veliky Novgorod in the 15 years around it (it shows Tsardom of Russia).",
+"ci": 461,
+"map": [
+[
+1607,
+"Tsardom of Russia"
+]
+],
+"winner": "Swedish victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Ypres",
+"y": 1678,
+"q": "Q3485833",
+"text": "Siege of Ypres (1678). Result: French victory. The map shows the winners holding Ypres from 1679, not from 1678.",
+"ci": 464,
+"map": [
+[
+1662,
+"Spanish Netherlands"
+],
+[
+1679,
+"Kingdom of France"
+]
+],
+"winner": "French victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Ypres",
+"y": 1794,
+"q": "Q16904212",
+"text": "Siege of Ypres (1794). Result: French victory. The map shows the winners holding Ypres from 1798, not from 1794.",
+"ci": 464,
+"map": [
+[
+1778,
+"Austrian Netherlands"
+],
+[
+1795,
+"Holy Roman Empire"
+],
+[
+1798,
+"French First Republic"
+]
+],
+"winner": "French victory",
+"kind": "date"
+},
+{
+"test": "placed",
+"where": "Ypres",
+"y": 1918,
+"q": "Q1095120",
+"text": "Battle of Courtrai (1918) is filed under Ypres, but Wikidata places it 27 km away (50.833, 3.267).",
+"ci": 464,
+"at": [
+3.26667,
+50.8333
+],
+"km": 27
+},
+{
+"test": "capture",
+"where": "Van",
+"y": 1915,
+"q": "Q1018969",
+"text": "Siege of Van (1915). Result: Russo-Armenian victory. The map shows the winners holding Van from 1921, not from 1915.",
+"ci": 468,
+"map": [
+[
+1899,
+"Ottoman Empire"
+],
+[
+1921,
+"First Republic of Armenia"
+],
+[
+1922,
+"Ottoman Empire"
+],
+[
+1923,
+"Republic of Turkey"
+]
+],
+"winner": "Russo-Armenian victory",
+"kind": "date"
+},
+{
+"test": "placed",
+"where": "Homs",
+"y": 2018,
+"q": "Q51844684",
+"text": "April 2018 missile strikes against Syria (2018) is filed under Homs, but Wikidata places it 136 km away (33.558, 36.315).",
+"ci": 471,
+"at": [
+36.31528,
+33.55828
+],
+"km": 136
+},
+{
+"test": "placed",
+"where": "Kahramanmaraş",
+"y": 2023,
+"q": "Q116691303",
+"text": "2023 Turkey–Syria earthquakes (2023) is filed under Kahramanmaraş, but Wikidata places it 47 km away (37.174, 37.032).",
+"ci": 475,
+"at": [
+37.032,
+37.174
+],
+"km": 47
+},
+{
+"test": "capture",
+"where": "Tripoli",
+"y": 1102,
+"q": "Q1723525",
+"text": "Siege of Tripoli (1102). Result: Crusader victory. The map shows the winners holding Tripoli from 1110, not from 1103.",
+"ci": 524,
+"map": [
+[
+1086,
+"Fatimid Caliphate"
+],
+[
+1110,
+"County of Tripoli"
+]
+],
+"winner": "Crusader victory",
+"kind": "date"
+},
+{
+"test": "placed",
+"where": "Tripoli",
+"y": 1289,
+"q": "Q5432166",
+"text": "Fall of Tripoli (1289) is filed under Tripoli, but Wikidata places it 2099 km away (32.875, 13.187).",
+"ci": 524,
+"at": [
+13.18746,
+32.87519
+],
+"km": 2099
+},
+{
+"test": "placed",
+"where": "Tripoli",
+"y": 2011,
+"q": "Q130714",
+"text": "Syrian civil war spillover in Lebanon (2011) is filed under Tripoli, but Wikidata places it 106 km away (33.561, 35.376).",
+"ci": 524,
+"at": [
+35.3758,
+33.5606
+],
+"km": 106
+},
+{
+"test": "capture",
+"where": "Sinop",
+"y": 1214,
+"q": "Q6130126",
+"text": "Siege of Sinope (1214). Result: Seljuk victory. The map never shows the winners holding Sinop in the 15 years around it (it shows Empire of Trebizond).",
+"ci": 530,
+"map": [
+[
+1210,
+"Empire of Trebizond"
+],
+[
+1216,
+"Sultanate of Rum"
+]
+],
+"winner": "Seljuk victory",
+"kind": "never"
+},
+{
+"test": "ruler",
+"where": "Bila Tserkva",
+"y": 1612,
+"q": "Q9172787",
+"text": "Battle of Białą Cerkwią (1612) (1612): the sides were Zaporozhian Cossacks, Crimean Khanate; the map says Polish–Lithuanian Commonwealth held Bila Tserkva.",
+"ci": 532,
+"map": [
+[
+1610,
+"Polish–Lithuanian Commonwealth"
+]
+],
+"sides": [
+"Zaporozhian Cossacks",
+"Crimean Khanate"
+]
+},
+{
+"test": "capture",
+"where": "Bila Tserkva",
+"y": 1711,
+"q": "Q124749634",
+"text": "Siege of Bila Tserkva (1711). Result: Russian victory. The map never shows the winners holding Bila Tserkva in the 15 years around it (it shows Polish–Lithuanian Commonwealth).",
+"ci": 532,
+"map": [
+[
+1707,
+"Polish–Lithuanian Commonwealth"
+]
+],
+"winner": "Russian victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Almería",
+"y": 1540,
+"q": "Q2293284",
+"text": "Battle of Alborán (1540) is filed under Almería, but Wikidata places it 115 km away (35.917, -3.033).",
+"ci": 540,
+"at": [
+-3.03333,
+35.9167
+],
+"km": 115
+},
+{
+"test": "placed",
+"where": "Biskra",
+"y": 1849,
+"q": "Q2890426",
+"text": "Siege of Zaatcha (1849) is filed under Biskra, but Wikidata places it 32 km away (34.733, 5.417).",
+"ci": 543,
+"at": [
+5.41667,
+34.73333
+],
+"km": 32
+},
+{
+"test": "capture",
+"where": "Breda",
+"y": 1624,
+"q": "Q431488",
+"text": "Siege of Breda (1624). Result: Spanish victory. The map never shows the winners holding Breda in the 15 years around it (it shows Dutch Republic (United Provinces)).",
+"ci": 571,
+"map": [
+[
+1620,
+"Dutch Republic (United Provinces)"
+]
+],
+"winner": "Spanish victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Banja Luka",
+"y": 1994,
+"q": "Q1984410",
+"text": "Banja Luka incident (1994) is filed under Banja Luka, but Wikidata places it 55 km away (44.536, 16.583).",
+"ci": 576,
+"at": [
+16.58262,
+44.53571
+],
+"km": 55
+},
+{
+"test": "capture",
+"where": "Béjaïa",
+"y": 1510,
+"q": "Q28496874",
+"text": "Capture of Béjaïa (1510). Result: Spanish victory. The map never shows the winners holding Béjaïa in the 15 years around it (it shows no country).",
+"ci": 592,
+"map": [
+[
+1506,
+"no country"
+],
+[
+1516,
+"Regency of Algiers"
+]
+],
+"winner": "Spanish victory",
+"kind": "never"
+},
+{
+"test": "ruler",
+"where": "Tlemcen",
+"y": 1535,
+"q": "Q111915776",
+"text": "Spanish expedition to Tlemcen (1535): the sides were Kingdom of Tlemcen, Banu Rashid, Hispanic Monarchy; the map says Regency of Algiers held Tlemcen.",
+"ci": 599,
+"map": [
+[
+1533,
+"Regency of Algiers"
+]
+],
+"sides": [
+"Kingdom of Tlemcen",
+"Banu Rashid",
+"Hispanic Monarchy"
+]
+},
+{
+"test": "capture",
+"where": "Kolomna",
+"y": 1236,
+"q": "Q4087494",
+"text": "Siege of Kolomna (1236). Result: Mongol victory. The map never shows the winners holding Kolomna in the 15 years around it (it shows Principality of Ryazan).",
+"ci": 609,
+"map": [
+[
+1232,
+"Principality of Ryazan"
+]
+],
+"winner": "Mongol victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Pleven",
+"y": 1877,
+"q": "Q780367",
+"text": "Siege of Plevna (1877). Result: Russian coalition victory. The map never shows the winners holding Pleven in the 15 years around it (it shows Ottoman Empire).",
+"ci": 610,
+"map": [
+[
+1873,
+"Ottoman Empire"
+],
+[
+1879,
+"Principality of Bulgaria"
+]
+],
+"winner": "Russian coalition victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Tarragona",
+"y": 1813,
+"q": "Q7510442",
+"text": "Siege of Tarragona (1813). Result: Franco-Italian victory. The map never shows the winners holding Tarragona in the 15 years around it (it shows Kingdom of Spain).",
+"ci": 668,
+"map": [
+[
+1809,
+"Kingdom of Spain"
+]
+],
+"winner": "Franco-Italian victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Bendery",
+"y": 1770,
+"q": "Q48940579",
+"text": "Siege of Bender (1770). Result: Russian victory. The map never shows the winners holding Bendery in the 15 years around it (it shows Ottoman Empire).",
+"ci": 687,
+"map": [
+[
+1766,
+"Ottoman Empire"
+]
+],
+"winner": "Russian victory",
+"kind": "never"
+},
+{
+"test": "ruler",
+"where": "Larache",
+"y": 1829,
+"q": "Q18604047",
+"text": "Austrian expedition against Morocco (1829): the sides were Austrian Empire, Sharifian Empire; the map says Sultanate of Morocco (Alawi dynasty) held Larache.",
+"ci": 699,
+"map": [
+[
+1827,
+"Sultanate of Morocco (Alawi dynasty)"
+]
+],
+"sides": [
+"Austrian Empire",
+"Sharifian Empire"
+]
+},
+{
+"test": "ruler",
+"where": "Larache",
+"y": 1911,
+"q": "Q5804054",
+"text": "Larache landing (1911): the sides were Spain under the Restoration, Riffian people; the map says French-occupied Morocco held Larache.",
+"ci": 699,
+"map": [
+[
+1909,
+"French-occupied Morocco"
+],
+[
+1912,
+"French protectorate of Morocco"
+]
+],
+"sides": [
+"Spain under the Restoration",
+"Riffian people"
+]
+},
+{
+"test": "placed",
+"where": "Kaspiysk",
+"y": 2002,
+"q": "Q2497769",
+"text": "2002 Kaspiysk bombing (2002) is filed under Kaspiysk, but Wikidata places it 44 km away (42.530, 47.380).",
+"ci": 702,
+"at": [
+47.38,
+42.53
+],
+"km": 44
+},
+{
+"test": "capture",
+"where": "Derbent",
+"y": 1796,
+"q": "Q4527020",
+"text": "Storming of Derbent (1796). Result: Russian victory. The map never shows the winners holding Derbent in the 15 years around it (it shows Qajar Iran (Persia)).",
+"ci": 724,
+"map": [
+[
+1792,
+"Qajar Iran (Persia)"
+]
+],
+"winner": "Russian victory",
+"kind": "never"
+},
+{
+"test": "ruler",
+"where": "Ksar el-Kebir",
+"y": 1578,
+"q": "Q1121532",
+"text": "Battle of Alcácer Quibir (1578): the sides were Saadi dynasty, Kingdom of Portugal; the map says Morocco (Wattasid and Saadi sultanates) held Ksar el-Kebir.",
+"ci": 730,
+"map": [
+[
+1576,
+"Morocco (Wattasid and Saadi sultanates)"
+]
+],
+"sides": [
+"Saadi dynasty",
+"Kingdom of Portugal"
+]
+},
+{
+"test": "ruler",
+"where": "Algeciras",
+"y": 1340,
+"q": "Q20925292",
+"text": "Battle of Getares (1340): the sides were Crown of Castile, Marinid dynasty, Hafsid dynasty; the map says Emirate of Granada held Algeciras.",
+"ci": 731,
+"map": [
+[
+1338,
+"Emirate of Granada"
+]
+],
+"sides": [
+"Crown of Castile",
+"Marinid dynasty",
+"Hafsid dynasty"
+]
+},
+{
+"test": "capture",
+"where": "Gori",
+"y": 1598,
+"q": "Q16367386",
+"text": "Siege of Gori (1598). Result: Georgian victory. The map shows the winners holding Gori from 1612, not from 1598.",
+"ci": 736,
+"map": [
+[
+1582,
+"Ottoman Empire"
+],
+[
+1612,
+"Georgian kingdoms of Kartli and Kakheti"
+]
+],
+"winner": "Georgian victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Gori",
+"y": 2008,
+"q": "Q2027167",
+"text": "Occupation of Gori (2008). Result: Russian victory. The map never shows the winners holding Gori in the 15 years around it (it shows Georgia).",
+"ci": 736,
+"map": [
+[
+2004,
+"Georgia"
+]
+],
+"winner": "Russian victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Tarnów",
+"y": 1915,
+"q": "Q670489",
+"text": "Gorlice–Tarnów Offensive (1915) is filed under Tarnów, but Wikidata places it 42 km away (49.654, 21.159).",
+"ci": 760,
+"at": [
+21.15917,
+49.65444
+],
+"km": 42
+},
+{
+"test": "capture",
+"where": "Velikiye Luki",
+"y": 1580,
+"q": "Q11794919",
+"text": "Siege of Velikiye Luki (1580). Result: Polish-Lithuanian victory. The map never shows the winners holding Velikiye Luki in the 15 years around it (it shows Tsardom of Russia).",
+"ci": 787,
+"map": [
+[
+1576,
+"Tsardom of Russia"
+]
+],
+"winner": "Polish-Lithuanian victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Namur",
+"y": 1692,
+"q": "Q2617799",
+"text": "Siege of Namur (1692). Result: French victory. The map never shows the winners holding Namur in the 15 years around it (it shows Spanish Netherlands).",
+"ci": 801,
+"map": [
+[
+1688,
+"Spanish Netherlands"
+]
+],
+"winner": "French victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Namur",
+"y": 1746,
+"q": "Q3485966",
+"text": "Siege of Namur (1746). Result: French victory. The map never shows the winners holding Namur in the 15 years around it (it shows Austrian Netherlands).",
+"ci": 801,
+"map": [
+[
+1742,
+"Austrian Netherlands"
+]
+],
+"winner": "French victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Namur",
+"y": 1792,
+"q": "Q3485968",
+"text": "Siege of Namur (1792). Result: French victory. The map shows the winners holding Namur from 1798, not from 1793.",
+"ci": 801,
+"map": [
+[
+1776,
+"Austrian Netherlands"
+],
+[
+1795,
+"Holy Roman Empire"
+],
+[
+1798,
+"French First Republic"
+]
+],
+"winner": "French victory",
+"kind": "date"
+},
+{
+"test": "ruler",
+"where": "Kırıkhan",
+"y": 1266,
+"q": "Q2571558",
+"text": "Battle of Mari (1266): the sides were Armenian Kingdom of Cilicia, Mamluk Sultanate of Egypt; the map says Principality of Antioch held Kırıkhan.",
+"ci": 803,
+"map": [
+[
+1264,
+"Principality of Antioch"
+],
+[
+1268,
+"Mamluk Sultanate"
+]
+],
+"sides": [
+"Armenian Kingdom of Cilicia",
+"Mamluk Sultanate of Egypt"
+]
+},
+{
+"test": "placed",
+"where": "Liepāja",
+"y": 1991,
+"q": "Q4992563",
+"text": "The Barricades (1991) is filed under Liepāja, but Wikidata places it 195 km away (56.947, 24.107).",
+"ci": 805,
+"at": [
+24.1069,
+56.9475
+],
+"km": 195
+},
+{
+"test": "placed",
+"where": "Nikopol",
+"y": 1944,
+"q": "Q4321178",
+"text": "Nikopol–Krivoi Rog Offensive (1944) is filed under Nikopol, but Wikidata places it 35 km away (47.697, 33.980).",
+"ci": 816,
+"at": [
+33.98,
+47.697
+],
+"km": 35
+},
+{
+"test": "capture",
+"where": "Moers",
+"y": 1597,
+"q": "Q815178",
+"text": "Siege of Meurs (1597). Result: Dutch & English victory. The map never shows the winners holding Moers in the 15 years around it (it shows Holy Roman Empire).",
+"ci": 842,
+"map": [
+[
+1593,
+"Holy Roman Empire"
+]
+],
+"winner": "Dutch & English victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Novara",
+"y": 1363,
+"q": "Q2888239",
+"text": "Battle of Canturino (1363) is filed under Novara, but Wikidata places it 398 km away (43.513, 12.844).",
+"ci": 853,
+"at": [
+12.84407,
+43.5133
+],
+"km": 398
+},
+{
+"test": "capture",
+"where": "Venlo",
+"y": 1586,
+"q": "Q2069820",
+"text": "Siege of Venlo (1586). Result: Spanish victory. The map already shows the winners holding Venlo in 1571, before the event.",
+"ci": 869,
+"map": [
+[
+1570,
+"Spanish Netherlands"
+],
+[
+1581,
+"Holy Roman Empire"
+]
+],
+"winner": "Spanish victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Venlo",
+"y": 1637,
+"q": "Q2377749",
+"text": "Siege of Venlo (1637). Result: Spanish victory. The map shows the winners holding Venlo from 1649, not from 1638.",
+"ci": 869,
+"map": [
+[
+1621,
+"Holy Roman Empire"
+],
+[
+1649,
+"Spanish Netherlands"
+]
+],
+"winner": "Spanish victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Deventer",
+"y": 1456,
+"q": "Q2643811",
+"text": "Siege of Deventer (1456). Result: Burgundian victory. The map never shows the winners holding Deventer in the 15 years around it (it shows Holy Roman Empire).",
+"ci": 878,
+"map": [
+[
+1452,
+"Holy Roman Empire"
+]
+],
+"winner": "Burgundian victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Kamianets-Podilskyi",
+"y": 1672,
+"q": "Q949294",
+"text": "Siege of Kamenets (1672). Result: Ottoman victory. The map never shows the winners holding Kamianets-Podilskyi in the 15 years around it (it shows Polish–Lithuanian Commonwealth).",
+"ci": 884,
+"map": [
+[
+1668,
+"Polish–Lithuanian Commonwealth"
+]
+],
+"winner": "Ottoman victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Kamianets-Podilskyi",
+"y": 1944,
+"q": "Q691968",
+"text": "Kamenets-Podolsky Pocket (1944) is filed under Kamianets-Podilskyi, but Wikidata places it 36 km away (49.000, 26.500).",
+"ci": 884,
+"at": [
+26.5,
+49
+],
+"km": 36
+},
+{
+"test": "held",
+"where": "Grudziądz",
+"y": 1807,
+"q": "Q104858453",
+"text": "Siege of Graudenz (1807). Result: Prussian victory, so the defenders kept Grudziądz; but the map hands it to Duchy of Warsaw in 1807.",
+"ci": 893,
+"map": [
+[
+1804,
+"Kingdom of Prussia"
+],
+[
+1807,
+"Duchy of Warsaw"
+]
+],
+"winner": "Prussian victory"
+},
+{
+"test": "capture",
+"where": "Székesfehérvár",
+"y": 1601,
+"q": "Q106616573",
+"text": "Siege of Székesfehérvár (1601). Result: Holy Roman Empire victory. The map never shows the winners holding Székesfehérvár in the 15 years around it (it shows Ottoman Empire).",
+"ci": 899,
+"map": [
+[
+1597,
+"Ottoman Empire"
+]
+],
+"winner": "Holy Roman Empire victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "San Fernando",
+"y": 1596,
+"q": "Q2535988",
+"text": "Capture of Cadiz (1596). Result: Anglo-Dutch victory. The map never shows the winners holding San Fernando in the 15 years around it (it shows Kingdom of Spain (Castile and Aragon)).",
+"ci": 918,
+"map": [
+[
+1592,
+"Kingdom of Spain (Castile and Aragon)"
+]
+],
+"winner": "Anglo-Dutch victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Kars",
+"y": 1578,
+"q": "Q3652215",
+"text": "Battle of Çıldır (1578) is filed under Kars, but Wikidata places it 58 km away (41.129, 43.133).",
+"ci": 921,
+"at": [
+43.13281,
+41.12889
+],
+"km": 58
+},
+{
+"test": "capture",
+"where": "Kars",
+"y": 1828,
+"q": "Q14824597",
+"text": "Siege of Kars (1828). Result: Russian victory. The map never shows the winners holding Kars in the 15 years around it (it shows Ottoman Empire).",
+"ci": 921,
+"map": [
+[
+1824,
+"Ottoman Empire"
+]
+],
+"winner": "Russian victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Kars",
+"y": 1855,
+"q": "Q815157",
+"text": "Siege of Kars (1855). Result: Russian victory. The map never shows the winners holding Kars in the 15 years around it (it shows Ottoman Empire).",
+"ci": 921,
+"map": [
+[
+1851,
+"Ottoman Empire"
+]
+],
+"winner": "Russian victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Mons",
+"y": 1691,
+"q": "Q3485965",
+"text": "Siege of Mons (1691). Result: French victory. The map never shows the winners holding Mons in the 15 years around it (it shows Spanish Netherlands).",
+"ci": 936,
+"map": [
+[
+1687,
+"Spanish Netherlands"
+]
+],
+"winner": "French victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Mons",
+"y": 1746,
+"q": "Q122212303",
+"text": "Siege of Mons (1746). Result: French victory. The map never shows the winners holding Mons in the 15 years around it (it shows Austrian Netherlands).",
+"ci": 936,
+"map": [
+[
+1742,
+"Austrian Netherlands"
+]
+],
+"winner": "French victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Mons",
+"y": 1914,
+"q": "Q2707293",
+"text": "Great Retreat (1914) is filed under Mons, but Wikidata places it 133 km away (49.500, 2.833).",
+"ci": 936,
+"at": [
+2.83333,
+49.5
+],
+"km": 133
+},
+{
+"test": "placed",
+"where": "Mons",
+"y": 1918,
+"q": "Q1130507",
+"text": "Hundred Days Offensive (1918) is filed under Mons, but Wikidata places it 85 km away (50.000, 3.000).",
+"ci": 936,
+"at": [
+3,
+50
+],
+"km": 85
+},
+{
+"test": "ruler",
+"where": "Nakhchivan",
+"y": 1919,
+"q": "Q129315338",
+"text": "Battle of Nakhchivan (1919): the sides were First Republic of Armenia, Turkish Republic of Aras; the map says Soviet Russia (RSFSR) held Nakhchivan.",
+"ci": 949,
+"map": [
+[
+1917,
+"Russian Republic"
+]
+],
+"sides": [
+"First Republic of Armenia",
+"Turkish Republic of Aras"
+]
+},
+{
+"test": "capture",
+"where": "Izmail",
+"y": 1790,
+"q": "Q2372093",
+"text": "Siege of Izmail (1790). Result: Russian victory. The map never shows the winners holding Izmail in the 15 years around it (it shows Ottoman Empire).",
+"ci": 962,
+"map": [
+[
+1786,
+"Ottoman Empire"
+]
+],
+"winner": "Russian victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Anapa",
+"y": 1791,
+"q": "Q4527017",
+"text": "Siege of Anapa (1791). Result: Russian victory. The map already shows the winners holding Anapa in 1778, before the event.",
+"ci": 1000,
+"map": [
+[
+1775,
+"no country"
+],
+[
+1778,
+"Russian Empire"
+],
+[
+1783,
+"no country"
+],
+[
+1792,
+"Russian Empire"
+]
+],
+"winner": "Russian victory",
+"kind": "date"
+},
+{
+"test": "placed",
+"where": "Hartlepool",
+"y": 1914,
+"q": "Q2657479",
+"text": "Raid on Scarborough, Hartlepool and Whitby (1914) is filed under Hartlepool, but Wikidata places it 114 km away (54.277, 0.402).",
+"ci": 1001,
+"at": [
+0.4017,
+54.2773
+],
+"km": 114
+},
+{
+"test": "placed",
+"where": "Melilla",
+"y": 2021,
+"q": "Q106882471",
+"text": "2021 Morocco–Spain border incident (2021) is filed under Melilla, but Wikidata places it 223 km away (35.887, -5.300).",
+"ci": 1015,
+"at": [
+-5.3,
+35.88667
+],
+"km": 223
+},
+{
+"test": "capture",
+"where": "Veliko Tarnovo",
+"y": 1393,
+"q": "Q3394064",
+"text": "Siege of Tarnovo (1393). Result: Ottoman victory. The map shows the winners holding Veliko Tarnovo from 1395, not from 1394.",
+"ci": 1017,
+"map": [
+[
+1377,
+"Second Bulgarian Empire"
+],
+[
+1395,
+"Ottoman Empire"
+]
+],
+"winner": "Ottoman victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Feodosiia",
+"y": 1475,
+"q": "Q118946261",
+"text": "Siege of Caffa (1475). Result: Ottoman victory. The map shows the winners holding Feodosiia from 1476, not from 1475.",
+"ci": 1021,
+"map": [
+[
+1459,
+"Republic of Genoa"
+],
+[
+1476,
+"Crimean Khanate (Ottoman vassal)"
+]
+],
+"winner": "Ottoman victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Przemyśl",
+"y": 1914,
+"q": "Q698828",
+"text": "Siege of Przemyśl (1914). Result: Russian victory. The map never shows the winners holding Przemyśl in the 15 years around it (it shows Austria-Hungary).",
+"ci": 1043,
+"map": [
+[
+1910,
+"Austria-Hungary"
+],
+[
+1919,
+"Second Polish Republic"
+]
+],
+"winner": "Russian victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Azov",
+"y": 1736,
+"q": "Q4337347",
+"text": "Siege of Azov (1736). Result: Russian victory. The map never shows the winners holding Azov in the 15 years around it (it shows Crimean Khanate).",
+"ci": 1063,
+"map": [
+[
+1732,
+"Crimean Khanate"
+]
+],
+"winner": "Russian victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Shkodër",
+"y": 1478,
+"q": "Q7510403",
+"text": "Siege of Shkodra (1478). Result: Ottoman victory. The map shows the winners holding Shkodër from 1482, not from 1478.",
+"ci": 1075,
+"map": [
+[
+1462,
+"Republic of Venice"
+],
+[
+1482,
+"Ottoman Empire"
+]
+],
+"winner": "Ottoman victory",
+"kind": "date"
+},
+{
+"test": "ruler",
+"where": "Naqadeh",
+"y": 1918,
+"q": "Q113127542",
+"text": "Battle of Suldouze (1918): the sides were Assyrian volunteers, Ottoman Empire; the map says Qajar Iran (Persia) held Naqadeh.",
+"ci": 1085,
+"map": [
+[
+1916,
+"Qajar Iran (Persia)"
+]
+],
+"sides": [
+"Assyrian volunteers",
+"Ottoman Empire"
+]
+},
+{
+"test": "capture",
+"where": "Vyborg",
+"y": 1710,
+"q": "Q815229",
+"text": "Siege of Vyborg (1710). Result: Russian victory. The map shows the winners holding Vyborg from 1722, not from 1710.",
+"ci": 1092,
+"map": [
+[
+1694,
+"Swedish Empire"
+],
+[
+1722,
+"Russian Empire"
+]
+],
+"winner": "Russian victory",
+"kind": "date"
+},
+{
+"test": "ruler",
+"where": "Estepona",
+"y": 1342,
+"q": "Q4870990",
+"text": "Battle of Estepona (1342): the sides were Crown of Aragon, Marinid dynasty, Navy of the Crown of Aragon; the map says Emirate of Granada held Estepona.",
+"ci": 1110,
+"map": [
+[
+1340,
+"Emirate of Granada"
+]
+],
+"sides": [
+"Crown of Aragon",
+"Marinid dynasty",
+"Navy of the Crown of Aragon"
+]
+},
+{
+"test": "placed",
+"where": "Kortrijk",
+"y": 1940,
+"q": "Q1581815",
+"text": "Battle of the Lys (1940) is filed under Kortrijk, but Wikidata places it 41 km away (51.055, 3.734).",
+"ci": 1133,
+"at": [
+3.73417,
+51.055
+],
+"km": 41
+},
+{
+"test": "placed",
+"where": "Benidorm",
+"y": 2003,
+"q": "Q27891517",
+"text": "2003 Alicante and Benidorm bombings (2003) is filed under Benidorm, but Wikidata places it 37 km away (38.345, -0.483).",
+"ci": 1139,
+"at": [
+-0.4831,
+38.3453
+],
+"km": 37
+},
+{
+"test": "capture",
+"where": "Gouda",
+"y": 1428,
+"q": "Q1872640",
+"text": "Siege of Gouda (1428). Result: Burgundian victory. The map shows the winners holding Gouda from 1433, not from 1429.",
+"ci": 1173,
+"map": [
+[
+1412,
+"County of Holland"
+],
+[
+1433,
+"Burgundian State"
+]
+],
+"winner": "Burgundian victory",
+"kind": "date"
+},
+{
+"test": "placed",
+"where": "Carpi",
+"y": 1701,
+"q": "Q552296",
+"text": "Battle of Carpi (1701) is filed under Carpi, but Wikidata places it 56 km away (45.137, 11.395).",
+"ci": 1224,
+"at": [
+11.39486,
+45.13719
+],
+"km": 56
+},
+{
+"test": "capture",
+"where": "Ostend",
+"y": 1604,
+"q": "Q646895",
+"text": "Siege of Ostend (1604). Result: Spanish victory. The map shows the winners holding Ostend from 1609, not from 1605.",
+"ci": 1232,
+"map": [
+[
+1588,
+"Dutch Republic (United Provinces)"
+],
+[
+1609,
+"Spanish Netherlands"
+]
+],
+"winner": "Spanish victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Ostend",
+"y": 1745,
+"q": "Q85801096",
+"text": "Siege of Ostend (1745). Result: French victory. The map never shows the winners holding Ostend in the 15 years around it (it shows Austrian Netherlands).",
+"ci": 1232,
+"map": [
+[
+1741,
+"Austrian Netherlands"
+]
+],
+"winner": "French victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Bihać",
+"y": 1992,
+"q": "Q4122023",
+"text": "Siege of Bihać (1992). Result: ARBiH and Croatian Army victory. The map never shows the winners holding Bihać in the 15 years around it (it shows Bosnia and Herzegovina).",
+"ci": 1248,
+"map": [
+[
+1988,
+"Socialist Yugoslavia"
+],
+[
+1992,
+"Bosnia and Herzegovina"
+]
+],
+"winner": "ARBiH and Croatian Army victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Viterbo",
+"y": 1276,
+"q": "Q427362",
+"text": "September 1276 papal election (1276) is filed under Viterbo, but Wikidata places it 615 km away (43.951, 4.808).",
+"ci": 1305,
+"at": [
+4.8075,
+43.9508
+],
+"km": 615
+},
+{
+"test": "placed",
+"where": "Chalkída",
+"y": 1470,
+"q": "Q3622772",
+"text": "Siege of Negroponte (1470) is filed under Chalkída, but Wikidata places it 29 km away (38.467, 23.267).",
+"ci": 1387,
+"at": [
+23.26667,
+38.46667
+],
+"km": 29
+},
+{
+"test": "ruler",
+"where": "Fushë Kosovë",
+"y": 1448,
+"q": "Q698706",
+"text": "Battle of Kosovo (1448): the sides were Ottoman Empire, Principality of Wallachia; the map says Serbian Despotate held Fushë Kosovë.",
+"ci": 1397,
+"map": [
+[
+1446,
+"Serbian Despotate"
+]
+],
+"sides": [
+"Ottoman Empire",
+"Principality of Wallachia"
+]
+},
+{
+"test": "capture",
+"where": "Korçë",
+"y": 1912,
+"q": "Q5037029",
+"text": "Capture of Korytsa (1912). Result: Greek victory. The map never shows the winners holding Korçë in the 15 years around it (it shows Ottoman Empire).",
+"ci": 1407,
+"map": [
+[
+1908,
+"Ottoman Empire"
+],
+[
+1913,
+"Albania"
+],
+[
+1916,
+"Austro-Hungarian-occupied Albania"
+],
+[
+1917,
+"Autonomous Province of Korçë"
+]
+],
+"winner": "Greek victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Łomża",
+"y": 1939,
+"q": "Q694500",
+"text": "Battle of Wizna (1939) is filed under Łomża, but Wikidata places it 27 km away (53.212, 22.490).",
+"ci": 1431,
+"at": [
+22.48966,
+53.21248
+],
+"km": 27
+},
+{
+"test": "placed",
+"where": "Scarborough",
+"y": 1914,
+"q": "Q2657479",
+"text": "Raid on Scarborough, Hartlepool and Whitby (1914) is filed under Scarborough, but Wikidata places it 52 km away (54.277, 0.402).",
+"ci": 1451,
+"at": [
+0.4017,
+54.2773
+],
+"km": 52
+},
+{
+"test": "placed",
+"where": "Anzio",
+"y": 1944,
+"q": "Q3636398",
+"text": "Battle of Cisterna (1944) is filed under Anzio, but Wikidata places it 113 km away (41.400, 13.983).",
+"ci": 1480,
+"at": [
+13.98333,
+41.4
+],
+"km": 113
+},
+{
+"test": "ruler",
+"where": "Benevento",
+"y": 1266,
+"q": "Q283062",
+"text": "Battle of Benevento (1266): the sides were House of Hohenstaufen, Capetian House of Anjou; the map says Papal States held Benevento.",
+"ci": 1496,
+"map": [
+[
+1264,
+"Papal States"
+]
+],
+"sides": [
+"House of Hohenstaufen",
+"Capetian House of Anjou"
+]
+},
+{
+"test": "capture",
+"where": "Stralsund",
+"y": 1628,
+"q": "Q2612839",
+"text": "Siege of Stralsund (1628). Result: Swedish victory. The map shows the winners holding Stralsund from 1631, not from 1629.",
+"ci": 1511,
+"map": [
+[
+1612,
+"Holy Roman Empire"
+],
+[
+1631,
+"Swedish Empire"
+]
+],
+"winner": "Swedish victory",
+"kind": "date"
+},
+{
+"test": "placed",
+"where": "Faenza",
+"y": 1240,
+"q": "Q7509997",
+"text": "Siege of Faenza (1240) is filed under Faenza, but Wikidata places it 50 km away (44.290, 11.260).",
+"ci": 1524,
+"at": [
+11.26028,
+44.29
+],
+"km": 50
+},
+{
+"test": "capture",
+"where": "Narva",
+"y": 1558,
+"q": "Q4337412",
+"text": "Siege of Narva (1558). Result: Russian victory. The map shows the winners holding Narva from 1559, not from 1558.",
+"ci": 1532,
+"map": [
+[
+1542,
+"State of the Teutonic Order"
+],
+[
+1559,
+"Tsardom of Russia"
+],
+[
+1561,
+"Kingdom of Sweden"
+]
+],
+"winner": "Russian victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Narva",
+"y": 1704,
+"q": "Q694054",
+"text": "Siege of Narva (1704). Result: Russian victory. The map never shows the winners holding Narva in the 15 years around it (it shows Swedish Empire).",
+"ci": 1532,
+"map": [
+[
+1700,
+"Swedish Empire"
+]
+],
+"winner": "Russian victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Gooise Meren",
+"y": 1813,
+"q": "Q15872976",
+"text": "Siege of Naarden (1813-1814) (1813). Result: Russo-Dutch victory. The map already shows the winners holding Gooise Meren in 1798, before the event.",
+"ci": 1535,
+"map": [
+[
+1797,
+"Batavian Republic"
+],
+[
+1811,
+"First French Empire"
+],
+[
+1814,
+"Sovereign Principality of the United Netherlands"
+]
+],
+"winner": "Russo-Dutch victory",
+"kind": "date"
+},
+{
+"test": "ruler",
+"where": "Serres",
+"y": 1205,
+"q": "Q3544422",
+"text": "Battle of Serres (1205): the sides were Second Bulgarian Empire, Latin Empire; the map says Byzantine Empire held Serres.",
+"ci": 1538,
+"map": [
+[
+1203,
+"Byzantine Empire"
+],
+[
+1206,
+"Kingdom of Thessalonica"
+]
+],
+"sides": [
+"Second Bulgarian Empire",
+"Latin Empire"
+]
+},
+{
+"test": "capture",
+"where": "Hamelin",
+"y": 1806,
+"q": "Q7510073",
+"text": "Siege of Hameln (1806). Result: Franco-Dutch victory. The map never shows the winners holding Hamelin in the 15 years around it (it shows Kingdom of Prussia).",
+"ci": 1544,
+"map": [
+[
+1802,
+"Electorate of Hanover"
+],
+[
+1806,
+"Kingdom of Prussia"
+],
+[
+1808,
+"First French Empire"
+],
+[
+1811,
+"Kingdom of Westphalia"
+]
+],
+"winner": "Franco-Dutch victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Bilhorod-Dnistrovskyi",
+"y": 1770,
+"q": "Q124729135",
+"text": "Siege of Akkerman (1770). Result: Russian victory. The map never shows the winners holding Bilhorod-Dnistrovskyi in the 15 years around it (it shows Ottoman Empire).",
+"ci": 1575,
+"map": [
+[
+1766,
+"Ottoman Empire"
+]
+],
+"winner": "Russian victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Lingen",
+"y": 1597,
+"q": "Q4825573",
+"text": "Siege of Lingen (1597). Result: Dutch and English victory. The map never shows the winners holding Lingen in the 15 years around it (it shows Holy Roman Empire).",
+"ci": 1578,
+"map": [
+[
+1593,
+"Holy Roman Empire"
+]
+],
+"winner": "Dutch and English victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Lingen",
+"y": 1605,
+"q": "Q7510198",
+"text": "Siege of Lingen (1605). Result: Spanish victory. The map never shows the winners holding Lingen in the 15 years around it (it shows Holy Roman Empire).",
+"ci": 1578,
+"map": [
+[
+1601,
+"Holy Roman Empire"
+]
+],
+"winner": "Spanish victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Hyères",
+"y": 1944,
+"q": "Q604173",
+"text": "Battle of Port Cros (1944) is filed under Hyères, but Wikidata places it 25 km away (43.005, 6.399).",
+"ci": 1590,
+"at": [
+6.39861,
+43.005
+],
+"km": 25
+},
+{
+"test": "capture",
+"where": "Khankendi",
+"y": 1991,
+"q": "Q7493865",
+"text": "Siege of Stepanakert (1991). Result: Armenian victory. The map shows the winners holding Khankendi from 1994, not from 1991.",
+"ci": 1593,
+"map": [
+[
+1975,
+"Soviet Union"
+],
+[
+1992,
+"Republic of Azerbaijan"
+],
+[
+1994,
+"Artsakh (Nagorno-Karabakh)"
+]
+],
+"winner": "Armenian victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Évora",
+"y": 1165,
+"q": "Q130029676",
+"text": "Conquest of Évora (1165). Result: Portuguese victory. The map shows the winners holding Évora from 1169, not from 1165.",
+"ci": 1601,
+"map": [
+[
+1149,
+"Taifa kingdoms"
+],
+[
+1152,
+"Almohad Caliphate"
+],
+[
+1169,
+"Kingdom of Portugal"
+],
+[
+1177,
+"Almohad Caliphate"
+]
+],
+"winner": "Portuguese victory",
+"kind": "date"
+},
+{
+"test": "placed",
+"where": "Slobozia",
+"y": 1811,
+"q": "Q21644425",
+"text": "Battle of the Danube (1811) is filed under Slobozia, but Wikidata places it 140 km away (43.858, 25.907).",
+"ci": 1618,
+"at": [
+25.90684,
+43.85825
+],
+"km": 140
+},
+{
+"test": "capture",
+"where": "Chania",
+"y": 1645,
+"q": "Q12303057",
+"text": "Siege of Chania (1645). Result: Ottoman victory. The map never shows the winners holding Chania in the 15 years around it (it shows Republic of Venice).",
+"ci": 1624,
+"map": [
+[
+1641,
+"Republic of Venice"
+]
+],
+"winner": "Ottoman victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Chania",
+"y": 1941,
+"q": "Q4871210",
+"text": "Battle of Heraklion (1941) is filed under Chania, but Wikidata places it 104 km away (35.336, 25.139).",
+"ci": 1624,
+"at": [
+25.13861,
+35.33639
+],
+"km": 104
+},
+{
+"test": "placed",
+"where": "Huesca",
+"y": 1936,
+"q": "Q287389",
+"text": "Battle of Monte Pelado (1936) is filed under Huesca, but Wikidata places it 133 km away (42.739, -1.813).",
+"ci": 1642,
+"at": [
+-1.81278,
+42.73944
+],
+"km": 133
+},
+{
+"test": "placed",
+"where": "Passau",
+"y": 1552,
+"q": "Q703081",
+"text": "Peace of Passau (1552) is filed under Passau, but Wikidata places it 391 km away (50.122, 8.612).",
+"ci": 1678,
+"at": [
+8.61222,
+50.12167
+],
+"km": 391
+},
+{
+"test": "capture",
+"where": "Bad Kreuznach",
+"y": 1620,
+"q": "Q7509837",
+"text": "Siege of Bad Kreuznach (1620). Result: Spanish victory. The map never shows the winners holding Bad Kreuznach in the 15 years around it (it shows Holy Roman Empire).",
+"ci": 1679,
+"map": [
+[
+1616,
+"Holy Roman Empire"
+]
+],
+"winner": "Spanish victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Siena",
+"y": 1423,
+"q": "Q2517162",
+"text": "Council of Siena (1423) is filed under Siena, but Wikidata places it 270 km away (45.185, 9.155).",
+"ci": 1694,
+"at": [
+9.155,
+45.1853
+],
+"km": 270
+},
+{
+"test": "capture",
+"where": "Kleve",
+"y": 1635,
+"q": "Q7510387",
+"text": "Siege of Schenkenschans (1635). Result: First siege: Spanish victory. The map never shows the winners holding Kleve in the 15 years around it (it shows Margraviate of Brandenburg).",
+"ci": 1710,
+"map": [
+[
+1631,
+"Margraviate of Brandenburg"
+]
+],
+"winner": "First siege: Spanish victory",
+"kind": "never"
+},
+{
+"test": "ruler",
+"where": "Velletri",
+"y": 1744,
+"q": "Q2280582",
+"text": "Battle of Velletri (1744): the sides were Kingdom of Naples, Kingdom of Spain, Habsburg monarchy; the map says Papal States held Velletri.",
+"ci": 1721,
+"map": [
+[
+1742,
+"Papal States"
+]
+],
+"sides": [
+"Kingdom of Naples",
+"Kingdom of Spain",
+"Habsburg monarchy"
+]
+},
+{
+"test": "placed",
+"where": "Kizlyar",
+"y": 2010,
+"q": "Q2124166",
+"text": "2010 Kizlyar bombings (2010) is filed under Kizlyar, but Wikidata places it 1111 km away (53.850, 46.717).",
+"ci": 1802,
+"at": [
+46.7167,
+53.85
+],
+"km": 1111
+},
+{
+"test": "capture",
+"where": "Poti",
+"y": 2008,
+"q": "Q1764877",
+"text": "Occupation of Poti (2008). Result: Russian victory. The map never shows the winners holding Poti in the 15 years around it (it shows Georgia).",
+"ci": 1805,
+"map": [
+[
+2004,
+"Georgia"
+]
+],
+"winner": "Russian victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Tortosa",
+"y": 1084,
+"q": "Q2878470",
+"text": "Battle of Morella (1084) is filed under Tortosa, but Wikidata places it 57 km away (40.617, -0.100).",
+"ci": 1845,
+"at": [
+-0.1,
+40.6167
+],
+"km": 57
+},
+{
+"test": "placed",
+"where": "Tortosa",
+"y": 1821,
+"q": "Q87720284",
+"text": "1821 Barcelona yellow fever epidemic (1821) is filed under Tortosa, but Wikidata places it 153 km away (41.383, 2.177).",
+"ci": 1845,
+"at": [
+2.1769,
+41.3825
+],
+"km": 153
+},
+{
+"test": "capture",
+"where": "Nagykanizsa",
+"y": 1601,
+"q": "Q4822495",
+"text": "Siege of Nagykanizsa (1601). Result: Ottoman victory. The map never shows the winners holding Nagykanizsa in the 15 years around it (it shows Habsburg Monarchy).",
+"ci": 1888,
+"map": [
+[
+1597,
+"Habsburg Monarchy"
+]
+],
+"winner": "Ottoman victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Nagykanizsa",
+"y": 1664,
+"q": "Q1104090",
+"text": "Siege of Kanizsa (1664). Result: Ottoman victory. The map never shows the winners holding Nagykanizsa in the 15 years around it (it shows Habsburg Monarchy).",
+"ci": 1888,
+"map": [
+[
+1660,
+"Habsburg Monarchy"
+]
+],
+"winner": "Ottoman victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Hollands Kroon",
+"y": 1940,
+"q": "Q714979",
+"text": "Battle of the Afsluitdijk (1940) is filed under Hollands Kroon, but Wikidata places it 41 km away (53.074, 5.337).",
+"ci": 1907,
+"at": [
+5.33694,
+53.07417
+],
+"km": 41
+},
+{
+"test": "capture",
+"where": "Landau in der Pfalz",
+"y": 1702,
+"q": "Q18216901",
+"text": "Siege of Landau (1702). Result: Imperial victory. The map never shows the winners holding Landau in der Pfalz in the 15 years around it (it shows Kingdom of France).",
+"ci": 1911,
+"map": [
+[
+1698,
+"Kingdom of France"
+]
+],
+"winner": "Imperial victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Carcassonne",
+"y": 1209,
+"q": "Q3485852",
+"text": "Siege of Carcassonne (1209). Result: Crusader victory. The map never shows the winners holding Carcassonne in the 15 years around it (it shows County of Toulouse).",
+"ci": 1956,
+"map": [
+[
+1205,
+"County of Toulouse"
+],
+[
+1210,
+"Kingdom of France"
+]
+],
+"winner": "Crusader victory",
+"kind": "never"
+},
+{
+"test": "ruler",
+"where": "Chefchaouen",
+"y": 1925,
+"q": "Q65561217",
+"text": "Bombardment of Chefchaouen (1925): the sides were French Third Republic, Republic of the Rif; the map says Republic of the Rif held Chefchaouen.",
+"ci": 2012,
+"map": [
+[
+1923,
+"Republic of the Rif"
+],
+[
+1926,
+"Spanish protectorate of Morocco"
+]
+],
+"sides": [
+"French Third Republic",
+"Republic of the Rif"
+]
+},
+{
+"test": "capture",
+"where": "Valenciennes",
+"y": 1677,
+"q": "Q3108282",
+"text": "Siege of Valenciennes (1677). Result: French victory. The map shows the winners holding Valenciennes from 1679, not from 1677.",
+"ci": 2106,
+"map": [
+[
+1661,
+"Spanish Netherlands"
+],
+[
+1679,
+"Kingdom of France"
+]
+],
+"winner": "French victory",
+"kind": "date"
+},
+{
+"test": "placed",
+"where": "İznik",
+"y": 1096,
+"q": "Q978823",
+"text": "Battle of Civetot (1096) is filed under İznik, but Wikidata places it 48 km away (40.432, 29.156).",
+"ci": 2116,
+"at": [
+29.15611,
+40.43167
+],
+"km": 48
+},
+{
+"test": "placed",
+"where": "İznik",
+"y": 1097,
+"q": "Q642117",
+"text": "Siege of Nicaea (1097) is filed under İznik, but Wikidata places it 39 km away (40.583, 30.133).",
+"ci": 2116,
+"at": [
+30.1333,
+40.5833
+],
+"km": 39
+},
+{
+"test": "placed",
+"where": "İznik",
+"y": 1113,
+"q": "Q2549357",
+"text": "Siege of Nicaea (1113) is filed under İznik, but Wikidata places it 39 km away (40.583, 30.133).",
+"ci": 2116,
+"at": [
+30.1333,
+40.5833
+],
+"km": 39
+},
+{
+"test": "placed",
+"where": "İznik",
+"y": 1328,
+"q": "Q2422839",
+"text": "Siege of Nicaea (1328) is filed under İznik, but Wikidata places it 39 km away (40.583, 30.133).",
+"ci": 2116,
+"at": [
+30.1333,
+40.5833
+],
+"km": 39
+},
+{
+"test": "placed",
+"where": "İznik",
+"y": 1944,
+"q": "Q12881325",
+"text": "Executions of Kokkinia (1944) is filed under İznik, but Wikidata places it 591 km away (37.967, 23.644).",
+"ci": 2116,
+"at": [
+23.64428,
+37.96696
+],
+"km": 591
+},
+{
+"test": "ruler",
+"where": "Bar",
+"y": 1042,
+"q": "Q3442989",
+"text": "Battle of Bar (1042): the sides were Duklja, Byzantine Empire; the map says Grand Principality of Serbia held Bar.",
+"ci": 2141,
+"map": [
+[
+1040,
+"Grand Principality of Serbia"
+]
+],
+"sides": [
+"Duklja",
+"Byzantine Empire"
+]
+},
+{
+"test": "capture",
+"where": "Arras",
+"y": 1640,
+"q": "Q815115",
+"text": "Siege of Arras (1640). Result: French victory. The map never shows the winners holding Arras in the 15 years around it (it shows Spanish Netherlands).",
+"ci": 2189,
+"map": [
+[
+1636,
+"Spanish Netherlands"
+]
+],
+"winner": "French victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Thionville",
+"y": 1558,
+"q": "Q3486028",
+"text": "Siege of Thionville (1558). Result: French victory. The map never shows the winners holding Thionville in the 15 years around it (it shows Spanish Netherlands).",
+"ci": 2195,
+"map": [
+[
+1554,
+"Habsburg Netherlands"
+],
+[
+1556,
+"Spanish Netherlands"
+]
+],
+"winner": "French victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Thionville",
+"y": 1643,
+"q": "Q56309499",
+"text": "Siege of Thionville (1643). Result: French victory. The map never shows the winners holding Thionville in the 15 years around it (it shows Spanish Netherlands).",
+"ci": 2195,
+"map": [
+[
+1639,
+"Spanish Netherlands"
+]
+],
+"winner": "French victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Kalmar",
+"y": 1611,
+"q": "Q49460174",
+"text": "Siege of Kalmar (1611). Result: Danish victory. The map never shows the winners holding Kalmar in the 15 years around it (it shows Swedish Empire).",
+"ci": 2207,
+"map": [
+[
+1607,
+"Kingdom of Sweden"
+]
+],
+"winner": "Danish victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Dubrovnik",
+"y": 1806,
+"q": "Q18199199",
+"text": "Siege of Ragusa (1806). Result: French victory. The map shows the winners holding Dubrovnik from 1808, not from 1806.",
+"ci": 2208,
+"map": [
+[
+1790,
+"Republic of Ragusa (Dubrovnik)"
+],
+[
+1808,
+"Kingdom of Italy (Napoleonic)"
+],
+[
+1810,
+"First French Empire"
+],
+[
+1814,
+"Austrian Empire"
+]
+],
+"winner": "French victory",
+"kind": "date"
+},
+{
+"test": "placed",
+"where": "Dubrovnik",
+"y": 1814,
+"q": "Q15277692",
+"text": "Siege of Ragusa (1814) is filed under Dubrovnik, but Wikidata places it 166 km away (43.089, 16.172).",
+"ci": 2208,
+"at": [
+16.17167,
+43.08917
+],
+"km": 166
+},
+{
+"test": "placed",
+"where": "Vilafranca del Penedès",
+"y": 1810,
+"q": "Q4871662",
+"text": "Battle of Manresa (1810) is filed under Vilafranca del Penedès, but Wikidata places it 44 km away (41.729, 1.827).",
+"ci": 2209,
+"at": [
+1.82722,
+41.72944
+],
+"km": 44
+},
+{
+"test": "ruler",
+"where": "Desio",
+"y": 1277,
+"q": "Q1109794",
+"text": "Battle of Desio (1277): the sides were House of Della Torre, House of Visconti, Pavia, Municipality of Novara, Como; the map says Holy Roman Empire held Desio.",
+"ci": 2238,
+"map": [
+[
+1275,
+"Holy Roman Empire"
+]
+],
+"sides": [
+"House of Della Torre",
+"House of Visconti",
+"Pavia",
+"Municipality of Novara",
+"Como"
+]
+},
+{
+"test": "placed",
+"where": "San Donà di Piave",
+"y": 1917,
+"q": "Q20008335",
+"text": "First Battle of the Piave River (1917) is filed under San Donà di Piave, but Wikidata places it 69 km away (45.850, 11.733).",
+"ci": 2240,
+"at": [
+11.73333,
+45.85
+],
+"km": 69
+},
+{
+"test": "placed",
+"where": "San Donà di Piave",
+"y": 1918,
+"q": "Q662947",
+"text": "Battle of the Piave River (1918) is filed under San Donà di Piave, but Wikidata places it 35 km away (45.831, 12.209).",
+"ci": 2240,
+"at": [
+12.20944,
+45.83056
+],
+"km": 35
+},
+{
+"test": "capture",
+"where": "Drogheda",
+"y": 1649,
+"q": "Q815234",
+"text": "Siege of Drogheda (1649). Result: Commonwealth victory. The map shows the winners holding Drogheda from 1652, not from 1650.",
+"ci": 2294,
+"map": [
+[
+1633,
+"Kingdom of Ireland"
+],
+[
+1642,
+"Confederate Ireland (Irish Catholic Confederation)"
+],
+[
+1652,
+"Commonwealth of England (from 1653, of England, Scotland and Ireland)"
+],
+[
+1660,
+"Kingdom of Ireland"
+]
+],
+"winner": "Commonwealth victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Kehl",
+"y": 1703,
+"q": "Q552277",
+"text": "Siege of Kehl (1703). Result: French victory. The map never shows the winners holding Kehl in the 15 years around it (it shows Habsburg Monarchy).",
+"ci": 2385,
+"map": [
+[
+1699,
+"Habsburg Monarchy"
+]
+],
+"winner": "French victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Kehl",
+"y": 1733,
+"q": "Q2080385",
+"text": "Siege of Kehl (1733). Result: French victory. The map shows the winners holding Kehl from 1744, not from 1734.",
+"ci": 2385,
+"map": [
+[
+1717,
+"Habsburg Monarchy"
+],
+[
+1744,
+"Kingdom of France"
+],
+[
+1748,
+"Habsburg Monarchy"
+]
+],
+"winner": "French victory",
+"kind": "date"
+},
+{
+"test": "placed",
+"where": "Andújar",
+"y": 1936,
+"q": "Q1343057",
+"text": "Siege of Santuario de Nuestra Señora de la Cabeza (1936) is filed under Andújar, but Wikidata places it 30 km away (38.309, -4.064).",
+"ci": 2422,
+"at": [
+-4.06389,
+38.30917
+],
+"km": 30
+},
+{
+"test": "capture",
+"where": "Nové Zámky",
+"y": 1663,
+"q": "Q1470965",
+"text": "Siege of Érsekújvár (1663). Result: Ottoman victory. The map never shows the winners holding Nové Zámky in the 15 years around it (it shows Habsburg Monarchy).",
+"ci": 2491,
+"map": [
+[
+1659,
+"Habsburg Monarchy"
+]
+],
+"winner": "Ottoman victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Nové Zámky",
+"y": 1685,
+"q": "Q3273985",
+"text": "Siege of Érsekújvár (1685). Result: Holy Roman Empire victory. The map already shows the winners holding Nové Zámky in 1670, before the event.",
+"ci": 2491,
+"map": [
+[
+1669,
+"Habsburg Monarchy"
+],
+[
+1683,
+"Principality of Upper Hungary"
+],
+[
+1687,
+"Habsburg Monarchy"
+]
+],
+"winner": "Holy Roman Empire victory",
+"kind": "date"
+},
+{
+"test": "ruler",
+"where": "Casalecchio di Reno",
+"y": 1402,
+"q": "Q2248041",
+"text": "Battle of Casalecchio (1402): the sides were Duchy of Milan, Lordship of Bologna, Republic of Florence; the map says Papal States held Casalecchio di Reno.",
+"ci": 2627,
+"map": [
+[
+1400,
+"Papal States"
+]
+],
+"sides": [
+"Duchy of Milan",
+"Lordship of Bologna",
+"Republic of Florence"
+]
+},
+{
+"test": "capture",
+"where": "Haguenau",
+"y": 1705,
+"q": "Q46992489",
+"text": "Siege of Hagenau (1705). Result: Imperial victory. The map never shows the winners holding Haguenau in the 15 years around it (it shows Kingdom of France).",
+"ci": 2632,
+"map": [
+[
+1701,
+"Kingdom of France"
+]
+],
+"winner": "Imperial victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Asilah",
+"y": 1471,
+"q": "Q5162432",
+"text": "Conquest of Asilah (1471). Result: Portuguese victory. The map never shows the winners holding Asilah in the 15 years around it (it shows no country).",
+"ci": 2658,
+"map": [
+[
+1467,
+"no country"
+],
+[
+1475,
+"Morocco (Marinid and Wattasid sultans)"
+]
+],
+"winner": "Portuguese victory",
+"kind": "never"
+},
+{
+"test": "ruler",
+"where": "Asilah",
+"y": 1829,
+"q": "Q18604047",
+"text": "Austrian expedition against Morocco (1829): the sides were Austrian Empire, Sharifian Empire; the map says Sultanate of Morocco (Alawi dynasty) held Asilah.",
+"ci": 2658,
+"map": [
+[
+1827,
+"Sultanate of Morocco (Alawi dynasty)"
+]
+],
+"sides": [
+"Austrian Empire",
+"Sharifian Empire"
+]
+},
+{
+"test": "capture",
+"where": "Jülich",
+"y": 1621,
+"q": "Q17122425",
+"text": "Siege of Jülich (1621). Result: Spanish victory. The map never shows the winners holding Jülich in the 15 years around it (it shows Holy Roman Empire).",
+"ci": 2725,
+"map": [
+[
+1617,
+"Holy Roman Empire"
+]
+],
+"winner": "Spanish victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Ostrogozhsk",
+"y": 1943,
+"q": "Q562797",
+"text": "Ostrogozhsk–Rossosh Offensive (1943) is filed under Ostrogozhsk, but Wikidata places it 31 km away (50.700, 39.417).",
+"ci": 2752,
+"at": [
+39.41667,
+50.7
+],
+"km": 31
+},
+{
+"test": "capture",
+"where": "Gibraltar",
+"y": 1704,
+"q": "Q694073",
+"text": "Capture of Gibraltar (1704). Result: Anglo-Dutch victory. The map never shows the winners holding Gibraltar in the 15 years around it (it shows Kingdom of Spain (Castile and Aragon)).",
+"ci": 2822,
+"map": [
+[
+1700,
+"Kingdom of Spain (Castile and Aragon)"
+],
+[
+1705,
+"no country"
+]
+],
+"winner": "Anglo-Dutch victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Cambrai",
+"y": 1677,
+"q": "Q3485855",
+"text": "Siege of Cambrai (1677). Result: French victory. The map shows the winners holding Cambrai from 1679, not from 1677.",
+"ci": 2879,
+"map": [
+[
+1661,
+"Spanish Netherlands"
+],
+[
+1679,
+"Kingdom of France"
+]
+],
+"winner": "French victory",
+"kind": "date"
+},
+{
+"test": "placed",
+"where": "Lens",
+"y": 1918,
+"q": "Q783792",
+"text": "Battle of St. Quentin Canal (1918) is filed under Lens, but Wikidata places it 58 km away (49.975, 3.232).",
+"ci": 2918,
+"at": [
+3.23167,
+49.975
+],
+"km": 58
+},
+{
+"test": "capture",
+"where": "Mytilene",
+"y": 1464,
+"q": "Q137400000",
+"text": "Siege of Mytilene (1464). Result: Ottoman victory. The map never shows the winners holding Mytilene in the 15 years around it (it shows Republic of Genoa).",
+"ci": 3021,
+"map": [
+[
+1460,
+"Republic of Genoa"
+]
+],
+"winner": "Ottoman victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Azaz",
+"y": 1125,
+"q": "Q55504",
+"text": "Battle of Azaz (1125) is filed under Azaz, but Wikidata places it 54 km away (36.179, 36.719).",
+"ci": 3035,
+"at": [
+36.71948,
+36.17893
+],
+"km": 54
+},
+{
+"test": "placed",
+"where": "Azaz",
+"y": 2012,
+"q": "Q2105475",
+"text": "Battle of Azaz (2012) is filed under Azaz, but Wikidata places it 26 km away (36.351, 37.024).",
+"ci": 3035,
+"at": [
+37.0239,
+36.3508
+],
+"km": 26
+},
+{
+"test": "capture",
+"where": "Corfu",
+"y": 1798,
+"q": "Q4120811",
+"text": "Siege of Corfu (1798). Result: Russo-Ottoman victory. The map shows the winners holding Corfu from 1800, not from 1798.",
+"ci": 3056,
+"map": [
+[
+1782,
+"Republic of Venice"
+],
+[
+1798,
+"French First Republic"
+],
+[
+1800,
+"Septinsular Republic"
+],
+[
+1808,
+"First French Empire"
+],
+[
+1814,
+"United Kingdom of Great Britain and Ireland"
+]
+],
+"winner": "Russo-Ottoman victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Rheinberg",
+"y": 1586,
+"q": "Q2043762",
+"text": "Siege of Rheinberg (1586). Result: Spanish victory. The map never shows the winners holding Rheinberg in the 15 years around it (it shows Electorate of Cologne).",
+"ci": 3098,
+"map": [
+[
+1582,
+"Electorate of Cologne"
+]
+],
+"winner": "Spanish victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Rheinberg",
+"y": 1597,
+"q": "Q815194",
+"text": "Siege of Rheinberg (1597). Result: Dutch and English victory. The map never shows the winners holding Rheinberg in the 15 years around it (it shows Electorate of Cologne).",
+"ci": 3098,
+"map": [
+[
+1593,
+"Electorate of Cologne"
+]
+],
+"winner": "Dutch and English victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Rheinberg",
+"y": 1601,
+"q": "Q2738414",
+"text": "Siege of Rheinberg (1601). Result: Dutch and English victory. The map never shows the winners holding Rheinberg in the 15 years around it (it shows Electorate of Cologne).",
+"ci": 3098,
+"map": [
+[
+1597,
+"Electorate of Cologne"
+]
+],
+"winner": "Dutch and English victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Tripoli",
+"y": 1821,
+"q": "Q2590023",
+"text": "Siege of Tripolitsa (1821). Result: Greek victory. The map shows the winners holding Tripoli from 1830, not from 1822.",
+"ci": 3131,
+"map": [
+[
+1805,
+"Ottoman Empire"
+],
+[
+1830,
+"Greece (before the kingdom)"
+]
+],
+"winner": "Greek victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Herceg Novi",
+"y": 1539,
+"q": "Q2621537",
+"text": "Siege of Castelnuovo (1539). Result: Ottoman victory. The map never shows the winners holding Herceg Novi in the 15 years around it (it shows Republic of Venice).",
+"ci": 3150,
+"map": [
+[
+1535,
+"Republic of Venice"
+]
+],
+"winner": "Ottoman victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Soissons",
+"y": 1870,
+"q": "Q30742176",
+"text": "Siege of Soissons (1870). Result: German victory. The map never shows the winners holding Soissons in the 15 years around it (it shows Second French Empire).",
+"ci": 3200,
+"map": [
+[
+1866,
+"Second French Empire"
+]
+],
+"winner": "German victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Oost Gelre",
+"y": 1595,
+"q": "Q699917",
+"text": "Siege of Groenlo (1595). Result: Spanish victory. The map already shows the winners holding Oost Gelre in 1580, before the event.",
+"ci": 3214,
+"map": [
+[
+1579,
+"Spanish Netherlands"
+],
+[
+1581,
+"Dutch Republic (United Provinces)"
+]
+],
+"winner": "Spanish victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Oost Gelre",
+"y": 1606,
+"q": "Q679843",
+"text": "Siege of Groenlo (1606). Result: 1st Siege: Spanish victory. The map never shows the winners holding Oost Gelre in the 15 years around it (it shows Dutch Republic (United Provinces)).",
+"ci": 3214,
+"map": [
+[
+1602,
+"Dutch Republic (United Provinces)"
+]
+],
+"winner": "1st Siege: Spanish victory",
+"kind": "never"
+},
+{
+"test": "ruler",
+"where": "Qvareli",
+"y": 1755,
+"q": "Q122891072",
+"text": "Battle of Kvareli (1755): the sides were Kingdom of Kakheti, Kingdom of Kartli, Avar Khanate, Djaro-Belokani, Kazikumukh Khanate; the map says Afsharid Iran held Qvareli.",
+"ci": 3243,
+"map": [
+[
+1753,
+"Afsharid Iran"
+]
+],
+"sides": [
+"Kingdom of Kakheti",
+"Kingdom of Kartli",
+"Avar Khanate",
+"Djaro-Belokani",
+"Kazikumukh Khanate"
+]
+},
+{
+"test": "capture",
+"where": "Ath",
+"y": 1697,
+"q": "Q48798921",
+"text": "Siege of Ath (1697). Result: French victory. The map never shows the winners holding Ath in the 15 years around it (it shows Spanish Netherlands).",
+"ci": 3327,
+"map": [
+[
+1693,
+"Spanish Netherlands"
+]
+],
+"winner": "French victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Esztergom",
+"y": 1595,
+"q": "Q52258033",
+"text": "Siege of Esztergom (1595). Result: Habsburg victory. The map never shows the winners holding Esztergom in the 15 years around it (it shows Ottoman Empire).",
+"ci": 3376,
+"map": [
+[
+1591,
+"Ottoman Empire"
+]
+],
+"winner": "Habsburg victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Hulst",
+"y": 1596,
+"q": "Q2143007",
+"text": "Siege of Hulst (1596). Result: Spanish victory. The map never shows the winners holding Hulst in the 15 years around it (it shows Dutch Republic (United Provinces)).",
+"ci": 3497,
+"map": [
+[
+1592,
+"Dutch Republic (United Provinces)"
+]
+],
+"winner": "Spanish victory",
+"kind": "never"
+},
+{
+"test": "ruler",
+"where": "Frauenfeld",
+"y": 1799,
+"q": "Q1497900",
+"text": "Battle of Frauenfeld (1799): the sides were French First Republic, Helvetic Republic, Habsburg monarchy; the map says Helvetic Republic held Frauenfeld.",
+"ci": 3583,
+"map": [
+[
+1797,
+"Old Swiss Confederacy"
+]
+],
+"sides": [
+"French First Republic",
+"Helvetic Republic",
+"Habsburg monarchy"
+]
+},
+{
+"test": "placed",
+"where": "Zărnești",
+"y": 1690,
+"q": "Q4872808",
+"text": "Battle of Zernest (1690) is filed under Zărnești, but Wikidata places it 110 km away (46.563, 25.341).",
+"ci": 3692,
+"at": [
+25.34095,
+46.56318
+],
+"km": 110
+},
+{
+"test": "ruler",
+"where": "Orly",
+"y": 1983,
+"q": "Q2869976",
+"text": "Orly Airport attack (1983): the sides were Varoujan Garabedian, Armenian Secret Army for the Liberation of Armenia; the map says French Fifth Republic held Orly.",
+"ci": 3965,
+"map": [
+[
+1981,
+"French Fifth Republic"
+]
+],
+"sides": [
+"Varoujan Garabedian",
+"Armenian Secret Army for the Liberation of Armenia"
+]
+},
+{
+"test": "capture",
+"where": "Mirandola",
+"y": 1510,
+"q": "Q3625432",
+"text": "Siege of Mirandola (1510). Result: Papal victory. The map never shows the winners holding Mirandola in the 15 years around it (it shows Mirandola).",
+"ci": 4052,
+"map": [
+[
+1506,
+"Mirandola"
+]
+],
+"winner": "Papal victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Mirandola",
+"y": 1551,
+"q": "Q3625430",
+"text": "Siege of Mirandola (1551). Result: French victory. The map never shows the winners holding Mirandola in the 15 years around it (it shows Mirandola).",
+"ci": 4052,
+"map": [
+[
+1547,
+"Mirandola"
+]
+],
+"winner": "French victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Sluis",
+"y": 1587,
+"q": "Q13538346",
+"text": "Siege of Sluis (1587). Result: Spanish victory. The map already shows the winners holding Sluis in 1572, before the event.",
+"ci": 4073,
+"map": [
+[
+1571,
+"Spanish Netherlands"
+],
+[
+1579,
+"Dutch Republic (United Provinces)"
+]
+],
+"winner": "Spanish victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Verdun",
+"y": 1870,
+"q": "Q10751258",
+"text": "Siege of Verdun (1870). Result: German victory. The map never shows the winners holding Verdun in the 15 years around it (it shows Second French Empire).",
+"ci": 4131,
+"map": [
+[
+1866,
+"Second French Empire"
+]
+],
+"winner": "German victory",
+"kind": "never"
+},
+{
+"test": "placed",
+"where": "Verdun",
+"y": 1917,
+"q": "Q3812622",
+"text": "Second Battle of Verdun (1917) is filed under Verdun, but Wikidata places it 27 km away (49.359, 5.605).",
+"ci": 4131,
+"at": [
+5.60497,
+49.3588
+],
+"km": 27
+},
+{
+"test": "placed",
+"where": "Orbassano",
+"y": 1693,
+"q": "Q1862475",
+"text": "Battle of Marsaglia (1693) is filed under Orbassano, but Wikidata places it 71 km away (44.450, 7.967).",
+"ci": 4186,
+"at": [
+7.96667,
+44.45
+],
+"km": 71
+},
+{
+"test": "placed",
+"where": "Jämsä",
+"y": 1918,
+"q": "Q10671336",
+"text": "Battle of Länkipohja (1918) is filed under Jämsä, but Wikidata places it 25 km away (61.736, 24.796).",
+"ci": 4220,
+"at": [
+24.79556,
+61.73583
+],
+"km": 25
+},
+{
+"test": "placed",
+"where": "Barbate",
+"y": 1805,
+"q": "Q171416",
+"text": "Battle of Trafalgar (1805) is filed under Barbate, but Wikidata places it 26 km away (36.250, -6.200).",
+"ci": 4256,
+"at": [
+-6.2,
+36.25
+],
+"km": 26
+},
+{
+"test": "capture",
+"where": "Kotor",
+"y": 1813,
+"q": "Q16259251",
+"text": "Siege of Cattaro (1813). Result: Anglo-Montenegrin victory. The map never shows the winners holding Kotor in the 15 years around it (it shows First French Empire).",
+"ci": 4325,
+"map": [
+[
+1809,
+"Kingdom of Italy (Napoleonic)"
+],
+[
+1810,
+"First French Empire"
+],
+[
+1814,
+"Austrian Empire"
+]
+],
+"winner": "Anglo-Montenegrin victory",
+"kind": "never"
+},
+{
+"test": "ruler",
+"where": "Yumurtalık",
+"y": 1294,
+"q": "Q9172357",
+"text": "Battle of Laiazzo (1294): the sides were Republic of Venice, Republic of Genoa; the map says Armenian Kingdom of Cilicia held Yumurtalık.",
+"ci": 4335,
+"map": [
+[
+1292,
+"Armenian Kingdom of Cilicia"
+]
+],
+"sides": [
+"Republic of Venice",
+"Republic of Genoa"
+]
+},
+{
+"test": "placed",
+"where": "Yuryev-Polsky",
+"y": 1216,
+"q": "Q4262569",
+"text": "Battle of Lipitsa (1216) is filed under Yuryev-Polsky, but Wikidata places it 433 km away (52.606, 39.588).",
+"ci": 4411,
+"at": [
+39.58768,
+52.60595
+],
+"km": 433
+},
+{
+"test": "capture",
+"where": "Rees",
+"y": 1599,
+"q": "Q2384299",
+"text": "Siege of Rees (1599). Result: Spanish victory. The map never shows the winners holding Rees in the 15 years around it (it shows United Duchies of Jülich-Cleves-Berg).",
+"ci": 4469,
+"map": [
+[
+1595,
+"United Duchies of Jülich-Cleves-Berg"
+]
+],
+"winner": "Spanish victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Geertruidenberg",
+"y": 1589,
+"q": "Q20020507",
+"text": "Capture of Geertruidenberg (1589). Result: Spanish victory. The map already shows the winners holding Geertruidenberg in 1574, before the event.",
+"ci": 4501,
+"map": [
+[
+1573,
+"Spanish Netherlands"
+],
+[
+1581,
+"Dutch Republic (United Provinces)"
+]
+],
+"winner": "Spanish victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Huy",
+"y": 1595,
+"q": "Q14632126",
+"text": "Siege of Huy (1595). Result: Spanish victory. The map never shows the winners holding Huy in the 15 years around it (it shows Prince-Bishopric of Liège).",
+"ci": 4597,
+"map": [
+[
+1591,
+"Prince-Bishopric of Liège"
+]
+],
+"winner": "Spanish victory",
+"kind": "never"
+},
+{
+"test": "capture",
+"where": "Longwy",
+"y": 1871,
+"q": "Q10751236",
+"text": "Siege of Longwy (1871). Result: German Victory. The map never shows the winners holding Longwy in the 15 years around it (it shows French Third Republic).",
+"ci": 4658,
+"map": [
+[
+1867,
+"Second French Empire"
+]
+],
+"winner": "German Victory",
+"kind": "never"
+},
+{
+"test": "ruler",
+"where": "Tetritsqaro",
+"y": 1556,
+"q": "Q4871082",
+"text": "Battle of Garisi (1556): the sides were Safavid Iran, Kingdom of Kartli; the map says Georgian kingdoms of Kartli and Kakheti held Tetritsqaro.",
+"ci": 4674,
+"map": [
+[
+1554,
+"Georgian kingdoms of Kartli and Kakheti"
+]
+],
+"sides": [
+"Safavid Iran",
+"Kingdom of Kartli"
+]
+},
+{
+"test": "capture",
+"where": "Kozelsk",
+"y": 1238,
+"q": "Q4329641",
+"text": "Siege of Kozelsk (1238). Result: Mongol victory. The map shows the winners holding Kozelsk from 1241, not from 1238.",
+"ci": 4726,
+"map": [
+[
+1222,
+"Principality of Chernigov"
+],
+[
+1241,
+"Mongol Empire"
+],
+[
+1242,
+"Golden Horde"
+]
+],
+"winner": "Mongol victory",
+"kind": "date"
+},
+{
+"test": "capture",
+"where": "Gaeta",
+"y": 1860,
+"q": "Q1091654",
+"text": "Siege of Gaeta (1860). Result: Sardinian victory. The map shows the winners holding Gaeta from 1861, not from 1860.",
+"ci": 4762,
+"map": [
+[
+1844,
+"Kingdom of the Two Sicilies"
+],
+[
+1861,
+"Kingdom of Italy"
+]
+],
+"winner": "Sardinian victory",
+"kind": "date"
+},
+{
+"test": "ruler",
+"where": "Vlotho",
+"y": 1638,
+"q": "Q1411470",
+"text": "Battle of Vlotho (1638): the sides were Kingdom of England, United Kingdom; the map says Margraviate of Brandenburg held Vlotho.",
+"ci": 4773,
+"map": [
+[
+1636,
+"Margraviate of Brandenburg"
+]
+],
+"sides": [
+"Kingdom of England",
+"United Kingdom"
+]
+},
+{
+"test": "flip",
+"where": "Berlin",
+"y": 1375,
+"q": null,
+"text": "The map shows Berlin held by Kingdom of Bohemia for 10 years (1375–1384), between years of Margraviate of Brandenburg, with no event recorded in the city then.",
+"ci": 3,
+"map": [
+[
+1372,
+"Margraviate of Brandenburg"
+],
+[
+1375,
+"Kingdom of Bohemia"
+],
+[
+1385,
+"Margraviate of Brandenburg"
+]
+]
+},
+{
+"test": "flip",
+"where": "Istanbul",
+"y": 1402,
+"q": null,
+"text": "The map shows Istanbul held by Ottoman Empire for 5 years (1402–1406), between years of Byzantine Empire, with no event recorded in the city then.",
+"ci": 6,
+"map": [
+[
+1399,
+"Byzantine Empire"
+],
+[
+1402,
+"Ottoman Empire"
+],
+[
+1407,
+"Byzantine Empire"
+]
+]
+},
+{
+"test": "flip",
+"where": "Glasgow",
+"y": 1652,
+"q": null,
+"text": "The map shows Glasgow held by Commonwealth of England (from 1653, of England, Scotland and Ireland) for 8 years (1652–1659), between years of Kingdom of Scotland, with no event recorded in the city then.",
+"ci": 12,
+"map": [
+[
+1649,
+"Kingdom of Scotland"
+],
+[
+1652,
+"Commonwealth of England (from 1653, of England, Scotland and Ireland)"
+],
+[
+1660,
+"Kingdom of Scotland"
+]
+]
+},
+{
+"test": "flip",
+"where": "Munich",
+"y": 1779,
+"q": null,
+"text": "The map shows Munich held by Habsburg Monarchy for 1 year (1779–1779), between years of Electorate of Bavaria (joined with the Palatinate), with no event recorded in the city then.",
+"ci": 15,
+"map": [
+[
+1776,
+"Electorate of Bavaria"
+],
+[
+1779,
+"Habsburg Monarchy"
+],
+[
+1780,
+"Electorate of Bavaria (joined with the Palatinate)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Milan",
+"y": 1512,
+"q": null,
+"text": "The map shows Milan held by Duchy of Milan (Sforza) for 3 years (1512–1514), between years of Duchy of Milan (under France), with no event recorded in the city then.",
+"ci": 22,
+"map": [
+[
+1509,
+"Duchy of Milan (under France)"
+],
+[
+1512,
+"Duchy of Milan (Sforza)"
+],
+[
+1515,
+"Duchy of Milan (under France)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Marseille",
+"y": 1032,
+"q": null,
+"text": "The map shows Marseille held by no country for 1 year (1032–1032), between years of Kingdom of Arles (Burgundy), with no event recorded in the city then.",
+"ci": 24,
+"map": [
+[
+1029,
+"Kingdom of Arles (Burgundy)"
+],
+[
+1032,
+"no country"
+],
+[
+1033,
+"Kingdom of Arles (Burgundy)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Łódź",
+"y": 1202,
+"q": null,
+"text": "The map shows Łódź held by Duchy of Greater Poland for 4 years (1202–1205), between years of Duchy of Kraków and Sandomierz (Lesser Poland), with no event recorded in the city then.",
+"ci": 43,
+"map": [
+[
+1199,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+],
+[
+1202,
+"Duchy of Greater Poland"
+],
+[
+1206,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Łódź",
+"y": 1210,
+"q": null,
+"text": "The map shows Łódź held by Silesian duchies for 6 years (1210–1215), between years of Duchy of Kraków and Sandomierz (Lesser Poland), with no event recorded in the city then.",
+"ci": 43,
+"map": [
+[
+1207,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+],
+[
+1210,
+"Silesian duchies"
+],
+[
+1216,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Palermo",
+"y": 1848,
+"q": null,
+"text": "The map shows Palermo held by Kingdom of Sicily (revolution of 1848–49) for 1 year (1848–1848), between years of Kingdom of the Two Sicilies, with no event recorded in the city then.",
+"ci": 45,
+"map": [
+[
+1845,
+"Kingdom of the Two Sicilies"
+],
+[
+1848,
+"Kingdom of Sicily (revolution of 1848–49)"
+],
+[
+1849,
+"Kingdom of the Two Sicilies"
+]
+]
+},
+{
+"test": "flip",
+"where": "Edinburgh",
+"y": 1652,
+"q": null,
+"text": "The map shows Edinburgh held by Commonwealth of England (from 1653, of England, Scotland and Ireland) for 8 years (1652–1659), between years of Kingdom of Scotland, with no event recorded in the city then.",
+"ci": 46,
+"map": [
+[
+1649,
+"Kingdom of Scotland"
+],
+[
+1652,
+"Commonwealth of England (from 1653, of England, Scotland and Ireland)"
+],
+[
+1660,
+"Kingdom of Scotland"
+]
+]
+},
+{
+"test": "flip",
+"where": "Graz",
+"y": 1487,
+"q": null,
+"text": "The map shows Graz held by Kingdom of Hungary for 5 years (1487–1491), between years of Austria, with no event recorded in the city then.",
+"ci": 68,
+"map": [
+[
+1484,
+"Austria"
+],
+[
+1487,
+"Kingdom of Hungary"
+],
+[
+1492,
+"Austria"
+]
+]
+},
+{
+"test": "flip",
+"where": "Gdańsk",
+"y": 1202,
+"q": null,
+"text": "The map shows Gdańsk held by Duchy of Greater Poland for 4 years (1202–1205), between years of Duchy of Kraków and Sandomierz (Lesser Poland), with no event recorded in the city then.",
+"ci": 74,
+"map": [
+[
+1199,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+],
+[
+1202,
+"Duchy of Greater Poland"
+],
+[
+1206,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Gdańsk",
+"y": 1210,
+"q": null,
+"text": "The map shows Gdańsk held by Silesian duchies for 6 years (1210–1215), between years of Duchy of Kraków and Sandomierz (Lesser Poland), with no event recorded in the city then.",
+"ci": 74,
+"map": [
+[
+1207,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+],
+[
+1210,
+"Silesian duchies"
+],
+[
+1216,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Aberdeen",
+"y": 1652,
+"q": null,
+"text": "The map shows Aberdeen held by Commonwealth of England (from 1653, of England, Scotland and Ireland) for 8 years (1652–1659), between years of Kingdom of Scotland, with no event recorded in the city then.",
+"ci": 81,
+"map": [
+[
+1649,
+"Kingdom of Scotland"
+],
+[
+1652,
+"Commonwealth of England (from 1653, of England, Scotland and Ireland)"
+],
+[
+1660,
+"Kingdom of Scotland"
+]
+]
+},
+{
+"test": "flip",
+"where": "Kraków",
+"y": 1202,
+"q": null,
+"text": "The map shows Kraków held by Duchy of Greater Poland for 4 years (1202–1205), between years of Duchy of Kraków and Sandomierz (Lesser Poland), with no event recorded in the city then.",
+"ci": 83,
+"map": [
+[
+1199,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+],
+[
+1202,
+"Duchy of Greater Poland"
+],
+[
+1206,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Kraków",
+"y": 1210,
+"q": null,
+"text": "The map shows Kraków held by Silesian duchies for 6 years (1210–1215), between years of Duchy of Kraków and Sandomierz (Lesser Poland), with no event recorded in the city then.",
+"ci": 83,
+"map": [
+[
+1207,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+],
+[
+1210,
+"Silesian duchies"
+],
+[
+1216,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Toulouse",
+"y": 1216,
+"q": null,
+"text": "The map shows Toulouse held by Kingdom of France for 4 years (1216–1219), between years of County of Toulouse, with no event recorded in the city then.",
+"ci": 86,
+"map": [
+[
+1213,
+"County of Toulouse"
+],
+[
+1216,
+"Kingdom of France"
+],
+[
+1220,
+"County of Toulouse"
+]
+]
+},
+{
+"test": "flip",
+"where": "Catania",
+"y": 1848,
+"q": null,
+"text": "The map shows Catania held by Kingdom of Sicily (revolution of 1848–49) for 1 year (1848–1848), between years of Kingdom of the Two Sicilies, with no event recorded in the city then.",
+"ci": 87,
+"map": [
+[
+1845,
+"Kingdom of the Two Sicilies"
+],
+[
+1848,
+"Kingdom of Sicily (revolution of 1848–49)"
+],
+[
+1849,
+"Kingdom of the Two Sicilies"
+]
+]
+},
+{
+"test": "flip",
+"where": "Nice",
+"y": 1032,
+"q": null,
+"text": "The map shows Nice held by no country for 1 year (1032–1032), between years of Kingdom of Arles (Burgundy), with no event recorded in the city then.",
+"ci": 94,
+"map": [
+[
+1029,
+"Kingdom of Arles (Burgundy)"
+],
+[
+1032,
+"no country"
+],
+[
+1033,
+"Kingdom of Arles (Burgundy)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Le Havre",
+"y": 1144,
+"q": null,
+"text": "The map shows Le Havre held by County of Anjou for 8 years (1144–1151), between years of Duchy of Normandy (held by the kings of England), with no event recorded in the city then.",
+"ci": 96,
+"map": [
+[
+1141,
+"Duchy of Normandy (held by the kings of England)"
+],
+[
+1144,
+"County of Anjou"
+],
+[
+1152,
+"Duchy of Normandy (held by the kings of England)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Lviv (Lemberg)",
+"y": 1188,
+"q": null,
+"text": "The map shows Lviv (Lemberg) held by Kingdom of Hungary for 4 years (1188–1191), between years of Principality of Halych, with no event recorded in the city then.",
+"ci": 98,
+"map": [
+[
+1185,
+"Principality of Halych"
+],
+[
+1188,
+"Kingdom of Hungary"
+],
+[
+1192,
+"Principality of Halych"
+]
+]
+},
+{
+"test": "flip",
+"where": "Thessaloniki",
+"y": 1402,
+"q": null,
+"text": "The map shows Thessaloniki held by Ottoman Empire for 5 years (1402–1406), between years of Byzantine Empire, with no event recorded in the city then.",
+"ci": 100,
+"map": [
+[
+1399,
+"Byzantine Empire"
+],
+[
+1402,
+"Ottoman Empire"
+],
+[
+1407,
+"Byzantine Empire"
+]
+]
+},
+{
+"test": "flip",
+"where": "Rouen",
+"y": 1144,
+"q": null,
+"text": "The map shows Rouen held by County of Anjou for 8 years (1144–1151), between years of Duchy of Normandy (held by the kings of England), with no event recorded in the city then.",
+"ci": 106,
+"map": [
+[
+1141,
+"Duchy of Normandy (held by the kings of England)"
+],
+[
+1144,
+"County of Anjou"
+],
+[
+1152,
+"Duchy of Normandy (held by the kings of England)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Wiesbaden",
+"y": 1762,
+"q": null,
+"text": "The map shows Wiesbaden held by Kingdom of France for 1 year (1762–1762), between years of Holy Roman Empire, with no event recorded in the city then.",
+"ci": 117,
+"map": [
+[
+1759,
+"Holy Roman Empire"
+],
+[
+1762,
+"Kingdom of France"
+],
+[
+1763,
+"Holy Roman Empire"
+]
+]
+},
+{
+"test": "flip",
+"where": "Chișinău",
+"y": 1769,
+"q": null,
+"text": "The map shows Chișinău held by Ottoman Empire for 6 years (1769–1774), between years of Principality of Moldavia, with no event recorded in the city then.",
+"ci": 118,
+"map": [
+[
+1766,
+"Principality of Moldavia"
+],
+[
+1769,
+"Ottoman Empire"
+],
+[
+1775,
+"Principality of Moldavia"
+]
+]
+},
+{
+"test": "flip",
+"where": "Chișinău",
+"y": 1791,
+"q": null,
+"text": "The map shows Chișinău held by Ottoman Empire for 1 year (1791–1791), between years of Principality of Moldavia, with no event recorded in the city then.",
+"ci": 118,
+"map": [
+[
+1788,
+"Principality of Moldavia"
+],
+[
+1791,
+"Ottoman Empire"
+],
+[
+1792,
+"Principality of Moldavia"
+]
+]
+},
+{
+"test": "flip",
+"where": "Toulon",
+"y": 1032,
+"q": null,
+"text": "The map shows Toulon held by no country for 1 year (1032–1032), between years of Kingdom of Arles (Burgundy), with no event recorded in the city then.",
+"ci": 126,
+"map": [
+[
+1029,
+"Kingdom of Arles (Burgundy)"
+],
+[
+1032,
+"no country"
+],
+[
+1033,
+"Kingdom of Arles (Burgundy)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Potsdam",
+"y": 1375,
+"q": null,
+"text": "The map shows Potsdam held by Kingdom of Bohemia for 10 years (1375–1384), between years of Margraviate of Brandenburg, with no event recorded in the city then.",
+"ci": 128,
+"map": [
+[
+1372,
+"Margraviate of Brandenburg"
+],
+[
+1375,
+"Kingdom of Bohemia"
+],
+[
+1385,
+"Margraviate of Brandenburg"
+]
+]
+},
+{
+"test": "flip",
+"where": "Minsk",
+"y": 1250,
+"q": null,
+"text": "The map shows Minsk held by Grand Duchy of Lithuania for 10 years (1250–1259), between years of Principality of Polotsk, with no event recorded in the city then.",
+"ci": 134,
+"map": [
+[
+1247,
+"Principality of Polotsk"
+],
+[
+1250,
+"Grand Duchy of Lithuania"
+],
+[
+1260,
+"Principality of Polotsk"
+]
+]
+},
+{
+"test": "flip",
+"where": "Linz",
+"y": 1487,
+"q": null,
+"text": "The map shows Linz held by Kingdom of Hungary for 5 years (1487–1491), between years of Austria, with no event recorded in the city then.",
+"ci": 135,
+"map": [
+[
+1484,
+"Austria"
+],
+[
+1487,
+"Kingdom of Hungary"
+],
+[
+1492,
+"Austria"
+]
+]
+},
+{
+"test": "flip",
+"where": "Debrecen",
+"y": 1600,
+"q": null,
+"text": "The map shows Debrecen held by Principality of Moldavia for 2 years (1600–1601), between years of Eastern Hungarian Kingdom and Principality of Transylvania, with no event recorded in the city then.",
+"ci": 144,
+"map": [
+[
+1597,
+"Eastern Hungarian Kingdom and Principality of Transylvania"
+],
+[
+1600,
+"Principality of Moldavia"
+],
+[
+1602,
+"Eastern Hungarian Kingdom and Principality of Transylvania"
+]
+]
+},
+{
+"test": "flip",
+"where": "Debrecen",
+"y": 1683,
+"q": null,
+"text": "The map shows Debrecen held by Principality of Upper Hungary for 4 years (1683–1686), between years of Eastern Hungarian Kingdom and Principality of Transylvania, with no event recorded in the city then.",
+"ci": 144,
+"map": [
+[
+1680,
+"Eastern Hungarian Kingdom and Principality of Transylvania"
+],
+[
+1683,
+"Principality of Upper Hungary"
+],
+[
+1687,
+"Eastern Hungarian Kingdom and Principality of Transylvania"
+]
+]
+},
+{
+"test": "flip",
+"where": "Limoges",
+"y": 1492,
+"q": null,
+"text": "The map shows Limoges held by Duchy of Bourbon for 8 years (1492–1499), between years of Kingdom of France, with no event recorded in the city then.",
+"ci": 148,
+"map": [
+[
+1489,
+"Kingdom of France"
+],
+[
+1492,
+"Duchy of Bourbon"
+],
+[
+1500,
+"Kingdom of France"
+]
+]
+},
+{
+"test": "flip",
+"where": "Iași",
+"y": 1769,
+"q": null,
+"text": "The map shows Iași held by Ottoman Empire for 6 years (1769–1774), between years of Principality of Moldavia, with no event recorded in the city then.",
+"ci": 159,
+"map": [
+[
+1766,
+"Principality of Moldavia"
+],
+[
+1769,
+"Ottoman Empire"
+],
+[
+1775,
+"Principality of Moldavia"
+]
+]
+},
+{
+"test": "flip",
+"where": "Miskolc",
+"y": 1683,
+"q": null,
+"text": "The map shows Miskolc held by Principality of Upper Hungary for 4 years (1683–1686), between years of Habsburg Monarchy, with no event recorded in the city then.",
+"ci": 164,
+"map": [
+[
+1680,
+"Habsburg Monarchy"
+],
+[
+1683,
+"Principality of Upper Hungary"
+],
+[
+1687,
+"Habsburg Monarchy"
+]
+]
+},
+{
+"test": "flip",
+"where": "Valladolid",
+"y": 1065,
+"q": null,
+"text": "The map shows Valladolid held by Kingdom of Castile for 10 years (1065–1074), between years of Kingdom of León, with no event recorded in the city then.",
+"ci": 171,
+"map": [
+[
+1062,
+"Kingdom of León"
+],
+[
+1065,
+"Kingdom of Castile"
+],
+[
+1075,
+"Kingdom of León"
+]
+]
+},
+{
+"test": "flip",
+"where": "Vitebsk",
+"y": 1250,
+"q": null,
+"text": "The map shows Vitebsk held by Grand Duchy of Lithuania for 10 years (1250–1259), between years of Principality of Polotsk, with no event recorded in the city then.",
+"ci": 185,
+"map": [
+[
+1247,
+"Principality of Polotsk"
+],
+[
+1250,
+"Grand Duchy of Lithuania"
+],
+[
+1260,
+"Principality of Polotsk"
+]
+]
+},
+{
+"test": "flip",
+"where": "Le Mans",
+"y": 1056,
+"q": null,
+"text": "The map shows Le Mans held by County of Anjou for 10 years (1056–1065), between years of County of Maine, with no event recorded in the city then.",
+"ci": 187,
+"map": [
+[
+1053,
+"County of Maine"
+],
+[
+1056,
+"County of Anjou"
+],
+[
+1066,
+"County of Maine"
+]
+]
+},
+{
+"test": "flip",
+"where": "Galați",
+"y": 1769,
+"q": null,
+"text": "The map shows Galați held by Ottoman Empire for 6 years (1769–1774), between years of Principality of Moldavia, with no event recorded in the city then.",
+"ci": 198,
+"map": [
+[
+1766,
+"Principality of Moldavia"
+],
+[
+1769,
+"Ottoman Empire"
+],
+[
+1775,
+"Principality of Moldavia"
+]
+]
+},
+{
+"test": "flip",
+"where": "Galați",
+"y": 1791,
+"q": null,
+"text": "The map shows Galați held by Ottoman Empire for 1 year (1791–1791), between years of Principality of Moldavia, with no event recorded in the city then.",
+"ci": 198,
+"map": [
+[
+1788,
+"Principality of Moldavia"
+],
+[
+1791,
+"Ottoman Empire"
+],
+[
+1792,
+"Principality of Moldavia"
+]
+]
+},
+{
+"test": "flip",
+"where": "Vigo",
+"y": 1065,
+"q": null,
+"text": "The map shows Vigo held by Kingdom of Galicia for 7 years (1065–1071), between years of Kingdom of León, with no event recorded in the city then.",
+"ci": 199,
+"map": [
+[
+1062,
+"Kingdom of León"
+],
+[
+1065,
+"Kingdom of Galicia"
+],
+[
+1072,
+"Kingdom of León"
+]
+]
+},
+{
+"test": "flip",
+"where": "Kherson",
+"y": 1673,
+"q": null,
+"text": "The map shows Kherson held by Ottoman Empire for 10 years (1673–1682), between years of Crimean Khanate, with no event recorded in the city then.",
+"ci": 207,
+"map": [
+[
+1670,
+"Crimean Khanate"
+],
+[
+1673,
+"Ottoman Empire"
+],
+[
+1683,
+"Crimean Khanate"
+]
+]
+},
+{
+"test": "flip",
+"where": "A Coruña",
+"y": 1065,
+"q": null,
+"text": "The map shows A Coruña held by Kingdom of Galicia for 7 years (1065–1071), between years of Kingdom of León, with no event recorded in the city then.",
+"ci": 208,
+"map": [
+[
+1062,
+"Kingdom of León"
+],
+[
+1065,
+"Kingdom of Galicia"
+],
+[
+1072,
+"Kingdom of León"
+]
+]
+},
+{
+"test": "flip",
+"where": "Bydgoszcz (Bromberg)",
+"y": 1202,
+"q": null,
+"text": "The map shows Bydgoszcz (Bromberg) held by Duchy of Greater Poland for 4 years (1202–1205), between years of Duchy of Kraków and Sandomierz (Lesser Poland), with no event recorded in the city then.",
+"ci": 212,
+"map": [
+[
+1199,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+],
+[
+1202,
+"Duchy of Greater Poland"
+],
+[
+1206,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Bydgoszcz (Bromberg)",
+"y": 1210,
+"q": null,
+"text": "The map shows Bydgoszcz (Bromberg) held by Silesian duchies for 6 years (1210–1215), between years of Duchy of Kraków and Sandomierz (Lesser Poland), with no event recorded in the city then.",
+"ci": 212,
+"map": [
+[
+1207,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+],
+[
+1210,
+"Silesian duchies"
+],
+[
+1216,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Mogilev",
+"y": 1250,
+"q": null,
+"text": "The map shows Mogilev held by Grand Duchy of Lithuania for 10 years (1250–1259), between years of Principality of Polotsk, with no event recorded in the city then.",
+"ci": 226,
+"map": [
+[
+1247,
+"Principality of Polotsk"
+],
+[
+1250,
+"Grand Duchy of Lithuania"
+],
+[
+1260,
+"Principality of Polotsk"
+]
+]
+},
+{
+"test": "flip",
+"where": "Brest-Litovsk",
+"y": 1018,
+"q": null,
+"text": "The map shows Brest-Litovsk held by Kingdom of Poland for 10 years (1018–1027), between years of Kievan Rus', with no event recorded in the city then.",
+"ci": 233,
+"map": [
+[
+1015,
+"Kievan Rus'"
+],
+[
+1018,
+"Kingdom of Poland"
+],
+[
+1028,
+"Kievan Rus'"
+]
+]
+},
+{
+"test": "flip",
+"where": "Caen",
+"y": 1144,
+"q": null,
+"text": "The map shows Caen held by County of Anjou for 8 years (1144–1151), between years of Duchy of Normandy (held by the kings of England), with no event recorded in the city then.",
+"ci": 235,
+"map": [
+[
+1141,
+"Duchy of Normandy (held by the kings of England)"
+],
+[
+1144,
+"County of Anjou"
+],
+[
+1152,
+"Duchy of Normandy (held by the kings of England)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Luxembourg",
+"y": 1831,
+"q": null,
+"text": "The map shows Luxembourg held by Kingdom of Belgium for 8 years (1831–1838), between years of Kingdom of the Netherlands, with no event recorded in the city then.",
+"ci": 236,
+"map": [
+[
+1828,
+"Kingdom of the Netherlands"
+],
+[
+1831,
+"Kingdom of Belgium"
+],
+[
+1839,
+"Kingdom of the Netherlands"
+],
+[
+1841,
+"Grand Duchy of Luxembourg"
+]
+]
+},
+{
+"test": "flip",
+"where": "Maastricht",
+"y": 1831,
+"q": null,
+"text": "The map shows Maastricht held by Kingdom of Belgium for 8 years (1831–1838), between years of Kingdom of the Netherlands, with no event recorded in the city then.",
+"ci": 247,
+"map": [
+[
+1828,
+"Kingdom of the Netherlands"
+],
+[
+1831,
+"Kingdom of Belgium"
+],
+[
+1839,
+"Kingdom of the Netherlands"
+]
+]
+},
+{
+"test": "flip",
+"where": "Lublin",
+"y": 1169,
+"q": null,
+"text": "The map shows Lublin held by Duchy of Masovia for 8 years (1169–1176), between years of Duchy of Kraków and Sandomierz (Lesser Poland), with no event recorded in the city then.",
+"ci": 254,
+"map": [
+[
+1166,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+],
+[
+1169,
+"Duchy of Masovia"
+],
+[
+1177,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Gdynia",
+"y": 1202,
+"q": null,
+"text": "The map shows Gdynia held by Duchy of Greater Poland for 4 years (1202–1205), between years of Duchy of Kraków and Sandomierz (Lesser Poland), with no event recorded in the city then.",
+"ci": 256,
+"map": [
+[
+1199,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+],
+[
+1202,
+"Duchy of Greater Poland"
+],
+[
+1206,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Gdynia",
+"y": 1210,
+"q": null,
+"text": "The map shows Gdynia held by Silesian duchies for 6 years (1210–1215), between years of Duchy of Kraków and Sandomierz (Lesser Poland), with no event recorded in the city then.",
+"ci": 256,
+"map": [
+[
+1207,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+],
+[
+1210,
+"Silesian duchies"
+],
+[
+1216,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Częstochowa",
+"y": 1202,
+"q": null,
+"text": "The map shows Częstochowa held by Duchy of Greater Poland for 4 years (1202–1205), between years of Duchy of Kraków and Sandomierz (Lesser Poland), with no event recorded in the city then.",
+"ci": 257,
+"map": [
+[
+1199,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+],
+[
+1202,
+"Duchy of Greater Poland"
+],
+[
+1206,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Częstochowa",
+"y": 1210,
+"q": null,
+"text": "The map shows Częstochowa held by Silesian duchies for 6 years (1210–1215), between years of Duchy of Kraków and Sandomierz (Lesser Poland), with no event recorded in the city then.",
+"ci": 257,
+"map": [
+[
+1207,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+],
+[
+1210,
+"Silesian duchies"
+],
+[
+1216,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Radom",
+"y": 1169,
+"q": null,
+"text": "The map shows Radom held by Duchy of Masovia for 8 years (1169–1176), between years of Duchy of Kraków and Sandomierz (Lesser Poland), with no event recorded in the city then.",
+"ci": 258,
+"map": [
+[
+1166,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+],
+[
+1169,
+"Duchy of Masovia"
+],
+[
+1177,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Toruń",
+"y": 1210,
+"q": null,
+"text": "The map shows Toruń held by Silesian duchies for 6 years (1210–1215), between years of Duchy of Kraków and Sandomierz (Lesser Poland), with no event recorded in the city then.",
+"ci": 259,
+"map": [
+[
+1207,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+],
+[
+1210,
+"Silesian duchies"
+],
+[
+1216,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Kielce",
+"y": 1169,
+"q": null,
+"text": "The map shows Kielce held by Duchy of Masovia for 8 years (1169–1176), between years of Duchy of Kraków and Sandomierz (Lesser Poland), with no event recorded in the city then.",
+"ci": 260,
+"map": [
+[
+1166,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+],
+[
+1169,
+"Duchy of Masovia"
+],
+[
+1177,
+"Duchy of Kraków and Sandomierz (Lesser Poland)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Cluj-Napoca",
+"y": 1600,
+"q": null,
+"text": "The map shows Cluj-Napoca held by Principality of Moldavia for 2 years (1600–1601), between years of Eastern Hungarian Kingdom and Principality of Transylvania, with no event recorded in the city then.",
+"ci": 264,
+"map": [
+[
+1597,
+"Eastern Hungarian Kingdom and Principality of Transylvania"
+],
+[
+1600,
+"Principality of Moldavia"
+],
+[
+1602,
+"Eastern Hungarian Kingdom and Principality of Transylvania"
+]
+]
+},
+{
+"test": "flip",
+"where": "Oradea",
+"y": 1600,
+"q": null,
+"text": "The map shows Oradea held by Principality of Moldavia for 2 years (1600–1601), between years of Eastern Hungarian Kingdom and Principality of Transylvania, with no event recorded in the city then.",
+"ci": 268,
+"map": [
+[
+1597,
+"Eastern Hungarian Kingdom and Principality of Transylvania"
+],
+[
+1600,
+"Principality of Moldavia"
+],
+[
+1602,
+"Eastern Hungarian Kingdom and Principality of Transylvania"
+]
+]
+},
+{
+"test": "flip",
+"where": "Ruse",
+"y": 1600,
+"q": null,
+"text": "The map shows Ruse held by Principality of Moldavia for 2 years (1600–1601), between years of Principality of Wallachia, with no event recorded in the city then.",
+"ci": 271,
+"map": [
+[
+1597,
+"Principality of Wallachia"
+],
+[
+1600,
+"Principality of Moldavia"
+],
+[
+1602,
+"Principality of Wallachia"
+]
+]
+},
+{
+"test": "flip",
+"where": "Ruse",
+"y": 1772,
+"q": null,
+"text": "The map shows Ruse held by Ottoman Empire for 3 years (1772–1774), between years of Principality of Wallachia, with no event recorded in the city then.",
+"ci": 271,
+"map": [
+[
+1769,
+"Principality of Wallachia"
+],
+[
+1772,
+"Ottoman Empire"
+],
+[
+1775,
+"Principality of Wallachia"
+]
+]
+},
+{
+"test": "flip",
+"where": "Ruse",
+"y": 1791,
+"q": null,
+"text": "The map shows Ruse held by Ottoman Empire for 1 year (1791–1791), between years of Principality of Wallachia, with no event recorded in the city then.",
+"ci": 271,
+"map": [
+[
+1788,
+"Principality of Wallachia"
+],
+[
+1791,
+"Ottoman Empire"
+],
+[
+1792,
+"Principality of Wallachia"
+]
+]
+},
+{
+"test": "flip",
+"where": "Ruse",
+"y": 1792,
+"q": null,
+"text": "The map shows Ruse held by Principality of Wallachia for 8 years (1792–1799), between years of Ottoman Empire, with no event recorded in the city then.",
+"ci": 271,
+"map": [
+[
+1789,
+"Principality of Wallachia"
+],
+[
+1791,
+"Ottoman Empire"
+],
+[
+1792,
+"Principality of Wallachia"
+],
+[
+1800,
+"Ottoman Empire"
+]
+]
+},
+{
+"test": "flip",
+"where": "Skopje",
+"y": 1220,
+"q": null,
+"text": "The map shows Skopje held by Kingdom of Serbia for 7 years (1220–1226), between years of Second Bulgarian Empire, with no event recorded in the city then.",
+"ci": 272,
+"map": [
+[
+1217,
+"Second Bulgarian Empire"
+],
+[
+1220,
+"Kingdom of Serbia"
+],
+[
+1227,
+"Second Bulgarian Empire"
+]
+]
+},
+{
+"test": "flip",
+"where": "Ankara",
+"y": 1305,
+"q": null,
+"text": "The map shows Ankara held by Sultanate of Rum for 9 years (1305–1313), between years of Ilkhanate, with no event recorded in the city then.",
+"ci": 282,
+"map": [
+[
+1302,
+"Ilkhanate"
+],
+[
+1305,
+"Sultanate of Rum"
+],
+[
+1314,
+"Ilkhanate"
+]
+]
+},
+{
+"test": "flip",
+"where": "Gaziantep",
+"y": 1260,
+"q": null,
+"text": "The map shows Gaziantep held by Armenian Kingdom of Cilicia for 1 year (1260–1260), between years of Mamluk Sultanate, with no event recorded in the city then.",
+"ci": 285,
+"map": [
+[
+1257,
+"Mamluk Sultanate"
+],
+[
+1260,
+"Armenian Kingdom of Cilicia"
+],
+[
+1261,
+"Mamluk Sultanate"
+]
+]
+},
+{
+"test": "flip",
+"where": "Samsun",
+"y": 1094,
+"q": null,
+"text": "The map shows Samsun held by Danishmendids for 5 years (1094–1098), between years of Byzantine Empire, with no event recorded in the city then.",
+"ci": 288,
+"map": [
+[
+1091,
+"Byzantine Empire"
+],
+[
+1094,
+"Danishmendids"
+],
+[
+1099,
+"Byzantine Empire"
+]
+]
+},
+{
+"test": "flip",
+"where": "Samsun",
+"y": 1210,
+"q": null,
+"text": "The map shows Samsun held by Sultanate of Rum for 6 years (1210–1215), between years of Empire of Trebizond, with no event recorded in the city then.",
+"ci": 288,
+"map": [
+[
+1207,
+"Empire of Trebizond"
+],
+[
+1210,
+"Sultanate of Rum"
+],
+[
+1216,
+"Empire of Trebizond"
+]
+]
+},
+{
+"test": "flip",
+"where": "Trabzon",
+"y": 1921,
+"q": null,
+"text": "The map shows Trabzon held by First Republic of Armenia for 1 year (1921–1921), between years of Ottoman Empire, with no event recorded in the city then.",
+"ci": 289,
+"map": [
+[
+1918,
+"Ottoman Empire"
+],
+[
+1921,
+"First Republic of Armenia"
+],
+[
+1922,
+"Ottoman Empire"
+],
+[
+1923,
+"Republic of Turkey"
+]
+]
+},
+{
+"test": "flip",
+"where": "Malatya",
+"y": 1260,
+"q": null,
+"text": "The map shows Malatya held by Golden Horde for 1 year (1260–1260), between years of Mamluk Sultanate, with no event recorded in the city then.",
+"ci": 290,
+"map": [
+[
+1257,
+"Mamluk Sultanate"
+],
+[
+1260,
+"Golden Horde"
+],
+[
+1261,
+"Mamluk Sultanate"
+]
+]
+},
+{
+"test": "flip",
+"where": "Şanlıurfa",
+"y": 1260,
+"q": null,
+"text": "The map shows Şanlıurfa held by Golden Horde for 1 year (1260–1260), between years of Mamluk Sultanate, with no event recorded in the city then.",
+"ci": 291,
+"map": [
+[
+1257,
+"Mamluk Sultanate"
+],
+[
+1260,
+"Golden Horde"
+],
+[
+1261,
+"Mamluk Sultanate"
+]
+]
+},
+{
+"test": "flip",
+"where": "Mosul",
+"y": 1192,
+"q": null,
+"text": "The map shows Mosul held by Ayyubid Sultanate for 10 years (1192–1201), between years of Zengids, with no event recorded in the city then.",
+"ci": 294,
+"map": [
+[
+1189,
+"Zengids"
+],
+[
+1192,
+"Ayyubid Sultanate"
+],
+[
+1202,
+"Zengids"
+]
+]
+},
+{
+"test": "flip",
+"where": "Kirkuk",
+"y": 1192,
+"q": null,
+"text": "The map shows Kirkuk held by Ayyubid Sultanate for 10 years (1192–1201), between years of Zengids, with no event recorded in the city then.",
+"ci": 295,
+"map": [
+[
+1189,
+"Zengids"
+],
+[
+1192,
+"Ayyubid Sultanate"
+],
+[
+1202,
+"Zengids"
+]
+]
+},
+{
+"test": "flip",
+"where": "Urmia",
+"y": 1727,
+"q": null,
+"text": "The map shows Urmia held by Ottoman Empire for 7 years (1727–1733), between years of Safavid Iran, with no event recorded in the city then.",
+"ci": 297,
+"map": [
+[
+1724,
+"Safavid Iran"
+],
+[
+1727,
+"Ottoman Empire"
+],
+[
+1734,
+"Safavid Iran"
+]
+]
+},
+{
+"test": "flip",
+"where": "Ardabil",
+"y": 1727,
+"q": null,
+"text": "The map shows Ardabil held by Ottoman Empire for 7 years (1727–1733), between years of Safavid Iran, with no event recorded in the city then.",
+"ci": 298,
+"map": [
+[
+1724,
+"Safavid Iran"
+],
+[
+1727,
+"Ottoman Empire"
+],
+[
+1734,
+"Safavid Iran"
+]
+]
+},
+{
+"test": "flip",
+"where": "Yerevan",
+"y": 1727,
+"q": null,
+"text": "The map shows Yerevan held by Ottoman Empire for 9 years (1727–1735), between years of Safavid Iran, with no event recorded in the city then.",
+"ci": 299,
+"map": [
+[
+1724,
+"Safavid Iran"
+],
+[
+1727,
+"Ottoman Empire"
+],
+[
+1736,
+"Afsharid Iran"
+]
+]
+},
+{
+"test": "flip",
+"where": "Gyumri",
+"y": 1727,
+"q": null,
+"text": "The map shows Gyumri held by Ottoman Empire for 9 years (1727–1735), between years of Safavid Iran, with no event recorded in the city then.",
+"ci": 300,
+"map": [
+[
+1724,
+"Safavid Iran"
+],
+[
+1727,
+"Ottoman Empire"
+],
+[
+1736,
+"Afsharid Iran"
+]
+]
+},
+{
+"test": "flip",
+"where": "Tangier",
+"y": 1250,
+"q": null,
+"text": "The map shows Tangier held by Morocco (Marinid and Wattasid sultans) for 10 years (1250–1259), between years of Almohad Caliphate, with no event recorded in the city then.",
+"ci": 310,
+"map": [
+[
+1247,
+"Almohad Caliphate"
+],
+[
+1250,
+"Morocco (Marinid and Wattasid sultans)"
+],
+[
+1260,
+"Almohad Caliphate"
+]
+]
+},
+{
+"test": "flip",
+"where": "Tangier",
+"y": 1260,
+"q": null,
+"text": "The map shows Tangier held by Almohad Caliphate for 10 years (1260–1269), between years of Morocco (Marinid and Wattasid sultans), with no event recorded in the city then.",
+"ci": 310,
+"map": [
+[
+1257,
+"Morocco (Marinid and Wattasid sultans)"
+],
+[
+1260,
+"Almohad Caliphate"
+],
+[
+1270,
+"Morocco (Marinid and Wattasid sultans)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Tétouan",
+"y": 1250,
+"q": null,
+"text": "The map shows Tétouan held by Morocco (Marinid and Wattasid sultans) for 10 years (1250–1259), between years of Almohad Caliphate, with no event recorded in the city then.",
+"ci": 311,
+"map": [
+[
+1247,
+"Almohad Caliphate"
+],
+[
+1250,
+"Morocco (Marinid and Wattasid sultans)"
+],
+[
+1260,
+"Almohad Caliphate"
+]
+]
+},
+{
+"test": "flip",
+"where": "Tétouan",
+"y": 1260,
+"q": null,
+"text": "The map shows Tétouan held by Almohad Caliphate for 10 years (1260–1269), between years of Morocco (Marinid and Wattasid sultans), with no event recorded in the city then.",
+"ci": 311,
+"map": [
+[
+1257,
+"Morocco (Marinid and Wattasid sultans)"
+],
+[
+1260,
+"Almohad Caliphate"
+],
+[
+1270,
+"Morocco (Marinid and Wattasid sultans)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Oujda",
+"y": 1260,
+"q": null,
+"text": "The map shows Oujda held by Almohad Caliphate for 10 years (1260–1269), between years of Morocco (Marinid and Wattasid sultans), with no event recorded in the city then.",
+"ci": 312,
+"map": [
+[
+1257,
+"Morocco (Marinid and Wattasid sultans)"
+],
+[
+1260,
+"Almohad Caliphate"
+],
+[
+1270,
+"Morocco (Marinid and Wattasid sultans)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Vinnytsia",
+"y": 1188,
+"q": null,
+"text": "The map shows Vinnytsia held by Kingdom of Hungary for 4 years (1188–1191), between years of Principality of Halych, with no event recorded in the city then.",
+"ci": 319,
+"map": [
+[
+1185,
+"Principality of Halych"
+],
+[
+1188,
+"Kingdom of Hungary"
+],
+[
+1192,
+"Principality of Halych"
+]
+]
+},
+{
+"test": "flip",
+"where": "Ivano-Frankivsk",
+"y": 1188,
+"q": null,
+"text": "The map shows Ivano-Frankivsk held by Kingdom of Hungary for 4 years (1188–1191), between years of Principality of Halych, with no event recorded in the city then.",
+"ci": 323,
+"map": [
+[
+1185,
+"Principality of Halych"
+],
+[
+1188,
+"Kingdom of Hungary"
+],
+[
+1192,
+"Principality of Halych"
+]
+]
+},
+{
+"test": "flip",
+"where": "Ternopil",
+"y": 1188,
+"q": null,
+"text": "The map shows Ternopil held by Kingdom of Hungary for 4 years (1188–1191), between years of Principality of Halych, with no event recorded in the city then.",
+"ci": 324,
+"map": [
+[
+1185,
+"Principality of Halych"
+],
+[
+1188,
+"Kingdom of Hungary"
+],
+[
+1192,
+"Principality of Halych"
+]
+]
+},
+{
+"test": "flip",
+"where": "Ternopil",
+"y": 1810,
+"q": null,
+"text": "The map shows Ternopil held by Russian Empire for 5 years (1810–1814), between years of Austrian Empire, with no event recorded in the city then.",
+"ci": 324,
+"map": [
+[
+1807,
+"Austrian Empire"
+],
+[
+1810,
+"Russian Empire"
+],
+[
+1815,
+"Austrian Empire"
+]
+]
+},
+{
+"test": "flip",
+"where": "Khmelnytskyi",
+"y": 1188,
+"q": null,
+"text": "The map shows Khmelnytskyi held by Kingdom of Hungary for 4 years (1188–1191), between years of Principality of Halych, with no event recorded in the city then.",
+"ci": 327,
+"map": [
+[
+1185,
+"Principality of Halych"
+],
+[
+1188,
+"Kingdom of Hungary"
+],
+[
+1192,
+"Principality of Halych"
+]
+]
+},
+{
+"test": "flip",
+"where": "Sochi",
+"y": 1783,
+"q": null,
+"text": "The map shows Sochi held by no country for 9 years (1783–1791), between years of Russian Empire, with no event recorded in the city then.",
+"ci": 354,
+"map": [
+[
+1780,
+"Russian Empire"
+],
+[
+1783,
+"no country"
+],
+[
+1792,
+"Russian Empire"
+]
+]
+},
+{
+"test": "flip",
+"where": "Tambov",
+"y": 1538,
+"q": null,
+"text": "The map shows Tambov held by no country for 9 years (1538–1546), between years of Grand Principality of Moscow (Muscovy), with no event recorded in the city then.",
+"ci": 355,
+"map": [
+[
+1535,
+"Grand Principality of Moscow (Muscovy)"
+],
+[
+1538,
+"no country"
+],
+[
+1547,
+"Tsardom of Russia"
+]
+]
+},
+{
+"test": "flip",
+"where": "Novorossiysk",
+"y": 1783,
+"q": null,
+"text": "The map shows Novorossiysk held by no country for 9 years (1783–1791), between years of Russian Empire, with no event recorded in the city then.",
+"ci": 358,
+"map": [
+[
+1780,
+"Russian Empire"
+],
+[
+1783,
+"no country"
+],
+[
+1792,
+"Russian Empire"
+]
+]
+},
+{
+"test": "flip",
+"where": "Trondheim",
+"y": 1658,
+"q": null,
+"text": "The map shows Trondheim held by Swedish Empire for 2 years (1658–1659), between years of Denmark–Norway, with no event recorded in the city then.",
+"ci": 384,
+"map": [
+[
+1655,
+"Denmark–Norway"
+],
+[
+1658,
+"Swedish Empire"
+],
+[
+1660,
+"Denmark–Norway"
+]
+]
+},
+{
+"test": "flip",
+"where": "'s-Hertogenbosch",
+"y": 1431,
+"q": null,
+"text": "The map shows 's-Hertogenbosch held by Holy Roman Empire for 5 years (1431–1435), between years of Burgundian State, with no event recorded in the city then.",
+"ci": 397,
+"map": [
+[
+1428,
+"Duchy of Brabant"
+],
+[
+1430,
+"Burgundian State"
+],
+[
+1431,
+"Holy Roman Empire"
+],
+[
+1436,
+"Burgundian State"
+]
+]
+},
+{
+"test": "flip",
+"where": "'s-Hertogenbosch",
+"y": 1519,
+"q": null,
+"text": "The map shows 's-Hertogenbosch held by Holy Roman Empire for 10 years (1519–1528), between years of Habsburg Netherlands, with no event recorded in the city then.",
+"ci": 397,
+"map": [
+[
+1516,
+"Habsburg Netherlands"
+],
+[
+1519,
+"Holy Roman Empire"
+],
+[
+1529,
+"Habsburg Netherlands"
+]
+]
+},
+{
+"test": "flip",
+"where": "Cremona",
+"y": 1512,
+"q": null,
+"text": "The map shows Cremona held by Duchy of Milan (Sforza) for 3 years (1512–1514), between years of Duchy of Milan (under France), with no event recorded in the city then.",
+"ci": 406,
+"map": [
+[
+1509,
+"Duchy of Milan (under France)"
+],
+[
+1512,
+"Duchy of Milan (Sforza)"
+],
+[
+1515,
+"Duchy of Milan (under France)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Cremona",
+"y": 1515,
+"q": null,
+"text": "The map shows Cremona held by Duchy of Milan (under France) for 7 years (1515–1521), between years of Duchy of Milan (Sforza), with no event recorded in the city then.",
+"ci": 406,
+"map": [
+[
+1512,
+"Duchy of Milan (Sforza)"
+],
+[
+1515,
+"Duchy of Milan (under France)"
+],
+[
+1522,
+"Duchy of Milan (Sforza)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Pavia",
+"y": 1515,
+"q": null,
+"text": "The map shows Pavia held by Duchy of Milan (under France) for 7 years (1515–1521), between years of Duchy of Milan (Sforza), with no event recorded in the city then.",
+"ci": 408,
+"map": [
+[
+1512,
+"Duchy of Milan (Sforza)"
+],
+[
+1515,
+"Duchy of Milan (under France)"
+],
+[
+1522,
+"Duchy of Milan (Sforza)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Santiago de Compostela",
+"y": 1065,
+"q": null,
+"text": "The map shows Santiago de Compostela held by Kingdom of Galicia for 7 years (1065–1071), between years of Kingdom of León, with no event recorded in the city then.",
+"ci": 411,
+"map": [
+[
+1062,
+"Kingdom of León"
+],
+[
+1065,
+"Kingdom of Galicia"
+],
+[
+1072,
+"Kingdom of León"
+]
+]
+},
+{
+"test": "flip",
+"where": "Caltagirone",
+"y": 1848,
+"q": null,
+"text": "The map shows Caltagirone held by Kingdom of Sicily (revolution of 1848–49) for 1 year (1848–1848), between years of Kingdom of the Two Sicilies, with no event recorded in the city then.",
+"ci": 418,
+"map": [
+[
+1845,
+"Kingdom of the Two Sicilies"
+],
+[
+1848,
+"Kingdom of Sicily (revolution of 1848–49)"
+],
+[
+1849,
+"Kingdom of the Two Sicilies"
+]
+]
+},
+{
+"test": "flip",
+"where": "Modica",
+"y": 1848,
+"q": null,
+"text": "The map shows Modica held by Kingdom of Sicily (revolution of 1848–49) for 1 year (1848–1848), between years of Kingdom of the Two Sicilies, with no event recorded in the city then.",
+"ci": 419,
+"map": [
+[
+1845,
+"Kingdom of the Two Sicilies"
+],
+[
+1848,
+"Kingdom of Sicily (revolution of 1848–49)"
+],
+[
+1849,
+"Kingdom of the Two Sicilies"
+]
+]
+},
+{
+"test": "flip",
+"where": "Nicosia (Sicily)",
+"y": 1848,
+"q": null,
+"text": "The map shows Nicosia (Sicily) held by Kingdom of Sicily (revolution of 1848–49) for 1 year (1848–1848), between years of Kingdom of the Two Sicilies, with no event recorded in the city then.",
+"ci": 420,
+"map": [
+[
+1845,
+"Kingdom of the Two Sicilies"
+],
+[
+1848,
+"Kingdom of Sicily (revolution of 1848–49)"
+],
+[
+1849,
+"Kingdom of the Two Sicilies"
+]
+]
+},
+{
+"test": "flip",
+"where": "Piazza Armerina",
+"y": 1848,
+"q": null,
+"text": "The map shows Piazza Armerina held by Kingdom of Sicily (revolution of 1848–49) for 1 year (1848–1848), between years of Kingdom of the Two Sicilies, with no event recorded in the city then.",
+"ci": 421,
+"map": [
+[
+1845,
+"Kingdom of the Two Sicilies"
+],
+[
+1848,
+"Kingdom of Sicily (revolution of 1848–49)"
+],
+[
+1849,
+"Kingdom of the Two Sicilies"
+]
+]
+},
+{
+"test": "flip",
+"where": "Trapani",
+"y": 1848,
+"q": null,
+"text": "The map shows Trapani held by Kingdom of Sicily (revolution of 1848–49) for 1 year (1848–1848), between years of Kingdom of the Two Sicilies, with no event recorded in the city then.",
+"ci": 422,
+"map": [
+[
+1845,
+"Kingdom of the Two Sicilies"
+],
+[
+1848,
+"Kingdom of Sicily (revolution of 1848–49)"
+],
+[
+1849,
+"Kingdom of the Two Sicilies"
+]
+]
+},
+{
+"test": "flip",
+"where": "Burgos",
+"y": 1065,
+"q": null,
+"text": "The map shows Burgos held by Kingdom of Castile for 10 years (1065–1074), between years of Kingdom of León, with no event recorded in the city then.",
+"ci": 425,
+"map": [
+[
+1062,
+"Kingdom of León"
+],
+[
+1065,
+"Kingdom of Castile"
+],
+[
+1075,
+"Kingdom of León"
+]
+]
+},
+{
+"test": "flip",
+"where": "Segovia",
+"y": 1065,
+"q": null,
+"text": "The map shows Segovia held by Kingdom of Castile for 10 years (1065–1074), between years of Kingdom of León, with no event recorded in the city then.",
+"ci": 431,
+"map": [
+[
+1062,
+"Kingdom of León"
+],
+[
+1065,
+"Kingdom of Castile"
+],
+[
+1075,
+"Kingdom of León"
+]
+]
+},
+{
+"test": "flip",
+"where": "Marsala",
+"y": 1848,
+"q": null,
+"text": "The map shows Marsala held by Kingdom of Sicily (revolution of 1848–49) for 1 year (1848–1848), between years of Kingdom of the Two Sicilies, with no event recorded in the city then.",
+"ci": 437,
+"map": [
+[
+1845,
+"Kingdom of the Two Sicilies"
+],
+[
+1848,
+"Kingdom of Sicily (revolution of 1848–49)"
+],
+[
+1849,
+"Kingdom of the Two Sicilies"
+]
+]
+},
+{
+"test": "flip",
+"where": "Regensburg",
+"y": 1778,
+"q": null,
+"text": "The map shows Regensburg held by Habsburg Monarchy for 2 years (1778–1779), between years of Electorate of Bavaria, with no event recorded in the city then.",
+"ci": 450,
+"map": [
+[
+1775,
+"Electorate of Bavaria"
+],
+[
+1778,
+"Habsburg Monarchy"
+],
+[
+1780,
+"Electorate of Bavaria (joined with the Palatinate)"
+]
+]
+},
+{
+"test": "flip",
+"where": "Şanlıurfa (Edessa)",
+"y": 1260,
+"q": null,
+"text": "The map shows Şanlıurfa (Edessa) held by Golden Horde for 1 year (1260–1260), between years of Mamluk Sultanate, with no event recorded in the city then.",
+"ci": 455,
+"map": [
+[
+1257,
+"Mamluk Sultanate"
+],
+[
+1260,
+"Golden Horde"
+],
+[
+1261,
+"Mamluk Sultanate"
+]
+]
+},
+{
+"test": "flip",
+"where": "Trier",
+"y": 1696,
+"q": null,
+"text": "The map shows Trier held by Kingdom of France for 4 years (1696–1699), between years of Holy Roman Empire, with no event recorded in the city then.",
+"ci": 460,
+"map": [
+[
+1693,
+"Holy Roman Empire"
+],
+[
+1696,
+"Kingdom of France"
+],
+[
+1700,
+"Holy Roman Empire"
+]
+]
+}
+]

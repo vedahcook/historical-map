@@ -1,0 +1,405 @@
+[
+ {
+  "test": "ruler",
+  "where": "Vlotho",
+  "y": 1638,
+  "q": "Q1411470",
+  "text": "Battle of Vlotho (1638): the sides were Kingdom of England, United Kingdom; the map says Margraviate of Brandenburg held Vlotho.",
+  "ci": 4773,
+  "map": [
+   [
+    1636,
+    "Margraviate of Brandenburg"
+   ]
+  ],
+  "sides": [
+   "Kingdom of England",
+   "United Kingdom"
+  ],
+  "i": 388
+ },
+ {
+  "test": "capture",
+  "where": "Latakia",
+  "y": 1188,
+  "q": "Q121090883",
+  "text": "Siege of Laodicea (1188). Result: Ayyubid victory. The map never shows the winners holding Latakia in the 15 years around it (it shows Principality of Antioch).",
+  "ci": 293,
+  "map": [
+   [
+    1184,
+    "Principality of Antioch"
+   ]
+  ],
+  "winner": "Ayyubid victory",
+  "kind": "never",
+  "i": 142
+ },
+ {
+  "test": "capture",
+  "where": "Gaeta",
+  "y": 1860,
+  "q": "Q1091654",
+  "text": "Siege of Gaeta (1860). Result: Sardinian victory. The map shows the winners holding Gaeta from 1861, not from 1860.",
+  "ci": 4762,
+  "map": [
+   [
+    1844,
+    "Kingdom of the Two Sicilies"
+   ],
+   [
+    1861,
+    "Kingdom of Italy"
+   ]
+  ],
+  "winner": "Sardinian victory",
+  "kind": "date",
+  "i": 387
+ },
+ {
+  "test": "placed",
+  "where": "İznik",
+  "y": 1097,
+  "q": "Q642117",
+  "text": "Siege of Nicaea (1097) is filed under İznik, but Wikidata places it 39 km away (40.583, 30.133).",
+  "ci": 2116,
+  "at": [
+   30.1333,
+   40.5833
+  ],
+  "km": 39,
+  "i": 321
+ },
+ {
+  "test": "capture",
+  "where": "Dubrovnik",
+  "y": 1806,
+  "q": "Q18199199",
+  "text": "Siege of Ragusa (1806). Result: French victory. The map shows the winners holding Dubrovnik from 1808, not from 1806.",
+  "ci": 2208,
+  "map": [
+   [
+    1790,
+    "Republic of Ragusa (Dubrovnik)"
+   ],
+   [
+    1808,
+    "Kingdom of Italy (Napoleonic)"
+   ],
+   [
+    1810,
+    "First French Empire"
+   ],
+   [
+    1814,
+    "Austrian Empire"
+   ]
+  ],
+  "winner": "French victory",
+  "kind": "date",
+  "i": 330
+ },
+ {
+  "test": "placed",
+  "where": "San Donà di Piave",
+  "y": 1917,
+  "q": "Q20008335",
+  "text": "First Battle of the Piave River (1917) is filed under San Donà di Piave, but Wikidata places it 69 km away (45.850, 11.733).",
+  "ci": 2240,
+  "at": [
+   11.73333,
+   45.85
+  ],
+  "km": 69,
+  "i": 334
+ },
+ {
+  "test": "capture",
+  "where": "Maastricht",
+  "y": 1632,
+  "q": "Q2056637",
+  "text": "Capture of Maastricht (1632). Result: Dutch victory. The map never shows the winners holding Maastricht in the 15 years around it (it shows Holy Roman Empire).",
+  "ci": 247,
+  "map": [
+   [
+    1628,
+    "Holy Roman Empire"
+   ]
+  ],
+  "winner": "Dutch victory",
+  "kind": "never",
+  "i": 123
+ },
+ {
+  "test": "placed",
+  "where": "Liepāja",
+  "y": 1991,
+  "q": "Q4992563",
+  "text": "The Barricades (1991) is filed under Liepāja, but Wikidata places it 195 km away (56.947, 24.107).",
+  "ci": 805,
+  "at": [
+   24.1069,
+   56.9475
+  ],
+  "km": 195,
+  "i": 240
+ },
+ {
+  "test": "capture",
+  "where": "Drogheda",
+  "y": 1649,
+  "q": "Q815234",
+  "text": "Siege of Drogheda (1649). Result: Commonwealth victory. The map shows the winners holding Drogheda from 1652, not from 1650.",
+  "ci": 2294,
+  "map": [
+   [
+    1633,
+    "Kingdom of Ireland"
+   ],
+   [
+    1642,
+    "Confederate Ireland (Irish Catholic Confederation)"
+   ],
+   [
+    1652,
+    "Commonwealth of England (from 1653, of England, Scotland and Ireland)"
+   ],
+   [
+    1660,
+    "Kingdom of Ireland"
+   ]
+  ],
+  "winner": "Commonwealth victory",
+  "kind": "date",
+  "i": 336
+ },
+ {
+  "test": "ruler",
+  "where": "Yumurtalık",
+  "y": 1294,
+  "q": "Q9172357",
+  "text": "Battle of Laiazzo (1294): the sides were Republic of Venice, Republic of Genoa; the map says Armenian Kingdom of Cilicia held Yumurtalık.",
+  "ci": 4335,
+  "map": [
+   [
+    1292,
+    "Armenian Kingdom of Cilicia"
+   ]
+  ],
+  "sides": [
+   "Republic of Venice",
+   "Republic of Genoa"
+  ],
+  "i": 379
+ },
+ {
+  "test": "capture",
+  "where": "Brussels",
+  "y": 1746,
+  "q": "Q1924575",
+  "text": "Siege of Brussels (1746). Result: French victory. The map never shows the winners holding Brussels in the 15 years around it (it shows Austrian Netherlands).",
+  "ci": 42,
+  "map": [
+   [
+    1742,
+    "Austrian Netherlands"
+   ]
+  ],
+  "winner": "French victory",
+  "kind": "never",
+  "i": 40
+ },
+ {
+  "test": "held",
+  "where": "Hamburg",
+  "y": 1813,
+  "q": "Q7510071",
+  "text": "Siege of Hamburg (1813). Result: French victory, so the defenders kept Hamburg; but the map hands it to Free City of Hamburg in 1814.",
+  "ci": 7,
+  "map": [
+   [
+    1810,
+    "First French Empire"
+   ],
+   [
+    1814,
+    "Free City of Hamburg"
+   ]
+  ],
+  "winner": "French victory",
+  "i": 13
+ },
+ {
+  "test": "placed",
+  "where": "Istanbul",
+  "y": 1766,
+  "q": "Q6051642",
+  "text": "1766 Istanbul earthquake (1766) is filed under Istanbul, but Wikidata places it 34 km away (40.800, 29.000).",
+  "ci": 6,
+  "at": [
+   29,
+   40.8
+  ],
+  "km": 34,
+  "i": 12
+ },
+ {
+  "test": "ruler",
+  "where": "Larache",
+  "y": 1829,
+  "q": "Q18604047",
+  "text": "Austrian expedition against Morocco (1829): the sides were Austrian Empire, Sharifian Empire; the map says Sultanate of Morocco (Alawi dynasty) held Larache.",
+  "ci": 699,
+  "map": [
+   [
+    1827,
+    "Sultanate of Morocco (Alawi dynasty)"
+   ]
+  ],
+  "sides": [
+   "Austrian Empire",
+   "Sharifian Empire"
+  ],
+  "i": 226
+ },
+ {
+  "test": "held",
+  "where": "Mantua",
+  "y": 1797,
+  "q": "Q815175",
+  "text": "Siege of Mantua (1797). Result: French victory, so the defenders kept Mantua; but the map hands it to Cisalpine Republic in 1797.",
+  "ci": 407,
+  "map": [
+   [
+    1794,
+    "Habsburg Monarchy"
+   ],
+   [
+    1796,
+    "French First Republic"
+   ],
+   [
+    1797,
+    "Cisalpine Republic"
+   ]
+  ],
+  "winner": "French victory",
+  "i": 187
+ },
+ {
+  "test": "flip",
+  "where": "Edinburgh",
+  "y": 1652,
+  "q": null,
+  "text": "The map shows Edinburgh held by Commonwealth of England (from 1653, of England, Scotland and Ireland) for 8 years (1652–1659), between years of Kingdom of Scotland, with no event recorded in the city then.",
+  "ci": 46,
+  "map": [
+   [
+    1649,
+    "Kingdom of Scotland"
+   ],
+   [
+    1652,
+    "Commonwealth of England (from 1653, of England, Scotland and Ireland)"
+   ],
+   [
+    1660,
+    "Kingdom of Scotland"
+   ]
+  ],
+  "i": 398
+ },
+ {
+  "test": "capture",
+  "where": "Tabriz",
+  "y": 1585,
+  "q": "Q119167853",
+  "text": "Capture of Tabriz (1585). Result: Ottoman victory. The map shows the winners holding Tabriz from 1588, not from 1586.",
+  "ci": 296,
+  "map": [
+   [
+    1569,
+    "Safavid Iran"
+   ],
+   [
+    1588,
+    "Ottoman Empire"
+   ]
+  ],
+  "winner": "Ottoman victory",
+  "kind": "date",
+  "i": 145
+ },
+ {
+  "test": "capture",
+  "where": "Vienna",
+  "y": 1485,
+  "q": "Q7510505",
+  "text": "Siege of Vienna (1485). Result: Hungarian victory. The map shows the winners holding Vienna from 1487, not from 1485.",
+  "ci": 2,
+  "map": [
+   [
+    1469,
+    "Austria"
+   ],
+   [
+    1487,
+    "Kingdom of Hungary"
+   ],
+   [
+    1492,
+    "Austria"
+   ]
+  ],
+  "winner": "Hungarian victory",
+  "kind": "date",
+  "i": 1
+ },
+ {
+  "test": "flip",
+  "where": "Marseille",
+  "y": 1032,
+  "q": null,
+  "text": "The map shows Marseille held by no country for 1 year (1032–1032), between years of Kingdom of Arles (Burgundy), with no event recorded in the city then.",
+  "ci": 24,
+  "map": [
+   [
+    1029,
+    "Kingdom of Arles (Burgundy)"
+   ],
+   [
+    1032,
+    "no country"
+   ],
+   [
+    1033,
+    "Kingdom of Arles (Burgundy)"
+   ]
+  ],
+  "i": 394
+ },
+ {
+  "test": "held",
+  "where": "Mannheim",
+  "y": 1795,
+  "q": "Q16894607",
+  "text": "Siege of Mannheim (1795). Result: Austrian victory, so the defenders kept Mannheim; but the map hands it to French First Republic in 1796.",
+  "ci": 71,
+  "map": [
+   [
+    1792,
+    "Holy Roman Empire"
+   ],
+   [
+    1796,
+    "French First Republic"
+   ],
+   [
+    1797,
+    "Holy Roman Empire"
+   ]
+  ],
+  "winner": "Austrian victory",
+  "i": 55
+ }
+]

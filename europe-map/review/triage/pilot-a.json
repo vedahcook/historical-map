@@ -1,0 +1,416 @@
+[
+ {
+  "test": "capture",
+  "where": "Kassel",
+  "y": 1761,
+  "q": "Q3485856",
+  "text": "Siege of Cassel (1761). Result: French victory. The map never shows the winners holding Kassel in the 15 years around it (it shows Landgraviate of Hesse-Kassel (Electorate of Hesse from 1803)).",
+  "ci": 85,
+  "map": [
+   [
+    1757,
+    "Landgraviate of Hesse-Kassel (Electorate of Hesse from 1803)"
+   ]
+  ],
+  "winner": "French victory",
+  "kind": "never",
+  "i": 64
+ },
+ {
+  "test": "ruler",
+  "where": "Belgrade",
+  "y": 1999,
+  "q": "Q2418042",
+  "text": "United States bombing of the Chinese embassy in Belgrade (1999): the sides were United States, People's Republic of China; the map says Federal Republic of Yugoslavia held Belgrade.",
+  "ci": 153,
+  "map": [
+   [
+    1997,
+    "Federal Republic of Yugoslavia"
+   ]
+  ],
+  "sides": [
+   "United States",
+   "People's Republic of China"
+  ],
+  "i": 95
+ },
+ {
+  "test": "capture",
+  "where": "Maastricht",
+  "y": 1579,
+  "q": "Q2758693",
+  "text": "Siege of Maastricht (1579). Result: Spanish victory. The map never shows the winners holding Maastricht in the 15 years around it (it shows Holy Roman Empire).",
+  "ci": 247,
+  "map": [
+   [
+    1575,
+    "Holy Roman Empire"
+   ]
+  ],
+  "winner": "Spanish victory",
+  "kind": "never",
+  "i": 122
+ },
+ {
+  "test": "flip",
+  "where": "Tangier",
+  "y": 1250,
+  "q": null,
+  "text": "The map shows Tangier held by Morocco (Marinid and Wattasid sultans) for 10 years (1250–1259), between years of Almohad Caliphate, with no event recorded in the city then.",
+  "ci": 310,
+  "map": [
+   [
+    1247,
+    "Almohad Caliphate"
+   ],
+   [
+    1250,
+    "Morocco (Marinid and Wattasid sultans)"
+   ],
+   [
+    1260,
+    "Almohad Caliphate"
+   ]
+  ],
+  "i": 467
+ },
+ {
+  "test": "capture",
+  "where": "Kolomna",
+  "y": 1236,
+  "q": "Q4087494",
+  "text": "Siege of Kolomna (1236). Result: Mongol victory. The map never shows the winners holding Kolomna in the 15 years around it (it shows Principality of Ryazan).",
+  "ci": 609,
+  "map": [
+   [
+    1232,
+    "Principality of Ryazan"
+   ]
+  ],
+  "winner": "Mongol victory",
+  "kind": "never",
+  "i": 222
+ },
+ {
+  "test": "flip",
+  "where": "Chișinău",
+  "y": 1791,
+  "q": null,
+  "text": "The map shows Chișinău held by Ottoman Empire for 1 year (1791–1791), between years of Principality of Moldavia, with no event recorded in the city then.",
+  "ci": 118,
+  "map": [
+   [
+    1788,
+    "Principality of Moldavia"
+   ],
+   [
+    1791,
+    "Ottoman Empire"
+   ],
+   [
+    1792,
+    "Principality of Moldavia"
+   ]
+  ],
+  "i": 414
+ },
+ {
+  "test": "capture",
+  "where": "Tripoli",
+  "y": 1821,
+  "q": "Q2590023",
+  "text": "Siege of Tripolitsa (1821). Result: Greek victory. The map shows the winners holding Tripoli from 1830, not from 1822.",
+  "ci": 3131,
+  "map": [
+   [
+    1805,
+    "Ottoman Empire"
+   ],
+   [
+    1830,
+    "Greece (before the kingdom)"
+   ]
+  ],
+  "winner": "Greek victory",
+  "kind": "date",
+  "i": 358
+ },
+ {
+  "test": "capture",
+  "where": "Évora",
+  "y": 1165,
+  "q": "Q130029676",
+  "text": "Conquest of Évora (1165). Result: Portuguese victory. The map shows the winners holding Évora from 1169, not from 1165.",
+  "ci": 1601,
+  "map": [
+   [
+    1149,
+    "Taifa kingdoms"
+   ],
+   [
+    1152,
+    "Almohad Caliphate"
+   ],
+   [
+    1169,
+    "Kingdom of Portugal"
+   ],
+   [
+    1177,
+    "Almohad Caliphate"
+   ]
+  ],
+  "winner": "Portuguese victory",
+  "kind": "date",
+  "i": 299
+ },
+ {
+  "test": "ruler",
+  "where": "Fushë Kosovë",
+  "y": 1448,
+  "q": "Q698706",
+  "text": "Battle of Kosovo (1448): the sides were Ottoman Empire, Principality of Wallachia; the map says Serbian Despotate held Fushë Kosovë.",
+  "ci": 1397,
+  "map": [
+   [
+    1446,
+    "Serbian Despotate"
+   ]
+  ],
+  "sides": [
+   "Ottoman Empire",
+   "Principality of Wallachia"
+  ],
+  "i": 281
+ },
+ {
+  "test": "flip",
+  "where": "Palermo",
+  "y": 1848,
+  "q": null,
+  "text": "The map shows Palermo held by Kingdom of Sicily (revolution of 1848–49) for 1 year (1848–1848), between years of Kingdom of the Two Sicilies, with no event recorded in the city then.",
+  "ci": 45,
+  "map": [
+   [
+    1845,
+    "Kingdom of the Two Sicilies"
+   ],
+   [
+    1848,
+    "Kingdom of Sicily (revolution of 1848–49)"
+   ],
+   [
+    1849,
+    "Kingdom of the Two Sicilies"
+   ]
+  ],
+  "i": 397
+ },
+ {
+  "test": "capture",
+  "where": "Şanlıurfa",
+  "y": 1144,
+  "q": "Q2083368",
+  "text": "Siege of Edessa (1144). Result: Zengid victory. The map shows the winners holding Şanlıurfa from 1147, not from 1145.",
+  "ci": 291,
+  "map": [
+   [
+    1128,
+    "County of Edessa"
+   ],
+   [
+    1147,
+    "Zengids"
+   ]
+  ],
+  "winner": "Zengid victory",
+  "kind": "date",
+  "i": 141
+ },
+ {
+  "test": "flip",
+  "where": "Maastricht",
+  "y": 1831,
+  "q": null,
+  "text": "The map shows Maastricht held by Kingdom of Belgium for 8 years (1831–1838), between years of Kingdom of the Netherlands, with no event recorded in the city then.",
+  "ci": 247,
+  "map": [
+   [
+    1828,
+    "Kingdom of the Netherlands"
+   ],
+   [
+    1831,
+    "Kingdom of Belgium"
+   ],
+   [
+    1839,
+    "Kingdom of the Netherlands"
+   ]
+  ],
+  "i": 438
+ },
+ {
+  "test": "capture",
+  "where": "Kamianets-Podilskyi",
+  "y": 1672,
+  "q": "Q949294",
+  "text": "Siege of Kamenets (1672). Result: Ottoman victory. The map never shows the winners holding Kamianets-Podilskyi in the 15 years around it (it shows Polish–Lithuanian Commonwealth).",
+  "ci": 884,
+  "map": [
+   [
+    1668,
+    "Polish–Lithuanian Commonwealth"
+   ]
+  ],
+  "winner": "Ottoman victory",
+  "kind": "never",
+  "i": 247
+ },
+ {
+  "test": "capture",
+  "where": "Genoa",
+  "y": 1800,
+  "q": "Q577441",
+  "text": "Siege of Genoa (1800). Result: Anglo-Austrian victory. The map never shows the winners holding Genoa in the 15 years around it (it shows Ligurian Republic).",
+  "ci": 34,
+  "map": [
+   [
+    1796,
+    "Republic of Genoa"
+   ],
+   [
+    1805,
+    "First French Empire"
+   ]
+  ],
+  "winner": "Anglo-Austrian victory",
+  "kind": "never",
+  "i": 34
+ },
+ {
+  "test": "ruler",
+  "where": "Desio",
+  "y": 1277,
+  "q": "Q1109794",
+  "text": "Battle of Desio (1277): the sides were House of Della Torre, House of Visconti, Pavia, Municipality of Novara, Como; the map says Holy Roman Empire held Desio.",
+  "ci": 2238,
+  "map": [
+   [
+    1275,
+    "Holy Roman Empire"
+   ]
+  ],
+  "sides": [
+   "House of Della Torre",
+   "House of Visconti",
+   "Pavia",
+   "Municipality of Novara",
+   "Como"
+  ],
+  "i": 333
+ },
+ {
+  "test": "flip",
+  "where": "Istanbul",
+  "y": 1402,
+  "q": null,
+  "text": "The map shows Istanbul held by Ottoman Empire for 5 years (1402–1406), between years of Byzantine Empire, with no event recorded in the city then.",
+  "ci": 6,
+  "map": [
+   [
+    1399,
+    "Byzantine Empire"
+   ],
+   [
+    1402,
+    "Ottoman Empire"
+   ],
+   [
+    1407,
+    "Byzantine Empire"
+   ]
+  ],
+  "i": 390
+ },
+ {
+  "test": "ruler",
+  "where": "Hamburg",
+  "y": 1943,
+  "q": "Q316868",
+  "text": "Bombing of Hamburg in World War II (1943): the sides were United Kingdom, United States; the map says Nazi Germany held Hamburg.",
+  "ci": 7,
+  "map": [
+   [
+    1941,
+    "Nazi Germany"
+   ],
+   [
+    1945,
+    "British occupation zone of Germany"
+   ]
+  ],
+  "sides": [
+   "United Kingdom",
+   "United States"
+  ],
+  "i": 14
+ },
+ {
+  "test": "placed",
+  "where": "Istanbul",
+  "y": 1509,
+  "q": "Q1188930",
+  "text": "İstanbul earthquake of 1509 (1509) is filed under Istanbul, but Wikidata places it 35 km away (40.900, 28.700).",
+  "ci": 6,
+  "at": [
+   28.7,
+   40.9
+  ],
+  "km": 35,
+  "i": 11
+ },
+ {
+  "test": "ruler",
+  "where": "Naqadeh",
+  "y": 1918,
+  "q": "Q113127542",
+  "text": "Battle of Suldouze (1918): the sides were Assyrian volunteers, Ottoman Empire; the map says Qajar Iran (Persia) held Naqadeh.",
+  "ci": 1085,
+  "map": [
+   [
+    1916,
+    "Qajar Iran (Persia)"
+   ]
+  ],
+  "sides": [
+   "Assyrian volunteers",
+   "Ottoman Empire"
+  ],
+  "i": 269
+ },
+ {
+  "test": "flip",
+  "where": "Debrecen",
+  "y": 1683,
+  "q": null,
+  "text": "The map shows Debrecen held by Principality of Upper Hungary for 4 years (1683–1686), between years of Eastern Hungarian Kingdom and Principality of Transylvania, with no event recorded in the city then.",
+  "ci": 144,
+  "map": [
+   [
+    1680,
+    "Eastern Hungarian Kingdom and Principality of Transylvania"
+   ],
+   [
+    1683,
+    "Principality of Upper Hungary"
+   ],
+   [
+    1687,
+    "Eastern Hungarian Kingdom and Principality of Transylvania"
+   ]
+  ],
+  "i": 420
+ }
+]

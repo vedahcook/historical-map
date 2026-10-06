@@ -1,0 +1,219 @@
+[
+ {
+  "i": 64,
+  "verdict": "naming",
+  "fix": "",
+  "why": "The March 1761 siege was a failed Allied attempt to retake Kassel from a French garrison, so \"French victory\" means the defenders held on. France occupied the Landgraviate's capital in wartime (until the Allies retook it in October-November 1762), but sovereignty stayed with Hesse-Kassel, which is what the map shows.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Siege_of_Cassel_(1761)",
+   "https://en.wikipedia.org/wiki/Siege_of_Cassel_(1762)"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "i": 95,
+  "verdict": "naming",
+  "fix": "",
+  "why": "The embassy bombing was a single US airstrike during NATO's 1999 campaign against Yugoslavia, not a fight over control of Belgrade. The \"sides\" are the bomber and the country whose embassy was hit, and Yugoslavia kept the city.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/United_States_bombing_of_the_Chinese_embassy_in_Belgrade"
+  ],
+  "confidence": "high"
+ },
+ {
+  "i": 122,
+  "verdict": "naming",
+  "fix": "",
+  "why": "Spain stormed Maastricht in July 1579 and then held it jointly with the Prince-Bishop of Liege (taking over the Duke of Brabant's share) until the Dutch took it in 1632. Both shares were Empire territory, which the map shows under the broad label Holy Roman Empire, so only the name differs.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Siege_of_Maastricht_(1579)",
+   "https://en.wikipedia.org/wiki/Maastricht"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "i": 467,
+  "verdict": "map",
+  "fix": "Not Marinid in 1250-1259. Tangier refused to recognize the Marinids until Abu Yusuf Yaqub forced it to (recognition dated 1273; three-month siege in 1274). In between, a local chief, Yusuf ibn Muhammad (who pledged to the Hafsids, then the Abbasids), ruled it until he was killed in late 1266 or early 1267. The sources do not say exactly when the Almohads lost it, so Almohad in 1260 is also unsupported.",
+  "why": "Wikipedia says Tangier did not acknowledge the Marinids after the Almohad collapse and came under their rule only in 1273-74, so a Marinid Tangier in 1250-1259 has no support.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Tangier",
+   "https://en.wikipedia.org/wiki/Abu_Yusuf_Yaqub_ibn_Abd_al-Haqq"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "i": 222,
+  "verdict": "naming",
+  "fix": "",
+  "why": "The Mongols destroyed Kolomna in the winter of 1237-38 (Wikipedia's dates; Wikidata has it a year early) and moved on without holding it. Moscow later took Kolomna from the Ryazan ruler in 1301, and Ryazan itself became a Golden Horde tributary, so a sack did not change who held the town.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Siege_of_Kolomna",
+   "https://en.wikipedia.org/wiki/Daniil_Aleksandrovich",
+   "https://en.wikipedia.org/wiki/Mongol_invasion_of_Kievan_Rus%27"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "i": 414,
+  "verdict": "naming",
+  "fix": "",
+  "why": "Chisinau stayed in Moldavia, an Ottoman vassal, until Russia took the eastern half in 1812; the Treaty of Jassy (January 1792) moved the Russian border only to the Dniester. The one-year \"Ottoman Empire\" entry is the overlord's name for the same territory, not a change of ruler.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Chi%C8%99in%C4%83u",
+   "https://en.wikipedia.org/wiki/Treaty_of_Jassy"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "i": 358,
+  "verdict": "map",
+  "fix": "Greek revolutionaries held Tripolitsa from its capture on 23 September 1821 (Old Style; 5 October New Style) until Ibrahim Pasha's Egyptian-Ottoman army retook it on 22 June 1825. It then stayed under Egyptian/Ottoman control until Ibrahim evacuated the Peloponnese in 1828 (after the French expedition), when Greek control returned and lasted through 1830.",
+  "why": "The map has the Ottomans holding Tripoli until 1830, but the city changed hands in 1821, 1825 and 1828. The Greek capture in 1821 is plainly recorded.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Siege_of_Tripolitsa",
+   "https://en.wikipedia.org/wiki/Tripoli,_Greece",
+   "https://en.wikipedia.org/wiki/Greek_War_of_Independence"
+  ],
+  "confidence": "high"
+ },
+ {
+  "i": 299,
+  "verdict": "map",
+  "fix": "Portugal held Evora from September/October 1165 (taken by Geraldo Sem Pavor, who handed it to Afonso I; Portuguese rule from 1166) and kept it afterward, including 1177. Almohad attacks in 1181 failed, and when the Almohads overran Portuguese lands south of the Tagus in 1191, Evora was the one conquest not lost.",
+  "why": "The map shows Portugal only from 1169 and then the Almohads from 1177, but Wikipedia has Portugal holding the city continuously from 1165-66.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Conquest_of_%C3%89vora",
+   "https://en.wikipedia.org/wiki/%C3%89vora"
+  ],
+  "confidence": "high"
+ },
+ {
+  "i": 281,
+  "verdict": "naming",
+  "fix": "",
+  "why": "A Hungarian-led crusade fought the Ottomans on Kosovo Field in 1448; the Serbian Despotate, an Ottoman vassal under Brankovic, stayed out and even blocked Skanderbeg's route. The listed sides are the armies that fought on the Despotate's land, not its holder.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Battle_of_Kosovo_(1448)",
+   "https://en.wikipedia.org/wiki/Serbian_Despotate"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "i": 397,
+  "verdict": "naming",
+  "fix": "",
+  "why": "The map is right: the Sicilian revolution began in Palermo on 12 January 1848 and the provisional Sicilian government lasted until the Bourbons retook the island in May 1849, so the 1848 \"flip\" is the revolution itself, just not tied to the city in the event data.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Revolutions_of_1848_in_the_Italian_states"
+  ],
+  "confidence": "high"
+ },
+ {
+  "i": 141,
+  "verdict": "map",
+  "fix": "Zengids from the fall of Edessa on 24 December 1144 (citadel surrendered 26 December) to the end of 1146, apart from Joscelin II's brief recapture of the city (not the citadel) in October-November 1146. Nur ad-Din drove him out in November 1146 and Muslim rule continued from then on. The County of Edessa's city ends in 1144, not 1147.",
+  "why": "Wikipedia dates the fall to December 1144 and says Zengi held the city until his death in 1146, so the map's 1147 handover is two to three years late.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Siege_of_Edessa_(1144)",
+   "https://en.wikipedia.org/wiki/County_of_Edessa"
+  ],
+  "confidence": "high"
+ },
+ {
+  "i": 438,
+  "verdict": "map",
+  "fix": "Kingdom of the Netherlands throughout 1831-1838. The Dutch garrison stayed loyal after 1830 and kept the fortress; the powers allotted the city to the Netherlands in 1831 and the 1839 Treaty of London confirmed it. Belgium never held the city itself.",
+  "why": "Wikipedia says the Dutch garrison in Maastricht remained loyal to William I even though most townspeople sided with the Belgian revolutionaries, and the Dutch army held the city until 1839.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Maastricht",
+   "https://en.wikipedia.org/wiki/Belgian_Revolution"
+  ],
+  "confidence": "high"
+ },
+ {
+  "i": 247,
+  "verdict": "map",
+  "fix": "Ottoman Empire (capital of the Podolia Eyalet) from the surrender in August 1672 until the Treaty of Karlowitz returned the city to Poland in 1699.",
+  "why": "The Ottomans took Kamianets-Podilskyi in August 1672 and held it for 27 years, but the map keeps it Polish-Lithuanian throughout.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Siege_of_Kamenets",
+   "https://en.wikipedia.org/wiki/Kamianets-Podilskyi"
+  ],
+  "confidence": "high"
+ },
+ {
+  "i": 34,
+  "verdict": "naming",
+  "fix": "",
+  "why": "Masseena surrendered on 4 June 1800, but the Austrians and British held Genoa only until the Convention of Alessandria returned it to the French on 24 June. A three-week occupation of a city in the same Ligurian Republic did not change who held it.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Siege_of_Genoa_(1800)",
+   "https://en.wikipedia.org/wiki/Convention_of_Alessandria"
+  ],
+  "confidence": "high"
+ },
+ {
+  "i": 333,
+  "verdict": "naming",
+  "fix": "",
+  "why": "Desio was a fight between the Visconti and the Della Torre families, with their allied Lombard cities, for control of Milan; all were local powers within the Kingdom of Italy, which was nominally part of the Holy Roman Empire. The map's broad label and the event's local sides do not conflict.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Battle_of_Desio"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "i": 390,
+  "verdict": "map",
+  "fix": "Byzantine Empire held Constantinople continuously until the Ottomans captured it on 29 May 1453.",
+  "why": "Bayezid's blockade (1394-1402) never took the city and ended after the Battle of Ankara; the Byzantines kept it under the 1403 Treaty of Gallipoli, and the Ottoman conquest came only in 1453.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Siege_of_Constantinople_(1394%E2%80%931402)",
+   "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+  ],
+  "confidence": "high"
+ },
+ {
+  "i": 14,
+  "verdict": "naming",
+  "fix": "",
+  "why": "Operation Gomorrah (July-August 1943) was an Allied bombing campaign by the RAF and the US Eighth Air Force, not a fight for control of the city. Nazi Germany held Hamburg throughout.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Bombing_of_Hamburg_in_World_War_II"
+  ],
+  "confidence": "high"
+ },
+ {
+  "i": 11,
+  "verdict": "naming",
+  "fix": "",
+  "why": "The 1509 earthquake's epicenter was offshore in the Sea of Marmara near the Prince's Islands, and it badly damaged Istanbul itself (109 mosques destroyed, 1,070 houses collapsed). Wikidata lists two epicenter estimates, so the 35 km offset is not a misplacement.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/1509_Constantinople_earthquake"
+  ],
+  "confidence": "high"
+ },
+ {
+  "i": 269,
+  "verdict": "naming",
+  "fix": "",
+  "why": "The April 1918 battle was fought on Persian soil between Assyrian volunteers and Ottoman troops occupying the area; neither side was Persia, which was not a party to the fight. The map shows the sovereign state, not the occupiers.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Battle_of_Suldouze"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "i": 420,
+  "verdict": "expert",
+  "fix": "",
+  "why": "Wikipedia's Debrecen article puts the town in an Ottoman sanjak (Varat eyalet from 1660) until 1693, and Thokoly's Upper Hungary (capital Kosice, mostly Slovakia plus parts of northeastern Hungary) was itself an Ottoman vassal. No source we found places Debrecen inside that principality or records a change of hands in 1683 or 1687, so the sources do not settle which label fits, though sovereignty looks Ottoman throughout.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Debrecen",
+   "https://en.wikipedia.org/wiki/Principality_of_Upper_Hungary",
+   "https://en.wikipedia.org/wiki/Ottoman_Hungary"
+  ],
+  "confidence": "low"
+ }
+]

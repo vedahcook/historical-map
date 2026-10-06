@@ -1,0 +1,162 @@
+[
+ {
+  "i": 388,
+  "verdict": "naming",
+  "fix": "No change. Vlotho (County of Ravensberg) belonged to Brandenburg since the 1614 Treaty of Xanten.",
+  "why": "The 1638 battle was fought on Brandenburg land between outside armies: the Palatine-English-Swedish force against the Imperial army, which won. Brandenburg was not a side, and 'United Kingdom' in the record is only an anachronistic label for England.",
+  "sources": ["https://en.wikipedia.org/wiki/Battle_of_Vlotho", "https://en.wikipedia.org/wiki/County_of_Ravensberg"],
+  "confidence": "high"
+ },
+ {
+  "i": 142,
+  "verdict": "map",
+  "fix": "Latakia (Laodicea) was held by the Ayyubid Sultanate (Saladin) from 22 July 1188 until Antioch/the crusaders had it back by about 1260, then the Mamluks from 1287. The map shows Antioch throughout.",
+  "why": "Wikipedia says Saladin took the city on 20-22 July 1188, garrisoned it, and held it; later crusader attempts (1191, 1197) failed, and the crusaders are only said to have it again 'by 1260'. The map never shows this long Ayyubid period.",
+  "sources": ["https://en.wikipedia.org/wiki/Siege_of_Laodicea_(1188)", "https://en.wikipedia.org/wiki/Latakia"],
+  "confidence": "medium"
+ },
+ {
+  "i": 387,
+  "verdict": "naming",
+  "fix": "No change. The map's 1861 switch to Sardinia/Italy is right.",
+  "why": "The siege ran from 5 November 1860 to 13 February 1861, and Gaeta surrendered on 13 February 1861. The event's 1860 year is just the start of a siege that ended in 1861.",
+  "sources": ["https://en.wikipedia.org/wiki/Siege_of_Gaeta_(1860%E2%80%931861)"],
+  "confidence": "high"
+ },
+ {
+  "i": 321,
+  "verdict": "event",
+  "fix": "The siege took place at Nicaea, modern İznik (about 40.429 N, 29.719 E). Wikidata's extra, low-precision coordinate (40.583, 30.133) is a stray error and should be ignored.",
+  "why": "Wikipedia says Nicaea is present-day İznik, on the eastern shore of Lake İznik. The Wikidata item itself carries a second, precise coordinate at İznik, so the filing under İznik is correct and only the stray coordinate is wrong.",
+  "sources": ["https://www.wikidata.org/wiki/Q642117", "https://en.wikipedia.org/wiki/Siege_of_Nicaea", "https://en.wikipedia.org/wiki/Iznik"],
+  "confidence": "high"
+ },
+ {
+  "i": 330,
+  "verdict": "naming",
+  "fix": "No change. The French occupied Ragusa from 27 May 1806, but the Republic stayed nominally independent until Marmont abolished it on 31 January 1808.",
+  "why": "The 1806 siege was a failed Russian-Montenegrin attempt on a city already occupied by French troops under Lauriston, while the Republic formally continued. The map's 1808 date matches the formal annexation into the Kingdom of Italy, so this is occupation versus formal sovereignty rather than an error.",
+  "sources": ["https://en.wikipedia.org/wiki/Siege_of_Ragusa_(1806)", "https://en.wikipedia.org/wiki/Republic_of_Ragusa"],
+  "confidence": "medium"
+ },
+ {
+  "i": 334,
+  "verdict": "naming",
+  "fix": "No change. The battle was a front-wide fight, not a single place.",
+  "why": "Wikidata lists two locations for the battle, Mount Grappa and the Piave river, and puts its coordinate near Mount Grappa. San Donà di Piave sat on the lower Piave line where the front stabilized in November 1917, so both the filing and the coordinate are defensible parts of the same front.",
+  "sources": ["https://www.wikidata.org/wiki/Q20008335", "https://en.wikipedia.org/wiki/First_Battle_of_the_Piave_River", "https://en.wikipedia.org/wiki/San_Don%C3%A0_di_Piave"],
+  "confidence": "medium"
+ },
+ {
+  "i": 123,
+  "verdict": "map",
+  "fix": "The Dutch Republic held Maastricht from 22 August 1632 (jointly with the Prince-Bishopric of Liège) until the French conquest in 1794. The map shows the Holy Roman Empire instead.",
+  "why": "Wikipedia says Frederick Henry took Maastricht on 22 August 1632, the States General replaced the Spanish crown in its joint government, and the city stayed in Dutch hands, even after Spain regained nearby Venlo and Roermond in 1637. It was Dutch for over 160 years.",
+  "sources": ["https://en.wikipedia.org/wiki/Capture_of_Maastricht", "https://en.wikipedia.org/wiki/Maastricht"],
+  "confidence": "high"
+ },
+ {
+  "i": 240,
+  "verdict": "naming",
+  "fix": "No change. The Barricades were a nationwide event centered on Riga, with barricades also in Liepāja, Kuldīga and Ulbroka.",
+  "why": "Wikidata lists Riga, Liepāja, Kuldīga and Ulbroka as locations and gives Riga's coordinates, and Wikipedia says barricades were also built in Liepāja. The Liepāja filing is a secondary location, not a mistake, and nothing changed hands there.",
+  "sources": ["https://en.wikipedia.org/wiki/The_Barricades", "https://www.wikidata.org/wiki/Q4992563"],
+  "confidence": "medium"
+ },
+ {
+  "i": 336,
+  "verdict": "map",
+  "fix": "Drogheda was held by the Commonwealth of England from Cromwell's storming on 3-11 September 1649, not from 1652. Before that it was held by the Royalist-Confederate garrison.",
+  "why": "Wikipedia says the Royalist and Irish Confederate garrison under Aston was overcome and the Commonwealth captured and held the town in September 1649. The map keeps Confederate Ireland there until 1652.",
+  "sources": ["https://en.wikipedia.org/wiki/Siege_of_Drogheda"],
+  "confidence": "medium"
+ },
+ {
+  "i": 379,
+  "verdict": "naming",
+  "fix": "No change. Ayas (Laiazzo) belonged to the Armenian Kingdom of Cilicia until the Mamluks took it in 1347.",
+  "why": "Laiazzo was a naval fight between Genoa and Venice in the harbor of an Armenian-held port, so the map's ruler is simply a third party and the port did not change hands. Wikipedia's Yumurtalık article says it was Armenian in 1294 and Mamluk from 1347.",
+  "sources": ["https://en.wikipedia.org/wiki/Yumurtal%C4%B1k", "https://www.wikidata.org/wiki/Q9172357"],
+  "confidence": "high"
+ },
+ {
+  "i": 40,
+  "verdict": "map",
+  "fix": "Brussels was held by France from the surrender on 22 February 1746 until it was returned to Austria under the 1748 Treaty of Aix-la-Chapelle (French evacuation finished by January 1749). The map shows Austrian Netherlands throughout.",
+  "why": "Wikipedia says the French captured Brussels in February 1746 and occupied it for nearly three years until the 1748 treaty returned it to Austria. That is a multi-year occupation, not a short raid.",
+  "sources": ["https://en.wikipedia.org/wiki/Siege_of_Brussels_(1746)"],
+  "confidence": "medium"
+ },
+ {
+  "i": 13,
+  "verdict": "naming",
+  "fix": "No change. The French held Hamburg through the siege and left in late May 1814, so the map's 1814 switch to the Free City is right.",
+  "why": "The siege ran from 24 December 1813 to 12 May 1814, and Davout's garrison left in three columns on 27, 29 and 31 May 1814. Hamburg regained its city-state status in 1814, which matches the map.",
+  "sources": ["https://en.wikipedia.org/wiki/Siege_of_Hamburg", "https://en.wikipedia.org/wiki/Hamburg"],
+  "confidence": "high"
+ },
+ {
+  "i": 12,
+  "verdict": "naming",
+  "fix": "No change. The earthquake was centered in the eastern Sea of Marmara (about 40.8 N, 29.0 E) and heavily damaged Istanbul.",
+  "why": "The Wikidata coordinate is the epicenter, 34 km from the city, while the damage was in Istanbul. Filing the quake under the city it struck is reasonable and nothing about rule is in question.",
+  "sources": ["https://en.wikipedia.org/wiki/1766_Istanbul_earthquake"],
+  "confidence": "high"
+ },
+ {
+  "i": 226,
+  "verdict": "naming",
+  "fix": "No change. Larache stayed Moroccan until the Spanish occupation in 1911.",
+  "why": "The 1829 Austrian action was a punitive naval bombardment over piracy, not an occupation. 'Sharifian Empire' is just another name for the Moroccan sultanate that the map shows.",
+  "sources": ["https://en.wikipedia.org/wiki/Larache"],
+  "confidence": "high"
+ },
+ {
+  "i": 187,
+  "verdict": "map",
+  "fix": "Austria (Habsburg Monarchy) held Mantua until its surrender to the French on 2 February 1797. France then held it until the Mincio department (Mantua) joined the Cisalpine Republic on 26 May 1798. The map shows France from 1796 and the Cisalpine Republic from 1797.",
+  "why": "The siege (June 1796 to 2 February 1797) was French besiegers against an Austrian garrison, so the map's French holding in 1796 is too early. Wikipedia's Cisalpine Republic article says Mantua was not in the original July 1797 republic and was added in May 1798.",
+  "sources": ["https://en.wikipedia.org/wiki/Siege_of_Mantua_(1796%E2%80%931797)", "https://en.wikipedia.org/wiki/Cisalpine_Republic"],
+  "confidence": "medium"
+ },
+ {
+  "i": 398,
+  "verdict": "naming",
+  "fix": "No change to the flip itself. English forces occupied Edinburgh on 7 September 1650 after Dunbar, and Commonwealth rule lasted to the 1660 Restoration; the map starts it at the 1652 formal absorption.",
+  "why": "The change of ruler is real: Scotland was conquered and absorbed into the Commonwealth, then restored in 1660. Edinburgh itself fell in 1650 (the castle held until December 1650), so the map's 1652 start reflects formal union rather than the first occupation.",
+  "sources": ["https://en.wikipedia.org/wiki/Third_English_Civil_War", "https://en.wikipedia.org/wiki/Commonwealth_of_England"],
+  "confidence": "medium"
+ },
+ {
+  "i": 145,
+  "verdict": "map",
+  "fix": "The Ottoman Empire held Tabriz from 1585 until Abbas I retook it in 1603. The map shows the Ottomans only from 1588.",
+  "why": "Wikipedia says Tabriz was under Ottoman occupation from 1585 to 1603 as a result of the Ottoman-Safavid War of 1578-1590. The map starts Ottoman rule three years late.",
+  "sources": ["https://en.wikipedia.org/wiki/Tabriz"],
+  "confidence": "high"
+ },
+ {
+  "i": 1,
+  "verdict": "map",
+  "fix": "Hungary held Vienna from Matthias Corvinus's entry on 1 June 1485 until his death in 1490. The map shows Hungary only from 1487 to 1492.",
+  "why": "Wikipedia says Vienna surrendered and Matthias entered it on 1 June 1485, and that Hungary kept Vienna and Upper Austria from 1485 until his death in 1490. The map starts two years late and ends about two years late.",
+  "sources": ["https://en.wikipedia.org/wiki/Siege_of_Vienna_(1485)"],
+  "confidence": "high"
+ },
+ {
+  "i": 394,
+  "verdict": "map",
+  "fix": "Marseille stayed in the Kingdom of Burgundy-Arles through 1032, so the one-year 'no country' gap should be filled with the same ruler as 1029-1031 and 1033.",
+  "why": "Rudolf III died in 1032 without heirs and the kingdom passed to Emperor Conrad II, continuing as the Kingdom of Arles; the kingdom never ceased, only the throne changed. The map's gap year is an interregnum artifact, not a real change of holder.",
+  "sources": ["https://en.wikipedia.org/wiki/Kingdom_of_Arles"],
+  "confidence": "medium"
+ },
+ {
+  "i": 55,
+  "verdict": "map",
+  "fix": "France held Mannheim only from 20 September to 22 November 1795, then Austria held it through 1796. The map shows France in 1796.",
+  "why": "Wikipedia says Mannheim surrendered to the French without a fight on 20 September 1795, and the Austrians under Wurmser besieged and retook it on 22 November 1795, so the besiegers were Austrian, not the defenders. In the 1796 campaign the Austrians held Mannheim and the French never captured it.",
+  "sources": ["https://en.wikipedia.org/wiki/Siege_of_Mannheim_(1795)", "https://en.wikipedia.org/wiki/Rhine_campaign_of_1796"],
+  "confidence": "medium"
+ }
+]
