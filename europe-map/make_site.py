@@ -14,6 +14,8 @@ if TEST:
     h1 = "<h1>Europe's Borders, 1000–2026</h1>"; assert h1 in src
     src = src.replace(h1, h1[:-5] + ' <span style="font: 600 0.72rem var(--sans); vertical-align: middle; background: var(--accent); color: var(--accent-ink); border-radius: 999px; padding: 2px 9px; margin-left: 6px">Test version</span></h1>', 1)
     src = src.replace('<title>', '<title>Test: ', 1)
+    b = '<button type="button" class="deepbtn" id="deepbtn" aria-pressed="false" hidden>'; assert b in src
+    src = src.replace(b, b.replace(' hidden>', '>'))      # the French Revolution deep dive: a mockup, on the test copy only (with deep-frrev.json)
 cut = src.index('</style>') + len('</style>')          # the title, font link and styles go in the head
 head, body = src[:cut], src[cut:]
 page = f'''<!doctype html>
@@ -31,7 +33,7 @@ page = f'''<!doctype html>
 if os.path.exists(OUT): shutil.rmtree(OUT)
 os.makedirs(OUT)
 open(f'{OUT}/index.html', 'w', encoding='utf-8').write(page)
-for f in sorted(glob.glob('europe-borders-[0-9]*.json')) + ['flags.webp', 'relief.webp', 'terrain.json', 'city-events.json', 'city-people.json', 'city-views.json', 'event-images.json', 'wider-events.json'] + (['places.json'] if TEST else []): shutil.copy(f, OUT)   # the earlier eras' maps, terrain, events, people, city views, event pictures; the landmark places only in the test copy while they are a trial (without the file the live map shows none)
+for f in sorted(glob.glob('europe-borders-[0-9]*.json')) + ['flags.webp', 'relief.webp', 'terrain.json', 'city-events.json', 'city-people.json', 'city-views.json', 'event-images.json', 'wider-events.json'] + (['places.json', 'deep-frrev.json'] if TEST else []): shutil.copy(f, OUT)   # the earlier eras' maps, terrain, events, people, city views, event pictures; the landmark places only in the test copy while they are a trial (without the file the live map shows none)
 shutil.copytree('flag-images', f'{OUT}/flag-images')
 # the city views' pictures (about 3,300 files, 460 MB) are not in the repository: they stay on the published site, in
 # views/, and deploy_site.sh keeps them; a test copy (in test/) reads them from the live site's folder

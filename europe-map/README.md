@@ -25,6 +25,17 @@ The page is `europe-borders.html`, published as a Claude artifact. It holds the 
 - **Timeline:** one even scale from 1000 to 2026 under the map (the zoomed timeline and the play, previous and next buttons were removed on October 4, 2026; the arrow keys still step one year). Above the slider, bars show how much the borders changed each year; below it, the biggest changes (or the highlighted country's) as buttons that go to their year.
 - **One popup at a time,** placed to cover as little as possible of what it describes.
 
+## Deep dives (test copy only, October 2026)
+
+A mode that tells one story event by event. The first is a mockup of the French Revolution, 1788–1791: 16 events from the first season of The Rest Is History's French Revolution series.
+
+- **Opening it:** the "Deep dive: The French Revolution" button in the header, or a link ending `#frrev` (or `#frrev-bastille` for one event). The button shows only on the test copy: `make_site.py --test` turns it on and copies `deep-frrev.json`.
+- **The timeline** replaces the side panel (below the map on narrow screens, where the map stays at the top). Tapping an event, or Earlier / Later, or the arrow keys, zooms the map to the event's own scale (France, Paris and Versailles, a few streets), turns the borders to its year, and shows the events so far: earlier ones as small dots, journeys as lines. France stays highlighted; city names show only at the scale of France.
+- **Each event:** date, place, a short description in our own words, the people in it, its picture (Wikidata's, from Wikimedia Commons), its Wikipedia article, and the moments in the podcast where it is discussed, linked to YouTube at that time.
+- **Paris in 1791:** ALPAGE's city blocks and the Seine of 1785–1791 (Paul Rouet; ODbL, credit "© ALPAGE: Paul Rouet"; maps made from the data are to be shared under CC BY-SA), drawn when zoomed in. `deepdive/alpage_to_json.py` converts the GeoPackages (see its header for where they come from).
+- **Building:** `python3 deepdive/build_frrev.py` writes `deep-frrev.json` from the events in that script, `deepdive/paris1791-alpage.json`, the podcast index `deepdive/frrev-season1-index.json` and the moments picked in `deepdive/frrev-moments.json` (`build_frrev.py moments` lists the candidates).
+- **Known gaps:** Versailles has no 1789 plan, so events there show at the scale of Versailles and Paris together; Lyon has none yet.
+
 ## How the map decides
 
 - **Default: OHM.** It matched the historical record in 149 of 160 spot checks for the 1800s, more than the other sources.

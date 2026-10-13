@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=Instrument+Sans:wght@400;500;600;700&family=Source+Sans+3:wght@300..700&display=swap">
 <style>
 /* Layout: an atlas plate. The map fills the left, a year slider runs under it, and a side panel explains the year, the place you clicked, and where sources disagree. */
-:root { --plc: #7b4a2b;
+:root { --plc: #7b4a2b; --blk: rgba(70,58,40,0.17); --blk-edge: rgba(70,58,40,0.34);
   --bg: #f2f4f1; --surface: #ffffff; --sunk: #e9ece7; --ink: #18201c; --muted: #56605a; --faint: #7d867f; --line: #d6dbd4;
   --accent: #1f5f6b; --accent-ink: #ffffff; --focus: #1f5f6b;
   --water: #bfd1da; --outside: #e7ebe8; --grat: rgba(42,48,44,0.12); --none: #e6e4dc; --border: rgba(42,48,44,0.38); --vborder: rgba(42,48,44,0.28); --dim: rgba(242,244,241,0.5); --dimtext: 0.26; --river: #86adc0; --halo: rgba(255,255,255,0.88); --river-ink: #2f6c86; --mtn-ink: #7a5534; --plain-ink: #85784f; --relief: 0.5;
@@ -15,7 +15,7 @@
   --phys: "Source Serif 4", Georgia, "Times New Roman", serif;    /* names of physical features */
   --r: 12px;
 }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --plc: #d9a77c;
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --plc: #d9a77c; --blk: rgba(228,218,198,0.15); --blk-edge: rgba(228,218,198,0.32);
   --bg: #111513; --surface: #1a201d; --sunk: #151a18; --ink: #e6ece8; --muted: #a3aea7; --faint: #7f8a83; --line: #2e3632;
   --accent: #7fc4cf; --accent-ink: #0e1412; --focus: #7fc4cf;
   --water: #14232a; --outside: #161b19; --grat: rgba(223,230,225,0.12); --none: #2a2e2b; --border: rgba(223,230,225,0.34); --vborder: rgba(223,230,225,0.24); --dim: rgba(17,21,19,0.48); --dimtext: 0.3; --river: #2c4b57; --halo: rgba(17,21,19,0.85); --river-ink: #8cbcd0; --mtn-ink: #d2b08c; --plain-ink: #bdb08a; --relief: 0.42;
@@ -23,7 +23,7 @@
   --now: #ff6a4d; --now-ink: #1a0e0b; --era-a: #2b2619; --era-b: #27251e; --era-c: #2b251c; --era-d: #212523; --plate: rgba(230,220,190,0.22); --plate-ink: rgba(230,220,190,0.3); --scrim: rgba(10,14,12,0.72); --rise: #7cc79a; --fall: #e39a86; --shade: #232a26; --shade-on: #2f3833;
   /*FILLS_DARK*/
   color-scheme: dark; } }
-:root[data-theme="dark"] { --plc: #d9a77c;
+:root[data-theme="dark"] { --plc: #d9a77c; --blk: rgba(228,218,198,0.15); --blk-edge: rgba(228,218,198,0.32);
   --bg: #111513; --surface: #1a201d; --sunk: #151a18; --ink: #e6ece8; --muted: #a3aea7; --faint: #7f8a83; --line: #2e3632;
   --accent: #7fc4cf; --accent-ink: #0e1412; --focus: #7fc4cf;
   --water: #14232a; --outside: #161b19; --grat: rgba(223,230,225,0.12); --none: #2a2e2b; --border: rgba(223,230,225,0.34); --vborder: rgba(223,230,225,0.24); --dim: rgba(17,21,19,0.48); --dimtext: 0.3; --river: #2c4b57; --halo: rgba(17,21,19,0.85); --river-ink: #8cbcd0; --mtn-ink: #d2b08c; --plain-ink: #bdb08a; --relief: 0.42;
@@ -441,6 +441,83 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
 @media (max-width: 520px) {
   /* on a phone the year controls sit above the slider, so the slider has the full width */
 }
+/* ---------- deep dives: a story told event by event (the French Revolution: a mockup on the test copy) ---------- */
+.deepbtn { margin-left: auto; align-self: center; border: 1px solid var(--accent); background: var(--accent); color: var(--accent-ink); border-radius: 999px; padding: 5px 14px; font-weight: 600; font-size: 0.86rem; cursor: pointer; white-space: nowrap; }
+.deepbtn:disabled { opacity: 0.6; cursor: progress; }
+body.deep .deepbtn { background: transparent; color: var(--accent); }
+body.deep .timebar { display: none; }
+body.deep .mapcol { grid-template-rows: minmax(0, 1fr); }
+body.deep .panel > .card:not(.deeppanel) { display: none; }
+body.deep #pin { display: none; }
+body.deep .yearstamp { font-size: 1.5rem; }
+/* zoomed in on a city: country names and terrain names would sit on the streets */
+svg.deepnear #fills { opacity: 0.4; }      /* at city scale the country's color steps back, so streets and blocks read */
+svg.deepnear #labels, svg.deepnear #focuslabel, svg.deepnear #tlabels, svg.deepnear #badges, svg.deepnear #alts { display: none; }
+/* closer still: Natural Earth's rivers are too coarse at this scale; ALPAGE's river of 1791 takes the Seine's place */
+svg.deepclose #rivers2, svg.deepclose #rivers, svg.deepclose #lakes2 { display: none; }
+#paris { pointer-events: none; }
+#paris .blk { fill: var(--blk); stroke: var(--blk-edge); stroke-width: 0.5px; vector-effect: non-scaling-stroke; fill-rule: evenodd; }
+#paris .wtr { fill: var(--water); stroke: none; fill-rule: evenodd; }
+.droute { fill: none; stroke: var(--now); stroke-width: 1.4px; stroke-opacity: 0.4; stroke-dasharray: 5 4; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; pointer-events: none; }
+.droute.on { stroke-opacity: 1; stroke-width: 2.6px; stroke-dasharray: none; }
+.droute.halo { stroke: var(--halo); stroke-width: 6px; stroke-opacity: 1; stroke-dasharray: none; }
+.dmk { cursor: pointer; }
+.dmk circle { fill: var(--now); fill-opacity: 0.5; stroke: var(--halo); }
+.dmk.on circle { fill-opacity: 1; }
+.dmk text { fill: var(--now-ink); font: 700 12px var(--sans); text-anchor: middle; pointer-events: none; }
+.dlbl { font-family: var(--mapfont); font-weight: 600; fill: var(--ink); stroke: var(--halo); paint-order: stroke; stroke-linejoin: round; dominant-baseline: central; pointer-events: none; }
+.deeppanel { gap: 12px; }
+.deeppanel .dk { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--now); font-weight: 700; }
+.deeppanel h2 { font-size: 1.45rem; margin-top: 2px; }
+.deeppanel .dsub { margin: 4px 0 0; color: var(--muted); font-size: 0.86rem; }
+.dstep { display: flex; align-items: center; justify-content: space-between; gap: 8px; border-block: 1px solid var(--line); padding-block: 6px; position: sticky; top: -14px; background: var(--surface); z-index: 1; }
+.dstep button { border: 1px solid var(--line); background: var(--surface); border-radius: 8px; padding: 4px 10px; font-weight: 600; font-size: 0.84rem; cursor: pointer; }
+.dstep button:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+.dstep button:disabled { opacity: 0.4; cursor: default; }
+.dstep span { color: var(--muted); font-size: 0.84rem; }
+/* the timeline: a rail down the left, a dot per event (filled once the story has reached it), a heading per year */
+ol.dtl { list-style: none; margin: 0; padding: 0 0 0 16px; position: relative; display: flex; flex-direction: column; }
+ol.dtl::before { content: ''; position: absolute; left: 5px; top: 10px; bottom: 10px; width: 2px; background: var(--line); border-radius: 1px; }
+.dyr { font-family: var(--serif); font-weight: 600; font-size: 1.1rem; color: var(--muted); padding: 10px 0 2px; }
+.dev { position: relative; scroll-margin-top: 58px; }      /* (clear of the sticky Earlier / Later bar) */
+.dev::before { content: ''; position: absolute; left: -15px; top: 13px; width: 8px; height: 8px; border-radius: 50%; background: var(--surface); border: 2px solid var(--faint); }
+.dev.past::before { background: var(--now); border-color: var(--now); opacity: 0.5; }
+.dev.on::before { background: var(--now); border-color: var(--now); width: 12px; height: 12px; left: -17px; top: 11px; }
+.dbtn { display: grid; grid-template-columns: 5.4em minmax(0, 1fr); gap: 0 8px; width: 100%; text-align: left; border: 0; background: none; padding: 7px 8px; border-radius: 8px; cursor: pointer; }
+.dbtn:hover { background: var(--sunk); }
+.dev.on .dbtn { background: var(--sunk); }
+.dbtn .dd { grid-row: span 2; color: var(--muted); font-size: 0.84rem; padding-top: 1px; }
+.dev.on .dd { color: var(--now); font-weight: 600; }
+.dbtn .dtt { font-weight: 600; line-height: 1.3; }
+.dbtn .dat { color: var(--muted); font-size: 0.82rem; line-height: 1.3; }
+.ddet { padding: 8px 8px 14px; display: flex; flex-direction: column; gap: 9px; }
+.dfig .pic { position: relative; aspect-ratio: 16 / 10; border-radius: 8px; overflow: hidden; background: var(--sunk); }
+.dfig .pic button { all: unset; display: block; position: absolute; inset: 0; cursor: zoom-in; }
+.dfig .pic button:focus-visible { outline: 2px solid var(--focus); outline-offset: -2px; }
+.dfig .pic img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.dfig .pic img.fit { object-fit: contain; }
+.dfig .pic img.blur { object-fit: cover; filter: blur(14px) brightness(0.92); transform: scale(1.1); }
+.dfig .cap { font-size: 0.74rem; color: var(--faint); margin-top: 4px; line-height: 1.35; }
+.dfig .cap a { color: inherit; }
+.dx { margin: 0; line-height: 1.5; }
+.dk2 { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 600; margin-right: 6px; }
+.dppl { margin: 0; font-size: 0.9rem; }
+.dlisten ol { list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.dlisten li { display: grid; grid-template-columns: 6.4em minmax(0, 1fr); gap: 8px; font-size: 0.86rem; line-height: 1.38; }
+.dtime { color: var(--now); font-weight: 600; text-decoration: none; white-space: nowrap; }
+.dtime:hover { text-decoration: underline; }
+.dlisten li span { color: var(--muted); }
+.dwiki { font-size: 0.86rem; align-self: flex-start; }
+.dcred { margin: 6px 0 0; font-size: 0.74rem; color: var(--faint); line-height: 1.45; }
+@media (max-width: 920px) {
+  /* narrow screens: the map stays at the top while the timeline scrolls under it */
+  body.deep .mapcol { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 6; background: var(--bg); padding-bottom: 8px; }
+  body.deep .mapbox { height: max(44vh, 250px); min-height: 0; }
+  body.deep .dstep { top: calc(max(44vh, 250px) + 8px + env(safe-area-inset-top, 0px)); }
+  body.deep .dev { scroll-margin-top: calc(max(44vh, 250px) + 60px); }
+  body.deep .top p { display: none; }
+  body.deep .yearstamp { font-size: 1.3rem; }
+}
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
 </style>
 
@@ -448,6 +525,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
   <header class="top">
     <h1>Europe's Borders, 1000–2026</h1>
     <p>Who held what on July 1 of every year, from OpenHistoricalMap checked against other datasets. Crosshatching marks occupied land. Where another source draws a different border, the side panel lists it; pick one to outline it on the map.</p>
+    <button type="button" class="deepbtn" id="deepbtn" aria-pressed="false" hidden>Deep dive: The French Revolution</button>
   </header>
   <div class="main">
     <section class="mapcol" aria-label="Map">
@@ -465,6 +543,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
           <g id="lakes2"></g>
           <path id="rivers" class="rivers"></path>
           <g id="rivers2"></g>
+          <g id="paris" visibility="hidden"></g>
           <path id="vborders" class="vborders"></path>
           <path id="borders" class="borders"></path>
           <g id="alts"></g>
@@ -477,6 +556,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
           <g id="cities"></g>
           <g id="places"></g>
           <g id="evmarks"></g>
+          <g id="deep"></g>
           <g id="focuslabel"></g>
         </svg>
         <div class="zoom">
@@ -498,6 +578,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 0.88rem; }
       </div>
     </section>
     <aside class="panel" aria-label="Details">
+      <section class="card deeppanel" id="deeppanel" aria-label="Deep dive" hidden></section>
       <section class="card">
         <h3>Key</h3>
         <div class="legend" id="legend"></div>
@@ -558,6 +639,7 @@ const svg = $('map'), NS = 'http://www.w3.org/2000/svg';
 const el = (tag, attrs = {}, parent) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; };
 const fmt = n => Math.round(n).toLocaleString('en-US');
 const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+let DEEP = null, deepOn = false, deepSel = 0;      // a deep dive (its data, whether it is open, the event shown); see "deep dives" below
 
 // ---------- geometry helpers ----------
 const ringD = r => { let d = 'M' + r[0][0].toFixed(1) + ',' + r[0][1].toFixed(1); for (let i = 1; i < r.length; i++) d += 'L' + r[i][0].toFixed(1) + ',' + r[i][1].toFixed(1); return d; };
@@ -700,10 +782,10 @@ function applyView() {
     p.setAttribute('width', w); p.setAttribute('height', w); p.firstChild.setAttribute('width', w * t); p.firstChild.setAttribute('height', w);
     if (p.lastChild !== p.firstChild) { p.lastChild.setAttribute('width', w); p.lastChild.setAttribute('height', w * t); }
   }
-  drawTerrain(); drawLabels(); drawBadges(); drawPin(); drawCities();
+  drawTerrain(); drawLabels(); drawBadges(); drawPin(); drawCities(); drawDeep();
 }
 function zoomAt(f, cx, cy) {
-  const [x, y, w, h] = view; const nw = Math.min(Math.max(w / f, 40), VB0[2] * 1.3), k = nw / w;
+  const [x, y, w, h] = view; const nw = Math.min(Math.max(w / f, deepOn ? 0.8 : 40), VB0[2] * 1.3), k = nw / w;
   view = [cx - (cx - x) * k, cy - (cy - y) * k, w * k, h * k]; applyView();
 }
 function toMap(ev) { const r = svg.getBoundingClientRect(); return [shown[0] + (ev.clientX - r.left) / r.width * shown[2], shown[1] + (ev.clientY - r.top) / r.height * shown[3]]; }
@@ -761,10 +843,10 @@ function draw() {
   }
   $('borders').setAttribute('d', G ? G.borders : ''); $('vborders').setAttribute('d', G ? G.vb : '');
   drawAlts(); drawDim(); applyView();
-  $('stamp').textContent = year; $('year').value = year;
+  $('stamp').textContent = deepOn && DEEP ? deepDate(DEEP.events[deepSel].d) : year; $('year').value = year;
   renderTimeline(); renderAlts();
   setTimeout(preloadNear, 1500);
-  try { history.replaceState(null, '', '#' + year); } catch (e) {}
+  try { history.replaceState(null, '', '#' + (deepOn && DEEP ? 'frrev-' + DEEP.events[deepSel].id : year)); } catch (e) {}
 }
 
 if (document.fonts) document.fonts.ready.then(() => { drawLabels(); drawCities(); });
@@ -982,6 +1064,7 @@ function fitBox(bb) {
 
 // ---------- panel: place ----------
 function click(ev) {
+  if (deepOn) { const d = deepAt(ev); if (d && d.i !== deepSel) deepSelect(d.i); return; }
   const [x, y] = toMap(ev);
   // a numbered marker takes the click first
   const k = pxPerKm(); const onBadge = altsNow().find(a => { if (a.i !== selAlt) return false; const p = badgeAt[a.i] || [a.x, a.y]; return Math.hypot((p[0] - x) * k, (p[1] - y) * k) <= 13; });
@@ -1137,6 +1220,7 @@ function drawCities() {
   if (fu < 0 || !k) { selCity = null; drawPlaces([], []); queuePop(); drawMarks(marks, labelBoxes.concat(marks.map(m => [m.sx - MR, m.sy - MR, m.sx + MR, m.sy + MR]))); drawOverlays(); return; }
   // only the country's larger cities on screen: at most 10 (focusCities)
   const inside = focusCities();
+  if (deepOn && shown[2] < 150) inside.length = 0;      // (a deep dive zoomed in on a city has its own names)
   if (selCity != null && !inside.some(d => d.c.i === selCity)) selCity = null;
   const taken = focusParts.map(b => b.slice()), fs = 12, wf = 0.5;
   // dots first (biggest last so they sit on top), then names where they fit
@@ -1168,7 +1252,7 @@ function drawCities() {
     if (s) { taken.push([s[0], s[1], s[0] + w, s[1] + h]); put(d, s[0], s[1], w, h, s[2]); }
     else if (d.c.i === selCity) put(d, spots[0][0], spots[0][1], w, h, 'start');     // a selected city with no room still gets its name
   }
-  drawPlaces(placeMarks(), taken);
+  drawPlaces(deepOn ? [] : placeMarks(), taken);
   drawMarks(marks, taken.concat(labelBoxes));
   queuePop(); drawOverlays();
 }
@@ -2359,6 +2443,7 @@ bigv.addEventListener('click', ev => { if (!ev.target.closest('a')) closeBigView
 document.addEventListener('keydown', ev => { if (ev.key === 'Escape' && !bigv.hidden) { ev.stopImmediatePropagation(); closeBigView(); } }, true);
 function renderPop() {
   clearTimeout(popTimer); popTimer = 0;
+  if (deepOn) { pop.hidden = true; return; }
   const fu = focusUnit(), d = cityDots.find(d => d.c.i === selCity);
   if (!d) cardCity = null;      // the city closed: it opens fresh next time
   const pm = !d && selPlace != null && plDots.find(m => m.p.id === selPlace);
@@ -2507,7 +2592,7 @@ function renderAlts() {
 let hoverRaf = 0;
 function hover(ev) {
   if (hoverRaf) return;
-  hoverRaf = requestAnimationFrame(() => { hoverRaf = 0; svg.style.cursor = cityAt(ev) || markAt(ev) || placeAt(ev) ? 'pointer' : ''; });
+  hoverRaf = requestAnimationFrame(() => { hoverRaf = 0; svg.style.cursor = (deepOn ? deepAt(ev) : cityAt(ev) || markAt(ev) || placeAt(ev)) ? 'pointer' : ''; });
 }
 
 // ---------- time controls ----------
@@ -2522,7 +2607,7 @@ let pendingYear = null;
 $('year').addEventListener('input', e => { const first = pendingYear == null; pendingYear = +e.target.value; if (first) requestAnimationFrame(() => { const y = pendingYear; pendingYear = null; setYear(y); }); });
 let timer = null;
 function stop() { clearInterval(timer); timer = null; }          // (nothing plays through the years now; kept for the calls that stop it)
-document.addEventListener('keydown', e => { if (!flagBig.hidden || e.target.closest('input, button, a, summary, [role=button]')) return; if (e.key === 'ArrowLeft') setYear(year - 1); if (e.key === 'ArrowRight') setYear(year + 1); });
+document.addEventListener('keydown', e => { if (!flagBig.hidden || e.target.closest('input, button, a, summary, [role=button]')) return; if (deepOn) { if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') deepSelect(deepSel - 1); if (e.key === 'ArrowRight' || e.key === 'ArrowDown') deepSelect(deepSel + 1); return; } if (e.key === 'ArrowLeft') setYear(year - 1); if (e.key === 'ArrowRight') setYear(year + 1); });
 
 // ---------- timeline: change per year (filtered to the highlighted country) ----------
 [1000, 1200, 1400, 1600, 1800, 2000].forEach(y => { const s = document.createElement('span'); s.textContent = y; s.style.left = ((y - Y0 + 0.5) / NY * 100) + '%'; $('ticks').appendChild(s); });
@@ -2578,7 +2663,161 @@ function preloadNear() {
   const E = curEra(); if (!E.ready || nearFor === E) return;
   nearFor = E; [ERAS[E.i - 1], ERAS[E.i + 1]].forEach(e => e && loadEra(e));
 }
+
+// ---------- deep dives: a story told event by event (deep-frrev.json; a mockup on the test copy, October 2026) ----------
+// Opened from the header. The side panel becomes a vertical timeline (below the map on narrow screens, where the map
+// stays in view at the top); each event zooms the map to its own scale (France, Paris and Versailles, a few streets),
+// turns the borders to its year and shows the events so far: earlier ones as small dots, journeys as lines. France
+// stays highlighted. Zoomed in, Paris in 1791 (ALPAGE's city blocks and the Seine) is drawn under the events.
+// Each event: date, place, a short description, the people in it, its picture, Wikipedia, and the moments in The Rest
+// Is History's French Revolution series (season 1) where it is discussed, linked to YouTube at that time.
+let deepPrev = null, deepDots = [];
+const deepBtn = $('deepbtn'), deepPanel = $('deeppanel'), DR = 11;
+function deepDate(d, withYear = true) {
+  const part = x => x.split('-').map(Number), [a, b] = d.split('/'), [ya, ma, da] = part(a);
+  const one = (y, m, dd) => dd ? `${MON[m - 1]} ${dd}${withYear ? ', ' + y : ''}` : m ? `${MON[m - 1]}${withYear ? ' ' + y : ''}` : String(y);
+  if (!b) return one(ya, ma, da);
+  const [yb, mb, db] = part(b);
+  if (ya === yb && ma === mb && da && db) return `${MON[ma - 1]} ${da}–${db}${withYear ? ', ' + ya : ''}`;
+  return one(ya, ma, da) + ' – ' + one(yb, mb, db);
+}
+const fmtT = s => { const h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), x = String(s % 60).padStart(2, '0'); return h ? `${h}:${String(m).padStart(2, '0')}:${x}` : `${m}:${x}`; };
+const wikiHref = t => 'https://en.wikipedia.org/wiki/' + encodeURIComponent(t.replace(/ /g, '_'));
+function loadDeep() {
+  if (DEEP) return Promise.resolve(DEEP);
+  return loadDeep.p || (loadDeep.p = fetch('deep-frrev.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(d => (DEEP = d)).catch(e => { loadDeep.p = null; throw e; }));
+}
+// Paris in 1791: flat rings of map km, drawn once (shown only when zoomed in)
+function drawParis() {
+  const g = $('paris'); if (g.childNodes.length || !DEEP) return;
+  const ring = r => { let d = 'M' + r[0] + ',' + r[1]; for (let i = 2; i < r.length; i += 2) d += 'L' + r[i] + ',' + r[i + 1]; return d + 'Z'; };
+  const pd = ps => ps.map(p => p.map(ring).join('')).join('');
+  el('path', { d: pd(DEEP.paris.water), class: 'wtr' }, g);
+  el('path', { d: pd(DEEP.paris.blocks), class: 'blk' }, g);
+}
+// the events so far on the map: routes, earlier events as dots, the one shown as its number with its place's name
+function drawDeep() {
+  const g = $('deep'); g.textContent = ''; deepDots = [];
+  svg.classList.toggle('deepnear', deepOn && shown[2] < 150); svg.classList.toggle('deepclose', deepOn && shown[2] < 60);
+  $('paris').setAttribute('visibility', deepOn && shown[2] < 120 ? 'visible' : 'hidden');
+  const k = pxPerKm(); if (!deepOn || !DEEP || !k) return;
+  const ev = DEEP.events, cur = ev[deepSel], sr = svg.getBoundingClientRect();
+  ev.forEach((e, i) => {
+    if (!e.route || i > deepSel) return;
+    const d = 'M' + e.route.map(p => p[0] + ',' + p[1]).join('L');
+    if (i === deepSel) el('path', { d, class: 'droute halo' }, g);
+    el('path', { d, class: 'droute' + (i === deepSel ? ' on' : '') }, g);
+  });
+  const at = e => [(e.p[0] - shown[0]) * k, (e.p[1] - shown[1]) * k];
+  for (let i = 0; i < deepSel; i++) {
+    const e = ev[i], [sx, sy] = at(e);
+    const b = el('g', { class: 'dmk', transform: `translate(${e.p[0]} ${e.p[1]}) scale(${(1 / k).toFixed(6)})` }, g);
+    b.innerHTML = `<circle r="5" stroke-width="1.5"/><title>${esc(deepDate(e.d))}: ${esc(e.t)}</title>`;
+    deepDots.push({ i, sx, sy, r: 6 });
+  }
+  const [sx, sy] = at(cur), fs = 13, name = cur.lb || cur.at, w = name.length * fs * 0.52;
+  const b = el('g', { class: 'dmk on', transform: `translate(${cur.p[0]} ${cur.p[1]}) scale(${(1 / k).toFixed(6)})` }, g);
+  b.innerHTML = `<circle r="${DR}" stroke-width="2"/><text dy="0.36em">${deepSel + 1}</text>`;
+  deepDots.push({ i: deepSel, sx, sy, r: DR });
+  const left = sx + DR + 6 + w > sr.width - 8;      // the name goes on whichever side has room
+  const t = el('text', { x: (cur.p[0] + (left ? -1 : 1) * (DR + 6) / k).toFixed(4), y: cur.p[1].toFixed(4), class: 'dlbl', 'text-anchor': left ? 'end' : 'start' }, g);
+  t.setAttribute('style', `font-size:${(fs / k).toFixed(4)}px;stroke-width:${(3.5 / k).toFixed(4)}px`); t.textContent = name;
+}
+function deepAt(ev) {
+  const sr = svg.getBoundingClientRect(), px = ev.clientX - sr.left, py = ev.clientY - sr.top; let best = null, bd = Infinity;
+  for (const d of deepDots) { const dd = Math.hypot(d.sx - px, d.sy - py); if (dd <= d.r + 6 && dd <= bd) { bd = dd; best = d; } }
+  return best;
+}
+// fit an event's box on screen (leaving room for the date in the corner)
+function deepFit(e) {
+  const sr = svg.getBoundingClientRect(); if (!sr.width) return;
+  const [x0, y0, x1, y1] = e.box, W = sr.width, H = sr.height, M = Math.min(36, W * 0.06), top = 34;
+  const s = Math.min((W - 2 * M) / (x1 - x0), (H - 2 * M - top) / (y1 - y0));
+  const cx = (x0 + x1) / 2, cy = (y0 + y1) / 2 - top / 2 / s;
+  animateTo([cx - W / 2 / s, cy - H / 2 / s, W / s, H / s]);
+}
+// keep France highlighted: the spot is Paris, found again in each era's map
+function deepFocus() {
+  const E = curEra();
+  if (!E.ready) { loadEra(E); if (E.loading) E.loading.then(() => { if (deepOn) { deepFocus(); draw(); } }); return; }
+  const c = DEEP.events.find(e => e.id === 'bastille').p, f = regionAt(c[0], c[1], E);
+  place = f ? { x: c[0], y: c[1], s: f.properties.s, E } : null;
+}
+function deepSelect(i, scroll = true) {
+  if (!DEEP) return;
+  deepSel = Math.max(0, Math.min(DEEP.events.length - 1, i));
+  const e = DEEP.events[deepSel], y = +e.d.slice(0, 4);
+  if (y !== year) setYear(y); else draw();
+  renderDeepPanel(scroll); deepFit(e);
+}
+function deepDetail(e) {
+  const m = e.pic; let fig = '';
+  if (m) {
+    const tall = m[2] / m[1] > 0.7, a = eimgUrl(m, 500), b = eimgUrl(m, 960);
+    fig = `<div class="dfig"><div class="pic"><button type="button" class="dbig" aria-label="Show the whole picture">${tall ? `<img class="blur" loading="lazy" src="${eimgUrl(m, 250)}" alt="" aria-hidden="true">` : ''}` +
+      `<img loading="lazy"${tall ? ' class="fit"' : ''} src="${a}"${b !== a ? ` srcset="${a} ${Math.min(500, m[1])}w, ${b} ${Math.min(960, m[1])}w" sizes="(max-width: 920px) 100vw, 330px"` : ''} alt="${esc(e.t)}"></button></div><div class="cap">${eimgCredit(m)}</div></div>`;
+  }
+  const ppl = e.ppl.length ? `<p class="dppl"><span class="dk2">People</span>${e.ppl.map(([n, w]) => `<a href="${wikiHref(w)}" target="_blank" rel="noopener">${esc(n)}</a>`).join(', ')}</p>` : '';
+  const ms = e.m.length ? `<div class="dlisten"><div class="dk2">Listen: The Rest Is History</div><ol>${e.m.map(([part, vid, s, u]) =>
+    `<li><a class="dtime num" href="https://www.youtube.com/watch?v=${vid}&amp;t=${s}s" target="_blank" rel="noopener" title="${esc(DEEP.episodes[part - 1].pt)}">Part ${part} · ${fmtT(s)}</a><span>${esc(u)}</span></li>`).join('')}</ol></div>` : '';
+  const wk = e.w ? `<a class="dwiki" href="${wikiHref(e.w)}" target="_blank" rel="noopener">${esc(e.w)} on Wikipedia</a>` : '';
+  return `<div class="ddet">${fig}<p class="dx">${esc(e.x)}</p>${ppl}${ms}${wk}</div>`;
+}
+function renderDeepPanel(scroll) {
+  const ev = DEEP.events, n = ev.length;
+  let h = `<div class="dhead"><div class="dk">Deep dive · mockup</div><h2>${esc(DEEP.title)}, ${esc(DEEP.span)}</h2>` +
+    `<p class="dsub">${n} events from the first season of The Rest Is History’s series. Tap one: the map goes to where it happened, and the borders to its year.</p></div>` +
+    `<div class="dstep"><button type="button" data-go="${deepSel - 1}"${deepSel ? '' : ' disabled'}>‹ Earlier</button><span class="num">${deepSel + 1} of ${n}</span>` +
+    `<button type="button" data-go="${deepSel + 1}"${deepSel < n - 1 ? '' : ' disabled'}>Later ›</button></div><ol class="dtl">`;
+  let yr = null;
+  ev.forEach((e, i) => {
+    const y = e.d.slice(0, 4);
+    if (y !== yr) { h += `<li class="dyr">${y}</li>`; yr = y; }
+    const on = i === deepSel;
+    h += `<li class="dev${on ? ' on' : i < deepSel ? ' past' : ''}"><button type="button" class="dbtn" data-i="${i}" aria-expanded="${on}"><span class="dd num">${esc(deepDate(e.d, false))}</span>` +
+      `<span class="dtt">${esc(e.t)}</span><span class="dat">${esc(e.at)}</span></button>${on ? deepDetail(e) : ''}</li>`;
+  });
+  h += `</ol><p class="dcred">Paris in 1791: city blocks and the Seine © ALPAGE: Paul Rouet (Open Database License). Podcast: The Rest Is History, The French Revolution, season 1; the times open its YouTube channel at that moment. Pictures: Wikimedia Commons. Descriptions are our own.</p>`;
+  deepPanel.innerHTML = h;
+  deepPanel.querySelectorAll('[data-go]').forEach(b => b.onclick = () => deepSelect(+b.dataset.go));
+  deepPanel.querySelectorAll('.dbtn').forEach(b => b.onclick = () => { if (+b.dataset.i !== deepSel) deepSelect(+b.dataset.i); });
+  const e = ev[deepSel], pb = deepPanel.querySelector('.dbig');
+  if (pb && e.pic) pb.onclick = () => { const q = e.pic; openBig(eimgUrl(q, 1280), q[1], q[2], e.t, e.t, `By ${esc(eimgWho(q))}. ${licHtml({ lic: q[4] })}. File: <a href="${commonsUrl(q[0])}" target="_blank" rel="noopener">${esc(q[0])}</a> on Wikimedia Commons.`); };
+  deepPanel.querySelectorAll('.dfig .pic img:not(.blur)').forEach(im => im.onerror = () => { const f = im.closest('.dfig'); if (f) f.remove(); });
+  if (scroll) {
+    const li = deepPanel.querySelector('.dev.on');
+    if (li) requestAnimationFrame(() => li.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }));
+  }
+}
+async function enterDeep(id) {
+  deepBtn.disabled = true;
+  try { await loadDeep(); } catch (e) { deepBtn.disabled = false; deepBtn.textContent = 'The deep dive could not be loaded'; return; }
+  deepBtn.disabled = false;
+  deepPrev = { year, view: view.slice(), place };
+  deepOn = true; document.body.classList.add('deep'); deepBtn.textContent = 'Back to the map'; deepBtn.setAttribute('aria-pressed', 'true');
+  selCity = null; selPlace = null; plItem = null; selAlt = null; pop.hidden = true; deepPanel.hidden = false;
+  drawParis();
+  const i = Math.max(0, DEEP.events.findIndex(e => e.id === id)), y = +DEEP.events[i].d.slice(0, 4);
+  deepSel = i;
+  if (y !== year) setYear(y);
+  deepFocus(); drawDim(); drawLabels();
+  deepSelect(i);
+}
+function exitDeep() {
+  deepOn = false; document.body.classList.remove('deep'); deepPanel.hidden = true;
+  deepBtn.textContent = 'Deep dive: The French Revolution'; deepBtn.setAttribute('aria-pressed', 'false');
+  $('deep').textContent = ''; deepDots = []; svg.classList.remove('deepnear', 'deepclose'); $('paris').setAttribute('visibility', 'hidden');
+  const p = deepPrev || { year, view: START.slice(), place: null }; deepPrev = null;
+  place = p.place; popClosed = true; view = p.view;
+  if (p.year !== year) setYear(p.year); else draw();
+  drawPin(); drawDim(); drawLabels(); drawCities(); renderTimeline(); renderAlts();
+}
+deepBtn.onclick = () => deepOn ? exitDeep() : enterDeep();
+
+const startHash = location.hash;      // (read before the first draw writes the year into it)
 draw();
+if (/^#frrev/.test(startHash) && !deepBtn.hidden) enterDeep(startHash.slice(7));     // a link straight to the deep dive, or to one of its events
 setTimeout(() => { loadEvents(); loadWider(); loadViews(); loadPlaces(); loadTerrain(); }, 300);      // (the city views early too: a city card opens on them)
 })();
 </script>
